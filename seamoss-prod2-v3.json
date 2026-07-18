@@ -1,0 +1,11 @@
+[
+  {
+    "prompt": "STYLE: clean premium wellness-brand PRODUCT HERO SHOT on a PURE WHITE background, 1:1 square composition, 4K resolution. Apple / Athletic Greens product-page aesthetic. Generous breathing room.\n\nHERO SUBJECT — centered: photorealistic rendering of the Dialed Sea Moss Gummies jar (matching the provided reference — black plastic, teal/cyan + gold accents, front label fully legible, gold lid, jar closed). A small ceramic dish next to the jar with 4-5 dark sugar-dusted gummy CUBES.\n\nFLOATING INGREDIENT CALLOUTS — three clean ingredient cards arranged around the jar (upper-left, right, lower-left). Each card has:\n  • A small CLEAN BLACK-INK BOTANICAL LINE-ART illustration of the ingredient (sea moss frond / burdock root / dandelion).\n  • A chevron-shaped teal callout with a bold ALL-CAPS ingredient name and dosage:\n     – SEA MOSS · 250mg\n     – BURDOCK ROOT · 150mg\n     – DANDELION · 100mg\n  • One tiny sub-line in light-gray (4-5 words):\n     SEA MOSS: '92 essential minerals'\n     BURDOCK ROOT: 'Natural detox support'\n     DANDELION: 'Liver + vitamin boost'\n  Thin gold connector lines from each callout toward the jar.\n\nTOP — bold ALL-CAPS headline in deep ink-black: 'THREE BOTANICALS, ONE GUMMY.' Thin gold rule beneath.\nBOTTOM — tracked light-gray all-caps tagline: 'TASTY · CONVENIENT · EFFECTIVE'.\n\nDESIGN SYSTEM: pure clean white background with subtle warm-gray paper texture · accent muted TEAL/CYAN + warm GOLD/YELLOW + deep INK-BLACK + warm-gray sub-text · bold ALL-CAPS condensed display sans-serif for headlines, clean modern sans-serif for body · NO script fonts · clean hand-drawn black ink botanical line-art (NO color).\n\nABSOLUTE RULES: all text cleanly spelled · 1:1 square 4K · pure white background · NO border/frame · reference image for brand color/type and jar appearance.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png",
+      "dialed moods seamoss/Seamoss_Front.png"
+    ]
+  }
+]

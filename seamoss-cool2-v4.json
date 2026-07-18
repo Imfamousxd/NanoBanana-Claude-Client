@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "STYLE: editorial-cool premium product hero, 1:1 square, 4K. Bold top-down composition with color blocking + light informational content. Magazine-spread energy.\n\nBACKDROP: a textured deep MUTED SAGE-GREEN backdrop (with hint of brand-teal undertone) — matte linen-textured surface, soft cinematic light.\n\nHERO COMPOSITION (top-down flat-lay): the Dialed Sea Moss Gummies jar (matching the provided reference — black plastic, teal/cyan + gold accents, label fully legible, gold lid, jar closed) centered, viewed straight DOWN from above so gold lid + circular top are visible. Around the jar arranged in a DYNAMIC PERFECT CIRCULAR HALO: 12 dark sugar-dusted gummy CUBES placed in an even ring, each ~30° apart. Subtle long radial shadows from each cube. A SHARP CLEAN SPECULAR HIGHLIGHT on the gold lid's curved edge.\n\nLIGHTING: bright clean directional light from upper-left creating soft long shadows. Warm color-grade, editorial product-photography feel.\n\nTEXT — restrained but informative. Two text elements in CLEAN WHITE typography:\n  • At the TOP of the frame, large bold ALL-CAPS condensed-display headline (single line):\n      'TWO A DAY.'\n  • Below the headline, a small single-line tracked-caps sub-caption:\n      'MORNING OR ANYTIME  ·  WITH OR WITHOUT FOOD'\n  • At the BOTTOM of the frame (below the halo), a tiny single-line tag:\n      '60 GUMMIES  ·  30-DAY SUPPLY  ·  DIETARY SUPPLEMENT'\nNothing else. NO feature pills, NO icons, NO bottom strip beyond the tiny tag.\n\nDESIGN: editorial sage-green textured backdrop · bold halo composition · jar centered + 12 cubes in perfect ring · clean white typographic hierarchy · NO graphic-design noise.\n\nRULES: all text cleanly spelled · 1:1 4K · sage-green textured backdrop (NOT flat white) · top-down composition · no border/frame · text limited to: 1-line headline + 1-line usage caption + 1-line supply tag.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

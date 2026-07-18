@@ -1,0 +1,71 @@
+[
+  {
+    "prompt": "Clinical product-photography flyer on a soft light-grey studio backdrop, portrait 5:7.\n\nReproduce the supplied NuLumin logo (reference image 1) FAITHFULLY — bold \"Nu\" + thin \"Lumin\" wordmark, thin divider, \"BIO-SCIENCES\" tagline, vertical 5-segment spectrum band. Never warp or recolor it. Logo lockup centered at the top, with a small tracked-out header beneath: \"POPULAR STACKS\".\n\nAcross the middle, FIVE real NuLumin vials stand in a clean evenly-spaced row, all the same size, lit identically with soft contact shadows. The product reference images are real NuLumin vials — reproduce them photographically and faithfully: a clear glass vial with a colored crimped aluminium cap, a white wraparound label carrying the small NuLumin lockup + a thin spectrum stripe down the label's left edge, the product name in black italic script, the dose in the cap's accent color, soft even studio lighting and a gentle contact shadow on a seamless light-grey backdrop. Keep every vial label crisp and correctly spelled — no gibberish, no warped or doubled text. The five vials, left to right, are: BPC-157 (purple cap), CJC-1295 (blue cap), Epithalon (blue cap), GLP-1 (gold cap), Semax (coral cap).\n\nDirectly beneath each vial, a small centered caption: the STACK NAME in bold black caps with a tiny color dot in its spectrum color — left to right: \"RECOVERY\" (green), \"VITALITY\" (blue), \"LONGEVITY\" (purple), \"LEAN\" (gold), \"FOCUS\" (coral).\n\nNuLumin Bio-Sciences — clinical-modern research-peptide brand (Aesop x Apple x premium biotech). Palette from the signature 5-segment spectrum band ONLY: lavender purple #B89BE2, cornflower blue #6FA5DD, mint green #5DBD84, warm gold #F2B856, coral #E68B9A; wordmark black #1A1A1A; cream #F4F0E6 / clinical white. Refined, clinical, premium — NOT energy-drink, NOT cosmic.\nPremium print-ready 5:7 portrait flyer that doubles as a fridge-top sticker — clean, confident, strong hierarchy, generous margins, perfectly legible. All text crisp, correctly spelled, unwarped — real letterforms, no gibberish. Footer in small grey caps: \"RESEARCH PEPTIDES\".",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "NuLumin Assets/NuLumin-logo-nobg-black.png",
+      "NuLumin Assets/NuL_BPC_10mg.png",
+      "NuLumin Assets/NuL_CFC_10mg.png",
+      "NuLumin Assets/NuL_Epithalon_10mg.png",
+      "NuLumin Assets/NuL_GLP1_20mg.png",
+      "NuLumin Assets/NuL_Semax_10mg.png"
+    ],
+    "_meta": {
+      "name": "v6-product-lineup"
+    }
+  },
+  {
+    "prompt": "Editorial split-layout flyer, portrait 5:7.\n\nLEFT ~45%: a soft light-grey panel holding a hero PAIR of real NuLumin vials standing together — BPC-157 (purple cap) and TB-500 — photographed large with a gentle contact shadow. The product reference images are real NuLumin vials — reproduce them photographically and faithfully: a clear glass vial with a colored crimped aluminium cap, a white wraparound label carrying the small NuLumin lockup + a thin spectrum stripe down the label's left edge, the product name in black italic script, the dose in the cap's accent color, soft even studio lighting and a gentle contact shadow on a seamless light-grey backdrop. Keep every vial label crisp and correctly spelled — no gibberish, no warped or doubled text. A vertical mint-green spectrum stripe runs along the far left edge.\n\nRIGHT ~55%: clean white. Reproduce the supplied NuLumin logo (reference image 1) FAITHFULLY — bold \"Nu\" + thin \"Lumin\" wordmark, thin divider, \"BIO-SCIENCES\" tagline, vertical 5-segment spectrum band. Never warp or recolor it. Logo lockup top-right. Below it a small header \"POPULAR STACKS\", then a slim vertical list of all five stacks — each a small color dot (its spectrum color) + STACK NAME in bold black caps + the two peptides in grey beneath: RECOVERY / BPC-157 + TB-500 (green), VITALITY / CJC-1295 + Ipamorelin (blue), LONGEVITY / Epithalon + NAD+ (purple), LEAN / GLP-1 + AOD-9604 (gold), FOCUS / Semax + Selank (coral). The RECOVERY row subtly highlighted as the featured stack.\n\nNuLumin Bio-Sciences — clinical-modern research-peptide brand (Aesop x Apple x premium biotech). Palette from the signature 5-segment spectrum band ONLY: lavender purple #B89BE2, cornflower blue #6FA5DD, mint green #5DBD84, warm gold #F2B856, coral #E68B9A; wordmark black #1A1A1A; cream #F4F0E6 / clinical white. Refined, clinical, premium — NOT energy-drink, NOT cosmic.\nPremium print-ready 5:7 portrait flyer that doubles as a fridge-top sticker — clean, confident, strong hierarchy, generous margins, perfectly legible. All text crisp, correctly spelled, unwarped — real letterforms, no gibberish. Footer in small grey caps: \"RESEARCH PEPTIDES\".",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "NuLumin Assets/NuLumin-logo-nobg-black.png",
+      "NuLumin Assets/NuL_BPC_10mg.png",
+      "NuLumin Assets/NuL_TB_10mg.png"
+    ],
+    "_meta": {
+      "name": "v7-split-editorial-recovery"
+    }
+  },
+  {
+    "prompt": "Bold single-stack FEATURE poster (one of a series), portrait 5:7, clean white background with a cornflower-blue spectrum accent.\n\nReproduce the supplied NuLumin logo (reference image 1) FAITHFULLY — bold \"Nu\" + thin \"Lumin\" wordmark, thin divider, \"BIO-SCIENCES\" tagline, vertical 5-segment spectrum band. Never warp or recolor it. Small logo lockup at the top-left. Opposite it, a tiny tag \"POPULAR STACK 02 / 05\".\n\nA huge confident headline: \"VITALITY\" in bold black caps, with a thin cornflower-blue (#6FA5DD) underline rule. A short benefit line beneath in grey: \"Growth hormone support · drive · energy\".\n\nCentered below, a hero PAIR of real NuLumin vials standing together, photographed large and beautifully — CJC-1295 (blue cap) and Ipamorelin — on a soft light-grey shadowed surface. The product reference images are real NuLumin vials — reproduce them photographically and faithfully: a clear glass vial with a colored crimped aluminium cap, a white wraparound label carrying the small NuLumin lockup + a thin spectrum stripe down the label's left edge, the product name in black italic script, the dose in the cap's accent color, soft even studio lighting and a gentle contact shadow on a seamless light-grey backdrop. Keep every vial label crisp and correctly spelled — no gibberish, no warped or doubled text. A clear caption under them: \"CJC-1295  +  Ipamorelin\".\n\nLots of premium negative space.\nNuLumin Bio-Sciences — clinical-modern research-peptide brand (Aesop x Apple x premium biotech). Palette from the signature 5-segment spectrum band ONLY: lavender purple #B89BE2, cornflower blue #6FA5DD, mint green #5DBD84, warm gold #F2B856, coral #E68B9A; wordmark black #1A1A1A; cream #F4F0E6 / clinical white. Refined, clinical, premium — NOT energy-drink, NOT cosmic.\nPremium print-ready 5:7 portrait flyer that doubles as a fridge-top sticker — clean, confident, strong hierarchy, generous margins, perfectly legible. All text crisp, correctly spelled, unwarped — real letterforms, no gibberish. Footer in small grey caps: \"RESEARCH PEPTIDES\".",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "NuLumin Assets/NuLumin-logo-nobg-black.png",
+      "NuLumin Assets/NuL_CFC_10mg.png",
+      "NuLumin Assets/NuL_Ipamorelin_10mg.png"
+    ],
+    "_meta": {
+      "name": "v8-single-stack-poster-vitality"
+    }
+  },
+  {
+    "prompt": "Clean catalog-style flyer, portrait 5:7, white background.\n\nReproduce the supplied NuLumin logo (reference image 1) FAITHFULLY — bold \"Nu\" + thin \"Lumin\" wordmark, thin divider, \"BIO-SCIENCES\" tagline, vertical 5-segment spectrum band. Never warp or recolor it. Logo lockup top-left; \"POPULAR STACKS\" header top-right.\n\nA tidy GRID of cards (a 2-column layout: three rows of two, with the fifth card centered on the bottom row). Each card has a thin rounded outline tinted in its spectrum color, a real NuLumin vial photographed small and clean inside it, The product reference images are real NuLumin vials — reproduce them photographically and faithfully: a clear glass vial with a colored crimped aluminium cap, a white wraparound label carrying the small NuLumin lockup + a thin spectrum stripe down the label's left edge, the product name in black italic script, the dose in the cap's accent color, soft even studio lighting and a gentle contact shadow on a seamless light-grey backdrop. Keep every vial label crisp and correctly spelled — no gibberish, no warped or doubled text. and beneath the vial the STACK NAME in bold black caps + the two peptides in grey. The five cards: RECOVERY (BPC-157 + TB-500, green) showing the BPC-157 vial; VITALITY (CJC-1295 + Ipamorelin, blue) showing the CJC-1295 vial; LONGEVITY (Epithalon + NAD+, purple) showing the Epithalon vial; LEAN (GLP-1 + AOD-9604, gold) showing the GLP-1 vial; FOCUS (Semax + Selank, coral) showing the Semax vial.\n\nNuLumin Bio-Sciences — clinical-modern research-peptide brand (Aesop x Apple x premium biotech). Palette from the signature 5-segment spectrum band ONLY: lavender purple #B89BE2, cornflower blue #6FA5DD, mint green #5DBD84, warm gold #F2B856, coral #E68B9A; wordmark black #1A1A1A; cream #F4F0E6 / clinical white. Refined, clinical, premium — NOT energy-drink, NOT cosmic.\nPremium print-ready 5:7 portrait flyer that doubles as a fridge-top sticker — clean, confident, strong hierarchy, generous margins, perfectly legible. All text crisp, correctly spelled, unwarped — real letterforms, no gibberish. Footer in small grey caps: \"RESEARCH PEPTIDES\".",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "NuLumin Assets/NuLumin-logo-nobg-black.png",
+      "NuLumin Assets/NuL_BPC_10mg.png",
+      "NuLumin Assets/NuL_CFC_10mg.png",
+      "NuLumin Assets/NuL_Epithalon_10mg.png",
+      "NuLumin Assets/NuL_GLP1_20mg.png",
+      "NuLumin Assets/NuL_Semax_10mg.png"
+    ],
+    "_meta": {
+      "name": "v9-vial-grid-catalog"
+    }
+  },
+  {
+    "prompt": "A bold, graphic, NON-list flyer — no product photos — portrait 5:7, off-white background. Make it visually energetic yet clinically clean, clearly different from a simple centered menu.\n\nA wide spectrum-colored band (purple→blue→green→gold→coral) sweeps diagonally across the upper third at an angle. Over/around it, an oversized headline set in two lines: \"FIND YOUR\" / \"STACK\" in heavy black caps.\n\nReproduce the supplied NuLumin logo (reference image 1) FAITHFULLY — bold \"Nu\" + thin \"Lumin\" wordmark, thin divider, \"BIO-SCIENCES\" tagline, vertical 5-segment spectrum band. Never warp or recolor it. Logo lockup tucked in a top corner.\n\nBelow the diagonal band, the five stacks arranged in a dynamic staggered TWO-COLUMN composition (not an even single list) — each as a compact block: a solid color square in its spectrum color, the STACK NAME in bold black caps, the two peptides in grey beneath. Stacks: RECOVERY / BPC-157 + TB-500 (green); VITALITY / CJC-1295 + Ipamorelin (blue); LONGEVITY / Epithalon + NAD+ (purple); LEAN / GLP-1 + AOD-9604 (gold); FOCUS / Semax + Selank (coral).\n\nNuLumin Bio-Sciences — clinical-modern research-peptide brand (Aesop x Apple x premium biotech). Palette from the signature 5-segment spectrum band ONLY: lavender purple #B89BE2, cornflower blue #6FA5DD, mint green #5DBD84, warm gold #F2B856, coral #E68B9A; wordmark black #1A1A1A; cream #F4F0E6 / clinical white. Refined, clinical, premium — NOT energy-drink, NOT cosmic.\nPremium print-ready 5:7 portrait flyer that doubles as a fridge-top sticker — clean, confident, strong hierarchy, generous margins, perfectly legible. All text crisp, correctly spelled, unwarped — real letterforms, no gibberish. Footer in small grey caps: \"RESEARCH PEPTIDES\".",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "NuLumin Assets/NuLumin-logo-nobg-black.png"
+    ],
+    "_meta": {
+      "name": "v10-bold-diagonal-type"
+    }
+  }
+]

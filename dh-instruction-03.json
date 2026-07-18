@@ -1,0 +1,8 @@
+[
+  {
+    "prompt": "Take the provided reference image and reproduce it PIXEL-FAITHFULLY — same two-hand composition, same tiny ribbed cap pinched by the upper hand, same tiny glass vial held by the lower hand, same asymmetric stepped rim on the vial, same hand poses, same scale, same framing, same clean black line-art on pure white background, same line weight. DO NOT change ANYTHING about the hands, the vial size, the vial proportions, the cap, the rim, the composition, or the style.\n\nTHE ONLY MODIFICATION: in the reference there are THREE horizontal ring lines on the vial body — a tight pair of two parallel rings (the intended double-line fill-mark) plus a THIRD lower ring beneath them that looks like a meniscus / liquid fill level. REMOVE the bottom (third) ring entirely. KEEP the upper pair of two parallel rings (the double-line fill-mark) exactly where they are. After this change the vial body should display ONLY the two parallel ring strokes of the fill-mark, with completely clean empty glass below them — no third ring, no meniscus, no hatching, no interior shading, no liquid level, nothing else inside the body. The vial must read as completely empty transparent glass below and above the double-line graduation mark.\n\nDo not modify anything else — no changes to the hands, the rim, the cap, the line weight, the background, the framing, or the position of the kept double-line. Pure black line-art on white, no color, no frame, no labels.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["generations/2026-05-11T23-39-24_Take_the_provided_reference_image_and_re.jpg"]
+  }
+]

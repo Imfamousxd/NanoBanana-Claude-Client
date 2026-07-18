@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "STYLE: editorial-cool premium product hero, 1:1 square, 4K. Dynamic orbiting composition. Magazine-ad energy.\n\nBACKDROP: smooth clean PURE WHITE backdrop with a subtle warm-gray paper texture. A faint atmospheric haze adds depth.\n\nHERO COMPOSITION — a photorealistic rendering of the Dialed Sea Moss Gummies jar (matching the provided reference) centered in the frame as the gravitational anchor. ORBITING the jar in a dynamic semi-circular arc are three PHOTOREALISTIC 3D-RENDERED INGREDIENTS, suspended in mid-air at different distances and angles (as if frozen mid-orbit around the jar):\n  • A bundle of fresh red-purple sea moss fronds suspended upper-left, slight motion blur\n  • A sliced burdock root suspended upper-right with the cut face catching light\n  • A small cluster of yellow dandelion flowers suspended at the lower-right\nThree dark sugar-dusted gummy CUBES are also suspended near the jar, frozen in motion. The whole composition feels DYNAMIC — like a freeze-frame of ingredients being poured into the jar. Subtle motion-blur streaks on the suspended objects.\n\nLIGHTING: bright clean studio light from upper-left + a soft warm gold rim-light from the right. The jar has a sharp clean specular gleam down its curved side. Each suspended object has its own clean rim-light.\n\nMINIMAL TEXT — only ONE bold headline rendered LARGE in deep ink-black typography at the bottom of the frame, centered:\n   'THREE BOTANICALS.'\nNothing else. NO sub-headline, NO labels on the ingredients, NO feature pills, NO icons.\n\nDESIGN: editorial dynamic freeze-frame composition · jar grounded center, ingredients orbiting · bold black headline · NO graphic-design noise · clean editorial product-page energy.\n\nRULES: all text cleanly spelled · 1:1 4K · pure white backdrop · no border/frame · text limited to single headline only · ingredients are photoreal 3D renders.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

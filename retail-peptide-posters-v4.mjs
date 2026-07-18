@@ -1,0 +1,121 @@
+#!/usr/bin/env node
+// Retail posters v4 — A/B/C redo with color accents + generic line-art vials.
+// Same clean cream/modern theme, just adding a tasteful color system and a
+// row of generic vials to each poster so they feel less "all-type."
+import fs from "fs";
+
+const SHARED_PALETTE = `LOCKED COLOR PALETTE — applies to ALL three posters in the set so they read as a unified collection:
+- Background: warm cream #F4F0E6 seamless with subtle paper-grain texture
+- Primary type: charcoal #1A1A1A
+- Kicker type: warm-gray #6B6258 at 75% opacity
+- Accent colors (use on the vial caps, divider trims, and small accent dots — same five colors used CONSISTENTLY across all three posters in left-to-right order):
+  1. Soft lavender #B89BE2
+  2. Cornflower blue #7A9BC1
+  3. Sage green #9BB389
+  4. Warm gold #D6B36A
+  5. Muted coral #C97B6E
+- Type system: clean modern sans-serif with TWO weights (heavy bold + matching thin/light)`;
+
+const VIAL_SPEC = `GENERIC VIAL ICONS — each vial: clean line-art outline only (no fill in the body), slim cylindrical research-vial shape with a small flat circular crimp top, simple double-line body outline in charcoal #1A1A1A. The CAP of each vial is rendered as a small solid filled rectangle on top of the body in its accent color (one of the five locked accent colors). The 5 vials in the row read left-to-right with the cap colors in the locked palette order: lavender → cornflower blue → sage green → warm gold → muted coral. Each vial sized identically, equally spaced. The vials feel like a refined editorial illustration set, NOT stock medical icons, NOT a photograph.`;
+
+const NEGATIVE = `Negative: no brand names, no logos, no specific brand identities, no photographs, no people, no QR codes, no neon, no busy backgrounds, no chrome, no AI-perfect splashes, no levitating products, no vintage flourishes, no charcoal/oxblood backgrounds, no Victorian filigree, no arrows, no chevrons.`;
+
+const jobs = [
+  // ── A v4 — Hero typographic + row of 5 vials ─────────────────────────────────
+  {
+    prompt: `Retail window poster — 2:3 portrait — generic non-branded signage announcing peptides are sold at this shop. Editorial typographic hero with a row of generic colored vials.
+
+${SHARED_PALETTE}
+
+LAYOUT:
+- Cream backdrop with fine paper-grain texture, slightly darker corners (~#E9E2D2)
+- TOP section (~22% from top): a small eyebrow line "·  AVAILABLE INSIDE  ·" tracked-out caps, charcoal #1A1A1A, ~30% canvas width centered
+- HERO HEADLINE: "PEPTIDES." set in the heavy bold sans-serif weight, ALL CAPS, charcoal #1A1A1A, spanning ~85% of canvas width, single line, tightly tracked, positioned at ~32% from top. Dominant typographic statement. The period a solid square dot.
+- Beneath the headline at ~46% from top: a single thin charcoal horizontal hairline rule, ~45% canvas width, centered
+- Beneath the hairline: "SOLD HERE" in the MATCHING THIN/LIGHT weight, ALL CAPS, charcoal #1A1A1A, generously tracked, ~32% canvas width centered
+
+- VIAL ROW at ~63% from top: a row of FIVE generic line-art vials evenly spaced horizontally, the row spans ~70% of canvas width centered. ${VIAL_SPEC} Each vial is ~9% canvas width tall and ~2.5% canvas width wide. Soft tiny contact shadows beneath each vial on the cream surface.
+
+- Below the vial row at ~80% from top: a small two-line kicker centered:
+  Line 1: "RESEARCH-GRADE PEPTIDES" tracked caps, warm-gray #6B6258 at 75% opacity
+  Line 2: "Ask a team member for selection" in matching thin sans-serif italic, warm-gray
+
+- Corner detail: tiny tracked badge "Nº 01" top-left in charcoal at 60% opacity, very small. Three small horizontal hairline stacks (Swiss-grid corner mark) bottom-right in charcoal at 60%.
+
+${NEGATIVE}`,
+    aspectRatio: "2:3",
+    imageSize: "4K",
+    refImages: [],
+    _meta: { name: "retail-peptide-v4-A-hero-with-vials" },
+  },
+
+  // ── B v4 — Vertical spine + colored vials in right column ────────────────────
+  {
+    prompt: `Retail window poster — 2:3 portrait — generic non-branded signage announcing peptides are sold at this shop. Editorial composition with a rotated vertical spine wordmark on the left and a colored vial row in the right column.
+
+${SHARED_PALETTE}
+
+LAYOUT:
+- Cream backdrop with fine paper-grain texture
+- LEFT 25% of the canvas: the wordmark "PEPTIDES" in heavy bold sans-serif weight, ALL CAPS, charcoal #1A1A1A, ROTATED 90° COUNTER-CLOCKWISE so it reads vertically from BOTTOM to TOP along the left edge. Letter-height spans ~75% canvas height. Generous letterspacing within the rotated word. Like a magazine spine.
+- A thin vertical charcoal hairline rule at ~28% from left, running from ~10% to ~90% canvas height, separating the rotated spine from the right column
+
+- RIGHT 65% of the canvas: editorial copy column, left-aligned within the column:
+  - Eyebrow at top of right column (~18% from top): "AVAILABLE INSIDE" tracked caps, warm-gray #6B6258 at 75% opacity
+  - Massive stacked two-line headline in the matching THIN/LIGHT weight, MIXED CASE:
+    Line 1: "Sold"
+    Line 2: "Here."
+    Charcoal #1A1A1A, each line ~50% of right-column width
+  - A thin horizontal charcoal hairline beneath the headline, ~38% canvas width, left-aligned in the right column
+
+- VIAL ROW at ~60% from top, sitting inside the right column: a horizontal row of FIVE generic line-art vials evenly spaced. ${VIAL_SPEC} The row spans ~50% of canvas width (sized to fit within the right column). Each vial ~7% canvas width tall.
+
+- Below the vial row: small kicker "RESEARCH-GRADE  ·  ASK A TEAM MEMBER" in tracked-out caps, warm-gray #6B6258 at 75% opacity, ~40% canvas width left-aligned in the right column
+
+- Lower-right corner detail: a tiny warm-gold #D6B36A solid circle (~10mm) and a small numeric tag "N° 02" in tracked caps charcoal at 65% opacity, very small
+
+${NEGATIVE}`,
+    aspectRatio: "2:3",
+    imageSize: "4K",
+    refImages: [],
+    _meta: { name: "retail-peptide-v4-B-spine-with-vials" },
+  },
+
+  // ── C v4 — Inverted charcoal panel with vials inside ─────────────────────────
+  {
+    prompt: `Retail window poster — 2:3 portrait — generic non-branded signage announcing peptides are sold at this shop. Bold inverted-color-block composition with colored vials inside the dark panel.
+
+${SHARED_PALETTE} — within the charcoal panel, vial body outlines are rendered in CREAM #F4F0E6 (inverted from the cream-canvas posters) while the vial CAPS retain the same five accent colors.
+
+LAYOUT:
+- Cream backdrop fills the entire canvas with subtle paper-grain texture and slightly darker corners
+- A SOLID CHARCOAL #1A1A1A rectangular panel sits centered on the canvas, occupying ~75% of canvas width and ~70% of canvas height — generous cream borders on all four sides (~12% left/right, ~15% top/bottom). Crisp sharp edges, no rounded corners, no drop shadow, no outline
+
+- INSIDE the charcoal panel, vertically centered, cream type block:
+  - Eyebrow at the top of the panel interior: "·  AVAILABLE INSIDE  ·" tracked-out caps, cream at 75% opacity, ~30% of panel width
+  - Massive headline "PEPTIDES" in heavy bold sans-serif weight, ALL CAPS, cream #F4F0E6, ~85% of panel width, single line, tightly tracked
+  - Thin cream horizontal hairline rule beneath, ~45% of panel width centered
+  - "SOLD HERE." in matching THIN/LIGHT weight, ALL CAPS, cream #F4F0E6, ~38% of panel width, generously tracked. Period a solid square dot.
+
+- VIAL ROW INSIDE the charcoal panel at ~65% from the panel's top: a row of FIVE generic line-art vials evenly spaced horizontally. Vial BODY outlines in CREAM #F4F0E6 double-line (since the background is charcoal, the line-art reads cream-on-charcoal). Vial CAPS in the locked accent colors left-to-right: lavender → cornflower → sage → gold → coral. Row spans ~55% of panel width.
+
+- Below the vial row inside the panel: small two-line kicker centered:
+  Line 1: "RESEARCH-GRADE" tracked caps cream at 70% opacity
+  Line 2: "Inquire inside for selection" in matching cream italic at 60%
+
+- OUTSIDE the charcoal panel, in the cream margins:
+  - TOP-LEFT corner: tiny tracked caps "Nº 03" in charcoal at 65% opacity
+  - TOP-RIGHT corner: a tiny warm-gold #D6B36A solid circle (~8mm)
+  - BOTTOM-LEFT corner: three small horizontal hairline stacks (Swiss-grid mark) in charcoal at 60%
+  - BOTTOM-RIGHT corner: tiny tracked caps "RETAIL  ·  WALK-IN" in charcoal at 60%
+
+${NEGATIVE}`,
+    aspectRatio: "2:3",
+    imageSize: "4K",
+    refImages: [],
+    _meta: { name: "retail-peptide-v4-C-panel-with-vials" },
+  },
+];
+
+fs.writeFileSync("retail-peptide-posters-v4.json", JSON.stringify(jobs, null, 2));
+console.log(`Wrote ${jobs.length} jobs`);

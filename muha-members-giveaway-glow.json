@@ -1,0 +1,12 @@
+[
+  {
+    "prompt": "Create a NEW Muha Meds 'Classified // Muha Members' giveaway poster, FRESH render (do NOT edit reference 1 — use it ONLY for layout reference). Aspect ratio 3:4 vertical / 2160×2880. Aesthetic: cinematic red/gold/cream/black palette of REFERENCE 2 (5-day countdown poster) — wet-Miami-pavement-at-night, warm amber/red atmospheric glow, deep blacks, gold star/border accents, condensed cream serif lettering, gold metallic finishes. NO Vice-City synthwave pink/teal neons.\n\nLayout (based on REFERENCE 1 brief):\n- Top-center: Muha 'M' gold logo from REFERENCE 3 (use as-is, gold metallic, prominently placed).\n- Beneath the logo: a row of small gold stars as a divider.\n- Cream subhead in bold condensed all-caps, between two horizontal gold rules: 'CLASSIFIED // MUHA MEMBERS'.\n- Hero headline stacked on TWO lines, big bold cream condensed serif:\n   • Line 1: '$25,000+'\n   • Line 2: 'AND DODGE CHALLENGER'\n  TYPOGRAPHY TREATMENT FOR THE HEADLINE — clean and crisp, with a SUBTLE soft warm-RED outer glow halo behind/around the lettering (warm crimson/amber at low intensity, ~25% opacity, gentle Gaussian blur, sized about 1× character height). Keep the lettering itself SMOOTH and clean — minimal/no grunge texture, no heavy distress, no torn edges, no scratched-up sandpaper look. Just clean cream condensed serif type with crisp edges and the soft red glow giving it presence. CRITICAL — do NOT use '$75,000+'. Do NOT use 'GIVEAWAY' alone. Do NOT include 'SRT' or '2025'. The exact headline text is '$25,000+ AND DODGE CHALLENGER'.\n- Below the headline: large hero red Dodge Challenger EXACTLY matching REFERENCE 2 (same body, lighting, wet-asphalt reflections, camera angle and stance). Do NOT show any 'SRT' badge prominently.\n- Background: cinematic Miami nighttime skyline silhouette with palm trees, deep blacks and warm red/amber neon glow, wet pavement reflections.\n\nUltra-sharp render. Headline must be CLEAN, smooth, minimal-texture cream serif lettering with a SUBTLE warm-red outer glow halo. No watermarks, no extra text. Headline reads exactly '$25,000+' / 'AND DODGE CHALLENGER'.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/Muha Members Giveaway.png",
+      "./Muha Giveaway Redesigned/5 day.png",
+      "./Muha Giveaway Assets/mm-gold.png"
+    ]
+  }
+]

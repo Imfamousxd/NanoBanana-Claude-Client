@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "STYLE: clean premium product-page hero shot on a PURE WHITE background, 1:1 square, 4K. Think Apple / Athletic Greens / Hims product page — generous whitespace, minimal text, the product is the hero.\n\nHERO: a photorealistic rendering of the Dialed Sea Moss Gummies jar (matching the provided reference — black plastic, teal/cyan + gold accents, front label fully legible 'DIALED SEA MOSS Gummies, 60 GUMMIES, DIETARY SUPPLEMENT', side panel 'MsB° Mineral Support Blend', gold lid, jar closed). The jar is the dominant element in the frame — placed slightly off-center (composition rule of thirds) with crisp clean studio lighting, soft natural shadow underneath, a subtle reflection on the surface. 3-4 dark sugar-dusted gummy CUBES scattered casually at the jar's base.\n\nMINIMAL TEXT — only ONE short headline. Place a single bold ALL-CAPS condensed-display headline in deep ink-black to the SIDE of the jar (NOT above, NOT below — alongside, in the empty whitespace):\n   'SIX BENEFITS.\n    ONE GUMMY.'\nNothing else. NO sub-headline. NO bottom strip. NO feature pills. NO icons. NO connector lines. NO bullet points. Just the jar, a few gummy cubes, and the two-line headline.\n\nDESIGN: pure clean white background · subtle warm-gray paper texture · only TEAL/CYAN + GOLD/YELLOW + deep INK-BLACK in the design (matching the jar) · bold ALL-CAPS condensed display sans-serif typeface · generous breathing room.\n\nRULES: all text cleanly spelled · 1:1 4K · no border/frame · text MUST be limited to the two-line headline only.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

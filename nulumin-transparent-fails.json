@@ -1,0 +1,8 @@
+[
+  {
+    "ref": "NuLumin Generated/White BG Finals/NuL_BPC_10mg_white.png",
+    "out": "NuLumin Generated/Transparent/NuL_BPC_10mg_transparent.png",
+    "sku": "BPC_10mg",
+    "err": "HTTP 400: {\n  \"error\": {\n    \"message\": \"Transparent background is not supported for this model.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"background\",\n    \"code\": \"invalid_value\"\n  }\n}"
+  }
+]

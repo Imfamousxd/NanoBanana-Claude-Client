@@ -1,0 +1,35 @@
+[
+  {
+    "prompt": "Square 1:1 editorial lifestyle photograph. A woman in dusty mauve athleisure pulling her hair into a ponytail before a morning run in a sunlit urban park, warm golden hour light. CAMERA-IN-MOTION blur — soft directional smear from a fast right-to-left lateral camera pan, slight Dutch tilt ~7° counter-clockwise, stronger blur intensity. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 9,
+      "variant": "v2"
+    }
+  },
+  {
+    "prompt": "Landscape 4:3 editorial lifestyle photograph. A young woman with auburn hair in deep olive joggers and a cream sweatshirt walking briskly along a quiet park path at dawn. CAMERA-IN-MOTION blur — soft directional smear from a fast right-to-left lateral camera pan, slight Dutch tilt ~7° counter-clockwise, stronger blur intensity. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 2,
+      "variant": "v2"
+    }
+  },
+  {
+    "prompt": "Landscape 4:3 editorial lifestyle photograph. A woman in a soft cream knit and dark joggers doing a gentle seated stretch on a wooden deck overlooking trees at sunrise, warm golden light. CAMERA-IN-MOTION blur — soft directional smear from a fast lateral left-to-right camera pan, slight Dutch tilt ~6° clockwise, moderate blur intensity. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 4,
+      "variant": "v1"
+    }
+  }
+]

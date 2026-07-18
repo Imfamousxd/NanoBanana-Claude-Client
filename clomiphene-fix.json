@@ -1,0 +1,29 @@
+[
+  {
+    "prompt": "Edit REFERENCE 2 by CHANGING ONLY the product name text on the capsule pill bottle's label from '5-Amino 1MQ' to 'Clomiphene Citrate'. The new product name 'Clomiphene Citrate' MUST appear on ONE SINGLE CENTERED LINE — DO NOT break the text onto two lines. If 'Clomiphene Citrate' doesn't fit at the same size as '5-Amino 1MQ', scale it down slightly in size to fit on one line, but keep it large, bold, and prominently legible. Single line only. Keep absolutely everything else in REFERENCE 2 IDENTICAL: same hand, same grip, same bottle, same scene, same lighting, same composition, same 5:4 framing. Same font family, weight, white color, centered alignment. The Dialed Health heartbeat/ECG logo above the product name stays exactly the same. No dosing, no other text on the label. REFERENCE 1 is for spelling reference only — do not copy its pixels. Photorealistic, seamless label text swap only, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Capsules/Clomiphene Citrate.jpg",
+      "./DH Shots/Capsules Lifestyle/5-Amino 1MQ/man-gym.jpg"
+    ]
+  },
+  {
+    "prompt": "Edit REFERENCE 2 by CHANGING ONLY the product name text on the capsule pill bottle's label from '5-Amino 1MQ' to 'Clomiphene Citrate'. The new product name 'Clomiphene Citrate' MUST appear on ONE SINGLE CENTERED LINE — DO NOT break the text onto two lines. If 'Clomiphene Citrate' doesn't fit at the same size as '5-Amino 1MQ', scale it down slightly in size to fit on one line, but keep it large, bold, and prominently legible. Single line only. Keep absolutely everything else in REFERENCE 2 IDENTICAL: same hand, same grip, same bottle, same scene, same lighting, same composition, same 5:4 framing. Same font family, weight, white color, centered alignment. The Dialed Health heartbeat/ECG logo above the product name stays exactly the same. No dosing, no other text on the label. REFERENCE 1 is for spelling reference only — do not copy its pixels. Photorealistic, seamless label text swap only, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Capsules/Clomiphene Citrate.jpg",
+      "./DH Shots/Capsules Lifestyle/5-Amino 1MQ/woman-gym.jpg"
+    ]
+  },
+  {
+    "prompt": "Edit REFERENCE 2 by CHANGING ONLY the product name text on the capsule pill bottle's label from '5-Amino 1MQ' to 'Clomiphene Citrate'. The new product name 'Clomiphene Citrate' MUST appear on ONE SINGLE CENTERED LINE — DO NOT break the text onto two lines. If 'Clomiphene Citrate' doesn't fit at the same size as '5-Amino 1MQ', scale it down slightly in size to fit on one line, but keep it large, bold, and prominently legible. Single line only. Keep absolutely everything else in REFERENCE 2 IDENTICAL: same hand, same grip, same bottle, same scene, same lighting, same composition, same 5:4 framing. Same font family, weight, white color, centered alignment. The Dialed Health heartbeat/ECG logo above the product name stays exactly the same. No dosing, no other text on the label. REFERENCE 1 is for spelling reference only — do not copy its pixels. Photorealistic, seamless label text swap only, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Capsules/Clomiphene Citrate.jpg",
+      "./DH Shots/Capsules Lifestyle/5-Amino 1MQ/woman-kitchen.jpg"
+    ]
+  }
+]

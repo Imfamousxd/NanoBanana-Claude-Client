@@ -1,0 +1,18 @@
+[
+  {
+    "prompt": "A cyberpunk city at sunset with neon lights reflecting on wet streets",
+    "aspectRatio": "16:9",
+    "imageSize": "2K"
+  },
+  {
+    "prompt": "A serene Japanese garden with cherry blossoms and a koi pond",
+    "aspectRatio": "4:3",
+    "imageSize": "2K"
+  },
+  {
+    "prompt": "Transform this image into a watercolor painting style",
+    "aspectRatio": "1:1",
+    "imageSize": "2K",
+    "refImages": ["./my-photo.png"]
+  }
+]

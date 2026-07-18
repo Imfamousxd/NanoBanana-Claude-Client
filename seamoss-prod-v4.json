@@ -1,0 +1,11 @@
+[
+  {
+    "prompt": "A clean premium wellness-brand PRODUCT SHOT on a PURE WHITE background, 1:1 square composition, 4K resolution. Hero product photography style with simple how-to elements. Generous breathing room.\n\nHERO SUBJECT — centered: photorealistic rendering of the Dialed Sea Moss Gummies jar (matching the provided reference — black plastic, teal/cyan + gold accents, front label fully legible, gold lid). TWO dark sugar-dusted gummy CUBES placed carefully in front of the jar at its base (representing the daily dose).\n\nFLOATING ELEMENTS — minimal supporting callouts:\n  • TOP — large bold ALL-CAPS headline in deep ink-black: '2 GUMMIES. EVERY DAY.' (bold condensed display sans-serif). A thin gold rule beneath. Tiny sub-line below: 'That's the whole routine.'\n  • Around the jar — three small chip-style routine callouts (one upper-left, one upper-right, one lower-right), each with a tiny flat teal icon and short ALL-CAPS bold label:\n     – upper-left: SUNRISE icon + 'MORNING OR ANYTIME'\n     – upper-right: WATER GLASS icon + 'WITH WATER'\n     – lower-right: CALENDAR icon + 'DAILY HABIT'\n  • BELOW the jar — a thin gold dotted timeline strip with four small milestone labels: 'DAY 1 · WEEK 1 · WEEK 2-4 · 4 WEEKS+' under tiny sub-labels in light-gray ('First taste · Improved digestion · Energy + glow · Sustained vitality').\n\nBOTTOM — tiny tagline in tracked light-gray all-caps: 'TASTY · CONVENIENT · EFFECTIVE'.\n\nDESIGN SYSTEM:\n  • Background: pure clean white with very subtle warm-gray paper texture.\n  • Accent colors: muted TEAL/CYAN, warm GOLD/YELLOW, deep INK-BLACK type, warm-gray sub-text.\n  • Typography: bold ALL-CAPS condensed display sans-serif for headlines/labels, clean modern sans-serif for body. NO script fonts.\n  • Icons: tiny flat outlined single-color teal/cyan.\n  • Mood: editorial wellness-brand hero shot — Athletic Greens / Hims / Apple product-page aesthetic.\n\nABSOLUTE RULES:\n  • All text MUST be cleanly spelled, no garbled letters, no AI-text artifacts.\n  • 1:1 square, 4K, pure white background, NO border, NO frame.\n  • Reference the provided image for brand color/type and jar appearance.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png",
+      "dialed moods seamoss/Seamoss_Front.png"
+    ]
+  }
+]

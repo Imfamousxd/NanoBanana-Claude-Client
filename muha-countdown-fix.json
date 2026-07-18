@@ -1,0 +1,46 @@
+[
+  {
+    "prompt": "REDESIGN this Muha Meds giveaway poster (REFERENCE 1) using the SAME modern editorial design language as REFERENCE 2 (the approved Muha Members Giveaway redesign). Match REFERENCE 2's: deep midnight-black background with red/gold/cream palette (NO green neon), muted Miami-at-night cityscape, wet asphalt foreground catching cinematic red/amber reflections, hero red Challenger SRT (TorRed/Octane Red, no stripes/decals), large polished gold Muha 'M' logo, modern display typography (clean white/cream ink with subtle red/amber outer glow), gold polished star icons, cinematic vignette + subtle film grain, premium magazine-cover finish.\n\nCOPY TEXT TO PRESERVE EXACTLY: '1 DAY LEFT' as the main hero headline, 'LAST CHANCE TO ENTER' as the smaller subhead below. FIVE stars at the top: ONE filled in polished gold, FOUR unfilled (outline-only). Muha 'M' logo present.\n\nSUBTEXT LOCK (must be IDENTICAL across all five countdown posters — 1/2/3/4/5 day): the subhead line ('LAST CHANCE TO ENTER') is rendered in a clean modern bold sans-serif, ALL CAPS, slightly condensed, generous-but-tight letter-spacing, color is warm cream-white (#F2EAD8-ish) with a subtle red/amber outer glow. Sized at approximately 30 percent of the width of the main headline above it. Crisp clean edges, NO 3D bevel, NO graffiti distress, NO outline-only treatment. Centered horizontally below the headline, sitting on the same horizontal axis as the other countdown posters.\n\nThe Challenger SRT is solid red, photorealistic. Aspect ratio 3:4, 2160×2880 / 4K, no extra text, no watermarks.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/1 day.png",
+      "./Muha Giveaway Redesigned/Muha Members Giveaway.png"
+    ]
+  },
+  {
+    "prompt": "REDESIGN this Muha Meds giveaway poster (REFERENCE 1) using the SAME modern editorial design language as REFERENCE 2. Match REFERENCE 2's: deep midnight-black background with red/gold/cream palette (NO green), muted Miami-at-night cityscape, wet asphalt, hero red Challenger SRT, gold Muha 'M' logo, modern display typography, gold star icons, cinematic vignette + film grain.\n\nCOPY TEXT TO PRESERVE EXACTLY: '2 DAYS LEFT' headline, 'ALMOST TIME' subhead. FIVE stars at top: TWO filled in gold, THREE unfilled (outline-only). Muha 'M' logo present.\n\nSUBTEXT LOCK (must be IDENTICAL across all five countdown posters — 1/2/3/4/5 day): the subhead line ('ALMOST TIME') is rendered in a clean modern bold sans-serif, ALL CAPS, slightly condensed, generous-but-tight letter-spacing, color is warm cream-white (#F2EAD8-ish) with a subtle red/amber outer glow. Sized at approximately 30 percent of the width of the main headline above it. Crisp clean edges, NO 3D bevel, NO graffiti distress, NO outline-only treatment. Centered horizontally below the headline, sitting on the same horizontal axis as the other countdown posters.\n\nThe Challenger SRT is solid red, photorealistic. Aspect ratio 3:4, 2160×2880 / 4K.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/2 day.png",
+      "./Muha Giveaway Redesigned/Muha Members Giveaway.png"
+    ]
+  },
+  {
+    "prompt": "REDESIGN this Muha Meds giveaway poster (REFERENCE 1) using the SAME modern editorial design language as REFERENCE 2. Match REFERENCE 2's: deep midnight-black background with red/gold/cream palette (NO green), muted Miami-at-night cityscape, wet asphalt, hero red Challenger SRT mid-burnout (smoke/burnout dynamic), gold Muha 'M' logo, modern display typography, gold star icons, cinematic vignette + film grain.\n\nCOPY TEXT TO PRESERVE EXACTLY: '3 DAYS LEFT' headline, 'NO TURNING BACK' subhead. FIVE stars at top: THREE filled in gold, TWO unfilled (outline-only). Muha 'M' logo present.\n\nSUBTEXT LOCK (must be IDENTICAL across all five countdown posters — 1/2/3/4/5 day): the subhead line ('NO TURNING BACK') is rendered in a clean modern bold sans-serif, ALL CAPS, slightly condensed, generous-but-tight letter-spacing, color is warm cream-white (#F2EAD8-ish) with a subtle red/amber outer glow. Sized at approximately 30 percent of the width of the main headline above it. Crisp clean edges, NO 3D bevel, NO graffiti distress, NO outline-only treatment. Centered horizontally below the headline.\n\nThe Challenger SRT is solid red, photorealistic. Aspect ratio 3:4, 2160×2880 / 4K.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/3 day.png",
+      "./Muha Giveaway Redesigned/Muha Members Giveaway.png"
+    ]
+  },
+  {
+    "prompt": "Create a NEW Muha Meds giveaway poster — a '4 DAYS LEFT' countdown — using the SAME modern editorial design language as REFERENCE 1 (the approved 5 DAYS LEFT poster). Match REFERENCE 1's: deep midnight-black background with red/gold/cream palette (NO green), muted Miami-at-night cityscape, wet asphalt foreground catching cinematic red/amber reflections, hero red Challenger SRT (TorRed/Octane Red, no stripes/decals), large polished gold Muha 'M' logo, modern display typography (clean white/cream ink with subtle red/amber outer glow), gold polished star icons, cinematic vignette + film grain. Composition, layout, headline placement, subtext placement, star placement, and Challenger pose should mirror REFERENCE 1 closely so the new 4-day poster fits seamlessly into the countdown set.\n\nCOPY TEXT (exact): '4 DAYS LEFT' as the main hero headline (modern bold display sans, all caps, white/cream with red/amber glow, same exact treatment as the headline in REFERENCE 1), and 'CLOSING IN' as the smaller subhead below it. FIVE stars at top: FOUR filled in polished gold, ONE unfilled (outline-only). Muha 'M' logo present.\n\nSUBTEXT LOCK (must be IDENTICAL across all five countdown posters — 1/2/3/4/5 day): the subhead line ('CLOSING IN') is rendered in a clean modern bold sans-serif, ALL CAPS, slightly condensed, generous-but-tight letter-spacing, color is warm cream-white (#F2EAD8-ish) with a subtle red/amber outer glow. Sized at approximately 30 percent of the width of the main headline above it. Crisp clean edges, NO 3D bevel, NO graffiti distress, NO outline-only treatment. Centered horizontally below the headline.\n\nThe Challenger SRT is solid red, photorealistic. Aspect ratio 3:4, 2160×2880 / 4K, no extra text, no watermarks.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Redesigned/5 day.png"
+    ]
+  },
+  {
+    "prompt": "REDESIGN this Muha Meds giveaway poster (REFERENCE 1) using the SAME modern editorial design language as REFERENCE 2. Match REFERENCE 2's: deep midnight-black background with red/gold/cream palette (NO green), muted Miami-at-night cityscape, wet asphalt, hero red Challenger SRT, gold Muha 'M' logo, modern display typography, gold star icons, cinematic vignette + film grain. Police lights / helicopters from REFERENCE 1 — keep them sparingly as warm amber/red flashes, NOT bright blue.\n\nCOPY TEXT TO PRESERVE EXACTLY: '5 DAYS LEFT' headline, 'THE HEAT IS ON' subhead. FIVE stars at top: ALL FIVE filled in polished gold. Muha 'M' logo present.\n\nSUBTEXT LOCK (must be IDENTICAL across all five countdown posters — 1/2/3/4/5 day): the subhead line ('THE HEAT IS ON') is rendered in a clean modern bold sans-serif, ALL CAPS, slightly condensed, generous-but-tight letter-spacing, color is warm cream-white (#F2EAD8-ish) with a subtle red/amber outer glow. Sized at approximately 30 percent of the width of the main headline above it. Crisp clean edges, NO 3D bevel, NO graffiti distress, NO outline-only treatment. Centered horizontally below the headline.\n\nThe Challenger SRT is solid red, photorealistic. Aspect ratio 3:4, 2160×2880 / 4K.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/5 day.png",
+      "./Muha Giveaway Redesigned/Muha Members Giveaway.png"
+    ]
+  }
+]

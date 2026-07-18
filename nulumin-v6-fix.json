@@ -1,0 +1,34 @@
+[
+  {
+    "prompt": "Clinical product-photography flyer on a soft light-grey studio backdrop, portrait 5:7.\n\nReproduce the supplied NuLumin logo (reference image 1) FAITHFULLY — bold \"Nu\" + thin \"Lumin\" wordmark, divider, \"BIO-SCIENCES\" tagline, vertical 5-segment spectrum band. Never warp it. Logo lockup centered at the top, with a small tracked-out header beneath: \"POPULAR STACKS\".\n\nAcross the middle, FIVE real NuLumin vials stand in a clean, evenly-spaced row, all the same size, lit identically with soft contact shadows. Each is a real NuLumin vial reproduced photographically: clear glass, a crimped aluminium cap, a white wraparound label with the small NuLumin lockup + a thin spectrum stripe down the label's left edge, the product name in black italic script, and the dose, soft studio lighting, gentle contact shadow on a seamless light-grey backdrop. Keep every label crisp and correctly spelled.\n\nCRITICAL COLOR RULE — each vial is color-coded to its stack, and that SAME color repeats in the dose text on its label, in the caption dot directly beneath it, AND that caption sits perfectly centered under its own vial. Lock this exact left-to-right mapping (cap color = dose color = dot color = caption):\n1. BPC-157 — MINT GREEN cap (#5DBD84) — caption \"RECOVERY\" with a green dot\n2. CJC-1295 — CORNFLOWER BLUE cap (#6FA5DD) — caption \"VITALITY\" with a blue dot\n3. Epithalon — LAVENDER PURPLE cap (#B89BE2) — caption \"LONGEVITY\" with a purple dot\n4. GLP-1 — WARM GOLD cap (#F2B856) — caption \"LEAN\" with a gold dot\n5. Semax — CORAL cap (#E68B9A) — caption \"FOCUS\" with a coral dot\n\nSo the colors run green, blue, purple, gold, coral left-to-right across BOTH the caps and the legend dots — every vial cap matches the dot in the caption right below it. Caption stack names in bold black caps. Footer in small grey caps: \"RESEARCH PEPTIDES\".\n\nNuLumin Bio-Sciences — clinical-modern research-peptide brand. Spectrum palette ONLY: lavender purple #B89BE2, cornflower blue #6FA5DD, mint green #5DBD84, warm gold #F2B856, coral #E68B9A; wordmark black #1A1A1A. Refined, clinical, premium.\nPremium, clean, generous margins, perfectly legible; all text crisp and correctly spelled, no gibberish, no warped letters.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "NuLumin Assets/NuLumin-logo-nobg-black.png",
+      "NuLumin Assets/NuL_BPC_10mg.png",
+      "NuLumin Assets/NuL_CFC_10mg.png",
+      "NuLumin Assets/NuL_Epithalon_10mg.png",
+      "NuLumin Assets/NuL_GLP1_20mg.png",
+      "NuLumin Assets/NuL_Semax_10mg.png"
+    ],
+    "_meta": {
+      "name": "v6-fix-take1"
+    }
+  },
+  {
+    "prompt": "Clinical product-photography flyer on a soft light-grey studio backdrop, portrait 5:7.\n\nReproduce the supplied NuLumin logo (reference image 1) FAITHFULLY — bold \"Nu\" + thin \"Lumin\" wordmark, divider, \"BIO-SCIENCES\" tagline, vertical 5-segment spectrum band. Never warp it. Logo lockup centered at the top, with a small tracked-out header beneath: \"POPULAR STACKS\".\n\nAcross the middle, FIVE real NuLumin vials stand in a clean, evenly-spaced row, all the same size, lit identically with soft contact shadows. Each is a real NuLumin vial reproduced photographically: clear glass, a crimped aluminium cap, a white wraparound label with the small NuLumin lockup + a thin spectrum stripe down the label's left edge, the product name in black italic script, and the dose, soft studio lighting, gentle contact shadow on a seamless light-grey backdrop. Keep every label crisp and correctly spelled.\n\nCRITICAL COLOR RULE — each vial is color-coded to its stack, and that SAME color repeats in the dose text on its label, in the caption dot directly beneath it, AND that caption sits perfectly centered under its own vial. Lock this exact left-to-right mapping (cap color = dose color = dot color = caption):\n1. BPC-157 — MINT GREEN cap (#5DBD84) — caption \"RECOVERY\" with a green dot\n2. CJC-1295 — CORNFLOWER BLUE cap (#6FA5DD) — caption \"VITALITY\" with a blue dot\n3. Epithalon — LAVENDER PURPLE cap (#B89BE2) — caption \"LONGEVITY\" with a purple dot\n4. GLP-1 — WARM GOLD cap (#F2B856) — caption \"LEAN\" with a gold dot\n5. Semax — CORAL cap (#E68B9A) — caption \"FOCUS\" with a coral dot\n\nSo the colors run green, blue, purple, gold, coral left-to-right across BOTH the caps and the legend dots — every vial cap matches the dot in the caption right below it. Caption stack names in bold black caps. Footer in small grey caps: \"RESEARCH PEPTIDES\".\n\nNuLumin Bio-Sciences — clinical-modern research-peptide brand. Spectrum palette ONLY: lavender purple #B89BE2, cornflower blue #6FA5DD, mint green #5DBD84, warm gold #F2B856, coral #E68B9A; wordmark black #1A1A1A. Refined, clinical, premium.\nPremium, clean, generous margins, perfectly legible; all text crisp and correctly spelled, no gibberish, no warped letters.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "NuLumin Assets/NuLumin-logo-nobg-black.png",
+      "NuLumin Assets/NuL_BPC_10mg.png",
+      "NuLumin Assets/NuL_CFC_10mg.png",
+      "NuLumin Assets/NuL_Epithalon_10mg.png",
+      "NuLumin Assets/NuL_GLP1_20mg.png",
+      "NuLumin Assets/NuL_Semax_10mg.png"
+    ],
+    "_meta": {
+      "name": "v6-fix-take2"
+    }
+  }
+]

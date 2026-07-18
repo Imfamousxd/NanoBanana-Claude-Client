@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "A candid hyper-realistic 1:1 lifestyle photograph — looks like an UNSTAGED iPhone snap of a bathroom counter mid-morning routine. NO PEOPLE in frame, mid-moment lived-in feel.\n\nSCENE: a white-marble bathroom counter mid-routine, water droplets visible, slightly cluttered with real morning items. The Dialed Sea Moss Gummies jar (matching the provided reference image — black plastic, teal/cyan + gold/yellow accents, GOLD LID slightly ajar, jar standing upright, front label legible) sits in the UPPER-RIGHT third of the frame. Around it: a damp white face towel partially crumpled, an electric toothbrush in a glass cup with droplets on the glass, a small open glass dropper bottle of face serum with a few drops on the counter, an open round canister of moisturizer with the lid set beside it, a fresh-cut eucalyptus sprig laying casually, water splashes on the marble.\n\nLIGHTING: bright clean natural daylight pouring from a tall window on the upper-left of the frame, naturally lighting the counter scene. The jar's curved black plastic catches a soft daylight sheen.\n\nFRAMING: the jar is NOT centered as a hero — it's part of the morning-routine scene, off-center in the upper-right. Slight 3/4 angle from above (looking down at the counter while standing). Some items cropped at edges. Camera tilt 2-3° off-axis. Candid iPhone-snap feel.\n\nSTYLE: hyper-realistic candid photography, slight grain, natural soft shadows, real-life lived-in routine composition. NO AI artifacts, NO text overlays, NO graphic elements, NO hands, NO people.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "prompt": "Edit REFERENCE 1 by changing ONLY the line break in the product name text on the vial's label. The product name 'AOD-9604/MOTS-C/Tesamorelin' must now be broken onto TWO centered lines, breaking AFTER 'MOTS-C/' — so line 1 reads 'AOD-9604/MOTS-C/' and line 2 reads 'Tesamorelin', both centered, same font, same weight, same white color, same kerning, same overall visual prominence. Keep everything else IDENTICAL: same hand, same grip, same vial, same Dialed Health ECG logo on top of the label, same scene and background, same camera angle, same composition, same lighting, same depth of field, same color grade, same 5:4 framing. Do NOT alter the vial, hand, or scene — only the text layout changes to two lines. Photorealistic, seamless label text relayout only, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/AOD-9604-MOTS-C-Tesamorelin/man-gym.jpg"]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 to CLEAN UP the vial — remove any minor scratches, smudges, scuff lines, wear marks, dust specks, small imperfections, or blemishes on the glass, cap, or label surfaces, so the vial looks like a pristine, brand-new, unblemished product. Keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand, skin, grip, fingers, vial shape and size, cap, label text and logo, label position, scene, background, top-down camera angle, composition, lighting (direction, color temperature, contrast, shadows, specular highlights), depth of field, color grade, 5:4 framing. The cleaned-up vial must STILL look naturally lit by the scene — the bottle remains a scene-integrated object, not studio-clean or artificially bright. Photorealistic, seamless product retouch only, scene-integrated lighting preserved, editorial lifestyle quality, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/BPC-157-KPV-TB500/man-kitchen.jpg"]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 to CLEAN UP the vial — remove any minor scratches, smudges, scuff lines, wear marks, dust specks, small imperfections, or blemishes on the glass, cap, or label surfaces, so the vial looks like a pristine, brand-new, unblemished product. Keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand, skin, grip, fingers, vial shape and size, cap, label text and logo, label position, scene, background, top-down camera angle, composition, lighting (direction, color temperature, contrast, shadows, specular highlights), depth of field, color grade, 5:4 framing. The cleaned-up vial must STILL look naturally lit by the scene — the bottle remains a scene-integrated object, not studio-clean or artificially bright. Photorealistic, seamless product retouch only, scene-integrated lighting preserved, editorial lifestyle quality, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/BPC-157-KPV-TB500/man-track.jpg"]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 to CLEAN UP the vial — remove any minor scratches, smudges, scuff lines, wear marks, dust specks, small imperfections, or blemishes on the glass, cap, or label surfaces, so the vial looks like a pristine, brand-new, unblemished product. Keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand, skin, grip, fingers, vial shape and size, cap, label text and logo, label position, scene, background, top-down camera angle, composition, lighting (direction, color temperature, contrast, shadows, specular highlights), depth of field, color grade, 5:4 framing. The cleaned-up vial must STILL look naturally lit by the scene — the bottle remains a scene-integrated object, not studio-clean or artificially bright. Photorealistic, seamless product retouch only, scene-integrated lighting preserved, editorial lifestyle quality, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/BPC-157-KPV-TB500/woman-kitchen.jpg"]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 to CLEAN UP the vial — remove any minor scratches, smudges, scuff lines, wear marks, dust specks, small imperfections, or blemishes on the glass, cap, or label surfaces, so the vial looks like a pristine, brand-new, unblemished product. Keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand, skin, grip, fingers, vial shape and size, cap, label text and logo, label position, scene, background, top-down camera angle, composition, lighting (direction, color temperature, contrast, shadows, specular highlights), depth of field, color grade, 5:4 framing. The cleaned-up vial must STILL look naturally lit by the scene — the bottle remains a scene-integrated object, not studio-clean or artificially bright. Photorealistic, seamless product retouch only, scene-integrated lighting preserved, editorial lifestyle quality, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/BPC-157-KPV-TB500/woman-track.jpg"]
+  }
+]

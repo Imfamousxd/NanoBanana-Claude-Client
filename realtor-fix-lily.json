@@ -1,0 +1,35 @@
+[
+  {
+    "prompt": "Reproduce this realtor flier keeping the person, photo, layout, colors, graphics, the big \"Lily\" name and the \"REALTOR\" title EXACTLY the same. The ONLY change: in the reference, the email's domain is written in CAPITAL letters — you MUST re-render the whole email in lowercase. Replace it so the email reads, in all-lowercase letters with no capitals and no spaces: \"lily@puroratehq.com\". Do NOT copy the capital letters from the reference; the domain \"puroratehq\" must be lowercase. Keep the little envelope icon and the purple contact bar.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "Realtor Fliers/lily.png"
+    ],
+    "_meta": {
+      "name": "lily-fix2-take1"
+    }
+  },
+  {
+    "prompt": "Reproduce this realtor flier keeping the person, photo, layout, colors, graphics, the big \"Lily\" name and the \"REALTOR\" title EXACTLY the same. The ONLY change: in the reference, the email's domain is written in CAPITAL letters — you MUST re-render the whole email in lowercase. Replace it so the email reads, in all-lowercase letters with no capitals and no spaces: \"lily@puroratehq.com\". Do NOT copy the capital letters from the reference; the domain \"puroratehq\" must be lowercase. Keep the little envelope icon and the purple contact bar.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "Realtor Fliers/lily.png"
+    ],
+    "_meta": {
+      "name": "lily-fix2-take2"
+    }
+  },
+  {
+    "prompt": "Reproduce this realtor flier keeping the person, photo, layout, colors, graphics, the big \"Lily\" name and the \"REALTOR\" title EXACTLY the same. The ONLY change: in the reference, the email's domain is written in CAPITAL letters — you MUST re-render the whole email in lowercase. Replace it so the email reads, in all-lowercase letters with no capitals and no spaces: \"lily@puroratehq.com\". Do NOT copy the capital letters from the reference; the domain \"puroratehq\" must be lowercase. Keep the little envelope icon and the purple contact bar.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "Realtor Fliers/lily.png"
+    ],
+    "_meta": {
+      "name": "lily-fix2-take3"
+    }
+  }
+]

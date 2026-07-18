@@ -1,0 +1,19 @@
+[
+  {
+    "prompt": "A premium minimal wellness-app graphic, vertical 4:5. Soft smooth light periwinkle-blue gradient background (pale, airy, premium, gentle depth). Centered: ONLY a single simple thin-line rounded chat / message comment-bubble icon in clean medium blue, with a small subtle four-point sparkle accent at its top-right corner. NOTHING else — NO play button, NO words, NO text, NO letters, NO logos. Just the clean comment-bubble icon centered with lots of calm negative space. Image only.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K"
+  },
+  {
+    "prompt": "Use the attached image as a close STYLE and QUALITY reference. Create one single FULL-BODY (head to feet, standing, front-facing) MASCULINE figure in this exact aesthetic: a luminous translucent human form glowing with warm GOLDEN light, serene calm face with eyes gently closed, a detailed glowing anatomical BRAIN at the top of the head, a bright luminous DNA double-helix running straight down the center of the body, and elegant translucent botanical LEAVES with fine glowing golden leaf-vein / nerve networks branching symmetrically through the whole body and limbs. Soft warm energy filaments radiate around the figure into a dreamy warm TAN / golden-beige gradient background, fine grain, ethereal long-exposure glow. Premium, refined, mystical-wellness. Match the reference's golden palette, glow, leaf-vein detail and serene mood. No text, no logos. Centered full-body 1:1 square composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/brain_dna_ref21.jpeg"]
+  },
+  {
+    "prompt": "Use the attached image as a close STYLE and QUALITY reference. Create one single MASCULINE figure framed from the WAIST UP (a closer torso shot — head, chest, shoulders, arms and torso to the waist, NOT full body, larger in frame), front-facing, in this exact aesthetic: a luminous translucent human form glowing with warm GOLDEN light, serene calm face with eyes gently closed, a detailed glowing anatomical BRAIN at the top of the head, a bright luminous DNA double-helix running down the center of the chest and torso, and elegant translucent botanical LEAVES with fine glowing golden leaf-vein / nerve networks branching symmetrically across the chest, shoulders and arms. Soft warm energy filaments radiate around the figure into a dreamy warm TAN / golden-beige gradient background, fine grain, ethereal long-exposure glow. Premium, refined, mystical-wellness. Match the reference's golden palette, glow, leaf-vein detail and serene mood. No text, no logos. 1:1 square, waist-up composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/brain_dna_ref21.jpeg"]
+  }
+]

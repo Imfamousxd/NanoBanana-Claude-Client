@@ -1,0 +1,14 @@
+[
+  {
+    "prompt": "Recreate this exact flavor-badge logo, preserving the SAME composition: a navy shield with a gold engraved border, the words 'CANARY ISLAND PUNCH' in bold coral-orange letters with the small engraved sunrise/sun-rays motif below them, and the round medallion above showing a warm tropical sunset over the sea. The ONLY change: dramatically TONE DOWN and simplify the fruit on top — it is currently far too busy and crowded. Replace the overloaded fruit explosion with a clean, restrained arrangement of just a few hero pieces: ONE orange slice, a small cluster of 3-4 blueberries and 2 raspberries, and a single passion-fruit half — neatly grouped, NOT spilling everywhere. Remove almost all of the red juice splashes (keep at most a couple of subtle drips). Lots of negative space, elegant and premium, less is more. Keep the same coral/navy/gold color palette. Pure solid white background, centered contained badge with margin.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["euro Music theme/Lux Icons/Canary_Island_Punch_v6.png"]
+  },
+  {
+    "prompt": "Recreate this exact flavor-badge logo, preserving the SAME composition and color palette: a navy shield with a gold engraved border, the words 'CANARY ISLAND PUNCH' in bold coral-orange letters with the small engraved sunrise/sun-rays motif below, and the round sunset-over-the-sea medallion above. The ONLY change: drastically reduce the fruit — the current version is way too busy. Show only a MINIMAL, tasteful fruit accent: a single orange slice and two or three berries tucked at one side of the medallion, with NO juice splashes at all. Mostly clean medallion and shield, very calm and uncluttered, lots of negative space, sophisticated and minimal. Pure solid white background, centered contained badge with margin.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["euro Music theme/Lux Icons/Canary_Island_Punch_v6.png"]
+  }
+]

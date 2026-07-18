@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "Edit REFERENCE 1 by REMOVING the small cut / wound / scar / red mark on the man's hand or fingers — heal the skin so it looks clean, natural, and un-injured. Make ONLY that change and keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand, same skin tone, same grip, same finger positions, same oral drop bottle (same shape, same label, same scale, same orientation), same gym scene and background, same top-down overhead camera angle, same tight close-up crop, same composition, same lighting (direction, color temperature, contrast, shadows), same depth of field, same color grade, same 5:4 framing, same mood. The final image should be IDENTICAL to REFERENCE 1 except the skin on the hand is healthy and unblemished. Do NOT alter the label text, do NOT alter the bottle, do NOT alter the scene, do NOT alter the grip. Photorealistic, seamless skin retouch only.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Oral Drops Lifestyle/Semaglutide/man-gym.jpg"
+    ]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 by REMOVING the small cut / wound / scar / red mark on the man's hand or fingers — heal the skin so it looks clean, natural, and un-injured. Make ONLY that change and keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand, same skin tone, same grip, same finger positions, same oral drop bottle (same shape, same label, same scale, same orientation), same outdoor track scene and background, same top-down overhead camera angle, same tight close-up crop, same composition, same lighting (direction, color temperature, contrast, shadows), same depth of field, same color grade, same 5:4 framing, same mood. The final image should be IDENTICAL to REFERENCE 1 except the skin on the hand is healthy and unblemished. Do NOT alter the label text, do NOT alter the bottle, do NOT alter the scene, do NOT alter the grip. Photorealistic, seamless skin retouch only.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Oral Drops Lifestyle/Semaglutide/man-track.jpg"
+    ]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 by REMOVING the small cut / wound / scar / red mark on the man's hand or fingers — heal the skin so it looks clean, natural, and un-injured. Make ONLY that change and keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand, same skin tone, same grip, same finger positions, same oral drop bottle (same shape, same label, same scale, same orientation), same indoor kitchen scene and background, same top-down overhead camera angle, same tight close-up crop, same composition, same lighting (direction, color temperature, contrast, shadows), same depth of field, same color grade, same 5:4 framing, same mood. The final image should be IDENTICAL to REFERENCE 1 except the skin on the hand is healthy and unblemished. Do NOT alter the label text, do NOT alter the bottle, do NOT alter the scene, do NOT alter the grip. Photorealistic, seamless skin retouch only.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Oral Drops Lifestyle/Semaglutide/man-kitchen.jpg"
+    ]
+  }
+]

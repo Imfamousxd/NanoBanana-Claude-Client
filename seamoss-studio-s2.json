@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "STYLE: a clean premium studio product shot, 1:1 square, 4K. Classic e-commerce / catalog hero — pure white seamless background, soft studio lighting, no text, no graphic elements, no extra props.\n\nSUBJECT: a photorealistic rendering of the Dialed Sea Moss Gummies jar shown in 3/4 ANGLE VIEW (matching the FIRST provided reference image — jar rotated ~25-30° to the LEFT so the front face is mostly visible AND the side panel showing the vertical teal 'MsB° Mineral Support Blend' strip + the chevron-callout infographic strip on the side is partially readable). Black plastic jar, teal/cyan + gold/yellow accents, GOLD LID on top, jar CLOSED, front label fully legible 'DIALED SEA MOSS Gummies, 60 GUMMIES, DIETARY SUPPLEMENT'. Camera at eye-level, jar centered.\n\nLIGHTING: clean balanced studio lighting — soft large key-light from upper-left grazing across the front face and side panel, soft fill from the right, a subtle warm rim-light tracing the right edge. Clean specular highlight on the curved glossy black plastic. The gold lid's curved edge catches a clean highlight. Both label panels (front and side) read sharply. Soft natural drop-shadow under the jar.\n\nBACKGROUND: pure clean WHITE seamless backdrop with very subtle cool-to-warm gradient, no texture.\n\nNO TEXT, NO graphic overlays, NO scattered gummies, NO props, NO ingredients, NO callouts, NO icons.\n\nSTYLE: hyper-realistic product photography, 85mm look, f/8 sharp focus across the jar, crystal-clear label legibility on BOTH front and side panels, professional commercial product shot, magazine-print quality. Clean and elegant.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_45.png"
+    ]
+  }
+]

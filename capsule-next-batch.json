@@ -1,0 +1,11 @@
+[
+  {
+    "prompt": "Edit REFERENCE 2 by CHANGING ONLY the product name text on the capsule pill bottle's label from '5-Amino 1MQ' to 'BPC-157/TB500'. Make ONLY that text change and keep absolutely everything else in REFERENCE 2 IDENTICAL: same hand (same gender, skin tone, nails if present), same palm-wrap grip with all four fingers on one side and thumb on the other, same finger positions, same capsule pill bottle (same clear glass body, same brushed silver screw cap, same white capsules visible inside, same matte black label, same hand-sized scale, same orientation), same scene and background, same top-down overhead camera angle, same tight close-up crop, same composition, same lighting, same depth of field, same color grade, same 5:4 framing, same mood. Do NOT alter the hand, pose, grip, bottle, or scene.\n\nTEXT SIZE (CRITICAL): match the EXACT text size, weight, and proportion of the '5-Amino 1MQ' product name as rendered in REFERENCE 2. Do NOT scale the new text up or down — it must occupy the same approximate vertical height and visual weight on the label as the original text did. If 'BPC-157/TB500' is longer than '5-Amino 1MQ', it may break cleanly onto two centered lines at natural slash boundaries, but the per-character size stays the same as REFERENCE 2. Same font family, same weight, same white color, same centered alignment, same kerning. The goal is a plug-in text swap, not a resize.\n\nThe Dialed Health heartbeat/ECG logo above the product name stays exactly the same. That is ALL on the label — no dosing, no mg, no mcg, no count, no Rx, no QR, no barcode, no extra text. Do NOT invent new label text.\n\nREFERENCE 1 is the 'BPC-157/TB500' studio product shot. Use it ONLY to confirm the correct spelling of the product name. Do NOT copy pixels from REFERENCE 1 — the bottle should remain the exact bottle from REFERENCE 2, just with updated label text. Photorealistic, seamless label text swap only, editorial lifestyle quality, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Capsules/BPC-157-TB500.jpg",
+      "./DH Shots/Capsules Lifestyle/5-Amino 1MQ/woman-kitchen.jpg"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+// gpt-image-2 batch — Aloha Passion Rush fruit-drama character
+import fs from "fs";
+
+const STYLE_REF = "AI Fruit VIdeos Muha/Character Example/character to recreate.png";
+const FLAVOR_REF = "AI Fruit VIdeos Muha/AI fruit Muha Flavors/ALOHA PASSION RUSH.png";
+
+const PROMPT = `Reference 1 is the LOCKED VISUAL STYLE TARGET — match its exact aesthetic: 3D Pixar/animation-quality rendered fruit-characters with realistic textures, expressive cartoon faces with huge emotive eyes, hands and arms with clothing, dramatic moody cinematic lighting with warm orange/red key light and deep shadow falloff, soap-opera-drama emotional energy, telenovela-meme aesthetic, shallow depth of field with soft bokeh background. Same render quality, same lighting, same emotional theatrical drama.
+
+Reference 2 is the FLAVOR TARGET — "Aloha Passion Rush." This determines the character's fruit identity and tropical themed color palette: passion fruit (purple-yellow), hibiscus flowers (vibrant pink/red), palm leaves, tropical Hawaiian sunset vibes, warm reds/oranges/yellows.
+
+SCENE — single 9:16 portrait composition with ONE hero character (face/upper-body framing):
+
+THE CHARACTER: a single Aloha-Passion-Rush themed fruit-character, full Pixar 3D render. The character's HEAD is a large stylized PASSION FRUIT with a leafy green crown of hibiscus flowers (vibrant red-orange hibiscus blooms peeking from the top). Skin texture: pearly purple-yellow passion fruit exterior with subtle dimples and freckles, glossy with light reflection. Large expressive EYES (almond-shaped, glossy, exaggerated cartoon scale 1.4x normal Pixar eye size), thick eyelashes, glossy plump lips. Wearing a casual cropped HAWAIIAN SHIRT (open-collared, tropical floral print in warm coral/red/yellow palette) over a fitted tank. Around her neck: a small hibiscus-flower lei.
+
+THE DRAMATIC EMOTION: she has a dramatically WOUNDED / BETRAYED expression — eyes wide and glossy with the verge of tears welling but not falling, lower lip quivering, one hand raised to her chest in shock, head turned slightly to the side as if just hearing devastating news. Telenovela "I can't believe this is happening" energy.
+
+BACKGROUND: a moody Hawaiian sunset — soft warm orange-red gradient sky, soft palm tree silhouettes blurred in shallow depth of field, sparkle light specks, atmospheric haze. The lighting is cinematic warm key light from the upper right (golden orange) with deep moody shadow on the left, rim light catching the hibiscus crown.
+
+COMPOSITION: 9:16 vertical portrait orientation, character framed from chest up filling ~75% of frame height. Hyper-detailed Pixar/Cinema 4D/Octane-quality 3D render. Cinematic shallow depth of field. Warm cinematic color grade.
+
+Negative: not flat/2D, must be 3D Pixar style, dramatic emotional expression required, no text or graphics, no logos, no other foreground characters.`;
+
+const jobs = [
+  {
+    prompt: PROMPT,
+    aspectRatio: "9:16",
+    imageSize: "4K",
+    refImages: [STYLE_REF, FLAVOR_REF],
+    _meta: { name: "muha-fruit-aloha-passion-GPT" },
+  },
+];
+
+fs.writeFileSync("muha-fruit-aloha-passion-gpt.json", JSON.stringify(jobs, null, 2));
+console.log(`Wrote ${jobs.length} job`);

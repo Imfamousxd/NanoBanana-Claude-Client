@@ -1,0 +1,8 @@
+[
+  {
+    "prompt": "A flavor-badge logo in the EXACT same style as the reference image: glossy, candy-coated 3D inflated bubble lettering in bright cherry-red with a soft white outline glow and a few small 4-point sparkle stars. Change the wording to read 'PACHA CHERRY' on two stacked lines — 'PACHA' on the top line, 'CHERRY' on the bottom line — same puffy glossy red balloon-letter treatment, same outline and sparkles. ABOVE the wordmark, add a pair of iconic twin cherries: two glossy realistic cherry-red cherries hanging from a shared green stem with a small leaf, rendered in the same rich glossy 3D style, sitting centered above the text. Cohesive candy-glossy look throughout. Pure solid white background, centered contained lockup with margin.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["euro Music theme/strain refs/ibizade_cherry_style_ref.png"]
+  }
+]

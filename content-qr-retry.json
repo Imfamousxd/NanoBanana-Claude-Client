@@ -1,0 +1,20 @@
+[
+  {
+    "prompt": "Edit REFERENCE 2 by REPLACING the QR code shown inside the white QR card with REFERENCE 1's QR pattern. The QR encodes https://apps.apple.com/us/app/muha-members/id6743873537 and MUST scan correctly. Copy REFERENCE 1's pattern faithfully — every black square module on white background — preserve module size and spacing, no smoothing, no anti-aliasing of the modules, no rounded corners on individual modules. Crisp pure-black-on-pure-white pixel grid. Position and size of the QR card stay identical to REFERENCE 2. Keep absolutely everything else IDENTICAL: background, palette, typography, Challenger, Muha 'M' logo, headlines, subheads, three step phones, layout, lighting, aspect ratio (2:3 / 2048×3072). Photorealistic, no extra text.",
+    "aspectRatio": "2:3",
+    "imageSize": "4K",
+    "refImages": [
+      "./muha-app-qr.png",
+      "./generations/2026-04-28T03-06-39_Edit_REFERENCE_2_existing_redesigned_co.png"
+    ]
+  },
+  {
+    "prompt": "Edit REFERENCE 2 by REPLACING the QR code shown inside the white QR card with REFERENCE 1's QR pattern. The QR encodes https://apps.apple.com/us/app/muha-members/id6743873537 and MUST scan correctly. Copy REFERENCE 1's pattern faithfully — every black square module on white background — preserve module size and spacing, no smoothing, no anti-aliasing of the modules, no rounded corners on individual modules. Crisp pure-black-on-pure-white pixel grid. Position and size of the QR card stay identical to REFERENCE 2. Keep absolutely everything else IDENTICAL: background, palette, typography, Challenger, Muha 'M' logo, headlines, subheads, three step phones, layout, lighting, aspect ratio (9:16 / 2160×3840). Photorealistic, no extra text.",
+    "aspectRatio": "9:16",
+    "imageSize": "4K",
+    "refImages": [
+      "./muha-app-qr.png",
+      "./generations/2026-04-28T03-12-35_Edit_REFERENCE_2_existing_redesigned_co.png"
+    ]
+  }
+]

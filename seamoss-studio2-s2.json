@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "STYLE: a hyper-realistic premium studio product shot, 1:1 square, 4K. Editorial / commercial-catalog style — clean studio environment with refined accent lighting, no text.\n\nSUBJECT: a photorealistic rendering of the Dialed Sea Moss Gummies jar shown in 3/4 ANGLE VIEW rotated ~25-30° to the LEFT (so the front face is mostly visible AND the side panel with vertical teal 'MsB° Mineral Support Blend' strip + chevron-callout infographic is partially readable). Matching the provided reference — black plastic jar, teal/cyan + gold/yellow accents, GOLD LID on top, jar CLOSED, front label fully legible. The jar occupies roughly the central 50-55% of the frame height — ZOOMED OUT with generous breathing room. NOT a tight crop.\n\nLIGHTING — refined accent lighting: soft large key-light from upper-left grazing across the front face and side panel, soft fill from the right, COOL BLUE rim-light tracing the LEFT edge, WARM GOLD rim-light tracing the RIGHT edge — duotone dimensionality. Sharp clean specular highlight on the curved glossy black plastic. Gold lid's curved edge catches a warm gleam. Both label panels (front and side) read crisply.\n\nBACKDROP: pure WHITE seamless studio backdrop — no gradient, no horizon line, no atmospheric haze. The jar sits on a clean even WHITE surface with only a SOFT NATURAL DROP-SHADOW directly beneath it (no glossy mirror reflection, no warm cream-gray tones). The scene around the product stays pure white throughout.\n\nNO TEXT, NO graphic overlays, NO scattered gummies, NO props.\n\nSTYLE: hyper-realistic product photography, 100mm macro look, f/8 sharp focus, crystal-clear label legibility on BOTH front and side panels, editorial commercial product shot. Hyper-detailed plastic textures with realistic light absorption + glossy reflections. Magazine-print quality.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_45.png"
+    ]
+  }
+]

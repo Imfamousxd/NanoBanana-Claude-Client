@@ -1,0 +1,518 @@
+{
+  "weight-loss": [
+    {
+      "subject": "heavier-set Black woman, late 30s, soft round build, hair tied back and frizzing with sweat",
+      "scene": "pounding hard on a gym treadmill, arms pumping, jowls and belly bouncing with each heavy stride, sweat sheeting down her flushed face under harsh fluorescent light",
+      "mode": "blur",
+      "aspect": "4:5",
+      "ref": "r06"
+    },
+    {
+      "subject": "overweight white man, mid 40s, big belly straining a soaked grey t-shirt, balding and beet-red",
+      "scene": "jogging up a tree-lined park path at golden dawn, gut bouncing, mouth gaping for air, the whole frame smearing into warm streaks as the camera pans alongside him",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r10"
+    },
+    {
+      "subject": "out-of-shape Latina woman, early 30s, thick-waisted and curvy, drenched ponytail",
+      "scene": "doing frantic jumping jacks on a bedroom floor in front of a phone propped against the wall, arms and legs splayed in mid-jump, belly and chest jiggling, dim lamp light",
+      "mode": "blur",
+      "aspect": "1:1",
+      "ref": "r04"
+    },
+    {
+      "subject": "heavy-set South Asian man, late 20s, soft doughy midsection, sweat-plastered hair",
+      "scene": "hands on his knees gasping at the edge of a spin bike, face contorted and dripping, a single bead of sweat caught falling from his nose, tack-sharp in muted grey gym light",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r06"
+    },
+    {
+      "subject": "plus-size white woman, 50s, broad and stocky, short grey-streaked hair stuck to her forehead",
+      "scene": "grinding out fast skips on a jump rope in a cluttered garage, the rope a blurred arc, her whole soft frame mid-bounce, dust and sweat catching slanted afternoon light",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r03"
+    },
+    {
+      "subject": "overweight East Asian man, mid 30s, round belly, soaked navy tank top, towel around neck",
+      "scene": "climbing concrete stadium stairs two at a time, thighs straining, leaning forward and breathing hard, the steps and railing smearing past as the camera tracks up beside him at dawn",
+      "mode": "blur",
+      "aspect": "4:5",
+      "ref": "r10"
+    },
+    {
+      "subject": "heavier Black man, early 40s, thick build with a soft gut, glistening shaved head",
+      "scene": "frozen at the bottom of a burpee on a living-room rug, arms shaking under his weight, face an inch from the floor and dripping sweat onto the carpet, tack-sharp in moody low light",
+      "mode": "frozen",
+      "aspect": "1:1",
+      "ref": "r04"
+    },
+    {
+      "subject": "out-of-shape white woman, late 20s, soft round build, flushed cheeks and damp bangs",
+      "scene": "swinging a kettlebell hard in a home garage gym, the bell a blurred streak at the top of the arc, her whole body in the explosive hip drive, sweat flying, muted daylight from an open door",
+      "mode": "blur",
+      "aspect": "4:5",
+      "ref": "r12"
+    },
+    {
+      "subject": "heavy-set Middle Eastern woman, mid 30s, curvy and thick-armed, hijab pushed back from a sweat-soaked hairline",
+      "scene": "hauling hard on a rowing machine, mouth open mid-pull, the cable and seat smearing along its track as she drives back, harsh gym strip-lighting overhead",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r06"
+    },
+    {
+      "subject": "overweight Latino man, late 40s, big belly and thick neck, sweat-soaked grey hoodie",
+      "scene": "jogging hard along a quiet suburban sidewalk at first light, breath fogging, gut bouncing, every part of the frame streaking into a near-abstract earthy smear from the camera pan",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r10"
+    },
+    {
+      "subject": "plus-size Black woman, early 20s, soft full figure, braids whipping with sweat at the ends",
+      "scene": "mid-air in a high-knee sprint drill in a bright gym, knee driving up, face screwed in effort, the whole scene dissolving into a bright near-abstract motion smear",
+      "mode": "blur",
+      "aspect": "1:1",
+      "ref": "r09"
+    },
+    {
+      "subject": "heavier white man, mid 50s, large soft belly, red sweaty face and grey stubble",
+      "scene": "collapsed hands-on-knees beside a treadmill, a towel draped over his neck, chest heaving, sweat dripping from his chin in a tack-sharp frozen moment under soft muted daylight",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r12"
+    }
+  ],
+  "recovery": [
+    {
+      "subject": "mid-30s East Asian man, lean muscular build",
+      "scene": "He drives a percussion massage gun deep into his own quad, the attachment visibly compressing the muscle as his hand grips the device, mid-session on a clinic treatment bench under cool overhead light",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r06"
+    },
+    {
+      "subject": "late-20s Black woman, athletic build",
+      "scene": "She braces a foam roller under her IT band on a studio floor, weight on her forearms, face tensed mid-roll as morning light rakes across the wood",
+      "mode": "frozen",
+      "aspect": "4:3",
+      "ref": "r10"
+    },
+    {
+      "subject": "early-40s white male sports therapist working on a Latina runner in her 30s",
+      "scene": "The therapist's thumbs dig into the runner's calf in a deep-tissue stroke, her skin blanching under the pressure, both caught mid-grimace in a dim treatment room",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r04"
+    },
+    {
+      "subject": "early-30s South Asian woman, slim flexible build",
+      "scene": "She lunges into a deep dynamic hip-flexor stretch arms swinging overhead, her trailing leg and arms smearing into heavy motion blur across a sunlit studio",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r03"
+    },
+    {
+      "subject": "mid-30s Black male physiotherapist mobilizing a white male client's shoulder",
+      "scene": "The physio cradles and rotates the client's arm through a joint-mobilization arc, both sets of hands locked on the shoulder in a softly-lit grey clinic",
+      "mode": "frozen",
+      "aspect": "1:1",
+      "ref": "r06"
+    },
+    {
+      "subject": "late-20s white man, broad-shouldered build",
+      "scene": "He sits zipped into inflated compression recovery boots up to the thighs, hands resting on the air-pumped sleeves as he reclines on a couch in soft afternoon light",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r12"
+    },
+    {
+      "subject": "early-30s mixed-race woman, toned build",
+      "scene": "She submerges to the shoulders in an icy cold plunge tub, water beading on her skin, breath caught and jaw clenched in the moody half-dark of a recovery room",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r04"
+    },
+    {
+      "subject": "mid-40s Middle Eastern man, sturdy build",
+      "scene": "He sits on a cedar sauna bench leaning forward elbows on knees, sweat sheeting down his back as warm golden light glows through the slatted wood",
+      "mode": "frozen",
+      "aspect": "4:3",
+      "ref": "r03"
+    },
+    {
+      "subject": "late-20s Black man, very athletic build",
+      "scene": "He steps from a steaming hot tub straight toward a cold plunge mid-contrast-therapy, torso and arms blurring into a near-abstract smear of steam and motion",
+      "mode": "blur",
+      "aspect": "1:1",
+      "ref": "r09"
+    },
+    {
+      "subject": "early-30s white woman, fit build",
+      "scene": "She rolls a lacrosse ball under her bare foot against the floor for plantar release, toes splayed and weight pressing down, in muted soft daylight at home",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r12"
+    },
+    {
+      "subject": "mid-30s Latino man, stocky build",
+      "scene": "He flows through a deep lunge-to-thoracic-rotation mobility drill, torso twisting and trailing arm sweeping into motion blur across a dawn-lit garage gym",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r10"
+    },
+    {
+      "subject": "late-30s Asian woman physiotherapist stretching a Black female athlete in her 20s",
+      "scene": "The therapist presses the athlete's extended leg into a deep assisted hamstring stretch, one hand on the heel one on the knee, both focused in a calm grey-lit clinic",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r06"
+    }
+  ],
+  "longevity": [
+    {
+      "subject": "a mid-30s Black couple and their two young kids, all athletic-casual in fleeces and trail shoes",
+      "scene": "the family crests a rocky ridgeline trail single-file, the dad turning to grin back as morning sun rakes across the switchback behind them",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r10"
+    },
+    {
+      "subject": "a fit Latina mom in her early 40s carrying her giggling 4-year-old son on her shoulders",
+      "scene": "she strides fast down a dappled forest path with the toddler's hands gripping her forehead, dust and leaf-light streaking past in the slow-shutter smear",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r03"
+    },
+    {
+      "subject": "a white dad in his late 30s and his 8-year-old daughter, both on mountain bikes with knee pads",
+      "scene": "they pedal hard along a gravel lakeside track, wheels and spokes dissolving into a horizontal blur as the kid stands on her pedals laughing",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r09"
+    },
+    {
+      "subject": "a multi-generational South Asian family \u2014 fit grandfather in his 60s, mid-30s parents, two kids",
+      "scene": "all five kneel together planting seedlings in a sunny backyard vegetable garden, the grandfather pressing soil firm while a child waters with a tin can",
+      "mode": "frozen",
+      "aspect": "1:1",
+      "ref": "r12"
+    },
+    {
+      "subject": "a young East Asian mother in her early 30s and her barefoot toddler daughter",
+      "scene": "they walk hand-in-hand along the wet tideline at dawn, the child mid-stomp in a shallow wave as foam scatters and muted earthy light glows behind them",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r10"
+    },
+    {
+      "subject": "a mixed-race family of four in a canoe \u2014 dad paddling stern, mom bow, two kids in life vests between",
+      "scene": "the canoe glides across a glassy morning lake, the dad's paddle slashing a long blurred arc of water droplets as everyone leans into the stroke",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r03"
+    },
+    {
+      "subject": "a Black dad in his late 30s and his two sons crouched at the edge of a calm river",
+      "scene": "the older boy snaps his wrist sidearm to skip a flat stone, caught tack-sharp mid-release with the ripple just starting and warm side-light on their faces",
+      "mode": "frozen",
+      "aspect": "1:1",
+      "ref": "r12"
+    },
+    {
+      "subject": "a fit white couple in their 40s chasing their three kids across a green park meadow",
+      "scene": "the whole pack sprints flat-out toward a picnic blanket, legs and a flying frisbee streaking into motion blur under bright midday haze",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r09"
+    },
+    {
+      "subject": "a Middle Eastern mom in her mid-30s and her 6-year-old daughter on a wooded forest path",
+      "scene": "they amble slowly beneath tall pines, the girl mid-skip reaching to brush a fern, soft muted grey-green light filtering through the canopy",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r06"
+    },
+    {
+      "subject": "a young Filipino dad in his early 30s and his 5-year-old son flying a kite",
+      "scene": "the boy runs full-tilt across a windswept coastal bluff at golden hour, the kite string taut and his small body smeared into a warm blurred dash",
+      "mode": "blur",
+      "aspect": "4:5",
+      "ref": "r03"
+    },
+    {
+      "subject": "a multi-generational Latino family \u2014 fit grandmother in her 60s, parents, three kids \u2014 at a picnic",
+      "scene": "they sit cross-legged on a blanket under a big oak, the grandmother caught mid-laugh passing a bowl of fruit as a kid reaches in, dappled soft daylight",
+      "mode": "frozen",
+      "aspect": "4:3",
+      "ref": "r12"
+    },
+    {
+      "subject": "a white mom in her late 30s and her two daughters walking a misty meadow trail at dawn",
+      "scene": "they stroll three-abreast through dew-soaked tall grass, the youngest swinging her mom's arm, muted earthy dawn fog softening the whole frame",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r10"
+    }
+  ],
+  "performance": [
+    {
+      "subject": "Black male sprinter, early 20s, lean explosive build, shaved head",
+      "scene": "Exploding out of the starting blocks on an outdoor red tartan track, spikes biting, arms driving, body smeared with forward speed as the gun fires at golden hour",
+      "mode": "blur",
+      "aspect": "4:5",
+      "ref": "r03"
+    },
+    {
+      "subject": "Latina basketball guard, mid-20s, athletic muscular frame, ponytail",
+      "scene": "Driving the lane and rising for a layup under arena lights, defender trailing, ball cocked back, sneakers leaving the hardwood in a fast-break blur",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r04"
+    },
+    {
+      "subject": "White male competitive swimmer, late 20s, broad-shouldered V-taper, cap and goggles",
+      "scene": "Mid-freestyle stroke racing down a pool lane, arm slicing entry, water exploding off his shoulder and churning in a chaotic spray of bubbles and chop",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r06"
+    },
+    {
+      "subject": "East Asian female tennis player, early 20s, slim wiry athletic build",
+      "scene": "Snapping into a serve on a hard court, racquet whipping up to meet the toss at full extension, back arched, body torqued and tense in the sun",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r12"
+    },
+    {
+      "subject": "Two male boxers sparring, mixed Black and Hispanic, mid-20s, cut muscular builds, gloves and headgear",
+      "scene": "A straight right connecting in a dim gritty boxing gym, sweat flicking off the head, gloves and shoulders smearing with the speed of the exchange under a single hanging bulb",
+      "mode": "blur",
+      "aspect": "1:1",
+      "ref": "r04"
+    },
+    {
+      "subject": "Black female soccer striker, late 20s, powerful athletic legs, braided hair",
+      "scene": "Striking a volley on a floodlit grass pitch at dusk, plant foot anchored, kicking leg whipping through the ball as turf and water spray off her cleat",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r10"
+    },
+    {
+      "subject": "White male rock climber, early 30s, lean sinewy build, chalked hands",
+      "scene": "Reaching for a crimp high on a sunlit granite wall, fingertips loaded, calves taut, body pressed tight against the rock at dawn with the valley below",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r10"
+    },
+    {
+      "subject": "Pacific Islander male surfer, mid-20s, broad muscular build, wet hair",
+      "scene": "Carving hard off the lip of a breaking wave, board spraying a fan of seawater, whole frame blurred with the speed of the turn in bright midday glare",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r09"
+    },
+    {
+      "subject": "Female Olympic weightlifter, mid-20s, South Asian, dense powerful compact build, lifting belt",
+      "scene": "Catching a clean in the front rack inside a chalk-hazed gym, barbell loaded and bending, face strained, quads firing as she drives up out of the squat",
+      "mode": "frozen",
+      "aspect": "1:1",
+      "ref": "r06"
+    },
+    {
+      "subject": "Black male road cyclist, early 30s, lean climber's build, aero helmet and kit",
+      "scene": "Standing on the pedals sprinting up a country road climb at dawn, bike rocking side to side, legs and wheels smeared into a blur of forward effort",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r10"
+    },
+    {
+      "subject": "White female gymnast, late teens to early 20s, compact muscular build, leotard and chalk",
+      "scene": "Twisting mid-air at the apex of a vault inside a competition hall, body coiled and inverted, limbs streaking with rotation against the bright arena floor",
+      "mode": "blur",
+      "aspect": "4:5",
+      "ref": "r09"
+    },
+    {
+      "subject": "Mixed-race female muay thai fighter, mid-20s, lean conditioned athletic build, wrapped shins",
+      "scene": "Landing a high roundhouse kick on a heavy bag in a moody training gym, hip rotated through, shin connecting, leg whipping into a smear of speed",
+      "mode": "blur",
+      "aspect": "1:1",
+      "ref": "r04"
+    }
+  ],
+  "cognitive": [
+    {
+      "subject": "East Asian woman, early 20s, slim, glasses, hair in a messy bun",
+      "scene": "Hunched over an open textbook at a cluttered dorm desk, highlighter capped in her teeth, eyes locked on a dense paragraph under a warm desk lamp at night",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r04"
+    },
+    {
+      "subject": "Black man, late 30s, broad build, short beard",
+      "scene": "Mid-move at a wooden chessboard, fingertips poised on a knight he's about to lift, brow furrowed as he reads the board in soft grey window light",
+      "mode": "frozen",
+      "aspect": "4:3",
+      "ref": "r06"
+    },
+    {
+      "subject": "White woman, late 60s, silver hair, cardigan",
+      "scene": "Reading a thick hardcover intently by a single pooled lamplight in a dim living room, finger tracing the line, face glowing in the warm bulb",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r04"
+    },
+    {
+      "subject": "Latino man, mid 20s, lean, stubble",
+      "scene": "Annotating a printed manuscript in the margins with a fine pen, head tilted, fully absorbed at a sunlit cafe table by the window",
+      "mode": "frozen",
+      "aspect": "4:3",
+      "ref": "r12"
+    },
+    {
+      "subject": "South Asian woman, early 30s, curvy, long dark hair",
+      "scene": "Face lit only by a laptop screen in a dark room, typing fast and staring hard at the display, deep focused work late into the night",
+      "mode": "frozen",
+      "aspect": "1:1",
+      "ref": "r04"
+    },
+    {
+      "subject": "Mixed-race man, early 20s, athletic, headphones around neck",
+      "scene": "Buried among stacks of library books at a long oak table, pen pressed to lower lip, scanning a page under tall green-shaded reading lamps",
+      "mode": "frozen",
+      "aspect": "4:3",
+      "ref": "r06"
+    },
+    {
+      "subject": "White man, mid 40s, heavier-set, rolled sleeves",
+      "scene": "At a glass whiteboard mid-equation, marker squeaking, hand a faint motion smear as he writes a long line of math, the rest of him sharp and intent",
+      "mode": "blur",
+      "aspect": "4:5",
+      "ref": "r09"
+    },
+    {
+      "subject": "Black woman, late 20s, slim, box braids",
+      "scene": "Bent over a folded newspaper crossword at a kitchen table, pencil hovering over a square, eyes narrowed in concentration in muted morning light",
+      "mode": "frozen",
+      "aspect": "1:1",
+      "ref": "r10"
+    },
+    {
+      "subject": "Middle Eastern man, early 20s, slight build",
+      "scene": "Mid-exam in a quiet hall, head down over the answer booklet, gripping the pen tight, totally locked in under flat grey daylight from high windows",
+      "mode": "frozen",
+      "aspect": "4:3",
+      "ref": "r06"
+    },
+    {
+      "subject": "East Asian man, early 30s, fit, neat short hair",
+      "scene": "Solving equations with pencil on graph paper at a desk, knuckles to temple, deep in thought, a steaming coffee mug beside the scattered sheets",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r12"
+    },
+    {
+      "subject": "White woman, mid 20s, freckles, oversized sweater",
+      "scene": "Cradling a coffee mug with both hands, staring off mid-thought over a notebook in a warm golden-hour cafe window, idea forming",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r03"
+    },
+    {
+      "subject": "Latina woman, late teens, petite frame, scrunchie",
+      "scene": "Hand flying across a notebook in rapid note-taking, the writing arm a soft slow-shutter blur while her concentrated face stays sharp at a dawn-lit desk",
+      "mode": "blur",
+      "aspect": "1:1",
+      "ref": "r10"
+    }
+  ],
+  "sexual-health": [
+    {
+      "subject": "fit Black couple in their late 20s, both lean and athletic, in matching loungewear",
+      "scene": "she sprints laughing down a sunlit hallway while he chases close behind, both mid-stride and grinning over a shoulder",
+      "mode": "blur",
+      "aspect": "4:5",
+      "ref": "r03"
+    },
+    {
+      "subject": "toned white couple early 30s in t-shirts and underwear",
+      "scene": "both leap onto a rumpled bed mid-bounce, knees bent and arms flailing, caught howling with laughter in a dim bedroom",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r04"
+    },
+    {
+      "subject": "athletic Latina woman and her fit East Asian partner, mid-20s, in soft cotton loungewear",
+      "scene": "he dips her low in a close slow-dance in the living room, her head tilted back laughing as her hair swings",
+      "mode": "frozen",
+      "aspect": "4:3",
+      "ref": "r06"
+    },
+    {
+      "subject": "muscular mixed-race man giving a piggyback to his fit blonde partner, both late 20s in tank tops",
+      "scene": "he spins her in a fast circle in the living room, her legs and arms streaking as she shrieks with delight",
+      "mode": "blur",
+      "aspect": "1:1",
+      "ref": "r09"
+    },
+    {
+      "subject": "fit South Asian couple in their 30s in aprons over loungewear",
+      "scene": "they play-bump hips at the kitchen counter mid-cook, both cracking up as a wooden spoon hangs forgotten in his hand",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r12"
+    },
+    {
+      "subject": "lean Black woman and toned white man, early 20s, in oversized tees",
+      "scene": "a full pillow fight erupts on the bed, feathers and pillows blurring mid-swing as both duck and laugh",
+      "mode": "blur",
+      "aspect": "4:3",
+      "ref": "r03"
+    },
+    {
+      "subject": "athletic Middle Eastern couple mid-30s in soft knit loungewear",
+      "scene": "she tickles his ribs on the couch and he doubles over laughing, both caught in a tangle of arms in soft grey light",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r06"
+    },
+    {
+      "subject": "fit Filipino man wrapping his arms around his toned partner from behind, both late 20s in joggers and crop tops",
+      "scene": "he hugs her from behind at the kitchen island and she laughs, tilting back into him as she stirs a bowl",
+      "mode": "frozen",
+      "aspect": "1:1",
+      "ref": "r10"
+    },
+    {
+      "subject": "toned white couple in their 30s in pajama shorts and tanks",
+      "scene": "they tumble together onto a deep sofa in a playful collapse, limbs blurring as both burst out laughing",
+      "mode": "blur",
+      "aspect": "4:5",
+      "ref": "r04"
+    },
+    {
+      "subject": "athletic Black man and fit Latina woman, late 20s, in matching grey loungewear",
+      "scene": "they lounge tangled together on the rug in dawn light, legs intertwined and foreheads close, laughing softly",
+      "mode": "frozen",
+      "aspect": "4:3",
+      "ref": "r10"
+    },
+    {
+      "subject": "lean Korean couple early 20s barefoot in socks and tees",
+      "scene": "they slide and dance across a wood floor, socked feet skidding and arms swinging in a fast spin, motion smearing",
+      "mode": "blur",
+      "aspect": "1:1",
+      "ref": "r09"
+    },
+    {
+      "subject": "fit interracial couple, athletic Indian woman and toned white man, mid-30s in soft daylight loungewear",
+      "scene": "she hops onto his back for a playful spin near the window, both laughing as warm afternoon light catches them",
+      "mode": "frozen",
+      "aspect": "4:5",
+      "ref": "r12"
+    }
+  ]
+}

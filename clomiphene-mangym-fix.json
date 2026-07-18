@@ -1,0 +1,11 @@
+[
+  {
+    "prompt": "Edit REFERENCE 2 by CHANGING ONLY the product name text on the capsule pill bottle's label from '5-Amino 1MQ' to 'Clomiphene Citrate'. CRITICAL CASING: the product name must be rendered exactly as 'Clomiphene Citrate' — with a capital C on 'Clomiphene', a capital C on 'Citrate', and all OTHER letters in lowercase. DO NOT render it in all caps (NOT 'CLOMIPHENE CITRATE'). DO NOT render it in all lowercase. It must be proper title case: 'Clomiphene Citrate', matching the casing style of '5-Amino 1MQ' on REFERENCE 2's label (a mix of uppercase and lowercase/numbers). The new text 'Clomiphene Citrate' MUST appear on ONE SINGLE CENTERED LINE — do not break onto two lines. If it doesn't fit at the same size, scale it down slightly to fit on one line while staying large, bold, and prominently legible. Keep absolutely everything else in REFERENCE 2 IDENTICAL: same hand, same grip, same bottle, same scene, same lighting, same composition, same 5:4 framing. Same font family, weight, white color, centered alignment. The Dialed Health heartbeat/ECG logo above the product name stays exactly the same. No dosing, no other text on the label. REFERENCE 1 is for spelling/casing reference only — do not copy its pixels. Photorealistic, seamless label text swap only, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Capsules/Clomiphene Citrate.jpg",
+      "./DH Shots/Capsules Lifestyle/5-Amino 1MQ/man-gym.jpg"
+    ]
+  }
+]

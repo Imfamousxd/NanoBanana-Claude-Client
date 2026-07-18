@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+// Recreate "Secure The Bag" but with natural night palette from new bg ref
+// (navy sky + saturated red car + motion-blur asphalt) instead of red-mono filter.
+import fs from "fs";
+
+const jobs = [
+  {
+    prompt: `Recreate this 9:16 vertical poster graphic for the Muha Members giveaway. Title text and lockup must match the original "Secure The Bag" graphic (reference 2) EXACTLY in typography, layout, and styling. Background must use the NATURAL color palette from reference 1 (NOT a red monochrome filter).
+
+COMPOSITION — the logo + headline + subhead lockup MUST be PERFECTLY CENTERED both HORIZONTALLY AND VERTICALLY on the 9:16 canvas. The entire stacked lockup (logo + headline + subhead) sits in the dead middle of the frame — equal empty space above the logo and below the subhead pill, equal empty space to the left and right. The vertical midpoint of the headline "SECURE THE BAG" should land at roughly the 50% vertical mark of the canvas. Stack top-to-bottom within this centered block:
+1. Muha "MM" gold/cream monogram logo (reference 3) — horizontally centered, warm cream + soft red rim glow, LARGE — roughly 28% of frame height
+2. Headline "SECURE THE BAG" — two lines stacked, BOTH lines individually centered horizontally on the canvas, VERY LARGE bold condensed sans-serif (matching reference 2 exactly). Each headline line should span ~85% of the canvas width, warm cream off-white fill with subtle letterpress/printed texture, slight forward italic lean, warm red outer glow halo. Letters tightly tracked.
+3. Subhead "WIN THE GRAND PRIZE" — single line, horizontally centered on the canvas, bold cream sans-serif, inside a thin red rounded-rectangle outline pill (the pill itself centered). The pill should span ~70% of the canvas width, also with soft red glow.
+
+BACKGROUND (this is the key change — use reference 1's natural colors, not a uniform red tint):
+- Low-angle hero shot of a red Dodge Challenger's front wheel and side, photographed at night
+- Deep navy/midnight blue sky above with faint stars (NOT red sky)
+- Car body is deep saturated red with realistic highlights and reflections, side mirror clearly red
+- A bright warm street-light flare in the upper-left background
+- Black tire / black wheel in the lower foreground, large and dominant
+- Asphalt in the lower portion with motion-blur streaks suggesting speed
+- Overall mood: cinematic night drag-strip, moody but with COLOR (red car, dark navy sky, white light flare, black tire), NOT a red wash
+
+Style: high-end social campaign poster, GTA Vice City night-photography vibe, crisp typography, premium finish. No watermarks, no GTA logo, no extra text.`,
+    aspectRatio: "9:16",
+    imageSize: "4K",
+    refImages: [
+      "Muha Giveaway Assets/_internal/secure-bag-bg-ref.png",
+      "Muha Giveaway Redesigned/Approved/Secure The Bag.png",
+      "Muha Giveaway Assets/mm-gold.png",
+    ],
+    _meta: { name: "secure-the-bag-redo" },
+  },
+];
+
+fs.writeFileSync("muha-secure-bag-redo.json", JSON.stringify(jobs, null, 2));
+console.log(`Wrote ${jobs.length} job to muha-secure-bag-redo.json`);

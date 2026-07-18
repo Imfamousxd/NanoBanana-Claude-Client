@@ -1,0 +1,128 @@
+[
+  {
+    "prompt": "nh-ghk-cu-10ml-white: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Output an image that is IDENTICAL to the reference in every way EXCEPT one tiny text change described below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale — the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name, the same 'xx mg' dose placeholder, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting, reflections and contact shadow.\n\nBACKGROUND: a perfectly clean, pure white (#FFFFFF) seamless studio background — absolutely NO smudges, grey patches, dust, marks, gradients, or stray shadows anywhere in the frame except the soft contact shadow directly beneath the vial. Keep it as clean as, or cleaner than, the reference.\n\nTHE ONLY CHANGE: on the dose-and-volume line, change the volume from '5 ml' to '10 ml', so the line reads 'xx mg · 10 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '·' separator as the reference — only the number changes from 5 to 10. The vial itself does NOT get bigger; only the printed text changes.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/GHK-Cu/GHK-Cu_5ml_white.jpg"
+    ],
+    "_meta": {
+      "peptide": "GHK-Cu",
+      "size": "10ml",
+      "color": "white",
+      "tag": "nh-ghk-cu-10ml-white"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10ml-purple: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Output an image that is IDENTICAL to the reference in every way EXCEPT one tiny text change described below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale — the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name, the same 'xx mg' dose placeholder, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting, reflections and contact shadow.\n\nBACKGROUND: a perfectly clean, pure white (#FFFFFF) seamless studio background — absolutely NO smudges, grey patches, dust, marks, gradients, or stray shadows anywhere in the frame except the soft contact shadow directly beneath the vial. Keep it as clean as, or cleaner than, the reference.\n\nTHE ONLY CHANGE: on the dose-and-volume line, change the volume from '5 ml' to '10 ml', so the line reads 'xx mg · 10 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '·' separator as the reference — only the number changes from 5 to 10. The vial itself does NOT get bigger; only the printed text changes.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_5ml_purple.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "size": "10ml",
+      "color": "purple",
+      "tag": "nh-bpc-157-tb500-10ml-purple"
+    }
+  },
+  {
+    "prompt": "nh-glp-3-r-10ml-navy: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Output an image that is IDENTICAL to the reference in every way EXCEPT one tiny text change described below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale — the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name, the same 'xx mg' dose placeholder, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting, reflections and contact shadow.\n\nBACKGROUND: a perfectly clean, pure white (#FFFFFF) seamless studio background — absolutely NO smudges, grey patches, dust, marks, gradients, or stray shadows anywhere in the frame except the soft contact shadow directly beneath the vial. Keep it as clean as, or cleaner than, the reference.\n\nTHE ONLY CHANGE: on the dose-and-volume line, change the volume from '5 ml' to '10 ml', so the line reads 'xx mg · 10 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '·' separator as the reference — only the number changes from 5 to 10. The vial itself does NOT get bigger; only the printed text changes.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/GLP-3 (R)/GLP-3_(R)_5ml_navy.jpg"
+    ],
+    "_meta": {
+      "peptide": "GLP-3 (R)",
+      "size": "10ml",
+      "color": "navy",
+      "tag": "nh-glp-3-r-10ml-navy"
+    }
+  },
+  {
+    "prompt": "nh-semax-10ml-yellow: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Output an image that is IDENTICAL to the reference in every way EXCEPT one tiny text change described below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale — the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name, the same 'xx mg' dose placeholder, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting, reflections and contact shadow.\n\nBACKGROUND: a perfectly clean, pure white (#FFFFFF) seamless studio background — absolutely NO smudges, grey patches, dust, marks, gradients, or stray shadows anywhere in the frame except the soft contact shadow directly beneath the vial. Keep it as clean as, or cleaner than, the reference.\n\nTHE ONLY CHANGE: on the dose-and-volume line, change the volume from '5 ml' to '10 ml', so the line reads 'xx mg · 10 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '·' separator as the reference — only the number changes from 5 to 10. The vial itself does NOT get bigger; only the printed text changes.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/Semax/Semax_5ml_yellow.jpg"
+    ],
+    "_meta": {
+      "peptide": "Semax",
+      "size": "10ml",
+      "color": "yellow",
+      "tag": "nh-semax-10ml-yellow"
+    }
+  },
+  {
+    "prompt": "nh-sermorelin-10ml-navy: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Output an image that is IDENTICAL to the reference in every way EXCEPT one tiny text change described below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale — the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name, the same 'xx mg' dose placeholder, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting, reflections and contact shadow.\n\nBACKGROUND: a perfectly clean, pure white (#FFFFFF) seamless studio background — absolutely NO smudges, grey patches, dust, marks, gradients, or stray shadows anywhere in the frame except the soft contact shadow directly beneath the vial. Keep it as clean as, or cleaner than, the reference.\n\nTHE ONLY CHANGE: on the dose-and-volume line, change the volume from '5 ml' to '10 ml', so the line reads 'xx mg · 10 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '·' separator as the reference — only the number changes from 5 to 10. The vial itself does NOT get bigger; only the printed text changes.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/Sermorelin/Sermorelin_5ml_navy.jpg"
+    ],
+    "_meta": {
+      "peptide": "Sermorelin",
+      "size": "10ml",
+      "color": "navy",
+      "tag": "nh-sermorelin-10ml-navy"
+    }
+  },
+  {
+    "prompt": "nh-ipamorelin-10ml-pink: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Output an image that is IDENTICAL to the reference in every way EXCEPT one tiny text change described below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale — the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name, the same 'xx mg' dose placeholder, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting, reflections and contact shadow.\n\nBACKGROUND: a perfectly clean, pure white (#FFFFFF) seamless studio background — absolutely NO smudges, grey patches, dust, marks, gradients, or stray shadows anywhere in the frame except the soft contact shadow directly beneath the vial. Keep it as clean as, or cleaner than, the reference.\n\nTHE ONLY CHANGE: on the dose-and-volume line, change the volume from '5 ml' to '10 ml', so the line reads 'xx mg · 10 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '·' separator as the reference — only the number changes from 5 to 10. The vial itself does NOT get bigger; only the printed text changes.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/Ipamorelin/Ipamorelin_5ml_pink.jpg"
+    ],
+    "_meta": {
+      "peptide": "Ipamorelin",
+      "size": "10ml",
+      "color": "pink",
+      "tag": "nh-ipamorelin-10ml-pink"
+    }
+  },
+  {
+    "prompt": "nh-tesamorelin-10ml-green: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Output an image that is IDENTICAL to the reference in every way EXCEPT one tiny text change described below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale — the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name, the same 'xx mg' dose placeholder, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting, reflections and contact shadow.\n\nBACKGROUND: a perfectly clean, pure white (#FFFFFF) seamless studio background — absolutely NO smudges, grey patches, dust, marks, gradients, or stray shadows anywhere in the frame except the soft contact shadow directly beneath the vial. Keep it as clean as, or cleaner than, the reference.\n\nTHE ONLY CHANGE: on the dose-and-volume line, change the volume from '5 ml' to '10 ml', so the line reads 'xx mg · 10 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '·' separator as the reference — only the number changes from 5 to 10. The vial itself does NOT get bigger; only the printed text changes.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/Tesamorelin/Tesamorelin_5ml_green.jpg"
+    ],
+    "_meta": {
+      "peptide": "Tesamorelin",
+      "size": "10ml",
+      "color": "green",
+      "tag": "nh-tesamorelin-10ml-green"
+    }
+  },
+  {
+    "prompt": "nh-kisspeptin-10ml-yellow: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Output an image that is IDENTICAL to the reference in every way EXCEPT one tiny text change described below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale — the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name, the same 'xx mg' dose placeholder, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting, reflections and contact shadow.\n\nBACKGROUND: a perfectly clean, pure white (#FFFFFF) seamless studio background — absolutely NO smudges, grey patches, dust, marks, gradients, or stray shadows anywhere in the frame except the soft contact shadow directly beneath the vial. Keep it as clean as, or cleaner than, the reference.\n\nTHE ONLY CHANGE: on the dose-and-volume line, change the volume from '5 ml' to '10 ml', so the line reads 'xx mg · 10 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '·' separator as the reference — only the number changes from 5 to 10. The vial itself does NOT get bigger; only the printed text changes.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/Kisspeptin/Kisspeptin_5ml_yellow.jpg"
+    ],
+    "_meta": {
+      "peptide": "Kisspeptin",
+      "size": "10ml",
+      "color": "yellow",
+      "tag": "nh-kisspeptin-10ml-yellow"
+    }
+  },
+  {
+    "prompt": "nh-aod-9604-10ml-pink: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Output an image that is IDENTICAL to the reference in every way EXCEPT one tiny text change described below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale — the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name, the same 'xx mg' dose placeholder, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting, reflections and contact shadow.\n\nBACKGROUND: a perfectly clean, pure white (#FFFFFF) seamless studio background — absolutely NO smudges, grey patches, dust, marks, gradients, or stray shadows anywhere in the frame except the soft contact shadow directly beneath the vial. Keep it as clean as, or cleaner than, the reference.\n\nTHE ONLY CHANGE: on the dose-and-volume line, change the volume from '5 ml' to '10 ml', so the line reads 'xx mg · 10 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '·' separator as the reference — only the number changes from 5 to 10. The vial itself does NOT get bigger; only the printed text changes.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AOD-9604/AOD-9604_5ml_pink.jpg"
+    ],
+    "_meta": {
+      "peptide": "AOD-9604",
+      "size": "10ml",
+      "color": "pink",
+      "tag": "nh-aod-9604-10ml-pink"
+    }
+  }
+]

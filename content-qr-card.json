@@ -1,0 +1,29 @@
+[
+  {
+    "prompt": "Edit REFERENCE 2 (existing redesigned content 1 poster) by REPLACING the existing QR code area with a beautifully designed QR card that integrates naturally into the cinematic red/gold/cream poster aesthetic. The QR card replacement: a clean white square background with subtly rounded corners (~30px radius), a thin warm gold/cream border around it, a soft warm drop shadow / glow underneath that grounds it in the scene's lighting (matching the existing red/amber atmospheric glow). The card sits in the SAME position and approximately the SAME size as the existing QR in REFERENCE 2 (bottom-left of the disclaimer area). INSIDE the white card, render a QR code pattern modeled on REFERENCE 1 (a black-and-white QR code) — match REFERENCE 1's pattern as faithfully as you can with crisp black modules on pure white, no anti-aliasing, no blur. Keep absolutely everything else in REFERENCE 2 IDENTICAL — background, palette, typography, Challenger, Muha 'M' logo, headline, subhead, three step phones, all other text and disclaimers, layout, lighting. Aspect ratio 2:3 / 2048×3072. No extra text, no watermarks.",
+    "aspectRatio": "2:3",
+    "imageSize": "4K",
+    "refImages": [
+      "./muha-app-qr.png",
+      "./Muha Giveaway Redesigned/content 1.png"
+    ]
+  },
+  {
+    "prompt": "Edit REFERENCE 2 (existing redesigned content 2 poster) by REPLACING the existing QR code with a beautifully designed QR card that integrates naturally into the cinematic red/gold/cream poster aesthetic. The QR card replacement: clean white square background with subtly rounded corners (~36px radius), a thin warm gold/cream border, a soft warm drop shadow/glow grounding it in the scene's lighting (matching the existing red/amber atmosphere). The card sits in the SAME position and approximately the SAME size as the existing QR in REFERENCE 2 (lower-left, beneath/near 'SCAN TO FIND OUT!' callout). INSIDE the white card, render a QR code pattern modeled on REFERENCE 1 — crisp black modules on pure white, no anti-aliasing, no blur. Keep absolutely everything else in REFERENCE 2 IDENTICAL — background, palette, typography, Challenger, Muha 'M' logo, GIVEAWAY headline, Vice City script, $25,000 callout, three step phones, all other text and disclaimers, lighting, layout. Aspect ratio 9:16 / 2160×3840. No extra text, no watermarks.",
+    "aspectRatio": "9:16",
+    "imageSize": "4K",
+    "refImages": [
+      "./muha-app-qr.png",
+      "./Muha Giveaway Redesigned/content 2.png"
+    ]
+  },
+  {
+    "prompt": "Edit REFERENCE 2 (existing redesigned content 3 poster) by REPLACING the existing QR code with a beautifully designed QR card that integrates naturally into the cinematic red/gold/cream poster aesthetic. The QR card replacement: clean white square background with subtly rounded corners (~32px radius), a thin warm gold/cream border, a soft warm drop shadow/glow grounding it in the scene's lighting (matching the existing red/amber atmosphere). The card sits in the SAME position and approximately the SAME size as the existing QR in REFERENCE 2 (right side near the 'Scan to Find Out!' cursive callout). INSIDE the white card, render a QR code pattern modeled on REFERENCE 1 — crisp black modules on pure white, no anti-aliasing, no blur. Keep absolutely everything else in REFERENCE 2 IDENTICAL — background, palette, typography, Challenger, Muha 'M' logo, GIVEAWAY headline, Vice City script, $25,000 callout, 'Muha Members — Your journey STARTS HERE', three step phones, all other text and disclaimers, lighting, layout. Aspect ratio 9:16 / 2160×3840. No extra text, no watermarks.",
+    "aspectRatio": "9:16",
+    "imageSize": "4K",
+    "refImages": [
+      "./muha-app-qr.png",
+      "./Muha Giveaway Redesigned/content 3.png"
+    ]
+  }
+]

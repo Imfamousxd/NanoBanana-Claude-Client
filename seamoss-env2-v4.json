@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "Outdoor patio scene — hyper-realistic 1:1 lifestyle product-in-scene photograph, 4K. NO PEOPLE, NO hands. Just the product in a natural environment.\n\nANGLE: a GROUND-LEVEL LOW-ANGLE perspective — the camera sits AT the wood patio table's surface looking ACROSS the table at the jar with the jar prominent at center-frame and other props extending into soft-focus depth across the table toward the garden background. NOT head-on top-down, NOT eye-level — table-surface low angle for a dramatic immersive feel.\n\nSCENE: a sun-warmed outdoor wood patio table mid-afternoon, golden natural daylight filtering through leaves overhead. The Dialed Sea Moss Gummies jar (matching the provided reference — black plastic, teal/cyan + gold/yellow accents, GOLD LID on top, jar CLOSED, front label fully legible) sits in the center foreground of the frame. Naturally staged outdoor props extending across the table into depth: a small terra-cotta pot of fresh herbs (rosemary or basil), a tall glass of iced water with a slice of lemon, a small ceramic dish with 4-5 dark sugar-dusted gummy CUBES, a linen napkin loosely under the dish, a small jute-corded notebook softly out-of-focus.\n\nLIGHTING: bright direct natural sunlight from upper-left filtering through leaves, dappled but gentle. Clean soft specular highlight on the jar's curved glossy black plastic. Label catches the light crisply. Warm natural drop-shadow on the wood table.\n\nBACKGROUND: softly out-of-focus garden / backyard — green hedge, a hint of a wooden fence, golden afternoon sunlight through leaves. Warm depth, atmospheric haze.\n\nSTYLE: hyper-realistic ground-level outdoor product-environment photography, 35mm low-angle look, f/2.8 shallow depth, warm airy immersive real-photograph feel. NO AI artifacts, NO text overlays, NO graphic elements, NO callouts.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

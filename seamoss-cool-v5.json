@@ -1,0 +1,11 @@
+[
+  {
+    "prompt": "STYLE: editorial-cool premium product hero, 1:1 square, 4K. Split-layout composition. Cinematic magazine-ad energy.\n\nCOMPOSITION: vertical SPLIT-LAYOUT. The LEFT HALF of the frame is a clean SOLID COLOR-BLOCK in MUTED TEAL/CYAN (matching the jar's brand teal accent). The RIGHT HALF is a real-photo lifestyle scene: a sun-warmed light-oak wood surface with a small bunch of fresh sea moss fronds, a sliced burdock root, a few dandelion flowers and leaves arranged in a clean loose arrangement (photoreal 3D-rendered ingredients).\n\nThe Dialed Sea Moss Gummies jar (matching the provided reference — black plastic, teal/cyan + gold accents, label fully legible, gold lid, jar closed) sits at the CENTER of the frame, STRADDLING the split — half of the jar against the teal color-block on the left, half against the wood-and-ingredients scene on the right. The jar is the gravitational center. A SHARP CLEAN SPECULAR HIGHLIGHT runs down the jar's curved glossy black plastic. Beside the jar (on the wood side) sits a small ceramic dish with 4-5 dark sugar-dusted gummy CUBES.\n\nLIGHTING: clean bright directional light from upper-right wrapping the jar uniformly. The color-block side has a soft subtle gradient/haze; the lifestyle side has natural daylight. Both halves feel cohesive.\n\nMINIMAL TEXT — FOUR small single-line labels stacked vertically down the LEFT (teal) half of the frame, in bold ALL-CAPS condensed-display CLEAN WHITE typography, each label SHORT and SINGLE-LINE, separated by thin gold horizontal rules:\n   MINERAL SOURCE\n   HERBAL EXTRACTS\n   MAGNESIUM SUPPORT\n   PLANT BASED\nNothing else. NO headline, NO sub-text, NO feature pills, NO icons.\n\nDESIGN: editorial split-layout teal color-block + warm wood lifestyle · jar straddling both worlds · clean white side-panel labels with gold rules · NO graphic-design noise.\n\nRULES: all text cleanly spelled · 1:1 4K · split layout (NOT flat white, NOT only lifestyle) · no border/frame · text limited to the four single-line labels only.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png",
+      "dialed moods seamoss/Seamoss_45.png"
+    ]
+  }
+]

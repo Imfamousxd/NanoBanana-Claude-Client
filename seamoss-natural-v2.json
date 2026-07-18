@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "A candid hyper-realistic 1:1 lifestyle photograph — looks like an UNSTAGED iPhone snap of a bedside table in the morning. NO PEOPLE in frame, but everything feels mid-moment, lived-in.\n\nSCENE: a warm-wood bedside table beside a softly slept-in bed. The Dialed Sea Moss Gummies jar (matching the provided reference image — black plastic, teal/cyan + gold/yellow accents, GOLD LID, front label legible) sits PARTIALLY OBSCURED in the upper-left quadrant — half-tucked behind an open paperback book lying face-down with its spine cracked. Around it on the bedside: a ceramic mug with a chamomile tea bag string draped over the edge, a phone charging with the cable curled, a small stack of two hardcover books, a wrinkled corner of the cream linen duvet creeping into the frame's right edge, a single fresh-cut eucalyptus sprig casually placed.\n\nLIGHTING: soft warm morning daylight filtering through sheer curtains in the background, creating gentle directional light across the bedside. The jar's curved black plastic catches a soft sheen on one side.\n\nFRAMING: the jar is partially obscured / NOT the obvious hero — viewer's eye lands on it after taking in the whole scene. Some props are cropped at frame edges. Camera angle is slightly low (sitting up in bed POV), slight off-axis tilt (2-3°). Candid iPhone-snap feel.\n\nSTYLE: hyper-realistic candid photography, soft grain, natural soft shadows, real-life imperfect cozy composition. NO AI artifacts, NO text overlays, NO graphic elements, NO hands, NO people.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "STYLE: a clean premium studio product shot, 1:1 square, 4K. Classic e-commerce / catalog hero — pure white seamless background, soft studio lighting, no text, no graphic elements, no extra props. Just the jar.\n\nSUBJECT: a photorealistic rendering of the Dialed Sea Moss Gummies jar shown in STRAIGHT-ON FRONT VIEW (matching the FIRST provided reference image — black plastic jar, teal/cyan + gold/yellow accents, GOLD LID on top, jar CLOSED, front label centered and fully legible: 'DIALED SEA MOSS Gummies, TASTY · CONVENIENT · EFFECTIVE, 60 GUMMIES, DIETARY SUPPLEMENT, magnesium · burdock root · dandelion pills, 60 GUMMIES, 210g / 7.41oz'). Camera dead-on at eye-level, jar centered in the frame, label flat and fully readable.\n\nLIGHTING: clean balanced studio lighting — soft large key-light from upper-left, soft fill from the right, a subtle warm rim-light tracing both side edges of the jar. A clean specular highlight runs down the curved glossy black plastic. The gold lid's curved edge catches a clean highlight. Label colors (teal accents, yellow lettering) all read sharply. A soft natural drop-shadow directly under the jar.\n\nBACKGROUND: pure clean WHITE seamless backdrop, very subtle gradient from cool-white at top to warm-white at bottom, no texture, no horizon, no distractions.\n\nNO TEXT, NO graphic overlays, NO scattered gummies, NO props, NO ingredients, NO callouts, NO icons.\n\nSTYLE: hyper-realistic product photography, 85mm look, f/8 sharp focus across the jar, crystal-clear label legibility, professional commercial product shot, magazine-print quality. Clean and elegant.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_Front.png"
+    ]
+  }
+]

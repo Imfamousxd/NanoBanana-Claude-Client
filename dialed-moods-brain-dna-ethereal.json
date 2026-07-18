@@ -1,0 +1,8 @@
+[
+  {
+    "prompt": "Combine the two reference images. REFERENCE 1 defines the ATMOSPHERE and STYLE: a soft, warm, ETHEREAL energy-being — a luminous figure glowing with warm golden-white inner light, smoky wispy energy filaments radiating softly around the whole body, set on a dreamy soft TAN / warm-beige gradient background (NOT harsh pure white, NOT black). The glow bleeds gently into the background, like a soft long-exposure dream, with fine grain. REFERENCE 2 defines the ANATOMICAL CONTENT to embed inside the figure: a glowing anatomical human BRAIN at the top of the head, a luminous glowing DNA double-helix running down the center of the body, and translucent botanical LEAVES and leaf-vein / nerve networks woven throughout the body. CREATE: one single FULL-BODY, FRONT-FACING figure (head to feet, standing, facing camera) that has REFERENCE 1's soft warm ethereal smoky glow and tan dreamy backdrop, WITH REFERENCE 2's brain, DNA helix, and botanical vein networks visible glowing inside the translucent body. Warm golden-tan palette throughout, soft and ethereal, not harsh. The energy and glow subtly reflect out into the warm background around the body. No text, no logos. Centered full-body 1:1 square composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/energy_being_standing_v1.png", "Dialed Moods/brain_dna_gold_fullbody_1x1_v1.png"]
+  }
+]

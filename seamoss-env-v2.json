@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "Bathroom vanity scene — hyper-realistic 1:1 lifestyle product-in-scene photograph, 4K. Editorial wellness-brand campaign feel. NO PEOPLE, NO hands, NO faces. Just the product in a natural environment.\n\nSCENE: a sunlit modern bathroom vanity in the morning, soft white marble counter. The Dialed Sea Moss Gummies jar (matching the provided reference image — black plastic, teal/cyan + gold/yellow accents, GOLD LID on top, jar CLOSED, front label fully legible, side panel 'MsB° Mineral Support Blend') sits CENTERED on the marble vanity. The jar occupies roughly the central 45-50% of the frame height.\n\nAround the jar, naturally staged bathroom-routine props (out-of-focus where appropriate): a small folded white linen face towel beside the jar, a tall glass of fresh water with a slice of cucumber, a small minimal ceramic dish holding a tiny brass spoon, a single eucalyptus sprig laying on the counter, a slim amber-glass dropper bottle softly out-of-focus in the background.\n\nLIGHTING: bright clean natural daylight pouring from a tall window on the left side of the frame, wrapping the jar and props uniformly. Clean soft specular highlight on the jar's curved glossy black plastic. Label catches the light crisply. Natural soft drop-shadows on the marble — neutral, no colored tones.\n\nBACKGROUND: minimalist modern bathroom — out-of-focus polished chrome faucet hardware, soft white subway-tile wall in the back, a small potted air-plant in soft-focus. Shallow depth-of-field.\n\nSTYLE: hyper-realistic product-environment photography, 50mm look, f/2.8 shallow depth, bright airy clean real-photograph feel, NO AI artifacts, NO text overlays, NO graphic elements, NO callouts.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

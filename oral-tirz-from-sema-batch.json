@@ -1,0 +1,11 @@
+[
+  {
+    "prompt": "Edit REFERENCE 2 by CHANGING ONLY the product name text on the oral drop bottle's label from 'Semaglutide' to 'Tirzepatide'. Make ONLY that text change and keep absolutely everything else in REFERENCE 2 IDENTICAL: same hand (same gender, skin tone, nails if present), same natural grip and finger placement, same oral drop bottle (same shape, same frosted silver-white glass body, same white ribbed collar, same white dropper cap, same white rubber bulb tip, same scale, same orientation), same scene and background, same top-down overhead camera angle, same tight close-up crop, same composition, same lighting (direction, color temperature, contrast, shadows, specular highlights), same depth of field, same color grade, same 5:4 framing, same mood. Do NOT alter the hand, pose, grip, or scene in any way. The final image should be IDENTICAL to REFERENCE 2 except that the product name on the matte black label now reads 'Tirzepatide' instead of 'Semaglutide' — in the SAME font, SAME weight, SAME size, SAME kerning, SAME centered alignment, SAME white color as the 'Semaglutide' text was rendered in REFERENCE 2. The Dialed Health heartbeat/ECG logo above the product name stays exactly the same. That is ALL on the label — no dosing, no mg, no mL, no Rx, no QR, no barcode, no extra text. Do NOT invent new label text.\n\nREFERENCE 1 is the Tirzepatide studio product shot. Use it ONLY to confirm the correct spelling and visual weight of the 'Tirzepatide' product name text. Do NOT copy pixels from REFERENCE 1 — the bottle in the output should remain the exact bottle from REFERENCE 2, just with the updated label text. Photorealistic, seamless label text swap only, editorial lifestyle quality, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Oral Drops/Tirzepatide.jpg",
+      "./DH Shots/Oral Drops Lifestyle/Semaglutide/woman-kitchen.jpg"
+    ]
+  }
+]

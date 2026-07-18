@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "Modern minimalist 1:1 hyper-realistic lifestyle photograph. NO PEOPLE, NO hands. Clean scandi-modern aesthetic with generous whitespace.\n\nSCENE: a clean modern bathroom vanity, soft white marble counter, minimalist style. The Dialed Sea Moss Gummies jar (matching the provided reference image — black plastic, teal/cyan + gold/yellow accents, GOLD LID, front label fully legible) sits OFF-CENTER in the left third of the frame. Just two intentional props nearby: a single neatly folded soft white linen towel (square fold) to the right of the jar, and a single tall clear glass of water. NOTHING ELSE — no clutter.\n\nLIGHTING: bright clean natural daylight from a tall window on the right, washing the scene cleanly and uniformly. Soft neutral directional shadow behind the jar. Specular highlight on the jar's curved glossy black plastic.\n\nFRAMING: clean modern editorial composition — the jar off-center with intentional negative space, balanced minimalist arrangement. Slight 3/4 angle from a comfortable eye-level.\n\nBACKGROUND: out-of-focus minimalist modern bathroom — soft white subway-tile wall, a hint of polished chrome hardware. Shallow depth-of-field. Bright airy real-photograph feel.\n\nSTYLE: hyper-realistic photography, 50mm look, f/2.8 shallow depth, simple modern clean composition. NO AI artifacts, NO text overlays, NO graphic elements, NO callouts.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

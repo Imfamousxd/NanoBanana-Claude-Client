@@ -1,0 +1,26 @@
+[
+  {
+    "product": "Oxytocin",
+    "token": "10ml-dark",
+    "color": "babyblue",
+    "sibling": "Glow Blend",
+    "wblock": 250.4,
+    "smudge": 1.2
+  },
+  {
+    "product": "KPV",
+    "token": "5ml-dark",
+    "color": "navy",
+    "sibling": "Glutathione",
+    "wblock": 246.4,
+    "smudge": 0.53
+  },
+  {
+    "product": "N-Acetyl Semax Amidate",
+    "token": "5ml-dark",
+    "color": "purple",
+    "sibling": "DSIP",
+    "wblock": 251.5,
+    "smudge": 0.41
+  }
+]

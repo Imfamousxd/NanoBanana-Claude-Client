@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "Modern minimalist 1:1 hyper-realistic lifestyle photograph. NO PEOPLE, NO hands. Subtle product-color theming (soft teal + gold + black echoing the jar's brand palette).\n\nSCENE: a clean modern bathroom vanity — soft SAGE-GREEN-TEAL toned tile wall in the soft-focus background (subtle brand-color cue), gold-brass faucet partially visible, white marble countertop. The Dialed Sea Moss Gummies jar (matching the provided reference image — black plastic, teal/cyan + gold/yellow accents, GOLD LID, front label fully legible) sits naturally OFF-CENTER on the counter in the left third of the frame. Just ONE prop nearby: a single fresh-cut eucalyptus sprig laying flat on the marble. NOTHING ELSE.\n\nANGLE: an ELEVATED 3/4 ANGLE — the camera is slightly above standing eye-level, looking down and across the counter at a 30° angle. NOT head-on, NOT pure top-down — a comfortable elevated 3/4.\n\nLIGHTING: bright clean natural daylight from a tall window on the right (out-of-frame), washing the jar uniformly. Specular highlight on the jar's curved glossy black plastic and a clean warm gleam on the gold lid that ties back to the gold faucet in the background.\n\nFRAMING: balanced minimalist arrangement with intentional negative space. Slight off-axis composition.\n\nBACKGROUND: out-of-focus minimalist bathroom — sage-teal tile, gold-brass faucet, hint of a white folded towel softly off-frame. Shallow depth-of-field.\n\nSTYLE: hyper-realistic photography, 50mm look, f/2.8 shallow depth, simple modern clean composition with subtle brand-color cues. NO AI artifacts, NO text overlays, NO graphic elements, NO callouts.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

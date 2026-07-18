@@ -1,0 +1,11 @@
+[
+  {
+    "prompt": "STYLE: clean premium wellness-brand PRODUCT HERO SHOT on a PURE WHITE background, 1:1 square composition, 4K resolution. Apple / Athletic Greens product-page aesthetic. Generous breathing room.\n\nHERO SUBJECT — centered: photorealistic rendering of the Dialed Sea Moss Gummies jar (matching the provided reference image — black plastic, teal/cyan + gold/yellow accents, front label fully legible: 'DIALED SEA MOSS Gummies, TASTY · CONVENIENT · EFFECTIVE, 60 GUMMIES, DIETARY SUPPLEMENT', side panel 'MsB° Mineral Support Blend' in vertical teal strip, gold lid on top, jar closed). Crisp clean studio lighting, soft subtle shadow underneath. 3-4 dark sugar-dusted gummy CUBES scattered next to the jar's base.\n\nFLOATING CALLOUTS — 6 small chip-style callouts arranged tastefully around the jar (3 left, 3 right, none overlapping it). Each callout: a tiny flat teal/cyan outlined icon + SHORT ALL-CAPS bold label in deep ink-black + one tiny sub-line of light-gray body text. Thin gold connector lines from each callout toward the jar.\n  Left (top→bottom): IMMUNE SUPPORT · 'Rich in antioxidants' / GUT HEALTH · 'Supports digestion' / SKIN GLOW · 'Vitamins A, C, E'\n  Right (top→bottom): THYROID FUNCTION · 'Natural iodine' / ENERGY + STAMINA · 'Daily vitality' / MINERAL POWERHOUSE · '92 minerals'\n\nTOP — bold ALL-CAPS headline in deep ink-black: 'SIX BENEFITS. ONE GUMMY.' Thin gold rule beneath.\nBOTTOM — tracked light-gray all-caps tagline: 'TASTY · CONVENIENT · EFFECTIVE'.\n\nDESIGN SYSTEM: pure clean white background with subtle warm-gray paper texture · accent muted TEAL/CYAN + warm GOLD/YELLOW + deep INK-BLACK + warm-gray sub-text · bold ALL-CAPS condensed display sans-serif for headlines/labels, clean modern sans-serif for body · NO script fonts · tiny flat outlined single-color teal icons.\n\nABSOLUTE RULES: all text cleanly spelled (no garbled letters, no AI-text artifacts) · 1:1 square 4K · pure white background · NO border/frame · reference image for brand color/type and jar appearance.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png",
+      "dialed moods seamoss/Seamoss_Front.png"
+    ]
+  }
+]

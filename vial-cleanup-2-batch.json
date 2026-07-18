@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "Edit REFERENCE 1 to CLEAN UP the vial — remove any minor scratches, smudges, scuff lines, wear marks, dust specks, small imperfections, or blemishes on the glass, cap, or label surfaces, so the vial looks like a pristine, brand-new, unblemished product. Keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand, skin, grip, fingers, vial shape and size, cap, label text and logo, label position, scene, background, top-down camera angle, composition, lighting (direction, color temperature, contrast, shadows, specular highlights), depth of field, color grade, 5:4 framing. The cleaned-up vial must STILL look naturally lit by the scene — the bottle remains a scene-integrated object, not studio-clean or artificially bright. Photorealistic, seamless product retouch only, scene-integrated lighting preserved, editorial lifestyle quality, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Vials Lifestyle/BPC-157-TB500/woman-track.jpg"
+    ]
+  }
+]

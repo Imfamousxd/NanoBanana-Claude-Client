@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "Create a clean black-line-art medical-illustration in the universal patient-information-leaflet style: uniform medium-weight black ink lines on pure white background, no color, no frame, no border, no caption, no logos, no numbers, no other objects.\n\nSubject: a single standalone illustration of the ASSEMBLED PROTECTOR TUBE from the provided product photo, redrawn as a clean line-art replica.\n\nThe protector tube in the photo is laid on its side. Mentally rotate it 90° clockwise so it stands upright with the black cap on TOP and the white body on the BOTTOM. Recreate the tube as it would appear standing upright — a faithful line-art version of THIS exact product. Match the photo's tube shape, proportions, cap/body ratio, embossed text style, and text orientation precisely.\n\nThe embossed text on the product:\n  • Black cap reads DIALED running along its length axis\n  • White body reads HEALTH running along its length axis\n  • When the tube stands upright with cap on top, the text reads DIALED HEALTH top-down, with the first letter of each word at the top of its section (matching how the photo would look rotated 90° clockwise)\n\nStyle: uniform medium-weight black ink line work on pure white background, with the cap rendered as solid black fill and the white body as line-art outline. Letters embossed in line-art outlined form — thin white outlines on the black cap, thin black outlines on the white body. Minimal short parallel hatching for soft shadow/volume on the curved cylindrical surfaces. 1:1 square composition, subject centered with generous clean white margins.\n\nThe ONLY thing that matters here is making the line-art tube look EXACTLY like the product photo's tube (when rotated upright) — its stubby chunky shape, its short-and-wide cap, its slightly-taller-but-still-stubby body, the exact diameter, the seam line between cap and body, the embossed DIALED HEALTH text running along the length axis. Match the photo.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "DIaled Health Instruction Graphics/Product Refs/protector tube top.png"
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "Edit REFERENCE 1 (existing content 3 poster). Keep absolutely EVERYTHING identical — background, palette, typography, Challenger, Muha 'M' logo, GIVEAWAY headline, Vice City script, $25,000 callout, three step phones, all other text, disclaimers, lighting, layout, the cursive 'Scan to' callout. The ONLY change: take the existing white square at the bottom-right (the QR card area) and INTEGRATE it into the scene as a designed card. Around that square, ADD: subtly rounded corners (~32px radius), a thin warm gold/cream border (~3-4px) hugging the card edge, a soft warm drop shadow falling down-right underneath the card grounding it in the scene, and a faint warm red/amber outer glow matching the surrounding atmospheric lighting. CRITICAL CONSTRAINT: the INTERIOR of the white card must remain PURE solid white — do NOT draw a QR code, do NOT draw any pattern, modules, dots, squares, text, or marks of any kind inside the card. The interior is a pristine empty white surface only. The card stays at the same position and roughly the same size. Aspect ratio 9:16 / 2160×3840. No watermarks, no extra text.",
+    "aspectRatio": "9:16",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Redesigned/content 3.png"
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "prompt": "Take the provided reference image and reproduce it PIXEL-FAITHFULLY — same dual-state composition (LEFT: hand lowering blood-filled vial into white protector tube body with HEALTH embossed; ARROW; RIGHT: hand placing black DIALED cap onto the tube), same line-art style on pure white background, same line weight. DO NOT change the hands, the tube body, the black cap, the arrow, the composition, the framing, the line weight, or the style.\n\nTHE ONLY MODIFICATION — the SMALL VIAL CAP (the ribbed cap on top of the blood-filled vial in the LEFT state) is currently drawn YELLOW. Remove the yellow color. Redraw the vial's small ribbed cap as PURE BLACK LINE-ART WITH WHITE FILL — same vertical knurling/ribbed pattern on its outer side wall (short uniform parallel vertical lines indicating the grip texture), but NO color fill. Just clean black line-art outlines, exactly like the cap was drawn in earlier approved steps (3, 14, 15). The cap silhouette stays the same shape and position — only the color treatment changes from yellow to plain line-art.\n\nThe red blood inside the vial (LEFT state) remains as the only red color. The black protector cap on the right state remains solid black. The vial's small cap should match the rest of the line-art aesthetic — pure black ink lines on white, no yellow, no other color.\n\nDo not modify anything else — same composition, same hands, same tube body, same black DIALED cap, same arrow, same line weight, same background, same style. No frame, no border, no other labels.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["generations/2026-05-13T01-51-39_A_generic_medical_product_instruction_il.jpg"]
+  }
+]

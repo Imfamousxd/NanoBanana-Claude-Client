@@ -1,0 +1,114 @@
+[
+  {
+    "prompt": "nul-cam-motion-v3-1x1-01-v1: Square 1:1 editorial lifestyle/fitness action photograph.\n\nUse the reference image ONLY for the setting, lighting direction, and overall mood. DO NOT copy the subject's appearance from the reference. The subject in this generation must wear DIFFERENT clothing — different colors and silhouette than what the ref shows (e.g. if ref shows pastel cream, use deep olive or dusty mauve or charcoal grey; if ref shows tank-top, use long-sleeve or vice versa). Subject's pose may match the ref activity but use a slightly different framing/angle.\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. Subject is the relative anchor (most legible region) but everything in the frame carries soft directional smear in the same overall direction set by the camera's pan. For this variant: fast lateral left-to-right camera pan; slight Dutch tilt ~6° clockwise; moderate blur intensity. Backgrounds (walls, equipment, partner figures) heavily smeared into soft directional streaks. NOTHING in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/0274faa00a62c8f64bff853741beda60.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 1,
+      "variant": "v1",
+      "refFile": "0274faa00a62c8f64bff853741beda60.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v3-1x1-02-v3: Square 1:1 editorial lifestyle/fitness action photograph.\n\nUse the reference image ONLY for the setting, lighting direction, and overall mood. The subject should look DIFFERENT from the ref (different person, different clothing colors, different framing) AND the action captured should be a slightly different moment in the same broader activity (a different phase of the exercise, a different gesture, a different beat of the same workout). Maintain the same atmospheric scene type but with clear visual divergence from the source.\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. Subject is the relative anchor (most legible region) but everything in the frame carries soft directional smear in the same overall direction set by the camera's pan. For this variant: fast diagonal upward camera sweep; near level (~3° tilt); subtle but clearly present blur. Backgrounds (walls, equipment, partner figures) heavily smeared into soft directional streaks. NOTHING in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/09a65786868b46df7e42b4d3d2646a7e.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 2,
+      "variant": "v3",
+      "refFile": "09a65786868b46df7e42b4d3d2646a7e.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v3-1x1-04-v2: Square 1:1 editorial lifestyle/fitness action photograph.\n\nUse the reference image ONLY for the setting, lighting direction, and overall mood. DO NOT copy the subject's appearance. The subject in this generation must be a DIFFERENT PERSON than the one in the ref — different hair color/length, different build, different facial features, different ethnicity if it helps differentiate. Clothing should also differ from the ref. Activity should be similar but the moment captured is mid-different-action (e.g. if ref shows hand wiping forehead, show hands tying hair back or hands gripping a towel).\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. Subject is the relative anchor (most legible region) but everything in the frame carries soft directional smear in the same overall direction set by the camera's pan. For this variant: fast right-to-left lateral camera pan; slight Dutch tilt ~7° counter-clockwise; stronger blur intensity. Backgrounds (walls, equipment, partner figures) heavily smeared into soft directional streaks. NOTHING in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/501466320a6fdd52c8331cb69b2106b2.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 4,
+      "variant": "v2",
+      "refFile": "501466320a6fdd52c8331cb69b2106b2.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v3-1x1-06-v1: Square 1:1 editorial lifestyle/fitness action photograph.\n\nUse the reference image ONLY for the setting, lighting direction, and overall mood. DO NOT copy the subject's appearance from the reference. The subject in this generation must wear DIFFERENT clothing — different colors and silhouette than what the ref shows (e.g. if ref shows pastel cream, use deep olive or dusty mauve or charcoal grey; if ref shows tank-top, use long-sleeve or vice versa). Subject's pose may match the ref activity but use a slightly different framing/angle.\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. Subject is the relative anchor (most legible region) but everything in the frame carries soft directional smear in the same overall direction set by the camera's pan. For this variant: fast lateral left-to-right camera pan; slight Dutch tilt ~6° clockwise; moderate blur intensity. Backgrounds (walls, equipment, partner figures) heavily smeared into soft directional streaks. NOTHING in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/Blur_e00779a33adf8edf1949f92bb7a2c4a8.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 6,
+      "variant": "v1",
+      "refFile": "Blur_e00779a33adf8edf1949f92bb7a2c4a8.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v3-1x1-07-v3: Square 1:1 editorial lifestyle/fitness action photograph.\n\nUse the reference image ONLY for the setting, lighting direction, and overall mood. The subject should look DIFFERENT from the ref (different person, different clothing colors, different framing) AND the action captured should be a slightly different moment in the same broader activity (a different phase of the exercise, a different gesture, a different beat of the same workout). Maintain the same atmospheric scene type but with clear visual divergence from the source.\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. Subject is the relative anchor (most legible region) but everything in the frame carries soft directional smear in the same overall direction set by the camera's pan. For this variant: fast diagonal upward camera sweep; near level (~3° tilt); subtle but clearly present blur. Backgrounds (walls, equipment, partner figures) heavily smeared into soft directional streaks. NOTHING in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/e48a465df7cfa85636a7a10e3664d44f.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 7,
+      "variant": "v3",
+      "refFile": "e48a465df7cfa85636a7a10e3664d44f.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v3-1x1-09-v2: Square 1:1 editorial lifestyle/fitness action photograph.\n\nUse the reference image ONLY for the setting, lighting direction, and overall mood. DO NOT copy the subject's appearance. The subject in this generation must be a DIFFERENT PERSON than the one in the ref — different hair color/length, different build, different facial features, different ethnicity if it helps differentiate. Clothing should also differ from the ref. Activity should be similar but the moment captured is mid-different-action (e.g. if ref shows hand wiping forehead, show hands tying hair back or hands gripping a towel).\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. Subject is the relative anchor (most legible region) but everything in the frame carries soft directional smear in the same overall direction set by the camera's pan. For this variant: fast right-to-left lateral camera pan; slight Dutch tilt ~7° counter-clockwise; stronger blur intensity. Backgrounds (walls, equipment, partner figures) heavily smeared into soft directional streaks. NOTHING in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/ee1ac568636ed4848282817f51ee7968.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 9,
+      "variant": "v2",
+      "refFile": "ee1ac568636ed4848282817f51ee7968.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v3-4x3-02-v1: Landscape 4:3 editorial lifestyle/fitness action photograph.\n\nUse the reference image ONLY for the setting, lighting direction, and overall mood. DO NOT copy the subject's appearance from the reference. The subject in this generation must wear DIFFERENT clothing — different colors and silhouette than what the ref shows (e.g. if ref shows pastel cream, use deep olive or dusty mauve or charcoal grey; if ref shows tank-top, use long-sleeve or vice versa). Subject's pose may match the ref activity but use a slightly different framing/angle.\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. Subject is the relative anchor (most legible region) but everything in the frame carries soft directional smear in the same overall direction set by the camera's pan. For this variant: fast lateral left-to-right camera pan; slight Dutch tilt ~6° clockwise; moderate blur intensity. Backgrounds (walls, equipment, partner figures) heavily smeared into soft directional streaks. NOTHING in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/76e3e302e2dbc17e15cb0b6f95c13d52.jpeg"
+    ],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 2,
+      "variant": "v1",
+      "refFile": "76e3e302e2dbc17e15cb0b6f95c13d52.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v3-4x3-03-v3: Landscape 4:3 editorial lifestyle/fitness action photograph.\n\nUse the reference image ONLY for the setting, lighting direction, and overall mood. The subject should look DIFFERENT from the ref (different person, different clothing colors, different framing) AND the action captured should be a slightly different moment in the same broader activity (a different phase of the exercise, a different gesture, a different beat of the same workout). Maintain the same atmospheric scene type but with clear visual divergence from the source.\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. Subject is the relative anchor (most legible region) but everything in the frame carries soft directional smear in the same overall direction set by the camera's pan. For this variant: fast diagonal upward camera sweep; near level (~3° tilt); subtle but clearly present blur. Backgrounds (walls, equipment, partner figures) heavily smeared into soft directional streaks. NOTHING in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/c2affe14ec558d4c737528b571b807a7_copy.png"
+    ],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 3,
+      "variant": "v3",
+      "refFile": "c2affe14ec558d4c737528b571b807a7_copy.png"
+    }
+  }
+]

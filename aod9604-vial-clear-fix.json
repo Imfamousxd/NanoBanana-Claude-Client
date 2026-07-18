@@ -1,0 +1,38 @@
+[
+  {
+    "prompt": "Edit REFERENCE 1 by CHANGING ONLY the color of the liquid/contents inside the glass vial — make the liquid CLEAR and COLORLESS (like water), and the glass itself fully clear and transparent. The vial MUST NOT look amber, brown, yellow, or tinted. It should match the clear transparent appearance of the other Dialed Health vials in the catalog. Keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand, same skin, same grip, same fingers, same top-down camera angle, same tight close-up crop, same composition, same scene and background, same lighting (direction, color temperature, contrast, shadows, specular highlights), same depth of field, same color grade, same 5:4 framing. The black rubber cap with gold metal band stays unchanged. The matte black label with the Dialed Health ECG logo and 'AOD 9604' product name stays unchanged — same text, same layout, same position. ONLY the glass/liquid changes from tinted/amber to clear/colorless. Photorealistic, seamless glass color correction, scene-integrated lighting preserved, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/AOD 9604/man-gym.jpg"]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 by CHANGING ONLY the color of the liquid/contents inside the glass vial — make the liquid CLEAR and COLORLESS (like water), and the glass itself fully clear and transparent. The vial MUST NOT look amber, brown, yellow, or tinted. It should match the clear transparent appearance of the other Dialed Health vials in the catalog. Keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand, same skin, same grip, same fingers, same top-down camera angle, same tight close-up crop, same composition, same scene and background, same lighting (direction, color temperature, contrast, shadows, specular highlights), same depth of field, same color grade, same 5:4 framing. The black rubber cap with gold metal band stays unchanged. The matte black label with the Dialed Health ECG logo and 'AOD 9604' product name stays unchanged — same text, same layout, same position. ONLY the glass/liquid changes from tinted/amber to clear/colorless. Photorealistic, seamless glass color correction, scene-integrated lighting preserved, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/AOD 9604/man-track.jpg"]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 by CHANGING ONLY the color of the liquid/contents inside the glass vial — make the liquid CLEAR and COLORLESS (like water), and the glass itself fully clear and transparent. The vial MUST NOT look amber, brown, yellow, or tinted. It should match the clear transparent appearance of the other Dialed Health vials in the catalog. Keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand, same skin, same grip, same fingers, same top-down camera angle, same tight close-up crop, same composition, same scene and background, same lighting (direction, color temperature, contrast, shadows, specular highlights), same depth of field, same color grade, same 5:4 framing. The black rubber cap with gold metal band stays unchanged. The matte black label with the Dialed Health ECG logo and 'AOD 9604' product name stays unchanged — same text, same layout, same position. ONLY the glass/liquid changes from tinted/amber to clear/colorless. Photorealistic, seamless glass color correction, scene-integrated lighting preserved, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/AOD 9604/man-kitchen.jpg"]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 by CHANGING ONLY the color of the liquid/contents inside the glass vial — make the liquid CLEAR and COLORLESS (like water), and the glass itself fully clear and transparent. The vial MUST NOT look amber, brown, yellow, or tinted. It should match the clear transparent appearance of the other Dialed Health vials in the catalog. Keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand (woman with long white nails), same skin, same grip, same fingers, same top-down camera angle, same tight close-up crop, same composition, same scene and background, same lighting (direction, color temperature, contrast, shadows, specular highlights), same depth of field, same color grade, same 5:4 framing. The black rubber cap with gold metal band stays unchanged. The matte black label with the Dialed Health ECG logo and 'AOD 9604' product name stays unchanged — same text, same layout, same position. ONLY the glass/liquid changes from tinted/amber to clear/colorless. Photorealistic, seamless glass color correction, scene-integrated lighting preserved, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/AOD 9604/woman-gym.jpg"]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 by CHANGING ONLY the color of the liquid/contents inside the glass vial — make the liquid CLEAR and COLORLESS (like water), and the glass itself fully clear and transparent. The vial MUST NOT look amber, brown, yellow, or tinted. It should match the clear transparent appearance of the other Dialed Health vials in the catalog. Keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand (woman with long white nails), same skin, same grip, same fingers, same top-down camera angle, same tight close-up crop, same composition, same scene and background, same lighting (direction, color temperature, contrast, shadows, specular highlights), same depth of field, same color grade, same 5:4 framing. The black rubber cap with gold metal band stays unchanged. The matte black label with the Dialed Health ECG logo and 'AOD 9604' product name stays unchanged — same text, same layout, same position. ONLY the glass/liquid changes from tinted/amber to clear/colorless. Photorealistic, seamless glass color correction, scene-integrated lighting preserved, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/AOD 9604/woman-track.jpg"]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 by CHANGING ONLY the color of the liquid/contents inside the glass vial — make the liquid CLEAR and COLORLESS (like water), and the glass itself fully clear and transparent. The vial MUST NOT look amber, brown, yellow, or tinted. It should match the clear transparent appearance of the other Dialed Health vials in the catalog. Keep absolutely everything else in REFERENCE 1 IDENTICAL: same hand (woman with long white nails), same skin, same grip, same fingers, same top-down camera angle, same tight close-up crop, same composition, same scene and background, same lighting (direction, color temperature, contrast, shadows, specular highlights), same depth of field, same color grade, same 5:4 framing. The black rubber cap with gold metal band stays unchanged. The matte black label with the Dialed Health ECG logo and 'AOD 9604' product name stays unchanged — same text, same layout, same position. ONLY the glass/liquid changes from tinted/amber to clear/colorless. Photorealistic, seamless glass color correction, scene-integrated lighting preserved, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/AOD 9604/woman-kitchen.jpg"]
+  }
+]

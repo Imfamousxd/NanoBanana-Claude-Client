@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "STYLE: hyper-realistic 1:1 lifestyle product-in-scene photograph, 4K. Editorial wellness-brand campaign feel. NO PEOPLE, NO hands, NO faces. Just the product in a natural environment.\n\nSCENE: a sunlit minimal yoga studio / meditation corner, warm light-oak wood floor, soft morning light. The Dialed Sea Moss Gummies jar (matching the provided reference image — black plastic, teal/cyan + gold/yellow accents, GOLD LID on top, jar CLOSED, front label fully legible) sits CENTERED on the wood floor beside a rolled-up sage-green yoga mat. The jar occupies roughly the central 40-45% of the frame height.\n\nAround the jar, naturally staged props (out-of-focus where appropriate): a rolled sage-green yoga mat right behind the jar, a small ceramic dish holding 4-5 dark sugar-dusted gummy CUBES beside the jar, a stainless-steel water bottle slightly out-of-focus to the side, a folded soft cream towel, a small clay incense holder with a thin curl of smoke softly out-of-focus.\n\nLIGHTING: bright clean natural daylight pouring from tall windows on the right (out-of-frame), wrapping the jar and props uniformly. Soft warm tone from the wood floor reflects subtly. Clean soft specular highlight on the jar's curved glossy black plastic. Label catches the light crisply. Natural drop-shadows on the wood floor — neutral and soft.\n\nBACKGROUND: out-of-focus serene yoga studio — soft cream walls, a hint of a tall potted plant in the corner, a stack of cork yoga blocks softly out-of-focus, warm-wood floor extending into soft-focus. Shallow depth-of-field.\n\nSTYLE: hyper-realistic product-environment photography, 50mm look, f/2.8 shallow depth, calm warm airy real-photograph feel, NO AI artifacts, NO text overlays, NO graphic elements, NO callouts.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

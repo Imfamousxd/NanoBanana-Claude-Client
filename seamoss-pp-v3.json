@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "STYLE: clean premium product-page hero shot on a PURE WHITE background, 1:1 square, 4K. Apple / Athletic Greens / Hims product-page aesthetic — minimal text, product is the hero, generous whitespace.\n\nHERO: photorealistic rendering of the Dialed Sea Moss Gummies jar (matching the provided reference) centered in the frame with crisp studio lighting and a soft natural shadow. Beside the jar — in clean staged composition with breathing room — three photorealistic 3D-rendered ingredients arranged casually (NOT in callout cards, NOT in labeled boxes — just the natural ingredients themselves placed beautifully near the jar):\n  • a small bundle of fresh red-purple sea moss fronds\n  • a sliced burdock root showing its pale interior\n  • a small cluster of yellow dandelion flowers and leaves\nThe ingredients are photoreal 3D-rendered objects with realistic textures and lighting, NOT illustrations.\n\nMINIMAL TEXT — only ONE short headline. Place a single bold ALL-CAPS condensed-display headline in deep ink-black at the TOP of the frame, centered:\n   'THREE BOTANICALS.'\nNothing else. NO sub-headline. NO ingredient cards/callouts/labels. NO dosage numbers. NO bottom strip. NO feature pills. NO connector lines. The viewer can see the three ingredients themselves around the jar — no need for labels.\n\nDESIGN: pure clean white background · subtle warm-gray paper texture · only TEAL/CYAN + GOLD/YELLOW + deep INK-BLACK in the design (matching the jar) · bold ALL-CAPS condensed display sans-serif · generous breathing room.\n\nRULES: all text cleanly spelled · 1:1 4K · no border/frame · text MUST be limited to the single headline 'THREE BOTANICALS.' only · ingredients are photoreal 3D renders (not illustrations).",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

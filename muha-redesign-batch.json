@@ -1,0 +1,65 @@
+[
+  {
+    "prompt": "REDESIGN this Muha Meds giveaway poster from scratch using the SAME modern editorial design language as REFERENCE 2 (the approved Muha Members Giveaway redesign). Match REFERENCE 2's: deep midnight-black background with red/gold/cream palette (NO green neon), muted Miami-at-night cityscape with cream/amber distant windows and red horizon haze, wet asphalt foreground catching cinematic red/amber reflections, hero red Challenger with crisp cinematic side/rim lighting, large polished gold Muha 'M' logo as a hero element with subtle red glow, modern display typography (clean white/cream ink with subtle red/amber outer glow), gold polished star icons, cinematic vignette + subtle film grain, premium magazine-cover finish.\n\nREFERENCE 1 is the original poster — use it ONLY for the exact copy text, the number of filled vs empty stars, and any unique elements.\n\nCOPY TEXT TO PRESERVE EXACTLY (every word, spelling, punctuation, line break): '1 DAY LEFT' as the main hero headline, 'LAST CHANCE TO ENTER' as the smaller subhead below, with FIVE stars at the top: ONE star filled in polished gold and FOUR stars unfilled (outline-only) — match REFERENCE 1's filled/unfilled pattern. Muha 'M' logo present as the hero brand mark. Do NOT add any other text or taglines.\n\nThe Challenger SRT is solid red (TorRed/Octane Red, no stripes/decals), photorealistic, premium. Aspect ratio 3:4, 2160×2880, no watermarks.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/1 day.png",
+      "./Muha Giveaway Redesigned/Muha Members Giveaway.png"
+    ]
+  },
+  {
+    "prompt": "REDESIGN this Muha Meds giveaway poster from scratch using the SAME modern editorial design language as REFERENCE 2 (the approved Muha Members Giveaway redesign). Match REFERENCE 2's: deep midnight-black background with red/gold/cream palette (NO green neon), muted Miami-at-night cityscape with cream/amber distant windows and red horizon haze, wet asphalt foreground catching cinematic red/amber reflections, hero red Challenger with crisp cinematic side/rim lighting, large polished gold Muha 'M' logo as a hero element with subtle red glow, modern display typography (clean white/cream ink with subtle red/amber outer glow), gold polished star icons, cinematic vignette + subtle film grain, premium magazine-cover finish.\n\nREFERENCE 1 is the original poster — use it ONLY for the exact copy text, the number of filled vs empty stars, and any unique elements.\n\nCOPY TEXT TO PRESERVE EXACTLY (every word, spelling, punctuation, line break): '2 DAYS LEFT' as the main hero headline, 'ALMOST TIME' as the smaller subhead below, with FIVE stars at the top: TWO stars filled in polished gold and THREE stars unfilled (outline-only) — match REFERENCE 1's filled/unfilled pattern. Muha 'M' logo present as the hero brand mark. Do NOT add any other text or taglines.\n\nThe Challenger SRT is solid red (TorRed/Octane Red, no stripes/decals), photorealistic, premium. Aspect ratio 3:4, 2160×2880, no watermarks.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/2 day.png",
+      "./Muha Giveaway Redesigned/Muha Members Giveaway.png"
+    ]
+  },
+  {
+    "prompt": "REDESIGN this Muha Meds giveaway poster from scratch using the SAME modern editorial design language as REFERENCE 2 (the approved Muha Members Giveaway redesign). Match REFERENCE 2's: deep midnight-black background with red/gold/cream palette (NO green neon), muted Miami-at-night cityscape with cream/amber distant windows and red horizon haze, wet asphalt foreground catching cinematic red/amber reflections, hero red Challenger with crisp cinematic side/rim lighting (the Challenger is mid-burnout in this one — keep the smoke/burnout dynamic but rendered cleanly), large polished gold Muha 'M' logo as a hero element with subtle red glow, modern display typography (clean white/cream ink with subtle red/amber outer glow), gold polished star icons, cinematic vignette + subtle film grain, premium magazine-cover finish.\n\nREFERENCE 1 is the original poster — use it ONLY for the exact copy text, the number of filled vs empty stars, the burnout pose, and any unique elements.\n\nCOPY TEXT TO PRESERVE EXACTLY (every word, spelling, punctuation, line break): '3 DAYS LEFT' as the main hero headline, 'NO TURNING BACK' as the smaller subhead below, with FIVE stars at the top: THREE stars filled in polished gold and TWO stars unfilled (outline-only) — match REFERENCE 1's filled/unfilled pattern. Muha 'M' logo present as the hero brand mark. Do NOT add any other text or taglines.\n\nThe Challenger SRT is solid red (TorRed/Octane Red, no stripes/decals), photorealistic, premium. Aspect ratio 3:4, 2160×2880, no watermarks.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/3 day.png",
+      "./Muha Giveaway Redesigned/Muha Members Giveaway.png"
+    ]
+  },
+  {
+    "prompt": "REDESIGN this Muha Meds giveaway poster from scratch using the SAME modern editorial design language as REFERENCE 2 (the approved Muha Members Giveaway redesign). Match REFERENCE 2's: deep midnight-black background with red/gold/cream palette (NO green neon), muted Miami-at-night cityscape with cream/amber distant windows and red horizon haze, wet asphalt foreground catching cinematic red/amber reflections, hero red Challenger with crisp cinematic side/rim lighting, large polished gold Muha 'M' logo as a hero element with subtle red glow, modern display typography (clean white/cream ink with subtle red/amber outer glow), gold polished star icons, cinematic vignette + subtle film grain, premium magazine-cover finish.\n\nREFERENCE 1 is the original poster — use it ONLY for the exact copy text, the number of filled vs empty stars, and any unique elements (helicopters, police lights — keep these sparingly and stylized into the new modern aesthetic, NOT in original neon-green).\n\nCOPY TEXT TO PRESERVE EXACTLY (every word, spelling, punctuation, line break): '5 DAYS LEFT' as the main hero headline, 'THE HEAT IS ON' as the smaller subhead below, with FIVE stars at the top: ALL FIVE stars filled in polished gold. Muha 'M' logo present as the hero brand mark. Do NOT add any other text or taglines.\n\nThe Challenger SRT is solid red (TorRed/Octane Red, no stripes/decals), photorealistic, premium. Aspect ratio 3:4, 2160×2880, no watermarks.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/5 day.png",
+      "./Muha Giveaway Redesigned/Muha Members Giveaway.png"
+    ]
+  },
+  {
+    "prompt": "REDESIGN this Muha Meds giveaway poster from scratch using the SAME modern editorial design language as REFERENCE 2 (the approved Muha Members Giveaway redesign). Match REFERENCE 2's: deep midnight-black background with red/gold/cream palette (NO green neon), muted Miami-at-night cityscape with cream/amber distant windows and red horizon haze, wet asphalt foreground catching cinematic red/amber reflections, hero red Challenger with crisp cinematic side/rim lighting (smaller / supporting role here since this is a CTA poster), large polished gold Muha 'M' logo as a hero element with subtle red glow, modern display typography (clean white/cream ink with subtle red/amber outer glow), cinematic vignette + subtle film grain, premium magazine-cover finish. Re-render the scattered cash money in the lower portion as crisp cinematic stacks of $100 bills with warm amber/gold lighting on them (modernize, do NOT keep the painterly green-tinted version).\n\nREFERENCE 1 is the original poster — use it ONLY for the exact copy text, the QR code (preserve the QR code's pattern EXACTLY — every black/white module identical, do NOT alter the QR), and the layout structure.\n\nCOPY TEXT TO PRESERVE EXACTLY (every word, spelling, punctuation, line break): 'GET ON THE LIST' as the main hero headline, 'SCAN. ENTER. WIN.' as the subhead below it, 'Reference to Muha Members AD' as the small label next to the QR, 'No Purchase Necessary | 21+ | See Official Rules on the App' as the disclaimer at the bottom. The QR code stays exactly the same as REFERENCE 1. Muha 'M' logo present as the hero brand mark. Do NOT add any other text or taglines.\n\nThe Challenger SRT is solid red (TorRed/Octane Red, no stripes/decals), photorealistic, premium. Aspect ratio 3:4, 2160×2880, no watermarks.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/Get on the List.png",
+      "./Muha Giveaway Redesigned/Muha Members Giveaway.png"
+    ]
+  },
+  {
+    "prompt": "REDESIGN this Muha Meds giveaway poster from scratch using the SAME modern editorial design language as REFERENCE 2 (the approved Muha Members Giveaway redesign). Match REFERENCE 2's: deep midnight-black background with red/gold/cream palette (NO green neon), muted Miami-at-night cityscape with cream/amber distant windows and red horizon haze, wet asphalt foreground catching cinematic red/amber reflections, hero red Challenger with crisp cinematic side/rim lighting, large polished gold Muha 'M' logo as a hero element with subtle red glow, modern display typography (clean white/cream ink with subtle red/amber outer glow), gold polished star icons, cinematic vignette + subtle film grain, premium magazine-cover finish. The original had police lights — keep them as subtle warm amber/red flashes in the distance, not the harsh blue/red of the original.\n\nREFERENCE 1 is the original poster — use it ONLY for the exact copy text and any unique elements.\n\nCOPY TEXT TO PRESERVE EXACTLY (every word, spelling, punctuation, line break): 'TIME IS RUNNING OUT' as the main hero headline, 'WINNER ANNOUNCED SOON' as the smaller subhead below, with FIVE stars at the top all filled in polished gold (match REFERENCE 1's pattern). Muha 'M' logo present as the hero brand mark. Do NOT add any other text or taglines.\n\nThe Challenger SRT is solid red (TorRed/Octane Red, no stripes/decals), photorealistic, premium. Aspect ratio 3:4, 2160×2880, no watermarks.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/Time is Running Out.png",
+      "./Muha Giveaway Redesigned/Muha Members Giveaway.png"
+    ]
+  },
+  {
+    "prompt": "REDESIGN this Muha Meds giveaway poster from scratch using the SAME modern editorial design language as REFERENCE 2 (the approved Muha Members Giveaway redesign). Match REFERENCE 2's: deep midnight-black background with red/gold/cream palette (NO green neon), muted Miami-at-night cityscape with cream/amber distant windows and red horizon haze, wet asphalt foreground catching cinematic red/amber reflections, hero red Challenger with crisp cinematic side/rim lighting, large polished gold Muha 'M' logo as a hero element with subtle red glow, modern display typography (clean white/cream ink with subtle red/amber outer glow), cinematic vignette + subtle film grain, premium magazine-cover finish. Re-render the scattered cash money in the foreground as crisp cinematic stacks of $100 bills with warm amber/gold lighting on them (modernize, do NOT keep the painterly green-tinted version).\n\nREFERENCE 1 is the original poster — use it ONLY for the exact copy text and the layout structure.\n\nCOPY TEXT TO PRESERVE EXACTLY (every word, spelling, punctuation, line break): 'WIN $25,000 CASH + 2025 CHALLENGER SRT' as the main hero headline. Muha 'M' logo present as the hero brand mark. Do NOT add any other text or taglines.\n\nThe Challenger SRT is solid red (TorRed/Octane Red, no stripes/decals), photorealistic, premium. Aspect ratio 3:4, 2160×2880, no watermarks.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/Win Cash + Challenger.png",
+      "./Muha Giveaway Redesigned/Muha Members Giveaway.png"
+    ]
+  }
+]

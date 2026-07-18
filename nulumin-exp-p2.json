@@ -1,0 +1,58 @@
+[
+  {
+    "prompt": "nul-wl-new-02: A raw, grainy 35mm film ACTION photograph. Charging waist-deep into crashing ocean surf at golden hour, a woman kicks up a sheet of backlit spray with her shins as a wave breaks across her thighs. Subject: late-20s white woman, slim toned build. This is an ACTION photograph: the subject is actively DOING something physical, caught candidly in the very middle of the act, body in motion \u2014 never posed, never static, never calm. Frozen sharp at a fast shutter, catching the person in the very middle of the physical action \u2014 caught in the act, body clearly mid-motion but crisp. Dynamic and candid.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the warm golden, heavily directional-blurred, near-abstract film look of the reference image, but render THIS new action scene.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/3bcd045bdf96fdf2b4571e657ce74af8.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-rec-new-02: A raw, grainy 35mm film ACTION photograph. He drives a percussion massage gun hard into his own quad, hand flexing and the device blurring against the muscle, perched on a weathered locker-room bench in dim afternoon light. Subject: mid-30s white man, stocky muscular build. This is an ACTION photograph: the subject is actively DOING something physical, caught candidly in the very middle of the act, body in motion \u2014 never posed, never static, never calm. Frozen sharp at a fast shutter, catching the person in the very middle of the physical action \u2014 caught in the act, body clearly mid-motion but crisp. Dynamic and candid.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the dark teal-and-olive, moody, glowing halation film look of the reference image, but render THIS new action scene.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/501466320a6fdd52c8331cb69b2106b2.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-lon-new-01: A raw, grainy 35mm film ACTION photograph. Mid-stride hauling a yellow sea kayak overhead down a pebbled shoreline toward the water, sand kicking up underfoot in the low morning light. Subject: 30s Black man, lean athletic build. This is an ACTION photograph: the subject is actively DOING something physical, caught candidly in the very middle of the act, body in motion \u2014 never posed, never static, never calm. THIS IS A LONG-EXPOSURE MOTION SHOT WHERE MOTION IS THE SUBJECT. The moving person is almost entirely DISSOLVED into long directional motion-blur streaks with ghosted, doubled, smeared edges \u2014 barely recognizable as a figure, abstracted into streaks exactly like the reference. The WHOLE frame is swept with heavy motion. Do NOT keep the subject sharp or legible \u2014 it must be aggressively, obviously, heavily blurred and smeared across a large part of the frame. The blur is by far the dominant feature.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the muted earthy dawn-outdoor tones, naturalistic film look of the reference image, but render THIS new action scene.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/35878ba459433b75c226a935b5d4ce8b.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-perf-new-01: A raw, grainy 35mm film ACTION photograph. A bouldering athlete throwing a full-extension dyno, both feet ripped off the wall as she lunges sideways for a distant overhanging hold in a dim chalk-dusted indoor cave at midday. Subject: early-20s Black woman, lean wiry build, hair in tight cornrows. This is an ACTION photograph: the subject is actively DOING something physical, caught candidly in the very middle of the act, body in motion \u2014 never posed, never static, never calm. Frozen sharp at a fast shutter, catching the person in the very middle of the physical action \u2014 caught in the act, body clearly mid-motion but crisp. Dynamic and candid.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the soft, muted grey-toned interior, candid and unposed film look of the reference image, but render THIS new action scene.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/Blur_e00779a33adf8edf1949f92bb7a2c4a8.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-perf-new-09: A raw, grainy 35mm film ACTION photograph. A martial artist mid spinning hook kick, rear leg whipping a blurred arc across a soft grey dojo interior with dust motes hanging in muted daylight. Subject: 30s East Asian man, lean flexible martial-arts build, loose gi pants. This is an ACTION photograph: the subject is actively DOING something physical, caught candidly in the very middle of the act, body in motion \u2014 never posed, never static, never calm. THIS IS A LONG-EXPOSURE MOTION SHOT WHERE MOTION IS THE SUBJECT. The moving person is almost entirely DISSOLVED into long directional motion-blur streaks with ghosted, doubled, smeared edges \u2014 barely recognizable as a figure, abstracted into streaks exactly like the reference. The WHOLE frame is swept with heavy motion. Do NOT keep the subject sharp or legible \u2014 it must be aggressively, obviously, heavily blurred and smeared across a large part of the frame. The blur is by far the dominant feature.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the soft, muted grey-toned interior, candid and unposed film look of the reference image, but render THIS new action scene.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/Blur_e00779a33adf8edf1949f92bb7a2c4a8.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-cog-new-08: A raw, grainy 35mm film ACTION photograph. A muralist on a step-ladder slashes a wide loaded brushstroke across a raw concrete wall at dusk, paint flicking off the bristles in an arc. Subject: late-30s Black woman, tall lean build. This is an ACTION photograph: the subject is actively DOING something physical, caught candidly in the very middle of the act, body in motion \u2014 never posed, never static, never calm. THIS IS A LONG-EXPOSURE MOTION SHOT WHERE MOTION IS THE SUBJECT. The moving person is almost entirely DISSOLVED into long directional motion-blur streaks with ghosted, doubled, smeared edges \u2014 barely recognizable as a figure, abstracted into streaks exactly like the reference. The WHOLE frame is swept with heavy motion. Do NOT keep the subject sharp or legible \u2014 it must be aggressively, obviously, heavily blurred and smeared across a large part of the frame. The blur is by far the dominant feature.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the muted earthy dawn-outdoor tones, naturalistic film look of the reference image, but render THIS new action scene.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/35878ba459433b75c226a935b5d4ce8b.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-sex-new-07: A raw, grainy 35mm film ACTION photograph. A solo man dances and spins in a dim warm bedroom, mid-pivot with arms loose and a relaxed confident smile, soft lamp glow catching his frame. Subject: 30s Southeast Asian man, slim-toned, in a henley and joggers. This is an ACTION photograph: the subject is actively DOING something physical, caught candidly in the very middle of the act, body in motion \u2014 never posed, never static, never calm. Frozen sharp at a fast shutter, catching the person in the very middle of the physical action \u2014 caught in the act, body clearly mid-motion but crisp. Dynamic and candid.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the dark teal-and-olive, moody, glowing halation film look of the reference image, but render THIS new action scene.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/501466320a6fdd52c8331cb69b2106b2.jpeg"
+    ]
+  }
+]

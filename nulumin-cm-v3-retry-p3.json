@@ -1,0 +1,35 @@
+[
+  {
+    "prompt": "Square 1:1 editorial fitness studio photograph. A man with curly hair and a deep red athletic tank wiping the back of his neck with a towel between sets, dim warm tungsten gym lighting, deep teal shadows. CAMERA-IN-MOTION blur — soft directional smear from a fast right-to-left lateral camera pan, slight Dutch tilt ~7° counter-clockwise, stronger blur intensity. Painterly chiaroscuro, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 6,
+      "variant": "v2"
+    }
+  },
+  {
+    "prompt": "Landscape 4:3 editorial lifestyle photograph. A man jogging through a serene outdoor trail at golden hour, mid-stride, casual heather-grey athletic wear, warm soft light. CAMERA-IN-MOTION blur — soft directional smear from a fast lateral left-to-right camera pan, slight Dutch tilt ~6° clockwise, moderate blur intensity. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 2,
+      "variant": "v1"
+    }
+  },
+  {
+    "prompt": "Landscape 4:3 editorial lifestyle photograph. A man in olive athletic shorts and a heather-grey tee walking through a quiet wooded trail at golden hour, hands resting in pockets, soft warm sidelight. CAMERA-IN-MOTION blur — soft directional smear from a fast diagonal upward camera sweep, near level (~3° tilt), subtle but clearly present blur. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 3,
+      "variant": "v3"
+    }
+  }
+]

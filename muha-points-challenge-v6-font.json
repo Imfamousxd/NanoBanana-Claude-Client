@@ -1,0 +1,13 @@
+[
+  {
+    "prompt": "Reference 1 is the layout TARGET. Reproduce reference 1 PIXEL-FAITHFULLY — same composition, same MM monogram, same gold stars, same eyebrow \"MUHA MEMBERS // POINTS CHALLENGE\", same sub-instruction, same GTA Muha card placement and tilt, same two stacked reward pills, same bottom disclaimer, same Vice City Miami-night backdrop with red glow + palms + skyline, same subtle glow effects.\n\nONLY CHANGE: the massive \"EARN POINTS\" headline. Replace the current letterpress slab/display typography with a BIG BOLD GEOMETRIC SANS-SERIF in the Poppins / Montserrat / Inter Display family — heavy bold weight (~800-900 weight), uppercase, generous letterspacing, clean modern geometric forms with circular round letterforms. Color stays warm cream #E8D5A8 with the subtle warm-gold glow halo around the letters. Same TWO-LINE stack (\"EARN\" on line 1, \"POINTS\" on line 2), same size and position as reference 1's headline. The headline should read modern, confident, big-and-bold — distinct from the letterpress slab style.\n\nEverything else in reference 1 stays IDENTICAL — only the headline typography changes.\n\nNegative: do NOT change anything other than the EARN POINTS headline font, do NOT use slab serif or letterpress style on this headline (that style remains on the OTHER text — eyebrow, pills, disclaimer), do NOT change the card, do NOT change the pills, do NOT change the backdrop, do NOT change the layout.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Muha Giveaway Redesigned/muha-points-challenge.png"
+    ],
+    "_meta": {
+      "name": "muha-points-challenge-v6-font"
+    }
+  }
+]

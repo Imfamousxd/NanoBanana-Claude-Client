@@ -1,0 +1,14 @@
+[
+  {
+    "prompt": "Use the attached image as a close STYLE and composition reference. Create a cinematic, glowing, translucent human figure seen from BEHIND (head, neck, shoulders, back and arms), bioluminescent and ethereal. KEY ELEMENTS: at the TOP of the head, a detailed anatomical human BRAIN glowing and partially exposed; running vertically straight down the center of the back / spine, a luminous bright glowing DNA double-helix strand as the hero focal element; translucent green botanical LEAVES and delicate leaf-vein / nerve networks woven through the body; the whole body radiates emerald and lime green bioluminescent light with glowing particles, sparks, and a soft green cosmic nebula/dust spreading out behind the shoulders. Deep near-black dark background so the green glow pops. Premium, mystical biotech-wellness aesthetic, photoreal volumetric light, fine grain. No text, no logos. Wide cinematic composition, figure centered.",
+    "aspectRatio": "16:9",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/brain_dna_ref.png"]
+  },
+  {
+    "prompt": "Use the attached image as a close STYLE and composition reference, but shift the color palette to WARM GOLDEN-WHITE and soft amber (instead of green). Create a cinematic, glowing, translucent human figure seen from BEHIND (head, neck, shoulders, back and arms), bioluminescent and ethereal. KEY ELEMENTS: at the TOP of the head, a detailed anatomical human BRAIN glowing and partially exposed; running vertically straight down the center of the back / spine, a luminous bright glowing DNA double-helix strand as the hero focal element; translucent botanical LEAVES and delicate leaf-vein / nerve networks woven through the body; the whole body radiates warm golden-white and amber bioluminescent light with glowing particles, sparks, and a soft warm cosmic nebula/dust spreading out behind the shoulders. Deep dark warm-charcoal background so the golden glow pops. Premium, mystical wellness aesthetic, photoreal volumetric light, fine grain. No text, no logos. Wide cinematic composition, figure centered.",
+    "aspectRatio": "16:9",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/brain_dna_ref.png"]
+  }
+]

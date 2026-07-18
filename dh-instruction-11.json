@@ -1,0 +1,8 @@
+[
+  {
+    "prompt": "Take the provided reference image and reproduce it PIXEL-FAITHFULLY — same person composition (chin to mid-torso, plain t-shirt, exposed deltoid on viewer's right), same balloon-shaped device adhered HIGH on the deltoid, same flush flat solid-red button on the device top (NOT raised), same vial hanging straight down from the device's bottom neck protrusion with red blood filling the lower portion up to the graduation line, same horizontal arrow pointing left at the blood, same line-art style on pure white background, same line weight, no hand. DO NOT change the person, the framing, the device shape, the device position, the vial, the blood, the arrow, the line weight, or the style.\n\nTHE ONLY MODIFICATION — the mark in the center of the red button: in the reference there's a black '+' / crosshair mark in the center of the red button. Replace it with a single small SOLID BLACK DOT in the center of the red button (a small filled circle, like a small bullseye dot). No crosshair lines, no plus sign — just a clean small black dot centered on the red button face.\n\nDo not modify anything else — no changes to the person, the device shape, the device position, the vial, the blood, the arrow, the line weight, or the style. Pure black line-art on white with TWO REDS (flush red button + red blood). No frame, no border around the canvas, no labels.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["generations/2026-05-12T02-10-26_Take_the_provided_reference_image_and_re.jpg"]
+  }
+]

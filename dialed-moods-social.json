@@ -1,0 +1,18 @@
+[
+  {
+    "prompt": "A premium minimal wellness-app social graphic, vertical 4:5. Soft, smooth light periwinkle-blue gradient background (pale blue, gentle and airy, subtle depth). Centered: a simple thin-line rounded chat / message-bubble icon in a clean medium blue, with a small four-point sparkle accent at its top-right. Below the icon, centered clean modern sans-serif text in dark slate-blue: first line 'Hello,' then a slightly larger line 'I'm your health coach'. In the very top-right corner, a small white rounded-square button with a blue play triangle icon. Lots of negative space, calm, Apple-Health-like premium minimalism, soft and friendly. Render all text spelled EXACTLY as written, no other text, no logos.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K"
+  },
+  {
+    "prompt": "A cinematic, premium wellness-tech social graphic, vertical 4:5. A soft-focus close-up photograph of a single human index finger pointing upward, with a glowing bright white-blue orb of light resting on the fingertip, emitting a gentle glow. Dreamy, blurred, atmospheric background in soft blue and warm neutral tones, shallow depth of field, ethereal light. In the lower third, centered: a clean elegant light headline reading 'Activate Your Potential' in a refined modern font (two lines), and beneath it smaller delicate text: 'Technology meets wellness' then '— right at your fingertips —'. Sophisticated, calm, futuristic-wellness mood. Render all text spelled EXACTLY as written, no other text, no logos.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K"
+  },
+  {
+    "prompt": "A dark, moody, premium product-hero social graphic, vertical 4:5. Use the attached product jar EXACTLY as it is — the black, teal and gold 'DIALED Sea Moss Gummies' supplement jar with the gold lid — do NOT change, redraw, restyle or alter its label or text in any way; keep it perfectly faithful and sharp as the hero centerpiece. Place the jar centered on a deep near-black background with dramatic cinematic studio lighting: a soft glowing teal-and-gold rim light tracing the jar's edges, a subtle warm glow and faint haze behind it, a soft reflection beneath it on a dark surface, premium and luxurious. Floating in front, slightly overlapping the jar, a small frosted translucent glass UI card (subtle blur, rounded corners, soft white) containing the text 'Removing the guesswork' and below it a small rounded pill button reading 'Explore'. In the very top-right corner, a small subtle 'Lite' label. Sleek, modern, biotech-wellness app aesthetic. Render all UI text spelled EXACTLY as written, do NOT add any other text or logos beyond the jar's own label and the UI card.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/Social/seamoss_product_ref.png"]
+  }
+]

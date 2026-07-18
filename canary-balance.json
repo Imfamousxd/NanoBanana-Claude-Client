@@ -1,0 +1,14 @@
+[
+  {
+    "prompt": "Recreate this flavor-badge logo, keeping the SAME elements and clean toned-down fruit: a round sunset-over-the-sea medallion on top, a small tasteful cluster of fruit (one orange slice, a few blueberries and raspberries, one passion-fruit half) at the seam, and below it the navy shield with gold engraved border reading 'CANARY ISLAND PUNCH' in bold coral-orange letters with the engraved sunrise motif. FIX THE PROPORTIONS: in this version the top medallion is much too SMALL compared to the wide shield below, so it looks unbalanced and top-light. Make the upper sunset medallion noticeably LARGER and wider so its visual weight BALANCES the shield underneath — the round medallion should be roughly as wide as the shield is wide, the two halves feeling like equal, harmonious halves of one emblem. Keep the same coral/navy/gold palette, no juice splashes, lots of clean white space. Pure solid white background, centered contained badge with margin.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["euro Music theme/Lux Icons/Canary_Island_Punch_v7.png"]
+  },
+  {
+    "prompt": "Recreate this flavor-badge logo, keeping the SAME minimal toned-down fruit (just one orange half and a couple of berries) and the same clean sunset medallion + navy shield reading 'CANARY ISLAND PUNCH' in bold coral letters with the engraved sunrise motif and gold border. FIX THE PROPORTIONS: the top sunset medallion is currently far too SMALL relative to the wide shield, making it look unbalanced. Enlarge the upper medallion substantially so it is about as wide as the shield below it and the two stack as balanced, equal halves of one cohesive emblem. Same coral/navy/gold palette, no juice splashes, calm and uncluttered with lots of white space. Pure solid white background, centered contained badge with margin.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["euro Music theme/Lux Icons/Canary_Island_Punch_v8.png"]
+  }
+]

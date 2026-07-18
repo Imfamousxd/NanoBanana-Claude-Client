@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "Use these as STYLE and CONTENT references. Create one single FEMININE ethereal figure framed from the WAIST UP (a closer, waist-up / torso shot — head, chest, shoulders, arms and torso down to the waist, NOT full body), front-facing, centered and larger in the frame. Keep the soft warm ETHEREAL look: a translucent figure of warm golden-white inner light with smoky wispy energy filaments radiating around it, on a dreamy soft TAN / warm-beige gradient background (NOT harsh white, NOT black), long-exposure dream feel, fine grain. Embed the anatomy: a glowing anatomical BRAIN at the top of the head, a luminous DNA double-helix running down the center of the chest and torso, and translucent botanical LEAVES and leaf-vein / nerve networks across the chest, shoulders and arms. Warm golden-tan palette, soft and ethereal, glow gently bleeding into the warm background. No text, no logos. 1:1 square, waist-up composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/ethereal_female_v2.png", "Dialed Moods/brain_dna_ethereal_tan_v1.png"]
+  },
+  {
+    "prompt": "Use these as STYLE and CONTENT references. Create one single FEMININE ethereal figure framed from the WAIST UP (closer torso shot — head, chest, shoulders, arms and torso to the waist, NOT full body), front-facing, centered, with a MORE radiant aura and energy wisps flaring gracefully upward and outward around her. Soft warm ETHEREAL translucent figure of warm golden-white inner light on a dreamy soft TAN / warm-beige gradient background (NOT harsh white, NOT black), fine grain. Embed the anatomy: glowing anatomical BRAIN at the top of the head, a luminous DNA double-helix down the center of the chest and torso, and translucent botanical LEAVES and leaf-vein / nerve networks across the chest, shoulders and arms. Warm golden-tan palette, soft and ethereal, glow bleeding into the warm background. No text, no logos. 1:1 square, waist-up composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/ethereal_female_v3.png", "Dialed Moods/brain_dna_ethereal_tan_v1.png"]
+  },
+  {
+    "prompt": "Use these as STYLE and CONTENT references. Create one single MASCULINE ethereal figure (athletic masculine build, broader shoulders) framed from the WAIST UP (a closer, waist-up / torso shot — head, chest, shoulders, arms and torso down to the waist, NOT full body), front-facing, centered and larger in the frame. Keep the soft warm ETHEREAL look: a translucent figure of warm golden-white inner light with smoky wispy energy filaments radiating around it, on a dreamy soft TAN / warm-beige gradient background (NOT harsh white, NOT black), long-exposure dream feel, fine grain. Embed the anatomy: a glowing anatomical BRAIN at the top of the head, a luminous DNA double-helix running down the center of the chest and torso, and translucent botanical LEAVES and leaf-vein / nerve networks across the chest, shoulders and arms. Warm golden-tan palette, soft and ethereal, glow gently bleeding into the warm background. No text, no logos. 1:1 square, waist-up composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/ethereal_male_v1.png", "Dialed Moods/brain_dna_ethereal_tan_v1.png"]
+  },
+  {
+    "prompt": "Use these as STYLE and CONTENT references. Create one single MASCULINE ethereal figure (strong athletic masculine build) framed from the WAIST UP (closer torso shot — head, chest, shoulders, arms and torso to the waist, NOT full body), front-facing, centered, with a MORE radiant aura and energy wisps flaring upward and outward around him. Soft warm ETHEREAL translucent figure of warm golden-white inner light on a dreamy soft TAN / warm-beige gradient background (NOT harsh white, NOT black), fine grain. Embed the anatomy: glowing anatomical BRAIN at the top of the head, a luminous DNA double-helix down the center of the chest and torso, and translucent botanical LEAVES and leaf-vein / nerve networks across the chest, shoulders and arms. Warm golden-tan palette, soft and ethereal, glow bleeding into the warm background. No text, no logos. 1:1 square, waist-up composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/ethereal_male_v2.png", "Dialed Moods/brain_dna_ethereal_tan_v1.png"]
+  }
+]

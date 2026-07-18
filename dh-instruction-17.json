@@ -1,0 +1,11 @@
+[
+  {
+    "prompt": "Take the FIRST provided reference image (the approved step 17 showing a hand inserting the pinky-sized capped blood-filled vial into the open zip-seal specimen bag) and reproduce it PIXEL-FAITHFULLY — same hand from upper-left lowering the small capped vial into the open bag through the parted zip seal, lower half of vial inside the bag (drawn lighter through the plastic), upper half with cap above the seal, same bag shape and proportions, same line-art style on pure white background, same line weight. DO NOT change the hand, the vial, the bag shape, the zip seal, the composition, the framing, or the style.\n\nTWO MODIFICATIONS:\n\n1) REMOVE THE BIOHAZARD SYMBOL and replace it with a SQUARE QR CODE on the front face of the bag, positioned in the centered/lower-middle area where the biohazard symbol was. Draw the QR code as a clean square with a typical QR-code internal pattern: a square outline divided into a grid of small black-and-white modules (a pixelated mosaic of small squares — some filled black, some left white), with three large square POSITIONING SQUARES in three of the corners (top-left, top-right, bottom-left), each a smaller solid black square with a white inner square and a black center. Standard QR-code visual. Cleanly outlined, fitting in the same area the biohazard symbol occupied.\n\n2) ADD THE DIALED HEALTH LOGO on the bag — draw the DH logo (bold 'DIALED' wordmark, horizontal EKG line with triangular spike, 'HEALTH' wordmark below — match the SECOND provided reference image) positioned ABOVE the QR code on the bag's front face, in the upper area of the bag near the top edge. Clean black lettering proportional to the bag.\n\nDo not modify anything else — same hand, same vial, same bag shape, same line weight, same background, same style. Pure black line-art on white with the faint red blood inside the vial as the only color. No frame, no border, no other labels.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "DIaled Health Instruction Graphics/Approved/17.png",
+      "DIaled Health Instruction Graphics/Product Refs/Dialed Health_Logo_Updated-02.png"
+    ]
+  }
+]

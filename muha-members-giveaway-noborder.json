@@ -1,0 +1,12 @@
+[
+  {
+    "prompt": "Create a NEW Muha Meds 'Classified // Muha Members' giveaway poster, FRESH render (do NOT edit reference 1 — use it ONLY for layout reference). Aspect ratio 3:4 vertical / 2160×2880. Aesthetic: cinematic red/gold/cream/black palette of REFERENCE 2 (5-day countdown poster) — wet-Miami-pavement-at-night, warm amber/red atmospheric glow, deep blacks, gold star accents, condensed cream serif lettering, gold metallic finishes. NO Vice-City synthwave pink/teal neons.\n\nIMPORTANT: do NOT draw any decorative border frame around the perimeter of the poster. The artwork must bleed edge-to-edge with NO gold border line, NO outline, NO frame, NO decorative perimeter — the scene reaches every edge of the canvas without any framing element.\n\nLayout (based on REFERENCE 1 brief):\n- Top-center: Muha 'M' gold logo from REFERENCE 3 (use as-is, gold metallic, prominently placed).\n- Beneath the logo: a row of small gold stars as a divider.\n- Cream subhead in bold condensed all-caps, between two horizontal gold rules: 'CLASSIFIED // MUHA MEMBERS'.\n- Hero headline stacked on TWO lines, big bold cream condensed serif:\n   • Line 1: '$25,000+'\n   • Line 2: 'AND DODGE CHALLENGER'\n  TYPOGRAPHY TREATMENT — clean, smooth, crisp cream condensed serif with a SUBTLE soft warm-RED outer glow halo behind/around the lettering (warm crimson/amber, low intensity ~25% opacity, gentle Gaussian blur, sized about 1× character height). Minimal/no grunge texture.\n  CRITICAL: do NOT use '$75,000+'. Do NOT use 'GIVEAWAY' alone. Do NOT include 'SRT' or '2025'. Headline text is exactly '$25,000+ AND DODGE CHALLENGER'.\n- Below the headline: large hero red Dodge Challenger EXACTLY matching REFERENCE 2 (same body, lighting, wet-asphalt reflections, camera angle and stance). Do NOT show any 'SRT' badge prominently.\n- Background: cinematic Miami nighttime skyline silhouette with palm trees, deep blacks and warm red/amber neon glow, wet pavement reflections — bleeding to all four edges with NO frame.\n\nUltra-sharp render, no watermarks, no extra text, NO BORDER FRAME around the perimeter.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/Muha Members Giveaway.png",
+      "./Muha Giveaway Redesigned/5 day.png",
+      "./Muha Giveaway Assets/mm-gold.png"
+    ]
+  }
+]

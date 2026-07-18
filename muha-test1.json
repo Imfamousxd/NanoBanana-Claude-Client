@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "Edit REFERENCE 1 (a Muha giveaway poster). Make exactly two kinds of change: (A) change the Dodge Challenger SRT car's color to a SOLID RED \u2014 clean, glossy, automotive-paint red (think classic Hellcat 'Octane Red' or 'TorRed'), no racing stripes, no two-tone, no decals, just a single solid red body color across the whole car (hood, doors, fenders, roof, trunk, side skirts). The car shape, model, angle, lighting, and overall pose stay identical to REFERENCE 1; only its body paint becomes solid red. (B) Update the overall visual style to feel MORE MODERN \u2014 cleaner detail, sharper rendering, slightly more refined color grade, less smudgy/painterly artifacts \u2014 while preserving the stylized GTA-Vice-City poster vibe (neon Miami palms, glowing city, illustrated/painted look, dramatic atmosphere). KEEP IDENTICAL: all text exactly as it appears on REFERENCE 1 (every word, every character, every font, every size, every position) \u2014 do NOT change, re-spell, re-position, resize, or re-style any text. KEEP IDENTICAL: the Muha 'M' logo, all star ratings/icons, the layout, the composition, the framing, the aspect ratio, the location of every element. KEEP IDENTICAL: the background scene (palm trees, city skyline, neon, road, location). The new red car must integrate naturally with the existing scene lighting \u2014 neon and ambient highlights re-cast onto the red paint instead of the original car color. Photorealistic-illustrated GTA poster style, sharp focus, modern editorial polish, no extra text or elements, no watermarks.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./Muha Giveaway Assets/1 day.png"
+    ]
+  }
+]

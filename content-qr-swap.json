@@ -1,0 +1,29 @@
+[
+  {
+    "prompt": "Edit REFERENCE 2 by REPLACING the QR code currently shown inside the white QR card with the EXACT QR pattern from REFERENCE 1. The new QR encodes the URL https://apps.apple.com/us/app/muha-members/id6743873537. Preserve every black module and every white module of REFERENCE 1's QR pattern PIXEL-PERFECT — copy the pattern faithfully so the QR scans correctly with a phone camera. Do NOT add modules, remove modules, blur edges, anti-alias the modules, smooth the corners of any module, or invent any QR-like noise. The QR should be crisp, sharp, fully square, with high contrast (pure black on pure white). Keep the QR positioned and sized inside the white card exactly as it currently is in REFERENCE 2 — do not move or resize the card. Keep absolutely everything else in REFERENCE 2 IDENTICAL: every other element of the poster (background, palette, typography, Challenger, Muha 'M' logo, headlines, subheads, three step phones, all text and disclaimers, layout, lighting, color grade, vignette, film grain, aspect ratio). Photorealistic, sharp focus, no extra text, no watermarks.",
+    "aspectRatio": "2:3",
+    "imageSize": "4K",
+    "refImages": [
+      "./muha-app-qr.png",
+      "./generations/2026-04-28T03-06-39_Edit_REFERENCE_2_existing_redesigned_co.png"
+    ]
+  },
+  {
+    "prompt": "Edit REFERENCE 2 by REPLACING the QR code currently shown inside the white QR card with the EXACT QR pattern from REFERENCE 1. The new QR encodes the URL https://apps.apple.com/us/app/muha-members/id6743873537. Preserve every black module and every white module of REFERENCE 1's QR pattern PIXEL-PERFECT — copy the pattern faithfully so the QR scans correctly with a phone camera. Do NOT add modules, remove modules, blur edges, anti-alias the modules, smooth the corners of any module, or invent any QR-like noise. The QR should be crisp, sharp, fully square, with high contrast (pure black on pure white). Keep the QR positioned and sized inside the white card exactly as it currently is in REFERENCE 2. Keep absolutely everything else in REFERENCE 2 IDENTICAL: every other element of the poster (background, palette, typography, Challenger, Muha 'M' logo, headlines, subheads, three step phones, all text and disclaimers, layout, lighting, color grade, vignette, film grain, aspect ratio 9:16). Photorealistic, sharp focus, no extra text, no watermarks.",
+    "aspectRatio": "9:16",
+    "imageSize": "4K",
+    "refImages": [
+      "./muha-app-qr.png",
+      "./generations/2026-04-28T03-09-53_Edit_REFERENCE_2_existing_redesigned_co.png"
+    ]
+  },
+  {
+    "prompt": "Edit REFERENCE 2 by REPLACING the QR code currently shown inside the white QR card with the EXACT QR pattern from REFERENCE 1. The new QR encodes the URL https://apps.apple.com/us/app/muha-members/id6743873537. Preserve every black module and every white module of REFERENCE 1's QR pattern PIXEL-PERFECT — copy the pattern faithfully so the QR scans correctly with a phone camera. Do NOT add modules, remove modules, blur edges, anti-alias the modules, smooth the corners of any module, or invent any QR-like noise. The QR should be crisp, sharp, fully square, with high contrast (pure black on pure white). Keep the QR positioned and sized inside the white card exactly as it currently is in REFERENCE 2. Keep absolutely everything else in REFERENCE 2 IDENTICAL: every other element of the poster (background, palette, typography, Challenger, Muha 'M' logo, headlines, subheads, three step phones, all text and disclaimers, layout, lighting, color grade, vignette, film grain, aspect ratio 9:16). Photorealistic, sharp focus, no extra text, no watermarks.",
+    "aspectRatio": "9:16",
+    "imageSize": "4K",
+    "refImages": [
+      "./muha-app-qr.png",
+      "./generations/2026-04-28T03-12-35_Edit_REFERENCE_2_existing_redesigned_co.png"
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "prompt": "Take the provided reference image and reproduce it PIXEL-FAITHFULLY — same person composition (chin to mid-torso, plain t-shirt, exposed deltoid on viewer's right), same hand reaching across the body holding the compact diamond-gem heat pack pressed against the deltoid, same DIALED HEALTH branded heat pack design, same line-art style on pure white background, same line weight. DO NOT change the person, the framing, the hand pose, the heat pack design, the line weight, or the style.\n\nTHE ONLY MODIFICATION — replace the vertical double-headed up-down arrow with a CIRCULAR MOTION INDICATOR: delete the existing vertical arrow next to the pack. Replace it with a single clean CURVED / CIRCULAR ARROW drawn on the deltoid skin BEHIND or NEXT TO the heat pack, indicating a circular rubbing motion. The arrow is a clean closed-loop curved line that forms a circle / oval shape, with a clear arrowhead at one point on the curve showing the direction of rotation (the loop has one arrowhead, conveying 'rotate in this circular direction'). Position the circular arrow either overlapping slightly with the deltoid behind the pack or beside the pack on the visible skin. Drawn lighter / slightly thinner than the main contours so it reads as a motion-indicator graphic, not as part of the body.\n\nDo not modify anything else — same person, same hand, same heat pack design, same line weight, same background, same style. Pure black line-art on white, no color. No frame, no border, no other labels.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["generations/2026-05-13T01-16-52_Take_the_provided_reference_image_and_re.jpg"]
+  }
+]

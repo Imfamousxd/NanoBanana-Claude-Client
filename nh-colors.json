@@ -1,0 +1,12 @@
+{
+  "_comment": "Locked cap hex spec sampled from BPC-157 master set. All future Noble Harbor wholesale vials must match these codes 1:1 for cap color, with the bottom accent bar rendered in the same hex (or barColor where overridden).",
+  "navy":     { "name": "navy blue",      "cap": "#101850", "bar": "#101850" },
+  "black":    { "name": "matte black",    "cap": "#202020", "bar": "#202020" },
+  "white":    { "name": "bright white",   "cap": "#FFFFFF", "bar": "#B0B0B0" },
+  "red":      { "name": "crimson red",    "cap": "#700008", "bar": "#700008" },
+  "green":    { "name": "forest green",   "cap": "#407858", "bar": "#407858" },
+  "babyblue": { "name": "soft baby blue", "cap": "#90B0C8", "bar": "#90B0C8" },
+  "yellow":   { "name": "bright yellow",  "cap": "#D8C848", "bar": "#D8C848" },
+  "pink":     { "name": "medical pink",   "cap": "#F0D0D8", "bar": "#F0D0D8" },
+  "purple":   { "name": "royal purple",   "cap": "#8068A8", "bar": "#8068A8" }
+}

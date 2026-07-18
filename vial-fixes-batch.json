@@ -1,0 +1,47 @@
+[
+  {
+    "prompt": "Edit REFERENCE 1 by PULLING THE CAMERA BACK slightly — the crop is currently too tight. Make the shot a bit looser / less zoomed in so the full hand and vial are comfortably visible with a touch more surrounding scene and hand skin showing, while keeping proportions realistic (vial still only slightly longer than a finger). Keep everything else IDENTICAL: same hand (woman with long white nails), same palm-down top-down POV, same vertical vial orientation, same label facing camera, same outdoor track scene and background, same lighting, same color grade, same 5:4 framing. Only the zoom level changes — wider crop, less tight. Photorealistic, seamless recrop only, crisp focus, no artifacts, label stays exact.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/DSIP/woman-track.jpg"]
+  },
+  {
+    "prompt": "Edit REFERENCE 2 by REPLACING ONLY the vial in it with a Dialed Health 'LIPO-B' vial. REFERENCE 1 is the product-design source: use it ONLY to know what the correct label artwork and vial design look like. Do NOT paste REFERENCE 1 flat — you must RE-LIGHT and RE-RENDER the vial so it belongs naturally in REFERENCE 2's gym scene. The liquid INSIDE the glass vial must be CLEAR and COLORLESS (like water). KEEP from REFERENCE 2: the hand (woman with long white-polished nails), skin tone, nails, grip, top-down overhead camera angle, tight close-up crop, composition, gym scene and background, scene lighting, depth of field, color grade, 5:4 framing. RE-LIGHT the vial to match the gym environment — charcoal/cool ambient cast, overhead directional gym lighting, specular highlights aligned to scene light, scene-integrated shadows on the hand. The vial must look genuinely present in the scene, NOT pasted. LABEL must be EXACT from REFERENCE 1: matte black label, Dialed Health ECG logo on top, product name 'LIPO-B' in clean bold white sans-serif centered below on a single line. No dosing, no extra text. Vial upright and vertical, label facing camera, realistic vial scale (slightly longer than a finger), ONE SINGLE HAND, pristine product with no imperfections. Photorealistic, seamless scene-integrated product with clear colorless liquid, editorial lifestyle quality, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Vials/LIPO-B.jpg",
+      "./DH Shots/Vials Lifestyle/Semaglutide + B12/woman-gym.jpg"
+    ]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 to CLEAN UP the vial — remove any line, scratch, smudge, scuff mark, or imperfection on the vial's glass, cap, or label so the vial looks pristine and unblemished. Keep everything else IDENTICAL: same hand, skin, grip, fingers, vial shape/size, cap, label text and logo, label position, scene, background, top-down camera angle, composition, lighting, depth of field, color grade, 5:4 framing. The cleaned vial must still look naturally scene-lit, not studio-sterile. Photorealistic, seamless product retouch only, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/Pinealon-PE22-28-Selank/woman-kitchen.jpg"]
+  },
+  {
+    "prompt": "Edit REFERENCE 1 to CLEAN UP the vial — remove any line, scratch, smudge, scuff mark, or imperfection on the vial's glass, cap, or label so the vial looks pristine and unblemished. Keep everything else IDENTICAL: same hand, skin, grip, fingers, vial shape/size, cap, label text and logo, label position, scene, background, top-down camera angle, composition, lighting, depth of field, color grade, 5:4 framing. The cleaned vial must still look naturally scene-lit, not studio-sterile. Photorealistic, seamless product retouch only, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": ["./DH Shots/Vials Lifestyle/Pinealon-PE22-28-Selank/woman-track.jpg"]
+  },
+  {
+    "prompt": "Edit REFERENCE 2 by REPLACING ONLY the vial in it with a Dialed Health 'SS-31' vial. REFERENCE 1 is the product-design source: use it ONLY to know what the correct label artwork and vial design look like. Do NOT paste REFERENCE 1 flat — RE-LIGHT and RE-RENDER the vial to belong naturally in REFERENCE 2's kitchen scene. The liquid INSIDE the glass vial must be CLEAR and COLORLESS. KEEP from REFERENCE 2: the hand (man), skin tone, grip, top-down overhead camera angle, tight close-up crop, composition, indoor kitchen scene and background, scene lighting (warm morning window light), depth of field, color grade, 5:4 framing. RE-LIGHT the vial to match kitchen environment — warm white/cream ambient, soft window light from the side. LABEL must be EXACT from REFERENCE 1: matte black label, Dialed Health ECG logo on top (DIALED / HEALTH split by white ECG line), product name 'SS-31' in clean bold white sans-serif centered below on a single line. That is ALL — no dosing, no mg, no mL, no Rx, no QR, no barcode, no other text. Do NOT invent label text. Vial upright and vertical, label facing camera, realistic vial scale (slightly longer than a finger), ONE SINGLE HAND, pristine product. Photorealistic, seamless scene-integrated product with clear colorless liquid, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Vials/SS-31.jpg",
+      "./DH Shots/Vials Lifestyle/Semaglutide + B12/man-kitchen.jpg"
+    ]
+  },
+  {
+    "prompt": "Edit REFERENCE 2 by REPLACING ONLY the vial in it with a Dialed Health 'Tesamorelin' vial. REFERENCE 1 is the product-design source: use it ONLY to know what the correct label artwork and vial design look like. Do NOT paste REFERENCE 1 flat — RE-LIGHT and RE-RENDER the vial to belong naturally in REFERENCE 2's gym scene. The liquid INSIDE the glass vial must be CLEAR and COLORLESS. KEEP from REFERENCE 2: the hand (man), skin tone, grip, top-down overhead camera angle, tight close-up crop, composition, indoor gym scene and background, scene lighting (cooler charcoal tones, overhead gym lighting), depth of field, color grade, 5:4 framing. RE-LIGHT the vial to match gym environment. CRITICAL VIAL SCALE: the vial must be small, realistic, only slightly longer than an index finger — NOT oversized, NOT larger than the hand. Match the vial's visual footprint to the Semaglutide + B12 vial in REFERENCE 2. LABEL must be EXACT from REFERENCE 1: matte black label, Dialed Health ECG logo on top (DIALED / HEALTH split by white ECG line), product name 'Tesamorelin' in clean bold white sans-serif centered below on a single line. That is ALL — no dosing, no mg, no mL, no Rx, no QR, no barcode, no other text. Do NOT invent label text. Vial upright and vertical, label facing camera, ONE SINGLE HAND, pristine product. Photorealistic, seamless scene-integrated product with clear colorless liquid, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Vials/Tesamorelin.jpg",
+      "./DH Shots/Vials Lifestyle/Semaglutide + B12/man-gym.jpg"
+    ]
+  }
+]

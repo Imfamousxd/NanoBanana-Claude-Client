@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "STYLE: hyper-realistic 1:1 lifestyle product-in-scene photograph, 4K. Editorial wellness-brand campaign feel — Athletic Greens / Hims / Goop product environment shoot. NO PEOPLE, NO hands, NO faces. Just the product in a natural environment.\n\nSCENE: a sunlit modern kitchen counter mid-morning, white marble surface. The Dialed Sea Moss Gummies jar (matching the provided reference image — black plastic jar, teal/cyan + gold/yellow accents, GOLD LID on top, jar CLOSED, front label fully legible 'DIALED SEA MOSS Gummies, TASTY · CONVENIENT · EFFECTIVE, 60 GUMMIES, DIETARY SUPPLEMENT', side panel 'MsB° Mineral Support Blend' in vertical teal strip) sits CENTERED in the frame on the marble counter. The jar occupies roughly the central 45-50% of the frame height.\n\nAround the jar, naturally staged morning-routine props (out-of-focus where appropriate, in focus near the jar): a small ceramic dish to the side holding 4-5 dark sugar-dusted gummy CUBES, a single fresh lemon slice on a wood cutting board to the far left, a soft-focus stainless-steel water bottle and a small white ceramic coffee cup with steam in the soft-focus background, a folded linen napkin under the dish.\n\nLIGHTING: bright clean direct natural daylight pouring from a tall window on the right side of the frame, wrapping the jar and props uniformly. Clean soft specular highlight on the jar's curved glossy black plastic side. The label catches the light crisply. Natural drop-shadows behind the jar and props on the marble counter — neutral and soft, no colored tones.\n\nBACKGROUND: minimalist scandi-modern kitchen — out-of-focus white oak open shelving with linen-stoneware mugs and a small potted herb, soft white walls, the tall window with sheer linen curtains drawn aside. Shallow depth-of-field.\n\nSTYLE: hyper-realistic product-environment photography, 50mm look, f/2.8 shallow depth, bright airy real-photograph feel, NO AI artifacts, NO text overlays, NO graphic elements, NO callouts.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

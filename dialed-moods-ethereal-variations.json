@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "Reference 1 = the soft warm ETHEREAL atmosphere (luminous figure of warm golden-white inner light with smoky wispy energy filaments radiating around it, on a dreamy soft TAN / warm-beige gradient background, like a long-exposure dream, fine grain, NOT harsh white, NOT black). Reference 2 = the ANATOMY to embed (glowing anatomical BRAIN at the top of the head, a luminous DNA double-helix down the center of the body, translucent botanical LEAVES and leaf-vein/nerve networks woven through the body). CREATE one single FULL-BODY, FRONT-FACING FEMININE figure (graceful slender feminine silhouette, head to feet, standing, facing camera, arms relaxed at her sides) that has reference 1's soft warm ethereal smoky glow and tan dreamy backdrop WITH reference 2's brain, DNA helix and botanical vein networks glowing inside the translucent body. Warm golden-tan palette, soft and ethereal, glow gently bleeding into the warm background. No text, no logos. Centered full-body 1:1 square composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/energy_being_standing_v1.png", "Dialed Moods/brain_dna_ethereal_tan_v1.png"]
+  },
+  {
+    "prompt": "Reference 1 = the soft warm ETHEREAL atmosphere (luminous warm golden-white figure with smoky wispy energy filaments radiating around it on a dreamy soft TAN / warm-beige gradient background, long-exposure dream feel, fine grain, NOT harsh white, NOT black). Reference 2 = the ANATOMY to embed (glowing anatomical BRAIN at top of the head, luminous DNA double-helix down the center of the body, translucent botanical LEAVES and leaf-vein/nerve networks through the body). CREATE one single FULL-BODY, FRONT-FACING FEMININE figure (graceful feminine silhouette, head to feet, standing, facing camera) with a MORE radiant aura and energy wisps flowing gracefully upward and outward around her. Soft warm ethereal smoky glow + tan dreamy backdrop, with the brain, DNA helix and botanical vein networks glowing inside the translucent body. Warm golden-tan palette, soft and ethereal, glow bleeding into the warm background. No text, no logos. Centered full-body 1:1 square composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/energy_being_standing_v1.png", "Dialed Moods/brain_dna_ethereal_tan_v1.png"]
+  },
+  {
+    "prompt": "Reference 1 = the soft warm ETHEREAL atmosphere (luminous warm golden-white figure with smoky wispy energy filaments radiating around it on a dreamy soft TAN / warm-beige gradient background, long-exposure dream feel, fine grain, NOT harsh white, NOT black). Reference 2 = the ANATOMY to embed (glowing anatomical BRAIN at top of the head, luminous DNA double-helix down the center of the body, translucent botanical LEAVES and leaf-vein/nerve networks through the body). CREATE one single FULL-BODY, FRONT-FACING MASCULINE figure (athletic masculine build, broader shoulders, head to feet, standing, facing camera, arms relaxed at his sides) that has reference 1's soft warm ethereal smoky glow and tan dreamy backdrop WITH reference 2's brain, DNA helix and botanical vein networks glowing inside the translucent body. Warm golden-tan palette, soft and ethereal, glow gently bleeding into the warm background. No text, no logos. Centered full-body 1:1 square composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/energy_being_standing_v1.png", "Dialed Moods/brain_dna_ethereal_tan_v1.png"]
+  },
+  {
+    "prompt": "Reference 1 = the soft warm ETHEREAL atmosphere (luminous warm golden-white figure with smoky wispy energy filaments radiating around it on a dreamy soft TAN / warm-beige gradient background, long-exposure dream feel, fine grain, NOT harsh white, NOT black). Reference 2 = the ANATOMY to embed (glowing anatomical BRAIN at top of the head, luminous DNA double-helix down the center of the body, translucent botanical LEAVES and leaf-vein/nerve networks through the body). CREATE one single FULL-BODY, FRONT-FACING MASCULINE figure (strong athletic masculine build, head to feet, standing, facing camera) with a MORE radiant aura and energy wisps flowing upward and outward around him. Soft warm ethereal smoky glow + tan dreamy backdrop, with the brain, DNA helix and botanical vein networks glowing inside the translucent body. Warm golden-tan palette, soft and ethereal, glow bleeding into the warm background. No text, no logos. Centered full-body 1:1 square composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Dialed Moods/energy_being_standing_v1.png", "Dialed Moods/brain_dna_ethereal_tan_v1.png"]
+  }
+]

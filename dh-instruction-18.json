@@ -1,0 +1,11 @@
+[
+  {
+    "prompt": "Take the FIRST provided reference image and reproduce it PIXEL-FAITHFULLY — same composition (hand from upper-right pinch-lowering specimen bag into the OPAQUE plastic mailer pouch with FEDEX shipping label on front), same line-art style on pure white background, same line weight, same mailer pouch (fully opaque, no see-through), same FEDEX shipping label, same hand pose. DO NOT change the mailer, the shipping label, the hand, or the composition.\n\nTHE ONLY MODIFICATION — fix the DIALED HEALTH LOGO on the visible upper portion of the inner specimen bag to match the OFFICIAL DH LOGO LAYOUT in the SECOND reference image:\n\nThe logo has a SPECIFIC OFFSET LAYOUT — NOT centered stacked text. The arrangement is:\n- A SINGLE LONG HORIZONTAL FLAT BLACK LINE running across the width (this is the main horizontal stroke of the logo)\n- In the MIDDLE of this line, ONE small sharp triangular EKG-spike (a single up-then-down V/peak shape, like a heartbeat blip) interrupts the line\n- The word 'DIALED' in bold black sans-serif capital letters sits ABOVE the horizontal line, ONLY on the LEFT portion of the line (NOT spanning across the entire line width — just over the left third). DIALED is offset to the LEFT.\n- The word 'HEALTH' in bold black sans-serif capital letters sits BELOW the horizontal line, ONLY on the RIGHT portion of the line (NOT spanning the entire width — just under the right third). HEALTH is offset to the RIGHT.\n- Net effect: looking at the logo, you see DIALED on the upper-LEFT, a long horizontal line extending across with a heartbeat spike in the middle, and HEALTH on the lower-RIGHT. The two words are DIAGONALLY OPPOSITE each other relative to the line.\n\nDo not modify anything else — same opaque mailer pouch, same FEDEX shipping label, same hand, same composition, same line weight, same background, same style. Pure black line-art on white, no color. No frame, no border.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "generations/2026-05-13T01-42-58_Take_the_FIRST_provided_reference_image.jpg",
+      "DIaled Health Instruction Graphics/Product Refs/Dialed Health_Logo_Updated-02.png"
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "prompt": "nh-oxytocin-10ml-yellow: Exact-reproduction edit. The REFERENCE IMAGE is an approved CLEAN pharmaceutical vial photo. Output an image IDENTICAL to the reference EXCEPT change the PRODUCT NAME to \"Oxytocin\".\n\nKEEP IDENTICAL: the same camera framing, zoom, crop and vial scale; the same clear-glass vial; the same yellow cap (color/shape/angle); the same opaque matte-white wrap-around label at the same width and position; the SAME dose-and-volume line \"xx mg · 10 ml\"; the same two compliance lines \"FOR RESEARCH USE ONLY\" / \"NOT FOR HUMAN CONSUMPTION\"; the same \"LOT: NH-1024\"; the same typography for ALL text; the same bottom accent bar; the same lighting, reflection and soft contact shadow.\n\nBACKGROUND — CRITICAL: render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF seamless studio sweep — absolutely NO smudges, streaks, grey patches, bands, dust, blotches, cloudiness or marks anywhere, except the soft contact shadow directly beneath the vial.\n\nTHE ONLY CHANGE: replace the product name with \"Oxytocin\", rendered in the EXACT same font, bold weight, size, charcoal-grey color and centered position as the reference product name. Spell it EXACTLY \"Oxytocin\". Do not change anything else. Crisp text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/FLGR242/FLGR242_10ml_yellow.jpg"
+    ],
+    "_meta": {
+      "peptide": "Oxytocin",
+      "size": "10ml",
+      "color": "yellow",
+      "tag": "nh-oxytocin-10ml-yellow"
+    }
+  },
+  {
+    "prompt": "nh-kisspeptin-10ml-yellow: Exact-reproduction edit. The REFERENCE IMAGE is an approved CLEAN pharmaceutical vial photo. Output an image IDENTICAL to the reference EXCEPT change the PRODUCT NAME to \"Kisspeptin\".\n\nKEEP IDENTICAL: the same camera framing, zoom, crop and vial scale; the same clear-glass vial; the same yellow cap (color/shape/angle); the same opaque matte-white wrap-around label at the same width and position; the SAME dose-and-volume line \"xx mg · 10 ml\"; the same two compliance lines \"FOR RESEARCH USE ONLY\" / \"NOT FOR HUMAN CONSUMPTION\"; the same \"LOT: NH-1024\"; the same typography for ALL text; the same bottom accent bar; the same lighting, reflection and soft contact shadow.\n\nBACKGROUND — CRITICAL: render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF seamless studio sweep — absolutely NO smudges, streaks, grey patches, bands, dust, blotches, cloudiness or marks anywhere, except the soft contact shadow directly beneath the vial.\n\nTHE ONLY CHANGE: replace the product name with \"Kisspeptin\", rendered in the EXACT same font, bold weight, size, charcoal-grey color and centered position as the reference product name. Spell it EXACTLY \"Kisspeptin\". Do not change anything else. Crisp text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/FLGR242/FLGR242_10ml_yellow.jpg"
+    ],
+    "_meta": {
+      "peptide": "Kisspeptin",
+      "size": "10ml",
+      "color": "yellow",
+      "tag": "nh-kisspeptin-10ml-yellow"
+    }
+  },
+  {
+    "prompt": "nh-nad-10ml-yellow: Exact-reproduction edit. The REFERENCE IMAGE is an approved CLEAN pharmaceutical vial photo. Output an image IDENTICAL to the reference EXCEPT change the PRODUCT NAME to \"NAD+\".\n\nKEEP IDENTICAL: the same camera framing, zoom, crop and vial scale; the same clear-glass vial; the same yellow cap (color/shape/angle); the same opaque matte-white wrap-around label at the same width and position; the SAME dose-and-volume line \"xx mg · 10 ml\"; the same two compliance lines \"FOR RESEARCH USE ONLY\" / \"NOT FOR HUMAN CONSUMPTION\"; the same \"LOT: NH-1024\"; the same typography for ALL text; the same bottom accent bar; the same lighting, reflection and soft contact shadow.\n\nBACKGROUND — CRITICAL: render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF seamless studio sweep — absolutely NO smudges, streaks, grey patches, bands, dust, blotches, cloudiness or marks anywhere, except the soft contact shadow directly beneath the vial.\n\nTHE ONLY CHANGE: replace the product name with \"NAD+\", rendered in the EXACT same font, bold weight, size, charcoal-grey color and centered position as the reference product name. Spell it EXACTLY \"NAD+\". Do not change anything else. Crisp text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/FLGR242/FLGR242_10ml_yellow.jpg"
+    ],
+    "_meta": {
+      "peptide": "NAD+",
+      "size": "10ml",
+      "color": "yellow",
+      "tag": "nh-nad-10ml-yellow"
+    }
+  },
+  {
+    "prompt": "nh-ghk-cu-10ml-white: Exact-reproduction edit. The REFERENCE IMAGE is an approved CLEAN pharmaceutical vial photo. Output an image IDENTICAL to the reference EXCEPT change the PRODUCT NAME to \"GHK-Cu\".\n\nKEEP IDENTICAL: the same camera framing, zoom, crop and vial scale; the same clear-glass vial; the same white cap (color/shape/angle); the same opaque matte-white wrap-around label at the same width and position; the SAME dose-and-volume line \"xx mg · 10 ml\"; the same two compliance lines \"FOR RESEARCH USE ONLY\" / \"NOT FOR HUMAN CONSUMPTION\"; the same \"LOT: NH-1024\"; the same typography for ALL text; the same bottom accent bar; the same lighting, reflection and soft contact shadow.\n\nBACKGROUND — CRITICAL: render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF seamless studio sweep — absolutely NO smudges, streaks, grey patches, bands, dust, blotches, cloudiness or marks anywhere, except the soft contact shadow directly beneath the vial.\n\nTHE ONLY CHANGE: replace the product name with \"GHK-Cu\", rendered in the EXACT same font, bold weight, size, charcoal-grey color and centered position as the reference product name. Spell it EXACTLY \"GHK-Cu\". Do not change anything else. Crisp text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/FLGR242/FLGR242_10ml_white.jpg"
+    ],
+    "_meta": {
+      "peptide": "GHK-Cu",
+      "size": "10ml",
+      "color": "white",
+      "tag": "nh-ghk-cu-10ml-white"
+    }
+  }
+]

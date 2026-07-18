@@ -1,0 +1,14 @@
+[
+  {
+    "prompt": "Recreate this circular flavor-badge logo, keeping the SAME design: a navy and gold Monte-Carlo art-deco medallion with a gold sunburst, gold beaded border, and the gold wordmark 'MONACO MANGO TRUFFLE' (keep all three words exactly). The ONE change: REMOVE the chocolate truffles and all the brown chocolate splash on the right side entirely. Replace them with MANGO-forward elements so the badge is balanced and mango-only: a glossy whole mango with a leaf and a couple of juicy mango slices, framed by an elegant golden-orange mango-juice splash that wraps symmetrically around the lower medallion on both sides. No chocolate, no truffles, no brown anywhere — just mango, gold, and navy. Keep it rich, glossy and premium. Pure solid white background, centered contained badge with margin.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["euro Music theme/Lux Icons/Monaco_Mango_Truffle_v3.png"]
+  },
+  {
+    "prompt": "Recreate this circular flavor-badge logo, keeping the SAME navy and gold Monte-Carlo art-deco medallion, gold sunburst, gold beaded border, and the gold wordmark 'MONACO MANGO TRUFFLE' (keep all three words). The ONE change: REMOVE the chocolate truffles and the brown chocolate splash completely. In their place keep it clean and restrained: a single glossy whole mango with a leaf and one mango slice resting at the bottom-center of the medallion, with a subtle golden-orange juice accent — far less busy than before, lots of negative space and elegance. Absolutely no chocolate or truffles. Pure solid white background, centered contained badge with margin.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["euro Music theme/Lux Icons/Monaco_Mango_Truffle_v3.png"]
+  }
+]

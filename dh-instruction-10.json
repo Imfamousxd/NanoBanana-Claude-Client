@@ -1,0 +1,8 @@
+[
+  {
+    "prompt": "Take the provided reference image and reproduce it PIXEL-FAITHFULLY — same person composition (chin to mid-torso, plain t-shirt, exposed deltoid on viewer's right), same cross-body hand with INDEX FINGER pressing the red button, same device-on-shoulder appearance (balloon-shape with round main body + lower cylindrical neck protrusion, vial hanging straight down from neck), same red button (raised, solid red, target dot in center), same line-art style on pure white background, same line weight. DO NOT change the person, the hand pose, the finger-pressing action, the device shape, the vial, or the style.\n\nTHE ONLY MODIFICATION — reposition the device HIGHER on the shoulder: in the reference the device is positioned in the middle / lower part of the deltoid muscle. Move the device UP so it sits HIGHER on the shoulder, closer to the peak of the deltoid / shoulder cap (just below where the shoulder slopes outward from the neck). The finger still presses on the red button in this new higher position. The hand reaches up to match. Everything else (device design, vial, person, line weight, style) remains identical to the reference.\n\nDo not modify anything else — no changes to the device shape, vial, finger pose, line weight, background, or style. Pure black line-art on white with the solid red raised button as the only color, no frame, no border around the canvas, no labels.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["generations/2026-05-12T01-58-00_A_generic_medical_product_instruction_il.jpg"]
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "STYLE: editorial-cool premium product hero in a real lifestyle scene, 1:1 square, 4K. Cinematic light, minimal text, magazine-cover energy.\n\nSCENE: a real-photo sunlit modern kitchen mid-morning. A single STRONG DRAMATIC SUN-SHAFT pours through a tall window and lands directly on the Dialed Sea Moss Gummies jar sitting on a soft white-marble counter — the shaft acts like a stage spotlight on the product. The rest of the scene is in moodier soft-shadow (chiaroscuro feel), so the jar GLOWS as the brightest most cleanly-lit element in the frame. Visible volumetric light shaft / atmospheric particles catching in the beam. A SHARP CLEAN SPECULAR HIGHLIGHT runs down the curved glossy black plastic; the label catches the light crisply. Beside the jar a small ceramic dish holds 3-4 dark sugar-dusted gummy CUBES, just at the edge of the sun-shaft. Background softly out-of-focus minimalist kitchen — soft white oak and white wall in soft shadow. The jar must match the provided reference — black plastic, teal/cyan + gold accents, front label fully legible 'DIALED SEA MOSS Gummies, 60 GUMMIES, DIETARY SUPPLEMENT', side panel 'MsB° Mineral Support Blend', lid off.\n\nMINIMAL TEXT — only ONE big bold label rendered LARGE in CLEAN WHITE typography overlayed in the upper-left of the photo (positioned in the moodier shadow area for contrast):\n   '92 ESSENTIAL\n    MINERALS.'\nNothing else. NO sub-headline, NO feature pills, NO icons.\n\nDESIGN: cinematic real-photo lifestyle with one dramatic sun-shaft hero light · jar dramatically spotlit · bold clean white headline typography · NO graphic-design noise.\n\nRULES: all text cleanly spelled · 1:1 4K · realistic lifestyle photo background (NOT flat white) · no border/frame · text limited to the two-line label only.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

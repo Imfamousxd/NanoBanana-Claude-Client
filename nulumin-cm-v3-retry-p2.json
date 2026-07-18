@@ -1,0 +1,35 @@
+[
+  {
+    "prompt": "Square 1:1 editorial wellness photograph. A woman with long blonde hair in deep olive-green athletic wear, performing a slow seated forward stretch on a mat, bright cream-white minimalist studio. Soft warm sidelight. CAMERA-IN-MOTION blur — soft directional smear from a fast diagonal upward camera sweep, near level (~3° tilt), subtle but clearly present. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 2,
+      "variant": "v3"
+    }
+  },
+  {
+    "prompt": "Landscape 4:3 editorial lifestyle photograph. A woman with short dark hair in a deep crimson loose tee tying her shoelaces beside a wooden bench at dusk in a moody urban park, warm overhead light. CAMERA-IN-MOTION blur — soft directional smear from a fast diagonal upward camera sweep, near level (~3° tilt), subtle but clearly present blur. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 1,
+      "variant": "v3"
+    }
+  },
+  {
+    "prompt": "Landscape 4:3 editorial lifestyle photograph. A young woman with a high braid in deep crimson athletic wear filling a water bottle from a park fountain at dusk, warm overhead light. CAMERA-IN-MOTION blur — soft directional smear from a fast right-to-left lateral camera pan, slight Dutch tilt ~7° counter-clockwise, stronger blur intensity. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 3,
+      "variant": "v2"
+    }
+  }
+]

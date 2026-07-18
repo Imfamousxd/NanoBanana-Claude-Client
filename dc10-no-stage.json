@@ -1,0 +1,8 @@
+[
+  {
+    "prompt": "Recreate this circular flavor-badge emblem EXACTLY the same in every way — same bold black 'DC-10' lettering with the radiant sunburst behind it, same gradient 'DIESEL' wordmark below, same lime slice with leaves at the bottom, same silhouetted palm trees, same orange-to-pink sunset over the sea with the glowing horizon, and the same pink/orange double ring border. The ONLY change: REMOVE the nightclub stage / club building structure and the crowd of people in the background on the lower-left (the lit 'DC-10' venue building and the audience along the runway). Replace that area with a clean, uninterrupted continuation of the sunset beach scene — open water, sand and reflected light, with the palm silhouettes — so there is NO stage, NO building, and NO crowd anywhere. Everything else stays identical. Pure solid white background, centered contained badge with margin.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["euro Music theme/Lux Icons/DC10_Diesel_v2.png"]
+  }
+]

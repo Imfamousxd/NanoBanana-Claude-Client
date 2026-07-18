@@ -1,0 +1,46 @@
+[
+  {
+    "prompt": "Square 1:1 editorial wellness photograph. A man in his 30s with short dark hair, wearing a charcoal grey loose cotton tee, kneeling on a yoga mat in a meditative pose, bright minimalist studio with cream-white walls. Warm window light from the left. CAMERA-IN-MOTION blur — soft directional smear from a fast right-to-left lateral camera pan, slight Dutch tilt ~7° counter-clockwise, stronger blur intensity. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 2,
+      "variant": "v2"
+    }
+  },
+  {
+    "prompt": "Landscape 4:3 editorial lifestyle photograph. A man in olive-green athletic shorts and a charcoal tee doing a slow lunge stretch outdoors at sunrise, soft golden hour light. CAMERA-IN-MOTION blur — soft directional smear from a fast right-to-left lateral camera pan, slight Dutch tilt ~7° counter-clockwise, stronger blur intensity. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 1,
+      "variant": "v2"
+    }
+  },
+  {
+    "prompt": "Landscape 4:3 editorial lifestyle photograph. A man in dusty mauve sweats and a charcoal long-sleeve doing a slow morning stretch in a sunlit park, hands clasped overhead, soft warm light. CAMERA-IN-MOTION blur — soft directional smear from a fast lateral left-to-right camera pan, slight Dutch tilt ~6° clockwise, moderate blur intensity. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 3,
+      "variant": "v1"
+    }
+  },
+  {
+    "prompt": "Landscape 4:3 editorial lifestyle photograph. A young woman with shoulder-length brown hair in mauve workout shorts and a black sports tee sitting cross-legged in a sunlit studio doorway, calm composed pose, warm morning light. CAMERA-IN-MOTION blur — soft directional smear from a fast diagonal upward camera sweep, near level (~3° tilt), subtle but clearly present blur. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 4,
+      "variant": "v3"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "prompt": "Edit REFERENCE 2 by CHANGING ONLY the product name text on the capsule pill bottle's label from '5-Amino 1MQ' to 'Tesofensine'. Make ONLY that text change; keep absolutely everything else IDENTICAL: same hand (same gender, skin tone, nails if present), same palm-wrap grip, same bottle (clear glass, silver cap, white capsules inside, matte black label, hand-sized scale, same orientation), same scene and background, same top-down overhead camera angle, same tight close-up crop, same composition, same lighting, same depth of field, same color grade, same 5:4 framing, same mood. Do NOT alter the hand, pose, grip, bottle, or scene.\n\nCRITICAL CASING: render the product name text EXACTLY as written: 'Tesofensine'. Preserve the exact mix of uppercase, lowercase, hyphens, slashes, parentheses, spaces, and numbers. DO NOT render it in ALL CAPS unless the original name is already in all caps. DO NOT render it in all lowercase. Match the casing style of '5-Amino 1MQ' on REFERENCE 2's label — mixed case where appropriate.\n\nTEXT LAYOUT: The product name MUST appear on ONE SINGLE CENTERED LINE — do NOT break onto two lines. If it doesn't fit at the same size as '5-Amino 1MQ' in REFERENCE 2, scale the text down SLIGHTLY to fit on one line while staying large, bold, and prominently legible.\n\nSame font family, same weight, same white color, same centered alignment, same kerning as REFERENCE 2. The Dialed Health heartbeat/ECG logo above the product name stays exactly the same. No dosing, no mg, no mcg, no count, no Rx, no QR, no barcode, no extra text on the label. Do NOT invent new label text.\n\nREFERENCE 1 is the 'Tesofensine' studio product shot. Use it ONLY to confirm the correct spelling and casing of the product name. Do NOT copy pixels from REFERENCE 1 — the bottle should remain the exact bottle from REFERENCE 2, just with updated label text. Photorealistic, seamless label text swap only, editorial lifestyle quality, crisp focus, no artifacts.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./DH Shots/Capsules/Tesofensine.jpg",
+      "./DH Shots/Capsules Lifestyle/5-Amino 1MQ/woman-kitchen.jpg"
+    ]
+  }
+]

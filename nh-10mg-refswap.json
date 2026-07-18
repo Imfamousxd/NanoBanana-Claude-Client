@@ -1,0 +1,24 @@
+[
+  {
+    "prompt": "nh-klow-blend-10mg-5ml-yellow: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the image exactly, but make ONE correction: change the product name on the label. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the same dose-and-volume line reading exactly '10 mg \u00b7 5 ml', the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays.\n\nPRODUCT NAME: change the product name from 'GLP-1 (S)' to 'Klow Blend', spelled EXACTLY 'Klow Blend' with no spelling changes, in the exact same font, weight, size, charcoal-grey color, position and centering as the reference's product name. Only the name text changes.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/GLP-1 (S)/10mg/GLP-1_(S)_10mg_5ml_yellow.jpg"
+    ],
+    "_meta": {
+      "tag": "nh-klow-blend-10mg-5ml-yellow"
+    }
+  },
+  {
+    "prompt": "nh-glutathione-10mg-3ml-green: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the image exactly, but make ONE correction: change the product name on the label. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the same dose-and-volume line reading exactly '10 mg \u00b7 3 ml', the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays.\n\nPRODUCT NAME: change the product name from 'AlphaKlotho LR' to 'Glutathione', spelled EXACTLY 'Glutathione' with no spelling changes, in the exact same font, weight, size, charcoal-grey color, position and centering as the reference's product name. Only the name text changes.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/10mg/AlphaKlotho_LR_10mg_3ml_green.jpg"
+    ],
+    "_meta": {
+      "tag": "nh-glutathione-10mg-3ml-green"
+    }
+  }
+]

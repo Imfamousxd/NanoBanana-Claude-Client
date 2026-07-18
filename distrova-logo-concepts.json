@@ -1,0 +1,62 @@
+[
+  {
+    "prompt": "Distrova — \"Velocity D\" logo concept. Logo design for \"Distrova,\" a modern premium delivery service.\n\nThe mark is a single bold geometric capital letter \"D\". The counter (the inner negative space of the D) is shaped not as a plain oval but as a forward-pointing arrowhead / play-triangle, so the empty space inside the D reads as a rightward arrow — suggesting speed, motion, and forward delivery. The outer form of the D is a clean rounded-rectangle stroke of uniform medium-bold weight. Distinctive, ownable, instantly recognizable as a \"D\". Rendered as a clean modern logo design on a pure white #FFFFFF background. The mark is solid black #0A0A0A, geometric, vector-style with crisp clean edges, perfectly centered. Beneath the mark, the wordmark \"Distrova\" is set in a refined modern geometric sans-serif (think Inter / Söhne / Geist — clean, contemporary, premium) in matching solid black, tracked slightly open, centered horizontally below the mark with comfortable breathing room. Generous whitespace around the entire lockup. No tagline, no extra elements, no shadows, no gradients, no textures, no background patterns, NO cannabis or leaf imagery whatsoever. Single centered logo composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "name": "velocity-d",
+      "desc": "Concept 1 — Velocity D"
+    }
+  },
+  {
+    "prompt": "Distrova — \"Nova Spark\" logo concept. Logo design for \"Distrova,\" a modern premium delivery service.\n\nThe mark is a single minimal four-point sparkle / nova star — a clean geometric four-pointed star with gently concave sides and a slightly elongated vertical axis, like a refined \"spark\" or burst of light (a nod to the \"nova\" in the name). Perfectly symmetrical, solid filled, scalable to favicon size. Premium, simple, modern. Rendered as a clean modern logo design on a pure white #FFFFFF background. The mark is solid black #0A0A0A, geometric, vector-style with crisp clean edges, perfectly centered. Beneath the mark, the wordmark \"Distrova\" is set in a refined modern geometric sans-serif (think Inter / Söhne / Geist — clean, contemporary, premium) in matching solid black, tracked slightly open, centered horizontally below the mark with comfortable breathing room. Generous whitespace around the entire lockup. No tagline, no extra elements, no shadows, no gradients, no textures, no background patterns, NO cannabis or leaf imagery whatsoever. Single centered logo composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "name": "nova-spark",
+      "desc": "Concept 2 — Nova Spark"
+    }
+  },
+  {
+    "prompt": "Distrova — \"Forward Chevron\" logo concept. Logo design for \"Distrova,\" a modern premium delivery service.\n\nThe mark is an abstract motion symbol made of two or three nested chevrons / arrowheads pointing to the right, the strokes increasing slightly in length, evoking fast-forward, momentum, and on-its-way delivery. Uniform medium-bold stroke weight, geometric, crisp corners. Minimal and energetic. Rendered as a clean modern logo design on a pure white #FFFFFF background. The mark is solid black #0A0A0A, geometric, vector-style with crisp clean edges, perfectly centered. Beneath the mark, the wordmark \"Distrova\" is set in a refined modern geometric sans-serif (think Inter / Söhne / Geist — clean, contemporary, premium) in matching solid black, tracked slightly open, centered horizontally below the mark with comfortable breathing room. Generous whitespace around the entire lockup. No tagline, no extra elements, no shadows, no gradients, no textures, no background patterns, NO cannabis or leaf imagery whatsoever. Single centered logo composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "name": "forward-chevron",
+      "desc": "Concept 3 — Forward Chevron"
+    }
+  },
+  {
+    "prompt": "Distrova — \"Route Pin\" logo concept. Logo design for \"Distrova,\" a modern premium delivery service.\n\nThe mark is a minimal map location pin — a clean circle that tapers to a point at the bottom — but the negative-space hole in the center of the pin is shaped as a small four-point spark / nova rather than a plain circle. Reads instantly as \"delivery to your door\" while staying abstract and premium. Geometric, solid black with a clean cut-out center, uniform construction. Rendered as a clean modern logo design on a pure white #FFFFFF background. The mark is solid black #0A0A0A, geometric, vector-style with crisp clean edges, perfectly centered. Beneath the mark, the wordmark \"Distrova\" is set in a refined modern geometric sans-serif (think Inter / Söhne / Geist — clean, contemporary, premium) in matching solid black, tracked slightly open, centered horizontally below the mark with comfortable breathing room. Generous whitespace around the entire lockup. No tagline, no extra elements, no shadows, no gradients, no textures, no background patterns, NO cannabis or leaf imagery whatsoever. Single centered logo composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "name": "route-pin",
+      "desc": "Concept 4 — Route Pin"
+    }
+  },
+  {
+    "prompt": "Distrova — \"Orbit Node\" logo concept. Logo design for \"Distrova,\" a modern premium delivery service.\n\nThe mark is a single solid black dot at the center with one thin elliptical orbit ring around it, and a smaller solid node sitting on the ring — suggesting distribution, a network in motion, and an orbiting \"nova\". Clean geometric construction, thin uniform ring stroke, perfectly balanced. Techy, distinctive, modern. Rendered as a clean modern logo design on a pure white #FFFFFF background. The mark is solid black #0A0A0A, geometric, vector-style with crisp clean edges, perfectly centered. Beneath the mark, the wordmark \"Distrova\" is set in a refined modern geometric sans-serif (think Inter / Söhne / Geist — clean, contemporary, premium) in matching solid black, tracked slightly open, centered horizontally below the mark with comfortable breathing room. Generous whitespace around the entire lockup. No tagline, no extra elements, no shadows, no gradients, no textures, no background patterns, NO cannabis or leaf imagery whatsoever. Single centered logo composition.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "name": "orbit-node",
+      "desc": "Concept 5 — Orbit Node"
+    }
+  },
+  {
+    "prompt": "Distrova — \"Pure Wordmark\" logo concept. Logo design for \"Distrova,\" a modern premium delivery service.\n\nThere is NO separate icon. The entire logo is just the wordmark \"Distrova\" set in a refined custom geometric sans-serif, solid black #0A0A0A on pure white, lowercase or sentence-case, tracked slightly open. One single subtle distinctive detail: the round letters (\"o\", \"a\", the bowl of the \"D\") are built from perfect circles, and the \"v\" is drawn as a clean sharp upward-pointing chevron that hints at forward motion. Ultra-clean, type-forward, premium and minimal. Centered, generous whitespace, no other elements, no cannabis imagery.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "name": "pure-wordmark",
+      "desc": "Concept 6 — Pure Geometric Wordmark"
+    }
+  }
+]

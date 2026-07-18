@@ -1,0 +1,11 @@
+[
+  {
+    "prompt": "STYLE: clean premium product-page hero shot in a soft REAL lifestyle scene, 1:1 square, 4K. Apple / Athletic Greens / Hims product-page aesthetic — minimal text, product is the hero, generous whitespace.\n\nSCENE (real photo, bright clean direct daylight): the Dialed Sea Moss Gummies jar sits on a sun-warmed light-oak wood surface (top-down or slight 3/4 angle), in the SAME bright clean daylight. Around the jar, artfully arranged in a clean loose composition with breathing room: a small bunch of fresh sea moss fronds, a sliced burdock root, a few dandelion flowers and leaves, and a small ceramic dish holding 4-5 dark sugar-dusted gummy CUBES. The jar must match the provided reference — black plastic, teal/cyan + gold accents, front label fully legible 'DIALED SEA MOSS Gummies, 60 GUMMIES, DIETARY SUPPLEMENT', side panel 'MsB° Mineral Support Blend', lid off.\n\nMINIMAL TEXT — only ONE FOUR-LABEL strip echoing the actual jar side panel. Place four small bold ALL-CAPS condensed-display labels in deep ink-black running vertically down the LEFT edge of the photo, each label SHORT and SINGLE-LINE (no sub-text), separated by thin gold horizontal rules:\n   MINERAL SOURCE\n   HERBAL EXTRACTS\n   MAGNESIUM SUPPORT\n   PLANT BASED\nNothing else. NO sub-headline. NO 'WHY GUMMIES' headline. NO feature pills. NO bottom strip. NO icons. NO tagline. Just the lifestyle scene + the four single-line labels.\n\nDESIGN: real photograph background · text overlay in deep ink-black bold condensed display sans-serif · thin gold rule separators · clean refined editorial product-page feel.\n\nRULES: all text cleanly spelled · 1:1 4K · realistic lifestyle photo background (NOT flat white) · no border/frame · text MUST be limited to the four single-line labels only — no headline, no sub-text, no other words.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png",
+      "dialed moods seamoss/Seamoss_45.png"
+    ]
+  }
+]

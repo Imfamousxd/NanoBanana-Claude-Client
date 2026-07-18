@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "STYLE: clean premium product-page hero shot in a soft REAL lifestyle scene, 1:1 square, 4K. Apple / Athletic Greens / Hims product-page aesthetic — minimal text, product is the hero, generous whitespace.\n\nSCENE (real photo, bright clean direct daylight): the Dialed Sea Moss Gummies jar sits on a soft sage-linen yoga mat flat-lay (top-down or slight 3/4 angle), in the SAME bright clean daylight. TWO dark sugar-dusted gummy CUBES placed carefully in front of the jar (representing the daily dose). A small ceramic dish to the side holds 3-4 more gummy cubes. Background softly out-of-focus — a folded white towel and a small water glass at the edges. The jar must match the provided reference — black plastic, teal/cyan + gold accents, front label fully legible 'DIALED SEA MOSS Gummies, 60 GUMMIES, DIETARY SUPPLEMENT', side panel 'MsB° Mineral Support Blend', lid off.\n\nMINIMAL TEXT — only ONE short overlay. Place a single bold ALL-CAPS condensed-display label in deep ink-black in the upper-right negative space of the photo:\n   'TWO A DAY.'\nNothing else. NO sub-headline. NO routine steps. NO timeline strip. NO feature pills. NO bottom tagline. NO icons. Just the lifestyle scene + the three-word label.\n\nDESIGN: real photograph background · text overlay in deep ink-black bold condensed display sans-serif · clean refined editorial product-page feel · NO graphic-design noise.\n\nRULES: all text cleanly spelled · 1:1 4K · realistic lifestyle photo background (NOT flat white) · no border/frame · text MUST be limited to the three-word label only.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

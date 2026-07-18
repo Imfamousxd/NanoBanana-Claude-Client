@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "A candid hyper-realistic 1:1 lifestyle photograph — looks like an UNSTAGED iPhone snap of someone's actual morning routine. NO PEOPLE in frame, but everything feels mid-moment, like a person just stepped out of the kitchen and you snapped what was left on the counter.\n\nSCENE: a sunlit modern kitchen mid-morning, white marble counter slightly cluttered with real life. The Dialed Sea Moss Gummies jar (matching the provided reference image — black plastic jar with teal/cyan and gold/yellow accents, GOLD LID slightly ajar, front label legible 'DIALED SEA MOSS Gummies, 60 GUMMIES, DIETARY SUPPLEMENT', side panel 'MsB° Mineral Support Blend') sits OFF-CENTER in the lower-right third of the frame, NOT hero-centered. Around it: a half-drunk ceramic coffee cup with a faint lipstick mark on the rim, a slightly crumpled linen napkin, a wood cutting board with a partially eaten avocado and a butter knife, 2-3 loose dark sugar-dusted gummy CUBES that landed beside the jar (not arranged neatly in a dish — just casually beside it), an open notebook with a few pen strokes visible, a phone face-down. The composition is asymmetric and lived-in.\n\nLIGHTING: bright morning daylight from a window on the left, naturally washing the scene unevenly — some props in full light, others in soft shadow, just like real life. The jar catches the daylight naturally on its curved side.\n\nFRAMING: the jar is NOT the obvious subject — it just happens to be in the frame. Some props are cropped at the edges. Slight off-axis camera tilt (2-3°). Candid iPhone-snap feel, NOT a styled flat-lay or hero shot.\n\nSTYLE: hyper-realistic candid photography, slight grain, natural shadows, real-life imperfect composition. NO AI artifacts, NO text overlays, NO graphic elements, NO callouts, NO hands, NO people.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "dialed moods seamoss/Seamoss_FrontOpen_white.png"
+    ]
+  }
+]

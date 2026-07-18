@@ -1,0 +1,24 @@
+[
+  {
+    "prompt": "Square 1:1 editorial fitness photograph. A person in charcoal athletic wear holding a plank position on the floor of a sunlit studio, body straight, focused intensity. CAMERA-IN-MOTION blur — soft directional smear from a fast right-to-left lateral camera pan, slight Dutch tilt ~5° counter-clockwise, MODERATE blur (action readable). Documentary action photography, fine 35mm grain, halation. No text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 9,
+      "variant": "v2"
+    }
+  },
+  {
+    "prompt": "Landscape 4:3 editorial fitness photograph. A person in deep rust athletic wear doing jump rope on a sunlit wooden deck at sunrise, rope mid-arc, clear active movement. CAMERA-IN-MOTION blur — soft directional smear from a fast right-to-left lateral camera pan, slight Dutch tilt ~5° counter-clockwise, MODERATE blur (action readable). Documentary action photography, fine 35mm grain, halation. No text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 4,
+      "variant": "v2"
+    }
+  }
+]

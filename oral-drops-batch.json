@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "Edit the reference image of the Dialed Health oral drop / sublingual dropper bottle. Make ONLY one change to the black label and keep everything else in the image identical (same dropper bottle shape, same silver-white frosted glass body, same white ribbed collar, same white plastic dropper cap with rounded white rubber bulb tip, same soft grey studio background, same camera angle, same soft diffused studio lighting, same shadows, same reflections, same label material, same label position, same label proportions, same matte black label surface, same white ink color, same centered alignment, same Dialed Health heartbeat/ECG logo on top, same clean bold sans-serif font used for the product name, same letter-spacing, same font weight). Replace the product name text 'Semaglutide' with 'Tirzepatide' in the exact same font, same weight, same white color, same letter-spacing, same centered alignment, sized proportionally to fit on one single centered line. Do NOT add any dosing line, do NOT add mg, do NOT add ml, do NOT add any other word, do NOT add any other text. The label must contain only two elements stacked: the Dialed Health logo on top, and 'Tirzepatide' centered below it on a single line. The Dialed Health logo (the 'DIALED' and 'HEALTH' wordmark split by the white heartbeat/ECG line) must stay perfectly intact, unchanged, same size, same position. Photorealistic, pharmaceutical-grade product photography, sharp focus, crisp label text, no artifacts, no extra text anywhere.",
+    "aspectRatio": "5:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./generations/2026-04-17T21-27-42_Create_a_new_photorealistic_product_shot.jpg"
+    ]
+  }
+]

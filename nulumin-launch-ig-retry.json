@@ -1,0 +1,35 @@
+[
+  {
+    "prompt": "Instagram launch post for Nulumin — 1:1 square, premium minimal product photography. Modern, clean, light-aesthetic.\n\nBACKGROUND: soft warm off-white #F6F2EC seamless gradient (slightly darker in the lower corners for depth), no harsh edges, no visible horizon. Reads like a high-end skincare brand background.\n\nLINEUP: six Nulumin peptide research vials (references 3–8) arranged in a tight organic cluster in the LOWER-CENTER half of the frame — two vials slightly forward, two vials behind and offset left, two vials behind and offset right, forming a soft pyramid silhouette. All vials standing upright on the same invisible flat surface with subtle contact shadows. Each vial at a slight 3/4 angle, all front-facing the camera, labels (Nulumin logo + peptide name + dose mg) crisp and readable. Labels must match references 3–8 one-to-one.\n\nTYPOGRAPHY:\n- Nulumin logo (reference 2, BLACK version) — horizontally centered at roughly 14% from the top of the canvas, sized at ~28% of canvas width\n- Beneath the logo, headline \"Now Available.\" set in a clean modern serif (think Söhne Mono or a refined contemporary serif) — title case, charcoal black #1A1A1A, sized so it spans ~45% of canvas width, generous letterspacing\n- A thin 1-pixel horizontal line in soft warm gray below the headline, centered, ~12% of canvas width\n- Tiny tagline beneath the line: \"RESEARCH-GRADE PEPTIDES\" uppercase, very small, tracked out, charcoal at 60% opacity\n\nLIGHTING: bright soft diffused daylight from above-front. Each vial gets a gentle vertical specular highlight. Long soft contact shadows beneath the cluster, suggesting late-morning natural light.\n\nStyle: editorial wellness, Aesop/Le Labo aesthetic, premium clinical minimalism, magazine-grade. Negative: no extra text beyond what is specified, no extra logos, no people, no hands, no clutter, no warped typography, no inaccurate vial labels.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "NuLumin Assets/NuLumin-logo-nobg-white.png",
+      "NuLumin Assets/NuLumin-logo-nobg-black.png",
+      "NuLumin Assets/NuL_GLP1_10mg.png",
+      "NuLumin Assets/NuL_BPC_10mg.png",
+      "NuLumin Assets/NuL_Ipamorelin_10mg.png",
+      "NuLumin Assets/NuL_NAD_500mg.png",
+      "NuLumin Assets/NuL_TB_10mg.png",
+      "NuLumin Assets/NuL_KPV_10mg.png"
+    ],
+    "_meta": {
+      "name": "nulumin-launch-B-light-minimal"
+    }
+  },
+  {
+    "prompt": "Instagram launch post for Nulumin — 1:1 square, hero macro product photography. Bold, modern, gallery-grade.\n\nBACKGROUND: tonal split — left half of the canvas is deep saturated emerald-to-midnight-navy gradient (modern, clinical), right half (where the headline lives) is the same deep navy but slightly lighter for type legibility. Subtle vertical light leak running down the center. No horizon line.\n\nHERO PRODUCT: ONE single Nulumin GLP-1 10mg vial (reference 3) photographed in tight macro from a slight low 3/4 angle, occupying the LEFT 45% of the canvas, vial standing tall and slightly tilted toward the camera, label crisp and fully readable (Nulumin logo, \"GLP-1\", \"10 mg\" all accurate per reference 3). Vial reflects subtle cool studio rim light on its left edge and a soft warm accent on its right edge. A small pool of crisp reflection under the vial on an invisible glossy surface.\n\nBEHIND THE HERO: out-of-focus suggestion of two more vials (use refs 4 and 5) softly blurred at ~30% opacity in the background, just enough to hint at a full catalog.\n\nTYPOGRAPHY (RIGHT 50% of canvas, vertically centered):\n- Nulumin logo (reference 1, white version) — top-aligned in the right column, sized at ~32% of canvas width\n- Beneath the logo: oversized \"NOW / AVAILABLE\" stacked on two lines, modern bold sans-serif (think Söhne Breit or a wide grotesk), uppercase, off-white #F4F1EA, set TIGHT and LARGE — the headline should command attention\n- Below the headline: a small accent line \"32 research peptides. One trusted source.\" in a refined modern serif, off-white at 75% opacity\n- Small CTA pill at the bottom-right of the right column: \"Available at nulumin.co\" inside a thin off-white outline pill\n\nLIGHTING: dramatic studio rim — cool blue/cyan running down the vial's left edge, warm amber kicker on the right edge, deep shadow falloff into the background. High-contrast, cinematic.\n\nStyle: editorial hero post, Nike-launch / Apple-product aesthetic crossed with premium wellness, magazine-grade macro, glossy crisp finish. Negative: no extra text beyond what is specified, no extra logos, no people, no hands, no clutter, no warped typography, no inaccurate vial labels.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "NuLumin Assets/NuLumin-logo-nobg-white.png",
+      "NuLumin Assets/NuLumin-logo-nobg-black.png",
+      "NuLumin Assets/NuL_GLP1_10mg.png",
+      "NuLumin Assets/NuL_BPC_10mg.png",
+      "NuLumin Assets/NuL_Ipamorelin_10mg.png"
+    ],
+    "_meta": {
+      "name": "nulumin-launch-C-hero-macro"
+    }
+  }
+]

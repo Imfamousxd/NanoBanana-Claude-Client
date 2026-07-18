@@ -1,0 +1,812 @@
+[
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-3ml-navy: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_3ml_navy.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "navy",
+      "tag": "nh-alphaklotho-lr-10mg-3ml-navy"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-3ml-black: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_3ml_black.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "black",
+      "tag": "nh-alphaklotho-lr-10mg-3ml-black"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-3ml-white: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_3ml_white.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "white",
+      "tag": "nh-alphaklotho-lr-10mg-3ml-white"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-3ml-red: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_3ml_red.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "red",
+      "tag": "nh-alphaklotho-lr-10mg-3ml-red"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-3ml-green: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_3ml_green.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "green",
+      "tag": "nh-alphaklotho-lr-10mg-3ml-green"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-3ml-babyblue: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_3ml_babyblue.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "babyblue",
+      "tag": "nh-alphaklotho-lr-10mg-3ml-babyblue"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-3ml-yellow: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_3ml_yellow.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "yellow",
+      "tag": "nh-alphaklotho-lr-10mg-3ml-yellow"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-3ml-pink: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_3ml_pink.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "pink",
+      "tag": "nh-alphaklotho-lr-10mg-3ml-pink"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-3ml-purple: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_3ml_purple.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "purple",
+      "tag": "nh-alphaklotho-lr-10mg-3ml-purple"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-5ml-navy: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_5ml_navy.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "navy",
+      "tag": "nh-alphaklotho-lr-10mg-5ml-navy"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-5ml-black: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_5ml_black.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "black",
+      "tag": "nh-alphaklotho-lr-10mg-5ml-black"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-5ml-white: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_5ml_white.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "white",
+      "tag": "nh-alphaklotho-lr-10mg-5ml-white"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-5ml-red: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_5ml_red.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "red",
+      "tag": "nh-alphaklotho-lr-10mg-5ml-red"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-5ml-green: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_5ml_green.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "green",
+      "tag": "nh-alphaklotho-lr-10mg-5ml-green"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-5ml-babyblue: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_5ml_babyblue.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "babyblue",
+      "tag": "nh-alphaklotho-lr-10mg-5ml-babyblue"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-5ml-yellow: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_5ml_yellow.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "yellow",
+      "tag": "nh-alphaklotho-lr-10mg-5ml-yellow"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-5ml-pink: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_5ml_pink.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "pink",
+      "tag": "nh-alphaklotho-lr-10mg-5ml-pink"
+    }
+  },
+  {
+    "prompt": "nh-alphaklotho-lr-10mg-5ml-purple: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'AlphaKlotho LR' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/AlphaKlotho LR/AlphaKlotho_LR_5ml_purple.jpg"
+    ],
+    "_meta": {
+      "peptide": "AlphaKlotho LR",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "purple",
+      "tag": "nh-alphaklotho-lr-10mg-5ml-purple"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-3ml-navy: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_3ml_navy.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "navy",
+      "tag": "nh-bpc-157-tb500-10mg-3ml-navy"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-3ml-black: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_3ml_black.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "black",
+      "tag": "nh-bpc-157-tb500-10mg-3ml-black"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-3ml-white: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_3ml_white.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "white",
+      "tag": "nh-bpc-157-tb500-10mg-3ml-white"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-3ml-red: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_3ml_red.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "red",
+      "tag": "nh-bpc-157-tb500-10mg-3ml-red"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-3ml-green: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_3ml_green.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "green",
+      "tag": "nh-bpc-157-tb500-10mg-3ml-green"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-3ml-babyblue: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_3ml_babyblue.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "babyblue",
+      "tag": "nh-bpc-157-tb500-10mg-3ml-babyblue"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-3ml-yellow: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_3ml_yellow.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "yellow",
+      "tag": "nh-bpc-157-tb500-10mg-3ml-yellow"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-3ml-pink: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_3ml_pink.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "pink",
+      "tag": "nh-bpc-157-tb500-10mg-3ml-pink"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-3ml-purple: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_3ml_purple.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "purple",
+      "tag": "nh-bpc-157-tb500-10mg-3ml-purple"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-5ml-navy: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_5ml_navy.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "navy",
+      "tag": "nh-bpc-157-tb500-10mg-5ml-navy"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-5ml-black: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_5ml_black.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "black",
+      "tag": "nh-bpc-157-tb500-10mg-5ml-black"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-5ml-white: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_5ml_white.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "white",
+      "tag": "nh-bpc-157-tb500-10mg-5ml-white"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-5ml-red: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_5ml_red.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "red",
+      "tag": "nh-bpc-157-tb500-10mg-5ml-red"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-5ml-green: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_5ml_green.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "green",
+      "tag": "nh-bpc-157-tb500-10mg-5ml-green"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-5ml-babyblue: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_5ml_babyblue.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "babyblue",
+      "tag": "nh-bpc-157-tb500-10mg-5ml-babyblue"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-5ml-yellow: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_5ml_yellow.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "yellow",
+      "tag": "nh-bpc-157-tb500-10mg-5ml-yellow"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-5ml-pink: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_5ml_pink.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "pink",
+      "tag": "nh-bpc-157-tb500-10mg-5ml-pink"
+    }
+  },
+  {
+    "prompt": "nh-bpc-157-tb500-10mg-5ml-purple: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'BPC-157 - TB500' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/BPC-157 - TB500/BPC-157_-_TB500_5ml_purple.jpg"
+    ],
+    "_meta": {
+      "peptide": "BPC-157 - TB500",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "purple",
+      "tag": "nh-bpc-157-tb500-10mg-5ml-purple"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-3ml-navy: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_3ml_navy.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "navy",
+      "tag": "nh-cjc-1295-no-dac-10mg-3ml-navy"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-3ml-black: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_3ml_black.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "black",
+      "tag": "nh-cjc-1295-no-dac-10mg-3ml-black"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-3ml-white: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_3ml_white.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "white",
+      "tag": "nh-cjc-1295-no-dac-10mg-3ml-white"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-3ml-red: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_3ml_red.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "red",
+      "tag": "nh-cjc-1295-no-dac-10mg-3ml-red"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-3ml-green: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_3ml_green.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "green",
+      "tag": "nh-cjc-1295-no-dac-10mg-3ml-green"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-3ml-babyblue: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_3ml_babyblue.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "babyblue",
+      "tag": "nh-cjc-1295-no-dac-10mg-3ml-babyblue"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-3ml-yellow: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_3ml_yellow.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "yellow",
+      "tag": "nh-cjc-1295-no-dac-10mg-3ml-yellow"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-3ml-pink: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_3ml_pink.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "pink",
+      "tag": "nh-cjc-1295-no-dac-10mg-3ml-pink"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-3ml-purple: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 3 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '3 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_3ml_purple.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "3ml",
+      "color": "purple",
+      "tag": "nh-cjc-1295-no-dac-10mg-3ml-purple"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-5ml-navy: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_5ml_navy.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "navy",
+      "tag": "nh-cjc-1295-no-dac-10mg-5ml-navy"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-5ml-black: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_5ml_black.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "black",
+      "tag": "nh-cjc-1295-no-dac-10mg-5ml-black"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-5ml-white: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_5ml_white.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "white",
+      "tag": "nh-cjc-1295-no-dac-10mg-5ml-white"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-5ml-red: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_5ml_red.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "red",
+      "tag": "nh-cjc-1295-no-dac-10mg-5ml-red"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-5ml-green: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_5ml_green.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "green",
+      "tag": "nh-cjc-1295-no-dac-10mg-5ml-green"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-5ml-babyblue: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_5ml_babyblue.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "babyblue",
+      "tag": "nh-cjc-1295-no-dac-10mg-5ml-babyblue"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-5ml-yellow: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_5ml_yellow.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "yellow",
+      "tag": "nh-cjc-1295-no-dac-10mg-5ml-yellow"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-5ml-pink: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_5ml_pink.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "pink",
+      "tag": "nh-cjc-1295-no-dac-10mg-5ml-pink"
+    }
+  },
+  {
+    "prompt": "nh-cjc-1295-no-dac-10mg-5ml-purple: This is an exact-reproduction edit task. The single REFERENCE IMAGE is an approved pharmaceutical vial product photo. Reproduce the VIAL exactly, but make TWO corrections: (1) the dose text, and (2) the background must be cleaned to flawless pure white. Details below.\n\nKEEP IDENTICAL (do not re-interpret, do not redesign): the exact same camera framing, zoom, crop and vial scale \u2014 the vial must occupy the exact same position and size within the frame as the reference, do NOT zoom in or out; the exact same clear-glass vial shape and proportions; the exact same cap (same color, same shape, same angle); the exact same opaque matte-white wrap-around label at the same width and position; the exact same product name 'CJC-1295 (No-DAC)' spelled exactly as in the reference, the same two compliance lines, the same 'LOT: NH-1024' line; the same typography (typeface, weights, sizes, letter spacing, centering) for ALL text; the same bottom accent bar (same color, same edge-to-edge width); the same lighting on the vial, the same reflection and soft contact shadow directly beneath the vial.\n\nBACKGROUND \u2014 CRITICAL: the reference's background may contain faint grey smudges, blotches, dust, cloudiness or uneven texture. Do NOT copy these. Render the ENTIRE background as flawless, perfectly uniform, pure white #FFFFFF \u2014 seamless studio sweep, completely clean, no smudges, no grey patches, no dark marks, no dust, no gradient, no stray shadows \u2014 EXCEPT the soft contact shadow/reflection directly beneath the vial, which stays. The background must be cleaner than the reference.\n\nDOSE TEXT: on the dose-and-volume line, change the dose from 'xx mg' to '10 mg', so the line reads '10 mg \u00b7 5 ml'. Keep that line in the exact same position, font, weight, size, charcoal-grey color, centering and middle-dot '\u00b7' separator as the reference \u2014 only 'xx' changes to '10'. The volume '5 ml' stays exactly the same.\n\nDo not add, move, restyle or re-render any other text or element. Render all text crisp and sharp. No extra text, no misspellings. Vertical 4:5 portrait, premium clinical product photography.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Noble Harbor Wholesale/CJC-1295 (No-DAC)/CJC-1295_(No-DAC)_5ml_purple.jpg"
+    ],
+    "_meta": {
+      "peptide": "CJC-1295 (No-DAC)",
+      "dose": "10mg",
+      "size": "5ml",
+      "color": "purple",
+      "tag": "nh-cjc-1295-no-dac-10mg-5ml-purple"
+    }
+  }
+]

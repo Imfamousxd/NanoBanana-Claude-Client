@@ -1,0 +1,11 @@
+[
+  {
+    "prompt": "Edit REFERENCE 2 (the existing 'Get on the List' redesigned poster) by making TWO targeted changes:\n\n(1) REPLACE the QR code currently shown in REFERENCE 2 with the EXACT QR pattern from REFERENCE 1 (a black-and-white QR code). Every black module and every white module of REFERENCE 1's QR must be preserved PIXEL-PERFECT — do NOT add modules, remove modules, blur edges, dither, anti-alias the QR pattern, or invent any QR-like noise. The QR is sacred functional artwork that must scan correctly. Position and size the QR in the same location and at the same scale as the QR in REFERENCE 2 (so the layout doesn't shift). The QR must remain crisp, sharp, fully square, with high contrast (pure black on pure white). NO logos overlaid on the QR center.\n\n(2) CHANGE the small side text label currently reading 'Reference to Muha Members AD' (the small text next to the QR in REFERENCE 2) to read 'SCAN FOR APP' instead. Use the same font family, weight, color, and visual style as the original side text — same size, same position, same alignment. No other text changes anywhere.\n\nKEEP IDENTICAL: every other element of REFERENCE 2 — the deep midnight-black background with red/gold/cream palette, the muted Miami-at-night cityscape, wet asphalt foreground, the red Challenger SRT, the gold Muha 'M' logo, the 'GET ON THE LIST' headline, 'SCAN. ENTER. WIN.' subhead, the disclaimer text 'No Purchase Necessary | 21+ | See Official Rules on the App', stacks of cash, lighting, color grade, vignette, film grain, layout, composition, framing, aspect ratio (3:4).\n\nPhotorealistic-illustrated modern poster aesthetic, sharp focus, 2160×2880 / 4K. No additional text, no watermarks, no extra elements.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": [
+      "./muha-app-qr.png",
+      "./generations/2026-04-28T01-09-19_REDESIGN_this_Muha_Meds_giveaway_poster.png"
+    ]
+  }
+]
