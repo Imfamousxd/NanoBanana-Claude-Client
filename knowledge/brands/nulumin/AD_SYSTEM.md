@@ -23,6 +23,12 @@ composite by hand-pasting pixels. The generator is `engine/brandkit/nulumin-ads.
 
 Sizes: `9:16` = 1080x1920, `4:5` = 1080x1350, `1:1` = 1080x1080. Vertical is the house format.
 
+Scenes ship for `cryo`, `caustics` and `causticsblue` at 9:16 and 4:5 — exactly the render size, so
+they are native resolution, not proxies. When a requested style/ratio has no scene, the dark formats
+fall back to a CSS-drawn ground with the vial cutout composited on it. That is a real, on-brand
+output, but it is a *fallback*: it carries no photographic set, and a `panel` rendered that way shows
+only the first member's vial. Generate the scene before a panel creative ships.
+
 ---
 
 ## 2. The invariant spine
