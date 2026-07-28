@@ -1,0 +1,33 @@
+{
+  "id": "claim.nulumin.room-temp-stable",
+  "claim": "Lyophilized product is room-temperature stable in transit; no refrigerated shipping required.",
+  "brand": "brand.nulumin",
+  "source": {
+    "url": "https://nulumin.org",
+    "title": "nulumin.org — storage and handling",
+    "retrievedAt": "2026-07-24",
+    "support": "Published storage/handling guidance for lyophilized product in transit."
+  },
+  "status": "draft",
+  "reviewedAt": "2026-07-24",
+  "reviewAfter": "2027-01-24",
+  "jurisdictions": [
+    "US"
+  ],
+  "platforms": [
+    "owned-web",
+    "email",
+    "meta",
+    "tiktok"
+  ],
+  "approvedUses": [
+    "static ad",
+    "email"
+  ],
+  "prohibitedUses": [
+    "Never pair with human-use, dosing, reconstitution, or administration content.",
+    "This is a handling statement about the shipped material. Do not extend it into stability-after-reconstitution or any use instruction."
+  ],
+  "owner": "unassigned",
+  "notes": "status=draft. The source below was verified on the live site; that is evidence the statement is PUBLISHED, not that it is legally approved for advertising. A qualified human owner must verify the substantiation, set `owner`, refresh `reviewedAt`, and flip `status` to \"approved\" before any job may cite this record."
+}

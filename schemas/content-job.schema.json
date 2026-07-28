@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://content-engine.local/schemas/content-job.schema.json",
+  "title": "Content Engine Job",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "id", "brand", "mode", "objective", "deliverable", "provider", "creative", "output"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "version": {"const": 1},
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,63}$"},
+    "brand": {"type": "string", "minLength": 1},
+    "mode": {
+      "enum": ["ugc-image", "ugc-video", "product-image", "campaign-image", "campaign-video"]
+    },
+    "objective": {"type": "string", "minLength": 8},
+    "audience": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "persona": {"type": "string"},
+        "platform": {"type": "string"},
+        "awareness": {"type": "string"},
+        "motivation": {"type": "string"}
+      }
+    },
+    "deliverable": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["aspectRatio", "candidates"],
+      "properties": {
+        "aspectRatio": {"type": "string", "pattern": "^[0-9]+:[0-9]+$"},
+        "imageSize": {"enum": ["1K", "2K", "4K"]},
+        "quality": {"enum": ["low", "medium", "high", "auto"]},
+        "durationSeconds": {"type": "integer"},
+        "resolution": {"enum": ["720p", "1080p", "4k"]},
+        "candidates": {"type": "integer", "minimum": 1, "maximum": 4}
+      }
+    },
+    "provider": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["id"],
+      "properties": {
+        "id": {"enum": ["openai-image", "gemini-image", "google-omni-video", "google-veo", "replicate-seedance"]},
+        "model": {"type": "string"},
+        "seed": {"type": "integer"},
+        "size": {"type": "string"},
+        "outputFormat": {"enum": ["png", "jpeg", "webp"]},
+        "background": {"enum": ["auto", "opaque", "transparent"]}
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "role"],
+        "properties": {
+          "path": {"type": "string"},
+          "role": {
+            "enum": ["product-canon", "creator-canon", "character-canon", "logo-canon", "environment-reference", "style-reference", "reference-image", "first-frame", "last-frame", "mask", "reference-video", "reference-audio"]
+          },
+          "required": {"type": "boolean"},
+          "instructions": {"type": "string"}
+        }
+      }
+    },
+    "creative": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["concept", "scene", "action"],
+      "properties": {
+        "concept": {"type": "string"},
+        "scene": {"type": "string"},
+        "contract": {
+          "type": "string",
+          "description": "A verbatim block emitted as its own prompt section. Use for product, package, or identity contracts that must not be paraphrased or summarized."
+        },
+        "creator": {"type": "string"},
+        "action": {"type": "string"},
+        "camera": {"type": "string"},
+        "lighting": {"type": "string"},
+        "sound": {"type": "string"},
+        "dialogue": {"type": "string"},
+        "style": {"type": "string"},
+        "mustInclude": {"type": "array", "items": {"type": "string"}},
+        "mustAvoid": {"type": "array", "items": {"type": "string"}},
+        "onImageText": {"type": "array", "items": {"type": "string"}},
+        "beats": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["time", "action"],
+            "properties": {
+              "time": {"type": "string"},
+              "action": {"type": "string"},
+              "camera": {"type": "string"},
+              "sound": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "compliance": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "profile": {"type": "string"},
+        "requiredDisclosures": {"type": "array", "items": {"type": "string"}},
+        "humanReviewRequired": {"type": "boolean"},
+        "claimSourceIds": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "approved": {"type": "boolean"}
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["directory", "basename"],
+      "properties": {
+        "directory": {"type": "string"},
+        "basename": {"type": "string"}
+      }
+    }
+  }
+}

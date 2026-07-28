@@ -1,0 +1,35 @@
+{
+  "id": "claim.nulumin.hplc-purity-spec",
+  "claim": "≥99% HPLC purity specification, verified on every batch.",
+  "brand": "brand.nulumin",
+  "source": {
+    "url": "https://nulumin.org",
+    "title": "nulumin.org — purity specification",
+    "retrievedAt": "2026-07-24",
+    "support": "Published as a SPECIFICATION the product is manufactured to, not as a measured result for a given lot."
+  },
+  "status": "draft",
+  "reviewedAt": "2026-07-24",
+  "reviewAfter": "2027-01-24",
+  "jurisdictions": [
+    "US"
+  ],
+  "platforms": [
+    "owned-web",
+    "email",
+    "meta",
+    "tiktok"
+  ],
+  "approvedUses": [
+    "static ad",
+    "carousel",
+    "email"
+  ],
+  "prohibitedUses": [
+    "Never pair with human-use, dosing, reconstitution, or administration content.",
+    "Never state a specific measured purity figure for a lot without that lot's COA.",
+    "Do not drop the word 'spec' in a way that converts a specification into a per-batch measurement."
+  ],
+  "owner": "unassigned",
+  "notes": "status=draft. The source below was verified on the live site; that is evidence the statement is PUBLISHED, not that it is legally approved for advertising. A qualified human owner must verify the substantiation, set `owner`, refresh `reviewedAt`, and flip `status` to \"approved\" before any job may cite this record."
+}

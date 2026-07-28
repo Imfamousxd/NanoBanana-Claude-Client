@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://content-engine.local/schemas/claim-record.schema.json",
+  "title": "Approved marketing claim record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "claim", "brand", "source", "status", "reviewedAt", "reviewAfter", "approvedUses", "owner"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^claim\\.[a-z0-9.-]+$"},
+    "claim": {"type": "string", "minLength": 1},
+    "brand": {"type": "string"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "title", "retrievedAt", "support"],
+      "properties": {
+        "url": {"type": "string"},
+        "title": {"type": "string"},
+        "retrievedAt": {"type": "string", "format": "date"},
+        "support": {"type": "string"}
+      }
+    },
+    "status": {"enum": ["draft", "approved", "expired", "rejected"]},
+    "reviewedAt": {"type": "string", "format": "date"},
+    "reviewAfter": {"type": "string", "format": "date"},
+    "jurisdictions": {"type": "array", "items": {"type": "string"}},
+    "platforms": {"type": "array", "items": {"type": "string"}},
+    "approvedUses": {"type": "array", "items": {"type": "string"}},
+    "prohibitedUses": {"type": "array", "items": {"type": "string"}},
+    "owner": {"type": "string"},
+    "notes": {"type": "string"}
+  }
+}
+

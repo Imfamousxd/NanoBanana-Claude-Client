@@ -48,7 +48,9 @@ const QUALITY_MAP = {
   "auto": "auto",
 };
 
-const OUTPUT_DIR = path.join(__dirname, "generations");
+const OUTPUT_DIR = process.env.OUTPUT_DIR
+  ? (path.isAbsolute(process.env.OUTPUT_DIR) ? process.env.OUTPUT_DIR : path.join(__dirname, process.env.OUTPUT_DIR))
+  : path.join(__dirname, "generations");
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 function ensureOutputDir() {

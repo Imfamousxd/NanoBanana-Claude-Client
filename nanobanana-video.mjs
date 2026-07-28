@@ -16,9 +16,11 @@ if (fs.existsSync(envPath)) {
 
 // ─── Config ───────────────────────────────────────────────────────────────────
 const API_KEY = process.env.GEMINI_API_KEY;
-const MODEL = "veo-3.1-generate-preview";
+const MODEL = process.env.VEO_MODEL || "veo-3.1-generate-preview";
 const BASE_URL = "https://generativelanguage.googleapis.com/v1beta";
-const OUTPUT_DIR = path.join(__dirname, "generations");
+const OUTPUT_DIR = process.env.OUTPUT_DIR
+  ? (path.isAbsolute(process.env.OUTPUT_DIR) ? process.env.OUTPUT_DIR : path.join(__dirname, process.env.OUTPUT_DIR))
+  : path.join(__dirname, "generations");
 const OPERATION_FILE = path.join(__dirname, "veo_operation.txt");
 const POLL_INTERVAL_MS = 10_000;
 

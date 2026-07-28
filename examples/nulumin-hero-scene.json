@@ -1,0 +1,67 @@
+
+{
+  "$schema": "../schemas/content-job.schema.json",
+  "version": 1,
+  "id": "nulumin-hero-ghkcu-cryo-9x16",
+  "brand": "nulumin",
+  "mode": "product-image",
+  "objective": "Generate a cryo hero scene for GHK-Cu 50mg with the upper half of the frame reserved for ad copy.",
+  "deliverable": {
+    "aspectRatio": "9:16",
+    "imageSize": "2K",
+    "quality": "high",
+    "candidates": 2
+  },
+  "provider": {
+    "id": "gemini-image",
+    "model": "gemini-3-pro-image"
+  },
+  "assets": [
+    {
+      "path": "Brand Context/assets/NuLumin_BioSciences/ads/vial_ghkcu.png",
+      "role": "product-canon",
+      "required": true,
+      "instructions": "Reference 1: the whole vial. Preserve label geometry, glass proportions, cap and crimp collar exactly."
+    }
+  ],
+  "creative": {
+    "concept": "Lyophilisation made visible — dramatic, and tied to what the product actually is.",
+    "scene": "A deep, dark violet-black cold chamber. Dense CRYOGENIC VAPOUR — heavy freeze-dry fog — rolls and pours slowly around the base of the vial and spills forward across the surface, catching a hard rim of violet light. Wisps curl upward but NEVER cross the label. A single cold, hard key light rakes from the upper left, carving the vapour into volumetric shafts. Frost crystals glitter faintly on the surface beneath. Cinematic, frozen, laboratory-sublime. Deep shadow, brilliant specular edges.",
+    "action": "COMPOSITION IS EXACT AND THE VIAL MUST BE BIG: THE ENTIRE UPPER HALF OF THE IMAGE IS EMPTY DARK SPACE. The vial's cap does NOT begin until BELOW THE VERTICAL MIDPOINT of the frame — if you drew a horizontal line across the exact centre of the image, the whole vial including its cap sits BENEATH that line. Nothing but empty dark gradient above it. The cap's top edge is about 55% down from the top. Below that the vial is the LARGE, DOMINANT hero of the frame — it spans roughly 46% of the total frame width. Its BASE must also sit clearly ABOVE the bottom edge of the frame with a clear margin of empty surface beneath it — the whole vial floats in the middle-lower band of the picture, touching neither the midpoint above nor the bottom edge below. It is a close, imposing product shot, not a small object in a big room. Standing upright and CENTRED horizontally in the frame — the dead-centre focal point of the image.",
+    "style": "Photoreal flagship product photography. Ultra-high-resolution. No added text, words, logos or watermarks anywhere.",
+    "contract": "THE PRODUCT — reproduce the vial from the reference image EXACTLY:\n· REFERENCE IMAGE 1 is the whole vial. REFERENCE IMAGE 2 is a HIGH-RESOLUTION CLOSE-UP OF THE LABEL — copy the label from THAT image, letterform for letterform. It is the authority on the typography.\n· Clear glass NuLumin vial. COPY the label pixel-for-pixel. Do not re-letter, re-typeset, re-space, restyle, translate or invent anything on it. Every glyph, weight, size and position must match the reference. For certainty, the label reads, top to bottom, with TWO clearly visible SATURATED VIOLET vertical rules running the full height of its LEFT edge — a thicker one hard on the label's left border and a second thinner one set slightly inboard of it. These rules must be present and obvious; do not omit, fade or grey them out. Reading top to bottom:\n    \"NuLumin\"  — \"Nu\" in heavy weight, \"Lumin\" in light weight, one word, in BLACK\n    a thin full-width horizontal rule beneath it\n    \"BIO-SCIENCES\" — small, widely letter-spaced BLACK capitals\n    \"GHK-Cu\" — large ITALIC SERIF in a HIGH-CONTRAST DIDONE style (think Bodoni or Didot italic): dramatic thick-to-thin stroke modulation, very fine hairline strokes and crisp flat hairline serifs, elegant and calligraphic. Set in a REGULAR / BOOK weight. This is critical: it is NOT bold, NOT black, NOT heavy. It is an elegant light-to-medium serif with fine hairline strokes and delicate thin-to-thick contrast, like classical book typography. Do not thicken, embolden or fatten these letterforms. It is BLACK — only the dose is coloured.\n    \"50mg\" — large serif in the SAME COLOUR as the two vertical rules, also REGULAR weight, not bold\n    \"Manufactured by NuLumin\" — small monospaced type\n  and a small thin-ruled box in the upper RIGHT corner containing three tiny lines of fine print.\n  The label is smooth premium coated stock, flat against the glass, no curl, no distortion.\n· FILL LEVEL IS EXACT: the powder occupies ONLY THE BOTTOM THIRD of the vial. The upper two-thirds of the vial is EMPTY — clear, transparent, air-filled glass you can see straight through. The vial is NOT full, NOT filled to the shoulder, NOT filled to the neck. · THE VIAL MUST CONTAIN PRODUCT: that bottom third holds a BLUISH-VIOLET lyophilized cake — the characteristic colour of a copper peptide, clearly visible through the glass. The vial must never look empty.\n· THE CAKE MUST LOOK LIKE A REAL LYOPHILIZED PHARMACEUTICAL CAKE — THIS IS NOT LOOSE POWDER:\n  It is a SOLID, COHESIVE, FREEZE-DRIED PLUG that holds its own shape. It spans the FULL internal width of the vial and sits as one intact disc with a FLAT, LEVEL, slightly matte top surface and a clean, sharply defined horizontal edge where it meets the glass. Its texture is a dense micro-porous solid — like a firm compressed tablet or a set block of chalk — not granular, not loose, not heaped, not poured.\n  ABSOLUTELY NOT: loose powder, flour, sugar, sand, granules, a heaped or mounded pile, a sloped or uneven surface, visible individual particles, cracks, fissures, chunks or a collapsed centre. If it looks like something poured from a bag, it is WRONG.\n· MATERIAL: flagship luxury-cosmetics product photography. Brilliant wet-look glossy glass, liquid-sharp specular highlights, a long crisp vertical highlight down one side, true refraction and visible glass thickness at the shoulder and base, and a polished mirror-finish aluminium crimp collar with sharp metallic reflections. THE FLIP CAP IS COLOURED: a glossy injection-moulded flip-top in saturated brand VIOLET (#7C6FF7-#9B8FE8). The cap is clearly, unmistakably PURPLE — never bare silver, never grey, never colourless, seated on a polished silver aluminium crimp collar beneath it. Coloured cap on top, silver crimp ring below it, in that order.\n· LIGHT THE LABEL FROM THE FRONT: a soft, even frontal key light falls directly on the label so every line is evenly exposed and fully legible. Do NOT backlight or rim-light the vial in a way that silhouettes it, throws the label into shadow, or blows it out with glow.\n· THE LABEL IS SACRED: nothing may cross, veil or overlap it. No flare, no vapour, no element in front of it. It faces the camera almost straight on, rotated 6-9 degrees, pin-sharp, high contrast, the crispest thing in frame. The ENTIRE vial including its full label and base sits inside the frame, never cropped.\n· SEPARATION IS THE TOP PRIORITY — ALL ATTENTION ON THE VIAL:\n  · EXTREME shallow depth of field, shot wide open at roughly f/1.4 on a macro lens. ONLY the vial's label plane is in focus. Everything else — the vapour, the surface, the frost, the far background — melts into a heavy, creamy, strongly defocused blur with soft round bokeh. The blur should be dramatic and obvious, not subtle, and it should begin immediately behind the vial.\n  · HIGH CONTRAST: the background sits several stops DARKER than the vial — deep, near-black shadow falling off fast toward the frame edges. The vial is lit like a jewel in a spotlight: a bright, clean pool of light on it alone, with a crisp brilliant rim of light tracing both of its edges to lift it off the dark ground. Strong vignette.\n  · Any vapour, glow or effect around the vial stays LOW, soft and out of focus, and must never brighten to compete with the product or rise across the label.\n  · The vial and its label are unmistakably the sharpest, brightest, highest-contrast thing in the picture by a wide margin. The eye should have nowhere else to go.\nUltra-high-resolution. Photoreal. No added text, words, logos or watermarks anywhere.",
+    "mustInclude": [
+      "the entire vial, cap to base, inside the frame and never cropped",
+      "a lyophilized cake occupying only the bottom third of the vial",
+      "the label pin-sharp, frontally lit, and unobstructed"
+    ],
+    "mustAvoid": [
+      "Rainbow/prism/molecular kitsch, nebulas, cosmic backgrounds",
+      "Energy-drink neon, brutalist or Swiss-poster palettes",
+      "Bold or all-caps headline serifs",
+      "Warping, recoloring, or re-lettering the logo lockup",
+      "Bullets, numerals, or middot friezes in place of the ✓ tick system",
+      "The word \"stack\" — use panel, series, or group (see AD_SYSTEM.md)",
+      "loose or heaped powder in place of a solid lyophilized cake",
+      "a bare silver cap",
+      "any vapour, glow or element crossing the label",
+      "re-lettered, re-typeset or invented label text"
+    ]
+  },
+  "compliance": {
+    "profile": "regulated-health-ruo",
+    "requiredDisclosures": [
+      "For Research Use Only. Not for Human Consumption."
+    ],
+    "humanReviewRequired": true,
+    "claimSourceIds": [],
+    "note": "The scene carries no copy. The RUO line is composited deterministically by the ad generator."
+  },
+  "execution": {
+    "approved": false
+  },
+  "output": {
+    "directory": "generations/nulumin-hero-ghkcu-cryo-9x16",
+    "basename": "nulumin-hero-ghkcu-cryo-9x16"
+  }
+}

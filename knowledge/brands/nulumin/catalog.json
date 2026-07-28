@@ -1,0 +1,126 @@
+{
+  "$comment": "Compounds used in creative work, with the facts a generator needs: which spectrum category owns them, the cap and cake colors that must be pinned in a prompt, and the canonical asset for each. This is a CREATIVE subset, not the commercial catalog — the full catalog authority is Brand Context/NuLumin_BioSciences.md.",
+  "version": 1,
+  "brand": "brand.nulumin",
+  "updatedAt": "2026-07-28",
+
+  "catalogFacts": {
+    "activeSkus": 31,
+    "phrasing": "Always cite \"31 research peptides\" — never 32.",
+    "categories": 5
+  },
+
+  "categories": {
+    "tissue": {"name": "Tissue Research", "accent": "#9B8FE8", "eyebrow": "TISSUE RESEARCH"},
+    "cellular": {"name": "Cellular Research", "accent": "#5B9FF5", "eyebrow": "CELLULAR RESEARCH"},
+    "neural": {"name": "Neural Research", "accent": "#4DC97A", "eyebrow": "NEURAL RESEARCH"},
+    "metabolic": {"name": "Metabolic Research", "accent": "#F2C94C", "eyebrow": "METABOLIC RESEARCH"},
+    "endocrine": {"name": "Endocrine Research", "accent": "#E86E8A", "eyebrow": "ENDOCRINE RESEARCH"}
+  },
+
+  "capColors": {
+    "$comment": "Caps render as bare aluminium by default. Pin the color explicitly in every prompt or it comes back silver.",
+    "violet": "a glossy injection-moulded flip-top in saturated brand VIOLET (#7C6FF7-#9B8FE8). The cap is clearly, unmistakably PURPLE — never bare silver, never grey, never colourless",
+    "cyan": "a glossy injection-moulded flip-top in bright light CYAN-BLUE (#3FBEDD-#7ADCF0). The cap is clearly, unmistakably BLUE — never bare silver, never grey, never colourless"
+  },
+
+  "cakeColors": {
+    "$comment": "The lyophilized cake. Default renders come back white; GHK-Cu is the one that must be corrected every time.",
+    "offWhite": "a SOLID MATTE OFF-WHITE lyophilized cake — one intact pressed disc with a perfectly FLAT LEVEL top, never a heap of loose powder",
+    "copperViolet": "a BLUISH-VIOLET lyophilized cake — the characteristic colour of a copper peptide"
+  },
+
+  "compounds": {
+    "ghkcu": {
+      "name": "GHK-Cu",
+      "dose": "50mg",
+      "category": "tissue",
+      "cap": "violet",
+      "cake": "copperViolet",
+      "labelRules": "SATURATED VIOLET",
+      "vial": "Brand Context/assets/NuLumin_BioSciences/ads/vial_ghkcu.png",
+      "notes": "Leads the demand ranking and is the only compound with a genuinely advertisable lane — FDA restored \"GHK-Cu, except injectable routes\" to Category 1 on 2026-05-14. Default hero for a single-compound creative."
+    },
+    "bpc": {
+      "name": "BPC-157",
+      "dose": "5mg",
+      "category": "tissue",
+      "cap": "violet",
+      "cake": "offWhite",
+      "labelRules": "SATURATED VIOLET",
+      "vial": "Brand Context/assets/NuLumin_BioSciences/ads/vial_bpc.png"
+    },
+    "tb500": {
+      "name": "TB-500",
+      "dose": "5mg",
+      "category": "tissue",
+      "cap": "violet",
+      "cake": "offWhite",
+      "labelRules": "SATURATED VIOLET",
+      "vial": "Brand Context/assets/NuLumin_BioSciences/ads/vial_tb500.png"
+    },
+    "klow": {
+      "name": "Klow Blend",
+      "dose": "80mg",
+      "category": "cellular",
+      "cap": "cyan",
+      "cake": "offWhite",
+      "labelRules": "SATURATED CYAN-BLUE",
+      "vial": "Brand Context/assets/NuLumin_BioSciences/ads/vial_klow.png"
+    },
+    "motsc": {
+      "name": "MOTS-C",
+      "dose": "10mg",
+      "category": "cellular",
+      "cap": "cyan",
+      "cake": "offWhite",
+      "labelRules": "SATURATED CYAN-BLUE",
+      "vial": "Brand Context/assets/NuLumin_BioSciences/ads/vial_motsc.png"
+    },
+    "nad": {
+      "name": "NAD+",
+      "dose": "250mg",
+      "category": "cellular",
+      "cap": "cyan",
+      "cake": "offWhite",
+      "labelRules": "SATURATED CYAN-BLUE",
+      "vial": "Brand Context/assets/NuLumin_BioSciences/ads/vial_nad.png"
+    },
+    "tesamorelin": {
+      "name": "Tesamorelin",
+      "dose": "10mg",
+      "category": "endocrine",
+      "cap": "violet",
+      "cake": "offWhite",
+      "labelRules": "SATURATED VIOLET",
+      "notes": "Unexploited in market demand terms — a deliberate split-test opportunity. No dedicated cutout asset yet; generate a hero first."
+    },
+    "glp3": {
+      "name": "GLP-3",
+      "dose": "10mg",
+      "category": "metabolic",
+      "cap": "violet",
+      "cake": "offWhite",
+      "labelRules": "SATURATED VIOLET",
+      "riskFlag": "HIGHEST-RISK SKU in the catalog. FDA's 2026-04-07 warning letters cited exactly this GLP-n naming pattern as an implied reference to an approved drug. Do not build a paid creative around it without explicit legal sign-off."
+    }
+  },
+
+  "panels": {
+    "$comment": "Multi-compound creatives. Never called a \"stack\" — see AD_SYSTEM.md.",
+    "cellular": {
+      "members": ["klow", "motsc", "nad"],
+      "category": "cellular",
+      "eyebrow": "KLOW BLEND · MOTS-C · NAD+",
+      "cta": "Shop the panel"
+    }
+  },
+
+  "demandRanking": {
+    "$comment": "Ordering used to choose which compound gets a creative. From project_nulumin_ad_campaign.",
+    "lead": "ghkcu",
+    "order": ["ghkcu", "glp3", "bpc", "tb500", "nad", "motsc", "tesamorelin"],
+    "drop": ["pt141", "melanotan"],
+    "reason": "PT-141 and Melanotan are dropped from ad rotation on platform-risk grounds, not demand."
+  }
+}

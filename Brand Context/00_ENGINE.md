@@ -11,7 +11,7 @@ The model back-ends, CLI tools, formats, and global rules that every brand playb
 - **Batch JSON format** (same file works for nanobanana.mjs): array of `{prompt, aspectRatio, imageSize, refImages}`. Batches ~3 min/slide — run in background.
 - Strengths: text fidelity (labels, small print, badges), white studio packshots, editing one thing ("reproduce EXACTLY except …" with the approved image as first `image[]`).
 
-### 2. Nano Banana Pro (Gemini `gemini-3-pro-image-preview`) — reference fidelity at hero scale
+### 2. Nano Banana Pro (Gemini `gemini-3-pro-image`) — reference fidelity at hero scale
 - Reference images go in as `inline_data` parts **before** the text part. CLI: `node nanobanana.mjs` (interactive; also accepts the same batch JSON).
 - **Switch to NB when** a logo/character/product reference must render pixel-faithful at hero scale — gpt-image-2 reinterprets references at large sizes; NB preserves geometry. Also NB 4K = the true high-res path when gpt-2 `high` times out.
 - Weakness: garbles small label text — do a gpt-image-2 edit pass to fix text on an otherwise-approved NB render.

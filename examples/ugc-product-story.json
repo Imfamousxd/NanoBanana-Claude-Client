@@ -1,0 +1,72 @@
+{
+  "$schema": "../schemas/content-job.schema.json",
+  "version": 1,
+  "id": "nulumin-verifier-unboxing",
+  "brand": "nulumin",
+  "mode": "ugc-image",
+  "objective": "Create a believable creator-shot unboxing frame focused on package craft and documentation, without human-use implications.",
+  "audience": {
+    "persona": "The Verifier",
+    "platform": "Instagram Reels cover",
+    "awareness": "vendor-comparison",
+    "motivation": "verify sourcing and packaging details"
+  },
+  "deliverable": {
+    "aspectRatio": "9:16",
+    "imageSize": "2K",
+    "quality": "high",
+    "candidates": 2
+  },
+  "provider": {
+    "id": "gemini-image",
+    "model": "gemini-3-pro-image"
+  },
+  "assets": [
+    {
+      "path": "NuLumin Influencer Box/Final/NuLumin_Box_Closed_Hero.png",
+      "role": "product-canon",
+      "required": true,
+      "instructions": "Preserve the box proportions, NuLumin wordmark, spectrum band order, white board material, and closure geometry. Do not copy empty studio composition."
+    }
+  ],
+  "creative": {
+    "concept": "A meticulous research-documentation creator has just opened a delivery and pauses to show the package construction before examining the paperwork.",
+    "scene": "A real home-office worktable in late afternoon with a laptop edge, notebook, shipping mailer, cable, and ordinary desk wear; tidy enough to read but not art-directed.",
+    "creator": "Adult creator in their mid-30s, practical neutral clothing, curious and exacting rather than salesy; only hands and a partial natural profile need to be visible.",
+    "action": "One hand steadies the box while the other turns it slightly toward the phone; the creator's attention is on a construction detail, not posing for a product ad.",
+    "camera": "Handheld phone at seated eye height, close but not macro; slightly late reframing and mild exposure recovery from the nearby window; product-facing text remains readable.",
+    "lighting": "Mixed soft window light and a warm desk lamp with believable local shadows and no studio rim light.",
+    "style": "Platform-native creator frame with restrained phone sharpening, natural skin and paper texture, and ordinary background entropy.",
+    "mustInclude": [
+      "physically believable hand contact and box shadows",
+      "one calm area reserved for a later deterministic hook overlay",
+      "exact product geometry from the product-canon reference"
+    ],
+    "mustAvoid": [
+      "medical-use implication",
+      "invented COA, certification, purity, lab, or regulatory text",
+      "poreless beauty lighting",
+      "floating product or impossible grip",
+      "commercial studio polish"
+    ],
+    "onImageText": [
+      "For Research Use Only. Not for Human Consumption."
+    ]
+  },
+  "compliance": {
+    "profile": "regulated-health-ruo",
+    "requiredDisclosures": [
+      "For Research Use Only. Not for Human Consumption."
+    ],
+    "humanReviewRequired": true,
+    "claimSourceIds": []
+  },
+  "execution": {
+    "approved": false
+  },
+  "output": {
+    "directory": "generations/nulumin-verifier-unboxing",
+    "basename": "nulumin-verifier-unboxing"
+  }
+}
+

@@ -17,13 +17,12 @@ if (fs.existsSync(envPath)) {
 
 // ─── Config ───────────────────────────────────────────────────────────────────
 const API_KEY = process.env.GEMINI_API_KEY;
-const MODEL = "gemini-3-pro-image-preview"; // Nanobanana Pro
+const MODEL = process.env.GEMINI_IMAGE_MODEL || "gemini-3-pro-image"; // Nano Banana Pro (stable)
 
 const VALID_RATIOS = [
-  "1:1","1:4","1:8","2:3","3:2","3:4","4:1",
-  "4:3","4:5","5:4","8:1","9:16","16:9","21:9",
+  "1:1","2:3","3:2","3:4","4:3","4:5","5:4","9:16","16:9","21:9",
 ];
-const VALID_SIZES = ["512", "1K", "2K", "4K"];
+const VALID_SIZES = ["1K", "2K", "4K"];
 const OUTPUT_DIR = process.env.OUTPUT_DIR
   ? (path.isAbsolute(process.env.OUTPUT_DIR) ? process.env.OUTPUT_DIR : path.join(__dirname, process.env.OUTPUT_DIR))
   : path.join(__dirname, "generations");
@@ -195,7 +194,7 @@ async function runInteractive() {
       console.log(`  Warning: "${aspectRatio}" may not be supported.`);
     }
 
-    const imageSize = await ask(rl, "Resolution (512/1K/2K/4K)", "2K");
+    const imageSize = await ask(rl, "Resolution (1K/2K/4K)", "2K");
 
     const refInput = await ask(rl, "Reference images (comma-separated paths, or Enter to skip)", "");
     const refImages = refInput

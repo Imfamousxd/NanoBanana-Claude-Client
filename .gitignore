@@ -32,6 +32,18 @@ review-*.md
 /Brand Context/assets/Agency_DevWorks/
 /Brand Context/assets/Dial_Echo/
 /*/
+!/docs/
+!/docs/**
+!/engine/
+!/engine/**
+!/examples/
+!/examples/**
+!/knowledge/
+!/knowledge/**
+!/schemas/
+!/schemas/**
+!/test/
+!/test/**
 !/Brand Context/
 !/AI Fruit VIdeos Muha/
 /AI Fruit VIdeos Muha/*
@@ -44,6 +56,7 @@ review-*.md
 !/Dialed Health Website graphics/
 !/Nulumin lifestyle shots/
 !/Stanton Assets/
+/.content-engine/
 /nh-bpc157-tb500.log
 /nh-fix-edit-strict-2.log
 /backs-fix.log
@@ -1102,3 +1115,6 @@ review-*.md
 /AI Fruit VIdeos Muha/Bud Island Intro/01_entrance_mango.mp4
 /AI Fruit VIdeos Muha/Bud Island Intro/00_opener_budisland_v2.mp4
 /AI Fruit VIdeos Muha/Bud Island Intro/01_entrance_watermelon.mp4
+
+# Browsable alias index of NuLumin generations (symlinks only, not content)
+NuLumin — ALL GENERATIONS/

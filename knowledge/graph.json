@@ -1,0 +1,259 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-28",
+  "sources": [
+    {
+      "directory": "Brand Context",
+      "extensions": [".md"],
+      "tags": ["brand", "canonical-source"]
+    },
+    {
+      "path": "knowledge/brands/nulumin/README.md",
+      "tags": ["nulumin", "brand-pack", "operator"]
+    },
+    {
+      "path": "knowledge/brands/nulumin/AD_SYSTEM.md",
+      "tags": ["nulumin", "brand-pack", "ad", "layout", "playbook", "compliance"]
+    },
+    {
+      "path": "knowledge/brands/nulumin/HERO_PROMPTS.md",
+      "tags": ["nulumin", "brand-pack", "prompt", "product-photography"]
+    },
+    {
+      "path": "knowledge/playbooks/UGC_REALISM.md",
+      "tags": ["playbook", "ugc", "realism"]
+    },
+    {
+      "path": "knowledge/compliance/REGULATED_HEALTH_RUO.md",
+      "tags": ["compliance", "regulated-health", "ruo"]
+    },
+    {
+      "path": "NuLumin Influencer Personas/NULUMIN_INFLUENCER_PERSONA_SYSTEM.md",
+      "optional": true,
+      "tags": ["nulumin", "persona", "influencer", "strategy", "requires-source-review"]
+    },
+    {
+      "path": "AI Fruit VIdeos Muha/CHARACTERS.md",
+      "optional": true,
+      "tags": ["muha", "character", "continuity"]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "brand.nulumin",
+      "type": "brand",
+      "name": "NuLumin Bio-Sciences",
+      "aliases": ["nulumin", "nu lumin", "nulumin biosciences"],
+      "source": "Brand Context/NuLumin_BioSciences.md",
+      "complianceProfile": "regulated-health-ruo",
+      "pack": "knowledge/brands/nulumin",
+      "promptProfile": {
+        "designSystem": "knowledge/brands/nulumin/design-system.json is authoritative for exact hexes and type. It separates the marketing palette (ads, web, email) from the packaging palette (vial-label art); the two are not interchangeable.",
+        "positioning": "Clinical-modern research peptide brand; refined biotech, not energy drink or bodybuilding hype.",
+        "palette": ["cream #F4F0E6", "purple #A78BFA", "blue #60A5FA", "green #34D399", "gold #FBBF24", "pink #F472B6"],
+        "visualLanguage": ["Aesop x Apple x biotech restraint", "real glass and label geometry", "category color used as an accent", "controlled whitespace"],
+        "mustPreserve": ["NuLumin wordmark geometry", "product name and dose", "category color", "real package/vial proportions"],
+        "avoid": ["invented certifications", "fake COA text", "medical outcomes", "human-use depiction", "energy-drink neon overload"]
+      }
+    },
+    {
+      "id": "brand.muha",
+      "type": "brand",
+      "name": "Muha Meds",
+      "aliases": ["muha", "muha meds", "ai fruit"],
+      "source": "Brand Context/Muha_Meds.md",
+      "complianceProfile": "cannabis-advertising",
+      "promptProfile": {
+        "positioning": "Cannabis lifestyle brand with a locked AI-Fruit character universe and bold entertainment-led campaign language.",
+        "visualLanguage": ["character-led storytelling", "high-saturation but controlled palette", "recognizable product and character canon"],
+        "mustPreserve": ["character identity", "flavor mapping", "logo geometry", "applicable legal line"],
+        "avoid": ["youth-coded casting", "consumption depiction unless specifically approved", "character drift", "invented packaging text"]
+      }
+    },
+    {
+      "id": "brand.dialed-health",
+      "type": "brand",
+      "name": "Dialed Health",
+      "aliases": ["dialed health", "dh"],
+      "source": "Brand Context/Dialed_Health.md",
+      "complianceProfile": "regulated-health"
+    },
+    {
+      "id": "brand.dialed-moods",
+      "type": "brand",
+      "name": "Dialed Moods",
+      "aliases": ["dialed moods", "moods"],
+      "source": "Brand Context/Dialed_Moods.md",
+      "complianceProfile": "supplement-marketing"
+    },
+    {
+      "id": "brand.dialed-labs",
+      "type": "brand",
+      "name": "Dialed Labs x UFC",
+      "aliases": ["dialed labs", "dialed ufc", "ufc"],
+      "source": "Brand Context/Dialed_Labs_UFC.md",
+      "complianceProfile": "general"
+    },
+    {
+      "id": "brand.noble-harbor",
+      "type": "brand",
+      "name": "Noble Harbor",
+      "aliases": ["noble harbor", "nh"],
+      "source": "Brand Context/Noble_Harbor.md",
+      "complianceProfile": "regulated-health-ruo"
+    },
+    {
+      "id": "brand.stanton",
+      "type": "brand",
+      "name": "Stanton Medical",
+      "aliases": ["stanton", "stanton medical"],
+      "source": "Brand Context/Stanton_Medical.md",
+      "complianceProfile": "regulated-health"
+    },
+    {
+      "id": "brand.aevum",
+      "type": "brand",
+      "name": "Aevum+",
+      "aliases": ["aevum", "aevum plus", "aevum+"],
+      "source": "Brand Context/Aevum_Plus.md",
+      "complianceProfile": "regulated-health-ruo"
+    },
+    {
+      "id": "brand.becca-boo",
+      "type": "brand",
+      "name": "Becca Boo x NuLumin",
+      "aliases": ["becca boo", "becca boo nulumin"],
+      "source": "Brand Context/Becca_Boo_x_NuLumin.md",
+      "complianceProfile": "regulated-health-ruo"
+    },
+    {
+      "id": "mode.ugc",
+      "type": "content-mode",
+      "name": "Realistic creator-led UGC",
+      "aliases": ["ugc", "creator", "influencer", "selfie", "unboxing"],
+      "source": "knowledge/playbooks/UGC_REALISM.md"
+    },
+    {
+      "id": "assets.nulumin-product",
+      "type": "asset-collection",
+      "name": "NuLumin canonical product assets",
+      "paths": [
+        "NuLumin Transparent One-Per-Peptide",
+        "NuLumin Influencer Box/Final",
+        "NuLumin Generated/White BG"
+      ],
+      "selectionRule": "Inspect encoding and visual fidelity; use one declared product-canon per SKU or kit. Do not treat generated COA text as evidence."
+    },
+    {
+      "id": "pack.nulumin",
+      "type": "brand-pack",
+      "name": "NuLumin brand pack",
+      "aliases": ["nulumin pack", "nulumin brandkit", "nulumin ads"],
+      "source": "knowledge/brands/nulumin/README.md",
+      "directory": "knowledge/brands/nulumin",
+      "provides": [
+        "exact design tokens for marketing and packaging surfaces",
+        "compound catalog with category accents and prompt-critical cap/cake colors",
+        "interchangeable selling-point matrix mapped to claim records",
+        "verbatim Nano Banana hero-scene prompt blocks and the styles that were dropped",
+        "three approved static-ad formats with their layout law and rejection history"
+      ],
+      "commands": [
+        "npm run content -- brandkit kit nulumin",
+        "npm run content -- brandkit fonts nulumin",
+        "npm run content -- brandkit ad nulumin single|panel|streak",
+        "npm run content -- brandkit job nulumin hero"
+      ]
+    },
+    {
+      "id": "assets.nulumin-ads",
+      "type": "asset-collection",
+      "name": "NuLumin ad artwork",
+      "paths": ["Brand Context/assets/NuLumin_BioSciences/ads"],
+      "selectionRule": "Tracked and present on a fresh clone: bbox-padded logo lockups, six transparent vial cutouts at native resolution, and downscaled scene anchors at 1080-wide render size. Vial cutouts double as product-canon references for generation. Regenerate a scene at 4K before using it above 1080px wide."
+    },
+    {
+      "id": "assets.muha-character",
+      "type": "asset-collection",
+      "name": "Muha character and product canon",
+      "paths": [
+        "AI Fruit VIdeos Muha/refs",
+        "AI Fruit VIdeos Muha/Generated Characters"
+      ],
+      "selectionRule": "Match flavor/character identity explicitly and preserve the approved character reference hierarchy."
+    },
+    {
+      "id": "compliance.regulated-health-ruo",
+      "type": "compliance-profile",
+      "name": "Regulated health — research use only",
+      "source": "knowledge/compliance/REGULATED_HEALTH_RUO.md",
+      "requiredDisclosure": "For Research Use Only. Not for Human Consumption.",
+      "humanReviewRequired": true,
+      "forbiddenConcepts": [
+        "human dosing or protocol",
+        "injection or reconstitution",
+        "personal outcome testimonial",
+        "disease treatment or prevention",
+        "unsupported safety, efficacy, purity, certification, or regulatory claim"
+      ]
+    },
+    {
+      "id": "provider.openai-image",
+      "type": "provider",
+      "name": "OpenAI Image API",
+      "model": "gpt-image-2",
+      "verifiedAt": "2026-07-22",
+      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-image-2"
+    },
+    {
+      "id": "provider.gemini-image",
+      "type": "provider",
+      "name": "Gemini Image API",
+      "model": "gemini-3-pro-image",
+      "verifiedAt": "2026-07-22",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-image"
+    },
+    {
+      "id": "provider.google-omni-video",
+      "type": "provider",
+      "name": "Gemini Omni Flash Video",
+      "model": "gemini-omni-flash-preview",
+      "verifiedAt": "2026-07-22",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/omni"
+    },
+    {
+      "id": "provider.google-veo",
+      "type": "provider",
+      "name": "Google Veo",
+      "model": "veo-3.1-generate-preview",
+      "verifiedAt": "2026-07-22",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/video"
+    },
+    {
+      "id": "provider.replicate-seedance",
+      "type": "provider",
+      "name": "Seedance on Replicate",
+      "model": "bytedance/seedance-2.0",
+      "verifiedAt": "2026-07-22",
+      "sourceUrl": "https://replicate.com/bytedance/seedance-2.0/api"
+    }
+  ],
+  "edges": [
+    {"from": "brand.nulumin", "relation": "uses", "to": "compliance.regulated-health-ruo"},
+    {"from": "brand.nulumin", "relation": "supports", "to": "mode.ugc"},
+    {"from": "brand.nulumin", "relation": "has-assets", "to": "assets.nulumin-product"},
+    {"from": "brand.nulumin", "relation": "has-pack", "to": "pack.nulumin"},
+    {"from": "brand.nulumin", "relation": "has-assets", "to": "assets.nulumin-ads"},
+    {"from": "pack.nulumin", "relation": "uses", "to": "compliance.regulated-health-ruo"},
+    {"from": "pack.nulumin", "relation": "can-render-with", "to": "provider.gemini-image"},
+    {"from": "brand.muha", "relation": "has-assets", "to": "assets.muha-character"},
+    {"from": "brand.noble-harbor", "relation": "uses", "to": "compliance.regulated-health-ruo"},
+    {"from": "brand.aevum", "relation": "uses", "to": "compliance.regulated-health-ruo"},
+    {"from": "brand.becca-boo", "relation": "uses", "to": "compliance.regulated-health-ruo"},
+    {"from": "mode.ugc", "relation": "can-render-with", "to": "provider.openai-image"},
+    {"from": "mode.ugc", "relation": "can-render-with", "to": "provider.gemini-image"},
+    {"from": "mode.ugc", "relation": "can-render-with", "to": "provider.google-omni-video"},
+    {"from": "mode.ugc", "relation": "can-render-with", "to": "provider.google-veo"},
+    {"from": "mode.ugc", "relation": "can-render-with", "to": "provider.replicate-seedance"}
+  ]
+}
