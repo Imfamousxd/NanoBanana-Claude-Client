@@ -5,7 +5,7 @@ const API_KEY = process.env.GEMINI_API_KEY;
 const MODEL = "veo-3.1-generate-preview";
 const BASE_URL = "https://generativelanguage.googleapis.com/v1beta";
 const FILE_URI = "https://generativelanguage.googleapis.com/v1beta/files/ta5hbe5jjs2v:download?alt=media";
-const LOCAL_V1 = "generations/LDOBA-SI-ferrari-daytrader-2026-07-22T04-19-30.mp4";
+const LOCAL_V1 = "inputs/LDOBA-SI-ferrari-daytrader-2026-07-22T04-19-30.mp4";
 const stamp = new Date().toISOString().replace(/[:.]/g,"-").slice(0,19);
 
 const PROMPT = `Continue this exact scene without any cut — same shot, same people, same handheld vertical

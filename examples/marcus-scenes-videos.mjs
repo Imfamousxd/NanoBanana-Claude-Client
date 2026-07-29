@@ -1,3 +1,15 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// TEMPLATE — kept for its SHAPE, and specifically for HANDLOCK below, which is the
+// documented workaround for golden rule 10 (Seedance loses object permanence in
+// hands). Not meant to be re-run as-is:
+//
+// 1. The `frame:` paths point into the old generations/ folder, which did not come
+//    across with the engine. Regenerate first frames and repoint them.
+// 2. The `VOICE` string ends "never robotic or announcer-like" — golden rule 9 says
+//    negatives summon what they name, so that clause argues for the thing it forbids.
+//    Say what the voice IS, and state pace positively (Pattern I: target 2.5–3.5
+//    words/sec, and "natural cadence" must be qualified as FAST or it reads as slow).
+// ─────────────────────────────────────────────────────────────────────────────
 import fs from "fs";
 for (const line of fs.readFileSync(".env","utf-8").split("\n")){const m=line.match(/^\s*([\w]+)\s*=\s*(.+?)\s*$/);if(m&&!process.env[m[1]])process.env[m[1]]=m[2];}
 const H = { Authorization: `Bearer ${process.env.REPLICATE_API_TOKEN}` };

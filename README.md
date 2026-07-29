@@ -88,6 +88,13 @@ covering eight real jobs, kept as templates — one per pattern (gpt-image creat
 video ads with `--frame-only`, multi-avatar scenes, Veo extension, Nano Banana inpaint,
 batch schema, ref prep).
 
+## `inputs/` — tracked source frames
+
+Six first-frames and one source clip that carried specs depend on. They were rescued out of
+the predecessor's `generations/` folder and are **tracked**, because a gitignored dependency
+is invisible and that is how the last engine lost 349 MB of work. `batches/*.video.json`,
+`sieve/longform/*.json` and `examples/ldoba-si-ferrari-extend.mjs` point here.
+
 ## Output
 
 Everything lands in `./generations/`, gitignored.

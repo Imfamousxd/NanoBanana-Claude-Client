@@ -2,7 +2,7 @@
   {
     "id": "REC-ugc-01",
     "prompt": "Warm mid-range American female voice, unhurried, slightly dry. Talks like she is answering a friend's question rather than making a point. Never announcer-like, never bright, no upward inflection at line ends. She talks straight to the phone's front camera, natural conversational energy, small natural head movement, same person, same room and same framing as the input image throughout. Beat 0-3s: mid-sentence already, talking straight to the phone, slight shrug. She says: \"I rested it for six weeks. It did nothing.\" Beat 3-7s: glances away briefly then back, small dry smile. She says: \"So I stopped guessing and had someone actually look at it.\" Beat 7-11s: relaxed nod, settles, easy half-smile at the end. She says: \"A provider set the plan. One forty four a month.\" Only the face, jaw, eyes and slight head movements animate. Shot-on-phone look, not cinematic. Quiet room ambience, no music, no on-screen text, no captions, no subtitles.",
-    "image": "./generations/REC-ugc-01_frame.png",
+    "image": "./inputs/REC-ugc-01_frame.png",
     "duration": 11,
     "aspect_ratio": "9:16",
     "resolution": "1080p",
@@ -11,7 +11,7 @@
   {
     "id": "REC-ugc-02",
     "prompt": "Warm mid-range American female voice, unhurried, slightly dry. Talks like she is answering a friend's question rather than making a point. Never announcer-like, never bright, no upward inflection at line ends. She talks straight to the phone's front camera, natural conversational energy, small natural head movement, same person, same room and same framing as the input image throughout. Beat 0-3s: talking straight to the phone, unhurried, tired but calm. She says: \"Nobody ever asked me what I had already tried.\" Beat 3-7s: small headshake, faint smile. She says: \"The intake did. Then a provider read it before anything shipped.\" Beat 7-11s: settles, holds eye contact, stops. She says: \"That was the whole difference for me.\" Only the face, jaw, eyes and slight head movements animate. Shot-on-phone look, not cinematic. Quiet room ambience, no music, no on-screen text, no captions, no subtitles.",
-    "image": "./generations/REC-ugc-02_frame.png",
+    "image": "./inputs/REC-ugc-02_frame.png",
     "duration": 11,
     "aspect_ratio": "9:16",
     "resolution": "1080p",

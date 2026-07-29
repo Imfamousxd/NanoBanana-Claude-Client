@@ -1,3 +1,18 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// TEMPLATE — kept for its SHAPE (frame → per-scene prompt → 12s clip), not to re-run.
+//
+// 1. The `frame:` paths below point into the old generations/ folder, which did not
+//    come across with the engine. Regenerate first frames and repoint them.
+// 2. DO NOT COPY THE `VOICE` STRING. It predates the Pattern I pacing findings and
+//    breaks two of them:
+//      · "natural conversational pace" — CLAUDE.md Pattern I: the model reads this
+//        (and "unhurried") as SLOW. State pace positively: "FAST natural cadence —
+//        the speed of real casual conversation, not narration."
+//      · "never announcer-like" — golden rule 9: negatives summon what they name.
+//        Say what the voice IS.
+//    Clips built with this string measured 1.0–1.6 words/sec and were judged
+//    "slow, deliberate, monotone." Target 2.5–3.5 words/sec.
+// ─────────────────────────────────────────────────────────────────────────────
 import fs from "fs";
 for (const line of fs.readFileSync(".env","utf-8").split("\n")){const m=line.match(/^\s*([\w]+)\s*=\s*(.+?)\s*$/);if(m&&!process.env[m[1]])process.env[m[1]]=m[2];}
 const H = { Authorization: `Bearer ${process.env.REPLICATE_API_TOKEN}` };
