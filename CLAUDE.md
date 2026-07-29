@@ -296,8 +296,10 @@ Edit the prose; re-run `analyze` when you add images.
   is exactly what the old "paste the same two portraits into everything" behaviour did.
 - **`analyze` tags anchors by LOOKING at them**, not by trusting filenames — which is how we found
   that several kits' `portrait_neutral` is actually a smiling frame.
-- **Casting gate.** `status:"casting"` avatars are REFUSED (exit 2). Brooke and Dialed_Ava are
-  both casting: their AVATAR.md files say the founder must approve the face first, and
+- **Casting gate.** `status:"casting"` avatars are REFUSED (exit 2). **Four are casting as of
+  2026-07-29 — Brooke, Dialed_Ava, Diego and Priya** (this list said "Brooke and Dialed_Ava"
+  and had gone stale; check `identity.json` rather than trusting any prose count, including
+  this one). Their AVATAR.md files say the founder must approve the face first, and
   Dialed_Ava's says *"before any paid use"*. Approving locks every downstream artifact —
   anchors, gate thresholds, any future LoRA — so relocking later invalidates all of them.
   `--allow-casting` exists for throwaway tests only.
@@ -308,11 +310,25 @@ Edit the prose; re-run `analyze` when you add images.
   length." Two people of the same age, sex and colouring read as "same type", and type is not
   identity. The errors are asymmetric: a false MATCH ships the wrong person's face, a false
   IMPOSTER costs one re-roll. Calibrated 2026-07-28: Marcus's own takes MATCH, Mack IMPOSTER.
-- **Known coverage gap — the thing to fix next.** `analyze` revealed that Marcus has 9 anchors
-  spanning exactly ONE (yaw, light) combination: all `frontal · window-left`. Renee and Dialed_Ava
-  likewise have one each. So `resolve --yaw profile-left` currently returns a frontal portrait
-  because nothing better exists. **Shoot 3/4-left, 3/4-right and a second lighting setup per
-  locked avatar**, then re-run `analyze`. Anchor diversity, not anchor count, is what holds a face.
+- **Known coverage gap — the thing to fix next. Re-measured 2026-07-29** (the previous note here
+  said Marcus had 9 anchors in ONE `frontal · window-left` combination; a `coverage` run has
+  happened since, so that was stale):
+
+  | Avatar | Anchors | Distinct (yaw · light) |
+  |---|---|---|
+  | Marcus | 13 | 3q-right·window-right, 3q-right·window-left, frontal·flat-even, frontal·window-left |
+  | Tasha | 5 | 3q-left·window-left, profile-right·window-left, frontal·flat-even, frontal·window-left |
+  | Mack | 2 | frontal·window-right, 3q-right·window-right |
+  | Renee | 2 | frontal·flat-even **only** |
+
+  **Marcus still has no left turn at all** — both his 3/4 anchors turn right. So
+  `resolve Marcus --yaw 3q-left` silently returns `anchor_3q-right.png`, a mirror-image of what
+  you asked for. That is the documented Nano Banana limit above (it will not reliably honour
+  left-vs-right) showing up as bad data rather than as an error, and anchoring a left-turned
+  shot to a right-turned anchor is the drift case `resolve` exists to prevent. **Tasha is the
+  only avatar with a genuine left turn.** Fix: shoot 3/4-**left** for Marcus and Mack, give
+  Renee any second setup, then re-run `analyze` — and eyeball the result, because the generator
+  is the reason the gap exists. Anchor diversity, not anchor count, is what holds a face.
 
 ## Pattern I — Long-form (30 / 45 / 60s)
 

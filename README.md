@@ -34,10 +34,12 @@ take different models with different input schemas. See `CLAUDE.md` Pattern D.
 ## Knowledge, not code — and the most valuable thing here
 
 - **`CLAUDE.md`** — the rulebook. Ten golden rules and nine patterns, each one paid for.
-- **`Brand Context/`** — 11 brand playbooks + `assets/`. Read the brand's file *and* its
+- **`Brand Context/`** — 10 brand playbooks + `assets/`. Read the brand's file *and* its
   asset folder before generating anything branded.
-- **`Avatars/`** — 9 avatar kits. Identity anchors, `AVATAR.md` prose, `identity.json` machine twin.
-  Two are `status:"casting"` and are **refused** until the founder approves the face.
+- **`Avatars/`** — 8 avatar kits (Marcus, Tasha, Mack, Renee, Brooke, Dialed_Ava, Diego, Priya).
+  Identity anchors, `AVATAR.md` prose, `identity.json` machine twin. **Four are
+  `status:"casting"`** — Brooke, Dialed_Ava, Diego, Priya — and are **refused** (exit 2) until
+  the founder approves the face, because approving locks every downstream artifact.
 - **`sieve/`** — `rubrics/` for the judge, and `golden/experiments/` — the controlled
   experiments the rulebook's claims cite. When a claim looks wrong, the evidence is there.
 
@@ -81,9 +83,10 @@ node seedance-batch.mjs --batch batches/ugc-recovery.video.json --dry-run
 node nanobanana-video.mjs --prompt "…" --identity Avatars/Marcus/identity/a.jpg
 ```
 
-`batches/_smoketest.batch.json` is the end-to-end smoke test. `examples/` holds eight real
-jobs kept as templates — one per pattern (gpt-image creatives, video ads with `--frame-only`,
-multi-avatar scenes, Veo extension, Nano Banana inpaint).
+`batches/_smoketest.batch.json` is the end-to-end smoke test. `examples/` holds ten files
+covering eight real jobs, kept as templates — one per pattern (gpt-image creatives, UGC,
+video ads with `--frame-only`, multi-avatar scenes, Veo extension, Nano Banana inpaint,
+batch schema, ref prep).
 
 ## Output
 
