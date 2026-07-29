@@ -1,83 +1,113 @@
-# Content-Gen Engine (Claude Code client)
+# NanoBanana Client — image & video generation engine
 
-> **New here and not technical?** Start with **`ONBOARDING.md`** — a plain-English,
-> step-by-step guide from "open Terminal" to your first generated image.
+> **New here and not technical?** Start with **`ONBOARDING.md`** — plain-English, from
+> "open Terminal" to your first generated image.
+>
+> **Using Claude Code?** Read **`CLAUDE.md`** first. It is the operating manual and it
+> encodes a lot of expensive lessons; `Brand Context/00_ENGINE.md` wins on any conflict.
 
-A lightweight toolkit for generating **images and video** from the command line and from
-Claude Code. It wraps three model providers behind small, dependency-light Node scripts:
+Dependency-light Node + Python tools wrapping three providers, plus the selection,
+avatar and long-form machinery built on top of them.
 
-| Capability        | Tool                  | Model                          | Key needed             |
-|-------------------|-----------------------|--------------------------------|------------------------|
-| Image gen / edit  | `gpt-image.mjs`       | OpenAI **gpt-image-2**         | `OPENAI_API_KEY`       |
-| Image gen / edit  | `nanobanana.mjs`      | Google **Nano Banana Pro** (`gemini-3-pro-image-preview`) | `GEMINI_API_KEY` |
-| Video (text/img→video) | `nanobanana-video.mjs` | Google **Veo 3.1**         | `GEMINI_API_KEY`       |
-| Video (Seedance)  | `*seedance*.mjs`      | **Seedance** on Replicate      | `REPLICATE_API_TOKEN`  |
+## The back-ends
 
-The dozens of other `*.mjs` / `*.py` files are **real generation jobs** kept as worked
-examples — read them to see the patterns, copy one, and adapt.
+| Capability | Tool | Model | Key |
+|---|---|---|---|
+| Image gen / edit | `gpt-image.mjs` | OpenAI **gpt-image-2** | `OPENAI_API_KEY` |
+| Image gen / edit | `nanobanana.mjs` | Google **Nano Banana Pro** (`gemini-3-pro-image-preview`) | `GEMINI_API_KEY` |
+| Video, identity-locked | `nanobanana-video.mjs` | Google **Veo 3.1** (fast tier) | `GEMINI_API_KEY` |
+| Video, batch | `seedance-batch.mjs`, `seedance-run.mjs` | **Seedance** 1.5-pro / 2.0 on Replicate | `REPLICATE_API_TOKEN` |
 
-> The intended way to use this repo is **with Claude Code**: open the folder, tell Claude what
-> you want, and it writes/runs a small generation script for you. See `CLAUDE.md` for the
-> conventions Claude follows.
+Which video model to use is **decided by subject, not preference** — people vs. objects
+take different models with different input schemas. See `CLAUDE.md` Pattern D.
 
-## Prerequisites
+## Built on top
 
-- **Node 20+** (uses native `fetch`/`FormData` — no SDKs required for the core flow)
-- macOS recommended (scripts call `open -a Preview` to show results; harmless elsewhere)
-- A few scripts use post-processing helpers: `sharp` (resize/composite) and `qrcode`
+| Layer | Tool | What it does |
+|---|---|---|
+| Selection | `sieve-judge.mjs` | Scores candidates against a rubric, runs a pairwise bracket, repoints `HERO` |
+| Avatars | `sieve-avatar.mjs` | Create / lock / resolve / verify reusable people; adversarial likeness gate |
+| Long-form | `sieve-longform.mjs` | 30–60s stitched pieces with a pinned seed and per-hop face verification |
+| Finishing | `film-grain.py` | The luminance-weighted grain + cast neutralisation that cannot be prompted |
+| Utility | `bg-remove*.py`, `lib-make-mask.mjs`, `sieve-sheet.py` | Cutouts, inpaint masks, contact sheets |
+
+## Knowledge, not code — and the most valuable thing here
+
+- **`CLAUDE.md`** — the rulebook. Ten golden rules and nine patterns, each one paid for.
+- **`Brand Context/`** — 11 brand playbooks + `assets/`. Read the brand's file *and* its
+  asset folder before generating anything branded.
+- **`Avatars/`** — 9 avatar kits. Identity anchors, `AVATAR.md` prose, `identity.json` machine twin.
+  Two are `status:"casting"` and are **refused** until the founder approves the face.
+- **`sieve/`** — `rubrics/` for the judge, and `golden/experiments/` — the controlled
+  experiments the rulebook's claims cite. When a claim looks wrong, the evidence is there.
 
 ## Setup
 
 ```bash
-git clone https://github.com/Imfamousxd/NanoBanana-Claude-Client.git
-cd NanoBanana-Claude-Client
-npm install                 # installs sharp, qrcode, etc.
-cp .env.example .env        # then paste your real API keys into .env
+npm install                 # sharp, qrcode, pg, supabase-js
+cp .env.example .env        # paste your keys
 ```
 
-You only need the keys for the providers you'll use (OpenAI for images is the common default).
+Node 20+ (native `fetch`/`FormData`). macOS assumed for `open -a Preview`.
+
+### ⚠️ On this Mac, always strip the shell's OpenAI key
+
+`~/.secrets` (sourced by `~/.zshrc`) exports an **older** `OPENAI_API_KEY` into every shell.
+Every script's `.env` loader only sets variables that are *not already set*, so the stale
+shell key silently wins and bills the wrong account.
+
+```bash
+env -u OPENAI_API_KEY node <script>.mjs
+```
+
+Project key ends `rpQA`; the stale shell key ends `o71YYA`. Verified still true 2026-07-29.
 
 ## Quick start
 
-**Interactive image tool (OpenAI gpt-image-2):**
 ```bash
-node gpt-image.mjs          # prompts you for prompt / aspect ratio / size / reference images
+# Images — interactive
+env -u OPENAI_API_KEY node gpt-image.mjs
+node nanobanana.mjs
+
+# Images — batch, with 3 candidates and a stable id
+node nanobanana.mjs --batch batches/_smoketest.batch.json
+#   → generations/_smoketest/SMOKE-ugc-01/{c1,c2,c3,HERO}.jpg
+
+# Pick the winner mechanically instead of eyeballing it
+node sieve-judge.mjs --rubric realism-ugc --candidates 'generations/_smoketest/SMOKE-ugc-01' --rank
+
+# Video — ALWAYS dry-run first; a 12s clip is ~$1.50
+node seedance-batch.mjs --batch batches/ugc-recovery.video.json --dry-run
+node nanobanana-video.mjs --prompt "…" --identity Avatars/Marcus/identity/a.jpg
 ```
 
-**Batch mode:**
-```bash
-node gpt-image.mjs --batch batch-example.json
-```
-`batch-example.json` is an array of `{ prompt, aspectRatio, imageSize, refImages? }`.
+`batches/_smoketest.batch.json` is the end-to-end smoke test. `examples/` holds eight real
+jobs kept as templates — one per pattern (gpt-image creatives, video ads with `--frame-only`,
+multi-avatar scenes, Veo extension, Nano Banana inpaint).
 
-**Nano Banana (Gemini) images:**
-```bash
-node nanobanana.mjs         # interactive; great when you need strong reference-image fidelity
-```
+## Output
 
-**Veo 3.1 video:**
-```bash
-node nanobanana-video.mjs   # submits a long-running job, polls, downloads the mp4
-```
+Everything lands in `./generations/`, gitignored.
 
-Outputs are written to `./generations/` (override with `OUTPUT_DIR`). Generated media,
-`.env`, and `node_modules/` are gitignored.
+**`OUTPUT_DIR` only works for `nanobanana.mjs`.** `gpt-image.mjs`, `nanobanana-video.mjs`,
+`seedance-batch.mjs` and `sieve-longform.mjs` hardcode `path.join(__dirname, "generations")`.
+Don't rely on the env var globally — verified 2026-07-29.
 
-## Aspect ratios & sizes (gpt-image-2)
+## Aspect ratios (gpt-image-2)
 
-`gpt-image.mjs` maps friendly ratios to high-res sizes (≤3840px edge, multiples of 16, ≤8.29 MP,
-ratios up to 3:1). E.g. `1:1`→2880×2880, `9:16`→2160×3840, `16:9`→3840×2160, `2:3`→2048×3072.
-When you write a **direct `/images/edits` call** with reference images, the safe per-call sizes
-are `1024x1024`, `1024x1536`, `1536x1024`. (gpt-image-1 only supports those three.)
+`gpt-image.mjs` maps friendly ratios to max-res sizes (≤3840px edge, multiples of 16, ≤8.29 MP):
+`1:1`→2880×2880, `9:16`→2160×3840, `16:9`→3840×2160, `2:3`→2048×3072.
 
-## What's in here
+A **direct `/images/edits`** call is limited to `1024x1024`, `1024x1536`, `1536x1024`.
 
-- `gpt-image.mjs`, `nanobanana.mjs`, `nanobanana-video.mjs` — the reusable CLI tools
-- `*seedance*.mjs`, `recover-pred.mjs` — Replicate/Seedance video examples
-- `batch-*.mjs`, `muha-*.mjs`, `dialed-*.mjs`, `nh-*.mjs`, … — real jobs as copy-paste templates
-- `CLAUDE.md` — operating manual for Claude Code (read this if you're using Claude)
-- `.env.example` — the keys to set
+## Provenance
+
+Extracted from `~/Desktop/NanoBanana-Claude-Client`, which is still on the Desktop and holds
+what did not come along: 883 one-off job files, ~600 MB of delivered brand asset folders, and
+the old git repo. Nothing there is needed to run this.
 
 ## Security
 
-`.env` is gitignored — never commit real keys. There are no secrets in tracked files.
+`.env` is gitignored. No secrets in tracked files. The `.gitignore` here is deliberately a
+*deny-a-little* list — see the comment at its top for why the predecessor's approach lost
+349 MB of work to invisibility.
