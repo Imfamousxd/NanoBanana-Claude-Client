@@ -1,0 +1,14 @@
+{
+  "name": "Diego",
+  "status": "casting",
+  "canonical": null,
+  "descriptor": "Man, 44, Mexican American, salt-and-pepper hair and short beard, reading glasses, plain navy henley, solid build, calm steady presence",
+  "voice": "Low warm American male voice with a slight Southern California lilt, easy unhurried-but-not-slow pace, dry humor, never salesy",
+  "identityProvider": "refs",
+  "anchors": [],
+  "approvedTakes": [],
+  "notes": [
+    "Cast 2026-07-29 via sieve-avatar new"
+  ],
+  "source": "Avatars/Diego/AVATAR.md"
+}

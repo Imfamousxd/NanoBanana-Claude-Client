@@ -1,0 +1,34 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Deliberately an ALLOW-everything / deny-a-little list.
+#
+# The predecessor repo did the opposite: it ignored EVERY top-level folder with
+# `/*/` and then hand-wrote ~60 `!` exceptions. The result was that `Avatars/`
+# (183 MB of identity anchors) and `sieve/` (the rubrics + golden experiments
+# backing every claim in CLAUDE.md) sat untracked for weeks — un-ignored on
+# paper, never actually committed, one `git clean` from gone.
+#
+# So: do NOT add blanket folder ignores here. Name what you exclude.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Secrets
+.env
+.env.local
+
+# Dependencies (restore with `npm install`)
+node_modules/
+
+# Generated output — regenerable, and this is what bloated the old repo to 3.5 GB
+generations/
+
+# Machine noise
+.DS_Store
+*.log
+.claude/
+__pycache__/
+*.pyc
+
+# Scratch / intermediate artifacts
+*.bak
+*.pre-fix
+*.b64
+veo_operation.txt

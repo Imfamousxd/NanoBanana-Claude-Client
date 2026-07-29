@@ -1,0 +1,27 @@
+{
+  "name": "dh-clinical-v3",
+  "brand": "Dialed_Health",
+  "backend": "nanobanana",
+  "ratio": "9:16",
+  "out": "Dialed Health Recovery",
+  "container": "vial",
+  "engineSpecs": [
+    "motionBlur",
+    "safety"
+  ],
+  "look": "Natural colour, documentary. Real skin tones, real daylight, real materials \u2014 warm wood, worn fabric, morning light through glass. Lived-in and human, never styled or graded. Composition top-weighted: subject in the upper two thirds; the lower third falls into soft shadow and plain surface with no detail. 35mm grain, gentle halation. Nothing tack-sharp.",
+  "jobs": [
+    {
+      "id": "REC-v2-clinical",
+      "scene": "Close over a clinician's shoulder: a gloved hand selecting one small glass vial from a tray of several identical ones on a bright consult-room bench. Warm daylight, plants and a window soft behind. The reach and the choosing are the subject."
+    },
+    {
+      "id": "ENE-v2-clinical",
+      "scene": "A clinician's hands on a bright bench, one holding a single small glass vial, the other resting on an open patient chart. Warm side light, out-of-focus consult room behind. Calm, deliberate, mid-decision."
+    },
+    {
+      "id": "PER-v2-clinical",
+      "scene": "A clinician in a soft blue shirt turning a small glass vial to read the label, elbows on a warm wooden desk, patient's file open in front. Afternoon light from a side window, real skin tones."
+    }
+  ]
+}

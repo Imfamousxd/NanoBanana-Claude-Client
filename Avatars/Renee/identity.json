@@ -1,0 +1,34 @@
+{
+  "name": "Renee",
+  "status": "locked",
+  "canonical": "identity/portrait_neutral.png",
+  "descriptor": "Visibly plus-size Black American woman, mid-40s, a big beautiful woman with a full round face and full figure carried with total confidence. Silk-pressed shoulder-length dark hair, gold hoop earrings, reading glasses often pushed up on her head, warm brown skin with real texture.",
+  "voice": "Rich, warm American female voice, animated but grounded, girlfriend-to-girlfriend pace, encouraging never preachy, never announcer-like.",
+  "identityProvider": "refs",
+  "anchors": [
+    {
+      "file": "identity/portrait_neutral.png",
+      "yaw": "frontal",
+      "light": "flat-even",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": ""
+    },
+    {
+      "file": "identity/portrait_smile.png",
+      "yaw": "frontal",
+      "light": "flat-even",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": "The face is clear and well-lit."
+    }
+  ],
+  "approvedTakes": [],
+  "notes": [],
+  "source": "Avatars/Renee/AVATAR.md",
+  "analyzedAt": "2026-07-28"
+}

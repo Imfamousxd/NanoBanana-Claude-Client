@@ -1,0 +1,10 @@
+{
+  "prompt": "Bright, quick American female voice, fast natural cadence, talks over herself slightly when excited, warm and open, never announcer-like They talk straight to the phone camera, relaxed and natural. They say: \"Honestly I wasn't sure this was going to be for me at first, but I gave it a real shot and I'm glad I did.\" Shot-on-phone look. Quiet room ambience, no music, no on-screen text.",
+  "out": "/Users/Hassoonie/Desktop/NanoBanana-Claude-Client/Avatars/Tasha/voice/casting_clip.mp4",
+  "image": "Avatars/Tasha/identity/portrait_neutral.png",
+  "duration": 10,
+  "aspect_ratio": "9:16",
+  "resolution": "1080p",
+  "generate_audio": true,
+  "camera_fixed": true
+}

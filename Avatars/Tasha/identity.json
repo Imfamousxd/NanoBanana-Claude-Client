@@ -1,0 +1,73 @@
+{
+  "name": "Tasha",
+  "status": "locked",
+  "canonical": "identity/portrait_neutral.png",
+  "descriptor": "Woman, 29, Black American, box braids pulled back, small gold studs, plain fitted tee, athletic build, quick expressive face",
+  "voice": "Bright, quick American female voice, fast natural cadence, talks over herself slightly when excited, warm and open, never announcer-like",
+  "identityProvider": "refs",
+  "anchors": [
+    {
+      "file": "identity/anchor_3q-left.png",
+      "yaw": "3q-left",
+      "light": "window-left",
+      "expr": "neutral",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": "The person is looking to their left with a neutral expression."
+    },
+    {
+      "file": "identity/anchor_3q-right.png",
+      "yaw": "profile-right",
+      "light": "window-left",
+      "expr": "neutral",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": false,
+      "note": "face is turned to the side"
+    },
+    {
+      "file": "identity/anchor_flat.png",
+      "yaw": "frontal",
+      "light": "flat-even",
+      "expr": "neutral",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": ""
+    },
+    {
+      "file": "identity/anchor_lowkey.png",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "neutral",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": "The face is clearly visible and well-lit from the left side."
+    },
+    {
+      "file": "identity/portrait_neutral.png",
+      "yaw": "frontal",
+      "light": "flat-even",
+      "expr": "neutral",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": "The face is clear and well-lit."
+    }
+  ],
+  "approvedTakes": [],
+  "notes": [
+    "Cast 2026-07-29 via sieve-avatar new"
+  ],
+  "source": "Avatars/Tasha/AVATAR.md",
+  "lockedAt": "2026-07-29",
+  "lockedFrom": "tasha_c1",
+  "analyzedAt": "2026-07-29",
+  "voiceprint": "voice/voiceprint.wav",
+  "voiceEngine": "resemble-ai/chatterbox",
+  "voiceNotes": "Cast by Seedance from this avatar's face, then cloned. Use as chatterbox audio_prompt; a generic voice_id does NOT match the face (measured similarity: none). See E12.",
+  "veoVoice": "Her voice: a bright mid-range American female voice, roughly 200 hertz, light and forward with a slightly nasal edge. Quick clipped delivery, runs her words together, rises at the end of clauses. Faint rasp on held vowels. Late twenties, casual, talking to a friend and not performing.",
+  "veoVoiceNotes": "Prepend VERBATIM to every Veo prompt for this avatar. Measured 2026-07-29 (E19): identical descriptor across two independent generations held pitch to 3.7% apart; without a shared descriptor two runs were 15.2% apart. This is what makes the avatar sound like the same person ACROSS pieces — extensions already hold it within one piece. Do not paraphrase it."
+}

@@ -1,0 +1,51 @@
+{
+  "name": "dh-stage-plates",
+  "brand": "Dialed_Health",
+  "backend": "nanobanana",
+  "ratio": "9:16",
+  "out": "Dialed Health Recovery",
+  "container": "vial",
+  "engineSpecs": [
+    "motionBlur",
+    "safety"
+  ],
+  "look": "Documentary, monochrome, real place, real light. Composition top-weighted: subject in the upper two thirds, lower third falls into deep unlit shadow and plain surface with no detail. Cinestill 35mm grain and halation. Nothing tack-sharp.",
+  "jobs": [
+    {
+      "id": "REC-v3-cold",
+      "scene": "Late afternoon light across an unmade bed and a folded towel. Nothing clinical. Stillness, not effort."
+    },
+    {
+      "id": "REC-v2-clinical",
+      "scene": "A clinician's desk from above: an open notebook, a pen, a laptop closed. Quiet, considered, mid-review."
+    },
+    {
+      "id": "REC-v1-warm",
+      "scene": "A hand resting on a kitchen counter beside a glass of water in soft morning light. Calm and domestic."
+    },
+    {
+      "id": "ENE-v3-cold",
+      "scene": "An office stairwell at midday, empty, hard daylight through a high window."
+    },
+    {
+      "id": "ENE-v2-clinical",
+      "scene": "A clean pale worktop, a closed laptop and a single glass of water, shot straight down."
+    },
+    {
+      "id": "ENE-v1-warm",
+      "scene": "A woman in her forties standing at a window with a mug, seen from behind in flat morning light."
+    },
+    {
+      "id": "PER-v3-cold",
+      "scene": "A well-worn training shoe on a gym floor at dawn, heel compressed on one edge."
+    },
+    {
+      "id": "PER-v2-clinical",
+      "scene": "A chalk-dusted bench and a closed notebook under a high window, nobody in frame."
+    },
+    {
+      "id": "PER-v1-warm",
+      "scene": "A man in his forties lacing a shoe on a bench, face out of frame, low side light."
+    }
+  ]
+}

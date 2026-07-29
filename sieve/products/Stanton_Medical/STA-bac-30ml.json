@@ -1,0 +1,15 @@
+{
+  "sku": "STA-bac-30ml",
+  "brand": "Stanton_Medical",
+  "aliases": [
+    "bacteriostatic water",
+    "bac water",
+    "stanton bac"
+  ],
+  "canonical": "Brand Context/assets/Stanton_Medical/2026-06-09T01-59-16_stanton-bac-c1-30ml-a_dieline-65x29.png",
+  "geometry": "30 ml bacteriostatic water vial, dieline 65x29",
+  "source": "Brand Context/Stanton_Medical.md",
+  "locked": [
+    "Stanton has the most exact-string label surface of any brand — verify every printed word letter by letter"
+  ]
+}

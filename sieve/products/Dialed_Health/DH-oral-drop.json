@@ -1,0 +1,16 @@
+{
+  "sku": "DH-oral-drop",
+  "brand": "Dialed_Health",
+  "aliases": [
+    "oral drop",
+    "dropper bottle",
+    "oral drops"
+  ],
+  "canonical": "Brand Context/assets/Dialed_Health/2026-04-17T21-19-49_Edit_the_reference_image_of_the_Dialed_H.jpg",
+  "geometry": "silver-white frosted glass dropper bottle, white ribbed collar, white dropper cap/bulb",
+  "source": "Brand Context/Dialed_Health.md:36-38",
+  "locked": [
+    "Container SHAPE ref is `Oral Drop Example.jpeg`; the vial shot is the LABEL/SCENE style ref",
+    "Same locked label style as the vial: matte black, white ECG logo, centred name, no dosing"
+  ]
+}

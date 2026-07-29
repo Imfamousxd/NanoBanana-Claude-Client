@@ -1,0 +1,32 @@
+[
+ {
+  "prompt": "Use ONLY the likeness of the man from reference images 1 and 2 \u2014 same face, same short dark hair, same light stubble, same warm brown eyes. He lounges back into a cream boucle designer sofa in a sun-washed modern loft \u2014 tall windows, an olive tree, layered neutral throw pillows, warm golden afternoon light, softly blurred depth. He wears a relaxed cream knit crewneck, one arm resting along the sofa back, talking casually to the camera mid-sentence with easy confidence. He pinches the tiny 1-inch glass research vial from reference image 3 at his fingertips, label toward camera \u2014 soft-purple flip cap, white NuLumin label, black 'BPC-157', purple '10mg', label miniature but sharp, no misspellings. Vertical 9:16, chest-up influencer framing, shot-on-phone front camera realism, natural skin texture, no text anywhere in frame.",
+  "aspectRatio": "9:16",
+  "imageSize": "2K",
+  "refImages": [
+   "/Users/Hassoonie/Desktop/NanoBanana-Claude-Client/Avatars/Marcus/identity/portrait_neutral.jpg",
+   "/Users/Hassoonie/Desktop/NanoBanana-Claude-Client/Avatars/Marcus/identity/portrait_smile.jpg",
+   "/Users/Hassoonie/Downloads/nulumin-tissue-purple_plus-glow-klow/tissue-purple-lightstreak/BPC-157_10mg_purple.jpg"
+  ]
+ },
+ {
+  "prompt": "Use ONLY the likeness of the man from reference images 1 and 2 \u2014 same face, same short dark hair, same light stubble, same warm brown eyes. Editorial influencer look: he wears a sharply tailored camel overcoat over a clean white tee, seated on a cognac leather chair in a moody premium studio \u2014 deep charcoal gradient backdrop, warm key light with a crisp rim light, subtle haze. He leans slightly forward talking to the camera, confident and direct. He pinches the tiny 1-inch glass research vial from reference image 3 at his fingertips, label toward camera \u2014 soft-purple flip cap, white NuLumin label, black 'BPC-157', purple '10mg', label miniature but sharp, no misspellings. Vertical 9:16, chest-up influencer framing, shot-on-phone front camera realism, natural skin texture, no text anywhere in frame.",
+  "aspectRatio": "9:16",
+  "imageSize": "2K",
+  "refImages": [
+   "/Users/Hassoonie/Desktop/NanoBanana-Claude-Client/Avatars/Marcus/identity/portrait_neutral.jpg",
+   "/Users/Hassoonie/Desktop/NanoBanana-Claude-Client/Avatars/Marcus/identity/portrait_smile.jpg",
+   "/Users/Hassoonie/Downloads/nulumin-tissue-purple_plus-glow-klow/tissue-purple-lightstreak/BPC-157_10mg_purple.jpg"
+  ]
+ },
+ {
+  "prompt": "Use ONLY the likeness of the man from reference images 1 and 2 \u2014 same face, same short dark hair, same light stubble, same warm brown eyes. He stands in a grand marble hotel hallway \u2014 tall arched ceiling, warm brass sconces receding into deep perspective, polished stone floor reflecting the light. He wears a black bomber jacket over a white tee, three-quarter framing, talking to the camera while standing relaxed. He pinches the tiny 1-inch glass research vial from reference image 3 at his fingertips, label toward camera \u2014 soft-purple flip cap, white NuLumin label, black 'BPC-157', purple '10mg', label miniature but sharp, no misspellings. Vertical 9:16, chest-up influencer framing, shot-on-phone front camera realism, natural skin texture, no text anywhere in frame.",
+  "aspectRatio": "9:16",
+  "imageSize": "2K",
+  "refImages": [
+   "/Users/Hassoonie/Desktop/NanoBanana-Claude-Client/Avatars/Marcus/identity/portrait_neutral.jpg",
+   "/Users/Hassoonie/Desktop/NanoBanana-Claude-Client/Avatars/Marcus/identity/portrait_smile.jpg",
+   "/Users/Hassoonie/Downloads/nulumin-tissue-purple_plus-glow-klow/tissue-purple-lightstreak/BPC-157_10mg_purple.jpg"
+  ]
+ }
+]

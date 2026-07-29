@@ -1,0 +1,5 @@
+{ "prompt": "Bright, forward American male voice, FAST natural cadence — the speed of real casual conversation, not narration. Open throat, energetic, slightly clipped consonants, runs his sentences together, occasionally rushes a word. He talks straight to the phone camera, animated, natural head movement and small hand gestures. He says: \"Look, I rested that shoulder six full weeks and honestly it did nothing, so I finally just stopped guessing and got the actual bloodwork done.\" Shot-on-phone look. Quiet room ambience, no music, no on-screen text.",
+  "out": "sieve/golden/experiments/E9-pacing/fast.mp4",
+  "image": "sieve/golden/experiments/E4-avatar-through-seedance/frame_gym.png",
+  "duration": 10, "aspect_ratio": "9:16", "resolution": "1080p",
+  "generate_audio": true, "camera_fixed": true, "seed": 424242 }

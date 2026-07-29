@@ -1,0 +1,151 @@
+{
+  "name": "Marcus",
+  "status": "locked",
+  "canonical": "identity/portrait_neutral.jpg",
+  "descriptor": "Fit, friendly man in his early 30s, short dark hair, light stubble, warm brown eyes, wearing a plain heather-grey crewneck tee. Relaxed, genuine, direct-to-camera energy.",
+  "voice": "Warm mid-range American male voice, natural conversational pace, casual and friendly, never announcer-like.",
+  "identityProvider": "refs",
+  "anchors": [
+    {
+      "file": "identity/anchor_3q-left.png",
+      "yaw": "3q-right",
+      "light": "window-right",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": ""
+    },
+    {
+      "file": "identity/anchor_3q-right.png",
+      "yaw": "3q-right",
+      "light": "window-left",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": ""
+    },
+    {
+      "file": "identity/anchor_flat.png",
+      "yaw": "frontal",
+      "light": "flat-even",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": ""
+    },
+    {
+      "file": "identity/anchor_lowkey.png",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "neutral",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": "The face is clear and well-lit."
+    },
+    {
+      "file": "identity/portrait_neutral.jpg",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "talking",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": "The face is clear and well-lit."
+    },
+    {
+      "file": "identity/portrait_smile.jpg",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": ""
+    },
+    {
+      "file": "takes/blend_first-frame_2026-07-22.jpg",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "talking",
+      "framing": "chest-up",
+      "role": "take",
+      "usable": true,
+      "note": "Face is clear and well-lit."
+    },
+    {
+      "file": "takes/bpc157_first-frame_2026-07-22.jpg",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "talking",
+      "framing": "chest-up",
+      "role": "take",
+      "usable": true,
+      "note": "Face is clear and well-lit."
+    },
+    {
+      "file": "takes/ghkcu_first-frame_2026-07-22.jpg",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "talking",
+      "framing": "chest-up",
+      "role": "take",
+      "usable": true,
+      "note": "The face is clear and well-lit."
+    },
+    {
+      "file": "takes/nadplus_first-frame_2026-07-22.jpg",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "take",
+      "usable": true,
+      "note": ""
+    },
+    {
+      "file": "takes/nulumin-bpt_first-frame_2026-07-22.jpg",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "talking",
+      "framing": "chest-up",
+      "role": "take",
+      "usable": true,
+      "note": "face is clear"
+    },
+    {
+      "file": "takes/nulumin-bpt_last-frame_2026-07-22.png",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "talking",
+      "framing": "chest-up",
+      "role": "take",
+      "usable": true,
+      "note": "The person is looking directly at the camera and speaking."
+    },
+    {
+      "file": "takes/tb500_first-frame_2026-07-22.jpg",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "talking",
+      "framing": "chest-up",
+      "role": "take",
+      "usable": true,
+      "note": "Face is clear and well-lit."
+    }
+  ],
+  "approvedTakes": [],
+  "notes": [
+    "Punctuate dialogue with PERIODS, not em-dashes — dashes render as a vocal tick/hesitation in Seedance speech (all 5 takes, 2026-07-22).",
+    "HAND-LOCK phrasing proven on Seedance AND Veo — see AVATAR.md verbatim block.",
+    "NEVER regenerate the face from text alone; always pass identity refs (CLAUDE.md rule 4)."
+  ],
+  "source": "Avatars/Marcus/AVATAR.md",
+  "analyzedAt": "2026-07-28",
+  "voiceprint": "voice/voiceprint.wav",
+  "voiceEngine": "resemble-ai/chatterbox",
+  "voiceNotes": "Harvested from Seedance takes — Seedance CAST this voice from his face, which is why it matches. Clone from it with chatterbox audio_prompt; never use a generic voice_id (judged similarity: none). Keeps disfluency. Verified 2026-07-28, E12."
+}

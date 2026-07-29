@@ -1,0 +1,51 @@
+{
+  "name": "dh-colour-plates",
+  "brand": "Dialed_Health",
+  "backend": "nanobanana",
+  "ratio": "9:16",
+  "out": "Dialed Health Recovery",
+  "container": "vial",
+  "engineSpecs": [
+    "motionBlur",
+    "safety"
+  ],
+  "look": "Natural colour, documentary. Real skin tones, real daylight, real materials \u2014 warm wood, worn fabric, morning light through glass. Lived-in and human, never styled or graded. Composition top-weighted: subject in the upper two thirds; the lower third falls into soft shadow and plain surface with no detail. 35mm grain, gentle halation. Nothing tack-sharp.",
+  "jobs": [
+    {
+      "id": "REC-v3-cold",
+      "scene": "A woman in her late thirties sitting on the edge of a bed in early morning light, one hand on her shoulder, still in yesterday's t-shirt. Warm room, unmade linen, a window behind her. She is not in pain, she is used to it."
+    },
+    {
+      "id": "REC-v2-clinical",
+      "scene": "A clinician in a soft blue shirt at a desk, mid-conversation, gesturing with a pen while a patient's file sits open. Warm afternoon light, plants behind, an ordinary consult room. Faces relaxed, real."
+    },
+    {
+      "id": "REC-v1-warm",
+      "scene": "A man in his forties in a kitchen at breakfast, holding a glass of water, mid-sentence with someone off-frame. Warm wood counter, morning light, a normal weekday."
+    },
+    {
+      "id": "ENE-v3-cold",
+      "scene": "A woman in her forties at an office window in the late afternoon, sleeves pushed up, looking out with a coffee going cold beside her. Warm low sun across the desk."
+    },
+    {
+      "id": "ENE-v2-clinical",
+      "scene": "A clinician holding a small glass vial and talking a patient through it across a bright consult-room table. Both hands visible, natural skin tones, daylight from a side window."
+    },
+    {
+      "id": "ENE-v1-warm",
+      "scene": "A woman in her forties reading something on her phone at a kitchen table in warm morning light, cup beside her, unhurried."
+    },
+    {
+      "id": "PER-v3-cold",
+      "scene": "A man in his late thirties sitting on a gym bench between sets, forearms on knees, breathing. Warm window light across a wooden floor, weights out of focus behind."
+    },
+    {
+      "id": "PER-v2-clinical",
+      "scene": "A clinician and a patient looking at the same sheet of paper across a desk, both leaning in, warm daylight. The consultation itself is the subject."
+    },
+    {
+      "id": "PER-v1-warm",
+      "scene": "A man in his forties lacing a trainer on a doorstep in early sunlight, jacket on, about to go. Warm brick and greenery behind."
+    }
+  ]
+}

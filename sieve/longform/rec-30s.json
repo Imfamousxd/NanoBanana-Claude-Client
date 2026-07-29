@@ -1,0 +1,14 @@
+{
+  "id": "REC-30s-demo",
+  "avatar": "Marcus",
+  "firstFrame": "sieve/golden/experiments/E4-avatar-through-seedance/frame_gym.png",
+  "seed": 424242,
+  "voice": "Warm mid-range American male voice, natural conversational pace, casual and friendly, never announcer-like.",
+  "resolution": "1080p",
+  "aspect_ratio": "9:16",
+  "segments": [
+    { "dialogue": "I rested it for six weeks and it did absolutely nothing.", "duration": 10 },
+    { "dialogue": "So I stopped guessing and had someone actually look at it.", "duration": 10 },
+    { "dialogue": "A provider set the plan. That was the whole difference.", "duration": 10 }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "dh-enhanced-style-plates",
+  "brand": "Dialed_Health",
+  "backend": "nanobanana",
+  "ratio": "9:16",
+  "out": "Dialed Health Recovery",
+  "container": "vial",
+  "engineSpecs": [
+    "motionBlur",
+    "safety"
+  ],
+  "look": "Documentary sports photography, monochrome. Real athletic effort in a real place. Composition top-weighted: the figure occupies the upper two thirds, the lower third falls into deep unlit shadow and plain surface with no detail. Cinestill 35mm grain and halation. Nothing tack-sharp.",
+  "jobs": [
+    {
+      "id": "E1-recovery",
+      "scene": "A man in his late thirties in a plain dark athletic crop top and shorts mid-stride on a wet outdoor running track at dawn, shot from the side during a lateral camera pan. Ordinary, unglamorous, effortful. No gym logos, no branding anywhere."
+    },
+    {
+      "id": "E2-performance",
+      "scene": "A woman in her late thirties in a plain dark athletic crop top finishing a low plank on a chalk-dusted gym floor, seen from a low side angle during a lateral camera pan. Bare industrial windows behind. No logos anywhere."
+    },
+    {
+      "id": "E3-energy",
+      "scene": "A man in his forties walking fast up a concrete stairwell carrying a gym bag, shot from behind and below during an upward camera pan. Hard daylight from a window above. Ordinary building, no signage."
+    }
+  ]
+}

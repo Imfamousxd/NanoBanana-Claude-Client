@@ -1,0 +1,30 @@
+{
+  "sku": "DH-vial",
+  "brand": "Dialed_Health",
+  "aliases": [
+    "vial",
+    "injectable vial",
+    "dialed health vial",
+    "injectable"
+  ],
+  "canonical": "Brand Context/assets/Dialed_Health/2026-04-17T21-19-49_Edit_the_reference_image_of_the_Dialed_H.jpg",
+  "geometry": "small injectable glass vial, black rubber cap + gold metal band, upright and vertical",
+  "label": {
+    "surface": "matte BLACK label",
+    "elements": [
+      "white Dialed Health heartbeat/ECG logo on top",
+      "centered product name below, white bold sans-serif"
+    ],
+    "banned": [
+      "dosing information",
+      "invented emblems",
+      "gold leaf ornament"
+    ]
+  },
+  "source": "Brand Context/Dialed_Health.md:32-44",
+  "locked": [
+    "Locked label style across ALL three containers: matte black label, white ECG logo on top, centred product name in white bold sans-serif, NO dosing",
+    "This exact file is the scene/style anchor for EVERY new vial shot (Dialed_Health.md:34-36)",
+    "Declared-but-unused is the known failure: dh-bloodwork-ads.mjs:18 set VIAL_ANCHOR then shipped refs:[] on all 5 jobs"
+  ]
+}

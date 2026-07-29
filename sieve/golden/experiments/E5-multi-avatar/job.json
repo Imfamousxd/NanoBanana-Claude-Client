@@ -1,0 +1,11 @@
+{
+  "prompt": "Two people sitting on a couch mid-conversation, both stay exactly the same two people throughout. The man on the left speaks first, relaxed, small hand gesture. He says: \"I stopped guessing and got the bloodwork done.\" Then the woman on the right nods and answers warmly. She says: \"That is the part everybody skips.\" Natural conversational energy, quiet room ambience, no music. Shot-on-phone look, not cinematic. No on-screen text, no captions.",
+  "out": "sieve/golden/experiments/E5-multi-avatar/clip_two_people.mp4",
+  "image": "sieve/golden/experiments/E5-multi-avatar/two_people.png",
+  "duration": 8,
+  "aspect_ratio": "9:16",
+  "resolution": "1080p",
+  "generate_audio": true,
+  "camera_fixed": true,
+  "seed": 7777
+}

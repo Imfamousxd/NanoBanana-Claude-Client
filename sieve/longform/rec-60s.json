@@ -1,0 +1,23 @@
+{
+  "id": "REC-60s-anchor",
+  "avatar": "Marcus",
+  "firstFrame": "sieve/golden/experiments/E4-avatar-through-seedance/frame_gym.png",
+  "seed": 424242,
+  "voice": "Warm mid-range American male voice, natural conversational pace, casual and friendly, never announcer-like.",
+  "resolution": "1080p",
+  "aspect_ratio": "9:16",
+  "segments": [
+    { "dialogue": "My shoulder had been bad for about eight months. I kept telling myself it would settle.",
+      "action": "Mid-sentence already, relaxed, one small shrug." },
+    { "dialogue": "I rested it for six weeks. I stretched. I did all the things people tell you.",
+      "action": "Slight headshake, faint dry smile." },
+    { "dialogue": "It did nothing. And I was starting to plan my whole week around one joint.",
+      "action": "Glances away briefly, then back to camera." },
+    { "dialogue": "So I stopped guessing and had someone who actually knows this stuff look at it.",
+      "action": "Leans in slightly, more direct." },
+    { "dialogue": "They ran the bloodwork first. Then a provider read it before anything got sent out.",
+      "action": "Counts two points on his fingers, small and natural." },
+    { "dialogue": "That was the whole difference for me. Somebody looked before they sold me anything.",
+      "action": "Settles back, easy half-smile, holds eye contact and stops." }
+  ]
+}

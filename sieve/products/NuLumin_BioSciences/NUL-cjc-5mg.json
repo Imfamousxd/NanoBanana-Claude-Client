@@ -1,0 +1,15 @@
+{
+  "sku": "NUL-cjc-5mg",
+  "brand": "NuLumin_BioSciences",
+  "aliases": [
+    "cjc-1295",
+    "cjc 1295",
+    "cjc"
+  ],
+  "canonical": "Brand Context/assets/NuLumin_BioSciences/NuL_CFC_5mg.png",
+  "geometry": "NuLumin peptide vial, 5 mg",
+  "source": "Brand Context/NuLumin_BioSciences.md",
+  "locked": [
+    "Film grain is a LOCKED mandatory post step — run film-grain.py"
+  ]
+}

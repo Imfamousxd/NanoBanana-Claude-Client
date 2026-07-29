@@ -1,0 +1,9 @@
+{
+  "prompt": "Warm mid-range American male voice, natural conversational pace, casual and friendly, never announcer-like. He talks straight to the phone camera, small natural head movement, same person and same room throughout. He says: \"I stopped adding things. I fixed my sleep first.\" Only his face, jaw and eyes animate. Shot-on-phone look, not cinematic. Quiet room ambience, no music, no on-screen text.",
+  "out": "sieve/golden/experiments/E4-avatar-through-seedance/clip_marcus.mp4",
+  "image": "sieve/golden/experiments/E4-avatar-through-seedance/frame_gym.png",
+  "duration": 5,
+  "aspect_ratio": "9:16",
+  "generate_audio": true,
+  "camera_fixed": true
+}
