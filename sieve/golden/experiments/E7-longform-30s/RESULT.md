@@ -2,7 +2,9 @@
 
 **Run 2026-07-28. Works. 3 × 10s segments, chain mode, one seed.**
 
-Output: `generations/longform/REC-30s-demo/REC-30s-demo_FINAL.mp4` — **1080×1920, 30.2s**, synced
+Output: ~~`generations/longform/REC-30s-demo/REC-30s-demo_FINAL.mp4`~~ **(artifact deleted
+2026-07-29 with the predecessor's generations/ folder — the measurements below stand on their
+own; the video itself is gone and would have to be re-run from the spec to re-view)** — **1080×1920, 30.2s**, synced
 audio throughout. Cost ~$3.60.
 
 ## QC across all three segments

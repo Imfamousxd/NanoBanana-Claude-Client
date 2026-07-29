@@ -2,7 +2,9 @@
 
 **Run 2026-07-28. Clean. 6 × 10s segments, anchor mode, one seed.**
 
-Output: `generations/longform/REC-60s-anchor/REC-60s-anchor_FINAL.mp4` — **1080×1920, 60.3s**, 176 MB,
+Output: ~~`generations/longform/REC-60s-anchor/REC-60s-anchor_FINAL.mp4`~~ **(artifact deleted
+2026-07-29 with the predecessor's generations/ folder — the measurements below stand on their
+own; the video itself is gone and would have to be re-run from the spec to re-view)** — **1080×1920, 60.3s**, 176 MB,
 synced audio throughout. Cost ~$7.20.
 
 ## QC
