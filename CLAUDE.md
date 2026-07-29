@@ -378,12 +378,22 @@ video. Each kit = identity portraits (`identity/`), approved seed frames from pa
 The consistency law: **a person only stays the same person if every generation is anchored
 to their identity refs.** New video → build the first frame with Nano Banana using
 `identity/*.jpg` as reference images ("use ONLY the likeness of the man in reference
-image 1"), then animate with Seedance 1.5 Pro (`generate_audio: true`, duration ≤ 12s,
-dialogue in quotes, acronyms spelled phonetically) — it is the house engine for talking
-clips (one take = one voice, no seams). Veo 3.1 also speaks but re-rolls a new voice per
-clip and its scene-extension is 16:9-only. Kling = silent B-roll only (its lip-sync tool
-was tried and rejected — robotic stock voice). Whisper-QC every take's audio. After
-approval, save first + last frames into `takes/` so the next video starts warm.
+image 1"), then animate it.
+
+**Which video model: see Pattern D — it is authoritative and this section is not.** Two
+claims that used to live here were wrong and are corrected there, dated 2026-07-29:
+- Veo 3.1 scene-extension is **NOT** 16:9-only — it is verified working in 9:16 vertical
+  (`sieve/golden/experiments/E16-veo-extend/`). Believing otherwise cost a day of building
+  stitching machinery Veo does natively.
+- Veo 3.1 is **where to start for talking heads**, not the fallback. Its audio and video are
+  generated jointly, so lip sync is native rather than assembled; it was operator-judged
+  *"very, very good"* after six assembled alternatives were rejected. Seedance 1.5 Pro
+  (`generate_audio: true`, duration ≤ 12s, dialogue in quotes, acronyms spelled phonetically)
+  remains correct when you need a first-frame-conditioned shot or `camera_fixed`.
+
+Kling = silent B-roll only (its lip-sync tool was tried and rejected — robotic stock voice).
+Whisper-QC every take's audio. After approval, save first + last frames into `takes/` so the
+next video starts warm.
 
 To create a NEW avatar: copy `Avatars/Marcus/AVATAR.md` as the template, generate 2–3
 canonical portraits (neutral + smile) of the new person, fill in the descriptors.
