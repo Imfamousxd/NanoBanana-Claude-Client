@@ -22,6 +22,8 @@ Shipping packs: **nulumin**.
 
 ```bash
 npm run content -- brandkit list                 # packs present
+npm run content -- brandkit new <brand>          # scaffold a valid pack and register it
+npm run content -- brandkit validate [<brand>]   # structural check with a fix for each problem
 npm run content -- brandkit kit <brand>          # what the pack knows + what is missing
 npm run content -- brandkit fonts <brand>        # one-time offline webfont bundle
 npm run content -- brandkit ad <brand> <format>  # deterministic layout render, no provider call
@@ -77,13 +79,30 @@ render depends on, in the run manifest and in the CLI output. Check them before 
 
 ## Adding a pack
 
-1. Create `knowledge/brands/<brand>/design-system.json` with a `typography.bundle.css2` URL and an
-   `assets` block. That file alone makes the pack discoverable.
-2. Add `catalog.json`, `selling-points.json`, and `hero-prompts.json` as the brand needs them.
-3. Write the format document. Record *why* each rule exists — a rule without its rejection history
-   gets undone by the next person.
-4. Register the markdown files as `sources` in `knowledge/graph.json`, add a `brand-pack` node and
-   an `asset-collection` node, and link them with edges.
-5. Add the pack's consistency checks to `test/brandkit.test.mjs`: points resolve to claim records,
-   compounds resolve to categories and present assets, formats render markup carrying the required
-   disclosure.
+The procedure and the rules around it live in **[`CONTRIBUTING.md`](../CONTRIBUTING.md)** — read that
+rather than reconstructing the steps here. The short version:
+
+```bash
+npm run content -- brandkit new <brand-id> --name "Display Name" --compliance <profile>
+# fill in the TODOs, commit the artwork, write the claim records
+npm run content -- brandkit validate <brand-id>
+npm run knowledge:build
+```
+
+`brandkit new` writes a structurally valid skeleton and registers the brand, the pack, and its asset
+collection in `knowledge/graph.json`, so nobody has to remember the wiring.
+
+## Validation
+
+`brandkit validate [brand]` checks pack structure and reports each problem with a fix. It runs over
+every pack inside `npm run doctor`, so a broken pack fails the environment check instead of surfacing
+later as a bad render.
+
+It catches, among others: a product referencing a category or color key that doesn't exist; an asset
+that is declared but missing, or that points outside the repository; a selling point with no claim
+record, or a claim record that is approved with no accountable owner; a variant that isn't exactly
+three points; a prompt block using a placeholder nothing fills; and pack documents that were never
+registered as knowledge sources.
+
+Existing packs are covered automatically — the test suite validates every directory under
+`knowledge/brands/`, so a new pack inherits the checks without anyone adding a test.

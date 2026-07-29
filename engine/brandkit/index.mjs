@@ -6,9 +6,11 @@ import { bundleFonts, fontCachePath } from "./fonts.mjs";
 import { findChrome } from "./chrome.mjs";
 import { dataEntries, dataKeys, listPacks, loadBrandKit, resolvePackId } from "./kit.mjs";
 import { buildHeroJob } from "./hero-job.mjs";
+import { validateAllPacks, validatePack } from "./validate.mjs";
+import { createPack } from "./scaffold.mjs";
 import { FORMATS, RATIOS, composeAd, renderAds } from "./nulumin-ads.mjs";
 
-export { dataEntries, dataKeys, listPacks, loadBrandKit, resolvePackId, buildHeroJob, composeAd, renderAds, FORMATS, RATIOS, findChrome };
+export { dataEntries, dataKeys, listPacks, loadBrandKit, resolvePackId, buildHeroJob, composeAd, renderAds, FORMATS, RATIOS, findChrome, validatePack, validateAllPacks, createPack };
 
 const AD_GENERATORS = { nulumin: { formats: FORMATS, render: renderAds } };
 
@@ -59,6 +61,21 @@ export async function commandKit(root, brand) {
     assets,
     scenes,
     docs: fs.readdirSync(path.join(root, "knowledge", "brands", id)).filter((file) => file.endsWith(".md")),
+  };
+}
+
+/** `brandkit new <brand>` — scaffold a valid, empty pack and register it in the graph. */
+export function commandNew(root, brand, options) {
+  return createPack(root, brand, options);
+}
+
+/** `brandkit validate [brand]` — structural check. Errors block use; warnings need a human look. */
+export function commandValidate(root, brand) {
+  const results = brand ? [validatePack(root, resolvePackId(root, brand))] : validateAllPacks(root);
+  return {
+    ok: results.every((result) => result.ok),
+    packs: results,
+    summary: results.map((result) => `${result.pack}: ${result.ok ? "ok" : `${result.errors.length} error(s)`}, ${result.warnings.length} warning(s)`),
   };
 }
 

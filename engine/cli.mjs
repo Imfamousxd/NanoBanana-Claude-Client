@@ -10,7 +10,7 @@ import { queryKnowledge } from "./knowledge/retrieval.mjs";
 import { executeJob, planJob } from "./pipeline.mjs";
 import { reviewImage } from "./quality/openai-judge.mjs";
 import { auditAssetDirectory } from "./quality/asset-audit.mjs";
-import { commandAd, commandFonts, commandJob, commandKit, listPacks } from "./brandkit/index.mjs";
+import { commandAd, commandFonts, commandJob, commandKit, commandNew, commandValidate, listPacks } from "./brandkit/index.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 loadEnv(root);
@@ -34,6 +34,8 @@ Usage:
 
 Brand packs (knowledge/brands/<brand>/ — tokens, catalog, copy, prompt blocks):
   npm run content -- brandkit list
+  npm run content -- brandkit new <brand> [--name "Display Name"] [--compliance profile-id]
+  npm run content -- brandkit validate [<brand>]
   npm run content -- brandkit kit <brand>
   npm run content -- brandkit fonts <brand>
   npm run content -- brandkit ad <brand> <single|panel|streak> [--compound ghkcu] [--panel cellular]
@@ -42,6 +44,7 @@ Brand packs (knowledge/brands/<brand>/ — tokens, catalog, copy, prompt blocks)
   npm run content -- brandkit job <brand> hero [--compound ghkcu] [--style cryo] [--ratio 9:16]
                                   [--label-crop path] [--empty] [--candidates 2]
 
+Adding a brand: read CONTRIBUTING.md, then run brandkit new and fill in the pack.
 Planning, knowledge queries and brandkit ad renders are offline. Run/review call paid providers.`);
 }
 
@@ -83,7 +86,10 @@ async function main() {
     const [subcommand, brand, target, ...rest] = args;
     const flag = (name) => option(rest, name);
     if (subcommand === "list") return print({ packs: listPacks(root) });
-    if (!brand) throw new Error("brandkit requires a brand: list | kit | fonts | ad | job.");
+    if (subcommand === "validate" && !brand) return print(commandValidate(root));
+    if (!brand) throw new Error("brandkit requires a brand: list | new | validate | kit | fonts | ad | job.");
+    if (subcommand === "new") return print(commandNew(root, brand, { name: flag("--name"), compliance: flag("--compliance") || "general" }));
+    if (subcommand === "validate") return print(commandValidate(root, brand));
     if (subcommand === "kit") return print(await commandKit(root, brand));
     if (subcommand === "fonts") return print(await commandFonts(root, brand));
     if (subcommand === "ad") {
@@ -110,7 +116,7 @@ async function main() {
         empty: rest.includes("--empty"),
       }));
     }
-    throw new Error("brandkit requires: list | kit | fonts | ad | job.");
+    throw new Error("brandkit requires: list | new | validate | kit | fonts | ad | job.");
   }
   if (command === "assets") {
     const [subcommand, requestedDirectory, ...rest] = args;

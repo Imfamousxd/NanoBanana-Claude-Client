@@ -55,7 +55,20 @@ npm run content -- brandkit job nulumin hero --compound ghkcu --style cryo > job
 and no chance of a model inventing copy. `brandkit job` emits a schema-valid job for the generative
 half, which then goes through the usual `plan` → approve → `run` path.
 
-Shipping packs: **nulumin** (`knowledge/brands/nulumin/`). See `docs/BRAND_PACKS.md` to add another.
+Shipping packs: **nulumin** (`knowledge/brands/nulumin/`).
+
+To add a brand, read **[`CONTRIBUTING.md`](CONTRIBUTING.md)** — it is the procedure plus the
+structural boundaries that keep the codebase from drifting. Adding a brand should never require a
+code change:
+
+```bash
+npm run content -- brandkit new <brand-id> --name "Display Name" --compliance <profile>
+# fill in the pack, commit the artwork, write the claim records
+npm run content -- brandkit validate <brand-id>
+```
+
+`brandkit validate` runs over every pack inside `npm run doctor`, so a structurally broken pack fails
+the environment check rather than surfacing later as a bad render.
 
 ## Providers
 

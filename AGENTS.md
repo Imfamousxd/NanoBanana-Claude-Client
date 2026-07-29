@@ -3,6 +3,12 @@
 This repository is a production content system and a historical campaign archive. Codex,
 Claude Code, and other coding agents must use this file as the durable operating contract.
 
+**This file governs doing a content task. [`CONTRIBUTING.md`](CONTRIBUTING.md) governs changing the
+repository** — adding a brand, and the structural boundaries around `engine/`, `knowledge/`,
+`schemas/`, and the historical archive. Read it before you add a brand or edit anything under
+`engine/`. Adding a brand must not require a code change: `brandkit new` scaffolds the pack,
+`brandkit validate` proves it is sound.
+
 ## Mission
 
 Produce brand-faithful, reference-grounded, measurable content without inventing product facts,
