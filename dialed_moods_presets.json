@@ -1,0 +1,63 @@
+{
+  "$comment": "Named brief sets for dialed_moods_gen.mjs. A brief is: name, product (an id from catalog.json compounds), eyebrow, headline (the white part), gold (the closing phrase set in brushed-metal gold), support (one or more short lines), and optional `extra` for anything structural the layout needs. Every string is reproduced verbatim by the model. Copy a block, change the words, run it — no code editing.",
+
+  "socialElixirLaunch": [
+    {
+      "name": "1_announce",
+      "product": "socialElixirLemonade",
+      "eyebrow": "NEW · AUGUST",
+      "headline": "Unwind without",
+      "gold": "the booze.",
+      "support": ["A non-alcoholic kava seltzer with a calm you can actually feel."],
+      "extra": "· a gold pill-shaped button reading exactly \"Shop Social Elixir\""
+    },
+    {
+      "name": "2_whats_in_it",
+      "product": "socialElixirArcticBlue",
+      "eyebrow": "WHAT'S IN IT",
+      "headline": "Every can,",
+      "gold": "on the label.",
+      "support": [],
+      "extra": "· beneath the headline a clean vertical spec list, each row a large gold number then a white word, separated by thin hairline rules, reading exactly:\n  \"180mg kavalactones\", \"200mg potassium\", \"50mg magnesium\", \"20mg sodium\"\n· a single row of small outlined pill badges reading exactly \"10 CAL\", \"ZERO SUGAR\", \"GLUTEN-FREE\", \"VEGAN\""
+    },
+    {
+      "name": "3_how_to_use",
+      "product": "socialElixirMangoPeach",
+      "eyebrow": "HOW TO DRINK IT",
+      "headline": "Made for",
+      "gold": "the occasion.",
+      "support": [],
+      "extra": "· three numbered steps, each a small gold numeral then a bold white line, reading exactly:\n  \"01 Chill it hard.\", \"02 Crack one as the night starts.\", \"03 One can, one occasion.\"\n· frosty cold condensation beads on the can's metal"
+    },
+    {
+      "name": "4_why_different",
+      "product": "socialElixirLemonade",
+      "eyebrow": "WHY THIS ONE",
+      "headline": "Most zero-proof drinks taste like",
+      "gold": "an absence.",
+      "support": [],
+      "extra": "· two short stacked lines each behind a thin gold vertical rule, reading exactly \"Felt, not implied.\" and \"Drinks clean.\""
+    },
+    {
+      "name": "5_tomorrow_proof",
+      "product": "socialElixirArcticBlue",
+      "eyebrow": "TONIGHT AND TOMORROW",
+      "headline": "Fun tonight.",
+      "gold": "Functional tomorrow.",
+      "support": [],
+      "extra": "· at the bottom, two short columns divided by a thin gold vertical rule, reading exactly \"TONIGHT — You're in it.\" and \"7:00 AM — You're fine.\""
+    }
+  ],
+
+  "cognitionExample": [
+    {
+      "name": "focus_example",
+      "product": "cognitionBlueGlacier",
+      "eyebrow": "COGNITION ELIXIR",
+      "headline": "Clean energy,",
+      "gold": "calm focus.",
+      "support": ["A nootropic seltzer built for the long afternoon."],
+      "$note": "Example only — shows the same look applied to the Cognition line. Its spec column is unverified, so the generator keeps that panel out of focus automatically. Do not add spec numbers to `extra` for this line until they are confirmed."
+    }
+  ]
+}

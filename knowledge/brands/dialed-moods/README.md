@@ -30,16 +30,30 @@ cp .env.example .env          # add OPENAI_API_KEY
 npm run doctor                # checks Node, keys, ffmpeg, Chrome
 ```
 
-Then generate. The working generator is at the repository root:
+Then generate. **One command makes any Dialed Moods graphic — no code editing, no prompt writing:**
 
 ```bash
-node dialed_social_elixir_gen.mjs 4x5                  # all five launch pieces
-node dialed_social_elixir_gen.mjs 4x5 3_how_to_use     # one piece
-node dialed_social_elixir_gen.mjs 9x16                 # the vertical set
+node dialed_moods_gen.mjs --list        # every product you can generate
+
+node dialed_moods_gen.mjs \
+  --product cognitionBlueGlacier \
+  --eyebrow "CLEAN ENERGY" --headline "Focus you can" --gold "actually feel." \
+  --support "A nootropic seltzer built for the long afternoon." \
+  --ratio 4x5 --name focus_v1
+
+node dialed_moods_gen.mjs --preset socialElixirLaunch --ratio 4x5   # the approved launch set
 ```
 
-Output lands in `Dialed Moods Social Elixir/out_<ratio>/`. Roughly four minutes per piece —
+`--headline` is the white part of the headline; `--gold` is the closing phrase set in brushed metal.
+For richer layouts (spec lists, numbered steps, a CTA button) copy a block in
+`dialed_moods_presets.json` and run `--preset <name>`.
+
+Output lands in `Dialed Moods Generated/<ratio>/`. Roughly four minutes per graphic —
 background the run. **Then review every render against the checklist in `FORMATS.md` §5.**
+
+The generator reads each can's real printed copy from `catalog.json`, so a Cognition Elixir graphic
+can never come out wearing Social Elixir's band or nutrition numbers. That protection only exists if
+you use the generator — do not hand-write prompts.
 
 Reference art is read from `Brand Context/assets/Dialed_Moods/creative/`, declared in
 `design-system.json` under `assets`. The generator resolves paths from its own location, so a fresh

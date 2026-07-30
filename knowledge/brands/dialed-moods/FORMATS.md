@@ -13,25 +13,89 @@ works, and every rule exists because something else was tried first and rejected
 
 ---
 
-## 0. Fastest path to a correct graphic
+## 0. Making a graphic — you should never write a prompt by hand
 
-You do not need to rebuild any of this. The generator that produced the approved set is at the
-repository root:
+**Use `dialed_moods_gen.mjs`. It works for every Dialed Moods product, not just Social Elixir.**
+It assembles the approved prompt for you and pulls each can's real printed copy out of the brand
+pack, so a graphic physically cannot come out carrying the wrong product's numbers.
 
 ```bash
-node dialed_social_elixir_gen.mjs 4x5                       # all five launch pieces
-node dialed_social_elixir_gen.mjs 4x5 3_how_to_use          # one piece
-node dialed_social_elixir_gen.mjs 9x16                      # the vertical set
-node dialed_social_elixir_gen.mjs 4x5 --nb                  # Nano Banana fallback (read §6 first)
+node dialed_moods_gen.mjs --list          # every product you can generate, and its status
 ```
 
-It needs `OPENAI_API_KEY` in `.env`. Output lands in `Dialed Moods Social Elixir/out_<ratio>/`.
-Each piece takes about four minutes, so run it in the background and review afterwards.
+Make any graphic in one command — no code editing, no prompt writing:
 
-**To make a new piece, add an entry to `PIECES` in that file and nothing else.** A piece is a
-headline, an eyebrow, some supporting copy, a flavour and a shot. The eight prompt blocks that carry
-the look are shared and should not be edited per piece. If you find yourself editing a shared block
-to fix one graphic, you are about to break the other four.
+```bash
+node dialed_moods_gen.mjs \
+  --product cognitionBlueGlacier \
+  --eyebrow  "CLEAN ENERGY" \
+  --headline "Focus you can" \
+  --gold     "actually feel." \
+  --support  "A nootropic seltzer built for the long afternoon." \
+  --ratio 4x5 --name focus_v1
+```
+
+That is the whole interface. `--headline` is the white part, `--gold` is the closing phrase set in
+brushed metal. For anything with more structure — a spec list, numbered steps, a CTA button — put a
+brief in `dialed_moods_presets.json` and run `--preset <name>`, or pass `--brief my-brief.json`.
+
+Reproduce the approved launch set with:
+
+```bash
+node dialed_moods_gen.mjs --preset socialElixirLaunch --ratio 4x5
+```
+
+Needs `OPENAI_API_KEY` in `.env`. Output goes to `Dialed Moods Generated/<ratio>/`. About four
+minutes per graphic — background the run.
+
+> `dialed_social_elixir_gen.mjs` is the original, Social-Elixir-only script kept for provenance.
+> Use `dialed_moods_gen.mjs` for new work.
+
+**Never edit the shared prompt blocks to fix one graphic.** They live in `hero-prompts.json` and
+carry the look for everything. Change the brief instead. Editing a shared block to rescue one image
+silently degrades every other graphic the brand will ever make.
+
+---
+
+## 0b. The one thing that breaks most often
+
+Every Dialed Moods can shares an architecture — chrome-and-gold vertical `DIALED` wordmark, the
+`Prize With Every Can` strip, the QR/app-steps block, a nutrition column — but **the printed copy
+differs by product line**:
+
+| | Social Elixir | Cognition Elixir |
+|---|---|---|
+| Band | `UNWIND WITHOUT THE BOOZE` | `CLEAN ENERGY & CALM FOCUS` |
+| Line | `SOCIAL ELIXIR` | `COGNITION ELIXIR` |
+| Sub | `10 CALORIE - ZERO SUGAR` | `5 CALORIE - ZERO SUGAR` |
+| Body | charcoal-grey, blue/gold mosaic bands | white/brushed-silver, flavour-coloured bands |
+| Spec | 180mg / 200mg / 50mg / 20mg | different actives — **not yet verified** |
+
+Put Social Elixir's band or numbers on a Cognition can and you have shipped false pack copy on a
+supplement. The generator prevents this by reading `catalog.json`; you only reintroduce the risk by
+hand-writing a prompt. Don't hand-write prompts.
+
+**Cognition Elixir spec numbers are currently unverified.** Only `20mg L-Dopa` and `200mg Caffeine`
+are legible on the supplied three-quarter renders — the middle two ingredient names wrap around the
+can. While `specVerified` is `false` in `catalog.json`, the generator tells the model to rotate that
+panel away from camera entirely. Do not add those numbers to a graphic until the client or a
+straight-on render confirms them, then flip the flag.
+
+> A first pass at this proved the guard is necessary: the model rendered a *sharp* Cognition spec
+> column that read `20mg L-Theanine` where the can actually says **L-Dopa**. It will invent a
+> plausible supplement fact if you let it near one.
+
+### Disclosures are per line too
+
+`NON-ALCOHOLIC · 21+ · ID WILL BE CHECKED` belongs to **Social Elixir only**. It is there because
+that product is a kava drink sold into an alcohol occasion. Cognition Elixir is a nootropic seltzer,
+not an alcohol alternative — putting a 21+ age gate on it is a compliance error, not a styling
+choice. That same first pass did exactly that.
+
+No disclosure has been approved for Cognition Elixir yet, so `disclosures.byLine.cognitionElixir` is
+`verified: false` and the generator renders **no small print at all** rather than borrowing another
+line's. It also prints a warning when you run it. Get the real line from the client's reviewer,
+then fill it in.
 
 ---
 
@@ -90,8 +154,21 @@ Three things are load-bearing:
 
 ## 3. Approved formats
 
-All five launch pieces share the spine above. What makes them *different in texture*, not just
-different in content:
+The spine in §2 is the brand's format for **every** Dialed Moods graphic, not just the launch set.
+Applying it to a different product is not a new design — it is the same design with a different can
+and different words. That is the point: the look is what makes it Dialed Moods, and it must survive
+the product changing.
+
+Only two things move when you change product:
+
+1. **The bloom colour**, taken from the product's `bloom` in `catalog.json`.
+2. **The can**, taken from its reference asset.
+
+Ground darkness, key light, camera height, can scale, margins, type rhythm, gold treatment and the
+age gate all stay identical. Holding those constant is the entire reason a set reads as one campaign.
+
+The five launch pieces below are the worked examples. What makes them *different in texture*, not
+just different in content:
 
 | Piece | Texture | Flavour / light |
 |---|---|---|
@@ -124,6 +201,9 @@ part of the document.
 | "Buzz without the booze" (the client sheet's own hero line) | Blocked on compliance | Use **"Unwind without the booze."** — it is printed on the cans. See `selling-points.json`. |
 | Cropping the can's spec panel out of frame to dodge garbled micro-type | Wrong fix, reverted | That copy is **real printed pack copy**. Removing it falsifies the packaging. Reproduce it and lock the numbers instead. |
 | Nano Banana for the sibling pieces | Rejected after two passes | See §6. Use gpt-image-2 whenever the can's own printed copy has to survive. |
+| Prompt blocks that hardcoded one line's can ("the same charcoal-grey body, the same pixel-mosaic bands") | Rejected — rendered a Cognition can in Social Elixir's charcoal-and-gold finish | The can's body and band colours come from REFERENCE 1, never from the prompt. Per-line facts live in `catalog.json`. |
+| Letting the model near an unverified spec column | Rejected — it invented `20mg L-Theanine` where the can says L-Dopa | Unverified nutrition panels are rotated out of frame entirely, not shrunk or blurred. |
+| One shared legal line for the whole brand | Rejected — stamped a 21+ age gate on a nootropic seltzer | Disclosures are per line and gated on `verified`. An unverified line gets no small print at all. |
 
 ---
 
@@ -138,12 +218,14 @@ the image model draws the pack copy.
 4. A qualified human owns final legal, brand, and platform approval.
 5. **Zoom to 100% and read every word in the image**, including the words printed on the can.
 
-For step 5, check these by name — each one has actually shipped wrong at least once:
+For step 5, open `catalog.json` → `packagingCopy` → **your product's line**, and check the render
+against it word by word. Each of these has actually shipped wrong at least once:
 
-- [ ] Can band reads `UNWIND WITHOUT THE BOOZE` — not BOODS, DOOZS or BOOZS
-- [ ] Can spec column reads `180mg` `200mg` `50mg` `20mg`, in that order
-- [ ] Can volume reads `12 FL OZ (355 ML)`
-- [ ] `SOCIAL ELIXIR` and `DIETARY SUPPLEMENT` both present and spelled correctly
+- [ ] Can band matches that line exactly — Social Elixir renders have come back `BOODS`, `DOOZS`
+- [ ] Can spec column matches that line, in order — a `30mg` has appeared in a correct row
+- [ ] Can volume reads `12 FL OZ (355 ML)` — `358`, `368` and `15 FL OZ (80 mL)` have all shipped
+- [ ] The line name (`SOCIAL ELIXIR` / `COGNITION ELIXIR`) is **the right one for this can**
+- [ ] `DIETARY SUPPLEMENT` present and spelled correctly
 - [ ] Headline spelling — `occasion` and `kavalactones` are the repeat offenders
 - [ ] Age gate present, centred, bottom, correctly spelled
 - [ ] The can is *the real can* — mosaic bands top and bottom, heavy chrome-and-gold italic

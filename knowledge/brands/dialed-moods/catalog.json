@@ -10,6 +10,12 @@
       "accent": "#D2AC47",
       "surface": "launchDark",
       "description": "Non-alcoholic kava seltzer. The August 2026 launch line."
+    },
+    "cognitionElixir": {
+      "label": "COGNITION ELIXIR",
+      "accent": "#D2AC47",
+      "surface": "launchDark",
+      "description": "Nootropic functional seltzer. The established line — five flavours."
     }
   },
   "compounds": {
@@ -39,6 +45,46 @@
       "assetThreeQuarter": "Brand Context/assets/Dialed_Moods/creative/Dialed_Seltzer_Kava_45_MangoPeach.png",
       "shot": "45",
       "vial": "Brand Context/assets/Dialed_Moods/creative/Dialed_Seltzer_Kava_45_MangoPeach.png"
+    },
+    "cognitionBlueGlacier": {
+      "name": "Cognition Elixir — Blue Glacier",
+      "category": "cognitionElixir",
+      "flavourTab": "BLUE GLACIER",
+      "bloom": "cool cyan-blue",
+      "shot": "front",
+      "vial": "Brand Context/assets/Dialed_Moods/Blue-Glacier.png"
+    },
+    "cognitionLychee": {
+      "name": "Cognition Elixir — Lychee",
+      "category": "cognitionElixir",
+      "flavourTab": "LYCHEE",
+      "bloom": "warm rose-pink",
+      "shot": "front",
+      "vial": "Brand Context/assets/Dialed_Moods/Lychee.png"
+    },
+    "cognitionSourWatermelon": {
+      "name": "Cognition Elixir — Sour Watermelon",
+      "category": "cognitionElixir",
+      "flavourTab": "SOUR WATERMELON",
+      "bloom": "fresh green and melon-pink",
+      "shot": "front",
+      "vial": "Brand Context/assets/Dialed_Moods/Sour-Watermelon.png"
+    },
+    "cognitionBlackCherryVanilla": {
+      "name": "Cognition Elixir — Black Cherry Vanilla",
+      "category": "cognitionElixir",
+      "flavourTab": "BLACK CHERRY VANILLA",
+      "bloom": "deep cherry-red",
+      "shot": "front",
+      "vial": "Brand Context/assets/Dialed_Moods/Black-Cherry-Vanilla.png"
+    },
+    "cognitionLemonade": {
+      "name": "Cognition Elixir — Lemonade",
+      "category": "cognitionElixir",
+      "flavourTab": "LEMONADE",
+      "bloom": "warm gold and amber",
+      "shot": "front",
+      "vial": "Brand Context/assets/Dialed_Moods/Lemonade.png"
     }
   },
   "productFacts": {
@@ -79,26 +125,51 @@
     "launch": "August 2026"
   },
   "packagingCopy": {
-    "$comment": "The words physically printed on the can. An image model reproducing the can must render these EXACTLY — they are the most common failure point. Verify every one of them on every render.",
-    "band": "UNWIND WITHOUT THE BOOZE",
-    "line": "SOCIAL ELIXIR",
-    "category": "DIETARY SUPPLEMENT",
-    "volume": "12 FL OZ (355 ML)",
-    "vertical": "Prize With Every Can",
-    "appSteps": [
-      "1. Download The App",
-      "2. Scan Code Under Can, With The App",
-      "3. Access Free Prizes, Events, And Rewards"
-    ],
-    "mark": "Dialed Health",
-    "specColumn": [
-      "180mg",
-      "200mg",
-      "50mg",
-      "20mg"
-    ],
+    "$comment": "The words physically printed on each LINE's can. The generator reads these to build its prompt, so the numbers can never be hardcoded to the wrong product. Verify them on every render.",
+    "socialElixir": {
+      "band": "UNWIND WITHOUT THE BOOZE",
+      "line": "SOCIAL ELIXIR",
+      "category": "DIETARY SUPPLEMENT",
+      "volume": "12 FL OZ (355 ML)",
+      "subline": "10 CALORIE - ZERO SUGAR",
+      "vertical": "Prize With Every Can",
+      "specColumn": [
+        "180mg kavalactones",
+        "200mg potassium",
+        "50mg magnesium",
+        "20mg sodium"
+      ],
+      "specVerified": true,
+      "body": "charcoal-grey with dense blue/gold pixel-mosaic bands top and bottom"
+    },
+    "cognitionElixir": {
+      "band": "CLEAN ENERGY & CALM FOCUS",
+      "line": "COGNITION ELIXIR",
+      "category": "DIETARY SUPPLEMENT",
+      "volume": "12 FL OZ (355 mL)",
+      "subline": "5 CALORIE - ZERO SUGAR",
+      "vertical": "Prize With Every Can",
+      "specColumn": [
+        "20mg L-Dopa",
+        "200mg Alpha-GPC",
+        "200mg L-Carnitine",
+        "200mg Caffeine"
+      ],
+      "specVerified": false,
+      "specVerifiedNote": "ONLY '20mg L-Dopa' and '200mg Caffeine' are legible on the supplied 3/4-angle renders; the middle two ingredient NAMES wrap around the can and could not be read. Doses are legible, names are inferred. DO NOT put a Cognition Elixir spec column in a graphic until a straight-on render or the client confirms them. The generator refuses to render this column while specVerified is false.",
+      "body": "white and brushed-silver with a flavour-coloured band top and bottom"
+    },
+    "shared": {
+      "appSteps": [
+        "1. Download The App",
+        "2. Scan Code Under Can, With The App",
+        "3. Access Free Prizes, Events, And Rewards"
+      ],
+      "mark": "Dialed Health",
+      "tagline": "YOUR FULL POTENTIAL with HERBAL BIO-HACKING"
+    },
     "knownMisrenders": {
-      "$comment": "Observed real failures. Check each of these by name before shipping.",
+      "$comment": "Observed real failures. Check each by name before shipping.",
       "UNWIND WITHOUT THE BOOZE": [
         "BOODS",
         "DOOZS",
@@ -110,7 +181,7 @@
         "15 FL OZ (80 mL)"
       ],
       "specColumn": [
-        "30mg substituted into the sodium or magnesium row"
+        "30mg substituted into a correct row"
       ]
     }
   },
