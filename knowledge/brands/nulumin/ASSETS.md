@@ -89,9 +89,13 @@ feed), so a count that includes it will not match anything customer-facing.
 
 ## ⚠️ Known defects — check before relying on an asset
 
-1. **Some GHK-Cu assets render the cake WHITE.** GHK-Cu is a copper peptide; its lyophilised cake is
-   **blue-violet**. Anything generated from a white-cake GHK-Cu reference inherits the error. This
-   includes `White BG Powder/NuL_GHK_50mg_white.png` — do not use it as a cake-colour reference.
+1. **Product-accuracy traps: GHK-Cu's cake and NAD+'s glass.** GHK-Cu is a copper peptide, so its
+   lyophilised cake is **blue-violet**, and NAD+ ships in **amber** light-protective glass. Renders
+   default to a white cake and clear glass, so both must be pinned explicitly every time —
+   `catalog.json` carries the wording as `cakeColors.copperViolet` and `glassColors.amber`.
+   **`White BG Powder` was corrected on 2026-07-29** and both files are now right. Assets in other
+   folders were not touched and many still show a white GHK-Cu cake and a clear NAD+ vial — check
+   before using one as a reference, because the error is inherited.
 2. **The pink/endocrine packshots render the tagline "BIO SCIENCES" without its hyphen.** It must read
    **BIO-SCIENCES**. Affects all 8 endocrine files (CFC, CJCIpa, Ipamorelin, KissPeptin, Melanotan,
    Oxytocin, PT, Sermorelin); the violet, blue, green and gold families are correct. Prompting a
