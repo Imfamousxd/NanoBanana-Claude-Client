@@ -97,7 +97,7 @@
       ]
     },
     {
-      "path": "knowledge/brands/dialed-moods/FORMATS.md",
+      "path": "knowledge/brands/dialed-moods/DIALED_MOODS_GUIDELINES.md",
       "tags": [
         "dialed-moods",
         "brand-pack",
@@ -393,7 +393,7 @@
         "dialed-moods pack",
         "dialed-moods brandkit"
       ],
-      "source": "knowledge/brands/dialed-moods/FORMATS.md",
+      "source": "knowledge/brands/dialed-moods/DIALED_MOODS_GUIDELINES.md",
       "directory": "knowledge/brands/dialed-moods",
       "provides": [
         "TODO — what this pack gives a generator that Brand Context does not"

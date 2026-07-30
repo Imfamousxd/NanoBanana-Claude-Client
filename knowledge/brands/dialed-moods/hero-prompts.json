@@ -1,5 +1,5 @@
 {
-  "$comment": "Verbatim generative prompt blocks for Dialed Moods. These are the surviving text after real rejected rounds — edit only with a reason, and record the reason in FORMATS.md. The working copy that produced the approved set lives in dialed_social_elixir_gen.mjs at the repo root; this file is the durable record of it.",
+  "$comment": "Verbatim generative prompt blocks for Dialed Moods. These are the surviving text after real rejected rounds — edit only with a reason, and record the reason in DIALED_MOODS_GUIDELINES.md. The working copy that produced the approved set lives in dialed_social_elixir_gen.mjs at the repo root; this file is the durable record of it.",
   "version": 1,
   "brand": "brand.dialed-moods",
   "updatedAt": "2026-07-29",

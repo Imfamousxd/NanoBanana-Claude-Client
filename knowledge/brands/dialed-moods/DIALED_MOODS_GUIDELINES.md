@@ -1,15 +1,39 @@
-# Dialed Moods creative system
+# Dialed Moods — brand guidelines
 
-The approved formats, the layout law behind them, and the rejection history that produced each rule.
-Read this before designing anything for Dialed Moods.
+### How to make graphics that look like the approved Social Elixir set, every time.
+
+This is the working document for anyone producing Dialed Moods creative. It covers what the look is,
+how to get it out of the image model, what has already been tried and rejected, and what to check
+before anything ships.
+
+**Open this first — it is the target:**
+
+```
+Brand Context/assets/Dialed_Moods/creative/style_master_4x5.png
+```
+
+Everything below describes why that image works. Every rule in here exists because something else
+was tried first and rejected.
+
+## What's in this document
+
+| § | | |
+|---|---|---|
+| **0** | **Making a graphic** | the one command — start here |
+| 0b | Two product lines | the mistake that breaks most graphics |
+| 1 | How work is built | why this brand never composites |
+| 2 | The invariant spine | the layout law, as a diagram |
+| 3 | Approved formats | the five launch pieces and what makes each distinct |
+| 4 | Rejection history | ten things that were tried and killed |
+| 5 | Before you ship | the pre-flight checklist |
+| 6 | Which model | gpt-image-2 vs Nano Banana, with the evidence |
+| 7 | Style lock | the three references and their order |
+| **8** | **Styling playbook** | **how to hit it 10 times out of 10** |
+| 9 | Two surfaces | dark launch look vs white studio |
 
 Tokens live in `design-system.json`. Products live in `catalog.json`. Copy lives in
 `selling-points.json`. Prompt blocks live in `hero-prompts.json`. This document is the *reasoning*;
 those files are the *data*. Do not duplicate values here — they drift.
-
-**Approved reference:** `Brand Context/assets/Dialed_Moods/creative/style_master_4x5.png`.
-Open it before you read another word. Everything below is an attempt to describe why that image
-works, and every rule exists because something else was tried first and rejected.
 
 ---
 
