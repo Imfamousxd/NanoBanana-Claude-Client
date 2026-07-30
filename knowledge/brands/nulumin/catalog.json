@@ -2,12 +2,17 @@
   "$comment": "Compounds used in creative work, with the facts a generator needs: which spectrum category owns them, the cap and cake colors that must be pinned in a prompt, and the canonical asset for each. This is a CREATIVE subset, not the commercial catalog — the full catalog authority is Brand Context/NuLumin_BioSciences.md.",
   "version": 1,
   "brand": "brand.nulumin",
-  "updatedAt": "2026-07-28",
+  "updatedAt": "2026-07-29",
 
   "catalogFacts": {
-    "activeSkus": 31,
-    "phrasing": "Always cite \"31 research peptides\" — never 32.",
-    "categories": 5
+    "$comment": "Counts resolved 2026-07-29 against nulumin.org/products, which serves exactly 66 SKU codes across 31 product tokens. 31 counts PRODUCTS; 66 counts dose-level SKUs. The 36 on the Q2 2026 wholesale PDF cover is that sell sheet's SKU line-item count (spanning only 23 products) mislabelled as compounds — see ASSETS.md.",
+    "activeProducts": 31,
+    "singleCompounds": 27,
+    "blends": 4,
+    "doseLevelSkus": 66,
+    "phrasing": "Always cite \"31 research peptides\" — never 32, never 36.",
+    "categories": 5,
+    "verifiedAgainst": "nulumin.org/products (2026-07-29)"
   },
 
   "categories": {

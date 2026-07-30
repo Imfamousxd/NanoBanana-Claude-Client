@@ -1,0 +1,71 @@
+{
+  "$schema": "../schemas/content-job.schema.json",
+  "version": 1,
+  "id": "nulumin-whitebg-packshot-example",
+  "brand": "nulumin",
+  "mode": "product-image",
+  "objective": "EXAMPLE \u2014 add a missing white-BG cake packshot to the White BG Powder set so it matches its 23+ siblings exactly apart from the printed name and dose. Copy this file, swap the reference to a donor packshot from the SAME spectrum category as the new product, and set the name/dose in the contract.",
+  "deliverable": {
+    "aspectRatio": "3:4",
+    "imageSize": "2K",
+    "quality": "high",
+    "candidates": 2
+  },
+  "provider": {
+    "id": "gemini-image",
+    "model": "gemini-3-pro-image"
+  },
+  "assets": [
+    {
+      "path": "Nulumin Generated/White BG Powder/NuL_Ipamorelin_5mg_white.png",
+      "role": "product-canon",
+      "required": true,
+      "instructions": "Reference 1: the approved in-set packshot this image must match. Same endocrine (pink) category, so its cap, accent bar and dose colour are already correct and must be preserved unchanged. Copy the vial, glass, cap, crimp collar, powder, label layout, typography, lighting, framing and pure-white background from it exactly; change only the printed product name and dose."
+    }
+  ],
+  "creative": {
+    "concept": "A catalogue packshot that joins an existing, already-approved set. This is a reproduction task, not a design task: the value is in being identical to reference 1, not in being interesting.",
+    "scene": "A single NuLumin peptide vial standing upright and centred on a pure solid white (#FFFFFF) seamless background, edge to edge, with nothing else in the frame. Framing, vial scale and vial position match reference 1.",
+    "action": "Reproduce reference 1 and change only the printed product name (to \"Oxytocin\") and the printed dose (to \"5mg\").",
+    "camera": "Straight-on product view at the same height, distance and angle as reference 1. The vial's label faces the camera and is tack-sharp.",
+    "lighting": "The same soft, even, cool-neutral white studio light as reference 1. The label is evenly exposed and fully legible; no cast shadow on the background.",
+    "style": "Photoreal studio packshot photography, crisp and clinical. Not a 3D render, not a stylised illustration.",
+    "contract": "REPRODUCE REFERENCE 1 EXACTLY. Reference 1 is an approved NuLumin Bio-Sciences catalogue packshot from the set this image must join, so the output has to be indistinguishable from it apart from the two changes listed below. Reproduce identically: the same clear glass vial with the same exact shape, proportions, width, height and position in the frame; the same coloured flip cap and the same brushed-silver crimp collar beneath it; the same soft neutral cool-white studio lighting with the same specular highlights and glass refraction; the same generous mound of FINE, SOFT, GRANULAR pure-white lyophilised peptide powder settled at the base of the vial and clearly visible through the glass below the label (fine loose granular powder with a soft gently-mounded top \u2014 never a cracked or fractured hard cake, never liquid, never an empty vial); and the same white label with the same layout, the same typography, the same proportions and the same position on the glass: the \"NuLumin  BIO-SCIENCES\" logo lockup at the top left with its horizontal rule beneath the wordmark, the vertical coloured accent bar down the left edge of the label, the large italic serif product name, the dose line beneath it, the small thin-ruled \"For Research Use / Not for Human Consumption\" box at the top right, and the small \"Manufactured by NuLumin\" footer line at the bottom.\n\nCHANGE ONLY THESE THREE THINGS:\n1. The product NAME \u2014 the large italic serif line \u2014 must read EXACTLY \"Oxytocin\", spelled exactly that way and nothing else. It stays CRISP SOLID BLACK in the same italic serif face at the same weight as reference 1. Set it at a size that fits entirely inside the label's clear area \u2014 it must never touch, overlap or run underneath the research-use box at the top right, and never run past the label's left or right edge. Reduce its size if that is what it takes to fit.\n2. The DOSE line directly beneath the name must read EXACTLY \"5mg\".\n3. THE TAGLINE: the small tracked-out capitals beneath the \"NuLumin\" wordmark and its horizontal rule must read EXACTLY \"BIO-SCIENCES\" \u2014 WITH the hyphen between \"BIO\" and \"SCIENCES\". Reference 1 renders it without the hyphen; that is a known error in the reference and it must be corrected here. Keep the same size, the same wide letter-spacing, the same weight and the same position \u2014 the only difference is that the hyphen is present.\n\nTHE ACCENT COLOUR DOES NOT CHANGE. The flip cap, the vertical accent bar and the dose text keep the EXACT same colour as reference 1 \u2014 same hue, same saturation, same softness. Do not brighten it, do not saturate it, do not shift or replace it. The product name is never coloured; only the dose is coloured.\n\nEVERYTHING ELSE IS PIXEL-IDENTICAL to reference 1: the \"NuLumin\" wordmark itself, the horizontal rule, \"BIO-SCIENCES\", the research-use box and its fine print, the footer line, the accent bar, the glass, the cap, the crimp collar, the powder, the lighting and the framing.\n\nTHE BACKGROUND IS PURE SOLID WHITE (#FFFFFF) \u2014 completely plain and seamless, edge to edge. No gradient, no vignette, no grey, no cast shadow, no floor, no surface, no reflection. The vial stands upright and centred, and the WHOLE vial from the top of the cap to the base of the glass sits inside the frame, never cropped.\n\nALL POWDER IS INSIDE THE VIAL. There is no spilled powder, no pile or mound of powder on the background, no scattering, no dust, and no second object anywhere in the frame.",
+    "mustInclude": [
+      "the whole vial, cap to base, inside the frame on a pure white background",
+      "fine granular pure-white lyophilised powder filling the base of the vial, inside the glass",
+      "the product name reading exactly \"Oxytocin\" in solid black italic serif, fitting inside the label",
+      "the dose reading exactly \"5mg\"",
+      "the cap, accent bar and dose in the same colour as reference 1",
+      "the \"NuLumin BIO-SCIENCES\" lockup, the research-use box and the \"Manufactured by NuLumin\" footer reproduced exactly",
+      "the tagline reading exactly \"BIO-SCIENCES\", with the hyphen present"
+    ],
+    "mustAvoid": [
+      "a coloured product name \u2014 only the dose is coloured",
+      "name text touching, overlapping or running underneath the research-use box",
+      "spilled powder, a powder pile, dust or any second object on the background",
+      "an empty vial, a cracked or fractured cake, or liquid contents",
+      "a cast shadow, floor, tabletop, grey background, gradient or vignette",
+      "re-lettered, re-typeset, restyled or misspelled logo, research box or footer text",
+      "a brighter, more saturated, or different accent colour than reference 1",
+      "any added text, watermark or second vial",
+      "\"BIO SCIENCES\" written without a hyphen"
+    ]
+  },
+  "compliance": {
+    "profile": "regulated-health-ruo",
+    "requiredDisclosures": [
+      "For Research Use Only. Not for Human Consumption."
+    ],
+    "humanReviewRequired": true,
+    "claimSourceIds": [],
+    "note": "The RUO line is the printed label box, reproduced from the approved reference packshot \u2014 not new copy. No claims are made in this asset."
+  },
+  "execution": {
+    "approved": false
+  },
+  "output": {
+    "directory": "generations/nulumin-whitebg-example",
+    "basename": "NuL_Example_5mg_white"
+  }
+}

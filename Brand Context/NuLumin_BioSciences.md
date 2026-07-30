@@ -1,7 +1,9 @@
 # NuLumin Bio-Sciences
 
 Research-grade peptide brand ("research peptides", B2C/retail-facing wholesale). Clinical-modern
-wellness aesthetic. **31 SKUs in the active catalog — NOT 32.** Always cite "31 research peptides".
+wellness aesthetic. **31 products in the active catalog — 27 single compounds + 4 blends, sold as 66
+dose-level SKUs.** Always cite "31 research peptides" — never 32, and never the 36 on the Q2 2026
+wholesale sell sheet (that is its SKU line-item count, and it covers only 23 products).
 Website: nulumin.org. Tagline used on marketing graphics: **"Lighting the Path Forward"**.
 
 **Compliance (required on every consumer-facing/email asset):**
@@ -99,7 +101,8 @@ that didn't read as a research/medical brand. Identity = clinical-modern + spect
    digital sharpness, perfect three-point lighting, vivid HDR color, smooth plastic skin, posed
    full compositions (this is what you get generating prompt-only with no ref). Full recipe in §5.
 
-5. **31 SKUs, not 32.** Never cite any other catalog count.
+5. **31 products, not 32 and not 36.** 31 = products; 66 = dose-level SKUs. Verified against
+   nulumin.org/products on 2026-07-29. Never cite any other catalog count.
 
 6. **White-bg packshots: NO rembg hard cutout.** The rembg cutout was rejected as "very
    unnatural, like they're literally cut out" — a hard alpha matte strips the glass's soft
