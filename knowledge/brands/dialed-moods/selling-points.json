@@ -1,0 +1,102 @@
+{
+  "$comment": "Dialed Moods copy matrix. Every factual point names a claim record in knowledge/claims/. Nothing here may be used until that record is approved by an accountable human. The composition facts (dose, calories, allergens) are read off the supplied can artwork; the EFFECT claims are the ones that need review.",
+  "version": 1,
+  "brand": "brand.dialed-moods",
+  "updatedAt": "2026-07-29",
+  "$formats": "`label`+`sub` is the chip form, `loud` is the single uppercase line, `spec` is the pre-broken two-line pair. Provide all three or a format renders blank.",
+
+  "points": {
+    "kavalactones": {
+      "label": "180mg kavalactones",
+      "sub": "from 573mg kava root extract",
+      "loud": "180MG KAVALACTONES",
+      "spec": ["180mg", "kavalactones"],
+      "claim": "claim.dialed-moods.dose-kavalactones"
+    },
+    "potassium": {
+      "label": "200mg potassium",
+      "sub": "an electrolyte",
+      "loud": "200MG POTASSIUM",
+      "spec": ["200mg", "potassium"],
+      "claim": "claim.dialed-moods.dose-potassium"
+    },
+    "magnesium": {
+      "label": "50mg magnesium",
+      "sub": "an electrolyte",
+      "loud": "50MG MAGNESIUM",
+      "spec": ["50mg", "magnesium"],
+      "claim": "claim.dialed-moods.dose-magnesium"
+    },
+    "sodium": {
+      "label": "20mg sodium",
+      "sub": "an electrolyte",
+      "loud": "20MG SODIUM",
+      "spec": ["20mg", "sodium"],
+      "claim": "claim.dialed-moods.dose-sodium"
+    },
+    "zeroSugar": {
+      "label": "Zero sugar",
+      "sub": "10 calories a can",
+      "loud": "ZERO SUGAR",
+      "spec": ["0g", "sugar"],
+      "claim": "claim.dialed-moods.zero-sugar"
+    },
+    "nonAlcoholic": {
+      "label": "Non-alcoholic",
+      "sub": "no alcohol, ever",
+      "loud": "NON-ALCOHOLIC",
+      "spec": ["0.0%", "alcohol"],
+      "claim": "claim.dialed-moods.non-alcoholic"
+    }
+  },
+
+  "variants": {
+    "$comment": "Exactly three points each. Vary one hypothesis at a time — variants are experiments, not rerolls.",
+    "composition": {
+      "points": ["kavalactones", "potassium", "magnesium"],
+      "hypothesis": "Lead with the active dose. Tests whether the buyer cares what is in it."
+    },
+    "electrolytes": {
+      "points": ["potassium", "magnesium", "sodium"],
+      "hypothesis": "Lead with hydration. The only greenlit structure/function angle."
+    },
+    "lightness": {
+      "points": ["zeroSugar", "nonAlcoholic", "kavalactones"],
+      "hypothesis": "Lead with what it costs you. Tests the better-than-a-drink framing."
+    }
+  },
+
+  "hooks": {
+    "$comment": "Two clauses. On this brand the split is not roman/italic — it is WHITE / BRUSHED-METAL GOLD. `lines[0]` is the white part of the headline, `lines[1]` is the gold phrase that closes it. Keep them short enough to read at thumbnail size.",
+    "approvedHero": {
+      "lines": ["Unwind without", "the booze."],
+      "note": "THE launch line. It is printed on the cans, so it carries no extra claim risk. Use this one. Never 'buzz' — see prohibited.claims."
+    },
+    "occasion": { "lines": ["Made for", "the occasion."] },
+    "label": { "lines": ["Every can,", "on the label."] },
+    "tomorrow": { "lines": ["Fun tonight.", "Functional tomorrow."] },
+    "absence": { "lines": ["Most zero-proof drinks taste like", "an absence."] }
+  },
+
+  "ctas": {
+    "shop": "Shop Social Elixir",
+    "learn": "See what's in it"
+  },
+
+  "greenlitLanguage": {
+    "$comment": "The ONLY structure/function language cleared for this brand by the client sheet. Anything beyond this needs a new approved claim record.",
+    "allowed": ["supports hydration", "supports muscle function"]
+  },
+
+  "prohibited": {
+    "$comment": "Claims deliberately excluded until a sourced record exists. Historical campaign copy is not evidence of approval.",
+    "claims": [
+      "'Buzz without the booze' — and the word 'buzz' in any form. The client sheet lists it as the hero line but its OWN compliance row flags it as implying an intoxicating effect and marks it the launch's highest-scrutiny copy. Use 'Unwind without the booze.' instead.",
+      "Any effect, mood, calm, relaxation or anxiolytic claim beyond the greenlit structure/function language.",
+      "Any comparison to a named competitor (New Brew, Leilo, Mitra9) — naming one makes it a comparative claim.",
+      "Star ratings, review counts, customer counts or any other social proof — no reviews exist yet, so inventing them is fabrication.",
+      "Open-ended daily-use framing for a kava product. The client sheet's risk row forbids it because of kava's hepatotoxicity history. Occasional-use posture only: not daily/long-term, take breaks, not under 21 / pregnant / nursing / with a liver condition / with alcohol.",
+      "Any depiction implying intoxication, impairment, or that the product substitutes for alcohol's effect rather than its occasion."
+    ]
+  }
+}

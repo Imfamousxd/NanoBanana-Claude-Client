@@ -1,0 +1,93 @@
+{
+  "$comment": "Verbatim generative prompt blocks for Dialed Moods. These are the surviving text after real rejected rounds — edit only with a reason, and record the reason in FORMATS.md. The working copy that produced the approved set lives in dialed_social_elixir_gen.mjs at the repo root; this file is the durable record of it.",
+  "version": 1,
+  "brand": "brand.dialed-moods",
+  "updatedAt": "2026-07-29",
+
+  "provider": {
+    "$comment": "gpt-image-2 via POST /v1/images/edits, refs as repeated image[] parts. This choice is MEASURED, not preferred — see `providerNote`.",
+    "id": "openai-image",
+    "model": "gpt-image-2",
+    "endpoint": "https://api.openai.com/v1/images/edits",
+    "quality": "high",
+    "sizes": {
+      "4x5": ["2560x3200", "2432x3040", "2048x2560", "1728x2160"],
+      "9x16": ["2144x3808", "1920x3408", "1536x2736"]
+    },
+    "sizeNote": "Descending ladder — sides divisible by 16, longest edge <= 3840, ~8.2MP budget. Step down only on a size/budget rejection.",
+    "gotchas": [
+      "`input_fidelity` is a gpt-image-1 parameter. gpt-image-2 rejects it with invalid_input_fidelity_model.",
+      "quality:high at 2560x3200 takes roughly 4 minutes per image. Always run it in the background."
+    ]
+  },
+
+  "providerNote": "Nano Banana (gemini-3-pro-image-preview) rendered the FIRST approved piece and is a valid fallback for scene work. It is NOT acceptable when the can's own printed copy must survive: across two full passes it shipped BOODS/DOOZS for BOOZE, 30mg in place of a correct nutrition row, 358 ML and 368 ML for 355 ML, and twice replaced the can with an invented one. Character-exact locks in the prompt did not move it — it pattern-paints small type instead of reading the instruction. gpt-image-2 fixed all of it on the first attempt because images/edits puts the real render INTO the edit rather than describing it.",
+
+  "references": {
+    "$comment": "Reference order is load-bearing — the prompt says REFERENCE 1/2/3 and the model maps them by position. Pass all three, always, in this order.",
+    "1": {
+      "what": "The actual product can render for the chosen flavour, from catalog.json.",
+      "take": "The can's exact geometry, artwork and every word printed on it."
+    },
+    "2": {
+      "what": "dialedMoodsLogo.png",
+      "take": "The brand mark, reproduced faithfully, small in the top-left corner."
+    },
+    "3": {
+      "what": "style_master_ref_1400.png — the approved creative, downscaled.",
+      "take": "The LOOK only: light, layering, gold treatment, type rhythm, margins, finish. NOT its words, flavour, layout content or colour of light."
+    }
+  },
+
+  "blocks": {
+    "$comment": "Long, verbatim contracts. Assemble in this order: brief, flavour tab line, brand, styleMatch, typeDepth, canFix, legal, spelling. `spelling` is LAST on purpose — it is read last and that is what made it stick.",
+
+    "brand": "BRAND AND ART DIRECTION — Dialed Moods, a premium functional-beverage brand.\n· REFERENCE 1 is the actual product can. Reproduce it EXACTLY: the same charcoal-grey body, the same pixel-mosaic bands top and bottom, the same bold italic chrome \"DIALED\" wordmark with its heavy GOLD outline, the small \"MOODS\", the \"SOCIAL ELIXIR\" line, \"DIETARY SUPPLEMENT\", \"12 FL OZ (355 ML)\", the flavour tab and the fruit artwork. Do not redesign, re-letter or restyle the can or any word printed on it.\n· REFERENCE 2 is the Dialed Moods logo — the italic chrome \"DIALED\" wordmark with a gold outline and \"MOODS\" at its lower right. Place it as the brand mark, reproduced faithfully, small in the TOP-LEFT corner.\n· The can is SHARP, in crisp focus, high-resolution, glossy aluminium with realistic specular highlights and condensation-free clean metal. It is the hero and must never look soft, blurred, upscaled or pasted.\n· Palette: charcoal and near-black grounds, ONE metallic gold accent (#D2AC47), cool white type. Premium, cinematic, editorial — like a high-end spirits or performance-drink campaign. Rich gradient light, soft volumetric glow behind the can, subtle film grain, deep contrast.\n· Typography: heavy modern geometric sans, tight tracking, sentence case. Type is crisp, perfectly legible, correctly spelled, and NEVER overlaps the can — it sits in clean empty space with generous margins.\n· NO ghosted, watermark, oversized or repeated background lettering anywhere. NOT a flyer, NOT clip-art, NOT a collage, no stock-photo people, no rainbow gradients, no neon, no clutter, no watermarks.",
+
+    "styleMatch": "REFERENCE 3 IS AN ALREADY-APPROVED PIECE FROM THIS EXACT CAMPAIGN. It is the style master. Match it precisely on all of the following:\n· the same near-black graduated ground and the same soft volumetric bloom behind the can — same darkness, same falloff, same drifting haze, but tinted to the colour the brief below specifies, not Reference 3's gold\n· the same camera height, the same can scale in frame, the same long glossy floor reflection\n· the same single hard key light and the same specular behaviour on both the metal and the type\n· the same brushed-metal gold treatment on the accented words\n· the same heavy geometric sans, the same tight tracking and sentence case, the same generous left margin and the same vertical rhythm between eyebrow, headline and supporting copy\n· the same small Dialed Moods logo in the top-left corner and the same centred small print at the very bottom\n· the same overall level of finish, contrast, grain and restraint.\nDO NOT copy REFERENCE 3's words, its headline, its flavour, its colour of light or its specific layout content — those come from the brief below and must be different. Reference 3 supplies the LOOK ONLY. This is a sibling in a set, not a duplicate: it must be unmistakably the same campaign and obviously a different post.",
+
+    "typeDepth": "TYPOGRAPHY MUST LIVE INSIDE THE SCENE — not sit flat on top of it. Build the graphic in real LAYERS, front to back:\n· BACK LAYER: atmosphere only — NO text of any kind behind the can. Build the depth with light instead: a soft column of glow, drifting haze and a large out-of-focus gradient bloom that the can partly occludes. Never place a ghosted, oversized or watermark word behind the product.\n· That bloom is SOFT-EDGED SMOKE AND LIGHT, never a shape. No hard-edged circle, disc, halo, ring, spotlight cut-out or flat coloured panel behind the can, and no hard horizon line or bright straight streak across the floor. The glow must have no detectable edge — it dissolves into the dark ground exactly like the haze in Reference 3.\n· MID LAYER: the can, lit by a single hard key light.\n· FRONT LAYER: the headline, sitting forward and crisp.\n· The SAME key light rakes across the headline as across the can: the letterforms catch a warm specular highlight along their top-left edges and fall into shadow at the lower right, with a faint gold rim where the light grazes them.\n· The headline casts a soft, believable drop shadow onto the surface and background behind it, matching the can's own shadow direction and softness.\n· Where the product stands on a glossy surface, the type reflects in it too — a dimmer, blurred, vertically-flipped echo, fading out exactly like the can's reflection.\n· Volumetric haze, light bloom and a few soft out-of-focus bokeh motes drift IN FRONT of parts of the type, so atmosphere passes over it and it is not a clean sticker layer.\n· The gold words are real brushed metal, not flat colour: a vertical gradient from pale champagne highlight through deep antique gold to a dark bronze base, with a fine bevelled edge and one bright specular streak — the same metal as the can's DIALED outline.\n· Let the headline BREAK THE GRID slightly: one line may tuck just behind the can's edge, and the eyebrow may sit on a thin gold rule that runs off the frame.\n· Add a faint embossed or debossed treatment to the smallest labels so they read as printed into the surface rather than laid over it.\n· Everything stays perfectly legible and correctly spelled. Depth and lighting, never decoration for its own sake.",
+
+    "canFix": "PRINTED COPY ON THE CAN — REPRODUCE, NEVER INVENT:\n· Every word printed on the can must come from REFERENCE 1. Reproduce its side panel as it actually exists — the vertical \"Prize With Every Can\" line, the QR code and its three numbered app steps, the small \"Dialed Health\" mark, the tagline and the nutrition column. Do not redesign, re-word or re-letter any of it.\n· NUMERIC LOCK: the nutrition column reads EXACTLY 180mg, 200mg, 50mg, 20mg, top to bottom. The fourth value is 20mg sodium. Never 30mg. Never any other figure. If those four numbers cannot be rendered crisply and correctly, turn that panel away from camera instead.\n· Where printed type is genuinely too small to letter, let it fall into natural photographic softness — slightly out of focus, low contrast, the way real 4pt pack copy looks in a studio photograph. Do NOT substitute sharp scrambled pseudo-lettering for it.\n· Invent nothing that is not on REFERENCE 1: no extra warning block, no extra supplement-facts table, no additional QR code, no new claims.\n· THESE EXACT STRINGS APPEAR ON THE CAN AND MUST BE SPELLED CHARACTER-FOR-CHARACTER. Proof-read each one before finishing:\n  \"UNWIND WITHOUT THE BOOZE\"  (in the band under the top mosaic — it is BOOZE. Not BOODS, not DOOZS, not BOOZS)\n  \"SOCIAL ELIXIR\"\n  \"DIETARY SUPPLEMENT\"\n  \"12 FL OZ (355 ML)\"  (it is 355 ML. Never 368, never 80, never any other volume)\n  \"Prize With Every Can\"\n  \"180mg\" \"200mg\" \"50mg\" \"20mg\"  (in that order — magnesium is 50mg, sodium is 20mg)\n· ABSOLUTELY DO NOT REDESIGN THE CAN. It keeps its charcoal-grey body, its dense blue/gold PIXEL-MOSAIC BANDS at top and bottom, its big vertical italic chrome \"DIALED\" wordmark with the heavy gold outline and drop shadow, the small vertical \"MOODS\", the coloured flavour tab and the fruit artwork. A plain dark can with a small horizontal logo and no mosaic bands is WRONG and must never be produced.",
+
+    "legal": "MANDATORY SMALL PRINT, set cleanly at the very bottom in small caps, correctly spelled and fully legible:\n\"NON-ALCOHOLIC · 21+ · ID WILL BE CHECKED\"",
+
+    "spelling": "FINAL PROOF-READING PASS — DO THIS BEFORE YOU FINISH THE IMAGE:\n· Every string I placed inside quotation marks above must appear character-for-character, correctly spelled, with correct punctuation. Copy them letter by letter. Do not paraphrase, re-break, abbreviate or \"improve\" a single word.\n· Watch these specifically: \"occasion\" has two C's and one S. \"BOOZE\" ends in ZE. \"355 ML\". \"kavalactones\".\n· Re-read every word you have drawn — on the type AND on the can — and confirm it is a real, correctly spelled word before you finish. Any garbled, doubled, dropped or invented letter is a failure of the whole image.\n· No word may be cut off at the frame edge, and no line may overlap the can."
+  },
+
+  "composition": {
+    "$comment": "Placement stated as a geometric rule, not a percentage — percentage-only briefs get ignored.",
+    "4x5": "ONE can standing as a large sharp hero on the RIGHT side of the frame, with a long clean reflection beneath it. The LEFT half is empty dark uncluttered space holding, top to bottom: a small gold eyebrow, a large multi-line headline whose final phrase is metallic gold, and short supporting copy. The age gate sits centred at the very bottom.",
+    "9x16": "Same left-type / right-can spine, but the can runs taller in frame and the copy stack has more vertical room between eyebrow, headline and supporting copy. Keep the same generous left margin."
+  },
+
+  "styles": {
+    "launchDark": {
+      "prompt": "Deep near-black ground washed with the flavour's light, soft golden/cyan/peach bloom behind the can, drifting volumetric haze, dark glossy floor with a long reflection, subtle film grain, deep contrast.",
+      "why": "Approved 2026-07-29 on the announce piece. Reads as a premium spirits campaign rather than a supplement ad, which is the whole positioning bet for a non-alcoholic product that has to sit in an alcohol occasion."
+    }
+  },
+
+  "dropped": {
+    "ghostedWordmark": {
+      "tried": "A giant ghosted 'DIALED' behind the can, physically occluded by it, as the depth cue.",
+      "verdict": "Rejected on sight.",
+      "rule": "Back layer is atmosphere ONLY. There is now a global ban on ghosted/watermark/oversized background type."
+    },
+    "htmlComposite": {
+      "tried": "The supplied can render placed into an HTML/CSS layout and screenshotted.",
+      "verdict": "Rejected — 'a flyer made on Canva'.",
+      "rule": "Generate the ENTIRE graphic with an image model. Never composite."
+    },
+    "scaledCan": {
+      "tried": "The supplied can render scaled up to fill the frame.",
+      "verdict": "Rejected — soft and low-res next to crisp generated type.",
+      "rule": "The can is re-rendered by the model from the reference, not enlarged."
+    },
+    "hardGlowDisc": {
+      "tried": "A flat cyan disc behind the can plus a bright straight horizon streak (a Nano Banana drift, not a deliberate design).",
+      "verdict": "Rejected — reads as a poster template, not a lit scene.",
+      "rule": "The bloom has no detectable edge. No discs, halos, rings or horizon lines."
+    }
+  }
+}

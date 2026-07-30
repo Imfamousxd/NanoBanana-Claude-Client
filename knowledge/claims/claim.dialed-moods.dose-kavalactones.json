@@ -1,0 +1,34 @@
+{
+  "id": "claim.dialed-moods.dose-kavalactones",
+  "claim": "180mg kavalactones per 12 fl oz can, from 573mg kava root extract.",
+  "brand": "brand.dialed-moods",
+  "source": {
+    "url": "asset://Brand Context/assets/Dialed_Moods/creative/Dialed_Seltzer_Kava_Front_Lemonade.png",
+    "title": "Dialed Seltzer Kava can artwork (client-supplied render)",
+    "retrievedAt": "2026-07-29",
+    "support": "Value is printed on the can's own nutrition column in the client-supplied packaging render. This is a COMPOSITION fact transcribed from the pack, not an effect claim."
+  },
+  "status": "draft",
+  "reviewedAt": "2026-07-29",
+  "reviewAfter": "2027-01-29",
+  "jurisdictions": [
+    "US"
+  ],
+  "platforms": [
+    "owned-web",
+    "email",
+    "meta",
+    "tiktok"
+  ],
+  "approvedUses": [
+    "static ad",
+    "carousel",
+    "organic video overlay"
+  ],
+  "prohibitedUses": [
+    "Never pair with a mood, calm, relaxation, anxiolytic or intoxication claim — that converts a composition fact into an unapproved effect claim.",
+    "Re-verify against the current printed pack before reuse. A reformulation invalidates this record silently."
+  ],
+  "owner": "unassigned",
+  "notes": "status=draft. Transcribed from the client-supplied pack render, which is evidence the value is PRINTED, not that it is cleared for advertising. A qualified human must verify substantiation, set `owner`, refresh `reviewedAt`, and flip `status` to \"approved\" before any job may cite this record."
+}

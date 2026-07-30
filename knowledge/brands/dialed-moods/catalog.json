@@ -1,0 +1,120 @@
+{
+  "$comment": "Dialed Moods products used in creative work, with the facts a prompt or layout must state exactly. This is a CREATIVE subset, not the commercial catalog.",
+  "version": 1,
+  "brand": "brand.dialed-moods",
+  "updatedAt": "2026-07-29",
+  "categories": {
+    "$comment": "Each category owns an accent color and an eyebrow label.",
+    "socialElixir": {
+      "label": "SOCIAL ELIXIR",
+      "accent": "#D2AC47",
+      "surface": "launchDark",
+      "description": "Non-alcoholic kava seltzer. The August 2026 launch line."
+    }
+  },
+  "compounds": {
+    "$comment": "One entry per product. `category` must name a key in `categories`. NOTE: the reference-asset field is called `vial` because the engine schema is shared across brands — for Dialed Moods it holds the CAN render. Every product must have one; text-only prompting is not a fidelity strategy.",
+    "socialElixirLemonade": {
+      "name": "Social Elixir — Lemonade",
+      "category": "socialElixir",
+      "flavourTab": "LEMONADE",
+      "bloom": "warm gold and amber",
+      "shot": "front",
+      "vial": "Brand Context/assets/Dialed_Moods/creative/Dialed_Seltzer_Kava_Front_Lemonade.png"
+    },
+    "socialElixirArcticBlue": {
+      "name": "Social Elixir — Arctic Blue",
+      "category": "socialElixir",
+      "flavourTab": "ARCTIC BLUE",
+      "bloom": "electric cyan-blue",
+      "assetThreeQuarter": "Brand Context/assets/Dialed_Moods/creative/Dialed_Seltzer_Kava_45_ArticBlue.png",
+      "shot": "front | 45",
+      "vial": "Brand Context/assets/Dialed_Moods/creative/Dialed_Seltzer_Kava_Front_ArticBlue.png"
+    },
+    "socialElixirMangoPeach": {
+      "name": "Social Elixir — Mango Peach",
+      "category": "socialElixir",
+      "flavourTab": "MANGO PEACH",
+      "bloom": "warm peach and amber",
+      "assetThreeQuarter": "Brand Context/assets/Dialed_Moods/creative/Dialed_Seltzer_Kava_45_MangoPeach.png",
+      "shot": "45",
+      "vial": "Brand Context/assets/Dialed_Moods/creative/Dialed_Seltzer_Kava_45_MangoPeach.png"
+    }
+  },
+  "productFacts": {
+    "$comment": "Shared across all three flavours. These are the ONLY numbers that may appear in a Social Elixir graphic. Copy them; never round, re-order or infer one.",
+    "format": "12 fl oz (355 mL) tall slim can",
+    "category": "Non-alcoholic kava seltzer, labelled DIETARY SUPPLEMENT",
+    "actives": {
+      "kavalactones": "180mg",
+      "kavalactonesSource": "from 573mg kava root extract",
+      "potassium": "200mg",
+      "magnesium": "50mg",
+      "sodium": "20mg"
+    },
+    "specOrder": [
+      "180mg kavalactones",
+      "200mg potassium",
+      "50mg magnesium",
+      "20mg sodium"
+    ],
+    "attributes": [
+      "10 calories",
+      "zero sugar",
+      "no artificial flavors",
+      "gluten-free",
+      "vegan"
+    ],
+    "badgeSet": [
+      "10 CAL",
+      "ZERO SUGAR",
+      "GLUTEN-FREE",
+      "VEGAN"
+    ],
+    "pricing": {
+      "single": "$5.99",
+      "sixPack": "$41.94",
+      "twelvePack": "$83.88"
+    },
+    "launch": "August 2026"
+  },
+  "packagingCopy": {
+    "$comment": "The words physically printed on the can. An image model reproducing the can must render these EXACTLY — they are the most common failure point. Verify every one of them on every render.",
+    "band": "UNWIND WITHOUT THE BOOZE",
+    "line": "SOCIAL ELIXIR",
+    "category": "DIETARY SUPPLEMENT",
+    "volume": "12 FL OZ (355 ML)",
+    "vertical": "Prize With Every Can",
+    "appSteps": [
+      "1. Download The App",
+      "2. Scan Code Under Can, With The App",
+      "3. Access Free Prizes, Events, And Rewards"
+    ],
+    "mark": "Dialed Health",
+    "specColumn": [
+      "180mg",
+      "200mg",
+      "50mg",
+      "20mg"
+    ],
+    "knownMisrenders": {
+      "$comment": "Observed real failures. Check each of these by name before shipping.",
+      "UNWIND WITHOUT THE BOOZE": [
+        "BOODS",
+        "DOOZS",
+        "BOOZS"
+      ],
+      "12 FL OZ (355 ML)": [
+        "358 ML",
+        "368 ML",
+        "15 FL OZ (80 mL)"
+      ],
+      "specColumn": [
+        "30mg substituted into the sodium or magnesium row"
+      ]
+    }
+  },
+  "panels": {
+    "$comment": "Multi-product groupings, if the brand sells them. None defined for the launch set — every approved piece is a single hero can."
+  }
+}

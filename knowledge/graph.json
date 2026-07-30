@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28",
+  "updatedAt": "2026-07-30",
   "sources": [
     {
       "directory": "Brand Context",
@@ -86,6 +86,22 @@
         "muha",
         "character",
         "continuity"
+      ]
+    },
+    {
+      "path": "knowledge/brands/dialed-moods/README.md",
+      "tags": [
+        "dialed-moods",
+        "brand-pack",
+        "operator"
+      ]
+    },
+    {
+      "path": "knowledge/brands/dialed-moods/FORMATS.md",
+      "tags": [
+        "dialed-moods",
+        "brand-pack",
+        "playbook"
       ]
     }
   ],
@@ -186,7 +202,8 @@
         "moods"
       ],
       "source": "Brand Context/Dialed_Moods.md",
-      "complianceProfile": "supplement-marketing"
+      "complianceProfile": "supplement-marketing",
+      "pack": "knowledge/brands/dialed-moods"
     },
     {
       "id": "brand.dialed-labs",
@@ -367,6 +384,33 @@
       "model": "bytedance/seedance-2.0",
       "verifiedAt": "2026-07-22",
       "sourceUrl": "https://replicate.com/bytedance/seedance-2.0/api"
+    },
+    {
+      "id": "pack.dialed-moods",
+      "type": "brand-pack",
+      "name": "Dialed Moods brand pack",
+      "aliases": [
+        "dialed-moods pack",
+        "dialed-moods brandkit"
+      ],
+      "source": "knowledge/brands/dialed-moods/FORMATS.md",
+      "directory": "knowledge/brands/dialed-moods",
+      "provides": [
+        "TODO — what this pack gives a generator that Brand Context does not"
+      ],
+      "commands": [
+        "npm run content -- brandkit kit dialed-moods",
+        "npm run content -- brandkit validate dialed-moods"
+      ]
+    },
+    {
+      "id": "assets.dialed-moods-ads",
+      "type": "asset-collection",
+      "name": "Dialed Moods creative artwork",
+      "paths": [
+        "Brand Context/assets/Dialed_Moods/creative"
+      ],
+      "selectionRule": "TODO — how to choose the right asset, and what makes one canonical."
     }
   ],
   "edges": [
@@ -449,6 +493,16 @@
       "from": "mode.ugc",
       "relation": "can-render-with",
       "to": "provider.replicate-seedance"
+    },
+    {
+      "from": "brand.dialed-moods",
+      "relation": "has-pack",
+      "to": "pack.dialed-moods"
+    },
+    {
+      "from": "brand.dialed-moods",
+      "relation": "has-assets",
+      "to": "assets.dialed-moods-ads"
     }
   ]
 }

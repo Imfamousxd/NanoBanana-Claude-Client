@@ -56,6 +56,11 @@ review-*.md
 !/Dialed Health Website graphics/
 !/Nulumin lifestyle shots/
 !/Stanton Assets/
+!/Dialed Moods Social Elixir/
+/Dialed Moods Social Elixir/*
+!/Dialed Moods Social Elixir/HANDOFF.md
+!/Dialed Moods Social Elixir/out_4x5/
+/Dialed Moods Social Elixir/out_4x5/_*
 /.content-engine/
 /nh-bpc157-tb500.log
 /nh-fix-edit-strict-2.log
@@ -1118,3 +1123,6 @@ review-*.md
 
 # Browsable alias index of NuLumin generations (symlinks only, not content)
 NuLumin — ALL GENERATIONS/
+
+# Allowlist re-includes above can resurrect junk files — this must stay last.
+**/.DS_Store
