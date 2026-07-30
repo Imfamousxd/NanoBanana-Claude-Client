@@ -23,27 +23,34 @@ pack, so a graphic physically cannot come out carrying the wrong product's numbe
 node dialed_moods_gen.mjs --list          # every product you can generate, and its status
 ```
 
-Make any graphic in one command — no code editing, no prompt writing:
-
-```bash
-node dialed_moods_gen.mjs \
-  --product cognitionBlueGlacier \
-  --eyebrow  "CLEAN ENERGY" \
-  --headline "Focus you can" \
-  --gold     "actually feel." \
-  --support  "A nootropic seltzer built for the long afternoon." \
-  --ratio 4x5 --name focus_v1
-```
-
-That is the whole interface. `--headline` is the white part, `--gold` is the closing phrase set in
-brushed metal. For anything with more structure — a spec list, numbered steps, a CTA button — put a
-brief in `dialed_moods_presets.json` and run `--preset <name>`, or pass `--brief my-brief.json`.
-
-Reproduce the approved launch set with:
+**The live campaign is SOCIAL ELIXIR** — the non-alcoholic kava seltzer, launching August. Start
+there. Regenerate the whole approved launch set with:
 
 ```bash
 node dialed_moods_gen.mjs --preset socialElixirLaunch --ratio 4x5
+node dialed_moods_gen.mjs --preset socialElixirLaunch --ratio 9x16
+node dialed_moods_gen.mjs --preset socialElixirLaunch --only 3_how_to_use   # just one piece
 ```
+
+Make a new Social Elixir graphic in one command — no code editing, no prompt writing:
+
+```bash
+node dialed_moods_gen.mjs \
+  --product socialElixirLemonade \
+  --eyebrow  "NEW · AUGUST" \
+  --headline "Unwind without" \
+  --gold     "the booze." \
+  --support  "A non-alcoholic kava seltzer with a calm you can actually feel." \
+  --ratio 4x5 --name announce_v2
+```
+
+That is the whole interface. `--headline` is the white part, `--gold` is the closing phrase set in
+brushed metal. For anything with more structure — a spec list, numbered steps, a CTA button — copy a
+brief in `dialed_moods_presets.json` and run `--preset <name>`, or pass `--brief my-brief.json`.
+
+The three Social Elixir products are `socialElixirLemonade`, `socialElixirArcticBlue` and
+`socialElixirMangoPeach`. The generator also supports the older Cognition Elixir line, which is a
+different product with different pack copy — see §0b before touching it.
 
 Needs `OPENAI_API_KEY` in `.env`. Output goes to `Dialed Moods Generated/<ratio>/`. About four
 minutes per graphic — background the run.

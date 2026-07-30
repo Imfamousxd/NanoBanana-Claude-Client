@@ -32,16 +32,19 @@ npm run doctor                # checks Node, keys, ffmpeg, Chrome
 
 Then generate. **One command makes any Dialed Moods graphic — no code editing, no prompt writing:**
 
+The live campaign is **Social Elixir** — the non-alcoholic kava seltzer launching August.
+
 ```bash
+node dialed_moods_gen.mjs --preset socialElixirLaunch --ratio 4x5    # the approved launch set
+node dialed_moods_gen.mjs --preset socialElixirLaunch --ratio 9x16   # the vertical set
+
 node dialed_moods_gen.mjs --list        # every product you can generate
 
 node dialed_moods_gen.mjs \
-  --product cognitionBlueGlacier \
-  --eyebrow "CLEAN ENERGY" --headline "Focus you can" --gold "actually feel." \
-  --support "A nootropic seltzer built for the long afternoon." \
-  --ratio 4x5 --name focus_v1
-
-node dialed_moods_gen.mjs --preset socialElixirLaunch --ratio 4x5   # the approved launch set
+  --product socialElixirLemonade \
+  --eyebrow "NEW · AUGUST" --headline "Unwind without" --gold "the booze." \
+  --support "A non-alcoholic kava seltzer with a calm you can actually feel." \
+  --ratio 4x5 --name announce_v2
 ```
 
 `--headline` is the white part of the headline; `--gold` is the closing phrase set in brushed metal.
