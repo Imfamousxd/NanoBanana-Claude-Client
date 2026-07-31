@@ -263,11 +263,10 @@
       "type": "asset-collection",
       "name": "NuLumin canonical product assets",
       "paths": [
-        "NuLumin Transparent One-Per-Peptide",
-        "NuLumin Influencer Box/Final",
-        "NuLumin Generated/White BG"
+        "NuLumin Generated/NuLumin Vial Library",
+        "NuLumin Generated/Hero Shots v3 (fixed)/retail"
       ],
-      "selectionRule": "Inspect encoding and visual fidelity; use one declared product-canon per SKU or kit. Do not treat generated COA text as evidence."
+      "selectionRule": "Start at NuLumin Generated/NuLumin Vial Library \u2014 all 66 retail SKUs as transparent PNGs and white-background JPEGs, plus the 5 category heroes, resolved through its index.json (compound, dose, category, accent hex, cake, glass, both paths). Use Transparent/ to composite, White/ on white, and Category Heroes/ as the reference when generating a new SKU. The corner heroes are the composed hero shots and the colour authority. Older folders (White BG Powder, Transparent_*, nobg*, One-Per-Peptide, Vial Library v2) are superseded \u2014 see knowledge/brands/nulumin/ASSETS.md."
     },
     {
       "id": "pack.nulumin",
@@ -316,7 +315,7 @@
     {
       "id": "compliance.regulated-health-ruo",
       "type": "compliance-profile",
-      "name": "Regulated health — research use only",
+      "name": "Regulated health \u2014 research use only",
       "source": "knowledge/compliance/REGULATED_HEALTH_RUO.md",
       "requiredDisclosure": "For Research Use Only. Not for Human Consumption.",
       "humanReviewRequired": true,

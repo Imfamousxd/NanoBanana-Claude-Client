@@ -119,6 +119,15 @@ that didn't read as a research/medical brand. Identity = clinical-modern + spect
 
 Paths are relative to the project repo root unless noted.
 
+- **`NuLumin Generated/NuLumin Vial Library/` — START HERE for any vial imagery.** All 66 retail SKUs
+  in both `Transparent/` (PNG, real alpha) and `White/` (JPEG), at 2048x3072, plus `Category Heroes/`
+  and an `index.json` that resolves any SKU code to its files, accent hex, cake and glass. Committed,
+  so a fresh clone has it. Generate a new SKU by deriving from the matching category hero — pipeline
+  and QC gates in `knowledge/brands/nulumin/ASSETS.md`. This supersedes `White BG Powder/`,
+  `Transparent_*`, `nobg*` and `NuLumin Transparent One-Per-Peptide/`.
+- `NuLumin Generated/Hero Shots v3 (fixed)/retail/` — the approved corner heroes, all 66 SKUs. Not
+  superseded: these are the composed hero shots and the **colour authority** the vial library is
+  keyed to.
 - `NuLumin Assets/` — source vial renders: 32 files covering both dose variants of the catalog,
   plus logo files and `NuL_Epithalon_streak_APPROVED.png`. Key refs:
   `NuLumin Assets/NuL_CFC_5mg.png` (label-color + studio-lighting reference — warm grey

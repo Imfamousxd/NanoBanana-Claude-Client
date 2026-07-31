@@ -7,17 +7,17 @@ committed, so a fresh clone has it; nothing needs regenerating and nothing needs
 
 | set | path | use it for |
 |---|---|---|
-| **Corner heroes** | `NuLumin Generated/Hero Shots v3 (fixed)/retail/` | finished retail hero shots — D2C pages, PDP art, anywhere a composed product photograph is the deliverable |
-| **White-BG packshots (with cake)** | `NuLumin Generated/White BG Powder/` | catalogue rows, comparison tables, and **reference images for generation** — the vial is on plain white with the lyophilised cake visible |
+| **★ Vial library** | `NuLumin Generated/NuLumin Vial Library/` | **the current vial set — start here.** All 66 retail SKUs as transparent PNGs *and* white-background JPEGs, plus the 5 category heroes and a machine-readable `index.json` |
+| **Corner heroes** | `NuLumin Generated/Hero Shots v3 (fixed)/retail/` | finished retail hero shots — D2C pages, PDP art, anywhere a composed product photograph is the deliverable. Also the **colour authority** for the vial library |
 | **Catalog** | `knowledge/brands/nulumin/catalog.json` · `reference/NuLumin_Wholesale_Catalog_Q2-2026.pdf` | SKU codes, doses, blend compositions, categories |
 | **Brand system** | `design-system.json` · `AD_SYSTEM.md` · `HERO_PROMPTS.md` | tokens, type, the approved ad system and hero prompt blocks |
 
-Naming is `NuL_<COMPOUND>_<DOSE>_white.png` for packshots and SKU codes `NUL-V-<CODE>-<SIZE>` in the
-catalog — so a compound maps to its asset mechanically.
+Everything is keyed by retail SKU code, `NUL-V-<CODE>-<SIZE>`. Resolve a SKU to its files through
+`NuLumin Vial Library/index.json` rather than guessing from a filename — it carries compound, dose,
+category, accent hex, cake colour, glass colour and both asset paths for all 66.
 
-Both sets are keyed to the **31 products** in the live catalog. Packshots carry **one representative
-dose per product** (31 files) because the label is the only thing that changes between doses; the
-corner-hero set carries **all 66 dose-level SKUs**. See "Catalog counts" below.
+`White BG Powder/` is the **previous** packshot set and is superseded by the vial library; see
+"Superseded sets" below before reaching for it. See "Catalog counts" below.
 
 ## Using these as generation references
 
@@ -33,37 +33,82 @@ crimp collar ≈13% of total height.
 softens the label until it stops being legible. Generate the product *on* its background instead and
 let the photograph be the whole image.
 
-## Adding a packshot to the set
+## Generating a new vial, or a new SKU
 
-Do not write a new root-level script and do not re-derive the look from scratch — the engine expresses
-this job. Copy **`examples/nulumin-whitebg-packshot.json`** (mode `product-image`, provider
-`gemini-image`), then:
+**Derive from the category hero, changing only name and dose.**
+`NuLumin Generated/NuLumin Vial Library/Category Heroes/HERO_<category>.jpg` is the reference; it
+already carries the correct accent colour, cap, crimp, label, cake and framing.
 
-1. **Reference 1 is an existing packshot from the same spectrum category**, never the wholesale PDF and
-   never a corner hero. A same-category donor already carries the correct cap, accent bar and dose
-   colour, so the only changes left are the name and the dose. Measured result: cap and bar land within
-   **Δhue ≤ 3°** of the donor. Deriving from the BPC master instead reintroduces the vivid `#E424F0`-era
-   palette, which is *not* what this set uses.
-2. **Ask for exactly two changes** — the name and the dose. Every extra instruction costs fidelity: a
-   third change (correcting the tagline hyphen) drifted colour by **Δhue 9–22°** and moved the framing.
-3. **Long names need an explicit wrap clause** ("reduce size, wrap onto two centred italic lines") or
-   the name runs into the research-use box.
-4. **Normalise to the set's framing** or the file will not sit in a catalogue row with the others: crop
-   to the vial's bounding box, scale so its height is **1230 px**, paste at **y = 85** (bbox 85…1315),
-   horizontally centred on a **1024 × 1400** canvas, then flatten the field outside a 7px-dilated
-   subject mask to pure `#FFFFFF`. Every file in the set measures identically on this; vial width
-   varies 0.52–0.58 of frame and that is expected.
-5. Keep the 2K original in `_raw2k/` — it is the better reference image for a later generation — and
-   rebuild `_contact_sheet.png` (6 columns, 310 × 470 tiles, card at 7,6 sized 296 × 405, caption at
-   y ≈ 436).
+Never re-specify the colour in the same step as re-lettering. Re-colouring while changing the name is
+what produced up to **45° of hue drift** across a category; inheriting the colour from the hero holds
+it to **1–7°**. If a colour ever has to be stated, pass a flat swatch as a second reference — hex
+words alone drift.
 
-## Deliberately NOT here
+Model is **Nano Banana Pro** (`gemini-3-pro-image`) at 4K. gpt-image-1 was tried twice and rejected
+both times for looking computer-generated: flat glass, a label that reads pasted on, a smooth band
+instead of brushed metal. It is also the only model that emits alpha, which is why the pipeline below
+derives transparency instead of asking for it.
 
-- **Transparent cutouts** — removed. Superseded by generating the product on its background. The
-  site serves its own at `nulumin.org/images/products/NuLumin-vials/NUL-V-{CODE}-{SIZE}.webp` if a
-  true cutout is ever genuinely needed.
-- **"White BG Finals"** — removed. Despite the name those vials are **EMPTY**: clear glass, no cake.
-  "Finals" meant final renders, not final selection. Do not re-add it as the packshot set.
+### The pipeline
+
+1. **White master** — derive from the category hero, name and dose only.
+2. **High-contrast companion** — reproduce that render with *only* the background changed to pure
+   black. Forbid relighting explicitly, or the model adds a rim light "helpfully" and the maths breaks.
+3. **Gate the pair** before matting (see below).
+4. **Solve the alpha** from the pair: `α = 1 − (I_white − I_black)/255`, `F = I_black/α`. Exact, not
+   keyed — which is why clear glass comes out genuinely see-through rather than a silhouette.
+
+### Gates — every one of these caught a real failure
+
+Run them *before* matting; a bad pair produces a plausible-looking asset, not an obvious error.
+
+- **Companion background is actually black.** Nine renders silently returned a white frame. Two
+  identical frames make the difference degenerate: α resolves to 1 everywhere and you get an opaque
+  blob that looks fine in a thumbnail.
+- **Vial not relit.** Compare label brightness across the pair; a darkened companion drags α down.
+- **Registration.** Compare bounding boxes; anything past ~10 px of drift mattes badly.
+- **Family fit.** Compare a downscaled signature against the category hero. This is what catches a
+  redesigned label — and it caught **invented fine print**, blocks of gibberish like
+  "Fine-print contematriseolinia" on a regulated product. Compare amber SKUs against `NAD-250`, not
+  against the cellular hero, or the amber itself reads as the deviation and hides a real defect.
+- **Colour.** Cap hue and saturation against the category target.
+- **Eyes.** The signature check ranked a vial reading **"Didon+" instead of "NAD+"** as ordinary
+  variance. Column-density can't separate one word from another. Read the contact sheet.
+
+### Where the matte needs help, and why
+
+The difference solve is reliable on clear glass and unreliable on anything specular or coloured. All
+three fixes take the region from the white render, where an opaque object shows its own true colour:
+
+- **Cap and crimp** are opaque, so partial alpha there is physically meaningless. Left alone, α
+  collapsed to ~90/255 on some SKUs and the dark companion bled through, rotating hue by **100–115°**.
+  Take both alpha and colour for the closure band from the white render.
+- **Silhouette edges**: `F = I_black/α` explodes where α is tiny and paints the edge white. Floor the
+  divisor (α = 90) — that white halo was a bug, not a lighting choice.
+- **Amber glass** is light-protective and must read amber on dark as well as light. As ordinary
+  translucent glass its α collapsed unevenly — to 40/255 on one vial — so the tint vanished on part of
+  the body and differed vial to vial. Amber SKUs build **opaque**: silhouette alpha, white-render
+  colour. Clear-glass SKUs keep the real matte.
+
+Normalise every asset the same way: crop to the vial, scale to 90% of frame height, centre on
+2048 × 3072. A category then lines up without per-file nudging.
+
+
+## Superseded sets — do not reach for these
+
+The vial library replaced all of them. They remain on disk as history, not as options.
+
+- **`White BG Powder/`** — the previous packshot set. Straight-on rather than the approved hero angle,
+  1024 × 1400 rather than 2048 × 3072, one dose per product rather than all 66 SKUs, and its endocrine
+  vials carry the missing-hyphen defect below. Superseded 2026-07-30.
+- **`Vial Library v2/`** — an earlier build of the current library, with measured colour drift.
+- **`Transparent_*`, `nobg*`, `White BG *`, `NuLumin Transparent One-Per-Peptide/`** — earlier cutout
+  lineages. Their alpha is a keyed silhouette with stray haze across the canvas, not a solved matte.
+- **`White BG Finals/`** — despite the name those vials are **EMPTY**: clear glass, no cake. "Finals"
+  meant final renders, not final selection.
+
+The **corner heroes** (`Hero Shots v3 (fixed)/retail/`) are **not** superseded — they are the approved
+composed hero shots and the colour authority the vial library is keyed to.
 
 ## Catalog counts — resolved 2026-07-29
 
@@ -89,19 +134,23 @@ feed), so a count that includes it will not match anything customer-facing.
 
 ## ⚠️ Known defects — check before relying on an asset
 
+**The vial library is clean on all of these** — the notes below apply to the superseded sets, which
+are still on disk and still inherited if you use one as a reference.
+
 1. **Product-accuracy traps: GHK-Cu's cake and NAD+'s glass.** GHK-Cu is a copper peptide, so its
-   lyophilised cake is **blue-violet**, and NAD+ ships in **amber** light-protective glass. Renders
-   default to a white cake and clear glass, so both must be pinned explicitly every time —
-   `catalog.json` carries the wording as `cakeColors.copperViolet` and `glassColors.amber`.
-   **`White BG Powder` was corrected on 2026-07-29** and both files are now right. Assets in other
-   folders were not touched and many still show a white GHK-Cu cake and a clear NAD+ vial — check
-   before using one as a reference, because the error is inherited.
-2. **The pink/endocrine packshots render the tagline "BIO SCIENCES" without its hyphen.** It must read
+   lyophilised cake is **blue-violet**, and NAD+ ships in **amber** light-protective glass, tinted
+   continuously from crimp collar to base. Renders default to a white cake and clear glass, so both
+   must be pinned explicitly every time — `catalog.json` carries the wording as
+   `cakeColors.copperViolet` and `glassColors.amber`. Correct in the vial library and in
+   `White BG Powder`; **wrong in most other folders**, and the error is inherited by anything derived
+   from them.
+2. **The pink/endocrine packshots in `White BG Powder` render the tagline "BIO SCIENCES" without its
+   hyphen.** It must read
    **BIO-SCIENCES**. Affects all 8 endocrine files (CFC, CJCIpa, Ipamorelin, KissPeptin, Melanotan,
    Oxytocin, PT, Sermorelin); the violet, blue, green and gold families are correct. Prompting a
    hyphen correction while deriving from one of these donors destabilises colour and framing — a fix
    pass needs its own QC round, so fix the whole family at once rather than one file at a time.
-3. **Some packshot filenames carry a dose the label does not.** `NuL_Selank_5mg_white.png` is labelled
+3. **Some `White BG Powder` filenames carry a dose the label does not.** `NuL_Selank_5mg_white.png` is labelled
    **10mg** (and 5mg is not a retail Selank dose). `Melanotan_3mg`, `GLP3_6mg` and `CJCIpa_5mg` are
    labelled with doses that exist in the wholesale feed but not in the 66-SKU retail feed. Read the
    label, not the filename, before using one in a catalogue row.
