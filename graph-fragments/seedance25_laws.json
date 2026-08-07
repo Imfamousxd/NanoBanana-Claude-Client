@@ -1,0 +1,158 @@
+{
+  "_merge_note": "On merge into graph/graph.json, the section name \"seedance25_laws\" MUST also be added to the SECTIONS list in sieve-graph.mjs (around lines 41-43). A section absent from SECTIONS is silently SKIPPED by lint rather than erroring — the defect that has left ugc_laws and operator_verdicts unvalidated since they were added. Verify by node count: lint must report a number that includes these nodes, not the old 308.",
+  "_source": "Every law below was MEASURED against the live ModelArk API on 2026-08-06/07 while producing the Muha Golden Hour campaign. Nothing here is inferred from documentation; where the docs disagree with the measurement, the measurement is recorded and the doc is named as wrong. Probe scripts: ark_probe / res_probe2 / res_probe3 / res_probe4 / dur_probe / probe15.",
+  "seedance25_laws": {
+    "sd25:model-id-and-host": {
+      "claim": "Call Dreamina-Seedance-2.5 as `dreamina-seedance-2-5-260628` at host `https://ark.ap-southeast.bytepluses.com/api/v3/contents/generations/tasks`, then poll `GET .../tasks/{id}`. The host in ByteDance's own curl examples, `ark.ap-southeast-1.bytepluses.com`, DOES NOT RESOLVE.",
+      "evidence": "curl to ap-southeast-1 returns exit 6 / HTTP 000 (DNS failure); ap-southeast returns 401 unauthenticated and 200 with a key. Model id confirmed live via `arkcli models get dreamina-seedance-2-5`.",
+      "counterexamples": "none — the -1 host failed on every attempt, from two different scripts.",
+      "applies_to": "api",
+      "confidence": "strong",
+      "source": "measured 2026-08-06, Muha Golden Hour build"
+    },
+    "sd25:resolution-is-720p-only": {
+      "claim": "seedance 2.5 accepts `--resolution 720p` and REJECTS every higher value in BOTH i2v and t2v. 720p is a hard ceiling on this model — conform up in post, or switch model. Do NOT conclude the parameter is unsupported: `720p` passes, `1080p` and `4k` fail.",
+      "evidence": "t2v probe, one variable at a time: bare = succeeded; `--resolution 720p` = succeeded; `--resolution 1080p` = failed InvalidParameter; `--resolution 4k` = failed; `--rs 4k` = failed. i2v returns the explicit message \"the parameter resolution specified in the request is not valid for model dreamina-seedance-2-5 in i2v\". Delivered frames measured 720x1280 (t2v 9:16) and 716x1284 / 860x1076 (i2v, following the first frame).",
+      "counterexamples": "An earlier note in this build claimed resolution was rejected outright on 2.5. That was WRONG — it generalised from a single 1080p failure before 720p was tested. The corrected rule is narrower: the parameter works, the ceiling is 720p.",
+      "applies_to": "api",
+      "confidence": "strong",
+      "source": "measured 2026-08-07, res_probe2"
+    },
+    "sd25:use-2-0-when-you-need-4k": {
+      "claim": "Route by resolution need, not by model recency. `dreamina-seedance-2-0-260128` accepts 720p, 1080p AND 4k, and DELIVERS 2160x3840. Send anything without people — product, landscape, yacht, deck, watch — to 2.0 for a true 4K master. Send anything with a talking person to 2.5 and accept 720p.",
+      "evidence": "Same account, same key: 2.0 with `--resolution 4k` succeeded and the file measured 2160x3840; with `--resolution 1080p` measured 1080x1920. 2.5 rejected both.",
+      "counterexamples": "2.0 cannot take the people work — see sd25:e005-is-frame-scoped-not-model-scoped for what each model can actually hold.",
+      "applies_to": "routing",
+      "confidence": "strong",
+      "source": "measured 2026-08-07, res_probe4"
+    },
+    "sd25:ratio-must-be-adaptive-with-a-first-frame": {
+      "claim": "Whenever a `first_frame` is supplied, `--ratio` MUST be `adaptive`. Any explicit ratio is a hard error. Output shape follows the frame, so check the frame's dimensions BEFORE spending.",
+      "evidence": "`--ratio 9:16` with a first frame returns InvalidParameter.TaskTypeConstraint: \"For first-frame or first-last-frame generation, the output ratio follows the first-frame image. Issues: [0] `ratio` must be `adaptive`.\" With no first frame, `--ratio 9:16` is accepted normally.",
+      "counterexamples": "none observed. Note this PROMOTES a previously silent trap: CLAUDE.md Pattern D already warned that aspect_ratio is ignored when a first frame is supplied; 2.5 turns that silence into an error, which is an improvement.",
+      "applies_to": "api",
+      "confidence": "strong",
+      "source": "measured 2026-08-06"
+    },
+    "sd25:generate-audio-defaults-true-and-will-refuse-itself": {
+      "claim": "`generate_audio` is a TOP-LEVEL body field (not a trailing --flag) and DEFAULTS TO TRUE. Left on with no audio direction, 2.5 invents a musical score and then refuses its own output for copyright — you are billed for a generation it withholds. Either set it false, or direct the audio explicitly.",
+      "evidence": "First paid run of the Muha product film: 2 of 3 clips failed with OutputAudioSensitiveContentDetected.PolicyViolation, \"the output audio may be related to copyright restrictions\". Setting generate_audio:false made the identical prompts succeed.",
+      "counterexamples": "none — the failure reproduced on both clips that carried it.",
+      "applies_to": "api",
+      "confidence": "strong",
+      "source": "measured 2026-08-06"
+    },
+    "sd25:ambient-audio-direction-passes-music-does-not": {
+      "claim": "You CAN keep native audio on: ask for location ambience explicitly and never let the model reach for a score. The working formula is a positive spec plus an explicit exclusion of the musical vocabulary: \"Audio: natural location ambience only — water and a light breeze, as recorded on location. Quiet, wide and open. No voices, no instruments, no melody, no song, no soundtrack.\"",
+      "evidence": "Four beats generated with that exact direction and generate_audio:true all returned usable stereo AAC ambience with zero copyright refusals, after two earlier undirected clips were refused.",
+      "counterexamples": "none in four attempts. Untested whether the exclusion list can be shortened — the whole block was applied as one unit.",
+      "applies_to": "audio",
+      "confidence": "moderate",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:e005-is-frame-scoped-not-model-scoped": {
+      "claim": "The Seedance refusal of photoreal humans applies to a supplied photoreal FIRST FRAME, not to the model. In TEXT-TO-VIDEO, 2.5 generates photoreal people happily, with lip-synced speech. This overturns the blanket rule in CLAUDE.md that \"1.5-pro is not a preference for people, it is the only option\" — that remains true for first-frame work and is FALSE for t2v on 2.5.",
+      "evidence": "t2v prompt for a selfie talking head returned a photoreal woman with visible pores and freckles, speaking, at 720x1280; repeated across three separate UGC generations including one 30s take. The prior E005 experiment (sieve/golden/experiments/E1-e005-whitelist) supplied a photoreal portrait as a first frame and was refused — a different call shape entirely. Independently corroborated by the recon fleet finding Higgsfield shipping UGC talking heads on Seedance.",
+      "counterexamples": "none for t2v. First-frame photoreal humans were NOT re-tested on 2.5 in this build — that gap is open and is the next experiment worth running, because it is the route to a creator holding a real product.",
+      "applies_to": "capability",
+      "confidence": "strong",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:dialogue-is-native-and-near-verbatim": {
+      "claim": "Write speech in double quotes inside the prompt and 2.5 returns it spoken and lip-synced, generated jointly with the picture rather than assembled. No avatar kit, no voice clone, no post-sync. Whisper-verified near-verbatim across every line.",
+      "evidence": "10s clip: written \"Muha is giving away a thirty-five thousand dollar Rolex / You scan the card in the Members app, and that's ten entries / I've scanned four already\" came back word for word. A 30s five-beat script returned all five beats in order at the intended timings.",
+      "counterexamples": "Wording drifts slightly on longer scripts: a written \"Check your pack\" returned as \"Take your pack\" in the 30s take. Treat long scripts as approximate and whisper-verify every take.",
+      "applies_to": "capability",
+      "confidence": "strong",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:spell-brand-names-phonetically": {
+      "claim": "Spell brand and product names PHONETICALLY in dialogue or the model will mispronounce them. Write \"MOO-ha\" for Muha. This is the same rule Pattern D already carries for acronyms on Seedance, and it extends to any coined brand word.",
+      "evidence": "Written \"Muha\" was delivered as \"MUHU\" in a 30s take, whisper-transcribed. The brand name is the single most damaging word to get wrong in a brand video.",
+      "counterexamples": "none observed — but only one spelling was tested. The phonetic fix is prescribed by analogy to the existing acronym rule and has NOT yet been verified on this model, so this law is capped at moderate until a phonetic re-roll is measured.",
+      "applies_to": "script",
+      "confidence": "moderate",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:timed-beats-drive-multi-shot-inside-one-generation": {
+      "claim": "Write timed beats as `0-4s: ... 4-10s: ...` and 2.5 executes them as distinct shots, including camera moves, inside a single generation. This is how to get a multi-shot piece without cutting — and without the identity change that separate generations cause.",
+      "evidence": "A two-beat prompt instructing her to turn the phone toward the marina and back produced exactly that move at the specified time. A five-beat 30s script produced five distinguishable beats in order.",
+      "counterexamples": "none observed at 10s or 30s. Beat boundaries are approximate, not frame-accurate — cut from the whisper transcript of the delivered take, never from the written timings.",
+      "applies_to": "prompt",
+      "confidence": "strong",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:identity-holds-across-a-single-30s-take": {
+      "claim": "One generation holds one person. A 30s single take kept face, hair, wardrobe and location stable start to finish. Separate generations RECAST the person every time, so any piece needing the same creator across multiple beats must be ONE take (or an extension of one), never a chain of fresh calls.",
+      "evidence": "Frames sampled at 0.4s, 7.5s, 15s, 22.5s and 29.5s of a 30s UGC take show the same woman, same beige top, same marina. Two separately generated UGC clips from near-identical prompts produced two different women.",
+      "counterexamples": "none observed to 30s. Beyond 30s is untested — `video_extension` is the documented route and is the open experiment.",
+      "applies_to": "capability",
+      "confidence": "strong",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:duration-accepts-up-to-30s": {
+      "claim": "`--dur` accepts at least 5, 10, 12, 15, 20 and 30 on 2.5. A 30s generation completes. This breaks the old ceiling recorded in Pattern I (1.5-pro 12s, 2.0 15s) and removes the reason that stitching machinery existed for this model.",
+      "evidence": "All five durations submitted clean in one probe; a 30s first-frame run and a 30s t2v run both completed and delivered 30.04s files.",
+      "counterexamples": "Longer renders take proportionally longer — a 30s take ran ~180s wall clock. Nothing above 30 was tested.",
+      "applies_to": "api",
+      "confidence": "strong",
+      "source": "measured 2026-08-07, dur_probe"
+    },
+    "sd25:moderation-is-per-generation-not-per-product": {
+      "claim": "Content moderation judges the RENDERED FRAME, not the subject in the abstract. The same branded product passes in one composition and is refused in another: a tightly-cropped luxury watch dominating frame was refused for copyright, while the identical watch inside a full approved poster passed. Spoken brand names pass; PROMINENTLY RENDERED branded product fails.",
+      "evidence": "OutputVideoSensitiveContentDetected.PolicyViolation on (a) a 4:5 crop centred on a Rolex Yacht-Master, and (b) a 30s UGC take carrying the real insert card as a reference_image. The same watch inside the client's full deck-lifestyle poster generated clean, twice. Dialogue containing the word \"Rolex\" passed in every clip that spoke it.",
+      "counterexamples": "One wide landscape beat was also refused with the same code and contained no branded product at all, so the trigger is not exclusively trademark — moderation has a stochastic component. Re-rolling the same input is not the fix; changing the input is.",
+      "applies_to": "moderation",
+      "confidence": "strong",
+      "source": "measured 2026-08-06/07"
+    },
+    "sd25:branded-product-belongs-in-the-clients-own-art": {
+      "claim": "Never regenerate a client's branded product or packaging. Animate the approved artwork instead (i2v, locked camera) and let the generated footage carry only unbranded action. This is both the moderation fix and the fidelity fix — the mark on screen is then pixel-exact rather than an imitation.",
+      "evidence": "Three approved Muha posters animated i2v with a locked camera kept every letter of the typography pixel-stable across start, middle and end frames (verified by cropping the type band per frame). Every attempt to regenerate the same marks was either refused or approximate.",
+      "counterexamples": "This constrains the creative: a creator cannot be generated HOLDING the real product this way. The open route is a composited first frame (Nano Banana places the real card in her hand) fed to 2.5 as first_frame — untested, and blocked on sd25:e005-is-frame-scoped-not-model-scoped's open first-frame question.",
+      "applies_to": "routing",
+      "confidence": "strong",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:realism-levers-that-measurably-worked": {
+      "claim": "For UGC realism on 2.5, specify five things positively: skin (visible pores, oil shine, freckles, faint sunburn, no beauty filter), camera behaviour (auto-exposure hunting against the sun, frame drift and re-centring), human micro-behaviour (squinting into low sun, glancing off-lens, pushing hair off the face), location audio (wind on the mic, ambience under the voice), and unflattering light (hot edge on one cheek, blown highlights behind).",
+      "evidence": "Clips carrying this block returned visible pores, freckles, sun-flush and natural hand gestures; operator-judged the strongest output of the build.",
+      "counterexamples": "Still operator-judged short of fully real, specifically on AUDIO — the voice reads cleaner than a real phone recording. Untested lever: asking for the voice to be recorded ON the phone microphone rather than describing it as close and clipped.",
+      "applies_to": "prompt",
+      "confidence": "moderate",
+      "source": "operator judgement 2026-08-07"
+    },
+    "sd25:never-name-a-device-to-describe-a-look": {
+      "claim": "Say \"shot on a phone at arm's length\" — the exact phrasing measured working — and never name a device model or say \"filmed on a screen\". Naming a device makes the model render the device.",
+      "evidence": "The arm's-length phrasing produced correct full-bleed selfie framing across four UGC generations with no device in frame. The underlying trap is CLAUDE.md golden rule 7, measured on Nano Banana, which rendered an entire scene inside a phone mockup when the device was named.",
+      "counterexamples": "none observed on 2.5 — but the rule is carried across from another model, so it is being APPLIED here rather than re-proven here.",
+      "applies_to": "prompt",
+      "confidence": "moderate",
+      "source": "measured 2026-08-07, rule inherited from golden rule 7"
+    },
+    "sd25:roles-and-task-types": {
+      "claim": "Image and media parts carry an explicit `role`: `first_frame`, `last_frame`, `reference_image`, `reference_video`, `reference_audio`. The model declares three task types: multimodal_to_video, video_editing, video_extension. Concurrency is 10 simultaneous tasks with a 600 create-task RPM.",
+      "evidence": "Roles read from ByteDance's own request examples harvested by the recon fleet and exercised for first_frame and reference_image. Task types and rate limits read from `arkcli models get dreamina-seedance-2-5`.",
+      "counterexamples": "Only first_frame and reference_image were actually exercised in this build. last_frame, reference_video, reference_audio, video_editing and video_extension are DECLARED but UNTESTED here — do not assume their input shapes.",
+      "applies_to": "api",
+      "confidence": "moderate",
+      "source": "measured + declared 2026-08-07"
+    },
+    "sd25:schema-is-not-the-contract": {
+      "claim": "Neither 2.5 nor 2.0 declares its accepted resolutions anywhere in its metadata. The only way to learn this model's real limits is to PROBE one parameter at a time and read the error text. Generic `InvalidParameter / Bad Request` tells you nothing about which parameter was wrong — isolate before concluding.",
+      "evidence": "`arkcli models get` returns no resolution field for either model. A single failed probe in this build produced a wrong blanket conclusion (\"resolution rejected on 2.5\") that a one-variable-at-a-time re-test corrected to \"720p only\".",
+      "counterexamples": "none. This restates the repo's existing Pattern D warning — \"a schema is not the contract\" — which was written about Replicate tolerating undeclared keys and holds identically here.",
+      "applies_to": "method",
+      "confidence": "strong",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:cost-shape": {
+      "claim": "Billing is token-based, not per-second. A 5s 720p generation reported 108,633 completion tokens; charge items are NV2VCompletion at 0.0107 and V2VCompletion at 0.0064 per thousand tokens. Budget by generation count, and note that a refused generation still consumed the compute.",
+      "evidence": "usage object returned on successful tasks; charge items read from `arkcli models get dreamina-seedance-2-5` pricing block.",
+      "counterexamples": "Whether a policy-refused generation is actually billed was NOT confirmed against an invoice — it is assumed from the fact that the work completed before refusal. Verify on the next statement.",
+      "applies_to": "cost",
+      "confidence": "weak",
+      "source": "measured 2026-08-07"
+    }
+  }
+}
