@@ -53,7 +53,7 @@
     "sd25:e005-is-frame-scoped-not-model-scoped": {
       "claim": "The Seedance refusal of photoreal humans applies to a supplied photoreal FIRST FRAME, not to the model. In TEXT-TO-VIDEO, 2.5 generates photoreal people happily, with lip-synced speech. This overturns the blanket rule in CLAUDE.md that \"1.5-pro is not a preference for people, it is the only option\" — that remains true for first-frame work and is FALSE for t2v on 2.5.",
       "evidence": "t2v prompt for a selfie talking head returned a photoreal woman with visible pores and freckles, speaking, at 720x1280; repeated across three separate UGC generations including one 30s take. The prior E005 experiment (sieve/golden/experiments/E1-e005-whitelist) supplied a photoreal portrait as a first frame and was refused — a different call shape entirely. Independently corroborated by the recon fleet finding Higgsfield shipping UGC talking heads on Seedance.",
-      "counterexamples": "none for t2v. First-frame photoreal humans were NOT re-tested on 2.5 in this build — that gap is open and is the next experiment worth running, because it is the route to a creator holding a real product.",
+      "counterexamples": "none for t2v. The first-frame half is now RESOLVED and is the opposite result: 2.5 refuses a photoreal human first_frame outright at submit with InputImageSensitiveContentDetected.PrivacyInformation — see sd25:first-frame-refuses-real-people. So the full rule is: GENERATE a person from text, yes; ANIMATE a supplied photo of one, no. The two halves are governed by different guards — capability on one side, a likeness protection on the other.",
       "applies_to": "capability",
       "confidence": "strong",
       "source": "measured 2026-08-07"
@@ -109,7 +109,7 @@
     "sd25:branded-product-belongs-in-the-clients-own-art": {
       "claim": "Never regenerate a client's branded product or packaging. Animate the approved artwork instead (i2v, locked camera) and let the generated footage carry only unbranded action. This is both the moderation fix and the fidelity fix — the mark on screen is then pixel-exact rather than an imitation.",
       "evidence": "Three approved Muha posters animated i2v with a locked camera kept every letter of the typography pixel-stable across start, middle and end frames (verified by cropping the type band per frame). Every attempt to regenerate the same marks was either refused or approximate.",
-      "counterexamples": "This constrains the creative: a creator cannot be generated HOLDING the real product this way. The open route is a composited first frame (Nano Banana places the real card in her hand) fed to 2.5 as first_frame — untested, and blocked on sd25:e005-is-frame-scoped-not-model-scoped's open first-frame question.",
+      "counterexamples": "The composited-first-frame route named here is now CLOSED — 2.5 refuses human first frames on privacy grounds (sd25:first-frame-refuses-real-people). The working route instead is sd25:reference-image-passes-for-own-brand-assets: generate the PERSON from text and supply the PRODUCT as a reference_image, which renders the client's own artwork faithfully in her hand.",
       "applies_to": "routing",
       "confidence": "strong",
       "source": "measured 2026-08-07"
@@ -153,6 +153,30 @@
       "applies_to": "cost",
       "confidence": "weak",
       "source": "measured 2026-08-07"
+    },
+    "sd25:first-frame-refuses-real-people": {
+      "claim": "seedance 2.5 REFUSES any first_frame that appears to contain a real person, at SUBMIT, with a PRIVACY error rather than a copyright one. The route 'compose a person holding a product in Nano Banana, then animate it in 2.5' is CLOSED. This is a deliberate likeness protection and must not be worked around.",
+      "evidence": "Submitting a frame extracted from 2.5's OWN generated human clip returned HTTP 400 InputImageSensitiveContentDetected.PrivacyInformation: \"The request failed because the input image 'content[1]' may contain real person.\" It refuses even its own output, so the guard keys on apparent humanness, not on provenance.",
+      "counterexamples": "none. This CONFIRMS the E005 first-frame rule holds on 2.5 and gives it a precise cause the 2.0 finding lacked — 2.0 returned a vague 'input or output flagged as sensitive', 2.5 names it as a privacy/likeness guard. Text-to-video humans are completely unaffected.",
+      "applies_to": "moderation",
+      "confidence": "strong",
+      "source": "measured 2026-08-08"
+    },
+    "sd25:reference-image-passes-for-own-brand-assets": {
+      "claim": "reference_image is NOT blocked for branded content in general — it is blocked for THIRD-PARTY trademarks. A client's own artwork passes and renders faithfully. This is the working route to a generated creator holding a real product: generate the PERSON from text, supply the PRODUCT as a reference_image.",
+      "evidence": "The same call shape refused when the reference carried the client's card WITH a third-party luxury watch on it (OutputVideoSensitiveContentDetected, copyright) SUCCEEDED when cropped to the card's own-brand QR side — black card, gold filigree border, gold QR with the client's M monogram. The rendered card reproduced border, monogram and code-block layout faithfully across the full 5s, held and turned in a generated creator's hand.",
+      "counterexamples": "Only one own-brand asset has been tested. Whether the pass depends on the mark being the CLIENT'S, or merely on the absence of a recognisable third-party logo, is NOT isolated — a neutral unbranded card control has not been run.",
+      "applies_to": "moderation",
+      "confidence": "moderate",
+      "source": "measured 2026-08-08"
+    },
+    "sd25:generated-codes-are-decorative-not-scannable": {
+      "claim": "A QR or barcode rendered by the model is a VISUAL APPROXIMATION and will not scan. Treat any generated code as decorative. If a working code must appear, composite the real one onto the card face in post over a deliberately reserved flat area — the exception that already permits compositing a flat logo or QR plate.",
+      "evidence": "The reference card's gold QR reproduced convincingly as a pattern — correct proportions, finder squares, centred monogram — but the module pattern is invented and shifts frame to frame.",
+      "counterexamples": "none observed; no generated code was successfully scanned.",
+      "applies_to": "production",
+      "confidence": "strong",
+      "source": "measured 2026-08-08"
     }
   }
 }
