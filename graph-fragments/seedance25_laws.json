@@ -67,12 +67,12 @@
       "source": "measured 2026-08-07"
     },
     "sd25:spell-brand-names-phonetically": {
-      "claim": "Spell brand and product names PHONETICALLY in dialogue or the model will mispronounce them. Write \"MOO-ha\" for Muha. This is the same rule Pattern D already carries for acronyms on Seedance, and it extends to any coined brand word.",
-      "evidence": "Written \"Muha\" was delivered as \"MUHU\" in a 30s take, whisper-transcribed. The brand name is the single most damaging word to get wrong in a brand video.",
-      "counterexamples": "none observed — but only one spelling was tested. The phonetic fix is prescribed by analogy to the existing acronym rule and has NOT yet been verified on this model, so this law is capped at moderate until a phonetic re-roll is measured.",
+      "claim": "Spell brand and product names PHONETICALLY in dialogue — write \"MOO-ha\", not \"Muha\". Measured A/B: the same 30s script delivered the brand as \"MUHU\" when spelled normally and correctly as \"MUHA\" when spelled phonetically, in both places it appeared. Phonetic spelling also fixed two unrelated drifts in the same take, so it appears to sharpen the whole delivery rather than just the one word.",
+      "evidence": "v1 (written \"Muha\"): whisper returned \"MUHU pack\", \"Take your pack\" (written \"Check\"), and \"10 inches\" (written \"10 entries\"). v2 (written \"MOO-ha\", everything else identical): \"MUHA pack\" in both occurrences, \"Check your pack\", \"10 entries instantly\". Two takes, same model, same script, one variable changed.",
+      "counterexamples": "none. Only one brand word has been tested, so the generalisation to all coined names is by analogy — but the mechanism (phonetic spelling drives pronunciation) is the same one Pattern D already records for acronyms.",
       "applies_to": "script",
-      "confidence": "moderate",
-      "source": "measured 2026-08-07"
+      "confidence": "strong",
+      "source": "measured A/B 2026-08-08"
     },
     "sd25:timed-beats-drive-multi-shot-inside-one-generation": {
       "claim": "Write timed beats as `0-4s: ... 4-10s: ...` and 2.5 executes them as distinct shots, including camera moves, inside a single generation. This is how to get a multi-shot piece without cutting — and without the identity change that separate generations cause.",
