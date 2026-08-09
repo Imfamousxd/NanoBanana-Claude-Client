@@ -1,0 +1,71 @@
+{
+  "campaign": "euro-summer-25k-trip",
+  "brand": "Muha_Meds",
+  "_schema": "campaign-registry/1",
+  "display_name": "Euro Summer — $25,000 Europe Summer Trip",
+
+  "prize_exact": {
+    "value": "$25,000 Europe Summer Trip",
+    "source": "Brand Context/Muha_Meds.md:299,436",
+    "status": "SOURCED",
+    "note": "Do NOT collapse this with the GTA family's '$25,000 CASH + DODGE CHALLENGER'. Same figure, different prize. This is precisely the confusion Muha_Meds.md:436 warns about."
+  },
+
+  "entry_mechanic_exact": {
+    "value": "Scan In Members App. To Redeem 10 Entries!",
+    "source": "Brand Context/Muha_Meds.md:299 — gold QR panel on the vintage-map card back",
+    "status": "SOURCED"
+  },
+  "raffle_id": {
+    "value": "Raffle/Giveaway ID: G2T6A03",
+    "source": "Brand Context/Muha_Meds.md:299",
+    "status": "SOURCED_BUT_PLACEHOLDER",
+    "note": "Same placeholder as the Mustang backs. Confirm before printing as a live identifier."
+  },
+  "supporting_strings": {
+    "value": ["Your Encrypted Raffle Entry Ticket", "No Purchase Necessary"],
+    "source": "Brand Context/Muha_Meds.md:299",
+    "status": "SOURCED"
+  },
+
+  "locked_arc": {
+    "value": "Suspense -> wanderlust -> hype is the locked video arc for the Euro Summer campaign.",
+    "source": "Brand Context/Muha_Meds.md:56",
+    "status": "SOURCED"
+  },
+
+  "assets": [
+    {
+      "path": "Brand Context/assets/Muha_Meds/Gen2x2-EuroSummer-front.png",
+      "w": 1280,
+      "h": 1600,
+      "aspect": "4:5",
+      "alpha": true,
+      "role": "product_canonical",
+      "sku": "MM-gen2x2-eurosummer",
+      "has_burned_in_type": true,
+      "ocr_read": ["GIVEAWAY", "INSIDE!", "GEN 2 x 2", "ALL-IN-ONE", "HYBRID", "MUHA", "MEDS", "SATIVA", "4000 MG", "0.141 OZ"],
+      "_ocr_note": "OCR also returned 'HA LXI MEDS', 'CANARY SLAND', 'PUNCHE', 'Diesel'/'DIES' — the small label type does not survive OCR at this size. That is the legibility ceiling, not a spelling error in the art. Use sieve/products/Muha_Meds/MM-gen2x2-eurosummer.json `locked` for what the labels MUST read.",
+      "third_party_marks": []
+    },
+    {
+      "path": "Brand Context/assets/Muha_Meds/Gen2x2-EuroSummer-angle.png",
+      "w": 1280,
+      "h": 1600,
+      "aspect": "4:5",
+      "alpha": true,
+      "role": "product_alternate",
+      "sku": "MM-gen2x2-eurosummer",
+      "has_burned_in_type": true,
+      "third_party_marks": []
+    }
+  ],
+
+  "unresolved": [
+    "Draw date, entry deadline, odds, winner selection.",
+    "Eligibility and jurisdictions.",
+    "Whether the Euro Summer device pack and the Euro Summer trip prize may appear in the same deliverable, or whether that reads as an implied purchase requirement against 'No Purchase Necessary'."
+  ],
+
+  "_blocking": "prize_exact and entry_mechanic_exact are both SOURCED. This is the most completely specified campaign in the registry."
+}

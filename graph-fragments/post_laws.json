@@ -1,0 +1,38 @@
+{
+  "_merge_note": "On merge into graph/graph.json, add \"post_laws\" to sieve-graph.mjs SECTIONS or lint silently skips it.",
+  "_source": "Synthesized 2026-08-09 from research/sd25/post/ — the M1/M1b/M2/M2b scaler-and-delivery shootout that was run before the fleet was stopped and never written up. All numbers are measured on real Seedance 2.5 output frames against ground truth (PSNR/SSIM/acutance/halo%), including a simulated platform re-encode at 4500 kbps.",
+  "post_laws": {
+    "post:conform-720-to-1080-with-lanczos-p5-never-unsharp": {
+      "claim": "Deliver 2.5's 720p output at 1080x1920 by scaling with `scale=1080:1920:flags=lanczos:param0=5` and NO sharpening, CRF 18. This is the measured best conform: PSNR 45.457 / SSIM 0.98767 against ground truth, halos 0.653%.",
+      "evidence": "M2 delivery shootout, 11 variants on real 2.5 frames. lanczos:param0=5 beat plain lanczos (45.243), spline (45.262, lowest halo 0.606%), and every sharpened variant. The legacy baseline (lanczos+unsharp=5:5:1.0) scored 39.866 PSNR with 4.119% halos — over SIX TIMES the halo artefact of the plain scaler, and acutance 1.879 vs ground truth 1.0, i.e. nearly double-sharpened.",
+      "counterexamples": "spline is statistically tied (45.262 vs 45.457) and has slightly lower halos — either is defensible; p5 chosen for the platform-survival margin (M2b). Measured on 9:16 720->1080 only; other ratios and 4K conform unmeasured.",
+      "applies_to": "post",
+      "confidence": "strong",
+      "source": "research/sd25/post/m2_results.json, 2026-08-09 synthesis"
+    },
+    "post:upscale-before-the-platform-not-after": {
+      "claim": "Upscale to 1080 BEFORE uploading rather than shipping 720p and letting the platform do it. After a simulated platform re-encode at 4500 kbps, the lanczos-p5 1080 conform holds PSNR 41.933 vs 41.498 for the 720 passthrough — the quality gain survives recompression.",
+      "evidence": "M2b platform simulation: every 1080 conform variant was re-encoded at platform bitrate and re-measured. lanczos_p5 41.933 / spline 41.869 / plain lanczos 41.790, all above the 720 passthrough at 41.498. The unsharp baseline still loses after platform (38.688, halos 4.699%).",
+      "counterexamples": "The margin is ~0.4 dB — real but modest. If a pipeline step is at risk of double-scaling (platform re-scales a non-standard size), shipping exact 1080x1920 is also the defence against that. Scope: single 8s segment measured; platform sim is ffmpeg at 4500kbps, not literally Instagram's encoder",
+      "applies_to": "post",
+      "confidence": "moderate",
+      "source": "research/sd25/post/m2b_platform.json, 2026-08-09 synthesis"
+    },
+    "post:neural-upscale-loses-to-lanczos-p5-here": {
+      "claim": "nnedi neural 2x upscale does NOT beat lanczos:param0=5 on this footage — 42.597 PSNR (aligned) vs 44.221, at 2.3x the compute (1.0s/frame vs 0.44). Do not reach for a neural upscaler by default.",
+      "evidence": "M1b: nnedi2x_down, nnedi2x_down_cas, nnedi2x_nns64 all measured, best 42.597 aligned; M1: lanczos_p5 44.221 / SSIM 0.99165 on the identical frames. nnedi also introduces a half-pixel shift that had to be aligned out before scoring.",
+      "counterexamples": "Measured on AI-generated footage whose 'detail' is synthesized to begin with — real camera footage or heavy-text frames could rank differently. Topaz-class commercial upscalers were not in the shootout.",
+      "applies_to": "post",
+      "confidence": "moderate",
+      "source": "research/sd25/post/m1b_nnedi.json vs m1_results.json, 2026-08-09 synthesis"
+    },
+    "post:sharpening-is-the-tell-not-the-fix": {
+      "claim": "Never add unsharp/CAS sharpening to generated footage in the conform. Every sharpened variant measured WORSE than its unsharpened base on PSNR and halo%, and over-sharpening (lap_ratio 1.4-1.5, acutance ~1.9) is itself a 'processed' tell — the same class of giveaway as fake grain.",
+      "evidence": "M1: BASELINE_lanczos_unsharp lap_ratio 1.401 vs target 1.0 (40% over-sharp), PSNR 38.853 vs 44.221 for lanczos_p5. M2: every unsharp/CAS variant trails its plain base; halos up to 4.1%. M2b: sharpened variants degrade FURTHER after platform re-encode (CAS 0.6 halo 2.97-4.70%).",
+      "counterexamples": "lanczos_cas0.4 (lap_ratio 0.717) is the least-bad sharpened variant if a client explicitly demands 'crisper' — but the measured answer is that crispness above 1.0 is artefact, not detail.",
+      "applies_to": "post",
+      "confidence": "strong",
+      "source": "research/sd25/post/m1_results.json + m2_results.json, 2026-08-09 synthesis"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "campaign": "golden-hour-rolex",
+  "brand": "Muha_Meds",
+  "_schema": "campaign-registry/1",
+  "display_name": "Golden Hour Edition — $35,000 Rolex Yacht-Master",
+  "_provenance_warning": "THIS CAMPAIGN IS NOT IN THE BRAND PLAYBOOK. Brand Context/Muha_Meds.md:436 lists a prize registry of exactly four campaigns (Mustang / $25,000+Challenger / $20,000 / Europe Summer Trip) under the standing warning 'never assume one unified prize'. Golden Hour appears in NONE of them, and 'golden hour' returns zero hits across all of Brand Context/. It exists as a generated card plate in a worktree inputs/ folder. It is registered here ONLY on the operator's direct confirmation 2026-08-08. Until the playbook is updated, this registry entry is the sole record and the playbook is stale on this point.",
+  "prize_exact": {
+    "value": "WIN A $35,000 ROLEX YACHT-MASTER",
+    "source": "OCR of Brand Context asset plate (see assets[0]), confidence >=0.9; confirmed by the operator 2026-08-08 as 'the right card'",
+    "status": "SOURCED_BY_OPERATOR",
+    "note": "Card art sets it in two lines: 'WIN A $35,000' / 'ROLEX YACHT-MASTER', under a 'Golden Hour Edition' script header. The spoken form is not established — '$' has no spoken form and the operator has not approved a said version."
+  },
+  "entry_mechanic_exact": {
+    "value": "you scan it in the Members app and it drops ten entries on you",
+    "status": "SOURCED_BY_OPERATOR",
+    "note": "Operator confirmed ten entries 2026-08-09, resolving the points-vs-entries conflict. SPOKEN form only — the card QR panel carries no text."
+  },
+  "third_party_marks": [
+    {
+      "mark": "Rolex Yacht-Master II",
+      "form": "rendered watch, prominent, plus the burned-in words 'ROLEX YACHT-MASTER'",
+      "consequence": "TWO separate exposures. (1) Moderation: a prominent rendered third-party mark is the measured trigger for OutputVideoSensitiveContentDetected.PolicyViolation — billed, output withheld. (2) Trademark: this is a rendered imitation, not a licensed product photograph — OCR reads the dial as 'KACHT:MASTER', i.e. synthesised type. Naming a competitor's product as a prize in a real promotion is a legal question, not a creative one.",
+      "status": "FLAGGED TO OPERATOR 2026-08-08, not resolved"
+    }
+  ],
+  "assets": [
+    {
+      "path": ".claude/worktrees/agent-a7044511e4cba5e6d/inputs/golden-hour-plates/card-clean.png",
+      "w": 1500,
+      "h": 1000,
+      "aspect": "3:2",
+      "alpha": false,
+      "role": "campaign_card",
+      "has_burned_in_type": true,
+      "ocr_read": [
+        "Golden Hour",
+        "Edition",
+        "WIN A $35,000",
+        "ROLEX YACHT-MASTER",
+        "KACHT:MASTER",
+        "5",
+        "10",
+        "10.3.0"
+      ],
+      "_ocr_note": "'KACHT:MASTER', '5', '10' and '10.3.0' are the watch dial misread — synthesised type, which is the tell that this is a generated plate rather than a product photograph.",
+      "_location_warning": "NOT in Brand Context/assets/. It lives in a worktree inputs/ folder, which is how it contaminated two agent runs and one analysis without anyone approving it. Move it into Brand Context/assets/Muha_Meds/ if it is real.",
+      "use_for": [
+        "post-production composite onto a reserved clean area of a shot (costs $0)",
+        "i2v animation with a locked camera, cut in as a separate shot"
+      ],
+      "never_use_for": [
+        "first_frame or reference_image on a shot containing a photoreal human — refused at submit for privacy regardless of the card",
+        "any generation where the Rolex is prominent, until the trademark question is answered"
+      ]
+    },
+    {
+      "path": ".claude/worktrees/agent-a7044511e4cba5e6d/inputs/golden-hour-plates/watch-hero-clean.png",
+      "role": "hero_plate",
+      "note": "Matching hero plate found alongside the card — this was built as a set. Not inspected in detail."
+    },
+    {
+      "path": ".claude/worktrees/gen-image/inputs/card-qr-side.png",
+      "w": 560,
+      "h": 960,
+      "aspect": "7:12",
+      "alpha": false,
+      "role": "card_back_qr",
+      "has_burned_in_type": false,
+      "ocr_read": [],
+      "_ocr_note": "ZERO text detected. The playbook says a v5 QR panel carries 'Your Encrypted / Raffle Entry Ticket.', 'Scan In Members App. / To Redeem 10 Entries!', a 'Raffle ID: G2T6A03' pill and 'No Purchase Necessary' (Muha_Meds.md:240). This plate carries none of them, and it names no campaign — so it cannot be attributed to Golden Hour or any other campaign on its own evidence.",
+      "third_party_marks": [],
+      "use_for": [
+        "a generic card-back beauty shot where no entry copy needs to be legible"
+      ],
+      "never_use_for": [
+        "standing in for an entry mechanic — the strings are not on it"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Whether the Rolex may be named at all — trademark, unanswered.",
+    "The spoken form of the prize, since '$35,000' has no spoken form.",
+    "Draw date, deadline, odds, eligibility, winner selection — as with every campaign, absent everywhere.",
+    "Whether the brand playbook should be updated to carry Golden Hour as a fifth campaign, or whether this is a concept that was never approved for the playbook."
+  ],
+  "_blocking": "prize_exact and entry_mechanic_exact both SOURCED_BY_OPERATOR. Rolex mark still FLAGGED: spoken passes, rendered-prominent refuses. Disclosures remain slots."
+}

@@ -1,0 +1,65 @@
+{
+  "campaign": "fruit-character-mustang",
+  "brand": "Muha_Meds",
+  "_schema": "campaign-registry/1",
+  "display_name": "Fruit-character assets — win a Ford Mustang",
+
+  "prize_exact": {
+    "value": "WIN A FORD MUSTANG",
+    "source": "Brand Context/Muha_Meds.md:436 — 'Fruit-character assets (IG + QR cards + master case) = \"WIN A FORD MUSTANG\" (black Mustang)'",
+    "status": "SOURCED"
+  },
+  "prize_detail": {
+    "value": "2026 Ford Mustang (S650), glossy piano-black on all 10 card backs. Headline set as three lines: 'WIN A / 2026 FORD / MUSTANG', all white, 3D-bevelled.",
+    "source": "Brand Context/Muha_Meds.md:240",
+    "status": "SOURCED"
+  },
+
+  "entry_mechanic_exact": {
+    "value": "Scan In Members App. / To Redeem 10 Entries!",
+    "source": "Brand Context/Muha_Meds.md:240,437 — v5 QR-panel back (FINAL)",
+    "status": "SOURCED",
+    "note": "'Redeem' has misrendered as 'Redemn' before (12_qrglow). Spell-check it on every deliverable."
+  },
+  "raffle_id": {
+    "value": "Raffle ID: G2T6A03",
+    "source": "Brand Context/Muha_Meds.md:240",
+    "status": "SOURCED_BUT_PLACEHOLDER",
+    "note": "The playbook flags this as a placeholder driven by a RAFFLE_ID env var, and the QR itself as decorative — 'swap a real scannable QR for production'. Do not print it as a live identifier without confirming."
+  },
+  "supporting_strings": {
+    "value": ["Your Encrypted / Raffle Entry Ticket.", "No Purchase Necessary"],
+    "source": "Brand Context/Muha_Meds.md:240",
+    "status": "SOURCED"
+  },
+
+  "assets": [
+    {
+      "path": "Brand Context/assets/Muha_Meds/2026-05-30T23-09-09_muha-group-truck-2x1.png",
+      "w": 2048,
+      "h": 1024,
+      "aspect": "2:1",
+      "alpha": false,
+      "role": "character_cast",
+      "has_burned_in_type": false,
+      "ocr_read": [],
+      "description": "Eleven 3D flavour-persona characters on a black pickup tailgate at sunset. Ensemble layout, character family.",
+      "third_party_marks": [
+        {
+          "mark": "pickup truck",
+          "form": "rendered vehicle, no visible badge",
+          "consequence": "Lower risk than a badged vehicle, but unverified. Do not crop tight on the grille."
+        }
+      ]
+    }
+  ],
+
+  "unresolved": [
+    "Which specific card families this UGC brief maps to — the playbook lists ensemble layouts A/B/C/D, 10 per-character solo cards, and the QR backs.",
+    "Draw date, entry deadline, odds, winner selection.",
+    "Eligibility and jurisdictions.",
+    "Whether the Mustang may be named in spoken copy, given it is a third-party mark (the moderation rule is about RENDERED marks; spoken brand names are recorded as passing — but that was measured for MUHA, not for a vehicle marque)."
+  ],
+
+  "_blocking": "prize_exact and entry_mechanic_exact are both SOURCED. Disclosures, dates and eligibility remain UNRESOLVED at brand level."
+}

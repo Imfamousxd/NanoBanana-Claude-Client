@@ -1,0 +1,82 @@
+{
+  "platform_kbps": 4500,
+  "rows": [
+    {
+      "variant": "V0_passthrough_720",
+      "acutance_after_platform": 0.808,
+      "halo_pct_after_platform": 2.265,
+      "psnr_after_platform": 41.498,
+      "ssim_after_platform": 0.97762
+    },
+    {
+      "variant": "V10_nnedi2x_down",
+      "acutance_after_platform": 0.86,
+      "halo_pct_after_platform": 2.777,
+      "psnr_after_platform": 37.808,
+      "ssim_after_platform": 0.97358
+    },
+    {
+      "variant": "V1_BASELINE_lanczos_unsharp",
+      "acutance_after_platform": 1.701,
+      "halo_pct_after_platform": 4.699,
+      "psnr_after_platform": 38.688,
+      "ssim_after_platform": 0.97653
+    },
+    {
+      "variant": "V2_lanczos",
+      "acutance_after_platform": 0.823,
+      "halo_pct_after_platform": 1.999,
+      "psnr_after_platform": 41.79,
+      "ssim_after_platform": 0.97882
+    },
+    {
+      "variant": "V3_spline",
+      "acutance_after_platform": 0.79,
+      "halo_pct_after_platform": 1.791,
+      "psnr_after_platform": 41.869,
+      "ssim_after_platform": 0.97899
+    },
+    {
+      "variant": "V4_lanczos_p5",
+      "acutance_after_platform": 0.825,
+      "halo_pct_after_platform": 1.859,
+      "psnr_after_platform": 41.933,
+      "ssim_after_platform": 0.97901
+    },
+    {
+      "variant": "V5_lanczos_p5_cas035",
+      "acutance_after_platform": 0.995,
+      "halo_pct_after_platform": 2.969,
+      "psnr_after_platform": 41.74,
+      "ssim_after_platform": 0.97949
+    },
+    {
+      "variant": "V6_lanczos_p5_cas060",
+      "acutance_after_platform": 1.11,
+      "halo_pct_after_platform": 3.316,
+      "psnr_after_platform": 41.743,
+      "ssim_after_platform": 0.97971
+    },
+    {
+      "variant": "V7_lanczos_unsharp_light",
+      "acutance_after_platform": 1.063,
+      "halo_pct_after_platform": 2.714,
+      "psnr_after_platform": 41.539,
+      "ssim_after_platform": 0.9787
+    },
+    {
+      "variant": "V8_lanczos_hqdn3d_unsharp",
+      "acutance_after_platform": 1.673,
+      "halo_pct_after_platform": 5.184,
+      "psnr_after_platform": 38.647,
+      "ssim_after_platform": 0.97521
+    },
+    {
+      "variant": "V9_hqdn3d_lanczos_p5_cas",
+      "acutance_after_platform": 0.992,
+      "halo_pct_after_platform": 5.889,
+      "psnr_after_platform": 41.113,
+      "ssim_after_platform": 0.97624
+    }
+  ]
+}

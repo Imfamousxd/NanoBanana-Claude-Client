@@ -35,20 +35,20 @@
       "source": "measured 2026-08-06"
     },
     "sd25:generate-audio-defaults-true-and-will-refuse-itself": {
-      "claim": "`generate_audio` is a TOP-LEVEL body field (not a trailing --flag) and DEFAULTS TO TRUE. Left on with no audio direction, 2.5 invents a musical score and then refuses its own output for copyright — you are billed for a generation it withholds. Either set it false, or direct the audio explicitly.",
+      "claim": "`generate_audio` is a TOP-LEVEL body field (not a trailing --flag) and DEFAULTS TO TRUE. Left on with no audio direction, 2.5 invents a musical score and then refuses its own output for copyright — you are billed for a generation it withholds. Setting it FALSE is not the general fix: false suppresses ALL audio INCLUDING DIALOGUE, so on a talking head it ships a mute clip at full price. Direct the audio instead — music-excluded for speech, ambience-only for speechless shots.",
       "evidence": "First paid run of the Muha product film: 2 of 3 clips failed with OutputAudioSensitiveContentDetected.PolicyViolation, \"the output audio may be related to copyright restrictions\". Setting generate_audio:false made the identical prompts succeed.",
       "counterexamples": "none — the failure reproduced on both clips that carried it.",
       "applies_to": "api",
       "confidence": "strong",
-      "source": "measured 2026-08-06"
+      "source": "measured 2026-08-06; false-suppresses-dialogue scope added 2026-08-08"
     },
     "sd25:ambient-audio-direction-passes-music-does-not": {
-      "claim": "You CAN keep native audio on: ask for location ambience explicitly and never let the model reach for a score. The working formula is a positive spec plus an explicit exclusion of the musical vocabulary: \"Audio: natural location ambience only — water and a light breeze, as recorded on location. Quiet, wide and open. No voices, no instruments, no melody, no song, no soundtrack.\"",
+      "claim": "SCOPE: shots with NO speech. You CAN keep native audio on: ask for location ambience explicitly and never let the model reach for a score. The working formula is a positive spec plus an explicit exclusion of the musical vocabulary: \"Audio: natural location ambience only — water and a light breeze, as recorded on location. Quiet, wide and open. No voices, no instruments, no melody, no song, no soundtrack.\" The \"No voices\" clause is what makes this an AMBIENCE-ONLY block — for a talking head drop it and use `sd25:audio-for-talking-heads-keep-it-on-exclude-music-only` instead.",
       "evidence": "Four beats generated with that exact direction and generate_audio:true all returned usable stereo AAC ambience with zero copyright refusals, after two earlier undirected clips were refused.",
-      "counterexamples": "none in four attempts. Untested whether the exclusion list can be shortened — the whole block was applied as one unit.",
+      "counterexamples": "none in four attempts. Untested whether the exclusion list can be shortened — the whole block was applied as one unit. Applying this block verbatim to a talking head ships a clip with no dialogue: the string forbids voices.",
       "applies_to": "audio",
       "confidence": "moderate",
-      "source": "measured 2026-08-07"
+      "source": "measured 2026-08-07; scoped 2026-08-08 against ext-limits.md finding 6"
     },
     "sd25:e005-is-frame-scoped-not-model-scoped": {
       "claim": "The Seedance refusal of photoreal humans applies to a supplied photoreal FIRST FRAME, not to the model. In TEXT-TO-VIDEO, 2.5 generates photoreal people happily, with lip-synced speech. This overturns the blanket rule in CLAUDE.md that \"1.5-pro is not a preference for people, it is the only option\" — that remains true for first-frame work and is FALSE for t2v on 2.5.",
@@ -177,6 +177,14 @@
       "applies_to": "production",
       "confidence": "strong",
       "source": "measured 2026-08-08"
+    },
+    "sd25:audio-for-talking-heads-keep-it-on-exclude-music-only": {
+      "claim": "For any shot where a person SPEAKS, send `generate_audio: true` and direct the audio to exclude MUSIC ONLY: \"no instruments, no melody, no song, no soundtrack\". Do NOT include \"no voices\" — that clause belongs to speechless ambience shots and on a talking head it suppresses the dialogue you are paying for. Speech and ambience pass together; it is the invented SCORE that gets refused for copyright, not the voice.",
+      "evidence": "ext-limits.md finding 6: generate_audio:true passed on ALL FOUR extension hops carrying the ambience-plus-speech direction, zero copyright refusals. Dialogue came back near-verbatim under Whisper small.en on every segment including an 82-word, 30s hop (one doubled phrase in 82 written words). Every hop delivered AAC 32 kHz stereo.",
+      "counterexamples": "Level is NOT matched across hops — speech spans 2.6 dB and the noise floor 5.2 dB over a four-hop chain, so level-match in post. Untested whether the music-exclusion list can be shortened; it was applied as one block. The 4/4 evidence is from the extension path — the same direction on a single fresh t2v call is expected to behave identically but was not separately isolated.",
+      "applies_to": "audio",
+      "confidence": "strong",
+      "source": "measured 2026-08-07/08, ext-limits.md finding 6; reconciled 2026-08-08"
     }
   }
 }

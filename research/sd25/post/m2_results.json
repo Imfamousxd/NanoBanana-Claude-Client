@@ -1,0 +1,141 @@
+{
+  "segment": [
+    8.0,
+    6.0
+  ],
+  "crf": 18,
+  "rows": [
+    {
+      "variant": "V0_passthrough_720",
+      "vf": "null",
+      "out": "720x1280",
+      "size_mb": 3.42,
+      "kbps": 4500,
+      "encode_s": 2.1,
+      "acutance": 0.925,
+      "halo_pct": 1.543,
+      "psnr_matched": 43.415,
+      "ssim_matched": 0.98283
+    },
+    {
+      "variant": "V1_BASELINE_lanczos_unsharp",
+      "vf": "scale=1080:1920:flags=lanczos,unsharp=5:5:1.0:5:5:0.0",
+      "out": "1080x1920",
+      "size_mb": 8.72,
+      "kbps": 11469,
+      "encode_s": 4.6,
+      "acutance": 1.879,
+      "halo_pct": 4.119,
+      "psnr_matched": 39.866,
+      "ssim_matched": 0.98424
+    },
+    {
+      "variant": "V2_lanczos",
+      "vf": "scale=1080:1920:flags=lanczos",
+      "out": "1080x1920",
+      "size_mb": 6.63,
+      "kbps": 8722,
+      "encode_s": 3.7,
+      "acutance": 0.871,
+      "halo_pct": 0.686,
+      "psnr_matched": 45.243,
+      "ssim_matched": 0.98753
+    },
+    {
+      "variant": "V3_spline",
+      "vf": "scale=1080:1920:flags=spline",
+      "out": "1080x1920",
+      "size_mb": 6.58,
+      "kbps": 8649,
+      "encode_s": 3.8,
+      "acutance": 0.837,
+      "halo_pct": 0.606,
+      "psnr_matched": 45.262,
+      "ssim_matched": 0.98751
+    },
+    {
+      "variant": "V4_lanczos_p5",
+      "vf": "scale=1080:1920:flags=lanczos:param0=5",
+      "out": "1080x1920",
+      "size_mb": 6.68,
+      "kbps": 8788,
+      "encode_s": 4.0,
+      "acutance": 0.886,
+      "halo_pct": 0.653,
+      "psnr_matched": 45.457,
+      "ssim_matched": 0.98767
+    },
+    {
+      "variant": "V5_lanczos_p5_cas035",
+      "vf": "scale=1080:1920:flags=lanczos:param0=5,cas=0.35",
+      "out": "1080x1920",
+      "size_mb": 7.9,
+      "kbps": 10393,
+      "encode_s": 3.7,
+      "acutance": 1.093,
+      "halo_pct": 1.923,
+      "psnr_matched": 45.026,
+      "ssim_matched": 0.98769
+    },
+    {
+      "variant": "V6_lanczos_p5_cas060",
+      "vf": "scale=1080:1920:flags=lanczos:param0=5,cas=0.6",
+      "out": "1080x1920",
+      "size_mb": 8.15,
+      "kbps": 10712,
+      "encode_s": 3.4,
+      "acutance": 1.199,
+      "halo_pct": 2.308,
+      "psnr_matched": 44.597,
+      "ssim_matched": 0.98754
+    },
+    {
+      "variant": "V7_lanczos_unsharp_light",
+      "vf": "scale=1080:1920:flags=lanczos:param0=5,unsharp=3:3:0.5:3:3:0.0",
+      "out": "1080x1920",
+      "size_mb": 7.29,
+      "kbps": 9592,
+      "encode_s": 3.0,
+      "acutance": 1.152,
+      "halo_pct": 1.463,
+      "psnr_matched": 44.718,
+      "ssim_matched": 0.98743
+    },
+    {
+      "variant": "V8_lanczos_hqdn3d_unsharp",
+      "vf": "scale=1080:1920:flags=lanczos,hqdn3d=2:1:2:3,unsharp=5:5:1.0:5:5:0.0",
+      "out": "1080x1920",
+      "size_mb": 7.69,
+      "kbps": 10107,
+      "encode_s": 4.1,
+      "acutance": 1.824,
+      "halo_pct": 4.174,
+      "psnr_matched": 39.605,
+      "ssim_matched": 0.98178
+    },
+    {
+      "variant": "V9_hqdn3d_lanczos_p5_cas",
+      "vf": "hqdn3d=1.5:1.5:4:4,scale=1080:1920:flags=lanczos:param0=5,cas=0.35",
+      "out": "1080x1920",
+      "size_mb": 7.26,
+      "kbps": 9544,
+      "encode_s": 3.6,
+      "acutance": 1.082,
+      "halo_pct": 4.716,
+      "psnr_matched": 43.484,
+      "ssim_matched": 0.98315
+    },
+    {
+      "variant": "V10_nnedi2x_down",
+      "vf": "scale=iw:2*ih:flags=neighbor,setfield=tff,nnedi=weights='/Users/Hassoonie/Desktop/CODE PROJECTS/NanoBanana-Client/.claude/worktrees/gen-image/research/sd25/post/models/nnedi3_weights.bin':field=t,transpose=1,scale=iw:2*ih:flags=neighbor,setfield=tff,nnedi=weights='/Users/Hassoonie/Desktop/CODE PROJECTS/NanoBanana-Client/.claude/worktrees/gen-image/research/sd25/post/models/nnedi3_weights.bin':field=t,transpose=2,scale=1080:1920:flags=lanczos",
+      "out": "1080x1920",
+      "size_mb": 6.93,
+      "kbps": 9112,
+      "encode_s": 6.5,
+      "acutance": 0.918,
+      "halo_pct": 1.3,
+      "psnr_matched": 38.796,
+      "ssim_matched": 0.98136
+    }
+  ]
+}

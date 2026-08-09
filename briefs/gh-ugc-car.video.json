@@ -1,0 +1,57 @@
+{
+  "_what": "Golden Hour UGC, man in his car — the piece that shipped 2026-08-09. Kept as the engine's regression brief: every field here answers an intake question (ENGINE-INTAKE.md), nothing is inherited.",
+  "id": "gh-ugc-car",
+  "brand": "Muha_Meds",
+  "campaign": "golden-hour-rolex",
+  "claims_used": ["prize_exact", "entry_mechanic_exact"],
+  "claims_signoff": "",
+  "slots": ["DISCLOSURE: No Purchase Necessary + 21+ — spoken or plated, human decides"],
+  "lane": "ugc",
+  "duration": 30,
+  "ratio": "9:16",
+  "subject": {
+    "type": "person",
+    "casting": "24-year-old Mexican-American man from Southern California, short dark hair, light stubble, plain white t-shirt, thin gold chain",
+    "props": "the Golden Hour entry card, own-brand QR side"
+  },
+  "refs": {
+    "images": [
+      {
+        "path": ".claude/worktrees/gen-image/inputs/card-qr-side.png",
+        "role": "reference_image",
+        "contains_person": false,
+        "third_party_marks": null,
+        "describe": "In his other hand he holds the small glossy card shown in reference image 1 — a black card with a gold square code and an ornate gold monogram at its centre, inside a thin gold decorative border. Reproduce that card faithfully. It is PALM-SIZED, about the size of a credit card, and he holds it up beside his cheek at a natural arm position, angled so the gold code catches the low sun. His face stays fully visible and unobstructed the whole time — the card never covers his face and never fills the frame."
+      }
+    ],
+    "audio_type": "native"
+  },
+  "scene": {
+    "look": "Vertical selfie video shot on a phone held in one hand. EXTREME CLOSE-UP: his face fills the frame edge to edge, the top of his head and hairline are cropped off the top of frame, his chin sits near the bottom, his eyes ride in the upper third. He is sitting in the driver's seat of his own car in an ordinary strip-mall parking lot, late afternoon sun coming in low through the side window and blowing out one edge of frame with a little lens flare; the headrest and the defocused parking lot are just visible past his shoulder. Visible skin pores, oil shine on his nose and forehead, faint sun-flush across his cheekbones, forehead lines when he raises his brows — no beauty filter, no skin smoothing, no colour grade. Full-bleed, fills the frame edge to edge, no border, no mockup.",
+    "camera": "He holds the phone himself so the frame bobs, drifts and re-centres; auto-exposure hunts as the light shifts. He glances out the windshield and back to the lens, shifts in his seat, talks with the hand holding the card. Casual, mid-conversation energy. One continuous unbroken take — no cuts, no cutaways, no inserts.",
+    "voice": "He speaks in a natural Southern-Californian accent at an unhurried, easy conversational pace — he takes his time, lets small pauses sit between thoughts, and does not rush. Open throat, slightly clipped consonants."
+  },
+  "script": {
+    "register": "telling a friend something he just found out",
+    "profanity": true,
+    "beats": [
+      { "t": "0-5s", "action": "Close on his face, the card still down out of frame.", "line": "Bro, the little card in your MOO-ha pack? I almost threw that shit out." },
+      { "t": "5-10s", "action": "He shakes his head, half-laughing.", "line": "Straight in the trash, didn't even flip it over." },
+      { "t": "10-14s", "action": "", "line": "Then my boy goes, bro, there's a QR code on the back." },
+      { "t": "14-18s", "action": "He lifts the card into frame beside his cheek, angling it so the gold catches the light.", "line": "This one." },
+      { "t": "18-23s", "action": "He holds the card steady beside his face.", "line": "You scan it in the Members app and it drops ten entries on you." },
+      { "t": "23-27s", "action": "He raises his eyebrows, glances at the card then back to lens.", "line": "Ten. For a thirty-five thousand dollar Rolex Yacht-Master." },
+      { "t": "27-30s", "action": "He laughs at himself and lowers the card slightly.", "line": "Off a card I almost threw away. Check your pack." }
+    ]
+  },
+  "required_tokens": ["QR code", "moo-ha", "ten entries", "Rolex Yacht-Master"],
+  "audio": {
+    "generate": true,
+    "direction": "Audio: his voice close on the phone microphone inside the car — a little cabin room tone, muffled traffic outside. No instruments, no melody, no song, no soundtrack."
+  },
+  "proof": {
+    "required": false,
+    "_why": "Shot type proven twice on 2026-08-09 (two successful 30s takes, transcript-gated). A NEW shot type or new props would flip this back to true."
+  },
+  "post": { "loudnorm": true }
+}

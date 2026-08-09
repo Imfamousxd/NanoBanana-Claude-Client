@@ -1,0 +1,36 @@
+{
+  "campaign": "euro-postcard-20k",
+  "brand": "Muha_Meds",
+  "_schema": "campaign-registry/1",
+  "display_name": "Euro big-letter postcard — win $20,000",
+
+  "prize_exact": {
+    "value": "WIN $20,000",
+    "source": "Brand Context/Muha_Meds.md:238,436,437",
+    "status": "SOURCED",
+    "note": "Write the FULL number. '$20K' is a recorded burn. v1 of this card was rejected twice over — once for saying 'MUHA MEDS' instead of 'MUHA MEMBERS', once for carrying no prize at all."
+  },
+
+  "entry_mechanic_exact": {
+    "value": null,
+    "status": "UNRESOLVED",
+    "note": "The postcard front is the big-letter treatment. The QR-panel mechanic is recorded for the Mustang and Euro Summer backs; not evidenced for this family."
+  },
+
+  "design_locks": {
+    "value": "Block letters spell 'MUHA MEMBERS' — 11 letters, each a window onto a European city: Monaco / Paris / Rome / Venice / Barcelona / Santorini / Amsterdam / London / Prague / Swiss Alps / Athens. Vintage 1950s travel-postcard treatment. A-stacked and C-banner are the approved layouts.",
+    "source": "Brand Context/Muha_Meds.md:238",
+    "status": "SOURCED"
+  },
+
+  "assets": [],
+
+  "unresolved": [
+    "No asset for this campaign is present in Brand Context/assets/Muha_Meds/ — the playbook describes it but the files live elsewhere. Locate before planning any i2v work.",
+    "Entry mechanic.",
+    "Draw date, entry deadline, odds, winner selection.",
+    "Eligibility and jurisdictions."
+  ],
+
+  "_blocking": "prize_exact is SOURCED. No asset on disk and no entry mechanic — this campaign cannot be animated from the registry as it stands."
+}
