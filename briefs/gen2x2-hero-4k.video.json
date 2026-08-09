@@ -1,0 +1,42 @@
+{
+  "_what": "Gen 2x2 magnet-mechanic hero, no people — demonstrates the 2.0 product route at 4K. Run with --draft for the 2.0-mini tier or --fast for 2.0-fast (both rates unprobed; the engine says so instead of inventing a number).",
+  "id": "gen2x2-hero-4k",
+  "brand": "Muha_Meds",
+  "campaign": "none",
+  "claims_used": [],
+  "slots": [],
+  "lane": "campaign",
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "4k",
+  "subject": {
+    "type": "product",
+    "casting": null,
+    "props": null
+  },
+  "refs": {
+    "images": [
+      {
+        "path": "Brand Context/assets/Muha_Meds/Gen2x2-EuroSummer-front.png",
+        "role": "reference_image",
+        "contains_person": false,
+        "third_party_marks": null,
+        "describe": "The device shown in reference image 1, reproduced faithfully: a small rectangular block made of TWO SEPARATE MAGNETIC HALVES. The LEFT half is matte black with a clear window of amber oil and a tropical sticker label reading 'CANARY ISLAND PUNCH'. The RIGHT half is polished gold brass with a clear window of amber oil and a red sticker label reading 'DC-10 Diesel'. The black half is ALWAYS Canary Island Punch and the gold half is ALWAYS DC-10 Diesel — never swap them. Both halves stay whole and correctly shaped in every frame."
+      }
+    ],
+    "audio_type": "file"
+  },
+  "scene": {
+    "look": "Studio product hero on a dark reflective surface. The assembled device stands upright, keyed by one warm low light from the left that catches the gold half and the amber oil windows. Slow, heavy, premium.",
+    "camera": "Locked-off camera. The two halves separate with a clean horizontal pull, hold apart for a beat so both labels read, then snap back together flush with a visible magnetic settle. No hands in frame — the halves move as if placed by magnets themselves."
+  },
+  "script": { "beats": [
+    { "t": "0-2s", "action": "Assembled device, light raking across the gold half." },
+    { "t": "2-3.5s", "action": "The halves pull apart horizontally and hold, both labels legible." },
+    { "t": "3.5-5s", "action": "They snap back flush with a small settle." }
+  ] },
+  "required_tokens": [],
+  "audio": { "generate": false },
+  "proof": { "required": false, "_why": "No hands manipulate props — the halves move alone, and the whole clip IS 5s, proof-length." },
+  "post": { "loudnorm": false }
+}

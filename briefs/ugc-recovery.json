@@ -1,0 +1,50 @@
+{
+  "name": "ugc-recovery",
+  "avatar": "Dialed_Ava",
+  "pathway": "Recovery",
+  "destination": "https://dialed-health.com/products/bpc-157-tb-500-v3?utm_source=ig&utm_medium=paid_social&utm_campaign=dh_recovery&utm_content=REC-ugc-01&dh_intent=cold&dh_variant=v3&dh_creative=REC-ugc-01",
+  "clips": [
+    {
+      "id": "REC-ugc-01",
+      "set": "a bright ordinary kitchen mid-morning, phone propped against something on the counter",
+      "beats": [
+        {
+          "t": "0-3s",
+          "say": "I rested it for six weeks. It did nothing.",
+          "do": "mid-sentence already, talking straight to the phone, slight shrug"
+        },
+        {
+          "t": "3-7s",
+          "say": "So I stopped guessing and had someone actually look at it.",
+          "do": "glances away briefly then back, small dry smile"
+        },
+        {
+          "t": "7-11s",
+          "say": "A provider set the plan. One forty four a month.",
+          "do": "relaxed nod, settles, easy half-smile at the end"
+        }
+      ]
+    },
+    {
+      "id": "REC-ugc-02",
+      "set": "sitting on the edge of a bed early morning, warm light, phone held slightly above eye level",
+      "beats": [
+        {
+          "t": "0-3s",
+          "say": "Nobody ever asked me what I had already tried.",
+          "do": "talking straight to the phone, unhurried, tired but calm"
+        },
+        {
+          "t": "3-7s",
+          "say": "The intake did. Then a provider read it before anything shipped.",
+          "do": "small headshake, faint smile"
+        },
+        {
+          "t": "7-11s",
+          "say": "That was the whole difference for me.",
+          "do": "settles, holds eye contact, stops"
+        }
+      ]
+    }
+  ]
+}

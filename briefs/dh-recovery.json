@@ -1,0 +1,16 @@
+{
+  "name": "dh-recovery-ads",
+  "brand": "Dialed_Health",
+  "backend": "nanobanana",
+  "ratio": "9:16",
+  "out": "Dialed Health Recovery",
+  "container": "vial",
+  "engineSpecs": ["motionBlur", "logoZone"],
+  "look": "Editorial, photoreal, real environment with depth and context. Real domestic or gym light, honest surfaces, a sense of place. Not a studio packshot on slate.",
+  "jobs": [
+    { "id": "R1-never-came-back", "line": "the shoulder never fully came back",
+      "scene": "A roll of white athletic tape, partly used with the loose end trailing, on a worn wooden bench in an ordinary home gym. Late afternoon light through a window. The vial stands beside it, in focus." },
+    { "id": "R2-healed-wrong", "line": "it healed. it just healed wrong.",
+      "scene": "A bone-white ceramic bowl on a kitchen counter, cleanly broken and rejoined slightly out of true so the seam does not line up, a thin gold line along the join. The vial stands behind it, softly out of focus." }
+  ]
+}

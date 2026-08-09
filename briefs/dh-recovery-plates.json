@@ -1,0 +1,23 @@
+{
+  "name": "dh-recovery-plates",
+  "brand": "Dialed_Health",
+  "backend": "nanobanana",
+  "ratio": "9:16",
+  "out": "Dialed Health Recovery",
+  "container": "vial",
+  "engineSpecs": [
+    "motionBlur",
+    "logoZone"
+  ],
+  "look": "Editorial, photoreal, real environment with depth and context. Composition is deliberately top-weighted: the subject and all detail sit in the upper two thirds. The lower third of the frame falls away into deep unlit shadow and plain uninterrupted surface with no objects, no texture detail and no highlights. Natural window light from above. Not a studio packshot on slate.",
+  "jobs": [
+    {
+      "id": "R1-never-came-back",
+      "scene": "A roll of white athletic tape, partly used with the loose end trailing, on a worn wooden bench in an ordinary home gym. Late afternoon light through a window. The vial stands beside it, in focus."
+    },
+    {
+      "id": "R2-healed-wrong",
+      "scene": "A bone-white ceramic bowl on a kitchen counter, cleanly broken and rejoined slightly out of true so the seam does not line up, a thin gold line along the join. The vial stands behind it, softly out of focus."
+    }
+  ]
+}

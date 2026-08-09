@@ -1,0 +1,169 @@
+{
+  "gt_size": [
+    720,
+    1278
+  ],
+  "lo_size": [
+    480,
+    852
+  ],
+  "n_frames": 6,
+  "gt_lapvar": [
+    66.02567291259766,
+    126.38798522949219,
+    243.3190155029297,
+    127.57624053955078,
+    32.180702209472656,
+    75.58385467529297
+  ],
+  "rows": [
+    {
+      "method": "nearest",
+      "psnr": 36.691,
+      "ssim": 0.97372,
+      "lap_ratio": 1.47,
+      "sec_per_frame": 0.26
+    },
+    {
+      "method": "bilinear",
+      "psnr": 41.347,
+      "ssim": 0.98734,
+      "lap_ratio": 0.32,
+      "sec_per_frame": 0.424
+    },
+    {
+      "method": "bicubic",
+      "psnr": 43.312,
+      "ssim": 0.99063,
+      "lap_ratio": 0.468,
+      "sec_per_frame": 0.435
+    },
+    {
+      "method": "spline",
+      "psnr": 43.865,
+      "ssim": 0.99133,
+      "lap_ratio": 0.492,
+      "sec_per_frame": 0.444
+    },
+    {
+      "method": "sinc",
+      "psnr": 43.764,
+      "ssim": 0.98994,
+      "lap_ratio": 0.592,
+      "sec_per_frame": 0.48
+    },
+    {
+      "method": "gauss",
+      "psnr": 40.498,
+      "ssim": 0.98521,
+      "lap_ratio": 0.256,
+      "sec_per_frame": 0.425
+    },
+    {
+      "method": "lanczos",
+      "psnr": 43.882,
+      "ssim": 0.99125,
+      "lap_ratio": 0.515,
+      "sec_per_frame": 0.441
+    },
+    {
+      "method": "lanczos_p2",
+      "psnr": 43.166,
+      "ssim": 0.99045,
+      "lap_ratio": 0.459,
+      "sec_per_frame": 0.433
+    },
+    {
+      "method": "lanczos_p4",
+      "psnr": 44.11,
+      "ssim": 0.99152,
+      "lap_ratio": 0.526,
+      "sec_per_frame": 0.442
+    },
+    {
+      "method": "lanczos_p5",
+      "psnr": 44.221,
+      "ssim": 0.99165,
+      "lap_ratio": 0.543,
+      "sec_per_frame": 0.445
+    },
+    {
+      "method": "BASELINE_lanczos_unsharp",
+      "psnr": 38.853,
+      "ssim": 0.97726,
+      "lap_ratio": 1.401,
+      "sec_per_frame": 0.357
+    },
+    {
+      "method": "lanczos_unsharp_light",
+      "psnr": 42.516,
+      "ssim": 0.987,
+      "lap_ratio": 0.845,
+      "sec_per_frame": 0.371
+    },
+    {
+      "method": "lanczos_cas0.4",
+      "psnr": 42.944,
+      "ssim": 0.98858,
+      "lap_ratio": 0.717,
+      "sec_per_frame": 0.448
+    },
+    {
+      "method": "lanczos_cas0.7",
+      "psnr": 42.223,
+      "ssim": 0.98673,
+      "lap_ratio": 0.863,
+      "sec_per_frame": 0.424
+    },
+    {
+      "method": "lanczos_hqdn3d_unsharp",
+      "psnr": 38.832,
+      "ssim": 0.97682,
+      "lap_ratio": 1.415,
+      "sec_per_frame": 0.355
+    },
+    {
+      "method": "hqdn3d_then_lanczos_cas",
+      "psnr": 40.324,
+      "ssim": 0.98197,
+      "lap_ratio": 0.891,
+      "sec_per_frame": 0.328
+    },
+    {
+      "method": "nnedi2x_down",
+      "error": "CalledProcessError: Command '['ffmpeg', '-v', 'error', '-y', '-i', '/Users/Hassoonie/Desktop/CODE PROJECTS/NanoBanana-Client/.claude/worktrees/gen-image/research/sd25/post/frames/lo_t1.5.png', '-vf', 'nnedi=field=af,tran"
+    },
+    {
+      "method": "nnedi2x_down_cas",
+      "error": "CalledProcessError: Command '['ffmpeg', '-v', 'error', '-y', '-i', '/Users/Hassoonie/Desktop/CODE PROJECTS/NanoBanana-Client/.claude/worktrees/gen-image/research/sd25/post/frames/lo_t1.5.png', '-vf', 'nnedi=field=af,tran"
+    },
+    {
+      "method": "SR_espcn_x2_down",
+      "psnr": 43.158,
+      "ssim": 0.98986,
+      "lap_ratio": 0.608,
+      "sec_per_frame": 0.152
+    },
+    {
+      "method": "SR_fsrcnn_x2_down",
+      "psnr": 43.188,
+      "ssim": 0.98949,
+      "lap_ratio": 0.681,
+      "sec_per_frame": 0.196
+    },
+    {
+      "method": "SR_lapsrn_x2_down",
+      "psnr": 43.14,
+      "ssim": 0.98985,
+      "lap_ratio": 0.604,
+      "sec_per_frame": 0.609
+    },
+    {
+      "method": "SR_edsr_x2_down",
+      "psnr": 44.779,
+      "ssim": 0.99178,
+      "lap_ratio": 0.541,
+      "sec_per_frame": 34.483
+    }
+  ]
+}

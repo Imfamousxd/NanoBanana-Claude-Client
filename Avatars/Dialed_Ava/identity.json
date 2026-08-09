@@ -1,0 +1,37 @@
+{
+  "name": "Dialed_Ava",
+  "status": "casting",
+  "canonical": "identity/portrait_neutral.jpg",
+  "descriptor": "Woman, 41, Southern Californian, mid-length dark hair pushed back or loosely tied, minimal or no makeup, fine lines she has not hidden, plain crew-neck tee or soft knit in neutral tones. Warm skin, natural texture, never retouched. Ordinary and specific.",
+  "voice": "Warm mid-range American female voice, unhurried, slightly dry. Talks like she is answering a friend's question rather than making a point. Never announcer-like, never bright, no upward inflection at line ends.",
+  "identityProvider": "refs",
+  "anchors": [
+    {
+      "file": "identity/portrait_neutral.jpg",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": "The face is clear and well-presented."
+    },
+    {
+      "file": "identity/portrait_smile.jpg",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": ""
+    }
+  ],
+  "approvedTakes": [],
+  "notes": [
+    "AVATAR.md: FACE NOT YET APPROVED — founder picks from candidates BEFORE ANY PAID USE.",
+    "Dialed Health's own creator — exists because every other avatar belongs to another brand."
+  ],
+  "source": "Avatars/Dialed_Ava/AVATAR.md",
+  "analyzedAt": "2026-07-28"
+}

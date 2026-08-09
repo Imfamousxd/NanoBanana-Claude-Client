@@ -1,0 +1,119 @@
+{
+  "brand": "Dialed_Moods",
+  "display_name": "Dialed Moods",
+  "program_name": null,
+  "_schema": "brand-registry/1",
+  "_why": "Same contract as Muha_Meds: every field carries a source; a field with no source is null and named in `unresolved` — never guessed. Extracted from Brand Context/Dialed_Moods.md 2026-08-09.",
+  "category": "functional beverage / dietary supplement (nootropic, adaptogen)",
+  "category_risk": [
+    {
+      "rule": "This is a DIETARY SUPPLEMENT sold on cognitive effect ('Clean Energy & Calm Focus', 'Cognition Elixir'). Every ingredient, dose, mechanism or evidence claim is structure/function-claim territory, and the engine NEVER invents or derives one. Formulation claims enter ONLY as brand-approved written copy recorded via brand-asks (SOURCED_BY_BRAND). The brand's internal R&D systems are OUT OF SCOPE for this engine by operator directive 2026-08-09 — the engine does not connect to or query them.",
+      "source": "Brand Context/Dialed_Moods.md:24-28,127-129"
+    },
+    {
+      "rule": "'Prize With Every Can' is printed on the can — an on-pack promotion. Any video that shows the can shows a prize claim, which drags in the same sweepstakes-disclosure surface as Muha's giveaways. No official rules, odds, or disclosure requirements are recorded anywhere for it.",
+      "source": "Brand Context/Dialed_Moods.md:20-22,132 (label strings); disclosure surface: unresolved"
+    },
+    {
+      "rule": "TTS pronounces 'L-Dopa' correctly only 13/25 rolls ('el duba', 'L.D.O.P.'), and respelling it measured WORSE. Any spoken line naming the L-DOPA line must be transcript-gated — Whisper must positively hear a dopa-class token or the roll fails.",
+      "source": "graph.json defect:brand-term-garble, measured 25-roll census 2026-08-05"
+    }
+  ],
+  "naming_rules": [
+    {
+      "rule": "The wordmark is gold 'DIALED' + 'MOODS' (two marks). Product line is 'Cognition Elixir'; the L-DOPA seltzer line is written 'L-Doba' in project naming. Sister brands: Dialed Health (clinical peptides), Dialed Labs (sauna/cold-plunge) — do not blend them.",
+      "source": "Brand Context/Dialed_Moods.md:11-17,132"
+    },
+    {
+      "rule": "The official logo source of truth is the Q4 Dec 2025 package: Brand Context/assets/Dialed_Moods/Dialed-Moods-Logo-Q4-Dec-2025.pdf.",
+      "source": "Brand Context/Dialed_Moods.md:134"
+    }
+  ],
+  "locked_spellings": {
+    "_note": "Exact on-can strings, from the locked Blue Glacier label and the canonical render set.",
+    "source": "Brand Context/Dialed_Moods.md:19-23,132",
+    "strings": [
+      "CLEAN ENERGY & CALM FOCUS",
+      "BLUE GLACIER",
+      "Prize With Every Can",
+      "COGNITION ELIXIR",
+      "DIETARY SUPPLEMENT",
+      "5 CALORIE - ZERO SUGAR",
+      "12 FL OZ (355 mL)"
+    ],
+    "never_write": {
+      "CALMM FOGUS / BLUE GLAGIBR": "real generation defects a VLM judge PASSED — on-can text is gated by OCR (sieve-label.py), never by model judgement",
+      "any ingredient, dose, or formulation fact without a SOURCED_BY_BRAND entry": "the engine neither invents nor derives formulation claims — they arrive from the brand in writing"
+    }
+  },
+  "locked_visual_rules": [
+    {
+      "rule": "NEVER composite the can into a scene — repeated operator rejects; always regenerate in-scene with the real can asset as reference.",
+      "source": "Dialed_Moods.md:41-43"
+    },
+    {
+      "rule": "gpt-image-2, not Nano Banana, whenever label-text legibility matters.",
+      "source": "Dialed_Moods.md:44-45"
+    },
+    {
+      "rule": "The can is the large PRIMARY subject — front-facing, foreground, tack-sharp; people/background soft behind.",
+      "source": "Dialed_Moods.md:46-49"
+    },
+    {
+      "rule": "Always pass the REAL can asset as reference, never a simplified render.",
+      "source": "Dialed_Moods.md:50-53"
+    },
+    {
+      "rule": "Label artwork pixel-faithful when animating can-reveals.",
+      "source": "Dialed_Moods.md:54-55"
+    },
+    {
+      "rule": "Lifestyle casting: early-20s, masculine, put-together — not scruffy, not preppy, not a flawless model.",
+      "source": "Dialed_Moods.md:59-61"
+    }
+  ],
+  "assets_canonical": {
+    "_note": "Official Cognition Elixir 12oz can renders — the refs for ALL can generations. SKU registry with per-can locked rules already exists at sieve/products/Dialed_Moods/.",
+    "source": "Brand Context/Dialed_Moods.md:131-134",
+    "files": [
+      "Brand Context/assets/Dialed_Moods/Blue-Glacier.png  (the locked primary ref)",
+      "Brand Context/assets/Dialed_Moods/Lychee.png",
+      "Brand Context/assets/Dialed_Moods/Sour-Watermelon.png",
+      "Brand Context/assets/Dialed_Moods/Black-Cherry-Vanilla.png",
+      "Brand Context/assets/Dialed_Moods/Lemonade.png",
+      "Brand Context/assets/Dialed_Moods/Dialed-Moods-Logo-Q4-Dec-2025.pdf"
+    ]
+  },
+  "mandatory_disclosures": {
+    "status": "UNRESOLVED — NOT LEGALLY CLEARED",
+    "known": [],
+    "_warning": "Nothing is recorded. Two separate surfaces need counsel: (1) supplement marketing — whether spoken/shown cognitive-effect claims require the FDA structure/function disclaimer in video ads; (2) the on-can 'Prize With Every Can' promotion — official rules, odds, eligibility, No-Purchase-Necessary requirements, none recorded anywhere.",
+    "unresolved": [
+      "Does video/social copy repeating 'Clean Energy & Calm Focus' or 'Cognition Elixir' effects require the FDA structure/function disclaimer, and in what form (spoken, plated, caption)?",
+      "'Prize With Every Can': official rules text, odds, eligibility, NPN requirement, and where rules must be linked.",
+      "Age gating or platform policy constraints for supplement advertising, per platform.",
+      "Whether any ingredient may be NAMED in ad copy at all without triggering claim substantiation (e.g. L-DOPA)."
+    ]
+  },
+  "campaign_alias_warnings": [],
+  "standing_warning": {
+    "text": "Formulation facts are never invented and never derived by this engine. A script that states an ingredient, dose, mechanism or evidence claim without a SOURCED_BY_BRAND registry entry is fabrication — the supplement version of the invented Rolex. Get the sentence from the brand in writing, record it, then say exactly that.",
+    "source": "operator directive 2026-08-09; Brand Context/Dialed_Moods.md:24-28 (never invent)"
+  },
+  "copy_policy": {
+    "may_draft": "YES — visual briefs, can-reveal motion, and lifestyle scripts that carry NO formulation or effect claims can draft freely. Scripts naming effects may quote ONLY the exact on-can strings (they are already printed claims); anything beyond them requires brand-approved written copy recorded via brand-asks.",
+    "must_not_state": "Ingredient names, doses, mechanisms, evidence tiers, or health outcomes without a SOURCED_BY_BRAND registry entry; prize-promotion mechanics (nothing is sourced); comparative or medical claims of any kind.",
+    "unfilled_slots": "Use {{SLOT: ...}} (double-BRACE) for the FDA disclaimer and any promotion mechanics until counsel answers.",
+    "status_of_any_draft": "DRAFT — NOT FOR SUBMIT until a human initials the claims list."
+  },
+  "unresolved": [
+    "No video/UGC house style measured for this brand — house_laws is Muha-only. Run sieve-corpus.py over Dialed Moods finished work before writing scripts to a band.",
+    "No campaign is registered. 'Prize With Every Can' behaves like a standing campaign and probably deserves a campaign file once its rules exist.",
+    "No brand-approved formulation/effect copy is recorded yet — until some is, scripts may quote only the exact on-can strings."
+  ],
+  "sources": [
+    "Brand Context/Dialed_Moods.md (read in full 2026-08-09)",
+    "sieve/products/Dialed_Moods/*.json (5 SKUs, locked per-can rules)",
+    "graph/graph.json defect:brand-term-garble (L-Dopa pronunciation census)"
+  ]
+}

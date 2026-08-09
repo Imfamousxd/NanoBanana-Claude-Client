@@ -1,0 +1,15 @@
+{
+  "sku": "DH-capsule",
+  "brand": "Dialed_Health",
+  "aliases": [
+    "capsule",
+    "pill bottle",
+    "capsules"
+  ],
+  "canonical": "Brand Context/assets/Dialed_Health/2026-04-17T21-19-49_Edit_the_reference_image_of_the_Dialed_H.jpg",
+  "geometry": "clear glass pill bottle, brushed silver screw cap, filled with white capsules",
+  "source": "Brand Context/Dialed_Health.md:39-41",
+  "locked": [
+    "Container SHAPE ref is `Capsule Example.png`; the vial shot is the LABEL/SCENE style ref"
+  ]
+}

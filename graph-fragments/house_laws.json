@@ -1,0 +1,104 @@
+{
+  "_merge_note": "On merge into graph/graph.json, the section name \"house_laws\" MUST also be added to sieve-graph.mjs SECTIONS or lint silently skips it — the defect that already hides ugc_laws and operator_verdicts.",
+  "_source": "MEASURED 2026-08-08 by sieve-corpus.py over ~/Desktop/MUHA-ALL-VIDEOS/01_FINISHED (21 clips, 6 carrying speech). Deterministic throughout: ffprobe dimensions, ffmpeg scene-detect for shot rhythm, EBU R128 for loudness, faster-whisper small.en for the spoken script. No model judged anything. Raw table at sieve/corpus/house-measurements.json.",
+  "_why_this_bank_exists": "ugc_laws (57) was derived from 29 videos found on the internet — what works for other people. This bank is what the OPERATOR APPROVED AND SHIPPED. Where the two disagree, this one wins, because it is the client's own house style rather than a population average. Two of the laws below record exactly such a conflict.",
+  "_sample_warning": "n=3 clips per lane for the measured laws; the four FRAMING laws are n=1 video (three sampled frames of UGC-EXPLAINER-v2). Every law here is weak or moderate. None is strong. 01_FINISHED is 21 of 214 videos and only one has been watched.",
+  "house_laws": {
+    "house:ugc-lane-is-one-unbroken-take": {
+      "claim": "House UGC is a SINGLE TAKE. No cutaways, no b-roll inserts — one person, one continuous shot, their own hands doing the work.",
+      "evidence": "3 of 3 speech-carrying UGC deliverables are 1 shot: UGC-EXPLAINER-v2-30s_9x16 (30.0s, 1 shot), _talking-take-only-30s (30.1s, 1 shot), ugc-01-selfie-marina (10.1s, 1 shot). The v1 of that explainer ran SEVEN shots and was superseded by the single-take v2 — the direction of the revision is the signal.",
+      "counterexamples": "The campaign lane is the opposite and must not be conflated — see house:campaign-lane-cuts-every-4-3s. n=3.",
+      "applies_to": "edit",
+      "confidence": "moderate",
+      "source": "sieve-corpus.py scene-detect, 2026-08-08"
+    },
+    "house:campaign-lane-cuts-every-4-3s": {
+      "claim": "The campaign/announce lane is multi-shot at roughly a 4.3s average shot length — GOLDEN-HOUR-ANNOUNCE runs 7 shots across 29.9s. A brief is in one lane or the other and the rhythms do not mix.",
+      "evidence": "GOLDEN-HOUR-ANNOUNCE_9x16 and _4x5: 7 shots, avg 4.27s. UGC-EXPLAINER-30s (v1): 7 shots, avg 4.29s — and that one was REVISED into a single take, which is why v1 sits in the campaign band and v2 does not.",
+      "counterexamples": "n=3, and two of the three are the same piece in two ratios, so this is effectively n=2.",
+      "applies_to": "edit",
+      "confidence": "weak",
+      "source": "sieve-corpus.py scene-detect, 2026-08-08"
+    },
+    "house:duration-ladder-is-5-10-30": {
+      "claim": "Shipped durations are 5s, 10s and 30s. There is no 20s deliverable in the finished corpus. Pick a rung on the ladder rather than an arbitrary length.",
+      "evidence": "21 finished clips: 5.04s x13, 10.08s, 29.92s x2, 30.0s, 30.04s, 30.08s, 30.25s. Zero at 15s or 20s in 01_FINISHED.",
+      "counterexamples": "03_ugc_and_generated carries 15s pieces (edu-01, edu-02), so 15 exists upstream of FINISHED. 20s does not appear anywhere.",
+      "applies_to": "structure",
+      "confidence": "moderate",
+      "source": "sieve-corpus.py ffprobe, 2026-08-08"
+    },
+    "house:ugc-articulation-is-slower-than-the-generic-law": {
+      "claim": "CONFLICT WITH ugc_laws. House UGC articulates at 2.18-3.1 w/s, median 2.3. `ugc:word-budget-3-2-words-per-second` prescribes a 3.1-3.8 band. The approved UGC-EXPLAINER-v2 runs 2.18 w/s — BELOW the generic law's floor, so that law would have failed the operator's own approved piece. Write to the house band.",
+      "evidence": "Single-take lane measured in-speech (whisper segment durations, not wall clock): UGC-EXPLAINER-v2 2.18 w/s over 61 words; ugc-01-selfie-marina 2.3 w/s over 23 words; _talking-take-only-30s 3.1 w/s over 76 words. Campaign lane sits higher at 3.0-3.14.",
+      "counterexamples": "n=3 and the spread is wide (2.18-3.1). The campaign lane genuinely does sit near the generic band, so the conflict is scoped to the SINGLE-TAKE UGC lane, not to all house work.",
+      "applies_to": "voice",
+      "confidence": "moderate",
+      "source": "sieve-corpus.py faster-whisper small.en, 2026-08-08"
+    },
+    "house:hook-lands-later-than-the-generic-law": {
+      "claim": "CONFLICT WITH ugc_laws. The first spoken segment ends at 4.4-6.0s in house UGC (median 5.14s). `ugc:hook-3-to-14-words-complete-by-3s` requires the hook complete inside 3.6s. No approved house UGC piece does that.",
+      "evidence": "Single-take lane first-segment end times: 4.4s, 5.14s, 6.0s. Campaign lane is earlier at 3.76s, still outside 3.6s. Hook word counts 7-16, which IS inside the generic 3-14 range at the top end.",
+      "counterexamples": "Whisper segments the audio, so a 'segment' is not exactly a sentence — a long first segment may contain two sentences and overstate the hook. Verify against the transcript text before treating this as settled. n=3.",
+      "applies_to": "script",
+      "confidence": "weak",
+      "source": "sieve-corpus.py faster-whisper segment boundaries, 2026-08-08"
+    },
+    "house:ugc-ships-9x16-only": {
+      "claim": "Every speech-carrying UGC deliverable is 9:16. The 4:5 ratio appears only in the campaign/announce lane and on silent b-roll.",
+      "evidence": "All 3 single-take speech clips are 9:16. GOLDEN-HOUR-ANNOUNCE ships in both 4:5 and 9:16; the silent b-roll (afterglow, terrace, the-scan, wrist) is 4:5.",
+      "counterexamples": "n=3.",
+      "applies_to": "framing",
+      "confidence": "moderate",
+      "source": "sieve-corpus.py ffprobe, 2026-08-08"
+    },
+    "house:broll-is-24db-quieter-than-dialogue-level-it-before-cutting": {
+      "claim": "The finished corpus spans 24.5 dB of integrated loudness. Dialogue pieces sit at -16 to -21 LUFS; the cinematic b-roll (afterglow, terrace, the-scan, wrist) sits at -35 to -40. Cutting b-roll against a talking take without levelling drops the audio floor out.",
+      "evidence": "Measured EBU R128 integrated: UGC-EXPLAINER-v2 -16.1, _talking-take-only -16.5, ANNOUNCE -17.5, ugc-01-selfie-marina -20.0, card-in-hand -21.5 | afterglow -40.1, terrace -40.6, wrist -38.5, the-scan -35.8.",
+      "counterexamples": "The quiet four are ambience-only pieces with no speech, so a low integrated figure is partly expected — but 24.5 dB is far beyond a normal music-bed offset and they are not loudness-matched to each other either (35.8 to 40.6).",
+      "applies_to": "audio",
+      "confidence": "moderate",
+      "source": "sieve-corpus.py ebur128, 2026-08-08"
+    },
+    "house:four-finished-b-roll-clips-shipped-off-ratio": {
+      "claim": "afterglow, terrace, the-scan and wrist all delivered at 860x1076 — neither 9:16 nor 4:5. That is the shape-follows-the-first-frame law showing up as damage in FINISHED work: they were animated from a non-vertical frame and the ratio carried through to delivery.",
+      "evidence": "ffprobe: 860x1076 on all four (ratio 0.799, nominally 4:5 but at a non-standard pixel size). Every other finished deliverable is 1080x1920, 1080x1350 or 720x1280.",
+      "counterexamples": "0.799 is arithmetically 4:5, so these are not misframed — they are off-SIZE. Whether that mattered to delivery is an operator question, not a measured defect.",
+      "applies_to": "framing",
+      "confidence": "moderate",
+      "source": "sieve-corpus.py ffprobe, 2026-08-08"
+    },
+    "house:ugc-framing-is-face-fills-frame-cropped-at-the-hairline": {
+      "claim": "House UGC framing is EXTREME close-up, not a medium selfie. The face fills the frame edge to edge, the forehead/hairline is cropped off the top, the chin sits near the bottom, and the eyes ride in the upper third. Shoulders are bare at the very bottom corners. Anything wider reads as a different format.",
+      "evidence": "Frames sampled at 0s, 10s and 25s from UGC-EXPLAINER-v2-30s_9x16 (the approved single-take piece): in all three the head is cropped at the hairline and the face spans the full 480px sample width. Background is a defocused marina — masts, water, low sun — with visible lens flare where the sun clips the edge.",
+      "counterexamples": "n=1 video, 3 frames. This is the approved explainer only; card-in-hand and ugc-01-selfie-marina were not frame-sampled.",
+      "applies_to": "framing",
+      "confidence": "weak",
+      "source": "frame extraction + visual read of UGC-EXPLAINER-v2, 2026-08-08"
+    },
+    "house:card-is-held-beside-the-cheek-never-over-the-face": {
+      "claim": "The card enters from the lower left and is held between thumb and fingers BESIDE the cheek at face height, occupying roughly the left third of frame (~40% of frame width). The face stays fully visible throughout — the card never crosses it. Show the OWN-BRAND QR side, not the prize face.",
+      "evidence": "Frame at ~10s of UGC-EXPLAINER-v2: black card with gold filigree border and gold QR bearing the Muha M, tilted slightly, held at cheek height on the left while both eyes and the mouth remain unobscured. gh-explainer-v2.mjs's own header records this as a deliberate fix: 'The card-in-hand test put the card over her face. It is now specified as palm-sized, held beside her cheek, with her face fully visible.'",
+      "counterexamples": "n=1. The small vertical type along the card's edge garbles at this size — legible-looking nonsense — so this framing proves the QR panel, not the fine print.",
+      "applies_to": "framing",
+      "confidence": "moderate",
+      "source": "frame extraction, corroborated by gh-explainer-v2.mjs header, 2026-08-08"
+    },
+    "house:skin-carries-the-realism-not-the-grade": {
+      "claim": "The approved look is unflattering and specific: heavy freckling, sun-flush across the cheeks and nose, visible pores, oil shine on the nose and forehead, forehead lines when she raises her brows, blown highlights where the low sun clips one side. Hair pulled back with flyaway strands moving in wind. No beauty filter, no smoothing, no colour grade.",
+      "evidence": "All three sampled frames of UGC-EXPLAINER-v2. The sun sits behind and beside her, blowing out the right edge and throwing flare into the lens; the shadow side of the face keeps full texture rather than lifting.",
+      "counterexamples": "n=1, and this is a generated clip — so it records what the operator APPROVED as realistic, not what a camera did.",
+      "applies_to": "framing",
+      "confidence": "weak",
+      "source": "frame extraction, UGC-EXPLAINER-v2, 2026-08-08"
+    },
+    "house:no-on-screen-text-in-the-ugc-lane": {
+      "claim": "House UGC carries NO burned-in captions, no on-screen text and no logo bug. The only readable brand surface is the card in hand.",
+      "evidence": "No text in any sampled frame of UGC-EXPLAINER-v2. gh-generate.mjs's UGC prompts end with the explicit line 'No on-screen text, no captions, no brand logos anywhere.'",
+      "counterexamples": "Scoped to the UGC lane. The campaign/announce lane was not checked for this and may differ.",
+      "applies_to": "captions",
+      "confidence": "moderate",
+      "source": "frame extraction + gh-generate.mjs prompt text, 2026-08-08"
+    }
+  }
+}

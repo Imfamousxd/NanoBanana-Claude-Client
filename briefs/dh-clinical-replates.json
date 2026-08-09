@@ -1,0 +1,27 @@
+{
+  "name": "dh-clinical-replates",
+  "brand": "Dialed_Health",
+  "backend": "nanobanana",
+  "ratio": "9:16",
+  "out": "Dialed Health Recovery",
+  "container": "vial",
+  "engineSpecs": [
+    "motionBlur",
+    "safety"
+  ],
+  "look": "Documentary, monochrome, real place, real light. Composition top-weighted: subject in the upper two thirds, lower third falls into deep unlit shadow and plain surface with no detail. Cinestill 35mm grain and halation. Nothing tack-sharp.",
+  "jobs": [
+    {
+      "id": "REC-v2-clinical",
+      "scene": "A clinician's gloved hand holding a small glass vial up to window light to read it, seen close and from the side. Only the hand and the vial, the room falling away behind. The gesture of checking, not of using."
+    },
+    {
+      "id": "ENE-v2-clinical",
+      "scene": "A single small glass vial standing alone at the centre of a wide empty stainless steel counter, lit hard from one side so it casts one long shadow. Nothing else anywhere in the frame. Isolation as the subject."
+    },
+    {
+      "id": "PER-v2-clinical",
+      "scene": "Three small glass vials in a precise row on a clean pale surface, shot straight on at label height, with a gloved hand reaching in and lifting the middle one out. The choosing is the action."
+    }
+  ]
+}

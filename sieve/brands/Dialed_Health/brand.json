@@ -1,0 +1,120 @@
+{
+  "brand": "Dialed_Health",
+  "display_name": "Dialed Health",
+  "program_name": null,
+  "_schema": "brand-registry/1",
+  "_why": "Same contract as Muha_Meds: every field carries a source; a field with no source is null and named in `unresolved`. Extracted from Brand Context/Dialed_Health.md 2026-08-09. NOTE: this is the most claims-sensitive brand in the portfolio — more than the cannabis one.",
+
+  "category": "clinical peptides / GLP-1 / research compounds + at-home blood-test kit",
+  "category_risk": [
+    {
+      "rule": "The catalog is Semaglutide + B12, Tirzepatide, 5-Amino-1MQ, Apomorphine and other research peptides — GLP-1 and prescription-adjacent territory. NO approved claims language exists anywhere in the playbook: not one sentence about what these products may be said to DO. Until the brand supplies approved claims, video copy about effects, outcomes, dosing or comparisons is categorically off-limits — visuals-only content is the safe lane.",
+      "source": "Brand Context/Dialed_Health.md:11-21 (catalog); absence of claims language: the whole document"
+    },
+    {
+      "rule": "Labels carry NO dosing line and no extra text — logo + product name only, locked since the first vial generation. This is also a content rule: never render or speak a dose.",
+      "source": "Brand Context/Dialed_Health.md:43-45,56-57"
+    },
+    {
+      "rule": "The blood-test kit is a specimen-collection product with a 26-step approved instruction set. Instructional content must reuse the Approved/01-26 set, not re-derive medical steps. The DH specimen bag carries logo + QR and deliberately NO biohazard symbol.",
+      "source": "Brand Context/Dialed_Health.md:143-158, step 17"
+    },
+    {
+      "rule": "Platform policy for GLP-1/peptide advertising is unknown — whether this category can run paid distribution AT ALL is an open question, same class as the unanswered cannabis-category question on Muha.",
+      "source": "unresolved — no measurement, no counsel record"
+    }
+  ],
+
+  "naming_rules": [
+    {
+      "rule": "The logo layout is LOCKED and models get it wrong: 'DIALED' top-LEFT on the horizontal line, EKG spike mid-line, 'HEALTH' bottom-RIGHT under the line — offset DIAGONALLY, never centered/stacked. Early instruction graphics were REDONE over this. Pass Product Refs/Dialed Health_Logo_Updated-02.png whenever DH branding must appear.",
+      "source": "Brand Context/Dialed_Health.md:16-19,51-54"
+    },
+    {
+      "rule": "Sister brands: Dialed Moods (canned nootropic beverages), Dialed Labs (sauna/cold-plunge). Do not blend the three.",
+      "source": "Brand Context/Dialed_Health.md:12-14"
+    },
+    {
+      "rule": "Container shorthand is a contract: 'Vial' = glass injectable vial, black rubber cap + gold band; 'Oral Drop' = frosted dropper bottle; 'Capsule' = clear pill bottle, brushed silver cap. Each maps to a specific reference set in the SKU registry.",
+      "source": "Brand Context/Dialed_Health.md:29-41; sieve/products/Dialed_Health/"
+    }
+  ],
+
+  "locked_spellings": {
+    "_note": "gpt-image-2 sets the DIALED/HEALTH ECG lockup accurately (verified 4/4 consecutive, 2026-07-27) — it may render the whole creative. Nano Banana garbles it; composite-after for NB only.",
+    "source": "CLAUDE.md golden rule 5 (dh-gpt-creatives.mjs verification); Dialed_Health.md:16-19",
+    "strings": [
+      "DIALED",
+      "HEALTH",
+      "Semaglutide + B12",
+      "Tirzepatide",
+      "5-Amino-1MQ",
+      "Bacteriostatic Water"
+    ],
+    "never_write": {
+      "any dosing line on a label": "labels are logo + product name ONLY — locked",
+      "a centered/stacked DIALED HEALTH lockup": "the layout is offset-diagonal; centered lockups have forced redos",
+      "a biohazard symbol on the specimen bag": "the approved bag carries logo + QR only (instruction step 17)"
+    }
+  },
+
+  "locked_visual_rules": [
+    { "rule": "Never composite/paste product renders into scenes — regenerate in-scene with references.", "source": "Dialed_Health.md:58-59" },
+    { "rule": "Label artwork is sacred in lifestyle shots: exact from the approved studio reference, RE-LIT to the scene, never new text.", "source": "Dialed_Health.md:60-61,177-188" },
+    { "rule": "Vial upright and vertical in hand-held shots — tilt wrecks label fidelity. Realistic scale: ~2/3 the length of an index finger; oversized vials rejected.", "source": "Dialed_Health.md:62-64" },
+    { "rule": "Motion blur is CAMERA-IN-MOTION full-frame blur (subtle pan, Dutch tilt 5-8°, ~1/30s feel, 'NOTHING is rigorously tack-sharp') — never limb-localized sprinkle on a static pose.", "source": "Dialed_Health.md:65-72,242-250" },
+    { "rule": "Approved originals are style/scene anchors — copy, never move; moving them breaks the reference chain.", "source": "Dialed_Health.md:73-74" },
+    { "rule": "Lifestyle sets are a locked 6-variant spec (man/woman × gym/track/kitchen): top-down POV, ONE hand, pinch grip, 5:4, 4K. Semaglutide + B12 is the approved composition anchor.", "source": "Dialed_Health.md:123-141" }
+  ],
+
+  "assets_canonical": {
+    "_note": "Approved gallery + refs; the design system is the one brand with a machine-readable one.",
+    "source": "Brand Context/Dialed_Health.md:78-110",
+    "files": [
+      "Brand Context/Dialed_Health_DesignSystem.html  (palette/type/radii — the ONLY DesignSystem file in the portfolio)",
+      "DH Shots/<Container>/<Product>.jpg  (approved studio shots — label anchors)",
+      "DH Shots/Vials Lifestyle/<Product>/  (approved 6-file lifestyle sets)",
+      "DIaled Health Instruction Graphics/Approved/01.png-26.png  (complete instruction set; folder typo is real)",
+      "Product Refs/Dialed Health_Logo_Updated-02.png  (pristine lockup ref)"
+    ]
+  },
+
+  "mandatory_disclosures": {
+    "status": "UNRESOLVED — NOT LEGALLY CLEARED",
+    "known": [],
+    "_warning": "Nothing is recorded, and for THIS brand the gap is the widest: GLP-1/peptide products sit near prescription-drug marketing rules. No claims language, no disclaimers, no research-use-only framing decision exists in writing.",
+    "unresolved": [
+      "Per product: is it marketed as research-use-only, a supplement, or something else — and what disclaimer does that status require on video?",
+      "May product NAMES (Semaglutide, Tirzepatide) be spoken in promotional video at all, or shown-label-only?",
+      "Does the blood-test kit content require any regulatory statement (specimen collection, results interpretation)?",
+      "Platform ad policy: can this category run paid distribution anywhere, and under what restrictions?"
+    ]
+  },
+
+  "campaign_alias_warnings": [],
+
+  "standing_warning": {
+    "text": "There is no approved claims language for any Dialed Health product. A script that says what a compound DOES is fabricating medical claims — the highest-severity version of the invented-Rolex failure. Until the brand supplies approved language in writing, DH video is visuals, brand, and instruction-set content only.",
+    "source": "absence of claims language across Brand Context/Dialed_Health.md, checked 2026-08-09"
+  },
+
+  "copy_policy": {
+    "may_draft": "YES — for visuals-only content: studio/lifestyle shots per the locked specs, instruction-set derivatives, brand films with no effect claims. Product NAMES on labels are fine (they are the label). Spoken effect/outcome/dosing claims: NO drafting, not even with slots — there is no sourced floor to stand on.",
+    "must_not_state": "What any compound does, doses, protocols, outcomes, comparisons, safety claims — nothing of this class exists in a sourced form.",
+    "unfilled_slots": "Use {{SLOT: ...}} (double-BRACE) only for disclosures on otherwise claim-free content.",
+    "status_of_any_draft": "DRAFT — NOT FOR SUBMIT until a human initials the claims list."
+  },
+
+  "unresolved": [
+    "No video/UGC house style measured for this brand — house_laws is Muha-only; run sieve-corpus.py over DH finished work first.",
+    "No campaign is registered (catalog work, lifestyle sets and the instruction set are standing programs, not campaigns).",
+    "Whether the Rythm device rebrand implies any third-party-mark constraints is unrecorded."
+  ],
+
+  "sources": [
+    "Brand Context/Dialed_Health.md (read in full 2026-08-09)",
+    "Brand Context/Dialed_Health_DesignSystem.html (existence noted; not re-parsed today)",
+    "sieve/products/Dialed_Health/*.json (3 SKUs)",
+    "CLAUDE.md golden rule 5 (gpt-image-2 renders the DH lockup accurately, verified 2026-07-27)"
+  ]
+}

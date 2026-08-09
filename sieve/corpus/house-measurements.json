@@ -1,0 +1,405 @@
+[
+ {
+  "file": "01-wide.mp4",
+  "duration_s": 5.04,
+  "w": 1080,
+  "h": 1920,
+  "ratio": "9:16",
+  "has_audio": false,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.04,
+  "loudness_lufs": null
+ },
+ {
+  "file": "01_hero_9x16.mp4",
+  "duration_s": 5.04,
+  "w": 1080,
+  "h": 1920,
+  "ratio": "9:16",
+  "has_audio": false,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.04,
+  "loudness_lufs": null
+ },
+ {
+  "file": "01_hero_some-hours-are-worth-35k.mp4",
+  "duration_s": 5.04,
+  "w": 1080,
+  "h": 1350,
+  "ratio": "4:5",
+  "has_audio": false,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.04,
+  "loudness_lufs": null
+ },
+ {
+  "file": "02-hero.mp4",
+  "duration_s": 5.04,
+  "w": 1080,
+  "h": 1920,
+  "ratio": "9:16",
+  "has_audio": false,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.04,
+  "loudness_lufs": null
+ },
+ {
+  "file": "02_mechanic_9x16.mp4",
+  "duration_s": 5.04,
+  "w": 1080,
+  "h": 1920,
+  "ratio": "9:16",
+  "has_audio": false,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.04,
+  "loudness_lufs": null
+ },
+ {
+  "file": "02_mechanic_scan-redeem-set-sail.mp4",
+  "duration_s": 5.04,
+  "w": 1080,
+  "h": 1350,
+  "ratio": "4:5",
+  "has_audio": false,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.04,
+  "loudness_lufs": null
+ },
+ {
+  "file": "03-close.mp4",
+  "duration_s": 5.04,
+  "w": 1080,
+  "h": 1920,
+  "ratio": "9:16",
+  "has_audio": false,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.04,
+  "loudness_lufs": null
+ },
+ {
+  "file": "03_brand_9x16.mp4",
+  "duration_s": 5.04,
+  "w": 1080,
+  "h": 1920,
+  "ratio": "9:16",
+  "has_audio": false,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.04,
+  "loudness_lufs": null
+ },
+ {
+  "file": "03_brand_golden-hour-yacht-club.mp4",
+  "duration_s": 5.04,
+  "w": 1080,
+  "h": 1350,
+  "ratio": "4:5",
+  "has_audio": false,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.04,
+  "loudness_lufs": null
+ },
+ {
+  "file": "GOLDEN-HOUR-30s_4x5.mp4",
+  "duration_s": 30.25,
+  "w": 1080,
+  "h": 1350,
+  "ratio": "4:5",
+  "has_audio": false,
+  "cuts": [
+   5.04,
+   15.12,
+   20.17,
+   25.21
+  ],
+  "shot_count": 5,
+  "avg_shot_s": 6.05,
+  "loudness_lufs": null
+ },
+ {
+  "file": "GOLDEN-HOUR-ANNOUNCE_4x5.mp4",
+  "duration_s": 29.92,
+  "w": 1080,
+  "h": 1350,
+  "ratio": "4:5",
+  "has_audio": true,
+  "cuts": [
+   4.21,
+   9.88,
+   13.71,
+   18.62,
+   20.33,
+   22.96
+  ],
+  "shot_count": 7,
+  "avg_shot_s": 4.27,
+  "loudness_lufs": -17.5,
+  "speech": {
+   "text": "Okay, MUHA is giving away a $35,000 Rolex an Actual yacht master the real thing not a gift card not a discount the watch and here's the part that gets me Getting in takes about two seconds you find the insert card in your MUHA members pack you scan it in the app That's it ten entries Instantly and every single card you scan is ten more golden hour edition members only go scan yours",
+   "words": 75,
+   "speaking_s": 25.0,
+   "articulation_wps": 3.0,
+   "hook_end_s": 3.76,
+   "hook_words": 9,
+   "tail_words": 18,
+   "pauses_over_300ms": [
+    0.76
+   ]
+  }
+ },
+ {
+  "file": "GOLDEN-HOUR-ANNOUNCE_9x16.mp4",
+  "duration_s": 29.92,
+  "w": 1080,
+  "h": 1920,
+  "ratio": "9:16",
+  "has_audio": true,
+  "cuts": [
+   4.21,
+   9.88,
+   13.71,
+   18.62,
+   20.33,
+   22.96
+  ],
+  "shot_count": 7,
+  "avg_shot_s": 4.27,
+  "loudness_lufs": -17.5,
+  "speech": {
+   "text": "Okay, MUHA is giving away a $35,000 Rolex an Actual yacht master the real thing not a gift card not a discount the watch and here's the part that gets me Getting in takes about two seconds you find the insert card in your MUHA members pack you scan it in the app That's it ten entries Instantly and every single card you scan is ten more golden hour edition members only go scan yours",
+   "words": 75,
+   "speaking_s": 25.0,
+   "articulation_wps": 3.0,
+   "hook_end_s": 3.76,
+   "hook_words": 9,
+   "tail_words": 18,
+   "pauses_over_300ms": [
+    0.76
+   ]
+  }
+ },
+ {
+  "file": "UGC-EXPLAINER-30s_9x16.mp4",
+  "duration_s": 30.0,
+  "w": 720,
+  "h": 1280,
+  "ratio": "9:16",
+  "has_audio": true,
+  "cuts": [
+   6.62,
+   11.46,
+   16.29,
+   18.79,
+   23.62,
+   27.12
+  ],
+  "shot_count": 7,
+  "avg_shot_s": 4.29,
+  "loudness_lufs": -16.5,
+  "speech": {
+   "text": "There's a card in your moo-hoo pack worth 10 entries and the prize is a Rolex Golden hour edition. That's the one $35,000 yacht master blue bezel the actual watch all you do is open the members app point your phone at the code on the back and boom ten inches straight on your account and Every single card you scan is another ten. I've done four of these already Check your pack seriously go look",
+   "words": 76,
+   "speaking_s": 24.2,
+   "articulation_wps": 3.14,
+   "hook_end_s": 5.14,
+   "hook_words": 16,
+   "tail_words": 6,
+   "pauses_over_300ms": [
+    1.36,
+    1.24,
+    0.32,
+    1.72
+   ]
+  }
+ },
+ {
+  "file": "UGC-EXPLAINER-v2-30s_9x16.mp4",
+  "duration_s": 30.04,
+  "w": 720,
+  "h": 1280,
+  "ratio": "9:16",
+  "has_audio": true,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 30.04,
+  "loudness_lufs": -16.1,
+  "speech": {
+   "text": "There's a card in your MUHA pack worth 10 entries and the prize is a Rolex. Golden Hour Edition, that's the one. $35,000 Yachtmaster. You scan this code in the MUHA members app, that is honestly the whole thing. 10 entries instantly and every single card you scan is another 10. I've done four already. Check your pack. Seriously, go look.",
+   "words": 61,
+   "speaking_s": 28.0,
+   "articulation_wps": 2.18,
+   "hook_end_s": 6.0,
+   "hook_words": 16,
+   "tail_words": 6,
+   "pauses_over_300ms": [
+    1.0
+   ]
+  }
+ },
+ {
+  "file": "_talking-take-only-30s.mp4",
+  "duration_s": 30.08,
+  "w": 720,
+  "h": 1280,
+  "ratio": "9:16",
+  "has_audio": true,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 30.08,
+  "loudness_lufs": -16.5,
+  "speech": {
+   "text": "There's a card in your moo-hoo pack worth 10 entries and the prize is a Rolex Golden hour edition, that's the one $35,000 yacht master blue bezel the actual watch All you do is open the members app point your phone at the code on the back and boom 10 inches straight on your account and every single card you scan is another 10. I've done four of these already Check your pack seriously go look",
+   "words": 76,
+   "speaking_s": 24.48,
+   "articulation_wps": 3.1,
+   "hook_end_s": 5.14,
+   "hook_words": 16,
+   "tail_words": 6,
+   "pauses_over_300ms": [
+    1.36,
+    1.24,
+    1.72
+   ]
+  }
+ },
+ {
+  "file": "afterglow.mp4",
+  "duration_s": 5.06,
+  "w": 860,
+  "h": 1076,
+  "ratio": "4:5",
+  "has_audio": true,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.06,
+  "loudness_lufs": -40.1,
+  "speech": {
+   "text": "",
+   "words": 0,
+   "speaking_s": 0,
+   "articulation_wps": null,
+   "hook_end_s": null,
+   "hook_words": 0,
+   "tail_words": 0,
+   "pauses_over_300ms": []
+  }
+ },
+ {
+  "file": "card-in-hand.mp4",
+  "duration_s": 5.04,
+  "w": 720,
+  "h": 1280,
+  "ratio": "9:16",
+  "has_audio": true,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.04,
+  "loudness_lufs": -21.5,
+  "speech": {
+   "text": "This is the card. Ten entries.",
+   "words": 6,
+   "speaking_s": 3.0,
+   "articulation_wps": 2.0,
+   "hook_end_s": 4.78,
+   "hook_words": 6,
+   "tail_words": 6,
+   "pauses_over_300ms": []
+  }
+ },
+ {
+  "file": "terrace.mp4",
+  "duration_s": 5.06,
+  "w": 860,
+  "h": 1076,
+  "ratio": "4:5",
+  "has_audio": true,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.06,
+  "loudness_lufs": -40.6,
+  "speech": {
+   "text": "",
+   "words": 0,
+   "speaking_s": 0,
+   "articulation_wps": null,
+   "hook_end_s": null,
+   "hook_words": 0,
+   "tail_words": 0,
+   "pauses_over_300ms": []
+  }
+ },
+ {
+  "file": "the-scan.mp4",
+  "duration_s": 5.06,
+  "w": 860,
+  "h": 1076,
+  "ratio": "4:5",
+  "has_audio": true,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.06,
+  "loudness_lufs": -35.8,
+  "speech": {
+   "text": "",
+   "words": 0,
+   "speaking_s": 0,
+   "articulation_wps": null,
+   "hook_end_s": null,
+   "hook_words": 0,
+   "tail_words": 0,
+   "pauses_over_300ms": []
+  }
+ },
+ {
+  "file": "ugc-01-selfie-marina.mp4",
+  "duration_s": 10.08,
+  "w": 720,
+  "h": 1280,
+  "ratio": "9:16",
+  "has_audio": true,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 10.08,
+  "loudness_lufs": -20.0,
+  "speech": {
+   "text": "Muhar is giving away a $35,000 Rolex. You scan the card in the members app and that's 10 entries. I've scanned four already.",
+   "words": 23,
+   "speaking_s": 10.0,
+   "articulation_wps": 2.3,
+   "hook_end_s": 4.4,
+   "hook_words": 7,
+   "tail_words": 4,
+   "pauses_over_300ms": []
+  }
+ },
+ {
+  "file": "wrist.mp4",
+  "duration_s": 5.04,
+  "w": 860,
+  "h": 1076,
+  "ratio": "4:5",
+  "has_audio": true,
+  "cuts": [],
+  "shot_count": 1,
+  "avg_shot_s": 5.04,
+  "loudness_lufs": -38.5,
+  "speech": {
+   "text": "",
+   "words": 0,
+   "speaking_s": 0,
+   "articulation_wps": null,
+   "hook_end_s": null,
+   "hook_words": 0,
+   "tail_words": 0,
+   "pauses_over_300ms": []
+  }
+ }
+]

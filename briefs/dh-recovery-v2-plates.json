@@ -1,0 +1,27 @@
+{
+  "name": "dh-recovery-v2-plates",
+  "brand": "Dialed_Health",
+  "backend": "nanobanana",
+  "ratio": "9:16",
+  "out": "Dialed Health Recovery",
+  "container": "vial",
+  "engineSpecs": [
+    "motionBlur",
+    "logoZone"
+  ],
+  "look": "Editorial, photoreal, real environment with depth and context. Composition is deliberately top-weighted: the subject and all detail sit in the upper two thirds. The lower third of the frame falls away into deep unlit shadow and plain uninterrupted surface with no objects, no texture detail and no highlights. Natural window light from above. Not a studio packshot on slate.",
+  "jobs": [
+    {
+      "id": "A-pullup-bar",
+      "scene": "A doorway pull-up bar mounted in an ordinary hallway doorframe, seen slightly from below. A winter coat and a tote bag hang from it. A visible film of dust sits along the top of the bar. Through the doorway behind, an unused corner of a room. The vial stands on a small hallway shelf in the near foreground, sharp and lit."
+    },
+    {
+      "id": "B-asymmetry",
+      "scene": "A home dumbbell rack shot straight on. The dumbbells on the left are visibly worn, the knurling polished bright and chalk-dusted from constant use. The identical dumbbells on the right are untouched, evenly dusty, factory-clean. The asymmetry between the two sides is the subject. The vial stands at the end of the rack's top shelf."
+    },
+    {
+      "id": "C-unopened-band",
+      "scene": "An open bedside drawer photographed from directly above. Inside: a physiotherapy resistance band still sealed in its original unopened packet, a folded appointment card, a spare key. Everything is settled and undisturbed, as though the drawer has not been opened in months. The vial rests on the closed drawer beside it."
+    }
+  ]
+}

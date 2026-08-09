@@ -1,0 +1,254 @@
+{
+  "_merge_note": "On merge into graph/graph.json, the section name \"seedance25_laws\" MUST also be added to the SECTIONS list in sieve-graph.mjs (around lines 41-43). A section absent from SECTIONS is silently SKIPPED by lint rather than erroring — the defect that has left ugc_laws and operator_verdicts unvalidated since they were added. Verify by node count: lint must report a number that includes these nodes, not the old 308.",
+  "_source": "Every law below was MEASURED against the live ModelArk API on 2026-08-06/07 while producing the Muha Golden Hour campaign. Nothing here is inferred from documentation; where the docs disagree with the measurement, the measurement is recorded and the doc is named as wrong. Probe scripts: ark_probe / res_probe2 / res_probe3 / res_probe4 / dur_probe / probe15.",
+  "seedance25_laws": {
+    "sd25:model-id-and-host": {
+      "claim": "Call Dreamina-Seedance-2.5 as `dreamina-seedance-2-5-260628` at host `https://ark.ap-southeast.bytepluses.com/api/v3/contents/generations/tasks`, then poll `GET .../tasks/{id}`. The host in ByteDance's own curl examples, `ark.ap-southeast-1.bytepluses.com`, DOES NOT RESOLVE.",
+      "evidence": "curl to ap-southeast-1 returns exit 6 / HTTP 000 (DNS failure); ap-southeast returns 401 unauthenticated and 200 with a key. Model id confirmed live via `arkcli models get dreamina-seedance-2-5`.",
+      "counterexamples": "none — the -1 host failed on every attempt, from two different scripts.",
+      "applies_to": "api",
+      "confidence": "strong",
+      "source": "measured 2026-08-06, Muha Golden Hour build"
+    },
+    "sd25:resolution-is-720p-only": {
+      "claim": "seedance 2.5 accepts `--resolution 720p` and REJECTS every higher value in BOTH i2v and t2v. 720p is a hard ceiling on this model — conform up in post, or switch model. Do NOT conclude the parameter is unsupported: `720p` passes, `1080p` and `4k` fail.",
+      "evidence": "t2v probe, one variable at a time: bare = succeeded; `--resolution 720p` = succeeded; `--resolution 1080p` = failed InvalidParameter; `--resolution 4k` = failed; `--rs 4k` = failed. i2v returns the explicit message \"the parameter resolution specified in the request is not valid for model dreamina-seedance-2-5 in i2v\". Delivered frames measured 720x1280 (t2v 9:16) and 716x1284 / 860x1076 (i2v, following the first frame).",
+      "counterexamples": "An earlier note in this build claimed resolution was rejected outright on 2.5. That was WRONG — it generalised from a single 1080p failure before 720p was tested. The corrected rule is narrower: the parameter works, the ceiling is 720p.",
+      "applies_to": "api",
+      "confidence": "strong",
+      "source": "measured 2026-08-07, res_probe2"
+    },
+    "sd25:use-2-0-when-you-need-4k": {
+      "claim": "Route by resolution need, not by model recency. `dreamina-seedance-2-0-260128` accepts 720p, 1080p AND 4k, and DELIVERS 2160x3840. Send anything without people — product, landscape, yacht, deck, watch — to 2.0 for a true 4K master. Send anything with a talking person to 2.5 and accept 720p.",
+      "evidence": "Same account, same key: 2.0 with `--resolution 4k` succeeded and the file measured 2160x3840; with `--resolution 1080p` measured 1080x1920. 2.5 rejected both.",
+      "counterexamples": "2.0 cannot take the people work — see sd25:e005-is-frame-scoped-not-model-scoped for what each model can actually hold.",
+      "applies_to": "routing",
+      "confidence": "strong",
+      "source": "measured 2026-08-07, res_probe4"
+    },
+    "sd25:ratio-must-be-adaptive-with-a-first-frame": {
+      "claim": "Whenever a `first_frame` is supplied, `--ratio` MUST be `adaptive`. Any explicit ratio is a hard error. Output shape follows the frame, so check the frame's dimensions BEFORE spending.",
+      "evidence": "`--ratio 9:16` with a first frame returns InvalidParameter.TaskTypeConstraint: \"For first-frame or first-last-frame generation, the output ratio follows the first-frame image. Issues: [0] `ratio` must be `adaptive`.\" With no first frame, `--ratio 9:16` is accepted normally.",
+      "counterexamples": "none observed. Note this PROMOTES a previously silent trap: CLAUDE.md Pattern D already warned that aspect_ratio is ignored when a first frame is supplied; 2.5 turns that silence into an error, which is an improvement.",
+      "applies_to": "api",
+      "confidence": "strong",
+      "source": "measured 2026-08-06"
+    },
+    "sd25:generate-audio-defaults-true-and-will-refuse-itself": {
+      "claim": "`generate_audio` is a TOP-LEVEL body field (not a trailing --flag) and DEFAULTS TO TRUE. Left on with no audio direction, 2.5 invents a musical score and then refuses its own output for copyright — you are billed for a generation it withholds. Setting it FALSE is not the general fix: false suppresses ALL audio INCLUDING DIALOGUE, so on a talking head it ships a mute clip at full price. Direct the audio instead — music-excluded for speech, ambience-only for speechless shots.",
+      "evidence": "First paid run of the Muha product film: 2 of 3 clips failed with OutputAudioSensitiveContentDetected.PolicyViolation, \"the output audio may be related to copyright restrictions\". Setting generate_audio:false made the identical prompts succeed.",
+      "counterexamples": "none — the failure reproduced on both clips that carried it.",
+      "applies_to": "api",
+      "confidence": "strong",
+      "source": "measured 2026-08-06; false-suppresses-dialogue scope added 2026-08-08"
+    },
+    "sd25:ambient-audio-direction-passes-music-does-not": {
+      "claim": "SCOPE: shots with NO speech. You CAN keep native audio on: ask for location ambience explicitly and never let the model reach for a score. The working formula is a positive spec plus an explicit exclusion of the musical vocabulary: \"Audio: natural location ambience only — water and a light breeze, as recorded on location. Quiet, wide and open. No voices, no instruments, no melody, no song, no soundtrack.\" The \"No voices\" clause is what makes this an AMBIENCE-ONLY block — for a talking head drop it and use `sd25:audio-for-talking-heads-keep-it-on-exclude-music-only` instead.",
+      "evidence": "Four beats generated with that exact direction and generate_audio:true all returned usable stereo AAC ambience with zero copyright refusals, after two earlier undirected clips were refused.",
+      "counterexamples": "none in four attempts. Untested whether the exclusion list can be shortened — the whole block was applied as one unit. Applying this block verbatim to a talking head ships a clip with no dialogue: the string forbids voices.",
+      "applies_to": "audio",
+      "confidence": "moderate",
+      "source": "measured 2026-08-07; scoped 2026-08-08 against ext-limits.md finding 6"
+    },
+    "sd25:e005-is-frame-scoped-not-model-scoped": {
+      "claim": "The Seedance refusal of photoreal humans applies to a supplied photoreal FIRST FRAME, not to the model. In TEXT-TO-VIDEO, 2.5 generates photoreal people happily, with lip-synced speech. This overturns the blanket rule in CLAUDE.md that \"1.5-pro is not a preference for people, it is the only option\" — that remains true for first-frame work and is FALSE for t2v on 2.5.",
+      "evidence": "t2v prompt for a selfie talking head returned a photoreal woman with visible pores and freckles, speaking, at 720x1280; repeated across three separate UGC generations including one 30s take. The prior E005 experiment (sieve/golden/experiments/E1-e005-whitelist) supplied a photoreal portrait as a first frame and was refused — a different call shape entirely. Independently corroborated by the recon fleet finding Higgsfield shipping UGC talking heads on Seedance.",
+      "counterexamples": "none for t2v. The first-frame half is now RESOLVED and is the opposite result: 2.5 refuses a photoreal human first_frame outright at submit with InputImageSensitiveContentDetected.PrivacyInformation — see sd25:first-frame-refuses-real-people. So the full rule is: GENERATE a person from text, yes; ANIMATE a supplied photo of one, no. The two halves are governed by different guards — capability on one side, a likeness protection on the other.",
+      "applies_to": "capability",
+      "confidence": "strong",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:dialogue-is-native-and-near-verbatim": {
+      "claim": "Write speech in double quotes inside the prompt and 2.5 returns it spoken and lip-synced, generated jointly with the picture rather than assembled. No avatar kit, no voice clone, no post-sync. Whisper-verified near-verbatim across every line.",
+      "evidence": "10s clip: written \"Muha is giving away a thirty-five thousand dollar Rolex / You scan the card in the Members app, and that's ten entries / I've scanned four already\" came back word for word. A 30s five-beat script returned all five beats in order at the intended timings.",
+      "counterexamples": "Wording drifts slightly on longer scripts: a written \"Check your pack\" returned as \"Take your pack\" in the 30s take. Treat long scripts as approximate and whisper-verify every take.",
+      "applies_to": "capability",
+      "confidence": "strong",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:spell-brand-names-phonetically": {
+      "claim": "Spell brand and product names PHONETICALLY in dialogue — write \"MOO-ha\", not \"Muha\". Measured A/B: the same 30s script delivered the brand as \"MUHU\" when spelled normally and correctly as \"MUHA\" when spelled phonetically, in both places it appeared. Phonetic spelling also fixed two unrelated drifts in the same take, so it appears to sharpen the whole delivery rather than just the one word.",
+      "evidence": "v1 (written \"Muha\"): whisper returned \"MUHU pack\", \"Take your pack\" (written \"Check\"), and \"10 inches\" (written \"10 entries\"). v2 (written \"MOO-ha\", everything else identical): \"MUHA pack\" in both occurrences, \"Check your pack\", \"10 entries instantly\". Two takes, same model, same script, one variable changed.",
+      "counterexamples": "none. Only one brand word has been tested, so the generalisation to all coined names is by analogy — but the mechanism (phonetic spelling drives pronunciation) is the same one Pattern D already records for acronyms.",
+      "applies_to": "script",
+      "confidence": "strong",
+      "source": "measured A/B 2026-08-08"
+    },
+    "sd25:timed-beats-drive-multi-shot-inside-one-generation": {
+      "claim": "Write timed beats as `0-4s: ... 4-10s: ...` and 2.5 executes them as distinct shots, including camera moves, inside a single generation. This is how to get a multi-shot piece without cutting — and without the identity change that separate generations cause.",
+      "evidence": "A two-beat prompt instructing her to turn the phone toward the marina and back produced exactly that move at the specified time. A five-beat 30s script produced five distinguishable beats in order.",
+      "counterexamples": "none observed at 10s or 30s. Beat boundaries are approximate, not frame-accurate — cut from the whisper transcript of the delivered take, never from the written timings.",
+      "applies_to": "prompt",
+      "confidence": "strong",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:identity-holds-across-a-single-30s-take": {
+      "claim": "One generation holds one person. A 30s single take kept face, hair, wardrobe and location stable start to finish. Separate generations RECAST the person every time, so any piece needing the same creator across multiple beats must be ONE take (or an extension of one), never a chain of fresh calls.",
+      "evidence": "Frames sampled at 0.4s, 7.5s, 15s, 22.5s and 29.5s of a 30s UGC take show the same woman, same beige top, same marina. Two separately generated UGC clips from near-identical prompts produced two different women.",
+      "counterexamples": "none observed to 30s. Beyond 30s is untested — `video_extension` is the documented route and is the open experiment.",
+      "applies_to": "capability",
+      "confidence": "strong",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:duration-accepts-up-to-30s": {
+      "claim": "`--dur` accepts at least 5, 10, 12, 15, 20 and 30 on 2.5. A 30s generation completes. This breaks the old ceiling recorded in Pattern I (1.5-pro 12s, 2.0 15s) and removes the reason that stitching machinery existed for this model.",
+      "evidence": "All five durations submitted clean in one probe; a 30s first-frame run and a 30s t2v run both completed and delivered 30.04s files.",
+      "counterexamples": "Longer renders take proportionally longer — a 30s take ran ~180s wall clock. Nothing above 30 was tested.",
+      "applies_to": "api",
+      "confidence": "strong",
+      "source": "measured 2026-08-07, dur_probe"
+    },
+    "sd25:moderation-is-per-generation-not-per-product": {
+      "claim": "Content moderation judges the RENDERED FRAME, not the subject in the abstract. The same branded product passes in one composition and is refused in another: a tightly-cropped luxury watch dominating frame was refused for copyright, while the identical watch inside a full approved poster passed. Spoken brand names pass; PROMINENTLY RENDERED branded product fails.",
+      "evidence": "OutputVideoSensitiveContentDetected.PolicyViolation on (a) a 4:5 crop centred on a Rolex Yacht-Master, and (b) a 30s UGC take carrying the real insert card as a reference_image. The same watch inside the client's full deck-lifestyle poster generated clean, twice. Dialogue containing the word \"Rolex\" passed in every clip that spoke it.",
+      "counterexamples": "One wide landscape beat was also refused with the same code and contained no branded product at all, so the trigger is not exclusively trademark — moderation has a stochastic component. Re-rolling the same input is not the fix; changing the input is.",
+      "applies_to": "moderation",
+      "confidence": "strong",
+      "source": "measured 2026-08-06/07"
+    },
+    "sd25:branded-product-belongs-in-the-clients-own-art": {
+      "claim": "Never regenerate a client's branded product or packaging. Animate the approved artwork instead (i2v, locked camera) and let the generated footage carry only unbranded action. This is both the moderation fix and the fidelity fix — the mark on screen is then pixel-exact rather than an imitation.",
+      "evidence": "Three approved Muha posters animated i2v with a locked camera kept every letter of the typography pixel-stable across start, middle and end frames (verified by cropping the type band per frame). Every attempt to regenerate the same marks was either refused or approximate.",
+      "counterexamples": "The composited-first-frame route named here is now CLOSED — 2.5 refuses human first frames on privacy grounds (sd25:first-frame-refuses-real-people). The working route instead is sd25:reference-image-passes-for-own-brand-assets: generate the PERSON from text and supply the PRODUCT as a reference_image, which renders the client's own artwork faithfully in her hand.",
+      "applies_to": "routing",
+      "confidence": "strong",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:realism-levers-that-measurably-worked": {
+      "claim": "For UGC realism on 2.5, specify five things positively: skin (visible pores, oil shine, freckles, faint sunburn, no beauty filter), camera behaviour (auto-exposure hunting against the sun, frame drift and re-centring), human micro-behaviour (squinting into low sun, glancing off-lens, pushing hair off the face), location audio (wind on the mic, ambience under the voice), and unflattering light (hot edge on one cheek, blown highlights behind).",
+      "evidence": "Clips carrying this block returned visible pores, freckles, sun-flush and natural hand gestures; operator-judged the strongest output of the build.",
+      "counterexamples": "Still operator-judged short of fully real, specifically on AUDIO — the voice reads cleaner than a real phone recording. Untested lever: asking for the voice to be recorded ON the phone microphone rather than describing it as close and clipped.",
+      "applies_to": "prompt",
+      "confidence": "moderate",
+      "source": "operator judgement 2026-08-07"
+    },
+    "sd25:never-name-a-device-to-describe-a-look": {
+      "claim": "Say \"shot on a phone at arm's length\" — the exact phrasing measured working — and never name a device model or say \"filmed on a screen\". Naming a device makes the model render the device.",
+      "evidence": "The arm's-length phrasing produced correct full-bleed selfie framing across four UGC generations with no device in frame. The underlying trap is CLAUDE.md golden rule 7, measured on Nano Banana, which rendered an entire scene inside a phone mockup when the device was named.",
+      "counterexamples": "none observed on 2.5 — but the rule is carried across from another model, so it is being APPLIED here rather than re-proven here.",
+      "applies_to": "prompt",
+      "confidence": "moderate",
+      "source": "measured 2026-08-07, rule inherited from golden rule 7"
+    },
+    "sd25:roles-and-task-types": {
+      "claim": "Image and media parts carry an explicit `role`: `first_frame`, `last_frame`, `reference_image`, `reference_video`, `reference_audio`. The model declares three task types: multimodal_to_video, video_editing, video_extension. Concurrency is 10 simultaneous tasks with a 600 create-task RPM.",
+      "evidence": "Roles read from ByteDance's own request examples harvested by the recon fleet and exercised for first_frame and reference_image. Task types and rate limits read from `arkcli models get dreamina-seedance-2-5`.",
+      "counterexamples": "Only first_frame and reference_image were actually exercised in this build. last_frame, reference_video, reference_audio, video_editing and video_extension are DECLARED but UNTESTED here — do not assume their input shapes.",
+      "applies_to": "api",
+      "confidence": "moderate",
+      "source": "measured + declared 2026-08-07"
+    },
+    "sd25:schema-is-not-the-contract": {
+      "claim": "Neither 2.5 nor 2.0 declares its accepted resolutions anywhere in its metadata. The only way to learn this model's real limits is to PROBE one parameter at a time and read the error text. Generic `InvalidParameter / Bad Request` tells you nothing about which parameter was wrong — isolate before concluding.",
+      "evidence": "`arkcli models get` returns no resolution field for either model. A single failed probe in this build produced a wrong blanket conclusion (\"resolution rejected on 2.5\") that a one-variable-at-a-time re-test corrected to \"720p only\".",
+      "counterexamples": "none. This restates the repo's existing Pattern D warning — \"a schema is not the contract\" — which was written about Replicate tolerating undeclared keys and holds identically here.",
+      "applies_to": "method",
+      "confidence": "strong",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:cost-shape": {
+      "claim": "Billing is token-based, not per-second. A 5s 720p generation reported 108,633 completion tokens; charge items are NV2VCompletion at 0.0107 and V2VCompletion at 0.0064 per thousand tokens. Budget by generation count, and note that a refused generation still consumed the compute.",
+      "evidence": "usage object returned on successful tasks; charge items read from `arkcli models get dreamina-seedance-2-5` pricing block.",
+      "counterexamples": "Whether a policy-refused generation is actually billed was NOT confirmed against an invoice — it is assumed from the fact that the work completed before refusal. Verify on the next statement.",
+      "applies_to": "cost",
+      "confidence": "weak",
+      "source": "measured 2026-08-07"
+    },
+    "sd25:first-frame-refuses-real-people": {
+      "claim": "seedance 2.5 REFUSES any first_frame that appears to contain a real person, at SUBMIT, with a PRIVACY error rather than a copyright one. The route 'compose a person holding a product in Nano Banana, then animate it in 2.5' is CLOSED. This is a deliberate likeness protection and must not be worked around.",
+      "evidence": "Submitting a frame extracted from 2.5's OWN generated human clip returned HTTP 400 InputImageSensitiveContentDetected.PrivacyInformation: \"The request failed because the input image 'content[1]' may contain real person.\" It refuses even its own output, so the guard keys on apparent humanness, not on provenance.",
+      "counterexamples": "none. This CONFIRMS the E005 first-frame rule holds on 2.5 and gives it a precise cause the 2.0 finding lacked — 2.0 returned a vague 'input or output flagged as sensitive', 2.5 names it as a privacy/likeness guard. Text-to-video humans are completely unaffected.",
+      "applies_to": "moderation",
+      "confidence": "strong",
+      "source": "measured 2026-08-08"
+    },
+    "sd25:reference-image-passes-for-own-brand-assets": {
+      "claim": "reference_image is NOT blocked for branded content in general — it is blocked for THIRD-PARTY trademarks. A client's own artwork passes and renders faithfully. This is the working route to a generated creator holding a real product: generate the PERSON from text, supply the PRODUCT as a reference_image.",
+      "evidence": "The same call shape refused when the reference carried the client's card WITH a third-party luxury watch on it (OutputVideoSensitiveContentDetected, copyright) SUCCEEDED when cropped to the card's own-brand QR side — black card, gold filigree border, gold QR with the client's M monogram. The rendered card reproduced border, monogram and code-block layout faithfully across the full 5s, held and turned in a generated creator's hand.",
+      "counterexamples": "Only one own-brand asset has been tested. Whether the pass depends on the mark being the CLIENT'S, or merely on the absence of a recognisable third-party logo, is NOT isolated — a neutral unbranded card control has not been run.",
+      "applies_to": "moderation",
+      "confidence": "moderate",
+      "source": "measured 2026-08-08"
+    },
+    "sd25:generated-codes-are-decorative-not-scannable": {
+      "claim": "A QR or barcode rendered by the model is a VISUAL APPROXIMATION and will not scan. Treat any generated code as decorative. If a working code must appear, composite the real one onto the card face in post over a deliberately reserved flat area — the exception that already permits compositing a flat logo or QR plate.",
+      "evidence": "The reference card's gold QR reproduced convincingly as a pattern — correct proportions, finder squares, centred monogram — but the module pattern is invented and shifts frame to frame.",
+      "counterexamples": "none observed; no generated code was successfully scanned.",
+      "applies_to": "production",
+      "confidence": "strong",
+      "source": "measured 2026-08-08"
+    },
+    "sd25:audio-for-talking-heads-keep-it-on-exclude-music-only": {
+      "claim": "For any shot where a person SPEAKS, send `generate_audio: true` and direct the audio to exclude MUSIC ONLY: \"no instruments, no melody, no song, no soundtrack\". Do NOT include \"no voices\" — that clause belongs to speechless ambience shots and on a talking head it suppresses the dialogue you are paying for. Speech and ambience pass together; it is the invented SCORE that gets refused for copyright, not the voice.",
+      "evidence": "ext-limits.md finding 6: generate_audio:true passed on ALL FOUR extension hops carrying the ambience-plus-speech direction, zero copyright refusals. Dialogue came back near-verbatim under Whisper small.en on every segment including an 82-word, 30s hop (one doubled phrase in 82 written words). Every hop delivered AAC 32 kHz stereo.",
+      "counterexamples": "Level is NOT matched across hops — speech spans 2.6 dB and the noise floor 5.2 dB over a four-hop chain, so level-match in post. Untested whether the music-exclusion list can be shortened; it was applied as one block. The 4/4 evidence is from the extension path — the same direction on a single fresh t2v call is expected to behave identically but was not separately isolated.",
+      "applies_to": "audio",
+      "confidence": "strong",
+      "source": "measured 2026-08-07/08, ext-limits.md finding 6; reconciled 2026-08-08"
+    },
+    "sd25:extension-only-accepts-25-born-humans": {
+      "claim": "2.5 extension accepts human footage ONLY when 2.5 itself generated it. Everything else is refused at submit as InputVideoSensitiveContentDetected.PrivacyInformation (\"may contain real person\") — external platforms AND other ModelArk models alike. The guard is MODEL-scoped, not platform-scoped: a seedance-1-5-pro clip generated on the same account 90 seconds earlier was refused identically to a Replicate clip. Consequence: a 2.5 person must be BORN in 2.5 (text-to-video); there is no identity injection from any image or foreign video.",
+      "evidence": "P-25EXT 2026-08-09: Replicate 1.5-pro clip of a Higgsfield Soul character (fully synthetic person) -> refused. P-25EXT-B same day: ModelArk-native seedance-1-5-pro clip of the same character, same account, fresh TOS URL -> refused with the identical code, falsifying the platform-provenance hypothesis within the hour. Control: every extension of 2.5-generated human clips has succeeded (the measured +66% extension lane). Also measured: reference_video rejects data URIs — \"must be provided as a web url\".",
+      "counterexamples": "Non-human external footage untested. Whether ByteDance Digital Character registration whitelists a likeness for cross-model input is UNRESEARCHED — it is the one documented compliance door left (same registration the 2.0 reference_audios human path requires).",
+      "applies_to": "video_extension",
+      "confidence": "strong",
+      "source": "_probe/soul/p25ext.mjs (both runs in research/sd25/probe-log.jsonl), 2026-08-09"
+    },
+    "sd25:reference-citation-with-at-notation": {
+      "claim": "2.5 accepts a reference_image ALONGSIDE a text-born person and reproduces own-brand card/product art faithfully — MEASURED on dreamina-seedance-2-5-260628 (2026-08-09). The @Image N citation (@Image/@Video/@Clay Render N, 1-indexed by content order) is honoured — it neither refuses nor degrades. On a SINGLE reference, @Image and prose ('the card in reference image 1') produce COMPARABLE fidelity; the documented advantage of @-notation is disambiguation across MULTIPLE references, which remains unmeasured. Capacity (30 img/10 vid/10 audio) is documented, not yet pushed.",
+      "evidence": "A/B P-ATREF 2026-08-09 (val-2p5-cardref, 5s 720p, text-born person + Golden Hour card): --cite at (task cgt-...f45vl) and --cite prose (task cgt-...prose) BOTH reproduced the black-card/ gold-ornate-border/ 'M'-monogram design faithfully; card fidelity indistinguishable between the two. Neither refused; 2.5 took the reference_image next to a person without E005. The generated QR is decorative (consistent with sd25:generated-codes-are-decorative).",
+      "counterexamples": "Single-reference test only — the multi-reference disambiguation case (where @Image N should earn its keep) is untested, as are @Video/@Clay Render. Text-born wardrobe drifted (grey->navy/black) in BOTH arms — reference fidelity is strong but text-born IDENTITY is still uncontrolled (use avatars for identity). The engine defaults to @-notation (safe); prose is a measured-equal fallback via --cite prose.",
+      "applies_to": "reference_engineering",
+      "confidence": "measured",
+      "source": "A/B measured on our endpoint 2026-08-09 (generations/val-2p5-cardref/*-at|*-prose), research/sd25/probe-log.jsonl P-ATREF; docs corroborate the syntax."
+    },
+    "sd25:prompt-five-part-structure": {
+      "claim": "Structure a 2.5 prompt in five parts, in order: (1) SUBJECT — who/what, concrete ('a barista in a green apron'); (2) PERFORMANCE — what they do and how, across the whole take; (3) AMBIENCE — setting, time of day, light; (4) CAMERA — one specific shot type + one NAMED move ('slow push-in', 'low tracking shot'); (5) EXTRA CUES — audio, pacing, and whether it reads as one unbroken shot. Our engine's block order (look, beats, camera, audio, rules) already approximates this — tighten it to match.",
+      "evidence": "vidmuse five-part framework, corroborated by the ByteDance narrative-arc guidance. Do NOT write vague camera language like 'cinematic'; name the move.",
+      "counterexamples": "This is a WRITING framework, not an API contract — no field enforces it. The measured house UGC laws (unhurried cadence, extreme close-up, no device names) still override generic guidance where they conflict.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "OFFICIAL DOCS, NOT YET MEASURED on our account (2026-08-09): seed.bytedance.com Seedance 2.5 announcement + docs.byteplus.com/ModelArk/2607689 + vidmuse.ai/blog/seedance-2-5-guide. Validate before trusting as a house law."
+    },
+    "sd25:one-action-per-generation-and-the-donts": {
+      "claim": "One clear action per generation. The documented failure modes: describing a STILL image (no motion over time), VAGUE camera language ('cinematic'), CRAMMING a multi-beat sequence into one flat prompt, and uploading EXCESSIVE UNLABELED references. For genuine multi-beat, use timed beats (0-5s/6-10s) — which our own measurement already requires for pacing (sd25:timed-beats-drive-multi-shot).",
+      "evidence": "vidmuse do/don't list. 'Use references to carry a look across separate shots'; 'reference only recurring subjects'.",
+      "counterexamples": "'One action' and 'timed multi-beat' are not in tension: each beat is one action; the don't is cramming several actions into ONE undifferentiated sentence with no time structure.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "OFFICIAL DOCS, NOT YET MEASURED on our account (2026-08-09): seed.bytedance.com Seedance 2.5 announcement + docs.byteplus.com/ModelArk/2607689 + vidmuse.ai/blog/seedance-2-5-guide. Validate before trusting as a house law."
+    },
+    "sd25:clay-render-and-motion-references": {
+      "claim": "2.5 adds control-oriented reference types beyond appearance: CLAY RENDER (textureless 3D) locks spatial structure, character poses, motion paths and camera angles; MOTION referencing transfers an action/movement pattern; CREATIVE referencing carries broad style. These are for when composition/blocking/camera must match an intent, not just when a face/product must stay consistent.",
+      "evidence": "ByteDance 2.5 announcement: clay render builds 'spatial structure, character poses, motion paths, and camera angles'; cite as @Clay Render N.",
+      "counterexamples": "UNMEASURED and likely app-first — we have no clay-render asset pipeline yet, and it is unverified whether the :predictLongRunning/tasks endpoint accepts a clay-render role. Parked as a known lever, not a ready tool.",
+      "applies_to": "reference_engineering",
+      "confidence": "documented",
+      "source": "OFFICIAL DOCS, NOT YET MEASURED on our account (2026-08-09): seed.bytedance.com Seedance 2.5 announcement + docs.byteplus.com/ModelArk/2607689 + vidmuse.ai/blog/seedance-2-5-guide. Validate before trusting as a house law."
+    },
+    "sd25:detailed-prompt-formula-and-length": {
+      "claim": "Write each shot as [Subject], [Action], in [Environment], camera [one Move], style [Style], avoid [Constraints] — target 60-100 words per shot. Make the SUBJECT concrete with anchors the model holds for 30s: not 'a woman' but 'a woman in her thirties, short dark hair, beige trench coat' — age, wardrobe, color, material, expression. ACTION is ONE continuous arc with a beginning and end ('picks up the cup, sips, sets it down'), never a list of unrelated moves. For lighting, ONE precise line beats ten adjectives.",
+      "evidence": "apiyi 6-step formula, 60-100 words; 'concrete attributes give the model anchors to hold steady across all 30 seconds'; 'Adding a single line about lighting is more effective than adding ten adjectives.' Example: 'A skateboarder lands a clean trick in an empty dawn parking lot, camera low tracking shot then subtle rise, modern cinematic contrast, avoid jitter and bent limbs.'",
+      "counterexamples": "Word target is a shot-level guide; a 30s 2.5 take is several beats, each roughly this dense (see sd25:timed-beats and the 4-beat arc). House UGC laws (unhurried cadence, no device names) still override where they clash.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "OFFICIAL + practitioner guides, cross-corroborated 2026-08-09 (Seedance 2.0 formula carries to 2.5): help.apiyi.com 6-step guide, vidmuse, segmind, seed.bytedance.com. Structure/keyword rules are well-attested; validate exact effects on our endpoint."
+    },
+    "sd25:camera-move-vocabulary-one-primary": {
+      "claim": "Name the camera move from a fixed vocabulary and use exactly ONE primary move per shot: push-in (dolly in), pull-out (dolly out), pan, tracking, orbit (arc), aerial, handheld, fixed (locked-off). Describe camera motion SEPARATELY from subject motion — do not blend them in one clause. Two conflicting moves in one shot is a documented failure. (Our own measurement adds: camera_fixed the PARAMETER beats any 'the camera does not move' prose — see sd25 camera notes.)",
+      "evidence": "apiyi 8-camera-movement list; 'Use only one primary camera instruction'; 'Separate camera motion from subject motion description'; 'Avoid multiple conflicting camera movements'.",
+      "counterexamples": "A single named move MAY compound gently ('low tracking shot then subtle rise') — that is one continuous move, not two conflicting ones.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "OFFICIAL + practitioner guides, cross-corroborated 2026-08-09 (Seedance 2.0 formula carries to 2.5): help.apiyi.com 6-step guide, vidmuse, segmind, seed.bytedance.com. Structure/keyword rules are well-attested; validate exact effects on our endpoint."
+    },
+    "sd25:prompt-killer-keywords": {
+      "claim": "Some words degrade the output and must be dropped: unqualified 'fast' (causes chaotic motion), vague 'cinematic', empty hype 'amazing/epic/beautiful', and 'lots of movement'. They add no signal and actively mislead. Replace intent with SPECIFICS — a named light, a named move, a concrete action. Also do not stack subject-speed + camera-speed + a complex scene in one shot.",
+      "evidence": "apiyi pitfall checklist: 'Exclude the fast keyword (causes chaos)'; 'Remove redundant adjectives (beautiful, amazing, epic)'; 'Dangerous keywords: unqualified fast, vague cinematic, meaningless amazing/epic, lots of movement.'",
+      "counterexamples": "This is the POSITIVE-instruction discipline our own laws already teach (never-name-a-device, negatives-summon): say what IS, not what to avoid or how impressive it should be.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "OFFICIAL + practitioner guides, cross-corroborated 2026-08-09 (Seedance 2.0 formula carries to 2.5): help.apiyi.com 6-step guide, vidmuse, segmind, seed.bytedance.com. Structure/keyword rules are well-attested; validate exact effects on our endpoint."
+    }
+  }
+}

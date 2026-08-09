@@ -1,0 +1,22 @@
+[
+  {
+    "prompt": "Use ONLY the likeness of the person in the reference images — same face, same hair, same build. Woman, 41, Southern Californian, mid-length dark hair pushed back or loosely tied, minimal or no makeup, fine lines she has not hidden, plain crew-neck tee or soft knit in neutral tones. Warm skin, natural texture, never retouched. Ordinary and specific. Scene: a bright ordinary kitchen mid-morning, phone propped against something on the counter. Natural colour, real skin tones, real daylight. Shot-on-phone look, not cinematic, not an advertisement. Chest-up framing, vertical. Ordinary room, lived-in. The person is mid-sentence, talking directly to the phone, natural relaxed expression. No text anywhere in the image, no logos, no on-screen graphics.",
+    "aspectRatio": "9:16",
+    "imageSize": "2K",
+    "refImages": [
+      "./Avatars/Dialed_Ava/identity/portrait_neutral.jpg",
+      "./Avatars/Dialed_Ava/identity/portrait_smile.jpg"
+    ],
+    "_id": "REC-ugc-01"
+  },
+  {
+    "prompt": "Use ONLY the likeness of the person in the reference images — same face, same hair, same build. Woman, 41, Southern Californian, mid-length dark hair pushed back or loosely tied, minimal or no makeup, fine lines she has not hidden, plain crew-neck tee or soft knit in neutral tones. Warm skin, natural texture, never retouched. Ordinary and specific. Scene: sitting on the edge of a bed early morning, warm light, phone held slightly above eye level. Natural colour, real skin tones, real daylight. Shot-on-phone look, not cinematic, not an advertisement. Chest-up framing, vertical. Ordinary room, lived-in. The person is mid-sentence, talking directly to the phone, natural relaxed expression. No text anywhere in the image, no logos, no on-screen graphics.",
+    "aspectRatio": "9:16",
+    "imageSize": "2K",
+    "refImages": [
+      "./Avatars/Dialed_Ava/identity/portrait_neutral.jpg",
+      "./Avatars/Dialed_Ava/identity/portrait_smile.jpg"
+    ],
+    "_id": "REC-ugc-02"
+  }
+]

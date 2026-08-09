@@ -1,0 +1,76 @@
+{
+  "campaign": "gta-25k-challenger",
+  "brand": "Muha_Meds",
+  "_schema": "campaign-registry/1",
+  "display_name": "GTA / Miami-night posters — $25,000 cash + Dodge Challenger",
+
+  "prize_exact": {
+    "value": "$25,000 CASH + DODGE CHALLENGER",
+    "source": "Brand Context/Muha_Meds.md:436 — 'GTA posters = \"$25,000 CASH + DODGE CHALLENGER\"'",
+    "status": "SOURCED"
+  },
+
+  "entry_mechanic_exact": {
+    "value": null,
+    "status": "UNRESOLVED",
+    "note": "The two assets in this family carry only 'LEARN MORE' as a call to action. The 'Scan In Members App. / To Redeem 10 Entries!' mechanic belongs to the QR-panel card backs (Mustang and Euro Summer families) — do NOT borrow it here. A planner that transplants it is describing a different campaign."
+  },
+
+  "raffle_id": {
+    "value": null,
+    "status": "UNRESOLVED",
+    "note": "'Raffle ID: G2T6A03' is recorded for the QR-panel backs and is itself flagged as a placeholder (RAFFLE_ID env). Not evidenced for this family. Source: Brand Context/Muha_Meds.md:240,299"
+  },
+
+  "assets": [
+    {
+      "path": "Brand Context/assets/Muha_Meds/Members Raffle Card.png",
+      "w": 2880,
+      "h": 2880,
+      "aspect": "1:1",
+      "alpha": false,
+      "role": "campaign_card",
+      "has_burned_in_type": true,
+      "ocr_read": ["OFFICIAL ENTRY", "MUHA MEMBERS RAFFLE", "$25.000+", "AND DODGE CHALLENGER", "LEARN MORE"],
+      "_ocr_note": "sieve-ocr at confidence >=0.9. '$25.000+' is the OCR read; the rendered glyph is a comma. OCR output is what a machine SEES — never treat it as design intent.",
+      "third_party_marks": [
+        {
+          "mark": "Dodge Challenger",
+          "form": "rendered vehicle AND burned-in type",
+          "consequence": "Prominent rendered branded product fails moderation. Expect OutputVideoSensitiveContentDetected.PolicyViolation on close framing."
+        }
+      ],
+      "never_use_for": [
+        "reference_image on a generation — a tightly-cropped third-party mark is refused",
+        "any 9:16 deliverable without accepting that a 1:1 source loses ~44% of its pixels to letterbox"
+      ]
+    },
+    {
+      "path": "Brand Context/assets/Muha_Meds/Win Cash + Challenger.png",
+      "w": 2160,
+      "h": 2880,
+      "aspect": "3:4",
+      "alpha": false,
+      "role": "campaign_card",
+      "has_burned_in_type": true,
+      "ocr_read": ["WIN $25,000", "CASH + DODGE", "CHALLENGER"],
+      "third_party_marks": [
+        {
+          "mark": "Dodge Challenger",
+          "form": "rendered vehicle AND burned-in type",
+          "consequence": "same as above"
+        }
+      ],
+      "never_use_for": ["reference_image on a generation"]
+    }
+  ],
+
+  "unresolved": [
+    "Entry mechanic — the assets say only 'LEARN MORE'.",
+    "Draw date, entry deadline, odds, winner selection.",
+    "Eligibility and jurisdictions.",
+    "Whether '$25,000+' (as rendered on the card) or '$25,000' (as recorded in the playbook) is the approved spoken figure — they differ by a '+'."
+  ],
+
+  "_blocking": "prize_exact is SOURCED; entry_mechanic_exact is UNRESOLVED. A clip whose call to action is 'enter now' cannot be written from this record without a human supplying the mechanic."
+}

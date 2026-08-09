@@ -1,0 +1,111 @@
+{
+  "brand": "Muha_Meds",
+  "display_name": "Muha Meds",
+  "program_name": "Muha Members",
+  "_schema": "brand-registry/1",
+  "_why": "Agents given only the engine knowledge base wrote a cannabis sweepstakes ad with no disclosures and TWO independently invented a $35,000 Rolex prize, mined out of throwaway probe dialogue quoted inside a law's evidence block. Every field here carries a source. A field with no source is null and named in `unresolved` — it is never guessed.",
+
+  "category": "cannabis / THC",
+  "category_risk": [
+    {
+      "rule": "21+ product. Giveaway assets carry disclaimers.",
+      "source": "Brand Context/Muha_Meds.md:57"
+    },
+    {
+      "rule": "Never depict inhaling or consumption in ad creative — show the device and the fidget mechanic only (platform policy + brand safety).",
+      "source": "sieve/products/Muha_Meds/MM-gen2x2-eurosummer.json locked[4]"
+    },
+    {
+      "rule": "Premium nightclub/luxury brands never lead with cannabis leaves or smoke — that is why they read premium. Drop the leaf.",
+      "source": "Brand Context/Muha_Meds.md:58"
+    }
+  ],
+
+  "naming_rules": [
+    {
+      "rule": "'Muha Meds' is the PRODUCT brand. 'Muha Members' is the loyalty/giveaway program. Never mix them.",
+      "source": "Brand Context/Muha_Meds.md:17-21"
+    },
+    {
+      "rule": "Giveaway assets spell 'MUHA MEMBERS' — never 'MUHA MEDS'. A euro-postcard raffle card v1 was rejected for exactly this.",
+      "source": "Brand Context/Muha_Meds.md:21"
+    }
+  ],
+
+  "locked_spellings": {
+    "_note": "Exact strings that have burned before. Verbatim from the playbook — these are DESIGN INTENT, not OCR output.",
+    "source": "Brand Context/Muha_Meds.md:437",
+    "strings": [
+      "MUHA MEMBERS",
+      "Members",
+      "F-150 XLT",
+      "10 STRAINS",
+      "WIN $20,000",
+      "Redeem",
+      "Scan In Members App. / To Redeem 10 Entries!  [SLASH form — Mustang/QR-panel backs, Muha_Meds.md:240]",
+      "Scan In Members App. To Redeem 10 Entries!  [NO-SLASH form — Euro Summer back, Muha_Meds.md:299]",
+      "Raffle ID: G2T6A03",
+      "No Purchase Necessary"
+    ],
+    "never_write": {
+      "MUHA MEDS": "on giveaway assets — use MUHA MEMBERS",
+      "MMembers": "the wordmark is 'Members', one M",
+      "F-150 XTL": "transposed — it is XLT",
+      "10 STRAWS": "it is 10 STRAINS",
+      "$20K": "write the full number, WIN $20,000",
+      "Redemn": "misrender of Redeem, seen in 12_qrglow"
+    }
+  },
+
+  "mandatory_disclosures": {
+    "status": "PARTIAL — NOT LEGALLY CLEARED",
+    "known": [
+      { "text": "No Purchase Necessary", "source": "Brand Context/Muha_Meds.md:57,437" },
+      { "text": "21+", "source": "Brand Context/Muha_Meds.md:57" }
+    ],
+    "_warning": "This is what the brand playbook records, not what counsel requires. It is a floor, not the list. Treat a deliverable carrying only these as UNCLEARED.",
+    "unresolved": [
+      "Whether each disclosure must be SPOKEN or may be a burned-in plate — this is a hard word-budget question on a short clip, not a formatting one.",
+      "Required legibility / on-screen duration per disclosure.",
+      "Full official-rules text and where it must be linked.",
+      "Eligibility and jurisdiction restrictions (void-where-prohibited scope).",
+      "Whether the cannabis category itself trips platform ad policy for paid distribution."
+    ]
+  },
+
+  "campaign_alias_warnings": [
+    {
+      "alias": "Golden Hour",
+      "status": "REAL CAMPAIGN — ABSENT FROM THE PLAYBOOK",
+      "finding": "CORRECTED 2026-08-08. An earlier version of this file recorded Golden Hour as NOT a campaign, on the evidence that 'golden hour' returns zero hits across Brand Context/ and that the phrase is the shoot prompt's lighting descriptor. That evidence was real but the conclusion was WRONG. A campaign card exists on disk — 'Golden Hour Edition / WIN A $35,000 ROLEX YACHT-MASTER' — and the operator confirmed it is the right card. See campaign golden-hour-rolex.",
+      "consequence": "The absence is in the PLAYBOOK, not in reality: Muha_Meds.md:436 lists four campaigns and Golden Hour is not one of them, so the playbook is stale. Two agent runs and one analysis were contaminated by this card precisely because it lived in a worktree inputs/ folder with no registry entry — findable by anything, approved by nobody.",
+      "lesson": "A campaign missing from the brand doc is not the same as a campaign that does not exist. Absence of evidence in one source is not evidence of absence — check the assets on disk before declaring a campaign fictional.",
+      "source": "asset .claude/worktrees/agent-a7044511e4cba5e6d/inputs/golden-hour-plates/card-clean.png, OCR-verified; operator confirmation 2026-08-08"
+    }
+  ],
+
+  "standing_warning": {
+    "text": "Prize framing differs by asset — never assume one unified prize. Confirm if unsure.",
+    "source": "Brand Context/Muha_Meds.md:436"
+  },
+
+  "copy_policy": {
+    "_why": "An earlier version of this file said 'Every line of dialogue is a human deliverable.' That generalised to every campaign, including fully-sourced ones, so no brief could ever produce copy and the campaign disambiguation bought nothing. A gate with no passing state gets deleted.",
+    "may_draft": "YES — when a campaign's prize_exact and entry_mechanic_exact are both SOURCED, write the script. Quote those strings VERBATIM; never paraphrase a sourced claim.",
+    "must_not_state": "Anything not in the registry: draw dates, deadlines, odds, entry counts beyond the sourced mechanic, eligibility, winner selection. If a structural law wants a beat you have no approved fact for, cut the beat.",
+    "unfilled_slots": "Leave disclosures as explicit unfilled slots — e.g. {{DISCLOSURE: placement + wording pending}} — rather than inventing wording or silently omitting them. Use double-BRACE — a double-bracket placeholder renders as a broken wikilink.",
+    "status_of_any_draft": "DRAFT — NOT FOR SUBMIT until a human initials the claims list. Drafting and escalating are the same step, not alternatives."
+  },
+
+  "unresolved": [
+    "No approved spoken-copy library exists, so a first draft has no house voice to match. This does not block drafting — see copy_policy.",
+    "No draw dates, entry deadlines, odds or winner-selection mechanics are recorded anywhere in Brand Context/.",
+    "Brand Context/Muha_Meds_DesignSystem.html does not exist — only Dialed_Health has a design system file. Palette and type are prose only."
+  ],
+
+  "sources": [
+    "Brand Context/Muha_Meds.md (57 KB, read 2026-08-08)",
+    "sieve/products/Muha_Meds/MM-gen2x2-eurosummer.json",
+    "Brand Context/assets/Muha_Meds/ (7 files, measured + OCR'd 2026-08-08)"
+  ]
+}

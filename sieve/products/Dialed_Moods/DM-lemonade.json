@@ -1,0 +1,18 @@
+{
+  "sku": "DM-lemonade",
+  "brand": "Dialed_Moods",
+  "aliases": [
+    "lemonade",
+    "lemonade can",
+    "dialed moods lemonade"
+  ],
+  "canonical": "Brand Context/assets/Dialed_Moods/Lemonade.png",
+  "geometry": "12 fl oz tall slim aluminium can, sold and shown as part of a 6-can lineup; yellow label, lemon-slice vertical ribbon",
+  "source": "Brand Context/Dialed_Moods.md:15-23,39-54",
+  "locked": [
+    "NEVER composite the can into a scene — always regenerate with the can asset passed as a reference (Dialed_Moods.md rule 1)",
+    "Always pass the REAL can asset as reference; never a simplified render of it (rule 4)",
+    "Label artwork must be preserved pixel-faithfully when animating (rule 5)",
+    "Make the CAN the large PRIMARY subject, front-facing, foreground (rule 3)"
+  ]
+}

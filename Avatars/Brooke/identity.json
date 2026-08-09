@@ -1,0 +1,57 @@
+{
+  "name": "Brooke",
+  "status": "casting",
+  "canonical": "identity/portrait_neutral.png",
+  "descriptor": "38, sun-kissed SoCal mom, beach-blonde soft waves, warm brown eyes, dainty gold hoops and layered necklaces, effortless-expensive casual (cream ribbed sets, white linen). Settings: bright white marble kitchen (primary), getting-ready vanity, luxury-SUV car line.",
+  "voice": "Bright, warm American female voice, fast playful OC cadence, \"okay so\" energy, girlfriend telling you something she just found out, never announcer-like.",
+  "identityProvider": "refs",
+  "anchors": [
+    {
+      "file": "identity/portrait_neutral.png",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": "none"
+    },
+    {
+      "file": "identity/portrait_smile.png",
+      "yaw": "frontal",
+      "light": "window-left",
+      "expr": "laughing",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": ""
+    },
+    {
+      "file": "takes/scene_carline.png",
+      "yaw": "frontal",
+      "light": "outdoor-sun",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "take",
+      "usable": true,
+      "note": "The face is clear and well-lit."
+    },
+    {
+      "file": "takes/scene_vanity.png",
+      "yaw": "3q-right",
+      "light": "window-right",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "take",
+      "usable": true,
+      "note": "The face is clear and well-lit."
+    }
+  ],
+  "approvedTakes": [],
+  "notes": [
+    "AVATAR.md: FACE NOT YET GENERATED — candidates pending founder session.",
+    "Third affiliate influencer, the OC beauty/wellness lane. Created 2026-07-23."
+  ],
+  "source": "Avatars/Brooke/AVATAR.md",
+  "analyzedAt": "2026-07-28"
+}

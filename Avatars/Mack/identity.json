@@ -1,0 +1,36 @@
+{
+  "name": "Mack",
+  "status": "locked",
+  "canonical": "identity/portrait_neutral.png",
+  "descriptor": "American welder, early 30s, buzzed dark hair, short dark beard, sun-worn skin, CLEAN well-kept navy work t-shirt, ear protection around his neck, leather work gloves in chest pocket. Strong but real build, never gym-polished. Honest tired-but-good-humored face, direct-to-camera, slight smirk when amused.",
+  "voice": "Low, gravelly American male voice, unhurried working-man cadence, plain words, dry humor, never announcer-like, never salesy.",
+  "identityProvider": "refs",
+  "anchors": [
+    {
+      "file": "identity/portrait_neutral.png",
+      "yaw": "frontal",
+      "light": "window-right",
+      "expr": "neutral",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": "The face is clear and well-lit."
+    },
+    {
+      "file": "identity/portrait_smile.png",
+      "yaw": "3q-right",
+      "light": "window-right",
+      "expr": "smile",
+      "framing": "chest-up",
+      "role": "canonical",
+      "usable": true,
+      "note": ""
+    }
+  ],
+  "approvedTakes": [],
+  "notes": [
+    "FOUNDER RULE: no dirt or grime — credibility comes from the jobsite and gear, never from dirt. Excessive grime is disrespectful to the trade."
+  ],
+  "source": "Avatars/Mack/AVATAR.md",
+  "analyzedAt": "2026-07-28"
+}

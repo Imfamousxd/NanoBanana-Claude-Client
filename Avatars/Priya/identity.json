@@ -1,0 +1,14 @@
+{
+  "name": "Priya",
+  "status": "casting",
+  "canonical": null,
+  "descriptor": "Woman, 33, Indian American, long dark hair loosely tied back, minimal makeup, oversized cream knit, slight build, thoughtful direct gaze",
+  "voice": "Clear mid-range American female voice, brisk and articulate, warm but efficient, no upward inflection, never announcer-like",
+  "identityProvider": "refs",
+  "anchors": [],
+  "approvedTakes": [],
+  "notes": [
+    "Cast 2026-07-29 via sieve-avatar new"
+  ],
+  "source": "Avatars/Priya/AVATAR.md"
+}

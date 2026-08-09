@@ -1,0 +1,38 @@
+[
+  {
+    "method": "nnedi2x_down",
+    "psnr_raw": 38.168,
+    "psnr_aligned": 42.554,
+    "align_shift": [
+      0.5,
+      0.5
+    ],
+    "ssim_raw": 0.98028,
+    "lap_ratio": 0.553,
+    "sec_per_frame": 1.004
+  },
+  {
+    "method": "nnedi2x_down_cas",
+    "psnr_raw": 37.428,
+    "psnr_aligned": 41.436,
+    "align_shift": [
+      0.5,
+      0.5
+    ],
+    "ssim_raw": 0.97597,
+    "lap_ratio": 0.771,
+    "sec_per_frame": 0.992
+  },
+  {
+    "method": "nnedi2x_nns64",
+    "psnr_raw": 38.172,
+    "psnr_aligned": 42.597,
+    "align_shift": [
+      0.5,
+      0.5
+    ],
+    "ssim_raw": 0.98029,
+    "lap_ratio": 0.556,
+    "sec_per_frame": 1.114
+  }
+]

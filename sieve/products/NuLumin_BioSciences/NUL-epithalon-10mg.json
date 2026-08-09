@@ -1,0 +1,14 @@
+{
+  "sku": "NUL-epithalon-10mg",
+  "brand": "NuLumin_BioSciences",
+  "aliases": [
+    "epithalon",
+    "epithalon 10mg"
+  ],
+  "canonical": "Brand Context/assets/NuLumin_BioSciences/Epithalon_10mg_blue.png",
+  "geometry": "NuLumin peptide vial, blue colourway, 10 mg",
+  "source": "Brand Context/NuLumin_BioSciences.md",
+  "locked": [
+    "Film grain is a LOCKED mandatory post step — run film-grain.py (NuLumin_BioSciences.md:253-256)"
+  ]
+}

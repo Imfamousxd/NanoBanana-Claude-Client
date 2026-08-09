@@ -1,0 +1,37 @@
+{
+  "_what": "The Soul casting lane as a real engine route: Sol (a named avatar) animated through ModelArk 1.5-pro with his canonical as the first frame. This is the same-face-across-pieces path — 2.5's speech quality is not used here; identity is. Sol is CASTING, so --go is refused until the founder approves.",
+  "id": "sol-ugc-testimonial",
+  "brand": "Muha_Meds",
+  "campaign": "none",
+  "claims_used": [],
+  "slots": [],
+  "lane": "ugc",
+  "duration": 5,
+  "ratio": "9:16",
+  "resolution": "1080p",
+  "subject": {
+    "type": "person",
+    "avatar": "Sol",
+    "casting": "resolved by the avatar kit — see Avatars/Sol/AVATAR.md",
+    "props": null
+  },
+  "scene": {
+    "look": "Casual handheld selfie video, one continuous take. He sits in his parked car in late-afternoon sun coming through the side window. Real skin texture, natural uneven daylight, no beauty filter. Full-bleed, fills the frame edge to edge, no border, no mockup.",
+    "camera": "He holds the phone himself so the frame bobs and drifts; auto-exposure hunts as the light shifts. Casual, mid-conversation energy. One continuous unbroken take.",
+    "voice": "Natural Southern-Californian accent, easy and unhurried; open throat, slightly clipped consonants."
+  },
+  "script": {
+    "register": "telling a friend, offhand",
+    "profanity": false,
+    "beats": [
+      { "t": "0-5s", "action": "He looks into the lens with an easy half-smile, small laugh at the end.", "line": "Yeah man, honestly this one's the real deal. I wasn't expecting that." }
+    ]
+  },
+  "required_tokens": [],
+  "audio": {
+    "generate": true,
+    "direction": "Audio: his voice close on the phone microphone inside the car, cabin room tone under it, muffled traffic outside. No instruments, no melody, no song, no soundtrack."
+  },
+  "proof": { "required": false, "_why": "No props in hand; the whole clip is 5s (proof-length) already." },
+  "post": { "loudnorm": true, "conform1080": false }
+}
