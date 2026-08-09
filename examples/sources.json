@@ -1,0 +1,22 @@
+{
+  "_what": "The 'what we want' library — past reference creatives, organized by TYPE so any generation can pull real examples as targets and @Image references. Each source maps a FOLDER of examples to a (type, subtype, brand); examples.mjs resolves the actual files at query time, so this stays accurate as assets grow. Add a source whenever a new set of good reference work lands.",
+  "taxonomy": {
+    "photo": ["meta-ad", "packshot", "hero", "lifestyle", "card", "logo"],
+    "video": ["ugc-talking-head", "product-scene", "campaign"]
+  },
+  "sources": [
+    { "dir": "Brand Context/assets/NuLumin_BioSciences/ads/scenes", "type": "photo", "subtype": "meta-ad", "brand": "NuLumin_BioSciences", "note": "caustics/cryo hero ad scenes at 4:5 and 9:16 — Meta creative formats" },
+    { "dir": "Brand Context/assets/Muha_Meds", "type": "photo", "subtype": "meta-ad", "brand": "Muha_Meds", "note": "Win Cash + Challenger, group-truck, raffle-card giveaway creatives" },
+    { "dir": "NuLumin Generated/NuLumin Vial Library", "type": "photo", "subtype": "packshot", "brand": "NuLumin_BioSciences", "note": "66-SKU vial library, transparent + white background" },
+    { "dir": "NuLumin Generated/White BG Powder", "type": "photo", "subtype": "packshot", "brand": "NuLumin_BioSciences", "note": "powder-filled vials on clean white" },
+    { "dir": "Brand Context/assets/Dialed_Moods", "type": "photo", "subtype": "packshot", "brand": "Dialed_Moods", "note": "Cognition Elixir 12oz can renders (Blue Glacier etc.)" },
+    { "dir": "NuLumin Generated/Hero Shots v3 (fixed)", "type": "photo", "subtype": "hero", "brand": "NuLumin_BioSciences", "note": "dramatic product hero renders" },
+    { "dir": "Nulumin lifestyle shots", "type": "photo", "subtype": "lifestyle", "brand": "NuLumin_BioSciences", "note": "product in real scenes, 1x1 + 3x4" },
+    { "dir": "Brand Context/assets/NuLumin_BioSciences/ads", "type": "photo", "subtype": "logo", "brand": "NuLumin_BioSciences", "note": "logo_black / logo_white marks" },
+    { "dir": "inputs", "type": "photo", "subtype": "card", "brand": "Muha_Meds", "note": "Golden Hour QR card side (own-brand card reference)" },
+    { "dir": "generations/sol-card-scene", "type": "photo", "subtype": "card", "brand": "Muha_Meds", "note": "Sol holding the Golden Hour card — composed UGC first frames" },
+    { "dir": "Avatars/Sol/takes", "type": "video", "subtype": "ugc-talking-head", "brand": null, "note": "Sol UGC selfie clips (Soul -> 1.5-pro)" },
+    { "dir": "generations/muha-goldenhour-house", "type": "video", "subtype": "ugc-talking-head", "brand": "Muha_Meds", "note": "Golden Hour UGC 30s talking head" },
+    { "dir": "generations/sol-card-ugc", "type": "video", "subtype": "ugc-talking-head", "brand": "Muha_Meds", "note": "Sol + card UGC (approved avatar)" }
+  ]
+}

@@ -33,6 +33,7 @@ The server reads keys from the repo-root `.env` exactly like the CLI, so no keys
 | `engine_cost` | no | `spent` audits the ledger; `drain` recovers paid-but-not-downloaded clips. |
 | `scene_frame` | ~cents | Compose an avatar + product/card into one first frame (image), which the avatar lane animates. Review before generating. |
 | `engine_generate` | **yes** | The paid run. **GATED**: requires `confirm=true`, and `claims_initialed` when the script speaks a registered claim. Proof-gated prop shots and casting avatars still refuse. |
+| `examples_find` | no | **The 'what we want' library.** Past reference creatives by type — `type:"photo", subtype:"meta-ad"` returns real past Meta-ad files to use as targets / `@Image` references. Omit type to see the taxonomy + counts. Backed by `examples/sources.json` (folder→type map, resolved live). |
 | `create_from_request` | no | **The fast path.** Structured request in → a saved, validated, PLANNED `*.video.json` out. You supply casting/scene/beats/refs; it assembles the brief with routing defaults, dry-runs it, returns route+cost+prompt-craft score+blockers. Then `engine_generate`. |
 | `kg_list` | no | Knowledge-graph banks + law counts (or a bank's law ids). |
 | `kg_search` | no | Find laws across every bank — run before adding, to avoid duplicates. |

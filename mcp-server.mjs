@@ -214,6 +214,29 @@ const TOOLS = {
     },
   },
 
+  examples_find: {
+    description: "Pull PAST reference creatives (the 'what we want' library) by type, so a new " +
+      "generation has real targets and @Image references. Omit type to see the taxonomy + counts. " +
+      "e.g. type='photo', subtype='meta-ad' returns past Meta ad creatives; returns real file paths " +
+      "you can feed to scene_frame or cite as @Image references.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        type: { type: "string", enum: ["photo", "video"], description: "omit to list the whole taxonomy" },
+        subtype: { type: "string", description: "e.g. meta-ad, packshot, hero, lifestyle, card, logo, ugc-talking-head" },
+        brand: { type: "string" },
+        limit: { type: "integer", default: 8 },
+      },
+    },
+    handler: async ({ type, subtype, brand, limit = 8 }) => {
+      if (!type) { const r = await run("node", ["examples.mjs", "types"], { timeoutMs: 30000 }); return okText(r.out || r.err); }
+      const args = ["examples.mjs", "find", "--type", type, "--limit", String(limit)];
+      if (subtype) args.push("--subtype", subtype);
+      if (brand) args.push("--brand", brand);
+      const r = await run("node", args, { timeoutMs: 30000 });
+      return okText(r.out || r.err);
+    },
+  },
   create_from_request: {
     description: "Turn a structured creative request into a SAVED, VALIDATED, PLANNED brief in one " +
       "call. You supply the creative content (casting, scene, beats, refs); this assembles a " +
