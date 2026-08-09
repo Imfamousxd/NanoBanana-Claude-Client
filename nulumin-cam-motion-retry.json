@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "nul-cam-motion-1x1-02-retry: Square 1:1 editorial wellness lifestyle photograph. Recreate the scene, subject, pose, clothing, setting, lighting, and color palette of the provided reference image faithfully — same person, same activity, same environment. Add CAMERA-IN-MOTION blur: subtle directional motion blur permeates the entire frame as if captured during a slow-shutter pan from a moving camera, distributed evenly across foreground and background, with soft secondary exposures on actively moving limbs. Subject is the relative anchor (most legible) but still softer than tack-sharp. Slight Dutch tilt ~5-8°. Documentary photojournalism look, painterly low-key lighting, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/09a65786868b46df7e42b4d3d2646a7e.jpeg"]
+  },
+  {
+    "prompt": "nul-cam-motion-1x1-04-retry: Square 1:1 editorial wellness lifestyle photograph. Recreate the scene, subject, pose, clothing, setting, lighting, and color palette of the provided reference image faithfully — same person, same activity, same environment. Add CAMERA-IN-MOTION blur: subtle directional motion blur permeates the entire frame as if captured during a slow-shutter pan from a moving camera, distributed evenly across foreground and background, with soft secondary exposures on actively moving limbs. Subject is the relative anchor (most legible) but still softer than tack-sharp. Slight Dutch tilt ~5-8°. Documentary photojournalism look, painterly low-key lighting, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/501466320a6fdd52c8331cb69b2106b2.jpeg"]
+  },
+  {
+    "prompt": "nul-cam-motion-1x1-07-retry: Square 1:1 editorial wellness lifestyle photograph. Recreate the scene, subject, pose, clothing, setting, lighting, and color palette of the provided reference image faithfully — same person, same activity, same environment. Add CAMERA-IN-MOTION blur: subtle directional motion blur permeates the entire frame as if captured during a slow-shutter pan from a moving camera, distributed evenly across foreground and background, with soft secondary exposures on actively moving limbs. Subject is the relative anchor (most legible) but still softer than tack-sharp. Slight Dutch tilt ~5-8°. Documentary photojournalism look, painterly low-key lighting, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/e48a465df7cfa85636a7a10e3664d44f.jpeg"]
+  },
+  {
+    "prompt": "nul-cam-motion-3by4-04-retry: 3:4 horizontal editorial lifestyle photograph. Recreate the scene, subject, pose, clothing, setting, lighting, and color palette of the provided reference image faithfully — same person, same activity, same environment. Add CAMERA-IN-MOTION blur: subtle directional motion blur permeates the entire frame as if captured during a slow-shutter pan from a moving camera, distributed evenly across foreground and background, with soft secondary exposures on actively moving limbs. Subject is the relative anchor (most legible) but still softer than tack-sharp. Slight Dutch tilt ~5-8°. Documentary photojournalism look, painterly low-key lighting, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "3:4",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/3 by 4/dfe23d3eef2f19645cd79b485b62928a.jpeg"]
+  }
+]

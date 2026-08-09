@@ -1,0 +1,70 @@
+{
+  "$comment": "The interchangeable selling-point matrix for split testing. Every entry names the claim record that must be approved before it may run. Nothing here is pre-approved — see knowledge/claims/README.md and the activation note in this pack's README.",
+  "version": 1,
+  "brand": "brand.nulumin",
+  "updatedAt": "2026-07-28",
+
+  "$formats": "`label`+`sub` is the light chip form (format `single`). `loud` is the single uppercase line (format `streak`). `spec` is the two-line pair for the three-column spec row (format `panel`) — pre-broken on purpose: left to wrap on their own, one column runs to two lines while the others sit on one and the row looks broken.",
+
+  "points": {
+    "octa8":      {"label": "Octa-8 panel",              "sub": "eight analyses, every batch",              "loud": "Octa-8 panel, every batch",  "spec": ["Octa-8 panel", "every batch"],      "claim": "claim.nulumin.octa8"},
+    "thirdparty": {"label": "Third-party tested",        "sub": "independent lab, named on the certificate", "loud": "Third-party tested",        "spec": ["Third-party", "tested"],            "claim": "claim.nulumin.third-party-tested"},
+    "coa":        {"label": "Public COA library",        "sub": "no emails, no waiting",                     "loud": "Public COA every batch",    "spec": ["Public COA", "library"],            "claim": "claim.nulumin.public-coa-library"},
+    "purity":     {"label": "≥99% HPLC purity spec",     "sub": "verified on every batch",                   "loud": "≥99% HPLC purity spec",     "spec": ["≥99% HPLC", "purity spec"],         "claim": "claim.nulumin.hplc-purity-spec"},
+    "usa":        {"label": "US-synthesized",            "sub": "cGMP facilities, California",               "loud": "Made in the USA",           "spec": ["Made in", "the USA"],               "claim": "claim.nulumin.made-in-usa"},
+    "processing": {"label": "Processes in 1–3 business days", "sub": "tracked shipping",                     "loud": "Processed in 1–3 days",     "spec": ["Processed in", "1–3 days"],         "claim": "claim.nulumin.processing-time"},
+    "shipping":   {"label": "Free shipping over $200",   "sub": "applied at checkout",                       "loud": "Free U.S. shipping over $200", "spec": ["Free shipping", "over $200"],    "claim": "claim.nulumin.free-shipping-200"},
+    "domestic":   {"label": "Ships within the United States", "sub": null,                                   "loud": "Ships from California",     "spec": ["Ships from", "California"],         "claim": "claim.nulumin.domestic-shipping"},
+    "volume":     {"label": "10% off at 5+, 20% off at 10+", "sub": "same SKU, applied at checkout",         "loud": "10% off 5+ · 20% off 10+",  "spec": ["10% off 5+", "20% off 10+"],        "claim": "claim.nulumin.volume-discounts"},
+    "nominimums": {"label": "No minimums",               "sub": null,                                        "loud": "No minimums, ever",         "spec": ["No minimums,", "ever"],             "claim": "claim.nulumin.no-minimums"},
+    "roomtemp":   {"label": "Room-temperature stable",   "sub": "no refrigerated shipping",                  "loud": "Room-temperature stable",   "spec": ["Room-temperature", "stable"],       "claim": "claim.nulumin.room-temp-stable"},
+    "trace":      {"label": "Lot-code traceability",     "sub": "synthesis to your door",                    "loud": "Tracked to your door",      "spec": ["Tracked to", "your door"],          "claim": "claim.nulumin.lot-traceability"},
+    "catalog31":  {"label": "31 compounds in stock",     "sub": "five research categories",                  "loud": "31 compounds in stock",     "spec": ["31 compounds", "in stock"],         "claim": "claim.nulumin.catalog-31"}
+  },
+
+  "variants": {
+    "$comment": "Which points appear together. Vary ONE hypothesis at a time — these are experiments, not rerolls. Each variant competes as an IDEA (rigor vs speed vs price) so the test learns why people buy, not which font won.",
+    "base":      {"points": ["octa8", "purity", "usa"],            "hypothesis": "analytical rigor"},
+    "trust":     {"points": ["thirdparty", "coa", "trace"],        "hypothesis": "independent verification"},
+    "logistics": {"points": ["processing", "shipping", "roomtemp"], "hypothesis": "delivery confidence"},
+    "vol":       {"points": ["volume", "shipping", "processing"],  "hypothesis": "price / scale"}
+  },
+
+  "hooks": {
+    "$comment": "Headline pairs — clause 1 roman, clause 2 italic with the spectrum gradient. Sentence case, ends in a period. 2–6 words per clause so they survive thumbnail size.",
+    "proof":  {"lines": ["See the lab report", "before you buy."], "points": ["purity", "coa", "usa"], "offer": "shipping"},
+    "speed":  {"lines": ["Ordered today,", "out the door fast."],  "points": ["domestic", "processing", "trace"], "offer": "shipping"},
+    "value":  {"lines": ["Buy one vial.", "Or buy ten."],          "points": ["nominimums", "volume", "catalog31"], "offer": "shipping"},
+    "documented": {"lines": ["{compound},", "documented."],        "points": ["octa8", "purity", "usa"], "offer": "shipping"},
+    "panel":  {"lines": ["Cellular repair", "and bioenergetics."], "points": ["purity", "coa", "usa"], "offer": "shipping",
+               "note": "Panel headlines name the BIOLOGICAL AXIS, never a benefit and never an outcome."}
+  },
+
+  "ctas": {
+    "$comment": "Destination-matched. A product-page CTA is lower friction than the COA library; the COA library gets its own dedicated creative.",
+    "product": "Shop {compound}",
+    "panel": "Shop the panel",
+    "coa": "See the lab results",
+    "tests": "See all 8 tests",
+    "organic": "Learn how a COA is read"
+  },
+
+  "prohibited": {
+    "$comment": "Deliberately excluded until a sourced claim record exists. Do not resurrect these from old campaign copy — historical prose is not evidence of approval.",
+    "claims": [
+      "ISO 17025 or any accreditation",
+      "Any guarantee, warranty, or money-back promise",
+      "Subscribe & Save, \"buy 10 get 2 free\", or any offer not live on the site",
+      "\"Fastest fulfillment\" or any superlative against competitors",
+      "Any efficacy, safety, outcome, dosing, or protocol statement",
+      "\"We have not found another vendor publishing all 8\" — the site's own line, but it is the Lanham Act exposure in a comparative ad"
+    ],
+    "comparative": "Creatives that assert what a typical vendor does NOT do are comparative claims. Competitors stay unnamed, and the creative needs legal sign-off before it runs in PAID."
+  },
+
+  "channelRules": {
+    "$comment": "See knowledge/compliance/NULUMIN_TIKTOK_PLAYBOOK.md. The paid/organic split is a compliance decision, not a style choice.",
+    "paid": "Research-use-only peptides have no lawful paid path on any major platform. Anything built with a shop CTA and an offer is for owned channels and email until that changes.",
+    "organic": "The documented enforcement vector for organic posts is COMMERCE SIGNALS — shop verbs, prices, offers, store links. Organic cuts carry none of them and swap the CTA for a non-commerce end card. Method education (what HPLC measures, what a lot number is for, what RUO means) is the one lane this category can post in at volume."
+  }
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "prompt": "nul-cam-motion-v4-1x1-01-v1: Square 1:1 editorial FITNESS/ACTION photograph. Use the provided reference image AS INSPIRATION ONLY for the activity type, setting, lighting direction, and atmospheric mood — DO NOT replicate the ref one-for-one.\n\nCRITICAL — the subject MUST be visibly DOING AN ACTIVE WORKOUT / EXERCISE / FITNESS ACTIVITY. Identify the activity in the reference (e.g. yoga pose, dumbbell lift, stretching, running, push-up, plank, jump rope, hamstring stretch, kettlebell swing, sprint start, climbing, etc.) and recreate that ACTIVE moment with a clearly readable workout/exercise gesture. The shot must read instantly as \"someone working out\", not as a candid lifestyle photo of someone standing or walking around. Body posture, equipment if present, muscle engagement, and exertion cues must all reinforce that this is mid-action fitness photography.\n\nDIVERGE from the reference: subject is a DIFFERENT person than in the ref (different hair, build, ethnicity), wearing DIFFERENT clothing colors and silhouette than the ref (use deep olive, charcoal grey, or dusty mauve athletic wear). Same activity type, same setting type, but a clearly different subject in clearly different attire.\n\nCAMERA-IN-MOTION blur (the blur is from the CAMERA, not from the subject): the photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/40s exposure — a tick faster than v3 so the action stays readable). The motion blur is a property of the camera's movement. The subject and the activity must remain CLEARLY READABLE through the blur — keep them as the most legible region of the frame; backgrounds smear more heavily. For this variant: fast lateral left-to-right camera pan; slight Dutch tilt ~5° clockwise; MODERATE blur intensity (clearly present but the action and subject remain readable).\n\nStyle: documentary action/fitness photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/0274faa00a62c8f64bff853741beda60.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 1,
+      "variant": "v1",
+      "refFile": "0274faa00a62c8f64bff853741beda60.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v4-1x1-02-v3: Square 1:1 editorial FITNESS/ACTION photograph. Use the provided reference image AS INSPIRATION ONLY for the activity type, setting, lighting direction, and atmospheric mood — DO NOT replicate the ref one-for-one.\n\nCRITICAL — the subject MUST be visibly DOING AN ACTIVE WORKOUT / EXERCISE / FITNESS ACTIVITY. Identify the activity in the reference (e.g. yoga pose, dumbbell lift, stretching, running, push-up, plank, jump rope, hamstring stretch, kettlebell swing, sprint start, climbing, etc.) and recreate that ACTIVE moment with a clearly readable workout/exercise gesture. The shot must read instantly as \"someone working out\", not as a candid lifestyle photo of someone standing or walking around. Body posture, equipment if present, muscle engagement, and exertion cues must all reinforce that this is mid-action fitness photography.\n\nDIVERGE from the reference: subject is a DIFFERENT person, wearing DIFFERENT clothing colors and the action captured is a slightly different beat of the same exercise/activity (different phase of the rep, different angle, different gesture). Same activity type, same setting type, but a clearly different subject in clearly different attire.\n\nCAMERA-IN-MOTION blur (the blur is from the CAMERA, not from the subject): the photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/40s exposure — a tick faster than v3 so the action stays readable). The motion blur is a property of the camera's movement. The subject and the activity must remain CLEARLY READABLE through the blur — keep them as the most legible region of the frame; backgrounds smear more heavily. For this variant: fast diagonal upward camera sweep; near level (~3° tilt); SUBTLE blur intensity (lightest of the three — action is very clearly visible).\n\nStyle: documentary action/fitness photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/09a65786868b46df7e42b4d3d2646a7e.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 2,
+      "variant": "v3",
+      "refFile": "09a65786868b46df7e42b4d3d2646a7e.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v4-1x1-04-v2: Square 1:1 editorial FITNESS/ACTION photograph. Use the provided reference image AS INSPIRATION ONLY for the activity type, setting, lighting direction, and atmospheric mood — DO NOT replicate the ref one-for-one.\n\nCRITICAL — the subject MUST be visibly DOING AN ACTIVE WORKOUT / EXERCISE / FITNESS ACTIVITY. Identify the activity in the reference (e.g. yoga pose, dumbbell lift, stretching, running, push-up, plank, jump rope, hamstring stretch, kettlebell swing, sprint start, climbing, etc.) and recreate that ACTIVE moment with a clearly readable workout/exercise gesture. The shot must read instantly as \"someone working out\", not as a candid lifestyle photo of someone standing or walking around. Body posture, equipment if present, muscle engagement, and exertion cues must all reinforce that this is mid-action fitness photography.\n\nDIVERGE from the reference: subject is a DIFFERENT person, wearing DIFFERENT clothing colors than the ref (use warm cream + black accents, or dusty rust, or deep navy). Same activity type, same setting type, but a clearly different subject in clearly different attire.\n\nCAMERA-IN-MOTION blur (the blur is from the CAMERA, not from the subject): the photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/40s exposure — a tick faster than v3 so the action stays readable). The motion blur is a property of the camera's movement. The subject and the activity must remain CLEARLY READABLE through the blur — keep them as the most legible region of the frame; backgrounds smear more heavily. For this variant: fast right-to-left camera pan; slight Dutch tilt ~5° counter-clockwise; MODERATE blur intensity (action stays readable).\n\nStyle: documentary action/fitness photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/501466320a6fdd52c8331cb69b2106b2.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 4,
+      "variant": "v2",
+      "refFile": "501466320a6fdd52c8331cb69b2106b2.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v4-1x1-06-v1: Square 1:1 editorial FITNESS/ACTION photograph. Use the provided reference image AS INSPIRATION ONLY for the activity type, setting, lighting direction, and atmospheric mood — DO NOT replicate the ref one-for-one.\n\nCRITICAL — the subject MUST be visibly DOING AN ACTIVE WORKOUT / EXERCISE / FITNESS ACTIVITY. Identify the activity in the reference (e.g. yoga pose, dumbbell lift, stretching, running, push-up, plank, jump rope, hamstring stretch, kettlebell swing, sprint start, climbing, etc.) and recreate that ACTIVE moment with a clearly readable workout/exercise gesture. The shot must read instantly as \"someone working out\", not as a candid lifestyle photo of someone standing or walking around. Body posture, equipment if present, muscle engagement, and exertion cues must all reinforce that this is mid-action fitness photography.\n\nDIVERGE from the reference: subject is a DIFFERENT person than in the ref (different hair, build, ethnicity), wearing DIFFERENT clothing colors and silhouette than the ref (use deep olive, charcoal grey, or dusty mauve athletic wear). Same activity type, same setting type, but a clearly different subject in clearly different attire.\n\nCAMERA-IN-MOTION blur (the blur is from the CAMERA, not from the subject): the photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/40s exposure — a tick faster than v3 so the action stays readable). The motion blur is a property of the camera's movement. The subject and the activity must remain CLEARLY READABLE through the blur — keep them as the most legible region of the frame; backgrounds smear more heavily. For this variant: fast lateral left-to-right camera pan; slight Dutch tilt ~5° clockwise; MODERATE blur intensity (clearly present but the action and subject remain readable).\n\nStyle: documentary action/fitness photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/Blur_e00779a33adf8edf1949f92bb7a2c4a8.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 6,
+      "variant": "v1",
+      "refFile": "Blur_e00779a33adf8edf1949f92bb7a2c4a8.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v4-1x1-07-v3: Square 1:1 editorial FITNESS/ACTION photograph. Use the provided reference image AS INSPIRATION ONLY for the activity type, setting, lighting direction, and atmospheric mood — DO NOT replicate the ref one-for-one.\n\nCRITICAL — the subject MUST be visibly DOING AN ACTIVE WORKOUT / EXERCISE / FITNESS ACTIVITY. Identify the activity in the reference (e.g. yoga pose, dumbbell lift, stretching, running, push-up, plank, jump rope, hamstring stretch, kettlebell swing, sprint start, climbing, etc.) and recreate that ACTIVE moment with a clearly readable workout/exercise gesture. The shot must read instantly as \"someone working out\", not as a candid lifestyle photo of someone standing or walking around. Body posture, equipment if present, muscle engagement, and exertion cues must all reinforce that this is mid-action fitness photography.\n\nDIVERGE from the reference: subject is a DIFFERENT person, wearing DIFFERENT clothing colors and the action captured is a slightly different beat of the same exercise/activity (different phase of the rep, different angle, different gesture). Same activity type, same setting type, but a clearly different subject in clearly different attire.\n\nCAMERA-IN-MOTION blur (the blur is from the CAMERA, not from the subject): the photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/40s exposure — a tick faster than v3 so the action stays readable). The motion blur is a property of the camera's movement. The subject and the activity must remain CLEARLY READABLE through the blur — keep them as the most legible region of the frame; backgrounds smear more heavily. For this variant: fast diagonal upward camera sweep; near level (~3° tilt); SUBTLE blur intensity (lightest of the three — action is very clearly visible).\n\nStyle: documentary action/fitness photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/e48a465df7cfa85636a7a10e3664d44f.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 7,
+      "variant": "v3",
+      "refFile": "e48a465df7cfa85636a7a10e3664d44f.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v4-1x1-09-v2: Square 1:1 editorial FITNESS/ACTION photograph. Use the provided reference image AS INSPIRATION ONLY for the activity type, setting, lighting direction, and atmospheric mood — DO NOT replicate the ref one-for-one.\n\nCRITICAL — the subject MUST be visibly DOING AN ACTIVE WORKOUT / EXERCISE / FITNESS ACTIVITY. Identify the activity in the reference (e.g. yoga pose, dumbbell lift, stretching, running, push-up, plank, jump rope, hamstring stretch, kettlebell swing, sprint start, climbing, etc.) and recreate that ACTIVE moment with a clearly readable workout/exercise gesture. The shot must read instantly as \"someone working out\", not as a candid lifestyle photo of someone standing or walking around. Body posture, equipment if present, muscle engagement, and exertion cues must all reinforce that this is mid-action fitness photography.\n\nDIVERGE from the reference: subject is a DIFFERENT person, wearing DIFFERENT clothing colors than the ref (use warm cream + black accents, or dusty rust, or deep navy). Same activity type, same setting type, but a clearly different subject in clearly different attire.\n\nCAMERA-IN-MOTION blur (the blur is from the CAMERA, not from the subject): the photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/40s exposure — a tick faster than v3 so the action stays readable). The motion blur is a property of the camera's movement. The subject and the activity must remain CLEARLY READABLE through the blur — keep them as the most legible region of the frame; backgrounds smear more heavily. For this variant: fast right-to-left camera pan; slight Dutch tilt ~5° counter-clockwise; MODERATE blur intensity (action stays readable).\n\nStyle: documentary action/fitness photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/ee1ac568636ed4848282817f51ee7968.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 9,
+      "variant": "v2",
+      "refFile": "ee1ac568636ed4848282817f51ee7968.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v4-4x3-02-v1: Landscape 4:3 editorial FITNESS/ACTION photograph. Use the provided reference image AS INSPIRATION ONLY for the activity type, setting, lighting direction, and atmospheric mood — DO NOT replicate the ref one-for-one.\n\nCRITICAL — the subject MUST be visibly DOING AN ACTIVE WORKOUT / EXERCISE / FITNESS ACTIVITY. Identify the activity in the reference (e.g. yoga pose, dumbbell lift, stretching, running, push-up, plank, jump rope, hamstring stretch, kettlebell swing, sprint start, climbing, etc.) and recreate that ACTIVE moment with a clearly readable workout/exercise gesture. The shot must read instantly as \"someone working out\", not as a candid lifestyle photo of someone standing or walking around. Body posture, equipment if present, muscle engagement, and exertion cues must all reinforce that this is mid-action fitness photography.\n\nDIVERGE from the reference: subject is a DIFFERENT person than in the ref (different hair, build, ethnicity), wearing DIFFERENT clothing colors and silhouette than the ref (use deep olive, charcoal grey, or dusty mauve athletic wear). Same activity type, same setting type, but a clearly different subject in clearly different attire.\n\nCAMERA-IN-MOTION blur (the blur is from the CAMERA, not from the subject): the photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/40s exposure — a tick faster than v3 so the action stays readable). The motion blur is a property of the camera's movement. The subject and the activity must remain CLEARLY READABLE through the blur — keep them as the most legible region of the frame; backgrounds smear more heavily. For this variant: fast lateral left-to-right camera pan; slight Dutch tilt ~5° clockwise; MODERATE blur intensity (clearly present but the action and subject remain readable).\n\nStyle: documentary action/fitness photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/76e3e302e2dbc17e15cb0b6f95c13d52.jpeg"
+    ],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 2,
+      "variant": "v1",
+      "refFile": "76e3e302e2dbc17e15cb0b6f95c13d52.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v4-4x3-03-v3: Landscape 4:3 editorial FITNESS/ACTION photograph. Use the provided reference image AS INSPIRATION ONLY for the activity type, setting, lighting direction, and atmospheric mood — DO NOT replicate the ref one-for-one.\n\nCRITICAL — the subject MUST be visibly DOING AN ACTIVE WORKOUT / EXERCISE / FITNESS ACTIVITY. Identify the activity in the reference (e.g. yoga pose, dumbbell lift, stretching, running, push-up, plank, jump rope, hamstring stretch, kettlebell swing, sprint start, climbing, etc.) and recreate that ACTIVE moment with a clearly readable workout/exercise gesture. The shot must read instantly as \"someone working out\", not as a candid lifestyle photo of someone standing or walking around. Body posture, equipment if present, muscle engagement, and exertion cues must all reinforce that this is mid-action fitness photography.\n\nDIVERGE from the reference: subject is a DIFFERENT person, wearing DIFFERENT clothing colors and the action captured is a slightly different beat of the same exercise/activity (different phase of the rep, different angle, different gesture). Same activity type, same setting type, but a clearly different subject in clearly different attire.\n\nCAMERA-IN-MOTION blur (the blur is from the CAMERA, not from the subject): the photograph reads as if the CAMERA was moving fast through the scene (slow-shutter pan from a fast-moving camera, ~1/40s exposure — a tick faster than v3 so the action stays readable). The motion blur is a property of the camera's movement. The subject and the activity must remain CLEARLY READABLE through the blur — keep them as the most legible region of the frame; backgrounds smear more heavily. For this variant: fast diagonal upward camera sweep; near level (~3° tilt); SUBTLE blur intensity (lightest of the three — action is very clearly visible).\n\nStyle: documentary action/fitness photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/c2affe14ec558d4c737528b571b807a7_copy.png"
+    ],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 3,
+      "variant": "v3",
+      "refFile": "c2affe14ec558d4c737528b571b807a7_copy.png"
+    }
+  }
+]

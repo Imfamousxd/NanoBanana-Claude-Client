@@ -1,0 +1,96 @@
+[
+  {
+    "prompt": "nul-lifestyle-1x1-05-v1: Square 1:1 editorial group fitness photograph on a clean seamless white cyclorama studio. Three athletes in matching white training apparel side by side — left: a fit man in a white tee and white shorts hoisting a black weighted slam ball overhead, center: a Black woman in a white long-sleeve crop and white briefs with a black slam ball pressed straight up above her head, right: a woman in a black athletic top and white shorts (cropped at the right frame edge) raising a black slam ball overhead. Slow-shutter motion blur is applied ONLY to the lifting arms and the slam balls — the moving arms and balls of the outer two athletes smear horizontally into translucent ghost trails along the lift path; the central woman's lifting arms stay sharper and her ball remains anchored. The bodies, faces, and clothing remain tack-sharp. Bright clean studio key light, slight floor shadow, muted off-white-and-black palette with warm skin midtones. Subtle fine 35mm film grain — understated, not heavy. No logos, no text.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/8519697b0a48c552e72c81ae32701eee.jpeg"]
+  },
+  {
+    "prompt": "nul-lifestyle-1x1-05-v2: Square 1:1 editorial fitness photograph on a clean seamless white cyclorama studio. A single fit woman in a white athletic crop and white shorts standing in the center of the frame, captured mid wall-ball-slam — a black weighted slam ball just released from her hands, her arms still extended upward following through the throw. Slow-shutter motion blur ONLY on the rising arms and the slam ball — they smear into clear vertical ribbon-streaks along the throw path with translucent secondary exposures of the ball trailing along the trajectory. The body, face, and clothing remain tack-sharp. Bright clean studio light, neutral palette with warm skin tones. Subtle fine 35mm film grain — understated, not heavy. Cinematic editorial. No text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/8519697b0a48c552e72c81ae32701eee.jpeg"]
+  },
+  {
+    "prompt": "nul-lifestyle-1x1-05-v3: Square 1:1 editorial fitness photograph on a clean seamless white cyclorama studio. Two athletes in white training apparel facing each other a few feet apart, mid medicine-ball pass — a black weighted ball traveling between them through the air, the thrower's arms extended forward in follow-through, the catcher's arms reaching forward to receive. Slow-shutter motion blur ONLY on the moving ball and the thrower's extended arms — they smear into a clear horizontal ribbon-streak following the path of the throw, with translucent secondary exposures of the ball along the trajectory. Both bodies, faces, and clothing remain tack-sharp. Bright clean studio key light, neutral white palette with warm skin tones. Subtle fine 35mm film grain — understated, not heavy. Editorial cinematic. No logos, no text.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/8519697b0a48c552e72c81ae32701eee.jpeg"]
+  },
+
+  {
+    "prompt": "nul-lifestyle-1x1-06-v1: Square 1:1 candid documentary gym photograph. Tight close framing on a young woman with dark wavy hair pulled back, golden-brown skin, sweaty after a hard workout, wiping her forehead with the back of her right forearm — eyes glancing sideways, lips slightly parted. She wears a black athletic top. A second blurry female figure in dark workout gear is partially visible behind her left shoulder. Background is a softly lit blue-grey gym wall. Slow-shutter motion blur ONLY on the wiping arm — the right forearm and back-of-hand smear into a clear horizontal ribbon-streak along the wipe path, with translucent secondary exposures of the hand trailing along the motion. The face, hair, and rest of the body remain tack-sharp. Cool overcast natural light, gritty but understated 35mm Portra 800 grain — present but not heavy. Slightly desaturated palette with warm skin midtones. Documentary editorial style, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/Blur_e00779a33adf8edf1949f92bb7a2c4a8.jpeg"]
+  },
+  {
+    "prompt": "nul-lifestyle-1x1-06-v2: Square 1:1 candid documentary gym photograph. Tight close framing on a young athletic woman with dark hair tied back, sweaty after exercise, tipping a clear sports water bottle to her lips, head tilted back as she drinks — actively raising the bottle. She wears a black athletic top. Background: out-of-focus blue-grey gym wall and a hint of weights rack. Slow-shutter motion blur ONLY on the rising arm and the bottle — they smear into a clear vertical ribbon-streak along the lifting path, with translucent secondary exposures of the bottle trailing below. The face, hair, and rest of the body remain tack-sharp. Cool overcast natural light, understated 35mm Portra 800 grain — present but not heavy. Slightly desaturated palette with warm skin midtones. Documentary editorial style, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/Blur_e00779a33adf8edf1949f92bb7a2c4a8.jpeg"]
+  },
+  {
+    "prompt": "nul-lifestyle-1x1-06-v3: Square 1:1 candid documentary gym photograph. Tight close framing on a young athletic woman with long dark hair, mid head-shake — flicking her hair to one side after a hard set, sweat drops scattering off the strands. She wears a black athletic top. Background: softly lit blue-grey gym wall. Slow-shutter motion blur ONLY on the swinging hair and trailing droplets — the hair smears into clear horizontal ribbon-streaks across the frame as it whips, with translucent secondary exposures along the swing path. The face, shoulders, and body remain tack-sharp. Cool overcast natural light, understated 35mm Portra 800 grain — present but not heavy. Slightly desaturated palette with warm skin midtones. Documentary editorial style, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/Blur_e00779a33adf8edf1949f92bb7a2c4a8.jpeg"]
+  },
+
+  {
+    "prompt": "nul-lifestyle-1x1-07-v1: Square 1:1 low-angle action photograph against a clear deep-cyan summer sky. An athletic woman shot from below, mid-stride sprint, wearing fitted beige / sandstone athletic apparel, captured at the peak of a stride with one leg driving forward and arms pumping. Slow-shutter motion blur ONLY on the moving limbs — both arms and the driving leg smear into clear directional ribbon-streaks along their motion paths, with translucent secondary exposures trailing. The center of the body and the head remain mostly anchored against the sky. Golden-hour warm sun rakes across her skin from frame-right. Background sky is bold saturated cyan-blue with a subtle gradient. Subtle fine 35mm Kodachrome-style grain — understated, not heavy. Warm-vs-cool tonal contrast. Cinematic editorial sport photography, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/e48a465df7cfa85636a7a10e3664d44f.jpeg"]
+  },
+  {
+    "prompt": "nul-lifestyle-1x1-07-v2: Square 1:1 low-angle action photograph against a clear deep-cyan summer sky. An athletic woman in fitted beige athletic apparel captured mid-jump against the sky — body extended, arms pumping upward, one knee tucked. Camera looks up from below. Slow-shutter motion blur ONLY on the rising arms and the trailing leg — they smear into clear vertical ribbon-streaks along the jump trajectory, with translucent secondary exposures trailing the limbs. The torso and head remain mostly anchored against the sky. Golden-hour warm sun rakes from frame-right; bright cyan sky behind. Subtle fine 35mm Kodachrome-style grain — understated, not heavy. Warm-vs-cool tonal contrast. Cinematic editorial sport photography, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/e48a465df7cfa85636a7a10e3664d44f.jpeg"]
+  },
+  {
+    "prompt": "nul-lifestyle-1x1-07-v3: Square 1:1 side-on profile action photograph of an athletic woman in fitted beige sandstone athletic apparel running flat-out across the frame from right to left, against a clear deep-cyan summer sky. Mid-stride: forward leg lifted high, arms pumping in opposition. Slow-shutter motion blur ONLY on the pumping arms and lifted leg — they smear into clear horizontal ribbon-streaks along the running motion path, with translucent secondary exposures trailing. The body core, head, and ponytail remain mostly anchored. Golden-hour warm sun rakes from frame-right, deep saturated cyan sky behind. Subtle fine 35mm Kodachrome grain — understated, not heavy. Warm-vs-cool tonal contrast. Cinematic editorial sport photography, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/e48a465df7cfa85636a7a10e3664d44f.jpeg"]
+  },
+
+  {
+    "prompt": "nul-lifestyle-1x1-08-v1: Square 1:1 cinematic tennis action photograph at a hardcourt night match. Tight medium-close framing on a male player mid-forehand-swing — racquet pulled across the chest into the follow-through, head and shoulders visible, blonde hair tousled, wearing a navy-teal performance polo with a small green crest on the sleeve and a bright orange wristband on the swinging arm. Slow-shutter motion blur ONLY on the swinging racquet and arm — they smear into clear horizontal ribbon-streaks along the swing path, with translucent secondary exposures of the racquet trailing across the body. The player's torso, face, and the rest of the body remain tack-sharp. Dim moody arena lighting, deep navy court / blue-black background. Subtle fine 35mm cinematic grain — understated, not heavy. Rich saturated shadows, halation around bright reflections. Editorial sports photography, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/e7d342d447f8b3c38268f65026036f39.jpeg"]
+  },
+  {
+    "prompt": "nul-lifestyle-1x1-08-v2: Square 1:1 cinematic tennis action photograph at a hardcourt night match. Tight framing on a male tennis player mid-serve-strike — racquet smashing down overhead, body extended upward, the tossed yellow tennis ball just struck and beginning to streak forward. Wearing a navy-teal performance polo and bright orange wristband. Slow-shutter motion blur ONLY on the swinging racquet, the striking arm, and the launched ball — they smear into clear vertical-into-diagonal ribbon-streaks along the strike path, with translucent secondary exposures trailing. The player's body, face, and the rest of his frame remain tack-sharp. Dim moody arena lighting, deep navy court / blue-black background. Subtle fine 35mm cinematic grain — understated, not heavy. Rich saturated shadows. Editorial sports photography, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/e7d342d447f8b3c38268f65026036f39.jpeg"]
+  },
+  {
+    "prompt": "nul-lifestyle-1x1-08-v3: Square 1:1 cinematic tennis action photograph at a hardcourt night match. Tight framing on a male tennis player mid-backhand drive — racquet pulled across in the opposite direction of a forehand, two-handed grip, swinging across the body from frame-left to frame-right. Wearing a navy-teal performance polo and bright orange wristband. Slow-shutter motion blur ONLY on the swinging racquet and the gripping arms — they smear into clear horizontal ribbon-streaks along the swing path, with translucent secondary exposures of the racquet trailing across the body. The player's torso, face, and the rest of his frame remain tack-sharp. Dim moody arena lighting, deep navy court / blue-black background. Subtle fine 35mm cinematic grain — understated, not heavy. Rich saturated shadows, halation around bright reflections. Editorial sports photography, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/e7d342d447f8b3c38268f65026036f39.jpeg"]
+  },
+
+  {
+    "prompt": "nul-lifestyle-1x1-09-v1: Square 1:1 dramatic studio boxing photograph. A lean fit boxer in a black athletic tank top and dark shorts mid-throwing a powerful right cross punch — bright tomato-red boxing gloves with white wraps poking out at the wrists. Slow-shutter motion blur ONLY on the punching glove and forearm — they smear into a clear forward horizontal ribbon-streak along the punch path, with translucent secondary exposures of the glove trailing behind it. The body, face, and the other arm remain tack-sharp. Body partly silhouetted in deep shadow against a smoky/chalky bright off-white seamless studio backdrop, dramatic chiaroscuro contrast. Warm filmic palette dominated by white-grey backdrop and the saturated red glove pop. Subtle fine 35mm grain — understated, not heavy. Halation around bright edges. Painterly editorial sports photography. No text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/ee1ac568636ed4848282817f51ee7968.jpeg"]
+  },
+  {
+    "prompt": "nul-lifestyle-1x1-09-v2: Square 1:1 dramatic studio boxing photograph. A lean fit boxer in a black athletic tank top and dark shorts caught mid-uppercut — bright tomato-red boxing gloves with white wraps at the wrists. Slow-shutter motion blur ONLY on the rising glove and forearm — they smear into a clear vertical ribbon-streak along the upward punch path, with translucent secondary exposures of the glove trailing below. The body, face, and the other arm remain tack-sharp. Body partly silhouetted in deep shadow against a smoky/chalky bright off-white seamless studio backdrop, dramatic chiaroscuro. Warm filmic palette with the red glove as the only saturated color pop. Subtle fine 35mm grain — understated, not heavy. Halation around bright edges. Editorial sports photography, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/ee1ac568636ed4848282817f51ee7968.jpeg"]
+  },
+  {
+    "prompt": "nul-lifestyle-1x1-09-v3: Square 1:1 dramatic studio boxing photograph. A lean fit boxer in a black athletic tank top and dark shorts mid-throwing a left hook — bright tomato-red boxing gloves with white wraps at the wrists. Slow-shutter motion blur ONLY on the hooking glove and the swinging arm — they smear into a clear horizontal arc-streak along the hook path, with translucent secondary exposures of the glove trailing along the arc. The body, face, and the other arm remain tack-sharp. Body partly silhouetted in deep shadow against a smoky/chalky bright off-white seamless studio backdrop, dramatic chiaroscuro contrast. Warm filmic palette with the red glove as the saturated color pop. Subtle fine 35mm grain — understated, not heavy. Halation around bright edges. Editorial sports photography, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": ["Nulumin lifestyle shots/1 by 1/ee1ac568636ed4848282817f51ee7968.jpeg"]
+  }
+]

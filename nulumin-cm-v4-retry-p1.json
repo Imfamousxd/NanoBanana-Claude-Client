@@ -1,0 +1,24 @@
+[
+  {
+    "prompt": "Square 1:1 editorial fitness photograph. A person in olive athletic wear mid sprint-start in a sunlit park, knees driving forward, clear action pose. CAMERA-IN-MOTION blur — soft directional smear from a fast diagonal upward camera sweep, near level (~3° tilt), SUBTLE blur (action clearly readable). Documentary action photography, fine 35mm grain, halation. No text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 6,
+      "variant": "v3"
+    }
+  },
+  {
+    "prompt": "Landscape 4:3 editorial fitness photograph. A person in charcoal workout gear running through a wooded trail at golden hour, mid-stride, clear active movement. CAMERA-IN-MOTION blur — soft directional smear from a fast lateral left-to-right camera pan, slight Dutch tilt ~5° clockwise, MODERATE blur (action readable). Documentary action photography, fine 35mm grain, halation. No text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 2,
+      "variant": "v1"
+    }
+  }
+]

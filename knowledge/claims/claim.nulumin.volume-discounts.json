@@ -1,0 +1,34 @@
+{
+  "id": "claim.nulumin.volume-discounts",
+  "claim": "10% off at 5+ units and 20% off at 10+ units of the same SKU, applied at checkout.",
+  "brand": "brand.nulumin",
+  "source": {
+    "url": "https://nulumin.org",
+    "title": "nulumin.org — volume pricing tiers",
+    "retrievedAt": "2026-07-24",
+    "support": "Published tier thresholds and discounts."
+  },
+  "status": "draft",
+  "reviewedAt": "2026-07-24",
+  "reviewAfter": "2027-01-24",
+  "jurisdictions": [
+    "US"
+  ],
+  "platforms": [
+    "owned-web",
+    "email",
+    "meta",
+    "tiktok"
+  ],
+  "approvedUses": [
+    "static ad",
+    "email"
+  ],
+  "prohibitedUses": [
+    "Never pair with human-use, dosing, reconstitution, or administration content.",
+    "Do not restate as 'buy 10 get 2 free' — that is a different offer and is not published.",
+    "Offers are commerce signals — omit on organic social for this category."
+  ],
+  "owner": "unassigned",
+  "notes": "status=draft. The source below was verified on the live site; that is evidence the statement is PUBLISHED, not that it is legally approved for advertising. A qualified human owner must verify the substantiation, set `owner`, refresh `reviewedAt`, and flip `status` to \"approved\" before any job may cite this record."
+}

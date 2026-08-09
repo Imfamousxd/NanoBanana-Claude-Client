@@ -1,0 +1,74 @@
+[
+  {
+    "prompt": "nul-wl-06: A raw, grainy 35mm film photograph. climbing concrete stadium stairs two at a time, thighs straining, leaning forward and breathing hard, the steps and railing smearing past as the camera tracks up beside him at dawn Subject: overweight East Asian man, mid 30s, round belly, soaked navy tank top, towel around neck. THIS IS A LONG-EXPOSURE MOTION SHOT WHERE MOTION IS THE SUBJECT. The moving person is almost entirely DISSOLVED into long directional motion-blur streaks with ghosted, doubled, smeared edges \u2014 barely recognizable as a figure, abstracted into streaks exactly like the reference. The WHOLE frame is swept with heavy motion. Do NOT keep the subject sharp \u2014 it must be aggressively, obviously, heavily blurred and smeared. The blur is by far the dominant feature.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the muted earthy dawn-outdoor tones, naturalistic film look of the reference image, but render THIS scene.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/35878ba459433b75c226a935b5d4ce8b.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-rec-02: A raw, grainy 35mm film photograph. She braces a foam roller under her IT band on a studio floor, weight on her forearms, face tensed mid-roll as morning light rakes across the wood Subject: late-20s Black woman, athletic build. Frozen sharp at a fast shutter, catching the person in the very middle of the moment \u2014 caught in the act, candid and real, NOT posed.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the muted earthy dawn-outdoor tones, naturalistic film look of the reference image, but render THIS scene.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/35878ba459433b75c226a935b5d4ce8b.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-rec-10: A raw, grainy 35mm film photograph. She rolls a lacrosse ball under her bare foot against the floor for plantar release, toes splayed and weight pressing down, in muted soft daylight at home Subject: early-30s white woman, fit build. Frozen sharp at a fast shutter, catching the person in the very middle of the moment \u2014 caught in the act, candid and real, NOT posed.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the muted, soft, candid daylight film look of the reference image, but render THIS scene.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/dfe23d3eef2f19645cd79b485b62928a.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-lon-06: A raw, grainy 35mm film photograph. the canoe glides across a glassy morning lake, the dad's paddle slashing a long blurred arc of water droplets as everyone leans into the stroke Subject: a mixed-race family of four in a canoe \u2014 dad paddling stern, mom bow, two kids in life vests between. THIS IS A LONG-EXPOSURE MOTION SHOT WHERE MOTION IS THE SUBJECT. The moving person is almost entirely DISSOLVED into long directional motion-blur streaks with ghosted, doubled, smeared edges \u2014 barely recognizable as a figure, abstracted into streaks exactly like the reference. The WHOLE frame is swept with heavy motion. Do NOT keep the subject sharp \u2014 it must be aggressively, obviously, heavily blurred and smeared. The blur is by far the dominant feature.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the warm golden, heavily directional-blurred, near-abstract film look of the reference image, but render THIS scene.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/3bcd045bdf96fdf2b4571e657ce74af8.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-perf-02: A raw, grainy 35mm film photograph. Driving the lane and rising for a layup under arena lights, defender trailing, ball cocked back, sneakers leaving the hardwood in a fast-break blur Subject: Latina basketball guard, mid-20s, athletic muscular frame, ponytail. THIS IS A LONG-EXPOSURE MOTION SHOT WHERE MOTION IS THE SUBJECT. The moving person is almost entirely DISSOLVED into long directional motion-blur streaks with ghosted, doubled, smeared edges \u2014 barely recognizable as a figure, abstracted into streaks exactly like the reference. The WHOLE frame is swept with heavy motion. Do NOT keep the subject sharp \u2014 it must be aggressively, obviously, heavily blurred and smeared. The blur is by far the dominant feature.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the dark teal-and-olive, moody, glowing halation film look of the reference image, but render THIS scene.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/501466320a6fdd52c8331cb69b2106b2.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-perf-10: A raw, grainy 35mm film photograph. Standing on the pedals sprinting up a country road climb at dawn, bike rocking side to side, legs and wheels smeared into a blur of forward effort Subject: Black male road cyclist, early 30s, lean climber's build, aero helmet and kit. THIS IS A LONG-EXPOSURE MOTION SHOT WHERE MOTION IS THE SUBJECT. The moving person is almost entirely DISSOLVED into long directional motion-blur streaks with ghosted, doubled, smeared edges \u2014 barely recognizable as a figure, abstracted into streaks exactly like the reference. The WHOLE frame is swept with heavy motion. Do NOT keep the subject sharp \u2014 it must be aggressively, obviously, heavily blurred and smeared. The blur is by far the dominant feature.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the muted earthy dawn-outdoor tones, naturalistic film look of the reference image, but render THIS scene.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/35878ba459433b75c226a935b5d4ce8b.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-cog-06: A raw, grainy 35mm film photograph. Buried among stacks of library books at a long oak table, pen pressed to lower lip, scanning a page under tall green-shaded reading lamps Subject: Mixed-race man, early 20s, athletic, headphones around neck. Frozen sharp at a fast shutter, catching the person in the very middle of the moment \u2014 caught in the act, candid and real, NOT posed.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the soft, muted grey-toned interior, candid and unposed film look of the reference image, but render THIS scene.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/Blur_e00779a33adf8edf1949f92bb7a2c4a8.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-sex-02: A raw, grainy 35mm film photograph. both leap onto a rumpled bed mid-bounce, knees bent and arms flailing, caught howling with laughter in a dim bedroom Subject: toned white couple early 30s in t-shirts and underwear. Frozen sharp at a fast shutter, catching the person in the very middle of the moment \u2014 caught in the act, candid and real, NOT posed.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the dark teal-and-olive, moody, glowing halation film look of the reference image, but render THIS scene.",
+    "aspectRatio": "4:5",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/501466320a6fdd52c8331cb69b2106b2.jpeg"
+    ]
+  },
+  {
+    "prompt": "nul-sex-10: A raw, grainy 35mm film photograph. they lounge tangled together on the rug in dawn light, legs intertwined and foreheads close, laughing softly Subject: athletic Black man and fit Latina woman, late 20s, in matching grey loungewear. Frozen sharp at a fast shutter, catching the person in the very middle of the moment \u2014 caught in the act, candid and real, NOT posed.\n\nA real, raw, scanned 35mm FILM photograph (Cinestill 800T / pushed Portra): soft film focus, halation/bloom on highlights, muted desaturated faded color (NOT vivid, NOT HDR, NOT clean digital), candid and unposed with imperfect off-kilter amateur framing, natural imperfect skin. It must NOT look polished, cinematic, or AI. Use the reference ONLY as a film-look + motion-blur anchor \u2014 match its grade and blur character \u2014 but IGNORE its scene, people and composition.\n\nMatch the muted earthy dawn-outdoor tones, naturalistic film look of the reference image, but render THIS scene.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/35878ba459433b75c226a935b5d4ce8b.jpeg"
+    ]
+  }
+]

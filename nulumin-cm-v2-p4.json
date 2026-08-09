@@ -1,0 +1,86 @@
+[
+  {
+    "prompt": "nul-cam-motion-v2-1x1-06-v3: Square 1:1 editorial lifestyle/fitness action photograph. Recreate the scene, subject, pose, clothing, setting, and color palette of the provided reference image — same person, same activity, same environment, same lighting direction. The output should look like the same moment but a NEW frame caught a fraction of a second later, with a different camera-pan trajectory than the original — do NOT produce a near-identical copy of the source image.\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (a slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. The subject is the relative anchor (most legible region of the frame) but everything in the frame — subject, foreground, background — carries soft directional smear in the same overall direction set by the camera's pan.\n\nFor this variation: diagonal upward pan (camera sweeping up and across the scene); near level (~3° tilt); blur intensity is subtle but clearly present. The directional smear across the entire frame follows the pan direction consistently. Backgrounds (walls, equipment, partner figures) are heavily smeared into soft directional streaks. The subject is softer than tack-sharp — they should look like the camera was tracking them imperfectly through its sweep. Nothing in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/Blur_e00779a33adf8edf1949f92bb7a2c4a8.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 6,
+      "variant": "v3",
+      "refFile": "Blur_e00779a33adf8edf1949f92bb7a2c4a8.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v2-1x1-08-v1: Square 1:1 editorial lifestyle/fitness action photograph. Recreate the scene, subject, pose, clothing, setting, and color palette of the provided reference image — same person, same activity, same environment, same lighting direction. The output should look like the same moment but a NEW frame caught a fraction of a second later, with a different camera-pan trajectory than the original — do NOT produce a near-identical copy of the source image.\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (a slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. The subject is the relative anchor (most legible region of the frame) but everything in the frame — subject, foreground, background — carries soft directional smear in the same overall direction set by the camera's pan.\n\nFor this variation: lateral left-to-right horizontal pan; slight Dutch tilt ~6° clockwise; blur intensity is moderate. The directional smear across the entire frame follows the pan direction consistently. Backgrounds (walls, equipment, partner figures) are heavily smeared into soft directional streaks. The subject is softer than tack-sharp — they should look like the camera was tracking them imperfectly through its sweep. Nothing in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/e7d342d447f8b3c38268f65026036f39.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 8,
+      "variant": "v1",
+      "refFile": "e7d342d447f8b3c38268f65026036f39.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v2-1x1-09-v2: Square 1:1 editorial lifestyle/fitness action photograph. Recreate the scene, subject, pose, clothing, setting, and color palette of the provided reference image — same person, same activity, same environment, same lighting direction. The output should look like the same moment but a NEW frame caught a fraction of a second later, with a different camera-pan trajectory than the original — do NOT produce a near-identical copy of the source image.\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (a slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. The subject is the relative anchor (most legible region of the frame) but everything in the frame — subject, foreground, background — carries soft directional smear in the same overall direction set by the camera's pan.\n\nFor this variation: lateral right-to-left horizontal pan; slight Dutch tilt ~7° counter-clockwise; blur intensity is stronger. The directional smear across the entire frame follows the pan direction consistently. Backgrounds (walls, equipment, partner figures) are heavily smeared into soft directional streaks. The subject is softer than tack-sharp — they should look like the camera was tracking them imperfectly through its sweep. Nothing in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/1 by 1/ee1ac568636ed4848282817f51ee7968.jpeg"
+    ],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 9,
+      "variant": "v2",
+      "refFile": "ee1ac568636ed4848282817f51ee7968.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v2-4x3-01-v3: Landscape 4:3 editorial lifestyle/fitness action photograph. Recreate the scene, subject, pose, clothing, setting, and color palette of the provided reference image — same person, same activity, same environment, same lighting direction. The output should look like the same moment but a NEW frame caught a fraction of a second later, with a different camera-pan trajectory than the original — do NOT produce a near-identical copy of the source image.\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (a slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. The subject is the relative anchor (most legible region of the frame) but everything in the frame — subject, foreground, background — carries soft directional smear in the same overall direction set by the camera's pan.\n\nFor this variation: diagonal upward pan (camera sweeping up and across the scene); near level (~3° tilt); blur intensity is subtle but clearly present. The directional smear across the entire frame follows the pan direction consistently. Backgrounds (walls, equipment, partner figures) are heavily smeared into soft directional streaks. The subject is softer than tack-sharp — they should look like the camera was tracking them imperfectly through its sweep. Nothing in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/35878ba459433b75c226a935b5d4ce8b.jpeg"
+    ],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 1,
+      "variant": "v3",
+      "refFile": "35878ba459433b75c226a935b5d4ce8b.jpeg"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v2-4x3-03-v1: Landscape 4:3 editorial lifestyle/fitness action photograph. Recreate the scene, subject, pose, clothing, setting, and color palette of the provided reference image — same person, same activity, same environment, same lighting direction. The output should look like the same moment but a NEW frame caught a fraction of a second later, with a different camera-pan trajectory than the original — do NOT produce a near-identical copy of the source image.\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (a slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. The subject is the relative anchor (most legible region of the frame) but everything in the frame — subject, foreground, background — carries soft directional smear in the same overall direction set by the camera's pan.\n\nFor this variation: lateral left-to-right horizontal pan; slight Dutch tilt ~6° clockwise; blur intensity is moderate. The directional smear across the entire frame follows the pan direction consistently. Backgrounds (walls, equipment, partner figures) are heavily smeared into soft directional streaks. The subject is softer than tack-sharp — they should look like the camera was tracking them imperfectly through its sweep. Nothing in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/c2affe14ec558d4c737528b571b807a7_copy.png"
+    ],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 3,
+      "variant": "v1",
+      "refFile": "c2affe14ec558d4c737528b571b807a7_copy.png"
+    }
+  },
+  {
+    "prompt": "nul-cam-motion-v2-4x3-04-v2: Landscape 4:3 editorial lifestyle/fitness action photograph. Recreate the scene, subject, pose, clothing, setting, and color palette of the provided reference image — same person, same activity, same environment, same lighting direction. The output should look like the same moment but a NEW frame caught a fraction of a second later, with a different camera-pan trajectory than the original — do NOT produce a near-identical copy of the source image.\n\nTHE BLUR IS FROM THE CAMERA — NOT FROM THE PERSON. The photograph reads as if the CAMERA was moving fast through the scene (a slow-shutter pan from a fast-moving camera, ~1/30s exposure), while the subject was relatively still or moving naturally. The motion blur is a property of the CAMERA's movement, not localized blur on a single moving limb. The subject is the relative anchor (most legible region of the frame) but everything in the frame — subject, foreground, background — carries soft directional smear in the same overall direction set by the camera's pan.\n\nFor this variation: lateral right-to-left horizontal pan; slight Dutch tilt ~7° counter-clockwise; blur intensity is stronger. The directional smear across the entire frame follows the pan direction consistently. Backgrounds (walls, equipment, partner figures) are heavily smeared into soft directional streaks. The subject is softer than tack-sharp — they should look like the camera was tracking them imperfectly through its sweep. Nothing in the frame is rigorously sharp.\n\nStyle: documentary action photography, gritty editorial, painterly low-key lighting with warm/cool contrast, fine Cinestill 35mm grain, subtle halation on highlights, no text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [
+      "Nulumin lifestyle shots/3 by 4/dfe23d3eef2f19645cd79b485b62928a.jpeg"
+    ],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 4,
+      "variant": "v2",
+      "refFile": "dfe23d3eef2f19645cd79b485b62928a.jpeg"
+    }
+  }
+]

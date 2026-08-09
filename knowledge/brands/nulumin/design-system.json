@@ -1,0 +1,121 @@
+{
+  "$comment": "NuLumin design tokens. Read this before writing any layout, prompt, or CSS. Two palettes exist and they are NOT interchangeable — see `surfaces`.",
+  "version": 1,
+  "brand": "brand.nulumin",
+  "updatedAt": "2026-07-28",
+  "sources": [
+    {"title": "nulumin.org live site", "url": "https://nulumin.org", "retrievedAt": "2026-07-24", "covers": "surfaces.marketing"},
+    {"title": "Brand Context/NuLumin_BioSciences.md", "retrievedAt": "2026-07-28", "covers": "surfaces.packaging, logo"}
+  ],
+
+  "disclosures": {
+    "ruo": "For Research Use Only. Not for Human Consumption.",
+    "ruoLowercase": "For Research Use Only. Not for human consumption.",
+    "fdaLong": "Not approved by the FDA. Not for human or veterinary use, or for use as drugs, food additives, or cosmetics.",
+    "rule": "The RUO line is mandatory on every consumer-facing asset and must be rendered deterministically (HTML/CSS or compositing), never asked of an image model. It stays legible for the full duration of a video."
+  },
+
+  "tagline": "Lighting the Path Forward",
+  "site": "nulumin.org",
+
+  "surfaces": {
+    "marketing": {
+      "$comment": "The live nulumin.org design system. Use for ALL ads, carousels, video overlays, web and email graphics. This is the current system and supersedes the older Montserrat dark-token set.",
+      "ink": "#1a1b26",
+      "snow": "#fafbfc",
+      "bone": "#f5f6fa",
+      "paper": "#F4F4F8",
+      "dark": "#0F1017",
+      "cream": "#F0EDE4",
+      "creamText": "#4B5563",
+      "luminViolet": "#7c6ff7",
+      "luminVioletDark": "#5b52cc",
+      "muted": "#5A5C6B",
+      "spectrum": {
+        "tissue": "#9B8FE8",
+        "cellular": "#5B9FF5",
+        "neural": "#4DC97A",
+        "metabolic": "#F2C94C",
+        "endocrine": "#E86E8A"
+      },
+      "spectrumBandOrder": ["tissue", "cellular", "neural", "metabolic", "endocrine"],
+      "gradients": {
+        "headlineOnLight": "linear-gradient(92deg,#5b52cc 0%,#5B9FF5 34%,#E86E8A 72%,#7c6ff7 100%)",
+        "headlineOnDarkViolet": "linear-gradient(92deg,#9B8FE8 0%,#8FD3FF 38%,#FFC9D6 72%,#9B8FE8 100%)",
+        "headlineOnDarkBlue": "linear-gradient(92deg,#8FD3FF 0%,#C7EAFF 40%,#7FC9EE 74%,#8FD3FF 100%)"
+      },
+      "darkGrounds": {
+        "violet": {"base": "#1b0f3a", "deep": "#160c30", "scrimTop": "#1b0f3a", "scrimBottom": "#160c30"},
+        "indigo": {"base": "#08101f", "deep": "#050b17", "scrimTop": "#08101f", "scrimBottom": "#050b17"},
+        "green": {"base": "#0d1a14"}
+      }
+    },
+
+    "packaging": {
+      "$comment": "Vial-label artwork ONLY. Sampled from the printed label PDFs; softer and warmer than the site palette. Never mix these hexes into a marketing layout, and never mix marketing hexes into label art.",
+      "purple": "#B89BE2",
+      "blue": "#6FA5DD",
+      "green": "#5DBD84",
+      "yellow": "#F2B856",
+      "coral": "#E68B9A",
+      "wordmarkBlack": "#1A1A1A",
+      "backgroundCream": "#F4F0E6",
+      "backgroundWhite": "#FFFFFF"
+    }
+  },
+
+  "assets": {
+    "$comment": "Curated, tracked artwork — present on a fresh clone. Logos ship with their original transparent padding; the brandkit bbox-trims and caches them. `scenePattern` is optional: generate scenes with hero-prompts.json and drop them in, or let the generator fall back to a CSS ground.",
+    "logoBlack": "Brand Context/assets/NuLumin_BioSciences/ads/logo_black.png",
+    "logoWhite": "Brand Context/assets/NuLumin_BioSciences/ads/logo_white.png",
+    "scenePattern": "Brand Context/assets/NuLumin_BioSciences/ads/scenes/hero_{style}_{ratio}.jpg",
+    "$scenes": "Shipped scenes are exactly the render size (1080 wide), so they are native resolution for every placement the ad generator produces — not proxies. Generate a fresh one at 4K with hero-prompts.json for anything larger, or for a compound with no scene yet. A missing scene is not an error: the dark formats fall back to a CSS ground plus the vial cutout."
+  },
+
+  "typography": {
+    "$comment": "Four families, all on Google Fonts. `npm run content -- brandkit fonts nulumin` bundles them into an offline base64 CSS file; nothing here needs a network call at render time after the first bundle.",
+    "families": {
+      "display": {"name": "Fraunces", "axes": "opsz,SOFT,WONK,ital,wght", "weights": "300;400", "italic": true, "role": "every heading"},
+      "body": {"name": "Inter", "weights": "400;500;600;700;800", "role": "lede, body copy, disclosures"},
+      "data": {"name": "JetBrains Mono", "weights": "400;500", "role": "proof chips, spec values, lot/COA data"},
+      "label": {"name": "Space Grotesk", "weights": "500;600;700", "role": "eyebrows, uppercase labels, selling points, offers"}
+    },
+    "bundle": {
+      "provider": "google-fonts",
+      "css2": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap",
+      "fallbacks": {
+        "Fraunces": "Georgia, 'Times New Roman', serif",
+        "Inter": "system-ui, -apple-system, 'Helvetica Neue', sans-serif",
+        "JetBrains Mono": "ui-monospace, 'SF Mono', Menlo, monospace",
+        "Space Grotesk": "system-ui, -apple-system, 'Helvetica Neue', sans-serif"
+      }
+    },
+    "rules": [
+      "Headlines are Fraunces 300, SENTENCE CASE, and end in a period. Not bold. Not all-caps. This single rule is the brand's most recognizable typographic signature.",
+      "A headline's second clause is set in Fraunces italic 300 with a spectrum gradient clipped to the text.",
+      "When gradient text uses line-height below 1.0, add `padding-bottom:.16em; margin-bottom:-.16em` — background-clip:text only paints inside the element box, so italic descenders render as sliced-off stubs without it.",
+      "Eyebrows are Space Grotesk uppercase, letter-spacing .08–.14em, preceded by a short rounded accent bar.",
+      "Never use Montserrat. It belongs to the retired 2026-Q2 marketing pipeline."
+    ]
+  },
+
+  "devices": {
+    "$comment": "Signature elements lifted from the live site. An ad that carries three or more of these reads as NuLumin before the logo is even seen.",
+    "announcementBar": "Full-width cream (#F0EDE4) bar at the very top carrying the RUO line in #4B5563. Site convention; use on light layouts.",
+    "spectrumBand": "Five equal flex segments, 7px tall, in spectrum band order, pinned to the top edge. Present on every asset — the brand's distinguishing graphic device.",
+    "accentTickEyebrow": "66x5px rounded accent bar + tracked uppercase Space Grotesk eyebrow.",
+    "proofChips": "Pill rows, 1px accent border at 35% + accent fill at 8%, JetBrains Mono label with a smaller muted sublabel. Tick glyph is ✓ in #4DC97A. Light layouts only.",
+    "accentHaloAndFloor": "Radial accent halo behind the product plus a narrow elliptical floor shadow — the site's plinth treatment. Light layouts only.",
+    "pillCta": "Fully rounded CTA. Light layouts: #7c6ff7 fill, white text. Dark layouts: white fill, ink text, 8px white ring at 12% and a deep drop shadow, with a trailing →.",
+    "premiumFinish": "Dark layouts get an inset 1px hairline frame at 17% white, a radial vignette, and an SVG fractalNoise grain layer at 10% opacity / overlay blend. These are what stop it reading as a generic digital layout."
+  },
+
+  "prohibited": [
+    "Rainbow/prism/molecular kitsch, nebulas, cosmic backgrounds",
+    "Energy-drink neon, brutalist or Swiss-poster palettes",
+    "Bold or all-caps headline serifs",
+    "Warping, recoloring, or re-lettering the logo lockup",
+    "Bullets, numerals, or middot friezes in place of the ✓ tick system",
+    "The word \"stack\" — use panel, series, or group (see AD_SYSTEM.md)"
+  ]
+}

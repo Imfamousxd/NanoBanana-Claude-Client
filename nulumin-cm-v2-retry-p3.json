@@ -1,0 +1,24 @@
+[
+  {
+    "prompt": "Square 1:1 editorial fitness studio photograph. A woman in moody warm lighting performing a single-arm dumbbell lateral raise, mid-arc, holding a black hex dumbbell. Dim warm tungsten light from frame-right, deep teal-olive shadows. CAMERA-IN-MOTION blur — entire frame carries soft directional smear from a fast lateral camera pan (left to right), nothing tack-sharp; subject is relative anchor; background heavily smeared into soft streaks. Slight Dutch tilt ~6° clockwise. Painterly chiaroscuro, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "1:1",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "1x1",
+      "refIndex": 4,
+      "variant": "v1"
+    }
+  },
+  {
+    "prompt": "Landscape 4:3 editorial lifestyle photograph. A person stretching outdoors at dusk, calm composed pose, soft moody light. CAMERA-IN-MOTION blur — entire frame carries soft directional smear from a fast lateral right-to-left camera pan, nothing tack-sharp; subject is relative anchor; background heavily smeared. Slight Dutch tilt ~7° counter-clockwise. Stronger intensity blur. Documentary photojournalism aesthetic, fine 35mm grain, subtle halation. No text, no logos.",
+    "aspectRatio": "4:3",
+    "imageSize": "4K",
+    "refImages": [],
+    "_meta": {
+      "aspect": "4x3",
+      "refIndex": 3,
+      "variant": "v2"
+    }
+  }
+]
