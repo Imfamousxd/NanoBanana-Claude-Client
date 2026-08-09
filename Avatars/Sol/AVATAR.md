@@ -1,7 +1,8 @@
-# Sol — first Soul-born avatar (STATUS: CASTING)
+# Sol — first Soul-born avatar (STATUS: APPROVED)
 
-**⚠️ CASTING — the founder has not approved this face for paid brand use.** Probe/test use only
-until approved. Approving locks every downstream artifact (house rule).
+**✅ APPROVED 2026-08-09 by the founder (operator) for paid brand use.** The face is now locked;
+every downstream artifact (anchors, scene frames, any future coverage) is anchored to this
+identity. Relocking later would invalidate them, so treat the canonical as fixed.
 
 ## Who he is
 24-year-old Mexican-American man, Southern California. Short dark curly hair, light stubble
