@@ -1,0 +1,331 @@
+{
+  "$comment": "product-registry/1 — the image-gen knowledge graph's per-brand product index. Each product carries the exact reference images an image call (gpt-image-2 / Nano Banana / gpt-image-1) should be handed, with a role per file: canonical = product/label truth, shape = container geometry only, style = approved look/scene anchor, logo = brand mark, approved-output = a shipped deliverable reusable as a layout/style ref. Paths are repo-relative; many collections are local-only (gitignored by the curated allowlist) — the tracked mirror layer is Brand Context/assets/<Brand>/. Registered in knowledge/graph.json (sources + a product-registry node), so `npm run content -- knowledge query` retrieves entries by text. See docs/IMAGE_KNOWLEDGE_GRAPH.md.",
+  "schema": "product-registry/1",
+  "brand": "brand.dialed-moods",
+  "displayName": "Dialed Moods",
+  "updatedAt": "2026-08-09",
+  "logo": [
+    {
+      "path": "Brand Context/assets/Dialed_Moods/Dialed-Moods-Logo-Q4-Dec-2025.pdf",
+      "role": "logo",
+      "note": "official source of truth (Q4 Dec 2025 package)"
+    },
+    {
+      "path": "Dialed Moods Social Elixir/_brand/dialedMoodsLogo.png",
+      "role": "logo",
+      "note": "raster used in production HTML"
+    }
+  ],
+  "products": [
+    {
+      "sku": "DM-blue-glacier",
+      "name": "Blue Glacier",
+      "line": "Cognition Elixir",
+      "aliases": [
+        "blue glacier",
+        "blue glacier can",
+        "dialed moods blue glacier"
+      ],
+      "geometry": "12 fl oz tall slim aluminium can, sold and shown as part of a 6-can lineup",
+      "references": [
+        {
+          "path": "Brand Context/assets/Dialed_Moods/Blue-Glacier.png",
+          "role": "canonical",
+          "note": "Declared canonical in Brand Context/Dialed_Moods.md (2026-07-17 block); supersedes the older Product REfs/test/ set the doc body still cites."
+        },
+        {
+          "path": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/single-blue-glacier.png",
+          "role": "approved-output"
+        },
+        {
+          "path": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/ingredients-blue-glacier.png",
+          "role": "approved-output",
+          "note": "ingredient-explosion companion"
+        }
+      ],
+      "locked": [
+        "NEVER composite the can into a scene — always regenerate with the can asset passed as a reference (Dialed_Moods.md rule 1).",
+        "Always pass the REAL can asset as reference; never a simplified render of it (rule 4).",
+        "Make the CAN the large PRIMARY subject, front-facing, foreground, tack-sharp (rule 3).",
+        "Label artwork must be preserved pixel-faithfully when animating (rule 5).",
+        "gpt-image-2, not Nano Banana, whenever label-text legibility matters."
+      ],
+      "source": "Brand Context/Dialed_Moods.md:15-23,39-54; sieve/products/Dialed_Moods/DM-blue-glacier.json"
+    },
+    {
+      "sku": "DM-lychee",
+      "name": "Lychee",
+      "line": "Cognition Elixir",
+      "aliases": [
+        "lychee",
+        "lychee can",
+        "dialed moods lychee"
+      ],
+      "geometry": "12 fl oz tall slim aluminium can, sold and shown as part of a 6-can lineup",
+      "references": [
+        {
+          "path": "Brand Context/assets/Dialed_Moods/Lychee.png",
+          "role": "canonical",
+          "note": "Declared canonical in Brand Context/Dialed_Moods.md (2026-07-17 block); supersedes the older Product REfs/test/ set the doc body still cites."
+        },
+        {
+          "path": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/single-lychee.png",
+          "role": "approved-output"
+        },
+        {
+          "path": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/ingredients-lychee.png",
+          "role": "approved-output",
+          "note": "ingredient-explosion companion"
+        }
+      ],
+      "locked": [
+        "NEVER composite the can into a scene — always regenerate with the can asset passed as a reference (Dialed_Moods.md rule 1).",
+        "Always pass the REAL can asset as reference; never a simplified render of it (rule 4).",
+        "Make the CAN the large PRIMARY subject, front-facing, foreground, tack-sharp (rule 3).",
+        "Label artwork must be preserved pixel-faithfully when animating (rule 5).",
+        "gpt-image-2, not Nano Banana, whenever label-text legibility matters."
+      ],
+      "source": "Brand Context/Dialed_Moods.md:15-23,39-54; sieve/products/Dialed_Moods/DM-lychee.json"
+    },
+    {
+      "sku": "DM-sour-watermelon",
+      "name": "Sour Watermelon",
+      "line": "Cognition Elixir",
+      "aliases": [
+        "sour watermelon",
+        "sour watermelon can",
+        "dialed moods sour watermelon"
+      ],
+      "geometry": "12 fl oz tall slim aluminium can, sold and shown as part of a 6-can lineup",
+      "references": [
+        {
+          "path": "Brand Context/assets/Dialed_Moods/Sour-Watermelon.png",
+          "role": "canonical",
+          "note": "Declared canonical in Brand Context/Dialed_Moods.md (2026-07-17 block); supersedes the older Product REfs/test/ set the doc body still cites."
+        },
+        {
+          "path": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/single-sour-watermelon.png",
+          "role": "approved-output"
+        },
+        {
+          "path": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/ingredients-sour-watermelon.png",
+          "role": "approved-output",
+          "note": "ingredient-explosion companion"
+        }
+      ],
+      "locked": [
+        "NEVER composite the can into a scene — always regenerate with the can asset passed as a reference (Dialed_Moods.md rule 1).",
+        "Always pass the REAL can asset as reference; never a simplified render of it (rule 4).",
+        "Make the CAN the large PRIMARY subject, front-facing, foreground, tack-sharp (rule 3).",
+        "Label artwork must be preserved pixel-faithfully when animating (rule 5).",
+        "gpt-image-2, not Nano Banana, whenever label-text legibility matters."
+      ],
+      "source": "Brand Context/Dialed_Moods.md:15-23,39-54; sieve/products/Dialed_Moods/DM-sour-watermelon.json"
+    },
+    {
+      "sku": "DM-black-cherry-vanilla",
+      "name": "Black Cherry Vanilla",
+      "line": "Cognition Elixir",
+      "aliases": [
+        "black cherry vanilla",
+        "black cherry vanilla can",
+        "dialed moods black cherry vanilla"
+      ],
+      "geometry": "12 fl oz tall slim aluminium can, sold and shown as part of a 6-can lineup",
+      "references": [
+        {
+          "path": "Brand Context/assets/Dialed_Moods/Black-Cherry-Vanilla.png",
+          "role": "canonical",
+          "note": "Declared canonical in Brand Context/Dialed_Moods.md (2026-07-17 block); supersedes the older Product REfs/test/ set the doc body still cites."
+        },
+        {
+          "path": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/single-black-cherry-vanilla.png",
+          "role": "approved-output"
+        },
+        {
+          "path": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/ingredients-black-cherry-vanilla.png",
+          "role": "approved-output",
+          "note": "ingredient-explosion companion"
+        }
+      ],
+      "locked": [
+        "NEVER composite the can into a scene — always regenerate with the can asset passed as a reference (Dialed_Moods.md rule 1).",
+        "Always pass the REAL can asset as reference; never a simplified render of it (rule 4).",
+        "Make the CAN the large PRIMARY subject, front-facing, foreground, tack-sharp (rule 3).",
+        "Label artwork must be preserved pixel-faithfully when animating (rule 5).",
+        "gpt-image-2, not Nano Banana, whenever label-text legibility matters."
+      ],
+      "source": "Brand Context/Dialed_Moods.md:15-23,39-54; sieve/products/Dialed_Moods/DM-black-cherry-vanilla.json"
+    },
+    {
+      "sku": "DM-lemonade",
+      "name": "Lemonade",
+      "line": "Cognition Elixir",
+      "aliases": [
+        "lemonade",
+        "lemonade can",
+        "dialed moods lemonade"
+      ],
+      "geometry": "12 fl oz tall slim aluminium can, sold and shown as part of a 6-can lineup",
+      "references": [
+        {
+          "path": "Brand Context/assets/Dialed_Moods/Lemonade.png",
+          "role": "canonical",
+          "note": "Declared canonical in Brand Context/Dialed_Moods.md (2026-07-17 block); supersedes the older Product REfs/test/ set the doc body still cites."
+        },
+        {
+          "path": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/single-lemonade.png",
+          "role": "approved-output"
+        },
+        {
+          "path": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/ingredients-lemonade.png",
+          "role": "approved-output",
+          "note": "ingredient-explosion companion"
+        }
+      ],
+      "locked": [
+        "NEVER composite the can into a scene — always regenerate with the can asset passed as a reference (Dialed_Moods.md rule 1).",
+        "Always pass the REAL can asset as reference; never a simplified render of it (rule 4).",
+        "Make the CAN the large PRIMARY subject, front-facing, foreground, tack-sharp (rule 3).",
+        "Label artwork must be preserved pixel-faithfully when animating (rule 5).",
+        "gpt-image-2, not Nano Banana, whenever label-text legibility matters."
+      ],
+      "source": "Brand Context/Dialed_Moods.md:15-23,39-54; sieve/products/Dialed_Moods/DM-lemonade.json"
+    },
+    {
+      "sku": "DM-secret-juice",
+      "name": "Secret Juice",
+      "line": "Cognition Elixir",
+      "aliases": [
+        "secret juice",
+        "secret juice can"
+      ],
+      "geometry": "12 fl oz tall slim aluminium can (6th flavor of the lineup)",
+      "references": [
+        {
+          "path": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/single-secret-juice.png",
+          "role": "canonical",
+          "note": "GAP: Secret Juice has NO render under Brand Context/assets/Dialed_Moods/ — this Approved-folder single is the best available canonical. Older ref: Dialed Moods L-Doba Generations/Product REfs/test/SecretJuice_Front.png."
+        },
+        {
+          "path": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/ingredients-secret-juice.png",
+          "role": "approved-output"
+        }
+      ],
+      "locked": [
+        "NEVER composite the can into a scene — always regenerate with the can asset passed as a reference (Dialed_Moods.md rule 1).",
+        "Always pass the REAL can asset as reference; never a simplified render of it (rule 4).",
+        "Make the CAN the large PRIMARY subject, front-facing, foreground, tack-sharp (rule 3).",
+        "Label artwork must be preserved pixel-faithfully when animating (rule 5).",
+        "gpt-image-2, not Nano Banana, whenever label-text legibility matters."
+      ],
+      "source": "inventory 2026-08-09; absent from sieve and from Brand Context assets"
+    },
+    {
+      "sku": "DM-social-elixir",
+      "name": "Social Elixir (kava seltzer)",
+      "line": "Social Elixir",
+      "aliases": [
+        "social elixir",
+        "kava seltzer",
+        "kava"
+      ],
+      "geometry": "slim seltzer can; flavors Arctic Blue (spelled 'Artic' in filenames — real), Lemonade, Mango Peach",
+      "references": [
+        {
+          "path": "Dialed Moods Social Elixir/refs/Dialed_Seltzer_Kava_Front_ArticBlue.png",
+          "role": "canonical",
+          "note": "Arctic Blue, front"
+        },
+        {
+          "path": "Dialed Moods Social Elixir/refs/Dialed_Seltzer_Kava_45_ArticBlue.png",
+          "role": "canonical",
+          "note": "Arctic Blue, 45-degree"
+        },
+        {
+          "path": "Dialed Moods Social Elixir/refs/Dialed_Seltzer_Kava_Front_Lemonade.png",
+          "role": "canonical",
+          "note": "Lemonade, front (no 45 on disk)"
+        },
+        {
+          "path": "Dialed Moods Social Elixir/refs/Dialed_Seltzer_Kava_45_MangoPeach.png",
+          "role": "canonical",
+          "note": "Mango Peach, 45 (no front on disk)"
+        },
+        {
+          "path": "Dialed Moods Social Elixir/refs/_style_approved.png",
+          "role": "style",
+          "note": "APPROVED dark-luxe look — this set does NOT use the usual white studio"
+        },
+        {
+          "path": "Dialed Moods Social Elixir/approved/APPROVED_1_announce_4x5.png",
+          "role": "approved-output",
+          "note": "only piece formally approved; set members 2-5 latest in out_4x5/_v2_nb/"
+        }
+      ],
+      "locked": [
+        "Dark-luxe approved look, not the house white studio.",
+        "Ignore the ~40 loose SocialElixir_* iterations at folder root — not canonical."
+      ],
+      "gaps": [
+        "Front_MangoPeach.png and 45_Lemonade.png were used by dialed_social_elixir 2.py from a scratchpad dir and never landed in refs/ — two missing canonical files.",
+        "Social Elixir is undocumented — no .md mentions it."
+      ],
+      "source": "inventory 2026-08-09; generator: dialed_social_elixir 2.py"
+    },
+    {
+      "sku": "DM-sea-moss",
+      "name": "Sea Moss gummies",
+      "line": "Sea Moss",
+      "aliases": [
+        "sea moss",
+        "seamoss",
+        "sea moss gummies"
+      ],
+      "geometry": "gummy jar SKU",
+      "references": [
+        {
+          "path": "dialed moods seamoss/Seamoss_Front.png",
+          "role": "canonical"
+        },
+        {
+          "path": "dialed moods seamoss/Seamoss_45.png",
+          "role": "canonical",
+          "note": "45-degree"
+        },
+        {
+          "path": "dialed moods seamoss/Seamoss_45_white.png",
+          "role": "canonical",
+          "note": "45 on white"
+        },
+        {
+          "path": "dialed moods seamoss/Seamoss_FrontOpen_white.png",
+          "role": "canonical",
+          "note": "open jar on white"
+        },
+        {
+          "path": "Dialed Moods/Social/seamoss_product_ref.png",
+          "role": "canonical",
+          "note": "social-set ref copy"
+        }
+      ],
+      "approvedOutputDirs": [
+        "dialed moods seamoss/Approved/Studio",
+        "dialed moods seamoss/Approved/Lifestyle",
+        "dialed moods seamoss/Approved/Environment",
+        "dialed moods seamoss/Approved/Marketing",
+        "Dialed Moods/Social/Approved"
+      ],
+      "source": "inventory 2026-08-09"
+    }
+  ],
+  "supersededPools": [
+    "Dialed Moods L-Doba Generations/Product REfs/test/ (older locked refs, still cited by the .md body — the Brand Context/assets set wins)",
+    "Dialed Moods L-Doba Generations/Single Cans/ and Single Cans Ingredients/ (un-approved duplicates of the Approved folder)"
+  ],
+  "sources": [
+    "Brand Context/Dialed_Moods.md",
+    "sieve/products/Dialed_Moods/",
+    "sieve/brands/Dialed_Moods/brand.json"
+  ]
+}

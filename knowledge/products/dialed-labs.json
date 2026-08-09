@@ -1,0 +1,301 @@
+{
+  "$comment": "product-registry/1 — the image-gen knowledge graph's per-brand product index. Each product carries the exact reference images an image call (gpt-image-2 / Nano Banana / gpt-image-1) should be handed, with a role per file: canonical = product/label truth, shape = container geometry only, style = approved look/scene anchor, logo = brand mark, approved-output = a shipped deliverable reusable as a layout/style ref. Paths are repo-relative; many collections are local-only (gitignored by the curated allowlist) — the tracked mirror layer is Brand Context/assets/<Brand>/. Registered in knowledge/graph.json (sources + a product-registry node), so `npm run content -- knowledge query` retrieves entries by text. See docs/IMAGE_KNOWLEDGE_GRAPH.md.",
+  "schema": "product-registry/1",
+  "brand": "brand.dialed-labs",
+  "displayName": "Dialed Labs",
+  "updatedAt": "2026-08-09",
+  "logo": [
+    {
+      "path": "email_campaigns/dialed_labs/assets/logo_dialed_raw.png",
+      "role": "logo",
+      "note": "raw wordmark source (gold DIALED + white LABS — always needs a dark band)"
+    },
+    {
+      "path": "email_campaigns/dialed_labs_airbnb/images/dialed-logo-onblack.png",
+      "role": "logo",
+      "note": "dark-mode-safe baked version"
+    },
+    {
+      "path": "email_campaigns/dialed_labs/airbnb_outreach/assets/ufc-dialed-lockup.png",
+      "role": "logo",
+      "note": "UFC co-brand lockup"
+    }
+  ],
+  "products": [
+    {
+      "sku": "DL-barrel-sauna",
+      "name": "barrel sauna",
+      "category": "Infrared Saunas",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/barrel-sauna.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/barrel-sauna.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-king-sauna",
+      "name": "king sauna",
+      "category": "Infrared Saunas",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/king-sauna.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/king-sauna.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-pro-sauna",
+      "name": "pro sauna",
+      "category": "Infrared Saunas",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/pro-sauna.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/pro-sauna.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-smart-pod",
+      "name": "smart pod",
+      "category": "Infrared Saunas",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/smart-pod.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/smart-pod.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-queen-sauna",
+      "name": "queen sauna",
+      "category": "Infrared Saunas",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/queen-sauna.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/queen-sauna.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-pro-pod",
+      "name": "pro pod",
+      "category": "Cold Plunges",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/pro-pod.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/pro-pod.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-vplunge-wood",
+      "name": "vplunge wood",
+      "category": "Cold Plunges",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/vplunge-wood.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/vplunge-wood.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-vplunge-black",
+      "name": "vplunge black",
+      "category": "Cold Plunges",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/vplunge-black.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/vplunge-black.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-pod",
+      "name": "pod",
+      "category": "Cold Plunges",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/pod.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/pod.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-air-plunge",
+      "name": "air plunge",
+      "category": "Cold Plunges",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/air-plunge.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/air-plunge.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-rl-vertical",
+      "name": "rl vertical",
+      "category": "Red Light Beds",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/rl-vertical.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/rl-vertical.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-rl-horizontal",
+      "name": "rl horizontal",
+      "category": "Red Light Beds",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/rl-horizontal.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/rl-horizontal.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-hb-horizontal",
+      "name": "hb horizontal",
+      "category": "Hyperbaric Chambers",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/hb-horizontal.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/hb-horizontal.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    },
+    {
+      "sku": "DL-hb-two-person",
+      "name": "hb two person",
+      "category": "Hyperbaric Chambers",
+      "references": [
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/_orig/hb-two-person.jpg",
+          "role": "canonical",
+          "note": "pre-pad original — the source photo"
+        },
+        {
+          "path": "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/hb-two-person.jpg",
+          "role": "approved-output",
+          "note": "padded layout-ready derivative"
+        }
+      ],
+      "source": "Brand Context/Dialed_Labs_UFC.md §1 (14-SKU catalog)"
+    }
+  ],
+  "categoryShots": {
+    "light": [
+      "email_campaigns/dialed_labs/airbnb_outreach/assets/prod_sauna.jpg",
+      "email_campaigns/dialed_labs/airbnb_outreach/assets/prod_plunge.jpg",
+      "email_campaigns/dialed_labs/airbnb_outreach/assets/prod_redlight.jpg"
+    ],
+    "dark": [
+      "email_campaigns/dialed_labs/airbnb_outreach/assets/prodx_sauna.png",
+      "email_campaigns/dialed_labs/airbnb_outreach/assets/prodx_plunge.png",
+      "email_campaigns/dialed_labs/airbnb_outreach/assets/prodx_redlight.png"
+    ]
+  },
+  "locked": [
+    "UFC trailer clips contain NO logos and NO faces (Dialed_Labs_UFC.md §2 rule 8).",
+    "ufc-partner.png was explicitly removed from mastheads — logo-only in mastheads."
+  ],
+  "gaps": [
+    "The canonical upstream wordmark is the live-site file dialed-labs.com/images/dialed-logo-white.webp — not in the repo.",
+    "At least 8 wordmark copies across the email trees with no single declared canonical; logo_dialed_raw.png is the best source candidate."
+  ],
+  "sources": [
+    "Brand Context/Dialed_Labs_UFC.md"
+  ]
+}

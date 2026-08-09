@@ -1,0 +1,270 @@
+{
+  "$comment": "product-registry/1 — the image-gen knowledge graph's per-brand product index. Each product carries the exact reference images an image call (gpt-image-2 / Nano Banana / gpt-image-1) should be handed, with a role per file: canonical = product/label truth, shape = container geometry only, style = approved look/scene anchor, logo = brand mark, approved-output = a shipped deliverable reusable as a layout/style ref. Paths are repo-relative; many collections are local-only (gitignored by the curated allowlist) — the tracked mirror layer is Brand Context/assets/<Brand>/. Registered in knowledge/graph.json (sources + a product-registry node), so `npm run content -- knowledge query` retrieves entries by text. See docs/IMAGE_KNOWLEDGE_GRAPH.md.",
+  "schema": "product-registry/1",
+  "brand": "brand.muha",
+  "displayName": "Muha Meds",
+  "updatedAt": "2026-08-09",
+  "logo": [
+    {
+      "path": "AI Fruit VIdeos Muha/refs/MMembers Logo.png",
+      "role": "logo",
+      "note": "THE canonical Members logo (7556x2512 transparent) — always pass as a reference, never recreate; the wordmark is 'Members', one M"
+    },
+    {
+      "path": "Muha Golden Hour/refs/members-wordmark.png",
+      "role": "logo",
+      "note": "badge cropped OFF — required ref for Golden Hour only (client dropped the check badge)"
+    },
+    {
+      "path": "AI Fruit VIdeos Muha/refs/mm-gold.png",
+      "role": "logo",
+      "note": "gold winged/interlocking M crest"
+    },
+    {
+      "path": "AI Fruit VIdeos Muha/refs/mm coin.png",
+      "role": "logo",
+      "note": "real MUHA MEDS · INHALE EXCELLENCE · 2019 gold coin"
+    }
+  ],
+  "products": [
+    {
+      "sku": "MM-cactus-cloud-collab",
+      "name": "Cactus Cloud x Muha boxes + device",
+      "aliases": [
+        "cactus cloud",
+        "cactus cloud collab"
+      ],
+      "references": [
+        {
+          "path": "Cactus Cloud x Muha/Blue Slushie with Device.png",
+          "role": "canonical"
+        },
+        {
+          "path": "Cactus Cloud x Muha/Blue Slushie just box.png",
+          "role": "canonical"
+        },
+        {
+          "path": "Cactus Cloud x Muha/Frozen Pomegranate.png",
+          "role": "canonical"
+        },
+        {
+          "path": "Cactus Cloud x Muha/Galactic Diesel.png",
+          "role": "canonical"
+        },
+        {
+          "path": "Cactus Cloud x Muha/Cactus Cloud Logopng.png",
+          "role": "logo",
+          "note": "collab partner logo"
+        }
+      ],
+      "source": "inventory 2026-08-09"
+    }
+  ],
+  "assetFamilies": [
+    {
+      "id": "fruit-characters",
+      "name": "AI-Fruit character cast (10)",
+      "canonicalPattern": "AI Fruit VIdeos Muha/Generated Characters/<Flavor>.png (9:16 4K); multi-ref downscales at Generated Characters/_small/<Flavor>.jpg — use _small when passing all 10 at once (full-res base64 causes HTTP 504)",
+      "members": [
+        "Aloha Passion Rush",
+        "Arctic Blueberry",
+        "Blue Slushie",
+        "Frosted Mint Cookies",
+        "Frozen Pomegranate",
+        "Galactic Diesel",
+        "Guava Mango",
+        "Horchata",
+        "Lemon Cherry Fizz",
+        "Watermelon Bubblegum"
+      ],
+      "wallBadgePattern": "AI Fruit VIdeos Muha/AI fruit Muha Flavors/<FLAVOR ALL CAPS>.png — the only ref used for character gen",
+      "bible": "AI Fruit VIdeos Muha/CHARACTERS.md",
+      "neverUse": [
+        "AI Fruit VIdeos Muha/Group Truck Shot/2026-05-30T23-09-09_muha-group-truck-2x1.png (wrong Arctic Blueberry)",
+        "AI Fruit VIdeos Muha/refs/character to recreate.png (contaminator; brand doc's 'Character Example/' path is stale)"
+      ],
+      "locked": [
+        "Head IS the fruit with cartoon Pixar features painted on.",
+        "Every character reads as a YOUNG ADULT.",
+        "Unified Pixar 3D across head + body + hands + clothes — no photoreal materials."
+      ]
+    },
+    {
+      "id": "flavor-badges",
+      "name": "Realistic glossy 3D flavor badges (35 finals)",
+      "canonicalPattern": "Flavor Badges/<Flavor>_realistic_v1.jpg",
+      "members": [
+        "Azure_Wild_Berry",
+        "Banana_Pie",
+        "Blackberry_Kush",
+        "Blue_Aloha_Burst",
+        "Blue_Slushie",
+        "Cherry_Slushie",
+        "Cinnamon_Cream_OG",
+        "Desert_Gold_Chocolate",
+        "Grape_Ape",
+        "Grape_Stomper",
+        "Honey_Melon",
+        "Juicy_Melon",
+        "Key_Lime_Jack",
+        "Kiwi_Mojito",
+        "Lemon_Cheesecake",
+        "Limoncello",
+        "Mango_Peach",
+        "Matcha_Gold",
+        "Midnight_Espresso",
+        "Orange_Creamsicle",
+        "Orange_Dream",
+        "PB_Jelly",
+        "Peaches_and_Cream",
+        "Pina_Colada",
+        "Pineapple_Kush",
+        "Pineapple_Paradise",
+        "Pineapple_Poison",
+        "Pomegranate_Runts",
+        "Prickly_Pear_Drip",
+        "Pumpkin_Bliss",
+        "Skywalker_OG",
+        "Strawberry_Lava",
+        "Sunset_Sherbet",
+        "Train_Wreck",
+        "Watermelon_Punch"
+      ],
+      "styleAnchors": [
+        "Flavor Badges/Lemon_Cheesecake_realistic_v1.jpg",
+        "Flavor Badges/Midnight_Espresso_realistic_v1.jpg"
+      ],
+      "neverUse": [
+        "Flavor Badges/Approved/ and Flavor_01-10_COLOR.png — legacy cartoon-vector, pulls new gens toward vector"
+      ],
+      "locked": [
+        "New badges always pass premade *_realistic_v1.jpg as refs + 'match exact style'.",
+        "Hyperreal Cinema 4D / Octane glossy product-render aesthetic, NOT cartoon vector.",
+        "Every letter unobstructed on top; never render cannabis flower/bud, even for Kush flavors.",
+        "Color-themed strokes (deeper tone of fill), never default black/white; vary typography treatments across a batch."
+      ],
+      "ambiguities": [
+        "Azure_Wild_Berry has _v1..v10 and Sunset_Sherbet _v1..v9 — canonical pick unconfirmed; convention says _v1 but higher iterations exist."
+      ]
+    },
+    {
+      "id": "raffle-cards",
+      "name": "Members raffle/sticker tickets (Mustang era)",
+      "finals": {
+        "fronts": "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/ (+ Print 90x43mm/)",
+        "backs": "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/ (+ Print 90x43mm/)"
+      },
+      "masterTemplate": "AI Fruit VIdeos Muha/Raffle Card Designs/2026-05-31T02-02-35_muha-raffle-A-characters-only-v14.png (always ref #1)",
+      "specRefs": [
+        "AI Fruit VIdeos Muha/refs/raffle ticket dimensions.png",
+        "AI Fruit VIdeos Muha/refs/qr-mask-right.png",
+        "AI Fruit VIdeos Muha/refs/qr-panel-ref.png",
+        "AI Fruit VIdeos Muha/refs/tech-line-border.png"
+      ],
+      "ambiguities": [
+        "Per-Character Backs v6 QR-fit/ is newer than the doc's 'v5 = FINAL' — v6 may supersede."
+      ]
+    },
+    {
+      "id": "campaign-lockups",
+      "name": "Giveaway campaign lockups & posters",
+      "goldenHour": {
+        "finals": "Muha Golden Hour/Selects/01..06_*_4x5.png (unsuffixed files; ' 2'/' 3' copies ambiguous)",
+        "refs": [
+          "Muha Golden Hour/refs/golden-hour-logo.png",
+          "Muha Golden Hour/refs/rolex-yacht-master.png",
+          "Muha Golden Hour/refs/members-wordmark.png",
+          "Muha Golden Hour/refs/insert-card-front.png"
+        ],
+        "locked": [
+          "Rolex Yacht-Master is ALL STEEL, not two-tone.",
+          "Headlines = polished-gold Didone serif on REAL sunsets — white condensed sans is rejected."
+        ]
+      },
+      "gtaChallenger": {
+        "anchor": "Brand Context/assets/Muha_Meds/Win Cash + Challenger.png",
+        "note": "4 same-named copies exist; the Brand Context copy is the tracked mirror. Layout master: Muha Giveaway Redesigned/content 1.png; approved set: Muha Giveaway Redesigned/Approved/."
+      },
+      "euroSummer": {
+        "delivered": "Muha Euro Summer/Giveaway Posts (gpt-image-2)/Muha_EuroSummer_{Amalfi,Paris,Santorini,Spritz}.png",
+        "refs": [
+          "Muha Euro Summer/refs/ticket.jpg",
+          "Muha Euro Summer/refs/card_front.jpg"
+        ],
+        "gap": "the gold/navy '$25,000 Europe Summer Trip' lockup is NOT in the repo (client zip in ~/Downloads)"
+      },
+      "euroPostcard": [
+        "AI Fruit VIdeos Muha/Raffle Card Designs/Approved Raffle Cards/2026-06-07T22-04-26_muha-euro-v2-20k-A-stacked.png",
+        "AI Fruit VIdeos Muha/Raffle Card Designs/Approved Raffle Cards/2026-06-07T22-08-22_muha-euro-v2-20k-C-banner.png"
+      ],
+      "masterCase": "AI Fruit VIdeos Muha/Master Case Designs/2026-06-09T06-04-20_mastercase-wholesale-cast-v7-c1.png and -c2.png (awaiting final pick)",
+      "mustangIG": "AI Fruit VIdeos Muha/Mustang Giveaway IG/Approved/ (6 posts)"
+    },
+    {
+      "id": "lux-flavor-icons",
+      "name": "Euro-music luxury flavor-logo line (19 approved)",
+      "canonicalPattern": "euro Music theme/Lux Icons/Approved/<Flavor>.png",
+      "members": [
+        "Amalfi Spritz",
+        "Amnesia Lemon Cherry",
+        "Barcelona Lychee",
+        "Berlin Orange",
+        "Bologna Diesel",
+        "Budapest Melon",
+        "Canary Island Punch",
+        "Davos Cookies",
+        "DC-10 Diesel",
+        "Geneva Pear",
+        "London Berry",
+        "Maranello Hazelnut",
+        "Milan Gelato",
+        "Monaco Peach Truffle",
+        "Mykonos Melon",
+        "Pacha Peach Gelato",
+        "Prague Punch",
+        "Santorini Grape Pie",
+        "Strawberry Matcha Bellini"
+      ],
+      "backgrounds": "euro Music theme/Backgrounds/<Flavor>_BG_v2.png (London = _v3)",
+      "ambiguities": [
+        "Pacha Peach Gelato sits in Approved/ but the brand doc flags it as still broken."
+      ]
+    },
+    {
+      "id": "bud-island",
+      "name": "Bud Island intro (PAUSED)",
+      "approved": [
+        "AI Fruit VIdeos Muha/Bud Island Intro/00_opener_budisland_v2.mp4",
+        "AI Fruit VIdeos Muha/Bud Island Intro/00_opener_budisland_still_v2.png"
+      ],
+      "neverUse": [
+        "00_opener_budisland.mp4 / _still.png — rejected v1"
+      ],
+      "note": "HANDOFF.md in that folder is STALE on personalities; CHARACTERS.md + Muha_Meds.md supersede."
+    }
+  ],
+  "lockedSpellings": {
+    "strings": [
+      "MUHA MEMBERS",
+      "Members",
+      "F-150 XLT",
+      "10 STRAINS",
+      "WIN $20,000",
+      "No Purchase Necessary"
+    ],
+    "neverWrite": {
+      "MUHA MEDS": "on giveaway assets — use MUHA MEMBERS",
+      "MMembers": "the wordmark is 'Members', one M",
+      "F-150 XTL": "transposed — it is XLT"
+    },
+    "source": "sieve/brands/Muha_Meds/brand.json; Brand Context/Muha_Meds.md:437"
+  },
+  "gaps": [
+    "Magnetic Disposables device art (10 city x flavor SKUs, gold/black device, city card art, stamps) is NOT in this repo — client-side ~/Downloads/Magnetic Disposables/."
+  ],
+  "sources": [
+    "Brand Context/Muha_Meds.md",
+    "sieve/brands/Muha_Meds/brand.json",
+    "AI Fruit VIdeos Muha/CHARACTERS.md"
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "$comment": "product-registry/1 — the image-gen knowledge graph's per-brand product index. Each product carries the exact reference images an image call (gpt-image-2 / Nano Banana / gpt-image-1) should be handed, with a role per file: canonical = product/label truth, shape = container geometry only, style = approved look/scene anchor, logo = brand mark, approved-output = a shipped deliverable reusable as a layout/style ref. Paths are repo-relative; many collections are local-only (gitignored by the curated allowlist) — the tracked mirror layer is Brand Context/assets/<Brand>/. Registered in knowledge/graph.json (sources + a product-registry node), so `npm run content -- knowledge query` retrieves entries by text. See docs/IMAGE_KNOWLEDGE_GRAPH.md.",
+  "schema": "product-registry/1",
+  "brand": "brand.dialed-health",
+  "displayName": "Dialed Health",
+  "updatedAt": "2026-08-09",
+  "logo": [
+    {
+      "path": "DIaled Health Instruction Graphics/Product Refs/Dialed Health_Logo_Updated-02.png",
+      "role": "logo",
+      "note": "pristine locked lockup — pass whenever DH branding appears"
+    },
+    {
+      "path": "DIaled Health.png",
+      "role": "logo",
+      "note": "repo root; clean white ECG wordmark (the capital-I filename typo is real)"
+    }
+  ],
+  "products": [
+    {
+      "sku": "DH-vial",
+      "name": "Injectable vial",
+      "aliases": [
+        "vial",
+        "injectable",
+        "injectable vial"
+      ],
+      "geometry": "small injectable glass vial, black rubber cap + gold metal band, upright and vertical",
+      "label": {
+        "surface": "matte BLACK label",
+        "elements": [
+          "white Dialed Health heartbeat/ECG logo on top",
+          "centered product name below, white bold sans-serif"
+        ],
+        "banned": [
+          "dosing information",
+          "invented emblems",
+          "gold leaf ornament"
+        ]
+      },
+      "references": [
+        {
+          "path": "Brand Context/assets/Dialed_Health/2026-04-17T21-19-49_Edit_the_reference_image_of_the_Dialed_H.jpg",
+          "role": "style",
+          "note": "THE master label/scene anchor for every new vial shot (Dialed_Health.md:34-36)"
+        },
+        {
+          "path": "Dialed Health Injectable.png",
+          "role": "shape",
+          "note": "container ref, repo root"
+        }
+      ],
+      "locked": [
+        "Locked label style across ALL three containers: matte black label, white ECG logo on top, centred product name in white bold sans-serif, NO dosing.",
+        "Known failure mode: declaring the anchor then shipping refs:[] (dh-bloodwork-ads.mjs:18 shipped 5 jobs that way)."
+      ],
+      "source": "Brand Context/Dialed_Health.md:32-44; sieve/products/Dialed_Health/DH-vial.json"
+    },
+    {
+      "sku": "DH-capsule",
+      "name": "Capsule bottle",
+      "aliases": [
+        "capsule",
+        "capsules",
+        "pill bottle"
+      ],
+      "geometry": "clear glass pill bottle, brushed silver screw cap, filled with white capsules",
+      "references": [
+        {
+          "path": "Capsule Example.png",
+          "role": "shape",
+          "note": "container SHAPE ref, repo root"
+        },
+        {
+          "path": "Brand Context/assets/Dialed_Health/2026-04-17T21-19-49_Edit_the_reference_image_of_the_Dialed_H.jpg",
+          "role": "style",
+          "note": "label/scene style comes from the vial anchor"
+        }
+      ],
+      "locked": [
+        "Same locked label style as the vial."
+      ],
+      "source": "Brand Context/Dialed_Health.md:39-41; sieve/products/Dialed_Health/DH-capsule.json"
+    },
+    {
+      "sku": "DH-oral-drop",
+      "name": "Oral drop bottle",
+      "aliases": [
+        "oral drop",
+        "oral drops",
+        "dropper bottle"
+      ],
+      "geometry": "silver-white frosted glass dropper bottle, white ribbed collar, white dropper cap/bulb",
+      "references": [
+        {
+          "path": "Oral Drop Example.jpeg",
+          "role": "shape",
+          "note": "container SHAPE ref, repo root"
+        },
+        {
+          "path": "Brand Context/assets/Dialed_Health/2026-04-17T21-19-49_Edit_the_reference_image_of_the_Dialed_H.jpg",
+          "role": "style",
+          "note": "label/scene style comes from the vial anchor"
+        }
+      ],
+      "locked": [
+        "Same locked label style as the vial."
+      ],
+      "source": "Brand Context/Dialed_Health.md:36-38; sieve/products/Dialed_Health/DH-oral-drop.json"
+    }
+  ],
+  "approvedGallery": {
+    "$comment": "DH Shots/ is the approved gallery (LOCAL-ONLY, gitignored). Studio shot per SKU at DH Shots/<Container>/<Product>.jpg; lifestyle sets at DH Shots/<Container> Lifestyle/<Product>/{man,woman}-{gym,kitchen,track}.jpg (6 files). On approval, shots are COPIED here (never moved).",
+    "vials": [
+      "AOD 9604",
+      "AOD-9604-MOTS-C",
+      "AOD-9604-MOTS-C-Tesamorelin",
+      "BPC-157",
+      "BPC-157-GHK-Cu-KPV-TB500",
+      "BPC-157-KPV-TB500",
+      "BPC-157-TB500",
+      "CJC-1295-Ipamorelin",
+      "DSIP",
+      "DSIP-BPC-157-CJC",
+      "Epithalon",
+      "GHK-Cu",
+      "GHK-Cu-Epithalon",
+      "Glutathione",
+      "Gonadorelin",
+      "IGF-LR3",
+      "Kisspeptin",
+      "LIPO-B",
+      "LL-37",
+      "MOTS-C",
+      "MOTS-C-Tesamorelin",
+      "NAD+",
+      "PT-141",
+      "Pinealon-PE22-28-Selank",
+      "Pregnyl (HCG)",
+      "SS-31",
+      "Sema Kit 2-4-6mg",
+      "Sema Kit 4-6-10mg",
+      "Sema Kit 6mg",
+      "Sema Maintenance",
+      "Sema Starter Kit",
+      "Semaglutide + B12",
+      "Semax-Selank",
+      "Sermorelin",
+      "Tesamorelin",
+      "Tesamorelin-Ipamorelin",
+      "Testosterone Cyp Cottonseed",
+      "Testosterone Cyp MCT Oil",
+      "Thymosin Alpha-1",
+      "Tirz Kit",
+      "Tirz Maintenance 20mg",
+      "Tirz Maintenance 25mg",
+      "Tirz Maintenance 30mg",
+      "Tirz Starter Kit",
+      "Tirzepatide + B12"
+    ],
+    "capsules": [
+      "5-Amino 1MQ",
+      "Apomorphine-Bremelanotide-Tadalafil-Oxy",
+      "BPC-157",
+      "BPC-157-TB500",
+      "Clomiphene Citrate",
+      "Dihexa",
+      "Dihexa-Tesofensine",
+      "Enclomiphene",
+      "Ibutamoren (MK-677)",
+      "Methylene Blue",
+      "Ondansetron (GLP-1 Support)",
+      "SLU-PP 332",
+      "SLU-PP 332-BAM 15",
+      "Sildenafil (Commercial)",
+      "Sildenafil-Tadalafil-Bremelanotide",
+      "Sildenafil-Tadalafil-Oxytocin",
+      "Tadalafil (Commercial)",
+      "Tesofensine"
+    ],
+    "oralDrops": [
+      "Semaglutide",
+      "Tirzepatide"
+    ],
+    "lifestyle": {
+      "Vials Lifestyle": [
+        "AOD 9604",
+        "AOD-9604-MOTS-C",
+        "AOD-9604-MOTS-C-Tesamorelin",
+        "BPC-157",
+        "BPC-157-GHK-Cu-KPV-TB500",
+        "BPC-157-KPV-TB500",
+        "BPC-157-TB500",
+        "CJC-1295-Ipamorelin",
+        "DSIP",
+        "DSIP-BPC-157-CJC",
+        "Epithalon",
+        "GHK-Cu",
+        "GHK-Cu-Epithalon",
+        "Glutathione",
+        "Gonadorelin",
+        "IGF-LR3",
+        "Kisspeptin",
+        "LIPO-B",
+        "LL-37",
+        "MOTS-C",
+        "MOTS-C-Tesamorelin",
+        "NAD+",
+        "PT-141",
+        "Pinealon-PE22-28-Selank",
+        "Pregnyl (HCG)",
+        "SS-31",
+        "Semaglutide + B12",
+        "Semax-Selank",
+        "Sermorelin",
+        "Tesamorelin",
+        "Tesamorelin-Ipamorelin",
+        "Testosterone Cyp Cottonseed",
+        "Testosterone Cyp MCT Oil",
+        "Thymosin Alpha-1",
+        "Tirzepatide + B12"
+      ],
+      "Capsules Lifestyle": [
+        "5-Amino 1MQ",
+        "Apomorphine-Bremelanotide-Tadalafil-Oxy",
+        "BPC-157",
+        "BPC-157-TB500",
+        "Clomiphene Citrate",
+        "Dihexa",
+        "Dihexa-Tesofensine",
+        "Enclomiphene",
+        "Ibutamoren (MK-677)",
+        "Methylene Blue",
+        "Ondansetron (GLP-1 Support)",
+        "SLU-PP 332",
+        "SLU-PP 332-BAM 15",
+        "Sildenafil (Commercial)",
+        "Sildenafil-Tadalafil-Bremelanotide",
+        "Sildenafil-Tadalafil-Oxytocin",
+        "Tadalafil (Commercial)",
+        "Tesofensine"
+      ],
+      "Oral Drops Lifestyle": [
+        "Semaglutide",
+        "Tirzepatide"
+      ]
+    },
+    "notes": [
+      "The 10 Sema/Tirz kit & maintenance vial SKUs have no lifestyle sets.",
+      "Capsules Lifestyle/Clomiphene Citrate/ contains ' 2' duplicate files — use the un-suffixed six."
+    ]
+  },
+  "lifestyleAnchor": {
+    "path": "Brand Context/assets/Dialed_Health/woman-gym.jpg",
+    "role": "style",
+    "note": "lifestyle composition anchor (canonical copy of Vials Lifestyle/Semaglutide + B12/woman-gym.jpg)"
+  },
+  "banned": [
+    {
+      "path": "Hand Holding Product Example.png",
+      "why": "explicitly banned in Brand Context/Dialed_Health.md §5 — orange product confuses label rendering"
+    }
+  ],
+  "bloodTestKit": {
+    "refsDir": "DIaled Health Instruction Graphics/Product Refs",
+    "approved": "DIaled Health Instruction Graphics/Approved/01.png-26.png"
+  },
+  "sources": [
+    "Brand Context/Dialed_Health.md",
+    "sieve/products/Dialed_Health/"
+  ]
+}

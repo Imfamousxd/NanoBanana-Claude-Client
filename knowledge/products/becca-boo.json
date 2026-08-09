@@ -1,0 +1,55 @@
+{
+  "$comment": "product-registry/1 — the image-gen knowledge graph's per-brand product index. Each product carries the exact reference images an image call (gpt-image-2 / Nano Banana / gpt-image-1) should be handed, with a role per file: canonical = product/label truth, shape = container geometry only, style = approved look/scene anchor, logo = brand mark, approved-output = a shipped deliverable reusable as a layout/style ref. Paths are repo-relative; many collections are local-only (gitignored by the curated allowlist) — the tracked mirror layer is Brand Context/assets/<Brand>/. Registered in knowledge/graph.json (sources + a product-registry node), so `npm run content -- knowledge query` retrieves entries by text. See docs/IMAGE_KNOWLEDGE_GRAPH.md.",
+  "schema": "product-registry/1",
+  "brand": "brand.becca-boo",
+  "displayName": "Becca Boo x NuLumin",
+  "updatedAt": "2026-08-09",
+  "logo": [
+    {
+      "path": "Becca Boo Flyer/assets/beccaboo_logo_clean.png",
+      "role": "logo",
+      "note": "canonical white-keyed transparent (mirror in Brand Context/assets/Becca_Boo_x_NuLumin/); beccaboo_logo.png = raw, superseded"
+    },
+    {
+      "path": "Becca Boo Flyer/assets/nulumin_logo_trim.png",
+      "role": "logo"
+    },
+    {
+      "path": "Becca Boo Flyer/assets/nulumin_logo_white_trim.png",
+      "role": "logo"
+    }
+  ],
+  "products": [
+    {
+      "sku": "BB-cobrand-flyer",
+      "name": "Co-brand peptide flyer (shipped 2026-06-22)",
+      "aliases": [
+        "becca boo flyer",
+        "beccaboo flyer"
+      ],
+      "references": [
+        {
+          "path": "Becca Boo Flyer/gptimage/refs/vial_trio_equal.png",
+          "role": "canonical",
+          "note": "the locked equal-vial-trio ref (vial_trio_ref.png = unequal, superseded). Brand doc cites it repo-root-relative — it only exists under Becca Boo Flyer/."
+        },
+        {
+          "path": "Becca Boo Flyer/FINAL/BeccaBoo_Peptides_Centered.png",
+          "role": "approved-output",
+          "note": "byte-identical copy in Approved/"
+        },
+        {
+          "path": "Becca Boo Flyer/FINAL/BeccaBoo_Peptides_Editorial.png",
+          "role": "approved-output"
+        }
+      ],
+      "locked": [
+        "The locked pipeline: gpt-image-2 medium art with logos + equal-vial-trio as refs."
+      ],
+      "source": "Brand Context/Becca_Boo_x_NuLumin.md"
+    }
+  ],
+  "sources": [
+    "Brand Context/Becca_Boo_x_NuLumin.md"
+  ]
+}

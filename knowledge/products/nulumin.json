@@ -1,0 +1,50 @@
+{
+  "$comment": "product-registry/1 — the image-gen knowledge graph's per-brand product index. Each product carries the exact reference images an image call (gpt-image-2 / Nano Banana / gpt-image-1) should be handed, with a role per file: canonical = product/label truth, shape = container geometry only, style = approved look/scene anchor, logo = brand mark, approved-output = a shipped deliverable reusable as a layout/style ref. Paths are repo-relative; many collections are local-only (gitignored by the curated allowlist) — the tracked mirror layer is Brand Context/assets/<Brand>/. Registered in knowledge/graph.json (sources + a product-registry node), so `npm run content -- knowledge query` retrieves entries by text. See docs/IMAGE_KNOWLEDGE_GRAPH.md.",
+  "schema": "product-registry/1",
+  "brand": "brand.nulumin",
+  "displayName": "NuLumin Bio-Sciences",
+  "updatedAt": "2026-08-09",
+  "logo": [
+    {
+      "path": "Brand Context/assets/NuLumin_BioSciences/ads/logo_black.png",
+      "role": "logo",
+      "note": "bbox-padded lockup on light"
+    },
+    {
+      "path": "Brand Context/assets/NuLumin_BioSciences/ads/logo_white.png",
+      "role": "logo",
+      "note": "bbox-padded lockup on dark"
+    }
+  ],
+  "products": [],
+  "skuRegistry": {
+    "$comment": "NuLumin's 66 retail SKUs are ALREADY indexed — do not duplicate them here. Machine-readable per-SKU index (compound, dose, category, accent hex, cake, glass, transparent + white paths):",
+    "index": "NuLumin Generated/NuLumin Vial Library/index.json",
+    "count": 66,
+    "folders": {
+      "transparent": "NuLumin Generated/NuLumin Vial Library/Transparent/ (66 alpha PNGs, composite with these)",
+      "white": "NuLumin Generated/NuLumin Vial Library/White/ (66 JPEGs, on-white work)",
+      "categoryHeroes": "NuLumin Generated/NuLumin Vial Library/Category Heroes/HERO_{cellular,endocrine,metabolic,neural,tissue}.jpg (reference when generating a new SKU)"
+    },
+    "caseTrap": "git tracks 'NuLumin Generated/' (capital L) but the folder prints as 'Nulumin Generated' on disk and inside index.json paths — same folder on this case-insensitive FS; use the git casing in tracked files.",
+    "pack": "knowledge/brands/nulumin/ (catalog.json, design-system.json, ASSETS.md are authoritative for hexes/type/known defects)"
+  },
+  "vialCutouts": [
+    "Brand Context/assets/NuLumin_BioSciences/ads/vial_bpc.png",
+    "Brand Context/assets/NuLumin_BioSciences/ads/vial_ghkcu.png",
+    "Brand Context/assets/NuLumin_BioSciences/ads/vial_klow.png",
+    "Brand Context/assets/NuLumin_BioSciences/ads/vial_motsc.png",
+    "Brand Context/assets/NuLumin_BioSciences/ads/vial_nad.png",
+    "Brand Context/assets/NuLumin_BioSciences/ads/vial_tb500.png"
+  ],
+  "locked": [
+    "Transparent-background renders = gpt-image-1 ONLY.",
+    "Every ad must show the vial; check it never covers the RUO line.",
+    "Clean product-hero look; NO rainbow/prism/molecular gimmicks.",
+    "GHK-Cu powder cake renders blue-violet, NOT white."
+  ],
+  "sources": [
+    "knowledge/brands/nulumin/ASSETS.md",
+    "Brand Context/NuLumin_BioSciences.md"
+  ]
+}

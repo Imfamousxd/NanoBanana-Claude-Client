@@ -1,0 +1,31 @@
+{
+  "$comment": "product-registry/1 — the image-gen knowledge graph's per-brand product index. Each product carries the exact reference images an image call (gpt-image-2 / Nano Banana / gpt-image-1) should be handed, with a role per file: canonical = product/label truth, shape = container geometry only, style = approved look/scene anchor, logo = brand mark, approved-output = a shipped deliverable reusable as a layout/style ref. Paths are repo-relative; many collections are local-only (gitignored by the curated allowlist) — the tracked mirror layer is Brand Context/assets/<Brand>/. Registered in knowledge/graph.json (sources + a product-registry node), so `npm run content -- knowledge query` retrieves entries by text. See docs/IMAGE_KNOWLEDGE_GRAPH.md.",
+  "schema": "product-registry/1",
+  "brand": "brand.adw",
+  "displayName": "Agency DevWorks",
+  "updatedAt": "2026-08-09",
+  "logo": [
+    {
+      "path": "ADW Assets/logo simple-clean.png",
+      "role": "logo",
+      "note": "PREFERRED — the reference passed for every render (4000x4000, transparent interior); byte-identical mirror in Brand Context/assets/Agency_DevWorks/"
+    },
+    {
+      "path": "ADW Assets/ADW_Logo_Final_W.png",
+      "role": "logo",
+      "note": "reserved detailed badge — reinterprets unpredictably at hero scale"
+    }
+  ],
+  "banned": [
+    {
+      "path": "ADW Assets/logo simple.png",
+      "why": "white-filled interior causes white-disk bleed — DO NOT USE"
+    }
+  ],
+  "products": [],
+  "approvedCampaign": "ADW Campaign/Day <1-7>/Day<N>_<NN>.png — 20 approved slides, 1:1 2880x2880 (Manifesto 3, Voice Agents 4, Dialed Moods case 4, Speed Promise 1, Services Stack 3, CoreLock case 4, Final Close 1)",
+  "note": "No physical products; deliverables are campaign slides. Rejected treatments: light rays, glass tiles, halo containers.",
+  "sources": [
+    "Brand Context/Agency_DevWorks.md"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28",
+  "updatedAt": "2026-08-09",
   "sources": [
     {
       "directory": "Brand Context",
@@ -86,6 +86,136 @@
         "muha",
         "character",
         "continuity"
+      ]
+    },
+    {
+      "path": "knowledge/products/dialed-moods.json",
+      "tags": [
+        "dialed-moods",
+        "product",
+        "reference-image",
+        "image-gen",
+        "registry"
+      ]
+    },
+    {
+      "path": "knowledge/products/dialed-health.json",
+      "tags": [
+        "dialed-health",
+        "product",
+        "reference-image",
+        "image-gen",
+        "registry"
+      ]
+    },
+    {
+      "path": "knowledge/products/dialed-labs.json",
+      "tags": [
+        "dialed-labs",
+        "product",
+        "reference-image",
+        "image-gen",
+        "registry"
+      ]
+    },
+    {
+      "path": "knowledge/products/muha-meds.json",
+      "tags": [
+        "muha",
+        "product",
+        "reference-image",
+        "image-gen",
+        "registry"
+      ]
+    },
+    {
+      "path": "knowledge/products/noble-harbor.json",
+      "tags": [
+        "noble-harbor",
+        "product",
+        "reference-image",
+        "image-gen",
+        "registry"
+      ]
+    },
+    {
+      "path": "knowledge/products/stanton.json",
+      "tags": [
+        "stanton",
+        "product",
+        "reference-image",
+        "image-gen",
+        "registry"
+      ]
+    },
+    {
+      "path": "knowledge/products/aevum.json",
+      "tags": [
+        "aevum",
+        "product",
+        "reference-image",
+        "image-gen",
+        "registry"
+      ]
+    },
+    {
+      "path": "knowledge/products/becca-boo.json",
+      "tags": [
+        "becca-boo",
+        "product",
+        "reference-image",
+        "image-gen",
+        "registry"
+      ]
+    },
+    {
+      "path": "knowledge/products/nulumin.json",
+      "tags": [
+        "nulumin",
+        "product",
+        "reference-image",
+        "image-gen",
+        "registry"
+      ]
+    },
+    {
+      "path": "knowledge/products/adw.json",
+      "tags": [
+        "adw",
+        "product",
+        "reference-image",
+        "image-gen",
+        "registry"
+      ]
+    },
+    {
+      "path": "knowledge/products/dial-echo.json",
+      "tags": [
+        "dial-echo",
+        "product",
+        "reference-image",
+        "image-gen",
+        "registry"
+      ]
+    },
+    {
+      "path": "knowledge/products/gridshift.json",
+      "tags": [
+        "gridshift",
+        "product",
+        "reference-image",
+        "image-gen",
+        "registry"
+      ]
+    },
+    {
+      "path": "docs/IMAGE_KNOWLEDGE_GRAPH.md",
+      "tags": [
+        "image-gen",
+        "knowledge-graph",
+        "operator",
+        "product",
+        "reference-image"
       ]
     }
   ],
@@ -266,7 +396,7 @@
         "NuLumin Generated/NuLumin Vial Library",
         "NuLumin Generated/Hero Shots v3 (fixed)/retail"
       ],
-      "selectionRule": "Start at NuLumin Generated/NuLumin Vial Library \u2014 all 66 retail SKUs as transparent PNGs and white-background JPEGs, plus the 5 category heroes, resolved through its index.json (compound, dose, category, accent hex, cake, glass, both paths). Use Transparent/ to composite, White/ on white, and Category Heroes/ as the reference when generating a new SKU. The corner heroes are the composed hero shots and the colour authority. Older folders (White BG Powder, Transparent_*, nobg*, One-Per-Peptide, Vial Library v2) are superseded \u2014 see knowledge/brands/nulumin/ASSETS.md."
+      "selectionRule": "Start at NuLumin Generated/NuLumin Vial Library — all 66 retail SKUs as transparent PNGs and white-background JPEGs, plus the 5 category heroes, resolved through its index.json (compound, dose, category, accent hex, cake, glass, both paths). Use Transparent/ to composite, White/ on white, and Category Heroes/ as the reference when generating a new SKU. The corner heroes are the composed hero shots and the colour authority. Older folders (White BG Powder, Transparent_*, nobg*, One-Per-Peptide, Vial Library v2) are superseded — see knowledge/brands/nulumin/ASSETS.md."
     },
     {
       "id": "pack.nulumin",
@@ -315,7 +445,7 @@
     {
       "id": "compliance.regulated-health-ruo",
       "type": "compliance-profile",
-      "name": "Regulated health \u2014 research use only",
+      "name": "Regulated health — research use only",
       "source": "knowledge/compliance/REGULATED_HEALTH_RUO.md",
       "requiredDisclosure": "For Research Use Only. Not for Human Consumption.",
       "humanReviewRequired": true,
@@ -366,6 +496,381 @@
       "model": "bytedance/seedance-2.0",
       "verifiedAt": "2026-07-22",
       "sourceUrl": "https://replicate.com/bytedance/seedance-2.0/api"
+    },
+    {
+      "id": "brand.adw",
+      "type": "brand",
+      "name": "Agency DevWorks",
+      "aliases": [
+        "adw",
+        "agency devworks",
+        "devworks"
+      ],
+      "source": "Brand Context/Agency_DevWorks.md",
+      "complianceProfile": "general"
+    },
+    {
+      "id": "brand.dial-echo",
+      "type": "brand",
+      "name": "Dial Echo",
+      "aliases": [
+        "dial echo",
+        "dialecho"
+      ],
+      "source": "Brand Context/Dial_Echo.md",
+      "complianceProfile": "general"
+    },
+    {
+      "id": "brand.gridshift",
+      "type": "brand",
+      "name": "GridShift",
+      "aliases": [
+        "gridshift",
+        "grid shift"
+      ],
+      "source": "Brand Context/GridShift.md",
+      "complianceProfile": "general"
+    },
+    {
+      "id": "rule.image-provider-routing",
+      "type": "routing-rule",
+      "name": "Image provider routing",
+      "aliases": [
+        "provider routing",
+        "which model",
+        "gpt-image-2 vs nano banana",
+        "image model choice"
+      ],
+      "source": "docs/IMAGE_KNOWLEDGE_GRAPH.md",
+      "rules": [
+        "Default provider is gpt-image-2; switch to Nano Banana (gemini-3-pro-image-preview) for hero-scale reference fidelity.",
+        "NEVER composite/PIL-paste product art into a scene — generate the whole graphic with the real assets passed as references.",
+        "Transparent-background output = gpt-image-1 only.",
+        "If a supplied product render's own printed copy must stay correct, use gpt-image-2 /v1/images/edits with the render as the edit base.",
+        "gpt-image-2 quality:high dies at the ~60s connection cap — use quality:medium and rebuild FormData per retry.",
+        "gpt-image-2 cannot output 9:16; video ads are always 9:16 (house format).",
+        "On-image copy is supplied verbatim; long/legal/tabular copy is composed deterministically after generation."
+      ]
+    },
+    {
+      "id": "registry.dialed-moods-products",
+      "type": "product-registry",
+      "name": "Dialed Moods product registry",
+      "aliases": [
+        "dialed moods products",
+        "dialed moods reference images"
+      ],
+      "source": "knowledge/products/dialed-moods.json",
+      "path": "knowledge/products/dialed-moods.json",
+      "summary": "Dialed Moods image-gen product registry: 8 product entries"
+    },
+    {
+      "id": "registry.dialed-health-products",
+      "type": "product-registry",
+      "name": "Dialed Health product registry",
+      "aliases": [
+        "dialed health products",
+        "dialed health reference images"
+      ],
+      "source": "knowledge/products/dialed-health.json",
+      "path": "knowledge/products/dialed-health.json",
+      "summary": "Dialed Health image-gen product registry: 3 product entries"
+    },
+    {
+      "id": "registry.dialed-labs-products",
+      "type": "product-registry",
+      "name": "Dialed Labs product registry",
+      "aliases": [
+        "dialed labs products",
+        "dialed labs reference images"
+      ],
+      "source": "knowledge/products/dialed-labs.json",
+      "path": "knowledge/products/dialed-labs.json",
+      "summary": "Dialed Labs image-gen product registry: 14 product entries"
+    },
+    {
+      "id": "registry.muha-products",
+      "type": "product-registry",
+      "name": "Muha Meds product registry",
+      "aliases": [
+        "muha meds products",
+        "muha meds reference images"
+      ],
+      "source": "knowledge/products/muha-meds.json",
+      "path": "knowledge/products/muha-meds.json",
+      "summary": "Muha Meds image-gen product registry: 1 product entries + 6 asset families"
+    },
+    {
+      "id": "registry.noble-harbor-products",
+      "type": "product-registry",
+      "name": "Noble Harbor product registry",
+      "aliases": [
+        "noble harbor products",
+        "noble harbor reference images"
+      ],
+      "source": "knowledge/products/noble-harbor.json",
+      "path": "knowledge/products/noble-harbor.json",
+      "summary": "Noble Harbor image-gen product registry: 1 product entries"
+    },
+    {
+      "id": "registry.stanton-products",
+      "type": "product-registry",
+      "name": "Stanton Medical product registry",
+      "aliases": [
+        "stanton medical products",
+        "stanton medical reference images"
+      ],
+      "source": "knowledge/products/stanton.json",
+      "path": "knowledge/products/stanton.json",
+      "summary": "Stanton Medical image-gen product registry: 2 product entries"
+    },
+    {
+      "id": "registry.aevum-products",
+      "type": "product-registry",
+      "name": "Aevum+ product registry",
+      "aliases": [
+        "aevum+ products",
+        "aevum+ reference images"
+      ],
+      "source": "knowledge/products/aevum.json",
+      "path": "knowledge/products/aevum.json",
+      "summary": "Aevum+ image-gen product registry: 0 product entries"
+    },
+    {
+      "id": "registry.becca-boo-products",
+      "type": "product-registry",
+      "name": "Becca Boo x NuLumin product registry",
+      "aliases": [
+        "becca boo x nulumin products",
+        "becca boo x nulumin reference images"
+      ],
+      "source": "knowledge/products/becca-boo.json",
+      "path": "knowledge/products/becca-boo.json",
+      "summary": "Becca Boo x NuLumin image-gen product registry: 1 product entries"
+    },
+    {
+      "id": "registry.nulumin-products",
+      "type": "product-registry",
+      "name": "NuLumin Bio-Sciences product registry",
+      "aliases": [
+        "nulumin bio-sciences products",
+        "nulumin bio-sciences reference images"
+      ],
+      "source": "knowledge/products/nulumin.json",
+      "path": "knowledge/products/nulumin.json",
+      "summary": "NuLumin Bio-Sciences image-gen product registry: 0 product entries + pointer to the 66-SKU Vial Library index"
+    },
+    {
+      "id": "registry.adw-products",
+      "type": "product-registry",
+      "name": "Agency DevWorks product registry",
+      "aliases": [
+        "agency devworks products",
+        "agency devworks reference images"
+      ],
+      "source": "knowledge/products/adw.json",
+      "path": "knowledge/products/adw.json",
+      "summary": "Agency DevWorks image-gen product registry: 0 product entries"
+    },
+    {
+      "id": "registry.dial-echo-products",
+      "type": "product-registry",
+      "name": "Dial Echo product registry",
+      "aliases": [
+        "dial echo products",
+        "dial echo reference images"
+      ],
+      "source": "knowledge/products/dial-echo.json",
+      "path": "knowledge/products/dial-echo.json",
+      "summary": "Dial Echo image-gen product registry: 0 product entries"
+    },
+    {
+      "id": "registry.gridshift-products",
+      "type": "product-registry",
+      "name": "GridShift product registry",
+      "aliases": [
+        "gridshift products",
+        "gridshift reference images"
+      ],
+      "source": "knowledge/products/gridshift.json",
+      "path": "knowledge/products/gridshift.json",
+      "summary": "GridShift image-gen product registry: 0 product entries"
+    },
+    {
+      "id": "product.dialed-moods.blue-glacier",
+      "type": "product",
+      "name": "Blue Glacier (Cognition Elixir can)",
+      "aliases": [
+        "blue glacier",
+        "blue glacier can"
+      ],
+      "source": "knowledge/products/dialed-moods.json",
+      "canonicalReference": "Brand Context/assets/Dialed_Moods/Blue-Glacier.png",
+      "note": "Pass the real can render as reference; can is the large primary subject; never composite."
+    },
+    {
+      "id": "product.dialed-moods.lychee",
+      "type": "product",
+      "name": "Lychee (Cognition Elixir can)",
+      "aliases": [
+        "lychee",
+        "lychee can"
+      ],
+      "source": "knowledge/products/dialed-moods.json",
+      "canonicalReference": "Brand Context/assets/Dialed_Moods/Lychee.png",
+      "note": "Pass the real can render as reference; can is the large primary subject; never composite."
+    },
+    {
+      "id": "product.dialed-moods.sour-watermelon",
+      "type": "product",
+      "name": "Sour Watermelon (Cognition Elixir can)",
+      "aliases": [
+        "sour watermelon",
+        "sour watermelon can"
+      ],
+      "source": "knowledge/products/dialed-moods.json",
+      "canonicalReference": "Brand Context/assets/Dialed_Moods/Sour-Watermelon.png",
+      "note": "Pass the real can render as reference; can is the large primary subject; never composite."
+    },
+    {
+      "id": "product.dialed-moods.black-cherry-vanilla",
+      "type": "product",
+      "name": "Black Cherry Vanilla (Cognition Elixir can)",
+      "aliases": [
+        "black cherry vanilla",
+        "black cherry vanilla can"
+      ],
+      "source": "knowledge/products/dialed-moods.json",
+      "canonicalReference": "Brand Context/assets/Dialed_Moods/Black-Cherry-Vanilla.png",
+      "note": "Pass the real can render as reference; can is the large primary subject; never composite."
+    },
+    {
+      "id": "product.dialed-moods.lemonade",
+      "type": "product",
+      "name": "Lemonade (Cognition Elixir can)",
+      "aliases": [
+        "lemonade",
+        "lemonade can"
+      ],
+      "source": "knowledge/products/dialed-moods.json",
+      "canonicalReference": "Brand Context/assets/Dialed_Moods/Lemonade.png",
+      "note": "Pass the real can render as reference; can is the large primary subject; never composite."
+    },
+    {
+      "id": "product.dialed-moods.secret-juice",
+      "type": "product",
+      "name": "Secret Juice (Cognition Elixir can)",
+      "aliases": [
+        "secret juice"
+      ],
+      "source": "knowledge/products/dialed-moods.json",
+      "canonicalReference": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/single-secret-juice.png",
+      "note": "6th flavor; no Brand Context render exists — flagged gap."
+    },
+    {
+      "id": "product.dialed-moods.social-elixir",
+      "type": "product",
+      "name": "Social Elixir kava seltzer",
+      "aliases": [
+        "social elixir",
+        "kava seltzer"
+      ],
+      "source": "knowledge/products/dialed-moods.json",
+      "canonicalReference": "Dialed Moods Social Elixir/refs/Dialed_Seltzer_Kava_Front_ArticBlue.png",
+      "note": "Approved dark-luxe look via refs/_style_approved.png — not the house white studio."
+    },
+    {
+      "id": "product.dialed-moods.sea-moss",
+      "type": "product",
+      "name": "Sea Moss gummies",
+      "aliases": [
+        "sea moss",
+        "seamoss"
+      ],
+      "source": "knowledge/products/dialed-moods.json",
+      "canonicalReference": "dialed moods seamoss/Seamoss_Front.png",
+      "note": "Jar SKU with approved Studio/Lifestyle/Environment/Marketing sets."
+    },
+    {
+      "id": "product.dialed-health.vial",
+      "type": "product",
+      "name": "Dialed Health injectable vial",
+      "aliases": [
+        "dh vial",
+        "injectable vial"
+      ],
+      "source": "knowledge/products/dialed-health.json",
+      "canonicalReference": "Brand Context/assets/Dialed_Health/2026-04-17T21-19-49_Edit_the_reference_image_of_the_Dialed_H.jpg",
+      "note": "Matte black label, white ECG logo, centred name, NO dosing; this file is the master style anchor."
+    },
+    {
+      "id": "product.dialed-health.capsule",
+      "type": "product",
+      "name": "Dialed Health capsule bottle",
+      "aliases": [
+        "dh capsule",
+        "pill bottle"
+      ],
+      "source": "knowledge/products/dialed-health.json",
+      "canonicalReference": "Capsule Example.png",
+      "note": "Shape ref; label/scene style comes from the vial anchor."
+    },
+    {
+      "id": "product.dialed-health.oral-drop",
+      "type": "product",
+      "name": "Dialed Health oral drop bottle",
+      "aliases": [
+        "dh oral drop",
+        "dropper bottle"
+      ],
+      "source": "knowledge/products/dialed-health.json",
+      "canonicalReference": "Oral Drop Example.jpeg",
+      "note": "Shape ref; label/scene style comes from the vial anchor."
+    },
+    {
+      "id": "product.noble-harbor.wholesale-vials",
+      "type": "product",
+      "name": "NH wholesale peptide vial line",
+      "aliases": [
+        "nh vials",
+        "wholesale vials"
+      ],
+      "source": "knowledge/products/noble-harbor.json",
+      "canonicalReference": "Noble Harbor Wholesale/_baselines/baseline_3ml_navy.jpg",
+      "note": "33 products x 9 locked cap colors (nh-colors.json); BPC-157 folder is the cap-color master set."
+    },
+    {
+      "id": "product.stanton.bac-water",
+      "type": "product",
+      "name": "Stanton 30mL BAC water label",
+      "aliases": [
+        "bac water"
+      ],
+      "source": "knowledge/products/stanton.json",
+      "canonicalReference": "Brand Context/assets/Stanton_Medical/2026-06-09T01-59-16_stanton-bac-c1-30ml-a_dieline-65x29.png",
+      "note": "COMPLETE; 65x29mm dieline; pink banned."
+    },
+    {
+      "id": "product.stanton.prep-kit",
+      "type": "product",
+      "name": "Stanton Peptide Prep Kit label",
+      "aliases": [
+        "prep kit"
+      ],
+      "source": "knowledge/products/stanton.json",
+      "canonicalReference": "Stanton Assets/Peptide Kit Label/2026-06-09T21-44-45_stanton-peptide-kit-E-list.png",
+      "note": "ACTIVE, layout not locked; stanton-peptide-kit-label.mjs is the layout source of truth."
+    },
+    {
+      "id": "product.muha.cactus-cloud",
+      "type": "product",
+      "name": "Cactus Cloud x Muha collab boxes",
+      "aliases": [
+        "cactus cloud"
+      ],
+      "source": "knowledge/products/muha-meds.json",
+      "canonicalReference": "Cactus Cloud x Muha/Blue Slushie with Device.png",
+      "note": "Only in-repo Muha hardware renders; Magnetic Disposables art lives client-side."
     }
   ],
   "edges": [
@@ -448,6 +953,201 @@
       "from": "mode.ugc",
       "relation": "can-render-with",
       "to": "provider.replicate-seedance"
+    },
+    {
+      "from": "brand.dialed-moods",
+      "relation": "has-products",
+      "to": "registry.dialed-moods-products"
+    },
+    {
+      "from": "registry.dialed-moods-products",
+      "relation": "governed-by",
+      "to": "rule.image-provider-routing"
+    },
+    {
+      "from": "brand.dialed-health",
+      "relation": "has-products",
+      "to": "registry.dialed-health-products"
+    },
+    {
+      "from": "registry.dialed-health-products",
+      "relation": "governed-by",
+      "to": "rule.image-provider-routing"
+    },
+    {
+      "from": "brand.dialed-labs",
+      "relation": "has-products",
+      "to": "registry.dialed-labs-products"
+    },
+    {
+      "from": "registry.dialed-labs-products",
+      "relation": "governed-by",
+      "to": "rule.image-provider-routing"
+    },
+    {
+      "from": "brand.muha",
+      "relation": "has-products",
+      "to": "registry.muha-products"
+    },
+    {
+      "from": "registry.muha-products",
+      "relation": "governed-by",
+      "to": "rule.image-provider-routing"
+    },
+    {
+      "from": "brand.noble-harbor",
+      "relation": "has-products",
+      "to": "registry.noble-harbor-products"
+    },
+    {
+      "from": "registry.noble-harbor-products",
+      "relation": "governed-by",
+      "to": "rule.image-provider-routing"
+    },
+    {
+      "from": "brand.stanton",
+      "relation": "has-products",
+      "to": "registry.stanton-products"
+    },
+    {
+      "from": "registry.stanton-products",
+      "relation": "governed-by",
+      "to": "rule.image-provider-routing"
+    },
+    {
+      "from": "brand.aevum",
+      "relation": "has-products",
+      "to": "registry.aevum-products"
+    },
+    {
+      "from": "registry.aevum-products",
+      "relation": "governed-by",
+      "to": "rule.image-provider-routing"
+    },
+    {
+      "from": "brand.becca-boo",
+      "relation": "has-products",
+      "to": "registry.becca-boo-products"
+    },
+    {
+      "from": "registry.becca-boo-products",
+      "relation": "governed-by",
+      "to": "rule.image-provider-routing"
+    },
+    {
+      "from": "brand.nulumin",
+      "relation": "has-products",
+      "to": "registry.nulumin-products"
+    },
+    {
+      "from": "registry.nulumin-products",
+      "relation": "governed-by",
+      "to": "rule.image-provider-routing"
+    },
+    {
+      "from": "brand.adw",
+      "relation": "has-products",
+      "to": "registry.adw-products"
+    },
+    {
+      "from": "registry.adw-products",
+      "relation": "governed-by",
+      "to": "rule.image-provider-routing"
+    },
+    {
+      "from": "brand.dial-echo",
+      "relation": "has-products",
+      "to": "registry.dial-echo-products"
+    },
+    {
+      "from": "registry.dial-echo-products",
+      "relation": "governed-by",
+      "to": "rule.image-provider-routing"
+    },
+    {
+      "from": "brand.gridshift",
+      "relation": "has-products",
+      "to": "registry.gridshift-products"
+    },
+    {
+      "from": "registry.gridshift-products",
+      "relation": "governed-by",
+      "to": "rule.image-provider-routing"
+    },
+    {
+      "from": "brand.dialed-moods",
+      "relation": "has-product",
+      "to": "product.dialed-moods.blue-glacier"
+    },
+    {
+      "from": "brand.dialed-moods",
+      "relation": "has-product",
+      "to": "product.dialed-moods.lychee"
+    },
+    {
+      "from": "brand.dialed-moods",
+      "relation": "has-product",
+      "to": "product.dialed-moods.sour-watermelon"
+    },
+    {
+      "from": "brand.dialed-moods",
+      "relation": "has-product",
+      "to": "product.dialed-moods.black-cherry-vanilla"
+    },
+    {
+      "from": "brand.dialed-moods",
+      "relation": "has-product",
+      "to": "product.dialed-moods.lemonade"
+    },
+    {
+      "from": "brand.dialed-moods",
+      "relation": "has-product",
+      "to": "product.dialed-moods.secret-juice"
+    },
+    {
+      "from": "brand.dialed-moods",
+      "relation": "has-product",
+      "to": "product.dialed-moods.social-elixir"
+    },
+    {
+      "from": "brand.dialed-moods",
+      "relation": "has-product",
+      "to": "product.dialed-moods.sea-moss"
+    },
+    {
+      "from": "brand.dialed-health",
+      "relation": "has-product",
+      "to": "product.dialed-health.vial"
+    },
+    {
+      "from": "brand.dialed-health",
+      "relation": "has-product",
+      "to": "product.dialed-health.capsule"
+    },
+    {
+      "from": "brand.dialed-health",
+      "relation": "has-product",
+      "to": "product.dialed-health.oral-drop"
+    },
+    {
+      "from": "brand.noble-harbor",
+      "relation": "has-product",
+      "to": "product.noble-harbor.wholesale-vials"
+    },
+    {
+      "from": "brand.stanton",
+      "relation": "has-product",
+      "to": "product.stanton.bac-water"
+    },
+    {
+      "from": "brand.stanton",
+      "relation": "has-product",
+      "to": "product.stanton.prep-kit"
+    },
+    {
+      "from": "brand.muha",
+      "relation": "has-product",
+      "to": "product.muha.cactus-cloud"
     }
   ]
 }

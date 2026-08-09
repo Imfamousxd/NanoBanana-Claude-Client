@@ -1,0 +1,123 @@
+{
+  "$comment": "product-registry/1 — the image-gen knowledge graph's per-brand product index. Each product carries the exact reference images an image call (gpt-image-2 / Nano Banana / gpt-image-1) should be handed, with a role per file: canonical = product/label truth, shape = container geometry only, style = approved look/scene anchor, logo = brand mark, approved-output = a shipped deliverable reusable as a layout/style ref. Paths are repo-relative; many collections are local-only (gitignored by the curated allowlist) — the tracked mirror layer is Brand Context/assets/<Brand>/. Registered in knowledge/graph.json (sources + a product-registry node), so `npm run content -- knowledge query` retrieves entries by text. See docs/IMAGE_KNOWLEDGE_GRAPH.md.",
+  "schema": "product-registry/1",
+  "brand": "brand.noble-harbor",
+  "displayName": "Noble Harbor",
+  "updatedAt": "2026-08-09",
+  "logo": [
+    {
+      "path": "Brand Context/assets/Noble_Harbor/nh-logo.png",
+      "role": "logo",
+      "note": "canonical quick-grab"
+    },
+    {
+      "path": "Brand Context/assets/Noble_Harbor/nh-logo-onnavy.png",
+      "role": "logo",
+      "note": "white knockout for navy"
+    }
+  ],
+  "products": [
+    {
+      "sku": "NH-wholesale-vial-line",
+      "name": "Wholesale peptide vial line (33 products)",
+      "aliases": [
+        "noble harbor vials",
+        "wholesale vials",
+        "nh vials"
+      ],
+      "geometry": "peptide vials in 6 size tokens x 9 locked cap colors; simplified locked label",
+      "productList": [
+        "5-Amino 1MQ",
+        "AlphaKlotho LR",
+        "AOD-9604",
+        "BPC-157",
+        "BPC-157 - TB500",
+        "CJC-1295 (No-DAC)",
+        "DSIP",
+        "Epithalon",
+        "FLGR242",
+        "Foxo4-DRI",
+        "GHK",
+        "GHK-Cu",
+        "Glow Blend",
+        "GLP-1 (S)",
+        "GLP-2 (T)",
+        "GLP-3 (R)",
+        "Glutathione",
+        "Ipamorelin",
+        "Kisspeptin",
+        "Klow Blend",
+        "KPV",
+        "Melanotan II",
+        "MOTS-C",
+        "N-Acetyl Selank Amidate",
+        "N-Acetyl Semax Amidate",
+        "NAD+",
+        "Oxytocin",
+        "PT-141",
+        "Selank",
+        "Semax",
+        "Sermorelin",
+        "TB-500",
+        "Tesamorelin"
+      ],
+      "references": [
+        {
+          "path": "Noble Harbor Wholesale/_baselines/baseline_3ml_navy.jpg",
+          "role": "style",
+          "note": "layout/typography anchor, ref #1 in nh-build-batch.mjs"
+        },
+        {
+          "path": "Noble Harbor Wholesale/_baselines/baseline_3ml-dark_navy.jpg",
+          "role": "style"
+        },
+        {
+          "path": "Noble Harbor Wholesale/_baselines/baseline_5ml_navy.jpg",
+          "role": "style"
+        }
+      ],
+      "capColorAnchorPattern": "Noble Harbor Wholesale/BPC-157/BPC-157_<size>_<color>.jpg — BPC-157 is the master cap-color set (ref #2); verified-safe 9-color lineup at BPC-157/10mg/",
+      "capHexSpec": {
+        "file": "nh-colors.json",
+        "colors": {
+          "navy": "#101850",
+          "black": "#202020",
+          "white": "#FFFFFF",
+          "red": "#700008",
+          "green": "#407858",
+          "babyblue": "#90B0C8",
+          "yellow": "#D8C848",
+          "pink": "#F0D0D8",
+          "purple": "#8068A8"
+        }
+      },
+      "renderLibrary": "Noble Harbor Wholesale/<Product>/<dose>/<stem>_<dose>_<size>_<color>.jpg (every product has 10mg/; doses vary). Contact sheets: nh-10ml-sheets/<Product>.jpg",
+      "locked": [
+        "NEVER use the placeholder 'xx mg' renders at product roots in customer-facing work.",
+        "Workflow: nh-build-batch.mjs."
+      ],
+      "warnings": [
+        "Oxytocin's 10mg colorway set is NOT trustworthy (2 shifted files).",
+        "PT-141 2/5mg/*_red.jpg is flagged mis-labeled.",
+        "' 2' duplicate folders (BPC-157 2/, _baselines 2/, ...) are cloud-sync collision copies — use the non-' 2' folders (not verified byte-identical)."
+      ],
+      "source": "Brand Context/Noble_Harbor.md; inventory 2026-08-09"
+    }
+  ],
+  "emailHeroes": {
+    "finals": [
+      "email_campaigns/noble_harbor/wholesale_outreach/assets/gen3_hero01.png",
+      "email_campaigns/noble_harbor/wholesale_outreach/assets/gen3_hero02.png",
+      "email_campaigns/noble_harbor/wholesale_outreach/assets/gen3_hero03.png"
+    ],
+    "singleHeroWinner": "email_campaigns/noble_harbor/wholesale_outreach/assets/yourlogo45.jpg",
+    "coaArt": "Noble Harbor Wholesale/coa_{bpc157,cjc1295,glow,glp3,nadplus,pt141}_hires_6x.png (tilted-sticker hi-res = preferred)"
+  },
+  "gaps": [
+    "True logo source of truth is remote: https://nobleharborsciences.com/logo-final.png (not in-repo).",
+    "Brand doc claims email_campaigns/ was emptied 2026-07-13 — stale; both NH email folders are fully populated on disk."
+  ],
+  "sources": [
+    "Brand Context/Noble_Harbor.md"
+  ]
+}

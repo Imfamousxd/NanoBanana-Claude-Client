@@ -1,0 +1,69 @@
+{
+  "$comment": "product-registry/1 — the image-gen knowledge graph's per-brand product index. Each product carries the exact reference images an image call (gpt-image-2 / Nano Banana / gpt-image-1) should be handed, with a role per file: canonical = product/label truth, shape = container geometry only, style = approved look/scene anchor, logo = brand mark, approved-output = a shipped deliverable reusable as a layout/style ref. Paths are repo-relative; many collections are local-only (gitignored by the curated allowlist) — the tracked mirror layer is Brand Context/assets/<Brand>/. Registered in knowledge/graph.json (sources + a product-registry node), so `npm run content -- knowledge query` retrieves entries by text. See docs/IMAGE_KNOWLEDGE_GRAPH.md.",
+  "schema": "product-registry/1",
+  "brand": "brand.stanton",
+  "displayName": "Stanton Medical",
+  "updatedAt": "2026-08-09",
+  "logo": [
+    {
+      "path": "Brand Context/assets/Stanton_Medical/stanton-seal.png",
+      "role": "logo",
+      "note": "the seal passed as image[1] reference in EVERY Stanton generation (source: make-stanton-seal.py)"
+    }
+  ],
+  "products": [
+    {
+      "sku": "STN-bac-water-30ml",
+      "name": "30 mL Bacteriostatic Water vial label",
+      "status": "COMPLETE",
+      "aliases": [
+        "bac water",
+        "bacteriostatic water"
+      ],
+      "references": [
+        {
+          "path": "Brand Context/assets/Stanton_Medical/2026-06-09T01-59-16_stanton-bac-c1-30ml-a_dieline-65x29.png",
+          "role": "canonical",
+          "note": "final dieline 65x29mm @600dpi; tracked mirror of Stanton Assets/BAC Water Label/<same file>"
+        },
+        {
+          "path": "Stanton Assets/refs/bac-water-style-ref.png",
+          "role": "style",
+          "note": "client style ref (input only)"
+        }
+      ],
+      "locked": [
+        "Pink is banned (off-brand); the pink candidate render is superseded."
+      ],
+      "source": "Brand Context/Stanton_Medical.md"
+    },
+    {
+      "sku": "STN-peptide-prep-kit",
+      "name": "Stanton Peptide Prep Kit portrait label",
+      "status": "ACTIVE — layout not locked",
+      "aliases": [
+        "prep kit",
+        "peptide prep kit"
+      ],
+      "references": [
+        {
+          "path": "Stanton Assets/Peptide Kit Label/2026-06-09T21-44-45_stanton-peptide-kit-E-list.png",
+          "role": "canonical",
+          "note": "newest E-list render (the brand doc's 'latest' pointer is stale); layout truth = stanton-peptide-kit-label.mjs on disk"
+        },
+        {
+          "path": "Stanton Assets/Peptide Kit Label/2026-06-09T22-07-37_stanton-prep-kit-hero-only.png",
+          "role": "approved-output",
+          "note": "hero-only render"
+        }
+      ],
+      "ambiguities": [
+        "No single approved kit-label file; 24 candidates across layouts A/B/C/D/D2/E."
+      ],
+      "source": "Brand Context/Stanton_Medical.md; inventory 2026-08-09"
+    }
+  ],
+  "sources": [
+    "Brand Context/Stanton_Medical.md"
+  ]
+}
