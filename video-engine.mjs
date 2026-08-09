@@ -136,8 +136,12 @@ if (isAvatar) {
   const adir = path.join(__dirname, "Avatars", B.subject.avatar);
   if (!fs.existsSync(adir)) errs.push(`avatar '${B.subject.avatar}' not found in Avatars/`);
   else {
+    // A scene frame (scene-frame.mjs: avatar + product composed) OVERRIDES the plain canonical.
+    // Relative paths resolve against the worktree first (where generations/ lives), then REPO.
+    const resolveFrame = (fp) => path.isAbsolute(fp) ? fp
+      : fs.existsSync(path.join(__dirname, fp)) ? path.join(__dirname, fp) : path.join(REPO, fp);
     avatarFrame = B.subject.avatar_frame
-      ? (path.isAbsolute(B.subject.avatar_frame) ? B.subject.avatar_frame : path.join(REPO, B.subject.avatar_frame))
+      ? resolveFrame(B.subject.avatar_frame)
       : (() => { const idn = path.join(adir, "identity");
           const pick = fs.existsSync(idn) && fs.readdirSync(idn).find((f) => /\.(png|jpe?g)$/i.test(f));
           return pick ? path.join(idn, pick) : null; })();

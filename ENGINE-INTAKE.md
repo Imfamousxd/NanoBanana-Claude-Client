@@ -52,6 +52,12 @@ $9.26 of wrong generations.)
 **Q10. Reference images?** → `refs.images[]`
    - Product/card/artwork ref → passed as `reference_image`, rendered faithfully. Resolve SKUs
      from `sieve/products/` — never accept a re-render of a real product.
+   - **Avatar + a product in the SAME shot?** Seedance can't take a first frame AND reference
+     images together, so you COMPOSE them at the image stage first:
+     `node scene-frame.mjs --avatar <Name> --ref <path>:<role> --scene "…" --ar 9:16 --n 2`
+     builds the avatar holding/near the product into one frame (Nano Banana, identity + product
+     fidelity), you pick the winner, then the brief sets `subject.avatar_frame` to it and the
+     avatar lane animates that. Review the cheap frame before the ~$0.59 clip (rule 8).
    - **Contains a person? → REFUSED at submit (privacy guard, any image role).** People are
      generated from text; say so up front rather than letting it bounce.
    - Third-party marks on the asset? Check the registry flag — it decides refusal risk.
