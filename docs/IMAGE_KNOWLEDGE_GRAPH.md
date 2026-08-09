@@ -16,8 +16,9 @@ beside it.
 | Query CLI | `npm run content -- knowledge query "<terms>" --brand <brand>` | Full-text retrieval over graph nodes and registry files |
 | NuLumin SKU index | `NuLumin Generated/NuLumin Vial Library/index.json` | Already-built 66-SKU machine index — the NuLumin registry points at it rather than duplicating it |
 
-Twelve brands are covered: dialed-moods, dialed-health, dialed-labs, muha-meds, noble-harbor,
-stanton, aevum, becca-boo, nulumin, adw, dial-echo, gridshift.
+Eight brands are covered: dialed-moods, dialed-health, dialed-labs, muha-meds, noble-harbor,
+stanton, nulumin, dial-echo. (Aevum+, Becca Boo, Agency DevWorks, and GridShift were removed
+from the graph by operator decision 2026-08-09; their Brand Context docs remain on disk.)
 
 ## Reference roles
 
@@ -32,7 +33,7 @@ Every reference image in a registry carries a `role` so a job knows *why* it is 
 - **approved-output** — a shipped deliverable, reusable as a layout/style reference.
 
 Registries also carry `banned` / `neverUse` entries — files that look usable and are not
-(e.g. ADW's `logo simple.png`, Muha's group-truck shot with the wrong Arctic Blueberry).
+(e.g. Muha's group-truck shot with the wrong Arctic Blueberry).
 Treat those as hard blocks, not suggestions.
 
 ## How to use it in a job
@@ -87,8 +88,6 @@ this case-insensitive filesystem; use the git casing in anything tracked.
 - **Noble Harbor**: logo source of truth is remote; Oxytocin's 10 mg colorway set and
   `PT-141 2/5mg/*_red.jpg` are flagged untrustworthy/mislabeled.
 - **Stanton**: the Peptide Prep Kit label has no single approved file (layout not locked).
-- **GridShift**: no standalone logo PNG exists (the bolt mark is generated in HTML); the v3
-  Greenville batch was never promoted to `Approved/`.
 
 When a gap blocks a job, say so and ask for the missing asset — do not substitute a
 lookalike or regenerate a "canonical" from memory.

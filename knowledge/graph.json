@@ -149,26 +149,6 @@
       ]
     },
     {
-      "path": "knowledge/products/aevum.json",
-      "tags": [
-        "aevum",
-        "product",
-        "reference-image",
-        "image-gen",
-        "registry"
-      ]
-    },
-    {
-      "path": "knowledge/products/becca-boo.json",
-      "tags": [
-        "becca-boo",
-        "product",
-        "reference-image",
-        "image-gen",
-        "registry"
-      ]
-    },
-    {
       "path": "knowledge/products/nulumin.json",
       "tags": [
         "nulumin",
@@ -179,29 +159,9 @@
       ]
     },
     {
-      "path": "knowledge/products/adw.json",
-      "tags": [
-        "adw",
-        "product",
-        "reference-image",
-        "image-gen",
-        "registry"
-      ]
-    },
-    {
       "path": "knowledge/products/dial-echo.json",
       "tags": [
         "dial-echo",
-        "product",
-        "reference-image",
-        "image-gen",
-        "registry"
-      ]
-    },
-    {
-      "path": "knowledge/products/gridshift.json",
-      "tags": [
-        "gridshift",
         "product",
         "reference-image",
         "image-gen",
@@ -353,29 +313,6 @@
       "complianceProfile": "regulated-health"
     },
     {
-      "id": "brand.aevum",
-      "type": "brand",
-      "name": "Aevum+",
-      "aliases": [
-        "aevum",
-        "aevum plus",
-        "aevum+"
-      ],
-      "source": "Brand Context/Aevum_Plus.md",
-      "complianceProfile": "regulated-health-ruo"
-    },
-    {
-      "id": "brand.becca-boo",
-      "type": "brand",
-      "name": "Becca Boo x NuLumin",
-      "aliases": [
-        "becca boo",
-        "becca boo nulumin"
-      ],
-      "source": "Brand Context/Becca_Boo_x_NuLumin.md",
-      "complianceProfile": "regulated-health-ruo"
-    },
-    {
       "id": "mode.ugc",
       "type": "content-mode",
       "name": "Realistic creator-led UGC",
@@ -498,18 +435,6 @@
       "sourceUrl": "https://replicate.com/bytedance/seedance-2.0/api"
     },
     {
-      "id": "brand.adw",
-      "type": "brand",
-      "name": "Agency DevWorks",
-      "aliases": [
-        "adw",
-        "agency devworks",
-        "devworks"
-      ],
-      "source": "Brand Context/Agency_DevWorks.md",
-      "complianceProfile": "general"
-    },
-    {
       "id": "brand.dial-echo",
       "type": "brand",
       "name": "Dial Echo",
@@ -518,17 +443,6 @@
         "dialecho"
       ],
       "source": "Brand Context/Dial_Echo.md",
-      "complianceProfile": "general"
-    },
-    {
-      "id": "brand.gridshift",
-      "type": "brand",
-      "name": "GridShift",
-      "aliases": [
-        "gridshift",
-        "grid shift"
-      ],
-      "source": "Brand Context/GridShift.md",
       "complianceProfile": "general"
     },
     {
@@ -625,30 +539,6 @@
       "summary": "Stanton Medical image-gen product registry: 2 product entries"
     },
     {
-      "id": "registry.aevum-products",
-      "type": "product-registry",
-      "name": "Aevum+ product registry",
-      "aliases": [
-        "aevum+ products",
-        "aevum+ reference images"
-      ],
-      "source": "knowledge/products/aevum.json",
-      "path": "knowledge/products/aevum.json",
-      "summary": "Aevum+ image-gen product registry: 0 product entries"
-    },
-    {
-      "id": "registry.becca-boo-products",
-      "type": "product-registry",
-      "name": "Becca Boo x NuLumin product registry",
-      "aliases": [
-        "becca boo x nulumin products",
-        "becca boo x nulumin reference images"
-      ],
-      "source": "knowledge/products/becca-boo.json",
-      "path": "knowledge/products/becca-boo.json",
-      "summary": "Becca Boo x NuLumin image-gen product registry: 1 product entries"
-    },
-    {
       "id": "registry.nulumin-products",
       "type": "product-registry",
       "name": "NuLumin Bio-Sciences product registry",
@@ -661,18 +551,6 @@
       "summary": "NuLumin Bio-Sciences image-gen product registry: 0 product entries + pointer to the 66-SKU Vial Library index"
     },
     {
-      "id": "registry.adw-products",
-      "type": "product-registry",
-      "name": "Agency DevWorks product registry",
-      "aliases": [
-        "agency devworks products",
-        "agency devworks reference images"
-      ],
-      "source": "knowledge/products/adw.json",
-      "path": "knowledge/products/adw.json",
-      "summary": "Agency DevWorks image-gen product registry: 0 product entries"
-    },
-    {
       "id": "registry.dial-echo-products",
       "type": "product-registry",
       "name": "Dial Echo product registry",
@@ -683,18 +561,6 @@
       "source": "knowledge/products/dial-echo.json",
       "path": "knowledge/products/dial-echo.json",
       "summary": "Dial Echo image-gen product registry: 0 product entries"
-    },
-    {
-      "id": "registry.gridshift-products",
-      "type": "product-registry",
-      "name": "GridShift product registry",
-      "aliases": [
-        "gridshift products",
-        "gridshift reference images"
-      ],
-      "source": "knowledge/products/gridshift.json",
-      "path": "knowledge/products/gridshift.json",
-      "summary": "GridShift image-gen product registry: 0 product entries"
     },
     {
       "id": "product.dialed-moods.blue-glacier",
@@ -920,16 +786,6 @@
       "to": "compliance.regulated-health-ruo"
     },
     {
-      "from": "brand.aevum",
-      "relation": "uses",
-      "to": "compliance.regulated-health-ruo"
-    },
-    {
-      "from": "brand.becca-boo",
-      "relation": "uses",
-      "to": "compliance.regulated-health-ruo"
-    },
-    {
       "from": "mode.ugc",
       "relation": "can-render-with",
       "to": "provider.openai-image"
@@ -1015,26 +871,6 @@
       "to": "rule.image-provider-routing"
     },
     {
-      "from": "brand.aevum",
-      "relation": "has-products",
-      "to": "registry.aevum-products"
-    },
-    {
-      "from": "registry.aevum-products",
-      "relation": "governed-by",
-      "to": "rule.image-provider-routing"
-    },
-    {
-      "from": "brand.becca-boo",
-      "relation": "has-products",
-      "to": "registry.becca-boo-products"
-    },
-    {
-      "from": "registry.becca-boo-products",
-      "relation": "governed-by",
-      "to": "rule.image-provider-routing"
-    },
-    {
       "from": "brand.nulumin",
       "relation": "has-products",
       "to": "registry.nulumin-products"
@@ -1045,32 +881,12 @@
       "to": "rule.image-provider-routing"
     },
     {
-      "from": "brand.adw",
-      "relation": "has-products",
-      "to": "registry.adw-products"
-    },
-    {
-      "from": "registry.adw-products",
-      "relation": "governed-by",
-      "to": "rule.image-provider-routing"
-    },
-    {
       "from": "brand.dial-echo",
       "relation": "has-products",
       "to": "registry.dial-echo-products"
     },
     {
       "from": "registry.dial-echo-products",
-      "relation": "governed-by",
-      "to": "rule.image-provider-routing"
-    },
-    {
-      "from": "brand.gridshift",
-      "relation": "has-products",
-      "to": "registry.gridshift-products"
-    },
-    {
-      "from": "registry.gridshift-products",
       "relation": "governed-by",
       "to": "rule.image-provider-routing"
     },
