@@ -54,7 +54,11 @@ only RECURRING subjects; don't dump unlabeled refs. `@Clay Render N` (textureles
 spatial structure, pose, motion path and camera when blocking must match an intent.
 ⚑ Still true: a person in ANY ref image is refused; own-brand product/card art passes.
 **The engine now auto-builds the `@Image N` manifest from `refs.images[]` — set each ref's
-`name` and `describe`.** ⚠️ @-notation is documented, NOT yet measured on our endpoint — A/B it.
+`name` and `describe`.** ✅ MEASURED 2026-08-09 (A/B, val-2p5-cardref): 2.5 takes a
+reference_image next to a text-born person and reproduces own-brand card art faithfully; @Image
+and prose give COMPARABLE single-reference fidelity (both faithful). The @-notation advantage is
+for disambiguating MULTIPLE references — still untested. `--cite prose` is a measured-equal
+fallback. (Text-born wardrobe drifts either way — use an avatar when identity must hold.)
 
 ## QA checklist before you spend
 - [ ] Subject has ≥4 concrete anchors (age/wardrobe/color/expression)?
