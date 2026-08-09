@@ -17,7 +17,7 @@ const H = { Authorization: `Bearer ${process.env.MODELARK_API_KEY}`, "Content-Ty
 // Measured this session: data-URI video is refused — "reference_video must be provided as a
 // web url". The Replicate delivery URL of the P-15B prediction is a public web URL; delivery
 // URLs are short-lived, so re-fetch from /v1/predictions if this one has expired.
-const VIDEO_URL = "https://replicate.delivery/xezq/81s9Un0uf0S1VyHiY5k57vMyfwTORZ5eHNNoC1Ia2fISDdGcB/tmp47gqgq4n.mp4";
+const VIDEO_URL = "https://ark-content-generation-ap-southeast-1.tos-ap-southeast-1.volces.com/seedance-1-5-pro/02178630006211000000000000000000000ffffc0a8787445809a.mp4?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20260809%2Fap-southeast-1%2Ftos%2Frequest&X-Tos-Date=20260809T182858Z&X-Tos-Expires=86400&X-Tos-Signature=12683bceef315a0a4cc84db41457de56839462a46a5428ffe53d39d8c1e54fed&X-Tos-SignedHeaders=host";
 const body = {
   model: "dreamina-seedance-2-5-260628",
   generate_audio: true,
@@ -45,7 +45,7 @@ const txt = await res.text();
 console.log(`SUBMIT HTTP ${res.status} ${txt.trim().slice(0, 300)}`);
 let id = null; try { id = JSON.parse(txt).id; } catch {}
 const log = (o) => fs.appendFileSync(path.join(REPO, ".claude/worktrees/gen-image/research/sd25/probe-log.jsonl"),
-  JSON.stringify({ probe: "P-25EXT-soul-external-extension", t: new Date().toISOString(), ...o }) + "\n");
+  JSON.stringify({ probe: "P-25EXTB-soul-modelark-native-extension", t: new Date().toISOString(), ...o }) + "\n");
 if (!id) { log({ result: "SUBMIT_REJECTED", http: res.status, body: txt.slice(0, 500) }); process.exit(1); }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

@@ -186,13 +186,13 @@
       "confidence": "strong",
       "source": "measured 2026-08-07/08, ext-limits.md finding 6; reconciled 2026-08-08"
     },
-    "sd25:extension-refuses-external-human-footage": {
-      "claim": "2.5 extension accepts human footage ONLY from its own platform. External human video (any web URL it cannot attribute to ModelArk output) is refused at submit: InputVideoSensitiveContentDetected.PrivacyInformation — \"may contain real person\". The video guard is PROVENANCE-scoped, not content-scoped: the same class of human clip extends fine when it is a ModelArk TOS URL.",
-      "evidence": "P-25EXT 2026-08-09: a Replicate seedance-1.5-pro clip (itself AI-generated, of a Higgsfield Soul character — no real person exists) refused with the real-person code. Every prior extension of ModelArk-native human clips succeeded (the +66% extension lane). Also measured same probe: reference_video rejects data URIs outright — \"must be provided as a web url\".",
-      "counterexamples": "Non-human external footage untested. ModelArk-1.5-pro-generated clips (platform-native) untested pending model activation — the provenance hypothesis predicts they extend fine, which would open the all-ModelArk Soul chain.",
+    "sd25:extension-only-accepts-25-born-humans": {
+      "claim": "2.5 extension accepts human footage ONLY when 2.5 itself generated it. Everything else is refused at submit as InputVideoSensitiveContentDetected.PrivacyInformation (\"may contain real person\") — external platforms AND other ModelArk models alike. The guard is MODEL-scoped, not platform-scoped: a seedance-1-5-pro clip generated on the same account 90 seconds earlier was refused identically to a Replicate clip. Consequence: a 2.5 person must be BORN in 2.5 (text-to-video); there is no identity injection from any image or foreign video.",
+      "evidence": "P-25EXT 2026-08-09: Replicate 1.5-pro clip of a Higgsfield Soul character (fully synthetic person) -> refused. P-25EXT-B same day: ModelArk-native seedance-1-5-pro clip of the same character, same account, fresh TOS URL -> refused with the identical code, falsifying the platform-provenance hypothesis within the hour. Control: every extension of 2.5-generated human clips has succeeded (the measured +66% extension lane). Also measured: reference_video rejects data URIs — \"must be provided as a web url\".",
+      "counterexamples": "Non-human external footage untested. Whether ByteDance Digital Character registration whitelists a likeness for cross-model input is UNRESEARCHED — it is the one documented compliance door left (same registration the 2.0 reference_audios human path requires).",
       "applies_to": "video_extension",
       "confidence": "strong",
-      "source": "_probe/soul/p25ext.mjs, research/sd25/probe-log.jsonl P-25EXT, 2026-08-09"
+      "source": "_probe/soul/p25ext.mjs (both runs in research/sd25/probe-log.jsonl), 2026-08-09"
     }
   }
 }
