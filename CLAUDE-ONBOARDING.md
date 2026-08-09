@@ -18,24 +18,41 @@ instance into this document and stops it from spending before the install is pro
 
 ```
 You are joining the NanoBanana content-generation engine as its operator on this machine.
+It is a MEASURED video/image engine (BytePlus ModelArk Seedance + Higgsfield Soul); every
+rule in it was learned by spending real money, so trust the repo and the suite over instinct.
 
-1. Pull the newest work: from the NanoBanana-Client repo run
+1. Get the newest work: from the NanoBanana-Client repo run
    `git fetch origin && git checkout gen-image && git pull origin gen-image`.
    (Fresh machine? `git clone <GITHUB_URL> NanoBanana-Client` first. No remote or no URL?
-   Stop and ask me — do not improvise.)
+   Stop and ask me — do not improvise a source.)
 
-2. Open CLAUDE-ONBOARDING.md at the repo root of that branch and follow it top to bottom.
-   It covers the .env keys I will hand you separately (never through git or chat), the
-   Supabase migration if we're on a fresh project, and a 7-command install proof that
-   costs nothing.
+2. Open CLAUDE-ONBOARDING.md at the repo root of that branch and follow it top to bottom,
+   then the reading order it lists (CLAUDE.md, SYSTEM-README, ENGINE-HANDOVER, ENGINE-INTAKE,
+   craft/PROMPT-2.5.md, craft/DIGITAL-CHARACTERS.md). It covers the .env keys I'll hand you
+   separately (never through git or chat), the Supabase migration if we're on a fresh project,
+   and a free install proof.
 
-3. Report back: the kg-vault-test.py score (expect 55/55), the dry-run output of
-   briefs/gh-ugc-car.video.json, and anything that failed. Generate NOTHING until I've
-   seen that report and given you a brief.
+3. After keys are in, also run `arkcli auth login` and sign in as the SAME BytePlus account
+   that owns the MODELARK_API_KEY — model activation and the asset library need SSO, not the
+   API key. If a model 404s "ModelNotOpen", activate it: `arkcli models activate <name> --yes`.
 
-4. Standing rules that survive onto your machine: dry-run before money, claims verbatim
-   from sieve/brands/ or refused, no people in reference images, the R&D wall MCP stays
-   disconnected, and `node sd25-cost.mjs drain` before you end any session that generated.
+4. Report back before generating anything: the `python3 kg-vault-test.py` score (expect
+   55/55), the dry-run of briefs/gh-ugc-car.video.json (note its `prompt-craft detail: N/6`
+   line), and anything that failed. Generate NOTHING until I've seen that and given you a brief.
+
+5. How the engine routes by SUBJECT (this is the current model map):
+   - person talking, fresh face each time  -> Seedance 2.5 (best voice, 720p) — THE DEFAULT
+   - person, SAME face across pieces        -> avatar lane: name subject.avatar -> Seedance
+     1.5-pro from the avatar's canonical (identity 2.5 can't inject). Sol is an approved avatar.
+   - product / no human                     -> Seedance 2.0 (up to 4K)
+   - avatar + a product in one shot          -> `node scene-frame.mjs` composes them into one
+     first frame (Nano Banana), then the avatar lane animates it.
+
+6. Standing rules that survive onto your machine: dry-run before money; claims verbatim from
+   sieve/brands/ or refused; NO real person in any reference image (2.5/2.0 refuse it); cite
+   references with @Image N and name each one's purpose; drop killer words (fast/cinematic/
+   amazing/epic/beautiful — the engine warns); the R&D wall MCP stays disconnected; and
+   `node sd25-cost.mjs drain` before you end any session that generated.
 ```
 
 ---
@@ -77,13 +94,20 @@ Create `.env` at the repo root (it is gitignored; the operator hands you values 
 secure channel, never through git or chat logs):
 
 ```
-MODELARK_API_KEY=...           # REQUIRED. Seedance 2.5/2.0 (BytePlus ModelArk) — the video engine.
-DIRECT_URL=...                 # Supabase session-mode pooler (port 5432) — ledger DDL + project ref
+MODELARK_API_KEY=...           # REQUIRED. Seedance 2.5 / 2.0 / 1.5-pro (BytePlus ModelArk) — the video engine.
+GEMINI_API_KEY=...             # REQUIRED for scene-frame.mjs (Nano Banana composes avatar+product first frames) + Veo.
+DIRECT_URL=...                 # Supabase session-mode pooler (port 5432) — ledger DDL + project ref.
 SUPABASE_SERVICE_ROLE_KEY=...  # ledger writes. RLS is on; the anon key is useless here.
-GEMINI_API_KEY=...             # optional — Veo 3.1 / Nano Banana image tools
-OPENAI_API_KEY=...             # optional — gpt-image-2 tools
-REPLICATE_API_TOKEN=...        # optional — legacy Seedance 1.5-pro lane (Pattern D)
+OPENAI_API_KEY=...             # optional — gpt-image-2 tools.
+REPLICATE_API_TOKEN=...        # optional — the OTHER 1.5-pro route + lipsync; ModelArk 1.5-pro is preferred/cheaper.
+HIGGSFIELD_API_KEY / login     # optional — Higgsfield Soul, to CAST new avatar faces (portraits only, not video).
 ```
+
+Plus a NON-.env credential: **`arkcli auth login`** (BytePlus SSO). It is separate from the API
+key and is what authorizes **model activation** (`arkcli models activate seedance-1-5-pro --yes`)
+and the **asset library** (`node arkasset.mjs quota`). Sign in as the account that OWNS the
+MODELARK_API_KEY — this repo has hit a two-account mismatch before (activation landed on the
+wrong ledger and the key still 404'd).
 
 Facts about keys that will save you from subtle failures:
 
@@ -117,28 +141,35 @@ python3 kg-vault-test.py
 
 node video-engine.mjs --brief briefs/gh-ugc-car.video.json
 #   expect: full plan — route dreamina-seedance-2-5-260628, 69 words at 2.30 w/s, two claims
-#   with [SOURCED_BY_OPERATOR], a disclosure slot, "$6.98", ending in "DRY RUN — nothing
-#   submitted". This brief is the regression twin of a real shipped piece.
+#   with [SOURCED_BY_OPERATOR], a disclosure slot, "$6.98", a "prompt-craft detail: 6/6" line,
+#   ending in "DRY RUN — nothing submitted". Regression twin of a real shipped piece.
 
-node video-engine.mjs --brief briefs/gen2x2-hero-4k.video.json           # 2.0 product route
-node video-engine.mjs --brief briefs/gen2x2-hero-4k.video.json --draft   # 2.0-mini route
-#   expect: cost line reads "UNMEASURED — first run is the measurement" (honest, not broken)
+node video-engine.mjs --brief briefs/sol-card-ugc.video.json             # avatar lane -> 1.5-pro
+#   expect: route seedance-1-5-pro-251215, avatar Sol -> a composed scene frame as first_frame.
 
+node video-engine.mjs --brief briefs/gen2x2-hero-4k.video.json           # 2.0 product route (4k)
+node video-engine.mjs --brief briefs/val-2p5-cardref.video.json          # 2.5 + @Image reference
+
+node arkasset.mjs quota         # asset library reachable via arkcli SSO (aigc_writable etc.)
 node ledger-backfill.mjs        # syncs disk + YOUR ModelArk ledger into Supabase; idempotent
 node gen-verdict.mjs pending    # rows awaiting a human verdict (may be empty — fine)
 node sd25-cost.mjs spent        # YOUR account's spend (near-zero on a fresh key — see §3)
 ```
 
-All seven behave → the structure is good to go. Tell the operator the install is verified and
-quote the suite score.
+All behave → the structure is good to go. Tell the operator the install is verified and quote
+the suite score.
 
 ## 6. Reading order (before your first real job)
 
 1. **`CLAUDE.md`** (repo root) — the operating manual and golden rules. It is law.
 2. **`SYSTEM-README.md`** — system layout, what's external state, what's deliberately not wired.
-3. **`ENGINE-HANDOVER.md`** — models, costs, refusal triage. The on-set card.
+3. **`ENGINE-HANDOVER.md`** — models, costs, refusal triage, the Soul/avatar lane. The on-set card.
 4. **`ENGINE-INTAKE.md`** — the 16 questions. You ASK these; you never fill a slot silently.
-5. The **brand playbook** in `Brand Context/<Brand>.md` + `sieve/brands/<Brand>/` for whichever
+5. **`craft/PROMPT-2.5.md`** — how to write a maximally-detailed 2.5 prompt: shot formula,
+   camera vocabulary, killer words, the @Image reference citation, the 4-beat 30s arc.
+6. **`craft/DIGITAL-CHARACTERS.md`** — the four sanctioned doors into Seedance for people, why
+   registration is paywalled, and the working Soul→1.5-pro lane. `Avatars/<Name>/AVATAR.md` per face.
+7. The **brand playbook** in `Brand Context/<Brand>.md` + `sieve/brands/<Brand>/` for whichever
    brand the job names.
 
 ## 7. The rules you personally must not break (each has a receipt)
@@ -153,9 +184,16 @@ quote the suite score.
 - **A 2.5 person is born in 2.5, from text — no identity can be injected.** Human images
   (any role) and human video not generated by 2.5 itself are refused, including other
   ModelArk models' output. For SAME-FACE-ACROSS-PIECES work use the Soul casting lane
-  (`Avatars/` kits → Seedance 1.5-pro) and read `craft/DIGITAL-CHARACTERS.md` for the
-  sanctioned asset routes before believing you've found a clever workaround. You haven't;
-  we measured them all on 2026-08-09.
+  (`Avatars/` kits → Seedance 1.5-pro, set `subject.avatar`) and read
+  `craft/DIGITAL-CHARACTERS.md` for the sanctioned asset routes before believing you've found
+  a clever workaround. You haven't; we measured them all on 2026-08-09. (Registering a custom
+  face needs a PAID ModelArk media-asset subscription — a business decision, not a form.)
+- **Cite references with @Image N and name each one's purpose** (measured 2026-08-09: 2.5 takes
+  a reference_image next to a person and reproduces own-brand art faithfully). The engine
+  auto-builds the manifest from `refs.images[]` — set each ref's `name` + `describe`.
+- **Detail = specifics, not adjectives.** Drop `fast / cinematic / amazing / epic / beautiful`
+  (the engine warns); name one light, one camera move, one action. Aim for the `prompt-craft
+  detail: 6/6` line before you spend.
 - **Talking heads keep `generate_audio: true` + a music-only exclusion.** "No audio" on a
   talking head ships a mute clip at full price; "no voices" summons silence.
 - **Negatives summon.** To remove a thing, delete every mention and make it impossible in-scene.
@@ -177,7 +215,8 @@ quote the suite score.
 | `~/Desktop/MUHA-ALL-VIDEOS` corpus | none for generation — `house_laws` (the measured bands) are committed | only needed to RE-measure; ask the operator for the corpus if a brand re-calibration comes up |
 | `~/Obsidian/video_engine_kg` vault | none — regenerated by the suite in §5 | open in Obsidian, start at `_HOME` |
 | Original ModelArk task history | `sd25-cost spent` reads near-zero | correct behavior; history is in Supabase |
-| Avatars beyond committed assets | check `Avatars/` after clone | casting-status avatars are refused by design |
+| Avatars beyond committed assets | check `Avatars/` after clone | casting-status avatars are refused; **Sol is APPROVED** and usable |
+| Higgsfield credits | can't CAST new Soul faces without them | existing avatar canonicals in `Avatars/` still animate fine |
 | The original `.env` | everything in §3 | operator supplies NEW keys; never reuse leaked ones |
 
 ## 9. Your first real job, in one line
