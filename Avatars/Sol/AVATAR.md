@@ -23,9 +23,12 @@ actually works" — Whisper-confirmed).
   - Seedance **2.5 refuses him entirely** — any human image in any role, AND any video of him
     not born in 2.5 (law `sd25:extension-only-accepts-25-born-humans`).
   - Seedance **2.0 refuses human first frames** (E005, image-triggered).
-  - Route: **Replicate `bytedance/seedance-1.5-pro` ~$0.62/5s** (preferred, 4× cheaper) or
-    ModelArk `seedance-1-5-pro-251215` ~$2.62/5s est. (activated 2026-08-09; single-platform
-    convenience, provenance does NOT unlock 2.5 — measured same day).
+  - Route: **ModelArk `seedance-1-5-pro-251215`** OR **Replicate `bytedance/seedance-1.5-pro`** —
+    cost is basically a wash, correcting an earlier doc error. Real rates from the live billing
+    table applied to the measured 5s/1080p token count (245025): ModelArk **~$0.29 silent /
+    ~$0.59 with audio** (ToVSilentCompletion 0.0012/K, ToVCompletion 0.0024/K); Replicate ~$0.62
+    flat. ModelArk is cheaper or equal, so prefer it for single-platform simplicity. Provenance
+    still does NOT unlock 2.5 (measured 2026-08-09).
 - **He cannot be registered as a ModelArk digital asset** — `aigc_writable: false` on our
   account. See `craft/DIGITAL-CHARACTERS.md` for the full door map.
 

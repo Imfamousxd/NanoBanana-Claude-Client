@@ -31,7 +31,7 @@ unmeasured it says so out loud.
 | Product draft/variations | `dreamina-seedance-2-0-mini-260615` (`--draft`) | ? | **UNPROBED** | first run is the measurement |
 | Product, speed | `dreamina-seedance-2-0-fast-260128` (`--fast`) | ? | **UNPROBED** | id verified in catalog, never fired |
 | Approved artwork | 2.5 i2v, `--ratio adaptive`, `camerafixed` | follows the art | $0.233 | measured — but see Rolex rule below |
-| **Same face across many pieces** | **Soul casting lane**: Higgsfield Soul portrait → `bytedance/seedance-1.5-pro` (Replicate, ~$0.62/5s; ModelArk `seedance-1-5-pro-251215` works too at ~4× the price) | 1080p | ~$0.12/s | proven end-to-end 2026-08-09 — identity holds, speech verbatim. Avatar kits in `Avatars/` (Sol is the prototype, CASTING) |
+| **Same face across many pieces** | **Soul casting lane**: Higgsfield Soul portrait → Seedance 1.5-pro. ModelArk `seedance-1-5-pro-251215` (~$0.29 silent / ~$0.59 audio per 5s 1080p) OR Replicate `bytedance/seedance-1.5-pro` (~$0.62) — cost a wash, ModelArk cheaper | 1080p | ~$0.06–0.12/s | proven end-to-end 2026-08-09 — identity holds, speech verbatim. Avatar kits in `Avatars/` (Sol is the prototype, CASTING) |
 
 ## THE RULES THAT COST MONEY TO LEARN (the engine enforces all of these)
 

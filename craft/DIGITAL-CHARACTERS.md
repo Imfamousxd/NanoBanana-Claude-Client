@@ -23,9 +23,10 @@ Account quota (live probe `arkcli api mediaasset.get_asset_quota`, 2026-08-09): 
 
 1. **Soul-born characters (synthetic)** — CANNOT be registered as ModelArk assets today
    (`aigc_writable: false`). Their production lane is **Soul → Seedance 1.5-pro** (proven
-   end-to-end 2026-08-09: identity holds, speech verbatim; ~$0.62/5s via Replicate,
-   ~$2.62/5s est. via ModelArk — 4× cheaper on Replicate). They live in OUR store
-   (`Avatars/<Name>/`), not ByteDance's.
+   end-to-end 2026-08-09: identity holds, speech verbatim). Cost is a wash between routes
+   (corrected): ModelArk 1.5-pro ~$0.29 silent / ~$0.59 with audio per 5s 1080p (measured token
+   count × the live 1.5-pro billing rates), Replicate ~$0.62 flat — ModelArk cheaper or equal.
+   They live in OUR store (`Avatars/<Name>/`), not ByteDance's.
 2. **Preset digital persons (ByteDance's characters)** — usable in Seedance via
    `asset://<ASSET_ID>` right now, IF we take an ID from the console library. These are
    ByteDance's faces, not ours — useful for generic presenters, not brand-owned identity.
