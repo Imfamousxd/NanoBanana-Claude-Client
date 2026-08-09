@@ -110,140 +110,522 @@
     }
   ],
   "approvedGallery": {
-    "$comment": "DH Shots/ is the approved gallery (LOCAL-ONLY, gitignored). Studio shot per SKU at DH Shots/<Container>/<Product>.jpg; lifestyle sets at DH Shots/<Container> Lifestyle/<Product>/{man,woman}-{gym,kitchen,track}.jpg (6 files). On approval, shots are COPIED here (never moved).",
+    "$comment": "DH Shots/ approved gallery (LOCAL-ONLY, gitignored), fully enumerated. Studio shot per SKU + 6-file lifestyle sets. On approval, shots are COPIED here (never moved).",
     "vials": [
-      "AOD 9604",
-      "AOD-9604-MOTS-C",
-      "AOD-9604-MOTS-C-Tesamorelin",
-      "BPC-157",
-      "BPC-157-GHK-Cu-KPV-TB500",
-      "BPC-157-KPV-TB500",
-      "BPC-157-TB500",
-      "CJC-1295-Ipamorelin",
-      "DSIP",
-      "DSIP-BPC-157-CJC",
-      "Epithalon",
-      "GHK-Cu",
-      "GHK-Cu-Epithalon",
-      "Glutathione",
-      "Gonadorelin",
-      "IGF-LR3",
-      "Kisspeptin",
-      "LIPO-B",
-      "LL-37",
-      "MOTS-C",
-      "MOTS-C-Tesamorelin",
-      "NAD+",
-      "PT-141",
-      "Pinealon-PE22-28-Selank",
-      "Pregnyl (HCG)",
-      "SS-31",
-      "Sema Kit 2-4-6mg",
-      "Sema Kit 4-6-10mg",
-      "Sema Kit 6mg",
-      "Sema Maintenance",
-      "Sema Starter Kit",
-      "Semaglutide + B12",
-      "Semax-Selank",
-      "Sermorelin",
-      "Tesamorelin",
-      "Tesamorelin-Ipamorelin",
-      "Testosterone Cyp Cottonseed",
-      "Testosterone Cyp MCT Oil",
-      "Thymosin Alpha-1",
-      "Tirz Kit",
-      "Tirz Maintenance 20mg",
-      "Tirz Maintenance 25mg",
-      "Tirz Maintenance 30mg",
-      "Tirz Starter Kit",
-      "Tirzepatide + B12"
+      "DH Shots/Vials/AOD-9604-MOTS-C-Tesamorelin.jpg",
+      "DH Shots/Vials/AOD-9604-MOTS-C.jpg",
+      "DH Shots/Vials/BPC-157-GHK-Cu-KPV-TB500.jpg",
+      "DH Shots/Vials/BPC-157-KPV-TB500.jpg",
+      "DH Shots/Vials/BPC-157-TB500.jpg",
+      "DH Shots/Vials/BPC-157.jpg",
+      "DH Shots/Vials/CJC-1295-Ipamorelin.jpg",
+      "DH Shots/Vials/DSIP-BPC-157-CJC.jpg",
+      "DH Shots/Vials/DSIP.jpg",
+      "DH Shots/Vials/Epithalon.jpg",
+      "DH Shots/Vials/GHK-Cu-Epithalon.jpg",
+      "DH Shots/Vials/GHK-Cu.jpg",
+      "DH Shots/Vials/Glutathione.jpg",
+      "DH Shots/Vials/Gonadorelin.jpg",
+      "DH Shots/Vials/IGF-LR3.jpg",
+      "DH Shots/Vials/Kisspeptin.jpg",
+      "DH Shots/Vials/LIPO-B.jpg",
+      "DH Shots/Vials/LL-37.jpg",
+      "DH Shots/Vials/MOTS-C-Tesamorelin.jpg",
+      "DH Shots/Vials/MOTS-C.jpg",
+      "DH Shots/Vials/NAD+.jpg",
+      "DH Shots/Vials/PT-141.jpg",
+      "DH Shots/Vials/Pinealon-PE22-28-Selank.jpg",
+      "DH Shots/Vials/Pregnyl (HCG).jpg",
+      "DH Shots/Vials/SS-31.jpg",
+      "DH Shots/Vials/Sema Kit 2-4-6mg.jpg",
+      "DH Shots/Vials/Sema Kit 4-6-10mg.jpg",
+      "DH Shots/Vials/Sema Kit 6mg.jpg",
+      "DH Shots/Vials/Sema Maintenance.jpg",
+      "DH Shots/Vials/Sema Starter Kit.jpg",
+      "DH Shots/Vials/Semaglutide + B12.jpg",
+      "DH Shots/Vials/Semax-Selank.jpg",
+      "DH Shots/Vials/Sermorelin.jpg",
+      "DH Shots/Vials/Tesamorelin-Ipamorelin.jpg",
+      "DH Shots/Vials/Tesamorelin.jpg",
+      "DH Shots/Vials/Testosterone Cyp Cottonseed.jpg",
+      "DH Shots/Vials/Testosterone Cyp MCT Oil.jpg",
+      "DH Shots/Vials/Thymosin Alpha-1.jpg",
+      "DH Shots/Vials/Tirz Kit.jpg",
+      "DH Shots/Vials/Tirz Maintenance 20mg.jpg",
+      "DH Shots/Vials/Tirz Maintenance 25mg.jpg",
+      "DH Shots/Vials/Tirz Maintenance 30mg.jpg",
+      "DH Shots/Vials/Tirz Starter Kit.jpg",
+      "DH Shots/Vials/Tirzepatide + B12.jpg"
     ],
     "capsules": [
-      "5-Amino 1MQ",
-      "Apomorphine-Bremelanotide-Tadalafil-Oxy",
-      "BPC-157",
-      "BPC-157-TB500",
-      "Clomiphene Citrate",
-      "Dihexa",
-      "Dihexa-Tesofensine",
-      "Enclomiphene",
-      "Ibutamoren (MK-677)",
-      "Methylene Blue",
-      "Ondansetron (GLP-1 Support)",
-      "SLU-PP 332",
-      "SLU-PP 332-BAM 15",
-      "Sildenafil (Commercial)",
-      "Sildenafil-Tadalafil-Bremelanotide",
-      "Sildenafil-Tadalafil-Oxytocin",
-      "Tadalafil (Commercial)",
-      "Tesofensine"
+      "DH Shots/Capsules/5-Amino 1MQ.jpg",
+      "DH Shots/Capsules/Apomorphine-Bremelanotide-Tadalafil-Oxy.jpg",
+      "DH Shots/Capsules/BPC-157-TB500.jpg",
+      "DH Shots/Capsules/BPC-157.jpg",
+      "DH Shots/Capsules/Clomiphene Citrate.jpg",
+      "DH Shots/Capsules/Dihexa-Tesofensine.jpg",
+      "DH Shots/Capsules/Dihexa.jpg",
+      "DH Shots/Capsules/Enclomiphene.jpg",
+      "DH Shots/Capsules/Ibutamoren (MK-677).jpg",
+      "DH Shots/Capsules/Methylene Blue.jpg",
+      "DH Shots/Capsules/Ondansetron (GLP-1 Support).jpg",
+      "DH Shots/Capsules/Sildenafil (Commercial).jpg",
+      "DH Shots/Capsules/Sildenafil-Tadalafil-Bremelanotide.jpg",
+      "DH Shots/Capsules/Sildenafil-Tadalafil-Oxytocin.jpg",
+      "DH Shots/Capsules/Tadalafil (Commercial).jpg",
+      "DH Shots/Capsules/Tesofensine.jpg"
     ],
     "oralDrops": [
-      "Semaglutide",
-      "Tirzepatide"
+      "DH Shots/Oral Drops/Semaglutide.jpg",
+      "DH Shots/Oral Drops/Tirzepatide.jpg"
     ],
     "lifestyle": {
-      "Vials Lifestyle": [
-        "AOD 9604",
-        "AOD-9604-MOTS-C",
-        "AOD-9604-MOTS-C-Tesamorelin",
-        "BPC-157",
-        "BPC-157-GHK-Cu-KPV-TB500",
-        "BPC-157-KPV-TB500",
-        "BPC-157-TB500",
-        "CJC-1295-Ipamorelin",
-        "DSIP",
-        "DSIP-BPC-157-CJC",
-        "Epithalon",
-        "GHK-Cu",
-        "GHK-Cu-Epithalon",
-        "Glutathione",
-        "Gonadorelin",
-        "IGF-LR3",
-        "Kisspeptin",
-        "LIPO-B",
-        "LL-37",
-        "MOTS-C",
-        "MOTS-C-Tesamorelin",
-        "NAD+",
-        "PT-141",
-        "Pinealon-PE22-28-Selank",
-        "Pregnyl (HCG)",
-        "SS-31",
-        "Semaglutide + B12",
-        "Semax-Selank",
-        "Sermorelin",
-        "Tesamorelin",
-        "Tesamorelin-Ipamorelin",
-        "Testosterone Cyp Cottonseed",
-        "Testosterone Cyp MCT Oil",
-        "Thymosin Alpha-1",
-        "Tirzepatide + B12"
-      ],
-      "Capsules Lifestyle": [
-        "5-Amino 1MQ",
-        "Apomorphine-Bremelanotide-Tadalafil-Oxy",
-        "BPC-157",
-        "BPC-157-TB500",
-        "Clomiphene Citrate",
-        "Dihexa",
-        "Dihexa-Tesofensine",
-        "Enclomiphene",
-        "Ibutamoren (MK-677)",
-        "Methylene Blue",
-        "Ondansetron (GLP-1 Support)",
-        "SLU-PP 332",
-        "SLU-PP 332-BAM 15",
-        "Sildenafil (Commercial)",
-        "Sildenafil-Tadalafil-Bremelanotide",
-        "Sildenafil-Tadalafil-Oxytocin",
-        "Tadalafil (Commercial)",
-        "Tesofensine"
-      ],
-      "Oral Drops Lifestyle": [
-        "Semaglutide",
-        "Tirzepatide"
-      ]
+      "Vials Lifestyle": {
+        "AOD 9604": [
+          "DH Shots/Vials Lifestyle/AOD 9604/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/AOD 9604/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/AOD 9604/man-track.jpg",
+          "DH Shots/Vials Lifestyle/AOD 9604/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/AOD 9604/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/AOD 9604/woman-track.jpg"
+        ],
+        "AOD-9604-MOTS-C": [
+          "DH Shots/Vials Lifestyle/AOD-9604-MOTS-C/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/AOD-9604-MOTS-C/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/AOD-9604-MOTS-C/man-track.jpg",
+          "DH Shots/Vials Lifestyle/AOD-9604-MOTS-C/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/AOD-9604-MOTS-C/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/AOD-9604-MOTS-C/woman-track.jpg"
+        ],
+        "AOD-9604-MOTS-C-Tesamorelin": [
+          "DH Shots/Vials Lifestyle/AOD-9604-MOTS-C-Tesamorelin/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/AOD-9604-MOTS-C-Tesamorelin/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/AOD-9604-MOTS-C-Tesamorelin/man-track.jpg",
+          "DH Shots/Vials Lifestyle/AOD-9604-MOTS-C-Tesamorelin/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/AOD-9604-MOTS-C-Tesamorelin/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/AOD-9604-MOTS-C-Tesamorelin/woman-track.jpg"
+        ],
+        "BPC-157": [
+          "DH Shots/Vials Lifestyle/BPC-157/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157/man-track.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157/woman-track.jpg"
+        ],
+        "BPC-157-GHK-Cu-KPV-TB500": [
+          "DH Shots/Vials Lifestyle/BPC-157-GHK-Cu-KPV-TB500/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-GHK-Cu-KPV-TB500/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-GHK-Cu-KPV-TB500/man-track.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-GHK-Cu-KPV-TB500/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-GHK-Cu-KPV-TB500/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-GHK-Cu-KPV-TB500/woman-track.jpg"
+        ],
+        "BPC-157-KPV-TB500": [
+          "DH Shots/Vials Lifestyle/BPC-157-KPV-TB500/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-KPV-TB500/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-KPV-TB500/man-track.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-KPV-TB500/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-KPV-TB500/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-KPV-TB500/woman-track.jpg"
+        ],
+        "BPC-157-TB500": [
+          "DH Shots/Vials Lifestyle/BPC-157-TB500/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-TB500/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-TB500/man-track.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-TB500/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-TB500/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/BPC-157-TB500/woman-track.jpg"
+        ],
+        "CJC-1295-Ipamorelin": [
+          "DH Shots/Vials Lifestyle/CJC-1295-Ipamorelin/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/CJC-1295-Ipamorelin/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/CJC-1295-Ipamorelin/man-track.jpg",
+          "DH Shots/Vials Lifestyle/CJC-1295-Ipamorelin/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/CJC-1295-Ipamorelin/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/CJC-1295-Ipamorelin/woman-track.jpg"
+        ],
+        "DSIP": [
+          "DH Shots/Vials Lifestyle/DSIP/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/DSIP/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/DSIP/man-track.jpg",
+          "DH Shots/Vials Lifestyle/DSIP/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/DSIP/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/DSIP/woman-track.jpg"
+        ],
+        "DSIP-BPC-157-CJC": [
+          "DH Shots/Vials Lifestyle/DSIP-BPC-157-CJC/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/DSIP-BPC-157-CJC/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/DSIP-BPC-157-CJC/man-track.jpg",
+          "DH Shots/Vials Lifestyle/DSIP-BPC-157-CJC/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/DSIP-BPC-157-CJC/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/DSIP-BPC-157-CJC/woman-track.jpg"
+        ],
+        "Epithalon": [
+          "DH Shots/Vials Lifestyle/Epithalon/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Epithalon/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Epithalon/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Epithalon/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Epithalon/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Epithalon/woman-track.jpg"
+        ],
+        "GHK-Cu": [
+          "DH Shots/Vials Lifestyle/GHK-Cu/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/GHK-Cu/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/GHK-Cu/man-track.jpg",
+          "DH Shots/Vials Lifestyle/GHK-Cu/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/GHK-Cu/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/GHK-Cu/woman-track.jpg"
+        ],
+        "GHK-Cu-Epithalon": [
+          "DH Shots/Vials Lifestyle/GHK-Cu-Epithalon/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/GHK-Cu-Epithalon/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/GHK-Cu-Epithalon/man-track.jpg",
+          "DH Shots/Vials Lifestyle/GHK-Cu-Epithalon/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/GHK-Cu-Epithalon/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/GHK-Cu-Epithalon/woman-track.jpg"
+        ],
+        "Glutathione": [
+          "DH Shots/Vials Lifestyle/Glutathione/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Glutathione/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Glutathione/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Glutathione/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Glutathione/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Glutathione/woman-track.jpg"
+        ],
+        "Gonadorelin": [
+          "DH Shots/Vials Lifestyle/Gonadorelin/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Gonadorelin/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Gonadorelin/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Gonadorelin/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Gonadorelin/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Gonadorelin/woman-track.jpg"
+        ],
+        "IGF-LR3": [
+          "DH Shots/Vials Lifestyle/IGF-LR3/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/IGF-LR3/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/IGF-LR3/man-track.jpg",
+          "DH Shots/Vials Lifestyle/IGF-LR3/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/IGF-LR3/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/IGF-LR3/woman-track.jpg"
+        ],
+        "Kisspeptin": [
+          "DH Shots/Vials Lifestyle/Kisspeptin/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Kisspeptin/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Kisspeptin/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Kisspeptin/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Kisspeptin/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Kisspeptin/woman-track.jpg"
+        ],
+        "LIPO-B": [
+          "DH Shots/Vials Lifestyle/LIPO-B/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/LIPO-B/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/LIPO-B/man-track.jpg",
+          "DH Shots/Vials Lifestyle/LIPO-B/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/LIPO-B/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/LIPO-B/woman-track.jpg"
+        ],
+        "LL-37": [
+          "DH Shots/Vials Lifestyle/LL-37/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/LL-37/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/LL-37/man-track.jpg",
+          "DH Shots/Vials Lifestyle/LL-37/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/LL-37/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/LL-37/woman-track.jpg"
+        ],
+        "MOTS-C": [
+          "DH Shots/Vials Lifestyle/MOTS-C/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/MOTS-C/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/MOTS-C/man-track.jpg",
+          "DH Shots/Vials Lifestyle/MOTS-C/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/MOTS-C/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/MOTS-C/woman-track.jpg"
+        ],
+        "MOTS-C-Tesamorelin": [
+          "DH Shots/Vials Lifestyle/MOTS-C-Tesamorelin/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/MOTS-C-Tesamorelin/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/MOTS-C-Tesamorelin/man-track.jpg",
+          "DH Shots/Vials Lifestyle/MOTS-C-Tesamorelin/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/MOTS-C-Tesamorelin/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/MOTS-C-Tesamorelin/woman-track.jpg"
+        ],
+        "NAD+": [
+          "DH Shots/Vials Lifestyle/NAD+/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/NAD+/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/NAD+/man-track.jpg",
+          "DH Shots/Vials Lifestyle/NAD+/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/NAD+/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/NAD+/woman-track.jpg"
+        ],
+        "PT-141": [
+          "DH Shots/Vials Lifestyle/PT-141/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/PT-141/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/PT-141/man-track.jpg",
+          "DH Shots/Vials Lifestyle/PT-141/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/PT-141/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/PT-141/woman-track.jpg"
+        ],
+        "Pinealon-PE22-28-Selank": [
+          "DH Shots/Vials Lifestyle/Pinealon-PE22-28-Selank/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Pinealon-PE22-28-Selank/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Pinealon-PE22-28-Selank/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Pinealon-PE22-28-Selank/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Pinealon-PE22-28-Selank/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Pinealon-PE22-28-Selank/woman-track.jpg"
+        ],
+        "Pregnyl (HCG)": [
+          "DH Shots/Vials Lifestyle/Pregnyl (HCG)/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Pregnyl (HCG)/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Pregnyl (HCG)/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Pregnyl (HCG)/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Pregnyl (HCG)/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Pregnyl (HCG)/woman-track.jpg"
+        ],
+        "SS-31": [
+          "DH Shots/Vials Lifestyle/SS-31/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/SS-31/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/SS-31/man-track.jpg",
+          "DH Shots/Vials Lifestyle/SS-31/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/SS-31/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/SS-31/woman-track.jpg"
+        ],
+        "Semaglutide + B12": [
+          "DH Shots/Vials Lifestyle/Semaglutide + B12/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Semaglutide + B12/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Semaglutide + B12/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Semaglutide + B12/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Semaglutide + B12/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Semaglutide + B12/woman-track.jpg"
+        ],
+        "Semax-Selank": [
+          "DH Shots/Vials Lifestyle/Semax-Selank/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Semax-Selank/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Semax-Selank/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Semax-Selank/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Semax-Selank/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Semax-Selank/woman-track.jpg"
+        ],
+        "Sermorelin": [
+          "DH Shots/Vials Lifestyle/Sermorelin/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Sermorelin/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Sermorelin/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Sermorelin/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Sermorelin/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Sermorelin/woman-track.jpg"
+        ],
+        "Tesamorelin": [
+          "DH Shots/Vials Lifestyle/Tesamorelin/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Tesamorelin/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Tesamorelin/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Tesamorelin/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Tesamorelin/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Tesamorelin/woman-track.jpg"
+        ],
+        "Tesamorelin-Ipamorelin": [
+          "DH Shots/Vials Lifestyle/Tesamorelin-Ipamorelin/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Tesamorelin-Ipamorelin/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Tesamorelin-Ipamorelin/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Tesamorelin-Ipamorelin/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Tesamorelin-Ipamorelin/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Tesamorelin-Ipamorelin/woman-track.jpg"
+        ],
+        "Testosterone Cyp Cottonseed": [
+          "DH Shots/Vials Lifestyle/Testosterone Cyp Cottonseed/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Testosterone Cyp Cottonseed/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Testosterone Cyp Cottonseed/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Testosterone Cyp Cottonseed/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Testosterone Cyp Cottonseed/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Testosterone Cyp Cottonseed/woman-track.jpg"
+        ],
+        "Testosterone Cyp MCT Oil": [
+          "DH Shots/Vials Lifestyle/Testosterone Cyp MCT Oil/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Testosterone Cyp MCT Oil/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Testosterone Cyp MCT Oil/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Testosterone Cyp MCT Oil/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Testosterone Cyp MCT Oil/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Testosterone Cyp MCT Oil/woman-track.jpg"
+        ],
+        "Thymosin Alpha-1": [
+          "DH Shots/Vials Lifestyle/Thymosin Alpha-1/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Thymosin Alpha-1/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Thymosin Alpha-1/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Thymosin Alpha-1/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Thymosin Alpha-1/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Thymosin Alpha-1/woman-track.jpg"
+        ],
+        "Tirzepatide + B12": [
+          "DH Shots/Vials Lifestyle/Tirzepatide + B12/man-gym.jpg",
+          "DH Shots/Vials Lifestyle/Tirzepatide + B12/man-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Tirzepatide + B12/man-track.jpg",
+          "DH Shots/Vials Lifestyle/Tirzepatide + B12/woman-gym.jpg",
+          "DH Shots/Vials Lifestyle/Tirzepatide + B12/woman-kitchen.jpg",
+          "DH Shots/Vials Lifestyle/Tirzepatide + B12/woman-track.jpg"
+        ]
+      },
+      "Capsules Lifestyle": {
+        "5-Amino 1MQ": [
+          "DH Shots/Capsules Lifestyle/5-Amino 1MQ/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/5-Amino 1MQ/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/5-Amino 1MQ/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/5-Amino 1MQ/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/5-Amino 1MQ/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/5-Amino 1MQ/woman-track.jpg"
+        ],
+        "Apomorphine-Bremelanotide-Tadalafil-Oxy": [
+          "DH Shots/Capsules Lifestyle/Apomorphine-Bremelanotide-Tadalafil-Oxy/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Apomorphine-Bremelanotide-Tadalafil-Oxy/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Apomorphine-Bremelanotide-Tadalafil-Oxy/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Apomorphine-Bremelanotide-Tadalafil-Oxy/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Apomorphine-Bremelanotide-Tadalafil-Oxy/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Apomorphine-Bremelanotide-Tadalafil-Oxy/woman-track.jpg"
+        ],
+        "BPC-157": [
+          "DH Shots/Capsules Lifestyle/BPC-157/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/BPC-157/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/BPC-157/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/BPC-157/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/BPC-157/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/BPC-157/woman-track.jpg"
+        ],
+        "BPC-157-TB500": [
+          "DH Shots/Capsules Lifestyle/BPC-157-TB500/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/BPC-157-TB500/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/BPC-157-TB500/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/BPC-157-TB500/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/BPC-157-TB500/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/BPC-157-TB500/woman-track.jpg"
+        ],
+        "Clomiphene Citrate": [
+          "DH Shots/Capsules Lifestyle/Clomiphene Citrate/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Clomiphene Citrate/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Clomiphene Citrate/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Clomiphene Citrate/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Clomiphene Citrate/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Clomiphene Citrate/woman-track.jpg"
+        ],
+        "Dihexa": [
+          "DH Shots/Capsules Lifestyle/Dihexa/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Dihexa/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Dihexa/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Dihexa/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Dihexa/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Dihexa/woman-track.jpg"
+        ],
+        "Dihexa-Tesofensine": [
+          "DH Shots/Capsules Lifestyle/Dihexa-Tesofensine/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Dihexa-Tesofensine/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Dihexa-Tesofensine/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Dihexa-Tesofensine/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Dihexa-Tesofensine/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Dihexa-Tesofensine/woman-track.jpg"
+        ],
+        "Enclomiphene": [
+          "DH Shots/Capsules Lifestyle/Enclomiphene/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Enclomiphene/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Enclomiphene/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Enclomiphene/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Enclomiphene/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Enclomiphene/woman-track.jpg"
+        ],
+        "Ibutamoren (MK-677)": [
+          "DH Shots/Capsules Lifestyle/Ibutamoren (MK-677)/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Ibutamoren (MK-677)/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Ibutamoren (MK-677)/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Ibutamoren (MK-677)/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Ibutamoren (MK-677)/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Ibutamoren (MK-677)/woman-track.jpg"
+        ],
+        "Methylene Blue": [
+          "DH Shots/Capsules Lifestyle/Methylene Blue/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Methylene Blue/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Methylene Blue/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Methylene Blue/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Methylene Blue/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Methylene Blue/woman-track.jpg"
+        ],
+        "Ondansetron (GLP-1 Support)": [
+          "DH Shots/Capsules Lifestyle/Ondansetron (GLP-1 Support)/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Ondansetron (GLP-1 Support)/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Ondansetron (GLP-1 Support)/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Ondansetron (GLP-1 Support)/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Ondansetron (GLP-1 Support)/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Ondansetron (GLP-1 Support)/woman-track.jpg"
+        ],
+        "SLU-PP 332": [
+          "DH Shots/Capsules Lifestyle/SLU-PP 332/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/SLU-PP 332/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/SLU-PP 332/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/SLU-PP 332/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/SLU-PP 332/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/SLU-PP 332/woman-track.jpg"
+        ],
+        "SLU-PP 332-BAM 15": [
+          "DH Shots/Capsules Lifestyle/SLU-PP 332-BAM 15/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/SLU-PP 332-BAM 15/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/SLU-PP 332-BAM 15/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/SLU-PP 332-BAM 15/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/SLU-PP 332-BAM 15/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/SLU-PP 332-BAM 15/woman-track.jpg"
+        ],
+        "Sildenafil (Commercial)": [
+          "DH Shots/Capsules Lifestyle/Sildenafil (Commercial)/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil (Commercial)/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil (Commercial)/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil (Commercial)/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil (Commercial)/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil (Commercial)/woman-track.jpg"
+        ],
+        "Sildenafil-Tadalafil-Bremelanotide": [
+          "DH Shots/Capsules Lifestyle/Sildenafil-Tadalafil-Bremelanotide/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil-Tadalafil-Bremelanotide/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil-Tadalafil-Bremelanotide/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil-Tadalafil-Bremelanotide/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil-Tadalafil-Bremelanotide/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil-Tadalafil-Bremelanotide/woman-track.jpg"
+        ],
+        "Sildenafil-Tadalafil-Oxytocin": [
+          "DH Shots/Capsules Lifestyle/Sildenafil-Tadalafil-Oxytocin/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil-Tadalafil-Oxytocin/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil-Tadalafil-Oxytocin/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil-Tadalafil-Oxytocin/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil-Tadalafil-Oxytocin/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Sildenafil-Tadalafil-Oxytocin/woman-track.jpg"
+        ],
+        "Tadalafil (Commercial)": [
+          "DH Shots/Capsules Lifestyle/Tadalafil (Commercial)/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Tadalafil (Commercial)/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Tadalafil (Commercial)/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Tadalafil (Commercial)/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Tadalafil (Commercial)/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Tadalafil (Commercial)/woman-track.jpg"
+        ],
+        "Tesofensine": [
+          "DH Shots/Capsules Lifestyle/Tesofensine/man-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Tesofensine/man-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Tesofensine/man-track.jpg",
+          "DH Shots/Capsules Lifestyle/Tesofensine/woman-gym.jpg",
+          "DH Shots/Capsules Lifestyle/Tesofensine/woman-kitchen.jpg",
+          "DH Shots/Capsules Lifestyle/Tesofensine/woman-track.jpg"
+        ]
+      },
+      "Oral Drops Lifestyle": {
+        "Semaglutide": [
+          "DH Shots/Oral Drops Lifestyle/Semaglutide/man-gym.jpg",
+          "DH Shots/Oral Drops Lifestyle/Semaglutide/man-kitchen.jpg",
+          "DH Shots/Oral Drops Lifestyle/Semaglutide/man-track.jpg",
+          "DH Shots/Oral Drops Lifestyle/Semaglutide/woman-gym.jpg",
+          "DH Shots/Oral Drops Lifestyle/Semaglutide/woman-kitchen.jpg",
+          "DH Shots/Oral Drops Lifestyle/Semaglutide/woman-track.jpg"
+        ],
+        "Tirzepatide": [
+          "DH Shots/Oral Drops Lifestyle/Tirzepatide/man-gym.jpg",
+          "DH Shots/Oral Drops Lifestyle/Tirzepatide/man-kitchen.jpg",
+          "DH Shots/Oral Drops Lifestyle/Tirzepatide/man-track.jpg",
+          "DH Shots/Oral Drops Lifestyle/Tirzepatide/woman-gym.jpg",
+          "DH Shots/Oral Drops Lifestyle/Tirzepatide/woman-kitchen.jpg",
+          "DH Shots/Oral Drops Lifestyle/Tirzepatide/woman-track.jpg"
+        ]
+      }
     },
     "notes": [
       "The 10 Sema/Tirz kit & maintenance vial SKUs have no lifestyle sets.",
@@ -262,8 +644,46 @@
     }
   ],
   "bloodTestKit": {
-    "refsDir": "DIaled Health Instruction Graphics/Product Refs",
-    "approved": "DIaled Health Instruction Graphics/Approved/01.png-26.png"
+    "refs": [
+      "DIaled Health Instruction Graphics/Product Refs/Dialed Health_Logo_Updated-02.png",
+      "DIaled Health Instruction Graphics/Product Refs/heatpack.png",
+      "DIaled Health Instruction Graphics/Product Refs/insert blood vial.jpg",
+      "DIaled Health Instruction Graphics/Product Refs/package open.jpg",
+      "DIaled Health Instruction Graphics/Product Refs/product in package.jpg",
+      "DIaled Health Instruction Graphics/Product Refs/product outside of packaging.jpg",
+      "DIaled Health Instruction Graphics/Product Refs/protector tube top.png",
+      "DIaled Health Instruction Graphics/Product Refs/protector tube.png",
+      "DIaled Health Instruction Graphics/Product Refs/where to insert vial.jpg",
+      "DIaled Health Instruction Graphics/Product Refs/where to place blood vial.jpg"
+    ],
+    "approved": [
+      "DIaled Health Instruction Graphics/Approved/01.png",
+      "DIaled Health Instruction Graphics/Approved/02.png",
+      "DIaled Health Instruction Graphics/Approved/03.png",
+      "DIaled Health Instruction Graphics/Approved/04.png",
+      "DIaled Health Instruction Graphics/Approved/05.png",
+      "DIaled Health Instruction Graphics/Approved/06.png",
+      "DIaled Health Instruction Graphics/Approved/07.png",
+      "DIaled Health Instruction Graphics/Approved/08.png",
+      "DIaled Health Instruction Graphics/Approved/09.png",
+      "DIaled Health Instruction Graphics/Approved/10.png",
+      "DIaled Health Instruction Graphics/Approved/11.png",
+      "DIaled Health Instruction Graphics/Approved/12.png",
+      "DIaled Health Instruction Graphics/Approved/13.png",
+      "DIaled Health Instruction Graphics/Approved/14.png",
+      "DIaled Health Instruction Graphics/Approved/15.png",
+      "DIaled Health Instruction Graphics/Approved/16.png",
+      "DIaled Health Instruction Graphics/Approved/17.png",
+      "DIaled Health Instruction Graphics/Approved/18.png",
+      "DIaled Health Instruction Graphics/Approved/19.png",
+      "DIaled Health Instruction Graphics/Approved/20.png",
+      "DIaled Health Instruction Graphics/Approved/21.png",
+      "DIaled Health Instruction Graphics/Approved/22.png",
+      "DIaled Health Instruction Graphics/Approved/23.png",
+      "DIaled Health Instruction Graphics/Approved/24.png",
+      "DIaled Health Instruction Graphics/Approved/25.png",
+      "DIaled Health Instruction Graphics/Approved/26.png"
+    ]
   },
   "sources": [
     "Brand Context/Dialed_Health.md",

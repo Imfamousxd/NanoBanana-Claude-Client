@@ -297,5 +297,19 @@
   ],
   "sources": [
     "Brand Context/Dialed_Labs_UFC.md"
-  ]
+  ],
+  "sceneAssets": {
+    "$comment": "approved hero/scene renders reusable as style refs",
+    "assets": [
+      "email_campaigns/dialed_labs/airbnb_outreach/assets/hero_plunge_patio.png",
+      "email_campaigns/dialed_labs/airbnb_outreach/assets/hero_sauna_cabin.png",
+      "email_campaigns/dialed_labs/airbnb_outreach/assets/pod_sauna_interior.png",
+      "email_campaigns/dialed_labs/airbnb_outreach/assets/mid02_redlight.jpg",
+      "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/hero_sauna_cabin_cover.jpg",
+      "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/ufc_recovery.png",
+      "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/ufc_recovery_v2_c1.png",
+      "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/ufc_recovery_v2_c2.png",
+      "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/ufc_recovery.jpg"
+    ]
+  }
 }

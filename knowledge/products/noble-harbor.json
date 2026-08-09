@@ -101,7 +101,78 @@
         "PT-141 2/5mg/*_red.jpg is flagged mis-labeled.",
         "' 2' duplicate folders (BPC-157 2/, _baselines 2/, ...) are cloud-sync collision copies — use the non-' 2' folders (not verified byte-identical)."
       ],
-      "source": "Brand Context/Noble_Harbor.md; inventory 2026-08-09"
+      "source": "Brand Context/Noble_Harbor.md; inventory 2026-08-09",
+      "assets": {
+        "baselines": [
+          "Noble Harbor Wholesale/_baselines/baseline_3ml-dark_navy.jpg",
+          "Noble Harbor Wholesale/_baselines/baseline_3ml_navy.jpg",
+          "Noble Harbor Wholesale/_baselines/baseline_5ml_navy.jpg"
+        ],
+        "capColorMasterSet": [
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_3ml_babyblue.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_3ml_black.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_3ml_green.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_3ml_navy.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_3ml_pink.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_3ml_purple.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_3ml_red.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_3ml_white.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_3ml_yellow.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_5ml_babyblue.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_5ml_black.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_5ml_green.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_5ml_navy.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_5ml_pink.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_5ml_purple.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_5ml_red.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_5ml_white.jpg",
+          "Noble Harbor Wholesale/BPC-157/10mg/BPC-157_10mg_5ml_yellow.jpg"
+        ],
+        "contactSheets": [
+          "nh-10ml-sheets/5-Amino_1MQ.jpg",
+          "nh-10ml-sheets/AOD-9604.jpg",
+          "nh-10ml-sheets/AlphaKlotho_LR.jpg",
+          "nh-10ml-sheets/BPC-157.jpg",
+          "nh-10ml-sheets/BPC-157_-_TB500.jpg",
+          "nh-10ml-sheets/CJC-1295_(No-DAC).jpg",
+          "nh-10ml-sheets/DSIP.jpg",
+          "nh-10ml-sheets/Epithalon.jpg",
+          "nh-10ml-sheets/FLGR242.jpg",
+          "nh-10ml-sheets/Foxo4-DRI.jpg",
+          "nh-10ml-sheets/GHK-Cu.jpg",
+          "nh-10ml-sheets/GHK.jpg",
+          "nh-10ml-sheets/GLP-1_(S).jpg",
+          "nh-10ml-sheets/GLP-2_(T).jpg",
+          "nh-10ml-sheets/GLP-3_(R).jpg",
+          "nh-10ml-sheets/Glow_Blend.jpg",
+          "nh-10ml-sheets/Glutathione.jpg",
+          "nh-10ml-sheets/Ipamorelin.jpg",
+          "nh-10ml-sheets/KPV.jpg",
+          "nh-10ml-sheets/Kisspeptin.jpg",
+          "nh-10ml-sheets/Klow_Blend.jpg",
+          "nh-10ml-sheets/MOTS-C.jpg",
+          "nh-10ml-sheets/Melanotan_II.jpg",
+          "nh-10ml-sheets/N-Acetyl_Selank_Amidate.jpg",
+          "nh-10ml-sheets/N-Acetyl_Semax_Amidate.jpg",
+          "nh-10ml-sheets/NAD+.jpg",
+          "nh-10ml-sheets/Oxytocin.jpg",
+          "nh-10ml-sheets/PT-141.jpg",
+          "nh-10ml-sheets/Selank.jpg",
+          "nh-10ml-sheets/Semax.jpg",
+          "nh-10ml-sheets/Sermorelin.jpg",
+          "nh-10ml-sheets/TB-500.jpg",
+          "nh-10ml-sheets/Tesamorelin.jpg"
+        ],
+        "coaArt": [
+          "Noble Harbor Wholesale/coa_bpc157_hires_6x.png",
+          "Noble Harbor Wholesale/coa_cjc1295_hires_6x.png",
+          "Noble Harbor Wholesale/coa_glow_hires_6x.png",
+          "Noble Harbor Wholesale/coa_glp3_hires_6x.png",
+          "Noble Harbor Wholesale/coa_nadplus_hires_6x.png",
+          "Noble Harbor Wholesale/coa_pt141_hires_6x.png"
+        ],
+        "$comment": "The verified-safe 9-color BPC-157 10mg set is the cap-color authority. The full per-product render library (33 products x doses x sizes x colors, thousands of files) stays addressed by pattern — see renderLibrary — enumerating it here would bury retrieval."
+      }
     }
   ],
   "emailHeroes": {

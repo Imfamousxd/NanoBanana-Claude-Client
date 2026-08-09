@@ -57,7 +57,19 @@
           "note": "collab partner logo"
         }
       ],
-      "source": "inventory 2026-08-09"
+      "source": "inventory 2026-08-09",
+      "assets": [
+        "Cactus Cloud x Muha/Blue Slushie just box.png",
+        "Cactus Cloud x Muha/Blue Slushie with Device.png",
+        "Cactus Cloud x Muha/Cactus Cloud Logopng.png",
+        "Cactus Cloud x Muha/Frozen Pomegranate.png",
+        "Cactus Cloud x Muha/Galactic Diesel.png",
+        "Cactus Cloud x Muha/mm-gold.png",
+        "Cactus Cloud x Muha/cropped/Frozen Pomegranate just box.png",
+        "Cactus Cloud x Muha/cropped/Galactic Diesel just box.png",
+        "Cactus Cloud x Muha/cropped/frozen-pom-box.png",
+        "Cactus Cloud x Muha/cropped/galactic-diesel-box.png"
+      ]
     }
   ],
   "assetFamilies": [
@@ -87,7 +99,59 @@
         "Head IS the fruit with cartoon Pixar features painted on.",
         "Every character reads as a YOUNG ADULT.",
         "Unified Pixar 3D across head + body + hands + clothes — no photoreal materials."
-      ]
+      ],
+      "assets": {
+        "Aloha Passion Rush": {
+          "canonical": "AI Fruit VIdeos Muha/Generated Characters/Aloha Passion Rush.png",
+          "small": "AI Fruit VIdeos Muha/Generated Characters/_small/Aloha Passion Rush.jpg",
+          "wallBadge": "AI Fruit VIdeos Muha/AI fruit Muha Flavors/ALOHA PASSION RUSH.png"
+        },
+        "Arctic Blueberry": {
+          "canonical": "AI Fruit VIdeos Muha/Generated Characters/Arctic Blueberry.png",
+          "small": "AI Fruit VIdeos Muha/Generated Characters/_small/Arctic Blueberry.jpg",
+          "wallBadge": "AI Fruit VIdeos Muha/AI fruit Muha Flavors/ARCTIC BLUEBERRY.png"
+        },
+        "Blue Slushie": {
+          "canonical": "AI Fruit VIdeos Muha/Generated Characters/Blue Slushie.png",
+          "small": "AI Fruit VIdeos Muha/Generated Characters/_small/Blue Slushie.jpg",
+          "wallBadge": "AI Fruit VIdeos Muha/AI fruit Muha Flavors/BLUE SLUSHIE.png"
+        },
+        "Frosted Mint Cookies": {
+          "canonical": "AI Fruit VIdeos Muha/Generated Characters/Frosted Mint Cookies.png",
+          "small": "AI Fruit VIdeos Muha/Generated Characters/_small/Frosted Mint Cookies.jpg",
+          "wallBadge": "AI Fruit VIdeos Muha/AI fruit Muha Flavors/FROSTED MINT COOKIES.png"
+        },
+        "Frozen Pomegranate": {
+          "canonical": "AI Fruit VIdeos Muha/Generated Characters/Frozen Pomegranate.png",
+          "small": "AI Fruit VIdeos Muha/Generated Characters/_small/Frozen Pomegranate.jpg",
+          "wallBadge": "AI Fruit VIdeos Muha/AI fruit Muha Flavors/FROZEN POMEGRANATE.png"
+        },
+        "Galactic Diesel": {
+          "canonical": "AI Fruit VIdeos Muha/Generated Characters/Galactic Diesel.png",
+          "small": "AI Fruit VIdeos Muha/Generated Characters/_small/Galactic Diesel.jpg",
+          "wallBadge": "AI Fruit VIdeos Muha/AI fruit Muha Flavors/GALACTIC DIESEL.png"
+        },
+        "Guava Mango": {
+          "canonical": "AI Fruit VIdeos Muha/Generated Characters/Guava Mango.png",
+          "small": "AI Fruit VIdeos Muha/Generated Characters/_small/Guava Mango.jpg",
+          "wallBadge": "AI Fruit VIdeos Muha/AI fruit Muha Flavors/GUAVA MANGO.png"
+        },
+        "Horchata": {
+          "canonical": "AI Fruit VIdeos Muha/Generated Characters/Horchata.png",
+          "small": "AI Fruit VIdeos Muha/Generated Characters/_small/Horchata.jpg",
+          "wallBadge": "AI Fruit VIdeos Muha/AI fruit Muha Flavors/HORCHATA.png"
+        },
+        "Lemon Cherry Fizz": {
+          "canonical": "AI Fruit VIdeos Muha/Generated Characters/Lemon Cherry Fizz.png",
+          "small": "AI Fruit VIdeos Muha/Generated Characters/_small/Lemon Cherry Fizz.jpg",
+          "wallBadge": "AI Fruit VIdeos Muha/AI fruit Muha Flavors/LEMON CHERRY FIZZ.png"
+        },
+        "Watermelon Bubblegum": {
+          "canonical": "AI Fruit VIdeos Muha/Generated Characters/Watermelon Bubblegum.png",
+          "small": "AI Fruit VIdeos Muha/Generated Characters/_small/Watermelon Bubblegum.jpg",
+          "wallBadge": "AI Fruit VIdeos Muha/AI fruit Muha Flavors/WATERMELON BUBBLEGUM.png"
+        }
+      }
     },
     {
       "id": "flavor-badges",
@@ -145,6 +209,43 @@
       ],
       "ambiguities": [
         "Azure_Wild_Berry has _v1..v10 and Sunset_Sherbet _v1..v9 — canonical pick unconfirmed; convention says _v1 but higher iterations exist."
+      ],
+      "assets": [
+        "Flavor Badges/Azure_Wild_Berry_realistic_v1.jpg",
+        "Flavor Badges/Banana_Pie_realistic_v1.jpg",
+        "Flavor Badges/Blackberry_Kush_realistic_v1.jpg",
+        "Flavor Badges/Blue_Aloha_Burst_realistic_v1.jpg",
+        "Flavor Badges/Blue_Slushie_realistic_v1.jpg",
+        "Flavor Badges/Cherry_Slushie_realistic_v1.jpg",
+        "Flavor Badges/Cinnamon_Cream_OG_realistic_v1.jpg",
+        "Flavor Badges/Desert_Gold_Chocolate_realistic_v1.jpg",
+        "Flavor Badges/Grape_Ape_realistic_v1.jpg",
+        "Flavor Badges/Grape_Stomper_realistic_v1.jpg",
+        "Flavor Badges/Honey_Melon_realistic_v1.jpg",
+        "Flavor Badges/Juicy_Melon_realistic_v1.jpg",
+        "Flavor Badges/Key_Lime_Jack_realistic_v1.jpg",
+        "Flavor Badges/Kiwi_Mojito_realistic_v1.jpg",
+        "Flavor Badges/Lemon_Cheesecake_realistic_v1.jpg",
+        "Flavor Badges/Limoncello_realistic_v1.jpg",
+        "Flavor Badges/Mango_Peach_realistic_v1.jpg",
+        "Flavor Badges/Matcha_Gold_realistic_v1.jpg",
+        "Flavor Badges/Midnight_Espresso_realistic_v1.jpg",
+        "Flavor Badges/Orange_Creamsicle_realistic_v1.jpg",
+        "Flavor Badges/Orange_Dream_realistic_v1.jpg",
+        "Flavor Badges/PB_Jelly_realistic_v1.jpg",
+        "Flavor Badges/Peaches_and_Cream_realistic_v1.jpg",
+        "Flavor Badges/Pina_Colada_realistic_v1.jpg",
+        "Flavor Badges/Pineapple_Kush_realistic_v1.jpg",
+        "Flavor Badges/Pineapple_Paradise_realistic_v1.jpg",
+        "Flavor Badges/Pineapple_Poison_realistic_v1.jpg",
+        "Flavor Badges/Pomegranate_Runts_realistic_v1.jpg",
+        "Flavor Badges/Prickly_Pear_Drip_realistic_v1.jpg",
+        "Flavor Badges/Pumpkin_Bliss_realistic_v1.jpg",
+        "Flavor Badges/Skywalker_OG_realistic_v1.jpg",
+        "Flavor Badges/Strawberry_Lava_realistic_v1.jpg",
+        "Flavor Badges/Sunset_Sherbet_realistic_v1.jpg",
+        "Flavor Badges/Train_Wreck_realistic_v1.jpg",
+        "Flavor Badges/Watermelon_Punch_realistic_v1.jpg"
       ]
     },
     {
@@ -163,7 +264,58 @@
       ],
       "ambiguities": [
         "Per-Character Backs v6 QR-fit/ is newer than the doc's 'v5 = FINAL' — v6 may supersede."
-      ]
+      ],
+      "assets": {
+        "fronts": [
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/2026-06-08T21-32-59_muha-raffle-mustang-v4-blueberry.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/2026-06-08T21-32-59_muha-raffle-mustang-v4-mango.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/2026-06-08T21-32-59_muha-raffle-mustang-v4-slushie.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/2026-06-08T21-35-49_muha-raffle-mustang-v4-aloha.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/2026-06-08T21-35-49_muha-raffle-mustang-v4-cookies.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/2026-06-08T21-35-49_muha-raffle-mustang-v4-diesel.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/2026-06-08T21-35-49_muha-raffle-mustang-v4-horchata.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/2026-06-08T21-35-49_muha-raffle-mustang-v4-lemon.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/2026-06-08T21-35-49_muha-raffle-mustang-v4-pomegranate.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/2026-06-08T21-35-49_muha-raffle-mustang-v4-watermelon.png"
+        ],
+        "frontsPrint": [
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/Print 90x43mm/muha-raffle-front-aloha_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/Print 90x43mm/muha-raffle-front-blueberry_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/Print 90x43mm/muha-raffle-front-cookies_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/Print 90x43mm/muha-raffle-front-diesel_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/Print 90x43mm/muha-raffle-front-horchata_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/Print 90x43mm/muha-raffle-front-lemon_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/Print 90x43mm/muha-raffle-front-mango_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/Print 90x43mm/muha-raffle-front-pomegranate_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/Print 90x43mm/muha-raffle-front-slushie_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Mustang v4 consistent/Print 90x43mm/muha-raffle-front-watermelon_90x43mm.png"
+        ],
+        "backs": [
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/2026-06-09T03-59-16_muha-raffle-back-v5-qr-diesel.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/2026-06-09T04-02-25_muha-raffle-back-v5-qr-blueberry.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/2026-06-09T04-02-25_muha-raffle-back-v5-qr-cookies.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/2026-06-09T04-02-25_muha-raffle-back-v5-qr-horchata.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/2026-06-09T04-02-25_muha-raffle-back-v5-qr-lemon.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/2026-06-09T04-02-25_muha-raffle-back-v5-qr-mango.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/2026-06-09T04-02-25_muha-raffle-back-v5-qr-pomegranate.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/2026-06-09T04-02-25_muha-raffle-back-v5-qr-slushie.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/2026-06-09T04-02-25_muha-raffle-back-v5-qr-watermelon.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/2026-06-09T04-04-55_muha-raffle-back-v5-qr-aloha.png"
+        ],
+        "backsPrint": [
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/Print 90x43mm/_ALL10_contact_sheet.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/Print 90x43mm/muha-raffle-back-aloha_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/Print 90x43mm/muha-raffle-back-blueberry_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/Print 90x43mm/muha-raffle-back-cookies_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/Print 90x43mm/muha-raffle-back-diesel_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/Print 90x43mm/muha-raffle-back-horchata_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/Print 90x43mm/muha-raffle-back-lemon_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/Print 90x43mm/muha-raffle-back-mango_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/Print 90x43mm/muha-raffle-back-pomegranate_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/Print 90x43mm/muha-raffle-back-slushie_90x43mm.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Per-Character Backs v5 QR-panel/Print 90x43mm/muha-raffle-back-watermelon_90x43mm.png"
+        ]
+      }
     },
     {
       "id": "campaign-lockups",
@@ -198,7 +350,48 @@
         "AI Fruit VIdeos Muha/Raffle Card Designs/Approved Raffle Cards/2026-06-07T22-08-22_muha-euro-v2-20k-C-banner.png"
       ],
       "masterCase": "AI Fruit VIdeos Muha/Master Case Designs/2026-06-09T06-04-20_mastercase-wholesale-cast-v7-c1.png and -c2.png (awaiting final pick)",
-      "mustangIG": "AI Fruit VIdeos Muha/Mustang Giveaway IG/Approved/ (6 posts)"
+      "mustangIG": "AI Fruit VIdeos Muha/Mustang Giveaway IG/Approved/ (6 posts)",
+      "assets": {
+        "goldenHourSelects": [
+          "Muha Golden Hour/Selects/01_hero-announce_4x5.png",
+          "Muha Golden Hour/Selects/02_members-crest_4x5.png",
+          "Muha Golden Hour/Selects/03_how-to-enter_4x5.png",
+          "Muha Golden Hour/Selects/04_regatta-countdown_4x5.png",
+          "Muha Golden Hour/Selects/05_deck-lifestyle_4x5.png",
+          "Muha Golden Hour/Selects/06_how-to-enter-app_4x5.png"
+        ],
+        "euroSummerDelivered": [
+          "Muha Euro Summer/Giveaway Posts (gpt-image-2)/Muha_EuroSummer_Amalfi.png",
+          "Muha Euro Summer/Giveaway Posts (gpt-image-2)/Muha_EuroSummer_Paris.png",
+          "Muha Euro Summer/Giveaway Posts (gpt-image-2)/Muha_EuroSummer_Santorini.png",
+          "Muha Euro Summer/Giveaway Posts (gpt-image-2)/Muha_EuroSummer_Spritz.png"
+        ],
+        "euroPostcardApproved": [
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Approved Raffle Cards/2026-06-07T22-04-26_muha-euro-v2-20k-A-stacked.png",
+          "AI Fruit VIdeos Muha/Raffle Card Designs/Approved Raffle Cards/2026-06-07T22-08-22_muha-euro-v2-20k-C-banner.png"
+        ],
+        "mustangIG": [
+          "AI Fruit VIdeos Muha/Mustang Giveaway IG/Approved/2026-06-07T22-17-51_01-group-hero.png",
+          "AI Fruit VIdeos Muha/Mustang Giveaway IG/Approved/2026-06-07T22-20-38_02-pomegranate-spotlight.png",
+          "AI Fruit VIdeos Muha/Mustang Giveaway IG/Approved/2026-06-07T22-23-32_03-aloha-spotlight.png",
+          "AI Fruit VIdeos Muha/Mustang Giveaway IG/Approved/2026-06-07T22-29-23_04-A-lockup-bottom.png",
+          "AI Fruit VIdeos Muha/Mustang Giveaway IG/Approved/2026-06-07T22-32-14_05-A-mustang-hero.png",
+          "AI Fruit VIdeos Muha/Mustang Giveaway IG/Approved/2026-06-07T22-35-15_06-how-to-enter.png"
+        ],
+        "masterCaseCandidates": [
+          "AI Fruit VIdeos Muha/Master Case Designs/2026-06-09T06-04-20_mastercase-wholesale-cast-v7-c1.png",
+          "AI Fruit VIdeos Muha/Master Case Designs/2026-06-09T06-04-20_mastercase-wholesale-cast-v7-c2.png"
+        ],
+        "gtaApproved": [
+          "Muha Giveaway Redesigned/Approved/Earn 200 Points.png",
+          "Muha Giveaway Redesigned/Approved/Get on the List.png",
+          "Muha Giveaway Redesigned/Approved/Legal Poster.png",
+          "Muha Giveaway Redesigned/Approved/Members Raffle Card.png",
+          "Muha Giveaway Redesigned/Approved/Muha Members Giveaway.png",
+          "Muha Giveaway Redesigned/Approved/Secure The Bag.png",
+          "Muha Giveaway Redesigned/Approved/This Car Could Be Yours.png"
+        ]
+      }
     },
     {
       "id": "lux-flavor-icons",
@@ -228,7 +421,56 @@
       "backgrounds": "euro Music theme/Backgrounds/<Flavor>_BG_v2.png (London = _v3)",
       "ambiguities": [
         "Pacha Peach Gelato sits in Approved/ but the brand doc flags it as still broken."
-      ]
+      ],
+      "assets": {
+        "icons": [
+          "euro Music theme/Lux Icons/Approved/Amalfi Spritz.png",
+          "euro Music theme/Lux Icons/Approved/Amnesia Lemon Cherry.png",
+          "euro Music theme/Lux Icons/Approved/Barcelona Lychee.png",
+          "euro Music theme/Lux Icons/Approved/Berlin Orange.png",
+          "euro Music theme/Lux Icons/Approved/Bologna Diesel.png",
+          "euro Music theme/Lux Icons/Approved/Budapest Melon.png",
+          "euro Music theme/Lux Icons/Approved/Canary Island Punch.png",
+          "euro Music theme/Lux Icons/Approved/Davos Cookies.png",
+          "euro Music theme/Lux Icons/Approved/DC-10 Diesel.png",
+          "euro Music theme/Lux Icons/Approved/Geneva Pear.png",
+          "euro Music theme/Lux Icons/Approved/London Berry.png",
+          "euro Music theme/Lux Icons/Approved/Maranello Hazelnut.png",
+          "euro Music theme/Lux Icons/Approved/Milan Gelato.png",
+          "euro Music theme/Lux Icons/Approved/Monaco Peach Truffle.png",
+          "euro Music theme/Lux Icons/Approved/Mykonos Melon.png",
+          "euro Music theme/Lux Icons/Approved/Pacha Peach Gelato.png",
+          "euro Music theme/Lux Icons/Approved/Prague Punch.png",
+          "euro Music theme/Lux Icons/Approved/Santorini Grape Pie.png",
+          "euro Music theme/Lux Icons/Approved/Strawberry Matcha Bellini.png"
+        ],
+        "backgrounds": [
+          "euro Music theme/Backgrounds/Barcelona_Lychee_BG_v1.png",
+          "euro Music theme/Backgrounds/Barcelona_Lychee_BG_v2.png",
+          "euro Music theme/Backgrounds/Berlin_Orange_BG_v1.png",
+          "euro Music theme/Backgrounds/Berlin_Orange_BG_v2.png",
+          "euro Music theme/Backgrounds/Bologna_Diesel_BG_v1.png",
+          "euro Music theme/Backgrounds/Bologna_Diesel_BG_v2.png",
+          "euro Music theme/Backgrounds/Budapest_Melon_BG_v1.png",
+          "euro Music theme/Backgrounds/Budapest_Melon_BG_v2.png",
+          "euro Music theme/Backgrounds/Davos_Cookies_BG_v1.png",
+          "euro Music theme/Backgrounds/Davos_Cookies_BG_v2.png",
+          "euro Music theme/Backgrounds/Geneva_Pear_BG_v1.png",
+          "euro Music theme/Backgrounds/Geneva_Pear_BG_v2.png",
+          "euro Music theme/Backgrounds/London_Berry_BG_v1.png",
+          "euro Music theme/Backgrounds/London_Berry_BG_v2.png",
+          "euro Music theme/Backgrounds/London_Berry_BG_v3.png",
+          "euro Music theme/Backgrounds/London_Berry_BG_v4.png",
+          "euro Music theme/Backgrounds/London_Berry_BG_v5.png",
+          "euro Music theme/Backgrounds/Maranello_Hazelnut_BG_v1.png",
+          "euro Music theme/Backgrounds/Maranello_Hazelnut_BG_v2.png",
+          "euro Music theme/Backgrounds/Milan_Gelato_BG_v1.png",
+          "euro Music theme/Backgrounds/Milan_Gelato_BG_v2.png",
+          "euro Music theme/Backgrounds/Prague_Punch_BG_v1.png",
+          "euro Music theme/Backgrounds/Prague_Punch_BG_v2.png",
+          "euro Music theme/Backgrounds/Saint_Tropez_Rose_BG_v1.png"
+        ]
+      }
     },
     {
       "id": "bud-island",

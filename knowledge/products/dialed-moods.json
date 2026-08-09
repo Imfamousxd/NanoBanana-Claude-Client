@@ -190,7 +190,15 @@
         "Label artwork must be preserved pixel-faithfully when animating (rule 5).",
         "gpt-image-2, not Nano Banana, whenever label-text legibility matters."
       ],
-      "source": "Brand Context/Dialed_Moods.md:15-23,39-54; sieve/products/Dialed_Moods/DM-lemonade.json"
+      "source": "Brand Context/Dialed_Moods.md:15-23,39-54; sieve/products/Dialed_Moods/DM-lemonade.json",
+      "assets": [
+        "Dialed Moods Drink Short Animation/Dialed_Seltzer_LDopa_Front_Lemonade.png",
+        "Dialed Moods Drink Short Animation/Dialed_Seltzer_LDopa_Shot2_Lemonade.png",
+        "Dialed Moods Drink Short Animation/Dialed_Seltzer_LDopa_Shot3_Lemonade.png",
+        "Dialed Moods Drink Short Animation/Dialed_Seltzer_LDopa_Shot4_Lemonade.png",
+        "Dialed Moods Drink Short Animation/Dialed_Seltzer_LDopa_Shot5_Lemonade.png"
+      ],
+      "assetsNote": "the 5 L-Doba animation stills are Lemonade-flavor"
     },
     {
       "sku": "DM-secret-juice",
@@ -271,7 +279,14 @@
         "Front_MangoPeach.png and 45_Lemonade.png were used by dialed_social_elixir 2.py from a scratchpad dir and never landed in refs/ — two missing canonical files.",
         "Social Elixir is undocumented — no .md mentions it."
       ],
-      "source": "inventory 2026-08-09; generator: dialed_social_elixir 2.py"
+      "source": "inventory 2026-08-09; generator: dialed_social_elixir 2.py",
+      "assets": [
+        "Dialed Moods Social Elixir/out_4x5/_v2_nb/SocialElixir_2_whats_in_it_4x5.png",
+        "Dialed Moods Social Elixir/out_4x5/_v2_nb/SocialElixir_3_how_to_use_4x5.png",
+        "Dialed Moods Social Elixir/out_4x5/_v2_nb/SocialElixir_4_why_different_4x5.png",
+        "Dialed Moods Social Elixir/out_4x5/_v2_nb/SocialElixir_5_tomorrow_proof_4x5.png",
+        "Dialed Moods Social Elixir/approved/APPROVED_1_announce_4x5.png"
+      ]
     },
     {
       "sku": "DM-sea-moss",
@@ -316,7 +331,41 @@
         "dialed moods seamoss/Approved/Marketing",
         "Dialed Moods/Social/Approved"
       ],
-      "source": "inventory 2026-08-09"
+      "source": "inventory 2026-08-09",
+      "assets": [
+        "dialed moods seamoss/Approved/Environment/01_bathroom-sage-tile.jpg",
+        "dialed moods seamoss/Approved/Environment/02_yoga-sage-wall.jpg",
+        "dialed moods seamoss/Approved/Environment/03_windowsill-teal-sky.jpg",
+        "dialed moods seamoss/Approved/Environment/04_kitchen-dark-marble.jpg",
+        "dialed moods seamoss/Approved/Environment/05_outdoor-patio-wood.jpg",
+        "dialed moods seamoss/Approved/Environment/06_outdoor-garden-bench.jpg",
+        "dialed moods seamoss/Approved/Lifestyle/01_reading-nook.png",
+        "dialed moods seamoss/Approved/Lifestyle/02_greenhouse.png",
+        "dialed moods seamoss/Approved/Lifestyle/03_rooftop-terrace.png",
+        "dialed moods seamoss/Approved/Lifestyle/04_linen-sofa.png",
+        "dialed moods seamoss/Approved/Lifestyle/05_hammock.png",
+        "dialed moods seamoss/Approved/Lifestyle/06_men_kitchen-island.png",
+        "dialed moods seamoss/Approved/Lifestyle/07_men_cafe-window.png",
+        "dialed moods seamoss/Approved/Lifestyle/08_men_poolside.png",
+        "dialed moods seamoss/Approved/Lifestyle/09_men_living-room.png",
+        "dialed moods seamoss/Approved/Lifestyle/10_men_home-gym.png",
+        "dialed moods seamoss/Approved/Marketing/01_white_6-benefits.png",
+        "dialed moods seamoss/Approved/Marketing/02_lifestyle_92-minerals.png",
+        "dialed moods seamoss/Approved/Marketing/03_white_three-botanicals.png",
+        "dialed moods seamoss/Approved/Marketing/04_lifestyle_2-daily.png",
+        "dialed moods seamoss/Approved/Marketing/05_lifestyle_why-gummies.png",
+        "dialed moods seamoss/Approved/Studio/01_front-catalog.png",
+        "dialed moods seamoss/Approved/Studio/02_three-quarter-left.png",
+        "dialed moods seamoss/Approved/Studio/03_open-jar-spilled-cubes.png",
+        "dialed moods seamoss/Approved/Studio/04_three-quarter-right.png",
+        "dialed moods seamoss/Approved/Studio/05_top-down-gold-lid.png",
+        "Dialed Moods/Social/Approved/01_health_coach_v1.png",
+        "Dialed Moods/Social/Approved/01_health_coach_v1_small.jpg",
+        "Dialed Moods/Social/Approved/02_activate_potential_v1.png",
+        "Dialed Moods/Social/Approved/02_activate_potential_v1_small.jpg",
+        "Dialed Moods/Social/Approved/03_seamoss_product_v1.png",
+        "Dialed Moods/Social/Approved/03_seamoss_product_v1_small.jpg"
+      ]
     }
   ],
   "supersededPools": [
@@ -327,5 +376,13 @@
     "Brand Context/Dialed_Moods.md",
     "sieve/products/Dialed_Moods/",
     "sieve/brands/Dialed_Moods/brand.json"
-  ]
+  ],
+  "sharedAssets": {
+    "trioShots": [
+      "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/trio-cans.png",
+      "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/trio-deconstructed.png",
+      "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/trio-ingredients.png"
+    ],
+    "note": "approved trio/lineup shots covering multiple flavors at once"
+  }
 }

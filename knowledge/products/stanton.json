@@ -35,7 +35,12 @@
       "locked": [
         "Pink is banned (off-brand); the pink candidate render is superseded."
       ],
-      "source": "Brand Context/Stanton_Medical.md"
+      "source": "Brand Context/Stanton_Medical.md",
+      "assets": [
+        "Stanton Assets/BAC Water Label/2026-06-09T01-59-16_stanton-bac-c1-30ml-a.png",
+        "Stanton Assets/BAC Water Label/2026-06-09T01-59-16_stanton-bac-c1-30ml-a_dieline-65x29.png",
+        "Stanton Assets/refs/bac-water-style-ref.png"
+      ]
     },
     {
       "sku": "STN-peptide-prep-kit",
@@ -60,7 +65,23 @@
       "ambiguities": [
         "No single approved kit-label file; 24 candidates across layouts A/B/C/D/D2/E."
       ],
-      "source": "Brand Context/Stanton_Medical.md; inventory 2026-08-09"
+      "source": "Brand Context/Stanton_Medical.md; inventory 2026-08-09",
+      "assets": [
+        "Stanton Assets/Peptide Kit Label/2026-06-09T02-01-52_stanton-peptide-kit-E-list.png",
+        "Stanton Assets/Peptide Kit Label/2026-06-09T03-44-40_stanton-peptide-kit-E-list.png",
+        "Stanton Assets/Peptide Kit Label/2026-06-09T04-07-44_stanton-peptide-kit-E-list.png",
+        "Stanton Assets/Peptide Kit Label/2026-06-09T04-14-07_stanton-peptide-kit-E-list.png",
+        "Stanton Assets/Peptide Kit Label/2026-06-09T21-23-48_stanton-peptide-kit-E-list.png",
+        "Stanton Assets/Peptide Kit Label/2026-06-09T21-31-12_stanton-peptide-kit-E-list.png",
+        "Stanton Assets/Peptide Kit Label/2026-06-09T21-34-42_stanton-peptide-kit-E-list.png",
+        "Stanton Assets/Peptide Kit Label/2026-06-09T21-38-44_stanton-peptide-kit-E-list.png",
+        "Stanton Assets/Peptide Kit Label/2026-06-09T21-44-45_stanton-peptide-kit-E-list.png",
+        "Stanton Assets/Peptide Kit Label/2026-06-09T22-02-40_stanton-prep-kit-hero-only.png",
+        "Stanton Assets/Peptide Kit Label/2026-06-09T22-07-37_stanton-prep-kit-hero-only.png",
+        "Stanton Assets/Product Graphic/2026-06-09T21-08-01_stanton-product-a-fan.png",
+        "Stanton Assets/Product Graphic/2026-06-09T21-11-00_stanton-product-b-flatlay.png"
+      ],
+      "assetsNote": "all E-list + hero-only candidates attached (layout not locked); newest E-list is canonical"
     }
   ],
   "sources": [

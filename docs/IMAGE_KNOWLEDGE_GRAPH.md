@@ -36,6 +36,15 @@ Registries also carry `banned` / `neverUse` entries — files that look usable a
 (e.g. Muha's group-truck shot with the wrong Arctic Blueberry).
 Treat those as hard blocks, not suggestions.
 
+Beyond the curated `references`, products and asset families carry `assets` arrays — the
+actual files, enumerated and disk-verified (~950 across the seven brands): the full DH Shots
+approved gallery with every lifestyle set, all 10 Muha characters (canonical + small + wall
+badge each), the 35 realistic badges, raffle-card finals with print versions, delivered
+campaign posts, Noble Harbor's baselines + verified 9-color cap set + contact sheets + COA
+art, all Stanton label candidates, and NuLumin's corner heroes, category heroes, and ad
+scenes. Only Noble Harbor's full per-product render library (thousands of files) stays
+addressed by pattern rather than enumeration.
+
 ## How to use it in a job
 
 1. Resolve the brand: `npm run content -- knowledge query "<brand> <product>" --brand <brand-id>`.
