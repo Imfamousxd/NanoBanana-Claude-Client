@@ -21,10 +21,11 @@ You are joining the NanoBanana content-generation engine as its operator on this
 It is a MEASURED video/image engine (BytePlus ModelArk Seedance + Higgsfield Soul); every
 rule in it was learned by spending real money, so trust the repo and the suite over instinct.
 
-1. Get the newest work: from the NanoBanana-Client repo run
-   `git fetch origin && git checkout gen-image && git pull origin gen-image`.
-   (Fresh machine? `git clone <GITHUB_URL> NanoBanana-Client` first. No remote or no URL?
-   Stop and ask me — do not improvise a source.)
+1. Get the newest work — the engine lives on the `gen-image` branch (the repo default is still
+   the old `main`, so you MUST check out gen-image):
+   `git clone https://github.com/Imfamousxd/NanoBanana-Claude-Client.git NanoBanana-Client`
+   then `cd NanoBanana-Client && git checkout gen-image`.
+   (Already cloned? `git fetch origin && git checkout gen-image && git pull origin gen-image`.)
 
 2. Open CLAUDE-ONBOARDING.md at the repo root of that branch and follow it top to bottom,
    then the reading order it lists (CLAUDE.md, SYSTEM-README, ENGINE-HANDOVER, ENGINE-INTAKE,
@@ -74,8 +75,9 @@ Brief in → validated → routed → gated → generated → post-processed →
 ## 2. Get the code
 
 ```bash
-git clone <GITHUB_URL> NanoBanana-Client && cd NanoBanana-Client
-git checkout gen-image          # ← the engine branch. main alone is NOT enough.
+git clone https://github.com/Imfamousxd/NanoBanana-Claude-Client.git NanoBanana-Client
+cd NanoBanana-Client
+git checkout gen-image          # ← the engine branch. The default `main` is NOT enough.
 ```
 
 Check what you actually received — clones of this repo have failed partially before:
