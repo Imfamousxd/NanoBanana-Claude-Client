@@ -34,6 +34,31 @@ Account quota (live probe `arkcli api mediaasset.get_asset_quota`, 2026-08-09): 
    and their likeness becomes a SANCTIONED input — the only route that ends with 2.5-quality
    speech on a face we choose.
 
+## RETRIEVED THROUGH THE CLI (2026-08-09) — the decisive finding
+
+The documented `arkcli` surface has no asset/character commands, but the CLI's own logged-in SSO
+credentials (`~/.arkcli-bp/.env`, written by `arkcli auth login`) sign the control-plane directly.
+`arkasset.mjs` wraps this (TOP HMAC-SHA256; on-disk creds are QUOTED — strip or every sig fails).
+What the raw API told us that the docs would not:
+
+- **The library IS queryable via CLI creds.** `ListAssetGroups` / `ListAssets` / `GetAssetQuota` /
+  `CreateAssetGroup` / `CreateAsset` all exist and respond.
+- **GroupType is a validated enum. Only two return 200: `AIGC`** (your own generated assets —
+  **empty, 0 items**) **and `Public`** (6,225 shared editing-TEMPLATE examples, not digital
+  persons). `Liveness`, `Preset`, `DigitalCharacter`, `Official`, `System` are all rejected as
+  invalid — so **there is no API-listable "preset digital person" pool on this account.** The
+  preset library the blog describes is either console-only or subscription-gated.
+- **⭐ The wall is a PAYWALL, not an invite list.** `CreateAssetGroup` returns
+  `403 SubscriptionRequired`: *"This API requires an active subscription. Please subscribe to an
+  advanced or premium…"* Registering ANY custom character — a Soul face OR a real human — needs a
+  **paid ModelArk media-asset subscription tier**. That is exactly why the quota reads
+  `tier: ""`, `aigc_writable: false`. `liveness_writable: true` is capacity, not entitlement; the
+  create call is refused before liveness ever matters.
+
+**So "put our characters in the store and input the photo" is blocked on a purchase, not a form.**
+Buy the media-asset subscription → `aigc_writable` flips true → then registration + `asset://`
+references become testable. Until then, the Soul → 1.5-pro lane is the whole game for owned faces.
+
 ## Next actions
 
 **Operator (console, ~10 min) — I can't do these; they're your account UI:**
