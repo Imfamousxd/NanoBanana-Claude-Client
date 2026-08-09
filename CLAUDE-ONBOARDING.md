@@ -11,6 +11,35 @@ Work through this top to bottom. Do not generate anything for a user until Secti
 
 ---
 
+## 0. FOR THE HUMAN: the prompt to paste
+
+Operator — hand a brand-new Claude exactly this block (fill in the GitHub URL). It routes the
+instance into this document and stops it from spending before the install is proven:
+
+```
+You are joining the NanoBanana content-generation engine as its operator on this machine.
+
+1. Pull the newest work: from the NanoBanana-Client repo run
+   `git fetch origin && git checkout gen-image && git pull origin gen-image`.
+   (Fresh machine? `git clone <GITHUB_URL> NanoBanana-Client` first. No remote or no URL?
+   Stop and ask me — do not improvise.)
+
+2. Open CLAUDE-ONBOARDING.md at the repo root of that branch and follow it top to bottom.
+   It covers the .env keys I will hand you separately (never through git or chat), the
+   Supabase migration if we're on a fresh project, and a 7-command install proof that
+   costs nothing.
+
+3. Report back: the kg-vault-test.py score (expect 55/55), the dry-run output of
+   briefs/gh-ugc-car.video.json, and anything that failed. Generate NOTHING until I've
+   seen that report and given you a brief.
+
+4. Standing rules that survive onto your machine: dry-run before money, claims verbatim
+   from sieve/brands/ or refused, no people in reference images, the R&D wall MCP stays
+   disconnected, and `node sd25-cost.mjs drain` before you end any session that generated.
+```
+
+---
+
 ## 1. What this is (60 seconds)
 
 Brief in → validated → routed → gated → generated → post-processed → ledgered video out.
