@@ -193,6 +193,62 @@
       "applies_to": "video_extension",
       "confidence": "strong",
       "source": "_probe/soul/p25ext.mjs (both runs in research/sd25/probe-log.jsonl), 2026-08-09"
+    },
+    "sd25:reference-citation-with-at-notation": {
+      "claim": "2.5 accepts a STACK of references — up to 30 images, 10 video clips, 10 audio clips in one pass — and you cite each one in the prompt with @-notation: @Image N, @Video N, @Clay Render N (1-indexed by upload order). Name what each reference is FOR (\"@Image 2 is the product\", \"@Image 1 is the character\") so the model does not guess. This supersedes the prose-only 'the device in reference image 1' style.",
+      "evidence": "\"Users can now input up to 30 images, 10 video clips, and 10 audio clips as reference materials in a single pass.\" Cited via @Image/@Video/@Clay Render N; example \"Reference @Image 2 for the pianist\". vidmuse corroborates: label each reference by purpose, reference only RECURRING subjects, do not upload excessive unlabeled refs.",
+      "counterexamples": "UNMEASURED on our account: our engine has only ever sent 1 reference_image with a prose describe, and we have not confirmed @Image N is honoured on the dreamina-seedance-2-5-260628 endpoint (vs the Dreamina app UI). The @-notation is the FIRST thing to A/B before trusting it. Image order in content[] must match the N you cite.",
+      "applies_to": "reference_engineering",
+      "confidence": "documented",
+      "source": "OFFICIAL DOCS, NOT YET MEASURED on our account (2026-08-09): seed.bytedance.com Seedance 2.5 announcement + docs.byteplus.com/ModelArk/2607689 + vidmuse.ai/blog/seedance-2-5-guide. Validate before trusting as a house law."
+    },
+    "sd25:prompt-five-part-structure": {
+      "claim": "Structure a 2.5 prompt in five parts, in order: (1) SUBJECT — who/what, concrete ('a barista in a green apron'); (2) PERFORMANCE — what they do and how, across the whole take; (3) AMBIENCE — setting, time of day, light; (4) CAMERA — one specific shot type + one NAMED move ('slow push-in', 'low tracking shot'); (5) EXTRA CUES — audio, pacing, and whether it reads as one unbroken shot. Our engine's block order (look, beats, camera, audio, rules) already approximates this — tighten it to match.",
+      "evidence": "vidmuse five-part framework, corroborated by the ByteDance narrative-arc guidance. Do NOT write vague camera language like 'cinematic'; name the move.",
+      "counterexamples": "This is a WRITING framework, not an API contract — no field enforces it. The measured house UGC laws (unhurried cadence, extreme close-up, no device names) still override generic guidance where they conflict.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "OFFICIAL DOCS, NOT YET MEASURED on our account (2026-08-09): seed.bytedance.com Seedance 2.5 announcement + docs.byteplus.com/ModelArk/2607689 + vidmuse.ai/blog/seedance-2-5-guide. Validate before trusting as a house law."
+    },
+    "sd25:one-action-per-generation-and-the-donts": {
+      "claim": "One clear action per generation. The documented failure modes: describing a STILL image (no motion over time), VAGUE camera language ('cinematic'), CRAMMING a multi-beat sequence into one flat prompt, and uploading EXCESSIVE UNLABELED references. For genuine multi-beat, use timed beats (0-5s/6-10s) — which our own measurement already requires for pacing (sd25:timed-beats-drive-multi-shot).",
+      "evidence": "vidmuse do/don't list. 'Use references to carry a look across separate shots'; 'reference only recurring subjects'.",
+      "counterexamples": "'One action' and 'timed multi-beat' are not in tension: each beat is one action; the don't is cramming several actions into ONE undifferentiated sentence with no time structure.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "OFFICIAL DOCS, NOT YET MEASURED on our account (2026-08-09): seed.bytedance.com Seedance 2.5 announcement + docs.byteplus.com/ModelArk/2607689 + vidmuse.ai/blog/seedance-2-5-guide. Validate before trusting as a house law."
+    },
+    "sd25:clay-render-and-motion-references": {
+      "claim": "2.5 adds control-oriented reference types beyond appearance: CLAY RENDER (textureless 3D) locks spatial structure, character poses, motion paths and camera angles; MOTION referencing transfers an action/movement pattern; CREATIVE referencing carries broad style. These are for when composition/blocking/camera must match an intent, not just when a face/product must stay consistent.",
+      "evidence": "ByteDance 2.5 announcement: clay render builds 'spatial structure, character poses, motion paths, and camera angles'; cite as @Clay Render N.",
+      "counterexamples": "UNMEASURED and likely app-first — we have no clay-render asset pipeline yet, and it is unverified whether the :predictLongRunning/tasks endpoint accepts a clay-render role. Parked as a known lever, not a ready tool.",
+      "applies_to": "reference_engineering",
+      "confidence": "documented",
+      "source": "OFFICIAL DOCS, NOT YET MEASURED on our account (2026-08-09): seed.bytedance.com Seedance 2.5 announcement + docs.byteplus.com/ModelArk/2607689 + vidmuse.ai/blog/seedance-2-5-guide. Validate before trusting as a house law."
+    },
+    "sd25:detailed-prompt-formula-and-length": {
+      "claim": "Write each shot as [Subject], [Action], in [Environment], camera [one Move], style [Style], avoid [Constraints] — target 60-100 words per shot. Make the SUBJECT concrete with anchors the model holds for 30s: not 'a woman' but 'a woman in her thirties, short dark hair, beige trench coat' — age, wardrobe, color, material, expression. ACTION is ONE continuous arc with a beginning and end ('picks up the cup, sips, sets it down'), never a list of unrelated moves. For lighting, ONE precise line beats ten adjectives.",
+      "evidence": "apiyi 6-step formula, 60-100 words; 'concrete attributes give the model anchors to hold steady across all 30 seconds'; 'Adding a single line about lighting is more effective than adding ten adjectives.' Example: 'A skateboarder lands a clean trick in an empty dawn parking lot, camera low tracking shot then subtle rise, modern cinematic contrast, avoid jitter and bent limbs.'",
+      "counterexamples": "Word target is a shot-level guide; a 30s 2.5 take is several beats, each roughly this dense (see sd25:timed-beats and the 4-beat arc). House UGC laws (unhurried cadence, no device names) still override where they clash.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "OFFICIAL + practitioner guides, cross-corroborated 2026-08-09 (Seedance 2.0 formula carries to 2.5): help.apiyi.com 6-step guide, vidmuse, segmind, seed.bytedance.com. Structure/keyword rules are well-attested; validate exact effects on our endpoint."
+    },
+    "sd25:camera-move-vocabulary-one-primary": {
+      "claim": "Name the camera move from a fixed vocabulary and use exactly ONE primary move per shot: push-in (dolly in), pull-out (dolly out), pan, tracking, orbit (arc), aerial, handheld, fixed (locked-off). Describe camera motion SEPARATELY from subject motion — do not blend them in one clause. Two conflicting moves in one shot is a documented failure. (Our own measurement adds: camera_fixed the PARAMETER beats any 'the camera does not move' prose — see sd25 camera notes.)",
+      "evidence": "apiyi 8-camera-movement list; 'Use only one primary camera instruction'; 'Separate camera motion from subject motion description'; 'Avoid multiple conflicting camera movements'.",
+      "counterexamples": "A single named move MAY compound gently ('low tracking shot then subtle rise') — that is one continuous move, not two conflicting ones.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "OFFICIAL + practitioner guides, cross-corroborated 2026-08-09 (Seedance 2.0 formula carries to 2.5): help.apiyi.com 6-step guide, vidmuse, segmind, seed.bytedance.com. Structure/keyword rules are well-attested; validate exact effects on our endpoint."
+    },
+    "sd25:prompt-killer-keywords": {
+      "claim": "Some words degrade the output and must be dropped: unqualified 'fast' (causes chaotic motion), vague 'cinematic', empty hype 'amazing/epic/beautiful', and 'lots of movement'. They add no signal and actively mislead. Replace intent with SPECIFICS — a named light, a named move, a concrete action. Also do not stack subject-speed + camera-speed + a complex scene in one shot.",
+      "evidence": "apiyi pitfall checklist: 'Exclude the fast keyword (causes chaos)'; 'Remove redundant adjectives (beautiful, amazing, epic)'; 'Dangerous keywords: unqualified fast, vague cinematic, meaningless amazing/epic, lots of movement.'",
+      "counterexamples": "This is the POSITIVE-instruction discipline our own laws already teach (never-name-a-device, negatives-summon): say what IS, not what to avoid or how impressive it should be.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "OFFICIAL + practitioner guides, cross-corroborated 2026-08-09 (Seedance 2.0 formula carries to 2.5): help.apiyi.com 6-step guide, vidmuse, segmind, seed.bytedance.com. Structure/keyword rules are well-attested; validate exact effects on our endpoint."
     }
   }
 }

@@ -120,6 +120,18 @@ for (const tk of B.required_tokens || [])
     errs.push(`required token "${tk}" is not in the script`);
 if (B.script?.profanity) notes.push("profanity: measured-safe on 2.5 (proof roll 2026-08-09)");
 
+// -- prompt-craft lint (documented 2.5 rules, craft/PROMPT-2.5.md) — warnings, never blockers.
+// "Detail = specifics, not adjectives": these words add no signal and actively mislead.
+const prose = [B.scene?.look, B.scene?.camera, B.scene?.voice,
+  ...beats.map((b) => `${b.action || ""} ${b.line || ""}`)].filter(Boolean).join("  ");
+const KILLERS = [/\bfast\b/i, /\bcinematic\b/i, /\bamazing\b/i, /\bepic\b/i, /\bbeautiful\b/i, /lots of movement/i];
+const killerHits = [...new Set(KILLERS.map((rx) => (prose.match(rx) || [])[0]).filter(Boolean).map((h) => h.toLowerCase()))];
+if (killerHits.length) warns.push(`prompt-craft: killer word(s) "${killerHits.join('", "')}" — replace with a specific light / named camera move / concrete action (craft/PROMPT-2.5.md)`);
+// One primary camera move, named — UGC handheld language (bobs/drifts/selfie) counts.
+const CAMERA_OK = /push[- ]?in|pull[- ]?out|dolly|\bpan\b|track|orbit|\barc\b|aerial|drone|handheld|locked[- ]?off|\bfixed\b|\brise\b|\btilt\b|bob|drift|sway|selfie|push in/i;
+if (B.scene?.camera && B.scene.camera.length > 20 && !CAMERA_OK.test(B.scene.camera))
+  notes.push("prompt-craft: no named camera move in scene.camera — name ONE (push-in/pull-out/pan/tracking/orbit/aerial/handheld/fixed)");
+
 // -- routing
 const isPerson = B.subject?.type === "person";
 const isAvatar = isPerson && Boolean(B.subject?.avatar);   // named avatar -> Soul casting lane
@@ -175,7 +187,17 @@ const proofDone = fs.existsSync(outDir) &&
 // ---------------------------------------------------------------- assemble prompt
 const blocks = [];
 if (B.scene?.look) blocks.push(B.scene.look);
-for (const r of B.refs?.images || []) if (r.describe) blocks.push(r.describe);
+// REFERENCE MANIFEST — 2.5 cites references with @Image N notation and wants each one's PURPOSE
+// named (docs, law sd25:reference-citation-with-at-notation). N is 1-indexed by content[] order.
+// The 1.5 avatar lane's first image is a first_frame (not an @Image), so notation is 2.5-only.
+const refImgs = B.refs?.images || [];
+if (refImgs.length && !isAvatar) {
+  const lines = refImgs.map((r, i) =>
+    `@Image ${i + 1} is the ${r.name || r.role || "reference"}. ${r.describe || "Reproduce it faithfully."}`.trim());
+  blocks.push(`References — use each exactly for its stated purpose:\n${lines.join("\n")}`);
+} else {
+  for (const r of refImgs) if (r.describe) blocks.push(r.describe);   // avatar/1.5 lane, legacy prose
+}
 if (B.scene?.camera) blocks.push(B.scene.camera);
 if (B.scene?.voice) blocks.push(B.scene.voice);
 const beatLines = (list) => list.map((b) => `${b.t}: ${b.action || ""}${b.line ? ` He says: "${b.line}"` : ""}`.trim());
