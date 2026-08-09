@@ -158,6 +158,116 @@ const TOOLS = {
       return (r.code === 0 ? okText : errText)(r.out || r.err || "(no output)");
     },
   },
+
+  // ---- knowledge-graph tools: evolve the graph fast, through the MCP ----
+  kg_list: {
+    description: "List the knowledge-graph law banks (seedance25/house/post) with law counts, or " +
+      "pass bank to list its law ids.",
+    inputSchema: { type: "object", properties: { bank: { type: "string" } } },
+    handler: async ({ bank }) => {
+      const r = await run("node", ["kg-law.mjs", "list", ...(bank ? [bank] : [])], { timeoutMs: 30000 });
+      return okText(r.out || r.err);
+    },
+  },
+  kg_search: {
+    description: "Search the knowledge graph for laws matching a query across every bank. " +
+      "Use before adding a law to avoid duplicating an existing one.",
+    inputSchema: { type: "object", required: ["query"], properties: { query: { type: "string" } } },
+    handler: async ({ query }) => {
+      const r = await run("node", ["kg-law.mjs", "search", query], { timeoutMs: 30000 });
+      return okText(r.out || r.err);
+    },
+  },
+  kg_get: {
+    description: "Print one law's full 6 fields.",
+    inputSchema: { type: "object", required: ["bank", "id"], properties: { bank: { type: "string" }, id: { type: "string" } } },
+    handler: async ({ bank, id }) => {
+      const r = await run("node", ["kg-law.mjs", "get", bank, id], { timeoutMs: 30000 });
+      return okText(r.out || r.err);
+    },
+  },
+  kg_add_law: {
+    description: "Add or update a knowledge-graph law (upsert), then run the regression suite to " +
+      "validate schema + rebuild the vault. Every law needs all 6 fields: claim, evidence, " +
+      "counterexamples, applies_to, confidence, source. Set confidence='documented' (NOT " +
+      "'measured') for anything from external docs until you A/B it on our own endpoint — that " +
+      "honesty is the point of the graph.",
+    inputSchema: {
+      type: "object",
+      required: ["bank", "id", "claim", "evidence", "counterexamples", "applies_to", "confidence", "source"],
+      properties: {
+        bank: { type: "string", description: "seedance25_laws | house_laws | post_laws" },
+        id: { type: "string", description: "kebab law id, e.g. sd25:some-new-finding" },
+        claim: { type: "string" }, evidence: { type: "string" }, counterexamples: { type: "string" },
+        applies_to: { type: "string" },
+        confidence: { type: "string", enum: ["measured", "strong", "moderate", "documented", "weak"] },
+        source: { type: "string" },
+      },
+    },
+    handler: async ({ bank, id, claim, evidence, counterexamples, applies_to, confidence, source }) => {
+      const law = JSON.stringify({ claim, evidence, counterexamples, applies_to, confidence, source });
+      const add = await run("node", ["kg-law.mjs", "add", bank, id, "--json", law], { timeoutMs: 30000 });
+      if (add.code !== 0) return errText(`add failed:\n${add.err || add.out}`);
+      const suite = await run("python3", ["kg-vault-test.py"], { timeoutMs: 300000 });
+      const passed = /(\d+)\/\1 passed/.test(suite.out) || /passed/.test(suite.out);
+      return (passed ? okText : errText)(`${add.out}\n--- suite ---\n${(suite.out || suite.err).split("\n").slice(-3).join("\n")}`);
+    },
+  },
+
+  create_from_request: {
+    description: "Turn a structured creative request into a SAVED, VALIDATED, PLANNED brief in one " +
+      "call. You supply the creative content (casting, scene, beats, refs); this assembles a " +
+      "correct *.video.json with routing-driven defaults, writes it to briefs/, runs the dry-run, " +
+      "and returns the plan (route, cost, prompt-craft score, any blockers). It spends nothing — " +
+      "review the plan, then call engine_generate. This is the fast path from 'I want X' to a brief.",
+    inputSchema: {
+      type: "object",
+      required: ["id", "brand", "subject_type", "scene", "beats"],
+      properties: {
+        id: { type: "string" },
+        brand: { type: "string" },
+        campaign: { type: "string", description: "campaign name, or omit for 'none'" },
+        subject_type: { type: "string", enum: ["person", "product", "artwork"] },
+        avatar: { type: "string", description: "avatar name for the same-face lane (optional)" },
+        casting: { type: "string", description: "person description (person subjects)" },
+        lane: { type: "string", enum: ["ugc", "campaign"], default: "ugc" },
+        duration: { type: "integer", default: 5 },
+        ratio: { type: "string", default: "9:16" },
+        resolution: { type: "string" },
+        scene: { type: "object", description: "{look, camera, voice}" },
+        beats: { type: "array", description: "[{t, action, line}] — the timed script" },
+        refs: { type: "array", description: "[{path, name, role, describe, contains_person, third_party_marks}]" },
+        claims_used: { type: "array", items: { type: "string" } },
+        required_tokens: { type: "array", items: { type: "string" } },
+        audio: { type: "object", description: "{generate, direction}" },
+      },
+    },
+    handler: async (a) => {
+      const talking = a.subject_type === "person" && (a.beats || []).some((b) => b.line);
+      const brief = {
+        _what: `Drafted via create_from_request (MCP) — review the plan, then engine_generate.`,
+        id: a.id, brand: a.brand, campaign: a.campaign || "none",
+        claims_used: a.claims_used || [], slots: [],
+        lane: a.lane || "ugc", duration: a.duration ?? 5, ratio: a.ratio || "9:16",
+        ...(a.resolution ? { resolution: a.resolution } : {}),
+        subject: { type: a.subject_type, ...(a.avatar ? { avatar: a.avatar } : {}),
+                   casting: a.casting || null, props: null },
+        refs: { images: a.refs || [] },
+        scene: a.scene || {},
+        script: { register: "", profanity: false, beats: a.beats || [] },
+        required_tokens: a.required_tokens || [],
+        audio: a.audio || { generate: talking },
+        proof: { required: false },
+        post: { loudnorm: true, conform1080: false },
+      };
+      const briefsDir = path.join(DIR, "briefs");
+      fs.mkdirSync(briefsDir, { recursive: true });
+      const saved = path.join(briefsDir, `${a.id}.video.json`);
+      fs.writeFileSync(saved, JSON.stringify(brief, null, 2) + "\n");
+      const r = await run("node", ["video-engine.mjs", "--brief", saved], { timeoutMs: 60000 });
+      return okText(`saved brief: ${path.relative(DIR, saved)}\n\n${r.out || r.err}`);
+    },
+  },
 };
 
 // ---------------------------------------------------------------- JSON-RPC loop

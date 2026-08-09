@@ -33,6 +33,24 @@ The server reads keys from the repo-root `.env` exactly like the CLI, so no keys
 | `engine_cost` | no | `spent` audits the ledger; `drain` recovers paid-but-not-downloaded clips. |
 | `scene_frame` | ~cents | Compose an avatar + product/card into one first frame (image), which the avatar lane animates. Review before generating. |
 | `engine_generate` | **yes** | The paid run. **GATED**: requires `confirm=true`, and `claims_initialed` when the script speaks a registered claim. Proof-gated prop shots and casting avatars still refuse. |
+| `create_from_request` | no | **The fast path.** Structured request in → a saved, validated, PLANNED `*.video.json` out. You supply casting/scene/beats/refs; it assembles the brief with routing defaults, dry-runs it, returns route+cost+prompt-craft score+blockers. Then `engine_generate`. |
+| `kg_list` | no | Knowledge-graph banks + law counts (or a bank's law ids). |
+| `kg_search` | no | Find laws across every bank — run before adding, to avoid duplicates. |
+| `kg_get` | no | One law's full 6 fields. |
+| `kg_add_law` | no | **Evolve the graph, often.** Add/update a law (6-field schema enforced), then auto-runs the regression suite to validate + rebuild the vault. Mark `confidence:"documented"` until you A/B it on our endpoint, then promote to `"measured"`. |
+
+## Evolving the knowledge graph through the MCP
+
+The graph is meant to grow every time you learn something. Through the MCP that's:
+```
+kg_search("<topic>")                    # does a law already cover this?
+kg_add_law({bank, id, claim, evidence, counterexamples, applies_to, confidence, source})
+                                        # upserts + runs the 55-check suite in one call
+```
+`kg-law.mjs` is the same thing on the CLI (`list | search | get | add | rm`). Every law is the
+uniform 6-field shape the suite enforces; a law from external docs is `confidence:"documented"`
+until measured on our own endpoint, then promoted — that measured-vs-documented honesty is the
+whole value of the graph.
 
 ## The workflow, as a tool sequence
 
