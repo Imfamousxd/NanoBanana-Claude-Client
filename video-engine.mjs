@@ -61,6 +61,12 @@ const MODELS = {
                     why: "speed tier, 'inherits core advantages of 2.0' — RATE+QUALITY UNPROBED" },
   "artwork": { id: "dreamina-seedance-2-5-260628", resolution: "720p", perSec: 0.2325,
                why: "animate approved art i2v, locked camera; mark on the art is pixel-exact" },
+  // Soul casting lane: a NAMED avatar's canonical (born on Higgsfield Soul) animated as the
+  // first frame. 1.5-pro is the ONLY model that accepts a human first frame — 2.5 and 2.0 both
+  // refuse it (measured 2026-08-09). Rates from the live billing table applied to the measured
+  // 5s/1080p token count (~49005 tok/s): silent 0.0012/K -> ~$0.059/s, audio 0.0024/K -> ~$0.118/s.
+  "person-avatar": { id: "seedance-1-5-pro-251215", resolution: null, perSecSilent: 0.059, perSecAudio: 0.118,
+                     why: "same-face-across-pieces: Soul canonical as first frame; only lane that accepts a human frame" },
 };
 const HOUSE = {
   ladder: [5, 10, 30],
@@ -115,15 +121,42 @@ for (const tk of B.required_tokens || [])
 if (B.script?.profanity) notes.push("profanity: measured-safe on 2.5 (proof roll 2026-08-09)");
 
 // -- routing
-const route = MODELS[B.subject?.type === "person" ? "person"
+const isPerson = B.subject?.type === "person";
+const isAvatar = isPerson && Boolean(B.subject?.avatar);   // named avatar -> Soul casting lane
+const route = MODELS[isAvatar ? "person-avatar"
+  : B.subject?.type === "person" ? "person"
   : B.subject?.type === "artwork" ? "artwork"
   : flag("fast") || B.fast ? "product-fast"
   : flag("draft") || B.draft ? "product-draft" : "product"];
 if (!route) errs.push(`subject.type '${B.subject?.type}' unknown — person | product | artwork`);
-const isPerson = B.subject?.type === "person";
-const res = isPerson || B.subject?.type === "artwork" ? "720p" : (B.resolution || "1080p");
-if (isPerson && B.resolution && B.resolution !== "720p")
-  notes.push(`resolution forced to 720p — 2.5 rejects ${B.resolution}; for 4K route a no-human subject to 2.0`);
+
+// -- avatar (Soul lane): resolve the canonical first frame + enforce the casting gate
+let avatarFrame = null;
+if (isAvatar) {
+  const adir = path.join(__dirname, "Avatars", B.subject.avatar);
+  if (!fs.existsSync(adir)) errs.push(`avatar '${B.subject.avatar}' not found in Avatars/`);
+  else {
+    avatarFrame = B.subject.avatar_frame
+      ? (path.isAbsolute(B.subject.avatar_frame) ? B.subject.avatar_frame : path.join(REPO, B.subject.avatar_frame))
+      : (() => { const idn = path.join(adir, "identity");
+          const pick = fs.existsSync(idn) && fs.readdirSync(idn).find((f) => /\.(png|jpe?g)$/i.test(f));
+          return pick ? path.join(idn, pick) : null; })();
+    if (!avatarFrame || !fs.existsSync(avatarFrame))
+      errs.push(`avatar '${B.subject.avatar}' has no resolvable canonical frame (set subject.avatar_frame or add Avatars/${B.subject.avatar}/identity/*.png)`);
+    // Casting gate — the house rule: a casting-status face is refused for paid use.
+    const amd = path.join(adir, "AVATAR.md");
+    const casting = fs.existsSync(amd) && /STATUS:\s*CASTING|status["']?\s*[:=]\s*["']?casting/i.test(fs.readFileSync(amd, "utf-8"));
+    if (casting && flag("go") && !flag("allow-casting"))
+      errs.push(`avatar '${B.subject.avatar}' is CASTING — founder must approve the face before paid use (--allow-casting for throwaway tests only)`);
+    else if (casting) notes.push(`avatar '${B.subject.avatar}' is CASTING — dry/proof ok; --go needs founder approval or --allow-casting`);
+  }
+}
+
+// 1.5-pro (avatar lane) DOES 1080p; only 2.5 (text-person) and artwork are pinned to 720p.
+const res = isAvatar ? (B.resolution || "1080p")
+  : isPerson || B.subject?.type === "artwork" ? "720p" : (B.resolution || "1080p");
+if (isPerson && !isAvatar && B.resolution && B.resolution !== "720p")
+  notes.push(`resolution forced to 720p — 2.5 rejects ${B.resolution}; for 1080p use a named avatar (1.5-pro lane) or route a no-human subject to 2.0`);
 const talking = isPerson && spoken.length > 0;
 const genAudio = B.audio?.generate ?? talking;
 if (talking && genAudio === false) errs.push("generate_audio:false on a talking head ships a MUTE clip at full price — set audio.generate true");
@@ -147,9 +180,10 @@ const audioBlock = B.audio?.direction ||
            : "No audio.");
 const RULES = B.scene?.rules || "No on-screen text, no captions, no subtitles, no logos overlaid on the picture.";
 
+const hasFirstFrame = Boolean(B.refs?.first_frame) || (isAvatar && avatarFrame);
 const buildText = (list, dur) =>
   [...blocks, ...beatLines(list), audioBlock, RULES,
-   `--ratio ${B.refs?.first_frame ? "adaptive" : (B.ratio || "9:16")} --dur ${dur} --resolution ${res}` +
+   `--ratio ${hasFirstFrame ? "adaptive" : (B.ratio || "9:16")} --dur ${dur} --resolution ${res}` +
    (B.subject?.type === "artwork" ? " --camerafixed true" : "") + " --watermark false"].join("\n\n");
 
 const dataUri = (p) => {
@@ -158,21 +192,26 @@ const dataUri = (p) => {
 };
 const buildBody = (list, dur) => {
   const content = [{ type: "text", text: buildText(list, dur) }];
+  // Avatar lane: the canonical goes in as the FIRST FRAME (1.5-pro accepts a human frame — the
+  // only lane that does). It is NOT a refs.images entry, so it bypasses the person-in-ref guard.
+  if (isAvatar && avatarFrame) content.push({ type: "image_url", image_url: { url: dataUri(avatarFrame) }, role: "first_frame" });
   for (const r of B.refs?.images || []) content.push({ type: "image_url", image_url: { url: dataUri(r.path) }, role: r.role || "reference_image" });
   if (B.refs?.video) content.push({ type: "video_url", video_url: { url: B.refs.video }, role: "reference_video" });
   return { model: route.id, generate_audio: genAudio, content };
 };
 
 const cost = (dur) => {
+  if (isAvatar) return dur * (genAudio ? route.perSecAudio : route.perSecSilent);
   if (isPerson || B.subject?.type === "artwork") return dur * 0.2325;
-  if (route.id.includes("mini")) return NaN;
+  if (route.id.includes("mini") || route.id.includes("fast")) return NaN;
   return res === "720p" ? dur * 0.1519 : res === "1080p" ? dur * 0.3758 : NaN;
 };
 const usd = (n) => Number.isNaN(n) ? "UNMEASURED — first run is the measurement" : `$${n.toFixed(2)}`;
 
 // ---------------------------------------------------------------- report
-console.log(`\n══ ${B.id} ── lane:${lane} subject:${B.subject?.type} ${B.duration}s ${res} ══`);
+console.log(`\n══ ${B.id} ── lane:${lane} subject:${B.subject?.type}${isAvatar ? `(avatar:${B.subject.avatar})` : ""} ${B.duration}s ${res} ══`);
 console.log(`route  : ${route.id}\n         (${route.why})`);
+if (isAvatar) console.log(`avatar : ${path.relative(__dirname, avatarFrame || "?")}  ->  first_frame`);
 if (spoken) console.log(`script : ${words} words · ${wps.toFixed(2)} w/s · band ${band?.join("-")}`);
 for (const [c, v, s] of claimValues) console.log(`claim  : ${c} = "${v}"  [${s}]`);
 for (const s of B.slots || []) console.log(`slot   : {{${s}}} — human fills before publish`);
@@ -222,7 +261,11 @@ const ledgerRow = (j, savedPath, body, redactedBody) => ({
   response_json: j,
   seed: j.seed ?? null,
   tokens: j.usage?.completion_tokens ?? null,
-  cost_usd: j.usage?.completion_tokens != null ? j.usage.completion_tokens * 0.0107 / 1000 : null,
+  // Per-1K-token rate is MODEL-specific — do not hardcode the 2.5 rate for every lane. 1.5-pro
+  // (avatar lane) bills at 0.0024/K with audio, 0.0012/K silent; 2.5/2.0 at 0.0107/K (the basis
+  // the backfill reconciled against sd25-cost). Using 0.0107 for a 1.5-pro clip overcharges 4.5x.
+  cost_usd: j.usage?.completion_tokens != null
+    ? j.usage.completion_tokens * (isAvatar ? (genAudio ? 0.0024 : 0.0012) : 0.0107) / 1000 : null,
   status: j.status,
   error_code: j.error?.code ?? null,
   file_path: savedPath,

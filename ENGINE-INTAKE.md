@@ -64,8 +64,16 @@ $9.26 of wrong generations.)
      future: 2.0 `reference_audios` renders the body ACTING the voice (verified once at 0.9872
      similarity) — humans need Digital Character registration first
    - `file` — supplied VO for off-screen narration → 2.0 lane, works today
-**Q13. Must this match an existing person/avatar?** → `subject.avatar`
-   Locked avatars only (casting-status avatars are refused). Anchors, not seeds, carry identity.
+**Q13. Must this match an existing person/avatar — the SAME face across many pieces?** → `subject.avatar`
+   Name an avatar (e.g. `"Sol"`) and the engine SWITCHES LANES: person+avatar routes to the
+   **Soul casting lane** — Seedance **1.5-pro** with the avatar's canonical (`Avatars/<Name>/
+   identity/*.png`, born on Higgsfield Soul) as the FIRST FRAME. This is the only lane that
+   accepts a human frame (2.5/2.0 both refuse it), it runs **1080p**, and it costs ~$0.06/s
+   silent / ~$0.12/s with audio on ModelArk — cheaper than the text-born 2.5 lane. Trade-off:
+   1.5-pro's speech is good but 2.5's is better, so use avatars when IDENTITY matters more than
+   voice ceiling. Casting-status avatars (`STATUS: CASTING` in AVATAR.md) are refused on `--go`
+   until the founder approves — `--allow-casting` is throwaway-tests only. Anchors, not seeds,
+   carry identity across shots. No avatar named → text-born 2.5 lane (720p, best speech).
 
 ## 5 — THE SCENE (the visualization layer)
 
