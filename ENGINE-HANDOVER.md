@@ -31,11 +31,17 @@ unmeasured it says so out loud.
 | Product draft/variations | `dreamina-seedance-2-0-mini-260615` (`--draft`) | ? | **UNPROBED** | first run is the measurement |
 | Product, speed | `dreamina-seedance-2-0-fast-260128` (`--fast`) | ? | **UNPROBED** | id verified in catalog, never fired |
 | Approved artwork | 2.5 i2v, `--ratio adaptive`, `camerafixed` | follows the art | $0.233 | measured — but see Rolex rule below |
+| **Same face across many pieces** | **Soul casting lane**: Higgsfield Soul portrait → `bytedance/seedance-1.5-pro` (Replicate, ~$0.62/5s; ModelArk `seedance-1-5-pro-251215` works too at ~4× the price) | 1080p | ~$0.12/s | proven end-to-end 2026-08-09 — identity holds, speech verbatim. Avatar kits in `Avatars/` (Sol is the prototype, CASTING) |
 
 ## THE RULES THAT COST MONEY TO LEARN (the engine enforces all of these)
 
 - **A person in ANY reference image = refused at submit.** People are generated from TEXT.
   A card/product image passes as `reference_image` next to a text-generated person.
+- **2.5 extends ONLY people 2.5 itself created.** External human video AND other ModelArk
+  models' human clips are refused identically ("may contain real person") — measured on a
+  same-account 1.5-pro clip 90 seconds after generation. A 2.5 person is BORN in 2.5, period.
+  The sanctioned doors (preset `asset://` digital persons; real-human registration — our
+  account has 50 open slots) are mapped in `craft/DIGITAL-CHARACTERS.md`.
 - **The Rolex rule:** a prominent rendered third-party mark = billed copyright refusal
   (measured on the Golden Hour card face). The own-brand QR side passes. SPOKEN brand
   names pass. When in doubt: say it, don't show it — or plate it in post for $0.
