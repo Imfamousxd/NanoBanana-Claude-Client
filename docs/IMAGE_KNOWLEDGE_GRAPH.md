@@ -16,8 +16,8 @@ beside it.
 | Query CLI | `npm run content -- knowledge query "<terms>" --brand <brand>` | Full-text retrieval over graph nodes and registry files |
 | NuLumin SKU index | `NuLumin Generated/NuLumin Vial Library/index.json` | Already-built 66-SKU machine index — the NuLumin registry points at it rather than duplicating it |
 
-Eight brands are covered: dialed-moods, dialed-health, dialed-labs, muha-meds, noble-harbor,
-stanton, nulumin, dial-echo. (Aevum+, Becca Boo, Agency DevWorks, and GridShift were removed
+Seven brands are covered: dialed-moods, dialed-health, dialed-labs, muha-meds, noble-harbor,
+stanton, nulumin. (Aevum+, Becca Boo, Agency DevWorks, GridShift, and Dial Echo were removed
 from the graph by operator decision 2026-08-09; their Brand Context docs remain on disk.)
 
 ## Reference roles

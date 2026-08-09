@@ -159,16 +159,6 @@
       ]
     },
     {
-      "path": "knowledge/products/dial-echo.json",
-      "tags": [
-        "dial-echo",
-        "product",
-        "reference-image",
-        "image-gen",
-        "registry"
-      ]
-    },
-    {
       "path": "docs/IMAGE_KNOWLEDGE_GRAPH.md",
       "tags": [
         "image-gen",
@@ -435,17 +425,6 @@
       "sourceUrl": "https://replicate.com/bytedance/seedance-2.0/api"
     },
     {
-      "id": "brand.dial-echo",
-      "type": "brand",
-      "name": "Dial Echo",
-      "aliases": [
-        "dial echo",
-        "dialecho"
-      ],
-      "source": "Brand Context/Dial_Echo.md",
-      "complianceProfile": "general"
-    },
-    {
       "id": "rule.image-provider-routing",
       "type": "routing-rule",
       "name": "Image provider routing",
@@ -549,18 +528,6 @@
       "source": "knowledge/products/nulumin.json",
       "path": "knowledge/products/nulumin.json",
       "summary": "NuLumin Bio-Sciences image-gen product registry: 0 product entries + pointer to the 66-SKU Vial Library index"
-    },
-    {
-      "id": "registry.dial-echo-products",
-      "type": "product-registry",
-      "name": "Dial Echo product registry",
-      "aliases": [
-        "dial echo products",
-        "dial echo reference images"
-      ],
-      "source": "knowledge/products/dial-echo.json",
-      "path": "knowledge/products/dial-echo.json",
-      "summary": "Dial Echo image-gen product registry: 0 product entries"
     },
     {
       "id": "product.dialed-moods.blue-glacier",
@@ -877,16 +844,6 @@
     },
     {
       "from": "registry.nulumin-products",
-      "relation": "governed-by",
-      "to": "rule.image-provider-routing"
-    },
-    {
-      "from": "brand.dial-echo",
-      "relation": "has-products",
-      "to": "registry.dial-echo-products"
-    },
-    {
-      "from": "registry.dial-echo-products",
       "relation": "governed-by",
       "to": "rule.image-provider-routing"
     },
