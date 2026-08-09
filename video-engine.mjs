@@ -47,6 +47,10 @@ const BASE = "https://ark.ap-southeast.bytepluses.com/api/v3/contents/generation
 
 const arg = (k, d) => { const i = process.argv.indexOf(`--${k}`); return i > -1 ? process.argv[i + 1] : d; };
 const flag = (k) => process.argv.includes(`--${k}`);
+// Assets may live in the worktree (generations/, inputs/) or the main repo (Brand Context/).
+// Resolve relative paths worktree-first, then REPO — one resolver so no call site drifts.
+const resolveAsset = (p) => path.isAbsolute(p) ? p
+  : fs.existsSync(path.join(__dirname, p)) ? path.join(__dirname, p) : path.join(REPO, p);
 
 const MODELS = {
   "person": { id: "dreamina-seedance-2-5-260628", resolution: "720p", perSec: 0.2325,
@@ -98,7 +102,7 @@ if ((B.claims_used || []).length && !B.claims_signoff) warns.push("claims_signof
 
 // -- refs layer
 for (const r of B.refs?.images || []) {
-  const p = path.isAbsolute(r.path) ? r.path : path.join(REPO, r.path);
+  const p = resolveAsset(r.path);
   if (!fs.existsSync(p)) errs.push(`ref image missing on disk: ${r.path}`);
   if (r.contains_person) errs.push(`ref '${path.basename(r.path)}' contains a person — REFUSED at submit in any image role (privacy guard). Generate people from text.`);
   if (r.third_party_marks) warns.push(`ref '${path.basename(r.path)}' carries third-party marks (${r.third_party_marks}) — measured copyright-refusal risk if prominent`);
@@ -120,17 +124,33 @@ for (const tk of B.required_tokens || [])
     errs.push(`required token "${tk}" is not in the script`);
 if (B.script?.profanity) notes.push("profanity: measured-safe on 2.5 (proof roll 2026-08-09)");
 
-// -- prompt-craft lint (documented 2.5 rules, craft/PROMPT-2.5.md) — warnings, never blockers.
-// "Detail = specifics, not adjectives": these words add no signal and actively mislead.
+// -- prompt-craft lint + DETAIL SCORE (documented 2.5 rules, craft/PROMPT-2.5.md) — warns/notes,
+// never blockers. "Detail = specifics, not adjectives." The score makes "as detailed as possible"
+// a number you see before you spend, with the exact gaps named.
 const prose = [B.scene?.look, B.scene?.camera, B.scene?.voice,
   ...beats.map((b) => `${b.action || ""} ${b.line || ""}`)].filter(Boolean).join("  ");
 const KILLERS = [/\bfast\b/i, /\bcinematic\b/i, /\bamazing\b/i, /\bepic\b/i, /\bbeautiful\b/i, /lots of movement/i];
 const killerHits = [...new Set(KILLERS.map((rx) => (prose.match(rx) || [])[0]).filter(Boolean).map((h) => h.toLowerCase()))];
 if (killerHits.length) warns.push(`prompt-craft: killer word(s) "${killerHits.join('", "')}" — replace with a specific light / named camera move / concrete action (craft/PROMPT-2.5.md)`);
-// One primary camera move, named — UGC handheld language (bobs/drifts/selfie) counts.
 const CAMERA_OK = /push[- ]?in|pull[- ]?out|dolly|\bpan\b|track|orbit|\barc\b|aerial|drone|handheld|locked[- ]?off|\bfixed\b|\brise\b|\btilt\b|bob|drift|sway|selfie|push in/i;
-if (B.scene?.camera && B.scene.camera.length > 20 && !CAMERA_OK.test(B.scene.camera))
-  notes.push("prompt-craft: no named camera move in scene.camera — name ONE (push-in/pull-out/pan/tracking/orbit/aerial/handheld/fixed)");
+const LIGHT_OK = /light|sun|golden|window|daylight|neon|\brim\b|backlit|shadow|overcast|lamp|glow|\bdim\b|dusk|dawn|afternoon|morning|fluorescent|candle|moon/i;
+const anchorCount = (B.subject?.casting || "").split(/,|\band\b/).map((s) => s.trim()).filter((s) => s.length > 2).length;
+// Subject detail is judged differently by type: a PERSON needs ≥4 casting anchors; a PRODUCT/
+// artwork has no casting, so it's judged on a concrete reference description instead.
+const subjectDetailed = B.subject?.type === "person"
+  ? [`subject anchors ≥4 (age/wardrobe/color/expression)`, anchorCount >= 4]
+  : [`subject described concretely (a reference describe ≥60 chars)`, (B.refs?.images || []).some((r) => (r.describe || "").length >= 60)];
+const checks = [
+  subjectDetailed,
+  ["one named camera move", Boolean(B.scene?.camera && CAMERA_OK.test(B.scene.camera))],
+  ["a specific lighting line", LIGHT_OK.test(B.scene?.look || "")],
+  ["no killer words", killerHits.length === 0],
+  ["every reference named + described", (B.refs?.images || []).every((r) => (r.name || r.role) && r.describe)],
+  ["an action in every beat", beats.length > 0 && beats.every((b) => b.action || b.line)],
+];
+const passed = checks.filter((c) => c[1]).length;
+const missing = checks.filter((c) => !c[1]).map((c) => c[0]);
+notes.push(`prompt-craft detail: ${passed}/${checks.length}` + (missing.length ? ` — missing: ${missing.join("; ")}` : " ✓ (maximally specified)"));
 
 // -- routing
 const isPerson = B.subject?.type === "person";
@@ -149,11 +169,8 @@ if (isAvatar) {
   if (!fs.existsSync(adir)) errs.push(`avatar '${B.subject.avatar}' not found in Avatars/`);
   else {
     // A scene frame (scene-frame.mjs: avatar + product composed) OVERRIDES the plain canonical.
-    // Relative paths resolve against the worktree first (where generations/ lives), then REPO.
-    const resolveFrame = (fp) => path.isAbsolute(fp) ? fp
-      : fs.existsSync(path.join(__dirname, fp)) ? path.join(__dirname, fp) : path.join(REPO, fp);
     avatarFrame = B.subject.avatar_frame
-      ? resolveFrame(B.subject.avatar_frame)
+      ? resolveAsset(B.subject.avatar_frame)
       : (() => { const idn = path.join(adir, "identity");
           const pick = fs.existsSync(idn) && fs.readdirSync(idn).find((f) => /\.(png|jpe?g)$/i.test(f));
           return pick ? path.join(idn, pick) : null; })();
@@ -191,12 +208,13 @@ if (B.scene?.look) blocks.push(B.scene.look);
 // named (docs, law sd25:reference-citation-with-at-notation). N is 1-indexed by content[] order.
 // The 1.5 avatar lane's first image is a first_frame (not an @Image), so notation is 2.5-only.
 const refImgs = B.refs?.images || [];
-if (refImgs.length && !isAvatar) {
+const citeStyle = arg("cite") || B.refs?.cite_style || "at";   // "at" (@Image N) | "prose"
+if (refImgs.length && !isAvatar && citeStyle === "at") {
   const lines = refImgs.map((r, i) =>
     `@Image ${i + 1} is the ${r.name || r.role || "reference"}. ${r.describe || "Reproduce it faithfully."}`.trim());
   blocks.push(`References — use each exactly for its stated purpose:\n${lines.join("\n")}`);
 } else {
-  for (const r of refImgs) if (r.describe) blocks.push(r.describe);   // avatar/1.5 lane, legacy prose
+  for (const r of refImgs) if (r.describe) blocks.push(r.describe);   // prose citation / avatar-1.5 lane
 }
 if (B.scene?.camera) blocks.push(B.scene.camera);
 if (B.scene?.voice) blocks.push(B.scene.voice);
@@ -213,7 +231,7 @@ const buildText = (list, dur) =>
    (B.subject?.type === "artwork" ? " --camerafixed true" : "") + " --watermark false"].join("\n\n");
 
 const dataUri = (p) => {
-  const abs = path.isAbsolute(p) ? p : path.join(REPO, p);
+  const abs = resolveAsset(p);
   return `data:image/${abs.endsWith(".jpg") || abs.endsWith(".jpeg") ? "jpeg" : "png"};base64,${fs.readFileSync(abs).toString("base64")}`;
 };
 const buildBody = (list, dur) => {
@@ -302,7 +320,8 @@ const H = { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json" }
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function runCandidate(ci) {
-  const label = `${B.id}-${mode}-${dur}s-${stamp}${N > 1 ? `-c${ci}` : ""}`;
+  const citeTag = (refImgs.length && !isAvatar) ? `-${citeStyle}` : "";
+  const label = `${B.id}-${mode}-${dur}s-${stamp}${citeTag}${N > 1 ? `-c${ci}` : ""}`;
   const body = buildBody(list, dur);
   const redactedBody = { ...body, content: body.content.map((c) => c.image_url ? { ...c, image_url: { url: "<base64 elided>" } } : c) };
   fs.writeFileSync(path.join(outDir, `${label}.request.json`), JSON.stringify(redactedBody, null, 2));

@@ -1,0 +1,44 @@
+{
+  "_what": "VALIDATION A/B: does dreamina-seedance-2-5-260628 honour @Image N citation + reproduce a reference_image? Run twice — default (--cite at, @Image manifest) and --cite prose — same brief, compare card fidelity. Text-born person (no avatar), 5s, card as reference_image. No claims -> no compliance gate.",
+  "id": "val-2p5-cardref",
+  "brand": "Muha_Meds",
+  "campaign": "none",
+  "claims_used": [],
+  "slots": [],
+  "lane": "ugc",
+  "duration": 5,
+  "ratio": "9:16",
+  "subject": {
+    "type": "person",
+    "casting": "A 26-year-old man, short dark hair, light stubble, plain grey t-shirt, sitting in a parked car in daylight",
+    "props": null
+  },
+  "refs": {
+    "images": [
+      {
+        "path": "inputs/card-qr-side.png",
+        "role": "reference_image",
+        "name": "card",
+        "contains_person": false,
+        "third_party_marks": null,
+        "describe": "A small glossy black card, credit-card sized, with a thin ornate gold decorative border and a gold square code panel centred, a small gold monogram at its middle. He holds it up beside his cheek, angled so the gold catches the daylight; reproduce the card's exact black-and-gold design, border and centre monogram faithfully. His face stays fully visible; the card never covers it."
+      }
+    ]
+  },
+  "scene": {
+    "look": "Casual handheld vertical selfie video in a parked car, natural daylight through the window, real skin texture, no beauty filter, full-bleed edge to edge, no mockup.",
+    "camera": "Handheld selfie; the frame bobs and drifts slightly as he holds the phone. One continuous take.",
+    "voice": "Natural, easy, unhurried."
+  },
+  "script": {
+    "register": "offhand to a friend",
+    "profanity": false,
+    "beats": [
+      { "t": "0-5s", "action": "He holds the card up beside his cheek, glances at it then back to the lens, small nod.", "line": "Check it — this little card right here. That's the one." }
+    ]
+  },
+  "required_tokens": [],
+  "audio": { "generate": true, "direction": "Audio: his voice close on the phone microphone with cabin room tone under it. No instruments, no melody, no song." },
+  "proof": { "required": false, "_why": "No props manipulated beyond holding; clip is 5s (proof-length)." },
+  "post": { "loudnorm": true, "conform1080": false }
+}
