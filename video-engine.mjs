@@ -261,6 +261,20 @@ for (const [c, v, s] of claimValues) console.log(`claim  : ${c} = "${v}"  [${s}]
 for (const s of B.slots || []) console.log(`slot   : {{${s}}} — human fills before publish`);
 console.log(`cost   : full ${usd(cost(B.duration))}${B.proof?.beats ? ` · proof ${usd(cost(5))}` : ""}`);
 notes.forEach((n) => console.log(`note   : ${n}`));
+// GOLD TARGETS — anchor this generation to the curated best-in-class references for its creative
+// type (from the research loop). Set brief.creative_type (ugc/promo/product/commercial/ad-creative)
+// to see the examples to MATCH and the rubric to judge against, right at plan time.
+if (B.creative_type) {
+  try {
+    const gold = JSON.parse(fs.readFileSync(path.join(__dirname, "examples", "sources.json"), "utf-8")).gold || [];
+    const toks = String(B.creative_type).toLowerCase().split(/[^a-z]+/).filter((t) => t.length >= 2);
+    const hit = gold.filter((g) => toks.some((t) => (g.type || "").toLowerCase().includes(t)));
+    if (hit.length) {
+      console.log(`gold   : match these for '${B.creative_type}' (rubric: craft/CREATIVE-RUBRICS.md):`);
+      for (const g of hit.slice(0, 3)) console.log(`         ${g.path}`);
+    } else console.log(`gold   : no curated reference yet for '${B.creative_type}' — a gap worth generating (see CREATIVE-RUBRICS.md)`);
+  } catch { /* library optional */ }
+}
 warns.forEach((w) => console.log(`⚠ warn : ${w}`));
 if (errs.length) { errs.forEach((e) => console.log(`✗ REFUSE: ${e}`)); console.log(`\n${errs.length} blocker(s) — nothing submitted.\n`); process.exit(2); }
 

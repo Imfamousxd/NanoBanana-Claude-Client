@@ -35,6 +35,9 @@ $9.26 of wrong generations.)
 **Q6. Which lane — UGC or campaign?** → `lane`
    House-measured, they don't mix: UGC = one unbroken take, 9:16, ~2.3 w/s.
    Campaign = cuts every ~4.3s, 4:5 or 9:16, ~3.0 w/s.
+   Also set **`creative_type`** (ugc / promo / product / commercial / ad-creative) — the plan then
+   surfaces the GOLD references to match and points at that type's `craft/CREATIVE-RUBRICS.md`
+   rubric, so the generation is anchored to what best-in-class looks like, not a blank page.
 **Q7. How long?** → `duration`
    Offer the house ladder: **5 / 10 / 30**. Anything else needs a stated reason (nothing
    off-ladder has ever shipped).
