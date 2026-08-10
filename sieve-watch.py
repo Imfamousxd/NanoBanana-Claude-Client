@@ -72,6 +72,8 @@ def main():
     ap.add_argument("--expect-w", type=int)
     ap.add_argument("--expect-h", type=int)
     ap.add_argument("--expect-dur", type=float)
+    ap.add_argument("--silent-ok", action="store_true",
+                    help="no audio stream is EXPECTED (scored in post / generate_audio:false) — do not fail on it")
     ap.add_argument("--json", action="store_true", help="machine-readable output")
     a = ap.parse_args()
 
@@ -118,8 +120,16 @@ def main():
                  f"{int(fmt.get('size',0) or 0)//1048576}MB")
 
     # ── audio ─────────────────────────────────────────────────────────────────
+    # A missing audio stream is a hard defect for a talking head, but INTENDED for a piece scored
+    # in post (generate_audio:false — the deliberate campaign pattern). Without a way to declare
+    # that intent, this check rejected every scored-in-post campaign clip (it killed the real
+    # gh-scan, which is silent on purpose). --silent-ok / manifest audio:false says "no audio is
+    # expected here" and downgrades the miss to a note. Talking heads never pass the flag, so a
+    # mute talking head still fails.
+    silent_ok = a.silent_ok or (want.get("audio") is False)
     if not aus or not aus[0].get("codec_name"):
-        fails.append("NO AUDIO STREAM")
+        (notes if silent_ok else fails).append(
+            "no audio stream (expected — scored in post)" if silent_ok else "NO AUDIO STREAM")
     else:
         notes.append(f"audio {aus[0].get('codec_name')} {aus[0].get('channels')}ch "
                      f"{aus[0].get('sample_rate')}Hz")

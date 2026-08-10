@@ -1,0 +1,32 @@
+{
+  "_what": "Reconstruction of Ashley's gh-scan (golden-hour-rolex campaign) to verify the watcher-gate fix end-to-end. The original animated a pixel-locked card first_frame that lives on Ashley's machine; this reconstructs the same campaign lane / brand / duration / prompt as text-to-video so the CAMPAIGN -> watcher-gate -> delivery path is exercised faithfully. The fix being proven is in the gate, not the picture.",
+  "id": "gh-scan-rerun",
+  "brand": "Muha_Meds",
+  "campaign": "golden-hour-rolex",
+  "claims_used": [],
+  "slots": [],
+  "lane": "campaign",
+  "duration": 10,
+  "ratio": "9:16",
+  "creative_type": "ad-creative",
+  "subject": { "type": "artwork", "casting": null, "props": null },
+  "refs": { "images": [] },
+  "scene": {
+    "look": "A tall dusk seascape drawn in flat stylised illustration, deep dusk. Across the upper third, bold white lettering reads 'Did you scan yet?' with a thin gold rule beneath it. Below that, deep navy sky with dark cel-shaded clouds rimmed in fading gold. At the centre floats a wide horizontal promotional card carrying a blue-sky scene with a gold yacht, a silver-and-blue wristwatch, large white lettering reading 'WIN A $35,000' and 'ROLEX YACHT-MASTER', and a black panel on its right holding a gold square code inside an ornate gold border. Behind the card a narrow ember band sits at the horizon; below it calm black water is ruled with thin gold ribbons. The headline and the card are lit evenly and stay sharp and legible from the first frame to the last.",
+    "camera": "Locked-off. The camera does not move, does not push in, does not pull out and does not drift. Every change in the frame is a change in the light or a slow drift of the clouds and the water."
+  },
+  "script": {
+    "register": "",
+    "profanity": false,
+    "beats": [
+      { "t": "0-3s", "action": "The dark clouds drift slowly to the left across the navy sky. The thin gold ribbons on the black water below the card shimmer and slide toward the viewer, and the narrow ember band at the horizon brightens and dims gently like a slow breath." },
+      { "t": "3-6s", "action": "A narrow specular gleam travels slowly from left to right across the card, over the silver bracelet and domed crystal of the watch, then over the large white lettering, brightening each surface as it passes and sliding off the card's right edge. The clouds keep drifting and the water keeps shimmering underneath." },
+      { "t": "6-8s", "action": "A soft warm band of light rises up the frame and passes across the headline lettering at the top, brightening the white letters and putting a brief shine along the thin gold rule beneath them, then fades away above." },
+      { "t": "8-10s", "action": "The light settles back to where it began. The clouds continue their slow drift to the left, the ember band at the horizon holds steady, and the gold ribbons on the water go on shimmering, leaving the frame exactly as it started." }
+    ]
+  },
+  "required_tokens": [],
+  "audio": { "generate": false, "direction": "No audio. This piece is scored in post — generate_audio is off deliberately." },
+  "proof": { "required": false },
+  "post": { "loudnorm": false, "conform1080": true }
+}

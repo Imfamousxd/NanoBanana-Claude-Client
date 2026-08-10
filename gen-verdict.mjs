@@ -4,6 +4,7 @@
  *
  *   node gen-verdict.mjs <task_id | path/to/clip.mp4> approved|rejected [--why "..."]
  *   node gen-verdict.mjs pending                       # list rows still awaiting a verdict
+ *   node gen-verdict.mjs recent [N]                    # last N generations + status/gate/verdict/cost
  *
  * Every generation lands in the Supabase ledger as operator_verdict='pending'. This flips it.
  * 'rejected' also sets rejected_by='operator' — distinct from 'watcher'/'transcript-gate', so
@@ -27,6 +28,36 @@ if (args[0] === "pending") {
     if (!rows.length) { console.log("no pending rows — every generation has a verdict"); process.exit(0); }
     for (const r of rows) console.log(`${r.task_id}  ${r.brand ?? "?"}/${r.brief_id ?? "?"}  ${r.status}  $${r.cost_usd ?? "?"}  ${r.file_path ?? ""}`);
   } else console.log("listPending not available in engine-ledger.mjs");
+  process.exit(0);
+}
+
+if (args[0] === "recent") {
+  // Diagnostic view: the last N generations and what became of each — succeeded/failed, the gate
+  // outcome (and WHY it was rejected), the operator verdict, and cost. Answers "is anything reaching
+  // the final goal, or is it dying in the gates?" at a glance.
+  const { listRecent } = await import("./engine-ledger.mjs").catch(() => ({}));
+  const n = Number(args[1]) || 20;
+  const rows = listRecent ? await listRecent(n) : [];
+  if (!rows.length) { console.log("no rows (or ledger offline)"); process.exit(0); }
+  const gateOf = (g) => {
+    if (!g || !Object.keys(g).length) return "-";
+    const parts = [];
+    if (g.watcher) parts.push(`watcher:${g.watcher.verdict}`);
+    if (g.transcript) parts.push(`transcript:${g.transcript.pass ? "PASS" : "FAIL"}`);
+    return parts.join(" ") || "-";
+  };
+  let succeeded = 0, delivered = 0, killed = 0, spend = 0;
+  console.log(`created(UTC)          brief_id              status     verdict   rejected_by   gate                 cost`);
+  for (const r of rows) {
+    spend += Number(r.cost_usd) || 0;
+    if (r.status === "succeeded") succeeded++;
+    if (r.operator_verdict === "approved") delivered++;
+    if (r.rejected_by) killed++;
+    console.log(
+      `${(r.created_at||"").replace("T"," ").slice(0,19)}  ${String(r.brief_id||"∅").padEnd(20).slice(0,20)}  ${String(r.status||"").padEnd(9).slice(0,9)}  ${String(r.operator_verdict||"").padEnd(8).slice(0,8)}  ${String(r.rejected_by||"").padEnd(12).slice(0,12)}  ${gateOf(r.gates).padEnd(19).slice(0,19)}  $${(Number(r.cost_usd)||0).toFixed(2)}`);
+  }
+  console.log(`\n${rows.length} rows · ${succeeded} succeeded · ${delivered} operator-approved (DELIVERED) · ${killed} gate/operator-rejected · $${spend.toFixed(2)} spent`);
+  if (delivered === 0) console.log(`⚠ nothing has an 'approved' verdict — run: node gen-verdict.mjs <task_id> approved  (the flywheel's human step)`);
   process.exit(0);
 }
 

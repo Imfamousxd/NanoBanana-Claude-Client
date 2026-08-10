@@ -107,6 +107,25 @@ export async function listPending() {
   }
 }
 
+/** Recent rows with the diagnostic columns a human/MCP needs to see WHAT happened and WHY —
+ *  status, the operator verdict, who rejected it, the gate outcomes, and the cost. This is the
+ *  "did it reach the final goal?" read the ledger was missing a surface for. Never throws; [] on failure. */
+export async function listRecent(limit = 20) {
+  try {
+    const { rest, key } = config();
+    const n = Math.max(1, Math.min(200, Number(limit) || 20));
+    const sel = "task_id,created_at,generated_at,brand,brief_id,lane,model,duration_s," +
+                "status,error_code,gates,operator_verdict,rejected_by,cost_usd,file_path";
+    const res = await fetch(`${rest}?select=${sel}&order=created_at.desc&limit=${n}`,
+      { headers: { apikey: key, Authorization: `Bearer ${key}` }, signal: AbortSignal.timeout(TIMEOUT_MS) });
+    if (!res.ok) throw new Error(`HTTP ${res.status} ${(await res.text()).slice(0, 300)}`);
+    return await res.json();
+  } catch (e) {
+    console.warn(`[engine-ledger] listRecent failed: ${e?.message || e}`);
+    return [];
+  }
+}
+
 /** Read helper for tooling (backfill dedupe/summary). Never throws; [] on failure. */
 export async function listTaskIds() {
   try {

@@ -397,28 +397,49 @@ print(" ".join(s.text.strip() for s in segs))`;
                          heard: transcript.slice(0, 1000) };
     if (missed.length) rejected_by = "transcript-gate";
   }
-  // Tier-1 watcher — arithmetic on the bytes, authoritative. Exit 1 = FAIL = candidate rejected.
-  // WARN (exit 0) passes: measured 2026-08-09, the watcher misfires on scenes it does not
-  // understand (excited voice, car windows) and those rulings live in the verdict ledger.
+  // Tier-1 watcher — arithmetic on the bytes, authoritative. Exit codes are LOAD-BEARING and must
+  // not be conflated (this cost a $2.32 campaign clip on 2026-08-10): sieve-watch.py exits
+  //   0 = PASS/WARN (keep) · 1 = real content FAIL (reject) · 2 = the tool itself errored
+  // (argparse/crash). A crashing gate is NOT a verdict on the clip — treating exit≠0 as FAIL threw
+  // away a good paid asset when we handed it a --modality it doesn't accept. Only exit 1 rejects.
+  //
+  // MODALITY VOCABULARY: the engine's lanes are ugc|campaign but the watcher speaks
+  // ugc|cinema|ad|product — only "ugc" overlaps, so passing `lane` verbatim crashed every campaign
+  // run. Map here. "ad" is right for campaign work twice over: it doesn't fail on flat contrast
+  // (correct for stylised illustration) and it treats scene cuts as WARN not FAIL (campaign cuts
+  // every ~4.3s by house rule — a cut is intended, not a defect).
   if (mode === "go" && fs.existsSync(path.join(__dirname, "sieve-watch.py"))) {
+    const watcherModality = lane === "ugc" ? "ugc"
+      : B.subject?.type === "product" ? "product" : "ad";
     const wargs = [path.join(__dirname, "sieve-watch.py"), cand.saved,
-                   "--modality", lane, "--expect-dur", String(dur)];
+                   "--modality", watcherModality, "--expect-dur", String(dur)];
     if (res === "720p" && (B.ratio || "9:16") === "9:16") wargs.push("--expect-w", "720", "--expect-h", "1280");
+    // Scored-in-post pieces are silent ON PURPOSE (genAudio false) — tell the watcher so its
+    // mandatory-audio check doesn't reject a deliberately-silent campaign clip (it killed gh-scan).
+    if (!genAudio) wargs.push("--silent-ok");
     const w = spawnSync("python3", wargs, { encoding: "utf-8", timeout: 300000 });
     const tail = ((w.stdout || "") + (w.stderr || "")).trim().split("\n").slice(-12).join("\n");
-    gates.watcher = { exit: w.status, verdict: w.status === 0 ? "PASS_OR_WARN" : "FAIL", tail: tail.slice(0, 1200) };
-    console.log(`[c${cand.ci}] watcher: ${gates.watcher.verdict}`);
-    if (w.status !== 0) rejected_by = rejected_by || "watcher";
+    const code = w.status;   // null if python never ran (ENOENT/timeout) — treat as ERROR, not FAIL
+    const verdict = code === 0 ? "PASS_OR_WARN" : code === 1 ? "FAIL" : "ERROR";
+    gates.watcher = { exit: code, modality: watcherModality, verdict, tail: tail.slice(0, 1200) };
+    console.log(`[c${cand.ci}] watcher: ${verdict} (modality ${watcherModality})` +
+      (verdict === "ERROR" ? " — gate CRASHED; clip kept, not counted as a content fail" : ""));
+    if (verdict === "FAIL") rejected_by = rejected_by || "watcher";
   }
   await updateGates(cand.id, gates, rejected_by);
   return { ...cand, gates, rejected_by, heardWords };
 }
 
+// Generate every candidate CONCURRENTLY. Each candidate is a long submit-then-poll (median ~120s,
+// p90 ~157s of pure model wait), and running them serially multiplied that by N for no reason —
+// they are independent ByteDance tasks. Promise.all overlaps the polls: a 3-candidate --go run
+// drops from ~3× to ~1× the model wait. Gating stays SEQUENTIAL below: the gates spawn CPU-bound
+// python (whisper + watcher) and running N of those at once would thrash the box, undoing the win.
+const generated = (await Promise.all(
+  Array.from({ length: N }, (_, i) => runCandidate(i + 1))
+)).filter(Boolean);
 const results = [];
-for (let ci = 1; ci <= N; ci++) {
-  const cand = await runCandidate(ci);
-  if (cand) results.push(await gateCandidate(cand));
-}
+for (const cand of generated) results.push(await gateCandidate(cand));
 if (!results.length) process.exit(1);
 const survivors = results.filter((r) => !r.rejected_by);
 

@@ -159,6 +159,46 @@ const TOOLS = {
     },
   },
 
+  engine_status: {
+    description: "See WHAT recent generations produced and WHY — the last N rows from the ledger " +
+      "with status (succeeded/failed), the gate outcome (watcher/transcript, and whether a gate " +
+      "REJECTED it), the operator verdict, and cost. This is the 'did it reach the final goal?' " +
+      "view: a run that succeeded but shows rejected_by, or sits at verdict 'pending', has NOT been " +
+      "delivered. Read-only, spends nothing.",
+    inputSchema: {
+      type: "object",
+      properties: { limit: { type: "integer", default: 20, minimum: 1, maximum: 200,
+        description: "how many recent generations to show" } },
+    },
+    handler: async ({ limit = 20 }) => {
+      const r = await run("node", ["gen-verdict.mjs", "recent", String(limit)], { timeoutMs: 30000 });
+      return okText(r.out || r.err || "(no output)");
+    },
+  },
+  engine_verdict: {
+    description: "CLOSE THE LOOP: record the operator's call on a generation — 'approved' (it's " +
+      "delivered) or 'rejected' (sets rejected_by='operator', the highest-value training row: a " +
+      "clip the machine gates PASSED but a human failed). This is the flywheel's human step; a " +
+      "generation is not 'done' until it has a verdict. Pass the cgt-* task id (from engine_status) " +
+      "or a clip path. --why is surfaced, not persisted — say it in chat so it lands in the ledger.",
+    inputSchema: {
+      type: "object", required: ["target", "verdict"],
+      properties: {
+        target: { type: "string", description: "cgt-* task id, or path to the .mp4 (resolves via sidecar)" },
+        verdict: { type: "string", enum: ["approved", "rejected"] },
+        why: { type: "string", description: "one-line reason (surfaced to the operator, not stored)" },
+      },
+    },
+    handler: async ({ target, verdict, why }) => {
+      if (!target || !["approved", "rejected"].includes(verdict))
+        return errText("engine_verdict needs target (cgt-* id or clip path) and verdict = approved|rejected");
+      const args = ["gen-verdict.mjs", target, verdict];
+      if (why) args.push("--why", why);
+      const r = await run("node", args, { timeoutMs: 30000 });
+      return (r.code === 0 ? okText : errText)(r.out || r.err || "(no output)");
+    },
+  },
+
   // ---- knowledge-graph tools: evolve the graph fast, through the MCP ----
   kg_list: {
     description: "List the knowledge-graph law banks (seedance25/house/post) with law counts, or " +
