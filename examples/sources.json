@@ -1,22 +1,193 @@
 {
-  "_what": "The 'what we want' library — past reference creatives, organized by TYPE so any generation can pull real examples as targets and @Image references. Each source maps a FOLDER of examples to a (type, subtype, brand); examples.mjs resolves the actual files at query time, so this stays accurate as assets grow. Add a source whenever a new set of good reference work lands.",
+  "_what": "The 'what we want' library \u2014 past reference creatives, organized by TYPE so any generation can pull real examples as targets and @Image references. Each source maps a FOLDER of examples to a (type, subtype, brand); examples.mjs resolves the actual files at query time, so this stays accurate as assets grow. Add a source whenever a new set of good reference work lands.",
   "taxonomy": {
-    "photo": ["meta-ad", "packshot", "hero", "lifestyle", "card", "logo"],
-    "video": ["ugc-talking-head", "product-scene", "campaign"]
+    "photo": [
+      "meta-ad",
+      "packshot",
+      "hero",
+      "lifestyle",
+      "card",
+      "logo"
+    ],
+    "video": [
+      "ugc-talking-head",
+      "product-scene",
+      "campaign"
+    ]
   },
   "sources": [
-    { "dir": "Brand Context/assets/NuLumin_BioSciences/ads/scenes", "type": "photo", "subtype": "meta-ad", "brand": "NuLumin_BioSciences", "note": "caustics/cryo hero ad scenes at 4:5 and 9:16 — Meta creative formats" },
-    { "dir": "Brand Context/assets/Muha_Meds", "type": "photo", "subtype": "meta-ad", "brand": "Muha_Meds", "note": "Win Cash + Challenger, group-truck, raffle-card giveaway creatives" },
-    { "dir": "NuLumin Generated/NuLumin Vial Library", "type": "photo", "subtype": "packshot", "brand": "NuLumin_BioSciences", "note": "66-SKU vial library, transparent + white background" },
-    { "dir": "NuLumin Generated/White BG Powder", "type": "photo", "subtype": "packshot", "brand": "NuLumin_BioSciences", "note": "powder-filled vials on clean white" },
-    { "dir": "Brand Context/assets/Dialed_Moods", "type": "photo", "subtype": "packshot", "brand": "Dialed_Moods", "note": "Cognition Elixir 12oz can renders (Blue Glacier etc.)" },
-    { "dir": "NuLumin Generated/Hero Shots v3 (fixed)", "type": "photo", "subtype": "hero", "brand": "NuLumin_BioSciences", "note": "dramatic product hero renders" },
-    { "dir": "Nulumin lifestyle shots", "type": "photo", "subtype": "lifestyle", "brand": "NuLumin_BioSciences", "note": "product in real scenes, 1x1 + 3x4" },
-    { "dir": "Brand Context/assets/NuLumin_BioSciences/ads", "type": "photo", "subtype": "logo", "brand": "NuLumin_BioSciences", "note": "logo_black / logo_white marks" },
-    { "dir": "inputs", "type": "photo", "subtype": "card", "brand": "Muha_Meds", "note": "Golden Hour QR card side (own-brand card reference)" },
-    { "dir": "generations/sol-card-scene", "type": "photo", "subtype": "card", "brand": "Muha_Meds", "note": "Sol holding the Golden Hour card — composed UGC first frames" },
-    { "dir": "Avatars/Sol/takes", "type": "video", "subtype": "ugc-talking-head", "brand": null, "note": "Sol UGC selfie clips (Soul -> 1.5-pro)" },
-    { "dir": "generations/muha-goldenhour-house", "type": "video", "subtype": "ugc-talking-head", "brand": "Muha_Meds", "note": "Golden Hour UGC 30s talking head" },
-    { "dir": "generations/sol-card-ugc", "type": "video", "subtype": "ugc-talking-head", "brand": "Muha_Meds", "note": "Sol + card UGC (approved avatar)" }
+    {
+      "dir": "Brand Context/assets/NuLumin_BioSciences/ads/scenes",
+      "type": "photo",
+      "subtype": "meta-ad",
+      "brand": "NuLumin_BioSciences",
+      "note": "caustics/cryo hero ad scenes at 4:5 and 9:16 \u2014 Meta creative formats"
+    },
+    {
+      "dir": "Brand Context/assets/Muha_Meds",
+      "type": "photo",
+      "subtype": "meta-ad",
+      "brand": "Muha_Meds",
+      "note": "Win Cash + Challenger, group-truck, raffle-card giveaway creatives"
+    },
+    {
+      "dir": "NuLumin Generated/NuLumin Vial Library",
+      "type": "photo",
+      "subtype": "packshot",
+      "brand": "NuLumin_BioSciences",
+      "note": "66-SKU vial library, transparent + white background"
+    },
+    {
+      "dir": "NuLumin Generated/White BG Powder",
+      "type": "photo",
+      "subtype": "packshot",
+      "brand": "NuLumin_BioSciences",
+      "note": "powder-filled vials on clean white"
+    },
+    {
+      "dir": "Brand Context/assets/Dialed_Moods",
+      "type": "photo",
+      "subtype": "packshot",
+      "brand": "Dialed_Moods",
+      "note": "Cognition Elixir 12oz can renders (Blue Glacier etc.)"
+    },
+    {
+      "dir": "NuLumin Generated/Hero Shots v3 (fixed)",
+      "type": "photo",
+      "subtype": "hero",
+      "brand": "NuLumin_BioSciences",
+      "note": "dramatic product hero renders"
+    },
+    {
+      "dir": "Nulumin lifestyle shots",
+      "type": "photo",
+      "subtype": "lifestyle",
+      "brand": "NuLumin_BioSciences",
+      "note": "product in real scenes, 1x1 + 3x4"
+    },
+    {
+      "dir": "Brand Context/assets/NuLumin_BioSciences/ads",
+      "type": "photo",
+      "subtype": "logo",
+      "brand": "NuLumin_BioSciences",
+      "note": "logo_black / logo_white marks"
+    },
+    {
+      "dir": "inputs",
+      "type": "photo",
+      "subtype": "card",
+      "brand": "Muha_Meds",
+      "note": "Golden Hour QR card side (own-brand card reference)"
+    },
+    {
+      "dir": "generations/sol-card-scene",
+      "type": "photo",
+      "subtype": "card",
+      "brand": "Muha_Meds",
+      "note": "Sol holding the Golden Hour card \u2014 composed UGC first frames"
+    },
+    {
+      "dir": "Avatars/Sol/takes",
+      "type": "video",
+      "subtype": "ugc-talking-head",
+      "brand": null,
+      "note": "Sol UGC selfie clips (Soul -> 1.5-pro)"
+    },
+    {
+      "dir": "generations/muha-goldenhour-house",
+      "type": "video",
+      "subtype": "ugc-talking-head",
+      "brand": "Muha_Meds",
+      "note": "Golden Hour UGC 30s talking head"
+    },
+    {
+      "dir": "generations/sol-card-ugc",
+      "type": "video",
+      "subtype": "ugc-talking-head",
+      "brand": "Muha_Meds",
+      "note": "Sol + card UGC (approved avatar)"
+    }
+  ],
+  "gold": [
+    {
+      "path": "generations/muha-goldenhour-house/gh-ugc-house-30s-2026-08-09T02-23-34.mp4",
+      "type": "UGC testimonial / talking-head (organic,",
+      "why": "The house single-take UGC talking-head lane exemplar: 30s, one unbroken shot, 9:16, no captions/logo \u2014 matches the measured house UGC laws (single-take, face-fills-frame, no-on-screen-text)."
+    },
+    {
+      "path": "generations/sol-card-ugc/sol-card-ugc-go-5s-2026-08-09T19-49-04.mp4",
+      "type": "UGC testimonial / talking-head (organic,",
+      "why": "Approved-avatar (Sol) UGC with the Golden Hour card held beside the cheek \u2014 demonstrates the product-in-hand-without-covering-face framing law and the 5s rung of the duration ladder."
+    },
+    {
+      "path": "Avatars/Sol/takes/2026-08-09_first-words-replicate-15pro.mp4",
+      "type": "UGC testimonial / talking-head (organic,",
+      "why": "A clean Sol selfie talking-head take \u2014 the reusable-avatar UGC anchor showing native lip-sync / talking-face-not-hands discipline; the warm frame to start the next video from."
+    },
+    {
+      "path": "Brand Context/assets/Muha_Meds/Win Cash + Challenger.png",
+      "type": "Static ad creative (paid social / Meta a",
+      "why": "The corpus's strongest true conversion static: one dominant offer ('WIN $25,000 CASH + DODGE CHALLENGER'), unambiguous top-to-bottom hierarchy (headline -> logo -> hero car -> cash pile), high luminance/colour contrast on a dark ground, and cleanly gpt-image-2-rendered display type. Caveat: shipped at 3:4 (2160x2880), not the 4:5 feed optimum, and text fills the top ~40% (above the ~1/3 guideline)."
+    },
+    {
+      "path": "Brand Context/assets/NuLumin_BioSciences/ads/scenes/hero_caustics_4x5.jpg",
+      "type": "Static ad creative (paid social / Meta a",
+      "why": "Best product-forward static at the CORRECT feed ratio (4:5): single focal point, strong caustic-light contrast separating the vial from a deep-purple ground, brand colours and label legible. Exemplifies the hero/benefit-stack (retargeting) end of the spectrum. Caveat: no hook, offer, or CTA \u2014 it is a scene-hero, not a full cold-traffic ad; the side-label fine print garbles."
+    },
+    {
+      "path": "Brand Context/assets/Muha_Meds/Members Raffle Card.png",
+      "type": "Promo / giveaway creative (prize, entry ",
+      "why": "Best-in-class exemplar: exact hero prize ('$25,000+ AND DODGE CHALLENGER') shown as photoreal car + cash, the program-name/verification cluster ('MUHA MEMBERS RAFFLE' + faithful MM lockup + 5-star row + 'OFFICIAL ENTRY' badge), and a single CTA ('LEARN MORE'). It carries prize + legitimacy + action in three clean tiers \u2014 the full pattern minus a visible deadline."
+    },
+    {
+      "path": "Brand Context/assets/Muha_Meds/Win Cash + Challenger.png",
+      "type": "Promo / giveaway creative (prize, entry ",
+      "why": "Strong prize-hero exemplar: 'WIN $25,000 CASH + DODGE CHALLENGER' as the dominant element over a photoreal red Challenger + money stacks, with the brand monogram. Good stopping power and specificity, but instructively INCOMPLETE \u2014 no entry mechanic, no CTA, no disclosure/deadline \u2014 so it doubles as the 'poster not an ad' teaching case."
+    },
+    {
+      "path": "Brand Context/assets/Muha_Meds",
+      "type": "Promo / giveaway creative (prize, entry ",
+      "why": "The brand asset folder holds the raffle-card fronts/backs and group-truck giveaway variants (incl. the QR raffle-back carrying 'Scan In Members App. To Redeem 10 Entries!' and 'No Purchase Necessary'), the repo's only real cluster of promo/giveaway entry-mechanic and disclosure work referenced in Muha_Meds.md."
+    },
+    {
+      "path": "Brand Context/assets/NuLumin_BioSciences/ads/scenes/hero_caustics_9x16.jpg",
+      "type": "Commercial / brand video (cinematic ad)",
+      "why": "Best in-repo example of the cinematic-ad LOOK for this type: caustic-lit hero frame, saturated high-contrast grade, 9:16 paid-social ratio. It is a still (a spot frame), not a finished multi-shot video, but it exemplifies the grade and hero-shot register the campaign lane should deliver."
+    },
+    {
+      "path": "Brand Context/assets/NuLumin_BioSciences/ads/scenes/hero_cryo_4x5.jpg",
+      "type": "Commercial / brand video (cinematic ad)",
+      "why": "Same cinematic-ad grade in the 4:5 campaign ratio (the ratio the house campaign/announce lane ships in, per house:ugc-ships-9x16-only which reserves 4:5 for the campaign/b-roll lane). Demonstrates the atmospheric, high-production product-hero beauty shot."
+    },
+    {
+      "path": "Brand Context/assets/Muha_Meds/2026-05-30T23-09-09_muha-group-truck-2x1.png",
+      "type": "Commercial / brand video (cinematic ad)",
+      "why": "A real campaign/announce creative (not UGC) \u2014 closest brand-video-lane still in the corpus, showing multi-subject staged composition and brand-locked framing rather than a single-take selfie."
+    },
+    {
+      "path": "NuLumin Generated/White BG Powder/_contact_sheet.png",
+      "type": "Product shot / packshot (studio product ",
+      "why": "Best e-commerce-packshot exemplar in the corpus: ~30 SKUs on pure white with locked framing, scale, height and soft top-key lighting; color-coded caps are the only variable, powder is visible inside, brand+variant+dose legible. Textbook catalog consistency."
+    },
+    {
+      "path": "NuLumin Generated/White BG Powder/NuL_GHK_50mg_white.png",
+      "type": "Product shot / packshot (studio product ",
+      "why": "Single-SKU version of the same discipline with visible lavender powder \u2014 clean white ground, on-axis, legible NuLumin lockup and dose, soft contact reflection. Good reference for one product filling the frame correctly."
+    },
+    {
+      "path": "NuLumin Generated/NuLumin Vial Library/White",
+      "type": "Product shot / packshot (studio product ",
+      "why": "The 66-SKU white-background vial library \u2014 the scaled proof of cross-SKU consistency and the resolver's canonical packshot source; strong catalog-grid read."
+    },
+    {
+      "path": "Brand Context/assets/Dialed_Moods/Blue-Glacier.png",
+      "type": "Product shot / packshot (studio product ",
+      "why": "Best floating-can packshot: 3/4 turn, clean white ground, soft gradient body reflection, bold legible DIALED lockup. Doubles as the canonical LEGIBILITY-FAILURE reference \u2014 truncated 'YOUR FULL POTE\u2026' and garbled ingredient lines show the small-type melt to avoid."
+    },
+    {
+      "path": "NuLumin Generated/Hero Shots v3 (fixed)/retail/_CONTACT_retail66.png",
+      "type": "Product shot / packshot (studio product ",
+      "why": "The corpus's attempt at a hero lane \u2014 vials on colored ground strips with reflection. Useful as a reference for what is NOT yet a true hero (it is a white-BG packshot on a color chip, lacking directional key, gradient sweep and negative-fill edge definition), i.e. it marks the gap more than it fills it."
+    }
   ]
 }

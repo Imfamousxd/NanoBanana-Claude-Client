@@ -64,7 +64,13 @@ if (cmd === "types") {
     for (const f of s.files) console.log(`   ${f}`);
   }
   if (!result.length) console.log("(sources matched but no files on disk yet)");
+} else if (cmd === "gold") {
+  // curated best-in-class references per type (from craft/CREATIVE-RUBRICS research)
+  const t = arg("type");
+  const g = (CAT.gold || []).filter((x) => !t || x.type.toLowerCase().includes(t.toLowerCase()));
+  for (const x of g) console.log(`▸ ${x.type}\n   ${x.path}\n   ${x.why}\n`);
+  console.log(`${g.length} gold reference(s)${t ? ` for "${t}"` : ""} — the targets to emulate (see craft/CREATIVE-RUBRICS.md)`);
 } else {
-  console.error("usage: examples.mjs types | find --type <photo|video> [--subtype <s>] [--brand <B>] [--limit N] [--json]");
+  console.error("usage: examples.mjs types | find --type <photo|video> [--subtype <s>] [--brand <B>] [--limit N] [--json] | gold [--type <t>]");
   process.exit(1);
 }

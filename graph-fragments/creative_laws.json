@@ -1,0 +1,213 @@
+{
+  "_source": "Synthesized 2026-08-09 by the creative-research-curate workflow (5 high-effort agents: UGC, promo, product-shot, commercial, ad-creative). External best-practice research \u2014 confidence 'documented' unless it restates a measured house law. Promote to 'measured' only after an A/B on our own endpoint.",
+  "creative_laws": {
+    "ugc:hook-rate-35pct-gates-scale": {
+      "claim": "A UGC ad's 3-second hook rate (3s views / impressions) must clear ~35% before scaling spend; below that the hook is broken and nothing downstream matters. It is the primary kill/keep metric, not CTR or CVR.",
+      "evidence": "2026 UGC playbooks converge on >35% 3s hook-rate as the scale threshold and state the first 1-3s decides whether the rest is watched (gethookd, vidovo, koro).",
+      "counterexamples": "Threshold is platform- and price-point-dependent and NOT measured on our own endpoint; a high-consideration product may scale on a lower hook rate with strong hold.",
+      "applies_to": "measurement",
+      "confidence": "documented",
+      "source": "gethookd.ai 7-best-ugc-2026; vidovo.com ugc-hook-first-3-seconds; getkoro.app ugc-hooks 2026"
+    },
+    "ugc:failed-attempts-beat-buys-believability": {
+      "claim": "Insert an explicit 'failed attempts' beat ('I tried X and Y and nothing worked...') between problem and discovery. Without it the arc reads too clean and less believable; with it the testimonial reads as lived experience.",
+      "evidence": "2026 script-structure guides prescribe hook -> problem -> failed attempts -> discovery -> result -> soft CTA and call the failed-attempts beat the specific realism lever (shortgenius, retiplex, admove).",
+      "counterexamples": "Adds length; in a 5-10s cut there may be no room, so it is a 20s+ structural law, not a universal one. Not A/B-tested on our corpus.",
+      "applies_to": "script",
+      "confidence": "documented",
+      "source": "shortgenius.com script-templates-2026; retiplex.com ugc-ad-script-guide; admove.ai how-to-create-ugc-ads"
+    },
+    "ugc:soft-cta-beats-hard-cta": {
+      "claim": "Close on a recommendation-style soft CTA ('check it out if you're dealing with the same thing'), never an imperative 'Buy now'. A hard CTA breaks the peer-to-peer authenticity the rest of the ad built and signals 'ad'.",
+      "evidence": "Multiple 2026 sources state 'soft beats hard' and that aggressive CTAs collapse the authenticity UGC depends on (retiplex, inbeat, thebrief).",
+      "counterexamples": "Direct-response accounts with a promo/deadline sometimes need an explicit offer CTA; the softness trades measured urgency for perceived authenticity.",
+      "applies_to": "script",
+      "confidence": "documented",
+      "source": "retiplex.com ugc-ad-script-guide; inbeat.agency tiktok-ugc; thebrief.ai ugc-video-ads-guide"
+    },
+    "ugc:polish-is-inversely-correlated-with-performance": {
+      "claim": "In the UGC lane, higher production polish LOWERS performance \u2014 studio lighting, retouched skin, and a colour grade signal 'advertising' and get down-ranked by both viewers and the feed algorithm. Cap the niceness; native-looking wins.",
+      "evidence": "2026 sources: UGC is ~22% more effective than brand-made video, over-polished content underperforms, platforms boost organic-looking content; corroborated by our house law that skin texture (not grade) carries realism (adconvert, theshortmedia, bambassadors).",
+      "counterexamples": "Some hybrid 'premium UGC' works for luxury/beauty; the law is lane-scoped to organic testimonial, not to all social video. Not measured on our endpoint.",
+      "applies_to": "look",
+      "confidence": "documented",
+      "source": "adconvert.org ugc-style-ai-ads; theshortmedia.com why-ugc-outperform-2025; bambassadors.com native-ugc"
+    },
+    "ugc:rotate-20-to-50-hooks-against-one-body": {
+      "claim": "Fight creative fatigue by testing 20-50 distinct hook openers against the same tested body, rather than re-rolling whole ads or one hook. The hook is the highest-variance, fastest-fatiguing element, so hook volume is the account-level lever.",
+      "evidence": "2026 UGC guidance states relying on a single hook burns budget and that top brands now test 20-50 hook variations programmatically (pixis, influee).",
+      "counterexamples": "Requires a body that is already a proven winner; spraying hooks on a weak body just fails faster. Volume claim is an industry norm, not measured here.",
+      "applies_to": "testing",
+      "confidence": "documented",
+      "source": "pixis.ai ugc-in-2026; influee.co 120-ugc-hooks-2026"
+    },
+    "static-ad:master-at-4x5-1080x1350-for-feed": {
+      "claim": "Build the Meta feed static at 4:5 (1080x1350px) as the master, then export 9:16 (1080x1920) for Stories/Reels and 1:1 (1080x1080) for square-safe placements. 4:5 occupies the most vertical mobile screen and measurably out-CTRs 1:1 and 16:9; never send 16:9 or 2:1 landscape to feed.",
+      "evidence": "2026 Meta spec guides converge: 1080x1350 4:5 is the recommended feed size and advertisers report significantly higher CTR on 4:5 vs square/horizontal because mobile users see more of the ad. Our own best static (Muha 'Win Cash') ships at 3:4/2160x2880 and the group-truck at 2:1 \u2014 neither is the 4:5 optimum.",
+      "counterexamples": "Marketplace and some product-grid placements still accept/prefer 1:1. A 3:4 crop (0.75) is close and not disqualifying, just sub-optimal vs 4:5 (0.8).",
+      "applies_to": "framing",
+      "confidence": "documented",
+      "source": "Hootsuite FB ad sizes 2026; TheOptimizer Meta ad sizes 2026; Surfside PPC Meta image specs 2026; adlibrary Meta ad sizes 2026"
+    },
+    "static-ad:hierarchy-is-the-hook-in-a-still": {
+      "claim": "In a static, the hook is the visual hierarchy of the first frame, not a line of copy. Within ~500ms the single dominant element must communicate both the offer ('what is this') and the audience ('this is for me') before any text is read. Design one unambiguous focal point; two competing elements is the failure mode.",
+      "evidence": "2026 field guides: with no motion, composition and headline do all the work; effective hooks fire a pattern interrupt AND signal category relevance in the same frame within the ~500ms orienting window. Our 'Win Cash' static works because one offer dominates; product heroes with no hook (hero_caustics) stop the eye but state no offer.",
+      "counterexamples": "Retargeting/warm audiences already know the brand, so a product-forward or benefit-stack still with weaker 'audience signalling' can convert on familiarity alone.",
+      "applies_to": "composition",
+      "confidence": "documented",
+      "source": "adlibrary Meta ad creative best practices 2026; adrio 7 best static formats 2026; ROASPIG scroll-stop hooks 2026"
+    },
+    "static-ad:contrast-is-the-motion-substitute": {
+      "claim": "Replace video's motion with high luminance/colour contrast between a foreground subject and its background \u2014 but the contrast must MEAN something (before/after, product-in-use, a reacting face). Decorative contrast underperforms. This is the thumb-stop lever for a still.",
+      "evidence": "2026 guidance: high luminance contrast creates the visual pop that achieves the same attentional effect as motion, and only converts when it 'communicates something'. Corroborated by our house post laws that contrast/acutance above ground truth reads as artefact \u2014 contrast must be structural, not cranked.",
+      "counterexamples": "Minimalist high-key product statics (clean white, low contrast) still work for premium/marketplace framing where the product and price are the message.",
+      "applies_to": "composition",
+      "confidence": "documented",
+      "source": "adlibrary Meta ad creative best practices 2026; cross-ref house post_laws sharpening-is-the-tell"
+    },
+    "static-ad:problem-first-then-product-for-cold": {
+      "claim": "For cold traffic, lead problem-aware and product-second (problem-solution or before-after). Make ONE specific, outcome-tied claim or a concrete social-proof number, not a feature list. Reserve product-forward/benefit-stack statics with visible price+availability for retargeting and marketplace.",
+      "evidence": "2026 DTC analyses: the best cold statics are problem-solution (tell the buyer why to care first); testimonial/benefit-stack are mid/bottom-funnel; specificity wins ('cut 6 hours to 45 minutes' beats 'love it'; '47,000 teams' anchors credibility).",
+      "counterexamples": "Impulse/sweepstakes offers (our 'Win $25,000' static) lead with the offer itself, not a problem, and that is correct for that objective; strong brand recognition also lets product-first work cold.",
+      "applies_to": "structure",
+      "confidence": "documented",
+      "source": "adlibrary best DTC Meta ads 2026; adrio best static formats 2026; gethookd ecommerce FB ads 2026"
+    },
+    "static-ad:keep-on-image-text-light-and-in-safe-zones": {
+      "claim": "Keep on-image text to roughly one-third of the area or less and place the hook in the centre third; leave ~14% clear at top and ~20-35% clear at bottom for placement UI chrome. Put long-form persuasion in the caption (1-2 sentences, <~125 chars). The 20% rule is gone but lighter text still gets broader delivery.",
+      "evidence": "2026 spec guides: text \u22651/3 coverage measurably narrows delivery even without a policy rule; Meta recommends ~14% top and 20-35% bottom safe zones for vertical; captions truncate near 125 chars. Our UGC lane already runs zero burned-in text \u2014 this law governs the graphic/offer lane instead.",
+      "counterexamples": "Offer/sweepstakes statics (WIN $25,000) intentionally run large-type-dominant and still perform when the type IS the single hook; the guidance is about competing/dense text, not one bold headline.",
+      "applies_to": "captions",
+      "confidence": "documented",
+      "source": "WebSearch Meta 4:5 safe-zone/text 2026 (Hootsuite, adlibrary); adlibrary Meta creative best practices 2026"
+    },
+    "giveaway:prize-specific-and-hero-or-it-reads-scam": {
+      "claim": "The prize must be named exactly (brand + model + dollar value), shown as a photoreal object, and be the single largest element. Specificity and brand-plausible scale are the primary legitimacy signal; a vague or implausible prize is the #1 scam tell.",
+      "evidence": "RafflePress/Cash App scam-detection guides list 'unrealistic prizes' and 'vague prize descriptions' as top red flags and 'exact prize descriptions aligned with the brand' as the top legitimacy signal. Landing-page best practice puts a clear prize headline + prize image above the fold as one of four required elements. Our own Muha 'Win $25,000 Cash + Dodge Challenger' assets lead with the exact figure and a photoreal car+cash.",
+      "counterexamples": "External best practice, not measured on our endpoint. For mystery-box/'surprise' promos a deliberately withheld prize can be the hook \u2014 but even those name a floor value.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "rafflepress.com/how-to-spot-a-fake-giveaway, cash.app/learn scam guide, rafflepress giveaway-landing-page-examples (2026)"
+    },
+    "giveaway:show-the-entry-mechanic-or-its-a-poster": {
+      "claim": "A giveaway creative must show the ONE action to enter (on-image line or CTA) and route to a near-zero-friction destination (two-field name+email standard). Without a visible mechanic it drives awareness, not entries; every added required task lowers completion and raises the scam read.",
+      "evidence": "KickoffLabs/RafflePress: high-converting giveaway pages use a two-field form and a single clear entry action; giveaway pages convert 25-35% of visitors. Scam guides flag 'excessive entry tasks (download app, refer 10 friends, 20-page survey)' as a red flag. Our Members Raffle Card carries 'LEARN MORE'; the QR raffle-back carries 'Scan In Members App. To Redeem 10 Entries!'.",
+      "counterexamples": "External best practice, not measured on our endpoint. Comment-to-enter organic mechanics differ from paid-social lead capture and can invert some rules.",
+      "applies_to": "structure",
+      "confidence": "documented",
+      "source": "kickofflabs.com giveaway-landing-page-best-practices, rafflepress giveaway-landing-page-examples, cash.app scam guide (2026)"
+    },
+    "giveaway:disclosure-is-a-trust-signal-not-fine-print": {
+      "claim": "'No Purchase Necessary', an age gate where the product is regulated, and an Official-Rules/AMOE reference are legibly present ON the creative or its immediate destination. For chance-based sweeps this is FTC/Meta-required, and its PRESENCE is a positive trust cue that real entrants look for \u2014 not merely legal boilerplate to hide.",
+      "evidence": "FTC requires no-purchase for chance-based sweeps and clear/conspicuous disclosure of material terms; Meta Promotion Guidelines (updated late 2025) govern all IG/FB promos. Scam guides: 'if there are no Official Rules it's almost always a scam.' Our Muha giveaway spec mandates 'No Purchase Necessary' + 21+ on giveaway assets.",
+      "counterexamples": "External/legal best practice, not measured on our endpoint. Skill-contest (non-chance) promos are not required to carry 'No Purchase Necessary'.",
+      "applies_to": "structure",
+      "confidence": "documented",
+      "source": "viralsweep.com/blog/no-purchase-necessary, auditsocials.com 2026 compliance guide, revup.com Instagram giveaway rules 2026, Muha_Meds.md giveaway spec"
+    },
+    "giveaway:polished-without-verification-reads-more-scammy": {
+      "claim": "Slick graphics ALONE increase the scam read; the offsetting cue is a legitimacy cluster \u2014 faithful brand lockup, an 'OFFICIAL ENTRY'/program-name badge, and a verified-identity/rules reference. Reproduce the wordmark from the real file; a garbled logo or misspelling is the strongest visual scam tell.",
+      "evidence": "Sweeppea/RafflePress: 'fake sweepstakes now come wrapped in polished graphics and real brand logos'; legitimacy signals are verified accounts, consistent branding, and detailed rules; red flags are garbled logos/typos and unverified identity. Our Muha spec bans inventing the Members wordmark and lists specific spellings that 'burned before'.",
+      "counterexamples": "External best practice, not measured on our endpoint. Verification cues on the creative are weaker than a genuinely verified posting account; the badge helps but the handle is the real proof.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "sweeppea.com trust-center, rafflepress how-to-spot-a-fake-giveaway, Muha_Meds.md exact-spellings rule"
+    },
+    "giveaway:urgency-needs-a-dated-deadline-not-adjectives": {
+      "claim": "Urgency must be a concrete deadline or countdown ('Ends Aug 31' / live timer), placed prominently. A dated close lifts entries double digits and reads legitimate; vague or extreme false urgency ('act in 60 minutes!!!') is itself a documented scam signal.",
+      "evidence": "RafflePress/KickoffLabs: a visible countdown to the closing deadline 'regularly lifts entries by double digits' and should be visible without scrolling. Scam guides: 'scam notifications create false urgency'; 'real winners have reasonable claim windows \u2014 24-72 hours, not 60 minutes.'",
+      "counterexamples": "External best practice, not measured on our endpoint. An always-on evergreen promo has no single deadline and instead uses 'monthly draw' cadence.",
+      "applies_to": "structure",
+      "confidence": "documented",
+      "source": "rafflepress.com/giveaway-landing-page-examples, kickofflabs.com best-practices, liveabout.com sweepstakes warning signs (2025-26)"
+    },
+    "commercial:hook-product-and-tension-in-first-2s": {
+      "claim": "In the campaign/brand-video lane, the product and a tension or benefit must be legible in the opening frame and within ~1.5\u20132s; the hook cannot arrive on a slow build the way it does in the house UGC lane.",
+      "evidence": "External 2026 paid-social guidance is unanimous that the first 1.5\u20133s decide retention (71% decide in the first few seconds; hook + product in the opening frames for direct response). This directly conflicts with house:hook-lands-later-than-the-generic-law (house UGC hooks at median 5.1s) \u2014 the conflict is real and scoped: late hooks survive on a talking head, not on a scroll-stopping cut-driven spot.",
+      "counterexamples": "Brand-building TVC-style films tolerate a 3\u20135s atmospheric open; the 2s rule is a direct-response paid-social rule, not a film-festival one.",
+      "applies_to": "structure",
+      "confidence": "documented",
+      "source": "vidico.com/news/creative-video-ads, adligator.com/blog/facebook-ad-creative-trends-2026, marketingltb.com short-form stats 2026"
+    },
+    "commercial:shot-ladder-establish-detail-reaction-hero": {
+      "claim": "A high-production short spot is built from a repeatable shot ladder \u2014 at minimum one establishing/wide, one macro/detail insert, one human reaction close-up, one movement shot \u2014 with a macro-to-wide scale transition doing the 'quality proof' that copy would otherwise carry.",
+      "evidence": "External: ~71% of premium product videos use extreme macro-to-wide scale transitions to prove material density; the repeatable system named is establishing moment + one reaction close-up + one detail insert + one movement shot. Builds on sd25:timed-beats-drive-multi-shot-inside-one-generation and sd25:camera-move-vocabulary-one-primary (one camera move per shot).",
+      "counterexamples": "29% of premium product videos hold a consistent medium focal length; and the house UGC lane is deliberately single-shot (house:ugc-lane-is-one-unbroken-take) \u2014 the ladder is a campaign-lane law only.",
+      "applies_to": "structure",
+      "confidence": "documented",
+      "source": "advids.co/blog/30-cinematic-product-video-examples, graphicdesignjunction.com video-motion-trends-2026"
+    },
+    "commercial:cut-to-the-track-not-the-clock": {
+      "claim": "Edit the campaign lane to the music \u2014 cuts land on beats at a roughly even ~4.3s average shot length across ~7 shots in 30s \u2014 and reserve the strongest hero/beauty shot for immediately before the CTA.",
+      "evidence": "External 2026 editing guidance: 'each beat triggers a motion / a cut', premium pacing is slow prep resolving into the hero. Matches the repo's OWN measured campaign rhythm in house:campaign-lane-cuts-every-4-3s (GOLDEN-HOUR-ANNOUNCE, 7 shots, 4.27s ASL) \u2014 this law generalizes that single measured point with the external craft rationale.",
+      "counterexamples": "House measurement is effectively n=2 (one piece in two ratios); ASL is a guide, not a metronome \u2014 a deliberate long hold on the hero is allowed and often wanted.",
+      "applies_to": "edit",
+      "confidence": "documented",
+      "source": "becreatives.co/video-editing-ideas, house_laws house:campaign-lane-cuts-every-4-3s"
+    },
+    "commercial:legible-with-sound-off-captions-belong-here": {
+      "claim": "The campaign lane must read fully with sound off \u2014 visual story plus burned-in captions \u2014 which is the exact INVERSE of the house UGC rule that bans on-screen text; captions are structural in the campaign lane and forbidden in the UGC lane.",
+      "evidence": "External: 75%+ of mobile video is watched muted; TikTok captions lift recall ~58% and brand affinity ~95%. This explicitly contradicts house:no-on-screen-text-in-the-ugc-lane \u2014 recording the conflict is the point: the two lanes have opposite caption rules and must not be conflated.",
+      "counterexamples": "A caption that duplicates clear VO on an already-legible visual adds clutter; captions serve comprehension, not decoration. Feed placements with strong autoplay-sound contexts weaken the effect.",
+      "applies_to": "captions",
+      "confidence": "documented",
+      "source": "cinerads.com/blog/meta-ads-video-creative-best-practices, we3media.us best-video-length-2026"
+    },
+    "commercial:one-graded-look-neutralize-then-push": {
+      "claim": "Deliver a single saturated, higher-contrast graded look across every shot; first neutralize the per-back-end global colour cast, then push the grade deliberately \u2014 a cast left on, or shots that don't match, is the amateur tell.",
+      "evidence": "External: color grading is named as the divider between amateur and professional, and ad looks run more saturated/high-contrast than documentary. Builds on Pattern F (--neutralize removes the generated wash) and does NOT duplicate the post_laws, which only cover resolution conform/scaling (lanczos p5) and grain \u2014 not the creative grade.",
+      "counterexamples": "Some brand systems mandate a flat/desaturated look (luxury, clinical); 'saturated high-contrast' is the default DR ad register, not a universal.",
+      "applies_to": "post",
+      "confidence": "documented",
+      "source": "vivamedia.ca/blog/advertising-video-production, 50pros.com video-production-process-2026, Pattern F"
+    },
+    "commercial:brand-locked-cta-card-and-real-hero-art": {
+      "claim": "Close on a brand-locked CTA card in the final 2\u20134s (logo + one action), and carry product/hero fidelity from real brand art composited into a reserved clean plate rather than from a video model's rendering.",
+      "evidence": "External: the hook-problem-solution-proof-CTA framework ends on an explicit CTA/end card. Repo rules: never leave a surface bare or the model invents marks (golden rule 5); compositing a flat logo/QR onto a reserved area is the allowed exception to never-paste (golden rule 2); video models drift on product fidelity (golden rule 10, sd25 first-frame/reference laws).",
+      "counterexamples": "Pure brand-awareness films sometimes withhold an explicit CTA for a single end logo; and over-designed end cards that add a second action reduce click-through.",
+      "applies_to": "structure",
+      "confidence": "documented",
+      "source": "vidico.com/news/creative-video-ads, CLAUDE.md golden rules 2/5/10"
+    },
+    "packshot:ecommerce-hero-is-255-white-and-85-percent-fill": {
+      "claim": "A marketplace main/packshot image must be pure white RGB 255,255,255 (not off-white or grey), product filling ~85% of the frame, upright and on-axis, with no added text or props. This is a hard marketplace gate, not a style preference.",
+      "evidence": "Amazon 2026 requirements: hero image pure white RGB 255,255,255, product fills at least 85% of frame, no text; \u22651000px long side minimum, 1600px+ recommended to enable PDP zoom. Corpus 'NuLumin Generated/White BG Powder' meets the white/on-axis/fill spec across 66 SKUs.",
+      "counterexamples": "The hero/paid-social lane deliberately breaks this (gradient/dark ground, off-center for copy) \u2014 the law is scoped to the e-commerce/marketplace lane only. 255-flat white also removes grounding, so it trades realism for compliance.",
+      "applies_to": "framing",
+      "confidence": "documented",
+      "source": "acquireconvert.com Amazon 2026 guide + soona.co Amazon image specs, 2026-08"
+    },
+    "packshot:key-45-fill-50-70-percent-opposite": {
+      "claim": "Model product form with a key at ~45\u00b0 to one side and a fill/bounce at ~45\u00b0 opposite at 50\u201370% of key intensity. The resulting lit-side/shadow-side gradient is what separates premium from the flat frontal look; specify a light direction, do not ask for 'good lighting'.",
+      "evidence": "Squareshot and multiple 2026 studio guides converge on 45\u00b0 key + opposite fill at 50\u201370% of key. Corroborated by the repo's own video-lighting instinct in house_laws (shadow side keeps texture, does not lift). Amateur diagnosis: flat, shadowless, evenly-blown frames.",
+      "counterexamples": "Small hard-lit jewelry/metal is a deliberate exception (hard light for sparkle). Light-tent/shadowless setups intentionally violate this for tiny reflective parts.",
+      "applies_to": "lighting",
+      "confidence": "documented",
+      "source": "squareshot.com product-lighting guide + omi.so, 2026-08"
+    },
+    "packshot:negative-fill-defines-glossy-and-glass-edges": {
+      "claim": "For glass, gloss and metal, do not try to remove reflections \u2014 make them one clean intentional shape by diffusing the key large, and place a black flag/card close to the product opposite the key. Negative fill draws the crisp dark edge; without it glass reads milky and washed out.",
+      "evidence": "Multiple 2026 glass-bottle guides (Outshinery, prophotostudio, Amateur Photographer): soft broad key at 45\u00b0 + fill + rim + a black flag on the far side; 'without negative fill, glass bottles look milky and washed out.' The corpus vials (Vial Library / White BG Powder) are clean but read slightly milky/flat at the edges \u2014 the visible symptom of missing negative fill.",
+      "counterexamples": "Pure-white e-commerce backgrounds fight negative fill (the white wraps and fills the shadow side back in); the edge-definition trick shows best on gradient/dark hero grounds.",
+      "applies_to": "lighting",
+      "confidence": "documented",
+      "source": "outshinery.com + prophotostudio.net glass guides, 2026-08"
+    },
+    "packshot:legibility-outranks-drama-and-ai-melts-fine-type": {
+      "claim": "In the e-commerce lane, correct legible label type beats lighting drama for conversion, and generated packshots reliably melt/garble small label text. Turn the product so the primary name faces the key, keep it hotspot-free, and compose fine ingredient/legal type out of the hero read (or composite it back on a reserved clean panel) rather than shipping garbled type.",
+      "evidence": "The Dialed_Moods Blue-Glacier can render shows the failure directly: 'YOUR FULL POTE\u2026' truncated and ingredient lines garbled while the big DIALED lockup reads fine \u2014 exactly the small-type melt CLAUDE.md rule 5 warns about for Gemini. Amazon guidance: secondary close-ups exist specifically to carry detail the main image can't.",
+      "counterexamples": "gpt-image-2 is documented in CLAUDE.md rule 5 to set small lowercase type accurately (DIALED/HEALTH ECG lockup, 4/4 clean) \u2014 so the melt is back-end-specific, not universal. Regulated categories may legally require the fine print visible, forcing a composite rather than a crop.",
+      "applies_to": "text",
+      "confidence": "documented",
+      "source": "corpus Dialed_Moods/Blue-Glacier.png + CLAUDE.md rule 5 + Amazon secondary-image guidance, 2026-08"
+    },
+    "packshot:ground-it-or-a-hard-cutout-halo-betrays-it": {
+      "claim": "Anchor the product with a consistent contact shadow or a soft mirror reflection, or commit to a deliberate soft-falloff float. A hard-edged cutout floating in white with a fringe/halo is the loudest composited/generated tell and reads as amateur regardless of how good the product looks.",
+      "evidence": "2026 packshot guides: natural drop shadow or mirror reflection added in-camera on a reflective surface or in post is a defining premium trait. Corpus hero/white-BG vials use only a faint reflection; the cleanest reads are the ones with a visible soft contact reflection under the base.",
+      "counterexamples": "Some marketplaces prefer a shadowless float for the main image, and a deliberate clean float with soft edge falloff is legitimate \u2014 the failure is specifically the HARD-edged halo, not the absence of a shadow.",
+      "applies_to": "compositing",
+      "confidence": "documented",
+      "source": "marszalstudio.pl + 3dimages.ai packshot 2026 guides, 2026-08"
+    }
+  }
+}
