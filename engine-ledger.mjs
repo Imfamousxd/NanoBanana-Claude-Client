@@ -11,8 +11,9 @@
 
 import fs from "fs";
 import path from "path";
+import { repoRoot } from "./lib-repo-root.mjs";
 
-const REPO = "/Users/Hassoonie/Desktop/CODE PROJECTS/NanoBanana-Client";
+const REPO = repoRoot();
 const TABLE = "engine_generations";
 const TIMEOUT_MS = 20000;
 

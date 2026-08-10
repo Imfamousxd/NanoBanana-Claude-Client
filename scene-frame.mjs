@@ -25,9 +25,10 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { repoRoot } from "./lib-repo-root.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const REPO = "/Users/Hassoonie/Desktop/CODE PROJECTS/NanoBanana-Client";
+const REPO = repoRoot();
 for (const line of fs.readFileSync(path.join(REPO, ".env"), "utf-8").split("\n")) {
   const m = line.match(/^\s*([\w]+)\s*=\s*(.+?)\s*$/);
   if (m && !process.env[m[1]]) process.env[m[1]] = m[2];
