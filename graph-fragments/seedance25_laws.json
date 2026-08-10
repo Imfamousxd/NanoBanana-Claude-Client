@@ -249,6 +249,38 @@
       "applies_to": "prompt",
       "confidence": "documented",
       "source": "OFFICIAL + practitioner guides, cross-corroborated 2026-08-09 (Seedance 2.0 formula carries to 2.5): help.apiyi.com 6-step guide, vidmuse, segmind, seed.bytedance.com. Structure/keyword rules are well-attested; validate exact effects on our endpoint."
+    },
+    "sd25:reference-authority-per-modality": {
+      "claim": "Give each reference ONE job and say so: @Image N = identity/prop/location/style; @Video N = ONLY motion/camera/timing/cuts (do NOT inherit its people/setting/text/style/audio); @Audio N = ONLY voice/dialogue/music/ambience/effects. One asset = one explicit job, numbered by upload order; reject unwanted attributes explicitly; on conflict, name priority by attribute. Capacity: 50 total refs — 30 images (to 4K), 10 videos, 10 audio per 30s; ratio 0.4-2.5.",
+      "evidence": "Seedance 2.5 guide sections 1-2. Extends our MEASURED @Image law (sd25:reference-citation-with-at-notation) with the @Video/@Audio job-split and the 'video ref = motion only, do not inherit' rule.",
+      "counterexamples": "DOCUMENTED, not measured here — we have only A/B'd @Image single-ref (comparable to prose). The @Video motion-only behaviour and the 50/30/10/10 capacity are unproven on our endpoint; validate before trusting.",
+      "applies_to": "reference_engineering",
+      "confidence": "documented",
+      "source": "Seedance 2.5 Prompt Guide infographic — 'official ByteDance + BytePlus guidance, with production synthesis' — shared by the operator 2026-08-09 (via @ErnestoSOFTWARE). DOCUMENTED, not yet measured on dreamina-seedance-2-5-260628."
+    },
+    "sd25:locked-vs-unlocked-workflow": {
+      "claim": "Choose the workflow by whether references GUIDE or CONTROL. UNLOCKED = references only guide (subject/motion/style/audio/storyboard/keyframes). LOCKED = inputs control the timeline or geometry: EDIT (ratio=adaptive, duration=-1, declare the source video the sole master), FIRST+LAST FRAME (ratio=adaptive, first_frame/last_frame roles, matched image ratios), EXTEND (ratio=adaptive, set duration, name the source, MOV recommended).",
+      "evidence": "Seedance 2.5 guide sections 3 + 8. Aligns with our measured ratio-must-be-adaptive-with-a-first-frame and extension-only-accepts-25-born-humans.",
+      "counterexamples": "Documented framing; edit/storyboard/keyframes workflows and the MOV recommendation are unverified on our endpoint.",
+      "applies_to": "workflow",
+      "confidence": "documented",
+      "source": "Seedance 2.5 Prompt Guide infographic — 'official ByteDance + BytePlus guidance, with production synthesis' — shared by the operator 2026-08-09 (via @ErnestoSOFTWARE). DOCUMENTED, not yet measured on dreamina-seedance-2-5-260628."
+    },
+    "sd25:continuity-locks-and-handoffs": {
+      "claim": "For a multi-stage 30s generation, explicitly LOCK the carryover set: exact count, identity, clothing, prop owner + which hand, position, screen direction, environment, lighting/weather, damage/state, camera axis, audio source. Write every change as a handoff — BEFORE state -> the transfer moment -> AFTER state — and make each new stage BEGIN from the previous stage's visible end state (no teleporting).",
+      "evidence": "Seedance 2.5 guide sections 4-5. Complements measured identity-holds-across-a-single-30s-take + timed-beats with an explicit carryover checklist and the before/transfer/after pattern.",
+      "counterexamples": "Documented technique, not measured here — our measured identity result is single-take, not multi-stage-with-props; the handoff pattern is untested.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "Seedance 2.5 Prompt Guide infographic — 'official ByteDance + BytePlus guidance, with production synthesis' — shared by the operator 2026-08-09 (via @ErnestoSOFTWARE). DOCUMENTED, not yet measured on dreamina-seedance-2-5-260628."
+    },
+    "sd25:audio-syntax-tags": {
+      "claim": "Tag audio by kind so layers separate: (music) for BGM, <effects/ambience> for sound design, {dialogue} for speech, [subtitles] for on-screen text. Give each speaker a language/accent + delivery, and explicitly REJECT unwanted reference audio, subtitles, or BGM. (Our MEASURED house rule still governs talking heads: generate_audio true + music-only exclusion.)",
+      "evidence": "Seedance 2.5 guide section 7.",
+      "counterexamples": "Documented syntax — we have NOT verified the literal tag characters ((), <>, {}, []) are honoured on dreamina-seedance-2-5-260628 vs plain prose. A/B before trusting the tags.",
+      "applies_to": "prompt",
+      "confidence": "documented",
+      "source": "Seedance 2.5 Prompt Guide infographic — 'official ByteDance + BytePlus guidance, with production synthesis' — shared by the operator 2026-08-09 (via @ErnestoSOFTWARE). DOCUMENTED, not yet measured on dreamina-seedance-2-5-260628."
     }
   }
 }
