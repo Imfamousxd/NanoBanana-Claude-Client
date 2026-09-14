@@ -88,6 +88,11 @@ npm test
 Fix every error. Read every warning and decide deliberately — most of them mean "this will look
 wrong to a client", not "this is a style nit".
 
+Every `sources[]` entry and every node in `knowledge/graph.json` carries `categories` (or a single
+`category`): `brand`, `brand-pack`, `product-assets`, `ugc`, `compliance`, `characters`, `providers`,
+`memes`. A new source without one is invisible to scoped queries. Add a `context-category` node when
+you introduce a new category, with `description` and `entry` (the document a newcomer reads first).
+
 ### 6. Write the format document last
 
 Once you have produced real work for the brand, go back and fill in `FORMATS.md`: the invariant

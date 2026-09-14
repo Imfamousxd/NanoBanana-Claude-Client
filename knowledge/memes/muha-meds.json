@@ -1,0 +1,3606 @@
+{
+
+"$comment": "meme-registry/1 — the Muha Meds meme knowledge graph. Everything an agent needs to recreate a sent meme or build a new one around a Muha device: which device body (and its verbatim prompt block), which meme GRAMMAR the joke uses, which PIPELINE + PROVIDER will actually accept the source material, where templates can be sourced with provenance, every meme shipped so far with its card geometry, and the law bank measured across those builds. Paths are repo-relative; `Muha Memes/` is LOCAL-ONLY (ignored by the curated .gitignore), so template/asset paths resolve on the build machine, not on a fresh clone. Retrieval: `npm run content -- knowledge query \"muha meme <grammar|template|device>\" --brand muha`. Operator doc: docs/IMAGE_KNOWLEDGE_GRAPH.md (Meme registry section) + Muha Memes/HANDOFF__MUHA_MEMES.md.",
+
+"schema": "meme-registry/1",
+
+"brand": "brand.muha",
+
+"displayName": "Muha Meds meme system",
+
+"updatedAt": "2026-09-14",
+
+"workflow": [
+ "1. Classify the source: still or video; which IP class (see sourcing.ipClasses); which grammar (grammars[]) the joke runs on; which device body the brief names (devices[]).",
+ "2. Measure the card before anything else — canvas, caption ink, image band, watermark — and record it in the template entry. Cards differ every time (white 16:9 band, black 2.39:1 band, square band, multi-panel stills).",
+ "3. Pick the pipeline by source class + grammar (pipelines[] `when`), and the provider from providers[] — never conclude a route is blocked without running a control (law meme:control-before-concluding).",
+ "4. Pass the device by REFERENCE (registry devices[].refs) plus its verbatim deviceBlock. Never describe a device from memory; never composite/PIL-paste it into the frame.",
+ "5. Generate 3-4 candidates per hypothesis; diff them against the template to catch reframes; check every hand grips, every badge fits its face, and no type was invented.",
+ "6. Captions, labels, watermarks and legal lines are composed deterministically AFTER generation (card.py / memecard.sh / buildcard.py) — exact strings, never model-drawn.",
+ "7. Record the shipped file under templates[].outputs, add new rejections as laws, and keep the SKU shown to a real one (devices[].skus)."
+],
+
+"devices": [
+
+{
+ "id": "mm-aio-slim",
+ "name": "Muha Meds all-in-one disposable (slim slab)",
+ "aka": [
+  "muha pen",
+  "penjamin",
+  "all-in-one",
+  "the slim device"
+ ],
+ "geometry": "3.3:1 tall slim flat slab, constant width top to bottom (NOT tapered/conical/cigar/bullet), gold dome cap, gold interlocking-M crest medallion; optional ONE flavour badge below the medallion. Real devices carry NO vertical MUHA MEDS wordmark — the wordmark is wrong on every meme from 2026-08-20 on.",
+ "refs": [
+  {
+   "path": "Cactus Cloud x Muha/Blue Slushie with Device.png",
+   "role": "canonical",
+   "note": "4000x5000 master; CROP the device out so the packaging box never leaks into a scene"
+  },
+  {
+   "path": "Muha Memes/Pole/refs/device.png",
+   "role": "canonical",
+   "note": "the device-only crop used by every 2026-08-20+ still meme"
+  },
+  {
+   "path": "Muha Memes/YachtGoldenHour/refs/pen_plain.png",
+   "role": "shape",
+   "note": "PLAIN crop — use for v2v when a rich render pushes the camera in (law meme:ref-drives-framing)"
+  },
+  {
+   "path": "Muha Memes/YachtGoldenHour/refs/device-rich.png",
+   "role": "canonical",
+   "note": "RICH master render at 1:3.35 — drives correct slim proportion; a 1:1.5 crop (pen_capcrest.png) renders a stubby device"
+  }
+ ],
+ "deviceBlocks": [
+  {
+   "variant": "blank",
+   "path": "Muha Memes/Pole/_device.txt",
+   "carries": "gold dome cap + gold interlocking-M crest medallion, nothing else",
+   "use": "any distant, shadowed or in-hand device — badges never survive at those sizes"
+  },
+  {
+   "variant": "flavour",
+   "path": "Muha Memes/Pole/_device_sticker.txt",
+   "carries": "blank + ONE flavour badge (Blue Slushie)",
+   "use": "only when the device is big, near and well lit (post scale)"
+  },
+  {
+   "variant": "all-black",
+   "path": "Muha Memes/Pole/_device_allblack.txt",
+   "carries": "silhouette end of the dial",
+   "use": "only if a plate must be pushed all the way down; the black-and-gold colourway is the brand and 'shadowed' does not mean all black"
+  }
+ ],
+ "spec": "Muha Memes/DEVICE_SPEC.md",
+ "locked": [
+  "Colourway first, lighting second, as separate paragraphs: BLACK AND GOLD as a hard fact, then subordinate it to the plate's light.",
+  "Ban text by category (no wordmark, no lettering, no numbers, no small print) — never spell the brand string inside a negative.",
+  "IDENTICAL COPIES clause holds a multi-panel set together; interpolate the block verbatim, never paraphrase per panel.",
+  "Anchor size to a body part (palm, two fingers, a third of the face), never to the frame; 'about 10cm' alone is ignored."
+ ]
+},
+
+{
+ "id": "mm-gen2x2-magnetic",
+ "name": "Muha Meds GEN 2 x 2 All-in-One Magnetic disposable (two halves)",
+ "aka": [
+  "magnetic dispo",
+  "magnetic",
+  "gen 2 x 2",
+  "two halves",
+  "the pair"
+ ],
+ "geometry": "Two flat slab halves that magnetically join side by side — LEFT matte BLACK, RIGHT polished GOLD — each with a flat duckbill mouthpiece, a tall clear window of bright yellow oil with a centre post, and a glossy flavour badge low on the front. No wordmark on the body. Rounded shoulders: a badge that lands on the shoulder curve is the standard defect.",
+ "refs": [
+  {
+   "path": "Muha Memes/MagneticDispo/assets/",
+   "role": "canonical",
+   "note": "OG_Magnetic_Dispo_{Front|45}_{<PAIR>|b_<PAIR>|g_<PAIR>}.png — joined pair / black half / gold half, 2400x3000 RGBA. Front renders are straight-on = the only undistorted badge source"
+  },
+  {
+   "path": "Muha Memes/MagneticDispo/strains/",
+   "role": "canonical",
+   "note": "official badge art split into Black Device/ (10) and Gold Device/ (10); that split IS the pairing rule"
+  },
+  {
+   "path": "Muha Memes/MagneticDispo/refs/",
+   "role": "shape",
+   "note": "staged copies used by the memes (device-black/gold/joined, s-<flavour>-<half>, badge-*)"
+  },
+  {
+   "path": "Muha Magnetic Reveal/",
+   "role": "approved-output",
+   "note": "the Apple-style reveal clips + trailer treatment (see memory project_muha_magnetic_reveal)"
+  }
+ ],
+ "skus": {
+  "AMALFI_HABIBI": [
+   "Amalfi Spritz",
+   "Habibi"
+  ],
+  "CANARY_DIESEL": [
+   "Canary Island Punch",
+   "DC-10 Diesel"
+  ],
+  "CANNES_BLUEBERRY_MUFFIN": [
+   "Cannes Kush",
+   "Blueberry Muffn"
+  ],
+  "IBIZA_PURPLE_PUNCH": [
+   "Ibiza Cherry",
+   "Purple Punch"
+  ],
+  "LONDON_SKYWALKER_OG": [
+   "London Berry",
+   "Skywalker OG"
+  ],
+  "MONACO_JACK_HERER": [
+   "Monaco Mango Truffle",
+   "Jack Herer"
+  ],
+  "MYKONOS_AMNESIA_LEMON": [
+   "Mykonos Melon",
+   "Amnesia Lemon Cherry"
+  ],
+  "SANTORINI_BUBBLE_GUM": [
+   "Santorini Grape Pie",
+   "Bubblegum Burst"
+  ],
+  "SARDINIA_PINEAPPLE_RUNTZ": [
+   "Sardinia Sunset",
+   "Pineapple Runts"
+  ],
+  "SICILY_APPLE_GELATO": [
+   "Sicilian Strawberry Bellini",
+   "Apple Gelato Ice"
+  ]
+ },
+ "skuRule": "A meme must show a REAL combo — pick a row, black half = first flavour, gold half = second. The supplied SICILY_APPLE_GELATO render is wrong (carries Amalfi Spritz on the black half); the pairing table is right.",
+ "locked": [
+  "Joined asset for one-object grammars (held overhead, in a lap); the two halves for two-hands / two-characters grammars.",
+  "Magnetic field, not sparks: smooth symmetrical field lines like iron filings, soft glow in the gap; ban sparks/arcs/lightning/starbursts by name.",
+  "Both halves stand PERFECTLY UPRIGHT and parallel ('like two bottles on a shelf'), tops and bottoms level.",
+  "Badge legibility is a pixel budget, not a prompt: ~140x259px device = smear no matter what, ~160x300 holds. Grow the device or accept fruit-shape-only recognition.",
+  "Nano Banana will NOT rescale a badge (16 candidates); gpt-image-2 edits will, given a pixel width + equal margins stated as one geometry."
+ ]
+},
+
+{
+ "id": "mm-dual-flavor-aio",
+ "name": "Muha Meds DUAL FLAVOR ALL-IN-ONE (two flavours, one device)",
+ "aka": [
+  "dual flavor",
+  "dual flavour",
+  "switch duo",
+  "dual dispo",
+  "MI Dual_Flavor_Dispo_4th",
+  "the pill"
+ ],
+ "addedAt": "2026-09-10",
+ "geometry": "Flat pill-shaped slab: alpha bbox 983x2083 on the Front render = 2.12:1 (stout, NOT the 3.3:1 slim slab), fully rounded top and bottom ends, depth about 1/3 of width (45° render). Top ~22% is a mirror-polished GOLD cap carrying TWO side-by-side chrome duckbill mouthpieces each stamped with the ornate M crest, with a chrome 'drip' edge running onto the body. Body glossy BLACK. Front screen: gauge arc (magenta left half, green right half) around a gold ornate M crest, battery bar with 0%, two flavour names side by side (LEFT name magenta, RIGHT name green, lightning bolt between), two '0 PUFFS' counters. Small oval LED window near the bottom: glows MAGENTA when the left flavour is active, GREEN for the right, both for both (LightOnOff renders). No wordmark on the device.",
+ "packagingCopy": {
+  "header": "MUHA MEDS",
+  "title": "DUAL FLAVOR",
+  "subtitle": "ALL-IN-ONE",
+  "strainType": "INDICA / INDICA (per SKU box)",
+  "program": "Members — CHOOSE YOUR MEMBER",
+  "weight": "2000 MG | 0.071 OZ",
+  "flavourNotes": "per-flavour icons e.g. FRUITY / SWEET (left) and EARTHY / PINEY (right)",
+  "auth": "Members Authentication Technology + QR",
+  "note": "box art: black with a gold dripping M coin, magenta circuit traces on the left flavour's side and blue on the right's; a glossy flavour badge tile per flavour at the bottom"
+ },
+ "refs": [
+  {
+   "path": "Muha Memes/DualFlavor/assets/v1/Dual Dispose device_only/",
+   "role": "canonical",
+   "note": "Dual_Flavor_Dispo_4thDevice_{Front|45}_<SKU>{Front|45}.png — device only, 2400x3000 RGBA, all 10 SKUs"
+  },
+  {
+   "path": "Muha Memes/DualFlavor/assets/v1/Dual Dispose device_only/LightOnOff/",
+   "role": "canonical",
+   "note": "BothOff / BothOn / BlueBerryKush (magenta LED, left flavour) / OrangeDream (green LED, right flavour) — the switch mechanic"
+  },
+  {
+   "path": "Muha Memes/DualFlavor/assets/v1/",
+   "role": "canonical",
+   "note": "Dual_Flavor_Dispo_4th_{Front|45}{_Solo}_<SKU>.png — box with/without device for 5 SKUs (GRAPE_APE_SKYWALKER_OG, KEY_LIME_JACK_TRAIN_WRECK, CHERRY_SLUSHIE_LIMONCELLO, MANGO_PEACH_ORANGE_CREAMSICLE, BLUE_SLUSHIE_POMEGRANATE_RUNTS)"
+  },
+  {
+   "path": "Muha Memes/DualFlavor/assets/Mockup/",
+   "role": "style",
+   "note": "Mockup_Turntable.mp4 / _v2.mp4 — client turntable renders"
+  },
+  {
+   "path": "Muha Memes/DualFlavor/refs/",
+   "role": "shape",
+   "note": "front_<SKU>.png / 45_<SKU>.png / light_*.png / box_<SKU>.png — alpha-cropped 1400px refs handed to image calls"
+  },
+  {
+   "path": "/Users/mario/Downloads/MI Dual_Flavor_Dispo_4th.zip",
+   "role": "canonical",
+   "note": "client source zip (135MB, 51 files), extracted verbatim into assets/"
+  }
+ ],
+ "deviceBlock": "Muha Memes/DualFlavor/_device.txt",
+ "skus": {
+  "BLACKBERRY_KUSH_ORANGE_DREAM": [
+   "BLACKBERRY KUSH",
+   "ORANGE DREAM"
+  ],
+  "BLUE_ALOHA_BURST_PINEAPPLE_KUSH": [
+   "BLUE ALOHA BURST",
+   "PINEAPPLE KUSH"
+  ],
+  "BLUE_SLUSHIE_POMEGRANATE_RUNTS": [
+   "BLUE SLUSHIE",
+   "POMEGRANATE RUNTS"
+  ],
+  "GRAPE_APE_SKYWALKER_OG": [
+   "GRAPE APE",
+   "SKYWALKER OG"
+  ],
+  "JUICY_MELON_SUNSET_SHERBET": [
+   "JUICY MELON",
+   "SUNSET SHERBET"
+  ],
+  "KEY_LIME_JACK_TRAIN_WRECK": [
+   "KEY LIME JACK",
+   "TRAIN WRECK"
+  ],
+  "KIWI_MOJITO_PINA_COLADA": [
+   "KIWI MOJITO",
+   "PINA COLADA"
+  ],
+  "MANGO_PEACH_ORANGE_CREAMSICLE": [
+   "MANGO PEACH",
+   "ORANGE CREAMSICLE"
+  ],
+  "CHERRY_SLUSHIE_LIMONCELLO": [
+   "CHERRY SLUSHIE",
+   "LIMONCELLO"
+  ],
+  "PRICKLY_PEAR_DRIP_AZURE_WILD_BERRY": [
+   "PRICKLY PEAR DRIP",
+   "AZURE WILD BERRY"
+  ]
+ },
+ "skuRule": "Fixed pairs, read off the device screens 2026-09-10 (left name, right name). Never invent a pairing. The names are unreadable on the device at meme scale, so the CAPTION carries the pair, composed deterministically with these exact strings.",
+ "storyHooks": [
+  "two flavours in ONE device — the choice joke ('why not both', 'never choose again')",
+  "the SWITCH: flip between flavours mid-session; LED magenta vs green",
+  "CHOOSE YOUR MEMBER (box copy, Members program)",
+  "2000 MG"
+ ],
+ "locked": [
+  "Pin the pill geometry (2.1:1, fully rounded ends, a third as thick as wide) or the model renders the slim 3.3:1 slab it knows from earlier memes.",
+  "Gold cap with TWO mouthpieces is the identifier — a single mouthpiece is a different product.",
+  "The screen's type may be soft at small sizes; never invent readable words on it (law meme:no-invented-type).",
+  "Pass Front (screen truth) + 45 (thickness) renders together; the frame is the layout master.",
+  "Measured 2026-09-10: with the block in place gpt-image-2 held the pill geometry, twin mouthpieces, gauge screen and LED in every one of 39 rendered candidates; one Nano Banana candidate (El Dorado c1) reverted to the old slim slab with a badge."
+ ],
+ "shippedMemes": [
+  "Muha Memes/DualFlavor/final/",
+  "round 5 (2026-09-14): 22 memes in Muha Memes/DualFlavor/final_genz_r5/ — 12 phone-photo scenes + 10 classic templates, awaiting picks"
+ ]
+}
+
+],
+
+"grammars": [
+
+{
+ "id": "prop-in-hand",
+ "name": "Swap what a hand holds",
+ "mechanism": "The subject already holds something (cigarette, martini, pitchfork, boombox, earring, phone); the device takes its place in the same grip.",
+ "strength": "strongest and cheapest — same placement, nothing to fade in",
+ "requires": [
+  "grip clause (fingers close around it, thumb across; hand and object read as one shape)",
+  "size anchored to the hand, not the frame",
+  "let the hand re-pose"
+ ],
+ "deviceFit": [
+  "mm-aio-slim",
+  "mm-gen2x2-magnetic (joined)",
+  "mm-dual-flavor-aio"
+ ],
+ "examples": [
+  "escobar",
+  "yachtparty",
+  "pole",
+  "american-gothic",
+  "fry",
+  "tuxedo-pooh",
+  "buff-doge",
+  "kermit",
+  "homer",
+  "both-is-good",
+  "distracted",
+  "drake"
+ ]
+},
+
+{
+ "id": "worn-object",
+ "name": "Swap what the subject wears",
+ "mechanism": "A hat/cap becomes the Muha captain hat (or a device-crested item). Same shape, same placement.",
+ "strength": "very reliable in v2v — nothing to fade in",
+ "requires": [
+  "say it is on in the very first frame"
+ ],
+ "deviceFit": [
+  "brand marks, not the device itself"
+ ],
+ "examples": [
+  "captain-phillips",
+  "yachtmaster"
+ ]
+},
+
+{
+ "id": "background-structure",
+ "name": "The device as architecture",
+ "mechanism": "A tower, post, pole or monolith in the scene becomes the device.",
+ "strength": "atmospheric; the joke reads at card scale",
+ "requires": [
+  "blank body (badges never survive distance)",
+  "terse body + strong distance/mist language or the plate turns into a product render",
+  "monochrome tone map stated explicitly on b/w plates"
+ ],
+ "deviceFit": [
+  "mm-aio-slim"
+ ],
+ "examples": [
+  "lighthouse",
+  "pole"
+ ]
+},
+
+{
+ "id": "character-replacement",
+ "name": "Devices AS the characters",
+ "mechanism": "The scene is re-staged with devices standing in for the actors (Titanic bow).",
+ "strength": "regenerated scene — zero footage IP, but the least faithful to the original",
+ "requires": [
+  "blocking diagram instead of the real frame (moderation)",
+  "pod geometry pinned",
+  "short stubby cartoon arms, thickness/length caps"
+ ],
+ "deviceFit": [
+  "mm-aio-slim"
+ ],
+ "examples": [
+  "titanic"
+ ]
+},
+
+{
+ "id": "orbiting-multiples",
+ "name": "Many identical devices around the subject",
+ "mechanism": "Floating equations/objects become devices.",
+ "strength": "works in v2v",
+ "requires": [
+  "IDENTICAL COPIES clause",
+  "a COUNT",
+  "DEPTH routing (pass BEHIND the silhouette)"
+ ],
+ "deviceFit": [
+  "mm-aio-slim"
+ ],
+ "examples": [
+  "braincompute"
+ ]
+},
+
+{
+ "id": "two-halves-meeting",
+ "name": "Two hands / two characters bringing halves together",
+ "mechanism": "The famous gap (fingertips, two friends) closes on the magnetic pair.",
+ "strength": "the native magnetic joke",
+ "requires": [
+  "field lines not sparks",
+  "upright parallel halves",
+  "hands must GRIP",
+  "measure hand and device sizes; correct with numbers"
+ ],
+ "deviceFit": [
+  "mm-gen2x2-magnetic (halves)"
+ ],
+ "examples": [
+  "spongebob",
+  "creation"
+ ]
+},
+
+{
+ "id": "held-large",
+ "name": "Held overhead / large in frame",
+ "mechanism": "A big prop (boombox) becomes the product, large enough for badges to read.",
+ "strength": "the only grammar where badge lettering reliably resolves",
+ "requires": [
+  "joined asset",
+  "both hands grip outer edges"
+ ],
+ "deviceFit": [
+  "mm-gen2x2-magnetic (joined)",
+  "mm-dual-flavor-aio"
+ ],
+ "examples": [
+  "boombox"
+ ]
+},
+
+{
+ "id": "resting-object",
+ "name": "Object resting in a lap or on a table",
+ "mechanism": "The device sits with the subject (Mona Lisa's lap, the cat's table).",
+ "strength": "gentle; the pose survives",
+ "requires": [
+  "two passes: place, then close the hand",
+  "size vs the hand measured"
+ ],
+ "deviceFit": [
+  "all"
+ ],
+ "examples": [
+  "monalisa",
+  "woman-cat"
+ ]
+},
+
+{
+ "id": "floating-subject-swap",
+ "name": "Replace the small floating subject",
+ "mechanism": "The butterfly, the pills, the balloon become the device.",
+ "strength": "clean — same spot, same size",
+ "requires": [
+  "state position and size as 'exactly where X was'"
+ ],
+ "deviceFit": [
+  "all"
+ ],
+ "examples": [
+  "pigeon",
+  "two-wolves"
+ ]
+},
+
+{
+ "id": "scale-swap",
+ "name": "The device at planet/monument scale",
+ "mechanism": "Earth, a moon, a mountain becomes a giant device.",
+ "strength": "instantly readable",
+ "requires": [
+  "'in exactly the place and at exactly the size of X'",
+  "light from the same side"
+ ],
+ "deviceFit": [
+  "all"
+ ],
+ "examples": [
+  "always-has-been"
+ ]
+},
+
+{
+ "id": "shared-grip",
+ "name": "Two hands on one device",
+ "mechanism": "A handshake/arm-wrestle becomes a shared grip — two flavours, one device.",
+ "strength": "native to the dual-flavour story",
+ "requires": [
+  "grip clause for both hands",
+  "device small, gold cap clear of the fingers"
+ ],
+ "deviceFit": [
+  "mm-dual-flavor-aio"
+ ],
+ "examples": [
+  "handshake"
+ ]
+},
+
+{
+ "id": "new-panel",
+ "name": "Draw a continuation panel in the template's style",
+ "mechanism": "The template's last panel is answered by a new one (the sweating man now relaxed with the device).",
+ "strength": "lets a text-only template carry the product",
+ "requires": [
+  "style-lock to the template's line/colour",
+  "same character, same framing",
+  "captions composed after"
+ ],
+ "deviceFit": [
+  "all"
+ ],
+ "examples": [
+  "two-buttons"
+ ]
+},
+
+{
+ "id": "reaction-image-caption-bar",
+ "name": "Reaction image under a lowercase caption bar",
+ "mechanism": "A relatable first-person caption ('me when…', 'friend: / me:', 'pov:') sits in a white bar above a reaction image — an animal, a puppet, a cartoon, or a phone-photo mood — in which the device is simply present. The caption carries the joke; the product is never named.",
+ "strength": "the Gen Z brand-page native format; the operator's answer to 'corny'",
+ "requires": [
+  "lowercase sentence case, Helvetica Neue Medium, no caps, no product copy",
+  "phone-photo realism for generated scenes (auto-exposure, grain, clutter)",
+  "device small and incidental, never consumed"
+ ],
+ "deviceFit": [
+  "all"
+ ],
+ "examples": [
+  "cat-table",
+  "capybara",
+  "hamster",
+  "dog-nose",
+  "monkey-puppet",
+  "squidward",
+  "led-night",
+  "nightstand"
+ ]
+}
+
+],
+
+"pipelines": [
+
+{
+ "id": "A-regen-scene",
+ "name": "Regenerate the scene (video)",
+ "when": "The joke can be re-staged with devices as characters; source footage only a reference.",
+ "steps": [
+  "device-only crop refs",
+  "flat grey BLOCKING DIAGRAM of the composition (never the real film frame)",
+  "Nano Banana Pro start frame 16:9 2K with device refs + diagram",
+  "Veo 3.1 i2v (--quality high --variant veo-3-1-preview, 4/6/8s) with an absolute camera lock",
+  "memecard.sh rebuilds the measured card"
+ ],
+ "tools": [
+  "Muha Memes/Titanic/memecard.sh",
+  "Muha Memes/Titanic/makecard.py"
+ ],
+ "cost": "Veo 8s high = 58 Higgsfield credits"
+},
+
+{
+ "id": "B-v2v-edit",
+ "name": "Edit the real footage (video)",
+ "when": "The original footage must be preserved (actors, famous shot).",
+ "steps": [
+  "measure the card; crop the video band; upscale",
+  "retime UP to the next whole second (MiniMax bills integers, caps at 15s)",
+  "minimax_h3 with --video-references + --image-references (object ref) and a SHORT source-anchored prompt",
+  "splice.py: resample back to the source frame count, per-channel tone match, write only into the band, restore watermark/caption pixels, mux original audio (-c:a copy)",
+  "frames piped straight to ffmpeg, never staged as PNGs"
+ ],
+ "tools": [
+  "Muha Memes/Escobar/runshot.sh",
+  "Muha Memes/Escobar/splice.py",
+  "Muha Memes/YachtGoldenHour/runshot.sh",
+  "Muha Memes/YachtGoldenHour/build.py"
+ ],
+ "cost": "minimax_h3 5s=20 / 10s=40 / 15s=60 credits; 4 concurrent jobs shared across sessions"
+},
+
+{
+ "id": "C-still-edit-gpt",
+ "name": "Still meme edit with gpt-image-2",
+ "when": "Default for stills: cartoons, photos, paintings without nudity.",
+ "steps": [
+  "template = REFERENCE 1 (layout master), device Front + 45 renders as REFERENCE 2/3",
+  "prompt: KEEP (edge to edge, no zoom/crop/redraw) + THE ONE CHANGE + GRIP + SMALL + verbatim device block + 'no text'",
+  "/v1/images/edits, size = template aspect rounded to /16 (ladder steps down on size errors), quality medium (high needs a 300s timeout), 3-4 candidates, FormData rebuilt per attempt",
+  "diff every candidate vs the template (mean-abs-diff, % pixels >25) — a reframe is a bright everywhere-diff",
+  "captions/labels composed with card.py"
+ ],
+ "tools": [
+  "Muha Memes/DualFlavor/gen.mjs",
+  "Muha Memes/DualFlavor/card.py",
+  "Muha Memes/MagneticDispo/gen-meme.mjs"
+ ],
+ "cost": "~$0.05-0.15 per candidate"
+},
+
+{
+ "id": "D-still-edit-nb",
+ "name": "Still meme edit with Nano Banana Pro",
+ "when": "gpt-image-2 refuses the frame (classical nudes) or the hands must be repainted to grip in a painterly style.",
+ "steps": [
+  "gemini-3-pro-image-preview, parts = [template, device refs, prompt], imageConfig aspectRatio + 2K",
+  "then targeted fix passes: feed the approved frame back, name every finished element as off-limits, change ONE thing, give MEASUREMENTS not adjectives, re-measure after"
+ ],
+ "tools": [
+  "Muha Memes/MagneticDispo/gen-nb.mjs",
+  "Muha Memes/MagneticDispo/fix-lefthand.mjs",
+  "Muha Memes/MagneticDispo/swap-flavor.mjs"
+ ],
+ "cost": "~$0.13 per 2K candidate"
+},
+
+{
+ "id": "E-still-inpaint-seedream",
+ "name": "Per-panel inpaint with Seedream v5 Pro (Higgsfield)",
+ "when": "A multi-panel still where each panel is edited separately and must stay in register; accepts real actors' likenesses.",
+ "steps": [
+  "crop + upscale each panel",
+  "seedream_v5_pro is_inpaint true at the panel's exact aspect (custom --width/--height; enum aspects reframe), refs = plate then device",
+  "buildcard.py: resample back, per-channel tone match per panel, restore original watermark glyphs"
+ ],
+ "tools": [
+  "Muha Memes/Pole/runshot.sh",
+  "Muha Memes/Pole/buildcard.py",
+  "Muha Memes/Lighthouse/runshot.sh"
+ ],
+ "cost": "~3 credits per take"
+},
+
+{
+ "id": "F-deterministic-card",
+ "name": "Captions and cards are drawn, never generated",
+ "when": "Always.",
+ "steps": [
+  "measure the card geometry per clip/still",
+  "card.py (Impact / Arial / white-band styles, fractional coordinates) or memecard.sh / buildcard.py",
+  "restore watermarks and captions from original pixels through a luminance mask"
+ ],
+ "tools": [
+  "Muha Memes/DualFlavor/card.py",
+  "Muha Memes/Titanic/memecard.sh",
+  "Muha Memes/Pole/buildcard.py"
+ ],
+ "cost": "free"
+},
+
+{
+ "id": "G-targeted-fix",
+ "name": "Fix one element on an approved frame",
+ "when": "One hand/badge/size is wrong and the rest is signed off.",
+ "steps": [
+  "approved frame back in as the base",
+  "list every finished element by name as off-limits",
+  "state the one change with a MEASUREMENT (pixels + %, or margins as one geometry)",
+  "3-4 candidates; measure; expect a fix to break something adjacent and re-check the whole frame"
+ ],
+ "tools": [
+  "Muha Memes/MagneticDispo/fix-cannes-gpt.mjs",
+  "Muha Memes/MagneticDispo/fix-london-gpt.mjs",
+  "Muha Memes/MagneticDispo/fix-boombox-clean.mjs"
+ ],
+ "cost": "same as C/D"
+}
+
+],
+
+"providers": [
+
+{
+ "model": "gpt-image-2",
+ "route": "OpenAI /v1/images/edits",
+ "use": "stills — default",
+ "accepts": [
+  "cartoons (SpongeBob)",
+  "real photographs incl. a recognisable actor (Say Anything boombox edits shipped)",
+  "public-domain paintings (American Gothic / Arnolfini — see dual-flavor results)",
+  "photo-no-face templates (Epic Handshake, Two Wolves, Always Has Been, Buff Doge) 3/3 each",
+  "adult animation (Futurama Fry) and anime (Is This A Pigeon) 3/3",
+  "stock-photo people (Distracted Boyfriend) 3/3; a TV personality (Woman Yelling at Cat) 3/3; Drake 1/3",
+  "round 2: Leo DiCaprio 3/3, Roll Safe 3/3, Hide the Pain Harold 3/3, GigaChad 3/3, Trade Offer 3/3, stock bed couple 2/3, Mocking SpongeBob 2/3, wojak/Panik/Expanding Brain/bell-curve drawings 3/3 each"
+ ],
+ "refuses": [
+  "classical nudes (Creation of Adam: all candidates 400 'rejected by the safety system')",
+  "one candidate in ~4 at random on identical prompts — over-request, do not reword",
+  "family-animation characters holding a vape: Winnie the Pooh, Kermit, El Dorado, Homer — 0/3 each (2026-09-10)"
+ ],
+ "traits": [
+  "reframes memes unless told edge-to-edge",
+  "enlarges a badge whenever it redraws one",
+  "renders small type from a reference cleanly (the one model that does)",
+  "sizes: both sides /16, longest edge <=3840, ~8.2MP budget",
+  "quality high can exceed 60s — keep a 300s timeout, serialise, rebuild FormData per retry"
+ ],
+ "measured": "2026-07-22..2026-09-10"
+},
+
+{
+ "model": "nano-banana-pro (gemini-3-pro-image-preview)",
+ "route": "Gemini generateContent",
+ "use": "stills where gpt refuses, painterly hand repaints, start frames for video",
+ "accepts": [
+  "classical nudes",
+  "puts devices IN hands by repainting fingers"
+ ],
+ "refuses": [
+  "a real film frame with actors as a composition ref (Titanic) — job just fails; use a blocking diagram",
+  "Winnie the Pooh + vape 0/2, Kermit + vape 0/2 (PROHIBITED_CONTENT); El Dorado 2/2 then 0/2 — a coin flip"
+ ],
+ "traits": [
+  "will NOT rescale a badge (16 candidates)",
+  "garbles small type (MUHA MEDS -> 'MUf MELS')",
+  "repeated 2K correction passes leave a painterly smear + purple cast (boombox) — go back to the clean original",
+  "best label fidelity for start frames if pod geometry is pinned",
+  "re-renders the whole frame on an edit (re-laid burned-in text, re-framed, one device reverted to the slim slab) — use only where a re-render is acceptable"
+ ],
+ "measured": "2026-08-18..2026-09-08"
+},
+
+{
+ "model": "seedream_v5_pro",
+ "route": "Higgsfield CLI",
+ "use": "per-panel still inpaint",
+ "accepts": [
+  "real actors' likenesses (Dafoe, Pascal — six takes, no refusal)"
+ ],
+ "refuses": [
+  "Kermit + vape (job failed, 2026-09-10)"
+ ],
+ "traits": [
+  "is_inpaint flag",
+  "only model that reliably reproduces the interlocking-M crest",
+  "custom width/height keeps the panel aspect"
+ ],
+ "measured": "2026-08-20"
+},
+
+{
+ "model": "minimax_h3",
+ "route": "Higgsfield CLI (video_references + image_references)",
+ "use": "THE v2v that works on copyrighted actor footage",
+ "accepts": [
+  "film/TV footage with recognisable actors",
+  "an object reference image alongside the video"
+ ],
+ "refuses": [],
+ "traits": [
+  "generative v2v, not a surgical inpainter: re-times (150 in / 124 out), returns its own res @24fps",
+  "duration integer <=15s; retime UP",
+  "rich object ref pushes the camera in; plain crop holds framing",
+  "long prompts flip it from editing to generating",
+  "small badges come back mirrored/re-invented every frame"
+ ],
+ "measured": "2026-08-18..2026-09-03"
+},
+
+{
+ "model": "veo-3.1 (veo-3-1-preview, quality high)",
+ "route": "Higgsfield CLI i2v",
+ "use": "animate a regenerated start frame",
+ "accepts": [
+  "Muha device start frames"
+ ],
+ "refuses": [],
+ "traits": [
+  "holds pose + framing for 8s, native audio, 4/6/8s only",
+  "needs an absolute camera lock or it orbits",
+  "start frame only (no end frame): snapped early then held static in the magnetic snap test"
+ ],
+ "measured": "2026-08-18, 2026-09-09"
+},
+
+{
+ "model": "seedance_2_0 / seedance_2_5",
+ "route": "Higgsfield CLI / ModelArk",
+ "use": "NOT for memes",
+ "accepts": [],
+ "refuses": [
+  "the Muha device itself in i2v (2.5, moderation)",
+  "actor footage (v2v)"
+ ],
+ "traits": [
+  "2.5 video_edit preserves the source too literally — adds, never replaces",
+  "2.0 is fine for pure product reveal clips (Magnetic Reveal) where no meme footage is involved"
+ ],
+ "measured": "2026-08-18, 2026-09-09"
+},
+
+{
+ "model": "kling3_0 / wan2_6 / flux_kontext / flux_3_video",
+ "route": "Higgsfield CLI",
+ "use": "fallbacks only",
+ "accepts": [
+  "wan2_6 + flux_kontext run on actor footage"
+ ],
+ "refuses": [
+  "kling motion control, flux_3_video: failed"
+ ],
+ "traits": [
+  "kling: poor camera discipline (45° roll, pulls back)",
+  "wan2_6: object arrives ~2s late, oversized, warms the grade, 16:9/9:16/1:1 only",
+  "flux_kontext: drifts faces, reframes"
+ ],
+ "measured": "2026-08-18"
+}
+
+],
+
+"sourcing": {
+ "policy": "Sent memes are the primary source (the operator forwards clips/stills with a caption already written). For self-sourced templates, record provenance + IP class per file and prefer the lowest-exposure class that carries the joke. Children never; real private individuals only when the template is a universally licensed meme; celebrities carry moderation AND likeness exposure — run them as N=1 tests and let the client decide.",
+ "routes": [
+  {
+   "id": "imgflip-api",
+   "how": "GET https://api.imgflip.com/get_memes -> 100 most-used templates with id, name, WxH, box_count and a direct https://i.imgflip.com/<id>.<ext> URL. No auth. Download with a browser UA.",
+   "provenanceFile": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+  },
+  {
+   "id": "imgflip-search",
+   "how": "https://imgflip.com/memesearch?q=<terms> lists /meme/<id>/<slug> links; the template page https://imgflip.com/memetemplate/<id>/<slug> contains the i.imgflip.com image URL. Used for 'Both is good', 'Why not both', Morpheus pills, Two Wolves, Trolley Problem, Choose Your Fighter, Kronk/Homer angel-devil.",
+   "provenanceFile": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+  },
+  {
+   "id": "wikimedia-commons-api",
+   "how": "GET https://commons.wikimedia.org/w/api.php?action=query&titles=File:<name>&prop=imageinfo&iiprop=url|size|extmetadata&iiurlwidth=1920&format=json with a descriptive User-Agent (a guessed upload.wikimedia.org thumb path returns 400). extmetadata.LicenseShortName carries the licence; 'Public domain' paintings = zero IP exposure. American Gothic (1930) entered the US public domain 2026-01-01.",
+   "provenanceFile": "Muha Memes/DualFlavor/templates/wikimedia/SOURCES.json"
+  }
+ ],
+ "ipClasses": {
+  "public-domain-art": "zero exposure (Mona Lisa, Creation of Adam, American Gothic, Arnolfini, The Kiss, The Scream)",
+  "cartoon-ip": "studio-owned animation stills used as meme templates (SpongeBob, Pooh, Fry, Kermit, Homer, El Dorado); models accept them",
+  "film-still": "live-action frames with actors (Say Anything, Titanic, Captain Phillips, Narcos, The Lighthouse, Step Brothers); provider-dependent — MiniMax H3 / Seedream v5 accept, NB Pro refuses as a ref",
+  "stock-photo": "licensed stock used as memes (Distracted Boyfriend, I bet he's thinking); models' moderation is a coin flip",
+  "celebrity": "a real public figure's likeness (Drake, Taylor Armstrong, Bernie, The Rock); highest exposure, expect refusals",
+  "anonymous-drawing": "webcomic/wojak/stick templates (Two Buttons, They don't know, Trolley, Bell Curve); low exposure",
+  "photo-no-face": "animals, hands, astronauts, arms (Epic Handshake crop, Two Wolves, Buff Doge, Always Has Been, Morpheus hands crop); low moderation risk"
+ },
+ "templateLibrary": {
+  "imgflip": "Muha Memes/DualFlavor/templates/imgflip/ (50 files)",
+  "wikimedia": "Muha Memes/DualFlavor/templates/wikimedia/ (12 public-domain paintings @1920px)",
+  "contactSheet": "Muha Memes/DualFlavor/templates/_contact_sheet.jpg"
+ },
+ "related": [
+  {
+   "path": "knowledge/playbooks/MUHA_MEME_TASTE.json",
+   "note": "taste profile written by a parallel agent session on 2026-09-10 (provisional hypotheses; not this registry's source of truth)"
+  },
+  {
+   "path": "docs/MEME_SOURCING.md",
+   "note": "sourcing playbook from the same parallel session; complements sourcing.routes above"
+  }
+ ]
+},
+
+"captionStyles": [
+
+{
+ "id": "impact",
+ "desc": "white Impact, black stroke, upper-case, top/bottom or on the labelled element (imgflip default)",
+ "tool": "Muha Memes/DualFlavor/card.py"
+},
+
+{
+ "id": "label-black",
+ "desc": "black Arial Bold on the template's white caption areas (Drake, Tuxedo Pooh, Buff Doge)",
+ "tool": "Muha Memes/DualFlavor/card.py"
+},
+
+{
+ "id": "white-band",
+ "desc": "white band above the image with black Helvetica Neue Bold sentence caption (the sent IG/TikTok screenshot cards: Titanic, Escobar, YachtMaster, Pole, Lighthouse)",
+ "tool": "Muha Memes/Titanic/memecard.sh"
+},
+
+{
+ "id": "black-band-subs",
+ "desc": "black card, 2.39:1 band, burned-in subtitles (Captain Phillips)",
+ "tool": "Muha Memes/CaptainPhillips/splice.py"
+},
+
+{
+ "id": "none",
+ "desc": "art memes ship with no caption — the picture is the joke (Mona Lisa, Creation, American Gothic, Arnolfini)",
+ "tool": null
+}
+
+],
+
+"templates": [
+
+{
+ "id": "titanic",
+ "name": "Titanic bow — 'how it feels when you win the golden hour giveaway'",
+ "medium": "video",
+ "ipClass": "film-still",
+ "grammar": "character-replacement",
+ "device": "mm-aio-slim",
+ "status": "shipped",
+ "pipeline": "A-regen-scene",
+ "source": {
+  "sent": "copy_1574D60B-….MOV 480x854 7.03s, VLIPSY watermark",
+  "folder": "Muha Memes/Titanic/"
+ },
+ "card": {
+  "canvas": "1080x1920 white",
+  "captionFont": "Helvetica Neue Bold 69px black",
+  "inkTop": 382,
+  "leading": 74,
+  "clipBand": "16:9 at y=656 (480x854 source x2.25)"
+ },
+ "outputs": [
+  "Muha Memes/Titanic/clips/FINAL_notext_origaudio_A.mp4"
+ ],
+ "lessons": [
+  "real film frame as ref fails NB moderation -> blocking diagram",
+  "pin pod geometry or it renders cones",
+  "short stubby arms (block_ref_shortarms.png)",
+  "Veo 3.1 wins; Seedance 2.5 fails on the device; Kling rolls the camera",
+  "vertical wordmark garbles — reserve and composite if it must ship"
+ ],
+ "readme": "Muha Memes/Titanic/README.md"
+},
+
+{
+ "id": "captain-phillips",
+ "name": "'I'm the captain now' — Muha captain hat on Muse",
+ "medium": "video",
+ "ipClass": "film-still",
+ "grammar": "worn-object",
+ "device": "brand-mark (captain hat)",
+ "status": "shipped",
+ "pipeline": "B-v2v-edit",
+ "source": {
+  "sent": "copy_5B33BFB2-….MOV 480x854 5.92s black card, burned subtitles",
+  "folder": "Muha Memes/CaptainPhillips/"
+ },
+ "card": {
+  "canvas": "480x854 black",
+  "captionInk": "y179-237",
+  "band": "2.39:1 at y326-527",
+  "cut": "frame 142 (4.73s) — only 0-141 need the hat"
+ },
+ "outputs": [
+  "Muha Memes/CaptainPhillips/clips/captain_muha_v2v_minimax.mp4"
+ ],
+ "lessons": [
+  "MiniMax H3 = the v2v that works on actor footage",
+  "say the hat is on in the very first frame",
+  "0 pixel change outside the band verified",
+  "tracked composite (kf.py/geom.py) rejected by the operator"
+ ],
+ "readme": "Muha Memes/CaptainPhillips/README.md"
+},
+
+{
+ "id": "yachtmaster",
+ "name": "'Yacht-Master owner' — yachting cap swapped for the Muha captain hat",
+ "medium": "video",
+ "ipClass": "film-still",
+ "grammar": "worn-object",
+ "device": "brand-mark (captain hat)",
+ "status": "shipped",
+ "pipeline": "B-v2v-edit",
+ "source": {
+  "sent": "copy_D1EEF524-….MOV 480x854 7.07s white card, #Laff watermark",
+  "folder": "Muha Memes/YachtMaster/"
+ },
+ "card": {
+  "canvas": "480x854 white",
+  "captionInk": "y85-160",
+  "band": "480x480 (1:1) at y187-666",
+  "watermark": "#Laff y639-654 x407-463"
+ },
+ "outputs": [
+  "Muha Memes/YachtMaster/clips/yachtmaster_muha_v1.mp4"
+ ],
+ "lessons": [
+  "square band => --aspect-ratio 1:1, no hand letterboxing, first pass landed",
+  "7.07s retimed to 10s (integer billing, retime UP)",
+  "40 credits"
+ ],
+ "readme": "Muha Memes/YachtMaster/README.md"
+},
+
+{
+ "id": "braincompute",
+ "name": "Glowing brain — Muhas replace the floating equations",
+ "medium": "video",
+ "ipClass": "anonymous-cgi",
+ "grammar": "orbiting-multiples",
+ "device": "mm-aio-slim",
+ "status": "shipped",
+ "pipeline": "B-v2v-edit",
+ "source": {
+  "folder": "Muha Memes/BrainCompute/"
+ },
+ "outputs": [
+  "Muha Memes/BrainCompute/clips/brain_muha_v3_1080.mp4"
+ ],
+ "lessons": [
+  "IDENTICAL COPIES + COUNT + DEPTH clauses (P_head_tiny_v3.txt)",
+  "Seedance 2.5 video_edit adds but never replaces; Wan wrong shape; FLUX 3 failed"
+ ],
+ "readme": "Muha Memes/HANDOFF__MUHA_MEMES.md"
+},
+
+{
+ "id": "yachtparty",
+ "name": "Step Brothers boat — golden hour relight, martinis become devices",
+ "medium": "video",
+ "ipClass": "film-still",
+ "grammar": "prop-in-hand",
+ "device": "mm-aio-slim",
+ "status": "shipped",
+ "pipeline": "B-v2v-edit",
+ "source": {
+  "folder": "Muha Memes/YachtParty/"
+ },
+ "outputs": [
+  "Muha Memes/YachtParty/clips/party_goldenhour_v4.mp4"
+ ],
+ "lessons": [
+  "inserted object needs a SIZE rule anchored to the person (P_device_tight.txt)",
+  "small object must be SIMPLE two-tone; let the hand re-pose (P_device_clean.txt)",
+  "re-run every shot generated before a prompt revision"
+ ],
+ "readme": "Muha Memes/HANDOFF__MUHA_MEMES.md"
+},
+
+{
+ "id": "escobar",
+ "name": "Sad Escobar — 'the more Muha penjamins I rip…' cigarette becomes a device",
+ "medium": "video",
+ "ipClass": "film-still",
+ "grammar": "prop-in-hand",
+ "device": "mm-aio-slim",
+ "status": "shipped",
+ "pipeline": "B-v2v-edit",
+ "source": {
+  "sent": "copy_AA4CBF7F-….MOV 480x854 13.43s white card",
+  "folder": "Muha Memes/Escobar/"
+ },
+ "card": {
+  "canvas": "480x854 white",
+  "captionInk": "y160-258",
+  "band": "480x270 16:9 at y292-561",
+  "retime": "13.43s -> 15.0s (MiniMax cap)"
+ },
+ "outputs": [
+  "Muha Memes/Escobar/clips/escobar_muha_v6.mp4"
+ ],
+ "lessons": [
+  "THE reference image drives framing: rich master render pushes the camera in, plain crop holds (v4 vs v6, same prompt)",
+  "frame-fraction cap holds framing but floats the device in the lips"
+ ],
+ "readme": "Muha Memes/Escobar/README.md"
+},
+
+{
+ "id": "yachtgoldenhour",
+ "name": "15s yacht montage — golden hour + hull mark + Rolex + device on the throttle",
+ "medium": "video",
+ "ipClass": "stock-footage",
+ "grammar": "prop-in-hand",
+ "device": "mm-aio-slim",
+ "status": "in-progress (v4 current; v6/v7 device variants, neither perfect)",
+ "pipeline": "B-v2v-edit",
+ "source": {
+  "folder": "Muha Memes/YachtGoldenHour/"
+ },
+ "outputs": [
+  "Muha Memes/YachtGoldenHour/clips/yacht_goldenhour_v4.mp4"
+ ],
+ "lessons": [
+  "short source-anchored P_min.txt beat the 2500-char canonical spec",
+  "branding fights framing — allow the mark to be small/illegible",
+  "the ref's own aspect drives the rendered proportion (1:1.5 crop => stubby)",
+  "badges cannot survive v2v at in-hand scale: shoot a separate product beat",
+  "Rolex trademark question open (sieve campaign golden-hour-rolex.json)"
+ ],
+ "readme": "Muha Memes/HANDOFF__MUHA_MEMES.md"
+},
+
+{
+ "id": "pole",
+ "name": "Pedro Pascal leaning on the pole (3-panel still) — the post becomes a shadowed device",
+ "medium": "still",
+ "ipClass": "film-still",
+ "grammar": "background-structure",
+ "device": "mm-aio-slim",
+ "status": "shipped",
+ "pipeline": "E-still-inpaint-seedream",
+ "source": {
+  "sent": "three-panel card 1080x1526, @muhamembersonly watermark in panel 3",
+  "folder": "Muha Memes/Pole/"
+ },
+ "card": {
+  "canvas": "1080x1526",
+  "captionBand": "y0-174 white, ink y48-140",
+  "panels": "y175-625 / 625-1075 / 1075-1526, each 1080x450 (2.4:1), generated at 2160x900",
+  "watermark": "panel-3 x645-1075 y385-425"
+ },
+ "outputs": [
+  "Muha Memes/Pole/out/card_gold.png"
+ ],
+ "lessons": [
+  "shared device block file interpolated verbatim",
+  "'shadowed' != all black — the gold must show",
+  "colourway then lighting as separate paragraphs",
+  "let the hand re-pose; the device is wider than the post, don't fight it",
+  "restore watermark glyphs, never regenerate"
+ ],
+ "readme": "Muha Memes/Pole/README.md"
+},
+
+{
+ "id": "lighthouse",
+ "name": "The Lighthouse (2-panel still) — the tower becomes the device",
+ "medium": "still",
+ "ipClass": "film-still",
+ "grammar": "background-structure",
+ "device": "mm-aio-slim",
+ "status": "shipped (B2)",
+ "pipeline": "E-still-inpaint-seedream",
+ "source": {
+  "sent": "two-panel card 1200x998",
+  "folder": "Muha Memes/Lighthouse/"
+ },
+ "card": {
+  "canvas": "1200x998 white band",
+  "captionInk": "y51-238",
+  "imageBand": "y296-998",
+  "rightPanel": "x602-1200, 598x702 b/w, generated at 1196x1404"
+ },
+ "outputs": [
+  "Muha Memes/Lighthouse/out/"
+ ],
+ "lessons": [
+  "state the monochrome tone map explicitly (cap renders NEAR-WHITE)",
+  "'lit from within' beats 'glowing'",
+  "'do NOT brighten / clean up / smooth the grain' is load-bearing",
+  "say 'not mirrored and not reversed' for vertical type"
+ ],
+ "readme": "Muha Memes/Lighthouse/README.md"
+},
+
+{
+ "id": "spongebob",
+ "name": "SpongeBob & Patrick snapping the magnetic halves",
+ "medium": "still",
+ "ipClass": "cartoon-ip",
+ "grammar": "two-halves-meeting",
+ "device": "mm-gen2x2-magnetic",
+ "sku": "CANNES_BLUEBERRY_MUFFIN",
+ "status": "shipped",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "frame": "Muha Memes/MagneticDispo/meme-spongebob.png"
+ },
+ "outputs": [
+  "Muha Memes/MagneticDispo/out/canfit_c1.png"
+ ],
+ "lessons": [
+  "gpt-image-2 reframes unless told edge to edge",
+  "hands must GRIP",
+  "badge on the rounded shoulder: shrink + equal margins as one geometry (fix-cannes-gpt / fix-cannes-nudge)",
+  "one candidate in four trips the safety filter — over-request"
+ ],
+ "readme": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "creation",
+ "name": "Creation of Adam — the halves meet in the fingertip gap",
+ "medium": "still",
+ "ipClass": "public-domain-art",
+ "grammar": "two-halves-meeting",
+ "device": "mm-gen2x2-magnetic",
+ "sku": "IBIZA_PURPLE_PUNCH",
+ "status": "shipped",
+ "pipeline": "D-still-edit-nb",
+ "source": {
+  "frame": "Muha Memes/MagneticDispo/meme-creation.png"
+ },
+ "outputs": [
+  "Muha Memes/MagneticDispo/out/MEME_creation_magnetic.png"
+ ],
+ "lessons": [
+  "gpt-image-2 refuses the nude fresco; NB accepts and repaints fingers to grip",
+  "red fingernails + open hands recur — name them",
+  "measure, don't describe (190px vs 105px, redraw at 55%)",
+  "fruit-shaped badges read where wordy ones smear"
+ ],
+ "readme": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "boombox",
+ "name": "Say Anything — the boombox becomes the joined pair",
+ "medium": "still",
+ "ipClass": "film-still",
+ "grammar": "held-large",
+ "device": "mm-gen2x2-magnetic",
+ "sku": "LONDON_SKYWALKER_OG",
+ "status": "shipped",
+ "pipeline": "D-still-edit-nb + G-targeted-fix (gpt)",
+ "source": {
+  "frame": "Muha Memes/MagneticDispo/refs/boombox-original-clean.png"
+ },
+ "outputs": [
+  "Muha Memes/MagneticDispo/out/MEME_boombox_magnetic.png"
+ ],
+ "lessons": [
+  "JOINED asset for one held object",
+  "the one meme where badges read (held large)",
+  "NB correction passes smear the photo — base = the clean original, badges refit with gpt-image-2 (fix-boombox-clean c3)",
+  "measure BOTH badges on every candidate; read the flat face off a luminance profile"
+ ],
+ "readme": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "monalisa",
+ "name": "Mona Lisa holding the joined pair",
+ "medium": "still",
+ "ipClass": "public-domain-art",
+ "grammar": "resting-object",
+ "device": "mm-gen2x2-magnetic",
+ "sku": "SANTORINI_BUBBLE_GUM",
+ "status": "shipped",
+ "pipeline": "D-still-edit-nb",
+ "source": {
+  "frame": "Muha Memes/MagneticDispo/meme-monalisa.png"
+ },
+ "outputs": [
+  "Muha Memes/MagneticDispo/out/MEME_monalisa_magnetic.png"
+ ],
+ "lessons": [
+  "two-pass: place, then close her hand",
+  "size measured against her hand (~300px wrist to fingertip => ~150x340 target)",
+  "badge floor ~160x300px device; change ONE thing per pass; always measure after a size pass"
+ ],
+ "readme": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "euro-bottle",
+ "name": "Euro Summer 'pulling up with the penjamin' — bottle becomes the magnetic device",
+ "medium": "video",
+ "ipClass": "ugc-clip",
+ "grammar": "prop-in-hand",
+ "device": "mm-gen2x2-magnetic",
+ "status": "NOT LANDED (4 MiniMax takes; replacement reverts to the bottle)",
+ "pipeline": "B-v2v-edit",
+ "source": {
+  "folder": "Muha Memes/MagneticDispo/euro/"
+ },
+ "outputs": [],
+ "lessons": [
+  "image ref read as 'a subject to add' unless framed as the OBJECT reference",
+  "H3 cannot hold a small object replacement across every frame",
+  "auto-tracking fails on colour (orange bottle vs brown jacket); a hand-keyframed composite is the reliable route"
+ ],
+ "readme": "Muha Memes/MagneticDispo/euro/README.md"
+},
+
+{
+ "id": "dual-handshake",
+ "conceptId": "handshake",
+ "name": "Epic Handshake — two flavours shake on one device",
+ "medium": "still",
+ "ipClass": "photo-no-face",
+ "grammar": "shared-grip",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLACKBERRY_KUSH_ORANGE_DREAM",
+ "status": "shipped",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/epic-handshake.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "impact: arm labels + bottom line",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[handshake]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final/MEME_handshake_dualflavor.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3 rendered"
+ },
+ "resultNote": "both hands stack on the device like a torch; labels on the arms carry the two flavours",
+ "candidates": "Muha Memes/DualFlavor/out/handshake_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/handshake.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/handshake_*.json",
+ "operatorVerdict": "disliked 2026-09-10 — do not reuse this grammar/template for the Dual Flavor"
+},
+
+{
+ "id": "dual-two-buttons",
+ "conceptId": "two-buttons",
+ "name": "Two Buttons — sweating over Grape Ape vs Skywalker OG, then relieved with the Dual Flavor",
+ "medium": "still",
+ "ipClass": "anonymous-drawing",
+ "grammar": "new-panel",
+ "device": "mm-dual-flavor-aio",
+ "sku": "GRAPE_APE_SKYWALKER_OG",
+ "status": "shipped 4:5 — operator liked; re-laid as 2-up + relief panel (compose_two_buttons_45.py), artist credit cropped out",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/two-buttons.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "impact on buttons + bottom line; 3-panel composed",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[two-buttons]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_two-buttons_dualflavor_45.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3 rendered (new panel drawn in the template's style)"
+ },
+ "resultNote": "3-panel strip composed by compose_two_buttons.py; button labels placed from the template's red pixels",
+ "candidates": "Muha Memes/DualFlavor/out/two-buttons_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/two-buttons.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/two-buttons_*.json",
+ "operatorVerdict": "liked — ship at 4:5"
+},
+
+{
+ "id": "dual-fry",
+ "conceptId": "fry",
+ "name": "Futurama Fry — 'not sure if Blue Slushie or Pomegranate Runts'",
+ "medium": "still",
+ "ipClass": "cartoon-ip",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLUE_SLUSHIE_POMEGRANATE_RUNTS",
+ "status": "shipped",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/futurama-fry.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "impact top/bottom",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[fry]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final/MEME_fry_dualflavor.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "c3",
+ "moderation": {
+  "gpt-image-2": "3/3 rendered"
+ },
+ "resultNote": "adult animation passes where family animation is refused",
+ "candidates": "Muha Memes/DualFlavor/out/fry_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/fry.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/fry_*.json",
+ "operatorVerdict": "disliked 2026-09-10 — do not reuse this grammar/template for the Dual Flavor"
+},
+
+{
+ "id": "dual-tuxedo-pooh",
+ "conceptId": "tuxedo-pooh",
+ "name": "Tuxedo Pooh — two dispos vs one Dual Flavor",
+ "medium": "still",
+ "ipClass": "cartoon-ip",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "KEY_LIME_JACK_TRAIN_WRECK",
+ "status": "BLOCKED",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/tuxedo-pooh.png",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "label-black right panels",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[tuxedo-pooh]",
+ "outputs": [],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": null,
+ "moderation": {
+  "gpt-image-2": "0/3 — 'rejected by the safety system'",
+  "nano-banana-pro": "0/2 — finishReason PROHIBITED_CONTENT"
+ },
+ "resultNote": "family-animation character + vape = hard block on both providers",
+ "candidates": "Muha Memes/DualFlavor/out/tuxedo-pooh_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/tuxedo-pooh.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/tuxedo-pooh_*.json"
+},
+
+{
+ "id": "dual-buff-doge",
+ "conceptId": "buff-doge",
+ "name": "Buff Doge vs Cheems — Dual Flavor vs regular dispo",
+ "medium": "still",
+ "ipClass": "photo-no-face",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "MANGO_PEACH_ORANGE_CREAMSICLE",
+ "status": "shipped",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/buff-doge-cheems.png",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "label-black top of each half",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[buff-doge]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final/MEME_buff-doge_dualflavor.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3 rendered"
+ },
+ "resultNote": "label-black captions; title had to be sized to one line or it wrapped into the subtitle",
+ "candidates": "Muha Memes/DualFlavor/out/buff-doge_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/buff-doge.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/buff-doge_*.json",
+ "operatorVerdict": "disliked 2026-09-10 — do not reuse this grammar/template for the Dual Flavor"
+},
+
+{
+ "id": "dual-pigeon",
+ "conceptId": "pigeon",
+ "name": "Is this a pigeon? — 'Is this a switch?'",
+ "medium": "still",
+ "ipClass": "cartoon-ip",
+ "grammar": "floating-subject-swap",
+ "device": "mm-dual-flavor-aio",
+ "sku": "KIWI_MOJITO_PINA_COLADA",
+ "status": "shipped 4:5 — operator liked; device moved to his hand (pigeon-move c2, measured pass) then outpainted to 4:5 (pigeon-45 c2)",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/is-this-a-pigeon.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "impact top",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[pigeon]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_pigeon_dualflavor_45.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3 rendered"
+ },
+ "resultNote": "c2 drew the device larger than the butterfly — the readable one",
+ "candidates": "Muha Memes/DualFlavor/out/pigeon_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/pigeon.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/pigeon_*.json",
+ "operatorVerdict": "liked — ship at 4:5 after moving the device to his hand"
+},
+
+{
+ "id": "dual-kermit",
+ "conceptId": "kermit",
+ "name": "Evil Kermit — 'get the one that does both'",
+ "medium": "still",
+ "ipClass": "cartoon-ip (puppet)",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "CHERRY_SLUSHIE_LIMONCELLO",
+ "status": "BLOCKED",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/evil-kermit.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "impact per panel",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[kermit]",
+ "outputs": [],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": null,
+ "moderation": {
+  "gpt-image-2": "0/3 safety",
+  "nano-banana-pro": "0/2 PROHIBITED_CONTENT",
+  "seedream_v5_pro": "job status failed (Higgsfield, is_inpaint, 1600x736)"
+ },
+ "resultNote": "refused by all three providers",
+ "candidates": "Muha Memes/DualFlavor/out/kermit_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/kermit.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/kermit_*.json"
+},
+
+{
+ "id": "dual-always-has-been",
+ "conceptId": "always-has-been",
+ "name": "Always Has Been — the planet is the device",
+ "medium": "still",
+ "ipClass": "photo-no-face",
+ "grammar": "scale-swap",
+ "device": "mm-dual-flavor-aio",
+ "sku": "JUICY_MELON_SUNSET_SHERBET",
+ "status": "shipped",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/always-has-been.png",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "impact per astronaut",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[always-has-been]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final/MEME_always-has-been_dualflavor.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3 rendered"
+ },
+ "resultNote": "planet-scale swap works first pass; template's pistol survives",
+ "candidates": "Muha Memes/DualFlavor/out/always-has-been_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/always-has-been.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/always-has-been_*.json",
+ "operatorVerdict": "disliked 2026-09-10 — do not reuse this grammar/template for the Dual Flavor"
+},
+
+{
+ "id": "dual-american-gothic",
+ "conceptId": "american-gothic",
+ "name": "American Gothic — the pitchfork is the device",
+ "medium": "still",
+ "ipClass": "public-domain-art",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLUE_ALOHA_BURST_PINEAPPLE_KUSH",
+ "status": "shipped",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/wikimedia/american-gothic.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/wikimedia/SOURCES.json"
+ },
+ "captions": "none (art meme)",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[american-gothic]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final/MEME_american-gothic_dualflavor.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "c3",
+ "moderation": {
+  "gpt-image-2": "3/3 rendered"
+ },
+ "resultNote": "gpt-image-2 accepts a public-domain painting with faces; pitchfork->device prop swap first pass",
+ "candidates": "Muha Memes/DualFlavor/out/american-gothic_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/american-gothic.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/american-gothic_*.json",
+ "operatorVerdict": "disliked 2026-09-10 — do not reuse this grammar/template for the Dual Flavor"
+},
+
+{
+ "id": "dual-arnolfini",
+ "conceptId": "arnolfini",
+ "name": "Arnolfini Portrait — joined hands hold the device",
+ "medium": "still",
+ "ipClass": "public-domain-art",
+ "grammar": "shared-grip",
+ "device": "mm-dual-flavor-aio",
+ "sku": "PRICKLY_PEAR_DRIP_AZURE_WILD_BERRY",
+ "status": "shipped",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/wikimedia/arnolfini-portrait.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/wikimedia/SOURCES.json"
+ },
+ "captions": "none (art meme)",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[arnolfini]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final/MEME_arnolfini_dualflavor.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "fix c2",
+ "moderation": {
+  "gpt-image-2": "3/3 rendered, then size pass 2/2"
+ },
+ "resultNote": "first pass drew the device ~30px tall; a measured pass ('~30px now, redraw ~75-85px') landed 2/2 with diff 6/1.4%",
+ "candidates": "Muha Memes/DualFlavor/out/arnolfini_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/arnolfini.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/arnolfini_*.json",
+ "operatorVerdict": "disliked 2026-09-10 — do not reuse this grammar/template for the Dual Flavor"
+},
+
+{
+ "id": "dual-both-is-good",
+ "conceptId": "both-is-good",
+ "name": "Both is good (El Dorado) — 'Grape Ape or Skywalker OG?'",
+ "medium": "still",
+ "ipClass": "cartoon-ip",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "GRAPE_APE_SKYWALKER_OG",
+ "status": "candidate",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/both-is-good.png",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "impact top; BOTH IS GOOD is burned into the template",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[both-is-good]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final/_CANDIDATE_both-is-good_nb_c2__reframed.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "nb c2",
+ "moderation": {
+  "gpt-image-2": "0/3 safety",
+  "nano-banana-pro": "pass 1: 2/2 rendered but re-framed (84% / 46% px changed, text re-laid, one device reverted to the slim slab); pass 2 with a framing lock: 0/2 PROHIBITED_CONTENT"
+ },
+ "resultNote": "usable only if the client accepts a re-rendered frame",
+ "candidates": "Muha Memes/DualFlavor/out/both-is-good_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/both-is-good.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/both-is-good_*.json"
+},
+
+{
+ "id": "dual-two-wolves",
+ "conceptId": "two-wolves",
+ "name": "Inside you there are two wolves — you are the Dual Flavor",
+ "medium": "still",
+ "ipClass": "photo-no-face",
+ "grammar": "floating-subject-swap",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLACKBERRY_KUSH_ORANGE_DREAM",
+ "status": "shipped",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/two-wolves-b.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "impact top/bottom",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[two-wolves]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final/MEME_two-wolves_dualflavor.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3 rendered"
+ },
+ "resultNote": "device in colour against the b/w plate reads well",
+ "candidates": "Muha Memes/DualFlavor/out/two-wolves_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/two-wolves.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/two-wolves_*.json",
+ "operatorVerdict": "disliked 2026-09-10 — do not reuse this grammar/template for the Dual Flavor"
+},
+
+{
+ "id": "dual-distracted",
+ "conceptId": "distracted",
+ "name": "Distracted Boyfriend — red dress = Dual Flavor",
+ "medium": "still",
+ "ipClass": "stock-photo",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "MANGO_PEACH_ORANGE_CREAMSICLE",
+ "status": "shipped",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/distracted-boyfriend.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "impact labels",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[distracted]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final/MEME_distracted_dualflavor.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3 rendered"
+ },
+ "resultNote": "stock-photo people pass",
+ "candidates": "Muha Memes/DualFlavor/out/distracted_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/distracted.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/distracted_*.json",
+ "operatorVerdict": "disliked 2026-09-10 — do not reuse this grammar/template for the Dual Flavor"
+},
+
+{
+ "id": "dual-drake",
+ "conceptId": "drake",
+ "name": "Drake — two dispos vs two flavours one device (moderation test, N=1)",
+ "medium": "still",
+ "ipClass": "celebrity",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "KEY_LIME_JACK_TRAIN_WRECK",
+ "status": "shipped 4:5 — operator liked; white half cropped to 4:5, labels re-laid, upscaled to 1080x1350",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/drake.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "label-black right halves",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[drake]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_drake_dualflavor_45.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "c3",
+ "moderation": {
+  "gpt-image-2": "1/3 — two safety refusals (one in 5s), one render"
+ },
+ "resultNote": "celebrity likeness: moderation coin flip AND likeness exposure; client decision",
+ "candidates": "Muha Memes/DualFlavor/out/drake_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/drake.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/drake_*.json",
+ "operatorVerdict": "liked — ship at 4:5"
+},
+
+{
+ "id": "dual-woman-cat",
+ "conceptId": "woman-cat",
+ "name": "Woman yelling at cat — 'pick one flavor' / cat switches mid-sesh (moderation test, N=1)",
+ "medium": "still",
+ "ipClass": "celebrity",
+ "grammar": "resting-object",
+ "device": "mm-dual-flavor-aio",
+ "sku": "CHERRY_SLUSHIE_LIMONCELLO",
+ "status": "shipped-with-caveat",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/woman-yelling-at-cat.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "impact per panel",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[woman-cat]",
+ "outputs": [
+  "Muha Memes/DualFlavor/final/MEME_woman-cat_dualflavor__celebrity-caveat.png"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": "c3",
+ "moderation": {
+  "gpt-image-2": "3/3 rendered; c1/c2 re-cropped (45-58% px changed), c3 clean (14.8 / 14.9%)"
+ },
+ "resultNote": "TV-personality likeness passed every time; still a likeness-rights call",
+ "candidates": "Muha Memes/DualFlavor/out/woman-cat_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/woman-cat.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/woman-cat_*.json",
+ "operatorVerdict": "disliked 2026-09-10 — do not reuse this grammar/template for the Dual Flavor"
+},
+
+{
+ "id": "dual-homer",
+ "conceptId": "homer",
+ "name": "Homer angel/devil — Juicy Melon vs Sunset Sherbet",
+ "medium": "still",
+ "ipClass": "cartoon-ip",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "JUICY_MELON_SUNSET_SHERBET",
+ "status": "BLOCKED",
+ "pipeline": "C-still-edit-gpt",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/homer-angel-devil.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "captions": "impact labels + bottom line",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[homer]",
+ "outputs": [],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "pick": null,
+ "moderation": {
+  "gpt-image-2": "0/3 safety"
+ },
+ "resultNote": "family-animation block again (not retried on NB)",
+ "candidates": "Muha Memes/DualFlavor/out/homer_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/homer.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/homer_*.json"
+},
+
+{
+ "id": "dual-expanding-brain",
+ "conceptId": "expanding-brain",
+ "name": "Expanding Brain — one flavor → two dispos → taped together → Dual Flavor (device radiating in the last tier)",
+ "medium": "still",
+ "ipClass": "anonymous-drawing",
+ "grammar": "scale-swap (last tier)",
+ "device": "mm-dual-flavor-aio",
+ "sku": "GRAPE_APE_SKYWALKER_OG",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "pad white left; label-black rows",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/expanding-brain.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_expanding-brain_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/expanding-brain_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/expanding-brain.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/expanding-brain_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[expanding-brain]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-they-dont-know",
+ "conceptId": "they-dont-know",
+ "name": "They Don't Know — 'two flavors in this one device'",
+ "medium": "still",
+ "ipClass": "anonymous-drawing",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLACKBERRY_KUSH_ORANGE_DREAM",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "pad white top; caption in the band",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/they-dont-know.png",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_they-dont-know_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/they-dont-know_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/they-dont-know.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/they-dont-know_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[they-dont-know]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-panik",
+ "conceptId": "panik",
+ "name": "Panik / Kalm / Panik — only one dispo left → it's the Dual Flavor → which side first",
+ "medium": "still",
+ "ipClass": "anonymous-drawing (mannequin)",
+ "grammar": "prop-in-hand (Kalm panel)",
+ "device": "mm-dual-flavor-aio",
+ "sku": "KEY_LIME_JACK_TRAIN_WRECK",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "pad white sides; label-black rows",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/panik-kalm-panik.png",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_panik_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/panik_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/panik.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/panik_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[panik]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-morpheus-hands",
+ "conceptId": "morpheus-hands",
+ "name": "Morpheus's hands — same device in both palms, magenta LED left / green LED right",
+ "medium": "still",
+ "ipClass": "photo-no-face",
+ "grammar": "floating-subject-swap (x2, LED states)",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLACKBERRY_KUSH_ORANGE_DREAM",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "pad black; captions in the bands",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/red-pill-blue-pill.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_morpheus-hands_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/morpheus-hands_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/morpheus-hands.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/morpheus-hands_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[morpheus-hands]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-leo-cheers",
+ "conceptId": "leo-cheers",
+ "name": "Leo's toast — 'to never picking a flavor again'",
+ "medium": "still",
+ "ipClass": "celebrity",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "CHERRY_SLUSHIE_LIMONCELLO",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3 (celebrity passed every time)"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "pad black; captions in the bands",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/leo-cheers.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_leo-cheers_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/leo-cheers_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/leo-cheers.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/leo-cheers_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[leo-cheers]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-harold",
+ "conceptId": "harold",
+ "name": "Hide the Pain Harold — mug → device in both panels",
+ "medium": "still",
+ "ipClass": "stock-photo (licensed meme face)",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "MANGO_PEACH_ORANGE_CREAMSICLE",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "already 4:5; impact top/bottom",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/hide-the-pain-harold.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_harold_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/harold_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/harold.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/harold_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[harold]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-gigachad",
+ "conceptId": "gigachad",
+ "name": "GigaChad — 'average Dual Flavor enjoyer', device the only colour in the b/w portrait",
+ "medium": "still",
+ "ipClass": "stock-photo (model)",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLUE_SLUSHIE_POMEGRANATE_RUNTS",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "pad auto edge colour; impact top",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/gigachad.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_gigachad_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/gigachad_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/gigachad.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/gigachad_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[gigachad]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-trade-offer",
+ "conceptId": "trade-offer",
+ "name": "Trade Offer — your single-flavor dispo for two flavors, 2000mg, one device",
+ "medium": "still",
+ "ipClass": "private-individual (universal template)",
+ "grammar": "prop-in-hand (between steepled hands)",
+ "device": "mm-dual-flavor-aio",
+ "sku": "JUICY_MELON_SUNSET_SHERBET",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c3",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "crop top-anchored; impact under the labels",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/trade-offer.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_trade-offer_dualflavor_45.png",
+  "Muha Memes/DualFlavor/final_genz/MEME_trade-offer_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/trade-offer_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/trade-offer.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/trade-offer_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[trade-offer]",
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "operatorNote": "'for the trade offer one can we make the new device [bigger]' → measured 2x pass (trade-offer-fix c2) + re-captioned lowercase under the template labels ('your one-flavor dispo' / 'one that does both'); Gen Z version at final_genz/MEME_trade-offer_genz.png"
+},
+
+{
+ "id": "dual-two-guys-bus",
+ "conceptId": "two-guys-bus",
+ "name": "Two guys on a bus — single-flavor dispo vs Dual Flavor",
+ "medium": "still",
+ "ipClass": "anonymous-drawing (Genildo)",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "KIWI_MOJITO_PINA_COLADA",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3 (c2 dropped the artist signature; c1 kept it)"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "pad white top; labels in the band",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/two-guys-on-a-bus.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_two-guys-bus_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/two-guys-bus_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/two-guys-bus.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/two-guys-bus_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[two-guys-bus]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-roll-safe",
+ "conceptId": "roll-safe",
+ "name": "Roll Safe — 'can't pick the wrong flavor if the device has both'",
+ "medium": "still",
+ "ipClass": "celebrity (actor)",
+ "grammar": "prop-in-hand (second hand added)",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLUE_ALOHA_BURST_PINEAPPLE_KUSH",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "pad black; captions in the bands",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/roll-safe.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_roll-safe_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/roll-safe_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/roll-safe.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/roll-safe_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[roll-safe]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-i-bet",
+ "conceptId": "i-bet",
+ "name": "I bet he's thinking about other women — 'Blackberry Kush or Orange Dream first?'",
+ "medium": "still",
+ "ipClass": "stock-photo",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLACKBERRY_KUSH_ORANGE_DREAM",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "2/3 (one safety refusal)"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "pad white; captions in the bands",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/i-bet-hes-thinking.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_i-bet_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/i-bet_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/i-bet.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/i-bet_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[i-bet]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-mocking-spongebob",
+ "conceptId": "mocking-spongebob",
+ "name": "Mocking SpongeBob — 'jUsT bUy TwO dIsPoS'",
+ "medium": "still",
+ "ipClass": "cartoon-ip",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "PRICKLY_PEAR_DRIP_AZURE_WILD_BERRY",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "2/3 (one safety refusal — SpongeBob is a coin flip, not a block)"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "pad white top; caption in the band",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/mocking-spongebob.jpg",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_mocking-spongebob_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/mocking-spongebob_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/mocking-spongebob.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/mocking-spongebob_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[mocking-spongebob]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-soyjak-pointing",
+ "conceptId": "soyjak-pointing",
+ "name": "Soyjaks pointing — 'when the Dual Flavor drops'",
+ "medium": "still",
+ "ipClass": "anonymous-drawing",
+ "grammar": "floating-subject-swap",
+ "device": "mm-dual-flavor-aio",
+ "sku": "GRAPE_APE_SKYWALKER_OG",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c3",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "pad white top; caption in the band",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/wojak-pointing.png",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_soyjak-pointing_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/soyjak-pointing_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/soyjak-pointing.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/soyjak-pointing_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[soyjak-pointing]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-bell-curve",
+ "conceptId": "bell-curve",
+ "name": "IQ bell curve — both ends 'just get the Dual Flavor'",
+ "medium": "still",
+ "ipClass": "anonymous-drawing",
+ "grammar": "prop-in-hand (x2 ends)",
+ "device": "mm-dual-flavor-aio",
+ "sku": "CHERRY_SLUSHIE_LIMONCELLO",
+ "status": "shipped 4:5 (round 2, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt + F (to45.py + card.py)",
+ "format45": "pad white top; three labels in the band",
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/imgflip/bell-curve.png",
+  "provenance": "Muha Memes/DualFlavor/templates/imgflip/SOURCES.json"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final45/MEME_bell-curve_dualflavor_45.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/bell-curve_c*.png",
+ "reviewSheet": "Muha Memes/DualFlavor/review/bell-curve.jpg",
+ "manifests": "Muha Memes/DualFlavor/manifests/bell-curve_*.json",
+ "prompt": "Muha Memes/DualFlavor/concepts.json[bell-curve]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-cat-table",
+ "conceptId": "cat-table",
+ "name": "cat at the kitchen table — 'friend: what flavor is that? / me:'",
+ "medium": "still",
+ "ipClass": "photo-no-face (animal)",
+ "grammar": "reaction-image + caption bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLACKBERRY_KUSH_ORANGE_DREAM",
+ "status": "shipped 4:5 (round 3 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt (or fresh generation with device refs) + genz_card.py",
+ "source": {
+  "template": "generated (no template)"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_cat-table_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/cat-table_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[cat-table]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-capybara",
+ "conceptId": "capybara",
+ "name": "capybara in the water with the device on its head — 'me after i stop overthinking which side to hit'",
+ "medium": "still",
+ "ipClass": "photo-no-face (animal)",
+ "grammar": "reaction-image + caption bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "KIWI_MOJITO_PINA_COLADA",
+ "status": "shipped 4:5 (round 3 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt (or fresh generation with device refs) + genz_card.py",
+ "source": {
+  "template": "generated"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_capybara_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/capybara_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[capybara]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-hamster",
+ "conceptId": "hamster",
+ "name": "hamster on the desk — 'me realizing the puff counter has been keeping score this whole time'",
+ "medium": "still",
+ "ipClass": "photo-no-face (animal)",
+ "grammar": "reaction-image + caption bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "CHERRY_SLUSHIE_LIMONCELLO",
+ "status": "shipped 4:5 (round 3 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "2/3"
+ },
+ "pipeline": "C-still-edit-gpt (or fresh generation with device refs) + genz_card.py",
+ "source": {
+  "template": "generated"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_hamster_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/hamster_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[hamster]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-dog-nose",
+ "conceptId": "dog-nose",
+ "name": "golden retriever balancing the device on its nose — 'me waiting for permission to switch sides'",
+ "medium": "still",
+ "ipClass": "photo-no-face (animal)",
+ "grammar": "reaction-image + caption bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "MANGO_PEACH_ORANGE_CREAMSICLE",
+ "status": "shipped 4:5 (round 3 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt (or fresh generation with device refs) + genz_card.py",
+ "source": {
+  "template": "generated"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_dog-nose_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/dog-nose_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[dog-nose]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-led-night",
+ "conceptId": "led-night",
+ "name": "green LED in a dark bedroom, TikTok text — 'when the light turns green and you realize you've been on the other side for an hour'",
+ "medium": "still",
+ "ipClass": "photo-no-face (hand)",
+ "grammar": "reaction-image + caption bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLACKBERRY_KUSH_ORANGE_DREAM",
+ "status": "shipped 4:5 (round 3 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt (or fresh generation with device refs) + genz_card.py",
+ "source": {
+  "template": "generated (LED render ref)"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_led-night_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/led-night_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[led-night]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-nightstand",
+ "conceptId": "nightstand",
+ "name": "the device on a nightstand at 2am, TikTok text — 'pov: it's 2am and you still can't decide which side to hit'",
+ "medium": "still",
+ "ipClass": "photo-no-face (still life)",
+ "grammar": "reaction-image + caption bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "GRAPE_APE_SKYWALKER_OG",
+ "status": "shipped 4:5 (round 3 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "noearbuds c3",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt (or fresh generation with device refs) + genz_card.py",
+ "source": {
+  "template": "generated"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_nightstand_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/nightstand_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[nightstand]",
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "operatorNote": "'make the device a little more noticeable' → measured 1.5x pass with the screen lit (nightstand-fix c3) → then 'device is a bit too long' → measured shorten pass (same width, LED back near the bottom end) landed 3/3 (nightstand-short c1) → 'the earbuds look off, just remove them' → frozen-frame removal pass 3/3 (diff outside the corner ≈4, re-encode noise)"
+},
+
+{
+ "id": "dual-genz-monkey-puppet",
+ "conceptId": "monkey-puppet",
+ "name": "monkey puppet side-eye — 'when someone hits my dispo and switches the side without asking'",
+ "medium": "still",
+ "ipClass": "puppet",
+ "grammar": "reaction-image + caption bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLUE_SLUSHIE_POMEGRANATE_RUNTS",
+ "status": "shipped 4:5 (round 3 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "C-still-edit-gpt (or fresh generation with device refs) + genz_card.py",
+ "source": {
+  "template": "imgflip/monkey-puppet.jpg"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_monkey-puppet_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/monkey-puppet_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[monkey-puppet]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-squidward",
+ "conceptId": "squidward",
+ "name": "Squidward at the blinds — 'me watching the group chat argue about which flavor to get'",
+ "medium": "still",
+ "ipClass": "cartoon-ip",
+ "grammar": "reaction-image + caption bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "PRICKLY_PEAR_DRIP_AZURE_WILD_BERRY",
+ "status": "shipped 4:5 (round 3 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "2/3 (one safety refusal)"
+ },
+ "pipeline": "C-still-edit-gpt (or fresh generation with device refs) + genz_card.py",
+ "source": {
+  "template": "imgflip/squidward-window.jpg"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_squidward_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/squidward_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[squidward]",
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "operatorNote": "'can the picture take up more space so there is less white and dead space?' → wide frame cropped to 1:1 (Squidward + hand + window) so the bar shrinks to ~270px"
+},
+
+{
+ "id": "dual-genz-led-vs",
+ "conceptId": "led-vs",
+ "name": "the two LED renders side by side — 'the side i say i prefer vs the side i keep switching to'",
+ "medium": "still",
+ "ipClass": "product render",
+ "grammar": "reaction-image + caption bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLACKBERRY_KUSH_ORANGE_DREAM",
+ "status": "shipped 4:5 (round 3 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "—",
+ "moderation": {
+  "gpt-image-2": "no generation"
+ },
+ "pipeline": "C-still-edit-gpt (or fresh generation with device refs) + genz_card.py",
+ "source": {
+  "template": "deterministic (LightOnOff renders)"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_led-vs_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/led-vs_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[led-vs]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-two-moods",
+ "conceptId": "two-moods",
+ "name": "screen crop with both flavour names — 'my two moods'",
+ "medium": "still",
+ "ipClass": "product render",
+ "grammar": "reaction-image + caption bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLACKBERRY_KUSH_ORANGE_DREAM",
+ "status": "shipped 4:5 (round 3 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "—",
+ "moderation": {
+  "gpt-image-2": "no generation"
+ },
+ "pipeline": "C-still-edit-gpt (or fresh generation with device refs) + genz_card.py",
+ "source": {
+  "template": "deterministic (Front render crop)"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_two-moods_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/two-moods_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[two-moods]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-i-bet-genz",
+ "conceptId": "i-bet-genz",
+ "name": "the bed couple re-captioned — 'him: wondering if it's time to switch to the other side'",
+ "medium": "still",
+ "ipClass": "stock-photo",
+ "grammar": "reaction-image + caption bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLACKBERRY_KUSH_ORANGE_DREAM",
+ "status": "shipped 4:5 (round 3 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "re-caption only"
+ },
+ "pipeline": "C-still-edit-gpt (or fresh generation with device refs) + genz_card.py",
+ "source": {
+  "template": "round-2 i-bet c2"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_i-bet-genz_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/i-bet-genz_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[i-bet-genz]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-pug-guilty",
+ "conceptId": "pug-guilty",
+ "name": "guilty pug on a bed — 'me pretending i didn't just switch sides for the fourth time'",
+ "medium": "still",
+ "ipClass": "photo-no-face (generated animal / still life)",
+ "grammar": "reaction-image-caption-bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLACKBERRY_KUSH_ORANGE_DREAM",
+ "status": "shipped 4:5 (round 4 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "fresh generation with device refs + genz_card.py",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_pug-guilty_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/pug-guilty_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[pug-guilty]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-cat-peek",
+ "conceptId": "cat-peek",
+ "name": "black cat peeking over the table — 'when the friend who \"doesn't hit dispos\" asks which side is better'",
+ "medium": "still",
+ "ipClass": "photo-no-face (generated animal / still life)",
+ "grammar": "reaction-image-caption-bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLUE_ALOHA_BURST_PINEAPPLE_KUSH",
+ "status": "shipped 4:5 (round 4 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "fresh generation with device refs + genz_card.py",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_cat-peek_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/cat-peek_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[cat-peek]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-goose-stare",
+ "conceptId": "goose-stare",
+ "name": "goose on a picnic table — 'me checking the puff counter like it's my bank account'",
+ "medium": "still",
+ "ipClass": "photo-no-face (generated animal / still life)",
+ "grammar": "reaction-image-caption-bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLUE_SLUSHIE_POMEGRANATE_RUNTS",
+ "status": "shipped 4:5 (round 4 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "fresh generation with device refs + genz_card.py",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_goose-stare_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/goose-stare_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[goose-stare]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-chameleon",
+ "conceptId": "chameleon",
+ "name": "chameleon in a terrarium — 'me switching sides again'",
+ "medium": "still",
+ "ipClass": "photo-no-face (generated animal / still life)",
+ "grammar": "reaction-image-caption-bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "GRAPE_APE_SKYWALKER_OG",
+ "status": "shipped 4:5 (round 4 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "fresh generation with device refs + genz_card.py",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_chameleon_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/chameleon_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[chameleon]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-meerkats",
+ "conceptId": "meerkats",
+ "name": "five meerkats staring — 'the group chat when someone says they only need one flavor'",
+ "medium": "still",
+ "ipClass": "photo-no-face (generated animal / still life)",
+ "grammar": "reaction-image-caption-bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "JUICY_MELON_SUNSET_SHERBET",
+ "status": "shipped 4:5 (round 4 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "fresh generation with device refs + genz_card.py",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_meerkats_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/meerkats_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[meerkats]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-husky-explain",
+ "conceptId": "husky-explain",
+ "name": "husky mid-howl — 'me explaining to my friend why i need both sides'",
+ "medium": "still",
+ "ipClass": "photo-no-face (generated animal / still life)",
+ "grammar": "reaction-image-caption-bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "KEY_LIME_JACK_TRAIN_WRECK",
+ "status": "shipped 4:5 (round 4 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "fresh generation with device refs + genz_card.py",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_husky-explain_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/husky-explain_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[husky-explain]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-owl-shocked",
+ "conceptId": "owl-shocked",
+ "name": "barn owl on a chair — 'my friend after hitting it and finding out there's a second side'",
+ "medium": "still",
+ "ipClass": "photo-no-face (generated animal / still life)",
+ "grammar": "reaction-image-caption-bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "KIWI_MOJITO_PINA_COLADA",
+ "status": "shipped 4:5 (round 4 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "fresh generation with device refs + genz_card.py",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_owl-shocked_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/owl-shocked_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[owl-shocked]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-two-cats",
+ "conceptId": "two-cats",
+ "name": "two cats facing opposite ways — 'me and the friend who always picks the other side'",
+ "medium": "still",
+ "ipClass": "photo-no-face (generated animal / still life)",
+ "grammar": "reaction-image-caption-bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "MANGO_PEACH_ORANGE_CREAMSICLE",
+ "status": "shipped 4:5 (round 4 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "fresh generation with device refs + genz_card.py",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_two-cats_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/two-cats_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[two-cats]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-party-counter",
+ "conceptId": "party-counter",
+ "name": "party kitchen counter, no people — 'pov: you brought the only dispo to the function (TikTok text)'",
+ "medium": "still",
+ "ipClass": "photo-no-face (generated animal / still life)",
+ "grammar": "reaction-image-caption-bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "CHERRY_SLUSHIE_LIMONCELLO",
+ "status": "shipped 4:5 (round 4 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c2",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "fresh generation with device refs + genz_card.py",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_party-counter_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/party-counter_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[party-counter]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-sloth",
+ "conceptId": "sloth",
+ "name": "sloth on a branch — 'me 40 minutes after saying \"just one hit\"'",
+ "medium": "still",
+ "ipClass": "photo-no-face (generated animal / still life)",
+ "grammar": "reaction-image-caption-bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "PRICKLY_PEAR_DRIP_AZURE_WILD_BERRY",
+ "status": "shipped 4:5 (round 4 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "fresh generation with device refs + genz_card.py",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_sloth_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/sloth_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[sloth]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-dog-glasses",
+ "conceptId": "dog-glasses",
+ "name": "beagle in reading glasses — 'me reading the puff counter like it's a report card'",
+ "medium": "still",
+ "ipClass": "photo-no-face (generated animal / still life)",
+ "grammar": "reaction-image-caption-bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLACKBERRY_KUSH_ORANGE_DREAM",
+ "status": "shipped 4:5 (round 4 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c3",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "fresh generation with device refs + genz_card.py",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_dog-glasses_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/dog-glasses_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[dog-glasses]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-genz-cat-knock",
+ "conceptId": "cat-knock",
+ "name": "cat pushing the device off the counter — 'the friend who switches sides without warning'",
+ "medium": "still",
+ "ipClass": "photo-no-face (generated animal / still life)",
+ "grammar": "reaction-image-caption-bar",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLUE_ALOHA_BURST_PINEAPPLE_KUSH",
+ "status": "shipped 4:5 (round 4 Gen Z voice, 2026-09-10) — awaiting operator pick",
+ "pick": "c1",
+ "moderation": {
+  "gpt-image-2": "3/3"
+ },
+ "pipeline": "fresh generation with device refs + genz_card.py",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/MEME_cat-knock_genz.png"
+ ],
+ "candidates": "Muha Memes/DualFlavor/out/cat-knock_c*.png",
+ "captions": "Muha Memes/DualFlavor/captions_genz.json[cat-knock]",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-gif-lionking",
+ "conceptId": "lionking-still",
+ "name": "Lion King — Rafiki presents the device instead of Simba (GIF idea, operator-sent frame)",
+ "medium": "gif/video (still test first)",
+ "ipClass": "family-animation (Disney)",
+ "grammar": "prop-in-hand / character-replacement",
+ "device": "mm-dual-flavor-aio",
+ "sku": "GRAPE_APE_SKYWALKER_OG",
+ "status": "SHIPPED as a GIF/MP4 4:5 card (2026-09-10) — awaiting operator pick",
+ "moderation": {
+  "gpt-image-2": "0/3 safety (frame edit)",
+  "nano-banana-pro": "0/2 PROHIBITED_CONTENT (frame edit); 0/2 on an original-design mandrill re-stage with NO Disney frame",
+  "seedream_v5_pro": "job failed",
+  "gpt-image-2 (re-stage, no Disney frame)": "1/2 rendered — out/lionking-restage_c2.png (Rafiki lifting the device at sunrise, animals below)",
+  "veo3_1 i2v (Higgsfield CLI, --quality high --variant veo-3-1-preview, 6s)": "job ended status 'nsfw' on the re-staged frame",
+  "kling3_0 pro i2v 5s (CLI)": "rendered 1920x1080, device and framing held in every frame",
+  "seedance_2_0 i2v": "status 'nsfw'",
+  "minimax_h3 i2v": "not run — start_image cannot be mixed with image_references (retry without the ref if needed)",
+  "kling3_0 pro frozen-device take": "rendered; counters stable across the clip",
+  "kling3_0 4k take": "rendered; counters still drift"
+ },
+ "source": {
+  "template": "Muha Memes/DualFlavor/templates/sent/lionking_rafiki_frame.png",
+  "note": "480x270 frame from the operator's GIF; the GIF file itself was not received"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/GIF_lionking_genz.mp4",
+  "Muha Memes/DualFlavor/final_genz/GIF_lionking_genz.gif",
+  "Muha Memes/DualFlavor/out/lionking-restage_c2.png"
+ ],
+ "nextRoutes": [
+  "Higgsfield MCP (operator suggested) — retry i2v there; try kling3_0 / seedance_2_0 / minimax_h3 image-to-video as alternates",
+  "MiniMax H3 v2v on the real GIF with the device as object ref (needs the GIF file)",
+  "untouched GIF + caption bar"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "captionCanvas": "Muha Memes/DualFlavor/clips/lionking_canvas45.png ('me presenting it to the group chat')",
+ "pipeline": "A-regen-scene (gpt-image-2 re-stage still, no Disney frame) → kling3_0 pro i2v → ffmpeg overlay on the 4:5 caption canvas → palette GIF",
+ "caption": "Me after hearing “I wish we had a penjamin” (operator copy, 2026-09-11)",
+ "pick": "kling3_0 pro 'frozen device' take (clips/lionking_kling_still1.mp4)"
+},
+
+{
+ "id": "dual-gif-caterpillar",
+ "conceptId": "caterpillar-restage",
+ "name": "Alice caterpillar — hookah replaced by the device (GIF idea, operator-sent frame)",
+ "medium": "gif/video",
+ "ipClass": "family-animation (Disney) → re-staged as an original design",
+ "grammar": "prop-in-hand / character-replacement",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLUE_SLUSHIE_POMEGRANATE_RUNTS",
+ "status": "two 4:5 cards shipped 2026-09-11 after 'looks very different from the original' — MiniMax v2v on the real loop (closest) + Kling from a blocking-diagram re-stage (clean) — awaiting pick + caption",
+ "moderation": {
+  "gpt-image-2 (Disney frame edit)": "0/2 safety",
+  "gpt-image-2 (original-design re-stage)": "2/3 rendered",
+  "kling3_0 pro frozen-device i2v": "2/2 rendered (1628x1272)",
+  "gpt-image-2 (Disney frame as composition ref)": "0/3 safety",
+  "gpt-image-2 (blocking diagram, no Disney art)": "2/3 rendered — close to the original pose/slippers/mushroom",
+  "minimax_h3 v2v on the animated PNG loop": "2/2 rendered; take 1 device bigger than his head (no size rule), take 2 with the hand-anchored size rule correct; the original's exhale puff survives in some frames",
+  "minimax_h3 v2v cleanup pass (remove the empty raised pink hand)": "rendered on the previous v2v output as the video reference; hand gone, device and rings held, framing eased out slightly; exhale puff still present"
+ },
+ "complianceFlag": "the glowing rings next to a held vape can read as consumption (brand rule: never depict inhaling/consumption); rings kept abstract, no smoke — operator to decide",
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/GIF_caterpillar_original_genz.mp4 (+.gif) — from clips/caterpillar_minimax3.mp4",
+  "Muha Memes/DualFlavor/final_genz/GIF_caterpillar_redrawn_genz.mp4 (+.gif)",
+  "Muha Memes/DualFlavor/out/caterpillar-block_c1.png",
+  "Muha Memes/DualFlavor/clips/caterpillar_minimax2.mp4"
+ ],
+ "pipeline": "gpt-image-2 re-stage → kling3_0 frozen-device → ffmpeg 4:5 caption card → palette GIF",
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-gif-tinman",
+ "conceptId": "tinman",
+ "name": "Wizard of Oz Tin Man holds the device (GIF idea, operator-sent animated PNG)",
+ "medium": "gif/video",
+ "ipClass": "film-still (live action, 1939)",
+ "grammar": "prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "KEY_LIME_JACK_TRAIN_WRECK",
+ "status": "shipped 4:5 card 2026-09-11 with placeholder caption — device still a little big; awaiting pick/caption",
+ "moderation": {
+  "minimax_h3 v2v": "2/2 rendered on the real loop; take 1 (Front ref, loose size rule) device bigger than his head and the HAND enlarged to hold it; take 2 (45° ref, hard pixel rule '1000px man / 90px device, hand unchanged') hand correct, device about head-sized"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/GIF_tinman_genz.mp4 (+.gif)",
+  "Muha Memes/DualFlavor/clips/tinman_minimax2.mp4"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "dual-gif-tonystark",
+ "conceptId": "tonystark",
+ "name": "Tony Stark hologram — plucks the device instead of the sphere (GIF idea, operator-sent animated PNG, 195 frames)",
+ "medium": "gif/video",
+ "ipClass": "film-still (live action, recognisable actor)",
+ "grammar": "floating-subject-swap + prop-in-hand",
+ "device": "mm-dual-flavor-aio",
+ "sku": "BLUE_SLUSHIE_POMEGRANATE_RUNTS",
+ "status": "original-footage v2v attempts on Wan 2.6 / Seedance 2.5 run 2026-09-11 — unreviewed; re-stage card kept only as fallback",
+ "moderation": {
+  "minimax_h3 v2v": "0/2 'nsfw' — with and without the word 'vape' in the prompt; first MiniMax refusal on live action (Tin Man passed the same day)",
+  "minimax_h3 v2v — holographic device / plain description no ref / COIN CONTROL": "0/3 'nsfw' — the coin control failed, so the clip itself (recognisable actor, close face) is the trigger; v2v on this footage is closed",
+  "gpt-image-2 re-stage (blocking diagram, original engineer)": "3/3 rendered",
+  "kling3_0 pro i2v reach-and-pluck": "rendered",
+  "wan2_6 v2v": "rendered — clips/tonystark_wan.mp4, review/_ts_wan.jpg; operator to judge",
+  "seedance_2_5 video_edit": "failed/refused — see hf/ts_sd25.txt"
+ },
+ "source": {
+  "clip": "Muha Memes/DualFlavor/clips/tonystark_src.mp4",
+  "frame": "Muha Memes/DualFlavor/templates/sent/tonystark_frame.png"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_genz/GIF_stark_genz.mp4 (+.gif)",
+  "Muha Memes/DualFlavor/out/stark-restage_c2.png",
+  "Muha Memes/DualFlavor/review/_stark_frames.jpg"
+ ],
+ "nextRoutes": [
+  "control: same footage, replace the sphere with a plain coin, no device ref — if it passes the device+face pairing is the trigger, if it fails the likeness is",
+  "re-stage: gpt-image-2 still of an original-design engineer behind a blue holographic interface with the device floating in it (blocking diagram off the frame) → Kling frozen-device i2v for the pluck",
+  "untouched GIF + caption bar"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "operatorVerdict": "re-stage rejected 2026-09-11: 'doesn't even look like tony stark — preserve the original gif as much as possible' → SKIPPED by operator 2026-09-11 after the Wan take"
+},
+
+{
+ "id": "dual-gif-dogbone",
+ "conceptId": "dogbone",
+ "name": "Vlipsy 'dog with bone, complete shock' — bone becomes the device (operator-sent .mov)",
+ "medium": "gif/video",
+ "ipClass": "ugc-clip (animal, no human)",
+ "grammar": "prop-in-mouth",
+ "device": "mm-dual-flavor-aio",
+ "sku": "MANGO_PEACH_ORANGE_CREAMSICLE",
+ "status": "text-free MP4+GIF 2026-09-11 (final_gifs_notext/VID_dogbone_notext.*) = take 15: size via size still (~half of take 8), GOLD end INSIDE the mouth, black screen end out to the left; take 16 (45° render) alternate",
+ "complianceFlag": "device IN the dog's mouth — operator asked for it explicitly; brand rule says animals never mouth the device (consumption optics). Operator decision.",
+ "moderation": {
+  "minimax_h3 v2v (8.7s retimed to 9s)": "rendered first try"
+ },
+ "outputs": [
+  "Muha Memes/DualFlavor/final_gifs_notext/VID_dogbone_notext.mp4 (+.gif)",
+  "Muha Memes/DualFlavor/clips/dogbone_take15_goldin.mp4",
+  "Muha Memes/DualFlavor/clips/dogbone_take16_goldin_45.mp4",
+  "Muha Memes/DualFlavor/refs/_dog_half_block3.png (size + orientation still)",
+  "Muha Memes/DualFlavor/review/dog/"
+ ],
+ "readme": "Muha Memes/DualFlavor/README.md",
+ "lessons": [
+  "meme:v2v-size-still",
+  "orientation: say it in FRAME terms (which end points left/right, which end is inside the mouth) — 'turn it around' and 'toward the mouth' both failed"
+ ]
+}
+
+],
+
+"laws": [
+
+{
+ "id": "meme:control-before-concluding",
+ "claim": "A `failed` job returns no reason. Run a control first (same model, same prompt shape, a non-copyrighted image). Control passes => the footage is the trigger => try another provider. Never conclude 'every route refuses this' from routes that share a provider.",
+ "evidence": "Captain Phillips 2026-08-18: three shared-provider failures were wrongly read as universal, pushing a composite the operator rejected; MiniMax H3 then did it first pass.",
+ "counterexamples": "none recorded",
+ "applies_to": "video, still",
+ "confidence": "strong",
+ "source": "Muha Memes/HANDOFF__MUHA_MEMES.md"
+},
+
+{
+ "id": "meme:frame-is-layout-master",
+ "claim": "The meme frame goes in as REFERENCE 1 and the prompt says it is reproduced edge to edge at the same framing, with nothing enlarged, moved or run off an edge; the device renders are references so the product is reproduced rather than invented.",
+ "evidence": "SpongeBob first pass cut Patrick's head off before the edge-to-edge clause; every magnetic meme since holds framing.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:hands-must-grip",
+ "claim": "Say the hand GRIPS: fingers wrapping the body, thumb across, hand and object one solid shape. Without it the device hovers in mid-air beside an open hand.",
+ "evidence": "SpongeBob, Creation (left index finger stayed extended until named), Mona Lisa (floating device until the second pass).",
+ "counterexamples": "none recorded",
+ "applies_to": "still, video",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:size-anchored-to-body",
+ "claim": "Anchor an inserted object's size to a body part ('as long as his palm, no wider than two fingers', 'roughly a small lighter in an adult grip', 'a third the height of the face'), never to the frame, and say 'if in doubt make it smaller'. Frame fractions set scale but not proportion; an object with nothing to sit against gets oversized.",
+ "evidence": "Yacht party device larger than a head; yacht s06 console placement oversized vs held; Creation devices dwarfing hands until sized against the hand.",
+ "counterexamples": "none recorded",
+ "applies_to": "still, video",
+ "confidence": "strong",
+ "source": "Muha Memes/HANDOFF__MUHA_MEMES.md"
+},
+
+{
+ "id": "meme:measure-dont-describe",
+ "claim": "Give a MEASUREMENT and a target, not an adjective. 'Smaller' was ignored twice; '190px vs 105px, redraw at 55%' and 'about 105 pixels wide, centred, ~16px bare black either side' landed in one pass. Always measure after a size pass — four plausible candidates can all be unchanged.",
+ "evidence": "Creation left hand; Cannes badge; Mona Lisa 60% pass (429px before and after).",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:one-change-per-pass",
+ "claim": "Stack two changes and the model satisfies the easier one. Size alone halved the Mona Lisa device immediately after 'size AND clean badges' changed only the badges.",
+ "evidence": "Mona Lisa size pass, measured.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:name-what-is-finished",
+ "claim": "A correction pass rerolls everything not named as off-limits. Feed the approved frame back in, list every finished element (the other hand, the other device, the framing, the field, the face) and change one thing; then re-check the whole frame because a fix breaks something adjacent.",
+ "evidence": "fix-lefthand (grip fix inflated the hand), fix-jh, fix-badge-pos.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:badge-legibility-is-pixels",
+ "claim": "Badge lettering resolves as a function of the device's pixel footprint, not prompt wording: ~140x259px device smears no matter what (8 passes), ~160x300 holds; wordy badges belong on memes that hold the product large (boombox), fruit-shaped badges read small (Ibiza Cherry, Purple Punch). Pushing harder for type makes the model ENLARGE the badge instead.",
+ "evidence": "Mona Lisa badge passes; boombox vs Creation comparison.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:nb-wont-rescale-badge",
+ "claim": "Nano Banana Pro will not rescale a badge on a rendered device (16 candidates, every phrasing, incl. a pixel target and an exemplar); it rescales whole devices fine. gpt-image-2 /v1/images/edits does it when given width in pixels + equal margins as ONE geometry.",
+ "evidence": "SpongeBob Cannes badge, 2026-09-08.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:move-becomes-resize",
+ "claim": "Asking gpt-image-2 to MOVE a badge makes it enlarge it and the fault swaps sides; ask for a FIT (width + equal margins) and you get both. Check whether the badge fits the flat face before promising to move it.",
+ "evidence": "'slide it right' c1-c3 all grew 4-30px and ran off the opposite edge.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:read-face-by-luminance",
+ "claim": "Read the device's flat face off a luminance profile across the badge row, not by eye: shoulder = dark fall-off then a bright specular band, flat face = the long even stretch. Foreshortening makes the two halves very different; measure each.",
+ "evidence": "Misread the shoulder side twice; boombox gold face was 98px not 140.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:diff-candidates-vs-template",
+ "claim": "Diff every candidate against the approved frame (mean-abs-diff + % pixels differing by >25). A good edit is one bright blob on the changed element; a reframe lights up everywhere (10.7/10.5% vs 3.6/1.2%). Check faces numerically (crop + mean-abs-diff) to catch a stylised repaint.",
+ "evidence": "cannesgpt c1 reframed; bbclean face diff 4.6 = re-encode noise only.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:moderation-coin-flip",
+ "claim": "gpt-image-2 rejects about one candidate in four at random on identical prompts ('rejected by the safety system'). Over-request and let one fail; do not reword and do not read a block as 'refuses this frame'. A whole-batch refusal on a nude is real (Creation) — switch to Nano Banana.",
+ "evidence": "Cannes/London fix runs at all three sizes; Creation 3/3 refused.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:clean-original-base",
+ "claim": "Every correction pass through Nano Banana at 2K leaves a painterly smear, a purple cast and a distorted face that compounds; base every edit on the untouched original the client supplied and refit elements with gpt-image-2 (which preserved the photograph: face diff 4.6).",
+ "evidence": "boombox_edge/str chain vs boombox-original-clean + fix-boombox-clean c3.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:real-skus-only",
+ "claim": "A meme must show a real SKU. Pairings are fixed by the product (magnetic: black half + gold half table; dual flavor: left name + right name table). A pass that picked badges freely produced two non-existent products.",
+ "evidence": "MagneticDispo README 'THE COMBOS ARE FIXED SKUs'; Dual Flavor pairs read off the screens 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still, video",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:no-invented-type",
+ "claim": "Ban text by category ('no wordmark, no lettering, no words, no numbers, no small print'); never write the brand string inside a negative — the model renders it. Small type on a device is allowed to be soft; readable words must never be invented. Captions, labels, watermarks are composed deterministically afterwards.",
+ "evidence": "DEVICE_SPEC rule 3; Titanic 'MUf MELS'; feedback_never_name_wrong_spelling.",
+ "counterexamples": "none recorded",
+ "applies_to": "still, video",
+ "confidence": "strong",
+ "source": "Muha Memes/DEVICE_SPEC.md"
+},
+
+{
+ "id": "meme:colourway-then-lighting",
+ "claim": "State BLACK AND GOLD as a hard product fact in one paragraph, then subordinate it to the plate's light in a second ('lit by this scene, not a studio, no hard white hotspot'), then name the panel's own light on the gold. Merging them yields either a silhouette or a hero render.",
+ "evidence": "Pole s3 (glossy gold product render) vs g1-g3 pick; 'shadowed' round rejected as all-black.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/Pole/README.md"
+},
+
+{
+ "id": "meme:identical-copies-count-depth",
+ "claim": "For multiples: (1) IDENTICAL COPIES — every instance the exact same product differing only in angle/distance, no design change during the shot; (2) a COUNT; (3) DEPTH routing — never between camera and subject, pass BEHIND the silhouette. Without (1) instances diverge; without (2) shots come back empty; forbidding a position leaves it ambiguous.",
+ "evidence": "BrainCompute P_head_tiny_v3.txt; also holds multi-panel stills together (Pole).",
+ "counterexamples": "none recorded",
+ "applies_to": "video, still",
+ "confidence": "strong",
+ "source": "Muha Memes/HANDOFF__MUHA_MEMES.md"
+},
+
+{
+ "id": "meme:short-source-anchored-v2v",
+ "claim": "v2v prompts must be SHORT and source-anchored ('keep this shot exactly, change only X'). A 2500-char canonical description flipped MiniMax from editing to generating: it changed the vessel and re-framed nine of twelve shots.",
+ "evidence": "YachtGoldenHour canonical spec vs P_min.txt.",
+ "counterexamples": "none recorded",
+ "applies_to": "video",
+ "confidence": "strong",
+ "source": "Muha Memes/HANDOFF__MUHA_MEMES.md"
+},
+
+{
+ "id": "meme:ref-drives-framing",
+ "claim": "In v2v the REFERENCE IMAGE drives framing, not the prompt: a rich master render pushes the camera in to honour its detail; a plain device crop holds the source framing. Swap the ref before adding 'do not zoom' language. The ref's own aspect also drives the rendered proportion (a 1:1.5 crop => stubby device).",
+ "evidence": "Escobar v4 vs v6 (same prompt); yacht s06 pen_capcrest vs device-rich.",
+ "counterexamples": "none recorded",
+ "applies_to": "video",
+ "confidence": "strong",
+ "source": "Muha Memes/Escobar/README.md"
+},
+
+{
+ "id": "meme:branding-fights-framing",
+ "claim": "Asking for a legible mark on a distant subject makes the model push in. Say the mark may be small, soft or illegible at this distance and that is correct; size creeps up whenever markings are requested — blank bodies hold size.",
+ "evidence": "Yacht hull mark; yacht s06 marked vs blank takes.",
+ "counterexamples": "none recorded",
+ "applies_to": "video, still",
+ "confidence": "strong",
+ "source": "Muha Memes/HANDOFF__MUHA_MEMES.md"
+},
+
+{
+ "id": "meme:present-in-first-frame",
+ "claim": "State that an added/swapped object is present in the very first frame and never appears or fades in, or v2v introduces it ~2s late. Swapping something the subject already wears/holds beats adding.",
+ "evidence": "Captain Phillips, YachtMaster, Wan 2.6 late hat.",
+ "counterexamples": "none recorded",
+ "applies_to": "video",
+ "confidence": "strong",
+ "source": "Muha Memes/HANDOFF__MUHA_MEMES.md"
+},
+
+{
+ "id": "meme:retime-up-integer",
+ "claim": "MiniMax H3 bills integer seconds, caps at 15, returns its own resolution @24fps. Retime the source UP to the next whole second (keeps every frame), resample back to the source frame count, tone-match per channel, restore original caption/watermark pixels, mux the original audio. Extract the frame range THEN setpts, never in one chain.",
+ "evidence": "YachtMaster 7.07->10s; Escobar 13.43->15s; handoff rule 5.",
+ "counterexamples": "none recorded",
+ "applies_to": "video",
+ "confidence": "strong",
+ "source": "Muha Memes/HANDOFF__MUHA_MEMES.md"
+},
+
+{
+ "id": "meme:blocking-diagram-not-film-frame",
+ "claim": "A real film frame as a composition ref fails Nano Banana Pro moderation on the actors' likenesses; a flat grey blocking diagram (capsules, arms, horizon, rigging) called out as 'layout only' works with zero IP.",
+ "evidence": "Titanic 2026-08-18.",
+ "counterexamples": "none recorded",
+ "applies_to": "video, still",
+ "confidence": "strong",
+ "source": "Muha Memes/Titanic/README.md"
+},
+
+{
+ "id": "meme:tone-map-on-bw-plates",
+ "claim": "On a black-and-white plate say what each material renders AS ('the cap renders NEAR-WHITE, the brightest thing in frame') — 'polished gold' means nothing in monochrome and rendered black twice. 'Lit from within' beats 'glowing'; 'do NOT brighten / clean up / smooth the grain' is load-bearing.",
+ "evidence": "Lighthouse A1-A3 vs B2.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/Lighthouse/README.md"
+},
+
+{
+ "id": "meme:terse-body-on-atmospheric-plates",
+ "claim": "Keep the device description SHORT on atmospheric/distant plates; the long flavour block pulled the lighthouse out of the fog into a clean product render. Blank body + strong distance/mist language holds it back.",
+ "evidence": "Lighthouse; DEVICE_SPEC rule 6.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DEVICE_SPEC.md"
+},
+
+{
+ "id": "meme:card-geometry-per-clip",
+ "claim": "Measure the card before anything else and never reuse the last card's numbers: white 16:9 band (Titanic 1080x1920 / Escobar 480x854), black 2.39:1 band with subtitles (Captain Phillips), square band (YachtMaster => --aspect-ratio 1:1, no letterboxing), 3-panel 2.4:1 (Pole), 2-panel with a b/w right half (Lighthouse).",
+ "evidence": "All meme READMEs.",
+ "counterexamples": "none recorded",
+ "applies_to": "video, still",
+ "confidence": "strong",
+ "source": "Muha Memes/HANDOFF__MUHA_MEMES.md"
+},
+
+{
+ "id": "meme:no-composite",
+ "claim": "Compositing a device/badge into a meme is rejected: it sits ON hands rather than in them, flat pastes cannot match painted lighting/perspective, and clearing the old artefact samples the wrong surface. Generate with the real asset as a reference; keep composites only as documented fallbacks.",
+ "evidence": "Creation composite rejected by the client; boombox 'fixed' composite killed the gloss; feedback_never_composite_generate_whole_graphic.",
+ "counterexamples": "none recorded",
+ "applies_to": "still, video",
+ "confidence": "strong",
+ "source": "Muha Memes/MagneticDispo/README.md"
+},
+
+{
+ "id": "meme:concurrency-and-disk",
+ "claim": "Higgsfield allows 4 concurrent jobs per ACCOUNT (shared across sessions; excess submissions vanish with rate_limit_reached) — batch 3 and verify every job returned a URL. Never stage PNG frames on this machine; pipe frames to ffmpeg.",
+ "evidence": "Handoff rules 4 and 12.",
+ "counterexamples": "none recorded",
+ "applies_to": "video",
+ "confidence": "strong",
+ "source": "Muha Memes/HANDOFF__MUHA_MEMES.md"
+},
+
+{
+ "id": "meme:pill-geometry-must-be-pinned",
+ "claim": "The Dual Flavor device is a stout 2.1:1 pill with fully rounded ends and twin mouthpieces; earlier Muha memes taught the models a slim 3.3:1 slab, so the pill proportions, the two mouthpieces and 'not a pen' must be in the block or the older body comes back.",
+ "evidence": "39/39 gpt-image-2 candidates across 13 templates held the pill body on 2026-09-10; the one NB re-render that drifted (both-is-good c1) drew the slim slab. Zoom sheet: Muha Memes/DualFlavor/review/_pilot_device_zoom.jpg",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:template-provenance",
+ "claim": "Every self-sourced template carries provenance (URL, retrieval date, licence/IP class) in a SOURCES.json beside the file. imgflip's get_memes API and Wikimedia's imageinfo API (with a User-Agent) are the two working routes; a guessed upload.wikimedia.org thumb path returns 400.",
+ "evidence": "Sourcing run 2026-09-10 (50 imgflip + 12 Commons files).",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/templates/"
+},
+
+{
+ "id": "meme:family-character-vape-block",
+ "claim": "A children's / family-animation character holding a vape is a HARD block: gpt-image-2 refused Winnie the Pooh 0/3, Kermit 0/3, El Dorado 0/3 and Homer 0/3 ('rejected by the safety system'); Nano Banana Pro refused Pooh 0/2 and Kermit 0/2 (PROHIBITED_CONTENT) and flipped on El Dorado (2/2 then 0/2); Seedream v5 Pro failed Kermit. Adult animation (Futurama Fry 3/3) and anime (Is This A Pigeon 3/3) pass. Do not reword — swap the template.",
+ "evidence": "Muha Memes/DualFlavor/manifests/{tuxedo-pooh,kermit,both-is-good,homer}_*.json + hf/kermit_seedream.txt, 2026-09-10.",
+ "counterexamples": "SpongeBob + magnetic device passed gpt-image-2 on 2026-09-02 (1 in 4 refused) — so it is character-specific, not 'all cartoons'; test one candidate before planning a set.",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:real-person-coin-flip",
+ "claim": "Templates with a real person's likeness are a per-candidate coin flip on gpt-image-2, not a rule: Drake 1/3 (one refusal in 5s = a pre-check, one at 39s), Taylor Armstrong (woman yelling at cat) 3/3, Distracted Boyfriend stock models 3/3. Over-request (N>=3) and treat likeness rights as a separate client decision from moderation.",
+ "evidence": "Muha Memes/DualFlavor/manifests/{drake,woman-cat,distracted}_*.json, 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:pd-paintings-pass-gpt",
+ "claim": "gpt-image-2 accepts public-domain paintings with faces and edits them faithfully (American Gothic 3/3, Arnolfini 3/3, both with the painting preserved and the device painted in the same style); the only painting it has refused is a nude (Creation of Adam). Public-domain art is the lowest-exposure, highest-acceptance template class.",
+ "evidence": "American Gothic + Arnolfini runs 2026-09-10; Creation of Adam 2026-09-02.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:new-panel-continuation-works",
+ "claim": "gpt-image-2 will draw a NEW panel that continues a comic template in its own style (same character, line weight and palette) when the template is passed only as a style reference — Two Buttons relief panel 3/3 usable. Compose the strip and its labels deterministically afterwards (compose_two_buttons.py finds the buttons by their red pixels).",
+ "evidence": "Muha Memes/DualFlavor/out/two-buttons_c*.png, 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:diff-is-per-template",
+ "claim": "Calibrate the candidate-vs-template diff per template before judging: a clean edit on a cartoon/photo reads 2.5-8 mean-abs-diff, a public-domain painting re-rendered at a new size reads 11-15 with NO reframe, and a real reframe reads 37-90 (both-is-good NB c1 84% px, woman-cat c1/c2 45-58%). The number ranks candidates within one template; it does not compare templates. Always look.",
+ "evidence": "Muha Memes/DualFlavor/review/*.jpg diff labels, 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:nb-rerenders-the-frame",
+ "claim": "Nano Banana Pro is a fallback only when the frame can tolerate a re-render: on Both Is Good it re-laid the burned-in lettering into two lines, re-framed the scene and (in one candidate) redrew the device as the slim slab; adding an absolute framing lock did not help and tripped PROHIBITED_CONTENT. gpt-image-2 edits keep the frame; NB regenerates it.",
+ "evidence": "both-is-good NB passes 1 and 2, 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:captions-need-a-fit-check",
+ "claim": "Deterministic captions still need a layout pass: a title box that wraps to two lines walks into the subtitle (Buff Doge took three iterations — size the title to ONE line, then place the subtitle). Coordinates in fractions of the image keep one spec valid across candidate sizes.",
+ "evidence": "Muha Memes/DualFlavor/captions.json history, 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:dual-flavor-taste-caption-formats",
+ "claim": "For the Dual Flavor the operator picks classic caption-format templates where a CHARACTER HOLDS the device as the punchline (Two Buttons relief panel, Drake, 'is this a switch?'); public-domain art memes, no-face photo templates and device-as-scenery grammars were all rejected in the same review. All memes ship 4:5 portrait.",
+ "evidence": "Operator review 2026-09-10: liked two-buttons, pigeon, drake; disliked the other nine; 'all memes should 4:5 portrait'.",
+ "counterexamples": "The magnetic-pair art memes (Creation of Adam, Mona Lisa) were approved in September — the art grammar works for the two-halves joke, not for the dual-flavour choice joke.",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:four-by-five-deterministic",
+ "claim": "4:5 portrait is built after generation, not requested from the model: pad with the template's own flat background (white for wojak/comic drawings, black for dark plates), crop when the content allows (Drake: narrow the white text half), lay multi-panel strips into a 4:5 grid (Two Buttons 2-up + relief panel), and only outpaint full-bleed scenes with gpt-image-2 from a letterboxed grey canvas. Captions use fractions of the FINAL canvas so one spec fits every candidate.",
+ "evidence": "Muha Memes/DualFlavor/to45.py, compose_two_buttons_45.py, finish.py, 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:outpaint-from-grey-canvas",
+ "claim": "gpt-image-2 will extend a finished meme to 4:5 from a letterboxed canvas: paste the picture on a 4:5 canvas with flat mid-grey bands, say the bands are to be painted as a continuation and the middle comes back unchanged. Both candidates on the anime frame came back seamless (window continued above, bush and sign below) with the device where it was. It re-renders the frame slightly cleaner than a VHS-soft original — acceptable for cartoons, check faces on photos.",
+ "evidence": "Muha Memes/DualFlavor/out/pigeon-45_c*.png from refs/_pigeon_canvas45.png, 2026-09-10.",
+ "counterexamples": "none recorded yet",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:measured-move-holds-size",
+ "claim": "A MOVE instruction lands when it carries the current centre, the target centre, the target bottom edge and the unchanged pixel height ('~470px tall, centre x=1356,y=390 → x=1130,y=640, bottom ≈ y=875'); two of three candidates moved the device to the hand at the same size and cleaned the old spot, the third ignored it. Without numbers a move becomes a resize (law meme:move-becomes-resize).",
+ "evidence": "Muha Memes/DualFlavor/out/pigeon-move_c*.png, 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:led-states-are-the-switch-story",
+ "claim": "The LightOnOff renders (magenta LED = left flavour, green = right) let one meme show the switch mechanic with two copies of the SAME device — Morpheus's palms held one of each, glow on the skin, 3/3 first pass. Pass the two LED renders as separate references and state they are the same product differing only in LED colour.",
+ "evidence": "Muha Memes/DualFlavor/out/morpheus-hands_c*.png, 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:genz-voice-not-ad-copy",
+ "claim": "Product-forward captions in Impact caps read as corny to the operator ('think about memes a company meme page would post… relatable to gen z'). The working voice is a lowercase, deadpan first-person caption bar that never names the product, the tagline, the mg or the mechanic; the device just sits in the frame. Templates from 2012 (Expanding Brain, Bell Curve, Roll Safe, Harold) age the post; reaction animals and phone-photo moods do not.",
+ "evidence": "Round-2 verdict 2026-09-10; round-3 built in the new voice (final_genz/).",
+ "counterexamples": "The operator still liked Two Buttons, Drake and 'is this a switch?' — classic templates work when the caption is a joke, not copy.",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:generated-reaction-animals-pass",
+ "claim": "gpt-image-2 generates convincing phone-photo reaction images with the device from the Front+45 refs alone (no template): deadpan cat at a table, capybara, hamster, retriever balancing it on its nose, a hand with the green LED at night, a 2am nightstand — 17/18 candidates rendered, every device geometry held, and the phone-photo realism clauses (auto-exposure, grain, clutter, 'not a product shot') kept them off the AI-glossy look.",
+ "evidence": "Muha Memes/DualFlavor/out/{cat-table,capybara,hamster,dog-nose,led-night,nightstand}_c*.png, 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:no-consumption-in-animal-shots",
+ "claim": "Animals never hold the device in the mouth or 'use' it: balance it on the head or nose, stand it beside them, or leave it on the table. Brand rule (no consumption depicted) plus optics — an animal with a vape in its mouth is the edgy read the operator ruled out.",
+ "evidence": "Design choice on dog-nose (treat-on-nose trick) 2026-09-10; sieve brand.json category_risk.",
+ "counterexamples": "none recorded",
+ "applies_to": "still, video",
+ "confidence": "strong",
+ "source": "sieve/brands/Muha_Meds/brand.json"
+},
+
+{
+ "id": "meme:wide-frame-crop-not-bar",
+ "claim": "On the caption-bar card a wide template leaves a tall white bar the operator reads as dead space ('less white and dead space'). Crop the frame to 1:1 around the subject + device (Squidward: x 0.09→1.0 of the 1.43 frame) so the image fills ~80% of the card and the bar is ~270px. Tall bars only for genuinely wide two-panel templates (monkey puppet) where cropping would cut a panel.",
+ "evidence": "Squidward card 2026-09-10, operator note.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:mood-shots-need-a-noticeable-device",
+ "claim": "In phone-photo 'mood' scenes (nightstand, party counter) the incidental device must still be noticed: aim for ~15-20% of frame height with the screen lit so the gauge and names glow. The first nightstand pass at ~105px wide in 1088 was 'not noticeable'; a measured 1.5x + lit-screen pass fixed it 3/3.",
+ "evidence": "nightstand-fix c1-c3 vs nightstand c1, 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:reaction-animal-library",
+ "claim": "Generated reaction animals that render first pass with the device and read as Gen Z meme-page material: deadpan cat at a table, black cat peeking over a table edge, guilty pug, goose staring down, chameleon, meerkat row, husky mid-howl, shocked barn owl, two cats facing away, sloth, beagle in reading glasses, cat pushing the device off a counter, capybara, hamster, retriever balancing it on its nose. 36/36 and 17/18 across two rounds; no moderation refusals on animals.",
+ "evidence": "Muha Memes/DualFlavor/out/ rounds 3-4, 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:enlarge-passes-stretch-length",
+ "claim": "An 'enlarge' pass on a lying-down device tends to grow its LENGTH more than its width (the body below the LED stretched to ~1.8x the true proportion). Follow any enlarge with a proportion check against the Front render, and if it drifted, run a shorten pass that fixes the width in pixels and moves the LED window back near the bottom end — that landed 3/3.",
+ "evidence": "Muha Memes/DualFlavor/out/nightstand-fix_c3.png (too long) vs nightstand-short_c1-c3, 2026-09-10.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:presenting-a-vape-is-blocked-in-animation",
+ "claim": "The Lion King 'presentation' composition with a vape is refused on every still route: gpt-image-2 0/3 and Nano Banana 0/2 on the Disney frame, Seedream failed, AND Nano Banana 0/2 on an original-design mandrill re-stage with no Disney frame at all — so the block is not only the IP; a cartoon character ceremonially presenting a vape trips it too. Do not spend more still candidates; the remaining routes are MiniMax H3 v2v on the real GIF or an untouched GIF with a caption bar.",
+ "evidence": "Muha Memes/DualFlavor/manifests/lionking-*_*.json, hf/lionking_seedream.txt, 2026-09-10.",
+ "counterexamples": "gpt-image-2 re-stage result pending in the same session (see template entry).",
+ "applies_to": "still, video",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:veo-nsfw-on-vape-frame",
+ "claim": "Veo 3.1 (Higgsfield CLI) returned status 'nsfw' on an image-to-video from a cartoon frame of a character holding the vape aloft — a video-side moderation distinct from the still refusals. The still itself passed gpt-image-2 (1/2) once the Disney frame was dropped and the character was an original design.",
+ "evidence": "Muha Memes/DualFlavor/hf/lionking_veo.txt job 31cf41c8, 2026-09-10.",
+ "counterexamples": "Veo 3.1 animated the Titanic device start frames (2026-08-18) — devices as characters, no one 'presenting' one.",
+ "applies_to": "video",
+ "confidence": "provisional — one job; retry via the Higgsfield MCP and alternate models",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:kling-animates-what-veo-refuses",
+ "claim": "For a cartoon character presenting the vape, Veo 3.1 and Seedance 2.0 both returned 'nsfw' on the same start frame while Kling 3.0 pro rendered it cleanly (5s, 1080p, device held every frame). Route 'character + vape' i2v to Kling first; keep Veo for device-as-character scenes. MiniMax H3 i2v cannot take image_references alongside start_image.",
+ "evidence": "Muha Memes/DualFlavor/hf/lionking_{veo,seedance,kling,minimax}.txt, 2026-09-10.",
+ "counterexamples": "Kling's camera discipline was poor on the Titanic bow (2026-08-18); on this static presentation shot it held.",
+ "applies_to": "video",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:screen-type-flicker-in-video",
+ "claim": "Small screen type on the device (the puff counters) is re-synthesised every frame by i2v models and drifts ('00 00' → '30 399'). The lever that worked was NOT resolution (the 4K take still drifted) but MOTION: a prompt that freezes the character's hands and the device ('do not move, tilt or drift; the screen stays exactly as in the first frame') and moves only wind, light, distant animals and a slow push-in kept the counters stable. The type stays soft — that is the ceiling; if the digits must be crisp, composite the clean first-frame screen back over a static device.",
+ "evidence": "Muha Memes/DualFlavor/review/_lk_compare.jpg — original vs frozen vs 4K takes, 2026-09-11.",
+ "counterexamples": "none recorded",
+ "applies_to": "video",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:closest-to-original-is-v2v-then-blocking",
+ "claim": "When the operator wants a GIF to look like the original, the order is: (1) MiniMax H3 v2v on the real loop (an animated PNG counts — build a 5s mp4 by repeating the frames; pass the device as image_references, NEVER with start_image; include the hand-anchored SIZE rule or the device comes back bigger than the head); (2) a blocking diagram measured off the frame + a precise design description on gpt-image-2 (2/3 passed where the Disney frame as reference was 0/3); (3) only then a free re-stage, which drifts in pose and design. The source's own actions survive v2v (the exhale puff), so check compliance frame by frame.",
+ "evidence": "Muha Memes/DualFlavor/review/_cat_round2.jpg, caterpillar-match (0/3) vs caterpillar-block (2/3), 2026-09-11.",
+ "counterexamples": "none recorded",
+ "applies_to": "video",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:v2v-size-creep-on-raised-hands",
+ "claim": "On a raised, open hand MiniMax v2v enlarges BOTH the inserted device and the hand to fit it (Tin Man take 1). Saying the hand stays its original size, giving the device as a fraction of the subject's height in pixels, and passing the plainer 45° render brought the hand back and halved the device; it still landed about head-sized, so expect two takes and start from the strict form.",
+ "evidence": "Muha Memes/DualFlavor/review/_tinman_frames.jpg vs _tinman2_frames.jpg, 2026-09-11.",
+ "counterexamples": "none recorded",
+ "applies_to": "video",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:v2v-cleanup-chains",
+ "claim": "A leftover from the swapped prop (the empty raised hand that held the hose) can be removed with a second MiniMax v2v pass that takes the FIRST pass's output as the video reference, no image ref, one short sentence. It held the device and rings; each pass eases the framing a little, so chain at most two. The account's 4-job cap is shared with other sessions — submit inside a retry loop (rate_limit → sleep 60).",
+ "evidence": "Muha Memes/DualFlavor/clips/caterpillar_minimax3.mp4 from _minimax2, 2026-09-11.",
+ "counterexamples": "none recorded",
+ "applies_to": "video",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:minimax-refuses-some-actor-footage",
+ "claim": "MiniMax H3 is not universally safe on live-action: the Iron Man hologram clip (recognisable actor, close-up face) returned 'nsfw' twice, with and without the word 'vape', on the same day the Tin Man clip (costumed actor, face small) passed 2/2. Treat a real, recognisable face close to the inserted device as a refusal risk; run the coin control before spending more takes.",
+ "evidence": "Muha Memes/DualFlavor/hf/tonystark_minimax*.txt vs tinman_minimax*.txt, 2026-09-11. Coin control (no device, no ref) also 'nsfw' 2026-09-11 — the footage is the trigger.",
+ "counterexamples": "Captain Phillips / YachtMaster / Escobar all passed MiniMax in August with a hat or a plain device — the device was small and the object was not a vape in the prompt.",
+ "applies_to": "video",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:v2v-size-still",
+ "claim": "MiniMax H3 v2v will not set the SIZE of an inserted held object from words — 'same length as the bone', 'half', 'twice as long as wide' and a pixel rule all missed. It does copy size from a SIZE STILL: composite the product render at the wanted length into one source frame (PIL), clean it with a gpt-image-2 edit (remove the old prop's remainder, lips/hand wrap the object), then pass that still as the image reference with the untouched source video. Adding the product render as a second image reference roughly doubles the rendered size versus the still alone; a 'shrink it' pass on an already-swapped clip does not shrink the object, it zooms the whole scene out and invents set. MiniMax fills the source's pillarbox bars progressively, so crop deliveries to the FIRST frame's bars, not cropdetect's minimum.",
+ "evidence": "Dog-bone clip 2026-09-11: takes 7–10 (words) bracketed short/long/longer/longer; take 11 (size still at 0.30 head) → ~0.3x of take 8; take 12 (size still + front render) → ~0.5x, shipped; take 14 (size still at 0.42 head, no render) → ~0.5x; take 13 (shrink pass on take 8) → unchanged size, zoomed out. Muha Memes/DualFlavor/README.md 'GIFs' section, hf/dogbone_minimax1{1,2,3,4}.txt.",
+ "counterexamples": "none recorded",
+ "applies_to": "video",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:superhero-ip-refused",
+ "claim": "gpt-image-2 edits that put the device into a superhero comic/cartoon frame are refused by the safety system: Batman-slapping-Robin (comic panel) and the 1960s Spider-Man-pointing frame both failed 2/2 with the same prompt shape that passed on Stonks, Waiting Skeleton, Sad Pablo, Sleeping Shaq, the Uno man, the virgin/chad photo pair, the trolley line drawing and Types of Headaches. Treat superhero IP like family animation: do not spend candidates on it.",
+ "evidence": "Muha Memes/DualFlavor/hf/r5_c.log 2026-09-14 (batman-robin c1/c2, spiderman-pointing c2 'rejected by the safety system').",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "medium",
+ "source": "Muha Memes/DualFlavor/README.md"
+},
+
+{
+ "id": "meme:describe-printed-text-dont-call-it-blank",
+ "claim": "When a template already carries printed/handwritten text, the prompt must name it and say it stays. Calling the area 'blank' made gpt-image-2 erase the Uno card's 'OR draw 25'; the corrected prompt ('the handwritten OR draw 25 stays exactly as it is; add the words pick a side above it in the same marker handwriting') rendered 2/2 with clean lettering. Short labels in a template's own font (Types of Headaches, Uno) are safe to ask gpt for; long copy still goes through the deterministic card.",
+ "evidence": "Muha Memes/DualFlavor/out/uno-draw-25_c*.png vs uno-draw-25b_c*.png, headaches_c*.png, 2026-09-14.",
+ "counterexamples": "none recorded",
+ "applies_to": "still",
+ "confidence": "strong",
+ "source": "Muha Memes/DualFlavor/README.md"
+}
+
+],
+
+"results": {
+ "date": "2026-09-10",
+ "round1": "12 finals → operator kept 3 (two-buttons, pigeon, drake); 9 rejected into final/_round1_rejected/",
+ "round2": "14 concepts → 14 shipped at 4:5 (i-bet 2/3, mocking-spongebob 2/3, the rest 3/3)",
+ "deliverable": "Muha Memes/DualFlavor/final45/ (17 files) + _CONTACT_SHEET_45.jpg",
+ "spend": "round 1 ~44 gpt + 8 NB + 1 Seedream; round 2 ~42 gpt edits + 5 fix/outpaint passes — roughly $12-15 total",
+ "round3": "11 Gen Z-voice memes in final_genz/ (8 generated + 2 deterministic from the renders + 1 re-caption); squidward and hamster 2/3, the rest 3/3",
+ "round4": "12 more Gen Z-voice reaction memes (36/36 rendered) + fixes: Squidward cropped to fill, nightstand device 1.5x lit, Trade Offer device 2x + lowercase re-caption; final_genz/ now holds 24",
+ "gif": "Lion King presentation GIF: gpt-image-2 re-stage (1/2) → Kling 3.0 pro → 4:5 caption card 'me presenting it to the group chat' (final_genz/GIF_lionking_genz.mp4 + .gif)",
+ "gif2": "Caterpillar GIF via the same re-stage + Kling frozen-device route (final_genz/GIF_caterpillar_genz.*)",
+ "round5": "2026-09-14 'generate a large batch and i'll guide': 26 concepts x2 (12 phone-photo scenes with hands-only humans/animals + 10 classic templates with the device in hand), 22 shipped to Muha Memes/DualFlavor/final_genz_r5/ (+ _CONTACT_SHEET.jpg); refused: Batman-slapping-Robin, Spider-Man-pointing; dropped: two-paths (child character + speck-sized device). Awaiting operator picks."
+},
+
+"taste": {
+ "date": "2026-09-10",
+ "source": "operator review of the first 12 Dual Flavor finals (verbatim picks)",
+ "liked": [
+  "two-buttons (classic template + a drawn relief panel, labels on the buttons)",
+  "pigeon 'is this a switch?' (asked to move the device into his hand)",
+  "drake (device in hand, label-black captions)"
+ ],
+ "disliked": [
+  "handshake",
+  "fry",
+  "buff-doge",
+  "always-has-been",
+  "american-gothic",
+  "arnolfini",
+  "two-wolves",
+  "distracted",
+  "woman-cat (explicit remove)"
+ ],
+ "reading": "For the Dual Flavor the operator wants MAINSTREAM caption-format templates where a character holds the device as the punchline and the caption carries the choice/switch joke. Art memes (public-domain paintings), no-face photo templates and 'device as scenery' (planet, tower, floating between wolves) did not land for this device even though the magnetic art memes had. Celebrity likeness (Drake) was accepted; the woman-cat removal is a joke/format call, not a moderation one.",
+ "format": "ALL memes ship 4:5 portrait (IG feed). Build the 4:5 canvas deterministically (to45.py: pad with the template's own background colour where it is flat, crop where the content allows, outpaint with gpt-image-2 only for full-bleed scenes) and place captions in fractions of the final canvas.",
+ "notes": [
+  "'Move the device closer to his hand' = the device must relate to the character's gesture, not float in the template's original prop position.",
+  "Remove any artist credit / watermark that rides in the template gutter (Two Buttons: crop panels to their black borders)."
+ ],
+ "round2Verdict": "'a bit corny — think about memes a company meme page would post, not too edgy but something relatable to gen z' (2026-09-10). Diagnosis: the round-2 captions were product-forward ad copy (tagline, mg, 'switch mid-sesh') set in Impact caps on 2012-era templates. A Gen Z brand page posts a lowercase deadpan caption bar over a reaction image, never names the product or the tagline, and lets the device sit in the frame incidentally.",
+ "voice": {
+  "format": "1080x1350: white caption bar on top, Helvetica Neue Medium ~46px black, lowercase sentence case, image full-width below (genz_card.py `bar`); or TikTok-style white bold with a thin dark stroke centred on a 4:5 phone photo (`tiktok`).",
+  "copy": "relatable situations in first person or 'friend: / me:' — indecision, switching sides, the puff counter as a scoreboard, 2am, the group chat. No brand name, no 'Dual Flavor All-In-One', no mg, no 'switch mid-sesh', no caps, no exclamation marks, no slang stacking.",
+  "imagery": "reaction images: deadpan cat at the table, unbothered capybara, caught-out hamster, dog balancing the device on its nose, Squidward at the blinds, the monkey puppet; plus phone-photo moods (green LED in a dark bedroom, the nightstand at 2am) and the two LED renders as 'what i say vs what i do'. Never show consumption; the device is held, balanced or lying there.",
+  "avoid": "art memes, no-face 'concept' images, device-as-scenery, Impact caps, product copy in the caption, celebrities as the joke."
+ }
+},
+
+"category": "memes",
+
+"tools": {
+ "$comment": "The local-only scripts in Muha Memes/DualFlavor/ that implement pipelines C/F/G for the Dual Flavor device. Same recipes port to any Muha body: swap the refs and _device.txt.",
+ "gen.mjs": "node gen.mjs <concept-id>… — gpt-image-2 /v1/images/edits (or Nano Banana with PROVIDER=nb): template frame = layout master + device Front/45 renders as refs; env N (candidates), Q (quality), START; writes out/<id>_c<i>.png + manifests/<id>_<stamp>.json; size ladder + moderation/size error classification.",
+ "concepts.json": "every concept ever run (prompt, refs with role notes, sku, size ladder, provider) — the prompt bank; new concepts are appended, fixes are new ids (…-fix, …2, …b).",
+ "captions_genz.json": "lowercase Gen Z captions per concept; mode 'bar' (default) or 'tiktok' with ypos.",
+ "genz_card.py": "python3 genz_card.py <id> <in.png> <out.png> — the 1080x1350 IG card: white bar + Helvetica Neue Medium (index 10) lowercase caption, or TikTok white bold overlay.",
+ "to45.py": "pad/crop to 4:5 (pad colour auto|white|black, anchor).",
+ "finish_genz.py": "finish_genz.py <folder> <id>=<candidate.png>… — cards every pick (empty caption = plain 4:5 pad) and writes <folder>/_CONTACT_SHEET.jpg.",
+ "r5_sheet.py": "r5_sheet.py <out.jpg> <id>… — review sheet: template thumbnail + every candidate per row.",
+ "run_r5.sh": "run_r5.sh <tag> <id>… — one gen.mjs process per batch (N=2 medium) logging to hf/r5_<tag>.log; run 3–5 batches in parallel for throughput.",
+ "review.py": "contact sheet + mean-abs-diff vs the template (a reframe lights the whole diff up; a clean edit is one blob on the device).",
+ "card.py": "the older Impact/Arial caption card (round 1–2 style, judged corny for this brand).",
+ "dogrun.sh": "dogrun.sh <tag> <video> <prompt> <image-ref>… — MiniMax H3 v2v with the shared-cap retry loop (rate_limi / 5xx), download, cropdetect crop.",
+ "dogcrop.sh": "crop a MiniMax raw output to the pillarbox bars of its FIRST frame (MiniMax fills bars progressively).",
+ "flicker.py": "frame-strip + per-frame diff for spotting screen-type flicker in v2v output."
+}
+}

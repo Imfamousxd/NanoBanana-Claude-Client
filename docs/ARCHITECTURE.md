@@ -49,6 +49,9 @@ Historical scripts often mixed those concerns with HTTP calls, filenames, and en
 compliance profiles, provider defaults, content modes, and canonical asset collections. Markdown
 continues to hold deep narrative context. `engine/knowledge/indexer.mjs` chunks Markdown by heading
 and preserves source/heading provenance; `retrieval.mjs` ranks and diversifies relevant chunks.
+Every source and node is filed under one or more **context categories** (`memes`, `product-assets`,
+`brand`, `brand-pack`, `ugc`, `compliance`, `characters`, `providers`); `--category` scopes a query
+to that corpus, so a meme brief and a packshot brief on the same brand retrieve different context.
 
 This is intentionally hybrid:
 

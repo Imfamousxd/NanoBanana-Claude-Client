@@ -1,0 +1,360 @@
+{
+  "schema": "meme-taste-profile/1",
+  "brand": "brand.muha",
+  "updatedAt": "2026-09-10",
+  "scope": "Recurring sourcing and production; user approved the first execution budget, final per-concept taste and creative decisions remain pending.",
+  "officialSource": {
+    "url": "https://www.muhameds.com/",
+    "checkedAt": "2026-09-10",
+    "observation": "User-named site identifies Muha Meds, cannabis categories, and 21+ positioning. It is not Switch technical documentation or claim approval."
+  },
+  "brandPackStatus": "No dedicated pack returned by brandkit kit muha-meds; using Brand Context/Muha_Meds.md, graph brand.muha, and supplied assets.",
+  "userEvidence": [
+    {
+      "date": "2026-09-10",
+      "source": "current conversation",
+      "statement": "User hand-picked Magnetic references, wants funny ways to insert the upcoming Switch device or build a meme around it, and requests a reusable sourcing process.",
+      "limits": "Initial evidence; channel was subsequently confirmed as Instagram feed. Individual favorite ranking, adult subculture and performance metrics remain unspecified."
+    }
+  ],
+  "archivePairs": [
+    {
+      "id": "magnetic-spongebob",
+      "original": "Muha Memes/MagneticDispo/meme-spongebob.png",
+      "adaptation": "Muha Memes/MagneticDispo/out/MEME_spongebob_magnetic.png",
+      "inspectedAt": "2026-09-10",
+      "mechanism": "Two characters joining objects; the action makes Magnetic relevant.",
+      "transfer": "Transfer a physical relationship, not the detachable mechanism or child-associated casting.",
+      "approvalEvidence": "Archive identified by user as hand-picked; README has delivery/correction notes, but individual ranking was not supplied."
+    },
+    {
+      "id": "magnetic-creation",
+      "original": "Muha Memes/MagneticDispo/meme-creation.png",
+      "adaptation": "Muha Memes/MagneticDispo/out/MEME_creation_magnetic.png",
+      "inspectedAt": "2026-09-10",
+      "mechanism": "The famous almost-touching hands become a product connection.",
+      "transfer": "Keep the recognizable gesture; Switch is not two joining halves.",
+      "approvalEvidence": "Archive identified by user as hand-picked; README has delivery/correction notes, but individual ranking was not supplied."
+    },
+    {
+      "id": "magnetic-boombox",
+      "original": "Muha Memes/MagneticDispo/meme-boombox.png",
+      "adaptation": "Muha Memes/MagneticDispo/out/MEME_boombox_magnetic.png",
+      "inspectedAt": "2026-09-10",
+      "mechanism": "A treasured boombox becomes an absurdly large product.",
+      "transfer": "Oversized prop substitution works when the source pose sells it.",
+      "approvalEvidence": "Archive identified by user as hand-picked; README has delivery/correction notes, but individual ranking was not supplied."
+    },
+    {
+      "id": "magnetic-monalisa",
+      "original": "Muha Memes/MagneticDispo/meme-monalisa.png",
+      "adaptation": "Muha Memes/MagneticDispo/out/MEME_monalisa_magnetic.png",
+      "inspectedAt": "2026-09-10",
+      "mechanism": "A modern product interrupts a deadpan familiar painting.",
+      "transfer": "Preserve the painting and find a simple, readable intervention.",
+      "approvalEvidence": "Archive identified by user as hand-picked; README has delivery/correction notes, but individual ranking was not supplied."
+    }
+  ],
+  "tasteHypotheses": [
+    {
+      "rule": "Recognizable source imagery, one clear visual intervention, minimal copy.",
+      "confidence": "medium",
+      "basis": "Four inspected Magnetic source/output pairs; not a confirmed universal user preference."
+    },
+    {
+      "rule": "Mix physical product relationships with some absurd prop substitutions.",
+      "confidence": "medium",
+      "basis": "Joining examples coexist with boombox and painting edits."
+    },
+    {
+      "rule": "Preserve source expression, gesture, framing, and texture.",
+      "confidence": "medium",
+      "basis": "Visual pairs and historical correction notes."
+    }
+  ],
+  "knownSourceTraps": [
+    "refs/boombox-original-clean.jpg and .png already contain devices; use MagneticDispo/meme-boombox.png for the real source.",
+    "DualFlavor/concepts.json and templates are an existing draft pool; presence does not establish user approval.",
+    "DEVICE_SPEC.md and older handoffs describe different hardware; do not transfer dimensions or functions.",
+    "Mission Impossible template 74957476 is a motorcycle/fire shot, not the vault or clinging pose.",
+    "DACS Son of Man preview is watermarked and offered for licensing. Preserve its watermark on the source board."
+  ],
+  "switch": {
+    "nameEvidence": "Switch supplied by user",
+    "suppliedArchiveName": "MI Dual_Flavor_Dispo_4th.zip",
+    "references": [
+      {
+        "path": "Muha Memes/DualFlavor/assets/v1/Dual Dispose device_only/Dual_Flavor_Dispo_4thDevice_Front_BLUE_SLUSHIE_POMEGRANATE_RUNTSFront.png",
+        "sha256": "63b6693f36b73f33d25487edeb86cdf09043bb8af9e965b69aa61a9d5fb7b9f3",
+        "role": "product-canon",
+        "source": "Current user-supplied MI Dual_Flavor_Dispo_4th.zip; extracted bytes matched on 2026-09-10"
+      },
+      {
+        "path": "Muha Memes/DualFlavor/assets/v1/Dual Dispose device_only/Dual_Flavor_Dispo_4thDevice_45_BLUE_SLUSHIE_POMEGRANATE_RUNTS45.png",
+        "sha256": "7ef260a87af54e49d4716c32460d7255fb94c9becb7f238dc450d827ccf9b0bb",
+        "role": "product-canon",
+        "source": "Current user-supplied MI Dual_Flavor_Dispo_4th.zip; extracted bytes matched on 2026-09-10"
+      }
+    ],
+    "visualObservations": [
+      "One rounded black body with gold upper section",
+      "Two adjacent silver M-marked details near the top",
+      "Front display with two flavor labels, magenta/green accents and two PUFFS counters",
+      "Inspected labels read BLUE SLUSHIE and POMEGRANATE RUNTS"
+    ],
+    "unknown": [
+      "Mouthpiece/cap/selector construction and operation",
+      "Whether both sides can be active together",
+      "Capacity, battery, or performance specifications",
+      "Launch date, public spelling, approved launch copy, and available SKUs",
+      "Market and channel disclosures"
+    ],
+    "doNotInfer": [
+      "Magnetic detachability",
+      "Physical switching gesture from name",
+      "Simultaneous use or mixing",
+      "Effects, potency, safety, medical benefits, or battery-life claims",
+      "Filename spelling equals approved public spelling"
+    ],
+    "userConfirmedFunction": {
+      "recordedAt": "2026-09-10T22:49:14.562014+00:00",
+      "quote": "switch swtiches the flavor and train of the device, no limits, and can be whatever as long its relatable and funny",
+      "flavorSwitching": "confirmed by user",
+      "strainSwitching": "interpreted from user typo train; working interpretation stated in chat",
+      "actuation": "not specified; do not invent how controls move"
+    }
+  },
+  "selectionConstraints": {
+    "audience": "Adults 21+; Instagram feed confirmed; market and subculture unspecified.",
+    "avoid": [
+      "youth-coded casting",
+      "consumption without specific approval",
+      "unsupported functions/effects",
+      "invented device type",
+      "gratuitous leaves/smoke inconsistent with current brand context"
+    ],
+    "sourceRights": "Unreviewed unless a specific record exists; separate from taste selection."
+  },
+  "sourceLedger": [
+    {
+      "id": "SW01",
+      "title": "Let’s see Paul Allen’s Switch",
+      "sourcePage": "https://imgflip.com/memetemplate/348043471/American-Psycho-Card",
+      "mediaUrl": "https://i.imgflip.com/5r7s27.png",
+      "firstPresentedAt": "2026-09-10",
+      "status": "rendered-needs-review",
+      "archiveOverlap": null,
+      "freshness": "evergreen",
+      "userDecision": null,
+      "productionBatch": "muha-switch-2026-09-10"
+    },
+    {
+      "id": "SW02",
+      "title": "Morpheus has to update the presentation",
+      "sourcePage": "https://imgflip.com/memetemplate/183553656/morpheus-matrix-blue-pill-red-pill",
+      "mediaUrl": "https://i.imgflip.com/31a6wo.jpg",
+      "firstPresentedAt": "2026-09-10",
+      "status": "rendered-needs-review",
+      "archiveOverlap": "Template already cached; adaptation newly proposed.",
+      "freshness": "evergreen",
+      "userDecision": null,
+      "productionBatch": "muha-switch-2026-09-10"
+    },
+    {
+      "id": "SW03",
+      "title": "The most dramatic Switch swap ever",
+      "sourcePage": "https://imgflip.com/memetemplate/199098527/Indiana-Jones-swap",
+      "mediaUrl": "https://i.imgflip.com/3ajden.jpg",
+      "firstPresentedAt": "2026-09-10",
+      "status": "rendered-needs-review",
+      "archiveOverlap": null,
+      "freshness": "evergreen",
+      "userDecision": null,
+      "productionBatch": "muha-switch-2026-09-10"
+    },
+    {
+      "id": "SW04",
+      "title": "We finally know what’s in the case",
+      "sourcePage": "https://imgflip.com/memetemplate/253676873/Pulp-Fiction-Briefcase",
+      "mediaUrl": "https://i.imgflip.com/4716bt.png",
+      "firstPresentedAt": "2026-09-10",
+      "status": "rendered-needs-review",
+      "archiveOverlap": null,
+      "freshness": "evergreen",
+      "userDecision": null,
+      "productionBatch": "muha-switch-2026-09-10"
+    },
+    {
+      "id": "SW05",
+      "title": "Two wolves. One very small apartment.",
+      "sourcePage": "https://imgflip.com/memetemplate/296370149/You-have-two-wolves",
+      "mediaUrl": "https://i.imgflip.com/4wg8o5.jpg",
+      "firstPresentedAt": "2026-09-10",
+      "status": "proposed",
+      "archiveOverlap": "Existing two-wolves concept and cached template. User approval unknown.",
+      "freshness": "evergreen",
+      "userDecision": null
+    },
+    {
+      "id": "SW06",
+      "title": "The group chat discovers technology",
+      "sourcePage": "https://imgflip.com/memetemplate/253342844/monolith-2001-space-odyssey",
+      "mediaUrl": "https://i.imgflip.com/46u0l8.jpg",
+      "firstPresentedAt": "2026-09-10",
+      "status": "proposed",
+      "archiveOverlap": null,
+      "freshness": "evergreen",
+      "userDecision": null
+    },
+    {
+      "id": "SW07",
+      "title": "Bro said he was just looking",
+      "sourcePage": "https://knowyourmeme.com/photos/1000541-tom-cruise-clinging",
+      "mediaUrl": "https://i.kym-cdn.com/photos/images/original/001/000/541/4e8.png",
+      "firstPresentedAt": "2026-09-10",
+      "status": "rendered-needs-review",
+      "archiveOverlap": null,
+      "freshness": "evergreen",
+      "userDecision": null,
+      "productionBatch": "muha-switch-2026-09-10"
+    },
+    {
+      "id": "SW08",
+      "title": "The Son of Switch",
+      "sourcePage": "https://www.dacs.org.uk/artwork/the-son-of-man-1964-58779",
+      "mediaUrl": "https://cdn.dacs.org.uk/uploads/artwork/magritte_rene_the_son_of_man_1964_58779_main.jpg?v=1785324184",
+      "firstPresentedAt": "2026-09-10",
+      "status": "proposed",
+      "archiveOverlap": null,
+      "freshness": "evergreen",
+      "userDecision": null
+    },
+    {
+      "id": "SW09",
+      "title": "The two sides are holding a meeting",
+      "sourcePage": "https://imgflip.com/memetemplate/26758994/GollumSmeagol",
+      "mediaUrl": "https://i.imgflip.com/fxjde.jpg",
+      "firstPresentedAt": "2026-09-10",
+      "status": "proposed",
+      "archiveOverlap": null,
+      "freshness": "evergreen",
+      "userDecision": null
+    },
+    {
+      "id": "SW10",
+      "title": "It’s been 45 minutes",
+      "sourcePage": "https://knowyourmeme.com/memes/daily-struggle-two-buttons",
+      "mediaUrl": "https://i.imgflip.com/1g8my4.jpg",
+      "firstPresentedAt": "2026-09-10",
+      "status": "proposed",
+      "archiveOverlap": "Existing two-buttons concept and cached source; alternate punchline.",
+      "freshness": "evergreen",
+      "userDecision": null
+    },
+    {
+      "id": "SW11",
+      "title": "Christopher Walken explains the hardware",
+      "sourcePage": "https://imgflip.com/memetemplate/340515771/Morty-Click-Adam-Sandler-Christopher-Walken-Remote-Control",
+      "mediaUrl": "https://i.imgflip.com/5mqfnf.jpg",
+      "firstPresentedAt": "2026-09-10",
+      "status": "proposed",
+      "archiveOverlap": null,
+      "freshness": "evergreen",
+      "userDecision": null
+    },
+    {
+      "id": "SW12",
+      "title": "Flip the Switch — literal edition",
+      "sourcePage": "https://knowyourmeme.com/sensitive/memes/i-just-flipped-the-switch",
+      "mediaUrl": null,
+      "firstPresentedAt": "2026-09-10",
+      "status": "lead-only",
+      "archiveOverlap": null,
+      "freshness": "lead-only",
+      "userDecision": null
+    }
+  ],
+  "userDecisions": [
+    {
+      "date": "2026-09-10",
+      "scope": "2026-09-10 source board, batch-level",
+      "quote": "i like these now we need to execute lets install higgsifield mcp to get this done and actually finalize these",
+      "decision": "positive direction; requests execution and Higgsfield connection",
+      "individualVotes": null,
+      "spendApproval": false
+    },
+    {
+      "date": "2026-09-10",
+      "scope": "Switch launch memes",
+      "quote": "instagram feed",
+      "decision": "Instagram feed confirmed; market and adult subculture remain unspecified."
+    },
+    {
+      "date": "2026-09-10",
+      "scope": "Switch humor and product context",
+      "quote": "switch swtiches the flavor and train of the device, no limits, and can be whatever as long its relatable and funny",
+      "decision": "Broad humor permission; relatability and humor are the creative filter. Switching flavor confirmed; strain is the working interpretation of train."
+    },
+    {
+      "date": "2026-09-10",
+      "scope": "Switch production batch 01 only",
+      "quote": "Approve 78 credits + $5 review budget",
+      "decision": "Authorized five selected exports from initial A/B treatments, with generation cap 78 credits and review cap $5. Cap now spent: no further generation budget remains.",
+      "spendApproval": true,
+      "finalCreativeApproval": null
+    }
+  ],
+  "performanceObservations": [],
+  "openQuestions": [
+    "Which three past memes are favorites and which should be passed on?",
+    "Instagram feed confirmed; account, market and adult subculture unspecified.",
+    "Exact physical switching action and any fixed launch copy remain unspecified."
+  ],
+  "playbook": "docs/MEME_SOURCING.md",
+  "latestLocalBoard": ".content-engine/meme-sourcing/2026-09-10/board.html",
+  "latestProductionBoard": ".content-engine/meme-sourcing/2026-09-10/production/review.html",
+  "productionBatches": [
+    {
+      "id": "muha-switch-2026-09-10",
+      "status": "rendered-needs-retouch-and-creative-review",
+      "manifest": ".content-engine/meme-sourcing/2026-09-10/production/batch.json",
+      "concepts": [
+        "SW01",
+        "SW02",
+        "SW03",
+        "SW04",
+        "SW07"
+      ],
+      "netHiggsfieldCredits": 78,
+      "reviewEstimatedUSD": 3.092909,
+      "selectedReviewExports": 5,
+      "userCreativeApproval": null
+    }
+  ],
+  "productionLearnings": [
+    {
+      "observation": "Film prop substitutions and the two-choice Morpheus setup remain legible at feed size. American Psycho and Morpheus are the agent’s strongest selections, not confirmed user favorites.",
+      "basis": "Five selected exports visually inspected on 2026-09-10."
+    },
+    {
+      "observation": "Single native front-reference crops reduce competing angle instructions; the supplied opaque front silhouette is 981×2081 px (height/width 2.1213). Explicit side/end directions helped American Psycho reach the intended horizontal presentation.",
+      "limit": "Reference conditioning still changed device proportions and artwork; do not assume pixel fidelity."
+    },
+    {
+      "observation": "Contact with hands, stone and case lining remained the main failure. Future production should budget a controlled retouch stage after the joke and placement are chosen, with actual mask support when available.",
+      "limit": "The current Higgsfield adapter does not support masks; do not claim inpainting or retry ordinary edits indefinitely."
+    },
+    {
+      "observation": "Match the source grain, exposure and optical softness. Clean studio product rendering made several substitutions look pasted into film scenes.",
+      "basis": "Visual inspection plus automated advisory reviews."
+    },
+    {
+      "observation": "Review master scene fidelity separately from final canvas/caption requirements. Do not flag absent captions on deliberately captionless work, or absent final footers on uncaptioned masters.",
+      "basis": "Pulp Fiction intentionally has no caption; final exports all contain the deterministic 21+ footer."
+    },
+    {
+      "observation": "13 submitted jobs delivered 12 images, with one blocked and refunded alternate. 78 net credits funded five selections; no final image passed the advisory quality gate. Generation completion must remain separate from creative approval.",
+      "basis": "Reconciled local spend ledger and 17 recorded reviews."
+    }
+  ]
+}

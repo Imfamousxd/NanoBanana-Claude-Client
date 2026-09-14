@@ -9,25 +9,37 @@ export function tokenize(value) {
     .filter((token) => token.length > 1);
 }
 
-export function queryKnowledge(index, graph, query, { brand, limit = 8 } = {}) {
+/** Normalise a `--category` value ("memes" or "memes,providers") to a set of lowercase category ids. */
+export function parseCategories(value) {
+  const list = Array.isArray(value) ? value : String(value || "").split(",");
+  return new Set(list.map((item) => String(item).trim().toLowerCase()).filter(Boolean));
+}
+
+export function queryKnowledge(index, graph, query, { brand, limit = 8, category = undefined } = {}) {
   const terms = [...new Set(tokenize(query))];
+  const wanted = parseCategories(category);
+  // A category is a hard scope: only chunks filed under it compete, and IDF is computed inside that corpus,
+  // so a meme query never surfaces product packshots or UGC playbooks and vice versa.
+  const corpus = wanted.size
+    ? index.chunks.filter((chunk) => (chunk.categories || []).some((item) => wanted.has(item)))
+    : index.chunks;
   const brandNode = brand ? resolveBrand(graph, brand) : undefined;
   const brandTerms = brandNode ? tokenize([brandNode.name, ...(brandNode.aliases || [])].join(" ")) : [];
   const documentFrequency = new Map();
 
-  for (const chunk of index.chunks) {
+  for (const chunk of corpus) {
     const unique = new Set(tokenize(`${chunk.heading} ${chunk.text} ${(chunk.tags || []).join(" ")}`));
     for (const token of unique) documentFrequency.set(token, (documentFrequency.get(token) || 0) + 1);
   }
 
-  const scored = index.chunks.map((chunk) => {
+  const scored = corpus.map((chunk) => {
     const title = tokenize(chunk.heading);
     const body = tokenize(`${chunk.text} ${(chunk.tags || []).join(" ")}`);
     const bodyCounts = new Map();
     for (const token of body) bodyCounts.set(token, (bodyCounts.get(token) || 0) + 1);
     let score = 0;
     for (const term of terms) {
-      const idf = Math.log((index.chunks.length + 1) / ((documentFrequency.get(term) || 0) + 1)) + 1;
+      const idf = Math.log((corpus.length + 1) / ((documentFrequency.get(term) || 0) + 1)) + 1;
       if (title.includes(term)) score += 5 * idf;
       const frequency = bodyCounts.get(term) || 0;
       if (frequency) score += (1 + Math.log(frequency)) * idf;

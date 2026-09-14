@@ -13,12 +13,35 @@ beside it.
 | --- | --- | --- |
 | Product registries | `knowledge/products/<brand>.json` | Per-brand product entries: SKU, aliases, geometry, role-tagged reference images, locked rules, known gaps |
 | Graph wiring | `knowledge/graph.json` | `brand`, `product`, `product-registry`, and `routing-rule` nodes + `has-product` / `has-products` edges; every registry is also a retrieval source |
-| Query CLI | `npm run content -- knowledge query "<terms>" --brand <brand>` | Full-text retrieval over graph nodes and registry files |
+| Query CLI | `npm run content -- knowledge query "<terms>" --brand <brand> [--category <c>]` | Full-text retrieval over graph nodes and registry files, optionally scoped to one context category |
+| Context categories | `npm run content -- knowledge categories` | The scopes every source and node is filed under (see below) |
 | NuLumin SKU index | `NuLumin Generated/NuLumin Vial Library/index.json` | Already-built 66-SKU machine index — the NuLumin registry points at it rather than duplicating it |
 
-Seven brands are covered: dialed-moods, dialed-health, dialed-labs, muha-meds, noble-harbor,
+Seven brands are covered (plus the Muha meme registry, see below): dialed-moods, dialed-health, dialed-labs, muha-meds, noble-harbor,
 stanton, nulumin. (Aevum+, Becca Boo, Agency DevWorks, GridShift, and Dial Echo were removed
 from the graph by operator decision 2026-08-09; their Brand Context docs remain on disk.)
+
+## Context categories
+
+Every `sources[]` entry and node in `knowledge/graph.json` carries `categories`. A query with
+`--category` only competes chunks filed under that category (term weighting is computed inside it),
+so different people working the same brand pull different context:
+
+| Category | Holds | Entry document |
+| --- | --- | --- |
+| `product-assets` | product registries, canonical reference images, image routing | this document |
+| `memes` | the Muha meme registry, taste + sourcing playbooks, the two meme device bodies, local build notes | `knowledge/memes/README.md` |
+| `brand` | `Brand Context/` canonical brand docs | `Brand Context/README.md` |
+| `brand-pack` | `knowledge/brands/<brand>/` generation kits | `docs/BRAND_PACKS.md` |
+| `ugc` | the UGC realism contract, persona systems | `knowledge/playbooks/UGC_REALISM.md` |
+| `compliance` | regulated-category profiles | `knowledge/compliance/REGULATED_HEALTH_RUO.md` |
+| `characters` | Muha AI Fruit cast continuity | `AI Fruit VIdeos Muha/CHARACTERS.md` |
+| `providers` | provider nodes and routing rules | this document |
+
+A node may sit in several categories: the Dual Flavor and Magnetic devices are `product-assets`
+(they are real products with canonical refs) and `memes` (they are the bodies memes are built on).
+`context-category` nodes (`category.<id>`) carry the description and entry document that
+`knowledge categories` prints.
 
 ## Reference roles
 
@@ -85,11 +108,36 @@ Path-case trap: git tracks `NuLumin Generated/` (capital L) while the folder pri
 `Nulumin Generated` on disk and inside the Vial Library's own `index.json`. Same folder on
 this case-insensitive filesystem; use the git casing in anything tracked.
 
+## Meme registry (Muha Meds)
+
+`knowledge/memes/muha-meds.json` (schema `meme-registry/1`, graph node `registry.muha-memes`,
+routing node `rule.meme-pipeline-routing`) is the meme counterpart of the product registries. It
+answers the questions a meme brief raises before any image call is made:
+
+| Section | What it holds |
+| --- | --- |
+| `devices[]` | The three Muha bodies used in memes (slim all-in-one, GEN 2 x 2 Magnetic pair, Dual Flavor All-In-One) with measured geometry, canonical refs, the verbatim prompt block file, the fixed SKU/pair tables and locked rules |
+| `grammars[]` | The 12 joke mechanisms (prop-in-hand, worn-object, background-structure, character-replacement, orbiting-multiples, two-halves-meeting, held-large, resting-object, floating-subject-swap, scale-swap, shared-grip, new-panel) with what each requires and which device fits |
+| `pipelines[]` | A regen-scene (video), B v2v-edit (video), C still-edit-gpt, D still-edit-nb, E per-panel Seedream inpaint, F deterministic card, G targeted fix — with `when`, steps, tools and cost |
+| `providers[]` | The measured acceptance matrix: what gpt-image-2, Nano Banana Pro, Seedream v5 Pro, MiniMax H3, Veo 3.1, Seedance and the fallbacks accept, refuse and do badly |
+| `sourcing` | The two working template routes (imgflip `get_memes` API + template pages; Wikimedia Commons imageinfo API with a User-Agent), the IP classes, and where the downloaded library + `SOURCES.json` provenance live |
+| `templates[]` | Every meme built so far (Titanic … Mona Lisa, plus the Dual Flavor concept set) with medium, IP class, grammar, device, SKU, status, pipeline, measured card geometry, outputs and lessons |
+| `laws[]` | The law bank (claim / evidence / counterexamples / applies_to / confidence / source) distilled from `Muha Memes/*/README.md` and the handoff |
+| `tools` | The local scripts that implement the pipelines for the Dual Flavor device (generator, caption card, 4:5, review sheets, MiniMax v2v runner) and what each does |
+
+Use: `npm run content -- knowledge query "<grammar, template or device>" --brand muha --category memes`
+(the `memes` category; `knowledge/memes/README.md` is the entry document and lists the scripts that
+implement the pipelines).
+`Muha Memes/` is local-only (ignored by the curated allowlist), so the paths the registry cites
+resolve on the build machine; the registry itself is tracked. Update discipline is the same as
+for products: a shipped file goes under `templates[].outputs`, a new rejection becomes a law.
+
 ## Known gaps (verified 2026-08-09)
 
-- **Muha Magnetic Disposables** device/city art is not in the repo (client-side
-  `~/Downloads/Magnetic Disposables/`), and the EuroSummer gold/navy lockup is likewise
-  Downloads-only.
+- **Muha Magnetic Disposables**: device renders + official badges now live in
+  `Muha Memes/MagneticDispo/{assets,strains}/` and the Dual Flavor renders in
+  `Muha Memes/DualFlavor/assets/` (both registered 2026-09-10, both local-only); the EuroSummer
+  gold/navy lockup is still Downloads-only.
 - **Dialed Moods**: Secret Juice has no Brand Context render; Social Elixir is missing
   `Front_MangoPeach` / `45_Lemonade` refs and has no brand doc.
 - **Dialed Labs**: the canonical wordmark is the live-site webp, not in-repo; ~8 scattered

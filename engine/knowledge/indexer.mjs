@@ -18,6 +18,13 @@ function sourceFiles(root, source) {
     .sort();
 }
 
+/** Context categories an entity belongs to: `categories: [...]`, or the single `category`, else none. */
+export function categoriesOf(entity) {
+  if (!entity) return [];
+  const list = Array.isArray(entity.categories) ? entity.categories : entity.category ? [entity.category] : [];
+  return [...new Set(list.map((value) => String(value).trim().toLowerCase()).filter(Boolean))];
+}
+
 function graphFingerprint(graph) {
   return sha256Text(JSON.stringify({
     version: graph.version,
@@ -35,7 +42,7 @@ function collectSourceFiles(root, graph, includePaths) {
       if (!fs.existsSync(filePath)) continue;
       const relative = path.relative(root, filePath);
       if (includePaths && !includePaths.has(relative)) continue;
-      files.push({ filePath, relative, tags: source.tags || [] });
+      files.push({ filePath, relative, tags: source.tags || [], categories: categoriesOf(source) });
     }
   }
   return files.sort((a, b) => a.relative.localeCompare(b.relative));
@@ -68,7 +75,7 @@ function splitLongSection(text, maxCharacters = 3_200) {
   return chunks;
 }
 
-export function chunkMarkdown(relativePath, text, tags = []) {
+export function chunkMarkdown(relativePath, text, tags = [], categories = []) {
   const lines = text.split(/\r?\n/);
   const headingStack = [];
   const sections = [];
@@ -86,6 +93,7 @@ export function chunkMarkdown(relativePath, text, tags = []) {
         heading: part ? `${heading} (part ${part + 1})` : heading,
         text: content,
         tags,
+        categories,
       });
     }
   };
@@ -113,9 +121,9 @@ export function buildKnowledgeIndex(root, { write = true, includePaths = undefin
   const files = collectSourceFiles(root, graph, includePaths);
   const sourceStats = sourceMetadata(files);
 
-  for (const { filePath, relative, tags } of files) {
+  for (const { filePath, relative, tags, categories } of files) {
     const text = fs.readFileSync(filePath, "utf8");
-    chunks.push(...chunkMarkdown(relative, text, tags));
+    chunks.push(...chunkMarkdown(relative, text, tags, categories));
   }
 
   for (const node of graph.nodes) {
@@ -126,6 +134,7 @@ export function buildKnowledgeIndex(root, { write = true, includePaths = undefin
       heading: node.name,
       text: JSON.stringify({ ...node, aliases: node.aliases || [] }),
       tags: [node.type, ...(node.aliases || [])],
+      categories: categoriesOf(node),
     });
   }
 
@@ -157,4 +166,35 @@ export function loadKnowledgeIndex(root, { force = false, scopedPaths = undefine
   }
   if (scopedPaths) return buildKnowledgeIndex(root, { write: false, includePaths: new Set(scopedPaths) });
   return buildKnowledgeIndex(root, { write: true });
+}
+
+/** Every context category in the index with its chunk/source counts, described by the graph's `context-category` nodes. */
+export function listCategories(index, graph = undefined) {
+  const described = new Map();
+  for (const node of graph?.nodes || []) {
+    if (node.type === "context-category") described.set(String(node.category || node.id.replace(/^category\./, "")).toLowerCase(), node);
+  }
+  const counts = new Map();
+  for (const chunk of index.chunks) {
+    for (const category of chunk.categories || []) {
+      const entry = counts.get(category) || { category, chunks: 0, sources: new Set() };
+      entry.chunks += 1;
+      entry.sources.add(chunk.source);
+      counts.set(category, entry);
+    }
+  }
+  return [...counts.values()]
+    .map((entry) => {
+      const node = described.get(entry.category);
+      return {
+        category: entry.category,
+        chunks: entry.chunks,
+        sources: entry.sources.size,
+        name: node?.name,
+        description: node?.description,
+        entry: node?.entry,
+        aliases: node?.aliases || [],
+      };
+    })
+    .sort((a, b) => a.category.localeCompare(b.category));
 }

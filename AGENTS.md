@@ -24,7 +24,11 @@ historical root-level scripts; new reusable behavior belongs in `engine/`, struc
    prompt blocks, and already-approved formats. Use them; do not re-derive a design system, and do
    not resurrect a rejected approach the pack's format document already records.
 3. Query the knowledge layer instead of loading every brand document:
-   `npm run content -- knowledge query "<brand> <task>" --brand <brand-id>`.
+   `npm run content -- knowledge query "<brand> <task>" --brand <brand-id> --category <category>`.
+   Categories are hard scopes (`knowledge categories` lists them): `memes` for Muha meme work,
+   `product-assets` for packshots and canonical refs, `ugc` for creator content, `brand`,
+   `brand-pack`, `compliance`, `characters`, `providers`. Pick the one the task lives in so meme
+   context never bleeds into product work and vice versa.
 4. Copy `examples/ugc-product-story.json` or create a schema-compatible job.
 5. Run `npm run content -- plan <job.json>`. Fix every error; discuss material warnings.
 6. Before a billable call, confirm scope/cost with the user and set

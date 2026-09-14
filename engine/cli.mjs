@@ -5,7 +5,7 @@ import { loadEnv } from "./core/env.mjs";
 import { serializeError } from "./core/errors.mjs";
 import { runDoctor } from "./doctor.mjs";
 import { loadGraph } from "./knowledge/graph.mjs";
-import { buildKnowledgeIndex, loadKnowledgeIndex } from "./knowledge/indexer.mjs";
+import { buildKnowledgeIndex, listCategories, loadKnowledgeIndex } from "./knowledge/indexer.mjs";
 import { queryKnowledge } from "./knowledge/retrieval.mjs";
 import { executeJob, planJob } from "./pipeline.mjs";
 import { reviewImage } from "./quality/openai-judge.mjs";
@@ -25,7 +25,8 @@ function help() {
 Usage:
   npm run content -- doctor
   npm run content -- knowledge build
-  npm run content -- knowledge query "terms" [--brand brand-id] [--limit 8]
+  npm run content -- knowledge categories
+  npm run content -- knowledge query "terms" [--brand brand-id] [--category memes] [--limit 8]
   npm run content -- plan <job.json>
   npm run content -- run <job.json>
   npm run content -- review <job.json> <candidate-image>
@@ -75,12 +76,24 @@ async function main() {
       if (!query) throw new Error("knowledge query requires search terms.");
       const graph = loadGraph(root);
       const index = loadKnowledgeIndex(root);
-      return print(queryKnowledge(index, graph, query, {
+      const category = option(rest, "--category");
+      const results = queryKnowledge(index, graph, query, {
         brand: option(rest, "--brand"),
         limit: Number(option(rest, "--limit", 8)),
-      }));
+        category,
+      });
+      if (category && !results.length) {
+        const known = listCategories(index, graph).map((item) => item.category);
+        console.error(`No chunks matched in category "${category}". Known categories: ${known.join(", ") || "(none)"}.`);
+      }
+      return print(results);
     }
-    throw new Error("knowledge requires build or query.");
+    if (subcommand === "categories") {
+      const graph = loadGraph(root);
+      const index = loadKnowledgeIndex(root);
+      return print(listCategories(index, graph));
+    }
+    throw new Error("knowledge requires build, categories or query.");
   }
   if (command === "brandkit") {
     const [subcommand, brand, target, ...rest] = args;

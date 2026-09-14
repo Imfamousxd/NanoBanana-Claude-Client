@@ -1,7 +1,33 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-09",
+  "updatedAt": "2026-09-14",
   "sources": [
+    {
+      "path": "knowledge/playbooks/MUHA_MEME_TASTE.json",
+      "tags": [
+        "muha",
+        "meme",
+        "switch",
+        "magnetic",
+        "taste",
+        "sourcing"
+      ],
+      "categories": [
+        "memes"
+      ]
+    },
+    {
+      "path": "docs/MEME_SOURCING.md",
+      "tags": [
+        "meme",
+        "sourcing",
+        "playbook",
+        "feedback"
+      ],
+      "categories": [
+        "memes"
+      ]
+    },
     {
       "directory": "Brand Context",
       "extensions": [
@@ -10,6 +36,9 @@
       "tags": [
         "brand",
         "canonical-source"
+      ],
+      "categories": [
+        "brand"
       ]
     },
     {
@@ -18,6 +47,9 @@
         "nulumin",
         "brand-pack",
         "operator"
+      ],
+      "categories": [
+        "brand-pack"
       ]
     },
     {
@@ -29,6 +61,9 @@
         "layout",
         "playbook",
         "compliance"
+      ],
+      "categories": [
+        "brand-pack"
       ]
     },
     {
@@ -38,6 +73,9 @@
         "brand-pack",
         "prompt",
         "product-photography"
+      ],
+      "categories": [
+        "brand-pack"
       ]
     },
     {
@@ -50,6 +88,9 @@
         "catalog",
         "sku-count",
         "known-defects"
+      ],
+      "categories": [
+        "brand-pack"
       ]
     },
     {
@@ -58,6 +99,9 @@
         "playbook",
         "ugc",
         "realism"
+      ],
+      "categories": [
+        "ugc"
       ]
     },
     {
@@ -66,6 +110,9 @@
         "compliance",
         "regulated-health",
         "ruo"
+      ],
+      "categories": [
+        "compliance"
       ]
     },
     {
@@ -77,6 +124,9 @@
         "influencer",
         "strategy",
         "requires-source-review"
+      ],
+      "categories": [
+        "ugc"
       ]
     },
     {
@@ -86,6 +136,9 @@
         "muha",
         "character",
         "continuity"
+      ],
+      "categories": [
+        "characters"
       ]
     },
     {
@@ -96,6 +149,9 @@
         "reference-image",
         "image-gen",
         "registry"
+      ],
+      "categories": [
+        "product-assets"
       ]
     },
     {
@@ -106,6 +162,9 @@
         "reference-image",
         "image-gen",
         "registry"
+      ],
+      "categories": [
+        "product-assets"
       ]
     },
     {
@@ -116,6 +175,9 @@
         "reference-image",
         "image-gen",
         "registry"
+      ],
+      "categories": [
+        "product-assets"
       ]
     },
     {
@@ -126,6 +188,9 @@
         "reference-image",
         "image-gen",
         "registry"
+      ],
+      "categories": [
+        "product-assets"
       ]
     },
     {
@@ -136,6 +201,9 @@
         "reference-image",
         "image-gen",
         "registry"
+      ],
+      "categories": [
+        "product-assets"
       ]
     },
     {
@@ -146,6 +214,9 @@
         "reference-image",
         "image-gen",
         "registry"
+      ],
+      "categories": [
+        "product-assets"
       ]
     },
     {
@@ -156,6 +227,9 @@
         "reference-image",
         "image-gen",
         "registry"
+      ],
+      "categories": [
+        "product-assets"
       ]
     },
     {
@@ -166,6 +240,98 @@
         "operator",
         "product",
         "reference-image"
+      ],
+      "categories": [
+        "product-assets",
+        "providers"
+      ]
+    },
+    {
+      "path": "knowledge/memes/muha-meds.json",
+      "tags": [
+        "muha",
+        "meme",
+        "registry",
+        "image-gen",
+        "video-gen",
+        "template",
+        "reference-image",
+        "grammar",
+        "pipeline",
+        "provider"
+      ],
+      "categories": [
+        "memes"
+      ]
+    },
+    {
+      "path": "knowledge/memes/README.md",
+      "tags": [
+        "muha",
+        "meme",
+        "operator",
+        "context",
+        "entry"
+      ],
+      "categories": [
+        "memes"
+      ]
+    },
+    {
+      "path": "Muha Memes/HANDOFF__MUHA_MEMES.md",
+      "optional": true,
+      "tags": [
+        "muha",
+        "meme",
+        "handoff",
+        "local-only"
+      ],
+      "categories": [
+        "memes"
+      ]
+    },
+    {
+      "path": "Muha Memes/DEVICE_SPEC.md",
+      "optional": true,
+      "tags": [
+        "muha",
+        "meme",
+        "device",
+        "prompt-block",
+        "local-only"
+      ],
+      "categories": [
+        "memes"
+      ]
+    },
+    {
+      "path": "Muha Memes/DualFlavor/README.md",
+      "optional": true,
+      "tags": [
+        "muha",
+        "meme",
+        "dual-flavor",
+        "switch",
+        "rounds",
+        "lessons",
+        "local-only"
+      ],
+      "categories": [
+        "memes"
+      ]
+    },
+    {
+      "path": "Muha Memes/MagneticDispo/README.md",
+      "optional": true,
+      "tags": [
+        "muha",
+        "meme",
+        "magnetic",
+        "lessons",
+        "local-only"
+      ],
+      "categories": [
+        "memes"
       ]
     }
   ],
@@ -212,7 +378,10 @@
           "human-use depiction",
           "energy-drink neon overload"
         ]
-      }
+      },
+      "categories": [
+        "brand"
+      ]
     },
     {
       "id": "brand.muha",
@@ -244,7 +413,10 @@
           "character drift",
           "invented packaging text"
         ]
-      }
+      },
+      "categories": [
+        "brand"
+      ]
     },
     {
       "id": "brand.dialed-health",
@@ -255,7 +427,10 @@
         "dh"
       ],
       "source": "Brand Context/Dialed_Health.md",
-      "complianceProfile": "regulated-health"
+      "complianceProfile": "regulated-health",
+      "categories": [
+        "brand"
+      ]
     },
     {
       "id": "brand.dialed-moods",
@@ -266,7 +441,10 @@
         "moods"
       ],
       "source": "Brand Context/Dialed_Moods.md",
-      "complianceProfile": "supplement-marketing"
+      "complianceProfile": "supplement-marketing",
+      "categories": [
+        "brand"
+      ]
     },
     {
       "id": "brand.dialed-labs",
@@ -278,7 +456,10 @@
         "ufc"
       ],
       "source": "Brand Context/Dialed_Labs_UFC.md",
-      "complianceProfile": "general"
+      "complianceProfile": "general",
+      "categories": [
+        "brand"
+      ]
     },
     {
       "id": "brand.noble-harbor",
@@ -289,7 +470,10 @@
         "nh"
       ],
       "source": "Brand Context/Noble_Harbor.md",
-      "complianceProfile": "regulated-health-ruo"
+      "complianceProfile": "regulated-health-ruo",
+      "categories": [
+        "brand"
+      ]
     },
     {
       "id": "brand.stanton",
@@ -300,7 +484,10 @@
         "stanton medical"
       ],
       "source": "Brand Context/Stanton_Medical.md",
-      "complianceProfile": "regulated-health"
+      "complianceProfile": "regulated-health",
+      "categories": [
+        "brand"
+      ]
     },
     {
       "id": "mode.ugc",
@@ -313,7 +500,10 @@
         "selfie",
         "unboxing"
       ],
-      "source": "knowledge/playbooks/UGC_REALISM.md"
+      "source": "knowledge/playbooks/UGC_REALISM.md",
+      "categories": [
+        "ugc"
+      ]
     },
     {
       "id": "assets.nulumin-product",
@@ -323,7 +513,10 @@
         "NuLumin Generated/NuLumin Vial Library",
         "NuLumin Generated/Hero Shots v3 (fixed)/retail"
       ],
-      "selectionRule": "Start at NuLumin Generated/NuLumin Vial Library — all 66 retail SKUs as transparent PNGs and white-background JPEGs, plus the 5 category heroes, resolved through its index.json (compound, dose, category, accent hex, cake, glass, both paths). Use Transparent/ to composite, White/ on white, and Category Heroes/ as the reference when generating a new SKU. The corner heroes are the composed hero shots and the colour authority. Older folders (White BG Powder, Transparent_*, nobg*, One-Per-Peptide, Vial Library v2) are superseded — see knowledge/brands/nulumin/ASSETS.md."
+      "selectionRule": "Start at NuLumin Generated/NuLumin Vial Library — all 66 retail SKUs as transparent PNGs and white-background JPEGs, plus the 5 category heroes, resolved through its index.json (compound, dose, category, accent hex, cake, glass, both paths). Use Transparent/ to composite, White/ on white, and Category Heroes/ as the reference when generating a new SKU. The corner heroes are the composed hero shots and the colour authority. Older folders (White BG Powder, Transparent_*, nobg*, One-Per-Peptide, Vial Library v2) are superseded — see knowledge/brands/nulumin/ASSETS.md.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "pack.nulumin",
@@ -348,6 +541,9 @@
         "npm run content -- brandkit fonts nulumin",
         "npm run content -- brandkit ad nulumin single|panel|streak",
         "npm run content -- brandkit job nulumin hero"
+      ],
+      "categories": [
+        "brand-pack"
       ]
     },
     {
@@ -357,7 +553,10 @@
       "paths": [
         "Brand Context/assets/NuLumin_BioSciences/ads"
       ],
-      "selectionRule": "Tracked and present on a fresh clone: bbox-padded logo lockups, six transparent vial cutouts at native resolution, and downscaled scene anchors at 1080-wide render size. Vial cutouts double as product-canon references for generation. Regenerate a scene at 4K before using it above 1080px wide."
+      "selectionRule": "Tracked and present on a fresh clone: bbox-padded logo lockups, six transparent vial cutouts at native resolution, and downscaled scene anchors at 1080-wide render size. Vial cutouts double as product-canon references for generation. Regenerate a scene at 4K before using it above 1080px wide.",
+      "categories": [
+        "brand-pack"
+      ]
     },
     {
       "id": "assets.muha-character",
@@ -367,7 +566,10 @@
         "AI Fruit VIdeos Muha/refs",
         "AI Fruit VIdeos Muha/Generated Characters"
       ],
-      "selectionRule": "Match flavor/character identity explicitly and preserve the approved character reference hierarchy."
+      "selectionRule": "Match flavor/character identity explicitly and preserve the approved character reference hierarchy.",
+      "categories": [
+        "characters"
+      ]
     },
     {
       "id": "compliance.regulated-health-ruo",
@@ -382,6 +584,22 @@
         "personal outcome testimonial",
         "disease treatment or prevention",
         "unsupported safety, efficacy, purity, certification, or regulatory claim"
+      ],
+      "categories": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "provider.higgsfield-image",
+      "type": "provider",
+      "name": "Higgsfield official CLI — image editing",
+      "model": "gpt_image_2",
+      "verifiedAt": "2026-09-10",
+      "sourceUrl": "https://github.com/higgsfield-ai/cli",
+      "schemaEvidence": "higgsfield model get gpt_image_2 --json",
+      "notes": "Authenticated CLI; one candidate per job; explicit credit cap and live quote required. MCP endpoint https://mcp.higgsfield.ai/mcp.",
+      "categories": [
+        "providers"
       ]
     },
     {
@@ -390,7 +608,10 @@
       "name": "OpenAI Image API",
       "model": "gpt-image-2",
       "verifiedAt": "2026-07-22",
-      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-image-2"
+      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-image-2",
+      "categories": [
+        "providers"
+      ]
     },
     {
       "id": "provider.gemini-image",
@@ -398,7 +619,10 @@
       "name": "Gemini Image API",
       "model": "gemini-3-pro-image",
       "verifiedAt": "2026-07-22",
-      "sourceUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-image"
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-image",
+      "categories": [
+        "providers"
+      ]
     },
     {
       "id": "provider.google-omni-video",
@@ -406,7 +630,10 @@
       "name": "Gemini Omni Flash Video",
       "model": "gemini-omni-flash-preview",
       "verifiedAt": "2026-07-22",
-      "sourceUrl": "https://ai.google.dev/gemini-api/docs/omni"
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/omni",
+      "categories": [
+        "providers"
+      ]
     },
     {
       "id": "provider.google-veo",
@@ -414,7 +641,10 @@
       "name": "Google Veo",
       "model": "veo-3.1-generate-preview",
       "verifiedAt": "2026-07-22",
-      "sourceUrl": "https://ai.google.dev/gemini-api/docs/video"
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/video",
+      "categories": [
+        "providers"
+      ]
     },
     {
       "id": "provider.replicate-seedance",
@@ -422,7 +652,10 @@
       "name": "Seedance on Replicate",
       "model": "bytedance/seedance-2.0",
       "verifiedAt": "2026-07-22",
-      "sourceUrl": "https://replicate.com/bytedance/seedance-2.0/api"
+      "sourceUrl": "https://replicate.com/bytedance/seedance-2.0/api",
+      "categories": [
+        "providers"
+      ]
     },
     {
       "id": "rule.image-provider-routing",
@@ -443,6 +676,10 @@
         "gpt-image-2 quality:high dies at the ~60s connection cap — use quality:medium and rebuild FormData per retry.",
         "gpt-image-2 cannot output 9:16; video ads are always 9:16 (house format).",
         "On-image copy is supplied verbatim; long/legal/tabular copy is composed deterministically after generation."
+      ],
+      "categories": [
+        "providers",
+        "product-assets"
       ]
     },
     {
@@ -455,7 +692,10 @@
       ],
       "source": "knowledge/products/dialed-moods.json",
       "path": "knowledge/products/dialed-moods.json",
-      "summary": "Dialed Moods image-gen product registry: 8 product entries"
+      "summary": "Dialed Moods image-gen product registry: 8 product entries",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "registry.dialed-health-products",
@@ -467,7 +707,10 @@
       ],
       "source": "knowledge/products/dialed-health.json",
       "path": "knowledge/products/dialed-health.json",
-      "summary": "Dialed Health image-gen product registry: 3 product entries"
+      "summary": "Dialed Health image-gen product registry: 3 product entries",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "registry.dialed-labs-products",
@@ -479,7 +722,10 @@
       ],
       "source": "knowledge/products/dialed-labs.json",
       "path": "knowledge/products/dialed-labs.json",
-      "summary": "Dialed Labs image-gen product registry: 14 product entries"
+      "summary": "Dialed Labs image-gen product registry: 14 product entries",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "registry.muha-products",
@@ -491,7 +737,10 @@
       ],
       "source": "knowledge/products/muha-meds.json",
       "path": "knowledge/products/muha-meds.json",
-      "summary": "Muha Meds image-gen product registry: 1 product entries + 6 asset families"
+      "summary": "Muha Meds image-gen product registry: 3 product entries + 6 asset families",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "registry.noble-harbor-products",
@@ -503,7 +752,10 @@
       ],
       "source": "knowledge/products/noble-harbor.json",
       "path": "knowledge/products/noble-harbor.json",
-      "summary": "Noble Harbor image-gen product registry: 1 product entries"
+      "summary": "Noble Harbor image-gen product registry: 1 product entries",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "registry.stanton-products",
@@ -515,7 +767,10 @@
       ],
       "source": "knowledge/products/stanton.json",
       "path": "knowledge/products/stanton.json",
-      "summary": "Stanton Medical image-gen product registry: 2 product entries"
+      "summary": "Stanton Medical image-gen product registry: 2 product entries",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "registry.nulumin-products",
@@ -527,7 +782,10 @@
       ],
       "source": "knowledge/products/nulumin.json",
       "path": "knowledge/products/nulumin.json",
-      "summary": "NuLumin Bio-Sciences image-gen product registry: 0 product entries + pointer to the 66-SKU Vial Library index"
+      "summary": "NuLumin Bio-Sciences image-gen product registry: 0 product entries + pointer to the 66-SKU Vial Library index",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.dialed-moods.blue-glacier",
@@ -539,7 +797,10 @@
       ],
       "source": "knowledge/products/dialed-moods.json",
       "canonicalReference": "Brand Context/assets/Dialed_Moods/Blue-Glacier.png",
-      "note": "Pass the real can render as reference; can is the large primary subject; never composite."
+      "note": "Pass the real can render as reference; can is the large primary subject; never composite.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.dialed-moods.lychee",
@@ -551,7 +812,10 @@
       ],
       "source": "knowledge/products/dialed-moods.json",
       "canonicalReference": "Brand Context/assets/Dialed_Moods/Lychee.png",
-      "note": "Pass the real can render as reference; can is the large primary subject; never composite."
+      "note": "Pass the real can render as reference; can is the large primary subject; never composite.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.dialed-moods.sour-watermelon",
@@ -563,7 +827,10 @@
       ],
       "source": "knowledge/products/dialed-moods.json",
       "canonicalReference": "Brand Context/assets/Dialed_Moods/Sour-Watermelon.png",
-      "note": "Pass the real can render as reference; can is the large primary subject; never composite."
+      "note": "Pass the real can render as reference; can is the large primary subject; never composite.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.dialed-moods.black-cherry-vanilla",
@@ -575,7 +842,10 @@
       ],
       "source": "knowledge/products/dialed-moods.json",
       "canonicalReference": "Brand Context/assets/Dialed_Moods/Black-Cherry-Vanilla.png",
-      "note": "Pass the real can render as reference; can is the large primary subject; never composite."
+      "note": "Pass the real can render as reference; can is the large primary subject; never composite.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.dialed-moods.lemonade",
@@ -587,7 +857,10 @@
       ],
       "source": "knowledge/products/dialed-moods.json",
       "canonicalReference": "Brand Context/assets/Dialed_Moods/Lemonade.png",
-      "note": "Pass the real can render as reference; can is the large primary subject; never composite."
+      "note": "Pass the real can render as reference; can is the large primary subject; never composite.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.dialed-moods.secret-juice",
@@ -598,7 +871,10 @@
       ],
       "source": "knowledge/products/dialed-moods.json",
       "canonicalReference": "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/single-secret-juice.png",
-      "note": "6th flavor; no Brand Context render exists — flagged gap."
+      "note": "6th flavor; no Brand Context render exists — flagged gap.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.dialed-moods.social-elixir",
@@ -610,7 +886,10 @@
       ],
       "source": "knowledge/products/dialed-moods.json",
       "canonicalReference": "Dialed Moods Social Elixir/refs/Dialed_Seltzer_Kava_Front_ArticBlue.png",
-      "note": "Approved dark-luxe look via refs/_style_approved.png — not the house white studio."
+      "note": "Approved dark-luxe look via refs/_style_approved.png — not the house white studio.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.dialed-moods.sea-moss",
@@ -622,7 +901,10 @@
       ],
       "source": "knowledge/products/dialed-moods.json",
       "canonicalReference": "dialed moods seamoss/Seamoss_Front.png",
-      "note": "Jar SKU with approved Studio/Lifestyle/Environment/Marketing sets."
+      "note": "Jar SKU with approved Studio/Lifestyle/Environment/Marketing sets.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.dialed-health.vial",
@@ -634,7 +916,10 @@
       ],
       "source": "knowledge/products/dialed-health.json",
       "canonicalReference": "Brand Context/assets/Dialed_Health/2026-04-17T21-19-49_Edit_the_reference_image_of_the_Dialed_H.jpg",
-      "note": "Matte black label, white ECG logo, centred name, NO dosing; this file is the master style anchor."
+      "note": "Matte black label, white ECG logo, centred name, NO dosing; this file is the master style anchor.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.dialed-health.capsule",
@@ -646,7 +931,10 @@
       ],
       "source": "knowledge/products/dialed-health.json",
       "canonicalReference": "Capsule Example.png",
-      "note": "Shape ref; label/scene style comes from the vial anchor."
+      "note": "Shape ref; label/scene style comes from the vial anchor.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.dialed-health.oral-drop",
@@ -658,7 +946,10 @@
       ],
       "source": "knowledge/products/dialed-health.json",
       "canonicalReference": "Oral Drop Example.jpeg",
-      "note": "Shape ref; label/scene style comes from the vial anchor."
+      "note": "Shape ref; label/scene style comes from the vial anchor.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.noble-harbor.wholesale-vials",
@@ -670,7 +961,10 @@
       ],
       "source": "knowledge/products/noble-harbor.json",
       "canonicalReference": "Noble Harbor Wholesale/_baselines/baseline_3ml_navy.jpg",
-      "note": "33 products x 9 locked cap colors (nh-colors.json); BPC-157 folder is the cap-color master set."
+      "note": "33 products x 9 locked cap colors (nh-colors.json); BPC-157 folder is the cap-color master set.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.stanton.bac-water",
@@ -681,7 +975,10 @@
       ],
       "source": "knowledge/products/stanton.json",
       "canonicalReference": "Brand Context/assets/Stanton_Medical/2026-06-09T01-59-16_stanton-bac-c1-30ml-a_dieline-65x29.png",
-      "note": "COMPLETE; 65x29mm dieline; pink banned."
+      "note": "COMPLETE; 65x29mm dieline; pink banned.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.stanton.prep-kit",
@@ -692,7 +989,10 @@
       ],
       "source": "knowledge/products/stanton.json",
       "canonicalReference": "Stanton Assets/Peptide Kit Label/2026-06-09T21-44-45_stanton-peptide-kit-E-list.png",
-      "note": "ACTIVE, layout not locked; stanton-peptide-kit-label.mjs is the layout source of truth."
+      "note": "ACTIVE, layout not locked; stanton-peptide-kit-label.mjs is the layout source of truth.",
+      "categories": [
+        "product-assets"
+      ]
     },
     {
       "id": "product.muha.cactus-cloud",
@@ -703,7 +1003,238 @@
       ],
       "source": "knowledge/products/muha-meds.json",
       "canonicalReference": "Cactus Cloud x Muha/Blue Slushie with Device.png",
-      "note": "Only in-repo Muha hardware renders; Magnetic Disposables art lives client-side."
+      "note": "Only in-repo Muha hardware renders; Magnetic Disposables art lives client-side.",
+      "categories": [
+        "product-assets"
+      ]
+    },
+    {
+      "id": "registry.muha-memes",
+      "type": "meme-registry",
+      "name": "Muha Meds meme registry",
+      "aliases": [
+        "muha memes",
+        "meme recreation",
+        "muhaify",
+        "meme templates",
+        "meme knowledge graph",
+        "dual flavor memes",
+        "magnetic memes"
+      ],
+      "source": "knowledge/memes/muha-meds.json",
+      "path": "knowledge/memes/muha-meds.json",
+      "summary": "Meme knowledge graph for Muha Meds: 3 device bodies with verbatim prompt blocks, 12 meme grammars, 7 pipelines, a measured 7-provider acceptance matrix, template sourcing routes (imgflip API, Wikimedia Commons API) with IP classes, 30 meme entries (14 shipped/in-progress + 16 Dual Flavor concepts) and a 31-law bank distilled from Muha Memes/*/README.md.",
+      "categories": [
+        "memes"
+      ]
+    },
+    {
+      "id": "product.muha.dual-flavor-aio",
+      "type": "product",
+      "name": "Muha Meds Dual Flavor All-In-One",
+      "aliases": [
+        "dual flavor",
+        "dual flavour",
+        "switch duo",
+        "dual dispo",
+        "MI Dual_Flavor_Dispo_4th",
+        "two flavor device"
+      ],
+      "source": "knowledge/products/muha-meds.json",
+      "registry": "knowledge/products/muha-meds.json",
+      "sku": "MM-dual-flavor-aio",
+      "summary": "Pill-shaped (2.12:1) black-and-gold disposable with twin chrome M-crest mouthpieces on a mirror-gold cap, a gauge screen showing two flavour names (left magenta / right green) and an LED that lights magenta or green for the active flavour. 10 fixed flavour pairs; 2000 MG | 0.071 OZ; box copy DUAL FLAVOR / ALL-IN-ONE / CHOOSE YOUR MEMBER. Renders: Muha Memes/DualFlavor/assets/ (local-only). Device block: Muha Memes/DualFlavor/_device.txt.",
+      "categories": [
+        "product-assets",
+        "memes"
+      ]
+    },
+    {
+      "id": "product.muha.gen2x2-magnetic",
+      "type": "product",
+      "name": "Muha Meds GEN 2 x 2 All-in-One Magnetic disposable",
+      "aliases": [
+        "magnetic dispo",
+        "magnetic disposable",
+        "gen 2 x 2",
+        "gen2x2",
+        "two halves"
+      ],
+      "source": "knowledge/products/muha-meds.json",
+      "registry": "knowledge/products/muha-meds.json",
+      "sku": "MM-gen2x2-magnetic",
+      "summary": "Two flat slab halves (LEFT matte black, RIGHT polished gold) that magnetically join; duckbill mouthpieces, yellow oil window, glossy flavour badge low on each front, no wordmark. 10 fixed SKUs (black half + gold half). Renders: Muha Memes/MagneticDispo/assets/ + official badges in strains/ (local-only). Also registered for video in sieve/products (MM-gen2x2-eurosummer).",
+      "categories": [
+        "product-assets",
+        "memes"
+      ]
+    },
+    {
+      "id": "rule.meme-pipeline-routing",
+      "type": "routing-rule",
+      "name": "Meme pipeline and provider routing",
+      "aliases": [
+        "which model for a meme",
+        "meme provider",
+        "v2v provider",
+        "meme edit model",
+        "meme routing"
+      ],
+      "source": "knowledge/memes/muha-meds.json",
+      "rules": [
+        "Video meme that must keep the original footage => MiniMax H3 v2v (pipeline B); the only provider that edits actor footage. Seedance 2.0/2.5, NB Pro, FLUX 3 Video, Kling Motion Control refuse or fail.",
+        "Video meme that can be re-staged with devices as characters => NB Pro start frame from a BLOCKING DIAGRAM (never the film frame) + Veo 3.1 i2v (pipeline A).",
+        "Still meme => gpt-image-2 /v1/images/edits with the frame as REFERENCE 1 and the device Front+45 renders as refs (pipeline C); Nano Banana Pro when gpt refuses (classical nudes) or hands must be repainted to grip (pipeline D); Seedream v5 Pro is_inpaint for per-panel stills with real actors (pipeline E).",
+        "Never composite/PIL-paste a device or badge into a meme; generate with the real asset as a reference.",
+        "Captions, labels, watermarks: composed deterministically after generation (card.py / memecard.sh / buildcard.py). Never model-drawn.",
+        "Run a control before concluding a provider refuses the material; gpt-image-2 rejects ~1 in 4 candidates at random — over-request.",
+        "Always show a real SKU from the device's pair table; never invent a pairing."
+      ],
+      "categories": [
+        "memes"
+      ]
+    },
+    {
+      "id": "category.memes",
+      "category": "memes",
+      "name": "Muha memes (meme recreations + device memes)",
+      "aliases": [
+        "muha memes",
+        "meme content",
+        "meme context",
+        "switch memes",
+        "dual flavor memes",
+        "magnetic memes",
+        "muhaify"
+      ],
+      "description": "Everything for making memes around a Muha device: the meme registry (devices with verbatim prompt blocks and canonical refs, joke grammars, pipelines A–G, the provider acceptance/refusal matrix, template sourcing with provenance, every meme shipped with its lessons, the law bank), the Gen Z brand-page voice, the taste record, and the local-only Muha Memes/ READMEs + handoff. Scoped so meme work never pulls product packshots or UGC context, and vice versa.",
+      "entry": "knowledge/memes/README.md",
+      "query": "npm run content -- knowledge query \"<template, grammar or device>\" --brand muha --category memes",
+      "type": "context-category",
+      "categories": [
+        "memes"
+      ],
+      "source": "knowledge/memes/README.md"
+    },
+    {
+      "id": "category.product-assets",
+      "category": "product-assets",
+      "name": "Product assets (registries, canonical reference images, packshots)",
+      "aliases": [
+        "product images",
+        "product refs",
+        "packshots",
+        "reference images"
+      ],
+      "description": "Per-brand product registries with role-tagged canonical reference images, locked rules and known gaps, plus the image-provider routing that goes with them.",
+      "entry": "docs/IMAGE_KNOWLEDGE_GRAPH.md",
+      "type": "context-category",
+      "categories": [
+        "product-assets"
+      ],
+      "source": "docs/IMAGE_KNOWLEDGE_GRAPH.md"
+    },
+    {
+      "id": "category.brand",
+      "category": "brand",
+      "name": "Brand context (canonical brand docs)",
+      "aliases": [
+        "brand context",
+        "brand docs"
+      ],
+      "description": "The Brand Context/ canonical brand documents: identity, voice, product facts, history.",
+      "entry": "Brand Context/README.md",
+      "type": "context-category",
+      "categories": [
+        "brand"
+      ],
+      "source": "Brand Context/README.md"
+    },
+    {
+      "id": "category.brand-pack",
+      "category": "brand-pack",
+      "name": "Brand packs (generation kits)",
+      "aliases": [
+        "brand pack",
+        "brandkit",
+        "ad system"
+      ],
+      "description": "knowledge/brands/<brand>/ packs: tokens, catalog, copy matrix, prompt blocks, approved formats, ad layouts.",
+      "entry": "docs/BRAND_PACKS.md",
+      "type": "context-category",
+      "categories": [
+        "brand-pack"
+      ],
+      "source": "docs/BRAND_PACKS.md"
+    },
+    {
+      "id": "category.ugc",
+      "category": "ugc",
+      "name": "UGC / creator content",
+      "aliases": [
+        "ugc",
+        "creator content",
+        "influencer",
+        "talking head"
+      ],
+      "description": "The UGC realism contract and persona systems for creator-style stills and video.",
+      "entry": "knowledge/playbooks/UGC_REALISM.md",
+      "type": "context-category",
+      "categories": [
+        "ugc"
+      ],
+      "source": "knowledge/playbooks/UGC_REALISM.md"
+    },
+    {
+      "id": "category.compliance",
+      "category": "compliance",
+      "name": "Compliance profiles",
+      "aliases": [
+        "compliance",
+        "regulated",
+        "ruo"
+      ],
+      "description": "Regulated-category profiles that gate claims and depictions.",
+      "entry": "knowledge/compliance/REGULATED_HEALTH_RUO.md",
+      "type": "context-category",
+      "categories": [
+        "compliance"
+      ],
+      "source": "knowledge/compliance/REGULATED_HEALTH_RUO.md"
+    },
+    {
+      "id": "category.characters",
+      "category": "characters",
+      "name": "Character continuity (Muha AI Fruit cast)",
+      "aliases": [
+        "characters",
+        "ai fruit",
+        "fruit cast"
+      ],
+      "description": "Character sheets and continuity rules for the Muha AI Fruit video cast.",
+      "entry": "AI Fruit VIdeos Muha/CHARACTERS.md",
+      "type": "context-category",
+      "categories": [
+        "characters"
+      ],
+      "source": "AI Fruit VIdeos Muha/CHARACTERS.md"
+    },
+    {
+      "id": "category.providers",
+      "category": "providers",
+      "name": "Providers and model routing",
+      "aliases": [
+        "providers",
+        "models",
+        "which model"
+      ],
+      "description": "Provider nodes and routing rules: what each image/video model accepts and does well.",
+      "entry": "docs/IMAGE_KNOWLEDGE_GRAPH.md",
+      "type": "context-category",
+      "categories": [
+        "providers"
+      ],
+      "source": "docs/IMAGE_KNOWLEDGE_GRAPH.md"
     }
   ],
   "edges": [
@@ -921,6 +1452,66 @@
       "from": "brand.muha",
       "relation": "has-product",
       "to": "product.muha.cactus-cloud"
+    },
+    {
+      "from": "brand.muha",
+      "relation": "has-memes",
+      "to": "registry.muha-memes"
+    },
+    {
+      "from": "brand.muha",
+      "relation": "has-product",
+      "to": "product.muha.dual-flavor-aio"
+    },
+    {
+      "from": "brand.muha",
+      "relation": "has-product",
+      "to": "product.muha.gen2x2-magnetic"
+    },
+    {
+      "from": "registry.muha-memes",
+      "relation": "governed-by",
+      "to": "rule.meme-pipeline-routing"
+    },
+    {
+      "from": "registry.muha-memes",
+      "relation": "uses",
+      "to": "product.muha.dual-flavor-aio"
+    },
+    {
+      "from": "registry.muha-memes",
+      "relation": "uses",
+      "to": "product.muha.gen2x2-magnetic"
+    },
+    {
+      "from": "registry.muha-memes",
+      "relation": "uses",
+      "to": "product.muha.cactus-cloud"
+    },
+    {
+      "from": "category.memes",
+      "to": "registry.muha-memes",
+      "relation": "contains"
+    },
+    {
+      "from": "category.memes",
+      "to": "rule.meme-pipeline-routing",
+      "relation": "contains"
+    },
+    {
+      "from": "category.memes",
+      "to": "product.muha.dual-flavor-aio",
+      "relation": "contains"
+    },
+    {
+      "from": "category.memes",
+      "to": "product.muha.gen2x2-magnetic",
+      "relation": "contains"
+    },
+    {
+      "from": "brand.muha",
+      "to": "category.memes",
+      "relation": "has-context"
     }
   ]
 }
