@@ -94,7 +94,7 @@ export function damConfig(root, env = process.env) {
     storage: { url: storageUrlFor(env), key: env.SUPABASE_SERVICE_ROLE_KEY, bucket: env.DAM_STORAGE_BUCKET || "dam-proxies" },
     concurrency: number("DAM_CONCURRENCY", 2),
     workerId: env.DAM_WORKER_ID || `${env.HOSTNAME || "local"}-${process.pid}`,
-    longpollSeconds: number("DAM_LONGPOLL_SECONDS", 300),
+    longpollSeconds: number("DAM_LONGPOLL_SECONDS", 90),
   };
 }
 
