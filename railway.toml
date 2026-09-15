@@ -4,6 +4,6 @@ builder = "DOCKERFILE"
 dockerfilePath = "deploy/dam/Dockerfile"
 
 [deploy]
-startCommand = "node engine/cli.mjs dam watch"
+startCommand = "sh deploy/dam/start.sh"
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10

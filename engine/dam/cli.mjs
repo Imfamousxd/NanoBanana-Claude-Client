@@ -75,6 +75,7 @@ export async function runDamCommand(root, args, print) {
         return print({ ...result, queue: await worker.db.jobCounts(), spend24hUsd: await worker.db.spendSince(24) });
       }
       case "watch": {
+        installCrashReporting();
         await worker.registerDefaultScopes();
         const { startDamServer } = await import("./serve.mjs");
         startDamServer(root);
@@ -135,3 +136,13 @@ export async function runDamCommand(root, args, print) {
 }
 
 export { brandCards, path };
+
+/** The hosted worker must never die silently: log the reason for every exit path before Railway restarts it. */
+function installCrashReporting() {
+  const say = (...args) => console.error("[dam]", ...args);
+  process.on("uncaughtException", (error) => { say("uncaughtException:", error?.stack || error); process.exitCode = 70; setTimeout(() => process.exit(70), 200); });
+  process.on("unhandledRejection", (reason) => { say("unhandledRejection:", reason?.stack || reason); });
+  for (const signal of ["SIGTERM", "SIGINT", "SIGHUP"]) process.on(signal, () => { say(`received ${signal}; exiting`); process.exit(0); });
+  process.on("exit", (code) => say(`exit code ${code}; rss ${Math.round(process.memoryUsage().rss / 1048576)} MB; uptime ${Math.round(process.uptime())}s`));
+  setInterval(() => { const m = process.memoryUsage(); if (m.rss > 1.5 * 1024 ** 3) say(`memory high: rss ${Math.round(m.rss / 1048576)} MB heap ${Math.round(m.heapUsed / 1048576)} MB`); }, 30_000).unref();
+}

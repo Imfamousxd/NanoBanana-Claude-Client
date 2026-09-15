@@ -335,6 +335,12 @@ export class DamWorker {
   async runQueue({ once = false, kinds = undefined, maxJobs = Infinity, sourcePrefix = undefined } = {}) {
     let processed = 0;
     let parked = 0;
+    // Paid kinds stay in the queue for a worker that is approved; an unapproved worker only does free work.
+    // (Claiming and parking them for an hour starved the approved local run that was meant to take them.)
+    if (!this.config.approved) {
+      kinds = (kinds || ["discover", "probe", "analyze", "embed"]).filter((kind) => FREE_KINDS.has(kind));
+      if (!kinds.length) return { processed, parked, skipped: "no free kinds requested and paid work is locked" };
+    }
     while (!this.stopped && processed < maxJobs) {
       await this.db.requeueStale(45);
       const jobs = await this.db.claimJobs(this.config.workerId, this.config.concurrency, kinds || null, sourcePrefix || null);
@@ -390,6 +396,8 @@ export class DamWorker {
 
   async close() { this.stopped = true; await this.db.end(); }
 }
+
+const FREE_KINDS = new Set(["discover", "probe"]);
 
 export class SpendNotApproved extends Error {}
 export class SpendCapReached extends Error {}

@@ -42,6 +42,7 @@ export const EXCLUDE_PATH_PATTERNS = [
   /\bCOA'?s?\b/i,
   /12 Pack Kava Seltzer Carrying Case Barcodes/i,
   /3D Renderers Workflow/i,
+  /Archmodels|\/textures?\d*\/|\bHDRI?s?\b|\.hdr$/i,               // stock 3D texture / HDRI libraries
   /Accounting/i,
   /FontBook/i,
   /node_modules|\.git\//,
