@@ -66,7 +66,7 @@ export function referenceScore(asset) {
   if (render.discontinued || usability.outdated_or_wrong || asset.flags?.do_not_use) score -= 80;
   if (usability.watermarked) score -= 40;
   if (usability.low_resolution) score -= 20;
-  score += Math.min(Number(asset.quality) || 0, 10) * 3;
+  score += Math.min(Number(asset.quality) || 0, 1) * 30; // usability.quality is 0–1
   score += Math.min(render.version || 0, 9);
   if ((asset.reference_roles || []).includes("canonical")) score += 10;
   if (asset.width && asset.height) score += Math.min(Math.max(asset.width, asset.height) / 1000, 4);
@@ -136,7 +136,11 @@ export async function resolveProductReferences(db, graph, root, { brand = null, 
   const byComposition = (...kinds) => usable.filter((entry) => kinds.includes(compositionOf(entry.asset)));
   const pick = (entries, n = limit, why = "") => entries.slice(0, n).map((entry) => slim(entry.asset, why));
 
-  const identity = pick([...byComposition("device-with-packaging"), ...byComposition("packaging-only"), ...usable.filter((entry) => (entry.asset.reference_roles || []).includes("canonical"))].filter((entry, index, all) => all.findIndex((other) => other.asset.id === entry.asset.id) === index), limit, "canonical look of the product as sold — judge drift against this");
+  // Identity = the product as sold, clean: packaging with device (Muha), else packaging, else the container
+  // alone (Dialed / NuLumin). Scenes and hands only when nothing clean exists.
+  const clean = (entries) => entries.filter((entry) => !["in-scene", "in-hand"].includes(compositionOf(entry.asset)));
+  const identityPool = [...byComposition("device-with-packaging"), ...byComposition("packaging-only"), ...byComposition("device-only"), ...clean(usable.filter((entry) => (entry.asset.reference_roles || []).includes("canonical"))), ...usable];
+  const identity = pick(identityPool.filter((entry, index, all) => all.findIndex((other) => other.asset.id === entry.asset.id) === index), limit, "canonical look of the product as sold — judge drift against this");
   const device = pick(byComposition("device-only", "in-hand"), limit, "the device / container alone — close-ups, in-hand, product-only heroes");
   const packaging = pick(byComposition("packaging-only", "device-with-packaging"), limit, "the packaging as subject");
   const angles = {};
