@@ -192,7 +192,7 @@ export async function searchAssets(db, graph, query, { filters: extra = {}, limi
     const sims = ["semantic", "visual", "semantic-relaxed", "visual-relaxed"].map((key) => Number(entry.why[key]?.similarity || 0));
     const lexical = entry.why.lexical || entry.why["lexical-relaxed"];
     if (!lexical && Math.max(...sims) < 0.45) return false;
-    return entry.score >= all[0].score * 0.4;
+    return entry.score >= all[0].score * 0.25;
   });
   let ranked = (strong.length ? strong : all.slice(0, Math.min(3, all.length))).slice(0, rerank ? Math.min(30, limit * 3) : limit);
   if (rerank && config && ranked.length > 1) {
