@@ -16,6 +16,13 @@ silently spending money, or treating an attractive render as a finished delivera
 historical root-level scripts; new reusable behavior belongs in `engine/`, structured knowledge in
 `knowledge/`, schemas in `schemas/`, and operator documentation in `docs/`.
 
+## The MCP server is the front door
+
+This checkout is an MCP server (`.mcp.json` / `.cursor/mcp.json` → `engine/mcp/server.mjs`;
+`docs/MCP.md`). When the `content-engine` tools are available, use them instead of reading files by
+hand: `brand_get` → `context_pack` → `assets_search` → generate → `prompt_log` (if not `job_run`) →
+`feedback_record`. The CLI below is the same engine for shells and scripts.
+
 ## Start every content task here
 
 1. Identify the brand, audience, channel, deliverable, aspect ratio, and acceptance criteria.
@@ -23,7 +30,11 @@ historical root-level scripts; new reusable behavior belongs in `engine/`, struc
    A pack (`knowledge/brands/<brand>/`) carries the exact tokens, product facts, copy matrix,
    prompt blocks, and already-approved formats. Use them; do not re-derive a design system, and do
    not resurrect a rejected approach the pack's format document already records.
-3. Query the knowledge layer instead of loading every brand document:
+3. Build the context pack before writing a prompt: `npm run content -- context <brand> "<brief>"`
+   (MCP: `context_pack`). It returns the exact reference files for the products named, banned
+   files, locked rules, the laws learned from past rejections, approved exemplars with the prompts
+   that made them, recent rejections, compliance and provider routing. Then query the knowledge
+   layer for anything narrower instead of loading every brand document:
    `npm run content -- knowledge query "<brand> <task>" --brand <brand-id> --category <category>`.
    Categories are hard scopes (`knowledge categories` lists them): `memes` for Muha meme work,
    `product-assets` for packshots and canonical refs, `ugc` for creator content, `brand`,
@@ -35,10 +46,23 @@ historical root-level scripts; new reusable behavior belongs in `engine/`, struc
    `execution.approved: true` in the job. Never infer approval from an old campaign or handoff.
 7. Run `npm run content -- run <job.json>`, then review every candidate. For supported images,
    run `npm run content -- review <job.json> <image>` and perform human visual inspection too.
-8. Record approved outputs and reusable learnings in the job manifest, the brand pack, or the
-   knowledge layer. Do not create another root-level one-off script when the engine can express the
-   job. Copy that is exact, legal, or tabular is composed deterministically — see
+8. Record the human verdict on every candidate: `npm run content -- learn record --verdict
+   approved|rejected|revise --reason "…" --target <output|pl_id>` (MCP: `feedback_record`). An
+   approval becomes an exemplar with a tracked image copy and an `approved-output` registry entry; a
+   rejection becomes a law. A generation that ran outside `run` is logged first with `learn log`
+   (MCP: `prompt_log`). A generation is not done until it has a verdict — see
+   `docs/SELF_IMPROVEMENT.md`. Do not create another root-level one-off script when the engine can
+   express the job. Copy that is exact, legal, or tabular is composed deterministically — see
    `docs/BRAND_PACKS.md`, not an image model.
+
+Library: the DAM (`docs/DAM.md`) indexes the team Dropbox; `dam_search` finds real photos, real
+creator videos, packshots and shipped ads by meaning, and `dam_ugc_profile` gives the measured
+real-creator profile a UGC brief must land in. `context_pack` already includes both when the
+database is reachable.
+
+Assets: `npm run assets:gallery` opens a browsable gallery of every registered asset per brand
+(thumbnails, product/role filters, on-disk and tracked flags); `npm run content -- assets search`
+and the `assets_search` tool answer the same question from a shell or an agent.
 
 Run `npm run doctor` after setup and `npm run check` after engine changes.
 

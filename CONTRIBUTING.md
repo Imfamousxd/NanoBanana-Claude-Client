@@ -90,7 +90,7 @@ wrong to a client", not "this is a style nit".
 
 Every `sources[]` entry and every node in `knowledge/graph.json` carries `categories` (or a single
 `category`): `brand`, `brand-pack`, `product-assets`, `ugc`, `compliance`, `characters`, `providers`,
-`memes`. A new source without one is invisible to scoped queries. Add a `context-category` node when
+`memes`, `learnings`. A new source without one is invisible to scoped queries. Add a `context-category` node when
 you introduce a new category, with `description` and `entry` (the document a newcomer reads first).
 
 ### 6. Write the format document last
@@ -113,6 +113,8 @@ The architecture is small on purpose. These boundaries are what keep it that way
 | Reusable behavior | `engine/` | a new root-level script |
 | Committed brand artwork | `Brand Context/assets/<Brand>/` | a scratch directory |
 | Approved claims | `knowledge/claims/` | inline in a prompt |
+| Verdict memory (laws, exemplars, events) | `knowledge/learnings/<brand>.json` via `learn record` / `feedback_record` | a handoff note nobody re-reads |
+| Approved image copies | `Brand Context/assets/<Brand>/approved/` (written by the loop) | the generations folder only |
 | Job contracts | `schemas/` | implied by code |
 | Operator docs | `docs/` | a comment |
 | Generated output, caches, temp jobs | untracked (`generations/`, `.content-engine/`) | committed |
@@ -143,6 +145,8 @@ Open the question before writing the code:
 - Adding a format module or an example job.
 - Adding tests.
 - Improving a document, especially by adding the reason a rule exists.
+- Recording a verdict or a law through the learning loop (that is the point of it).
+- Adding an MCP tool to `engine/mcp/tools.mjs` when it wraps an existing engine function.
 
 ### The historical scripts
 

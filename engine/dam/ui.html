@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Asset library</title>
+<style>
+:root{--bg:#f4f5f3;--card:#fff;--ink:#1a1c1b;--muted:#6b716e;--line:#dfe3e0;--accent:#1e5a55;--soft:#e3efed;--warn:#9a6400;--bad:#b23a2c;--ok:#1f7a4d}
+*{box-sizing:border-box}body{margin:0;font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:10px 18px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+header h1{font-size:15px;margin:0 10px 0 0;font-weight:600}
+input[type=search]{flex:1;min-width:260px;padding:9px 12px;border:1px solid var(--line);border-radius:8px;font-size:15px}
+select,button{padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;font-size:13px;cursor:pointer}
+button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+label.chk{font-size:12px;color:var(--muted);display:flex;gap:5px;align-items:center}
+main{padding:14px 18px 60px}
+.summary{color:var(--muted);font-size:13px;margin:0 0 10px;display:flex;gap:14px;flex-wrap:wrap}
+.summary code{background:var(--soft);padding:1px 6px;border-radius:4px;font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer}
+.card:hover{border-color:var(--accent)}
+.thumb{aspect-ratio:1;background:repeating-conic-gradient(#eee 0 25%,#fff 0 50%) 50%/16px 16px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.thumb img{max-width:100%;max-height:100%;object-fit:contain}.thumb .dur{position:absolute;right:6px;bottom:6px;background:rgba(0,0,0,.7);color:#fff;font-size:11px;padding:1px 6px;border-radius:4px}
+.meta{padding:8px 10px;display:flex;flex-direction:column;gap:4px;font-size:12px}
+.title{font-weight:600;font-size:13px}.badges{display:flex;flex-wrap:wrap;gap:4px}
+.badge{padding:1px 7px;border-radius:999px;background:#eef0f4;font-size:11px}.badge.class{background:#e3efff;color:#1747b3}.badge.role{background:#e3f7e8;color:#166534}.badge.brand{background:#ece8ff;color:#4b2fb3}.badge.flag{background:#fee4e2;color:var(--bad)}.badge.human{background:#fff3e0;color:#9a4a00}
+.why{color:var(--muted);font-size:11px}.path{color:var(--muted);font-size:11px;word-break:break-all}
+.empty{color:var(--muted);padding:40px 0;text-align:center}
+dialog{border:0;border-radius:12px;padding:0;max-width:960px;width:94vw;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+dialog::backdrop{background:rgba(0,0,0,.45)}
+.detail{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:18px}
+.detail .media img,.detail .media video{max-width:100%;border-radius:8px;background:#111}
+.detail h2{margin:0 0 6px;font-size:17px}.detail p{margin:6px 0;font-size:13px}.detail .k{color:var(--muted)}
+.detail pre{white-space:pre-wrap;font-size:12px;background:var(--bg);padding:10px;border-radius:8px;max-height:260px;overflow:auto}
+.verdict{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.login{max-width:360px;margin:80px auto;background:#fff;padding:24px;border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:column;gap:10px}
+@media (max-width:700px){.detail{grid-template-columns:1fr}}
+</style></head><body>
+<header>
+  <h1>Asset library</h1>
+  <input id="q" type="search" placeholder="Try: vertical ugc of someone unboxing · muha logo transparent · flyer with giveaway · product render on black" autofocus>
+  <select id="brand"><option value="">All brands</option></select>
+  <select id="class"><option value="">All types</option></select>
+  <select id="orientation"><option value="">Any shape</option><option>9:16</option><option>4:5</option><option>1:1</option><option>16:9</option></select>
+  <label class="chk"><input type="checkbox" id="human"> real people only</label>
+  <label class="chk"><input type="checkbox" id="rerank"> rerank (AI)</label>
+  <button class="primary" id="go">Search</button>
+</header>
+<main><p class="summary" id="summary"></p><div id="out" class="grid"></div></main>
+<dialog id="dlg"></dialog>
+<script>
+const $=(s)=>document.querySelector(s);const esc=(v)=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let META=null;
+async function api(p,opts){const r=await fetch(p,opts);if(r.status===401){login();throw new Error("auth")}return r.json()}
+function login(){document.body.innerHTML='<div class="login"><h2 style="margin:0">Asset library</h2><input id="pw" type="password" placeholder="password"><button class="primary" id="pwgo">Enter</button></div>';$("#pwgo").onclick=async()=>{const r=await fetch("/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({password:$("#pw").value})});if(r.ok)location.reload();else alert("wrong password")}}
+async function init(){try{META=await api("/api/meta")}catch(e){return}
+$("#brand").innerHTML+=META.brands.map(b=>'<option value="'+esc(b.id)+'">'+esc(b.name)+'</option>').join("");
+$("#class").innerHTML+=META.classes.map(c=>'<option>'+esc(c)+'</option>').join("");
+const a=META.stats.assets||[];const analyzed=a.filter(x=>x.status==="analyzed"||x.status==="embedded").reduce((s,x)=>s+x.n,0);const total=a.reduce((s,x)=>s+x.n,0);
+$("#summary").innerHTML='<span><code>'+analyzed.toLocaleString()+'</code> understood of <code>'+total.toLocaleString()+'</code> files</span><span>type a query, or pick filters and search with an empty box to browse</span>';
+const params=new URLSearchParams(location.search);if(params.get("q")){$("#q").value=params.get("q");search()}}
+function card(i){const badges=['<span class="badge brand">'+esc((i.brand||"?").replace("brand.",""))+'</span>','<span class="badge class">'+esc(i.class||"?")+(i.form?' / '+esc(i.form.replace(/-/g," ")):"")+'</span>']
+ .concat((i.roles||[]).map(r=>'<span class="badge role">'+esc(r)+'</span>'),i.realHuman?['<span class="badge human">real person</span>']:[],(i.flags&&(i.flags.outdated_or_wrong||i.flags.do_not_use))?['<span class="badge flag">flagged</span>']:[]).join("");
+const why=i.why?Object.entries(i.why).map(([k,v])=>k+(v.similarity?" "+v.similarity:v.rank?" #"+v.rank:"")).join(" · "):"";
+return '<div class="card" data-id="'+i.id+'"><div class="thumb">'+(i.thumb?'<img loading="lazy" src="'+esc(i.thumb)+'">':'<span>'+esc(i.kind)+'</span>')+(i.duration_s?'<span class="dur">'+Math.round(i.duration_s)+'s</span>':'')+'</div><div class="meta"><div class="title">'+esc(i.title||i.path.split("/").pop())+'</div><div class="badges">'+badges+'</div>'+(i.product?'<div>'+esc(i.product)+'</div>':'')+'<div class="why">'+esc(why)+(i.why&&i.why.rerank?' — '+esc(i.why.rerank):'')+'</div><div class="path">'+esc(i.path)+'</div></div></div>'}
+async function search(){const p=new URLSearchParams({q:$("#q").value,brand:$("#brand").value,class:$("#class").value,orientation:$("#orientation").value,realHuman:$("#human").checked?"1":"",rerank:$("#rerank").checked?"1":"",limit:"60"});
+$("#out").innerHTML='<p class="empty">Searching…</p>';const r=await api("/api/search?"+p);history.replaceState(null,"","?q="+encodeURIComponent($("#q").value));
+const f=Object.entries(r.parsed.filters).filter(([k])=>!/Alias$/.test(k)).map(([k,v])=>k+"="+v).join(" ");
+$("#summary").innerHTML='<span><code>'+r.count+'</code> results</span>'+(f?'<span>understood as: <code>'+esc(f)+'</code></span>':'')+'<span>'+(r.usedVectors?'lexical + semantic + visual':'lexical only')+'</span>';
+$("#out").innerHTML=r.results.length?r.results.map(card).join(""):'<p class="empty">Nothing yet. Try fewer words, or clear a filter.</p>'}
+async function open(id){const a=await api("/api/asset/"+id);const v=a.video||{};const media=a.proxies&&a.proxies.preview?'<video controls src="'+esc(a.proxies.preview)+'" poster="'+esc(a.proxies.contact||a.proxies.thumb||"")+'"></video>':a.proxies&&(a.proxies.contact||a.proxies.model||a.proxies.thumb)?'<img src="'+esc(a.proxies.contact||a.proxies.model||a.proxies.thumb)+'">':'<div class="empty">no preview</div>';
+const an=a.analysis||{};const rows=[["Brand",a.brand],["Type",(a.class||"")+(a.subclass?" / "+a.subclass:"")],["Product",a.product],["Roles",(a.reference_roles||[]).join(", ")],["Quality",a.quality],["Size",a.width?a.width+"×"+a.height:""],["Duration",a.duration_s?Math.round(a.duration_s)+"s":""],["Verdict",a.verdict||"—"],["Path",a.source_id+" · "+a.path]];
+$("#dlg").innerHTML='<div class="detail"><div class="media">'+media+(a.similar&&a.similar.length?'<p class="k">Visually similar</p><div class="grid" style="grid-template-columns:repeat(4,1fr)">'+a.similar.slice(0,8).map(s=>'<div class="card" data-id="'+s.id+'"><div class="thumb">'+(s.thumb?'<img src="'+esc(s.thumb)+'">':'')+'</div></div>').join("")+'</div>':'')+'</div><div><h2>'+esc(a.title||a.name)+'</h2><p>'+esc(a.summary||"")+'</p>'+rows.filter(r=>r[1]!==null&&r[1]!==undefined&&r[1]!=="").map(r=>'<p><span class="k">'+r[0]+':</span> '+esc(r[1])+'</p>').join("")+(an.scene||an.setting?'<p><span class="k">Scene:</span> '+esc(an.scene||an.setting)+'</p>':'')+(an.capture?'<p><span class="k">Capture:</span> '+esc(an.capture.device_read+"; "+an.capture.camera_behavior+"; "+(an.capture.imperfections||[]).join(", "))+'</p>':'')+(an.structure?'<p><span class="k">Hook:</span> '+esc(an.structure.hook)+' ('+esc(an.structure.hook_type)+')</p>':'')+(v.transcript&&v.transcript.text?'<p class="k">Transcript</p><pre>'+esc(v.transcript.text)+'</pre>':'')+(an.on_image_text&&an.on_image_text.length?'<p><span class="k">Text on image:</span> '+esc(an.on_image_text.join(" | "))+'</p>':'')+'<p class="k">Tags: '+esc((a.tags||[]).join(", "))+'</p><div class="verdict"><button data-v="approved">Approve as reference</button><button data-v="rejected">Reject (do not use)</button><button data-close>Close</button></div></div></div>';
+$("#dlg").showModal();$("#dlg").onclick=async(e)=>{const c=e.target.closest("[data-id]");if(c){open(c.dataset.id);return}if(e.target.dataset.close){$("#dlg").close();return}if(e.target.dataset.v){const reason=prompt("Reason (one line):");if(!reason)return;await api("/api/asset/"+a.id+"/verdict",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({verdict:e.target.dataset.v,reason,roles:e.target.dataset.v==="approved"?["canonical"]:[]})});$("#dlg").close();search()}}}
+$("#go").onclick=search;$("#q").addEventListener("keydown",e=>{if(e.key==="Enter")search()});for(const id of["brand","class","orientation","human"])$("#"+id).addEventListener("change",search);
+$("#out").addEventListener("click",e=>{const c=e.target.closest("[data-id]");if(c)open(c.dataset.id)});
+init();
+</script></body></html>

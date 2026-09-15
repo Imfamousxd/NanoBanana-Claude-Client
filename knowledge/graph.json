@@ -333,6 +333,24 @@
       "categories": [
         "memes"
       ]
+    },
+    {
+      "directory": "knowledge/learnings",
+      "extensions": [
+        ".json"
+      ],
+      "tags": [
+        "learnings",
+        "law",
+        "exemplar",
+        "verdict",
+        "approved-output",
+        "rejection",
+        "self-improvement"
+      ],
+      "categories": [
+        "learnings"
+      ]
     }
   ],
   "nodes": [
@@ -1235,6 +1253,148 @@
         "providers"
       ],
       "source": "docs/IMAGE_KNOWLEDGE_GRAPH.md"
+    },
+    {
+      "id": "category.learnings",
+      "type": "context-category",
+      "category": "learnings",
+      "name": "Learnings (verdict-driven laws + approved exemplars)",
+      "aliases": [
+        "learnings",
+        "what worked",
+        "what failed",
+        "approved outputs",
+        "rejections",
+        "laws",
+        "exemplars",
+        "feedback"
+      ],
+      "description": "The self-improvement memory: per-brand learning stores holding distilled laws (what to do / never do, with evidence and confidence), approved exemplars (the exact prompt, provider and reference files behind every approved image, plus a tracked copy), and every verdict event with the prompt it judged. Written by feedback_record (MCP) / `learn record` (CLI); read by context_pack before any prompt is written.",
+      "entry": "docs/SELF_IMPROVEMENT.md",
+      "query": "npm run content -- knowledge query \"<what you are about to make>\" --brand <brand> --category learnings",
+      "source": "docs/SELF_IMPROVEMENT.md",
+      "categories": [
+        "learnings"
+      ]
+    },
+    {
+      "id": "registry.nulumin-learnings",
+      "type": "learning-registry",
+      "name": "NuLumin Bio-Sciences learning store",
+      "aliases": [
+        "nulumin bio-sciences learnings",
+        "nulumin bio-sciences laws",
+        "nulumin bio-sciences approved outputs",
+        "nulumin bio-sciences rejections"
+      ],
+      "source": "knowledge/learnings/nulumin.json",
+      "path": "knowledge/learnings/nulumin.json",
+      "summary": "Laws, approved exemplars (prompt + refs + tracked copy) and verdict events for NuLumin Bio-Sciences. Grows with every feedback_record call; the approved-output entries it creates are also appended to the brand's product registry.",
+      "categories": [
+        "learnings"
+      ]
+    },
+    {
+      "id": "registry.muha-learnings",
+      "type": "learning-registry",
+      "name": "Muha Meds learning store",
+      "aliases": [
+        "muha meds learnings",
+        "muha meds laws",
+        "muha meds approved outputs",
+        "muha meds rejections"
+      ],
+      "source": "knowledge/learnings/muha.json",
+      "path": "knowledge/learnings/muha.json",
+      "summary": "Laws, approved exemplars (prompt + refs + tracked copy) and verdict events for Muha Meds. Grows with every feedback_record call; the approved-output entries it creates are also appended to the brand's product registry.",
+      "categories": [
+        "learnings"
+      ]
+    },
+    {
+      "id": "registry.dialed-health-learnings",
+      "type": "learning-registry",
+      "name": "Dialed Health learning store",
+      "aliases": [
+        "dialed health learnings",
+        "dialed health laws",
+        "dialed health approved outputs",
+        "dialed health rejections"
+      ],
+      "source": "knowledge/learnings/dialed-health.json",
+      "path": "knowledge/learnings/dialed-health.json",
+      "summary": "Laws, approved exemplars (prompt + refs + tracked copy) and verdict events for Dialed Health. Grows with every feedback_record call; the approved-output entries it creates are also appended to the brand's product registry.",
+      "categories": [
+        "learnings"
+      ]
+    },
+    {
+      "id": "registry.dialed-moods-learnings",
+      "type": "learning-registry",
+      "name": "Dialed Moods learning store",
+      "aliases": [
+        "dialed moods learnings",
+        "dialed moods laws",
+        "dialed moods approved outputs",
+        "dialed moods rejections"
+      ],
+      "source": "knowledge/learnings/dialed-moods.json",
+      "path": "knowledge/learnings/dialed-moods.json",
+      "summary": "Laws, approved exemplars (prompt + refs + tracked copy) and verdict events for Dialed Moods. Grows with every feedback_record call; the approved-output entries it creates are also appended to the brand's product registry.",
+      "categories": [
+        "learnings"
+      ]
+    },
+    {
+      "id": "registry.dialed-labs-learnings",
+      "type": "learning-registry",
+      "name": "Dialed Labs x UFC learning store",
+      "aliases": [
+        "dialed labs x ufc learnings",
+        "dialed labs x ufc laws",
+        "dialed labs x ufc approved outputs",
+        "dialed labs x ufc rejections"
+      ],
+      "source": "knowledge/learnings/dialed-labs.json",
+      "path": "knowledge/learnings/dialed-labs.json",
+      "summary": "Laws, approved exemplars (prompt + refs + tracked copy) and verdict events for Dialed Labs x UFC. Grows with every feedback_record call; the approved-output entries it creates are also appended to the brand's product registry.",
+      "categories": [
+        "learnings"
+      ]
+    },
+    {
+      "id": "registry.noble-harbor-learnings",
+      "type": "learning-registry",
+      "name": "Noble Harbor learning store",
+      "aliases": [
+        "noble harbor learnings",
+        "noble harbor laws",
+        "noble harbor approved outputs",
+        "noble harbor rejections"
+      ],
+      "source": "knowledge/learnings/noble-harbor.json",
+      "path": "knowledge/learnings/noble-harbor.json",
+      "summary": "Laws, approved exemplars (prompt + refs + tracked copy) and verdict events for Noble Harbor. Grows with every feedback_record call; the approved-output entries it creates are also appended to the brand's product registry.",
+      "categories": [
+        "learnings"
+      ]
+    },
+    {
+      "id": "registry.stanton-learnings",
+      "type": "learning-registry",
+      "name": "Stanton Medical learning store",
+      "aliases": [
+        "stanton medical learnings",
+        "stanton medical laws",
+        "stanton medical approved outputs",
+        "stanton medical rejections"
+      ],
+      "source": "knowledge/learnings/stanton.json",
+      "path": "knowledge/learnings/stanton.json",
+      "summary": "Laws, approved exemplars (prompt + refs + tracked copy) and verdict events for Stanton Medical. Grows with every feedback_record call; the approved-output entries it creates are also appended to the brand's product registry.",
+      "categories": [
+        "learnings"
+      ]
     }
   ],
   "edges": [
@@ -1512,6 +1672,41 @@
       "from": "brand.muha",
       "to": "category.memes",
       "relation": "has-context"
+    },
+    {
+      "from": "brand.nulumin",
+      "relation": "has-learnings",
+      "to": "registry.nulumin-learnings"
+    },
+    {
+      "from": "brand.muha",
+      "relation": "has-learnings",
+      "to": "registry.muha-learnings"
+    },
+    {
+      "from": "brand.dialed-health",
+      "relation": "has-learnings",
+      "to": "registry.dialed-health-learnings"
+    },
+    {
+      "from": "brand.dialed-moods",
+      "relation": "has-learnings",
+      "to": "registry.dialed-moods-learnings"
+    },
+    {
+      "from": "brand.dialed-labs",
+      "relation": "has-learnings",
+      "to": "registry.dialed-labs-learnings"
+    },
+    {
+      "from": "brand.noble-harbor",
+      "relation": "has-learnings",
+      "to": "registry.noble-harbor-learnings"
+    },
+    {
+      "from": "brand.stanton",
+      "relation": "has-learnings",
+      "to": "registry.stanton-learnings"
     }
   ]
 }

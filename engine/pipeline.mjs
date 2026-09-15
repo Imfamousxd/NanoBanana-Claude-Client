@@ -9,6 +9,7 @@ import { compilePrompt } from "./prompts/compiler.mjs";
 import { inspectAssets } from "./quality/asset-inspector.mjs";
 import { runPreflight } from "./quality/preflight.mjs";
 import { runProvider } from "./providers/index.mjs";
+import { appendPromptLog } from "./learning/prompt-log.mjs";
 
 function mergeChecks(validation, preflight) {
   const errors = [...validation.errors, ...preflight.errors];
@@ -54,6 +55,7 @@ export function planJob(root, requestedPath, { requireApproval = false } = {}) {
 
 export async function executeJob(root, requestedPath) {
   const plan = planJob(root, requestedPath, { requireApproval: true });
+  const graph = loadGraph(root);
   if (!plan.checks.ok) {
     throw new EngineError("PREFLIGHT_FAILED", "Job cannot run until all preflight errors are fixed.", plan.checks);
   }
@@ -77,7 +79,26 @@ export async function executeJob(root, requestedPath) {
     manifest.usage = result.usage || null;
     recordOutputs(manifest, root, result.outputs);
     manifestPath = saveManifest(root, plan.job, manifest);
-    return { outputs: result.outputs, manifestPath, manifest };
+    // Every paid prompt is logged so a verdict can later turn it into an exemplar or a law. Never throws.
+    const logEntry = appendPromptLog(root, graph, {
+      brand: plan.job.brand,
+      category: plan.job.mode,
+      mode: plan.job.mode,
+      provider: result.provider?.id || plan.job.provider.id,
+      model: result.provider?.model || plan.job.provider.model || null,
+      params: { aspectRatio: plan.job.deliverable.aspectRatio, candidates: plan.job.deliverable.candidates, quality: plan.job.deliverable.quality || null, imageSize: plan.job.deliverable.imageSize || null, durationSeconds: plan.job.deliverable.durationSeconds || null },
+      prompt: plan.prompt,
+      refs: plan.assets.map((asset) => ({ path: asset.path, role: asset.role, sha256: asset.sha256 })),
+      outputs: result.outputs.map((file) => path.relative(root, file)),
+      jobId: plan.job.id,
+      manifestPath: path.relative(root, manifestPath),
+      source: "engine-run",
+    });
+    if (logEntry) {
+      manifest.promptLogId = logEntry.id;
+      manifestPath = saveManifest(root, plan.job, manifest);
+    }
+    return { outputs: result.outputs, manifestPath, manifest, promptLogId: logEntry?.id || null };
   } catch (error) {
     manifest.status = "failed";
     manifest.completedAt = new Date().toISOString();

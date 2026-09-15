@@ -55,8 +55,11 @@ function sourceMetadata(files) {
   });
 }
 
+// Bump when chunking changes so a cached index built by an older indexer is rebuilt.
+const INDEXER_VERSION = 2;
+
 function indexFingerprint(graphHash, stats) {
-  return sha256Text(JSON.stringify({ graphHash, stats }));
+  return sha256Text(JSON.stringify({ indexerVersion: INDEXER_VERSION, graphHash, stats }));
 }
 
 function splitLongSection(text, maxCharacters = 3_200) {
@@ -114,6 +117,63 @@ export function chunkMarkdown(relativePath, text, tags = [], categories = []) {
   return sections;
 }
 
+function recordLabel(record, index) {
+  if (typeof record !== "object" || record === null) return String(index);
+  return record.name || record.id || record.sku || record.title || (record.claim ? String(record.claim).slice(0, 80) : undefined) || String(index);
+}
+
+/**
+ * JSON registries (products, memes, learnings, law banks) are chunked per record so retrieval returns
+ * the product, law, exemplar or template that matched — not the first 1,200 characters of the file.
+ * Scalars and small string arrays at the top level become one "Document" chunk. Unparseable JSON
+ * falls back to the Markdown chunker.
+ */
+export function chunkJson(relativePath, text, tags = [], categories = []) {
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    return chunkMarkdown(relativePath, text, tags, categories);
+  }
+  if (!data || typeof data !== "object" || Array.isArray(data)) return chunkMarkdown(relativePath, text, tags, categories);
+  const chunks = [];
+  const remainder = {};
+  const label = data.displayName || data.name || path.basename(relativePath, ".json");
+  const emit = (heading, record) => {
+    const content = typeof record === "string" ? record : JSON.stringify(record);
+    chunks.push({
+      id: `chunk.${sha256Text(`${relativePath}:${heading}:${content}`).slice(0, 18)}`,
+      type: "knowledge-chunk",
+      source: relativePath,
+      heading,
+      text: content,
+      tags,
+      categories,
+    });
+  };
+  for (const [key, value] of Object.entries(data)) {
+    if (key.startsWith("$")) continue;
+    if (Array.isArray(value) && value.length && value.every((item) => item && typeof item === "object")) {
+      value.forEach((record, index) => emit(`${label} > ${key} > ${recordLabel(record, index)}`, record));
+    } else if (value && typeof value === "object" && !Array.isArray(value) && key.endsWith("_laws")) {
+      for (const [id, record] of Object.entries(value)) emit(`${label} > ${key} > ${id}`, { id, ...record });
+    } else if (value && typeof value === "object" && !Array.isArray(value) && JSON.stringify(value).length > 3_200) {
+      for (const [sub, record] of Object.entries(value)) {
+        if (sub.startsWith("$")) continue;
+        emit(`${label} > ${key} > ${sub}`, record);
+      }
+    } else {
+      remainder[key] = value;
+    }
+  }
+  if (Object.keys(remainder).length) {
+    for (const [part, content] of splitLongSection(JSON.stringify(remainder, null, 1)).entries()) {
+      emit(part ? `${label} (part ${part + 1})` : label, content);
+    }
+  }
+  return chunks;
+}
+
 export function buildKnowledgeIndex(root, { write = true, includePaths = undefined } = {}) {
   const graph = loadGraph(root);
   const graphHash = graphFingerprint(graph);
@@ -123,7 +183,8 @@ export function buildKnowledgeIndex(root, { write = true, includePaths = undefin
 
   for (const { filePath, relative, tags, categories } of files) {
     const text = fs.readFileSync(filePath, "utf8");
-    chunks.push(...chunkMarkdown(relative, text, tags, categories));
+    const chunker = path.extname(filePath).toLowerCase() === ".json" ? chunkJson : chunkMarkdown;
+    chunks.push(...chunker(relative, text, tags, categories));
   }
 
   for (const node of graph.nodes) {

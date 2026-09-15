@@ -42,7 +42,7 @@
       "additionalProperties": true,
       "required": ["id"],
       "properties": {
-        "id": {"enum": ["openai-image", "gemini-image", "google-omni-video", "google-veo", "replicate-seedance"]},
+        "id": {"enum": ["openai-image", "gemini-image", "higgsfield-image", "google-omni-video", "google-veo", "replicate-seedance"]},
         "model": {"type": "string"},
         "seed": {"type": "integer"},
         "size": {"type": "string"},

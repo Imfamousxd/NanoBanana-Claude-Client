@@ -37,6 +37,7 @@ so different people working the same brand pull different context:
 | `compliance` | regulated-category profiles | `knowledge/compliance/REGULATED_HEALTH_RUO.md` |
 | `characters` | Muha AI Fruit cast continuity | `AI Fruit VIdeos Muha/CHARACTERS.md` |
 | `providers` | provider nodes and routing rules | this document |
+| `learnings` | per-brand learning stores: laws, approved exemplars (prompt + refs + tracked copy), verdict events | `docs/SELF_IMPROVEMENT.md` |
 
 A node may sit in several categories: the Dual Flavor and Magnetic devices are `product-assets`
 (they are real products with canonical refs) and `memes` (they are the bodies memes are built on).
@@ -77,8 +78,16 @@ addressed by pattern rather than enumeration.
    by browsing folders; the superseded pools exist precisely to be avoided.
 3. Apply the product's `locked` rules to the prompt (they encode past rejections).
 4. Route the call per the `rule.image-provider-routing` node (summary below).
-5. After approval, add the shipped file to the registry as `approved-output` and record any new
-   locked rule — the registry is only as good as its last update.
+5. After approval, record it: `npm run content -- learn record --verdict approved --reason "…"
+   --target <file> --product <sku>` (MCP: `feedback_record`). That appends the file to the registry as
+   `approved-output` (under the product when the sku matches), copies it to
+   `Brand Context/assets/<Brand>/approved/` so it is tracked, and stores the prompt that made it as an
+   exemplar. A rejection recorded the same way becomes a law. The registry is only as good as its
+   last verdict.
+
+Shortcut for all of the above: `npm run content -- context <brand> "<brief>"` (MCP: `context_pack`)
+returns steps 1–4 for the products the brief names, plus the laws and exemplars learned so far.
+`npm run assets:gallery` opens every registered asset in the browser.
 
 ## Provider routing (the cross-brand laws)
 

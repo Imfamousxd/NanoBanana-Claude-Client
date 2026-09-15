@@ -4,13 +4,22 @@ import { fileURLToPath } from "node:url";
 import { loadEnv } from "./core/env.mjs";
 import { serializeError } from "./core/errors.mjs";
 import { runDoctor } from "./doctor.mjs";
-import { loadGraph } from "./knowledge/graph.mjs";
+import { loadGraph, resolveBrand } from "./knowledge/graph.mjs";
 import { buildKnowledgeIndex, listCategories, loadKnowledgeIndex } from "./knowledge/indexer.mjs";
 import { queryKnowledge } from "./knowledge/retrieval.mjs";
 import { executeJob, planJob } from "./pipeline.mjs";
 import { reviewImage } from "./quality/openai-judge.mjs";
 import { auditAssetDirectory } from "./quality/asset-audit.mjs";
 import { commandAd, commandFonts, commandJob, commandKit, commandNew, commandValidate, listPacks } from "./brandkit/index.mjs";
+import { buildAssetCatalog, listProducts, searchAssets } from "./assets/catalog.mjs";
+import { buildGallery } from "./assets/gallery.mjs";
+import { buildContextPackWithDam } from "./learning/context.mjs";
+import { recordFeedback } from "./learning/feedback.mjs";
+import { searchLaws } from "./learning/laws.mjs";
+import { appendPromptLog, readPromptLog } from "./learning/prompt-log.mjs";
+import { listLearningStores, loadLearnings, saveLearnings, upsertLaw } from "./learning/store.mjs";
+import { spawn } from "node:child_process";
+import { runDamCommand, DAM_HELP } from "./dam/cli.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 loadEnv(root);
@@ -31,7 +40,22 @@ Usage:
   npm run content -- run <job.json>
   npm run content -- review <job.json> <candidate-image>
   npm run content -- assets audit <directory> [--limit 1000]
+  npm run content -- assets search "terms" [--brand b] [--product p] [--role canonical] [--all] [--banned]
+  npm run content -- assets products [--brand b]
+  npm run content -- assets gallery [--brand b] [--open] [--no-thumbs]     browsable HTML of every asset
   npm run content -- models
+  npm run content -- mcp                                                 start the MCP server (stdio)
+
+Self-improvement loop (knowledge/learnings/<brand>.json + .content-engine/prompt-log/):
+  npm run content -- context <brand> "brief" [--category c] [--mode m] [--product a,b]
+  npm run content -- learn log --brand b --prompt "…" --provider p [--model m] [--ref path]... [--output path]...
+  npm run content -- learn record --verdict approved|rejected|revise --reason "…" [--target pl_id|output-path]
+                                  [--brand b] [--product p] [--category c] [--tags a,b] [--law "claim"]
+                                  [--prompt "…" --provider p --model m --output path] [--no-copy]
+  npm run content -- learn laws "terms" [--brand b] [--category c]
+  npm run content -- learn add-law --brand b --claim "…" --evidence "…" [--applies-to x] [--confidence weak]
+  npm run content -- learn history [--brand b] [--query "…"] [--verdict approved] [--limit 25]
+  npm run content -- learn stats [--brand b]
 
 Brand packs (knowledge/brands/<brand>/ — tokens, catalog, copy, prompt blocks):
   npm run content -- brandkit list
@@ -44,6 +68,8 @@ Brand packs (knowledge/brands/<brand>/ — tokens, catalog, copy, prompt blocks)
                                   [--ratio 9:16,4:5] [--out dir] [--basename name]
   npm run content -- brandkit job <brand> hero [--compound ghkcu] [--style cryo] [--ratio 9:16]
                                   [--label-crop path] [--empty] [--candidates 2]
+
+${DAM_HELP}
 
 Adding a brand: read CONTRIBUTING.md, then run brandkit new and fill in the pack.
 Planning, knowledge queries and brandkit ad renders are offline. Run/review call paid providers.`);
@@ -132,9 +158,86 @@ async function main() {
     throw new Error("brandkit requires: list | new | validate | kit | fonts | ad | job.");
   }
   if (command === "assets") {
-    const [subcommand, requestedDirectory, ...rest] = args;
-    if (subcommand !== "audit" || !requestedDirectory) throw new Error("assets requires: audit <directory> [--limit 1000].");
-    return print(auditAssetDirectory(root, requestedDirectory, { limit: Number(option(rest, "--limit", 1_000)) }));
+    const [subcommand, ...rest] = args;
+    if (subcommand === "audit") {
+      if (!rest[0]) throw new Error("assets audit requires a directory.");
+      return print(auditAssetDirectory(root, rest[0], { limit: Number(option(rest, "--limit", 1_000)) }));
+    }
+    const graph = loadGraph(root);
+    if (subcommand === "search") {
+      const flagIndex = rest.findIndex((item) => item.startsWith("--"));
+      const query = (flagIndex === -1 ? rest : rest.slice(0, flagIndex)).join(" ").trim();
+      const brand = option(rest, "--brand");
+      const brandNode = brand ? resolveBrand(graph, brand) : undefined;
+      if (brand && !brandNode) throw new Error(`Unknown brand ${brand}.`);
+      const catalog = buildAssetCatalog(root, graph, { brand: brandNode?.id });
+      return print(searchAssets(catalog, { brand: brandNode?.id, product: option(rest, "--product"), role: option(rest, "--role"), query, existingOnly: !rest.includes("--all"), includeBanned: rest.includes("--banned"), withDimensions: rest.includes("--dimensions"), limit: Number(option(rest, "--limit", 40)) }).map(({ absolutePath: _a, ...item }) => item));
+    }
+    if (subcommand === "products") {
+      const brand = option(rest, "--brand");
+      const brandNode = brand ? resolveBrand(graph, brand) : undefined;
+      return print(listProducts(buildAssetCatalog(root, graph, { brand: brandNode?.id }), brandNode?.id));
+    }
+    if (subcommand === "gallery") {
+      const brand = option(rest, "--brand");
+      const brandNode = brand ? resolveBrand(graph, brand) : undefined;
+      if (brand && !brandNode) throw new Error(`Unknown brand ${brand}.`);
+      const result = await buildGallery(root, graph, { brand: brandNode?.id, thumbs: !rest.includes("--no-thumbs"), onProgress: (done, left) => { if (done % 50 === 0) console.error(`  thumbnails: ${done} done, ${left} left`); } });
+      if (rest.includes("--open") && process.platform === "darwin") spawn("open", [result.indexPath], { stdio: "ignore", detached: true }).unref();
+      return print({ ...result, indexPath: path.relative(root, result.indexPath) });
+    }
+    throw new Error("assets requires: audit <directory> | search \"terms\" | products | gallery.");
+  }
+  if (command === "dam") return runDamCommand(root, args, print);
+  if (command === "mcp") {
+    const { startServer } = await import("./mcp/server.mjs");
+    await startServer(root);
+    return undefined;
+  }
+  if (command === "context") {
+    const [brand, ...rest] = args;
+    const flagIndex = rest.findIndex((item) => item.startsWith("--"));
+    const brief = (flagIndex === -1 ? rest : rest.slice(0, flagIndex)).join(" ").trim();
+    if (!brand || !brief) throw new Error("context requires a brand and a brief.");
+    const result = await buildContextPackWithDam(root, loadGraph(root), { brand, brief, category: option(rest, "--category"), mode: option(rest, "--mode"), products: option(rest, "--product") ? option(rest, "--product").split(",").map((item) => item.trim()) : [], limit: Number(option(rest, "--limit", 6)) });
+    if (rest.includes("--json")) return print(result.pack);
+    console.log(result.promptBlock);
+    return undefined;
+  }
+  if (command === "learn") {
+    const [subcommand, ...rest] = args;
+    const graph = loadGraph(root);
+    const list = (name) => option(rest, name) ? option(rest, name).split(",").map((item) => item.trim()).filter(Boolean) : undefined;
+    const multi = (name) => rest.flatMap((item, index) => (item === name && rest[index + 1] ? [rest[index + 1]] : []));
+    if (subcommand === "log") {
+      const entry = appendPromptLog(root, graph, { brand: option(rest, "--brand"), prompt: option(rest, "--prompt"), provider: option(rest, "--provider"), model: option(rest, "--model"), category: option(rest, "--category"), product: option(rest, "--product"), refs: multi("--ref"), outputs: multi("--output"), notes: option(rest, "--notes"), source: "cli" });
+      if (!entry) throw new Error("prompt log write failed.");
+      return print({ id: entry.id, brand: entry.brand, outputs: entry.outputs.length });
+    }
+    if (subcommand === "record") {
+      const law = option(rest, "--law") ? { claim: option(rest, "--law"), appliesTo: option(rest, "--applies-to"), confidence: option(rest, "--confidence") } : undefined;
+      return print(await recordFeedback(root, graph, { verdict: option(rest, "--verdict"), reason: option(rest, "--reason"), target: option(rest, "--target"), brand: option(rest, "--brand"), product: option(rest, "--product"), category: option(rest, "--category"), tags: list("--tags"), law, prompt: option(rest, "--prompt"), provider: option(rest, "--provider"), model: option(rest, "--model"), refs: multi("--ref"), output: option(rest, "--output"), copy: !rest.includes("--no-copy"), notes: option(rest, "--notes") }));
+    }
+    if (subcommand === "laws") {
+      const flagIndex = rest.findIndex((item) => item.startsWith("--"));
+      const query = (flagIndex === -1 ? rest : rest.slice(0, flagIndex)).join(" ").trim();
+      return print(searchLaws(root, graph, query, { brand: option(rest, "--brand"), category: option(rest, "--category"), limit: Number(option(rest, "--limit", 12)) }));
+    }
+    if (subcommand === "add-law") {
+      const { store, path: storePath, brandNode } = loadLearnings(root, graph, option(rest, "--brand"));
+      const result = upsertLaw(store, brandNode, { id: option(rest, "--id"), claim: option(rest, "--claim"), evidence: option(rest, "--evidence"), counterexamples: option(rest, "--counterexamples"), appliesTo: option(rest, "--applies-to"), confidence: option(rest, "--confidence"), source: option(rest, "--source") || "cli add-law", category: option(rest, "--category"), tags: list("--tags") });
+      saveLearnings(storePath, store);
+      return print({ ...result, store: path.relative(root, storePath) });
+    }
+    if (subcommand === "history") {
+      return print(readPromptLog(root, graph, { brand: option(rest, "--brand"), query: option(rest, "--query"), verdict: option(rest, "--verdict"), limit: Number(option(rest, "--limit", 25)) }).map((row) => ({ ...row, prompt: String(row.prompt || "").slice(0, 400) })));
+    }
+    if (subcommand === "stats") {
+      const brand = option(rest, "--brand");
+      const brandNode = brand ? resolveBrand(graph, brand) : undefined;
+      return print(listLearningStores(root, graph).filter((item) => !brandNode || item.brand === brandNode.id).map((item) => ({ ...item, stats: loadLearnings(root, graph, item.brand).store.stats })));
+    }
+    throw new Error("learn requires: log | record | laws | add-law | history | stats.");
   }
   if (command === "plan") {
     if (!args[0]) throw new Error("plan requires a job JSON path.");

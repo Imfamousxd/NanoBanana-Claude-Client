@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "content-engine": {
+      "command": "node",
+      "args": ["engine/mcp/server.mjs"]
+    }
+  }
+}

@@ -15,12 +15,21 @@
     "brandkit": "node engine/cli.mjs brandkit",
     "plan": "node engine/cli.mjs plan",
     "test": "node --test test/*.test.mjs",
-    "check": "node --check engine/cli.mjs && node --test test/*.test.mjs"
+    "check": "node --check engine/cli.mjs && node --test test/*.test.mjs",
+    "mcp": "node engine/mcp/server.mjs",
+    "context": "node engine/cli.mjs context",
+    "learn": "node engine/cli.mjs learn",
+    "assets:gallery": "node engine/cli.mjs assets gallery --open",
+    "assets:search": "node engine/cli.mjs assets search",
+    "dam": "node engine/cli.mjs dam",
+    "dam:watch": "node engine/cli.mjs dam watch"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
     "@supabase/supabase-js": "^2.45.4",
     "pg": "^8.13.1",
     "qrcode": "^1.5.4",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "zod": "^4.6.5"
   }
 }

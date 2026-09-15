@@ -1,0 +1,20 @@
+{
+  "$comment": "learning-registry/1 — the brand's self-improvement memory. laws[] are distilled rules (six-field law contract shared with graph-fragments and the meme registry), exemplars[] are approved outputs with the exact prompt + refs + a tracked copy, events[] hold every verdict with the prompt it judged, stats drive provider routing hints. Written by `feedback_record` (MCP) / `npm run content -- learn` — edit by hand only to correct a fact. See docs/SELF_IMPROVEMENT.md.",
+  "schema": "learning-registry/1",
+  "brand": "brand.dialed-moods",
+  "displayName": "Dialed Moods",
+  "updatedAt": "2026-09-14",
+  "stats": {
+    "byProvider": {},
+    "byCategory": {},
+    "byProviderCategory": {},
+    "verdicts": {
+      "approved": 0,
+      "rejected": 0,
+      "revise": 0
+    }
+  },
+  "laws": [],
+  "exemplars": [],
+  "events": []
+}

@@ -27,8 +27,13 @@ hashed outputs + run manifest
    ↓
 deterministic checks + optional multimodal critic + human approval
    ↓
-approved asset and reusable learning returned to knowledge
+verdict (feedback_record) → exemplar / law / stats in knowledge/learnings/<brand>.json
+   ↓
+next context pack reads them before the next prompt is written
 ```
+
+Every stage is reachable two ways: the CLI (`engine/cli.mjs`) and the MCP server
+(`engine/mcp/server.mjs`, registered in `.mcp.json` and `.cursor/mcp.json`; see `docs/MCP.md`).
 
 ## Components
 
@@ -102,6 +107,35 @@ Every execution writes a manifest before the API call and updates it on success/
 outputs are SHA-256 hashed. The optional OpenAI visual critic compares a candidate against the job and
 canonical references using a fixed structured rubric; its result is advisory and never replaces the
 human legal/medical/brand gate.
+
+### Learning loop
+
+`engine/learning/` closes the loop the rest of the engine sets up. `prompt-log.mjs` appends every
+prompt (engine runs automatically, outside work through `prompt_log`) to a local JSONL with hashed
+refs and outputs. `feedback.mjs` turns a human verdict into memory in `knowledge/learnings/<brand>.json`
+(`store.mjs`): approvals become exemplars with the exact prompt and a tracked copy of the image under
+`Brand Context/assets/<Brand>/approved/`, and an `approved-output` reference in the product registry;
+rejections become laws that strengthen when the same failure recurs. `context.mjs` is the read side:
+one pack per brief with refs, laws, exemplars, rejections, compliance and the learned approval rate per
+provider. `laws.mjs` searches every law bank (learnings, meme laws, video banks). The stores are
+indexed under the `learnings` context category, per record. Details: `docs/SELF_IMPROVEMENT.md`.
+
+### DAM (asset intelligence)
+
+`engine/dam/` watches Dropbox (and local folders), probes every file for free (hashes, dimensions,
+perceptual hash, proxies), then — under an approval flag and a spend cap — reads each image and video
+with a vision model that is handed the brand roster and product list, measures every video with ffmpeg
+(cuts, loudness, motion, transcript), composes a retrieval document and two embeddings, and distils a
+per-brand real-creator UGC profile into laws and exemplars for the learning loop. Search fuses
+structured filters, weighted lexical and vector retrieval. Schema `dam.*` in the engine's Supabase
+project; details in `docs/DAM.md`, hosting in `deploy/dam/`.
+
+### Asset catalog
+
+`engine/assets/catalog.mjs` flattens every registry (products, meme devices, exemplars, the tracked
+mirror layer) into one searchable list with role, product, on-disk and git-tracked flags; banned files
+are carried as hard blocks. `gallery.mjs` renders it as a self-contained HTML browser with thumbnails
+(`npm run assets:gallery`).
 
 ## Extension rules
 

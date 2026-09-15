@@ -32,6 +32,10 @@ review-*.md
 /Brand Context/assets/Agency_DevWorks/
 /Brand Context/assets/Dial_Echo/
 /*/
+!/.cursor/
+!/.cursor/**
+!/deploy/
+!/deploy/**
 !/docs/
 !/docs/**
 !/engine/
@@ -1118,3 +1122,4 @@ review-*.md
 
 # Browsable alias index of NuLumin generations (symlinks only, not content)
 NuLumin — ALL GENERATIONS/
+Muha Gen 2 VO/.env

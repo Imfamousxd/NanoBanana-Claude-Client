@@ -4,8 +4,8 @@ import { EngineError } from "./errors.mjs";
 import { readJson, resolveInside, slugify } from "./files.mjs";
 
 const MODES = new Set(["ugc-image", "ugc-video", "product-image", "campaign-image", "campaign-video"]);
-const PROVIDERS = new Set(["openai-image", "gemini-image", "google-omni-video", "google-veo", "replicate-seedance"]);
-const IMAGE_PROVIDERS = new Set(["openai-image", "gemini-image"]);
+const PROVIDERS = new Set(["openai-image", "gemini-image", "higgsfield-image", "google-omni-video", "google-veo", "replicate-seedance"]);
+const IMAGE_PROVIDERS = new Set(["openai-image", "gemini-image", "higgsfield-image"]);
 const VIDEO_PROVIDERS = new Set(["google-omni-video", "google-veo", "replicate-seedance"]);
 const IMAGE_RATIOS = new Set(["1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4", "9:16", "16:9", "21:9"]);
 
@@ -142,6 +142,17 @@ export function validateJob(job, root, { requireApproval = false } = {}) {
         }
       }
     }
+  }
+  if (job.provider?.id === "higgsfield-image") {
+    if (job.provider.isInpaint === true) add(errors, "HIGGSFIELD_MASK_REQUIRED", "isInpaint requires a mask; this adapter supports ordinary reference edits only.", "provider.isInpaint");
+    if (job.provider.model !== "gpt_image_2") add(errors, "HIGGSFIELD_MODEL", "Higgsfield currently requires the verified gpt_image_2 model.", "provider.model");
+    if (candidates !== 1) add(errors, "HIGGSFIELD_CANDIDATES", "Use one candidate per Higgsfield job, with a distinct hypothesis and credit cap.", "deliverable.candidates");
+    if (!Number.isFinite(job.provider.maxCredits) || job.provider.maxCredits <= 0) add(errors, "HIGGSFIELD_CREDIT_CAP", "Set a positive provider.maxCredits cap before execution.", "provider.maxCredits");
+    const ratio = job.provider.aspectRatio || job.deliverable.aspectRatio;
+    if (!["auto", "1:1", "4:3", "3:4", "16:9", "21:9", "9:16", "3:2", "2:3"].includes(ratio)) add(errors, "HIGGSFIELD_PARAMS", "Unsupported model aspect ratio; use auto for source-shaped masters.", "provider.aspectRatio");
+    if (job.deliverable.quality && !["low", "medium", "high"].includes(job.deliverable.quality)) add(errors, "HIGGSFIELD_PARAMS", "Higgsfield quality must be low, medium, or high.", "deliverable.quality");
+    if (job.deliverable.imageSize && !["1K", "2K", "4K"].includes(job.deliverable.imageSize)) add(errors, "HIGGSFIELD_PARAMS", "Higgsfield imageSize must be 1K, 2K, or 4K.", "deliverable.imageSize");
+    if (job.assets.some(a => ["mask", "reference-video", "reference-audio", "last-frame"].includes(a.role))) add(errors, "HIGGSFIELD_MEDIA", "This adapter supports still image references only; explicit masks are not yet supported.", "assets");
   }
   if (seenRoles.has("mask") && !job.assets.some((asset) => asset.role !== "mask" && asset.role !== "logo-canon")) {
     add(errors, "MASK_WITHOUT_BASE", "An edit mask requires at least one editable base/reference image.", "assets");

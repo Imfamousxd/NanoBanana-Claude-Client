@@ -92,6 +92,7 @@ export async function reviewImage(root, jobPath, imagePath) {
     body: JSON.stringify({
       model,
       reasoning: { effort: "high" },
+      ...(jobReviewTokenLimit(plan.job) ? { max_output_tokens: jobReviewTokenLimit(plan.job) } : {}),
       input: [{ role: "user", content }],
       text: { format: { type: "json_schema", name: "creative_review", strict: true, schema: reviewSchema } },
     }),
@@ -109,6 +110,7 @@ export async function reviewImage(root, jobPath, imagePath) {
     schemaVersion: 1,
     reviewedAt: new Date().toISOString(),
     model,
+    usage: data.usage || null,
     jobPath,
     imagePath,
     automatedReviewIsAdvisory: true,
@@ -117,4 +119,14 @@ export async function reviewImage(root, jobPath, imagePath) {
   const reviewPath = path.join(path.dirname(candidatePath), `${path.basename(candidatePath)}.review.json`);
   writeJsonAtomic(reviewPath, result);
   return { reviewPath, review: result };
+}
+
+// Optional per-job ceiling keeps a review batch within its separately approved budget.
+function jobReviewTokenLimit(job) {
+  const limit = job.compliance.reviewMaxOutputTokens;
+  if (limit === undefined) return undefined;
+  if (!Number.isInteger(limit) || limit < 1024 || limit > 16384) {
+    throw new EngineError("INVALID_REVIEW_TOKEN_LIMIT", "compliance.reviewMaxOutputTokens must be an integer from 1024 to 16384.");
+  }
+  return limit;
 }
