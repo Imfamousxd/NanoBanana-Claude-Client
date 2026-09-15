@@ -146,9 +146,9 @@ export async function searchAssets(db, graph, query, { filters: extra = {}, limi
     }
   }
   // 3. relax parsed (not caller-supplied) filters when they starve the result: "packaging" must not hide a packshot
-  const parsedKeys = Object.keys(parsed.filters).filter((key) => !(key in explicit) && !/Alias$/.test(key));
+  const parsedKeys = Object.keys(parsed.filters).filter((key) => !(key in explicit) && !/Alias$/.test(key) && key !== "brand");
   if (parsedKeys.length) {
-    const relaxed = { ...(explicit.brand ? { brand: filters.brand } : {}), ...(explicit.class ? { class: filters.class } : {}), kind: filters.kind };
+    const relaxed = { ...(filters.brand ? { brand: filters.brand } : {}), ...(explicit.class ? { class: filters.class } : {}), kind: filters.kind };
     const params = [];
     const where = whereClause(relaxed, params);
     params.push(text);
