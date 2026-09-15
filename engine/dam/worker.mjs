@@ -357,8 +357,6 @@ export class DamWorker {
   async runQueue({ once = false, kinds = undefined, maxJobs = Infinity, sourcePrefix = undefined, autoOnly: onlyAuto = false } = {}) {
     let processed = 0;
     let parked = 0;
-    // Paid kinds stay in the queue for a worker that is approved; an unapproved worker only does free work.
-    // (Claiming and parking them for an hour starved the approved local run that was meant to take them.)
     // In auto-intake mode (DAM_AUTO_PRODUCT_REFS=1) it also takes paid jobs tagged auto: the product-render
     // candidates, under the auto cap.
     let autoOnly = Boolean(onlyAuto);
@@ -369,31 +367,56 @@ export class DamWorker {
         if (!kinds.length) return { processed, parked, skipped: "no free kinds requested and paid work is locked" };
       }
     }
-    while (!this.stopped && processed < maxJobs) {
-      await this.db.requeueStale(45);
-      const jobs = await this.db.claimJobs(this.config.workerId, this.config.concurrency, kinds || null, sourcePrefix || null, autoOnly);
-      if (!jobs.length) { if (once) break; await this.db.heartbeat(this.config.workerId, "idle"); await sleep(5_000); continue; }
-      await Promise.all(jobs.map(async (job) => {
-        await this.db.heartbeat(this.config.workerId, `${job.kind}:${job.asset_id || job.source_id}`);
-        try {
-          await this.runJob(job);
-          await this.db.finishJob(job.id);
-          processed += 1;
-        } catch (error) {
-          if (error instanceof SpendNotApproved || error instanceof SpendCapReached) {
-            // park: back to pending an hour from now so the queue keeps its shape
-            await this.db.query("update dam.jobs set status = 'pending', locked_by = null, attempts = attempts - 1, run_after = now() + interval '1 hour', error = $2 where id = $1", [job.id, error.message]);
-            parked += 1;
-            this.log(`parked ${job.kind} ${job.asset_id || job.source_id}: ${error.message}`);
-            if (once && parked >= this.config.concurrency) { this.stopped = true; }
-            return;
-          }
-          const dead = await this.db.retryOrFail(job, error);
-          if (job.asset_id) await this.db.setStatus(job.asset_id, dead ? "failed" : (await this.db.getAsset(job.asset_id))?.status || "failed", error.message);
-          this.log(`${dead ? "DEAD" : "retry"} ${job.kind} ${job.asset_id || job.source_id}: ${error.message}`);
+    // A sliding pool: a slot is refilled the moment its job ends, so one slow download never idles the
+    // others, and a job that exceeds jobTimeoutMs is abandoned (the queue's stale sweep requeues it).
+    const active = new Set();
+    const jobTimeoutMs = this.config.jobTimeoutMs;
+    let claimed = 0;
+    let idleSince = null;
+    const runOne = async (job) => {
+      await this.db.heartbeat(this.config.workerId, `${job.kind}:${job.asset_id || job.source_id}`);
+      let timer = null;
+      const timeout = new Promise((_, reject) => { timer = setTimeout(() => reject(new Error(`job timed out after ${Math.round(jobTimeoutMs / 1000)}s`)), jobTimeoutMs); });
+      try {
+        await Promise.race([this.runJob(job), timeout]);
+        await this.db.finishJob(job.id);
+        processed += 1;
+      } catch (error) {
+        if (error instanceof SpendNotApproved || error instanceof SpendCapReached) {
+          // park: back to pending an hour from now so the queue keeps its shape
+          await this.db.query("update dam.jobs set status = 'pending', locked_by = null, attempts = attempts - 1, run_after = now() + interval '1 hour', error = $2 where id = $1", [job.id, error.message]);
+          parked += 1;
+          this.log(`parked ${job.kind} ${job.asset_id || job.source_id}: ${error.message}`);
+          if (once && parked >= this.config.concurrency) { this.stopped = true; }
+          return;
         }
-      }));
+        const dead = await this.db.retryOrFail(job, error);
+        if (job.asset_id) await this.db.setStatus(job.asset_id, dead ? "failed" : (await this.db.getAsset(job.asset_id))?.status || "failed", error.message);
+        this.log(`${dead ? "DEAD" : "retry"} ${job.kind} ${job.asset_id || job.source_id}: ${error.message}`);
+      } finally { clearTimeout(timer); }
+    };
+    while (!this.stopped && claimed < maxJobs) {
+      const free = this.config.concurrency - active.size;
+      if (free > 0) {
+        if (!idleSince || Date.now() - idleSince > 5_000) {
+          await this.db.requeueStale(45);
+          const jobs = await this.db.claimJobs(this.config.workerId, Math.min(free, maxJobs - claimed), kinds || null, sourcePrefix || null, autoOnly);
+          if (jobs.length) {
+            idleSince = null;
+            claimed += jobs.length;
+            for (const job of jobs) { const task = runOne(job).finally(() => active.delete(task)); active.add(task); }
+            continue;
+          }
+          if (!active.size) {
+            if (once) break;
+            await this.db.heartbeat(this.config.workerId, "idle");
+          }
+          idleSince = Date.now();
+        }
+      }
+      if (active.size) await Promise.race([...active, sleep(1_000)]); else await sleep(5_000);
     }
+    if (active.size) await Promise.allSettled([...active]);
     return { processed, parked };
   }
 

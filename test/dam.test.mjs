@@ -178,3 +178,16 @@ test("product-refs: render trees are recognised and parsed; textures, logos and 
   assert.equal(old.discontinued, true);
   assert.equal(old.group, "Discontinued / Disposables");
 });
+
+test("product-context: composition and angle fall back from subclass/title; scoring sinks discontinued and lifts approved", async () => {
+  const { compositionOf, angleOf, referenceScore } = await import("../engine/dam/product-context.mjs");
+  assert.equal(compositionOf({ analysis: { composition: "device-only" }, subclass: "packaging-render" }), "device-only");
+  assert.equal(compositionOf({ analysis: {}, subclass: "device-render" }), "device-only");
+  assert.equal(compositionOf({ analysis: {}, class: "packaging-collateral", subclass: "dieline" }), "label-flat");
+  assert.equal(compositionOf({ analysis: {}, class: "packaging-collateral", subclass: "display-box" }), "packaging-only");
+  assert.equal(angleOf({ analysis: { angle: "side" } }), "side");
+  assert.equal(angleOf({ analysis: {}, title: "Three-quarter view of the box", path: "x.png" }), "three-quarter");
+  const approved = referenceScore({ verdict: "approved", quality: 8, flags: { render: { approved: true, version: 3 } }, path: "Approved Renders/Renders/CA/Flower/x.png", reference_roles: ["canonical"] });
+  const discontinued = referenceScore({ quality: 9, flags: { render: { discontinued: true } }, path: "Renders/Discontinued/x.png", reference_roles: [] });
+  assert.ok(approved > 100 && discontinued < 0, `${approved} vs ${discontinued}`);
+});

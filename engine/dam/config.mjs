@@ -98,6 +98,7 @@ export function damConfig(root, env = process.env) {
     // Storage for proxies (Supabase Storage bucket). Falls back to local files under workDir.
     storage: { url: storageUrlFor(env), key: env.SUPABASE_SERVICE_ROLE_KEY, bucket: env.DAM_STORAGE_BUCKET || "dam-proxies" },
     concurrency: number("DAM_CONCURRENCY", 2),
+    jobTimeoutMs: number("DAM_JOB_TIMEOUT_S", 600) * 1000,
     workerId: env.DAM_WORKER_ID || `${env.HOSTNAME || "local"}-${process.pid}`,
     longpollSeconds: number("DAM_LONGPOLL_SECONDS", 90),
   };

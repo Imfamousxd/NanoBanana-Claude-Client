@@ -64,6 +64,13 @@ export function createDamTools(root, graph) {
       handler: async () => getDb().stats(),
     },
     {
+      name: "dam_product_refs",
+      title: "Reference kit for one product",
+      description: "Name a product (and optionally what you are making) and get the references chosen for it: the canonical look (packaging with device for Muha, the container for Dialed/NuLumin), the device or container alone, one best file per camera angle, a transparent cutout, flat label artwork, lineups — each with the reason to use it — plus what to avoid and what the library is missing for that product. Free; reads the database only. context_pack already includes this for every product a brief names.",
+      inputSchema: { brand: brandField, product: z.string().describe("Product / flavour / SKU name as the team says it, e.g. 'Grape Sherbalato', 'Blue Glacier', 'GHK-Cu 50mg'"), intent: z.string().optional().describe("What you are making: 'device close-up in hand', 'packaging hero', 'flavour lineup', 'label truth', 'website cutout'"), limit: z.number().int().min(1).max(8).optional().default(3), text: z.boolean().optional().default(false) },
+      handler: async ({ brand, product, intent, limit, text }) => { const { resolveProductReferences, renderProductKit } = await import("./product-context.mjs"); const result = await resolveProductReferences(getDb(), graph(), root, { brand: brandOf(brand), product, intent: intent || "", limit }); return text ? { text: renderProductKit(result).join("\n") } : result; },
+    },
+    {
       name: "dam_product_directory",
       title: "Product renders per brand and product line",
       description: "The product-render directory built from the Dropbox render folders: for each brand and product line, how many render files exist, how many are analysed, the product names the vision model saw, the best files to pass as references (id, thumb, alpha, roles), what is missing (no transparent cutout / no canonical), and registry products with no render yet. Free; reads the database only.",

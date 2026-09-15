@@ -96,6 +96,15 @@ export async function runDamCommand(root, args, print) {
         const result = await searchAssets(worker.db, graph, query, { filters: { brand: brandOf(option(rest, "--brand")), class: option(rest, "--class") }, limit: Number(option(rest, "--limit", 20)), rerank: rest.includes("--rerank"), config, products: productIndexFromCards(worker.cards) });
         return print({ ...result, results: result.results.map((row) => ({ id: row.id, path: row.path, brand: row.brand, class: row.class, product: row.product, title: row.title, quality: row.quality, thumb: row.proxies?.thumb, preview: row.proxies?.preview, score: row.score, why: row.why })) });
       }
+      case "refs": {
+        const { resolveProductReferences, renderProductKit } = await import("./product-context.mjs");
+        const product = positional(rest).join(" ");
+        if (!product) throw new Error("refs needs a product name: dam refs \"Grape Sherbalato\" --brand muha [--intent \"device close-up\"]");
+        const result = await resolveProductReferences(worker.db, graph, root, { brand: brandOf(option(rest, "--brand")), product, intent: option(rest, "--intent", ""), limit: Number(option(rest, "--limit", 3)) });
+        if (rest.includes("--json")) return print(result);
+        console.log(renderProductKit(result).join("\n"));
+        return;
+      }
       case "products": {
         const { productDirectory, renderDirectoryText } = await import("./product-refs.mjs");
         const result = await productDirectory(worker.db, graph, root, { brand: brandOf(option(rest, "--brand")), since: option(rest, "--since"), limit: Number(option(rest, "--best", 6)) });

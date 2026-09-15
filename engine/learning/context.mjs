@@ -67,10 +67,10 @@ function routingHint(store, category) {
  * and the measured UGC profile. Optional: returns null when the DAM database is unreachable or empty,
  * so a context pack never fails because the library is offline.
  */
-export async function damContext(root, graph, { brandId, brief, category }) {
+export async function damContext(root, graph, { brandId, brief, category, products: namedProducts = [] }) {
   try {
-    const [{ damConfig }, { DamDb }, { searchAssets, productIndexFromCards }, { brandCards }, { getUgcProfile }] = await Promise.all([
-      import("../dam/config.mjs"), import("../dam/db.mjs"), import("../dam/search.mjs"), import("../dam/analyze.mjs"), import("../dam/ugc-profile.mjs"),
+    const [{ damConfig }, { DamDb }, { searchAssets, productIndexFromCards }, { brandCards }, { getUgcProfile }, { resolveProductReferences }] = await Promise.all([
+      import("../dam/config.mjs"), import("../dam/db.mjs"), import("../dam/search.mjs"), import("../dam/analyze.mjs"), import("../dam/ugc-profile.mjs"), import("../dam/product-context.mjs"),
     ]);
     const config = damConfig(root);
     if (!config.databaseUrl) return null;
@@ -84,7 +84,17 @@ export async function damContext(root, graph, { brandId, brief, category }) {
       const ugc = wantsUgc ? await searchAssets(db, graph, brief, { filters: { brand: brandId, class: "ugc-video", realHuman: true }, limit: 6, config: { ...config, searchEmbeddingsAllowed: false }, products }) : null;
       const profile = wantsUgc ? await getUgcProfile(db, brandId) : null;
       const slim = (row) => ({ id: row.id, path: row.path, title: row.title, class: row.class, form: row.subclass, product: row.product, roles: row.reference_roles, quality: row.quality, thumb: row.proxies?.thumb || null, preview: row.proxies?.preview || null, summary: String(row.summary || "").slice(0, 300) });
-      return { references: refs.results.map(slim), ugcExemplars: ugc ? ugc.results.map(slim) : [], ugcProfile: profile ? { sampleSize: profile.sample_size, bands: profile.bands, patterns: profile.patterns, laws: profile.laws } : null };
+      // Product kits: for every product the brief names, the chosen references (identity / device / packaging /
+      // angles / cutout / label), with the intent taken from the brief. Falls back to the brief as a product query.
+      const names = [...new Set(namedProducts.filter(Boolean))];
+      if (!names.length && brief) {
+        const seen = (await db.query("select distinct product from dam.assets where brand = $1 and product is not null and status in ('analyzed','embedded') and deleted_at is null", [brandId])).rows.map((row) => String(row.product));
+        const lower = brief.toLowerCase();
+        for (const product of seen) { const tokens = product.toLowerCase().split(/[^a-z0-9]+/).filter((token) => token.length >= 4); if (tokens.length && tokens.filter((token) => lower.includes(token)).length >= Math.min(2, tokens.length)) names.push(product); }
+      }
+      const productKits = [];
+      for (const name of names.slice(0, 3)) { try { productKits.push(await resolveProductReferences(db, graph, root, { brand: brandId, product: name, intent: brief })); } catch (error) { productKits.push({ product: name, note: String(error.message).slice(0, 160) }); } }
+      return { references: refs.results.map(slim), productKits, ugcExemplars: ugc ? ugc.results.map(slim) : [], ugcProfile: profile ? { sampleSize: profile.sample_size, bands: profile.bands, patterns: profile.patterns, laws: profile.laws } : null };
     } finally { await db.end(); }
   } catch (error) {
     return { unavailable: String(error.message).slice(0, 200) };
@@ -147,7 +157,7 @@ export function buildContextPack(root, graph, { brand, brief, category = undefin
 
 export async function buildContextPackWithDam(root, graph, options) {
   const base = buildContextPack(root, graph, options);
-  const dam = await damContext(root, graph, { brandId: base.pack.brand.id, brief: options.brief, category: options.category });
+  const dam = await damContext(root, graph, { brandId: base.pack.brand.id, brief: options.brief, category: options.category, products: [...(options.products || []), ...((base.pack.products || []).map((item) => item.name || item.product))] });
   const pack = { ...base.pack, dam };
   return { pack, promptBlock: renderPromptBlock(pack) };
 }
@@ -194,6 +204,10 @@ export function renderPromptBlock(pack) {
   for (const row of pack.routing.learned.byProviderForCategory.slice(0, 4)) push(`- Learned: ${row.key} — ${row.approved || 0} approved / ${row.rejected || 0} rejected / ${row.revise || 0} revise`);
   if (pack.gaps.length) push("", "## Known gaps (ask, do not substitute)", ...pack.gaps.map((gap) => `- ${gap}`));
   if (pack.dam && !pack.dam.unavailable) {
+    if (pack.dam.productKits?.length) {
+      push("", "## Product references (DAM) — chosen per product; pass these as reference images");
+      for (const kit of pack.dam.productKits) push(...renderProductKitLines(kit));
+    }
     if (pack.dam.references?.length) push("", "## Real assets in the library (DAM) — canonical-grade references", ...pack.dam.references.map((item) => `- [${(item.roles || []).join("/") || item.class}] ${item.path}${item.product ? ` — ${item.product}` : ""} — ${item.title}${item.thumb ? ` (thumb: ${item.thumb})` : ""}`));
     if (pack.dam.ugcExemplars?.length) push("", "## Real creator videos to imitate (DAM)", ...pack.dam.ugcExemplars.map((item) => `- ${item.path}${item.form ? ` — ${item.form}` : ""} — ${item.summary}${item.preview ? ` (preview: ${item.preview})` : ""}`));
     if (pack.dam.ugcProfile) {
@@ -204,4 +218,16 @@ export function renderPromptBlock(pack) {
     }
   }
   return lines.join("\n");
+}
+
+function renderProductKitLines(kit) {
+  if (!kit?.kit) return [`- ${kit?.product || "product"}: ${kit?.note || "no references"}`];
+  const line = (item) => `- [${item.composition}${item.angle && item.angle !== "n/a" ? ` · ${item.angle}` : ""}${item.alpha ? " · alpha" : ""}${item.verdict === "approved" ? " · APPROVED" : item.approvedFolder ? " · approved folder" : ""}] ${item.path} — ${item.title || ""}${item.thumb ? ` (thumb: ${item.thumb})` : ""} — ${item.why}`;
+  const lines = [`### ${kit.product}${kit.productsSeen?.length ? ` (library: ${kit.productsSeen.slice(0, 3).join("; ")})` : ""} — ${kit.usable} usable`];
+  for (const item of kit.kit.recommended) lines.push(line(item));
+  const extras = [...kit.kit.cutout.slice(0, 1), ...kit.kit.label.slice(0, 1), ...kit.kit.lineup.slice(0, 1)].filter((item) => !kit.kit.recommended.some((chosen) => chosen.id === item.id));
+  for (const item of extras) lines.push(line(item));
+  if (kit.coverage?.missing?.length) lines.push(`- Missing for this product: ${kit.coverage.missing.join("; ")}`);
+  if (kit.kit.avoid?.length) lines.push(`- Do not use: ${kit.kit.avoid.map((item) => item.path.split("/").pop()).slice(0, 4).join(", ")}`);
+  return lines;
 }

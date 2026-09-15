@@ -38,7 +38,7 @@ export function geminiSchema(schema) {
   return out;
 }
 
-async function callGemini({ model, prompt, images, schema, maxOutputTokens = 4096, timeoutMs = 180_000 }) {
+async function callGemini({ model, prompt, images, schema, maxOutputTokens = 8192, timeoutMs = 180_000 }) {
   const apiKey = requireEnv("GEMINI_API_KEY", "Gemini vision");
   const parts = images.map((filePath) => ({ inline_data: { mime_type: "image/jpeg", data: inlineImage(filePath).data } }));
   parts.push({ text: prompt });
