@@ -1,0 +1,13 @@
+# Railway/Docker build context for the DAM worker: only what deploy/dam/Dockerfile copies.
+*
+!package.json
+!package-lock.json
+!engine/**
+!knowledge/**
+!schemas/**
+!docs/**
+!Brand Context/**
+**/.DS_Store
+**/*.psd
+**/*.mov
+**/*.mp4
