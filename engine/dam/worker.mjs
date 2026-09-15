@@ -74,8 +74,10 @@ export class DamWorker {
         if (row.inserted) counts.new += 1; else if (row.status === "discovered" && isAnalyzableKind(row.kind)) counts.changed += 1;
         if (row.status === "discovered" && isAnalyzableKind(row.kind)) (row.kind === "image" ? images : videos).push(row.id);
       }
-      counts.queued += await this.db.enqueueBatch("probe", source.id, images, 50);
-      counts.queued += await this.db.enqueueBatch("probe", source.id, videos, 60);
+      // New uploads found by an incremental (cursor) scan jump the backfill queue: the library is live.
+      const live = source.kind === "dropbox" && Boolean(source.cursor) && !full;
+      counts.queued += await this.db.enqueueBatch("probe", source.id, images, live ? 5 : 50);
+      counts.queued += await this.db.enqueueBatch("probe", source.id, videos, live ? 6 : 60);
     };
     const handle = async (item) => {
       if (!item) return;

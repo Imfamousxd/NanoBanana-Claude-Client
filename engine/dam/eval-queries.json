@@ -1,0 +1,25 @@
+{
+  "$comment": "Search evaluation suite: plain-language queries with what a correct top result looks like. `expect` may name class, subclass, brand, kind, realHuman, or a substring of the path/title. Run: npm run content -- dam eval [--rerank]. Add a line every time a search disappoints someone.",
+  "queries": [
+    { "query": "gold muha logo transparent", "expect": { "class": "logo", "brand": "brand.muha" } },
+    { "query": "3d render of a disposable vape with its box", "expect": { "class": "product-ref", "generated": true } },
+    { "query": "flyer announcing hemp distribution", "expect": { "class": "marketing-still", "titleContains": "flyer" } },
+    { "query": "merch flat lay photo", "expect": { "kind": "image", "anyClass": ["lifestyle-photo", "product-ref"] } },
+    { "query": "display box animation motion graphic", "expect": { "kind": "video", "anyClass": ["marketing-video", "product-ref"] } },
+    { "query": "dialed moods energy drink cans studio photo", "expect": { "brand": "brand.dialed-moods", "kind": "image" } },
+    { "query": "someone in gloves rolling a pre-roll", "expect": { "titleContains": "pre-roll" } },
+    { "query": "black packaging with thc warning gummies", "expect": { "class": "product-ref", "titleContains": "gummies" } },
+    { "query": "real person talking to camera about the product vertical", "expect": { "class": "ugc-video", "realHuman": true } },
+    { "query": "unboxing video", "expect": { "anyClass": ["ugc-video", "marketing-video", "raw-footage"] } },
+    { "query": "cold plunge sauna product video dialed labs", "expect": { "brand": "brand.dialed-labs", "kind": "video" } },
+    { "query": "podcast clip", "expect": { "kind": "video" } },
+    { "query": "muha members raffle card", "expect": { "brand": "brand.muha" } },
+    { "query": "photoshoot of a model wearing the tracksuit", "expect": { "anyClass": ["lifestyle-photo", "ugc-still", "marketing-still"] } },
+    { "query": "event footage crowd booth", "expect": { "kind": "video", "anyClass": ["raw-footage", "lifestyle-photo", "marketing-video"] } },
+    { "query": "packaging dieline print ready", "expect": { "anyClass": ["packaging-collateral", "product-ref"] } },
+    { "query": "wordmark lockup on dark background", "expect": { "class": "logo" } },
+    { "query": "social post graphic with a giveaway", "expect": { "anyClass": ["marketing-still", "marketing-video"] } },
+    { "query": "seamoss gummies jar", "expect": { "brand": "brand.dialed-moods" } },
+    { "query": "raw b-roll of product on a table", "expect": { "kind": "video", "anyClass": ["raw-footage", "marketing-video", "product-ref"] } }
+  ]
+}

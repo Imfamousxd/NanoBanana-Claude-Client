@@ -58,6 +58,7 @@ export function createDamServer(root, { config = damConfig(root), password = pro
         return fs.createReadStream(file).pipe(res);
       }
       if (!authed(req)) return json(res, 401, { error: "unauthorised" });
+      if (url.pathname === "/api/status") { const { digestionStatus } = await import("./status.mjs"); return json(res, 200, await digestionStatus(db)); }
       if (url.pathname === "/api/meta") {
         const stats = await db.stats();
         return json(res, 200, { brands, classes: CLASS_IDS, subclasses: SUBCLASSES, roles: ROLE_IDS, stats });

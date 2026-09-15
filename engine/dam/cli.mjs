@@ -9,6 +9,8 @@ import { brandCards } from "./analyze.mjs";
 import { computeUgcProfiles, getUgcProfile } from "./ugc-profile.mjs";
 import { applyVerdictToDam, syncDamToKnowledge } from "./kg-bridge.mjs";
 import { importRailwayEnv } from "./import-env.mjs";
+import { digestionStatus } from "./status.mjs";
+import { runEval } from "./eval.mjs";
 
 export const DAM_HELP = `Digital asset intelligence (Dropbox → understanding → search → knowledge graph):
   npm run content -- dam init-db                                  create/upgrade the dam.* schema (pgvector)
@@ -23,7 +25,8 @@ export const DAM_HELP = `Digital asset intelligence (Dropbox → understanding �
   npm run content -- dam serve [--port 8787]                      search UI + JSON API only (DAM_UI_PASSWORD protects it)
   npm run content -- dam search "query" [--brand b] [--class c] [--limit 20] [--rerank] [--vectors]
   npm run content -- dam asset <id> | dam similar <id>
-  npm run content -- dam stats
+  npm run content -- dam stats | dam status                      counts | digestion health (cursors, throughput, workers, latency)
+  npm run content -- dam eval [--rerank] [--file queries.json]       search evaluation suite (hit@1 / hit@3 + misses)
   npm run content -- dam profile [--brand b] [--compute]          real-human UGC profile per brand
   npm run content -- dam sync-kg [--brand b]                      push candidates + UGC laws/exemplars into knowledge/
   npm run content -- dam verdict <asset-id> approved|rejected --reason "…" [--roles canonical,style]
@@ -95,6 +98,11 @@ export async function runDamCommand(root, args, print) {
       case "asset": return print(await worker.db.getAsset(positional(rest)[0]));
       case "similar": return print(await similarAssets(worker.db, positional(rest)[0], { limit: Number(option(rest, "--limit", 12)) }));
       case "stats": return print(await worker.db.stats());
+      case "status": return print(await digestionStatus(worker.db));
+      case "eval": {
+        config.searchEmbeddingsAllowed = true;
+        return print(await runEval(worker.db, graph, { config, products: productIndexFromCards(worker.cards), rerank: rest.includes("--rerank"), file: option(rest, "--file") }));
+      }
       case "profile": {
         if (rest.includes("--compute")) await computeUgcProfiles(worker.db, graph, { brand: brandOf(option(rest, "--brand")) });
         const brands = option(rest, "--brand") ? [brandOf(option(rest, "--brand"))] : graph.nodes.filter((node) => node.type === "brand").map((node) => node.id);

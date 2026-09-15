@@ -9,6 +9,8 @@ import { brandCards } from "./analyze.mjs";
 import { searchAssets, similarAssets, productIndexFromCards } from "./search.mjs";
 import { computeUgcProfiles, getUgcProfile } from "./ugc-profile.mjs";
 import { applyVerdictToDam, syncDamToKnowledge } from "./kg-bridge.mjs";
+import { digestionStatus } from "./status.mjs";
+import { runEval } from "./eval.mjs";
 import { CLASS_IDS, REFERENCE_ROLES, ROLE_IDS } from "./taxonomy.mjs";
 
 const brandField = z.string().optional().describe("Brand id or alias (nulumin | muha | dialed-health | dialed-moods | dialed-labs | noble-harbor | stanton)");
@@ -60,6 +62,20 @@ export function createDamTools(root, graph) {
       description: "Sources and cursors, assets by status and by brand/class, queue depth, spend in the last 24h and total.",
       inputSchema: {},
       handler: async () => getDb().stats(),
+    },
+    {
+      name: "dam_status",
+      title: "Digestion health",
+      description: "Is ingestion live and keeping up? Per-source cursor age and backlog, throughput per stage in the last hour, queue depth, worker heartbeats, dead jobs by error, spend, and the median latency from a file's Dropbox modification to its index row and probe. Free.",
+      inputSchema: {},
+      handler: async () => digestionStatus(getDb()),
+    },
+    {
+      name: "dam_eval",
+      title: "Search evaluation suite",
+      description: "Run the plain-language query suite (engine/dam/eval-queries.json) against the live index and report hit@1 / hit@3 with the misses. Small embed cost per query.",
+      inputSchema: { rerank: z.boolean().optional().default(false) },
+      handler: async ({ rerank }) => runEval(getDb(), graph(), { config: { ...config, searchEmbeddingsAllowed: true }, products: productIndexFromCards(getCards()), rerank }),
     },
     {
       name: "dam_ugc_profile",
