@@ -43,6 +43,10 @@ export const SUBCLASSES = {
 export const SUBCLASS_IDS = [...new Set(Object.values(SUBCLASSES).flat())];
 
 /** What a file can do for a brief. Multiple per asset. */
+/** How a product render is framed and what of the product it shows — the two facts a generation needs to pick its references. */
+export const ANGLES = ["front", "back", "side", "three-quarter", "top", "bottom", "multiple", "n/a"];
+export const COMPOSITIONS = ["device-only", "packaging-only", "device-with-packaging", "multi-pack", "label-flat", "lineup", "in-hand", "in-scene", "n/a"];
+
 export const REFERENCE_ROLES = {
   "canonical": "Product/label truth — pass whenever the product appears; drift against it is a rejection.",
   "shape": "Container/device geometry only; style comes from elsewhere.",
@@ -65,7 +69,7 @@ export const ORIENTATIONS = ["9:16", "4:5", "1:1", "4:3", "3:4", "16:9", "other"
 export const IMAGE_ANALYSIS_SCHEMA = {
   type: "object",
   additionalProperties: false,
-  required: ["class", "subclass", "class_confidence", "brand", "brand_confidence", "product", "product_confidence", "title", "summary", "scene", "subjects", "people", "on_image_text", "logos_present", "style", "colors", "reference_roles", "usability", "tags"],
+  required: ["class", "subclass", "class_confidence", "brand", "brand_confidence", "product", "product_confidence", "title", "summary", "scene", "subjects", "angle", "composition", "people", "on_image_text", "logos_present", "style", "colors", "reference_roles", "usability", "tags"],
   properties: {
     class: { type: "string", enum: CLASS_IDS },
     subclass: { type: "string", enum: SUBCLASS_IDS, description: "The second-level type; must belong to the chosen class." },
@@ -78,6 +82,8 @@ export const IMAGE_ANALYSIS_SCHEMA = {
     summary: { type: "string", description: "2-4 sentences: what it is, what it shows, what it is for. Concrete nouns." },
     scene: { type: "string", description: "Setting, surface, background, lighting, time of day, camera angle and distance." },
     subjects: { type: "array", items: { type: "string" }, description: "Every distinct object/product/element visible, most prominent first." },
+    angle: { type: "string", enum: ANGLES, description: "Camera angle on the main product: front | back | side | three-quarter | top | bottom | multiple (several angles in one image) | n/a (no single product)." },
+    composition: { type: "string", enum: COMPOSITIONS, description: "What of the product is shown: device-only (the vape/device/can/vial alone, no box) | packaging-only (box/bag/jar/label with no device) | device-with-packaging | multi-pack (display box, case, tray, set of several units) | label-flat (flat label/dieline/print artwork) | lineup (several SKUs/flavours side by side) | in-hand | in-scene (product in a setting) | n/a." },
     people: { type: "object", additionalProperties: false, required: ["count", "framing", "visible_face", "apparent_role"], properties: {
       count: { type: "integer", minimum: 0 },
       framing: { type: ["string", "null"], description: "e.g. hands only, waist-up selfie, full body, crowd" },
@@ -202,6 +208,10 @@ export function validateAnalysis(record, { video = false } = {}) {
   const problems = [];
   if (!record || typeof record !== "object") return ["record is not an object"];
   if (!CLASS_IDS.includes(record.class)) problems.push(`class ${record.class} not in taxonomy`);
+  if (!video) {
+    if (!ANGLES.includes(record.angle)) record.angle = "n/a";
+    if (!COMPOSITIONS.includes(record.composition)) record.composition = "n/a";
+  }
   if (video && !VIDEO_FORMS.includes(record.form)) problems.push(`form ${record.form} not in VIDEO_FORMS`);
   if (video) {
     // A video is never a still-image class. Snap to the video class the form implies.

@@ -75,7 +75,7 @@ export function imagePrompt({ cards, brandHint, relativePath, probe }) {
     "",
     taxonomyText(),
     "",
-    "Guidance: a 3D render of a product or device is product-ref/render-3d or device-render; a transparent PNG of the product is product-ref/cutout-transparent (role canonical or shape); flat label artwork is product-ref/label-art. A studio photograph of the product with no layout is lifestyle-photo/photoshoot-product; a photographed person with the product in a real setting is lifestyle-photo/lifestyle-scene, or ugc-still if it reads as the person's own phone photo. A finished ad with copy is marketing-still (pick the subclass by format) with role layout-exemplar if it looks shipped. Mark outdated_or_wrong when packaging, spelling or product obviously conflicts with the brand's current products.",
+    "Guidance: for every product image set angle (front/back/side/three-quarter/top/bottom/multiple) and composition: device-only when the vape, device, can, vial or jar is shown alone; packaging-only for a box, bag or jar with no device; device-with-packaging; multi-pack for display boxes, cases, trays or sets; label-flat for flat label or dieline artwork; lineup when several SKUs or flavours stand together. A 3D render of a product or device is product-ref/render-3d or device-render; a transparent PNG of the product is product-ref/cutout-transparent (role canonical or shape); flat label artwork is product-ref/label-art. A studio photograph of the product with no layout is lifestyle-photo/photoshoot-product; a photographed person with the product in a real setting is lifestyle-photo/lifestyle-scene, or ugc-still if it reads as the person's own phone photo. A finished ad with copy is marketing-still (pick the subclass by format) with role layout-exemplar if it looks shipped. Mark outdated_or_wrong when packaging, spelling or product obviously conflicts with the brand's current products.",
   ].join("\n");
 }
 
@@ -113,6 +113,8 @@ export function composeSearchDoc({ record, relativePath, brandName, measured = n
   if (record.scene) lines.push(`Scene: ${record.scene}`);
   if (record.setting) lines.push(`Setting: ${record.setting}`);
   if (record.subjects?.length) lines.push(`Shows: ${record.subjects.join(", ")}.`);
+  if (record.angle && record.angle !== "n/a") lines.push(`Angle: ${record.angle}.`);
+  if (record.composition && record.composition !== "n/a") lines.push(`Composition: ${record.composition.replace(/-/g, " ")}.`);
   if (record.people?.count) lines.push(`People: ${record.people.count} (${record.people.framing || "framing unknown"}${record.people.visible_face ? ", face visible" : ""}${record.people.apparent_role ? `, ${record.people.apparent_role}` : ""}).`);
   if (record.creator?.count) lines.push(`Creator: ${record.creator.count} person, ${record.creator.framing || ""}, ${record.creator.energy || ""}, ${record.creator.wardrobe || ""}.`);
   if (record.capture) lines.push(`Capture: ${record.capture.device_read}; camera ${record.capture.camera_behavior}; reframing ${record.capture.reframing}; exposure ${record.capture.exposure}; imperfections ${(record.capture.imperfections || []).join(", ") || "none"}.`);

@@ -71,7 +71,7 @@ export async function runDamCommand(root, args, print) {
       }
       case "work": {
         const kinds = option(rest, "--kinds") ? option(rest, "--kinds").split(",") : undefined;
-        const result = await worker.runQueue({ once: rest.includes("--once") || !rest.includes("--forever"), kinds, maxJobs: Number(option(rest, "--max", Infinity)), sourcePrefix: option(rest, "--source") });
+        const result = await worker.runQueue({ once: rest.includes("--once") || !rest.includes("--forever"), kinds, maxJobs: Number(option(rest, "--max", Infinity)), sourcePrefix: option(rest, "--source"), autoOnly: rest.includes("--auto-only") });
         return print({ ...result, queue: await worker.db.jobCounts(), spend24hUsd: await worker.db.spendSince(24) });
       }
       case "watch": {

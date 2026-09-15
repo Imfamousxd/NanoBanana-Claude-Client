@@ -354,14 +354,14 @@ export class DamWorker {
   }
 
   /** Process jobs until the queue is empty (once=true) or forever. Paid jobs that hit the lock are parked, not failed. */
-  async runQueue({ once = false, kinds = undefined, maxJobs = Infinity, sourcePrefix = undefined } = {}) {
+  async runQueue({ once = false, kinds = undefined, maxJobs = Infinity, sourcePrefix = undefined, autoOnly: onlyAuto = false } = {}) {
     let processed = 0;
     let parked = 0;
     // Paid kinds stay in the queue for a worker that is approved; an unapproved worker only does free work.
     // (Claiming and parking them for an hour starved the approved local run that was meant to take them.)
     // In auto-intake mode (DAM_AUTO_PRODUCT_REFS=1) it also takes paid jobs tagged auto: the product-render
     // candidates, under the auto cap.
-    let autoOnly = false;
+    let autoOnly = Boolean(onlyAuto);
     if (!this.config.approved) {
       if (this.config.autoProductRefs) autoOnly = true;
       else {
