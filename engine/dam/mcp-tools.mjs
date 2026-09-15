@@ -64,6 +64,20 @@ export function createDamTools(root, graph) {
       handler: async () => getDb().stats(),
     },
     {
+      name: "dam_product_directory",
+      title: "Product renders per brand and product line",
+      description: "The product-render directory built from the Dropbox render folders: for each brand and product line, how many render files exist, how many are analysed, the product names the vision model saw, the best files to pass as references (id, thumb, alpha, roles), what is missing (no transparent cutout / no canonical), and registry products with no render yet. Free; reads the database only.",
+      inputSchema: { brand: brandField, since: z.string().optional().describe("ISO date: only files modified on or after it (inbound assets)"), best: z.number().int().min(1).max(20).optional().default(6), text: z.boolean().optional().default(false).describe("Return the compact text rendering instead of JSON") },
+      handler: async ({ brand, since, best, text }) => { const { productDirectory, renderDirectoryText } = await import("./product-refs.mjs"); const result = await productDirectory(getDb(), graph(), root, { brand: brandOf(brand), since: since || null, limit: best }); return text ? { text: renderDirectoryText(result) } : result; },
+    },
+    {
+      name: "dam_render_candidates",
+      title: "Flag product-render candidates and price their analysis",
+      description: "Marks every discovered image inside a Renders / Product Photos / Packshots / Cutouts tree as a product-ref candidate, moves it to the front of every queue, and returns per-brand counts with the estimated USD to analyse what is not analysed yet. Free and idempotent; it never spends. Use dryRun to only count.",
+      inputSchema: { brand: brandField, dryRun: z.boolean().optional().default(false) },
+      handler: async ({ brand, dryRun }) => { const { flagRenderCandidates } = await import("./product-refs.mjs"); return flagRenderCandidates(getDb(), { brand: brandOf(brand), dryRun, model: config.vision.model, embedModel: config.embed.model }); },
+    },
+    {
       name: "dam_products",
       title: "Product names the DAM has seen",
       description: "Every product name the vision model identified in analysed assets, per brand, with counts — the vocabulary to use in dam_search when a product is not in the registry.",

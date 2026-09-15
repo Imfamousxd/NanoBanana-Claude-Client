@@ -157,3 +157,24 @@ test("ugc laws are distilled from bands with sample-size confidence", () => {
   assert.equal(laws[0].confidence, "strong");
   assert.equal(distillLaws("brand.muha", bands, {}, 3)[0].confidence, "weak");
 });
+
+test("product-refs: render trees are recognised and parsed; textures, logos and lifestyle folders are not", async () => {
+  const { isRenderCandidate, renderPathFacts } = await import("../engine/dam/product-refs.mjs");
+  assert.equal(isRenderCandidate("Renders/Disposables/MI/MI Magnetic_Dispo/Magnetic Dispos Devices_Only/Blue Slushie.png"), true);
+  assert.equal(isRenderCandidate("DAM 2, Muha THC  = Asset Receiving/Approved Renders/Renders/CA/Flower/Glass Jar/Gush Mintz.png"), true);
+  assert.equal(isRenderCandidate("Website Assets/August 2026 SKU Images/Product Renders/Collagen/Displayboxes/box.png"), true);
+  assert.equal(isRenderCandidate("3D files/Gym/textures1/Archmodels v169/Am169_026_reflect_02.jpg"), false);
+  assert.equal(isRenderCandidate("Renders/Something/LOGOS/mm.png"), false);
+  assert.equal(isRenderCandidate("Renders/Disposables/MI/device.mp4"), false);
+  assert.equal(isRenderCandidate("Lifestyle/Photos/JAS_1.jpg"), false);
+  const facts = renderPathFacts("DAM 2, Muha THC  = Asset Receiving/Approved Renders/Renders/CA/Flower/Glass Jar/v2/Gush Mintz.png");
+  assert.equal(facts.approved, true);
+  assert.equal(facts.market, "CA");
+  assert.equal(facts.category, "Flower");
+  assert.equal(facts.line, "Glass Jar");
+  assert.equal(facts.version, 2);
+  assert.equal(facts.group, "Flower / Glass Jar");
+  const old = renderPathFacts("Renders/Discontinued/Disposables/Display Boxes/x.png");
+  assert.equal(old.discontinued, true);
+  assert.equal(old.group, "Discontinued / Disposables");
+});

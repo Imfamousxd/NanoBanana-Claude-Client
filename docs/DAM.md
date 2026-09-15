@@ -153,3 +153,41 @@ npm run content -- dam stats
 ```
 
 Hosting: `deploy/dam/README.md`.
+
+## Product renders first (2026-09-15)
+
+Product renders and product assets — every product of every brand, current and inbound — are the DAM's
+first job. Everything else in the taxonomy still gets classified when a file is analysed, but nothing
+else is prioritised or paid for by default.
+
+**How it works** (`engine/dam/product-refs.mjs`)
+
+- A file inside a render tree — a folder segment named `Renders`, `Approved Renders`, `Product Renders`,
+  `Product Photos`, `Packshots`, `Cutouts`, `Transparent`, `SKU Images`, `White BG …` — is a
+  *product-ref candidate* (`flags.candidate = "product-ref"`), unless it sits under textures, 3D scene
+  files, thumbnails, icons, logos or lifestyle/UGC folders. The path is parsed into facts
+  (`flags.render`): category, market (CA/MI/NY/…), product line, approved / discontinued, version.
+- Candidates are flagged at discovery, probed first (priority 1), and their analyze / embed jobs carry
+  priority 0 and the tag `payload.auto = "product-ref"`.
+- **Auto-intake.** With `DAM_AUTO_PRODUCT_REFS=1` a worker that is *not* globally approved still runs
+  the paid stages for auto-tagged jobs, under its own daily cap `DAM_AUTO_CAP_USD` (default 3). That is
+  how new renders dropped into the Dropbox get understood within minutes without unlocking the
+  whole library. Leave it unset until the user approves the spend.
+- **Directory.** `npm run dam -- products [--brand muha] [--since 2026-09-01] [--json]` /
+  `dam_product_directory` / `/api/directory` / the **Products** button in the UI: for each brand and
+  product line, files, analysed, markets, the product names the vision model saw, the best files to
+  pass as references (id, thumb, alpha, roles), what is missing (no transparent cutout, no canonical),
+  and registry products with no render at all. It works from the folder names before any paid pass.
+- **Candidates and cost.** `npm run dam -- candidates [--brand muha] [--dry]` / `dam_render_candidates`
+  flags (idempotently, free) and prices the unanalysed remainder per brand.
+
+**Running the paid pass for one brand** (needs the user's approval; ≈ $0.002 per image):
+
+```bash
+DAM_CONCURRENCY=4 node engine/cli.mjs dam work --once --kinds analyze --approve --source dropbox:muha --max 6000
+DAM_CONCURRENCY=4 node engine/cli.mjs dam work --once --kinds embed   --approve --source dropbox:muha --max 6000
+npm run dam -- products --brand muha
+npm run dam -- sync-kg --brand muha          # product-ref hits → damCandidates on the product registries
+```
+
+Candidates are always claimed before other pending jobs, so `--max` bounds the spend to the render set.

@@ -9,13 +9,19 @@ Paths are repo-relative. This file is the durable context for the next session; 
 
 ## 0. Where things stand (read this first)
 
+**Priority as of 2026-09-15 (user's words):** the two things that work and matter are (1) the refactored
+content-gen system and (2) the DAM's ability to pull **every product render / product asset for every
+product of each brand** in the Dropbox, current and inbound. **All other categories are not a priority.**
+The user is meeting the person who runs the Dropbox; until then, build the product-render
+infrastructure generically. §8 is that work. §3 (category review) and §5 are parked.
+
 | Piece | State |
 |---|---|
 | Content-engine MCP (`engine/mcp/`) | Live. stdio server, 20+ tools incl. every `dam_*` tool. `.mcp.json` / `.cursor/mcp.json` wired. |
 | Learning loop | Live. Every run → prompt log; verdicts → `knowledge/learnings/<brand>.json` (laws / exemplars); approved images copied into `Brand Context/assets/<Brand>/approved/`. |
 | Asset catalog + gallery | Live. `npm run assets:gallery`, `assets_search`, reference-coverage artifact published. |
-| DAM (`engine/dam/`) | Live on Railway + local. 68,701 Dropbox files discovered, 26k probed, ~330 analysed (paid samples only). Hybrid search proven on categories 1–2; review continues at category 3. |
-| Railway service `dam-worker` | Deployed from GitHub. **Was crash-looping every ~30 s with no log output** — diagnostics shipped in commit `af8925f`; see §4. |
+| DAM (`engine/dam/`) | Live on Railway + local. 68,701 Dropbox files discovered, ~28k probed, ~475 analysed (paid samples only). Hybrid search proven on categories 1–3. **Product-render directory live (§8): 8,665 render candidates flagged across 4 brands, 152 Muha product groups, ≈ $16.45 to analyse them all.** |
+| Railway service `dam-worker` | Deployed from GitHub. Was restart-looping with no log output until 2026-09-15 04:05 UTC; stable since (one worker id, probes flowing). Exit diagnostics now in place — see §4. |
 | Paid analysis of everything | NOT started. `DAM_APPROVED` is intentionally unset on Railway. Full Muha pass ≈ $120 est. — needs the user's explicit go. |
 | Money spent so far | ≈ $0.73 across four samples (`muha-v1` 49, `cross-v2` 114, `pdf-v1` 14, `muha-packaging-v1` 100). `dam.spend` ledger is the truth: `npm run dam -- stats`. |
 
@@ -120,36 +126,39 @@ query in the UI, show the user, act on the verdict. Eval set `engine/dam/eval-qu
 
 ---
 
-## 4. The Railway crash (open — diagnostics shipped, cause not yet confirmed)
+## 4. The Railway restart loop (closed 2026-09-15 — worker stable; exact trigger unproven)
 
-**Symptom.** Deployment `10885056` (commit `0345c59`) is SUCCESS and `/healthz` answers, but the
-container restarts every 2–110 s. Logs show only `Mounting volume … listening on :8787 …` and then
-the next mount. No stack trace, no "Killed", nothing. Memory metrics: max 0.32 GB of an 8 GB limit;
-CPU ≈ 0.1 vCPU — **not** OOM. Every Railway container died mid-probe (`dam.jobs` shows 158 probe
-jobs stuck `running` under six dead worker ids; `requeueStale(45)` frees them after 45 min).
+**Symptom.** Deployment `10885056` (commit `0345c59`) showed SUCCESS and answered `/healthz`, but
+the container restarted every 2–110 s. Its 159 log lines were only mounts, "listening", and 120
+`parked analyze …: Paid analysis is locked` lines — no stack trace, no signal. Memory peaked at
+0.32 GB of 8 GB, CPU ≈ 0.1 vCPU (not OOM). Railway never finished a single probe; 158 probe jobs
+were left `running` under six dead worker ids (`requeueStale(45)` frees them).
 
-**Ruled out.** OOM (metrics), a JS exception (would print), a paid-stage error (parked jobs are
-logged), the volume (0 GB used), the port (healthz OK).
+**What shipped (`af8925f`, then `7221a5a`, `9e1d315`):**
+- `deploy/dam/start.sh` wraps node and prints `node exited with status N` or
+  `killed by signal N` (137 = SIGKILL, 139 = SIGSEGV). `Dockerfile` CMD and `railway.toml`
+  startCommand use it; node runs with `--unhandled-rejections=warn`.
+- `installCrashReporting()` in `engine/dam/cli.mjs` (watch): logs uncaughtException,
+  unhandledRejection, SIGTERM/SIGINT/SIGHUP, and rss/uptime on exit; warns when rss > 1.5 GB.
+- An unapproved worker claims only `discover`/`probe` (it used to claim every paid job it saw and
+  park it for an hour — see §5).
+- `EXCLUDE_PATH_PATTERNS` skips stock 3D texture / HDRI libraries (`Archmodels`, `/textures/`).
 
-**Suspects.** A native crash (SIGSEGV in `sharp`/libvips on linux-x64 inside the slim image) or a
-platform signal. Both are silent under an exec-form `CMD`.
+**Result.** From the first deploy with these changes (04:05 UTC) the container has run
+continuously: one worker id per deployment, 1,346 probes completed in its first 10 minutes, no
+`[dam start]` exit line, no crash-handler output, through a further redeploy. The only behaviour
+that changed for the hosted worker is that it no longer touches paid jobs, so that is the working
+theory; it is not proven. **If it ever restarts again, the first log line to read is
+`[dam start] node exited with status …` / `killed by signal …`** — signal 11 means a native
+crash in sharp/libvips (move hashing off the hosted worker); signal 9 with low rss means the
+platform (ticket with the deployment id).
 
-**Shipped in `af8925f`** (deploy in flight when this file was written):
-- `deploy/dam/start.sh` wraps node and prints `node exited with status N` or `killed by signal N`
-  (137 = SIGKILL, 139 = SIGSEGV). `Dockerfile` CMD and `railway.toml` startCommand use it.
-- `installCrashReporting()` in `engine/dam/cli.mjs` (watch command): logs uncaughtException,
-  unhandledRejection, SIGTERM/SIGINT/SIGHUP, and rss/uptime on `exit`; warns when rss > 1.5 GB.
-- Unapproved worker claims only `discover`/`probe` (see §5).
-- `EXCLUDE_PATH_PATTERNS` now skips stock 3D texture / HDRI libraries (`Archmodels`, `/textures/`),
-  which is where the queue currently sits ("3D files/Gym/textures1/Archmodels v169/…").
-
-**Next step.** `railway deployment list` → take the newest id → `railway logs -d <id> --json` and
-read the `[dam start]` / `[dam] exit code` lines. If it says signal 11, pin sharp's platform package
-or move perceptual-hash/colour work off the hosted worker (probe remotely without sharp, let the
-Mac do hashes). If it says signal 9 with low rss, it's the platform — open a Railway ticket with the
-deployment id.
-
----
+Railway access notes: `railway logs -d <deploymentId> --json` (deployment ids from
+`railway deployment list --json`); a push to `dam-worker` supersedes any build in progress
+(the superseded one shows REMOVED — that is not a crash). Memory/CPU come from the GraphQL
+`metrics` query (token in `~/.railway/config.json`, never print it). `railway ssh` is set up
+(key registered, `Host dam-worker` block in `~/.ssh/config`) but the server still answers
+"Permission denied" — unresolved, not needed.
 
 ## 5. The packaging sample (open — one command away)
 
@@ -174,12 +183,54 @@ Then re-show category 2 to the user and move to category 3 (logos).
 
 ---
 
+## 8. Product renders first — the infrastructure built 2026-09-15 (`engine/dam/product-refs.mjs`)
+
+**Idea.** The Dropbox already organises renders by folder ("Renders/<Category>/<Market>/<Line>/…",
+"Approved Renders/Renders/CA/…", "Website Assets/…/Product Renders/…"). That structure is free and
+available the moment a file is discovered, so the product directory is built from the path first and
+enriched by the paid vision pass second.
+
+| Piece | Where | State |
+|---|---|---|
+| Candidate rule | `isRenderCandidate`, `renderPathFacts` (root, approved, discontinued, market, category, line, version) | done, unit-tested |
+| Flag + prioritise | `flagRenderCandidates` → `flags.candidate='product-ref'`, `flags.render`, `flags.brand_hint`; probe priority 1; analyze/embed priority 0 + `payload.auto` | done; **run 2026-09-15: 8,665 flagged** (muha 5,461 · dialed-moods 2,027 · dialed-labs 778 · dialed-health 399) |
+| Discovery hook | worker `discover` flags candidates as they are found; `enqueuePaid` keeps them first | done, deployed |
+| Auto-intake | `DAM_AUTO_PRODUCT_REFS=1` lets an unapproved worker run paid stages **only** for auto-tagged jobs under `DAM_AUTO_CAP_USD` (default 3/day); SQL `claim_jobs(..., p_auto_only)` | done; **not enabled on Railway** (spend needs the user's go) |
+| Directory | `productDirectory` → brand → category/line: files, analysed, markets, vision product names, best files (id/thumb/alpha/roles), missing (transparent, canonical), registry gaps | done: CLI `dam products`, MCP `dam_product_directory`, `/api/directory`, UI **Products** button |
+| Pricing | `dam candidates` / `dam_render_candidates` → per-brand toAnalyse + USD (`$0.0019` per image) | done |
+| Content-gen tie-in | `context_pack` → `damContext` searches product-ref roles; `sync-kg` writes `damCandidates` into `knowledge/products/<brand>.json` | existing; run `sync-kg` after the paid pass |
+
+**The paid pass (awaiting approval).** Estimated from the price table (real spend has run ≈ 40 % above
+estimate on samples):
+
+| Scope | Files | Est. USD |
+|---|---|---|
+| Muha "Approved Renders" folder only | 852 | ≈ 1.6 |
+| All Muha render candidates | 5,455 | ≈ 10.4 |
+| All four brands | 8,659 | ≈ 16.5 |
+
+Commands are in `docs/DAM.md` → "Product renders first". After it runs: `dam products --brand muha`,
+then `dam sync-kg --brand muha`, then judge in the UI (Products → click a line → its renders).
+
+**Known limits.** The product *line* comes from folder names, so a flat folder of 400 files shows as
+one group until analysis adds product names. Registry products are thin (Muha registry lists 3
+products); the vision product string + folder line is the working product key. Duplicate renders
+(2,622 exact dupes) are skipped automatically.
+
+**Questions for the Dropbox owner (to refine the rule after the meeting).**
+1. Is "DAM 2, Muha THC = Asset Receiving/Approved Renders" the canonical render set, and who approves into it?
+2. Which folder holds the *current* render per product line when v1/v2/v3 coexist — is the highest version always current?
+3. Are "Discontinued", "Old Versions", "CA catalog resized" to be shown (as history) or hidden?
+4. Market folders (CA/MI/NY/NM/MO/NJ/OH): are packaging differences real per market, or just where the file was requested from?
+5. Naming: is there a SKU or flavour naming convention we can parse from file names (e.g. "OG_Magnetic_Dispo_Front_b_<SKU>Front.png")?
+6. Where do inbound renders land first (a drop folder?) so auto-intake watches the right place.
+
 ## 6. Remaining plan
 
-1. Confirm the crash cause from the new deploy's logs; fix; confirm the worker stays up ≥ 30 min
-   (`/healthz` → one worker id, `dam.jobs` probe count rising).
-2. Finish the packaging sample (§5); re-judge category 2.
-3. Categories 3–9, per brand, one at a time (§3).
+1. **Get the go for the product-render paid pass (§8) and run it** — Muha first, then the other brands.
+2. Judge the Products view with the user; refine the folder rule after the Dropbox-owner meeting.
+3. Enable auto-intake on Railway (`DAM_AUTO_PRODUCT_REFS=1`, `DAM_AUTO_CAP_USD`) once approved, so inbound renders are analysed as they land.
+4. (parked) finish the packaging sample (§5) and categories 3–9 (§3).
 4. Real UGC coverage: approve analysis of the `dropbox:media:*` video sources
    (`node engine/cli.mjs dam work --once --approve --source dropbox:media --kinds analyze,embed`),
    then `npm run dam -- profile --compute` and `npm run dam -- sync-kg`.

@@ -96,6 +96,17 @@ export async function runDamCommand(root, args, print) {
         const result = await searchAssets(worker.db, graph, query, { filters: { brand: brandOf(option(rest, "--brand")), class: option(rest, "--class") }, limit: Number(option(rest, "--limit", 20)), rerank: rest.includes("--rerank"), config, products: productIndexFromCards(worker.cards) });
         return print({ ...result, results: result.results.map((row) => ({ id: row.id, path: row.path, brand: row.brand, class: row.class, product: row.product, title: row.title, quality: row.quality, thumb: row.proxies?.thumb, preview: row.proxies?.preview, score: row.score, why: row.why })) });
       }
+      case "products": {
+        const { productDirectory, renderDirectoryText } = await import("./product-refs.mjs");
+        const result = await productDirectory(worker.db, graph, root, { brand: brandOf(option(rest, "--brand")), since: option(rest, "--since"), limit: Number(option(rest, "--best", 6)) });
+        if (rest.includes("--json")) return print(result);
+        console.log(renderDirectoryText(result));
+        return;
+      }
+      case "candidates": {
+        const { flagRenderCandidates } = await import("./product-refs.mjs");
+        return print(await flagRenderCandidates(worker.db, { brand: brandOf(option(rest, "--brand")), dryRun: rest.includes("--dry"), model: config.vision.model, embedModel: config.embed.model }));
+      }
       case "asset": return print(await worker.db.getAsset(positional(rest)[0]));
       case "similar": return print(await similarAssets(worker.db, positional(rest)[0], { limit: Number(option(rest, "--limit", 12)) }));
       case "stats": return print(await worker.db.stats());

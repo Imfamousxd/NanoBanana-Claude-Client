@@ -150,7 +150,8 @@ create unique index if not exists ux_dam_jobs_open on dam.jobs (kind, coalesce(a
 
 drop function if exists dam.claim_jobs(text, integer);
 drop function if exists dam.claim_jobs(text, integer, text[]);
-create or replace function dam.claim_jobs(p_worker text, p_limit integer, p_kinds text[] default null, p_source_prefix text default null)
+drop function if exists dam.claim_jobs(text, integer, text[], text);
+create or replace function dam.claim_jobs(p_worker text, p_limit integer, p_kinds text[] default null, p_source_prefix text default null, p_auto_only boolean default false)
 returns setof dam.jobs language plpgsql as $$
 begin
   return query
@@ -158,6 +159,7 @@ begin
     select id from dam.jobs
     where status = 'pending' and run_after <= now() and (p_kinds is null or kind = any(p_kinds))
       and (p_source_prefix is null or source_id like p_source_prefix || '%')
+      and (not p_auto_only or kind in ('discover','probe') or coalesce(payload, '{}'::jsonb) ? 'auto')
     order by priority asc, created_at asc
     for update skip locked
     limit p_limit

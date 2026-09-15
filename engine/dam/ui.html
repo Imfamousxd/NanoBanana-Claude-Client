@@ -23,6 +23,12 @@ main{padding:14px 18px 60px}
 .badge{padding:1px 7px;border-radius:999px;background:#eef0f4;font-size:11px}.badge.class{background:#e3efff;color:#1747b3}.badge.role{background:#e3f7e8;color:#166534}.badge.brand{background:#ece8ff;color:#4b2fb3}.badge.flag{background:#fee4e2;color:var(--bad)}.badge.human{background:#fff3e0;color:#9a4a00}
 .why{color:var(--muted);font-size:11px}.path{color:var(--muted);font-size:11px;word-break:break-all}
 .empty{color:var(--muted);padding:40px 0;text-align:center}
+.dir h2{font-size:15px;margin:18px 0 8px}.dir table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:12px}
+.dir th,.dir td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.dir th{background:var(--soft);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
+.dir td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.dir tr.row{cursor:pointer}.dir tr.row:hover td{background:#f7faf9}
+.dir .thumbs{display:flex;gap:4px}.dir .thumbs img{width:40px;height:40px;object-fit:contain;background:repeating-conic-gradient(#eee 0 25%,#fff 0 50%) 50%/8px 8px;border-radius:4px;border:1px solid var(--line)}
+.dir .gap{color:var(--warn)}.dir .ok{color:var(--ok)}.dir .muted{color:var(--muted)}
+.dir .bar{display:inline-block;height:6px;border-radius:3px;background:var(--soft);width:80px;vertical-align:middle;overflow:hidden}.dir .bar i{display:block;height:100%;background:var(--accent)}
 dialog{border:0;border-radius:12px;padding:0;max-width:960px;width:94vw;box-shadow:0 20px 60px rgba(0,0,0,.3)}
 dialog::backdrop{background:rgba(0,0,0,.45)}
 .detail{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:18px}
@@ -42,6 +48,7 @@ dialog::backdrop{background:rgba(0,0,0,.45)}
   <label class="chk"><input type="checkbox" id="human"> real people only</label>
   <label class="chk"><input type="checkbox" id="rerank"> rerank (AI)</label>
   <button class="primary" id="go">Search</button>
+  <button id="dir" title="Every product line's renders, per brand, straight from the Dropbox folders">Products</button>
 </header>
 <main><p class="summary" id="summary"></p><div id="out" class="grid"></div></main>
 <dialog id="dlg"></dialog>
@@ -55,13 +62,13 @@ $("#brand").innerHTML+=META.brands.map(b=>'<option value="'+esc(b.id)+'">'+esc(b
 $("#class").innerHTML+=META.classes.map(c=>'<option>'+esc(c)+'</option>').join("");
 const a=META.stats.assets||[];const analyzed=a.filter(x=>x.status==="analyzed"||x.status==="embedded").reduce((s,x)=>s+x.n,0);const total=a.reduce((s,x)=>s+x.n,0);
 $("#summary").innerHTML='<span><code>'+analyzed.toLocaleString()+'</code> understood of <code>'+total.toLocaleString()+'</code> files</span><span>type a query, or pick filters and search with an empty box to browse</span>';
-const params=new URLSearchParams(location.search);if(params.get("q")){$("#q").value=params.get("q");search()}}
+const params=new URLSearchParams(location.search);if(params.get("view")==="products"){if(params.get("brand"))$("#brand").value=params.get("brand");directory()}else if(params.get("q")){$("#q").value=params.get("q");search()}}
 function card(i){const badges=['<span class="badge brand">'+esc((i.brand||"?").replace("brand.",""))+'</span>','<span class="badge class">'+esc(i.class||"?")+(i.form?' / '+esc(i.form.replace(/-/g," ")):"")+'</span>']
  .concat((i.roles||[]).map(r=>'<span class="badge role">'+esc(r)+'</span>'),i.realHuman?['<span class="badge human">real person</span>']:[],(i.flags&&(i.flags.outdated_or_wrong||i.flags.do_not_use))?['<span class="badge flag">flagged</span>']:[]).join("");
 const why=i.why?Object.entries(i.why).map(([k,v])=>k+(v.similarity?" "+v.similarity:v.rank?" #"+v.rank:"")).join(" · "):"";
 return '<div class="card" data-id="'+i.id+'"><div class="thumb">'+(i.thumb?'<img loading="lazy" src="'+esc(i.thumb)+'">':'<span>'+esc(i.kind)+'</span>')+(i.duration_s?'<span class="dur">'+Math.round(i.duration_s)+'s</span>':'')+'</div><div class="meta"><div class="title">'+esc(i.title||i.path.split("/").pop())+'</div><div class="badges">'+badges+'</div>'+(i.product?'<div>'+esc(i.product)+'</div>':'')+'<div class="why">'+esc(why)+(i.why&&i.why.rerank?' — '+esc(i.why.rerank):'')+'</div><div class="path">'+esc(i.path)+'</div></div></div>'}
 async function search(){const p=new URLSearchParams({q:$("#q").value,brand:$("#brand").value,class:$("#class").value,orientation:$("#orientation").value,realHuman:$("#human").checked?"1":"",rerank:$("#rerank").checked?"1":"",limit:"60"});
-$("#out").innerHTML='<p class="empty">Searching…</p>';const r=await api("/api/search?"+p);history.replaceState(null,"","?q="+encodeURIComponent($("#q").value));
+$("#out").className="grid";$("#out").innerHTML='<p class="empty">Searching…</p>';const r=await api("/api/search?"+p);history.replaceState(null,"","?q="+encodeURIComponent($("#q").value));
 const f=Object.entries(r.parsed.filters).filter(([k])=>!/Alias$/.test(k)).map(([k,v])=>k+"="+v).join(" ");
 $("#summary").innerHTML='<span><code>'+r.count+'</code> results</span>'+(f?'<span>understood as: <code>'+esc(f)+'</code></span>':'')+'<span>'+(r.usedVectors?'lexical + semantic + visual':'lexical only')+'</span>';
 $("#out").innerHTML=r.results.length?r.results.map(card).join(""):'<p class="empty">'+(r.note?esc(r.note):'Nothing matches closely enough to show. Try fewer words, or clear a filter.')+'</p>'}
@@ -69,9 +76,21 @@ async function open(id){const a=await api("/api/asset/"+id);const v=a.video||{};
 const an=a.analysis||{};const rows=[["Brand",a.brand],["Type",(a.class||"")+(a.subclass?" / "+a.subclass:"")],["Product",a.product],["Roles",(a.reference_roles||[]).join(", ")],["Quality",a.quality],["Size",a.width?a.width+"×"+a.height:""],["Duration",a.duration_s?Math.round(a.duration_s)+"s":""],["Verdict",a.verdict||"—"],["Path",a.source_id+" · "+a.path]];
 $("#dlg").innerHTML='<div class="detail"><div class="media">'+media+(a.similar&&a.similar.length?'<p class="k">Visually similar</p><div class="grid" style="grid-template-columns:repeat(4,1fr)">'+a.similar.slice(0,8).map(s=>'<div class="card" data-id="'+s.id+'"><div class="thumb">'+(s.thumb?'<img src="'+esc(s.thumb)+'">':'')+'</div></div>').join("")+'</div>':'')+'</div><div><h2>'+esc(a.title||a.name)+'</h2><p>'+esc(a.summary||"")+'</p>'+rows.filter(r=>r[1]!==null&&r[1]!==undefined&&r[1]!=="").map(r=>'<p><span class="k">'+r[0]+':</span> '+esc(r[1])+'</p>').join("")+(an.scene||an.setting?'<p><span class="k">Scene:</span> '+esc(an.scene||an.setting)+'</p>':'')+(an.capture?'<p><span class="k">Capture:</span> '+esc(an.capture.device_read+"; "+an.capture.camera_behavior+"; "+(an.capture.imperfections||[]).join(", "))+'</p>':'')+(an.structure?'<p><span class="k">Hook:</span> '+esc(an.structure.hook)+' ('+esc(an.structure.hook_type)+')</p>':'')+(v.transcript&&v.transcript.text?'<p class="k">Transcript</p><pre>'+esc(v.transcript.text)+'</pre>':'')+(an.on_image_text&&an.on_image_text.length?'<p><span class="k">Text on image:</span> '+esc(an.on_image_text.join(" | "))+'</p>':'')+'<p class="k">Tags: '+esc((a.tags||[]).join(", "))+'</p><div class="verdict"><button data-v="approved">Approve as reference</button><button data-v="rejected">Reject (do not use)</button><button data-close>Close</button></div></div></div>';
 $("#dlg").showModal();$("#dlg").onclick=async(e)=>{const c=e.target.closest("[data-id]");if(c){open(c.dataset.id);return}if(e.target.dataset.close){$("#dlg").close();return}if(e.target.dataset.v){const reason=prompt("Reason (one line):");if(!reason)return;await api("/api/asset/"+a.id+"/verdict",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({verdict:e.target.dataset.v,reason,roles:e.target.dataset.v==="approved"?["canonical"]:[]})});$("#dlg").close();search()}}}
+async function directory(){const b=$("#brand").value;$("#out").className="dir";$("#out").innerHTML='<p class="empty">Reading the render folders…</p>';
+const r=await api("/api/directory?best=6"+(b?"&brand="+encodeURIComponent(b):""));history.replaceState(null,"","?view=products"+(b?"&brand="+encodeURIComponent(b):""));
+$("#summary").innerHTML='<span><code>'+r.totals.groups+'</code> product groups</span><span><code>'+r.totals.files.toLocaleString()+'</code> render files</span><span><code>'+r.totals.analysed.toLocaleString()+'</code> analysed</span><span class="muted">grouped from the Dropbox folder names; the vision pass adds product names, roles and the best files</span>';
+const byBrand={};for(const e of r.directory)(byBrand[e.brand||"unknown"]??=[]).push(e);
+let html="";for(const [brand,rows] of Object.entries(byBrand)){html+='<h2>'+esc(brand.replace("brand.",""))+' <span class="muted">· '+rows.length+' groups · '+rows.reduce((s,x)=>s+x.files,0).toLocaleString()+' files</span></h2>';
+html+='<table><tr><th>Product line</th><th>Files</th><th>Analysed</th><th>Markets</th><th>Vision says</th><th>Best files</th><th>Notes</th></tr>';
+for(const e of rows){const pct=e.files?Math.round(100*e.analysed/e.files):0;const notes=[e.approvedFolder?'<span class="ok">approved folder</span>':'',e.discontinued===e.files?'<span class="muted">discontinued</span>':'',e.missing&&e.missing.transparent?'<span class="gap">no transparent cutout</span>':'',e.missing&&e.missing.canonical?'<span class="gap">no canonical</span>':''].filter(Boolean).join(" · ");
+html+='<tr class="row" data-q="'+esc((brand.replace("brand.","")+" "+(e.line||e.category||"")).trim())+'" data-brand="'+esc(brand)+'"><td><b>'+esc(e.category||e.group)+'</b>'+(e.line?'<br><span class="muted">'+esc(e.line)+'</span>':'')+'</td><td class="n">'+e.files+'</td><td class="n"><span class="bar"><i style="width:'+pct+'%"></i></span> '+e.analysed+'</td><td>'+esc(e.markets.join(" "))+'</td><td>'+e.products.slice(0,3).map(p=>esc(p.product)+' <span class="muted">×'+p.n+'</span>').join("<br>")+'</td><td><div class="thumbs">'+e.best.map(x=>'<img loading="lazy" data-id="'+x.id+'" src="'+esc(x.thumb||"")+'" title="'+esc(x.title||"")+'">').join("")+'</div></td><td>'+notes+'</td></tr>'}
+html+='</table>'}
+if(r.registryGaps.length)html+='<h2>Registry products with no analysed render yet</h2><table><tr><th>Brand</th><th>Product</th></tr>'+r.registryGaps.map(g=>'<tr><td>'+esc(g.brand.replace("brand.",""))+'</td><td>'+esc(g.product)+'</td></tr>').join("")+'</table>';
+$("#out").innerHTML=html||'<p class="empty">No render folders flagged yet. Run: npm run dam -- candidates</p>';}
+$("#dir").onclick=directory;
 $("#go").onclick=search;$("#q").addEventListener("keydown",e=>{if(e.key==="Enter")search()});for(const id of["brand","class","orientation","human"])$("#"+id).addEventListener("change",search);
 async function names(){const b=$("#brand").value;const r=await api("/api/products"+(b?"?brand="+encodeURIComponent(b):""));$("#names").innerHTML=r.products.slice(0,300).map(p=>'<option value="'+esc((p.brand||"").replace("brand.","")+" "+p.product)+'">').join("")}
 $("#brand").addEventListener("change",names);names();
-$("#out").addEventListener("click",e=>{const c=e.target.closest("[data-id]");if(c)open(c.dataset.id)});
+$("#out").addEventListener("click",e=>{const c=e.target.closest("[data-id]");if(c){open(c.dataset.id);return}const row=e.target.closest("tr.row");if(row){$("#out").className="grid";$("#q").value=row.dataset.q;$("#brand").value=row.dataset.brand;$("#class").value="product-ref";search()}});
 init();
 </script></body></html>

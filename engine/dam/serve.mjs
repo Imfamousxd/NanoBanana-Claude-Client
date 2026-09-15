@@ -64,6 +64,11 @@ export function createDamServer(root, { config = damConfig(root), password = pro
         const { rows } = await db.query(`select brand, product, count(*)::int as n from dam.assets where product is not null and status in ('analyzed','embedded') and deleted_at is null ${brand ? "and brand = $1" : ""} group by 1,2 order by 1, 3 desc`, brand ? [brand] : []);
         return json(res, 200, { products: rows });
       }
+      if (url.pathname === "/api/directory") {
+        const { productDirectory } = await import("./product-refs.mjs");
+        const result = await productDirectory(db, graph, root, { brand: url.searchParams.get("brand") || null, since: url.searchParams.get("since") || null, limit: Number(url.searchParams.get("best") || 6) });
+        return json(res, 200, { ...result, directory: result.directory.map((entry) => ({ ...entry, best: entry.best.map((item) => ({ ...item, thumb: rewriteProxies({ thumb: item.thumb }).thumb })) })) });
+      }
       if (url.pathname === "/api/meta") {
         const stats = await db.stats();
         return json(res, 200, { brands, classes: CLASS_IDS, subclasses: SUBCLASSES, roles: ROLE_IDS, stats });

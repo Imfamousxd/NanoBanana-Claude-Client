@@ -37,3 +37,12 @@ One long-running service. It longpolls every registered Dropbox folder, and drai
 
 Ten thousand images and one thousand five-minute videos land near $60. The cap parks jobs instead
 of dropping them, so a low cap simply makes the backlog drain over more days.
+
+## Auto-intake of product renders
+
+| Variable | Meaning |
+|---|---|
+| `DAM_AUTO_PRODUCT_REFS=1` | An unapproved worker may analyse and embed files flagged as product-render candidates (files inside Renders / Product Photos / Packshots / Cutouts trees) as they arrive. Nothing else paid runs. |
+| `DAM_AUTO_CAP_USD` | Daily cap for that auto spend (default 3). |
+
+Both stay unset until the user approves the spend. `DAM_APPROVED=1` still unlocks everything.

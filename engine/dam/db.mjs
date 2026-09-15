@@ -162,7 +162,7 @@ export class DamDb {
       throw error;
     }
   }
-  async claimJobs(workerId, limit, kinds = null, sourcePrefix = null) { return (await this.pool.query("select * from dam.claim_jobs($1, $2, $3, $4)", [workerId, limit, kinds, sourcePrefix])).rows; }
+  async claimJobs(workerId, limit, kinds = null, sourcePrefix = null, autoOnly = false) { return (await this.pool.query("select * from dam.claim_jobs($1, $2, $3, $4, $5)", [workerId, limit, kinds, sourcePrefix, autoOnly])).rows; }
   async finishJob(id, { status = "done", error = null } = {}) {
     await this.pool.query("update dam.jobs set status = $2, error = $3, finished_at = now(), locked_by = null where id = $1", [id, status, error ? String(error).slice(0, 2000) : null]);
   }

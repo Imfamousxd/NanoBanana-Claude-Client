@@ -91,6 +91,10 @@ export function damConfig(root, env = process.env) {
     // Cost guard: worker refuses to start a paid stage past this many USD per run/day.
     spendCapUsd: number("DAM_SPEND_CAP_USD", 25),
     approved: env.DAM_APPROVED === "1" || env.DAM_APPROVED === "true",
+    // Product-render candidates (files inside a Renders / Product Photos / Packshots tree) may be analysed as
+    // they arrive, without approving the whole library, under their own daily cap.
+    autoProductRefs: env.DAM_AUTO_PRODUCT_REFS === "1" || env.DAM_AUTO_PRODUCT_REFS === "true",
+    autoCapUsd: number("DAM_AUTO_CAP_USD", 3),
     // Storage for proxies (Supabase Storage bucket). Falls back to local files under workDir.
     storage: { url: storageUrlFor(env), key: env.SUPABASE_SERVICE_ROLE_KEY, bucket: env.DAM_STORAGE_BUCKET || "dam-proxies" },
     concurrency: number("DAM_CONCURRENCY", 2),
