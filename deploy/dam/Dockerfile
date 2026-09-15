@@ -12,5 +12,4 @@ COPY schemas ./schemas
 COPY docs ./docs
 COPY ["Brand Context", "./Brand Context/"]
 ENV NODE_ENV=production DAM_WORK_DIR=/data/dam
-VOLUME ["/data"]
 CMD ["node", "engine/cli.mjs", "dam", "watch"]
