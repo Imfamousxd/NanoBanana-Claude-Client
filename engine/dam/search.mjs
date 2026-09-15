@@ -25,6 +25,10 @@ const CLASS_WORDS = {
   "document": ["deck", "pdf", "document", "coa", "guidelines"],
 };
 
+/** Class words that name a kind of asset outright. A query with one of these is never relaxed to other classes:
+ *  "dialed health logo" with no analysed Dialed Health logos returns nothing (and says so), not lifestyle photos. */
+const HARD_CLASS_WORDS = new Set(["logo", "wordmark", "lockup", "brand mark", "ugc", "creator", "talking head", "testimonial", "unboxing", "influencer video", "meme", "screenshot", "b-roll", "broll", "raw footage", "footage", "behind the scenes", "bts", "packshot", "product shot", "cutout", "dieline", "deck", "pdf", "coa", "guidelines", "selfie"]);
+
 /** Deterministic query understanding: brand, product, class, orientation, people, duration. Never calls a model. */
 export function parseQuery(query, graph, products = []) {
   const lower = ` ${String(query).toLowerCase()} `;
@@ -53,7 +57,7 @@ export function parseQuery(query, graph, products = []) {
       }
     }
   }
-  if (bestClass) filters.class = bestClass.classId;
+  if (bestClass) { filters.class = bestClass.classId; if (HARD_CLASS_WORDS.has(bestClass.word)) filters.classHard = true; }
   for (const form of VIDEO_FORMS) if (lower.includes(` ${form.replace(/-/g, " ")} `) || lower.includes(` ${form} `)) filters.form = form;
   for (const sub of SUBCLASS_IDS) { const words = sub.replace(/-/g, " "); if (words !== "other" && (lower.includes(` ${words} `) || lower.includes(` ${words}s `))) filters.form = filters.form || sub; }
   if (/\b(render|renders|rendered|3d)\b/.test(lower) && !filters.form) filters.generated = true;
@@ -154,9 +158,10 @@ export async function searchAssets(db, graph, query, { filters: extra = {}, limi
     }
   }
   // 3. relax parsed (not caller-supplied) filters when they starve the result: "packaging" must not hide a packshot
-  const parsedKeys = Object.keys(parsed.filters).filter((key) => !(key in explicit) && !/Alias$/.test(key) && key !== "brand");
+  const hardClass = Boolean(parsed.filters.classHard || explicit.class);
+  const parsedKeys = Object.keys(parsed.filters).filter((key) => !(key in explicit) && !/Alias$/.test(key) && key !== "brand" && key !== "classHard" && !(key === "class" && hardClass));
   if (parsedKeys.length) {
-    const relaxed = { ...(filters.brand ? { brand: filters.brand } : {}), ...(explicit.class ? { class: filters.class } : {}), kind: filters.kind };
+    const relaxed = { ...(filters.brand ? { brand: filters.brand } : {}), ...(hardClass ? { class: filters.class } : {}), kind: filters.kind };
     const params = [];
     const where = whereClause(relaxed, params);
     params.push(text);
@@ -194,7 +199,14 @@ export async function searchAssets(db, graph, query, { filters: extra = {}, limi
     if (!lexical && Math.max(...sims) < 0.45) return false;
     return entry.score >= all[0].score * 0.25;
   });
-  let ranked = (strong.length ? strong : all.slice(0, Math.min(3, all.length))).slice(0, rerank ? Math.min(30, limit * 3) : limit);
+  // With a hard class (or an explicit one) the answer is the matches or nothing; soft queries may show the 3 best guesses.
+  let note = null;
+  if (!strong.length && hardClass) {
+    const brandName = filters.brand ? (graph.nodes.find((node) => node.id === filters.brand)?.name || filters.brand) : "any brand";
+    const analysed = Number((await db.query("select count(*)::int as n from dam.assets where class = $1 and status in ('analyzed','embedded')" + (filters.brand ? " and brand = $2" : ""), filters.brand ? [filters.class, filters.brand] : [filters.class])).rows[0].n);
+    note = analysed ? `No ${filters.class} asset for ${brandName} matches this query; ${analysed} analysed ${filters.class} assets exist.` : `No ${filters.class} assets for ${brandName} have been analysed yet; the class filter was not relaxed.`;
+  }
+  let ranked = (strong.length ? strong : (hardClass ? [] : all.slice(0, Math.min(3, all.length)))).slice(0, rerank ? Math.min(30, limit * 3) : limit);
   if (rerank && config && ranked.length > 1) {
     try {
       const prompt = ["You rank a marketing asset library's search results. Query:", JSON.stringify(query), "", "Return JSON {\"order\": [ids best-first], \"notes\": {id: one short reason}} considering ONLY the documents below. Prefer exact product/brand matches, the asked format, and higher quality.", "", ...ranked.map((entry) => `ID ${entry.row.id}\n${(entry.row.summary || "").slice(0, 600)}\nclass=${entry.row.class} brand=${entry.row.brand} product=${entry.row.product} roles=${entry.row.reference_roles.join(",")} quality=${entry.row.quality}`)].join("\n");
@@ -209,6 +221,7 @@ export async function searchAssets(db, graph, query, { filters: extra = {}, limi
     }
   }
   return {
+    note,
     query, parsed: { filters, residual: parsed.residual }, count: ranked.length, usedVectors: Boolean(queryVector),
     results: ranked.map(({ row, score, why }) => ({ ...row, score: Math.round(score * 10_000) / 10_000, why })),
   };
