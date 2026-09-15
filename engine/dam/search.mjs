@@ -180,7 +180,21 @@ export async function searchAssets(db, graph, query, { filters: extra = {}, limi
     rows.forEach((row, index) => add(row, "filter", index));
   }
 
-  let ranked = [...candidates.values()].sort((a, b) => b.score - a.score).slice(0, rerank ? Math.min(30, limit * 3) : limit);
+  // Precision over recall: a result is either a real match or it is not shown.
+  //  - if any direct (non-relaxed, non-fallback) hit exists, drop candidates that only came from a relaxed or filter-only pass
+  //  - a vector-only hit must clear a similarity floor; a lexical hit must carry a real rank
+  //  - everything below 40% of the top score is noise
+  const all = [...candidates.values()].sort((a, b) => b.score - a.score);
+  const direct = (entry) => Object.keys(entry.why).some((source) => !/relaxed|filter/.test(source));
+  const hasDirect = all.some(direct);
+  const strong = all.filter((entry) => {
+    if (hasDirect && !direct(entry)) return false;
+    const sims = ["semantic", "visual", "semantic-relaxed", "visual-relaxed"].map((key) => Number(entry.why[key]?.similarity || 0));
+    const lexical = entry.why.lexical || entry.why["lexical-relaxed"];
+    if (!lexical && Math.max(...sims) < 0.45) return false;
+    return entry.score >= all[0].score * 0.4;
+  });
+  let ranked = (strong.length ? strong : all.slice(0, Math.min(3, all.length))).slice(0, rerank ? Math.min(30, limit * 3) : limit);
   if (rerank && config && ranked.length > 1) {
     try {
       const prompt = ["You rank a marketing asset library's search results. Query:", JSON.stringify(query), "", "Return JSON {\"order\": [ids best-first], \"notes\": {id: one short reason}} considering ONLY the documents below. Prefer exact product/brand matches, the asked format, and higher quality.", "", ...ranked.map((entry) => `ID ${entry.row.id}\n${(entry.row.summary || "").slice(0, 600)}\nclass=${entry.row.class} brand=${entry.row.brand} product=${entry.row.product} roles=${entry.row.reference_roles.join(",")} quality=${entry.row.quality}`)].join("\n");
