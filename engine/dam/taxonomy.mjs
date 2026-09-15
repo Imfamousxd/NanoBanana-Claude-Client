@@ -203,6 +203,11 @@ export function validateAnalysis(record, { video = false } = {}) {
   if (!record || typeof record !== "object") return ["record is not an object"];
   if (!CLASS_IDS.includes(record.class)) problems.push(`class ${record.class} not in taxonomy`);
   if (video && !VIDEO_FORMS.includes(record.form)) problems.push(`form ${record.form} not in VIDEO_FORMS`);
+  if (video) {
+    // A video is never a still-image class. Snap to the video class the form implies.
+    const stillToVideo = { "product-ref": "marketing-video", "logo": "marketing-video", "packaging-collateral": "marketing-video", "marketing-still": "marketing-video", "lifestyle-photo": "raw-footage", "ugc-still": "ugc-video", "document": "other", "screenshot": "raw-footage" };
+    if (stillToVideo[record.class]) { record.class_original = record.class; record.class = stillToVideo[record.class]; }
+  }
   if (!video) {
     const allowed = SUBCLASSES[record.class] || [];
     if (!record.subclass || !allowed.includes(record.subclass)) {
