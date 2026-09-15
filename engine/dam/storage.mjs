@@ -19,7 +19,7 @@ export class ProxyStore {
     const headers = { Authorization: `Bearer ${this.key}`, apikey: this.key, "Content-Type": "application/json" };
     const existing = await fetch(`${this.url}/storage/v1/bucket/${this.bucket}`, { headers });
     if (existing.ok) return { ok: true, mode: "supabase", created: false };
-    const created = await fetch(`${this.url}/storage/v1/bucket`, { method: "POST", headers, body: JSON.stringify({ id: this.bucket, name: this.bucket, public: true, file_size_limit: 104857600 }) });
+    const created = await fetch(`${this.url}/storage/v1/bucket`, { method: "POST", headers, body: JSON.stringify({ id: this.bucket, name: this.bucket, public: true }) });
     if (!created.ok) throw new Error(`could not create bucket ${this.bucket}: HTTP ${created.status} ${(await created.text()).slice(0, 200)}`);
     return { ok: true, mode: "supabase", created: true };
   }
