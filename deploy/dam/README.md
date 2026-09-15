@@ -5,7 +5,7 @@ One long-running service. It longpolls every registered Dropbox folder, and drai
 
 ## Railway
 
-1. New service from this repo, Dockerfile path `deploy/dam/Dockerfile` (or point Railway at `deploy/dam/railway.json`).
+1. Project `content-engine-dam`, service `dam-worker` (created 2026-09-14 with the CLI). Set `RAILWAY_DOCKERFILE_PATH=deploy/dam/Dockerfile` on the service — without it Railway's Railpack ignores the Dockerfile. `railway up --detach --ci` from the repo root deploys; `.railwayignore` limits the upload to what the Dockerfile copies.
 2. Attach a volume at `/data` (fetched originals and proxies are staged there; nothing needs to survive a redeploy).
 3. Environment variables:
 

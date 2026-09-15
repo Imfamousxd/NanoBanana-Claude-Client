@@ -1,7 +1,11 @@
-# Railway/Docker build context for the DAM worker: only what deploy/dam/Dockerfile copies.
+# Docker build context for the DAM worker: only what deploy/dam/Dockerfile copies, plus the
+# Dockerfile itself (Railway's builder needs it INSIDE the context — excluding it fails the build
+# before any log line is written).
 *
 !package.json
 !package-lock.json
+!railway.toml
+!deploy/**
 !engine/**
 !knowledge/**
 !schemas/**
@@ -11,3 +15,4 @@
 **/*.psd
 **/*.mov
 **/*.mp4
+**/node_modules
