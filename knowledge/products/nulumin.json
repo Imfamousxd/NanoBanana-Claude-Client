@@ -3,7 +3,7 @@
   "schema": "product-registry/1",
   "brand": "brand.nulumin",
   "displayName": "NuLumin Bio-Sciences",
-  "updatedAt": "2026-08-09",
+  "updatedAt": "2026-09-15",
   "logo": [
     {
       "path": "Brand Context/assets/NuLumin_BioSciences/ads/logo_black.png",
@@ -133,5 +133,272 @@
       "NuLumin Generated/Hero Shots v3 (fixed)/retail/NUL-V-TSM-10.png",
       "NuLumin Generated/Hero Shots v3 (fixed)/retail/_CONTACT_retail66.png"
     ]
-  }
+  },
+  "damCandidates": [
+    {
+      "assetId": "3e9cf0fa-6ec4-4bee-9273-ae4bc24e3f63",
+      "product": "BPC-157 5mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/ads/vial_bpc.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/9bd2c70d2b9abe75.jpg",
+      "title": "NuLumin BPC-157 5mg peptide vial with purple cap and label",
+      "alpha": true,
+      "size": "892x1924",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8ef35bd4-e6b4-4add-83d2-cc5aa98e62dd",
+      "product": "CFC-1295 5mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/NuL_CFC_5mg.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/2fbf026807ce2fd6.jpg",
+      "title": "NuLumin Bio Sciences CFC-1295 5mg pink cap vial render",
+      "alpha": false,
+      "size": "3000x2500",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "dce478af-83c0-4c0a-bc94-56950f3b1d79",
+      "product": "Epithalon 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/ref.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/bb5f9313e2de8b5a.jpg",
+      "title": "NuLumin Bio-Sciences Epithalon 10mg medical vial 3D render",
+      "alpha": true,
+      "size": "756x800",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e22f9953-9056-4dc5-a99d-e7a126486fac",
+      "product": "Epithalon 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "logo"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/Epithalon_10mg_blue.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/b450d3dc51e7cd3a.jpg",
+      "title": "NuLumin Epithalon 10mg vial 3D render with blue light streaks",
+      "alpha": false,
+      "size": "1080x1935",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "efaa4b59-136f-4dbd-bb3f-d242ecf8b120",
+      "product": "GHK-Cu 50mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "approved-output"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/ads/scenes/hero_caustics_4x5.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/5794400c29b2af74.jpg",
+      "title": "NuLumin GHK-Cu 50mg vial 3D render with purple caustics",
+      "alpha": false,
+      "size": "1080x1350",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1e0c6ff0-b837-4903-b083-c8cc9dfeff5d",
+      "product": "GHK-Cu 50mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/ads/vial_ghkcu.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/7d0d538d01097a00.jpg",
+      "title": "NuLumin Bio-Sciences GHK-Cu 50mg vial 3D render",
+      "alpha": true,
+      "size": "892x1924",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "eb6128fd-c559-4237-9e5e-2f04c3f70b61",
+      "product": "GHK-Cu 50mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/ads/scenes/hero_caustics_9x16.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/96d642f76fff7dec.jpg",
+      "title": "NuLumin GHK-Cu 50mg vial with purple cap and caustics",
+      "alpha": false,
+      "size": "1080x1920",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2bc41d94-d647-492b-b087-15486ff08c2e",
+      "product": "GHK-Cu 50mg vial",
+      "confidence": 1,
+      "quality": 0.98,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/ads/scenes/hero_cryo_9x16.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/a1b6e854f67b6fa6.jpg",
+      "title": "NuLumin GHK-Cu 50mg vial with cryogenic smoke effect",
+      "alpha": false,
+      "size": "1080x1920",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c3a0cc99-96b2-479e-8c0b-fc9054a920c6",
+      "product": "Klow Blend 80mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/ads/vial_klow.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/a6d667d47864510f.jpg",
+      "title": "NuLumin Klow Blend 80mg medical vial with blue cap on white background",
+      "alpha": true,
+      "size": "939x1382",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a1c3059f-c8ee-4682-ac57-ab3f06ac6d12",
+      "product": "Klow Blend 80mg, MOTS-C 10mg, NAD+ 250mg",
+      "confidence": 0.95,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "approved-output"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/ads/scenes/hero_causticsblue_4x5.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/a3d4bd5e76109df6.jpg",
+      "title": "Three NuLumin Bio-Sciences vials with Klow Blend, MOTS-C, and NAD+",
+      "alpha": false,
+      "size": "1080x1350",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "63c932f6-b347-4d3c-8c76-f12015f4159c",
+      "product": "Klow Blend 80mg, MOTS-C 10mg, NAD+ 250mg vials",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/ads/scenes/hero_causticsblue_9x16.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/938a84b93c5ebf58.jpg",
+      "title": "Three NuLumin Bio-Sciences peptide vials with Klow Blend, MOTS-C, NAD+",
+      "alpha": false,
+      "size": "1080x1920",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "77970a64-4f39-44eb-ab83-0c8e04bafb00",
+      "product": "MOTS-C 10mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/ads/vial_motsc.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/6f115a106367f87a.jpg",
+      "title": "NuLumin Bio-Sciences MOTS-C 10mg Peptide Vial 3D Render",
+      "alpha": true,
+      "size": "939x1382",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5adf2293-838d-4526-8018-31206584bdde",
+      "product": "NAD+ 250mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/ads/vial_nad.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/6d31e86f0be66b9a.jpg",
+      "title": "NuLumin Bio-Sciences NAD+ 250mg vial with blue cap",
+      "alpha": true,
+      "size": "939x1382",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "19b62b7c-c876-4e05-b89b-8e23d1469b39",
+      "product": "TB-500 5mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "local:brand-context",
+      "path": "NuLumin_BioSciences/ads/vial_tb500.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/8bb5deb464492ccf.jpg",
+      "title": "NuLumin Bio-Sciences TB-500 5mg vial transparent cutout",
+      "alpha": true,
+      "size": "892x1924",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    }
+  ]
 }

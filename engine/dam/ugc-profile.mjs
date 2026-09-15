@@ -43,7 +43,8 @@ export async function computeUgcProfiles(db, graph, { brand = undefined } = {}) 
   for (const brandId of brands) {
     const { rows } = await db.query(`select a.id, a.duration_s, a.orientation, a.quality, a.subclass, v.measured, v.transcript, v.read
       from dam.assets a join dam.video_analysis v on v.asset_id = a.id
-      where a.brand = $1 and a.class = 'ugc-video' and a.is_real_human = true and a.deleted_at is null and a.duplicate_of is null`, [brandId]);
+      where a.brand = $1 and a.is_real_human = true and a.deleted_at is null and a.duplicate_of is null
+        and (a.class = 'ugc-video' or coalesce((v.transcript->>'words')::int, 0) >= 8 or coalesce((v.read->'creator'->>'count')::int, 0) > 0)`, [brandId]);
     if (!rows.length) continue;
     const bands = {
       duration_s: band(rows.map((row) => row.duration_s)),

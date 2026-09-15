@@ -3,7 +3,7 @@
   "schema": "product-registry/1",
   "brand": "brand.dialed-moods",
   "displayName": "Dialed Moods",
-  "updatedAt": "2026-08-09",
+  "updatedAt": "2026-09-15",
   "logo": [
     {
       "path": "Brand Context/assets/Dialed_Moods/Dialed-Moods-Logo-Q4-Dec-2025.pdf",
@@ -384,5 +384,284 @@
       "Dialed Moods L-Doba Generations/Approved Single Cans Ingredients/trio-ingredients.png"
     ],
     "note": "approved trio/lineup shots covering multiple flavors at once"
-  }
+  },
+  "damCandidates": [
+    {
+      "assetId": "23913818-8661-4ac2-b6c5-d05c72e12182",
+      "product": "Black Cherry Vanilla Cognition Elixir",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "local:brand-context",
+      "path": "Dialed_Moods/Black-Cherry-Vanilla.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/3e44ba3f72aee3be.jpg",
+      "title": "Dialed Moods Black Cherry Vanilla Cognition Elixir can render",
+      "alpha": true,
+      "size": "1080x1080",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4e398fcc-84d0-4083-8fce-469056828adc",
+      "product": "Blue Glacier Cognition Elixir",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "local:brand-context",
+      "path": "Dialed_Moods/Blue-Glacier.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/1c3dda7eb0d5d659.jpg",
+      "title": "Dialed Moods Blue Glacier Cognition Elixir energy drink can render",
+      "alpha": true,
+      "size": "1080x1080",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3047d5f4-836e-43ab-ae22-6b381828f886",
+      "product": "DM-black-cherry-vanilla",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:main",
+      "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Creative Product Focused/L Dopa Energy Drink/Black Cherry Vanilla/BC-DSC06639.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/ab6a1385d79be0b5.jpg",
+      "title": "Dialed Moods Black Cherry Vanilla can with condensation on white background",
+      "alpha": false,
+      "size": "1642x2459",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "41021d49-650f-4e8b-a3b5-ba71b98537bc",
+      "product": "DM-black-cherry-vanilla",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:main",
+      "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Creative Product Focused/L Dopa Energy Drink/Black Cherry Vanilla/BC-DSC05644.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/e3524edf3ea56055.jpg",
+      "title": "Dialed Moods Black Cherry Vanilla can with cherries and vanilla bean on white risers",
+      "alpha": false,
+      "size": "3842x2568",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f9d77016-489e-4699-90cc-bb78f7ccdb25",
+      "product": "DM-black-cherry-vanilla",
+      "confidence": 1,
+      "quality": 0.9,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:main",
+      "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Creative Product Focused/L Dopa Energy Drink/Black Cherry Vanilla/DSC05917.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/7cf12b1572d4a60c.jpg",
+      "title": "Dialed Moods Black Cherry Vanilla can with cherries and vanilla beans",
+      "alpha": false,
+      "size": "3942x2748",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c96ddaa5-bdfc-4247-a6c6-10be3204328b",
+      "product": "DM-blue-glacier",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:main",
+      "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Creative Product Focused/L Dopa Energy Drink/Blue Glacier/BG-DSC06722.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/acd5def478accbe7.jpg",
+      "title": "Dialed Moods Blue Glacier energy drink can with blueberries on white surface",
+      "alpha": false,
+      "size": "1812x2714",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8ac9761e-4e92-4188-a4c8-658e9c63509a",
+      "product": "DM-blue-glacier",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:main",
+      "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Creative Product Focused/L Dopa Energy Drink/Blue Glacier/BG-DSC06635.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/7a951a4c80f3ffd2.jpg",
+      "title": "Dialed Moods Blue Glacier energy drink can with blueberries on blue background",
+      "alpha": false,
+      "size": "1727x2587",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9aa080a0-93c8-4407-9784-2bd2e647df53",
+      "product": "DM-blue-glacier",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:main",
+      "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Creative Product Focused/L Dopa Energy Drink/Blue Glacier/BG-DSC05377.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/36c7e3a6e3de2b83.jpg",
+      "title": "Dialed Moods Blue Glacier Cognition Elixir can with blueberries on white",
+      "alpha": false,
+      "size": "4178x2789",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "25bc3134-989d-49f4-87f9-1c30a5a46dcf",
+      "product": "DM-blue-glacier",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:main",
+      "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Creative Product Focused/L Dopa Energy Drink/Blue Glacier/BG-DSC05563.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/699f5f86648d711d.jpg",
+      "title": "Dialed Moods Blue Glacier energy drink can with blueberries on white background",
+      "alpha": false,
+      "size": "2689x3885",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4770193a-10c9-42e2-a45a-eb25de1d66a9",
+      "product": "DM-blue-glacier",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:main",
+      "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Creative Product Focused/L Dopa Energy Drink/Blue Glacier/BG-DSC05591.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/a3d721ff9b5f0546.jpg",
+      "title": "Dialed Moods Blue Glacier energy drink can with blueberries on white pedestal",
+      "alpha": false,
+      "size": "2648x3965",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ba3e916d-ea21-4a93-9da6-ae78421609b9",
+      "product": "DM-blue-glacier",
+      "confidence": 1,
+      "quality": 0.95,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:main",
+      "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Creative Product Focused/L Dopa Energy Drink/Blue Glacier/BG-DSC05557.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/2c97b62e181e8e12.jpg",
+      "title": "Dialed Moods Blue Glacier energy drink can with blueberries on white blocks",
+      "alpha": false,
+      "size": "3965x2648",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8efeaf75-82e8-43c6-8b4e-2f609f4261ce",
+      "product": "DM-sour-watermelon",
+      "confidence": 1,
+      "quality": 0.9,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:main",
+      "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Creative Product Focused/L Dopa Energy Drink/Sour Watermelon/W-DSC05431.jpg",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/60298a796862fee9.jpg",
+      "title": "Dialed Moods Sour Watermelon energy drink can packshot",
+      "alpha": false,
+      "size": "4074x2664",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9bb1229f-29ce-463c-abd8-d0358b11ccbd",
+      "product": "Lemonade Cognition Elixir",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "local:brand-context",
+      "path": "Dialed_Moods/Lemonade.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/c5a8e5732f16d98a.jpg",
+      "title": "Dialed Moods Lemonade Cognition Elixir Energy Drink Can Render",
+      "alpha": true,
+      "size": "1080x1080",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7c675e09-0cf8-4408-b39c-edf4c4d60717",
+      "product": "Lychee Moods",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "local:brand-context",
+      "path": "Dialed_Moods/Lychee.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/c1e56e83e1a48cd0.jpg",
+      "title": "Dialed Moods Lychee energy drink can 3D render on white background",
+      "alpha": true,
+      "size": "1080x1080",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4f02d3d5-328f-4d25-93b3-410f339f8942",
+      "product": "Sour Watermelon Candy Cognition Elixir",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "local:brand-context",
+      "path": "Dialed_Moods/Sour-Watermelon.png",
+      "thumb": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/181595d59f0876d6.jpg",
+      "title": "Dialed Moods Sour Watermelon Candy Cognition Elixir can render",
+      "alpha": true,
+      "size": "1080x1080",
+      "addedAt": "2026-09-15",
+      "status": "candidate"
+    }
+  ]
 }

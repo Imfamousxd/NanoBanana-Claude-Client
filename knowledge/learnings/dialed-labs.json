@@ -3,7 +3,7 @@
   "schema": "learning-registry/1",
   "brand": "brand.dialed-labs",
   "displayName": "Dialed Labs x UFC",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "stats": {
     "byProvider": {},
     "byCategory": {},
@@ -14,7 +14,749 @@
       "revise": 0
     }
   },
-  "laws": [],
-  "exemplars": [],
-  "events": []
+  "laws": [
+    {
+      "id": "ugc:brand.dialed-labs:duration-band",
+      "claim": "Real brand.dialed-labs creator videos run 5.06195-5.06195s (median 5.06195s); a generated piece outside 5.06195-14.058s is off the house corpus.",
+      "evidence": "measured on 11 real ugc-video assets",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "moderate",
+      "source": "dam.ugc_profiles/brand.dialed-labs (n=11, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 1,
+      "events": [],
+      "createdAt": "2026-09-15T03:11:55.463Z",
+      "updatedAt": "2026-09-15T03:11:55.463Z"
+    },
+    {
+      "id": "ugc:brand.dialed-labs:articulation-band",
+      "claim": "Real creators for brand.dialed-labs speak at 0.6-0.8 words per second of speech (median 0.8); scripts should be paced to that, not to wall-clock.",
+      "evidence": "transcript-measured on 11 assets",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "moderate",
+      "source": "dam.ugc_profiles/brand.dialed-labs (n=11, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 1,
+      "events": [],
+      "createdAt": "2026-09-15T03:11:55.463Z",
+      "updatedAt": "2026-09-15T03:11:55.463Z"
+    },
+    {
+      "id": "ugc:brand.dialed-labs:hook-lands-early",
+      "claim": "The first spoken sentence in real brand.dialed-labs creator videos ends by 5s (p75 5s); a hook that has not landed by then is late.",
+      "evidence": "first-segment end time across 11 assets",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "moderate",
+      "source": "dam.ugc_profiles/brand.dialed-labs (n=11, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 1,
+      "events": [],
+      "createdAt": "2026-09-15T03:11:55.463Z",
+      "updatedAt": "2026-09-15T03:11:55.463Z"
+    },
+    {
+      "id": "ugc:brand.dialed-labs:shot-rhythm",
+      "claim": "Real brand.dialed-labs creator videos carry 1-1 shots (median 1); the house register is a single unbroken take.",
+      "evidence": "scene-detect on 11 assets",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "moderate",
+      "source": "dam.ugc_profiles/brand.dialed-labs (n=11, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 1,
+      "events": [],
+      "createdAt": "2026-09-15T03:11:55.463Z",
+      "updatedAt": "2026-09-15T03:11:55.463Z"
+    },
+    {
+      "id": "ugc:brand.dialed-labs:loudness-band",
+      "claim": "Real brand.dialed-labs creator audio sits at -21 to -15.8 LUFS integrated; deliver generated pieces in that band.",
+      "evidence": "EBU R128 on 11 assets",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "moderate",
+      "source": "dam.ugc_profiles/brand.dialed-labs (n=11, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 1,
+      "events": [],
+      "createdAt": "2026-09-15T03:11:55.463Z",
+      "updatedAt": "2026-09-15T03:11:55.463Z"
+    },
+    {
+      "id": "ugc:brand.dialed-labs:dominant-framing",
+      "claim": "The dominant real-creator framing for brand.dialed-labs is \"full body shadow, centered\" (1 of 11); default generated UGC to it.",
+      "evidence": "model read of contact sheets",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "moderate",
+      "source": "dam.ugc_profiles/brand.dialed-labs (n=11, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 1,
+      "events": [],
+      "createdAt": "2026-09-15T03:11:55.463Z",
+      "updatedAt": "2026-09-15T03:11:55.463Z"
+    },
+    {
+      "id": "ugc:brand.dialed-labs:dominant-hook-type",
+      "claim": "Real brand.dialed-labs creators open with a \"visual reveal\" hook most often (8 of 11).",
+      "evidence": "model read of first 2s + transcript",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "moderate",
+      "source": "dam.ugc_profiles/brand.dialed-labs (n=11, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 1,
+      "events": [],
+      "createdAt": "2026-09-15T03:11:55.463Z",
+      "updatedAt": "2026-09-15T03:11:55.463Z"
+    },
+    {
+      "id": "ugc:brand.dialed-labs:reality-cues",
+      "claim": "The reality cues that recur in real brand.dialed-labs creator content are: motion blur; room tone; none; rain; reflections on wet ground. Use two or three of these, not a generic list.",
+      "evidence": "counted across the corpus",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "moderate",
+      "source": "dam.ugc_profiles/brand.dialed-labs (n=11, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 1,
+      "events": [],
+      "createdAt": "2026-09-15T03:11:55.464Z",
+      "updatedAt": "2026-09-15T03:11:55.464Z"
+    }
+  ],
+  "exemplars": [
+    {
+      "id": "dam_0ac5f83e-e9a9-4019-8f57-b0505198038b",
+      "eventId": null,
+      "createdAt": "2026-09-15T03:11:55.464Z",
+      "category": "ugc-video",
+      "product": null,
+      "provider": "human",
+      "model": null,
+      "prompt": null,
+      "refs": [],
+      "output": {
+        "path": "clip02-drone-runner-rain-v3-1080p.mp4",
+        "damAssetId": "0ac5f83e-e9a9-4019-8f57-b0505198038b"
+      },
+      "tracked": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/70de6f649824d304.jpg",
+      "preview": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/previews/70de6f649824d304.mp4",
+      "tags": [
+        "dam",
+        "real-human",
+        "product-clip"
+      ],
+      "reason": "Real creator content (quality 1); Dynamic Night Run in Rain",
+      "notes": "This short video features a muscular person running away from the camera on a wet road at night, with city lights visible in the background. Rain is clearly falling, creating reflections on the slick surface. The camera smoothly tracks the runner, maintaining a consistent distance and angle throughout the clip. The piece is likely a promotional asset for a fitness or performance brand, concluding with a voiceover expressing gratitude to the viewer.",
+      "origin": "dam"
+    },
+    {
+      "id": "dam_0bca3f66-e1b3-4473-9173-64ca4a930543",
+      "eventId": null,
+      "createdAt": "2026-09-15T03:11:55.493Z",
+      "category": "ugc-video",
+      "product": null,
+      "provider": "human",
+      "model": null,
+      "prompt": null,
+      "refs": [],
+      "output": {
+        "path": "clip02-drone-runner-rain-1080p.mp4",
+        "damAssetId": "0bca3f66-e1b3-4473-9173-64ca4a930543"
+      },
+      "tracked": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/deaf93d0bcf32254.jpg",
+      "preview": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/previews/deaf93d0bcf32254.mp4",
+      "tags": [
+        "dam",
+        "real-human",
+        "b-roll"
+      ],
+      "reason": "Real creator content (quality 1); Drone Shot of Runner on Wet Road at Dusk",
+      "notes": "The video features a single person running away from the camera on a wet, empty road at dusk or dawn. The camera, likely a drone, maintains a high, steady overhead shot, tracking the runner as they move down the long, straight road. The wet surface reflects the distant lights, creating a sense of solitude and determination. This clip appears to be b-roll footage intended for a fitness or athletic brand's marketing.",
+      "origin": "dam"
+    },
+    {
+      "id": "dam_21f3021a-8a47-4678-946b-052ab43e5f67",
+      "eventId": null,
+      "createdAt": "2026-09-15T03:11:55.528Z",
+      "category": "ugc-video",
+      "product": null,
+      "provider": "human",
+      "model": null,
+      "prompt": null,
+      "refs": [],
+      "output": {
+        "path": "Emily x Cold Plunge (1).mp4",
+        "damAssetId": "21f3021a-8a47-4678-946b-052ab43e5f67"
+      },
+      "tracked": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/ad893cb49a33e1bd.jpg",
+      "preview": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/previews/59faa525b1ed1028.mp4",
+      "tags": [
+        "dam",
+        "real-human",
+        "product-clip"
+      ],
+      "reason": "Real creator content (quality 1); Emily x Cold Plunge",
+      "notes": "This short marketing video features a woman experiencing the benefits of Dialed Labs' cold plunge and barrel sauna. It begins with her preparing for the cold plunge, showing her reactions to the cold, and then transitioning to her relaxed state after the plunge. The video concludes with her in a robe in front of a barrel sauna, implying a complete wellness routine. The piece is designed to showcase the products and their associated lifestyle.",
+      "origin": "dam"
+    },
+    {
+      "id": "dam_3a204a19-7191-425e-9f88-1c76817bc1a4",
+      "eventId": null,
+      "createdAt": "2026-09-15T03:11:55.552Z",
+      "category": "ugc-video",
+      "product": null,
+      "provider": "human",
+      "model": null,
+      "prompt": null,
+      "refs": [],
+      "output": {
+        "path": "clip01-bag-combo.mp4",
+        "damAssetId": "3a204a19-7191-425e-9f88-1c76817bc1a4"
+      },
+      "tracked": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/33aff2dbb4178847.jpg",
+      "preview": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/previews/33aff2dbb4178847.mp4",
+      "tags": [
+        "dam",
+        "real-human",
+        "product-clip"
+      ],
+      "reason": "Real creator content (quality 1); Intense Punching Bag Workout",
+      "notes": "A male athlete in a dimly lit gym performs a series of powerful punches and kicks on a heavy punching bag. The video captures the dynamic movement and impact of each strike, emphasizing strength and training intensity. This clip is likely used to promote a fitness-related brand or product, showcasing an active lifestyle or workout regimen.",
+      "origin": "dam"
+    },
+    {
+      "id": "dam_6975220e-4900-43be-923f-ddfa6b266925",
+      "eventId": null,
+      "createdAt": "2026-09-15T03:11:55.572Z",
+      "category": "ugc-video",
+      "product": null,
+      "provider": "human",
+      "model": null,
+      "prompt": null,
+      "refs": [],
+      "output": {
+        "path": "clip06-bag-pov-1080p.mp4",
+        "damAssetId": "6975220e-4900-43be-923f-ddfa6b266925"
+      },
+      "tracked": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/34822eeedaa265cc.jpg",
+      "preview": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/previews/34822eeedaa265cc.mp4",
+      "tags": [
+        "dam",
+        "real-human",
+        "b-roll"
+      ],
+      "reason": "Real creator content (quality 1); Person Boxing in Close-Up",
+      "notes": "This video features a close-up shot of a person wearing boxing gloves, repeatedly punching towards the camera. The focus is on the upper body, showcasing the movement and intensity of the boxing action. The footage appears to be b-roll, intended for use in a fitness or sports-related marketing piece, highlighting athletic performance.",
+      "origin": "dam"
+    },
+    {
+      "id": "dam_cb17399b-a549-4655-a184-01094b7e6a2b",
+      "eventId": null,
+      "createdAt": "2026-09-15T03:11:55.596Z",
+      "category": "ugc-video",
+      "product": null,
+      "provider": "human",
+      "model": null,
+      "prompt": null,
+      "refs": [],
+      "output": {
+        "path": "clip05-hands-shadowbox-v2-1080p.mp4",
+        "damAssetId": "cb17399b-a549-4655-a184-01094b7e6a2b"
+      },
+      "tracked": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/ede8565fcc4fa17c.jpg",
+      "preview": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/previews/ede8565fcc4fa17c.mp4",
+      "tags": [
+        "dam",
+        "real-human",
+        "b-roll"
+      ],
+      "reason": "Real creator content (quality 1); Person Shadowboxing with Hand Wraps",
+      "notes": "A person is shown from the chest up, wearing a dark t-shirt and black hand wraps, performing shadowboxing movements. The camera focuses tightly on their upper body and hands as they punch and move rhythmically. The clip captures a moment of intense physical activity, likely intended as b-roll footage for a fitness or training-related marketing piece.",
+      "origin": "dam"
+    },
+    {
+      "id": "dam_3524f0f0-bd0c-4688-97d0-2bd015d1026b",
+      "eventId": null,
+      "createdAt": "2026-09-15T03:11:55.617Z",
+      "category": "ugc-video",
+      "product": null,
+      "provider": "human",
+      "model": null,
+      "prompt": null,
+      "refs": [],
+      "output": {
+        "path": "clip04-rearview-jumprope-1080p.mp4",
+        "damAssetId": "3524f0f0-bd0c-4688-97d0-2bd015d1026b"
+      },
+      "tracked": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/94ed56518184a4c2.jpg",
+      "preview": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/previews/94ed56518184a4c2.mp4",
+      "tags": [
+        "dam",
+        "real-human",
+        "b-roll"
+      ],
+      "reason": "Real creator content (quality 1); Man Jump Roping in Backlit Studio",
+      "notes": "A man is filmed from behind, jump roping in a dark studio with strong blue backlighting. The video captures his continuous exercise, highlighting his physique and the dynamic motion of the jump rope. This piece is likely intended as b-roll footage for a fitness brand, showcasing physical activity and a stylized workout environment.",
+      "origin": "dam"
+    },
+    {
+      "id": "dam_361593c3-96b4-45dd-8540-c28407729fe0",
+      "eventId": null,
+      "createdAt": "2026-09-15T03:11:55.643Z",
+      "category": "ugc-video",
+      "product": null,
+      "provider": "human",
+      "model": null,
+      "prompt": null,
+      "refs": [],
+      "output": {
+        "path": "clip03-jump-rope-shadow-1080p.mp4",
+        "damAssetId": "361593c3-96b4-45dd-8540-c28407729fe0"
+      },
+      "tracked": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/6bdfbfcfccad3a5c.jpg",
+      "preview": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/previews/6bdfbfcfccad3a5c.mp4",
+      "tags": [
+        "dam",
+        "real-human",
+        "product-clip"
+      ],
+      "reason": "Real creator content (quality 1); Jump Rope Shadow Workout",
+      "notes": "This short video features the silhouette of a person performing jump rope exercises in a dramatically lit, minimalist room. The blue-teal lighting casts a prominent shadow against a concrete wall, highlighting the athletic movement. The clip maintains a consistent, rhythmic pace throughout the exercise. It serves as a stylized visual piece, likely intended for promotional content related to fitness or wellness products.",
+      "origin": "dam"
+    },
+    {
+      "id": "dam_29a5ac04-6b17-4bd5-89fc-89cb274c6973",
+      "eventId": null,
+      "createdAt": "2026-09-15T03:11:55.663Z",
+      "category": "ugc-video",
+      "product": null,
+      "provider": "human",
+      "model": null,
+      "prompt": null,
+      "refs": [],
+      "output": {
+        "path": "clip06-bag-pov-v2-1080p.mp4",
+        "damAssetId": "29a5ac04-6b17-4bd5-89fc-89cb274c6973"
+      },
+      "tracked": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/db55af05d37e6935.jpg",
+      "preview": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/previews/db55af05d37e6935.mp4",
+      "tags": [
+        "dam",
+        "real-human",
+        "product-clip"
+      ],
+      "reason": "Real creator content (quality 0.9); Man Boxing in Gym",
+      "notes": "This short video clip features a man in a grey athletic tank top and black boxing gloves, performing a series of rapid punches towards the camera. The camera maintains a close-up, torso-up shot, following his movements as he executes various boxing combinations. The setting appears to be a gym, with blurred equipment in the background. The clip concludes with the man speaking, \"Thanks for watching!\", serving as a brief promotional or concluding statement for content related to fitness or athletic performance.",
+      "origin": "dam"
+    },
+    {
+      "id": "dam_b9d16216-5a5d-4475-81be-34ec3fc742b8",
+      "eventId": null,
+      "createdAt": "2026-09-15T03:11:55.684Z",
+      "category": "ugc-video",
+      "product": null,
+      "provider": "human",
+      "model": null,
+      "prompt": null,
+      "refs": [],
+      "output": {
+        "path": "clip05-hands-shadowbox-v3-1080p.mp4",
+        "damAssetId": "b9d16216-5a5d-4475-81be-34ec3fc742b8"
+      },
+      "tracked": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/ffc100d30f53567f.jpg",
+      "preview": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/previews/ffc100d30f53567f.mp4",
+      "tags": [
+        "dam",
+        "real-human",
+        "b-roll"
+      ],
+      "reason": "Real creator content (quality 0.9); Man Shadow Boxing in Gym",
+      "notes": "A short clip shows a man in a gym performing shadow boxing drills. He is wearing a dark t-shirt and hand wraps, moving dynamically in front of a red punching bag. The camera focuses on his upper body and arms as he throws punches and ducks. This footage appears to be b-roll, likely intended for a marketing video related to fitness or recovery products.",
+      "origin": "dam"
+    },
+    {
+      "id": "dam_f65e49e7-6999-4fe5-aa05-f35d9132a7bf",
+      "eventId": null,
+      "createdAt": "2026-09-15T03:11:55.706Z",
+      "category": "ugc-video",
+      "product": null,
+      "provider": "human",
+      "model": null,
+      "prompt": null,
+      "refs": [],
+      "output": {
+        "path": "clip05-hands-shadowbox-1080p.mp4",
+        "damAssetId": "f65e49e7-6999-4fe5-aa05-f35d9132a7bf"
+      },
+      "tracked": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/dc615a52cf137189.jpg",
+      "preview": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/previews/dc615a52cf137189.mp4",
+      "tags": [
+        "dam",
+        "real-human",
+        "b-roll"
+      ],
+      "reason": "Real creator content (quality 0.9); Person Shadowboxing in a Gym",
+      "notes": "This video clip features a person, framed from the waist up, engaged in shadowboxing within a dimly lit gym setting. The individual performs a series of punches and defensive maneuvers, showcasing athletic movements and focus. The footage appears to be b-roll, suitable for use in fitness or training-related marketing content, potentially as an introductory or concluding segment.",
+      "origin": "dam"
+    }
+  ],
+  "events": [],
+  "ugcProfile": {
+    "sampleSize": 11,
+    "bands": {
+      "words": {
+        "n": 11,
+        "max": 4,
+        "min": 1,
+        "p25": 3,
+        "p75": 4,
+        "median": 4
+      },
+      "ratios": [
+        {
+          "n": 11,
+          "value": "9:16"
+        }
+      ],
+      "avg_shot_s": {
+        "n": 11,
+        "max": 5.09,
+        "min": 4.69,
+        "p25": 5.06,
+        "p75": 5.06,
+        "median": 5.06
+      },
+      "duration_s": {
+        "n": 11,
+        "max": 14.058,
+        "min": 5.06195,
+        "p25": 5.06195,
+        "p75": 5.06195,
+        "median": 5.06195
+      },
+      "hook_end_s": {
+        "n": 11,
+        "max": 14.04,
+        "min": 0.5,
+        "p25": 4.96,
+        "p75": 5,
+        "median": 5
+      },
+      "shot_count": {
+        "n": 11,
+        "max": 3,
+        "min": 1,
+        "p25": 1,
+        "p75": 1,
+        "median": 1
+      },
+      "motion_mean": {
+        "n": 11,
+        "max": 0.131,
+        "min": 0.0138,
+        "p25": 0.0413,
+        "p75": 0.105,
+        "median": 0.098
+      },
+      "loudness_lufs": {
+        "n": 11,
+        "max": -14.5,
+        "min": -26.7,
+        "p25": -21,
+        "p75": -15.8,
+        "median": -17.9
+      },
+      "articulation_wps": {
+        "n": 11,
+        "max": 2.44,
+        "min": 0.21,
+        "p25": 0.6,
+        "p75": 0.8,
+        "median": 0.8
+      }
+    },
+    "patterns": {
+      "forms": [
+        {
+          "n": 6,
+          "value": "b-roll"
+        },
+        {
+          "n": 5,
+          "value": "product-clip"
+        }
+      ],
+      "music": [
+        {
+          "n": 9,
+          "value": "none"
+        },
+        {
+          "n": 1,
+          "value": "driving, atmospheric track, likely instrumental, to enhance the dynamic and moody visuals."
+        },
+        {
+          "n": 1,
+          "value": "driving track"
+        }
+      ],
+      "energies": [
+        {
+          "n": 2,
+          "value": "focused, athletic"
+        },
+        {
+          "n": 2,
+          "value": "focused, intense"
+        },
+        {
+          "n": 1,
+          "value": "focused, rhythmic, active"
+        },
+        {
+          "n": 1,
+          "value": "intense, focused"
+        },
+        {
+          "n": 1,
+          "value": "determined, powerful"
+        },
+        {
+          "n": 1,
+          "value": "experiencing cold, then relaxed and happy."
+        },
+        {
+          "n": 1,
+          "value": "determined, steady"
+        },
+        {
+          "n": 1,
+          "value": "focused and intense"
+        }
+      ],
+      "framings": [
+        {
+          "n": 1,
+          "value": "full body shadow, centered"
+        },
+        {
+          "n": 1,
+          "value": "waist-up, full body in some frames, dynamic"
+        },
+        {
+          "n": 1,
+          "value": "full body, back shot, running away from camera"
+        },
+        {
+          "n": 1,
+          "value": "full body, rear view"
+        },
+        {
+          "n": 1,
+          "value": "waist-up to full body in the plunge, then full body in a robe."
+        },
+        {
+          "n": 1,
+          "value": "torso-up, close-up on upper body and arms"
+        },
+        {
+          "n": 1,
+          "value": "torso and arms, close-up, punching towards camera"
+        },
+        {
+          "n": 1,
+          "value": "overhead shot, runner moving away from camera"
+        }
+      ],
+      "settings": [
+        {
+          "n": 1,
+          "value": "a dark"
+        },
+        {
+          "n": 1,
+          "value": "a dimly lit gym with a dark floor and a brick wall in the background"
+        },
+        {
+          "n": 1,
+          "value": "wet city street or bridge at night"
+        },
+        {
+          "n": 1,
+          "value": "a dark studio with a brick wall background"
+        },
+        {
+          "n": 1,
+          "value": "outdoors with lush greenery"
+        },
+        {
+          "n": 1,
+          "value": "indoor gym or training facility"
+        },
+        {
+          "n": 1,
+          "value": "indoor setting with a dark"
+        },
+        {
+          "n": 1,
+          "value": "an empty"
+        }
+      ],
+      "hook_types": [
+        {
+          "n": 8,
+          "value": "visual reveal"
+        },
+        {
+          "n": 1,
+          "value": "none"
+        },
+        {
+          "n": 1,
+          "value": "other"
+        },
+        {
+          "n": 1,
+          "value": "pattern interrupt"
+        }
+      ],
+      "cta_present": {
+        "with": 4,
+        "without": 7
+      },
+      "camera_reads": [
+        {
+          "n": 6,
+          "value": "moving"
+        },
+        {
+          "n": 3,
+          "value": "handheld-erratic"
+        },
+        {
+          "n": 2,
+          "value": "mostly-still"
+        }
+      ],
+      "imperfections": [
+        {
+          "n": 4,
+          "value": "motion blur"
+        },
+        {
+          "n": 2,
+          "value": "room tone"
+        },
+        {
+          "n": 1,
+          "value": "none"
+        },
+        {
+          "n": 1,
+          "value": "rain"
+        },
+        {
+          "n": 1,
+          "value": "reflections on wet ground"
+        },
+        {
+          "n": 1,
+          "value": "handheld drift"
+        },
+        {
+          "n": 1,
+          "value": "slight camera shake"
+        },
+        {
+          "n": 1,
+          "value": "reflections on wet surface"
+        },
+        {
+          "n": 1,
+          "value": "camera drift"
+        }
+      ],
+      "camera_behaviors": [
+        {
+          "n": 2,
+          "value": "handheld drift, following the subject's movements"
+        },
+        {
+          "n": 1,
+          "value": "static with minimal jitter"
+        },
+        {
+          "n": 1,
+          "value": "static, slight handheld drift"
+        },
+        {
+          "n": 1,
+          "value": "smooth tracking shot, following the runner from behind"
+        },
+        {
+          "n": 1,
+          "value": "mostly-still"
+        },
+        {
+          "n": 1,
+          "value": "handheld drift with some static shots when the subject is in the plunge."
+        },
+        {
+          "n": 1,
+          "value": "mostly static with slight handheld drift, following the punching action"
+        },
+        {
+          "n": 1,
+          "value": "smooth tracking shot, moving forward with the runner"
+        }
+      ]
+    },
+    "computedAt": "2026-09-15T03:11:53.883Z",
+    "source": "dam.ugc_profiles"
+  }
 }
