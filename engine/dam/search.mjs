@@ -108,7 +108,8 @@ const SELECT = "id, source_id, path, name, kind, brand, class, subclass, product
 
 export async function searchAssets(db, graph, query, { filters: extra = {}, limit = 20, rerank = false, config = null, products = [] } = {}) {
   const parsed = parseQuery(query, graph, products);
-  const filters = { ...parsed.filters, ...extra };
+  const explicit = Object.fromEntries(Object.entries(extra).filter(([, value]) => value !== undefined && value !== null && value !== ""));
+  const filters = { ...parsed.filters, ...explicit };
   if (extra.brand) filters.brand = resolveBrand(graph, extra.brand)?.id || extra.brand;
   const text = parsed.residual || query;
   const candidates = new Map();
@@ -145,9 +146,9 @@ export async function searchAssets(db, graph, query, { filters: extra = {}, limi
     }
   }
   // 3. relax parsed (not caller-supplied) filters when they starve the result: "packaging" must not hide a packshot
-  const parsedKeys = Object.keys(parsed.filters).filter((key) => !(key in extra) && !/Alias$/.test(key));
+  const parsedKeys = Object.keys(parsed.filters).filter((key) => !(key in explicit) && !/Alias$/.test(key));
   if (parsedKeys.length) {
-    const relaxed = { ...(extra.brand ? { brand: filters.brand } : {}), ...(extra.class ? { class: filters.class } : {}), kind: filters.kind };
+    const relaxed = { ...(explicit.brand ? { brand: filters.brand } : {}), ...(explicit.class ? { class: filters.class } : {}), kind: filters.kind };
     const params = [];
     const where = whereClause(relaxed, params);
     params.push(text);
