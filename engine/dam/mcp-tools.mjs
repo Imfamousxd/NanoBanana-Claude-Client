@@ -64,6 +64,13 @@ export function createDamTools(root, graph) {
       handler: async () => getDb().stats(),
     },
     {
+      name: "dam_products",
+      title: "Product names the DAM has seen",
+      description: "Every product name the vision model identified in analysed assets, per brand, with counts — the vocabulary to use in dam_search when a product is not in the registry.",
+      inputSchema: { brand: brandField },
+      handler: async ({ brand }) => { const b = brandOf(brand); return { products: (await getDb().query(`select brand, product, count(*)::int as n from dam.assets where product is not null and status in ('analyzed','embedded') and deleted_at is null ${b ? "and brand = $1" : ""} group by 1,2 order by 1, 3 desc`, b ? [b] : [])).rows }; },
+    },
+    {
       name: "dam_status",
       title: "Digestion health",
       description: "Is ingestion live and keeping up? Per-source cursor age and backlog, throughput per stage in the last hour, queue depth, worker heartbeats, dead jobs by error, spend, and the median latency from a file's Dropbox modification to its index row and probe. Free.",

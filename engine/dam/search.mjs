@@ -108,6 +108,14 @@ const SELECT = "id, source_id, path, name, kind, brand, class, subclass, product
 
 export async function searchAssets(db, graph, query, { filters: extra = {}, limit = 20, rerank = false, config = null, products = [] } = {}) {
   const parsed = parseQuery(query, graph, products);
+  if (!parsed.filters.product) {
+    // product names the model has identified: longest one contained in the query wins
+    const { rows } = await db.query("select distinct product from dam.assets where product is not null and length(product) >= 4 and status in ('analyzed','embedded')");
+    const lower = ` ${query.toLowerCase()} `;
+    let best = null;
+    for (const row of rows) { const name = row.product.toLowerCase(); if (lower.includes(` ${name} `) && (!best || name.length > best.length)) best = name; }
+    if (best) { parsed.filters.product = best; parsed.filters.productAlias = best; parsed.residual = parsed.residual.replace(best, " ").trim(); }
+  }
   const explicit = Object.fromEntries(Object.entries(extra).filter(([, value]) => value !== undefined && value !== null && value !== ""));
   const filters = { ...parsed.filters, ...explicit };
   if (extra.brand) filters.brand = resolveBrand(graph, extra.brand)?.id || extra.brand;

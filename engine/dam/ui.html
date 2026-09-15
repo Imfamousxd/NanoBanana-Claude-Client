@@ -35,7 +35,7 @@ dialog::backdrop{background:rgba(0,0,0,.45)}
 </style></head><body>
 <header>
   <h1>Asset library</h1>
-  <input id="q" type="search" placeholder="Try: vertical ugc of someone unboxing · muha logo transparent · flyer with giveaway · product render on black" autofocus>
+  <datalist id="names"></datalist><input id="q" type="search" list="names" placeholder="Try: vertical ugc of someone unboxing · muha logo transparent · flyer with giveaway · product render on black" autofocus>
   <select id="brand"><option value="">All brands</option></select>
   <select id="class"><option value="">All types</option></select>
   <select id="orientation"><option value="">Any shape</option><option>9:16</option><option>4:5</option><option>1:1</option><option>16:9</option></select>
@@ -70,6 +70,8 @@ const an=a.analysis||{};const rows=[["Brand",a.brand],["Type",(a.class||"")+(a.s
 $("#dlg").innerHTML='<div class="detail"><div class="media">'+media+(a.similar&&a.similar.length?'<p class="k">Visually similar</p><div class="grid" style="grid-template-columns:repeat(4,1fr)">'+a.similar.slice(0,8).map(s=>'<div class="card" data-id="'+s.id+'"><div class="thumb">'+(s.thumb?'<img src="'+esc(s.thumb)+'">':'')+'</div></div>').join("")+'</div>':'')+'</div><div><h2>'+esc(a.title||a.name)+'</h2><p>'+esc(a.summary||"")+'</p>'+rows.filter(r=>r[1]!==null&&r[1]!==undefined&&r[1]!=="").map(r=>'<p><span class="k">'+r[0]+':</span> '+esc(r[1])+'</p>').join("")+(an.scene||an.setting?'<p><span class="k">Scene:</span> '+esc(an.scene||an.setting)+'</p>':'')+(an.capture?'<p><span class="k">Capture:</span> '+esc(an.capture.device_read+"; "+an.capture.camera_behavior+"; "+(an.capture.imperfections||[]).join(", "))+'</p>':'')+(an.structure?'<p><span class="k">Hook:</span> '+esc(an.structure.hook)+' ('+esc(an.structure.hook_type)+')</p>':'')+(v.transcript&&v.transcript.text?'<p class="k">Transcript</p><pre>'+esc(v.transcript.text)+'</pre>':'')+(an.on_image_text&&an.on_image_text.length?'<p><span class="k">Text on image:</span> '+esc(an.on_image_text.join(" | "))+'</p>':'')+'<p class="k">Tags: '+esc((a.tags||[]).join(", "))+'</p><div class="verdict"><button data-v="approved">Approve as reference</button><button data-v="rejected">Reject (do not use)</button><button data-close>Close</button></div></div></div>';
 $("#dlg").showModal();$("#dlg").onclick=async(e)=>{const c=e.target.closest("[data-id]");if(c){open(c.dataset.id);return}if(e.target.dataset.close){$("#dlg").close();return}if(e.target.dataset.v){const reason=prompt("Reason (one line):");if(!reason)return;await api("/api/asset/"+a.id+"/verdict",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({verdict:e.target.dataset.v,reason,roles:e.target.dataset.v==="approved"?["canonical"]:[]})});$("#dlg").close();search()}}}
 $("#go").onclick=search;$("#q").addEventListener("keydown",e=>{if(e.key==="Enter")search()});for(const id of["brand","class","orientation","human"])$("#"+id).addEventListener("change",search);
+async function names(){const b=$("#brand").value;const r=await api("/api/products"+(b?"?brand="+encodeURIComponent(b):""));$("#names").innerHTML=r.products.slice(0,300).map(p=>'<option value="'+esc((p.brand||"").replace("brand.","")+" "+p.product)+'">').join("")}
+$("#brand").addEventListener("change",names);names();
 $("#out").addEventListener("click",e=>{const c=e.target.closest("[data-id]");if(c)open(c.dataset.id)});
 init();
 </script></body></html>
