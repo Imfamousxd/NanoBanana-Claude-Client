@@ -175,8 +175,8 @@ export function mediaKindForName(name) {
   return KIND_BY_EXTENSION[extension] || "other";
 }
 
-export function isAnalyzableKind(kind) {
-  return kind === "image" || kind === "video";
+export function isAnalyzableKind(kind, extension = "") {
+  return kind === "image" || kind === "video" || (kind === "document" && String(extension).toLowerCase() === "pdf");
 }
 
 /** Lightweight, deterministic hints from the path/filename. Hints only: the model decides. */

@@ -215,6 +215,21 @@ export async function extractAudio(filePath, outPath, { maxSeconds = 900 } = {})
   return outPath;
 }
 
+/** Page 1 of a PDF as a JPEG: pdftoppm (Linux/Docker) or sips (macOS). Returns the path or null. */
+export async function renderPdfFirstPage(filePath, outPath) {
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+  const stem = outPath.replace(/\.jpg$/i, "");
+  try {
+    await run("pdftoppm", ["-jpeg", "-r", "110", "-f", "1", "-l", "1", "-singlefile", filePath, stem], { maxBuffer: 1024 * 1024 });
+    if (fs.existsSync(`${stem}.jpg`)) return `${stem}.jpg`;
+  } catch { /* no poppler here */ }
+  try {
+    await run("sips", ["-s", "format", "jpeg", filePath, "--out", outPath], { maxBuffer: 1024 * 1024 });
+    if (fs.existsSync(outPath)) return outPath;
+  } catch { /* not macOS */ }
+  return null;
+}
+
 /** Probe any file: returns a normalised technical record. Videos also get a first-frame phash. */
 export async function probeFile(filePath, workDir) {
   const kind = mediaKindForName(filePath);
@@ -222,6 +237,11 @@ export async function probeFile(filePath, workDir) {
   const base = { kind, bytes: stat.size, contentHash: await sha256File(filePath) };
   if (kind === "image") {
     try { return { ...base, ...(await probeImage(filePath)) }; } catch (error) { return { ...base, error: `image probe: ${error.message}` }; }
+  }
+  if (kind === "document" && /\.pdf$/i.test(filePath)) {
+    const rendered = await renderPdfFirstPage(filePath, path.join(workDir, "pdf", `${base.contentHash.slice(0, 16)}.jpg`));
+    if (!rendered) return { ...base, error: "pdf render: no pdftoppm or sips available" };
+    try { const image = await probeImage(rendered); return { ...base, ...image, kind: "document", pdfRender: rendered }; } catch (error) { return { ...base, error: `pdf probe: ${error.message}` }; }
   }
   if (kind === "video") {
     try {

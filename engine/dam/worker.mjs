@@ -72,7 +72,7 @@ export class DamWorker {
       const videos = [];
       for (const row of rows) {
         if (row.inserted) counts.new += 1; else if (row.status === "discovered" && isAnalyzableKind(row.kind)) counts.changed += 1;
-        if (row.status === "discovered" && isAnalyzableKind(row.kind)) (row.kind === "image" ? images : videos).push(row.id);
+        if (row.status === "discovered" && isAnalyzableKind(row.kind, row.path.split(".").pop())) (row.kind === "video" ? videos : images).push(row.id);
       }
       // New uploads found by an incremental (cursor) scan jump the backfill queue: the library is live.
       const live = source.kind === "dropbox" && Boolean(source.cursor) && !full;
@@ -178,7 +178,7 @@ export class DamWorker {
       // proxies: thumb for both; a short preview for video
       const stem = probe.contentHash.slice(0, 16);
       const proxies = {};
-      const thumbSource = asset.kind === "video" ? probe.firstFrame : localPath;
+      const thumbSource = asset.kind === "video" ? probe.firstFrame : asset.kind === "document" ? probe.pdfRender : localPath;
       if (thumbSource) {
         try {
           const thumb = await makeThumb(thumbSource, path.join(this.config.workDir, "thumbs", `${stem}.jpg`), this.config.thumbWidth);
@@ -238,7 +238,14 @@ export class DamWorker {
     const brandHint = source.brand_hint;
     const common = { filePath: localPath, relativePath: `${source.kind === "dropbox" ? source.root : path.basename(source.root)}/${asset.path}`, probe, brandHint, cards: this.cards, config: this.config, workDir: this.config.workDir, brandName: brandHint ? this.brandName(brandHint) : null };
     try {
-      if (asset.kind === "image") {
+      if (asset.kind === "image" || (asset.kind === "document" && asset.extension === "pdf")) {
+        if (asset.kind === "document") {
+          const { renderPdfFirstPage } = await import("./probe.mjs");
+          const rendered = await renderPdfFirstPage(localPath, path.join(this.config.workDir, "pdf", `${(asset.content_hash || asset.id).slice(0, 16)}.jpg`));
+          if (!rendered) throw new Error("pdf render failed (needs pdftoppm or sips)");
+          common.filePath = rendered;
+          common.relativePath = `${common.relativePath} (PDF page 1 of a print/label file)`;
+        }
         const result = await analyzeImageFile(common);
         await this.db.recordSpend({ assetId, provider: result.analyzer.vision.provider, model: result.analyzer.vision.model, kind: "vision", usd: result.usd, tokensIn: result.usage?.tokensIn, tokensOut: result.usage?.tokensOut });
         await this.db.saveAnalysis(assetId, { record: result.record, analyzer: result.analyzer, searchDoc: result.searchDoc, ocrText: result.ocrText, subclass: result.record.subclass || null });
