@@ -151,14 +151,14 @@ export async function searchAssets(db, graph, query, { filters: extra = {}, limi
     const params = [];
     const where = whereClause(relaxed, params);
     params.push(text);
-    const { rows } = await db.query(`select ${SELECT}, ts_rank_cd(tsv, websearch_to_tsquery('english', ${params.length})) as rank from dam.assets where ${where} and tsv @@ websearch_to_tsquery('english', ${params.length}) order by rank desc limit 40`, params);
+    const { rows } = await db.query(`select ${SELECT}, ts_rank_cd(tsv, websearch_to_tsquery('english', $${params.length})) as rank from dam.assets where ${where} and tsv @@ websearch_to_tsquery('english', $${params.length}) order by rank desc limit 40`, params);
     rows.forEach((row, index) => add(row, "lexical-relaxed", index + 5, { relaxed: parsedKeys.join(",") }));
     if (queryVector) {
       for (const column of ["embedding_text", "embedding_visual"]) {
         const p2 = [];
         const w2 = whereClause(relaxed, p2);
         p2.push(toPgVector(queryVector.vector));
-        const { rows: vrows } = await db.query(`select ${SELECT}, 1 - (${column} <=> ${p2.length}::vector) as similarity from dam.assets where ${w2} and ${column} is not null order by ${column} <=> ${p2.length}::vector limit 40`, p2);
+        const { rows: vrows } = await db.query(`select ${SELECT}, 1 - (${column} <=> $${p2.length}::vector) as similarity from dam.assets where ${w2} and ${column} is not null order by ${column} <=> $${p2.length}::vector limit 40`, p2);
         vrows.forEach((row, index) => add(row, column === "embedding_text" ? "semantic-relaxed" : "visual-relaxed", index + 5, { similarity: Number(row.similarity).toFixed(3), relaxed: parsedKeys.join(",") }));
       }
     }
