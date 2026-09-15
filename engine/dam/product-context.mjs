@@ -27,6 +27,13 @@ export function compositionOf(asset) {
   const analysis = asset.analysis || {};
   if (analysis.composition && analysis.composition !== "n/a") return analysis.composition;
   if (asset.class === "packaging-collateral") return /label|dieline|print|artwork/.test(String(asset.subclass)) ? "label-flat" : "packaging-only";
+  // The team's own folder names are a strong hint ("Magnetic Dispos Devices_Only", "Display Boxes", "Lineup").
+  const folder = `${asset.flags?.render?.leaf || ""} ${asset.flags?.render?.line || ""}`.toLowerCase();
+  if (/devices?[ _-]?only|device[ _-]?renders?|\bdevices?\b/.test(folder) && !/box|display|case/.test(folder)) return "device-only";
+  if (/display ?box|display ?case|master ?case|\bcases?\b|\btrays?\b|\d+ ?(pk|pack|ct)\b/.test(folder)) return "multi-pack";
+  if (/\bboxes?\b|bags?\b|packaging/.test(folder)) return "packaging-only";
+  if (/line ?ups?|family|range|all flavou?rs/.test(folder)) return "lineup";
+  if (/dieline|label|print/.test(folder)) return "label-flat";
   switch (asset.subclass) {
     case "device-render": return "device-only";
     case "packaging-render": return "packaging-only";
