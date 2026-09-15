@@ -200,7 +200,29 @@ enriched by the paid vision pass second.
 | Pricing | `dam candidates` / `dam_render_candidates` → per-brand toAnalyse + USD (`$0.0019` per image) | done |
 | Content-gen tie-in | `context_pack` → `damContext` searches product-ref roles; `sync-kg` writes `damCandidates` into `knowledge/products/<brand>.json` | existing; run `sync-kg` after the paid pass |
 
-**The paid pass (awaiting approval).** Estimated from the price table (real spend has run ≈ 40 % above
+**The paid pass — APPROVED and RUNNING since 2026-09-15 ~16:00 PT.** User: "lets get analysis going to
+where we're processing all potential assets". Scope: every flagged render candidate, all four brands
+(8,665 files). Runs on the Mac (`dam work --once --kinds analyze,embed --approve --auto-only`,
+concurrency 12, `DAM_WORK_DIR=/tmp/dam-work`, cap 30, log in the session scratchpad
+`render-pass.log`) **and** on Railway (`DAM_AUTO_PRODUCT_REFS=1`, `DAM_AUTO_CAP_USD=30` set
+2026-09-15). Throughput ≈ 47 analyses/min after the sliding-pool fix (`bd629cf`); real cost
+≈ $0.0015/file → ≈ $13 total. Progress: `select count(*) from dam.assets where flags->>'candidate'='product-ref' and status in ('analyzed','embedded')`.
+Every analysis in this pass records **angle** and **composition** (device-only / packaging-only /
+device-with-packaging / multi-pack / label-flat / lineup / in-hand / in-scene) — added to the schema
+before launch (`75c5eaf`). The ~475 sample analyses from before lack them (folder-name hints cover most).
+
+**Product reference kit (`engine/dam/product-context.mjs`, `a36eac3`).** The end goal: a user names a
+product and the content they want, and the content-gen MCP retrieves the right references itself.
+`resolveProductReferences(brand, product, intent)` → identity (canonical look: packaging + device for
+Muha, the container for Dialed / NuLumin) · device (device / can / vial alone) · packaging · one best
+file per angle · transparent cutout · flat label · lineup · avoid (discontinued / outdated / rejected),
+plus `recommended` (2–4 picks driven by the intent words) and `coverage.missing`. Ranking: team
+verdict > approved folder > not discontinued > quality > version > canonical role > resolution > alpha.
+Product matching: vision product string > folder line/leaf > file name / title, with registry aliases.
+Surfaces: `context_pack` (a "Product references (DAM)" block per product the brief names),
+MCP `dam_product_refs`, CLI `dam refs "<product>" --brand <b> --intent "<what>"`.
+
+**Estimates as presented before approval:** Estimated from the price table (real spend has run ≈ 40 % above
 estimate on samples):
 
 | Scope | Files | Est. USD |
@@ -227,9 +249,10 @@ products); the vision product string + folder line is the working product key. D
 
 ## 6. Remaining plan
 
-1. **Get the go for the product-render paid pass (§8) and run it** — Muha first, then the other brands.
-2. Judge the Products view with the user; refine the folder rule after the Dropbox-owner meeting.
-3. Enable auto-intake on Railway (`DAM_AUTO_PRODUCT_REFS=1`, `DAM_AUTO_CAP_USD`) once approved, so inbound renders are analysed as they land.
+1. Let the render pass finish (check progress; restart the local run if it died: same command as §8). Then `dam sync-kg` per brand.
+2. Walk the user through the kit logic (they asked to clarify it after the pass) and judge `dam refs` on real products: Muha device-only vs packaging vs display box; Dialed angles.
+3. Re-analyse the ~475 pre-pass sample assets so they carry angle/composition (`dam reanalyze`, ≈ $0.70).
+4. Auto-intake is ON on Railway (cap $30/day) — inbound renders are analysed as they land.
 4. (parked) finish the packaging sample (§5) and categories 3–9 (§3).
 4. Real UGC coverage: approve analysis of the `dropbox:media:*` video sources
    (`node engine/cli.mjs dam work --once --approve --source dropbox:media --kinds analyze,embed`),
