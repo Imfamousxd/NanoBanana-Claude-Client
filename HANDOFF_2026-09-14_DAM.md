@@ -378,3 +378,7 @@ Waiting on the user: more row corrections; names/handling for the "no SKU row" f
 - UGC profile must require speech, or shadowboxing B-roll pollutes it.
 - Search: caller-supplied `undefined` filters must not erase parsed ones; brand is never relaxed;
   results below 25 % of the top score are dropped (user: "if it isn't a perfect match, leave it out").
+
+**Row corrections queued (2026-09-16, not yet applied):**
+- Sour Apple (edibles): assets fine but no solid single (device-only) render exists — verify in the future when more renders arrive.
+- AZ004 / NJ003 "Classic Flavor Line, infused" (Mates Metal Cans): the Vanilla Cookies renders assigned there are Muha Mates assets, not the Classic line → add a wall between the Classic line and Mates renders (Classic ≠ Mates), then rebuild the pages with `engine/skus/render-map-page.mjs` and republish both URLs.
