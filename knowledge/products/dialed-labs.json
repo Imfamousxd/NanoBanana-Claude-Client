@@ -3,7 +3,7 @@
   "schema": "product-registry/1",
   "brand": "brand.dialed-labs",
   "displayName": "Dialed Labs",
-  "updatedAt": "2026-08-09",
+  "updatedAt": "2026-09-16",
   "logo": [
     {
       "path": "email_campaigns/dialed_labs/assets/logo_dialed_raw.png",
@@ -311,5 +311,2815 @@
       "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/ufc_recovery_v2_c2.png",
       "email_campaigns/dialed_labs/airbnb_outreach/catalog/images/ufc_recovery.jpg"
     ]
-  }
+  },
+  "damCandidates": [
+    {
+      "assetId": "0c9a5075-6a93-4e81-a875-7a858681c953",
+      "product": "Blackout Goggles",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Blackout Goggles/BlackoutGoggles_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cd71992feeabf2f5.jpg",
+      "title": "Blackout Goggles 3D Render on Light Grey Background",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8e4ab564-d3a8-454a-af46-03f248515abb",
+      "product": "Chamber Concentrator",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/Features/Chamber Concentrator/Chamber_Concentrator_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0f3dff530d5f8b65.jpg",
+      "title": "Dialed Labs Chamber Concentrator front view 3D render",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e1e1d44b-97cc-4425-a835-487d648be8cd",
+      "product": "chiller unit",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/Chiller/Chiller_Front_wLogo_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/940f8175477869f4.jpg",
+      "title": "Dialed Labs Chiller Unit Front Three-Quarter Render with Logo",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e2df1a82-df2b-4c20-9137-3e45f9d9aeec",
+      "product": "chiller unit",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/Chiller/Chiller_45_Top_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f2dbbf6eabaabde8.jpg",
+      "title": "Black industrial chiller unit with digital display on white background",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5ab81aa6-8d01-4a0c-b4b8-9a5cb7e39e81",
+      "product": "Dialed Labs Sauna Essential Oil 4-pack (Orange, Jasmine, Lemon, Grapefruit)",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Essential Oils/Fruity/EssentialOils_Box_Open_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ee9d2ef6d7b3190a.jpg",
+      "title": "Dialed Labs Sauna Essential Oil 4-pack in open black box render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "032790cc-ab68-4e2b-81dc-69122e9503d5",
+      "product": "DL-air-plunge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Air Plunge (CT-02)/Air Pod UFC/AirPod_UFC_45_02.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f583f84e5733a8c0.jpg",
+      "title": "Black Dialed Labs UFC Air Plunge ice bath 3D render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "bbe38f98-9e4a-4227-8e00-3260307244e4",
+      "product": "DL-air-plunge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Air Plunge (CT-02)/CT_02_with_Shadow_no_Chiller_Front_02.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/38bb2e579e77aaa5.jpg",
+      "title": "Dialed Labs Air Plunge ice bath front view 3D render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "be27fb91-61ac-48bd-bac1-892da143628f",
+      "product": "DL-barrel-sauna",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/Barrel Sauna (BS-1815)/Past Renders/BarrelSauna_45_2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3d98694e624094a1.jpg",
+      "title": "3D render of Dialed Labs barrel sauna with black roof and glass door",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "be090205-77e9-498b-a6f1-3171e459ca9e",
+      "product": "DL-barrel-sauna",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/Barrel Sauna (BS-1815)/Past Renders/OLD BS-1815_with_Shadows/BarrelSauna_Front_2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2fa0d1973a0138a4.jpg",
+      "title": "Dialed Labs Barrel Sauna Front View 3D Render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3458fa79-f274-4a49-835b-d088190c3108",
+      "product": "DL-hb-horizontal",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/White/Chamber_Open_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0aeee5b9b3e30d89.jpg",
+      "title": "White horizontal hyperbaric chamber 3D render with open door",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "fa25aeab-4125-45c7-8ca4-b5b9b11e6020",
+      "product": "DL-hb-horizontal",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/ChamberBlack_NoBG_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cef810518f94c5d3.jpg",
+      "title": "Black and gold horizontal hyperbaric chamber 3D render",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "108da5fa-7e7b-4ee1-836e-a36b3963e447",
+      "product": "DL-hb-two-person",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Two Person Oxygen Chamber/TwoPersonChamber_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e34aa4c53a4f8565.jpg",
+      "title": "Dialed Labs Two-Person Hyperbaric Oxygen Chamber 3D Render",
+      "alpha": true,
+      "size": "5000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "cf45bea1-de51-4475-bd01-6b0089c8534b",
+      "product": "DL-hb-two-person",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Two Person Oxygen Chamber/TwoPersonChamber_NoBG_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/02266ffad758a148.jpg",
+      "title": "Dialed Labs Two Person Oxygen Chamber front view render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f3e05a55-7f65-4d42-9fe0-d22705e7e0ba",
+      "product": "DL-king-sauna",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/King Sauna (CS-2124)/King Sauna April 2026/KingSauna_UFC_Front_Straight.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/74052bf76305c30c.jpg",
+      "title": "UFC Dialed Labs King Sauna Front View 3D Render",
+      "alpha": true,
+      "size": "5000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d6bda956-cbbf-4ffc-9c03-8b1c716a0103",
+      "product": "DL-king-sauna",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/King Sauna (CS-2124)/King Sauna April 2026/KingSauna_NewLogo_Front_Tilt.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/44c484fb38a3c910.jpg",
+      "title": "Dialed Labs King Sauna 3D render with new logo on white background",
+      "alpha": true,
+      "size": "5000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "898ae9a2-e8c2-4f0a-90b0-4e4c87f831cc",
+      "product": "DL-king-sauna, DL-barrel-sauna, Dialed Moods canned beverages, Dialed Labs cooler bag",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/FINAL FILES/ALL - FINAL.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/df1f5ae9b9ca8cc1.jpg",
+      "title": "Dialed Labs saunas, cooler, and Dialed Moods beverage product lineup render",
+      "alpha": true,
+      "size": "3000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c60382d8-4c61-4c9e-b100-9ae842aeaadd",
+      "product": "DL-pod",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Pod (TOP-07)/Pod UFC/Pod_UFC_Front_Open.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c0346c36da245ef6.jpg",
+      "title": "UFC Dialed Labs Pod ice bath 3D render with open lid",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9785eba6-1dfa-43e8-9422-27fb538cf956",
+      "product": "DL-pod",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Pod (TOP-07)/Pod Alt Angle White.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b94eed905f1bfb8d.jpg",
+      "title": "Dialed Labs Pod Ice Bath 3D Render on White Background",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "05393cd8-9b33-4f39-801c-41d5aafb928d",
+      "product": "DL-pro-pod",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Pro Pod (CT-19)/CT-19_w_Shadow/CT_19_with_Shadow_Front_01.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/67b50337490aafc3.jpg",
+      "title": "Front view 3D render of Dialed Labs Pro Pod ice bath",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a854582b-e92b-46aa-a605-0ec3ed6aea10",
+      "product": "DL-pro-pod",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Pro Pod (CT-19)/Pod Pro UFC/PodPro_UFC_NoBG_Front_01.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1a591a3c6b22e469.jpg",
+      "title": "UFC Dialed Labs Pro Pod cold plunge 3D render, front view",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "31738063-fcab-4b09-ba30-b01a0596ee3e",
+      "product": "DL-pro-sauna",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/Pro Sauna/Pro Sauna March 2026/Manual/Step1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a5b90a1ce9ae4fea.jpg",
+      "title": "Pro Sauna slatted floor panel 3D render on white background",
+      "alpha": true,
+      "size": "5000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2c320564-3ed0-499f-a62c-eca1cbcebd39",
+      "product": "DL-pro-sauna",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/Pro Sauna/Pro Sauna March 2026/ProSauna_UFC_NoBG_45L_Straight.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4eb0b7e0f7399489.jpg",
+      "title": "Dialed Labs x UFC Pro Sauna 3D render on white background",
+      "alpha": true,
+      "size": "5000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2b4ca780-79ed-430c-afb4-65618247043f",
+      "product": "DL-pro-sauna, DL-queen-sauna, DL-barrel-sauna",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/saunas v2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/df007cc70d54216e.jpg",
+      "title": "Three Dialed Labs sauna models 3D renders on white background",
+      "alpha": true,
+      "size": "1200x1600",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "56a59ebb-4d85-4bbe-8628-812520d4ba86",
+      "product": "DL-queen-sauna",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/Queen Sauna (OS_1306)/Past Renders 2025/OLD OS-1306_with_Shadows/QueenSauna_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b5bc12177cc93469.jpg",
+      "title": "Front view 3D render of Dialed Labs Queen Sauna",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d7e2d15c-ba09-4c37-9e7b-93004e5eeee6",
+      "product": "DL-queen-sauna",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/UFC Brand Deck/QueenSauna_Front_NoBG_UpdatedLogo2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bbf99633673fe147.jpg",
+      "title": "Dialed Labs Queen Sauna front view 3D render on white background",
+      "alpha": true,
+      "size": "4000x3500",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f21fdf76-1424-4f2a-9c10-fc0f9085865c",
+      "product": "DL-rl-horizontal",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Red Light Therapy/M6N/M6N_OFF_ThreeQuartersRight.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0fa5963e9ee84b55.jpg",
+      "title": "Dialed Labs M6N Red Light Therapy Device Three-Quarter View Render",
+      "alpha": true,
+      "size": "6000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b1dd61d8-59be-4912-b391-c38356a2e898",
+      "product": "DL-rl-horizontal",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Red Light Therapy/M6N/M6N_OFF_ThreeQuartersRight_White.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8f866e4a61cccbc0.jpg",
+      "title": "Dialed Labs M6N Red Light Therapy Device Off Three-Quarter View",
+      "alpha": true,
+      "size": "6000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f0a46cd3-e807-4314-94fa-70676a16eead",
+      "product": "DL-rl-vertical",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Red Light Therapy/M11/M11_NoBG_Front_Open.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9020a49a365c9466.jpg",
+      "title": "Dialed Labs Vertical Red Light Therapy Device Open Render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a39bd7d5-e6ed-42f8-b8f8-f18ba6727fbe",
+      "product": "DL-rl-vertical",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Red Light Therapy/M11/M11_ON_Front_White.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/30834cd1e30946ab.jpg",
+      "title": "Dialed Labs Red Light Therapy Vertical Panel Front Render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "47b3255d-ae14-46c8-9c26-cf24271bdeaa",
+      "product": "DL-smart-pod",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/IR Smart Pod (IS-1501)/Past Renders/IS-1501_45_03_ON.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c51bbbcc11cf05b0.jpg",
+      "title": "Dialed Labs Smart Pod Infrared Sauna 3D Render on White Background",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0261cb7c-c555-4c52-a093-b9b988eda390",
+      "product": "DL-smart-pod",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/IR Smart Pod (IS-1501)/Past Renders/OLD/smart pod2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/43c9652727acfb72.jpg",
+      "title": "Dialed Labs Smart Pod Infrared Sauna 3D Render on White Background",
+      "alpha": true,
+      "size": "1080x1350",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2042cbd7-d025-47fe-ace9-f88663754936",
+      "product": "DL-vplunge-black",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Vertical Plunge (CT_06)/Vertical Plunge - No Shadow/CT06_Black_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/caf23bb261b4faad.jpg",
+      "title": "Dialed Labs UFC Vertical Plunge black ice bath with steps render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7a684f81-c53c-46cd-a14d-7f68f56225ad",
+      "product": "DL-vplunge-black",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Vertical Plunge (CT_06)/CT-06_with_Shadow/CT_06_with_Shadow_45_01.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9d586c96e3bea10c.jpg",
+      "title": "3D render of a black vertical plunge ice bath with integrated steps",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3cf49a62-0240-4983-94b1-8ccdf9df897c",
+      "product": "DL-vplunge-wood",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Vertical Plunge (CT_06)/CT-06_with_Shadow/CT_06_Wood_with_Shadow_Front_02.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/da7afb669d3008ee.jpg",
+      "title": "Dialed Labs VPlunge Wood ice bath front view render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7fed3eaf-7a1a-45a6-a05d-f34b9dc15b96",
+      "product": "DL-vplunge-wood",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Vertical Plunge (CT_06)/CT-06_with_Shadow/CT_06_Wood_with_Shadow_no_Cover_Front_02.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/df95b9b44af0ab66.jpg",
+      "title": "Dialed Labs VPlunge Wood Ice Bath with Ladder Front Three-Quarter Render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d84e930f-4202-421e-a6b8-d29d83879c51",
+      "product": "DL-vplunge-wood and DL-vplunge-black",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/UFC Brand Deck/Vertical Plunges_UFC.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/067504208ee1d64b.jpg",
+      "title": "Two Dialed Labs UFC vertical cold plunges with integrated steps",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "96a86fb1-2d9f-4ad0-bf6c-05817c06828f",
+      "product": "Essential Oils 4-pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Essential Oils/Herbal/EssentialOils_Box_Open_45_Herbal.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c871a1774a300145.jpg",
+      "title": "Dialed Labs Essential Oils 4-pack in black presentation box",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "67ad3f17-51aa-4efd-9cfe-bab1204766b2",
+      "product": "hyperbaric capsule chamber component",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/Features/Chamber_Precision Pressure Seals.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7a3d36e7e91ca16d.jpg",
+      "title": "Close-up 3D render of hyperbaric chamber precision pressure seals",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b7b28da2-7a86-476a-86d5-033fb9a397ff",
+      "product": "hyperbaric chamber",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/White/Chamber_Open_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2215003577fd9bc5.jpg",
+      "title": "White and blue hyperbaric chamber with open door in 3D render",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "74de3783-beaf-428a-87b4-07ea6ac609ae",
+      "product": "hyperbaric chamber concentrator",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/ConcentratorBlack_Back_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9446c88fd18a29e3.jpg",
+      "title": "Black hyperbaric chamber concentrator back view 3D render",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "092cb3ab-1c6d-4c5f-8c1f-a5165df0e268",
+      "product": "hyperbaric oxygen chamber",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Time Machine Chamber/White_MockUp/Shot4.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bb47b61dd03dfd60.jpg",
+      "title": "White hyperbaric oxygen chamber 3D render with open door",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f27ca385-416c-4987-994b-eea739b23523",
+      "product": "infrared smart sauna XL",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/IR Smart Sauna XL/IRSmartSaunaXL_UFC_Red_NoBG_45R.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/68694f2fc567d1a1.jpg",
+      "title": "UFC Dialed Labs IR Smart Sauna XL 3D Render",
+      "alpha": true,
+      "size": "5000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "fad56ce4-e963-4354-a453-4e8ebaca8666",
+      "product": "IR Smart Sauna XL",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/IR Smart Sauna XL/IRSmartSaunaXL_UFC_Red_NoBG_FrontTilt.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7664b9cc6444a3f1.jpg",
+      "title": "Dialed Labs UFC IR Smart Sauna XL front render with red interior",
+      "alpha": true,
+      "size": "5000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3a151dcd-84d5-4df7-a7ee-f9874f94845a",
+      "product": "IR Smart Sauna XL",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/IR Smart Sauna XL/IRSmartSaunaXL_UFC_Red_NoBG_45L_Straight.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6e871988fa2f0f09.jpg",
+      "title": "UFC Dialed Labs IR Smart Sauna XL 3D Render on White Background",
+      "alpha": true,
+      "size": "5000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "13c9bbb3-18e3-400c-a2c1-63917593543f",
+      "product": "M11 Red Light Therapy device",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Red Light Therapy/M11/M11_BirdsEye.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/39cf6c3af82c249f.jpg",
+      "title": "M11 Red Light Therapy Device Bird's Eye View Render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "89040ab6-1a03-468b-81cf-5cdb30979bfe",
+      "product": "M6N red light therapy bed",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Red Light Therapy/M6N/M6N_Open_OFF_ThreeQuartersRight.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3576bc3fc1fc3562.jpg",
+      "title": "3D render of M6N red light therapy bed, open, three-quarter view",
+      "alpha": true,
+      "size": "6000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f98ad2bc-4c3a-45c1-89fd-ae8daf970d29",
+      "product": "Micro Hyperbaric Oxygen Chamber",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/Features/Chamber Concentrator/Chamber_ConcentratorScreen.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7dd0f8bc96c70b30.jpg",
+      "title": "Black and gold Dialed Labs Micro Hyperbaric Oxygen Chamber render",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "fe4839f2-5368-435f-8062-dc20cf967423",
+      "product": "oxygen mask",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/OxygenMask/OxygenMask_Single.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/15316dae846da5f3.jpg",
+      "title": "3D render of a clear oxygen mask with black straps",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "80efb1f4-94f8-4ad1-8135-b5b6de1b5e95",
+      "product": "Pro Pod stool/stand",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Pro Pod (CT-19)/CT-19_w_Shadow/CT_19_with_Shadow_45_stool_only_01.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a69da3197da647bc.jpg",
+      "title": "Dialed Labs Pro Pod stool 3D render on white background",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4d3586ea-7dc0-4f0d-8c0c-916eaa23e42c",
+      "product": "Sauna Essential Oil 4-pack (Eucalyptus, Peppermint, Rose, Lemongrass)",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Essential Oils/Herbal/EssentialOils_Bottles_Herbal_Boxes.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/52b0ecca2d93077f.jpg",
+      "title": "Dialed Labs Sauna Essential Oil 4-pack in black gift box render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f56deb54-47d3-4f8b-9603-57211ec4598a",
+      "product": "Sauna Essential Oil Pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Essential Oils/Fruity/EssentialOils_Box_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2a2ffd68f62839b3.jpg",
+      "title": "Dialed Labs Sauna Essential Oil Pack box render with fruit imagery",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "97f99098-e98d-4c5f-9f2a-3b2555f2c566",
+      "product": "Sauna Essential Oil Pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Essential Oils/Fruity/EssentialOils_Box_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fa02fb07f2bbe32a.jpg",
+      "title": "Dialed Labs Sauna Essential Oil Pack box render with citrus fruits",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "cf93bcc9-96f6-4262-b781-45655dc4f5f2",
+      "product": "Sauna Essential Oil Pack with Orange Essential Oil bottle",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Essential Oils/Fruity/EssentialOils_BoxWithJar.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e3bdad1a0297f156.jpg",
+      "title": "Dialed Labs Sauna Essential Oil Pack and Orange Bottle Render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7332cbbc-13c1-4952-826f-1f0924d67e8a",
+      "product": "Sauna Essential Oil set (Orange, Jasmine, Lemon, Grapefruit)",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Essential Oils/Fruity/EssentialOils_Box_Open_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7c683f421b8618e4.jpg",
+      "title": "Dialed Labs Sauna Essential Oil 4-pack in black gift box",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a08ebfd2-e4fd-487e-b518-5f98f89b86d9",
+      "product": "Sauna Essential Oils (Orange, Jasmine, Lemon, Grapefruit)",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Essential Oils/Fruity/EssentialOils_Bottles.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/24e47c5019fac691.jpg",
+      "title": "Dialed Labs Sauna Essential Oils: Orange, Jasmine, Lemon, Grapefruit lineup",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3fda021b-c484-494a-9d1d-dc41bcfbb949",
+      "product": "sauna pod",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/OldVersion (1)/CS_2124_RT_Side_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/73ef23d0066a944f.jpg",
+      "title": "Dialed Labs wooden sauna pod 3D render with glass front",
+      "alpha": true,
+      "size": "2800x2800",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1425a9c8-db48-4ea8-a4cb-82ddec662c2b",
+      "product": "thermo-hygrometer",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Thermometer/Thermometer_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8a1275fe99696e4a.jpg",
+      "title": "Wooden Sauna Thermo-Hygrometer 3D Render on White Background",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "44ed292e-12b7-420a-b4fb-a899b0927a46",
+      "product": "Two Person Oxygen Chamber",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Two Person Oxygen Chamber/TwoPersonChamber_NoBG_45L_Straight.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/085da5f1ecb01fec.jpg",
+      "title": "Dialed Labs Two Person Oxygen Chamber 3D Render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b29c0993-6168-4f7e-8828-75c7a5805acf",
+      "product": "Two Person Oxygen Chamber",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Two Person Oxygen Chamber/Mockups/Mockup_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/95de22027d4931a3.jpg",
+      "title": "Dialed Labs Two Person Oxygen Chamber 3D Render",
+      "alpha": true,
+      "size": "4926x4223",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "542c4a22-0a3f-465f-a115-3e5810e4567b",
+      "product": "water filter cartridge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Water Filters/WaterFilter1pk.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/de097380a09f9e7d.jpg",
+      "title": "3D render of a white pleated water filter cartridge with blue caps",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c55d3e87-e898-4a33-8d49-0a9aa6d82dbf",
+      "product": "water filters",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Water Filters/WaterFilter3pk.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e09836ffd01995d6.jpg",
+      "title": "Three white pleated water filters with blue caps in a studio render",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e8e0afbd-c727-41a1-aeba-5d8459670cb3",
+      "product": null,
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "logo"
+      ],
+      "source": "dropbox:media:dialed-labs",
+      "path": "Graphics/00_BRANDING/Logos & Icons/PNG/Dialed Labs logo 2026.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dd737c1bf8dac6a6.jpg",
+      "title": "Dialed Labs wordmark logo with gold and dark grey text",
+      "alpha": true,
+      "size": "4400x2201",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b5221966-9526-4a72-af27-8937c7fbe4ff",
+      "product": null,
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "logo",
+        "canonical"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Assets/Dialed Labs LOGO_V1 White.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/67a3ec7c1f360cfa.jpg",
+      "title": "Dialed Labs gold wordmark logo with dot on white background",
+      "alpha": true,
+      "size": "4326x3528",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ace1eeb3-9e66-41de-ae6f-ba2afb36104f",
+      "product": "Dialed Labs full product lineup including saunas, cold plunges, and supplements",
+      "confidence": 0.95,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/group shot.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0bf115a35a9e6e93.jpg",
+      "title": "Dialed Labs full product lineup 3D render on white background",
+      "alpha": true,
+      "size": "3000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "72d43c30-56aa-4fd2-a8be-4ff56d3b082e",
+      "product": "DL-king-sauna, DL-queen-sauna, DL-barrel-sauna, DL-vplunge-black, DL-vplunge-wood",
+      "confidence": 0.95,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/test.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4504793435c9cf74.jpg",
+      "title": "Dialed Labs sauna and cold plunge product lineup 3D render",
+      "alpha": true,
+      "size": "3000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "38fce8a0-2676-4265-8313-aa329dcadf05",
+      "product": "DL-smart-pod, DL-vplunge-wood, DL-rl-vertical",
+      "confidence": 0.95,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/cold plunges v3.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a2320d74578cf967.jpg",
+      "title": "Dialed Labs cold plunges and vertical saunas product lineup render",
+      "alpha": true,
+      "size": "3000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0164d6ce-c7b2-4270-a4f7-0a07d165431e",
+      "product": "DL-vplunge-black, DL-pro-sauna",
+      "confidence": 0.95,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/GroupRenders/UFC Group_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/11e08c6d028a2af6.jpg",
+      "title": "Dialed Labs UFC Cold Plunge and Pro Sauna 3D Render Lineup",
+      "alpha": true,
+      "size": "4000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d4bcf5ad-e77a-4919-bfb5-ff99109d5dff",
+      "product": "Blackout Goggles",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Blackout Goggles/BlackoutGoggles_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a83e3c467942dd39.jpg",
+      "title": "Blackout Goggles 3D Render on White Background",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "db384764-9616-4cd0-a809-38a8c4ce733a",
+      "product": "Chamber Concentrator",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/Features/Chamber Concentrator/Chamber_ConcentratorInterface_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f11ebc0e2320f2c0.jpg",
+      "title": "Dialed Labs Chamber Concentrator 3D render with interface",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8295786d-239c-4071-b32e-8a46fe00b8e7",
+      "product": "hyperbaric oxygen chamber",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Time Machine Chamber/White_MockUp/Shot1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/06fd0be35f5cf57a.jpg",
+      "title": "White hyperbaric oxygen chamber 3D render on white background",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "212cd142-c0a3-4aa8-9723-789d161c765f",
+      "product": "M6N Red Light Therapy Bed",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Red Light Therapy/M6N/M6N_NoBG_45L.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/66904e910be038ec.jpg",
+      "title": "Dialed Labs M6N Red Light Therapy Bed 3D Render",
+      "alpha": true,
+      "size": "6000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ca32fcf3-18d1-4385-a67f-4bb26f351501",
+      "product": "barrel sauna, hot tub, and various Dialed Moods energy drink cans and boxes",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "approved-output"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/FINAL FILES/V2 FINAL.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9beb382ce071e874.jpg",
+      "title": "Dialed Labs Barrel Sauna and Hot Tub with Dialed Moods Product Lineup Render",
+      "alpha": true,
+      "size": "1200x1600",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "bbe06234-0361-4edd-8418-54275d762099",
+      "product": "barrel-shaped cold plunge tub",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/CT-12 blue/CT_12_blue_45open_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e42444fb7e7c52c2.jpg",
+      "title": "3D render of a blue barrel-shaped cold plunge tub",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "895c146f-a570-4f0f-9e07-819b5a44a124",
+      "product": "cannabis vape cartridges/concentrates",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/cans only.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2c8a8dd847e15d3d.jpg",
+      "title": "Dialed Labs cannabis vape cartridge packaging lineup on white background",
+      "alpha": true,
+      "size": "1200x1600",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d89532dd-d609-4212-ad67-6b5c264112ac",
+      "product": "chiller unit for cold plunge",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/Chiller/Chiller_Back_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e3da72a610214655.jpg",
+      "title": "Black industrial chiller unit with fan and vents on wheels",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "af76d5ff-69ff-41f0-bb2b-20c5e93e28d2",
+      "product": "cold plunge system with tub, chiller, and steps",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old Versions/Black/CT_06_LogoSide_Front_WChiller_Stand_Cover_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b40db0ea9fb52bc5.jpg",
+      "title": "Dialed Labs black cold plunge system with chiller and steps render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2d8fca9a-171f-4ead-a37e-83685981ce60",
+      "product": "cold plunge tub",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old Versions/Black/old/LightBlue/CT06_Blue_Top_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6986c182a893114a.jpg",
+      "title": "Blue cold plunge tub 3D render with white background",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9d04158e-4abf-400f-8d2a-a33f658f471d",
+      "product": "cold plunge tub",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/CT-12 blue/LightBlue/CT_12_blue_Front2_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/da3925d25598915f.jpg",
+      "title": "Light blue Dialed Labs cold plunge tub 3D render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "cb14a7d4-8525-46aa-90c7-eabb12e535af",
+      "product": "cold plunge unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old (1)/IceBath_TOP-07_ThreeQuarters_Low_05.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/811ad74ecb71e88e.jpg",
+      "title": "Dialed Labs wooden and metal cold plunge unit 3D render",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "24b2c6f1-83fe-40b3-9a8d-a632751436c8",
+      "product": "cryotherapy machine with integrated steps",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old Versions/V2/CT06_Black_Front_3_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3a6f2ee2d46423de.jpg",
+      "title": "Black and silver Dialed Labs cryotherapy machine 3D render with steps",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ac302c52-5403-4017-b1c8-73ee8930a6ff",
+      "product": "CT-12 blue cold plunge tub",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/CT-12 blue/LightBlue/CT_12_blue_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4f7b5160837bc51a.jpg",
+      "title": "Dialed Labs CT-12 Blue Cold Plunge Tub 3D Render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9a0f9a8e-6cba-4aaa-bcb1-ee4a652faa81",
+      "product": "CT-12 Chiller",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/CT-12 Wood/CT_12_Chiller_Rside_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7deeb20cb00e70f4.jpg",
+      "title": "Black CT-12 industrial chiller unit 3D render with fan",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "bdb8484b-81fd-4074-af6d-dbf55d88e6fc",
+      "product": "CT-12 Chiller unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/CT-12 Wood/CT_12_Chiller_Front2_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2907a6498c4e3660.jpg",
+      "title": "Black CT-12 Chiller unit 3D render on white background",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "370c8c14-273d-49ab-ac7e-f9c8f02e793f",
+      "product": "CT-12 Chiller unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/CT-12 Wood/CT_12_Chiller_Lside_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/34788ed3a0c509c9.jpg",
+      "title": "Black CT-12 Chiller unit 3D render on white background",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7deaa315-e5d4-436c-9586-a942c69f3f3b",
+      "product": "CT-16 ice bath",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/IceBath_CT-16/CT_16_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/07c64fb6dad6c1da.jpg",
+      "title": "Dialed Labs CT-16 wooden ice bath front three-quarter render",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6c8d92a9-14f0-46ff-970e-43c2d45158e4",
+      "product": "Dialed Labs blue barrel cold plunge tub with chiller unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/CT-12 blue/CT_12_blue_Front_V4_mock up.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9ea7c74a41c13345.jpg",
+      "title": "Dialed Labs blue barrel cold plunge tub with chiller in modern room render",
+      "alpha": true,
+      "size": "4500x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "745d98a8-950e-48c9-92a2-b71c10f52e82",
+      "product": "Dialed Labs cold plunges (DL-smart-pod, DL-vplunge-wood) and balm containers",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/cold plunges v6.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e75295536bcef786.jpg",
+      "title": "Dialed Labs cold plunges and balm products lineup 3D render",
+      "alpha": true,
+      "size": "1200x1600",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b785966a-f43c-4e66-a2b9-686bf01f6ed8",
+      "product": "Dialed Labs CT-14 Ice Bath Unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/IceBath_CT-14/IceBath_CT-14_Front_01.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/74458ac596f938c1.jpg",
+      "title": "Dialed Labs CT-14 Commercial Ice Bath Unit Front View Render",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "bc6348a0-6ffb-48ba-9c81-33dd6ed31189",
+      "product": "Dialed Labs functional beverage cans",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/cans only 2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e29efb7b79717ea0.jpg",
+      "title": "Three sets of Dialed Labs functional beverage cans",
+      "alpha": true,
+      "size": "1200x1600",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0c2b4e06-469e-406b-853d-deb7312a9607",
+      "product": "Dialed Labs saunas, cold plunges, and supplements",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/GROUP DARK.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2fbd6e76d4c661d6.jpg",
+      "title": "Dialed Labs full product line 3D render on dark background",
+      "alpha": true,
+      "size": "3000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "fda61c8c-fbfd-45db-af66-cda556c41db4",
+      "product": "Dialed Labs Smart Pod and Chiller Unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old Versions/V2/CT06_Black_Front_2_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7ee21f1eb7323b59.jpg",
+      "title": "Dialed Labs Smart Pod and Chiller Unit 3D Render on White Background",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5d6eba15-2215-462b-96bf-cf6e6d819e90",
+      "product": "Dialed Labs VPlunge cold plunge unit with wood and dark grey finish",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old (1)/IceBath_TOP-07_ThreeQuarters.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3d150658d02ff4a9.jpg",
+      "title": "Dialed Labs VPlunge Cold Plunge Unit 3D Render",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "65bac210-24ab-4a62-84b5-aedfed175d30",
+      "product": "Dialed Moods Kava & Kratom, Blue Raspberry, Lemonade, Peach Mango, Strawberry, Watermelon 12-can packs; Dialed Labs cooler",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/floor redo.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b14f87e24240aaf2.jpg",
+      "title": "Dialed Labs and Dialed Moods product lineup with cooler on dark surface",
+      "alpha": true,
+      "size": "3000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "adb29697-acdb-4ebc-8cc6-d978858e8ac7",
+      "product": "DIALED MOODS Mango Peach 12-can pack, DIALED MOODS Blue Raspberry 12-can pack, DIALED MOODS Strawberry Lemonade 12-can pack, DIALED MOODS Watermelon 12-can pack, DIALED MOODS Unflavored 12-can pack, Dialed Labs black cooler, Dialed Labs wood and metal cooler/sauna",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/lower with sand.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/35581c9e065238e4.jpg",
+      "title": "Dialed Labs Moods 12-can packs and coolers in studio render",
+      "alpha": true,
+      "size": "3000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a8594491-03cf-4700-9783-386315a56299",
+      "product": "DL-air-plunge with chiller unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Air Plunge (CT-02)/Dialed_Air_Pod_with_Chiller_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b7320911e4d1cb7d.jpg",
+      "title": "Dialed Labs Air Plunge cold tub with chiller unit 3D render",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "830c6ab3-5152-4fcb-9d31-f33e44e9f52c",
+      "product": "DL-air-plunge, chiller unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Air Plunge (CT-02)/Dialed_Air_Pod_with_Chiller_45_02.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1b8eab3411fd04f5.jpg",
+      "title": "Dialed Labs Air Plunge ice bath with connected chiller unit render",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f8272689-6095-4cb3-b0ac-393a9cdd5db7",
+      "product": "DL-barrel-sauna, cold plunge tub, Dialed Labs supplement boxes",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/simple tst 2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/03cb58573a90dd15.jpg",
+      "title": "Dialed Labs sauna, cold plunge, and supplement product lineup render",
+      "alpha": true,
+      "size": "1200x1600",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5d2081b4-2db8-4843-a9a1-f578c6cb6c3a",
+      "product": "DL-barrel-sauna, DL-vplunge-wood, Dialed Moods Kava & Kratom, Dialed Moods Blue Raspberry, Dialed Moods Strawberry Kiwi, Dialed Moods Orange Cream, Dialed Moods Lemonade, Dialed Labs Very Berry Punch Energy Drink",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/FINAL FILES/V2 FINAL EDIT.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6db630291a684ae7.jpg",
+      "title": "Dialed Labs barrel sauna, hot tub, and beverage product display render",
+      "alpha": true,
+      "size": "1200x1600",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9b564da5-cdb3-48ea-b80a-9fe3b90b3d23",
+      "product": "DL-king-sauna, DL-barrel-sauna, DL-smart-pod, Dialed Moods canned beverages",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/FINAL FILES/ALL EDITED - FINAL.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/87c956767c78bbf4.jpg",
+      "title": "Dialed Labs saunas, cold plunge, and Moods beverages product lineup render",
+      "alpha": true,
+      "size": "3000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "47516f1d-3dca-49f8-859d-0b0d83225e90",
+      "product": "DL-king-sauna, DL-barrel-sauna, DL-vplunge-wood, DL-air-plunge, Dialed Labs supplement boxes, Dialed Labs supplement cans",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "logo",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/redo 3.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c0fb33b73eec591b.jpg",
+      "title": "Dialed Labs saunas, cold plunges, and supplement products lineup render",
+      "alpha": true,
+      "size": "1200x1600",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0e9b393e-6215-4a3d-95fc-7a698a51d770",
+      "product": "DL-pod with bench",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/UFC Brand Deck/Pod_45_UFC.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b7284ef35626a150.jpg",
+      "title": "3D render of Dialed Labs UFC cold plunge pod with bench",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "04f7bb51-14e4-476d-805a-c8dcdccb896e",
+      "product": "DL-vplunge-wood and cooling unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old (1)/IceBath_TOP-07_Front_Low_05.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dc2b5e94505a0c6f.jpg",
+      "title": "Dialed Labs V-Plunge Wood Ice Bath with Separate Cooling Unit Render",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8a438abc-8f18-494d-907a-7103c188ea1c",
+      "product": "DL-vplunge-wood with chiller unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old Versions/V2/CT06_Wood_Front_2_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b6017491b5982271.jpg",
+      "title": "Dialed Labs Vplunge wood cold plunge tub with black chiller render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3bb1bcf2-9107-43f4-bdc6-1ed1024c2c33",
+      "product": "DL-vplunge-wood, chiller unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old Versions/Wood/CT06_Wood_Front_Chiller_Cover_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4dcb3a2ab782e803.jpg",
+      "title": "Dialed Labs VPlunge Wood Tub and Chiller Unit 3D Render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3be6648a-4704-48ea-8b5f-129698a165df",
+      "product": "DL-vplunge-wood, DL-vplunge-black, DL-smart-pod, small supplement boxes",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "approved-output",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/cold plunges v4.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/71d077910118efc9.jpg",
+      "title": "Dialed Labs cold plunges, smart pod, and supplement boxes on display",
+      "alpha": true,
+      "size": "1200x1600",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5c33e07f-9918-49bb-ad5d-39ce6efd0a9e",
+      "product": "Hyperbaric Capsule Chamber",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/ChamberBlack_NoBG_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ed62e4f8b689a9be.jpg",
+      "title": "Dialed Labs Black Hyperbaric Capsule Chamber 3D Render",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d6d23530-99b7-4747-834c-ec1a6478bc20",
+      "product": "Hyperbaric Capsule Chamber Concentrator",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/Features/Chamber Concentrator/Chamber_Concentrator_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/32a8dccd8b474f13.jpg",
+      "title": "Dialed Labs Hyperbaric Capsule Chamber Concentrator 3D Render",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1c557361-84cf-47a2-b2d3-6ebb4c9bac2e",
+      "product": "Hyperbaric Capsule Chamber Concentrator",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/ConcentratorBlack_Back_45_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cdbf217eb423dd9c.jpg",
+      "title": "Black Hyperbaric Capsule Chamber Concentrator 3D Render Back Three-Quarter View",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0c51a669-fc77-4c98-8e89-94a8df64adac",
+      "product": "Hyperbaric Capsule Chamber pressure relief valve",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/Features/Chamber_PressureValve.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a45940a4585ad440.jpg",
+      "title": "3D render of a manual pressure relief valve for a hyperbaric chamber",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ea9e34ce-24ae-4637-824a-60667aba2e60",
+      "product": "hyperbaric chamber interior",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/Features/Chamber_Mattress.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cc5cfd5fa3c78bf2.jpg",
+      "title": "Dialed Labs Hyperbaric Chamber Interior with Mattress and Control Panel",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "164738cf-6784-4dde-b0bf-e63bcf5829a5",
+      "product": "hyperbaric chamber pillow",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/Features/Chamber_Pillow.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/caf80cf4efe5566e.jpg",
+      "title": "3D Render of Hyperbaric Chamber Pillow with Pressure Valve Detail",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a5bdc56c-bece-4016-9201-4d4e46a14882",
+      "product": "hyperbaric chamber wheel and base",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/Features/Chamber_WheelCloseUp.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d13786faef93788d.jpg",
+      "title": "Close-up 3D render of hyperbaric chamber wheel and base",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a5da602c-b5b8-4d37-ace6-806dddf2b6d4",
+      "product": "Hyperbaric Oxygen Chamber Control Unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/Features/Chamber Concentrator/Chamber_ConcentratorScreen_Interface.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/769393aca97c811c.jpg",
+      "title": "3D render of a black hyperbaric oxygen chamber control unit interface",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "fa6cd182-b4e9-456e-b95f-3102a80fb0b3",
+      "product": "Hyperbaric Oxygen Concentrator",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/White/Concentrator_Front_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2fa89d81ac11669d.jpg",
+      "title": "White Hyperbaric Oxygen Concentrator 3D Render Front View",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "cd1b776f-db7c-43eb-8085-9a8ae227b07f",
+      "product": "ice bath",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old (1)/IceBath_TOP-07_Top_05.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b8193516e9ec1b55.jpg",
+      "title": "Top-down 3D render of Dialed Labs ice bath with wooden slats",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2353aa90-8967-4df6-bc1b-a571d9bc80ab",
+      "product": "ice bath",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old (1)/IceBath_TOP-07_ThreeQuarters_Left_low_05.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/71b564ba1dacd500.jpg",
+      "title": "Dialed Labs ice bath 3D render with wood and stainless steel",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b30ba3d6-ee18-4f52-a288-26cba53e68f0",
+      "product": "ice bath machine",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/IceBath_CT-14/IceBath_CT-14_ThreeQuarters_01.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5652126da6aa7d06.jpg",
+      "title": "Dialed Labs Ice Bath CT-14 three-quarter render on white background",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "30919cec-2b26-4d58-818c-82f103d43db2",
+      "product": "infrared sauna",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old/IS-1501_ThreeQuarters_nolight_03_a.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0b3228587404ef38.jpg",
+      "title": "Dialed Labs infrared sauna 3D render on white background",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b6fa470f-48a5-4333-8d86-9fb8d8d3d67c",
+      "product": "infrared sauna",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old/IS-1501_YellowLight_ThreeQuarters_04.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/46f6cce7990975c8.jpg",
+      "title": "Dialed Labs Infrared Sauna 3D Render Three-Quarter View",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "db26aa48-33b2-4757-a1e8-3654980bcbcc",
+      "product": "infrared sauna interior",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old/IS-1501_YellowLight_Interior_a_03.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6742cfcd180ea2d4.jpg",
+      "title": "Dialed Labs Infrared Sauna Interior Render with Red Light Panels",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5cc29d0a-2da8-465c-a464-f1db5d006a66",
+      "product": "IR Smart Sauna",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Saunas/IR Smart Sauna XL/IRSmartSaunaXL_UFC_Red_FrontStraight.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dfdd1ab5c2aa64d4.jpg",
+      "title": "Front view 3D render of a Dialed Labs UFC IR Smart Sauna",
+      "alpha": true,
+      "size": "5000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "18398389-418b-4b63-af6a-1cdc74d20010",
+      "product": "IS-1501 Infrared Sauna",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old/IS-1501_InfraredLight_ThreeQuarters_a_03.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/85db7c45f95670a2.jpg",
+      "title": "Dialed Labs IS-1501 Infrared Sauna 3D Render with Internal Lighting",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "83e44a01-25a8-46aa-b01b-3df0b5192ed9",
+      "product": "King Sauna, Smart Pod, and Barrel Sauna models",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/saunas v1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7c11fdbc7bb16507.jpg",
+      "title": "Dialed Labs Sauna Lineup: King, Smart Pod, and Barrel Models",
+      "alpha": true,
+      "size": "3000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "858b2039-0ca9-41b2-a422-21edf24e070f",
+      "product": "M6N Red Light Therapy device",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Red Light Therapy/M6N/M6N_NoBG_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/473eec32e93b431c.jpg",
+      "title": "Dialed Labs M6N Red Light Therapy device front render",
+      "alpha": true,
+      "size": "6000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "276466b5-afbf-4e0f-9a7a-960f2c6d85f3",
+      "product": "multi-person sauna and DL-air-plunge",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/GroupRenders/UFC Group_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/32fc27edc9766f35.jpg",
+      "title": "Dialed Labs UFC Branded Sauna and Cold Plunge Render",
+      "alpha": true,
+      "size": "4000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2f093a87-74d6-4dd3-afd1-5a91a5aa76fe",
+      "product": "Multiple Dialed Labs products: DL-king-sauna, DL-barrel-sauna, DL-vplunge-wood, DL-air-plunge, and supplement boxes",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Marketing Materials/Ads & Social Media/05 Other Content/50k Giveaway/Renders/redo v2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b6d9ef4f954e33d6.jpg",
+      "title": "Dialed Labs sauna, cold plunge, and supplement product renders",
+      "alpha": true,
+      "size": "1200x1600",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "204296c3-4327-4018-9a6d-18bd324f27fc",
+      "product": "oval cold plunge tub",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/CT-12 blue/LightBlue/CT_12_blue_Back_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3a0f62c2952937f8.jpg",
+      "title": "Blue oval cold plunge tub 3D render, three-quarter back view",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "39176c24-6aff-4281-ae15-0eb7bafdf9d4",
+      "product": "Oxygen Chamber",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Time Machine Chamber/White_MockUp/Shot2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d5d330aed3745d70.jpg",
+      "title": "White 3D render of a Time Machine Oxygen Chamber",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d1c821ee-eb53-4fec-8bd5-ffb0254ab990",
+      "product": "portable chiller unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/Chiller/Chiller_Left_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2acae795dc5b8e7f.jpg",
+      "title": "Dialed Labs black portable chiller unit 3D render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "66e3cb56-56b1-451b-9742-9e2c50f5ec17",
+      "product": "portable ice bath / cold plunge unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old (1)/IceBath_TOP-07_ThreeQuarters_Left_05.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/314bafdcbff40580.jpg",
+      "title": "Dialed Labs portable ice bath 3D render with wood and metal accents",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d5df9d69-ebd4-4d6a-866b-f9c526073d4c",
+      "product": "Red Light therapy control panel",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Control Panel/RedLight _Controls.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/852411544aa24912.jpg",
+      "title": "Digital control panel render for Dialed Labs Red Light therapy device",
+      "alpha": true,
+      "size": "4000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "91e89087-db52-4f6b-9289-8d468b528742",
+      "product": "Red Light Therapy M6N device",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Red Light Therapy/M6N/M6N_NoBG_45_Open.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ced0418738cc842a.jpg",
+      "title": "Dialed Labs M6N Red Light Therapy Device Open 3D Render",
+      "alpha": true,
+      "size": "6000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d6275001-2f3d-4464-86b2-8e0fee0c1ba5",
+      "product": "Red Light Therapy machine M6N",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Red Light Therapy/M6N/M6N_NoBG_Back_.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d58a0bfb46feb882.jpg",
+      "title": "Dialed Labs M6N Red Light Therapy Machine Back Render",
+      "alpha": true,
+      "size": "6000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4c93e467-b1da-439c-b1f2-2efdc3b7bbb4",
+      "product": "red light therapy pod",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Red Light Therapy/M6N/M6N_NoBG_45R.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dd3391a031de95ea.jpg",
+      "title": "Dialed Labs M6N Red Light Therapy Pod 3D Render",
+      "alpha": true,
+      "size": "6000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8d7dcc6e-ae78-448a-a995-c3da80c5fa33",
+      "product": "rounded rectangular two-person wooden sauna",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/OldVersion (1)/V2/CS_2124_RT_Side_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ea53850eec7651eb.jpg",
+      "title": "Dialed Labs two-person wooden sauna 3D render with glass panels",
+      "alpha": true,
+      "size": "2800x2800",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3bac0978-e1a3-4fdb-ad0b-adff13368a51",
+      "product": "sauna",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/OldVersion (1)/CS_2124_LT_Side__Cover_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a02870339f53f211.jpg",
+      "title": "3D render of a Dialed Labs sauna with black roof and interior tablet",
+      "alpha": true,
+      "size": "2800x2800",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f798883c-42b0-44af-86a9-43f5c3034015",
+      "product": "Sauna and shower combo unit WA-902A",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/WA-902A/WA-902A_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/16fb50c81a72bedb.jpg",
+      "title": "Dialed Labs WA-902A Sauna and Shower Combo Unit Front Render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "276c53f8-6be9-4501-8945-8699bcd78140",
+      "product": "Sauna Essential Oils (Eucalyptus, Peppermint, Rose, Lemongrass)",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Essential Oils/Herbal/EssentialOils_Bottles_Herbal.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/47f2baf5518563d8.jpg",
+      "title": "Dialed Labs Sauna Essential Oils Lineup: Eucalyptus, Peppermint, Rose, Lemongrass",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2b4071f2-26f4-4fe5-8d87-1245278f3bde",
+      "product": "sauna interior",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/OldVersion/OS_1306_Interior_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3bf52d8f331529ad.jpg",
+      "title": "3D render of Dialed Labs sauna interior with heater",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1046a99f-a10b-4ab8-ade6-e2e0dc39693e",
+      "product": "sauna interior",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/LightWood/OS_1306_Interior_V3.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0c07d6f1b1509a79.jpg",
+      "title": "Dialed Labs Sauna Interior Render with Heater and Logo",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7179f44a-286d-4dcd-8a62-82909494cef3",
+      "product": "two-person oxygen chamber",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Two Person Oxygen Chamber/Mockups/Mockup_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bfffe3d9dfb2fb6e.jpg",
+      "title": "Dialed Labs Two Person Oxygen Chamber 3D Render Mockup",
+      "alpha": true,
+      "size": "4474x4127",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a2418207-b394-4024-b108-858a6507ba0a",
+      "product": "two-person oxygen chamber",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Two Person Oxygen Chamber/TwoPersonChamber_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c522978f43b3cd13.jpg",
+      "title": "Dialed Labs Two-Person Oxygen Chamber and Medical Device Render",
+      "alpha": true,
+      "size": "5000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b3c6e45b-eee8-4cf4-b381-21a9b6d20e0e",
+      "product": "UFC branded cold plunge tub",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/UFC Brand Deck/CT_19_Cover_with_UFC_MOCKUP.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fa8b9cf82d8fe78a.jpg",
+      "title": "Dialed Labs UFC Official Cold Plunge Tub 3D Render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "baf7fbaf-82fe-4ea2-a840-c8bfa693398a",
+      "product": "UFC cold plunge",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/UFC Brand Deck/CT_19_Front_WithLid_UFC.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a12a895ccb017a7c.jpg",
+      "title": "Dialed Labs UFC Cold Plunge 3D Render Front View",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "222af4e9-8ab2-4d4e-b308-6afea304cae3",
+      "product": "Vertical Plunge display unit",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Ice Baths/Vertical Plunge (CT_06)/CT-06_with_Shadow/CT_06_with_Shadow_Aerial_02.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/98c05a001dac3fe6.jpg",
+      "title": "Dialed Labs Vertical Plunge Ice Bath Display Unit 3D Render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9eb3cb46-d0ba-42ab-ac71-9cc8ec3a2476",
+      "product": "vplunge tub",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/CT-12 blue/LightBlue/CT_12_blue_Top_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dcf85ca1d4eb1414.jpg",
+      "title": "3D render of a blue Dialed Labs vplunge ice bath tub",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "68c0e2f6-070f-457b-ae64-58274ccc949f",
+      "product": "wooden sauna with sloped roof",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/OS-12/OS_12_LeftSide_V3.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/074f04366133f8fd.jpg",
+      "title": "Dialed Labs wooden sauna 3D render with sloped roof",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "999ff8d0-42f9-4078-93f8-a8d94f33059e",
+      "product": "Oxygen Chamber",
+      "confidence": 0.85,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber/Capsule Chamber Black_Gold/Features/Chamber_InteriorInterface_Display.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2da838f1e39d681f.jpg",
+      "title": "Oxygen Chamber Intelligent Control System Digital Interface Display",
+      "alpha": true,
+      "size": "4200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2afc7cdd-636d-45a4-abec-f8177cf04270",
+      "product": "blue cold plunge tub",
+      "confidence": 0.85,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/Old Versions/Black/old/LightBlue/CT06_Blue_Back_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/61f0bc44fc9072f4.jpg",
+      "title": "Blue cold plunge tub 3D render with silver bands and spigot",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f693b186-da0f-4efa-b07e-c25bd71668e9",
+      "product": "blue oval cold plunge tub",
+      "confidence": 0.85,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/00 Old Dialed Labs Renders/CT_12/CT-12 blue/CT_12_blue_Back_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8315be54d801322e.jpg",
+      "title": "Blue Oval Cold Plunge Tub 3D Render Back View",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    }
+  ]
 }

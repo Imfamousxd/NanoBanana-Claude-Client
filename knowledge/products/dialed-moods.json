@@ -3,7 +3,7 @@
   "schema": "product-registry/1",
   "brand": "brand.dialed-moods",
   "displayName": "Dialed Moods",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "logo": [
     {
       "path": "Brand Context/assets/Dialed_Moods/Dialed-Moods-Logo-Q4-Dec-2025.pdf",
@@ -661,6 +661,2445 @@
       "alpha": true,
       "size": "1080x1080",
       "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a611d868-febc-4855-a8ec-2b6faef51ed5",
+      "product": "30 Hydration Packs Citrus Circuit",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/Assets for Amazon/Hydro Pack Renders/Display Box 30PK/DialedMoods_Hydra_30pk_Display_Citrus_TopLeft_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/18e0016b14293efa.jpg",
+      "title": "Dialed Moods Citrus Circuit 30 Hydration Packs Box Render",
+      "alpha": true,
+      "size": "3200x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "04efc3cd-c8fe-4dcf-8365-6973318b62bf",
+      "product": "30 Hydration Packs Electric Orange",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/Assets for Amazon/Hydro Pack Renders/Display Box 30PK/DialedMoods_Hydra_30pk_Display_Orange_TopLeft_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e87a2c25341c0e90.jpg",
+      "title": "Dialed Moods Electric Orange 30-pack hydration mix display box render",
+      "alpha": true,
+      "size": "3200x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "821132cb-b7aa-40fc-b019-685e4fca5ee4",
+      "product": "30 Powder Energy Packs Variety Pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/30pk/DialedMoods_Energy_30pk_Variety_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9ae0bd4a161aeb57.jpg",
+      "title": "Dialed Moods 30-pack Energy Powder Variety Display Box Front Render",
+      "alpha": true,
+      "size": "3200x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "100df24c-a407-416e-bac4-ca68df6fddb0",
+      "product": "30-pack energy powder drink mix display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/30pk/DialedMoods_Energy_30pk_Pomegranate_TopLeft_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/836fcdf0c9cf5716.jpg",
+      "title": "Dialed Moods 30-pack energy powder drink mix display box render",
+      "alpha": true,
+      "size": "3200x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ed8620b2-50af-4be2-953e-22f9163830b1",
+      "product": "Arctic Mint",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Moods/DisplayBoxes/Moods_ArcticMint_DisplayBox_Open_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/589add78cb57d342.jpg",
+      "title": "Moods Arctic Mint 10,000 Puffs Disposable Vape Display Box Render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e6dff933-b1a6-48fb-a48a-e979d4d78176",
+      "product": "Arctic Mint 10,000 Puffs 5% Nicotine Disposable Display Box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Moods/DisplayBoxes/Moods_ArcticMint_DisplayBox_Closed_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8e5103e745cd5ac1.jpg",
+      "title": "Moods Arctic Mint 10000 Puffs Disposable Vape Display Box Render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "cd8a1be8-6e90-4976-96bc-669631247e4f",
+      "product": "athletic shorts",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/Apparel/DialedMoods/GirlsSet/DialedMoods_GirlsSet_Shorts_Front_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/604876cc12703608.jpg",
+      "title": "Black athletic shorts with yellow 'Dialed Moods' text render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a5ffda15-f35e-406f-8bf5-bc7dc7f2a649",
+      "product": "Banana Blizzard",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Moods/DisplayBoxes/Moods_Banana_DisplayBox_Closed_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4b8d809c67f47a9d.jpg",
+      "title": "Moods Banana Blizzard disposable vape display box 3D render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6786b783-cd80-4d47-b824-b750ce1fe0f1",
+      "product": "Banana Blizzard disposable vape",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Moods/DisplayBoxes/Moods_Banana_DisplayBox_Open_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/06da3fd73953117e.jpg",
+      "title": "Moods Banana Blizzard disposable vape display box render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "cb08c86b-c821-456c-9e6f-b0c8fae332f1",
+      "product": "Berry Blizzard Liquid Energy Shot",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Shots/OnSetShots/EnergyKava_BerryBlizzard_OnSet_01_SQ.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/825a4141e507de16.jpg",
+      "title": "Dialed Moods Berry Blizzard Liquid Energy Shot with Blue Berries on Marble",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "143c08ef-331b-40e9-9c15-95bef4520ebe",
+      "product": "Berry Blizzard Liquid Energy Shot",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Shots/Energy Shots/Shots_Energy_Berry_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c0a00b574c4f4f42.jpg",
+      "title": "Dialed Moods Berry Blizzard Liquid Energy Shot 3D Render Front View",
+      "alpha": true,
+      "size": "2800x4600",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "bec02156-1283-4002-98f7-6a9aa473c8fd",
+      "product": "Berry Blizzard Liquid Energy Shot display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Shots/Energy Shots/DisplayRenders/Shots_Energy_Display_Berry_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e57eb970fe3f3524.jpg",
+      "title": "Dialed Moods Berry Blizzard Liquid Energy Shot display box 3D render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b8eb702f-68ad-4725-8d89-4fb6c7ec478a",
+      "product": "Berry Blizzard Liquid Energy Shot display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Shots/Energy Shots/DisplayRenders/Shots_Energy_Display_Berry_Open_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/321fdcea2855e60f.jpg",
+      "title": "Dialed Moods Berry Blizzard Liquid Energy Shot 12-pack display render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "265b3aa0-aac2-4648-9128-4fb0124567eb",
+      "product": "black aluminum bottle",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/AlumBottle/AlumBottle_1_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c9895f41f0ac934b.jpg",
+      "title": "Dialed Moods black aluminum bottle 3D render on white background",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f2466ad4-6708-4f63-b38c-b720b16c6d18",
+      "product": "black aluminum bottle",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/AlumBottle/AlumBottle_3_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3818dc45a0831496.jpg",
+      "title": "Dialed Moods black aluminum bottle front view render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "29b26d29-c483-4a71-955d-602f8df0b94c",
+      "product": "black drawstring bag",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/Assets for Amazon/DialedMoods_StringBag_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9ea00a0d967baafb.jpg",
+      "title": "Dialed Moods black drawstring bag with rotary dial logo mockup",
+      "alpha": true,
+      "size": "3000x4320",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "15d1c290-2fcc-4077-a3fe-01f28d623232",
+      "product": "black headband",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Mood accessories Renders/Headband/oldRenders/Dialed_Headband_45_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c444fbaef5c33ade.jpg",
+      "title": "Dialed Moods black headband with gold logo render",
+      "alpha": true,
+      "size": "3200x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "98faab39-35d3-470c-91ea-1f4bc5cb83e1",
+      "product": "black headband",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Mood accessories Renders/Headband/Dialed_Headband_45_V3.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/690212509cbdb5a4.jpg",
+      "title": "Black Dialed Moods headband 3D render on white background",
+      "alpha": true,
+      "size": "3200x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8708e990-e551-4880-b34c-70ae070d0d32",
+      "product": "black insulated water bottle",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Mood accessories Renders/Dialed_YetiBottle/Black/Dialed_Bottle_Black_45_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d95f36b6a731f607.jpg",
+      "title": "Black Dialed Moods insulated water bottle with lid off",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c280b596-bd42-45c2-8832-0be9399b0d11",
+      "product": "black insulated water bottle",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Mood accessories Renders/Dialed_YetiBottle/Black/Dialed_Bottle_Black_45_V3.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e7d218242951d624.jpg",
+      "title": "Black Dialed Moods insulated water bottle with detached lid 3D render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "15f20e62-f17d-4931-acf3-3dc981629c81",
+      "product": "black sports bra",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/Apparel/DialedMoods/GirlsSet/DialedMoods_GirlsSet_SportsBra_Back_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4024175d9dc72dae.jpg",
+      "title": "Dialed Moods black sports bra back view render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "011acce3-3085-43af-8832-da1cb1bee9de",
+      "product": "Black Sugar Rose 10,000 Puffs disposable vape",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Moods/DisplayBoxes/Moods_BlackSugarRose_DisplayBox_Open_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/28cb226de4a72fd9.jpg",
+      "title": "Moods Black Sugar Rose 10,000 Puffs disposable vape display box render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "eb70a21e-5e08-4bf9-8938-603088dd8cdf",
+      "product": "Black Sugar Rose display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Moods/DisplayBoxes/Moods_BlackSugarRose_DisplayBox_Closed_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b88d02b8dff5eaac.jpg",
+      "title": "Moods Black Sugar Rose Disposable Vape Display Box Render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4e708b4e-9dbc-4165-a853-01477be3de05",
+      "product": "BLACK SUGAR ROSE disposable vape packaging",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Moods/Moods_BlackSugar_Box_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/56a10eb5bb4a013a.jpg",
+      "title": "Moods Black Sugar Rose disposable vape packaging render with Muha character",
+      "alpha": true,
+      "size": "4000x4320",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "002529d8-9f00-430f-befe-d1b9f56ca40a",
+      "product": "black tracksuit pants",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/Apparel/DialedMoods/Dialed Track Suit Zip Up/Dialed_Tracksuit_Pants.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5666da99d2f35e4a.jpg",
+      "title": "Dialed Moods black tracksuit pants with yellow side stripe text",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "08fffd0c-4d3b-4a25-b2a5-6bd0eec6c094",
+      "product": "black visor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Mood accessories Renders/Dialed Visor/Dialed Visor Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/36ff8028608252d0.jpg",
+      "title": "Black visor with gold Dialed Moods logo 3D render",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d5c0c70a-dc5f-4394-b563-d047a7f9522f",
+      "product": "Blue Acai",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Mock Up Designs/NewDesignMockup_2026_01 Jan/Dialed_EnergySeltzer_BlueAcai_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8bb08dbcb9448c25.jpg",
+      "title": "Dialed Moods Blue Acai Nootropic Performance Elixir Can Render",
+      "alpha": true,
+      "size": "3000x3750",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "82c6e73c-d59b-4cb0-82a0-c29dbf5a0a3d",
+      "product": "Blue Acai",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes/Dialed_Kava_Display_Blue_Acai_12Pack_Closed.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fa01b66b418b7798.jpg",
+      "title": "Dialed Moods Blue Acai 12-pack display box and single can render",
+      "alpha": true,
+      "size": "2000x2000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3f670304-c635-4e0a-90da-fbfba52b7487",
+      "product": "Blue Acai energy drink",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot2_BlueAcai.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e177a9dc76e42175.jpg",
+      "title": "Dialed Moods Blue Acai energy drink can render with QR code",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5b7ab594-bf75-4b5f-8c10-8f07c10b18b4",
+      "product": "Blue Acai Kratom Energy Drink",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Front_BlueAcai.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bc3dd89e7683922a.jpg",
+      "title": "Dialed Moods Blue Acai Kratom Energy Drink Can 3D Render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "66d6d6c4-3af0-495a-b9cb-7b3b761ee616",
+      "product": "Blue Acai Motivation Elixir",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer Feb 2026/Dialed_Seltzer_Kratom_45_BlueAcai.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1d0200b1a25d75da.jpg",
+      "title": "Dialed Moods Blue Acai Motivation Elixir can 3D render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ef3d49fc-cc50-4cc0-b74c-025274134b29",
+      "product": "Blue Acai Motivation Elixir",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes/Dialed_Kava_Display_Blue_Acai_6Pack_Closed.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ab297ccac8114bff.jpg",
+      "title": "Dialed Moods Blue Acai Motivation Elixir 6-pack box and single can render",
+      "alpha": true,
+      "size": "2000x2000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "194ef14b-ff52-40ba-ad20-99fae167f356",
+      "product": "Blue Acai Motivation Elixir 6-pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes/Dialed_Kava_Display_Blue_Acai_6Pack_Closed_Solo.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a9c995a7fe28aa71.jpg",
+      "title": "Dialed Moods Blue Acai Motivation Elixir 6-pack box render",
+      "alpha": true,
+      "size": "2000x2000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c983e137-b6d6-444c-99ee-543ea0002c92",
+      "product": "Blue Acai Nootropic Performance Elixir 6-pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:main",
+      "path": "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Energy Drink/Display/00 Display_BA_6pk.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c0823c978123523d.jpg",
+      "title": "Dialed Moods Blue Acai 6-pack energy drink box and cans render",
+      "alpha": true,
+      "size": "2000x2000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "13a65278-f6fc-466b-af5f-ecab837648d0",
+      "product": "Blue Raspberry Euphoric Liquid Shot",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Shots/Kava Kratom Shots/Display/Shots_Kava_Display_BlueRaspberry_Open_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7964b79c9d4a3f45.jpg",
+      "title": "Dialed Moods Blue Raspberry Euphoric Liquid Shot 12-pack display render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2c4c3424-4f9f-459b-afdd-9016688f0edd",
+      "product": "Blue Raspberry Euphoric Liquid Shot",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Shots/Kava Kratom Shots/Shots_Kava_BlueRaspberry_45_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c83d629743947f05.jpg",
+      "title": "Dialed Moods Blue Raspberry Euphoric Liquid Shot 3D Render",
+      "alpha": true,
+      "size": "2800x4600",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7a5ccf29-45bb-49e1-ad74-d00d9ee2f2e2",
+      "product": "Blue Raspberry Euphoric Liquid Shot display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Shots/Kava Kratom Shots/Display/Shots_Kava_Display_BlueRaspberry_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/035160ee7a34c029.jpg",
+      "title": "Dialed Moods Blue Raspberry Euphoric Liquid Shot display box render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1d4b4ceb-fac7-4228-b958-b5fc52f26be9",
+      "product": "Blue Raspberry Euphoric Seltzer",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/Seltzers/Old Versions/Dialed_Seltzers_Splash_BlueRaspberry.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/05f048fe832c405c.jpg",
+      "title": "Dialed Moods Blue Raspberry Seltzer with Coffee Beans and Leaves Splash Render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e12455b8-5a64-48be-8a40-c48071528ba7",
+      "product": "Blue Raspberry Euphoric Seltzer",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/Seltzers/Dialed_Seltzers_Splash_BlueRaspberry.png",
+      "thumb": "/data/dam/proxies/thumbs/dc003a353fff9fc2.jpg",
+      "title": "Dialed Moods Blue Raspberry Seltzer Can with Dynamic Splash and Leaves",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5a89fe81-d2b2-4dce-b4a7-18aa2898c313",
+      "product": "Blue Raspberry Kava & Kratom Euphoric Seltzer",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/V1/Dialed_Kava_NewDesign_BlueRaspberry_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/856dec83d91e93a3.jpg",
+      "title": "Dialed Moods Kava & Kratom Blue Raspberry Euphoric Seltzer Can",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b6806d94-39c2-4a30-8295-647737ec4fa0",
+      "product": "Blue Raspberry Kava & Kratom Euphoric Seltzer",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/DisplayBox/Kava_12PK_BlueRaspberry_ClosedwCan_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3768119fbcc96869.jpg",
+      "title": "Dialed Moods Blue Raspberry Kava Kratom Seltzer 12-pack box and can render",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ce14ccf9-07d4-418f-9683-80018ba3d4e3",
+      "product": "Blue Raspberry Kava & Kratom Euphoric Seltzer 12-pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Display Boxes_June 2025/Dialed_Kava_Display_BlueRaspberry_12Pack_Closed.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8c96ae33cd5e3a47.jpg",
+      "title": "Dialed Moods Blue Raspberry Kava & Kratom Seltzer 12-pack and single can render",
+      "alpha": true,
+      "size": "4500x4500",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6f6ef4d7-8594-4405-bb35-27b004e9777d",
+      "product": "Blue Raspberry Kava & Kratom Euphoric Seltzer 6-pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Display Boxes_June 2025/Dialed_Kava_Display_BlueRaspberry_6Pack_Closed_Solo.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f0e0e8037f1b2583.jpg",
+      "title": "Dialed Moods Kava & Kratom Blue Raspberry 6-Pack Box Render",
+      "alpha": true,
+      "size": "4500x4500",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "32da153d-fef7-47b9-babe-0ffd98a25904",
+      "product": "Blueberry Acai 20-pack powder energy packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/20pk/Dialed_Energy_Display_BlueberryAcai_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/824c94e874d65c43.jpg",
+      "title": "Dialed Moods Blueberry Acai 20-pack energy powder display box and stick packs",
+      "alpha": true,
+      "size": "3400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f11221bc-315d-4732-8bb3-1c048bb96d24",
+      "product": "Blueberry Acai energy packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/20pk/Dialed_Energy_Display_BlueberryAcai_45_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/340ecad724e2000a.jpg",
+      "title": "Dialed Moods Blueberry Acai 20-pack energy powder display box and stick packs",
+      "alpha": true,
+      "size": "3400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a4e172ef-a905-4867-b845-6985790f5702",
+      "product": "Blueberry Acai energy powder stick pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/StyleShots/Blueberry.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2ee6feba0d497c46.jpg",
+      "title": "Two Dialed Moods Blueberry Acai energy powder stick packs on wood with blueberries",
+      "alpha": true,
+      "size": "1138x1138",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "af770e2a-e849-43ea-b694-b2bda9a5bb9f",
+      "product": "Blueberry Acai Powder Energy Pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/Dialed_EnergyPack_Blueberry_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ea6a12e7ea462a04.jpg",
+      "title": "Dialed Moods Blueberry Acai Powder Energy Pack 3D Render",
+      "alpha": true,
+      "size": "2800x1000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "69b73099-5013-41b3-adb3-f67640fe6b39",
+      "product": "Blueberry Acai Powder Energy Pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/EnergyPacks/Dialed_Energy_Packs_Salt_BlueberryAcai0015.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3803fc196ad83e35.jpg",
+      "title": "Dialed Moods Blueberry Acai Powder Energy Pack with Ingredients",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "cf0c6b30-e9da-4cd4-8a0c-f5a3bba6ab70",
+      "product": "Cherry Lime 20-pack powder energy drink display box and stick packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/20pk/Dialed_Energy_Display_CherryLime_45_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fdfb055039ee410c.jpg",
+      "title": "Dialed Moods Cherry Lime 20-pack energy powder display box and stick packs",
+      "alpha": true,
+      "size": "3400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "cf399995-3d1a-483a-b9a8-851a63757587",
+      "product": "Cherry Lime 30 Powder Energy Packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/30pk/DialedMoods_Energy_30pk_CherryLime_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6e0e00e20ed139b3.jpg",
+      "title": "Dialed Moods Cherry Lime 30-pack energy powder box render",
+      "alpha": true,
+      "size": "3200x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6f8d7887-88a4-402b-91af-0a40655a7d55",
+      "product": "Cherry Lime Energy Powder Drink Mix",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "shape"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/30pk/DialedMoods_Energy_30pk_CherryLime_Closed_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c3782a907b3e3022.jpg",
+      "title": "Dialed Moods Cherry Lime Energy Powder 30-pack display box and stick packs",
+      "alpha": true,
+      "size": "3200x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8a25de32-b42e-4cd7-b4ab-e6fe8ccef287",
+      "product": "Cherry Lime Energy Powder Drink Mix 30-pack display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/30pk/DialedMoods_Energy_30pk_CherryLime_RtSide_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/598698f0dc1b7429.jpg",
+      "title": "Dialed Moods Cherry Lime Energy Powder 30-pack display box render",
+      "alpha": true,
+      "size": "3200x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6bd33a5e-02f3-4c89-a950-9da3dba9f0db",
+      "product": "Cherry Lime Energy Powder Drink Mix 30-pack display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/30pk/DialedMoods_Energy_30pk_CherryLime_LtSide_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3cecebe085ff946a.jpg",
+      "title": "Dialed Moods Cherry Lime Energy Powder Mix 30-Pack Display Box Render",
+      "alpha": true,
+      "size": "3200x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "057647b3-439e-43cd-b8ae-4098c08298f3",
+      "product": "Cherry Lime powder energy pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/old/Dialed_EnergyPack_CherryLime_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0648036fcc05bd26.jpg",
+      "title": "Dialed Moods Cherry Lime Powder Energy Pack 3D Render",
+      "alpha": true,
+      "size": "2800x1000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "528de661-69ee-4b67-9621-449d610cb6d4",
+      "product": "Cherry Lime Powder Energy Pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/Dialed_EnergyPack_CherryLime_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/08ca63a972abfb6b.jpg",
+      "title": "Dialed Moods Cherry Lime Powder Energy Pack 3D Render",
+      "alpha": true,
+      "size": "2800x1000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b89302d9-b5e5-4bbc-ade6-d4547517e2cb",
+      "product": "Chili Mango Electrolyte Drink Mix 24-count stick pack display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Recharge Me Renders/Recharge_Me Display Renders/24ct/24ct_Front_Opened_Chili_Mango_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/15e0edf250b803d9.jpg",
+      "title": "Dialed Moods Recharge Me Chili Mango Electrolyte Drink Mix 24-count display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1b24ce70-1a99-4fe8-9d14-b259f13d2c31",
+      "product": "Citrus Circuit electrolyte powder pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Old Packs/Updated/DialedMoods_Electros_Citrus_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4679983c5d794769.jpg",
+      "title": "Dialed Moods Citrus Circuit Electrolyte Powder Pack Render",
+      "alpha": true,
+      "size": "2800x1000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d0877283-eb1b-4fd7-a0c5-df931f615a7f",
+      "product": "Citrus Circuit powder pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/Assets for Amazon/Hydro Pack Renders/DialedMoods_Electros_Citrus_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/485bd133d9298f61.jpg",
+      "title": "Dialed Moods Citrus Circuit Hydration Powder Pack Render",
+      "alpha": true,
+      "size": "2800x1000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "66b69a41-d83c-45b4-930e-bbf2161d2e7d",
+      "product": "Citrus Surge Liquid Energy Shot",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/EnergyShots/Dialed_EnergyShots_Splash_CitrusSurge0001.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4da72ee1d4dbee56.jpg",
+      "title": "Dialed Moods Citrus Surge energy shot with coffee beans and leaves splash",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9b6df490-b3b4-43db-ba7b-0ebca591ac12",
+      "product": "Citrus Surge Liquid Energy Shot display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Shots/Energy Shots/DisplayRenders/Shots_Energy_Display_Citrus_Open_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/72962b5d9cf06f39.jpg",
+      "title": "Dialed Moods Citrus Surge Liquid Energy Shot display box render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "34f0b60e-eff1-4820-91c8-c8a4a92d060a",
+      "product": "Cognition Elixir Variety Pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/InfluncerBox/v1/Influbox_Front_Opened.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d8c923dfdf2f39ed.jpg",
+      "title": "Dialed Moods Cognition Elixir Variety Pack open box render",
+      "alpha": true,
+      "size": "3840x3840",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "046a7b5e-31fe-4f1d-abe2-24080ee97ece",
+      "product": "Cognition Elixir Variety Pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/InfluncerBox/v1/Influbox_45_Opened.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0365a0d7f3c18e3b.jpg",
+      "title": "Dialed Moods Cognition Elixir Variety Pack open box render",
+      "alpha": true,
+      "size": "3840x3840",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "90fcab54-ef72-40cd-9efc-7f2b51bb084e",
+      "product": "Cognition Elixir+ Variety Pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/InfluncerBox/v2/front_open.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bab3be7ef1fa5e90.jpg",
+      "title": "Dialed Moods Cognition Elixir+ Variety Pack open box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "95221b43-6f8b-459d-8013-ef110c12dd4f",
+      "product": "Cognition Elixir+ Variety Pack with Secret Juice, Sour Watermelon Candy, Black Cherry Vanilla, Blue Glacier, Lychee, and Lemonade cans",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/InfluncerBox/v2/45_open.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5fdeb072260c9779.jpg",
+      "title": "Dialed Moods Cognition Elixir+ Variety Pack Open Box Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "81f7ae79-0fd7-4ee8-b7b7-8058ca119985",
+      "product": "Cognition Pouches Citrus",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Cognition Pouches/CognitionPouch_45_Citrus_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a4e0511506ac76d9.jpg",
+      "title": "Dialed Moods Cognition Pouches Citrus 3D Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f876a3fb-097e-4508-894d-f6f90b82baf5",
+      "product": "Cognition Pouches Citrus",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Cognition Pouches/CognitionPouch_45_sleeve_Citrus_Sleeve.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e9ab5048d496cdc8.jpg",
+      "title": "Dialed Moods Cognition Pouches Citrus stacked 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "726b41ce-3961-4cc2-a198-e6d3a44ae629",
+      "product": "Cognition Pouches Cool Mint",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Cognition Pouches/CognitionPouch_front_CoolMint_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d5e2b7deb2c2fb15.jpg",
+      "title": "Dialed Moods Cognition Pouches Cool Mint front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ccb2fa84-bc16-4017-9ed7-a91965ae1655",
+      "product": "Cognition Pouches Cool Mint",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Cognition Pouches/CognitionPouch_45_sleeve_CoolMint_Sleeve.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/597e7d8766f382db.jpg",
+      "title": "Dialed Moods Cognition Pouches Cool Mint Stack 3D Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8a74171f-4fb6-4258-af72-7d08b5178e92",
+      "product": "Cognition Pouches Wintergreen",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Cognition Pouches/CognitionPouch_45_sleeve_Wintergreen_Sleeve.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5028806b8c1f74c7.jpg",
+      "title": "Dialed Moods Cognition Pouches Wintergreen 5-count stack render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4cf0a2c4-a136-4baf-acf5-fc5969fd218f",
+      "product": "Cognition Pouches Wintergreen",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Cognition Pouches/CognitionPouch_45_Wintergreen_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4f6d61039400ad93.jpg",
+      "title": "Dialed Moods Cognition Pouches Wintergreen 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "fa95a3c8-3aa6-4e9e-81b7-d1f7b11286de",
+      "product": "Collagen Peptides + Creatine Monohydrate stick pack box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_BB_Closed_Back.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/286085def2bf6a27.jpg",
+      "title": "Dialed Moods Collagen + Creatine Stick Pack Supplement Facts Panel",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "bad44592-69b7-4c9c-ba5b-1eb1d4070cf3",
+      "product": "Collagen Stick Pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_PP_Closed_Back_24CT.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0645f1f2ec49e07f.jpg",
+      "title": "Dialed Moods Collagen Stick Pack Supplement Facts and Usage",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f8cd6c10-626d-40aa-b11c-5cd54d831043",
+      "product": "Collagen stick packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_SK_Closed_Back.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f77970179c87138b.jpg",
+      "title": "Dialed Moods Collagen Stick Pack Supplement Facts Label Art",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8f0c1352-5236-4a4c-b610-151fb4a42182",
+      "product": "Creatine + Collagen Berry Bliss stick pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Creatine_Collagen_45_BB_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f61a4bb8173fc74c.jpg",
+      "title": "Dialed Moods Creatine + Collagen Berry Bliss stick pack render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c80f2ea2-17a6-44d7-9eb4-20a1c5fb6260",
+      "product": "Creatine + Collagen Berry Bliss stick packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_BB_Closed_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/99ee2b7bf6a6ba0e.jpg",
+      "title": "Dialed Moods Creatine + Collagen Berry Bliss stick pack display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "773b4838-0db7-408c-bed3-dd7917877f1f",
+      "product": "Creatine + Collagen Berry Bliss stick packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_2_BB_Opened_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/da507cea717375ce.jpg",
+      "title": "Dialed Moods Creatine + Collagen Berry Bliss stick pack display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "02f22caf-fd01-4f93-b605-2d36d726fc16",
+      "product": "Creatine + Collagen Berry Bliss stick packs display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_45_BB_Closed_45_24CT.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6270700eb38fca0b.jpg",
+      "title": "Dialed Moods Creatine Collagen Berry Bliss stick pack display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "38ba634b-7e16-48e4-a31b-528e338e6082",
+      "product": "Creatine + Collagen Berry Bliss stick packs display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_45_BB_Opened_45_24CT.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/69241e0030555c28.jpg",
+      "title": "Dialed Moods Creatine Collagen Berry Bliss stick packs display box render.",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a376d2aa-da5a-4361-90e6-7f3b9dfdbfc7",
+      "product": "Creatine + Collagen Pink Pump",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_PP_Closed_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0380bcf33e76f06a.jpg",
+      "title": "Dialed Moods Creatine + Collagen Pink Pump display box front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1a3f5797-ca2e-4d2c-96ff-ba81107f957e",
+      "product": "Creatine + Collagen Pink Pump",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_PP_Closed_Front_24CT.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c0d680ac4b477254.jpg",
+      "title": "Dialed Moods Creatine + Collagen Pink Pump stick packs display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "002b9d9b-4e21-4f2f-a37a-40bed26f445e",
+      "product": "Creatine + Collagen Pink Pump stick pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Creatine_Collagen_45_PP_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b4da9a71097ecc8c.jpg",
+      "title": "Dialed Moods Creatine + Collagen Pink Pump stick pack render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "bc0431a0-0fd1-44b5-bc75-1312df325532",
+      "product": "Creatine + Collagen Pink Pump stick packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_45_PP_Closed_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f0e43715db0321e5.jpg",
+      "title": "Dialed Moods Creatine Collagen Pink Pump stick pack display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5a2f21e2-295e-4df8-b071-912bb1e16ddb",
+      "product": "Creatine + Collagen Pink Pump stick packs display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_2_PP_Opened_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/699b9c0f15ecc3c5.jpg",
+      "title": "Dialed Moods Creatine + Collagen Pink Pump stick packs display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "594e5ecc-121e-42c1-87d1-bf7822bb7ab8",
+      "product": "Creatine + Collagen Pink Pump stick packs display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_2_PP_Opened_Front_24CT.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7ab89b04616da379.jpg",
+      "title": "Dialed Moods Creatine + Collagen Pink Pump stick packs display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "978b75da-9d16-46b7-9aa2-e8ba1270194a",
+      "product": "Creatine + Collagen Stick Packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_BB_Closed_Right.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a0907bc15366a5f9.jpg",
+      "title": "Dialed Moods Creatine Collagen Stick Packs packaging panel",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5cae1c74-3cdf-45e1-99cd-41da84743bdc",
+      "product": "Creatine + Collagen Stick Packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_PP_Closed_Right.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3271a8d2848b34e1.jpg",
+      "title": "Dialed Moods Creatine Collagen Stick Packs front packaging render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e85b774c-bb5e-43ba-8439-17b034632e2b",
+      "product": "Creatine + Collagen stick packs, Tropic Glow flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_2_TG_Opened_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e64eb9172d13d3cb.jpg",
+      "title": "Dialed Moods Creatine + Collagen Tropic Glow stick pack display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c7b23393-84ae-44c8-9bad-1e53718db086",
+      "product": "Creatine + Collagen Sunkissed 24-count stick packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_SK_Closed_Front_24CT.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0ed83a06c6504046.jpg",
+      "title": "Dialed Moods Creatine Collagen Sunkissed stick packs display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7f5d49c6-734c-4616-980b-31932b49fb2d",
+      "product": "Creatine + Collagen Sunkissed stick pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Creatine_Collagen_45_SK_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2bfb9114449713a7.jpg",
+      "title": "Dialed Moods Creatine + Collagen Sunkissed Stick Pack Transparent Cutout",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9c9a189e-e89f-417c-8c68-d6f021a6ae86",
+      "product": "Creatine + Collagen Sunkissed stick packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_SK_Closed_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/18de64282ce54db3.jpg",
+      "title": "Dialed Moods Creatine + Collagen Sunkissed stick pack display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ed11c8c5-930d-4179-b398-b12e8bb71366",
+      "product": "Creatine + Collagen Sunkissed stick packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_2_SK_Opened_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/56c37572bda4f700.jpg",
+      "title": "Dialed Moods Creatine + Collagen Sunkissed stick pack display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1e467d64-79af-4df6-aece-6fe9d98c82c6",
+      "product": "Creatine + Collagen Sunkissed stick packs display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_2_SK_Opened_Front_24CT.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1ff3f74a0422c6d6.jpg",
+      "title": "Dialed Moods Creatine + Collagen Sunkissed stick packs display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9086fc92-7b6b-4b85-b83b-132eccafcc2b",
+      "product": "Creatine + Collagen Tropic Glow",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_TG_Closed_Front_24CT.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/38fb894bf11731f6.jpg",
+      "title": "Dialed Moods Creatine Collagen Tropic Glow stick pack box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "69839b03-f625-4ce6-837e-3dde3384504f",
+      "product": "Creatine + Collagen Tropic Glow stick pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Creatine_Collagen_Front_TG_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2b13519ad6011bfd.jpg",
+      "title": "Dialed Moods Creatine Collagen Tropic Glow stick pack front",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5302ba89-e3e9-4380-88c4-79458dcd259c",
+      "product": "Creatine + Collagen Tropic Glow stick packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_45_TG_Opened_45_24CT.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/362793e55379f66c.jpg",
+      "title": "Dialed Moods Creatine Collagen Tropic Glow 24-count display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "474461af-f0c7-4b9c-9f9b-31e3baed2063",
+      "product": "Creatine + Collagen Tropic Glow stick packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_2_TG_Opened_Front_24CT.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f7bc8dc257fbbee3.jpg",
+      "title": "Dialed Moods Creatine Collagen Tropic Glow 24-count display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "24db7151-6bc4-446c-926f-c53953c7106b",
+      "product": "Creatine + Collagen Tropic Glow stick packs display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_Front_TG_Closed_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fd3da5cbb0fb90d5.jpg",
+      "title": "Dialed Moods Creatine + Collagen Tropic Glow stick pack display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "08816b45-57fe-47c6-9f00-8169687d10b5",
+      "product": "Creatine Collagen Daily Strength & Beauty Build Berry Bliss stick packs display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_45_BB_Opened_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/674539fc60a61f1a.jpg",
+      "title": "Dialed Moods Creatine Collagen Berry Bliss stick packs display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e0aeecd2-dcff-4770-a2bf-e90c5af71ae6",
+      "product": "Creatine Collagen Pink Pump stick packs display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_45_PP_Opened_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9b1095613e988e19.jpg",
+      "title": "Dialed Moods Creatine Collagen Pink Pump display box with stick packs",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4dc40762-f8ed-4225-af95-262501c5432b",
+      "product": "Creatine Collagen Sunkissed stick packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_45_SK_Opened_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3c004b49ccb7f605.jpg",
+      "title": "Dialed Moods Creatine Collagen Sunkissed stick pack display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "31a6c646-e91a-48ea-b5c9-5894537713ca",
+      "product": "Creatine Collagen Tropic Glow stick packs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Collagen/Displayboxes/Displayboxes_Collagen_45_TG_Opened_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/284783b661ccc4f5.jpg",
+      "title": "Dialed Moods Creatine Collagen Tropic Glow stick pack display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9aac744e-6fab-406a-816b-18f63007baf8",
+      "product": "Creatine Gummies",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Mylar_Samples/Creatine_Mylar_Front_Blue_GeniusFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7b8b7dcff4038e4e.jpg",
+      "title": "Dialed Moods Creatine Gummies Blue Genius sample pack render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a999f4fc-c1a8-4497-9b90-27d3dcdbfb56",
+      "product": "Creatine Gummies",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Mylar_Samples/Creatine_Mylar_Front_Citrus_SurgeBack.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d94ba5a271ce54b4.jpg",
+      "title": "Dialed Moods Creatine Gummies Mylar Pouch Back Panel Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a51e8c5a-7d34-444a-8b1c-b8da7b1749b1",
+      "product": "Creatine Gummies Blue Genius",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_BG_Front_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/921ba5d3d87234f9.jpg",
+      "title": "Dialed Moods Creatine Gummies Blue Genius jar front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "706d45f5-3e46-42b3-b413-264eced9dba9",
+      "product": "Creatine Gummies Blue Genius",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_BG_Front_Open_Front_Open.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b2641241d688635e.jpg",
+      "title": "Dialed Moods Creatine Gummies Blue Genius open jar 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "48dbe57a-1b29-444c-8da5-7618d8683852",
+      "product": "Creatine Gummies Cherry Charge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Mylar_Samples/Creatine_Mylar_Front_Cherry_ChargeFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f23b06c9eff3cf66.jpg",
+      "title": "Dialed Moods Creatine Gummies Cherry Charge sample pack render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "20ca9640-4d82-4768-9f69-d973a4581273",
+      "product": "Creatine Gummies Cherry Charge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_CC_Front_Gummies_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3d17bd4635f1823c.jpg",
+      "title": "Dialed Moods Creatine Gummies Cherry Charge Jar Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4c9dd12c-f300-40ad-8159-4dc2db875966",
+      "product": "Creatine Gummies Cherry Charge Sample Pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Mylar_Samples/Creatine_Mylar_45_Cherry_Charge45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2b6621f79c17585d.jpg",
+      "title": "Dialed Moods Creatine Gummies Cherry Charge sample pack render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "404170b2-0813-4a02-9572-750c49b08faa",
+      "product": "Creatine Gummies Citrus Surge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_CS_Front_Open_Front_Open.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c1bbbed28a155a9d.jpg",
+      "title": "Dialed Moods Creatine Gummies Citrus Surge Jar Open Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7b52aa1e-e25b-4052-926c-463001fe1733",
+      "product": "Creatine Gummies Citrus Surge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_CS_Front_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/071693a0bb1b4cdf.jpg",
+      "title": "Dialed Moods Creatine Gummies Citrus Surge jar front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f3be1dd9-4539-40e4-8fdf-9051bd42547f",
+      "product": "Creatine Gummies Citrus Surge sample pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Mylar_Samples/Creatine_Mylar_45_Citrus_Surge45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/71d29c1618037ab7.jpg",
+      "title": "Dialed Moods Creatine Gummies Citrus Surge sample pack render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b772eee1-b03e-417a-af76-ce0e29a11edc",
+      "product": "Creatine Gummies Citrus Surge sample pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Mylar_Samples/Creatine_Mylar_Front_Citrus_SurgeFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/633d9a2d2b7c927a.jpg",
+      "title": "Dialed Moods Creatine Gummies Citrus Surge sample pack",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ce545bd4-7e1a-454d-9a94-f3ee5b8c5d9f",
+      "product": "Creatine Gummies Mango Chamoy",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Old Version/Creatine_MangoChamoy.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/74ff7c06cf7625a8.jpg",
+      "title": "Dialed Moods Creatine Gummies Mango Chamoy jar render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7bc400e9-4cce-49a8-8b66-425659553e6e",
+      "product": "Creatine Gummies Max Melon",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_MM_Front_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1582a60fe000c0d9.jpg",
+      "title": "Dialed Moods Creatine Gummies Max Melon jar front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f50b14b3-e22b-4be2-89d4-e5f8685f34f3",
+      "product": "Creatine Gummies Max Melon",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_MM_Front_Open_Front_Open.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/92736f42660ea74e.jpg",
+      "title": "Dialed Moods Creatine Gummies Max Melon Open Jar 3D Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f8f2b188-4941-40a8-8342-7db7043dd618",
+      "product": "Creatine Gummies Max Melon sample pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Mylar_Samples/Creatine_Mylar_45_Max_Melon45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c502fc0aa628d236.jpg",
+      "title": "Dialed Moods Creatine Gummies Max Melon sample pack render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "694add16-3c3d-4f46-a508-26b9eada2849",
+      "product": "Creatine Gummies Peak Peach",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_PP_Front_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/15ca092b98290127.jpg",
+      "title": "Dialed Moods Creatine Gummies Peak Peach jar front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "20cf4e6f-d6dc-457f-ae2c-d6846453bb81",
+      "product": "Creatine Gummies Peak Peach",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_PP_Front_Gummies_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7df1df2ab84870e3.jpg",
+      "title": "Dialed Moods Creatine Gummies Peak Peach jar 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2e192637-8062-450a-874e-864615594db7",
+      "product": "Creatine Gummies Tropic Flow",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_TF_45_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fcafcab246c84fee.jpg",
+      "title": "Dialed Moods Creatine Gummies Tropic Flow Jar 3D Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "260ff871-c504-402f-8fbe-cf22699afc40",
+      "product": "Creatine Gummies Tropic Flow",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Mylar_Samples/Creatine_Mylar_45_Tropic_Flow45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2ffdfcf78fd17e14.jpg",
+      "title": "Dialed Moods Creatine Gummies Tropic Flow sample pack render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2b4a9581-f24e-4be4-b93b-ebc29159feae",
+      "product": "Creatine Gummies Tropic Flow sample pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Mylar_Samples/Creatine_Mylar_Front_Tropic_FlowFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c7fd4d999c4318b8.jpg",
+      "title": "Dialed Moods Creatine Gummies Tropic Flow Sample Pack Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b566b190-9dd8-4b68-8eea-72b17aa2beaa",
+      "product": "Creatine Gummies, Blue Genius flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_BG_Front_Gummies_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/57f44535c41a0115.jpg",
+      "title": "Dialed Moods Creatine Gummies Blue Genius jar and gummies render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a85f6674-c8f9-4da5-800c-3e1f01ae3028",
+      "product": "Creatine Gummies, Blue Genius flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_BG_45_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bfd09e83792ff667.jpg",
+      "title": "Dialed Moods Creatine Gummies Blue Genius flavor jar render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d7971653-a8f1-48b1-80fa-250dc4897b18",
+      "product": "Creatine Gummies, Cherry Charge flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_CC_Front_Open_Front_Open.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7e024c09f5f87e03.jpg",
+      "title": "Dialed Moods Creatine Gummies Cherry Charge open jar 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2caa9df4-cf2e-46c4-b648-2ccf9b0aacad",
+      "product": "Creatine Gummies, Cherry Charge flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_CC_Front_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8bbc350b2fadbfc6.jpg",
+      "title": "Dialed Moods Creatine Gummies Cherry Charge jar front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "080126c0-fc24-466f-bc6b-1a7e305f7f71",
+      "product": "Creatine Gummies, Citrus Surge flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_CS_45_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b4b8588de32a8c50.jpg",
+      "title": "Dialed Moods Creatine Gummies Citrus Surge jar 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "727ae02d-5b6a-4e57-a621-8927739de12d",
+      "product": "Creatine Gummies, Peak Peach flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Mylar_Samples/Creatine_Mylar_45_Peak_Peach45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9eaa0b50ac5a3311.jpg",
+      "title": "Dialed Moods Creatine Gummies Peak Peach Sample Pack Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0ca23231-8a39-4b0c-bf63-c93fb3db6b1a",
+      "product": "Creatine Gummies, Peak Peach flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_PP_Front_Open_Front_Open.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/29d6d134bf7e0bb3.jpg",
+      "title": "Dialed Moods Creatine Gummies Peak Peach jar 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d4a0225c-c140-4058-b4b4-6164989f4615",
+      "product": "Creatine Monohydrate gummies",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_CC_45_back_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6d2f34fbc3aaa1ff.jpg",
+      "title": "Dialed Moods Creatine Monohydrate Gummies Jar Back Three-Quarter Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c5f6b839-b352-4578-98be-abfa755c1ee7",
+      "product": "Creatine Monohydrate gummies",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Website Assets/August 2026 SKU Images/Product Renders/Jars/Creatine_Jars_PP_45_back_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b062e6a3ebd9c7eb.jpg",
+      "title": "Dialed Moods Creatine Monohydrate gummies jar three-quarter render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "aabd47d8-08d7-4869-b0c1-18b62561220c",
+      "product": "Creatine Monohydrate Gummies Cherry Lime",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Old Version/Creatine_CherryLime.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c322a59adf63bed6.jpg",
+      "title": "Dialed Moods Creatine Monohydrate Gummies Cherry Lime Jar Render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6d85904e-858b-4a34-b974-bce8825522a1",
+      "product": "Creatine Monohydrate Gummies Mango Chamoy",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Old Version/Dialed_Creatine_Mango_Front_NoGummy_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6e77f27b2996596b.jpg",
+      "title": "Dialed Doses Creatine Monohydrate Gummies Mango Chamoy Jar Render",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8cdb508f-044b-4eb3-8bed-212fb40880b5",
+      "product": "Creatine Monohydrate Gummies Strawberry Kiwi",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/Creatine/Old Version/Dialed_Creatine_StrawberryKiwi_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/59a7d7004005d4a2.jpg",
+      "title": "Dialed Doses Creatine Gummies Strawberry Kiwi Jar with two gummies",
+      "alpha": true,
+      "size": "3200x3200",
+      "addedAt": "2026-09-16",
       "status": "candidate"
     }
   ]

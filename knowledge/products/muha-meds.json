@@ -3,7 +3,7 @@
   "schema": "product-registry/1",
   "brand": "brand.muha",
   "displayName": "Muha Meds",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "logo": [
     {
       "path": "AI Fruit VIdeos Muha/refs/MMembers Logo.png",
@@ -969,6 +969,2529 @@
       "alpha": true,
       "size": "2400x2400",
       "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0699522b-91e4-4582-b95a-bd510897b1eb",
+      "product": "1 Gram Pre-Roll Headband Indica",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pre-Rolls/MuhaMadness/CA/Gas Pack/MuhaMadness_Headband_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5b4474a74fe8128f.jpg",
+      "title": "Muha Meds Headband Indica 1 Gram Pre-Roll Packaging Render",
+      "alpha": true,
+      "size": "3200x4200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a477620a-3d20-406d-bd2f-41e62d4b6537",
+      "product": "1 Gram Pre-Roll, Lemon Cherry Gelato",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pre-Rolls/MuhaMadness/CA/Exotic Pack/MuhaMadness_LemonCherry_Front_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/22b3a5a89d719029.jpg",
+      "title": "Muha Meds Lemon Cherry Gelato 1 Gram Pre-Roll Packaging Render",
+      "alpha": true,
+      "size": "3200x4200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4d90b5cf-bfef-4e97-bf9b-b5a64949e9bf",
+      "product": "1-gram Super Sour Diesel distillate cartridge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Cartridges/Distillate/MI/MI_1G_Distillate_Carts/MI_Distillate_1gram_Super_Sour_Diesel_Three_Quarters_i1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7869e27a821bdf44.jpg",
+      "title": "Muha Meds Super Sour Diesel 1-gram distillate cartridge and packaging render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "61c3ffd2-d319-4793-a553-9a036afbffb8",
+      "product": "1.68G Disposable Blueberry Haze",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/OH/OH_1_68G_Dispos/OH_1_68G_Dispos_BlueberryHaze_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fec5ab7f2948a1b8.jpg",
+      "title": "Muha Meds 1.68G Disposable Blueberry Haze vape and packaging render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f4ef91da-cfc8-45b3-9f03-588a9b24ad85",
+      "product": "10 Hash Rosin Gummies 250mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/Hash Rosin Gummies/mockups/sativa_bag_front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/698c458bc2b24052.jpg",
+      "title": "Mo' Dank Marijuana Hash Rosin Gummies Orange Pouch Front",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "15ad8b93-cd4d-466e-b49d-8ed8a504f700",
+      "product": "10 Hash Rosin Gummies 250mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/Hash Rosin Gummies/mockups/hybrid_bag_front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cda02071143beda6.jpg",
+      "title": "Mo' Dank Hash Rosin Gummies 250mg blue pouch front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "364f43b4-1b98-4572-83bf-21f042e465a5",
+      "product": "1g 510 distillate cartridge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/1g 510 dist/mockups/1g_device_hybrid_back.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/18f9870c30e1ba94.jpg",
+      "title": "Muha Meds 1g 510 Distillate Cartridge 3D Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5c3257f1-c086-4e92-b58e-8a559442b67e",
+      "product": "1g 510 distillate vape cartridge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/1g 510 dist/mockups/1g_device_indica_front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5778878ebd36479a.jpg",
+      "title": "Muha Meds 1g 510 Distillate Vape Cartridge Render on White",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "922ed2e5-bd2a-471a-8066-17cd0353fc95",
+      "product": "1g 510 distillate vape cartridge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/1g 510 dist/mockups/1g_device_hybrid_front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/722351cdba1900b4.jpg",
+      "title": "Mi DANK 1g 510 distillate vape cartridge front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "79939157-ab6f-47af-afc0-88c392b502ce",
+      "product": "1g 510 thread distillate cartridge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/1g 510 dist/mockups/1g_device_sativa_front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bb8b165649fc8a07.jpg",
+      "title": "Mu Dank 1g 510 thread distillate cartridge render on white",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "08034169-97ef-4617-a028-cfc6db4e2fbe",
+      "product": "1G Distillate Vape Cartridge Sour Diesel",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Cartridges/Distillate/NY/NY_1G_Distillate_Carts/Old/NY_1G_Distillate_Carts_SourDiesel_Three_Quarters.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e0ea305cc821c5ba.jpg",
+      "title": "Muha Meds 1G Distillate Vape Cartridge Sour Diesel with Packaging Render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9ee05a4d-11a0-4a3b-b34a-fb36c7542ab8",
+      "product": "1G Gen 3 Melted Diamond All-In-One, Lemon Cherry Gelato",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "logo",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NY/NY 1G Gen 3 Melted Diamond AIO/NY_1G_MD_Disposable_Front_Solo_LemonCherryGelato0001.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8c3a5139530f9dd5.jpg",
+      "title": "Muha Meds All-In-One Lemon Cherry Gelato label artwork",
+      "alpha": true,
+      "size": "2560x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b85391eb-5835-4e88-945b-a5b506a0c98f",
+      "product": "1G Live Resin All-In-One disposable, Juice Man flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/CA/CA_Live Resin/CA_1G_LiveResin_TechDesign_June2025/CA_1G_LiveResin_Disposables_Front_Solo_JuiceMan.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5ecd334b9ced6df6.jpg",
+      "title": "Muha Meds All-In-One Live Resin Juice Man packaging render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ec1bd5b7-ed36-40e4-b39b-c452bd75253e",
+      "product": "1G Live Resin All-In-One Disposable, Lemon Kush Mintz",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NM/NM 1G Live Resin 2026/NM_1G_LiveResin_Disposables_Front_LemonKushMintz.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/99357a1d9f918a02.jpg",
+      "title": "Muha Meds 1G Live Resin All-In-One Lemon Kush Mintz render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f48ee18d-067e-4c35-ac42-0303b217a350",
+      "product": "1G Live Resin All-In-One Disposables (Grape Dosi, Juice Man, Golden Papaya, OG Kush, Lemon Rush Mintz)",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NM/NM 1G Live Resin 2026/00_NM_1G_LiveResin_Disposables_GroupShot.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1f1cdfbd8d98fa05.jpg",
+      "title": "Muha Meds 1G Live Resin All-In-One Disposables Group Shot",
+      "alpha": true,
+      "size": "6000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6abe70be-75c3-4af5-abf3-01cb1b8f7af6",
+      "product": "1G Melted Diamonds All-In-One Disposable, Durban Delight flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NM/NM 1G Melted Diamonds 2026/NM_1G_MD_Disposable_45_DurbanDelight.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dd202c753ac5b5c9.jpg",
+      "title": "Muha Meds 1G Melted Diamonds All-In-One Durban Delight Disposable Render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "fe78739a-c972-4af7-8b64-2c230c3186af",
+      "product": "2 gram distillate cartridge, Sour Watermelon Squirt flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Cartridges/Distillate/MI/MI_1G_Distillate_Carts_Tech June 2025/MI_2G_Distillate_Carts/MI_Distillate_2gram_Sour_Watermelon_Squirt_Three_Quarters.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7daaa92f8512c437.jpg",
+      "title": "Muha Meds Sour Watermelon Squirt 2 gram distillate cartridge and box render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a1cc87d8-6989-45b0-9234-0a330e17dc75",
+      "product": "2-gram Distillate Cartridge, Blueberry Muffin flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Cartridges/Distillate/MI/MI_1G_Distillate_Carts_Tech June 2025/MI_2G_Distillate_Carts/MI_Distillate_2gram_Blueberry_Muffin_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/530a0639cfac1687.jpg",
+      "title": "Muha Meds 2-gram Blueberry Muffin Indica Distillate Cartridge and Packaging Render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "724d961d-aabc-48bf-a2f1-531a9994ead8",
+      "product": "2-gram Distillate Cartridge, Pineapple Runtz flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Cartridges/Distillate/MI/MI_1G_Distillate_Carts_Tech June 2025/MI_2G_Distillate_Carts/MI_Distillate_2gram_Pineapple_Runtz_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bee282a23beabfa9.jpg",
+      "title": "Muha Meds 2-gram Pineapple Runtz Sativa Distillate Cartridge and Packaging Render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d344ed4d-fc1a-480c-b23a-69268dc0d832",
+      "product": "2-gram distillate cartridge, Sour Watermelon Squirt flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Cartridges/Distillate/MI/MI_1G_Distillate_Carts_Tech June 2025/MI_2G_Distillate_Carts/MI_Distillate_2gram_Sour_Watermelon_Squirt_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/36943497287c49e7.jpg",
+      "title": "Muha Meds Sour Watermelon Squirt 2-gram distillate cartridge and packaging render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "db87d1c0-14d9-4aa9-8deb-c8e3043ea181",
+      "product": "2000 MG All-In-One Disposable Vape, Lemon Cherry Fizz flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_Front_LemonCherryFizz.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8bfde83b59caea80.jpg",
+      "title": "Muha Meds 2G All-In-One Lemon Cherry Fizz disposable vape and packaging render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2c295afb-cfbb-4df0-95e7-24d6575e3dfd",
+      "product": "2G All-In-One Gelato #33 disposable vape",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MO/MO 2G Disposables NOV 2025/MO_2G_Disposable_Front_Gelato#33.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2a055ee60fa472b8.jpg",
+      "title": "Muha Meds 2G All-In-One Gelato #33 Disposable Vape and Packaging Render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6ab6c288-16a6-4ddc-b3e0-91693537724d",
+      "product": "2G Disposable Blueberry Haze",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024/MI_2G_Dispos_BlueberryHaze_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4c110c210ca87016.jpg",
+      "title": "Muha Meds 2G Disposable Blueberry Haze vape and packaging render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9d36eee3-240f-4a07-852b-2ead7290e383",
+      "product": "2G Disposable Blueberry Haze",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MO/MO_2G_Disposables March 2025/MO_2G_Dispos_BlueberryHaze_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/976717b333fde59d.jpg",
+      "title": "Muha Meds 2G Disposable Blueberry Haze front render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ea9ffef5-29fd-4b20-8b22-c6cc204d73ad",
+      "product": "2G Disposable Vape, Apple Gelato Ice flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NM/Gen2 Device Renders/NM_2G_Dispos Gen2/ColorDevice/NM_Disposables_Distillate_AppleGelatoIce_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9241fc39b35173b0.jpg",
+      "title": "Muha Meds Apple Gelato Ice 2G Disposable Vape and Packaging Render",
+      "alpha": true,
+      "size": "2000x2160",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2a7eb08a-9c8b-4956-9499-56afb6e8b032",
+      "product": "2G Disposable Vape, Cherry Grapefruit flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024/MI_2G_Dispos_CherryGrapefruit_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/aefa46782d9b781b.jpg",
+      "title": "Muha Meds Cherry Grapefruit 2G Disposable Vape and Packaging Render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d6f88303-2198-43a2-bbe8-e956cfb41bcf",
+      "product": "2G Distillate All-in-One display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_Front_WatermelonBubblegum.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7cbe26ca79e287e6.jpg",
+      "title": "Muha Meds 2G Distillate All-in-One display box render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f14a24fa-649b-42b0-b715-e66c9a4ec3a7",
+      "product": "2G Distillate All-In-One Disposable, Galactic Diesel flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_GalacticDiesel.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2a277281b3d36a95.jpg",
+      "title": "Muha Meds 2G All-In-One Galactic Diesel Disposable Vape and Packaging Render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d0a7239a-5430-4c8b-b2c4-7242531b2959",
+      "product": "2G Distillate All-In-One Disposable, Pineapple Paradise flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_Solo_PineappleParadise.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5fac6ca02005e584.jpg",
+      "title": "Muha Meds All-In-One Pineapple Paradise 2G Distillate Disposable Package Render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "74601815-7c7f-4547-bf74-1a4c88260d7a",
+      "product": "2G Distillate All-In-One Disposable, Watermelon Bubblegum flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_Front_WatermelonBubblegum.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/719b4c78a95668db.jpg",
+      "title": "Muha Meds 2G Distillate All-In-One Watermelon Bubblegum disposable vape and packaging",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "85e0871e-394e-4a8e-ab7e-c543a3b3ce20",
+      "product": "2G Distillate All-In-One Frosted Mint Cookies display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_Front_FrostedMintCookies.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/529328ce9a9d5f34.jpg",
+      "title": "Muha Meds 2G Distillate All-In-One Frosted Mint Cookies display box render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8da326f7-f6a6-4a31-8fdf-948211ef5db5",
+      "product": "2G Distillate Disposable Blue Slushie",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_Front_BlueSlushie.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0b3715ecd5911e86.jpg",
+      "title": "Muha Meds 2G Distillate Disposable Blue Slushie Front Render",
+      "alpha": true,
+      "size": "2400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "fcf57aa3-182c-486e-8ca1-2fe4636df8d3",
+      "product": "2G Distillate Disposable Device Arctic Blueberry",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_ArcticBlueberry.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d06d08a835b744d6.jpg",
+      "title": "Muha Meds 2G Distillate Disposable Vape Device Arctic Blueberry",
+      "alpha": true,
+      "size": "2400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8efc09b6-b5b7-4fe5-9f64-cee1bbf4855a",
+      "product": "2G Distillate Disposable Device, Galactic Diesel flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_Front_GalacticDiesel.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d95f8405453bc7c9.jpg",
+      "title": "Muha Meds 2G Distillate Disposable Device Galactic Diesel front render",
+      "alpha": true,
+      "size": "2400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "cd80fd43-ecd6-4406-8f4c-7f597fcc8374",
+      "product": "2G Distillate Disposable Frosted Mint Cookies",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_Front_FrostedMintCookies.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/74ddfab6bf6c7202.jpg",
+      "title": "Muha Meds 2G Distillate Disposable Frosted Mint Cookies Vape Device Render",
+      "alpha": true,
+      "size": "2400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "16d2d890-6212-4c75-b362-2f7e2d114806",
+      "product": "2G Distillate Disposable Frosted Mint Cookies",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45Solo_FrostedMintCookies.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fa4dd14647cc3bfe.jpg",
+      "title": "Muha Meds All-In-One Frosted Mint Cookies 2G Distillate Disposable Packaging Render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "59d6f22d-ffee-48fb-9152-8d5ff64ad319",
+      "product": "2G Distillate Disposable Guava Mango Z",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_GuavaMangoZ.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8b0a4031432f926c.jpg",
+      "title": "Muha Meds 2G Distillate Disposable Vape, Guava Mango Z flavor, three-quarter view",
+      "alpha": true,
+      "size": "2400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2a3ce119-b309-4267-841c-21d13f52b07f",
+      "product": "2G Distillate Disposable Vape Device, Guava Mango Z flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_Front_GuavaMangoZ.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6e38af71cc3c37eb.jpg",
+      "title": "Muha Meds 2G Distillate Guava Mango Z Disposable Vape Device Render",
+      "alpha": true,
+      "size": "2400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a420fb6e-b8ea-4556-aa32-90b3ebfb1c87",
+      "product": "2G Distillate Disposable Vape, Arctic Blueberry flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_Front_ArcticBlueberry.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/db086750eb71e32e.jpg",
+      "title": "Muha Meds 2G Distillate Disposable Vape Arctic Blueberry Front Render",
+      "alpha": true,
+      "size": "2400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "676b7d33-0eea-4b5b-8e85-39723129468f",
+      "product": "2G Distillate Disposable Vape, Frosted Mint Cookies flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_FrostedMintCookies.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/35f5eae71a9c94af.jpg",
+      "title": "Muha Meds 2G Distillate Disposable Vape Frosted Mint Cookies Render",
+      "alpha": true,
+      "size": "2400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a9a5adbb-a1b5-4039-9f25-7df012a5bfb4",
+      "product": "2G Distillate Disposable Vape, Watermelon Bubblegum flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_WatermelonBubblegum.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c101205c9bfd1cc7.jpg",
+      "title": "Muha Meds 2G Distillate Watermelon Bubblegum Disposable Vape Render",
+      "alpha": true,
+      "size": "2400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4ad106c5-55bc-409f-ab43-9ae171ff9fe6",
+      "product": "2G Distillate Disposable, Lemon Cherry Fizz flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_Front_LemonCherryFizz.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ff87c96c109887b8.jpg",
+      "title": "Muha Meds 2G Distillate Disposable Lemon Cherry Fizz front render",
+      "alpha": true,
+      "size": "2400x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "322663fc-9f25-4519-97f2-d5ee1778c061",
+      "product": "2G Distillate Disposable, Watermelon Moonshine flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_WatermelonMoonshine.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ea636ff4d24b840c.jpg",
+      "title": "Muha Meds 2G Distillate Disposable Watermelon Moonshine device and packaging render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "95b513bf-ade0-4ee5-8e3f-625a2822bef0",
+      "product": "2G Gen2Device disposable vape",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NY/NY_2G_Gen2Device/Old/NY_2G_Dispos_Device_Back_ThreeQuarters.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/605065b421d07fa7.jpg",
+      "title": "Muha Meds 2G Gen2Device disposable vape render, black and gold",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e7c9b742-1acd-4128-b30d-9c835012a333",
+      "product": "2g infused joint",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/2g Infused Joints/mockups/Sativa_Joint_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/66b4cf26fca6eeeb.jpg",
+      "title": "Muha Meds 2g Infused Joint Sativa Front Render",
+      "alpha": true,
+      "size": "2400x4200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7f50b8d9-6813-419f-b48e-a782c9cab4d2",
+      "product": "2g Infused Joint",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/2g Infused Joints/mockups/Indica_Joint_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b1fa1e4dc2fc51da.jpg",
+      "title": "Muha Meds 2g Infused Joint Render with Pink Band",
+      "alpha": true,
+      "size": "2400x4200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "25367a88-4d7f-403f-848c-2a5848061828",
+      "product": "2G Infused Joints Hybrid",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/2g Infused Joints/mockups/hybrid_bag_front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1dddb0b2aaab4903.jpg",
+      "title": "Mo' Dank 2G Infused Joints Hybrid blue packaging render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d5b041d9-ee80-497e-b49e-1f5b4709472b",
+      "product": "2G Infused Joints Indica",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/2g Infused Joints/mockups/indica_bag_front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/068de1d9e8589c2e.jpg",
+      "title": "Mo' Dank 2G Infused Joints Indica purple packaging render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "28e6c3af-fac4-46aa-b6ea-b41d2bf91b17",
+      "product": "2G Infused Joints Sativa",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/2g Infused Joints/mockups/sativa_bag_front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1b11d0e029ae0ce4.jpg",
+      "title": "Mo' Dank 2G Infused Joints Sativa orange pouch render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3417157a-c822-4038-820e-8278989c7d93",
+      "product": "2G Pod Battery Kit Mocha Cappuccino",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pod & Battery Kits/MI 2G Pod Battery Kit/MI_2G_PodBatteryKit_45_MochaCappuccino.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/921409eb511d053d.jpg",
+      "title": "Muha Meds 2G Pod Battery Kit Mocha Cappuccino 3D Render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7e8d8863-9451-4d13-a888-4163d8e33e31",
+      "product": "2G Vape Pod Blue Glacier Grape",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pod & Battery Kits/MI 2G Vape Pod/MI_2G_VapePod_45Solo_BlueGlacierGrape.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b982ebe26fb4e10f.jpg",
+      "title": "Muha Meds 2G Vape Pod Blue Glacier Grape packaging render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "eb4041a5-55b4-4ab2-bdcc-2c04b07d8c36",
+      "product": "2G Vape Pod Sour Runtz",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pod & Battery Kits/MI 2G Vape Pod/MI_2G_VapePod_45_SourRuntz.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/14c5c6a91d5bd02d.jpg",
+      "title": "Muha Meds 2G Vape Pod Sour Runtz packaging and device render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "421c3d06-a533-4200-8627-41bd646b5d2d",
+      "product": "2G Vape Pod, Pink Guava flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pod & Battery Kits/MI 2G Vape Pod/MI_2G_VapePod_Front_PinkGuava.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7ea32667d67d3505.jpg",
+      "title": "Muha Meds 2G Vape Pod Pink Guava flavor 3D render with packaging",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "313060fa-3a77-4143-8ccb-e50f67a9b4b8",
+      "product": "2G Vape Pod, Pink Guava flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pod & Battery Kits/MI 2G Vape Pod/MI_2G_VapePod_45_PinkGuava.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/07043a94637e10fe.jpg",
+      "title": "Muha Meds 2G Pink Guava Vape Pod and Packaging Render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "def48427-ef5c-410c-8ea3-cee99e86b874",
+      "product": "2G Vape Pod, Sakura Blossom flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pod & Battery Kits/MI 2G Vape Pod/MI_2G_VapePod_FrontSolo_SakuraBlossom.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3e76b801a7d35682.jpg",
+      "title": "Muha Meds 2G Vape Pod Sakura Blossom Packaging Render Front",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "884e842e-3260-4e57-9505-2458fdb7f5e8",
+      "product": "3.5 Disposable Live Resin Lavender Haze vape device and packaging",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables/45Device_Packaging_Resin_LavenderHaze_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3a163dc24eed009a.jpg",
+      "title": "Muha Meds 3.5 Disposable Live Resin Lavender Haze vape and box render",
+      "alpha": true,
+      "size": "4000x4320",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9e601e8c-0354-4756-ad78-3b281937e54f",
+      "product": "3.5 Gram Disposable Melted Diamonds Mango Peach Rings 5 Units",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables/DisplayBoxes/45DisplayBox_Diamond_MangoPeachRings_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e7719135e66f07c0.jpg",
+      "title": "Muha Meds 3.5 Gram Disposable Mango Peach Rings display box render",
+      "alpha": true,
+      "size": "3800x4320",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "052b968b-0ce8-4aa8-8a44-e1e8ee9d72c6",
+      "product": "3.5g Disposable Vape - Lychee Kush",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Devices Only/Hemp_LR_45_LycheeKush.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/46951261f5971356.jpg",
+      "title": "Muha Meds 3.5g Lychee Kush disposable vape device 3D render",
+      "alpha": true,
+      "size": "1600x2000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "80875aa2-b53a-4cea-b765-c9d592f7595e",
+      "product": "3.5G Disposable Vape, Venom OG flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables/45Device_Packaging_Resin_Venom_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ff5db838b9328266.jpg",
+      "title": "Muha Meds 3.5G Disposable Venom OG Live Resin Vape and Packaging Render",
+      "alpha": true,
+      "size": "4000x4320",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "40de648a-0eed-4de8-8b7c-e3dbc4d1157c",
+      "product": "3.5g Live Resin Disposable Vape - Sour Cherry Limeade",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Live Resin/HEMP_DISPO_LR_3_5G_45_SourCherryLimeade.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/34ca9090911d5332.jpg",
+      "title": "Muha Meds 3.5g Live Resin Sour Cherry Limeade disposable vape and packaging render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "abb533eb-12a8-42d0-adfe-fa1e2f34149e",
+      "product": "3.5g Live Resin Disposable Vape - Sour Cherry Limeade",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Live Resin/Text_Removal/HEMP_DISPO_LR_3_5G_45_SourCherryLimeade.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5f30767e4c08d2bb.jpg",
+      "title": "Muha Meds 3.5g Live Resin Sour Cherry Limeade Disposable Vape and Packaging",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "584a7681-3d63-472c-88c0-600fadbba075",
+      "product": "3.5g Live Resin Disposable Vape, Sour Cherry Limeade",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Live Resin/HEMP_DISPO_LR_3_5G_Front_SourCherryLimeade.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c058ee58e640ffb1.jpg",
+      "title": "Muha Meds 3.5g Live Resin Sour Cherry Limeade Disposable Vape and Box Render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "bd7ffe39-9aa9-4191-bfc6-20f9bd9ba6a3",
+      "product": "32 PACK PREROLLS (32X1g) 1oz",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/32PK pre rolls/mockups/sativa_bag_front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fe29b1d92ca728a5.jpg",
+      "title": "Mo' Dank Marijuana 32 Pack Prerolls Orange Pouch Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "aa72c174-08e9-4462-82cf-9b1bbd5a020f",
+      "product": "32-pack prerolls (32x1g) 1oz",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/32PK pre rolls/mockups/indica_bag_front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8ea2acaeb47b6bc2.jpg",
+      "title": "Mo' Dank Marijuana 32-pack prerolls purple bag render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3c5d451e-4c3d-4ebc-a6be-64d348d16849",
+      "product": "3500 MG Disposable White Gummy 5 Units display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Display Boxes/MI LiveResin/MI_Hemp_LR_DisplayBox_45_WhiteGummy.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/876e502ccdf389c4.jpg",
+      "title": "Muha Meds Live Resin Hybrid White Gummy 3500mg Disposable 5-Unit Display Box Render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3f442f37-8896-46d3-82e3-508e1393ddfa",
+      "product": "3500 MG Live Resin Disposable - Sour Cherry Limeade Sativa",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Live Resin/Text_Removal/HEMP_DISPO_LR_3_5G_FrontSolo_SourCherryLimeade.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cde20f90caf9f7c3.jpg",
+      "title": "Muha Meds 3.5g Live Resin Sour Cherry Limeade Disposable Packaging Render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b7d39662-bb4f-4cac-896d-0049b062946b",
+      "product": "3500 MG Live Resin Lychee Kush Hybrid disposable vape and packaging",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Live Resin/Text_Removal/HEMP_DISPO_LR_3_5G_45_LycheeKush.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a5d510811f30501b.jpg",
+      "title": "Muha Meds Lychee Kush 3500 MG Live Resin disposable vape and box render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6d373b08-9447-4a8c-97df-c4da8fe5a81e",
+      "product": "3500 MG Live Resin Sativa Sour Cherry Limeade Disposable 5-unit display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Display Boxes/MI LiveResin/MI_Hemp_LR_DisplayBox_Front_SourCherryLimeade.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1abe1a5fc36761d0.jpg",
+      "title": "Muha Meds 3500mg Live Resin Sativa Sour Cherry Limeade 5-unit display box",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ce1467f1-1acd-4313-a0d7-84e892cc9c24",
+      "product": "3500 MG Live Resin White Gummy Hybrid disposable package",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Live Resin/HEMP_DISPO_LR_3_5G_FrontSolo_WhiteGummy.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/05cc9eda27a8a487.jpg",
+      "title": "Muha Meds 3500mg Live Resin White Gummy Hybrid Disposable Package Render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7bcb71ad-cac5-4951-a75f-f060d4a10c71",
+      "product": "3500 MG Live Resin White Raspberry disposable vape",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables/DevicePackagingFront_Resin_WhiteRaspberry_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/16c97daa3678fc83.jpg",
+      "title": "Muha Meds White Raspberry Live Resin 3500mg Disposable Vape and Packaging Render",
+      "alpha": true,
+      "size": "4000x4320",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e7918283-957f-4ea6-885a-60ed110cd561",
+      "product": "3500 MG Melted Diamonds THC-A - D9 Citrus Tsunami Sativa",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables/SingleUnit_Diamonds_Citrus_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f77cd9cde198916c.jpg",
+      "title": "Muha Meds 3500mg Melted Diamonds Citrus Tsunami Sativa Label Art",
+      "alpha": true,
+      "size": "4000x4320",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7d32ec5f-0b3b-4376-ad8d-ddb3dbbb0d60",
+      "product": "3500 MG Melted Diamonds THC-A - D9 disposable vape in Citrus Tsunami flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables/DevicePackagingFront_Diamond_Citrus_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c583ab0a75f943c0.jpg",
+      "title": "Muha Meds 3500mg Melted Diamonds Citrus Tsunami disposable vape and packaging render",
+      "alpha": true,
+      "size": "4000x4320",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4d0a7ada-b03d-4c1d-a626-388ee997ca48",
+      "product": "3500mg Live Resin Indica Disposable Display Box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Display Boxes/MI LiveResin/MI_Hemp_LR_DisplayBox_Front_BlackSugarRose.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8bff6844b66ebca6.jpg",
+      "title": "Muha Meds 3500mg Live Resin Indica Disposable 5-Unit Display Box Render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "695849c3-73ed-479f-a0c6-67b21adb28e0",
+      "product": "510 Cartridge",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/1g 510 dist/mockups/1g_hybrid.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3db2635cb635b06d.jpg",
+      "title": "Mo' DANK 510 Cartridge black box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5ca4466a-8200-4b4e-a0ac-74e109f7e91c",
+      "product": "5g cured rosin",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/5g cured rosin/mockups/hybrid_jar_opened_resin.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2446123e6a12ed96.jpg",
+      "title": "Opened Muha Meds 5g Cured Rosin Jar with Blue Lid",
+      "alpha": true,
+      "size": "2000x2000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "23fa4ec2-d9bc-4aca-959d-af3ca1d89908",
+      "product": "5g Cured Rosin Concentrate",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/5g cured rosin/mockups/hybrid_box_front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b6e62413d3975c85.jpg",
+      "title": "Muha Meds Mo' Dank 5g Cured Rosin Concentrate Box Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "55217ef5-1c79-4e29-8502-2b33cbf01cf7",
+      "product": "5g Cured Rosin Concentrate",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/TEMP/5g cured rosin/mockups/sativa_box_front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cc676b527a8b490a.jpg",
+      "title": "Muha Meds 5g Cured Rosin Concentrate Orange Box Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "dbc71d8a-1356-443b-b29a-de18eb505961",
+      "product": "Adios MF flower jar",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Flower Jars/CA/CA_FlowerJar_AdiosMF_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/986e7b19ae8ad17d.jpg",
+      "title": "Muha Meds Adios MF Premium Exotic Indoor Flower Jar Render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "82e971b1-7fab-4b53-8766-4db8c7d55651",
+      "product": "Adios MF flower jar",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Flower Jars/CA/CA_FlowerJar_AdiosMF_FrontTop.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0aa8d90601548c6f.jpg",
+      "title": "Muha Meds Adios MF cannabis flower jar 3D render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b02a8184-4143-45f0-bccd-6ad2be13a26e",
+      "product": "Adios MF Pre-Rolls",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pre-Rolls/Metal Can/NY/NY_Mates_Front_AdiosMF.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/50ff68dbe087c588.jpg",
+      "title": "Muha Meds Mates Adios MF Indica Pre-Rolls can and single pre-roll render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "68934866-97cc-4c94-9ef5-54052cdf5019",
+      "product": "ADIOS MF PRE-ROLLS INDICA",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pre-Rolls/Metal Can/NY/NY_Mates_45Solo_AdiosMF.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c4ce21dda41bf715.jpg",
+      "title": "Muha Meds Mates Adios MF Indica Pre-Rolls Metal Can Render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "77457fee-dea3-4218-97d2-3d5428a57d29",
+      "product": "Adios MF Premium Exotic Indoor Flower",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Flower Jars/CA/CA_FlowerJar_Box_Open_AdiosMF_ThreeQuartersOpen.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ad81de00ed91e1b2.jpg",
+      "title": "Muha Meds Adios MF Premium Exotic Indoor Flower 16-jar display box and single jar render",
+      "alpha": true,
+      "size": "4000x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c628d365-b7cb-41d6-b08d-9f3074193cd6",
+      "product": "Agave Sunrise Infused Pre-Roll",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pre-Rolls/Metal Can/MO/MO/MO_Mates_Front_AgaveSunrise.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8f287a9d1c738fd3.jpg",
+      "title": "Muha Meds Agave Sunrise Infused Pre-Roll container and pre-roll render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e52bddde-c47d-44b4-b835-40dcc866bfc6",
+      "product": "Agave Sunrise Infused Pre-Roll",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pre-Rolls/Metal Can/MO/MO/MO_Mates_45_AgaveSunrise.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6fed9b0205fccac3.jpg",
+      "title": "Muha Meds Mates Agave Sunrise Infused Pre-Roll 3D Render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a355bac2-31c2-478c-b008-d9304d5b614b",
+      "product": "Agave Sunrise Infused Pre-Roll Marijuana",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pre-Rolls/Metal Can/MO/MO/MO_Mates_45Solo_AgaveSunrise.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/923e9733a3f39c54.jpg",
+      "title": "Muha Meds Mates Agave Sunrise Infused Pre-Roll Marijuana Container Render",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "da73cfb2-a920-4980-8eee-af59d2638af8",
+      "product": "Agave Sunrise Kief Joint",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pre-Rolls/KiefJoint/Mates_PreRolls_AgaveSunrise_Joint.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a00bdd38ffee1c20.jpg",
+      "title": "Muha Meds Agave Sunrise Kief Joint 3D Render",
+      "alpha": true,
+      "size": "2400x4200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "28521530-9ec0-434c-a106-e64a4f988837",
+      "product": "Agave Sunrise Pre-Rolls",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Pre-Rolls/Metal Can/CA/CA Mates_TechDesign_July2025/CA_Mates_45_AgaveSunrise.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6c3fe68aedb623dc.jpg",
+      "title": "Muha Meds Matēs Agave Sunrise Infused Pre-Rolls Can and Stick",
+      "alpha": true,
+      "size": "4000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "bf001d5e-39e4-430a-bc75-604ef05b7964",
+      "product": "Agent Orange Delta 10 cartridge and packaging",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_AgentOrange_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7f85ae213c0234d8.jpg",
+      "title": "Muha Meds Delta 10 Agent Orange cartridge and packaging render",
+      "alpha": true,
+      "size": "2000x2160",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "035496c4-47d6-4d8d-9653-21173ec34bcd",
+      "product": "Agent Orange Delta 10 Disposables 10-unit display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Discontinued/Disposables/Display Boxes/Hemp_Disposables_DisplayBox_Closed_D10_AgentOrange_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2bfcdedfec914c21.jpg",
+      "title": "Muha Meds Agent Orange Delta 10 Disposables 10-Unit Display Box Render",
+      "alpha": true,
+      "size": "4000x4200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "48d83c11-1570-4ca7-808f-657c59e91e5b",
+      "product": "Agent Orange Delta 10 Vape Cartridges 10 Units Display Box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Closed_D10_AgentOrange_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9c77eb1bb0777f56.jpg",
+      "title": "Muha Meds Agent Orange Delta 10 Vape Cartridges 10-Unit Display Box Render",
+      "alpha": true,
+      "size": "4000x4200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "474812cb-2ed8-45c8-ae89-648e147e73d6",
+      "product": "Agent Orange Delta 10 Vape Cartridges display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Open_D10_AgentOrange_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f9347d45a80ce96d.jpg",
+      "title": "Muha Meds Agent Orange Delta 10 Vape Cartridges Display Box Render",
+      "alpha": true,
+      "size": "4000x4200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3a616184-8edf-4bec-a435-f600c3f2d686",
+      "product": "Agent Orange Delta 8 Disposables 10-unit display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Discontinued/Disposables/Display Boxes/Hemp_Disposables_DisplayBox_Closed_D8_AgentOrange_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d19ff8c7950043d2.jpg",
+      "title": "Muha Meds Agent Orange Delta 8 Disposables 10-Unit Display Box Render",
+      "alpha": true,
+      "size": "4000x4200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "dc39328d-5332-47da-9eba-9d8e33129a70",
+      "product": "Agent Orange Delta 8 Vape Cartridges Display Box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Open_D8_AgentOrange_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/020faa97bc38c304.jpg",
+      "title": "Muha Meds Agent Orange Delta 8 Vape Cartridges Display Box Render",
+      "alpha": true,
+      "size": "4000x4200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "53029545-94d6-4c82-aba0-b68a372d2b54",
+      "product": "Agent Orange Delta 8 Vape Cartridges Display Box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Closed_D8_AgentOrange_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3355a091e6eeb9a6.jpg",
+      "title": "Muha Meds Agent Orange Delta 8 Vape Cartridges Display Box Render",
+      "alpha": true,
+      "size": "4000x4200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "58661b71-1f9b-4d8e-925e-77f92bea373c",
+      "product": "Agent Orange HHC Vape Cartridges",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Closed_HHC_AgentOrange_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c75023f79af1e128.jpg",
+      "title": "Muha Meds Agent Orange HHC Vape Cartridges 10 Units Display Box Render",
+      "alpha": true,
+      "size": "4000x4200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "675abf96-9be8-49e3-a8b4-1636327cf8c1",
+      "product": "Alcohol Cotton Swabs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Accessories/DabBag/cleaners_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4d6d4c2dc0f7fb1d.jpg",
+      "title": "Muha Meds Alcohol Cotton Swabs 40 PCS Packaging Render",
+      "alpha": true,
+      "size": "2160x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "17d02102-97a8-450e-86ed-253e0be0a170",
+      "product": "Alcohol Cotton Swabs",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Accessories/DabBag/cleaners_V3.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bed591b4d67079ec.jpg",
+      "title": "Muha Meds Alcohol Cotton Swabs 40-piece pack render",
+      "alpha": true,
+      "size": "2000x2300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "74ecf201-a4bc-41ec-a0c9-d01e539a6f98",
+      "product": "Alien OG Hash Rosin",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/NewFlavors/HR_AlienOG_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/81bffe511497eb78.jpg",
+      "title": "Muha Meds Alien OG Hash Rosin packaging and concentrate 3D render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a1ef6d68-08ec-4ef8-b7ac-eb4dd6eb4405",
+      "product": "Alien OG Hash Rosin box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/NewFlavors/HR_AlienOG_ThreeQuarters.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6404565390959996.jpg",
+      "title": "Muha Meds Alien OG Hash Rosin black and green box render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f0307034-13cc-4682-afce-961b945932b0",
+      "product": "Alien OG Hash Rosin Concentrate",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "logo",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech/V4/TOP_A.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cf59ce52b8c77b7d.jpg",
+      "title": "Muha Meds Alien OG Hash Rosin Concentrate Label Art",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "47a1a479-efc7-4fd7-a3c7-08be87584fa2",
+      "product": "Alien OG Hash Rosin Concentrate",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech/V4/45_A.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d415fcc0adefb8e9.jpg",
+      "title": "Muha Meds Alien OG Hash Rosin Concentrate packaging 3D render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d903fe27-a02d-4204-9801-73bf5c8eadf0",
+      "product": "Alien OG Hash Rosin Concentrate box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Concentrates/CA/CA_Concentrate_Jars_New_Box Feb 2025/Hash Rosin/CA_Concentrate_Jars_New_Box_HR_AlienOG_FrontSingle.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/05d5c5be253386b2.jpg",
+      "title": "Muha Meds Alien OG Hash Rosin Concentrate box render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "49a333dc-dbf0-4198-9b50-c7b227b044fc",
+      "product": "Alien OG Hash Rosin concentrate packaging",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/NewFlavors/HR_AlienOG_FrontSingle.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/beb436e3291edccd.jpg",
+      "title": "Muha Meds Alien OG Hash Rosin concentrate packaging render",
+      "alpha": true,
+      "size": "5000x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "fcf66fda-2165-434f-ab9d-a313503b3835",
+      "product": "ALL-IN-ONE BLUE DREAM",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MO/MO 2G Disposables NOV 2025/MO_2G_Disposable_45Solo_BlueDream.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a433d7bd3482ca03.jpg",
+      "title": "Muha Meds Marijuana All-In-One Blue Dream packaging render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4f732f22-4cd6-42c9-a327-74e3aa0c7406",
+      "product": "All-In-One Blue Dream disposable",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MO/MO 2G Disposables NOV 2025/MO_2G_Disposable_Front_BlueDream.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bae0381b64b01836.jpg",
+      "title": "Muha Meds All-In-One Blue Dream disposable vape and packaging render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c81fa8e8-14db-4373-a344-b22ff1e7796c",
+      "product": "All-In-One Blue Dream disposable marijuana package",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MO/MO 2G Disposables NOV 2025/MO_2G_Disposable_Front_Solo_BlueDream.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c14a0e230b1daca0.jpg",
+      "title": "Muha Meds All-In-One Blue Dream Marijuana Disposable Package Render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1deb77d7-1222-40e8-bf73-7c03d25c61e6",
+      "product": "All-In-One Blue Slushie disposable packaging",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NY/WRONG - NY 2G Distillate Disposable 2026/NY_2G_Distillate_Disposables_FrontSolo_BlueSlushie.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/80e06950b4d2b3a8.jpg",
+      "title": "Muha Meds All-In-One Blue Slushie Disposable Packaging Render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0b826d35-86c1-4914-a992-9fe14141bfc1",
+      "product": "All-In-One Blueberry Cookies disposable",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_BlueberryCookies.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6c8ce4f513889890.jpg",
+      "title": "Muha Meds All-In-One Blueberry Cookies disposable packaging render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1c95417d-3081-483f-b909-423bb8d0e3b3",
+      "product": "All-In-One disposable vape, Blue Slushie flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_Solo_BlueSlushie.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/28dc1bf794dae5ea.jpg",
+      "title": "Muha Meds All-In-One Blue Slushie disposable vape packaging render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "17baad3a-b3ab-438d-91de-5eb70e36922f",
+      "product": "All-In-One disposable vape, Blueberry Cookies flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_All in One_Sept2024/CA_Dispo_Distillate_BlueberryCookies_45_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/762038dc7af1daaf.jpg",
+      "title": "Muha Meds All-In-One Blueberry Cookies disposable vape and packaging render",
+      "alpha": true,
+      "size": "1800x2200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "10aa549d-569c-4e74-b60d-666ef8a56aff",
+      "product": "All-In-One disposable vape, Bubblegum Burst flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_TechDesign_June2025/CA_1G_Distillate_Disposables_Front_Solo_BubblegumBurst.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a2b1cc8d1d09a712.jpg",
+      "title": "Muha Meds All-In-One Bubblegum Burst disposable vape packaging render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "077693fe-55c4-47fb-8f75-f2fb6b419cab",
+      "product": "All-In-One disposable vape, Bubblegum Burst flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NM/NM 1G Distillate 2026/NM_1G_Distillate_Disposables_FrontSolo_BubblegumBurst.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9c46f26808198a95.jpg",
+      "title": "Muha Meds All-In-One Bubblegum Burst disposable vape packaging render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c043087b-76bf-4831-9965-3f4634e4031a",
+      "product": "All-In-One disposable vape, Frozen Pomegranate flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_TechDesign_June2025/CA_1G_Distillate_Disposables_Front_FrozenPomegranate.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5f02c8b9852516cd.jpg",
+      "title": "Muha Meds All-In-One Frozen Pomegranate disposable vape and packaging render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c7d423fe-16bb-4b2d-9b51-6846b1b2b3d0",
+      "product": "All-In-One disposable vape, Frozen Pomegranate flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NY/WRONG - NY 2G Distillate Disposable 2026/NY_2G_Distillate_Disposables_Front_FrozenPomegranate.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0c7f70bd20cc0943.jpg",
+      "title": "Muha Meds All-In-One Frozen Pomegranate disposable vape and packaging render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "97355545-b507-4259-a4e7-9b50770e1498",
+      "product": "All-In-One disposable vape, Garlic Jelly flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/CA/CA_Hash Rosin/CA_0.5G_HashRosin_TechDesign_June2025/CA_05G_HashRosin_Disposables_45_GarlicJelly.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d4a5cef90d04bc1e.jpg",
+      "title": "Muha Meds All-In-One Garlic Jelly disposable vape and packaging render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b8c12fc3-980e-4bd8-993f-d2a981ea8fe0",
+      "product": "All-In-One disposable vape, Grape Dosi flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/CA/CA_Live Resin/CA_1G_LiveResin_TechDesign_June2025/CA_1G_LiveResin_Disposables_Front_GrapeDosi.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0769a2e1345daeac.jpg",
+      "title": "Muha Meds All-In-One Grape Dosi disposable vape and packaging render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "829660ed-5587-4699-ae8a-0401126eb88c",
+      "product": "All-In-One disposable vape, Horchata flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_Horchata.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/253c20d4e7450b3a.jpg",
+      "title": "Muha Meds All-In-One Horchata disposable vape and packaging render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "37bfc842-980b-44a9-b27d-ce4cb8fca838",
+      "product": "All-In-One disposable vape, Iced Sangria flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/CA/CA_Hash Rosin/v2/CA_05G_HashRosin_Dispos_Front_ICED_SANGRIA_Front0019.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1e6bab8751ebcb6c.jpg",
+      "title": "Muha Meds Iced Sangria All-In-One disposable vape and packaging render",
+      "alpha": true,
+      "size": "2560x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "85b0b464-fa84-4067-b2e7-44d88db45b37",
+      "product": "All-In-One disposable vape, Lemon Cherry Gelato flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NY/WRONG - NY 1G MD Disposables 2026/NY_1G_MD_Disposable_Front_LemonCherryGelato.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c3f898f8938bb5ce.jpg",
+      "title": "Muha Meds All-In-One Lemon Cherry Gelato disposable vape and packaging",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c0679e3a-a18d-4abe-814a-80720bf4c707",
+      "product": "All-In-One disposable vape, Lemon Kush Mintz flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NY/WRONG - NY 1G LR Disposables 2026/NY_1G_LiveResin_Disposables_Front_Solo_LemonKushMintz.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9b8bc8d1ce9aa906.jpg",
+      "title": "Muha Meds All-In-One Lemon Kush Mintz Disposable Vape Packaging Render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5d5c1d45-0706-4fab-a6e6-905c279188a9",
+      "product": "All-In-One disposable vape, Mango Madness flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NY/NY Gen 3 1G MD AIO - Under 5MB/NY_1G_MD_Disposable_45_Solo_MangoMadness0001.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5dd01ba2e270231a.jpg",
+      "title": "Muha Meds All-In-One Mango Madness disposable vape packaging render",
+      "alpha": true,
+      "size": "1920x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7550d02a-d596-48de-b98c-36bf485ccd88",
+      "product": "All-In-One disposable vape, Pineapple Paradise flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NY/WRONG - NY 2G Distillate Disposable 2026/NY_2G_Distillate_Disposables_45_PineappleParadise.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1aa801252e2d1203.jpg",
+      "title": "Muha Meds Pineapple Paradise All-In-One Disposable Vape and Packaging Render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f2647398-d031-4687-8f55-c29b93cb8edd",
+      "product": "All-In-One disposable vape, Sour Diesel Hash Rosin flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/CA/CA_Hash Rosin/v2/CA_05G_HashRosin_Dispos_Front_Solo_SOUR_DIESEL_Front_Solo0019.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5144a578f3d5eb64.jpg",
+      "title": "Muha Meds All-In-One Sour Diesel Hash Rosin disposable vape label",
+      "alpha": true,
+      "size": "2560x3200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f8a3c43b-ead3-4ccb-a0b8-e5596ebcf5f1",
+      "product": "All-In-One disposable vape, Sour Watermelon Squirt flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "logo",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_SourWatermelonSquirt.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a13168a80a5587d0.jpg",
+      "title": "Muha Meds All-In-One Sour Watermelon Squirt disposable package render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4798bd25-eea7-41a8-af3f-e9cd2e99ab12",
+      "product": "All-In-One disposable vape, Sour Watermelon Squirt flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_SourWatermelonSquirt.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9661b62737934779.jpg",
+      "title": "Muha Meds All-In-One Sour Watermelon Squirt disposable vape and packaging",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "209c2a17-5510-4280-a3c5-b58757136388",
+      "product": "All-In-One disposable vape, Watermelon Gelato flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/CA/CA_Live Resin/CA_1G_LiveResin_All in One_Sept2024/CA_Dispo_AllinOne_LR_WatermelonGelato_45_V1.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/06733acbaa5524e1.jpg",
+      "title": "Muha Meds Watermelon Gelato Live Resin All-In-One disposable vape and packaging",
+      "alpha": true,
+      "size": "1800x2200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "bddf6af3-19be-4417-bb46-4f461eb9ee2b",
+      "product": "All-In-One disposable, Banana Cream Cake flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NM/NM 1G Distillate 2026/NM_1G_Distillate_Disposables_FrontSolo_BananaCreamCake.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bff1ccec25591825.jpg",
+      "title": "Muha Meds All-In-One Banana Cream Cake disposable packaging render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e5c50b48-5a86-406d-a927-3c66d0e7beea",
+      "product": "All-In-One disposable, Blue Slushie flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_TechDesign_June2025/CA_1G_Distillate_Disposables_Front_Solo_BlueSlushie.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/23f26b3b0ebe02ac.jpg",
+      "title": "Muha Meds All-In-One Blue Slushie disposable packaging render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "81201685-237b-428c-8e0d-7a191a2edf2f",
+      "product": "All-In-One disposable, Bubblegum Burst flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_Solo_BubblegumBurst.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/50dada5260b1f0eb.jpg",
+      "title": "Muha Meds All-In-One Bubblegum Burst 2000mg packaging render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0ea032af-ba86-4032-92f7-fcb66b970c0a",
+      "product": "All-In-One disposable, Dragon Berry Runtz flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_Solo_DragonBerryRuntz.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/54da4fa2f463bafc.jpg",
+      "title": "Muha Meds All-In-One Dragon Berry Runtz disposable packaging render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e99da3ac-05da-4194-a188-35389de3d298",
+      "product": "All-In-One disposable, Durban Delight flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/NY/WRONG - NY 1G MD Disposables 2026/NY_1G_MD_Disposable_Front_Solo_DurbanDelight.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/df5e7da729c10631.jpg",
+      "title": "Muha Meds All-In-One Durban Delight disposable packaging render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3da2af47-d3df-4bd9-a78f-6d310a08bb75",
+      "product": "All-In-One disposable, Frozen Pomegranate flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_TechDesign_June2025/CA_1G_Distillate_Disposables_45_Solo_FrozenPomegranate.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f2379f9751374b81.jpg",
+      "title": "Muha Meds All-In-One Frozen Pomegranate Sativa disposable package render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0712c18c-0165-4249-ad47-b2128f5d9483",
+      "product": "All-In-One Disposable, Frozen Pomegranate flavor",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_TechDesign_June2025/CA_1G_Distillate_Disposables_Front_Solo_FrozenPomegranate.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/271962fd0f060a2d.jpg",
+      "title": "Muha Meds All-In-One Frozen Pomegranate disposable vape label art",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6ac4d75a-b1a8-4d80-a6b9-9c1e2358062b",
+      "product": "All-In-One Disposable, Frozen Pomegranate, 2000mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:muha:2025",
+      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_Solo_FrozenPomegranate.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0e1deae6bd9a1d7e.jpg",
+      "title": "Muha Meds All-In-One Frozen Pomegranate 2000mg Disposable Packaging Render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
       "status": "candidate"
     }
   ]

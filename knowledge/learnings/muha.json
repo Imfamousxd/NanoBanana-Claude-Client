@@ -3,7 +3,7 @@
   "schema": "learning-registry/1",
   "brand": "brand.muha",
   "displayName": "Muha Meds",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "stats": {
     "byProvider": {},
     "byCategory": {},
@@ -14,7 +14,331 @@
       "revise": 0
     }
   },
-  "laws": [],
-  "exemplars": [],
-  "events": []
+  "laws": [
+    {
+      "id": "ugc:brand.muha:duration-band",
+      "claim": "Real brand.muha creator videos run 19.370667-19.370667s (median 19.370667s); a generated piece outside 19.370667-19.370667s is off the house corpus.",
+      "evidence": "measured on 1 real ugc-video assets",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "weak",
+      "source": "dam.ugc_profiles/brand.muha (n=1, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 2,
+      "events": [],
+      "createdAt": "2026-09-16T01:28:53.061Z",
+      "updatedAt": "2026-09-16T01:30:36.936Z"
+    },
+    {
+      "id": "ugc:brand.muha:articulation-band",
+      "claim": "Real creators for brand.muha speak at 2-2 words per second of speech (median 2); scripts should be paced to that, not to wall-clock.",
+      "evidence": "transcript-measured on 1 assets",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "weak",
+      "source": "dam.ugc_profiles/brand.muha (n=1, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 2,
+      "events": [],
+      "createdAt": "2026-09-16T01:28:53.061Z",
+      "updatedAt": "2026-09-16T01:30:36.936Z"
+    },
+    {
+      "id": "ugc:brand.muha:hook-lands-early",
+      "claim": "The first spoken sentence in real brand.muha creator videos ends by 3s (p75 3s); a hook that has not landed by then is late.",
+      "evidence": "first-segment end time across 1 assets",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "weak",
+      "source": "dam.ugc_profiles/brand.muha (n=1, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 2,
+      "events": [],
+      "createdAt": "2026-09-16T01:28:53.062Z",
+      "updatedAt": "2026-09-16T01:30:36.936Z"
+    },
+    {
+      "id": "ugc:brand.muha:shot-rhythm",
+      "claim": "Real brand.muha creator videos carry 1-1 shots (median 1); the house register is a single unbroken take.",
+      "evidence": "scene-detect on 1 assets",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "weak",
+      "source": "dam.ugc_profiles/brand.muha (n=1, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 2,
+      "events": [],
+      "createdAt": "2026-09-16T01:28:53.062Z",
+      "updatedAt": "2026-09-16T01:30:36.936Z"
+    },
+    {
+      "id": "ugc:brand.muha:loudness-band",
+      "claim": "Real brand.muha creator audio sits at -27.1 to -27.1 LUFS integrated; deliver generated pieces in that band.",
+      "evidence": "EBU R128 on 1 assets",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "weak",
+      "source": "dam.ugc_profiles/brand.muha (n=1, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 2,
+      "events": [],
+      "createdAt": "2026-09-16T01:28:53.062Z",
+      "updatedAt": "2026-09-16T01:30:36.936Z"
+    },
+    {
+      "id": "ugc:brand.muha:dominant-framing",
+      "claim": "The dominant real-creator framing for brand.muha is \"hands-only overhead\" (1 of 1); default generated UGC to it.",
+      "evidence": "model read of contact sheets",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "weak",
+      "source": "dam.ugc_profiles/brand.muha (n=1, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 2,
+      "events": [],
+      "createdAt": "2026-09-16T01:28:53.062Z",
+      "updatedAt": "2026-09-16T01:30:36.936Z"
+    },
+    {
+      "id": "ugc:brand.muha:dominant-hook-type",
+      "claim": "Real brand.muha creators open with a \"none\" hook most often (1 of 1).",
+      "evidence": "model read of first 2s + transcript",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "weak",
+      "source": "dam.ugc_profiles/brand.muha (n=1, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 2,
+      "events": [],
+      "createdAt": "2026-09-16T01:28:53.062Z",
+      "updatedAt": "2026-09-16T01:30:36.936Z"
+    },
+    {
+      "id": "ugc:brand.muha:reality-cues",
+      "claim": "The reality cues that recur in real brand.muha creator content are: room tone; slight motion blur; background texture. Use two or three of these, not a generic list.",
+      "evidence": "counted across the corpus",
+      "counterexamples": "none recorded",
+      "applies_to": "ugc-video",
+      "confidence": "weak",
+      "source": "dam.ugc_profiles/brand.muha (n=1, 2026-09-15)",
+      "category": "ugc-video",
+      "tags": [
+        "dam",
+        "real-human",
+        "measured"
+      ],
+      "occurrences": 2,
+      "events": [],
+      "createdAt": "2026-09-16T01:28:53.062Z",
+      "updatedAt": "2026-09-16T01:30:36.936Z"
+    }
+  ],
+  "exemplars": [
+    {
+      "id": "dam_d94d814a-2b51-48d7-a98e-68f0e77c9006",
+      "eventId": null,
+      "createdAt": "2026-09-16T01:28:53.062Z",
+      "category": "ugc-video",
+      "product": null,
+      "provider": "human",
+      "model": null,
+      "prompt": null,
+      "refs": [],
+      "output": {
+        "path": "DAM 1, Muha THC  = Full Content/CP1 - Contract Video + Photo/2026 Content/CA Zalypmix (June 2026)/video (raw and color corrected)/muha meds clip 19.mp4",
+        "damAssetId": "d94d814a-2b51-48d7-a98e-68f0e77c9006"
+      },
+      "tracked": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/thumbs/77380e6481af3ae8.jpg",
+      "preview": "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/.content-engine/dam/proxies/previews/ce94e27300ae80cf.mp4",
+      "tags": [
+        "dam",
+        "real-human",
+        "b-roll"
+      ],
+      "reason": "Real creator content (quality 0.9); Cannabis Flower Preparation on Muha Meds Packaging",
+      "notes": "The video presents a close-up, overhead shot of cannabis flower being prepared on a piece of pink packaging material. A white filter tip is positioned on a rolling paper, and the flower is carefully spread out across it. The background prominently features the \"MUHA MEDS\" logo and other text. This raw b-roll footage is likely intended for use in marketing or UGC-style content to demonstrate the process of preparing the product.",
+      "origin": "dam"
+    }
+  ],
+  "events": [],
+  "ugcProfile": {
+    "sampleSize": 1,
+    "bands": {
+      "words": {
+        "n": 1,
+        "max": 10,
+        "min": 10,
+        "p25": 10,
+        "p75": 10,
+        "median": 10
+      },
+      "ratios": [
+        {
+          "n": 1,
+          "value": "9:16"
+        }
+      ],
+      "avg_shot_s": {
+        "n": 1,
+        "max": 19.37,
+        "min": 19.37,
+        "p25": 19.37,
+        "p75": 19.37,
+        "median": 19.37
+      },
+      "duration_s": {
+        "n": 1,
+        "max": 19.370667,
+        "min": 19.370667,
+        "p25": 19.370667,
+        "p75": 19.370667,
+        "median": 19.370667
+      },
+      "hook_end_s": {
+        "n": 1,
+        "max": 3,
+        "min": 3,
+        "p25": 3,
+        "p75": 3,
+        "median": 3
+      },
+      "shot_count": {
+        "n": 1,
+        "max": 1,
+        "min": 1,
+        "p25": 1,
+        "p75": 1,
+        "median": 1
+      },
+      "motion_mean": {
+        "n": 1,
+        "max": 0.091,
+        "min": 0.091,
+        "p25": 0.091,
+        "p75": 0.091,
+        "median": 0.091
+      },
+      "loudness_lufs": {
+        "n": 1,
+        "max": -27.1,
+        "min": -27.1,
+        "p25": -27.1,
+        "p75": -27.1,
+        "median": -27.1
+      },
+      "articulation_wps": {
+        "n": 1,
+        "max": 2,
+        "min": 2,
+        "p25": 2,
+        "p75": 2,
+        "median": 2
+      }
+    },
+    "patterns": {
+      "forms": [
+        {
+          "n": 1,
+          "value": "b-roll"
+        }
+      ],
+      "music": [
+        {
+          "n": 1,
+          "value": "none"
+        }
+      ],
+      "energies": [
+        {
+          "n": 1,
+          "value": "calm explainer"
+        }
+      ],
+      "framings": [
+        {
+          "n": 1,
+          "value": "hands-only overhead"
+        }
+      ],
+      "settings": [
+        {
+          "n": 1,
+          "value": "a close-up"
+        }
+      ],
+      "hook_types": [
+        {
+          "n": 1,
+          "value": "none"
+        }
+      ],
+      "cta_present": {
+        "with": 0,
+        "without": 1
+      },
+      "camera_reads": [
+        {
+          "n": 1,
+          "value": "moving"
+        }
+      ],
+      "imperfections": [
+        {
+          "n": 1,
+          "value": "room tone"
+        },
+        {
+          "n": 1,
+          "value": "slight motion blur"
+        },
+        {
+          "n": 1,
+          "value": "background texture"
+        }
+      ],
+      "camera_behaviors": [
+        {
+          "n": 1,
+          "value": "handheld drift"
+        }
+      ]
+    },
+    "computedAt": "2026-09-15T03:12:19.826Z",
+    "source": "dam.ugc_profiles"
+  }
 }

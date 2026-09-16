@@ -3,7 +3,7 @@
   "schema": "product-registry/1",
   "brand": "brand.nulumin",
   "displayName": "NuLumin Bio-Sciences",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "logo": [
     {
       "path": "Brand Context/assets/NuLumin_BioSciences/ads/logo_black.png",
@@ -398,6 +398,2550 @@
       "alpha": true,
       "size": "892x1924",
       "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "679240c5-7aa9-455d-a24f-6a1b7f4e6347",
+      "product": "AOD-9604 5mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_AOD-9604_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8dee3a5ad6380ff3.jpg",
+      "title": "NuLumin AOD-9604 5mg display box with multiple product packages",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b4769f93-9cf8-4984-b44f-f85ab206e1a0",
+      "product": "AOD-9604 5mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_AOD-9604_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/68931a5a9552f33f.jpg",
+      "title": "NuLumin AOD-9604 5mg injectable vial display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9db042cc-3500-4486-ba45-d45f053c826a",
+      "product": "AOD-9604 5mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_AOD-9604_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1ca0f470c9a0d540.jpg",
+      "title": "NuLumin AOD-9604 5mg vial in counter display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b8663d0d-17d0-4294-b309-dbe62460d6a0",
+      "product": "AOD-9604 5mg Metabolic display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_AOD-9604_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6bd09b1096feefda.jpg",
+      "title": "NuLumin AOD-9604 5mg Metabolic display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8abe348e-f586-489d-95ca-9c23cbddaabf",
+      "product": "BPC-157 / TB-500 10mg/10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_Front_Tilt_BPC-157_TB-500_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/18a9b96cc8badc0f.jpg",
+      "title": "NuLumin BPC-157 / TB-500 10mg/10mg product box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "46eb7628-b999-474d-ac70-b079d3d72ea7",
+      "product": "BPC-157 / TB-500 10mg/10mg peptide box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_BPC-157_TB-500_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/92f42daf501d31e6.jpg",
+      "title": "NuLumin BPC-157 TB-500 10mg/10mg peptide box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "64c9cac7-5b17-4c6d-b2be-9b9c6c4514e3",
+      "product": "BPC-157 / TB-500 10mg/10mg Tissue",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_BPC-157_TB-500_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3fc353ebfa5c415c.jpg",
+      "title": "NuLumin BPC-157 / TB-500 10mg/10mg Tissue product box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2ffda70f-0a44-4c50-b8fb-01bbb12d1555",
+      "product": "BPC-157 / TB-500 10mg/10mg vials in display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_BPC-157_TB-500_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b2df6bbe7332f285.jpg",
+      "title": "NuLumin BPC-157/TB-500 10mg/10mg display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8f52a613-23d1-495e-8e4d-a6c4d9db692b",
+      "product": "BPC-157 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_BPC-157_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2768304fad8f4e93.jpg",
+      "title": "NuLumin BPC-157 10mg packaging render with vial",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "648c28a0-f68b-4cf6-b7e6-b8036e153f98",
+      "product": "BPC-157 10mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_BPC_10mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e46cbe0248a59972.jpg",
+      "title": "NuLumin BPC-157 10mg injectable vial transparent cutout render",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4fadf150-2d10-46f8-8cc3-2adeff316d20",
+      "product": "BPC-157 10mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_BPC-157_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bf3707b00b809c2e.jpg",
+      "title": "NuLumin BPC-157 10mg vial in display box front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "46a4133d-97bc-4a3f-8dc5-a4532f266702",
+      "product": "BPC-157 10mg vial box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_BPC-157_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e7fa3e875c72a88c.jpg",
+      "title": "NuLumin BPC-157 10mg vial box three-quarter render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2a506dc6-453e-484c-b540-c67e5d5a2c03",
+      "product": "BPC-157 10mg vial packaging",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_BPC-157_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/793a22d750fa1240.jpg",
+      "title": "NuLumin BPC-157 10mg vial packaging 3D render on white background",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c2847e04-8014-4d78-8a5a-4fffa3b02d4f",
+      "product": "BPC-157 10mg vials in a display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_BPC-157_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6972990af6ba45c7.jpg",
+      "title": "NuLumin BPC-157 10mg vials in a multi-pack display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "05d70e68-5ff1-469f-b9b8-5bb20fd94805",
+      "product": "BPC-157 20mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_BPC-157_20mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/87d9a04ee3ad4408.jpg",
+      "title": "NuLumin BPC-157 20mg peptide box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c5bb1d89-81ea-467e-83dc-331b3defecdd",
+      "product": "BPC-157 20mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_BPC-157_20mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fd0552ad89a09331.jpg",
+      "title": "NuLumin BPC-157 20mg peptide box render, front-tilt view",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d741c87b-41cc-43c1-901f-2cb4ccdfde39",
+      "product": "BPC-157 20mg vial in display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_BPC-157_20mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2498568d2ba9664c.jpg",
+      "title": "NuLumin BPC-157 20mg vial in white and grey display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a674e68e-e12e-4e03-afee-305020f7d8b0",
+      "product": "BPC-157 20mg vials in a display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_BPC-157_20mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c6d0411a26d1ca4f.jpg",
+      "title": "NuLumin BPC-157 20mg display box with multiple vials",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ed7a081c-742f-4f16-a2f3-a7bc55647f95",
+      "product": "BPC-157 20mg vials in a display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_BPC-157_20mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8e3acf77040c7c91.jpg",
+      "title": "NuLumin BPC-157 20mg vials in white and grey display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8f990464-5b47-4e9c-9a70-c8e591cc1148",
+      "product": "BPC-157 injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_BPCTB_10mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/edce08855514ed97.jpg",
+      "title": "NuLumin BPC-157 10mg injectable vial transparent render",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8e8954cc-2288-42a8-94a4-57049ee5c25c",
+      "product": "CFC-1295 5mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_CFC_5mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a4f707679863396e.jpg",
+      "title": "NuLumin CFC-1295 5mg injectable vial 3D render with pink cap",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "775f15a4-32ea-4fe1-9859-1185697e423f",
+      "product": "CJC-1295 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_CTC-1295_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/58bc9a50e98a6056.jpg",
+      "title": "NuLumin CJC-1295 10mg display box with vials, 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9963f54f-bbff-4f01-8767-a0b61163a1e0",
+      "product": "CJC-1295 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_CTC-1295_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2873c7ebbbc71b01.jpg",
+      "title": "NuLumin CJC-1295 10mg single product box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "844cd4f9-dc1b-47f3-a41f-d28cd51f3774",
+      "product": "CJC-1295 10mg display box with vials",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_CTC-1295_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/638bc0b4f5954f64.jpg",
+      "title": "NuLumin CJC-1295 10mg display box with vials, front view",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "87b6e724-6235-4bbc-9717-73c2b8cd7793",
+      "product": "CJC-1295 10mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_CTC-1295_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/05731b871813e399.jpg",
+      "title": "NuLumin CJC-1295 10mg Injectable Vial Product Box Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "68414791-39f4-40b7-ae0f-c3c65a6d8ec1",
+      "product": "CJC-1295 10mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_CTC-1295_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1ae7bfb56e00d080.jpg",
+      "title": "NuLumin CJC-1295 10mg injectable vial packaging render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2418d0e7-9140-4bae-abca-22e44dce01f9",
+      "product": "CJC-1295 10mg peptide display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_CTC-1295_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/31f30607486cec65.jpg",
+      "title": "NuLumin CJC-1295 10mg peptide display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a54d69e0-f139-42e2-8557-f35cdd07ad97",
+      "product": "CJC-1295 5mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_CTC-1295_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5338ca333a0a7937.jpg",
+      "title": "NuLumin CJC-1295 5mg injectable vial in display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "78009ea3-9af0-4a70-a09e-b3d68a3b0801",
+      "product": "CJC-1295 5mg peptide",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_CTC-1295_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6921966eab17801a.jpg",
+      "title": "NuLumin CJC-1295 5mg peptide box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b3fe4a66-e1ec-4cbe-890a-849a11999072",
+      "product": "CJC-1295 5mg peptide vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_CTC-1295_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6fc5c9c4a54955c7.jpg",
+      "title": "NuLumin CJC-1295 5mg peptide vials in black display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "fd6d29a0-1756-4101-8331-31a1462d5923",
+      "product": "CJC-1295 5mg peptide vial box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_CTC-1295_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bcf0adeff1d85423.jpg",
+      "title": "NuLumin CJC-1295 5mg peptide vial box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "cbb5eceb-c627-493d-9dde-affd0da2a570",
+      "product": "CJC-1295 5mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_CTC-1295_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/73bfa312aef3dcd9.jpg",
+      "title": "NuLumin Bio-Sciences CJC-1295 5mg vial display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "12ea2347-07c6-4ddb-b2f9-dcd4a883eedd",
+      "product": "CJC-1295 5mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_CTC-1295_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8868942bf5ab23a3.jpg",
+      "title": "NuLumin CJC-1295 5mg Vial Packaging Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "96fd7633-e0b5-422a-9a06-3c8577434226",
+      "product": "DH-vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_GLP-2_T_20mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/feeeaa13556a6985.jpg",
+      "title": "NuLumin GLP-2 (T) 20mg injectable vial in retail display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "62607134-857f-4432-8122-21ea0760197a",
+      "product": "DSIP 5mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_DSIP_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2d6c5938aa33177d.jpg",
+      "title": "NuLumin DSIP 5mg packaging render with vial on white background",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ec16f1cd-69ea-451b-81e4-685b1b615d9c",
+      "product": "DSIP 5mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_DSIP_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1ea091b8d14195a6.jpg",
+      "title": "NuLumin DSIP 5mg packaging box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c04e0479-e7a7-4267-bbb3-7693675c6859",
+      "product": "DSIP 5mg display box with vials",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_DSIP_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3f8ad74f0b3a21f8.jpg",
+      "title": "NuLumin DSIP 5mg display box with vials, front view render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "20a277ad-3196-4367-a47c-1acc8277b5ad",
+      "product": "DSIP 5mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_DSIP_5mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7d8534bb684d1265.jpg",
+      "title": "NuLumin DSIP 5mg injectable vial 3D render with green cap",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8a906320-d884-4488-b465-041fa399c772",
+      "product": "DSIP 5mg vial display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_DSIP_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/29d5e43c6e885628.jpg",
+      "title": "NuLumin DSIP 5mg vial display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e2f02910-9615-45a2-858b-8270696d88dd",
+      "product": "DSIP 5mg vial packaging",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_DSIP_5mg45.png",
+      "thumb": "/data/dam/proxies/thumbs/0482398c29e20570.jpg",
+      "title": "NuLumin DSIP 5mg vial packaging 3D render on white background",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a2ff7e5f-ad61-4438-a2e2-a849b7f2b492",
+      "product": "DSIP 5mg vials in a display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_DSIP_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9e71379339926b97.jpg",
+      "title": "NuLumin DSIP 5mg vials in a white and grey display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "bd934781-d9c4-4b3d-9e67-afb8593bca47",
+      "product": "Epithalon 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_AOD-9604_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/07b1fd554f8586b8.jpg",
+      "title": "NuLumin Epithalon 10mg peptide research vial box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4fd06647-24c8-487a-b26e-f4bc0b2d7974",
+      "product": "Epithalon 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_Epithalon_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8cb23916d6ca5640.jpg",
+      "title": "NuLumin Epithalon 10mg Bio-Sciences product box render, front three-quarter view",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "016586ec-7f33-401a-945c-4aeb1cc14d09",
+      "product": "Epithalon 10mg display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_Epithalon_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/324bd5d138f68622.jpg",
+      "title": "NuLumin Epithalon 10mg cellular peptide display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9592e52b-0065-478b-b74d-5c53db7d0025",
+      "product": "Epithalon 10mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_AOD-9604_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7f9e231115fc3b7d.jpg",
+      "title": "NuLumin Epithalon 10mg injectable vial in white and blue box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a95e59ab-0b97-4df7-a02f-c09754284a4f",
+      "product": "Epithalon 10mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_Epithalon_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/96b0c88fd7878fd2.jpg",
+      "title": "NuLumin Epithalon 10mg vial in white and grey display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f3d559b8-c7cc-4f49-8b84-d7bd07a0a7a3",
+      "product": "Epithalon 10mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_Epithalon_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1a789ca476666e8f.jpg",
+      "title": "NuLumin Epithalon 10mg display box with vial render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5bc7b12f-ad9b-4789-bc28-70afc7f59bf9",
+      "product": "Epithalon 30mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_Epithalon_30mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4dbda3208bc3ae18.jpg",
+      "title": "NuLumin Epithalon 30mg white product box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "961ae017-cfa2-4bdc-89fd-e2efd6f9d722",
+      "product": "Epithalon 30mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_Front_Tilt_Epithalon_30mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/560ea79009ea63dc.jpg",
+      "title": "NuLumin Epithalon 30mg vial packaging box front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9529be9a-b638-417b-bc39-a6bdc93fffe2",
+      "product": "Epithalon 30mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_Epithalon_30mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3536b13266c16533.jpg",
+      "title": "NuLumin Bio-Sciences Epithalon 30mg injectable vial 3D render",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "397387f6-1022-4461-aaac-18eeeb0784c5",
+      "product": "Epithalon 30mg injectable vial in a display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_Epithalon_30mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/71808c8d4ae717ba.jpg",
+      "title": "NuLumin Epithalon 30mg display box with multiple product packages",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0926abf3-8811-49e1-9617-a517d6a11c6d",
+      "product": "Epithalon 30mg vial in display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_Epithalon_30mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b0493afcb113f4ad.jpg",
+      "title": "NuLumin Epithalon 30mg vial display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4d1f78f7-9460-423a-9a6f-b577294d1582",
+      "product": "Epithalon 30mg vials in a display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_Epithalon_30mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a2b0601367f7f13c.jpg",
+      "title": "NuLumin Epithalon 30mg vials in dark grey display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "cc226ad2-1b31-499b-992b-9f6d45c3bfed",
+      "product": "GHK-Cu 50mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_GHK-Cu_50mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cd83671a2fad95bf.jpg",
+      "title": "NuLumin GHK-Cu 50mg peptide product box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "76058370-65a5-4bcb-831f-1fee6fd10689",
+      "product": "GHK-Cu 50mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_GHK-Cu_50mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d7dc9fecd466974a.jpg",
+      "title": "NuLumin GHK-Cu 50mg vials in white display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "371eb0e0-119d-4591-93a8-0b3860ce1650",
+      "product": "GHK-Cu 50mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_GHK-Cu_50mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/388cf220a50ac56c.jpg",
+      "title": "NuLumin GHK-Cu 50mg injectable vial in display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7f5fb3fc-d0bb-4034-9b74-64213189e0b3",
+      "product": "GHK-Cu 50mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_GHK-Cu_50mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0642ea6ec294ed61.jpg",
+      "title": "NuLumin GHK-Cu 50mg injectable vial packaging render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ef72f13d-db7a-4a87-9f2d-34ec8cdf067a",
+      "product": "GHK-Cu 50mg injectable vial box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_GHK-Cu_50mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c92bc10e387edf89.jpg",
+      "title": "NuLumin GHK-Cu 50mg injectable vial product box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "754ee84c-f762-4787-9be7-c10cdf80cf56",
+      "product": "GHK-Cu 50mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_GHK-Cu_50mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b9589b5cc0731131.jpg",
+      "title": "NuLumin GHK-Cu 50mg vial display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e738eb53-e1e7-463f-a9f3-8da12e06002f",
+      "product": "GHK-Cu 50mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_GHK_50mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/802b2d6f4d335ece.jpg",
+      "title": "NuLumin GHK-Cu 50mg Injectable Vial 3D Render",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e0f324d7-237e-42cb-a6b4-d9d2b63f69f9",
+      "product": "GHK-Cu 50mg vial in display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_GHK-Cu_50mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/82642d75134919f9.jpg",
+      "title": "NuLumin GHK-Cu 50mg vial display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "359d0400-a67f-47ec-b335-92e705d4e5fc",
+      "product": "GLP-1 (S) 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_GLP-1_S_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9683eb7c71ee14f1.jpg",
+      "title": "NuLumin GLP-1 (S) 10mg product box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a1d33115-7b27-4681-8c6b-69f5fc87ff16",
+      "product": "GLP-1 (S) 10mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_GLP-1_S_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e65c132608afa3d9.jpg",
+      "title": "NuLumin GLP-1 (S) 10mg injectable vial in display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "be3e14cc-f164-4bb0-876a-e0f930324e40",
+      "product": "GLP-1 (S) 10mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_GLP1_10mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/028dcad970f0f994.jpg",
+      "title": "NuLumin GLP-1 (S) 10mg injectable vial 3D render",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5e2eb858-dd2c-47f4-9835-65d6b065a6a1",
+      "product": "GLP-1 (S) 10mg injectable vial in display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_GLP-1_S_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e29dad19e8108d45.jpg",
+      "title": "NuLumin GLP-1 (S) 10mg metabolic injectable vial display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1b2073dd-d32f-4bba-bb54-4700480d322b",
+      "product": "GLP-1 (S) 10mg Metabolic display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_GLP-1_S_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1d59d6af69c106a5.jpg",
+      "title": "NuLumin GLP-1 (S) 10mg Metabolic display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "937ca0e8-6814-447c-8dee-2fe845bce116",
+      "product": "GLP-1 (S) 10mg Metabolic vials in a display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_GLP-1_S_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fe96e60eb73d44c0.jpg",
+      "title": "NuLumin GLP-1 (S) 10mg Metabolic vials in grey display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2c63a81f-0652-4756-99d4-65aad29bec54",
+      "product": "GLP-1 (S) 10mg peptide vial packaging",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_GLP-1_S_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a2ca541c683e95f8.jpg",
+      "title": "NuLumin GLP-1 (S) 10mg peptide vial packaging render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d7e5e6dc-2006-4d0e-8c5d-5a7a90219917",
+      "product": "GLP-1 (S) 10mg vial packaging",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_GLP-1_S_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bcc93434ac2c41b9.jpg",
+      "title": "NuLumin GLP-1 (S) 10mg vial packaging render on white background",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b5b388cf-951b-4be0-83f7-13958a9e7b36",
+      "product": "GLP-1 (S) 10mg vial packaging",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_Front_Tilt_GLP-1_S_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e8bb6199921948e8.jpg",
+      "title": "NuLumin GLP-1 (S) 10mg vial box render, front three-quarter view",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4a56fa29-3697-4c0e-abcf-4764e1795624",
+      "product": "GLP-1 (S) 20mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_GLP-1_S_20mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/806f14dec24b4319.jpg",
+      "title": "NuLumin GLP-1 (S) 20mg metabolic display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0bfa341f-8760-43d7-90ce-7be0ecd79598",
+      "product": "GLP-1 (S) 20mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_GLP-1_S_20mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4a5cf7aba97772e7.jpg",
+      "title": "NuLumin GLP-1 (S) 20mg Metabolic product box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "63194ba3-68b7-4156-a992-08a053fc530d",
+      "product": "GLP-1 (S) 20mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_GLP1_20mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9fe4b1564945a8fb.jpg",
+      "title": "NuLumin GLP-1 (S) 20mg injectable vial 3D render",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "fab3cf35-d0d3-49d1-9dfd-2e93dad0ba32",
+      "product": "GLP-1 (S) 20mg vial in display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_GLP-1_S_20mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5fd4b53cf87120b7.jpg",
+      "title": "NuLumin GLP-1 (S) 20mg vial display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c426c08c-bdf7-4778-87ec-b8811093a4c6",
+      "product": "GLP-1 (S) 20mg vial in display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_GLP-1_S_20mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8d4afe729153131a.jpg",
+      "title": "NuLumin GLP-1 (S) 20mg vial display box front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "db97d49c-1543-4345-8ee0-353c099b15e1",
+      "product": "GLP-2 (T) 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_GLP-2_T_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/44f364f813eb9f60.jpg",
+      "title": "NuLumin GLP-2 (T) 10mg display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f7ff97dd-6714-4e0d-8e69-506859dcb5c2",
+      "product": "GLP-2 (T) 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_GLP2_10mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9cd86df013158434.jpg",
+      "title": "NuLumin GLP-2 (T) 10mg injectable vial 3D render",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "08624040-9b3f-4ba5-946d-cb6dd80df05b",
+      "product": "GLP-2 (T) 10mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_Front_Tilt_GLP-2_T_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c70aa1fc5accdbe3.jpg",
+      "title": "NuLumin GLP-2 (T) 10mg injectable vial packaging render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "655328e7-0fd5-4add-a0f2-9fee79ac5c93",
+      "product": "GLP-2 (T) 10mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_GLP-2_T_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b97687c2eb86f080.jpg",
+      "title": "NuLumin GLP-2 (T) 10mg injectable vial in display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "433dddcf-746a-4acd-841a-de1dcd716798",
+      "product": "GLP-2 (T) 10mg injectable vial packaging",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_GLP-2_T_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/73a4f9a62d31b3ce.jpg",
+      "title": "NuLumin GLP-2 (T) 10mg injectable vial product box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c87464ea-1de8-4adb-9611-dfc8a5012a7e",
+      "product": "GLP-2 (T) 10mg vial box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_GLP-2_T_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1ffb640cc689f783.jpg",
+      "title": "NuLumin GLP-2 (T) 10mg product box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3ea91ae3-8920-42f2-8daa-637eaa4389b3",
+      "product": "GLP-2 (T) 20mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_GLP-2_T_20mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/589cf2dfe04ee780.jpg",
+      "title": "NuLumin GLP-2 (T) 20mg display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f6a3fb19-d339-4948-b52b-491245be275a",
+      "product": "GLP-2 (T) 20mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_GLP-2_T_20mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/df2da22b9fdef219.jpg",
+      "title": "NuLumin GLP-2 (T) 20mg product packaging box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "abe3b0c0-018b-4f53-9341-f354ed65e59d",
+      "product": "GLP-2 (T) 20mg display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_GLP-2_T_20mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/62f11a7fb90cf82e.jpg",
+      "title": "NuLumin GLP-2 (T) 20mg display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c4e30972-81ca-41a2-8f5b-97017ffb07e4",
+      "product": "GLP-2 (T) 20mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_GLP-2_T_20mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8b567e0b29db6c40.jpg",
+      "title": "NuLumin Bio-Sciences GLP-2 (T) 20mg metabolic peptide box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "12af0019-0ee7-4d0a-a05d-e7f062eec8e7",
+      "product": "GLP-2 (T) 20mg vial in display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_GLP-2_T_20mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cd7bdf195ecdc4c6.jpg",
+      "title": "NuLumin GLP-2 (T) 20mg vial in display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "17e4dff2-2e99-48ff-9966-130c78217c16",
+      "product": "GLP-3 (R) 12mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_GLP-3_R_12mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/66e031b3d83aba0c.jpg",
+      "title": "NuLumin GLP-3 (R) 12mg product box render, front three-quarter view",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6384eb56-8079-483b-acd1-6b1d7e023348",
+      "product": "GLP-3 (R) 12mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_GLP-3_R_12mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/21ac449817fded79.jpg",
+      "title": "NuLumin GLP-3 (R) 12mg display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4cfe1f56-b5b9-4bc8-8a20-238fccef0a50",
+      "product": "GLP-3 (R) 12mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_Front_Tilt_GLP-3_R_12mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/53d2a0833e867ea0.jpg",
+      "title": "NuLumin GLP-3 (R) 12mg injectable vial product box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "268ac39c-5a07-4578-a925-ae7a62c569e4",
+      "product": "GLP-3 (R) 12mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_GLP3_12mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/05727aaaeb74bab7.jpg",
+      "title": "NuLumin GLP-3 12mg injectable vial 3D render",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0b650526-980c-45c0-999d-e9985ddb17cc",
+      "product": "GLP-3 (R) 12mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_GLP-3_R_12mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c385333573470d71.jpg",
+      "title": "NuLumin GLP-3 (R) 12mg vial packaging render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "e24a7af4-1c5f-43d6-8877-4b5cf5a1efa2",
+      "product": "GLP-3 (R) 12mg vials in a display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_GLP-3_R_12mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2a45eef4f0ca7206.jpg",
+      "title": "NuLumin GLP-3 (R) 12mg vials in grey display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4721b148-72fe-4930-a64b-bb69b45fa9be",
+      "product": "GLP-3 (R) 6mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_GLP-3_R_6mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9e77384756530219.jpg",
+      "title": "NuLumin GLP-3 (R) 6mg display box with product boxes render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8060f77b-b005-47bf-821d-0ffe3b70039b",
+      "product": "GLP-3 (R) 6mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_Front_Tilt_GLP-3_R_6mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7ace36cb9e01bbee.jpg",
+      "title": "NuLumin GLP-3 (R) 6mg product box and vial render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4f52e4c3-f8ae-4a9a-8222-a1fdcf4fe552",
+      "product": "GLP-3 (R) 6mg box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_GLP-3_R_6mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2d5b868584cadd33.jpg",
+      "title": "NuLumin GLP-3 (R) 6mg Metabolic peptide box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a51c4628-6822-4236-9e08-c443270841a0",
+      "product": "GLP-3 (R) 6mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_GLP3_6mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1ba782f06e05df41.jpg",
+      "title": "NuLumin GLP-3 (R) 6mg injectable vial 3D render on white",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8a9e4bd2-3773-4ecb-89dc-6d5ad77655f1",
+      "product": "GLP-3 (R) 6mg injectable vial box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_GLP-3_R_6mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b97c0bbdca99a58f.jpg",
+      "title": "NuLumin GLP-3 (R) 6mg injectable vial box render on white",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "260ff8f8-dfc4-4f29-8eda-1fd5f9560e69",
+      "product": "GLP-3 (R) 6mg injectable vial display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_GLP-3_R_6mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6e858402995f19ab.jpg",
+      "title": "NuLumin GLP-3 (R) 6mg injectable vial display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5a110de3-f3c5-46d7-8e9c-bcd389147cc0",
+      "product": "GLP-3 (R) 6mg Metabolic vials in a display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_GLP-3_R_6mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e32ada171d178eba.jpg",
+      "title": "NuLumin GLP-3 (R) 6mg Metabolic vials in grey display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "acf6ad02-8dcc-42f4-983f-780b19a46adb",
+      "product": "Injectable vial, CFC-1295 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_CFC_10mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ee088e02fce3e99d.jpg",
+      "title": "NuLumin CFC-1295 10mg injectable vial transparent cutout",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1c482252-41c7-4860-95f8-590a53fb228e",
+      "product": "Injectable vial, GLP-2 (T) 20mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_GLP2_20mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cf81fc3b96e5c078.jpg",
+      "title": "NuLumin GLP-2 (T) 20mg injectable vial 3D render",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7554c90f-dade-436d-8d5f-9440f1c9baf0",
+      "product": "Ipamorelin 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_Ipamorelin_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8e1028025336fba4.jpg",
+      "title": "NuLumin Ipamorelin 10mg box front three-quarter render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "20732cb0-f5c6-451b-874e-e8674282f5ad",
+      "product": "Ipamorelin 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_Front_Tilt_Ipamorelin_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/216eb24dc23bec37.jpg",
+      "title": "NuLumin Ipamorelin 10mg product box render, front three-quarter view",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "648cd58a-c5d3-4085-8b31-46108696de77",
+      "product": "Ipamorelin 10mg injectable vials in a display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_Ipamorelin_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9b8a7fadc120b357.jpg",
+      "title": "NuLumin Ipamorelin 10mg injectable vials display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "fcb88aa3-8ee3-49ee-b1bc-a0b12829fac5",
+      "product": "Ipamorelin 10mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_Ipamorelin_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/903a8baebd1b1180.jpg",
+      "title": "NuLumin Ipamorelin 10mg vial in display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3f2e13a5-22f6-45a7-8c73-995d8ffa679e",
+      "product": "Ipamorelin 5mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_Ipamorelin_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/16784d50b2fe15db.jpg",
+      "title": "NuLumin Ipamorelin 5mg display box with product packaging and vial render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7e359313-c214-4f82-95a3-ddf4e882163c",
+      "product": "Ipamorelin 5mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_Ipamorelin_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/56d03bc51ba78321.jpg",
+      "title": "NuLumin Ipamorelin 5mg box with vial on white background",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9c24b9b0-1dba-44d5-b917-59f8934bf86a",
+      "product": "Ipamorelin 5mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_Ipamorelin_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/967794ed587abd97.jpg",
+      "title": "NuLumin Ipamorelin 5mg display box with vial 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "21caca29-9951-4e0d-862e-51a0e3ad22fe",
+      "product": "Ipamorelin 5mg injectable vials",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_Ipamorelin_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9e41c7e7f549e44c.jpg",
+      "title": "NuLumin Ipamorelin 5mg injectable vials in a retail display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d7b65266-22b8-40a0-a497-b796579246e2",
+      "product": "Ipamorelin 5mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_Ipamorelin_5mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a208d0fe1d1d0d88.jpg",
+      "title": "NuLumin Ipamorelin 5mg injectable vial 3D render",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ea4b99b0-6f9d-48b6-85ca-43e3ed8fcdb6",
+      "product": "Ipamorelin 5mg vials",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_Ipamorelin_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/162fd298831bf643.jpg",
+      "title": "NuLumin Ipamorelin 5mg Vials in Display Box 3D Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d9d0270c-4ce7-4c91-a8ca-d4dd48b65b92",
+      "product": "KissPeptin 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_KissPeptin_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/59865069657243a6.jpg",
+      "title": "NuLumin KissPeptin 10mg single product box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "dbe4af86-a1c9-4707-af64-d6c5971c5733",
+      "product": "KissPeptin 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_KissPeptin_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2c9899559d5e6401.jpg",
+      "title": "NuLumin KissPeptin 10mg product box 3D render on white background",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "118f8d7d-7348-46de-aaed-5a205682bedd",
+      "product": "KissPeptin 10mg display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_KissPeptin_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2ba5bfb2c4e7dd10.jpg",
+      "title": "NuLumin KissPeptin 10mg display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "00b45313-9f63-4bec-99f2-7487c161a218",
+      "product": "KissPeptin 10mg display box with injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_KissPeptin_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5c28d644646f51da.jpg",
+      "title": "NuLumin KissPeptin 10mg display box with injectable vial render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9d28fc3e-477a-4ce9-b0bb-b06f4477bde9",
+      "product": "KissPeptin 10mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_KissPeptin_10mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6fc5c38ae79c888d.jpg",
+      "title": "NuLumin KissPeptin 10mg Injectable Vial 3D Render",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "65f1d349-72ff-4a25-abfc-2244d6052c20",
+      "product": "KissPeptin 10mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_Front_Tilt_KissPeptin_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/01b45366d7fb7545.jpg",
+      "title": "NuLumin KissPeptin 10mg injectable vial product box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4975fdcf-0017-4a91-8ce2-8ba5d3472689",
+      "product": "KissPeptin 10mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_Front_Tilt_KissPeptin_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/af88a3170d378525.jpg",
+      "title": "NuLumin KissPeptin 10mg box with vial render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a220cd3c-a591-4e56-b6ea-9145f35ea28d",
+      "product": "KissPeptin 10mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_KissPeptin_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/72d39def44403b09.jpg",
+      "title": "NuLumin KissPeptin 10mg vial in display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "49a69123-1708-4eff-bd64-4cc87cee4987",
+      "product": "KissPeptin 10mg vials in a display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_KissPeptin_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8f1b4f993cad3f82.jpg",
+      "title": "NuLumin KissPeptin 10mg display box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "24c78895-0eb9-4ce2-aab8-c70081cb66b2",
+      "product": "KissPeptin 5mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/NuL_KissPeptin_5mg_SingleBox_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6109afac1e51bfcc.jpg",
+      "title": "NuLumin KissPeptin 5mg single box front view render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "72d2baec-1cff-4f50-b4ea-c36477c569c2",
+      "product": "KissPeptin 5mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_KissPeptin_5mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ae19ab5d723a6064.jpg",
+      "title": "NuLumin KissPeptin 5mg injectable vial transparent cutout",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8ccad170-5971-4dfc-9531-a3a3fe9cf522",
+      "product": "KissPeptin 5mg box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/NuL_KissPeptin_5mg_Display_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1b021f69e628defd.jpg",
+      "title": "NuLumin KissPeptin 5mg product box 3D render with vial image",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "56e7ccf3-dadd-4aa6-8f32-3d66098a9e5f",
+      "product": "KissPeptin 5mg box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/NuL_KissPeptin_5mg_SingleBox_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b50aff5dc9f26eac.jpg",
+      "title": "NuLumin KissPeptin 5mg single product box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5055bd1f-131b-4208-9af1-28dcec40bc84",
+      "product": "KissPeptin 5mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/NuL_KissPeptin_5mg_Display_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/caf4de40cbee8faf.jpg",
+      "title": "NuLumin KissPeptin 5mg injectable vial in white and grey box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "dee10f1b-5dd2-4163-9375-ea859b09aaaf",
+      "product": "KissPeptin 5mg injectable vial display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1c8629cf502b2acc.jpg",
+      "title": "NuLumin KissPeptin 5mg Injectable Vial Display Box Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "05e0110e-9887-4e5d-b662-ad3e46f4cc9d",
+      "product": "KissPeptin 5mg injectable vial display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_Front_KissPeptin_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1b5881e943c53268.jpg",
+      "title": "NuLumin KissPeptin 5mg injectable vial display box front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "da73c34e-f00a-45e8-8cc7-a98a221d6495",
+      "product": "KissPeptin 5mg injectable vial in display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_Front_KissPeptin_5mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4a506bc1ed7a283d.jpg",
+      "title": "NuLumin KissPeptin 5mg injectable vial display box front render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c560c7bc-d3f2-46cd-ac02-a2ff339dfe4c",
+      "product": "KissPeptin 5mg vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_45_KissPeptin_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9f2bb510352edb56.jpg",
+      "title": "NuLumin KissPeptin 5mg vial packaging 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2967511d-9766-49f1-bdbe-1b9541a1a172",
+      "product": "KissPeptin 5mg vial in display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v2/NuLumin_Displaybox_45_KissPeptin_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/088e3c5a941b22a3.jpg",
+      "title": "NuLumin KissPeptin 5mg vials in multi-pack display box render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7affedc9-1b92-4c17-97c5-02045e3bc53a",
+      "product": "KissPeptin 5mg vials in a display box",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Display/v3/NuLumin_Displaybox_45_KissPeptin_5mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d2f61224f54cf707.jpg",
+      "title": "NuLumin Bio-Sciences KissPeptin 5mg vials in a grey display box",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "71177a32-82db-4b45-b4e8-9f082e785627",
+      "product": "KPV 10mg",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v3/NuLumin_Singlebox_45_KPV_10mg45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5072931574518742.jpg",
+      "title": "NuLumin KPV 10mg peptide research vial packaging render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7cb65b33-6a65-40cd-ba3a-c805204ff84e",
+      "product": "KPV 10mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Transparent/NuL_KPV_10mg_Transparent.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e11c798788a7f8f6.jpg",
+      "title": "NuLumin KPV 10mg injectable vial 3D render on white background",
+      "alpha": true,
+      "size": "3600x2400",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "f50f0668-7f33-4fdb-9019-7ac1ee479fd9",
+      "product": "KPV 10mg injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/NuLumin/Nulumin SingleBox/v2/NuLumin_Singlebox_Front_Tilt_KPV_10mgFront.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0332dbda38a53aa6.jpg",
+      "title": "NuLumin KPV 10mg injectable vial packaging render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
       "status": "candidate"
     }
   ]

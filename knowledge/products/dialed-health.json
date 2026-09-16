@@ -3,7 +3,7 @@
   "schema": "product-registry/1",
   "brand": "brand.dialed-health",
   "displayName": "Dialed Health",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "logo": [
     {
       "path": "DIaled Health Instruction Graphics/Product Refs/Dialed Health_Logo_Updated-02.png",
@@ -707,6 +707,810 @@
       "alpha": false,
       "size": "4608x3712",
       "addedAt": "2026-09-15",
+      "status": "candidate"
+    },
+    {
+      "assetId": "20076fb4-8c88-455d-9ba2-894e9420bc7d",
+      "product": "AOD 9604 / MOTS-C Metabolic Support Injection Vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Metabolic Support Injections/DH_Injection_Metabolic_AOD9604_MotsC.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1ed6f7019dd7ceee.jpg",
+      "title": "Dialed Health AOD 9604 / MOTS-C Metabolic Support Injection Vial Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a91c9d69-ed00-4855-b4d5-20e43f021bd2",
+      "product": "blood test tube",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Blood_Test_Kit/v1/individual/tube.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8770ea581061e673.jpg",
+      "title": "Single blood test tube with orange cap, 3D render",
+      "alpha": true,
+      "size": "2000x2000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "4093e8fa-c8ee-4614-9ff3-53d17d614bc9",
+      "product": "DH-capsule",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Pill Bottles/PillBottle_Longevity&AntiAging_MethyleneBlue.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/446f398621136c4d.jpg",
+      "title": "Dialed Health Methylene Blue Longevity Anti-Aging Capsule Bottle Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "21fe1ea7-259a-4a25-b274-2803d072f45c",
+      "product": "DH-capsule",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Pill Bottles/PillBottle_WeightLoss_Tesofensine.png",
+      "thumb": "/data/dam/proxies/thumbs/97930a70120025d1.jpg",
+      "title": "Dialed Health Tesofensine Weight Loss Capsule Bottle 3D Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8425a57d-9fcd-4a2f-ae67-5ed0308461b6",
+      "product": "DH-oral-drop",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Oral Drops/OralDropper_Tirzepatide.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f3871b2d63a2756d.jpg",
+      "title": "Dialed Health Sublingual Tirzepatide Oral Drops 3D Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "1123ea88-647b-41ff-a5b3-2fa4e72ab242",
+      "product": "DH-oral-drop",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Oral Drops/OralDropper_Semaglutide.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7c735d22eeb9a0d1.jpg",
+      "title": "Dialed Health Sublingual Semaglutide Oral Drops 3D Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "7a036c29-3025-475b-b101-2d3ed0c832a4",
+      "product": "DH-vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Weight Loss Injections/DH_Injection_WL_TirzepatideKit.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/68fb25c0e92cb780.jpg",
+      "title": "Three Dialed Health Tirzepatide weight loss injection vials",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0f3191c5-6446-42dc-a4c7-f577b89a4270",
+      "product": "DH-vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/DH_B2B/TirB12.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/94d7afd5fa5d38e5.jpg",
+      "title": "Dialed Health Tirzepatide B12 weight loss injection vial render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8452c492-36da-4f89-9a07-7f77d054cb08",
+      "product": "DH-vial (IGF-LR3)",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Growth Hormone & Performance Injections/DH_Injection_GHPerformance_IGF-LR3.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/14e2964b568aea40.jpg",
+      "title": "Dialed Health IGF-LR3 injectable vial 3D render on white background",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "a05ba077-6a60-44ee-9de5-9f7c4b8942bc",
+      "product": "DH-vial: AOD 9604 / MOTS-C TESAMORELIN Metabolic Support Injection",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Metabolic Support Injections/DH_Injection_Metabolic_AOD9604_MotsC_Tesamorelin.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/671cad345a8fd088.jpg",
+      "title": "Dialed Health AOD 9604 MOTS-C Tesamorelin Metabolic Support Injection Vial Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "22d500c5-06aa-45e8-95b5-2f634d7aa02f",
+      "product": "DH-vial: BPC-157",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Recovery Injections/DH_Injection_Recovery_BPC157.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b89371a81b2b1147.jpg",
+      "title": "Dialed Health BPC-157 Recovery Injection Vial 3D Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "2863871b-2f57-40e2-8a47-644a7cfb3ec9",
+      "product": "DH-vial: Glutathione",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Longevity & Anti-Aging Injections/DH_Injection_LongevityAA_Glutathione.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b8b486a22229e0db.jpg",
+      "title": "Dialed Health Glutathione Longevity Anti-Aging Injection Vial 3D Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c26a48ab-ea33-4e57-b51c-f3b07d890696",
+      "product": "DH-vial: Semaglutide + B12 Weight Loss Injection",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/DH_B2B/SegB12.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7981f7b148a9ca2a.jpg",
+      "title": "Dialed Health Semaglutide B12 Weight Loss Injection Vial 3D Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5ad6b571-1b98-4ad7-85e6-fe812c890ae5",
+      "product": "Dialed Health heat pack",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Blood_Test_Kit/v1/individual/Heatpack.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/00d5a983eec05c86.jpg",
+      "title": "Dialed Health heat pack 3D render with mirrored instructions",
+      "alpha": true,
+      "size": "2000x2000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "9e1f132a-ac75-4100-a849-dc1f713d2c9e",
+      "product": "DIHEXA Cognitive Enhancement Capsule",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Pill Bottles/PillBottle_CognitiveEnhancement_Dihexa.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5f9473b65364b6cf.jpg",
+      "title": "Dialed Health DIHEXA Cognitive Enhancement Capsule Bottle Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "599993a2-b73f-4ad9-967e-f9df376f4cde",
+      "product": "Dihexa Tesofensine Cognitive Enhancement Capsule",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Pill Bottles/PillBottle_CognitiveEnhancement_Dihexa_Tesofensine.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/90fa87e8ce841f33.jpg",
+      "title": "Dialed Health Dihexa Tesofensine cognitive enhancement capsule bottle render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "c9ddfab2-929d-41c2-bad0-5460e9e6671c",
+      "product": "Gauze Pad, Alcohol Prep Pad, Logo Sticker",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Blood_Test_Kit/v1/individual/Alcohol_Gauze_Needle.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/24cadccf4bf8f64d.jpg",
+      "title": "Dialed Health Gauze Pad, Alcohol Prep Pad, and Logo Sticker Renders",
+      "alpha": true,
+      "size": "2000x2000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "64f81f71-9b0b-48d2-aeef-8c2bc87a670e",
+      "product": "glass water bottle with cork sleeve",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Sauna_bottles/Sauna_Bottle_Black.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f15adee55c27d0da.jpg",
+      "title": "3D render of Dialed Health glass water bottle with cork sleeve",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ce11b0a6-6383-4935-bfae-f28b1b6a4e86",
+      "product": "LIPO-B injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Metabolic Support Injections/DH_Injection_Metabolic_Lipo-B.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/13657740fa0b7a78.jpg",
+      "title": "Dialed Health LIPO-B Metabolic Support Injection Vial 3D Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ec03f38a-1d5f-4703-9564-c479eddc2e3f",
+      "product": "LL-37 Recovery Injection",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Recovery Injections/DH_Injection_Recovery_LL37.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/aece8c832e90fc4d.jpg",
+      "title": "Dialed Health LL-37 Recovery Injection vial 3D render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "733a0fff-3a6a-4bc1-a909-5a65a07cb85c",
+      "product": "Pill/tablet",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Pills/Pill_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/012bad5b820c78ef.jpg",
+      "title": "White circular pill with embossed DH logo 3D render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3b7c8116-5236-42b2-b45a-f71a9e23bae3",
+      "product": "Semaglutide Weight Loss Injection",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Weight Loss Injections/DH_Injection_WL_SemaglutideKit.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c6d3d791259227d7.jpg",
+      "title": "Three Dialed Health Semaglutide Weight Loss Injection Vials Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b370e1f5-cbb6-4f0b-9363-26f68fe8e605",
+      "product": "Sermorelin",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Growth Hormone & Performance Injections/DH_Injection_GHPerformance_Seramorelin.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dc53d1d80c0d0b6c.jpg",
+      "title": "Dialed Health Sermorelin Growth Hormone Injection Vial 3D Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "73490e17-5c87-4990-b902-8534b310e654",
+      "product": "Testosterone Cyp Cottonseed injectable vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/HRT Injections/DH_Injection_HRT_TestosteroneCypCottonseed.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4ae023a203200ef6.jpg",
+      "title": "Dialed Health Testosterone Cyp Cottonseed HRT Injection Vial Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6c9136bf-1004-4905-88eb-323288f6d03b",
+      "product": "Testosterone Cyp MCT Oil HRT Injection Vial",
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/HRT Injections/DH_Injection_HRT_TestosteroneCypMCTOil.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2051e5057530263e.jpg",
+      "title": "Dialed Health Testosterone Cyp MCT Oil HRT Injection Vial Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "45bfcdb4-e4bc-4771-8ef8-e2d1dc582a92",
+      "product": null,
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Brand Guidelines/Dialed Health Branding Brainstorm 9.13/Hass's Info/04-BRAND/logo/logo-pearl.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/975f11dc8f62f3f2.jpg",
+      "title": "Dialed Health wordmark logo with heartbeat graphic",
+      "alpha": true,
+      "size": "4000x1510",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "3c6f13e5-7191-4055-92ec-945c5ff7803e",
+      "product": null,
+      "confidence": 1,
+      "quality": 1,
+      "roles": [
+        "logo",
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:main",
+      "path": "DAM 2, Dialed Health = Assets Receiving/Logos + logo color variations/Logos/Dialed Health symbol_white.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f09a086a19677091.jpg",
+      "title": "Dialed Health white symbol logo with transparent background",
+      "alpha": true,
+      "size": "9001x5401",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5357a552-bef3-4a17-ae56-d88207e57651",
+      "product": "NAD+ Longevity & Anti-Aging Injection",
+      "confidence": 0.95,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Longevity & Anti-Aging Injections/DH_Injection_LongevityAA_NAD+.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2a0317b14b8c9a9d.jpg",
+      "title": "Dialed Health NAD+ Longevity Anti-Aging Injection Vial 3D Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ac8dec31-9c57-49cc-bf86-941e6bd7a792",
+      "product": "SS-31",
+      "confidence": 0.95,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Longevity & Anti-Aging Injections/DH_Injection_LongevityAA_SS31.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/03fbcdd5737d63a0.jpg",
+      "title": "Dialed Health SS-31 Longevity Anti-Aging Injection Vial Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b0311df4-7312-4024-a572-7cb5cb64d33a",
+      "product": "glass water bottle with cork sleeve",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-labs:2025",
+      "path": "Renders/Accessories & Product Features/Sauna_bottles/Sauna_Bottle_White.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/86b8fad4996667e8.jpg",
+      "title": "Dialed Health glass water bottle with cork sleeve 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0dd70424-547d-4542-a9bb-c169ba2eccfb",
+      "product": "cylindrical health device",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Blood_Test_Kit/v1/individual/3d_print.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/331ae4bcbc75b87f.jpg",
+      "title": "3D render of Dialed Health black and silver cylindrical device",
+      "alpha": true,
+      "size": "2000x2000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "8f45c5f8-6c89-4f4b-b23b-85be70f58821",
+      "product": "DH-vial: Tirzepatide + B12 Weight Loss Injection",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/Weight Loss Injections/DH_Injection_WL_TirzepatideB12.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3ace49b89542724c.jpg",
+      "title": "Dialed Health Tirzepatide + B12 weight loss injection vial render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0e3c7a2c-e975-4a01-bb70-e3868e2dbd8c",
+      "product": "Gonadorelin HRT Injection vial",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Syringe Bottle/Dialed Health/HRT Injections/DH_Injection_HRT_Gonadorelin.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fe5652fbc0aeaa59.jpg",
+      "title": "Dialed Health Gonadorelin HRT Injection Vial 3D Render",
+      "alpha": true,
+      "size": "4000x3300",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "325b7df9-7cb2-4809-8cef-5988ef353c5a",
+      "product": "Kratom Energy Drink, White Gummy flavor",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style",
+        "logo"
+      ],
+      "source": "dropbox:dialed-moods:2025",
+      "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot3_WhiteGummy.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/80ebc3c5402634db.jpg",
+      "title": "Dialed Health Kratom Energy Drink White Gummy 3D Render",
+      "alpha": true,
+      "size": "4000x5000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "6a398f9f-6a26-4a2b-9070-1cecddcbcc18",
+      "product": "Medical device holding a small blood sample vial",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Brand Guidelines/Dialed Health Branding Brainstorm 9.13/Dialed Health Website Assets/logos/bloodwork-og.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7186de7e4b688dc7.jpg",
+      "title": "Dialed Health medical device with blood sample vial 3D render",
+      "alpha": true,
+      "size": "1200x1200",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "bf00f380-ba48-4462-97f5-eb9fbc370949",
+      "product": "single pill",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Pills/Pill_Top.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/78594e70861daa5a.jpg",
+      "title": "Dialed Health white pill with embossed DH logo, top view render",
+      "alpha": true,
+      "size": "3200x4000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "d97f8ad3-64b3-42e3-9af6-a013b214b73b",
+      "product": "Tasso blood collection device",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Blood_Test_Kit/v1/individual/tasso.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a040a881a7a1686d.jpg",
+      "title": "3D render of Tasso blood collection device on white background",
+      "alpha": true,
+      "size": "2000x2000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "5323947f-5f03-4e99-ad08-a54740d879e3",
+      "product": "Vial bottle",
+      "confidence": 0.9,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Vial Bottle Case/VialBottleCase_Upwright_V2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/03e638d1947baa08.jpg",
+      "title": "Dialed Health white and black vial bottle 3D render",
+      "alpha": true,
+      "size": "3000x2500",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ad1ea040-fb75-4aed-ba06-4a88cea50418",
+      "product": "blood test kit box",
+      "confidence": 0.8,
+      "quality": 1,
+      "roles": [
+        "canonical"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Blood_Test_Kit/v1/Front_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a8447bf1a42f97a4.jpg",
+      "title": "Dialed Health white product box 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "efcf5ede-717f-486e-957c-fc140b08e9d9",
+      "product": "Blood Test Kit packaging",
+      "confidence": 0.8,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Blood_Test_Kit/v1/Front_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6d81079945dd7d29.jpg",
+      "title": "Dialed Health white blood test kit packaging 3D render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "b228b75c-1364-4fa8-8acb-de5c34f57aae",
+      "product": "generic product box for blood test kit",
+      "confidence": 0.8,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "logo"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Blood_Test_Kit/v1/Front_Front_2.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b542cf317e39e379.jpg",
+      "title": "Dialed Health white product box 3D render with logo",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "ef3591a0-19df-40e1-9c6a-2d50c166451d",
+      "product": "generic white product box for a blood test kit",
+      "confidence": 0.8,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Blood_Test_Kit/v1/Back_45.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c49265607f926676.jpg",
+      "title": "Dialed Health white product box render with wellness ecosystem slogan",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
+      "status": "candidate"
+    },
+    {
+      "assetId": "0f07b5e5-2963-4500-9fd5-86a746f4038c",
+      "product": "Preventative healthcare kit box",
+      "confidence": 0.8,
+      "quality": 1,
+      "roles": [
+        "canonical",
+        "shape",
+        "style"
+      ],
+      "source": "dropbox:dialed-health:2025",
+      "path": "Renders/Blood_Test_Kit/v1/Back_Front.png",
+      "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/70206dc259e463c1.jpg",
+      "title": "Dialed Health Preventative Healthcare Kit Box 3D Render",
+      "alpha": true,
+      "size": "3000x3000",
+      "addedAt": "2026-09-16",
       "status": "candidate"
     }
   ]

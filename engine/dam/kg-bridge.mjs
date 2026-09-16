@@ -22,14 +22,24 @@ function registryFile(root, graph, brandId) {
 export async function syncProductCandidates(root, db, graph, brandId, { minConfidence = 0.75, minQuality = 0.6 } = {}) {
   const file = registryFile(root, graph, brandId);
   if (!file) return { brand: brandId, skipped: "no registry" };
-  const { rows } = await db.query(`select id, path, source_id, product, product_confidence, quality, reference_roles, proxies, title, has_alpha, orientation, width, height
+  const { rows } = await db.query(`select id, path, source_id, product, product_confidence, quality, reference_roles, proxies, title, has_alpha, orientation, width, height, verdict
     from dam.assets where brand = $1 and class in ('product-ref','logo') and product_confidence >= $2 and coalesce(quality,0) >= $3 and deleted_at is null and duplicate_of is null
     and coalesce((flags->>'outdated_or_wrong')::boolean,false) = false order by product, quality desc`, [brandId, minConfidence, minQuality]);
   const registry = readJson(file);
   registry.damCandidates ??= [];
   const existing = new Set(registry.damCandidates.map((item) => item.assetId));
+  // The registry is a human promotion queue, not a mirror of the library (which context_pack and auto-refs
+  // query live): keep the best two files per product name, at most 150 per brand, best first.
+  const rank = (row) => (row.verdict === "approved" ? 100 : 0) + (Number(row.quality) || 0) * 30 + (row.has_alpha ? 2 : 0) + (Number(row.product_confidence) || 0) * 5;
+  const perProduct = new Map();
+  for (const row of [...rows].sort((a, b) => rank(b) - rank(a))) {
+    const key = String(row.product || "").toLowerCase();
+    const bucket = perProduct.get(key) || [];
+    if (bucket.length < 2) { bucket.push(row); perProduct.set(key, bucket); }
+  }
+  const shortlist = [...perProduct.values()].flat().sort((a, b) => rank(b) - rank(a)).slice(0, Math.max(0, 150 - registry.damCandidates.length));
   let added = 0;
-  for (const row of rows) {
+  for (const row of shortlist) {
     if (existing.has(row.id)) continue;
     registry.damCandidates.push({ assetId: row.id, product: row.product, confidence: row.product_confidence, quality: row.quality, roles: row.reference_roles, source: row.source_id, path: row.path, thumb: row.proxies?.thumb || null, title: row.title, alpha: row.has_alpha, size: row.width && row.height ? `${row.width}x${row.height}` : null, addedAt: new Date().toISOString().slice(0, 10), status: "candidate" });
     await db.query("insert into dam.kg_links (asset_id, kg_kind, kg_ref, brand) values ($1,'product-candidate',$2,$3) on conflict do nothing", [row.id, `${path.relative(root, file)}#${row.product}`, brandId]);
