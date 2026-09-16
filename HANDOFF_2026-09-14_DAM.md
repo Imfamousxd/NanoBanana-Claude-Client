@@ -200,7 +200,24 @@ enriched by the paid vision pass second.
 | Pricing | `dam candidates` / `dam_render_candidates` → per-brand toAnalyse + USD (`$0.0019` per image) | done |
 | Content-gen tie-in | `context_pack` → `damContext` searches product-ref roles; `sync-kg` writes `damCandidates` into `knowledge/products/<brand>.json` | existing; run `sync-kg` after the paid pass |
 
-**The paid pass — APPROVED and RUNNING since 2026-09-15 ~16:00 PT.** User: "lets get analysis going to
+**The paid pass — COMPLETE 2026-09-16 ~18:25 PT.** 8,657 of 8,671 render candidates analysed and 8,656
+embedded (searchable); 9 failed (five 90–240 MB freezer-wrap print files over the 80 MB image cap, two
+HEIC phone photos, two truncated-JSON retries); real cost **$16.42** for the pass. The total grew from
+8,665 to 8,671 during the run: auto-intake on Railway picked up new NY disposable renders as they were
+uploaded and analysed them. Library after the pass (analysed product-render files): Muha 5,357 · Dialed
+Moods 2,059 · Dialed Labs 767 · NuLumin 322 · Dialed Health 81. Registries re-synced with a capped
+best-per-product shortlist (150 per brand; `kg-bridge` no longer mirrors the whole library — a first
+uncapped sync bloated `muha-meds.json` to 3.6 MB and was reverted).
+
+**Storage bug found and fixed (`5acbeca`, `91fb58a`):** `ProxyStore.put` used to flip the whole worker
+to local-disk mode after one failed upload, so ~22k thumbnails were kept on disk (Mac and the Railway
+volume). Fixed (409 = object exists; other failures fall back per file only). `dam repair-proxies` ran
+on the Mac: 3,062 rewritten to existing cloud objects, 16,134 uploaded, 33 failed; 4,097 remain on the
+Railway volume → `POST /api/admin/repair-proxies` (password-protected) on the hosted server repairs
+those; it was triggered after the deploy (check `dam.assets where proxies->>'thumb' not like 'https%'`
+should be ~0).
+
+*(Earlier text kept for history:)* APPROVED and RUNNING since 2026-09-15 ~16:00 PT. User: "lets get analysis going to
 where we're processing all potential assets". Scope: every flagged render candidate, all four brands
 (8,665 files). Runs on the Mac (`dam work --once --kinds analyze,embed --approve --auto-only`,
 concurrency 12, `DAM_WORK_DIR=/tmp/dam-work`, cap 30, log in the session scratchpad
@@ -267,6 +284,11 @@ gpt-image-2 → quality medium + socket retry. Tests green (61 pass; the 2 failu
 `jobs/test-dm-inhand.json`, `test-dm-ad.json` (with copy + logo-canon), `test-nul-packshot.json`,
 `test-dh-cutout.json` (gpt-image-1 transparent), `test-muha-box.json`, `test-muha-hero.json`
 (Muha kits are thin until the render pass reaches the Muha folders).
+
+**Kits after the pass:** Blueberry Muffin → Magnetic device alone + 2G cart with box; Orange Tangie
+disposable → NY Melted Diamonds device + CA boxed + group shot; Gush Mintz jar / live resin dispo resolve
+to their lines (line words in the product name AND the intent count). Grape Sherbalato has no render in
+the library (only a 2023 NicProof dieline) — a real gap for the Dropbox owner.
 
 **Not yet run (billable, ≈ $2–3 for 17 images):** set `execution.approved: true` in each and
 `npm run content -- run jobs/<id>.json`, then `review` and `learn record`. The user has not yet
