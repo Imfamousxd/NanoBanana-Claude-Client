@@ -55,6 +55,14 @@ hand: `brand_get` → `context_pack` → `assets_search` → generate → `promp
    express the job. Copy that is exact, legal, or tabular is composed deterministically — see
    `docs/BRAND_PACKS.md`, not an image model.
 
+Fast path for stills: `job_create` (CLI `npm run content -- new --brand <b> --style <preset> --product "<name>"
+--objective "…" [--channel ig-feed] [--copy "LINE|LINE"]`) writes a job from a **style preset** (`presets`
+lists them: product-hero, packshot-white, transparent-cutout, lifestyle-in-hand, lifestyle-scene,
+ugc-still, flyer-snapshot, social-ad-copy, web-hero, packaging-mockup, lineup-range, character-scene,
+meme-card) and a channel; at plan time the library supplies the product's references (canonical, device,
+cutout, label, angles) and the prompt carries the laws learned from past rejections. Candidates are
+named variations, never re-rolls. Then `job_plan` → approve → `job_run` → `feedback_record` as above.
+
 Library: the DAM (`docs/DAM.md`) indexes the team Dropbox; `dam_search` finds real photos, real
 creator videos, packshots and shipped ads by meaning, and `dam_ugc_profile` gives the measured
 real-creator profile a UGC brief must land in. `context_pack` already includes both when the

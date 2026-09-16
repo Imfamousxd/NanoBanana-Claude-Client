@@ -247,6 +247,53 @@ products); the vision product string + folder line is the working product key. D
 5. Naming: is there a SKU or flavour naming convention we can parse from file names (e.g. "OG_Magnetic_Dispo_Front_b_<SKU>Front.png")?
 6. Where do inbound renders land first (a drop folder?) so auto-intake watches the right place.
 
+## 9. Image generation — presets, automatic references, learned rules (built 2026-09-16, commits `3c6d547`, `860f030`)
+
+User's ask: "make sure image gen side is working really well and outputting all different styles of
+content we would request at the highest quality; better than a personal ChatGPT account."
+
+**Audit findings (engine/, before):** DAM references were never used at generation time; laws /
+exemplars / context never entered the compiled prompt; no style presets; candidates were plain
+re-rolls; gpt-image-2 quality:high unenforced against the 60 s cap; transparent errored instead of
+routing to gpt-image-1; brand promptProfile empty for 4 of 7 brands.
+
+**Built:** `engine/prompts/presets.mjs` (13 styles × 9 channels), `engine/learning/auto-refs.mjs`
+(DAM kit → job assets, proxies cached in `.content-engine/refs/`), compiler enrichment (STYLE,
+RULES LEARNED FROM PAST REJECTIONS, APPROVED BEFORE, REFERENCE COVERAGE), named variations (one
+provider call per hypothesis), `content new` / `job_create` / `presets`, transparent → gpt-image-1,
+gpt-image-2 → quality medium + socket retry. Tests green (61 pass; the 2 failures are pre-existing).
+
+**Proven free:** six jobs created and planned OK with library references attached —
+`jobs/test-dm-inhand.json`, `test-dm-ad.json` (with copy + logo-canon), `test-nul-packshot.json`,
+`test-dh-cutout.json` (gpt-image-1 transparent), `test-muha-box.json`, `test-muha-hero.json`
+(Muha kits are thin until the render pass reaches the Muha folders).
+
+**Not yet run (billable, ≈ $2–3 for 17 images):** set `execution.approved: true` in each and
+`npm run content -- run jobs/<id>.json`, then `review` and `learn record`. The user has not yet
+said go.
+
+**Still open on the image side:** brand promptProfile for muha / dialed-* (only nulumin has one);
+deterministic QR / text plates are unwired (`engine/formats/meme-card.mjs` orphaned); no upscaling
+(gpt-image-2 native sizes are enough for social).
+
+## 10. Video-gen MCP (dialed-studio) — merge seam
+
+Repo: `Hassoonie/NanoBanana-Client` branch `gen-image` (MCP 2.31 source; PR #9 merged; live hosted
+MCP reports 2.31 at https://dialed-studio-mcp-production-7266.up.railway.app/mcp). GitHub access works
+as Imfamousxd. Shallow clone in the session scratchpad `dialed-studio/`.
+
+Findings: the studio has its own file-name-label asset index (`asset-library/render-index.json`,
+8,713 records, labels "source_path_only", not visually confirmed) and pulls Dropbox bytes itself
+(`studio_asset_pull`). Refs contract for briefs: `[{path, name, role, describe, contains_person,
+third_party_marks}]`, local paths only for video briefs; `image_generate` accepts https URLs (≤ 6).
+No plugin point. Release = PR to `release/mcp-2.31-mario`; `gen-image` auto-deploys; 76 suites +
+104-file check + tool-catalog fingerprint parity.
+
+**Decision: seam A — we hand the studio references in its own shape; zero studio changes; video
+quality untouched.** `exportForStudio(kit)` in `engine/dam/product-context.mjs` emits that array.
+Next: an MCP tool `dam_studio_refs` (kit → files materialised → studio refs JSON) and, when the
+hosted studio gets Dropbox creds, pass Dropbox paths instead of local files.
+
 ## 6. Remaining plan
 
 1. Let the render pass finish (check progress; restart the local run if it died: same command as §8). Then `dam sync-kg` per brand.

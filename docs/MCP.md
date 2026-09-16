@@ -80,3 +80,15 @@ local-only libraries are not, and `assets_search` / the gallery say so per file 
 The server is stdio today. The tool table is transport-agnostic; an HTTP deployment (like the
 dialed-studio video MCP on Railway) would wrap `createTools()` in the SDK's Streamable HTTP
 transport with a bearer token and a read-only checkout of this repository.
+
+## Stills: presets, automatic references, learned rules (2026-09-16)
+
+| Tool / command | What it does |
+|---|---|
+| `presets` / `npm run content -- presets` | The 13 style presets (routing, channel size, references wanted, named variations) and the 9 channels. |
+| `job_create` / `npm run content -- new …` | brand + style + product(s) + objective → `jobs/<id>.json` with routing and size filled, `references.auto: true`. |
+| `job_plan` | Now async: resolves the product's references from the DAM (`engine/learning/auto-refs.mjs`), attaches them as `product-canon` / `reference-image` / `logo-canon` with instructions, adds the laws learned from rejections and approved-exemplar excerpts to the prompt, and returns `autoReferences`, `learned`, `variants`. |
+| `job_run` | Runs one provider call per named variation (`<basename>-v1..n`), so candidates are experiments. |
+| `dam_product_refs` | The reference kit for one product, with reasons; `exportForStudio` gives the same in the video MCP's refs shape. |
+
+Routing rules encoded in `engine/prompts/presets.mjs`: gpt-image-2 by default (sets small type, renders the whole creative), quality `medium` (quality:high exceeds the ~60 s connection cap), Nano Banana (`gemini-image`) when a reference's likeness must hold at hero scale (characters), gpt-image-1 for transparent backgrounds. Scaffolds say what belongs on a surface and never "no logo" (negatives summon). Flyers are phone snapshots, not AI posters. Grain is a post step.
