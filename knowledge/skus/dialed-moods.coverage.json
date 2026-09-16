@@ -6,8 +6,8 @@
   "items": 159,
   "covered": 124,
   "assets": 2059,
-  "matchedAssets": 1443,
-  "unmatchedAssets": 616,
+  "matchedAssets": 1435,
+  "unmatchedAssets": 624,
   "unmatchedGroups": 34
  },
  "lines": [
@@ -30,12 +30,12 @@
      "sku": "DM-NPE-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 101,
+     "renders": 100,
      "compositions": {
       "device-only": 42,
       "lineup": 15,
       "multi-pack": 22,
-      "in-scene": 8,
+      "in-scene": 7,
       "in-hand": 13,
       "device-with-packaging": 1
      },
@@ -129,12 +129,12 @@
      "sku": "DM-NPE-OC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 43,
+     "renders": 42,
      "compositions": {
       "device-only": 19,
       "lineup": 7,
       "multi-pack": 12,
-      "in-scene": 3,
+      "in-scene": 2,
       "in-hand": 2
      },
      "hasDeviceOnly": true,
@@ -443,12 +443,12 @@
      "sku": "DM-KES-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 165,
+     "renders": 164,
      "compositions": {
       "device-only": 66,
       "multi-pack": 51,
       "lineup": 17,
-      "in-scene": 16,
+      "in-scene": 15,
       "in-hand": 13,
       "device-with-packaging": 2
      },
@@ -711,12 +711,12 @@
      "sku": "DM-LDE-LEM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 151,
+     "renders": 150,
      "compositions": {
       "multi-pack": 39,
       "device-only": 67,
       "lineup": 15,
-      "in-scene": 16,
+      "in-scene": 15,
       "in-hand": 12,
       "device-with-packaging": 2
      },
@@ -2744,12 +2744,12 @@
      "sku": "DM-EDK-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 101,
+     "renders": 100,
      "compositions": {
       "device-only": 42,
       "lineup": 15,
       "multi-pack": 22,
-      "in-scene": 8,
+      "in-scene": 7,
       "in-hand": 13,
       "device-with-packaging": 1
      },
@@ -2795,11 +2795,11 @@
      "sku": "DM-EDK-SR",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 61,
+     "renders": 60,
      "compositions": {
       "device-only": 28,
       "lineup": 10,
-      "in-scene": 9,
+      "in-scene": 8,
       "multi-pack": 10,
       "in-hand": 4
      },
@@ -2845,10 +2845,10 @@
      "sku": "DM-EDK-MP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 81,
+     "renders": 80,
      "compositions": {
       "lineup": 21,
-      "device-only": 29,
+      "device-only": 28,
       "in-scene": 10,
       "packaging-only": 1,
       "multi-pack": 15,
@@ -2898,12 +2898,12 @@
      "sku": "DM-EDK-VB",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 99,
+     "renders": 98,
      "compositions": {
       "lineup": 21,
       "device-only": 44,
       "multi-pack": 26,
-      "in-scene": 4,
+      "in-scene": 3,
       "in-hand": 3,
       "device-with-packaging": 1
      },
@@ -2949,12 +2949,12 @@
      "sku": "DM-EDK-OC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 43,
+     "renders": 42,
      "compositions": {
       "device-only": 19,
       "lineup": 7,
       "multi-pack": 12,
-      "in-scene": 3,
+      "in-scene": 2,
       "in-hand": 2
      },
      "hasDeviceOnly": true,
@@ -4124,12 +4124,12 @@
      "sku": "DM-SMO-GU",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 58,
+     "renders": 56,
      "compositions": {
       "device-with-packaging": 10,
       "lineup": 11,
       "packaging-only": 11,
-      "device-only": 21,
+      "device-only": 19,
       "in-scene": 4,
       "multi-pack": 1
      },
@@ -4918,10 +4918,10 @@
      "sku": null,
      "discontinued": true,
      "inDevelopment": false,
-     "renders": 5,
+     "renders": 4,
      "compositions": {
       "device-with-packaging": 1,
-      "device-only": 2,
+      "device-only": 1,
       "multi-pack": 1,
       "packaging-only": 1
      },
@@ -4947,12 +4947,12 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2a04a5d626e14bf3.jpg"
       },
       {
-       "id": "312f6ed5-6e3d-4625-8cc2-4b93399d40de",
+       "id": "42188a2d-4c8b-490e-9fb7-0b121faa369c",
        "score": 4,
-       "path": "Renders/DialedMoods/Dialed Sku's/Kratom_Silver_Shot/Kraton Silver Shot Group Shot.png",
-       "composition": "device-only",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/980ff2ab6b1f7292.jpg"
+       "path": "Renders/DialedMoods/Dialed Sku's/Kratom_Silver_Shot/Kraton Silver Shot Open Box.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4c60b1f5a9d3d710.jpg"
       }
      ],
      "folders": [
@@ -5010,12 +5010,12 @@
      "sku": "DM-NPE-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 101,
+     "renders": 100,
      "compositions": {
       "device-only": 42,
       "lineup": 15,
       "multi-pack": 22,
-      "in-scene": 8,
+      "in-scene": 7,
       "in-hand": 13,
       "device-with-packaging": 1
      },
@@ -5109,12 +5109,12 @@
      "sku": "DM-NPE-OC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 43,
+     "renders": 42,
      "compositions": {
       "device-only": 19,
       "lineup": 7,
       "multi-pack": 12,
-      "in-scene": 3,
+      "in-scene": 2,
       "in-hand": 2
      },
      "hasDeviceOnly": true,
@@ -5702,12 +5702,12 @@
      "sku": "DM-KES-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 165,
+     "renders": 164,
      "compositions": {
       "device-only": 66,
       "multi-pack": 51,
       "lineup": 17,
-      "in-scene": 16,
+      "in-scene": 15,
       "in-hand": 13,
       "device-with-packaging": 2
      },
@@ -6032,12 +6032,12 @@
      "sku": "DM-LDE-LEM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 151,
+     "renders": 150,
      "compositions": {
       "multi-pack": 39,
       "device-only": 67,
       "lineup": 15,
-      "in-scene": 16,
+      "in-scene": 15,
       "in-hand": 12,
       "device-with-packaging": 2
      },
@@ -7081,7 +7081,7 @@
   {
    "folder": "DialedMoods / Dialed Sku's",
    "market": null,
-   "files": 174,
+   "files": 175,
    "products": [
     {
      "product": "Kratom Energy Drink",
@@ -7109,7 +7109,7 @@
     "device-with-packaging": 12,
     "packaging-only": 46,
     "multi-pack": 21,
-    "device-only": 70,
+    "device-only": 71,
     "lineup": 4,
     "n/a": 12,
     "label-flat": 4,
@@ -7119,29 +7119,34 @@
   {
    "folder": "DialedMoods / Motion",
    "market": null,
-   "files": 82,
+   "files": 89,
    "products": [
+    {
+     "product": "DM-sea-moss",
+     "n": 2
+    },
+    {
+     "product": "Very Berry energy drink",
+     "n": 1
+    },
     {
      "product": "Paradise Pink energy drink",
      "n": 1
     },
     {
-     "product": "Dialed Moods full product range for New Year 2025",
-     "n": 1
-    },
-    {
-     "product": "Fruit Punch",
+     "product": "Strawberry Razz energy drink",
      "n": 1
     }
    ],
    "samples": [
     "Dialed_Spin_00005.png",
-    "Blast_PP.png",
-    "Dialed_Spin_00009.png"
+    "Blast_VB.png",
+    "Blast_PP.png"
    ],
    "compositions": {
     "n/a": 79,
-    "in-scene": 3
+    "in-scene": 7,
+    "device-only": 3
    }
   },
   {
