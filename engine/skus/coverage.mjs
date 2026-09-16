@@ -59,19 +59,20 @@ function genOf(text) { const m = String(text).toLowerCase().match(/gen\s?(\d)/);
 /** Score one asset against one SKU item. 0 = no match. */
 export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   if (GENERIC_RE.test(String(asset.path || ""))) return 0;
+  for (const [seg, re] of [["moods", /moods/i], ["mavricks", /mavrick/i], ["mmxcookies", /cookies/i], ["madness", /madness/i], ["magnetic", /magnetic/i], ["dual", /dual/i]]) if (new RegExp("(^|/)[^/]*" + seg + "[^/]*(/|$)", "i").test(String(asset.path || "")) && !re.test(`${line.line} ${line.section || ""}`)) return 0;
   if (asset.composition === "lineup" || /lineup|line up|group|all flavou?rs|assorted|variety/i.test(`${asset.title || ""} ${String(asset.path || "").split("/").pop()}`)) return 0;
   if (/,.*,|\band\b.*\band\b/.test(String(asset.product || "")) && !new RegExp(compact(item.name).slice(0, 8)).test(compact(asset.product))) return 0;
   const flavour = norm(item.name).replace(/\b(i|s|h|indica|sativa|hybrid|collab)\b/g, "").trim();
   if (flavour.length < 3) return 0;
   const flavourCompact = flavour.replace(/\s/g, "");
   let score = 0;
-  if (prepared.compactFull.includes(flavourCompact)) score += 3;
-  else {
-    const tokens = flavour.split(" ").filter((token) => token.length >= 3);
-    if (tokens.length >= 2 && tokens.every((token) => prepared.full.includes(token))) score += 2;
-    else if (tokens.length === 1 && tokens[0].length >= 6 && prepared.full.split(" ").includes(tokens[0])) score += 1.5;
-    else return 0;
-  }
+  const words = prepared.full.split(" ");
+  const tokens = flavour.split(" ").filter(Boolean);
+  const wholeCompact = new RegExp("(^|[^a-z])" + flavourCompact + "(?![a-z])").test(" " + prepared.compactFull.replace(/([a-z])(?=[0-9])/g, "$1 ") + " ") || prepared.compactFull.includes(flavourCompact + "_") || prepared.compactFull.endsWith(flavourCompact);
+  if (prepared.compactFull.includes(flavourCompact) && (tokens.length > 1 || wholeCompact || flavourCompact.length >= 8)) score += 3;
+  else if (tokens.length >= 2 && tokens.every((token) => words.includes(token))) score += 2;
+  else if (tokens.length === 1 && tokens[0].length >= 6 && words.includes(tokens[0])) score += 1.5;
+  else return 0;
   // Hard walls: vape form, format, market, generation.
   const form = FORM_WORDS[line.category];
   if (form) { if (!form.test(prepared.compactFull)) return 0; for (const [cat, re] of Object.entries(FORM_WORDS)) if (cat !== line.category && re.test(prepared.compactFull) && !form.test(prepared.compactFull.replace(re, ""))) return 0; }

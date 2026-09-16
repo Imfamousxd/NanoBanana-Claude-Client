@@ -4,11 +4,11 @@
  "totals": {
   "lines": 148,
   "items": 1165,
-  "covered": 710,
+  "covered": 682,
   "assets": 5362,
-  "matchedAssets": 3366,
-  "unmatchedAssets": 1996,
-  "unmatchedGroups": 136
+  "matchedAssets": 3160,
+  "unmatchedAssets": 2202,
+  "unmatchedGroups": 139
  },
  "lines": [
   {
@@ -531,9 +531,11 @@
    "skuBlock": "HEMP003",
    "source": "Official Hemp SKU Book - Active Sku's.csv",
    "items": 10,
-   "covered": 10,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 9,
+   "coveragePct": 90,
+   "missing": [
+    "Mango Madness"
+   ],
    "itemsDetail": [
     {
      "name": "Strawberry Shortcake",
@@ -587,46 +589,14 @@
      "sku": "MMC2-THCA-MM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
-     "compositions": {
-      "packaging-only": 3,
-      "device-with-packaging": 4,
-      "multi-pack": 3
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "041aac36-5070-4fa2-83fd-c60fbac44e76",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_FrontSolo_MangoMadness.png",
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/56d86c063db8f64e.jpg"
-      },
-      {
-       "id": "0dea6395-5e2c-4680-a2d4-61cab3bf9668",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45_MangoMadness.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c37a20607f14e417.jpg"
-      },
-      {
-       "id": "57f3ca92-313b-4799-9732-8b910ad57c44",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45Solo_MangoMadness.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4c4679df743c4e19.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/THCA 2G - 2026",
-      "Renders/Hemp/Cartridges/THCA - Oct 2024"
-     ]
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Pineapple Runtz",
@@ -1117,8 +1087,8 @@
      "inDevelopment": false,
      "renders": 26,
      "compositions": {
-      "device-with-packaging": 11,
       "multi-pack": 11,
+      "device-with-packaging": 11,
       "packaging-only": 4
      },
      "hasDeviceOnly": false,
@@ -1127,8 +1097,16 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "ec14a6e7-6870-4051-a40c-96dd96913552",
+       "id": "8ce56e36-ac7e-4a04-a194-6f3cbf53faa2",
        "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Closed_D8_Gelato_V1.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e87c93e364e5a809.jpg"
+      },
+      {
+       "id": "ec14a6e7-6870-4051-a40c-96dd96913552",
+       "score": 4.5,
        "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_Gelato_V1.png",
        "composition": "device-with-packaging",
        "angle": "front",
@@ -1136,25 +1114,17 @@
       },
       {
        "id": "35f265e3-dfae-4b7f-8c44-de82ddc825dd",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_Gelato_V1.png",
        "composition": "device-with-packaging",
        "angle": "multiple",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0d4f458d08736e22.jpg"
-      },
-      {
-       "id": "97d34f5d-235d-4c9c-9a56-9f082ccddb51",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_Gelato_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8955558a768827a7.jpg"
       }
      ],
      "folders": [
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
      ]
     },
@@ -1608,8 +1578,8 @@
      "inDevelopment": false,
      "renders": 26,
      "compositions": {
-      "device-with-packaging": 11,
       "multi-pack": 11,
+      "device-with-packaging": 11,
       "packaging-only": 4
      },
      "hasDeviceOnly": false,
@@ -1618,8 +1588,16 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "ec14a6e7-6870-4051-a40c-96dd96913552",
+       "id": "8ce56e36-ac7e-4a04-a194-6f3cbf53faa2",
        "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Closed_D8_Gelato_V1.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e87c93e364e5a809.jpg"
+      },
+      {
+       "id": "ec14a6e7-6870-4051-a40c-96dd96913552",
+       "score": 4.5,
        "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_Gelato_V1.png",
        "composition": "device-with-packaging",
        "angle": "front",
@@ -1627,25 +1605,17 @@
       },
       {
        "id": "35f265e3-dfae-4b7f-8c44-de82ddc825dd",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_Gelato_V1.png",
        "composition": "device-with-packaging",
        "angle": "multiple",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0d4f458d08736e22.jpg"
-      },
-      {
-       "id": "97d34f5d-235d-4c9c-9a56-9f082ccddb51",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_Gelato_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8955558a768827a7.jpg"
       }
      ],
      "folders": [
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
      ]
     },
@@ -2099,8 +2069,8 @@
      "inDevelopment": false,
      "renders": 26,
      "compositions": {
-      "device-with-packaging": 11,
       "multi-pack": 11,
+      "device-with-packaging": 11,
       "packaging-only": 4
      },
      "hasDeviceOnly": false,
@@ -2109,8 +2079,16 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "ec14a6e7-6870-4051-a40c-96dd96913552",
+       "id": "8ce56e36-ac7e-4a04-a194-6f3cbf53faa2",
        "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Closed_D8_Gelato_V1.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e87c93e364e5a809.jpg"
+      },
+      {
+       "id": "ec14a6e7-6870-4051-a40c-96dd96913552",
+       "score": 4.5,
        "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_Gelato_V1.png",
        "composition": "device-with-packaging",
        "angle": "front",
@@ -2118,25 +2096,17 @@
       },
       {
        "id": "35f265e3-dfae-4b7f-8c44-de82ddc825dd",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_Gelato_V1.png",
        "composition": "device-with-packaging",
        "angle": "multiple",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0d4f458d08736e22.jpg"
-      },
-      {
-       "id": "97d34f5d-235d-4c9c-9a56-9f082ccddb51",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_Gelato_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8955558a768827a7.jpg"
       }
      ],
      "folders": [
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
      ]
     },
@@ -2788,7 +2758,7 @@
      "top": [
       {
        "id": "9bf2b76b-95d2-4fb4-85af-51bfb9cd2c8e",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/Hemp/FlowerBag/Display/FlowerBags_DisplayCase_Closed_Gummiez_V1.png",
        "composition": "multi-pack",
        "angle": "three-quarter",
@@ -2796,7 +2766,7 @@
       },
       {
        "id": "8c125684-7769-4d0a-997e-d9f00b846f1e",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/Hemp/FlowerBag/Display/FlowerBags_DisplayCase_Open_Gummiez_HHC_V1.png",
        "composition": "multi-pack",
        "angle": "three-quarter",
@@ -2804,7 +2774,7 @@
       },
       {
        "id": "50ca1105-e192-408e-bf4a-c91003622162",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/Hemp/FlowerBag/Hemp_FlowerBags_D8_Front_Gummiez_V1.png",
        "composition": "packaging-only",
        "angle": "front",
@@ -2835,7 +2805,7 @@
      "top": [
       {
        "id": "9589aabc-6ee6-4d3f-9073-bd1c54402ca4",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/Hemp/FlowerBag/Hemp_FlowerBags_THCA_Front_Lolipop_V1.png",
        "composition": "packaging-only",
        "angle": "front",
@@ -2843,7 +2813,7 @@
       },
       {
        "id": "2ad2e97c-8fd7-49cd-89fa-00d18ea96dfc",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/Hemp/FlowerBag/Display/FlowerBags_DisplayCase_Closed_Lolipop_V1.png",
        "composition": "multi-pack",
        "angle": "three-quarter",
@@ -2851,7 +2821,7 @@
       },
       {
        "id": "5b5ed4f6-a3a0-4582-ada4-e3a32ce99a51",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/Hemp/FlowerBag/Display/THCA/8ct/THCA_FlowerBags_Display_8CT_Open_Loli_V1.png",
        "composition": "multi-pack",
        "angle": "three-quarter",
@@ -3325,7 +3295,7 @@
      "top": [
       {
        "id": "f93e50a2-4c5e-4475-8c2b-225cd5cb4d69",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Hemp/Pre Rolls/THCA_KingTube/3D Mates_THCA_DisplayBox/THCa_1_5g King_Mate_Display_Box_Mimosa_Open.png",
        "composition": "multi-pack",
        "angle": "three-quarter",
@@ -3333,7 +3303,7 @@
       },
       {
        "id": "bae65084-5ca0-467d-81f4-2e5cb5bd63ac",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Hemp/Pre Rolls/THCA_KingTube/King 1_5g THCa Single/King_1_5g_Mimosa_Front.png",
        "composition": "device-with-packaging",
        "angle": "front",
@@ -3341,7 +3311,7 @@
       },
       {
        "id": "be9086b1-22e1-4b14-930d-2a5dfba96aa5",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Hemp/Pre Rolls/THCA_KingTube/King 1_5g THCa Single/King_1_5g_Mimosa_ThreeQuarters.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -3762,9 +3732,11 @@
    "skuBlock": "HEMP011",
    "source": "Official Hemp SKU Book - Active Sku's.csv",
    "items": 7,
-   "covered": 7,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 6,
+   "coveragePct": 86,
+   "missing": [
+    "Lime"
+   ],
    "itemsDetail": [
     {
      "name": "Very Berry",
@@ -3820,49 +3792,14 @@
      "sku": "MMMG3000-MD-LI",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 24,
-     "compositions": {
-      "packaging-only": 6,
-      "multi-pack": 12,
-      "in-scene": 2,
-      "device-with-packaging": 4
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "2f65f365-76aa-471a-8549-9c99e31dd0bb",
-       "score": 6.5,
-       "path": "Renders/Hemp/Edibles/MELTED DIAMONDS - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Hemp_Gummies_Mambas_MD_Lime_Front_V1.png",
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/68de41acbd2ff634.jpg"
-      },
-      {
-       "id": "af7b06f7-8040-4f6e-8de0-ff5b848d85fb",
-       "score": 6.5,
-       "path": "Renders/Hemp/Edibles/MELTED DIAMONDS - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Hemp_Gummies_Mambas_MD_Lime_Open_V1.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c8ad99f2d8ddfbf2.jpg"
-      },
-      {
-       "id": "46236109-df9a-484a-9995-76ebc8144640",
-       "score": 6,
-       "path": "Renders/Hemp/Edibles/Display Box/LongBox/Hemp_Gummies_DisplayBox_Lime_Open_MeltedDiamonds.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/13b7cd0f8cfdf3e2.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Edibles/MELTED DIAMONDS - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS",
-      "Renders/Hemp/Edibles/Display Box/LongBox",
-      "Renders/Hemp/Edibles/Display Box/LR_MD 3000",
-      "Renders/Hemp/Edibles/Display Box/Universal Box"
-     ]
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Watermelon",
@@ -3918,12 +3855,10 @@
      "sku": "MMMG3000-MD-MM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 24,
+     "renders": 4,
      "compositions": {
-      "in-scene": 3,
-      "multi-pack": 13,
-      "device-with-packaging": 5,
-      "packaging-only": 3
+      "multi-pack": 3,
+      "packaging-only": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -3931,35 +3866,34 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "db43f17f-58d8-44e9-8f37-bbdbe054d68d",
-       "score": 6.5,
-       "path": "Renders/Hemp/Edibles/MELTED DIAMONDS - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Hemp_Gummies_Mambas_MD_MangoMadness_Open_V1.png",
-       "composition": "in-scene",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7aba1c5cbce99d00.jpg"
-      },
-      {
-       "id": "0584fb7f-3d90-42f7-837c-02621c942dd5",
-       "score": 6.5,
-       "path": "Renders/Hemp/Edibles/MELTED DIAMONDS - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Hemp_Gummies_Mambas_MD_MangoMadness_Front_V1.png",
-       "composition": "in-scene",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b1cff71d49434bd1.jpg"
-      },
-      {
-       "id": "a702b8a7-6951-4589-9ceb-69c83462c41a",
+       "id": "fb080900-3647-4ca2-a2f0-fa6f48e3cad9",
        "score": 6,
-       "path": "Renders/Hemp/Edibles/Display Box/Universal Box/Hemp_Gummies_DisplayBox_MangoMadness_Open_MeltedDiamonds.png",
+       "path": "Renders/Hemp/Edibles/Display Box/LR_MD 3000/Hemp_Gummies_DisplayBox_Mango_Closed_MeltedDiamonds.png",
        "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d10b965951ab76eb.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0c6f2c9bfb85bdb4.jpg"
+      },
+      {
+       "id": "fd776109-0f6b-425d-bf23-045d9ca42640",
+       "score": 5,
+       "path": "Renders/Hemp/Edibles/Display Box/LongBox/Hemp_Gummies_DisplayBox_Mango_Closed.png",
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8877bf35832d0daf.jpg"
+      },
+      {
+       "id": "f0f90fc1-5c50-4d38-820e-79d8fc22cb6f",
+       "score": 5,
+       "path": "Renders/Hemp/Edibles/Display Box/Universal Box/Hemp_Gummies_DisplayBox_Mango_Closed.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f838b4c29ee23ba0.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Edibles/MELTED DIAMONDS - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS",
-      "Renders/Hemp/Edibles/Display Box/Universal Box",
+      "Renders/Hemp/Edibles/Display Box/LR_MD 3000",
       "Renders/Hemp/Edibles/Display Box/LongBox",
-      "Renders/Hemp/Edibles/Display Box/LR_MD 3000"
+      "Renders/Hemp/Edibles/Display Box/Universal Box"
      ]
     },
     {
@@ -4123,9 +4057,10 @@
    "skuBlock": "HEMP012",
    "source": "Official Hemp SKU Book - Active Sku's.csv",
    "items": 9,
-   "covered": 7,
-   "coveragePct": 78,
+   "covered": 6,
+   "coveragePct": 67,
    "missing": [
+    "Lime",
     "Special SKUs",
     "Hemp Melted Diamomd 2G Dispo V1"
    ],
@@ -4184,49 +4119,14 @@
      "sku": "MMMG3000-LR-LI",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 24,
-     "compositions": {
-      "packaging-only": 6,
-      "in-scene": 2,
-      "device-with-packaging": 4,
-      "multi-pack": 12
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "f4f4a529-ba72-4f1c-883f-42a50df003e5",
-       "score": 6.5,
-       "path": "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Text_Removal/Hemp_Gummies_Mambas_LR_Lime_Open_V1.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/32c4fb8c13b32d25.jpg"
-      },
-      {
-       "id": "d6e2d9ee-982b-47ba-bd38-7722805e051d",
-       "score": 6.5,
-       "path": "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Text_Removal/Hemp_Gummies_Mambas_LR_Lime_Front_V1.png",
-       "composition": "in-scene",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1b4f3d763943d40e.jpg"
-      },
-      {
-       "id": "bfa88319-b202-4ca8-b041-5565a389f165",
-       "score": 6.5,
-       "path": "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Hemp_Gummies_Mambas_LR_Lime_Front_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c0f4ea540a2ef38a.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Text_Removal",
-      "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS",
-      "Renders/Hemp/Edibles/Display Box/LongBox",
-      "Renders/Hemp/Edibles/Display Box/LR_MD 3000"
-     ]
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Watermelon",
@@ -4282,12 +4182,10 @@
      "sku": "MMMG3000-LR-MM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 24,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 5,
-      "packaging-only": 3,
-      "in-scene": 3,
-      "multi-pack": 13
+      "multi-pack": 3,
+      "packaging-only": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -4295,33 +4193,32 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "0b5166b9-b5ba-401d-9bc6-bdf197b46ff9",
-       "score": 6.5,
-       "path": "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Hemp_Gummies_Mambas_LR_MangoMadness_Front_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8e499bb4bd351b2d.jpg"
-      },
-      {
-       "id": "0078a9ef-9c87-4799-8b94-8e3e29498c16",
-       "score": 6.5,
-       "path": "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Text_Removal/Hemp_Gummies_Mambas_LR_MangoMadness_Open_V1.png",
-       "composition": "device-with-packaging",
+       "id": "0da90044-1163-48d0-8d26-a4a56b9350e8",
+       "score": 6,
+       "path": "Renders/Hemp/Edibles/Display Box/LR_MD 3000/Hemp_Gummies_DisplayBox_Mango_Closed_LiveResin.png",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ef07b33fa1d21cd2.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5eedd7e024d63512.jpg"
       },
       {
-       "id": "79362a92-c732-4076-aacf-e0c6d2c21626",
-       "score": 6.5,
-       "path": "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Text_Removal/Hemp_Gummies_Mambas_LR_MangoMadness_Front_V1.png",
+       "id": "fd776109-0f6b-425d-bf23-045d9ca42640",
+       "score": 5,
+       "path": "Renders/Hemp/Edibles/Display Box/LongBox/Hemp_Gummies_DisplayBox_Mango_Closed.png",
        "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bdab4bc755cb20a3.jpg"
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8877bf35832d0daf.jpg"
+      },
+      {
+       "id": "f0f90fc1-5c50-4d38-820e-79d8fc22cb6f",
+       "score": 5,
+       "path": "Renders/Hemp/Edibles/Display Box/Universal Box/Hemp_Gummies_DisplayBox_Mango_Closed.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f838b4c29ee23ba0.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS",
-      "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Text_Removal",
+      "Renders/Hemp/Edibles/Display Box/LR_MD 3000",
       "Renders/Hemp/Edibles/Display Box/LongBox",
       "Renders/Hemp/Edibles/Display Box/Universal Box"
      ]
@@ -4694,9 +4591,10 @@
    "skuBlock": "HEMPSS002",
    "source": "Official Hemp SKU Book - Active Sku's.csv",
    "items": 10,
-   "covered": 2,
-   "coveragePct": 20,
+   "covered": 1,
+   "coveragePct": 10,
    "missing": [
+    "Gelato 33",
     "Lemon Drop",
     "Skywalker OG",
     "Frozen Bluez",
@@ -4712,49 +4610,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 33,
-     "compositions": {
-      "device-with-packaging": 15,
-      "n/a": 1,
-      "packaging-only": 6,
-      "multi-pack": 11
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "a71643e2-73ab-4b25-b42a-bc6be138145e",
-       "score": 5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45_LemonCherryGelato.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a770e71965fa384d.jpg"
-      },
-      {
-       "id": "7928fb29-71d4-40e5-819e-8a3e4984f274",
-       "score": 5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_FrontSolo_WatermelonGelato.png",
-       "composition": "n/a",
-       "angle": "n/a",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/081bcf3e00da3434.jpg"
-      },
-      {
-       "id": "7f009b3b-0780-4828-ad0f-ccfc95e219a9",
-       "score": 5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_Front_WatermelonGelato.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/110d4798f8c6655f.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/THCA 2G - 2026",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
-     ]
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Purple Punch",
@@ -5182,13 +5045,12 @@
      "sku": "MMD3.5-LR-BS",
      "discontinued": false,
      "inDevelopment": true,
-     "renders": 10,
+     "renders": 8,
      "compositions": {
-      "packaging-only": 5,
-      "device-with-packaging": 4,
-      "device-only": 1
+      "packaging-only": 4,
+      "device-with-packaging": 4
      },
-     "hasDeviceOnly": true,
+     "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": false,
      "hasAlpha": true,
@@ -5220,8 +5082,7 @@
      ],
      "folders": [
       "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Live Resin",
-      "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Live Resin/Text_Removal",
-      "Renders/Moods"
+      "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Live Resin/Text_Removal"
      ]
     },
     {
@@ -5682,8 +5543,8 @@
    "skuBlock": "HEMP016",
    "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
    "items": 10,
-   "covered": 10,
-   "coveragePct": 100,
+   "covered": 9,
+   "coveragePct": 90,
    "missing": [],
    "itemsDetail": [
     {
@@ -5738,46 +5599,14 @@
      "sku": "V2-MMC2-THCA-MM",
      "discontinued": false,
      "inDevelopment": true,
-     "renders": 10,
-     "compositions": {
-      "packaging-only": 3,
-      "device-with-packaging": 4,
-      "multi-pack": 3
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "041aac36-5070-4fa2-83fd-c60fbac44e76",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_FrontSolo_MangoMadness.png",
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/56d86c063db8f64e.jpg"
-      },
-      {
-       "id": "0dea6395-5e2c-4680-a2d4-61cab3bf9668",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45_MangoMadness.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c37a20607f14e417.jpg"
-      },
-      {
-       "id": "57f3ca92-313b-4799-9732-8b910ad57c44",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45Solo_MangoMadness.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4c4679df743c4e19.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/THCA 2G - 2026",
-      "Renders/Hemp/Cartridges/THCA - Oct 2024"
-     ]
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Pineapple Runtz",
@@ -7838,9 +7667,10 @@
    "skuBlock": "AZ001",
    "source": "Official MM SKU Book - AZ THC.csv",
    "items": 10,
-   "covered": 1,
-   "coveragePct": 10,
+   "covered": 0,
+   "coveragePct": 0,
    "missing": [
+    "Watermelon OG",
     "Cherry Grapefruit",
     "Wedding Cake",
     "Cali Gas OG",
@@ -7870,44 +7700,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 3,
-     "compositions": {
-      "packaging-only": 2,
-      "device-only": 1
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "ff28f7c7-485b-4913-bfac-10bc3cc305d6",
-       "score": 3.5,
-       "path": "Renders/Moods/Moods_Watermelon_Box_45_V1.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/42f7f049ccb13cdd.jpg"
-      },
-      {
-       "id": "c694aab3-7f3b-42be-9db0-9a61f2b58b1c",
-       "score": 3.5,
-       "path": "Renders/Moods/Moods_Watermelon_Device_Back_V1.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6a2d0ff7866a6f8a.jpg"
-      },
-      {
-       "id": "a0d3710f-6072-418e-bb7b-f100add84240",
-       "score": 3.5,
-       "path": "Renders/Moods/Moods_Watermelon_Box_Front_V1.png",
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/195c8f4339e63e27.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Moods"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Cherry Grapefruit",
@@ -8033,9 +7833,10 @@
    "skuBlock": "AZ002",
    "source": "Official MM SKU Book - AZ THC.csv",
    "items": 10,
-   "covered": 1,
-   "coveragePct": 10,
+   "covered": 0,
+   "coveragePct": 0,
    "missing": [
+    "Watermelon OG",
     "Cherry Grapefruit",
     "Wedding Cake",
     "Cali Gas OG",
@@ -8065,27 +7866,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 1,
-     "compositions": {
-      "device-with-packaging": 1
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "786c1076-1479-48f7-b322-c455fdb1497b",
-       "score": 3.5,
-       "path": "Renders/Cartridges/Hash Rosin/Group Hash Rosin Cartridge Renders/watermelon Skittles mav mini.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4b08df9d8e32b246.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Cartridges/Hash Rosin/Group Hash Rosin Cartridge Renders"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Cherry Grapefruit",
@@ -8239,9 +8027,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 13,
+     "renders": 12,
      "compositions": {
-      "packaging-only": 5,
+      "packaging-only": 4,
       "multi-pack": 1,
       "device-with-packaging": 6,
       "device-only": 1
@@ -8579,10 +8367,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 3,
+     "renders": 1,
      "compositions": {
-      "device-with-packaging": 1,
-      "packaging-only": 2
+      "device-with-packaging": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -8596,27 +8383,10 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2e8c44077f502efa.jpg"
-      },
-      {
-       "id": "4293ef13-c5bd-4ef3-8af2-c0fc2e17dae9",
-       "score": 4,
-       "path": "Renders/Pre-Rolls/Muharillos/Muharillos_45_WHITE_GRAPE45.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2ecce40df53d908e.jpg"
-      },
-      {
-       "id": "c62895e3-aee6-4c9e-8e0f-67a8193c0d34",
-       "score": 4,
-       "path": "Renders/Pre-Rolls/Muharillos/Muharillos_Front_WHITE_GRAPEFront.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3c9a29911a2f287c.jpg"
       }
      ],
      "folders": [
-      "Renders/Pre-Rolls/King & Queen Joints/MeltedDiamonds/Queens",
-      "Renders/Pre-Rolls/Muharillos"
+      "Renders/Pre-Rolls/King & Queen Joints/MeltedDiamonds/Queens"
      ]
     }
    ]
@@ -9292,10 +9062,10 @@
      "sku": "CA096",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 8,
      "compositions": {
-      "packaging-only": 4,
-      "device-with-packaging": 8
+      "packaging-only": 2,
+      "device-with-packaging": 6
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -9330,8 +9100,7 @@
      "folders": [
       "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_TechDesign_June2025",
       "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_All in One_Sept2024/oldVersion",
-      "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_All in One_Sept2024",
-      "Renders/MMxCookies/Product_Renders/CA"
+      "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_All in One_Sept2024"
      ]
     },
     {
@@ -9698,7 +9467,7 @@
      "top": [
       {
        "id": "b064b1d9-7d08-4f79-91b8-dc5d32822701",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/MMxCookies/Product_Renders/CA/MM_Cookies_Collab_CA_Habibi_Front_Solo.png",
        "composition": "packaging-only",
        "angle": "front",
@@ -9706,7 +9475,7 @@
       },
       {
        "id": "666355fa-329f-4abe-b7fd-f256036d6edb",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/MMxCookies/Product_Renders/CA/MM_Cookies_Collab_CA_Habibi_Front.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -9714,7 +9483,7 @@
       },
       {
        "id": "2ca6d11c-9f01-4399-8632-b12c3393625e",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/MMxCookies/Product_Renders/CA/MM_Cookies_Collab_CA_Habibi_45.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -9976,9 +9745,11 @@
    "skuBlock": "CA029",
    "source": "Official MM SKU Book - CA THC.csv",
    "items": 5,
-   "covered": 5,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 4,
+   "coveragePct": 80,
+   "missing": [
+    "Mango Madness"
+   ],
    "itemsDetail": [
     {
      "name": "Durban Delight",
@@ -10120,47 +9891,14 @@
      "sku": "CA109",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 9,
-     "compositions": {
-      "device-with-packaging": 4,
-      "packaging-only": 4,
-      "device-only": 1
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "a2f349ec-963d-4e3a-bb79-8dbd6329351d",
-       "score": 6.5,
-       "path": "Renders/Disposables/CA/CA_MeltedDiamonds/CA_1G_MeltedDiamonds_TechDesign_June2025/CA_1G_MeltedDiamonds_Disposables_Front_MangoMadness.png",
-       "composition": "device-with-packaging",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cfed3476ca3224ef.jpg"
-      },
-      {
-       "id": "fd8a62c0-3ae6-421a-8fd5-7ad67ed78667",
-       "score": 6.5,
-       "path": "Renders/Disposables/CA/CA_MeltedDiamonds/CA_1G_MeltedDiamonds_TechDesign_June2025/CA_1G_MeltedDiamonds_Disposables_Front_Solo_MangoMadness.png",
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3958d2e4c3be0ce1.jpg"
-      },
-      {
-       "id": "2a0b29dc-c627-41f7-bafc-969badb0acb3",
-       "score": 6.5,
-       "path": "Renders/Disposables/CA/CA_MeltedDiamonds/CA_1G_MeltedDiamond_All in One_Sept2024/CA_Dispo_AllinOne_MD_MangoMadness_45_V2.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/76f427a121dbb0f1.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/CA/CA_MeltedDiamonds/CA_1G_MeltedDiamonds_TechDesign_June2025",
-      "Renders/Disposables/CA/CA_MeltedDiamonds/CA_1G_MeltedDiamond_All in One_Sept2024",
-      "Renders/Moods"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Orange Tangie",
@@ -13569,9 +13307,8 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 4,
+     "renders": 1,
      "compositions": {
-      "packaging-only": 3,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": false,
@@ -13580,33 +13317,15 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "6a9f7d02-346f-407b-9002-29b94af7ecf9",
-       "score": 6.5,
-       "path": "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/MuhaMadness_BlueDream_Front_V1.png",
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ccbe003a498ce412.jpg"
-      },
-      {
-       "id": "c256ff2b-efce-45d2-85cf-2efce3f11bf3",
-       "score": 6.5,
-       "path": "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/MuhaMadness_BlueDream_45_V1.png",
-       "composition": "packaging-only",
+       "id": "7750d7ed-484c-4a90-8e7a-e1ae0a14fa9b",
+       "score": 5,
+       "path": "Renders/Pre-Rolls/King & Queen Joints/MeltedDiamonds/Kings/MeltedDiamonds_BlueDream_ThreeQuarters_i1.png",
+       "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/66e4b28dd43f49e4.jpg"
-      },
-      {
-       "id": "ad5a9d21-b4d6-4427-9e59-53803c2efcec",
-       "score": 6,
-       "path": "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/Mylar Bag/CA_ MuhaMadness_DialedPack_Front.png",
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bf228bfdd8ff1495.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/65224388ccc0657e.jpg"
       }
      ],
      "folders": [
-      "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack",
-      "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/Mylar Bag",
       "Renders/Pre-Rolls/King & Queen Joints/MeltedDiamonds/Kings"
      ]
     }
@@ -13637,9 +13356,8 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
+     "renders": 1,
      "compositions": {
-      "packaging-only": 1,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": false,
@@ -13647,14 +13365,6 @@
      "hasDisplay": false,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "ad5a9d21-b4d6-4427-9e59-53803c2efcec",
-       "score": 6,
-       "path": "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/Mylar Bag/CA_ MuhaMadness_DialedPack_Front.png",
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bf228bfdd8ff1495.jpg"
-      },
       {
        "id": "7750d7ed-484c-4a90-8e7a-e1ae0a14fa9b",
        "score": 5,
@@ -13665,7 +13375,6 @@
       }
      ],
      "folders": [
-      "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/Mylar Bag",
       "Renders/Pre-Rolls/King & Queen Joints/MeltedDiamonds/Kings"
      ]
     },
@@ -14152,8 +13861,8 @@
    "skuBlock": null,
    "source": "Official MM SKU Book - CA THC.csv",
    "items": 15,
-   "covered": 2,
-   "coveragePct": 13,
+   "covered": 0,
+   "coveragePct": 0,
    "missing": [
     "Slurpicane",
     "Gopher Glue",
@@ -14166,923 +13875,7 @@
     "Tangerine Punch",
     "Galactic Guava x Papaya Bomb",
     "Lemon Cherry Gelato",
-    "Blue Gelato 41",
-    "Sherbanger 22"
-   ],
-   "itemsDetail": [
-    {
-     "name": "Slurpicane",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Gopher Glue",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Kosher Chem",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Sour Diesel",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Cheetah the Hut",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Mendo Fatso",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Gorilla Guava",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Banjerine",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Tangerine Punch",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Galactic Guava x Papaya Bomb",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Lemon Cherry Gelato",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Runtz",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 7,
-     "compositions": {
-      "device-with-packaging": 5,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "ddaab233-53db-4323-80b7-e57e8c57309a",
-       "score": 6,
-       "path": "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_Mates_Apple_Front_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b6b2d4abaf25d978.jpg"
-      },
-      {
-       "id": "db58f977-8a91-4d03-b30f-12cc23047d19",
-       "score": 6,
-       "path": "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_Mates_Apple_45_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/42552f0f2a9130bb.jpg"
-      },
-      {
-       "id": "447d962a-99e4-4cbd-99dc-349c19cb2aca",
-       "score": 6,
-       "path": "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin/old/CA_Mates_HR_AppleGrunt_Front_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f71c809d321dba86.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin",
-      "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin/old",
-      "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin",
-      "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_MatesTin_nojoint"
-     ]
-    },
-    {
-     "name": "Blue Gelato 41",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Sherbanger 22",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Gelato 41",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 8,
-     "compositions": {
-      "device-with-packaging": 7,
-      "device-only": 1
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "91348a0a-0184-4617-ad09-09c38c002018",
-       "score": 4.5,
-       "path": "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_Mates_berry_45_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5b2119f27b771024.jpg"
-      },
-      {
-       "id": "d98676c8-e160-43fe-bebd-6fe3170855c8",
-       "score": 4.5,
-       "path": "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin/old/CA_Mates_HR_BerryGelato_Front_V2.png",
-       "composition": "device-with-packaging",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c89a5fdf01d5e39f.jpg"
-      },
-      {
-       "id": "8c8997ab-1e39-4060-8282-544d2daaaef6",
-       "score": 4.5,
-       "path": "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin/CA_Mates_HR_BerryGelato_Front_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5d54f95aed22d721.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin",
-      "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin/old",
-      "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin",
-      "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_MatesTin_nojoint"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "muha:CA:live-cryo-sift-jars-1-6g-",
-   "market": "CA",
-   "category": "concentrates",
-   "format": "1.6g",
-   "line": "Live/Cryo Sift Jars (1.6g)",
-   "generation": null,
-   "skuBlock": null,
-   "source": "Official MM SKU Book - CA THC.csv",
-   "items": 15,
-   "covered": 2,
-   "coveragePct": 13,
-   "missing": [
-    "Slurpicane",
-    "Gopher Glue",
-    "Kosher Chem",
-    "Sour Diesel",
-    "Cheetah the Hut",
-    "Mendo Fatso",
-    "Gorilla Guava",
-    "Banjerine",
-    "Tangerine Punch",
-    "Galactic Guava x Papaya Bomb",
-    "Lemon Cherry Gelato",
-    "Blue Gelato 41",
-    "Sherbanger 22"
-   ],
-   "itemsDetail": [
-    {
-     "name": "Slurpicane",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Gopher Glue",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Kosher Chem",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Sour Diesel",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Cheetah the Hut",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Mendo Fatso",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Gorilla Guava",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Banjerine",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Tangerine Punch",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Galactic Guava x Papaya Bomb",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Lemon Cherry Gelato",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Runtz",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 13,
-     "compositions": {
-      "device-with-packaging": 11,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "b035dbd3-6aaa-4fc1-9df7-ca2ba602cf1a",
-       "score": 6,
-       "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/CA_Piatella/Piatella_Raunchy_Runtz_w_Dab.png",
-       "composition": "device-with-packaging",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2ac82af277e8e508.jpg"
-      },
-      {
-       "id": "5489d768-5f83-4b8d-a500-ce64c7a1d5fc",
-       "score": 6,
-       "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/CA_Piatella/Piatella_Raunchy_Runtz_Front.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0c099d91db173051.jpg"
-      },
-      {
-       "id": "31c0cd68-0f48-4202-ae8a-59c6962bf794",
-       "score": 6,
-       "path": "Renders/Concentrates/CA/CA_Concentrate_Jars_New_Box Feb 2025/Piatella/CA_Concentrate_Jars_New_Box_Piatella_Raunchy_Runtz_FrontSingleOpen.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e7db8735721cf803.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Concentrates/CA/Old CA Box OCT 2023/CA_Piatella",
-      "Renders/Concentrates/CA/CA_Concentrate_Jars_New_Box Feb 2025/Piatella",
-      "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin/old",
-      "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin"
-     ]
-    },
-    {
-     "name": "Blue Gelato 41",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Sherbanger 22",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Gelato 41",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 15,
-     "compositions": {
-      "packaging-only": 3,
-      "multi-pack": 5,
-      "device-with-packaging": 5,
-      "device-only": 2
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "befcd42d-1c47-40bd-9421-fb32e07425e7",
-       "score": 4.5,
-       "path": "Renders/Flower Jars/CA/CA_FlowerJar_BacioGelato_Front.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c703b9e67c785f72.jpg"
-      },
-      {
-       "id": "06e1ef75-48f3-4436-aeff-e64f071cd6d4",
-       "score": 4.5,
-       "path": "Renders/Flower Jars/CA/CA_FlowerJar_Box_BacioGelato_Front_Top.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7b12ad8cbf2be716.jpg"
-      },
-      {
-       "id": "7d89f6c1-98db-4a00-bf60-22bae99e7166",
-       "score": 4.5,
-       "path": "Renders/Flower Jars/CA/CA_FlowerJar_Box_Open_BacioGelato_ThreeQuarters.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5112bd5232f8de7f.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Flower Jars/CA",
-      "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin/old",
-      "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin",
-      "Renders/Flower Jars/CA/Indoor"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "muha:CA:bubble-hash-caviar-tins-2-0g-",
-   "market": "CA",
-   "category": "concentrates",
-   "format": "2.0g",
-   "line": "Bubble Hash Caviar Tins (2.0g)",
-   "generation": null,
-   "skuBlock": null,
-   "source": "Official MM SKU Book - CA THC.csv",
-   "items": 15,
-   "covered": 2,
-   "coveragePct": 13,
-   "missing": [
-    "Slurpicane",
-    "Gopher Glue",
-    "Kosher Chem",
-    "Sour Diesel",
-    "Cheetah the Hut",
-    "Mendo Fatso",
-    "Gorilla Guava",
-    "Banjerine",
-    "Tangerine Punch",
-    "Galactic Guava x Papaya Bomb",
-    "Lemon Cherry Gelato",
-    "Blue Gelato 41",
-    "Sherbanger 22"
-   ],
-   "itemsDetail": [
-    {
-     "name": "Slurpicane",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Gopher Glue",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Kosher Chem",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Sour Diesel",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Cheetah the Hut",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Mendo Fatso",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Gorilla Guava",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Banjerine",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Tangerine Punch",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Galactic Guava x Papaya Bomb",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Lemon Cherry Gelato",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Runtz",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 2,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "ddaab233-53db-4323-80b7-e57e8c57309a",
-       "score": 6,
-       "path": "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_Mates_Apple_Front_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b6b2d4abaf25d978.jpg"
-      },
-      {
-       "id": "db58f977-8a91-4d03-b30f-12cc23047d19",
-       "score": 6,
-       "path": "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_Mates_Apple_45_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/42552f0f2a9130bb.jpg"
-      },
-      {
-       "id": "60c36811-37b0-4b06-8cc9-7fdc9f436dfc",
-       "score": 6,
-       "path": "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_MatesTin_nojoint/CA_HR_Mates_Apple_45_V2.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/93a142372872f364.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin",
-      "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_MatesTin_nojoint"
-     ]
-    },
-    {
-     "name": "Blue Gelato 41",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Sherbanger 22",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Gelato 41",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 7,
-     "compositions": {
-      "device-with-packaging": 4,
-      "packaging-only": 2,
-      "device-only": 1
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "91348a0a-0184-4617-ad09-09c38c002018",
-       "score": 4.5,
-       "path": "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_Mates_berry_45_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5b2119f27b771024.jpg"
-      },
-      {
-       "id": "3a13bfe2-8604-4203-a751-26103056ac26",
-       "score": 4.5,
-       "path": "Renders/Pre-Rolls/Metal Can/CA/CA Mates_TechDesign_July2025/CA_Mates_45Solo_CaramelAppleGelato.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d37e71ea98831056.jpg"
-      },
-      {
-       "id": "f4a3009f-7c27-487b-9b1f-1f5cc7dfcd8d",
-       "score": 4.5,
-       "path": "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_MatesTin_nojoint/CA_HR_Mates_berry_45_V2.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cd3bf54dff45492a.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin",
-      "Renders/Pre-Rolls/Metal Can/CA/CA Mates_TechDesign_July2025",
-      "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_MatesTin_nojoint"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "muha:CA:temple-ball-1-5g-",
-   "market": "CA",
-   "category": "concentrates",
-   "format": "1.5g",
-   "line": "Temple Ball (1.5g)",
-   "generation": null,
-   "skuBlock": null,
-   "source": "Official MM SKU Book - CA THC.csv",
-   "items": 15,
-   "covered": 2,
-   "coveragePct": 13,
-   "missing": [
-    "Slurpicane",
-    "Gopher Glue",
-    "Kosher Chem",
-    "Sour Diesel",
-    "Cheetah the Hut",
-    "Mendo Fatso",
-    "Gorilla Guava",
-    "Banjerine",
-    "Tangerine Punch",
-    "Galactic Guava x Papaya Bomb",
+    "Runtz",
     "Blue Gelato 41",
     "Sherbanger 22",
     "Gelato 41"
@@ -15233,9 +14026,734 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 5,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Runtz",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Blue Gelato 41",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Sherbanger 22",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Gelato 41",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    }
+   ]
+  },
+  {
+   "id": "muha:CA:live-cryo-sift-jars-1-6g-",
+   "market": "CA",
+   "category": "concentrates",
+   "format": "1.6g",
+   "line": "Live/Cryo Sift Jars (1.6g)",
+   "generation": null,
+   "skuBlock": null,
+   "source": "Official MM SKU Book - CA THC.csv",
+   "items": 15,
+   "covered": 0,
+   "coveragePct": 0,
+   "missing": [
+    "Slurpicane",
+    "Gopher Glue",
+    "Kosher Chem",
+    "Sour Diesel",
+    "Cheetah the Hut",
+    "Mendo Fatso",
+    "Gorilla Guava",
+    "Banjerine",
+    "Tangerine Punch",
+    "Galactic Guava x Papaya Bomb",
+    "Lemon Cherry Gelato",
+    "Runtz",
+    "Blue Gelato 41",
+    "Sherbanger 22",
+    "Gelato 41"
+   ],
+   "itemsDetail": [
+    {
+     "name": "Slurpicane",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Gopher Glue",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Kosher Chem",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Sour Diesel",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Cheetah the Hut",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Mendo Fatso",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Gorilla Guava",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Banjerine",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Tangerine Punch",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Galactic Guava x Papaya Bomb",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Lemon Cherry Gelato",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Runtz",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Blue Gelato 41",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Sherbanger 22",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Gelato 41",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    }
+   ]
+  },
+  {
+   "id": "muha:CA:bubble-hash-caviar-tins-2-0g-",
+   "market": "CA",
+   "category": "concentrates",
+   "format": "2.0g",
+   "line": "Bubble Hash Caviar Tins (2.0g)",
+   "generation": null,
+   "skuBlock": null,
+   "source": "Official MM SKU Book - CA THC.csv",
+   "items": 15,
+   "covered": 0,
+   "coveragePct": 0,
+   "missing": [
+    "Slurpicane",
+    "Gopher Glue",
+    "Kosher Chem",
+    "Sour Diesel",
+    "Cheetah the Hut",
+    "Mendo Fatso",
+    "Gorilla Guava",
+    "Banjerine",
+    "Tangerine Punch",
+    "Galactic Guava x Papaya Bomb",
+    "Lemon Cherry Gelato",
+    "Runtz",
+    "Blue Gelato 41",
+    "Sherbanger 22",
+    "Gelato 41"
+   ],
+   "itemsDetail": [
+    {
+     "name": "Slurpicane",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Gopher Glue",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Kosher Chem",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Sour Diesel",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Cheetah the Hut",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Mendo Fatso",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Gorilla Guava",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Banjerine",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Tangerine Punch",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Galactic Guava x Papaya Bomb",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Lemon Cherry Gelato",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Runtz",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Blue Gelato 41",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Sherbanger 22",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Gelato 41",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    }
+   ]
+  },
+  {
+   "id": "muha:CA:temple-ball-1-5g-",
+   "market": "CA",
+   "category": "concentrates",
+   "format": "1.5g",
+   "line": "Temple Ball (1.5g)",
+   "generation": null,
+   "skuBlock": null,
+   "source": "Official MM SKU Book - CA THC.csv",
+   "items": 15,
+   "covered": 1,
+   "coveragePct": 7,
+   "missing": [
+    "Slurpicane",
+    "Gopher Glue",
+    "Kosher Chem",
+    "Sour Diesel",
+    "Cheetah the Hut",
+    "Mendo Fatso",
+    "Gorilla Guava",
+    "Banjerine",
+    "Tangerine Punch",
+    "Galactic Guava x Papaya Bomb",
+    "Runtz",
+    "Blue Gelato 41",
+    "Sherbanger 22",
+    "Gelato 41"
+   ],
+   "itemsDetail": [
+    {
+     "name": "Slurpicane",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Gopher Glue",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Kosher Chem",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Sour Diesel",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Cheetah the Hut",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Mendo Fatso",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Gorilla Guava",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Banjerine",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Tangerine Punch",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Galactic Guava x Papaya Bomb",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Lemon Cherry Gelato",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 4,
      "compositions": {
-      "packaging-only": 3,
+      "packaging-only": 2,
       "multi-pack": 2
      },
      "hasDeviceOnly": false,
@@ -15270,8 +14788,7 @@
      ],
      "folders": [
       "Renders/Flower Bags/THC/CA",
-      "Renders/Flower Bags/THC/CA/Display Box",
-      "Renders/Pre-Rolls/MuhaMadness/CA/Exotic Pack/Mylar Bag"
+      "Renders/Flower Bags/THC/CA/Display Box"
      ]
     },
     {
@@ -15279,48 +14796,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 25,
-     "compositions": {
-      "multi-pack": 2,
-      "packaging-only": 8,
-      "device-with-packaging": 15
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "fb45addc-972b-41b9-9304-6c45c252bc6d",
-       "score": 4,
-       "path": "Renders/Flower Bags/THC/CA/Display Box/FlowerBags_DisplayCase_Closed_BoredApeRuntz_V1.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/62bdd3899238cdb2.jpg"
-      },
-      {
-       "id": "a0fbddd9-d651-4e85-bd4e-823f00fcf2fb",
-       "score": 4,
-       "path": "Renders/Flower Bags/THC/CA/Display Box/FlowerBags_DisplayCase_Open_BoredApeRuntz_V1.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/097b21697a881d26.jpg"
-      },
-      {
-       "id": "1cd56b72-f3e5-4864-9d48-8dcdff28b613",
-       "score": 4,
-       "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/CA_Piatella/Piatella_Raunchy_Runtz_FrontSingle.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f5c7bb2104db5ed7.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Flower Bags/THC/CA/Display Box",
-      "Renders/Concentrates/CA/Old CA Box OCT 2023/CA_Piatella",
-      "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin",
-      "Renders/Concentrates/CA/CA_Concentrate_Jars_New_Box Feb 2025/Piatella"
-     ]
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Blue Gelato 41",
@@ -15590,14 +15073,15 @@
    "skuBlock": null,
    "source": "Official MM SKU Book - CA THC.csv",
    "items": 7,
-   "covered": 1,
-   "coveragePct": 14,
+   "covered": 0,
+   "coveragePct": 0,
    "missing": [
     "Green Cush",
     "Iced Sangria",
     "Papa Smurf",
     "Glitter Bomb",
     "Lavender Jack",
+    "Splash",
     "McLaren"
    ],
    "itemsDetail": [
@@ -15676,27 +15160,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 1,
-     "compositions": {
-      "label-flat": 1
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
      "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "c58084e0-c8e1-4ca9-bb4c-7577723a534e",
-       "score": 4,
-       "path": "Renders/Edibles/Metal Cans/CA/THC CBN/CBG_CGN_CanEdibles_WatermelonCucumber_Top.png",
-       "composition": "label-flat",
-       "angle": "n/a",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f6234c0db416e0e0.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Edibles/Metal Cans/CA/THC CBN"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "McLaren",
@@ -15957,11 +15428,10 @@
      "sku": "CA166",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 5,
+     "renders": 2,
      "compositions": {
-      "device-with-packaging": 2,
-      "in-scene": 2,
-      "label-flat": 1
+      "device-with-packaging": 1,
+      "in-scene": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -15977,25 +15447,16 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7b64f180f10e2d5b.jpg"
       },
       {
-       "id": "c5060eb3-a38d-45c0-b3d1-116aa4765292",
+       "id": "56b66378-2e8e-4f54-990a-832d5d71379b",
        "score": 4.666666666666666,
-       "path": "Renders/Edibles/Metal Cans/CA/Hash Rosin/CA_Hash_Rosin_Edible_Cans_MangoMadness_ThreeQuarters.png",
+       "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_Mango_45_V1.png",
        "composition": "in-scene",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/653e893e78eb3aa3.jpg"
-      },
-      {
-       "id": "b16205bf-9c6a-4abd-a1f0-2f76c0a1eb3a",
-       "score": 4.666666666666666,
-       "path": "Renders/Edibles/Metal Cans/CA/Hash Rosin/CA_Hash_Rosin_Edible_Cans_MangoMadness_Front.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/155904ee7a64a25f.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4b35e953855efa66.jpg"
       }
      ],
      "folders": [
-      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24",
-      "Renders/Edibles/Metal Cans/CA/Hash Rosin"
+      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24"
      ]
     }
    ]
@@ -16019,11 +15480,10 @@
      "sku": "CA167",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 5,
+     "renders": 2,
      "compositions": {
-      "in-scene": 2,
-      "device-with-packaging": 2,
-      "label-flat": 1
+      "device-with-packaging": 1,
+      "in-scene": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -16031,32 +15491,23 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "c5060eb3-a38d-45c0-b3d1-116aa4765292",
-       "score": 6,
-       "path": "Renders/Edibles/Metal Cans/CA/Hash Rosin/CA_Hash_Rosin_Edible_Cans_MangoMadness_ThreeQuarters.png",
+       "id": "aff8baef-183c-4301-b69f-1143277808a7",
+       "score": 4.666666666666666,
+       "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_Mango_Front_V1.png",
+       "composition": "device-with-packaging",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7b64f180f10e2d5b.jpg"
+      },
+      {
+       "id": "56b66378-2e8e-4f54-990a-832d5d71379b",
+       "score": 4.666666666666666,
+       "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_Mango_45_V1.png",
        "composition": "in-scene",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/653e893e78eb3aa3.jpg"
-      },
-      {
-       "id": "b16205bf-9c6a-4abd-a1f0-2f76c0a1eb3a",
-       "score": 6,
-       "path": "Renders/Edibles/Metal Cans/CA/Hash Rosin/CA_Hash_Rosin_Edible_Cans_MangoMadness_Front.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/155904ee7a64a25f.jpg"
-      },
-      {
-       "id": "71a86e5f-086b-426d-874a-720a6ab0a212",
-       "score": 6,
-       "path": "Renders/Edibles/Metal Cans/CA/Hash Rosin/CA_Hash_Rosin_Edible_Cans_MangoMadness_Top.png",
-       "composition": "label-flat",
-       "angle": "n/a",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ad1519699c47dfae.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4b35e953855efa66.jpg"
       }
      ],
      "folders": [
-      "Renders/Edibles/Metal Cans/CA/Hash Rosin",
       "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24"
      ]
     },
@@ -17439,8 +16890,8 @@
    "skuBlock": null,
    "source": "Official MM SKU Book - CA THC.csv",
    "items": 8,
-   "covered": 1,
-   "coveragePct": 13,
+   "covered": 0,
+   "coveragePct": 0,
    "missing": [
     "LA Gas Cake",
     "Permanent Marker",
@@ -17448,7 +16899,8 @@
     "Lipsmackerz",
     "Cherry Trop Fuel",
     "Bubble Rose Gelato",
-    "Lemon Diesel Tree"
+    "Lemon Diesel Tree",
+    "Blue Dream"
    ],
    "itemsDetail": [
     {
@@ -17554,27 +17006,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 1,
-     "compositions": {
-      "packaging-only": 1
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "ad5a9d21-b4d6-4427-9e59-53803c2efcec",
-       "score": 5,
-       "path": "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/Mylar Bag/CA_ MuhaMadness_DialedPack_Front.png",
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bf228bfdd8ff1495.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/Mylar Bag"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     }
    ]
   },
@@ -18714,16 +18153,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 27,
+     "renders": 10,
      "compositions": {
-      "device-with-packaging": 10,
-      "packaging-only": 8,
-      "device-only": 6,
-      "multi-pack": 3
+      "device-with-packaging": 8,
+      "packaging-only": 2
      },
-     "hasDeviceOnly": true,
+     "hasDeviceOnly": false,
      "hasPackaging": true,
-     "hasDisplay": true,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
@@ -18743,12 +18180,12 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/aed1a92c86b08362.jpg"
       },
       {
-       "id": "2e61dd9b-d30b-408e-8be5-61184e0ec6cf",
+       "id": "b116299c-b7e8-4c6d-a316-c09310d9fb56",
        "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_Habibi.png",
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_Habibi.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0771b2f1824335c3.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/82c58e3b0b3d661d.jpg"
       }
      ],
      "folders": [
@@ -18763,16 +18200,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 17,
+     "renders": 8,
      "compositions": {
-      "device-with-packaging": 9,
-      "packaging-only": 2,
-      "multi-pack": 2,
-      "device-only": 4
+      "device-with-packaging": 6,
+      "packaging-only": 2
      },
-     "hasDeviceOnly": true,
+     "hasDeviceOnly": false,
      "hasPackaging": true,
-     "hasDisplay": true,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
@@ -18803,8 +18238,7 @@
      "folders": [
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024",
-      "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars",
-      "Renders/Disposables/MI/MI Magnetic_Dispo/Devices_Boxes"
+      "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars"
      ]
     },
     {
@@ -19044,13 +18478,12 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 28,
+     "renders": 18,
      "compositions": {
-      "device-with-packaging": 12,
-      "packaging-only": 7,
+      "device-with-packaging": 8,
+      "packaging-only": 4,
       "multi-pack": 4,
-      "device-only": 4,
-      "n/a": 1
+      "device-only": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -19335,13 +18768,12 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 28,
+     "renders": 22,
      "compositions": {
-      "device-with-packaging": 12,
-      "packaging-only": 7,
+      "device-with-packaging": 10,
+      "packaging-only": 6,
       "multi-pack": 4,
-      "device-only": 4,
-      "n/a": 1
+      "device-only": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -19385,48 +18817,46 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 27,
+     "renders": 14,
      "compositions": {
       "device-with-packaging": 10,
-      "packaging-only": 8,
-      "device-only": 6,
-      "multi-pack": 3
+      "packaging-only": 4
      },
-     "hasDeviceOnly": true,
+     "hasDeviceOnly": false,
      "hasPackaging": true,
-     "hasDisplay": true,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
-       "id": "9881176c-5a50-499c-bdf7-e9a525256605",
-       "score": 6,
-       "path": "Renders/MMxCookies/Product_Renders/MI/MM_Cookies_Collab_MI_Habibi_Front.png",
+       "id": "76952416-e27b-4344-a063-d7c172ea0017",
+       "score": 5.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_July2024/MI_Disposables_Distillate_Habibi_Front_V1.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/338d3d07fa49316c.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9228c976b35ca5c6.jpg"
       },
       {
-       "id": "67dbcd53-635c-4163-8cd8-bcb9ba56725b",
-       "score": 6,
-       "path": "Renders/MMxCookies/Product_Renders/MI/MM_Cookies_Collab_MI_Habibi_45_Solo.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1f53e3502b1caf0a.jpg"
-      },
-      {
-       "id": "cb9e7477-1163-4009-9dd6-5ffb2f44a4dd",
-       "score": 6,
-       "path": "Renders/MMxCookies/Product_Renders/MI/MM_Cookies_Collab_MI_Habibi_45.png",
+       "id": "225c0ba3-735b-4f3c-8cf6-bf50cfa7531c",
+       "score": 5.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024/MI_2G_Dispos_Habibi_ThreeQuarters.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/58188dee589f9901.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/aed1a92c86b08362.jpg"
+      },
+      {
+       "id": "b116299c-b7e8-4c6d-a316-c09310d9fb56",
+       "score": 5.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_Habibi.png",
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/82c58e3b0b3d661d.jpg"
       }
      ],
      "folders": [
-      "Renders/MMxCookies/Product_Renders/MI",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_July2024",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025"
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025",
+      "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars"
      ]
     }
    ]
@@ -19678,9 +19108,11 @@
    "skuBlock": "MI022",
    "source": "Official MM SKU Book - MI THC.csv",
    "items": 5,
-   "covered": 5,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 4,
+   "coveragePct": 80,
+   "missing": [
+    "Mango Madness"
+   ],
    "itemsDetail": [
     {
      "name": "Durban Delight",
@@ -19820,47 +19252,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 9,
-     "compositions": {
-      "device-with-packaging": 4,
-      "packaging-only": 4,
-      "device-only": 1
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "cd4f79ea-cbb2-4344-affb-0ed0aad85488",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Melted Diamond/MI_1G_MeltedDiamond_All in One_Sept2024/Disposables_MeltedDiamonds_MangoMadness_45_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/951b75ee05b779ce.jpg"
-      },
-      {
-       "id": "abf4d557-c820-4e9f-8c5a-d43be4850410",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Melted Diamond/MI_1G_Melted_Diamond_TechDesign_June2025/MI_1G_MeltedDiamonds_Disposables_45_MangoMadness.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8ddb81e9e48944fd.jpg"
-      },
-      {
-       "id": "1a122506-f30a-4013-ae6d-45f2310ce062",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Melted Diamond/MI_1G_Melted_Diamond_TechDesign_June2025/MI_1G_MeltedDiamonds_Disposables_45_Solo_MangoMadness.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9e5d1faaf44c3153.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_Melted Diamond/MI_1G_MeltedDiamond_All in One_Sept2024",
-      "Renders/Disposables/MI/MI_Melted Diamond/MI_1G_Melted_Diamond_TechDesign_June2025",
-      "Renders/Moods"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Orange Tangie",
@@ -19918,9 +19317,11 @@
    "skuBlock": "MI023",
    "source": "Official MM SKU Book - MI THC.csv",
    "items": 5,
-   "covered": 5,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 4,
+   "coveragePct": 80,
+   "missing": [
+    "Fatso"
+   ],
    "itemsDetail": [
     {
      "name": "Garlic Jelly",
@@ -19973,9 +19374,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 9,
+     "renders": 8,
      "compositions": {
-      "device-with-packaging": 7,
+      "device-with-packaging": 6,
       "packaging-only": 2
      },
      "hasDeviceOnly": false,
@@ -19985,7 +19386,7 @@
      "top": [
       {
        "id": "9926de31-1513-417d-8c4c-ed6b6189a638",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024/Disposables_HashRosin_Mimosa_V1.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -19993,7 +19394,7 @@
       },
       {
        "id": "759113ac-c50b-4940-bfb9-54c202e746f0",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024/Mimosa_Front.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -20001,7 +19402,7 @@
       },
       {
        "id": "387dac33-2402-4b28-b1fb-0c4814136a8d",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024/Mimosa_Three_Quarters.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -20011,8 +19412,7 @@
      "folders": [
       "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024",
       "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024",
-      "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025",
-      "Renders/Mavricks"
+      "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025"
      ]
     },
     {
@@ -20020,46 +19420,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 7,
-     "compositions": {
-      "device-with-packaging": 5,
-      "packaging-only": 2
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "39bf20a5-3028-4554-a84a-959799bbdcb1",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024/Fatso_Front.png",
-       "composition": "device-with-packaging",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d1d86202508343ef.jpg"
-      },
-      {
-       "id": "cf1bfe82-5e20-4b84-8654-d1917ae1d542",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024/Fatso_Three_Quarters.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8cf133dea27b74d9.jpg"
-      },
-      {
-       "id": "c6f35580-7d28-4ff6-ac62-b045f54db74c",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025/MI_05G_HashRosin_Disposables_45_Fatso.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/50092b5362f683d6.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024",
-      "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025",
-      "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Tropicana Cherry",
@@ -20875,16 +20243,15 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 7,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 3,
+      "device-with-packaging": 2,
       "packaging-only": 1,
-      "n/a": 1,
-      "multi-pack": 2
+      "n/a": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
-     "hasDisplay": true,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
@@ -20913,9 +20280,7 @@
       }
      ],
      "folders": [
-      "Renders/Cartridges/Distillate/MI/MI_2G_Distillate_Carts_June2025",
-      "Renders/Hemp/Cartridges/THCA 2G - 2026/Display Boxes",
-      "Renders/Cartridges/Hash Rosin/Group Hash Rosin Cartridge Renders"
+      "Renders/Cartridges/Distillate/MI/MI_2G_Distillate_Carts_June2025"
      ]
     },
     {
@@ -22064,13 +21429,12 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 28,
+     "renders": 18,
      "compositions": {
-      "device-with-packaging": 12,
-      "packaging-only": 7,
+      "device-with-packaging": 8,
+      "packaging-only": 4,
       "multi-pack": 4,
-      "device-only": 4,
-      "n/a": 1
+      "device-only": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -22324,12 +21688,12 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 28,
+     "renders": 24,
      "compositions": {
-      "device-with-packaging": 12,
+      "device-with-packaging": 10,
       "device-only": 4,
       "n/a": 1,
-      "packaging-only": 7,
+      "packaging-only": 5,
       "multi-pack": 4
      },
      "hasDeviceOnly": true,
@@ -22515,17 +21879,16 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 24,
+     "renders": 6,
      "compositions": {
-      "device-only": 10,
-      "device-with-packaging": 9,
-      "packaging-only": 2,
-      "n/a": 1,
-      "multi-pack": 2
+      "device-only": 2,
+      "device-with-packaging": 2,
+      "packaging-only": 1,
+      "n/a": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
-     "hasDisplay": true,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
@@ -22555,9 +21918,7 @@
      ],
      "folders": [
       "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1/Dual Dispose device_only",
-      "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024",
-      "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars"
+      "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1"
      ]
     },
     {
@@ -22565,17 +21926,16 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 23,
+     "renders": 8,
      "compositions": {
-      "device-only": 8,
-      "device-with-packaging": 6,
-      "packaging-only": 4,
-      "n/a": 1,
-      "multi-pack": 4
+      "device-only": 2,
+      "device-with-packaging": 4,
+      "packaging-only": 1,
+      "n/a": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
-     "hasDisplay": true,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
@@ -22606,8 +21966,7 @@
      "folders": [
       "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1/Dual Dispose device_only",
       "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_NewDevice_Nov2024",
-      "Renders/Disposables/MI/MI Magnetic_Dispo/Devices_Boxes"
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_NewDevice_Nov2024"
      ]
     },
     {
@@ -23337,12 +22696,12 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 27,
+     "renders": 16,
      "compositions": {
-      "device-only": 6,
-      "packaging-only": 8,
-      "multi-pack": 3,
-      "device-with-packaging": 10
+      "device-with-packaging": 8,
+      "device-only": 3,
+      "multi-pack": 2,
+      "packaging-only": 3
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -23350,35 +22709,35 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "561cccb9-3d53-462b-8a07-85703b2dbb0f",
-       "score": 6,
-       "path": "Renders/Disposables/MI/MI Magnetic_Dispo/Magnetic Dispos Devices_Only/OG_Magnetic_Dispo_45_g_AMALFI_HABIBI45.png",
-       "composition": "device-only",
+       "id": "76952416-e27b-4344-a063-d7c172ea0017",
+       "score": 5.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_July2024/MI_Disposables_Distillate_Habibi_Front_V1.png",
+       "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e6e7d1b18197ccab.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9228c976b35ca5c6.jpg"
       },
       {
-       "id": "6f117024-af4d-4522-a6db-1998ac220938",
-       "score": 6,
-       "path": "Renders/Disposables/MI/MI Magnetic_Dispo/DisplayBoxes/MI_Magnetic_Dispo_DisplayBoxes_45_Right_AMALFI_HABIBI45_Right.png",
-       "composition": "packaging-only",
+       "id": "225c0ba3-735b-4f3c-8cf6-bf50cfa7531c",
+       "score": 5.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024/MI_2G_Dispos_Habibi_ThreeQuarters.png",
+       "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7a0b17afc31b89da.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/aed1a92c86b08362.jpg"
       },
       {
-       "id": "5fbeb444-65b5-43d1-b312-078daf6dbc95",
-       "score": 6,
-       "path": "Renders/Disposables/MI/MI Magnetic_Dispo/Magnetic Dispos Devices_Only/OG_Magnetic_Dispo_Front_g_AMALFI_HABIBIFront.png",
-       "composition": "device-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/84604f8d7021a7e7.jpg"
+       "id": "b116299c-b7e8-4c6d-a316-c09310d9fb56",
+       "score": 5.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_Habibi.png",
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/82c58e3b0b3d661d.jpg"
       }
      ],
      "folders": [
-      "Renders/Disposables/MI/MI Magnetic_Dispo/Magnetic Dispos Devices_Only",
-      "Renders/Disposables/MI/MI Magnetic_Dispo/DisplayBoxes",
-      "Renders/Disposables/MI/MI Magnetic_Dispo/DisplayBoxes/v2",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_July2024"
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_July2024",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025",
+      "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars"
      ]
     },
     {
@@ -23819,12 +23178,12 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 30,
+     "renders": 9,
      "compositions": {
-      "device-with-packaging": 11,
-      "packaging-only": 7,
-      "device-only": 6,
-      "multi-pack": 6
+      "device-with-packaging": 1,
+      "packaging-only": 3,
+      "device-only": 3,
+      "multi-pack": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -23916,13 +23275,12 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 23,
+     "renders": 17,
      "compositions": {
-      "packaging-only": 4,
+      "packaging-only": 3,
       "multi-pack": 4,
-      "device-only": 8,
-      "device-with-packaging": 6,
-      "n/a": 1
+      "device-only": 6,
+      "device-with-packaging": 4
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -24100,12 +23458,11 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 11,
+     "renders": 6,
      "compositions": {
-      "device-only": 6,
-      "device-with-packaging": 3,
-      "multi-pack": 1,
-      "packaging-only": 1
+      "device-only": 4,
+      "device-with-packaging": 1,
+      "multi-pack": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -24554,9 +23911,10 @@
    "skuBlock": "MI010",
    "source": "Official MM SKU Book - MI THC.csv",
    "items": 8,
-   "covered": 7,
-   "coveragePct": 88,
+   "covered": 6,
+   "coveragePct": 75,
    "missing": [
+    "Fatso",
     "Apple's and Bannana"
    ],
    "itemsDetail": [
@@ -24609,9 +23967,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 8,
+     "renders": 7,
      "compositions": {
-      "device-with-packaging": 6,
+      "device-with-packaging": 5,
       "packaging-only": 2
      },
      "hasDeviceOnly": false,
@@ -24621,7 +23979,7 @@
      "top": [
       {
        "id": "5c4db068-1011-46e3-87f2-a8e4e2b410dd",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/Concentrates/MI/MI Hash Rosin Concentrate Jars/MI_HR_Mimosa_Main.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -24629,7 +23987,7 @@
       },
       {
        "id": "680d888e-5903-471b-b9dc-4e52eed81889",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/Concentrates/MI/MI Hash Rosin Concentrate Jars/MI_HR_Mimosa_Front.png",
        "composition": "device-with-packaging",
        "angle": "multiple",
@@ -24637,7 +23995,7 @@
       },
       {
        "id": "fd40efff-0cd6-4377-a6ad-202c8a96a959",
-       "score": 6,
+       "score": 4.5,
        "path": "Renders/Concentrates/MI/MI Hash Rosin Concentrate Jars/MI_HR_Mimosa_ThreeQuarters.png",
        "composition": "packaging-only",
        "angle": "three-quarter",
@@ -24654,45 +24012,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 6,
-     "compositions": {
-      "n/a": 1,
-      "packaging-only": 2,
-      "device-with-packaging": 3
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "9d70152f-f536-4f52-bfa0-524352eeebb9",
-       "score": 6,
-       "path": "Renders/Concentrates/MI/MI Hash Rosin Concentrate Jars/MI_HR_Fatso_Front.png",
-       "composition": "n/a",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/91a0aee3e51a80ac.jpg"
-      },
-      {
-       "id": "01bb0c7c-9f09-411b-bc8f-af6ec2cf0a1c",
-       "score": 6,
-       "path": "Renders/Concentrates/MI/MI Hash Rosin Concentrate Jars/MI_HR_Fatso_ThreeQuarters.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/54c856e1dc4c054f.jpg"
-      },
-      {
-       "id": "6e321b7e-e944-4304-b0d2-14f269769ee0",
-       "score": 6,
-       "path": "Renders/Concentrates/MI/MI Hash Rosin Concentrate Jars/MI_HR_Fatso_ThreeQuarters_w_Product.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e20d4faf47895a46.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Concentrates/MI/MI Hash Rosin Concentrate Jars"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Tropicana Cherry",
@@ -25550,9 +24877,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 7,
+     "renders": 2,
      "compositions": {
-      "device-with-packaging": 7
+      "device-with-packaging": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -25574,20 +24901,10 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/79ec557b77f7f0bd.jpg"
-      },
-      {
-       "id": "9e1f6307-7ed2-4dd0-851a-92db223b78ef",
-       "score": 3.1666666666666665,
-       "path": "Edgar Gutierrez/_BRAND PROJECTS/MI UPDATE/RENDERS/MI/Mates_MI_Watermelon_45_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f27ab26d441bccaf.jpg"
       }
      ],
      "folders": [
-      "Renders/Pre-Rolls/Metal Can/MI/MI_HashRosin Mates",
-      "Edgar Gutierrez/_BRAND PROJECTS/MI UPDATE/RENDERS/MI",
-      "Renders/Pre-Rolls/Glass Jars/MI_Glass Jars"
+      "Renders/Pre-Rolls/Metal Can/MI/MI_HashRosin Mates"
      ]
     },
     {
@@ -26119,13 +25436,12 @@
      "sku": "MI137",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 20,
+     "renders": 13,
      "compositions": {
-      "device-with-packaging": 6,
-      "packaging-only": 10,
+      "device-with-packaging": 5,
+      "packaging-only": 6,
       "n/a": 1,
-      "label-flat": 1,
-      "in-scene": 2
+      "in-scene": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -26160,8 +25476,7 @@
      "folders": [
       "Renders/Edibles/MI Gummies/200MG 10ct Net WT 53.3",
       "Renders/Edibles/MI Gummies/200MG 10ct Net wt 50",
-      "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Text_Removal",
-      "Renders/Edibles/Metal Cans/MI/Hash Rosin"
+      "Renders/Edibles/MI Gummies/200MG 5ct"
      ]
     }
    ]
@@ -26374,12 +25689,11 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 20,
+     "renders": 13,
      "compositions": {
-      "device-with-packaging": 6,
-      "packaging-only": 10,
-      "in-scene": 2,
-      "label-flat": 1,
+      "device-with-packaging": 5,
+      "packaging-only": 6,
+      "in-scene": 1,
       "n/a": 1
      },
      "hasDeviceOnly": false,
@@ -26415,8 +25729,7 @@
      "folders": [
       "Renders/Edibles/MI Gummies/200MG 10ct Net WT 53.3",
       "Renders/Edibles/MI Gummies/200MG 5ct",
-      "Renders/Edibles/MI Gummies/200MG 10ct Net wt 50",
-      "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Text_Removal"
+      "Renders/Edibles/MI Gummies/200MG 10ct Net wt 50"
      ]
     }
    ]
@@ -26440,12 +25753,11 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 20,
+     "renders": 13,
      "compositions": {
-      "label-flat": 1,
-      "in-scene": 2,
-      "device-with-packaging": 6,
-      "packaging-only": 10,
+      "packaging-only": 6,
+      "device-with-packaging": 5,
+      "in-scene": 1,
       "n/a": 1
      },
      "hasDeviceOnly": false,
@@ -26454,35 +25766,34 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "5a069349-6ce4-41f1-b120-476d1092c172",
-       "score": 6,
-       "path": "Renders/Edibles/Metal Cans/MI/Hash Rosin/MI_Hash_Rosin_Edible_Cans_MangoMadness_Top.png",
-       "composition": "label-flat",
-       "angle": "n/a",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/742f372bdd48287a.jpg"
+       "id": "96ba3378-85c3-47d0-9f2d-f0ff1014220a",
+       "score": 4.666666666666666,
+       "path": "Renders/Edibles/MI Gummies/200MG 10ct Net WT 53.3/MI_Mambas_NoGummies_Mango_ThreeQuarters_i1.png",
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/35e42bd1e582022d.jpg"
       },
       {
-       "id": "068324f1-93f6-4d2a-8627-2794352f3eb9",
-       "score": 6,
-       "path": "Renders/Edibles/Metal Cans/MI/Hash Rosin/MI_Hash_Rosin_Edible_Cans_MangoMadness_ThreeQuarters.png",
-       "composition": "in-scene",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/85c6f5f827dcece1.jpg"
+       "id": "44fa07ad-e123-4692-ba51-9e868ce18a3c",
+       "score": 4.666666666666666,
+       "path": "Renders/Edibles/MI Gummies/200MG 10ct Net wt 50/Mambas_MI_10ct_Mango_Front_NoGummy_V1.png",
+       "composition": "packaging-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/631c0ba2e34c1ffd.jpg"
       },
       {
-       "id": "d0c2d53b-1256-4eb3-b399-9d62fa31d623",
-       "score": 6,
-       "path": "Renders/Edibles/Metal Cans/MI/Hash Rosin/MI_Hash_Rosin_Edible_Cans_MangoMadness_Front.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/42d232fb2f8fa702.jpg"
+       "id": "27c466e9-b769-4168-ae35-3c8dd10c3cc0",
+       "score": 4.666666666666666,
+       "path": "Renders/Edibles/MI Gummies/200MG 5ct/Mambas_MI_5ct_Mango_Front_NoGummy_V1.png",
+       "composition": "packaging-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1e4ea76ec1df94b2.jpg"
       }
      ],
      "folders": [
-      "Renders/Edibles/Metal Cans/MI/Hash Rosin",
       "Renders/Edibles/MI Gummies/200MG 10ct Net WT 53.3",
       "Renders/Edibles/MI Gummies/200MG 10ct Net wt 50",
-      "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Text_Removal"
+      "Renders/Edibles/MI Gummies/200MG 5ct"
      ]
     },
     {
@@ -27565,16 +26876,14 @@
      "sku": "MO008",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 19,
+     "renders": 4,
      "compositions": {
-      "packaging-only": 4,
-      "device-with-packaging": 8,
-      "multi-pack": 6,
-      "device-only": 1
+      "packaging-only": 2,
+      "device-with-packaging": 2
      },
-     "hasDeviceOnly": true,
+     "hasDeviceOnly": false,
      "hasPackaging": true,
-     "hasDisplay": true,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
@@ -27603,10 +26912,7 @@
       }
      ],
      "folders": [
-      "Renders/Disposables/MO/MO 2G Disposables NOV 2025",
-      "Renders/Disposables/MO/MO_2G_Disposables March 2025",
-      "Renders/Discontinued/Disposables",
-      "Renders/Discontinued/Disposables/Display Boxes"
+      "Renders/Disposables/MO/MO 2G Disposables NOV 2025"
      ]
     },
     {
@@ -28909,12 +28215,11 @@
    "skuBlock": "MO007",
    "source": "Official MM SKU Book - MO THC.csv",
    "items": 6,
-   "covered": 1,
-   "coveragePct": 17,
+   "covered": 2,
+   "coveragePct": 33,
    "missing": [
     "Super Lemon",
     "Kush Widow",
-    "Muha OG",
     "STL Gas",
     "MO 1G Non Infused Pre Rolls"
    ],
@@ -28952,14 +28257,47 @@
      "sku": "MO48",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
+     "renders": 8,
+     "compositions": {
+      "packaging-only": 5,
+      "device-with-packaging": 3
+     },
      "hasDeviceOnly": false,
-     "hasPackaging": false,
+     "hasPackaging": true,
      "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "cf4267c5-a4f8-4c2a-97f5-b5288e2476e1",
+       "score": 4,
+       "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v2/MO_Tube_CC_Front.png",
+       "composition": "packaging-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/249817261cdafcf6.jpg"
+      },
+      {
+       "id": "9f6a0d4a-3e9d-466a-a992-8d9d9d892688",
+       "score": 4,
+       "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_45_CINNAMON_CREAM_OG45_Back.png",
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fdc932e2385b97af.jpg"
+      },
+      {
+       "id": "7a0d3672-a5e3-4829-bfa4-3d52d48e63a4",
+       "score": 4,
+       "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_Front_CINNAMON_CREAM_OGFront.png",
+       "composition": "packaging-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/31ef111054c88a26.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v2",
+      "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3",
+      "Renders/Pre-Rolls/Glass Jars",
+      "Renders/Pre-Rolls/Muharillos"
+     ]
     },
     {
      "name": "Presidential OG",
@@ -29044,57 +28382,25 @@
    "skuBlock": null,
    "source": "Official MM SKU Book - MO THC.csv",
    "items": 1,
-   "covered": 1,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 0,
+   "coveragePct": 0,
+   "missing": [
+    "MO 2G Infused Pre Rolls"
+   ],
    "itemsDetail": [
     {
      "name": "MO 2G Infused Pre Rolls",
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 72,
-     "compositions": {
-      "device-with-packaging": 36,
-      "packaging-only": 32,
-      "device-only": 4
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "57e73d08-c3e6-4fa3-a2a3-a2a116e2c3d9",
-       "score": 5,
-       "path": "Renders/Pre-Rolls/Metal Can/MO/MO/MO_Mates_45_BerryBlast.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cbc639ca553766e0.jpg"
-      },
-      {
-       "id": "5c58fcb1-9b64-4b0d-8ba5-8c6cee624976",
-       "score": 5,
-       "path": "Renders/Pre-Rolls/Metal Can/MO/MO/MO_Mates_45_PurplePunch.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/249bc791c37523d8.jpg"
-      },
-      {
-       "id": "2825df8c-01f0-4261-b133-6c926ed8e779",
-       "score": 5,
-       "path": "Renders/Pre-Rolls/Metal Can/MO/MO/MO_Mates_45Solo_MangoPeachFusion.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bf0101e330ff1a93.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/Metal Can/MO/MO",
-      "Renders/Pre-Rolls/King & Queen Joints/Sandpaper Magnum Metal Tube",
-      "Renders/Pre-Rolls/King & Queen Joints/BubbleHash/Kings",
-      "Renders/Pre-Rolls/King & Queen Joints/BubbleHash/Queens"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     }
    ]
   },
@@ -29781,11 +29087,12 @@
    "skuBlock": "MO008",
    "source": "Official MM SKU Book - MO THC.csv",
    "items": 5,
-   "covered": 2,
-   "coveragePct": 40,
+   "covered": 1,
+   "coveragePct": 20,
    "missing": [
     "Doses & Mimosas",
     "Razzle Dazzle",
+    "Watermelon OG",
     "White Widow"
    ],
    "itemsDetail": [
@@ -29857,45 +29164,14 @@
      "sku": "MO54",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "packaging-only": 2,
-      "device-only": 2
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "5d49ce80-ea1a-4a93-ad0f-16491c4629e8",
-       "score": 3.5,
-       "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_45_WATERMELON_PUNCH45_Back.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fb6bb4f4e458c12d.jpg"
-      },
-      {
-       "id": "2042a274-6758-4c89-ba84-98a2fc5797b4",
-       "score": 3.5,
-       "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_45_WATERMELON_PUNCH45.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/40a998f8fd4cd1bf.jpg"
-      },
-      {
-       "id": "262fd0dc-644a-42c5-ba79-6e05249dd427",
-       "score": 3.5,
-       "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_Front_WATERMELON_PUNCHFront.png",
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/195e662fe72b825d.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3",
-      "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v2/05082026_Extra_Flavors"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "White Widow",
@@ -30486,8 +29762,8 @@
    "skuBlock": null,
    "source": "Official MM SKU Book - MO THC.csv",
    "items": 15,
-   "covered": 1,
-   "coveragePct": 7,
+   "covered": 0,
+   "coveragePct": 0,
    "missing": [
     "BANANA CANDY",
     "COTTON CANDY",
@@ -30496,6 +29772,7 @@
     "PINA COLADA",
     "CINNAMON CREAM OG",
     "MOUI WOWIE",
+    "PEACHES",
     "VANILLA CREME",
     "RASPBERRY KUSH",
     "MATCHA",
@@ -30608,35 +29885,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "device-with-packaging": 2
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "0ea20abe-542d-4e71-bd47-baf4c27f1673",
-       "score": 4,
-       "path": "Renders/Pre-Rolls/King & Queen Joints/BubbleHash/Queens/BubbleHashQueen_MacaronPeaches_Front_i1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a7e8732317931521.jpg"
-      },
-      {
-       "id": "d974e2b5-4661-4ba0-a282-2197934d4f28",
-       "score": 4,
-       "path": "Renders/Pre-Rolls/King & Queen Joints/BubbleHash/Queens/BubbleHashQueen_MacaronPeaches_ThreeQuarters_i1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2323a32fc5831069.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/King & Queen Joints/BubbleHash/Queens"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "VANILLA CREME",
@@ -30748,8 +30004,8 @@
    "skuBlock": null,
    "source": "Official MM SKU Book - MO THC.csv",
    "items": 15,
-   "covered": 1,
-   "coveragePct": 7,
+   "covered": 0,
+   "coveragePct": 0,
    "missing": [
     "BANANA CANDY",
     "COTTON CANDY",
@@ -30758,6 +30014,7 @@
     "PINA COLADA",
     "CINNAMON CREAM OG",
     "MOUI WOWIE",
+    "PEACHES",
     "VANILLA CREME",
     "RASPBERRY KUSH",
     "MATCHA",
@@ -30870,35 +30127,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "device-with-packaging": 2
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "0ea20abe-542d-4e71-bd47-baf4c27f1673",
-       "score": 4,
-       "path": "Renders/Pre-Rolls/King & Queen Joints/BubbleHash/Queens/BubbleHashQueen_MacaronPeaches_Front_i1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a7e8732317931521.jpg"
-      },
-      {
-       "id": "d974e2b5-4661-4ba0-a282-2197934d4f28",
-       "score": 4,
-       "path": "Renders/Pre-Rolls/King & Queen Joints/BubbleHash/Queens/BubbleHashQueen_MacaronPeaches_ThreeQuarters_i1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2323a32fc5831069.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/King & Queen Joints/BubbleHash/Queens"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "VANILLA CREME",
@@ -31030,7 +30266,7 @@
      "top": [
       {
        "id": "5b1e5888-2d88-4e00-8fc5-1ca91e64c0b5",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/NJ/NJ_2G_Disposable/NJ_2G_Dispos_Habibi_Front.png",
        "composition": "packaging-only",
        "angle": "three-quarter",
@@ -31038,7 +30274,7 @@
       },
       {
        "id": "29fcbe89-6edb-4d6a-a632-293d683641f9",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/NJ/NJ_2G_Disposable/NJ_2G_Dispos_Habibi_ThreeQuarters.png",
        "composition": "packaging-only",
        "angle": "three-quarter",
@@ -31783,7 +31019,7 @@
      "top": [
       {
        "id": "5b1e5888-2d88-4e00-8fc5-1ca91e64c0b5",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/NJ/NJ_2G_Disposable/NJ_2G_Dispos_Habibi_Front.png",
        "composition": "packaging-only",
        "angle": "three-quarter",
@@ -31791,7 +31027,7 @@
       },
       {
        "id": "29fcbe89-6edb-4d6a-a632-293d683641f9",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/NJ/NJ_2G_Disposable/NJ_2G_Dispos_Habibi_ThreeQuarters.png",
        "composition": "packaging-only",
        "angle": "three-quarter",
@@ -32327,7 +31563,7 @@
      "top": [
       {
        "id": "248e6e2a-1286-4dac-9733-a294bb9411bf",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_Habibi.png",
        "composition": "packaging-only",
        "angle": "three-quarter",
@@ -32335,7 +31571,7 @@
       },
       {
        "id": "bf89591c-1ef5-44d2-b5cc-73472d603aad",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_Habibi.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -32343,7 +31579,7 @@
       },
       {
        "id": "9a76720b-762f-4050-8bd5-598f88c9f36b",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_Habibi.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -32701,9 +31937,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
+     "renders": 1,
      "compositions": {
-      "device-with-packaging": 2
+      "device-with-packaging": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -32717,14 +31953,6 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fab348fd664e1ae3.jpg"
-      },
-      {
-       "id": "379f8ba2-ace9-4d2b-b0b6-d0db4a225856",
-       "score": 4.5,
-       "path": "Renders/Disposables/NM/Gen2 Device Renders/NM_1G_Dispos Gen2/NM_1G_Dispos_CaliGas_ThreeQuarters.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/923a4ba8b68e000a.jpg"
       }
      ],
      "folders": [
@@ -33659,7 +32887,7 @@
      "top": [
       {
        "id": "248e6e2a-1286-4dac-9733-a294bb9411bf",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_Habibi.png",
        "composition": "packaging-only",
        "angle": "three-quarter",
@@ -33667,7 +32895,7 @@
       },
       {
        "id": "bf89591c-1ef5-44d2-b5cc-73472d603aad",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_Habibi.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -33675,7 +32903,7 @@
       },
       {
        "id": "9a76720b-762f-4050-8bd5-598f88c9f36b",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_Habibi.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -34435,9 +33663,11 @@
    "skuBlock": "NM009",
    "source": "Official MM SKU Book - NM THC.csv",
    "items": 5,
-   "covered": 5,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 4,
+   "coveragePct": 80,
+   "missing": [
+    "Mango Madness"
+   ],
    "itemsDetail": [
     {
      "name": "Durban Delight",
@@ -34576,46 +33806,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 7,
-     "compositions": {
-      "device-with-packaging": 2,
-      "packaging-only": 4,
-      "device-only": 1
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "08e97f35-71ba-4c82-bed1-a2ba32445bb7",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 1G Melted Diamonds 2026/NM_1G_MD_Disposable_Front_MangoMadness.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/276c910b69706dcd.jpg"
-      },
-      {
-       "id": "a133e08c-86a9-498e-87a0-c0aabb695140",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 1G Melted Diamonds 2026/NM_1G_MD_Disposable_45_MangoMadness.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c71bcfbfa84e834b.jpg"
-      },
-      {
-       "id": "d2321bf3-d122-47f0-bc74-a0da36ad8690",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 1G Melted Diamonds 2026/NM_1G_MD_Disposable_45Solo_MangoMadness.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/75da33911a7d5874.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NM/NM 1G Melted Diamonds 2026",
-      "Renders/Moods"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Orange Tangie",
@@ -35092,7 +34290,7 @@
      "top": [
       {
        "id": "21bff56b-8f33-402f-bc08-16a0b21826c2",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Cartridges/Distillate/NM/NM 1G Distillate Carts 2026/NM_1G_Carts_45Solo_Habibi.png",
        "composition": "packaging-only",
        "angle": "three-quarter",
@@ -35100,7 +34298,7 @@
       },
       {
        "id": "754c6c2f-78db-4b37-bd9e-bb29fa810cd1",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Cartridges/Distillate/NM/NM 1G Distillate Carts 2026/NM_1G_Carts_Front_Habibi.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -35108,7 +34306,7 @@
       },
       {
        "id": "5ce5fa07-88aa-4105-a747-e5b29b84451b",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Cartridges/Distillate/NM/NM 1G Distillate Carts 2026/NM_1G_Carts_FrontSolo_Habibi.png",
        "composition": "packaging-only",
        "angle": "front",
@@ -35510,9 +34708,11 @@
    "skuBlock": "NM006",
    "source": "Official MM SKU Book - NM THC.csv",
    "items": 7,
-   "covered": 7,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 6,
+   "coveragePct": 86,
+   "missing": [
+    "Lime"
+   ],
    "itemsDetail": [
     {
      "name": "Mango Madness",
@@ -35716,36 +34916,14 @@
      "sku": "NM046",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "device-with-packaging": 1,
-      "packaging-only": 1
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "a7848763-f92d-4f8b-9906-bac743b6dd5b",
-       "score": 4.666666666666666,
-       "path": "Renders/Edibles/NM/NM_Gummies_Lime_Front_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3d0cb6c5d4bab3ee.jpg"
-      },
-      {
-       "id": "5dd92ac8-ce2c-48a4-9624-71e514c23fc7",
-       "score": 4.666666666666666,
-       "path": "Renders/Edibles/NM/NM_Gummies_Lime_45_V1.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9b353a801d22355e.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Edibles/NM"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Watermelon",
@@ -35795,9 +34973,11 @@
    "skuBlock": "NY001",
    "source": "Official MM SKU Book - NY THC.csv",
    "items": 6,
-   "covered": 6,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 5,
+   "coveragePct": 83,
+   "missing": [
+    "Fatso"
+   ],
    "itemsDetail": [
     {
      "name": "Habibi",
@@ -35806,9 +34986,9 @@
      "inDevelopment": false,
      "renders": 12,
      "compositions": {
+      "label-flat": 1,
       "device-with-packaging": 8,
-      "packaging-only": 3,
-      "label-flat": 1
+      "packaging-only": 3
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -35816,8 +34996,16 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "283ddd57-ea73-4f56-9dc9-c0f3315f7a2d",
+       "id": "94d7b551-a35a-46c6-b614-d1e6b7448924",
        "score": 6.5,
+       "path": "Renders/Disposables/NY/NY 2G Distillate/NY_2G_Distillate_Disposables_Front_Solo_Habibi.png",
+       "composition": "label-flat",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bc7d9084a68cd36f.jpg"
+      },
+      {
+       "id": "283ddd57-ea73-4f56-9dc9-c0f3315f7a2d",
+       "score": 5,
        "path": "Renders/Disposables/NY/NY_2G_Gen2Device/Old/NY_2G_Dispos_Habibi_ThreeQuarters.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -35825,26 +35013,18 @@
       },
       {
        "id": "8e002b10-18a1-43cf-a5fa-fe0dc8517f38",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/NY/NY_2G_Gen2Device/NY_2G_Dispos_Habibi_Front.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a4a78c47e508d1f7.jpg"
-      },
-      {
-       "id": "aabf16cd-e3ee-497f-bcb6-7eff0a0740a2",
-       "score": 6.5,
-       "path": "Renders/Disposables/NY/WRONG - NY 2G Distillate Disposable 2026/NY_2G_Distillate_Disposables_45_Habibi.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4d4c06fff9336afc.jpg"
       }
      ],
      "folders": [
+      "Renders/Disposables/NY/NY 2G Distillate",
       "Renders/Disposables/NY/NY_2G_Gen2Device/Old",
       "Renders/Disposables/NY/NY_2G_Gen2Device",
-      "Renders/Disposables/NY/WRONG - NY 2G Distillate Disposable 2026",
-      "Renders/Disposables/NY/NY 2G Distillate"
+      "Renders/Disposables/NY/WRONG - NY 2G Distillate Disposable 2026"
      ]
     },
     {
@@ -35940,44 +35120,14 @@
      "sku": "NY004",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 4
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "92544da8-1598-4a96-87d3-94d7df0db90e",
-       "score": 6.5,
-       "path": "Renders/Disposables/NY/NY_2G_Gen2Device/Old/NY_2G_Dispos_Fatso_ThreeQuarters.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d042f3e3cba1113f.jpg"
-      },
-      {
-       "id": "32fe5f7d-19fc-47a7-9723-72e6c5ee0ace",
-       "score": 6.5,
-       "path": "Renders/Disposables/NY/NY_2G_Gen2Device/Old/NY_2G_Dispos_Fatso_Front.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bbb73bbde11cef59.jpg"
-      },
-      {
-       "id": "595cde19-15f2-4371-9f65-1b90f89a0e70",
-       "score": 6.5,
-       "path": "Renders/Disposables/NY/NY_2G_Gen2Device/NY_2G_Dispos_Fatso_Front.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/276273710c7d8d32.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NY/NY_2G_Gen2Device/Old",
-      "Renders/Disposables/NY/NY_2G_Gen2Device"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Grand Daddy Purp",
@@ -36079,9 +35229,11 @@
    "skuBlock": "NY002",
    "source": "Official MM SKU Book - NY THC.csv",
    "items": 6,
-   "covered": 6,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 5,
+   "coveragePct": 83,
+   "missing": [
+    "Fatso"
+   ],
    "itemsDetail": [
     {
      "name": "Habibi",
@@ -36099,7 +35251,7 @@
      "top": [
       {
        "id": "76d548ce-d6fe-49c6-a903-e217c09707bf",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Cartridges/Distillate/NY/NY_1G_Distillate_Carts/Old/NY_1G_Distillate_Carts_Habibi_Front.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -36107,7 +35259,7 @@
       },
       {
        "id": "02b200dd-52a0-45fe-b480-95241248f34c",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Cartridges/Distillate/NY/NY_1G_Distillate_Carts/Old/NY_1G_Distillate_Carts_Habibi_Front (1).png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -36115,7 +35267,7 @@
       },
       {
        "id": "74f8dfdd-3830-4397-ba77-d14f1e6d750a",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Cartridges/Distillate/NY/NY_1G_Distillate_Carts/Old/NY_1G_Distillate_Carts_Habibi_Three_Quarters.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -36217,43 +35369,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 4
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "6c948d4f-d72f-463a-b8e8-b7a8a2e2bb59",
-       "score": 6.5,
-       "path": "Renders/Cartridges/Distillate/NY/NY_1G_Distillate_Carts/Old/NY_1G_Distillate_Carts_Fatso_ThreeQuarters.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1992d1cba98e5d33.jpg"
-      },
-      {
-       "id": "4937350b-dfaa-4c9e-845f-40701921254b",
-       "score": 6.5,
-       "path": "Renders/Cartridges/Distillate/NY/NY_1G_Distillate_Carts/Old/NY_1G_Distillate_Carts_Fatso_Front.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e53a09a79a8114ee.jpg"
-      },
-      {
-       "id": "755fa5c8-efdb-4c35-a16b-147fe32f56ed",
-       "score": 6.5,
-       "path": "Renders/Cartridges/Distillate/NY/NY_1G_Distillate_Carts/Old/NY_1G_Distillate_Carts_Fatso_Three_Quarters.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/753f19b74b757753.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Cartridges/Distillate/NY/NY_1G_Distillate_Carts/Old"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Grand Daddy Purp",
@@ -36502,9 +35625,9 @@
      "inDevelopment": false,
      "renders": 8,
      "compositions": {
+      "label-flat": 1,
       "device-with-packaging": 4,
-      "packaging-only": 3,
-      "label-flat": 1
+      "packaging-only": 3
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -36512,8 +35635,16 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "aabf16cd-e3ee-497f-bcb6-7eff0a0740a2",
+       "id": "94d7b551-a35a-46c6-b614-d1e6b7448924",
        "score": 6.5,
+       "path": "Renders/Disposables/NY/NY 2G Distillate/NY_2G_Distillate_Disposables_Front_Solo_Habibi.png",
+       "composition": "label-flat",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bc7d9084a68cd36f.jpg"
+      },
+      {
+       "id": "aabf16cd-e3ee-497f-bcb6-7eff0a0740a2",
+       "score": 5,
        "path": "Renders/Disposables/NY/WRONG - NY 2G Distillate Disposable 2026/NY_2G_Distillate_Disposables_45_Habibi.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
@@ -36521,24 +35652,16 @@
       },
       {
        "id": "ed810c16-faf4-4dba-8dc7-eb3535792715",
-       "score": 6.5,
+       "score": 5,
        "path": "Renders/Disposables/NY/WRONG - NY 2G Distillate Disposable 2026/NY_2G_Distillate_Disposables_45Solo_Habibi.png",
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c42e27f767e545bf.jpg"
-      },
-      {
-       "id": "70a4dd7d-4e91-400d-a596-dc67d835d7ba",
-       "score": 6.5,
-       "path": "Renders/Disposables/NY/NY 2G Distillate/NY_2G_Distillate_Disposables_45_Habibi.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/55676943179a3671.jpg"
       }
      ],
      "folders": [
-      "Renders/Disposables/NY/WRONG - NY 2G Distillate Disposable 2026",
-      "Renders/Disposables/NY/NY 2G Distillate"
+      "Renders/Disposables/NY/NY 2G Distillate",
+      "Renders/Disposables/NY/WRONG - NY 2G Distillate Disposable 2026"
      ]
     },
     {
@@ -36889,9 +36012,11 @@
    "skuBlock": "NY006",
    "source": "Official MM SKU Book - NY THC.csv",
    "items": 5,
-   "covered": 5,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 4,
+   "coveragePct": 80,
+   "missing": [
+    "Mango Madness"
+   ],
    "itemsDetail": [
     {
      "name": "Durban Delight",
@@ -37038,48 +36163,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 15,
-     "compositions": {
-      "device-with-packaging": 6,
-      "packaging-only": 8,
-      "device-only": 1
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "685accb2-0921-4461-bd31-c3d7a5aa173a",
-       "score": 6.5,
-       "path": "Renders/Disposables/NY/NY 1G Gen 3 Melted Diamond AIO/NY_1G_MD_Disposable_45_MangoMadness0001.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4b6a03bac0b917ee.jpg"
-      },
-      {
-       "id": "b538629d-f89d-4820-b566-8043c1b19575",
-       "score": 6.5,
-       "path": "Renders/Disposables/NY/NY 1G Gen 3 Melted Diamond AIO/NY_1G_MD_Disposable_45_Solo_MangoMadness0001.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/24f42649f08aa9c2.jpg"
-      },
-      {
-       "id": "ff493ad4-e98b-4c45-98e7-a6439d90c844",
-       "score": 6.5,
-       "path": "Renders/Disposables/NY/NY 1G Gen 3 Melted Diamond AIO/NY_1G_MD_Disposable_Front_Solo_MangoMadness0001.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b2384d506a7c3d79.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NY/NY 1G Gen 3 Melted Diamond AIO",
-      "Renders/Disposables/NY/WRONG - NY 1G MD Disposables 2026",
-      "Renders/Disposables/NY/NY Gen 3 1G MD AIO - Under 5MB",
-      "Renders/Moods"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Orange Tangie",
@@ -37863,9 +36954,9 @@
      "sku": "OH005",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
+     "renders": 1,
      "compositions": {
-      "device-with-packaging": 2
+      "device-with-packaging": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -37879,14 +36970,6 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/562c8a8a3282aa98.jpg"
-      },
-      {
-       "id": "3df545ab-0dc4-46a5-bb97-3ce2129286ca",
-       "score": 4.5,
-       "path": "Renders/Disposables/OH/OH_1_68G_Dispos/OH_1_68G_Dispos_CaliGas_Front.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/491fe114330274f4.jpg"
       }
      ],
      "folders": [
@@ -39965,7 +39048,7 @@
   {
    "folder": "Cartridges / Distillate",
    "market": "MI",
-   "files": 148,
+   "files": 152,
    "products": [
     {
      "product": "Apple Gelato Ice Distillate Vape Cartridge",
@@ -39990,7 +39073,7 @@
     "CARTS_MO_LSide.png"
    ],
    "compositions": {
-    "device-with-packaging": 133,
+    "device-with-packaging": 137,
     "label-flat": 2,
     "lineup": 6,
     "n/a": 1,
@@ -40035,7 +39118,7 @@
   {
    "folder": "Discontinued / Disposables",
    "market": null,
-   "files": 84,
+   "files": 96,
    "products": [
     {
      "product": "HHC Disposable Cherry Berry",
@@ -40060,30 +39143,30 @@
     "Hemp_Disposable_Front_D10_CherryBerry_V1.png"
    ],
    "compositions": {
-    "device-with-packaging": 42,
-    "multi-pack": 40,
+    "device-with-packaging": 48,
+    "multi-pack": 46,
     "packaging-only": 2
    }
   },
   {
    "folder": "Pre-Rolls / Glass Jars",
    "market": null,
-   "files": 83,
+   "files": 95,
    "products": [
+    {
+     "product": "Mates Hash Rosin Infused Pre-Rolls, Apple Gruntz flavor",
+     "n": 3
+    },
     {
      "product": "Mates Hash Rosin Infused Pre-Rolls Watermelon OG",
      "n": 3
     },
     {
+     "product": "Mates Hash Rosin Infused Pre-Rolls Berry Gelato",
+     "n": 2
+    },
+    {
      "product": "Mates Hash Rosin Infused Pre-Rolls, Doses & Mimosa flavor",
-     "n": 2
-    },
-    {
-     "product": "Muha Meds Mates Apple Tart Prerolls",
-     "n": 2
-    },
-    {
-     "product": "Mates Pumpkin Spice Latte pre-rolls",
      "n": 2
     }
    ],
@@ -40093,7 +39176,7 @@
     "CA_Prerolls_Vanilla__V1.png"
    ],
    "compositions": {
-    "device-with-packaging": 70,
+    "device-with-packaging": 82,
     "lineup": 9,
     "multi-pack": 3,
     "device-only": 1
@@ -40168,9 +39251,80 @@
    }
   },
   {
+   "folder": "Hemp / Edibles",
+   "market": null,
+   "files": 70,
+   "products": [
+    {
+     "product": "Mambas Live Resin Sweet and Sour Gummies",
+     "n": 3
+    },
+    {
+     "product": "Mambas Live Resin Mango Madness Gummies",
+     "n": 3
+    },
+    {
+     "product": "Mambas Live Resin Lime Gummies",
+     "n": 3
+    },
+    {
+     "product": "Mambas Live Resin Lime Gummies 3000mg",
+     "n": 2
+    }
+   ],
+   "samples": [
+    "Hemp_Gummies_Mambas_LR_Lime_Open_V1.png",
+    "MI_MAMBAS_LR_45_LIME.png",
+    "MI_MAMBAS_LR_45_SWEET AND SOUR.png"
+   ],
+   "compositions": {
+    "packaging-only": 25,
+    "multi-pack": 25,
+    "in-scene": 5,
+    "device-with-packaging": 11,
+    "device-only": 2,
+    "lineup": 2
+   }
+  },
+  {
+   "folder": "Hemp / Cartridges",
+   "market": null,
+   "files": 52,
+   "products": [
+    {
+     "product": "Cartridge 5-unit display box",
+     "n": 3
+    },
+    {
+     "product": "Muha Meds Delta 8 King Louis XII cartridge and packaging",
+     "n": 2
+    },
+    {
+     "product": "THCa Cartridges Master Case",
+     "n": 2
+    },
+    {
+     "product": "Cartridge 5-unit box",
+     "n": 2
+    }
+   ],
+   "samples": [
+    "Hemp_Cartridges_45_D8_KingLouisXII_V1.png",
+    "Hemp_Cartridges_Front_D8_KingLouisXII_V1.png",
+    "MasterBox_ThreeQuarters_02.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 12,
+    "multi-pack": 25,
+    "lineup": 3,
+    "packaging-only": 11,
+    "n/a": 1
+   }
+  },
+  {
    "folder": "Disposables / MI_Distillate",
    "market": "MI",
-   "files": 45,
+   "files": 51,
    "products": [
     {
      "product": "Call Gas OG Disposable",
@@ -40195,9 +39349,75 @@
     "MI_Disposables_Distillate_SourWatermelon_Front_V1.png"
    ],
    "compositions": {
-    "device-with-packaging": 38,
+    "device-with-packaging": 44,
     "lineup": 2,
     "multi-pack": 5
+   }
+  },
+  {
+   "folder": "Pre-Rolls / Metal Can",
+   "market": "CA",
+   "files": 49,
+   "products": [
+    {
+     "product": "Mates Hash Rosin Infused Pre-Rolls Razzle Dazzle",
+     "n": 2
+    },
+    {
+     "product": "Blueberry Zaza Pre-Rolls",
+     "n": 1
+    },
+    {
+     "product": "Mates Pre-Rolls Orange Cake Hybrid",
+     "n": 1
+    },
+    {
+     "product": "Hash Rosin Infused Pre-Rolls, Doses & Mimosa Sativa",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "Mates_CA_Blueberry_Front_V1.png",
+    "Mates_CA_Orange_Front_V1.png",
+    "CA_HR_Mates_Doses_Front_V1.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 24,
+    "lineup": 5,
+    "device-only": 8,
+    "packaging-only": 12
+   }
+  },
+  {
+   "folder": "Moods",
+   "market": null,
+   "files": 47,
+   "products": [
+    {
+     "product": "Moods Starburst disposable vape device",
+     "n": 2
+    },
+    {
+     "product": "Moods Lychee Lush disposable vape",
+     "n": 2
+    },
+    {
+     "product": "Arctic Mint 10,000 Puffs disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Grape Sherblato 10,000 Puffs disposable vape device",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "Moods_Arctic_Device_Back_V1.png",
+    "Moods_Grape_Device_Back_V1.png",
+    "Moods_Lychee_Device_Back_V1.png"
+   ],
+   "compositions": {
+    "device-only": 22,
+    "packaging-only": 25
    }
   },
   {
@@ -40267,72 +39487,27 @@
    }
   },
   {
-   "folder": "Pre-Rolls / Metal Can",
-   "market": "CA",
+   "folder": "Disposables / MI Magnetic_Dispo",
+   "market": "MI",
    "files": 42,
    "products": [
     {
-     "product": "Mates Hash Rosin Infused Pre-Rolls Razzle Dazzle",
-     "n": 2
-    },
-    {
-     "product": "Blueberry Zaza Pre-Rolls",
-     "n": 1
-    },
-    {
-     "product": "Mates Pre-Rolls Orange Cake Hybrid",
-     "n": 1
-    },
-    {
-     "product": "Hash Rosin Infused Pre-Rolls, Doses & Mimosa Sativa",
-     "n": 1
+     "product": "MM-gen2x2-magnetic",
+     "n": 42
     }
    ],
    "samples": [
-    "Mates_CA_Blueberry_Front_V1.png",
-    "Mates_CA_Orange_Front_V1.png",
-    "CA_HR_Mates_Doses_Front_V1.png"
+    "MI_Magnetic_Dispo_Front_LONDON_SKYWALKER_OGFront.png",
+    "MI_Magnetic_Dispo_Front_Solo_CANARY_DIESELFront_Solo.png",
+    "MI_Magnetic_Dispo_Front_Solo_MYKONOS_AMNESIA_LEMONFront_Solo.png"
    ],
    "compositions": {
-    "device-with-packaging": 20,
-    "lineup": 5,
-    "device-only": 7,
-    "packaging-only": 10
-   }
-  },
-  {
-   "folder": "Hemp / Cartridges",
-   "market": null,
-   "files": 40,
-   "products": [
-    {
-     "product": "Cartridge 5-unit display box",
-     "n": 3
-    },
-    {
-     "product": "Muha Meds Delta 8 King Louis XII cartridge and packaging",
-     "n": 2
-    },
-    {
-     "product": "THCa Cartridges Master Case",
-     "n": 2
-    },
-    {
-     "product": "Cartridge 5-unit box",
-     "n": 2
-    }
-   ],
-   "samples": [
-    "Hemp_Cartridges_45_D8_KingLouisXII_V1.png",
-    "Hemp_Cartridges_Front_D8_KingLouisXII_V1.png",
-    "MasterBox_ThreeQuarters_02.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 8,
-    "multi-pack": 20,
-    "lineup": 3,
-    "packaging-only": 8,
-    "n/a": 1
+    "lineup": 6,
+    "in-scene": 1,
+    "device-with-packaging": 4,
+    "packaging-only": 14,
+    "multi-pack": 14,
+    "device-only": 3
    }
   },
   {
@@ -40371,7 +39546,7 @@
   {
    "folder": "Disposables / Gen2 Device Renders",
    "market": "NM",
-   "files": 38,
+   "files": 39,
    "products": [
     {
      "product": "Muha Meds Blueberry Haze 2000mg disposable vape",
@@ -40396,9 +39571,46 @@
     "NM_Disposables_Distillate_BlueberryHaze_45_V2.png"
    ],
    "compositions": {
-    "device-with-packaging": 35,
+    "device-with-packaging": 36,
     "n/a": 2,
     "lineup": 1
+   }
+  },
+  {
+   "folder": "Edibles / Metal Cans",
+   "market": "CA",
+   "files": 37,
+   "products": [
+    {
+     "product": "Cucumber Habanero Cannabis Infused Gummies",
+     "n": 3
+    },
+    {
+     "product": "Raspberry Lime Cannabis Infused Gummies",
+     "n": 3
+    },
+    {
+     "product": "Raspberry Papaya Cannabis Infused Gummies",
+     "n": 3
+    },
+    {
+     "product": "Raspberry Papaya Hash Rosin Cannabis Infused Gummies",
+     "n": 3
+    }
+   ],
+   "samples": [
+    "CA_Hash_Rosin_Edible_Cans_Group_Shot_02.png",
+    "GummiesTin_Mockup_V2_Side_Black.png",
+    "GummiesTin_Mockup_V2_Top_White.png"
+   ],
+   "compositions": {
+    "lineup": 6,
+    "packaging-only": 5,
+    "device-with-packaging": 10,
+    "label-flat": 8,
+    "n/a": 2,
+    "multi-pack": 2,
+    "in-scene": 4
    }
   },
   {
@@ -40430,38 +39642,6 @@
    ],
    "compositions": {
     "device-only": 36
-   }
-  },
-  {
-   "folder": "Moods",
-   "market": null,
-   "files": 36,
-   "products": [
-    {
-     "product": "Moods Starburst disposable vape device",
-     "n": 2
-    },
-    {
-     "product": "Moods Lychee Lush disposable vape",
-     "n": 2
-    },
-    {
-     "product": "Arctic Mint 10,000 Puffs disposable vape",
-     "n": 1
-    },
-    {
-     "product": "Lychee Lush 10,000 Puffs disposable vape",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "Moods_Arctic_Device_Back_V1.png",
-    "Moods_Lychee_Device_Back_V1.png",
-    "Moods_Papaya_Device_Back_V1.png"
-   ],
-   "compositions": {
-    "device-only": 18,
-    "packaging-only": 18
    }
   },
   {
@@ -40497,30 +39677,6 @@
    }
   },
   {
-   "folder": "Disposables / MI Magnetic_Dispo",
-   "market": "MI",
-   "files": 33,
-   "products": [
-    {
-     "product": "MM-gen2x2-magnetic",
-     "n": 33
-    }
-   ],
-   "samples": [
-    "MI_Magnetic_Dispo_Front_LONDON_SKYWALKER_OGFront.png",
-    "MI_Magnetic_Dispo_Front_Solo_CANARY_DIESELFront_Solo.png",
-    "MI_Magnetic_Dispo_Front_Solo_MYKONOS_AMNESIA_LEMONFront_Solo.png"
-   ],
-   "compositions": {
-    "lineup": 6,
-    "in-scene": 1,
-    "device-with-packaging": 2,
-    "packaging-only": 10,
-    "multi-pack": 13,
-    "device-only": 1
-   }
-  },
-  {
    "folder": "Concentrates / MO Concentrate NOV 2025",
    "market": "MO",
    "files": 32,
@@ -40550,43 +39706,6 @@
    "compositions": {
     "packaging-only": 16,
     "device-with-packaging": 16
-   }
-  },
-  {
-   "folder": "Edibles / Metal Cans",
-   "market": "CA",
-   "files": 31,
-   "products": [
-    {
-     "product": "Cucumber Habanero Cannabis Infused Gummies",
-     "n": 3
-    },
-    {
-     "product": "Raspberry Lime Cannabis Infused Gummies",
-     "n": 3
-    },
-    {
-     "product": "Raspberry Papaya Cannabis Infused Gummies",
-     "n": 3
-    },
-    {
-     "product": "Raspberry Papaya Hash Rosin Cannabis Infused Gummies",
-     "n": 3
-    }
-   ],
-   "samples": [
-    "CA_Hash_Rosin_Edible_Cans_Group_Shot_02.png",
-    "GummiesTin_Mockup_V2_Side_Black.png",
-    "GummiesTin_Mockup_V2_Top_White.png"
-   ],
-   "compositions": {
-    "lineup": 6,
-    "packaging-only": 5,
-    "device-with-packaging": 8,
-    "label-flat": 6,
-    "n/a": 2,
-    "multi-pack": 2,
-    "in-scene": 2
    }
   },
   {
@@ -40623,9 +39742,41 @@
    }
   },
   {
+   "folder": "Flower Bags / THC",
+   "market": "CA",
+   "files": 30,
+   "products": [
+    {
+     "product": "Muha Meds Gummiez display box",
+     "n": 2
+    },
+    {
+     "product": "Muha Meds Lollipop Sativa flower bag",
+     "n": 1
+    },
+    {
+     "product": "GUMMIEZ",
+     "n": 1
+    },
+    {
+     "product": "Banana Cream Cake Indica flower bag",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "FlowerBags_Kanye_Front_V1.png",
+    "FlowerBags_Keyglock_45_V1.png",
+    "FlowerBags_Drake_45_V1.png"
+   ],
+   "compositions": {
+    "packaging-only": 12,
+    "multi-pack": 18
+   }
+  },
+  {
    "folder": "Cartridges / Hash Rosin",
    "market": null,
-   "files": 29,
+   "files": 30,
    "products": [
     {
      "product": "Mimosa Hash Rosin Cartridge",
@@ -40651,7 +39802,73 @@
    ],
    "compositions": {
     "lineup": 3,
-    "device-with-packaging": 26
+    "device-with-packaging": 27
+   }
+  },
+  {
+   "folder": "Pre-Rolls / King & Queen Joints",
+   "market": null,
+   "files": 29,
+   "products": [
+    {
+     "product": "Sandpaper Magnum",
+     "n": 2
+    },
+    {
+     "product": "King Infused Pre-Roll, Honey Banana Hybrid",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Queen Infused Pre-Roll and Mate's Super Boof Sativa Pre-Roll",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Queen Pre-Rolls (Bubble Cherries, Banana Punches, Super Boof)",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "SandpaperMagnumKing_ThreeQuarters.png",
+    "BubbleHash_HoneyBanana_ThreeQuarters_i1.png",
+    "BubbleHashQueen_SuperBoof_ThreeQuarters_i1.png"
+   ],
+   "compositions": {
+    "device-only": 1,
+    "device-with-packaging": 9,
+    "lineup": 11,
+    "packaging-only": 8
+   }
+  },
+  {
+   "folder": "Pre-Rolls / MuhaMadness",
+   "market": "CA",
+   "files": 29,
+   "products": [
+    {
+     "product": "Jet Fuel OG 1 Gram Pre-Roll",
+     "n": 2
+    },
+    {
+     "product": "Blue Dream 1 gram pre-roll",
+     "n": 2
+    },
+    {
+     "product": "Strawberry Cough 1 Gram Pre-Roll",
+     "n": 1
+    },
+    {
+     "product": "Snowman Runts Hybrid 1 Gram Pre-Roll",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "MuhaMadness_Strawberry_Front_V1.png",
+    "NJ_Tube_Front_V1.png",
+    "NJ_MylarBag_Preroll_ThreeQuarters.png"
+   ],
+   "compositions": {
+    "packaging-only": 27,
+    "device-only": 2
    }
   },
   {
@@ -40691,38 +39908,6 @@
    }
   },
   {
-   "folder": "Flower Bags / THC",
-   "market": "CA",
-   "files": 27,
-   "products": [
-    {
-     "product": "Muha Meds Gummiez display box",
-     "n": 2
-    },
-    {
-     "product": "Muha Meds Lollipop Sativa flower bag",
-     "n": 1
-    },
-    {
-     "product": "GUMMIEZ",
-     "n": 1
-    },
-    {
-     "product": "Banana Cream Cake Indica flower bag",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "FlowerBags_Kanye_Front_V1.png",
-    "FlowerBags_Keyglock_45_V1.png",
-    "FlowerBags_Drake_45_V1.png"
-   ],
-   "compositions": {
-    "packaging-only": 11,
-    "multi-pack": 16
-   }
-  },
-  {
    "folder": "Cartridges / Melted Diamonds",
    "market": null,
    "files": 26,
@@ -40752,38 +39937,6 @@
    "compositions": {
     "device-with-packaging": 25,
     "lineup": 1
-   }
-  },
-  {
-   "folder": "Pre-Rolls / MuhaMadness",
-   "market": "CA",
-   "files": 25,
-   "products": [
-    {
-     "product": "Jet Fuel OG 1 Gram Pre-Roll",
-     "n": 2
-    },
-    {
-     "product": "Strawberry Cough 1 Gram Pre-Roll",
-     "n": 1
-    },
-    {
-     "product": "Snowman Runts Hybrid 1 Gram Pre-Roll",
-     "n": 1
-    },
-    {
-     "product": "Muha Madness Exotic Pack 3-cone pre-rolls",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MuhaMadness_Strawberry_Front_V1.png",
-    "NJ_Tube_Front_V1.png",
-    "NJ_MylarBag_Preroll_ThreeQuarters.png"
-   ],
-   "compositions": {
-    "packaging-only": 23,
-    "device-only": 2
    }
   },
   {
@@ -40822,41 +39975,6 @@
    }
   },
   {
-   "folder": "Hemp / Edibles",
-   "market": null,
-   "files": 22,
-   "products": [
-    {
-     "product": "Mambas Live Resin Sweet and Sour Gummies",
-     "n": 3
-    },
-    {
-     "product": "Hashrosin Infused Gummies Pineapple Habanero",
-     "n": 2
-    },
-    {
-     "product": "Pineapple Habanero Infused Gummies",
-     "n": 2
-    },
-    {
-     "product": "Mambas Live Resin Lime Gummies 3000mg",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MI_MAMBAS_LR_45_LIME.png",
-    "MI_MAMBAS_LR_45_SWEET AND SOUR.png",
-    "MI_MAMBAS_LR_FRONT_SWEETANDSOUR.png"
-   ],
-   "compositions": {
-    "packaging-only": 13,
-    "device-only": 2,
-    "device-with-packaging": 2,
-    "multi-pack": 3,
-    "lineup": 2
-   }
-  },
-  {
    "folder": "Edibles / MI Gummies",
    "market": null,
    "files": 22,
@@ -40890,40 +40008,6 @@
     "packaging-only": 8,
     "device-only": 1,
     "lineup": 2
-   }
-  },
-  {
-   "folder": "Pre-Rolls / King & Queen Joints",
-   "market": null,
-   "files": 20,
-   "products": [
-    {
-     "product": "Sandpaper Magnum",
-     "n": 2
-    },
-    {
-     "product": "Muha Meds Queen Infused Pre-Roll and Mate's Super Boof Sativa Pre-Roll",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds Queen Pre-Rolls (Bubble Cherries, Banana Punches, Super Boof)",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds Melted Diamonds Queen and King pre-rolls",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "SandpaperMagnumKing_ThreeQuarters.png",
-    "BubbleHashQueen_SuperBoof_ThreeQuarters_i1.png",
-    "BubbleHash_Queen_GroupShot.png"
-   ],
-   "compositions": {
-    "device-only": 1,
-    "lineup": 11,
-    "packaging-only": 6,
-    "device-with-packaging": 2
    }
   },
   {
@@ -40989,6 +40073,69 @@
    }
   },
   {
+   "folder": "Disposables / MO_2G_Disposables March 2025",
+   "market": "MO",
+   "files": 19,
+   "products": [
+    {
+     "product": "Super Sour Diesel 2G Disposable",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds 2G Disposable Marijuana boxes (Strawberry Runtz, Wedding Cake, Blueberry Haze)",
+     "n": 1
+    },
+    {
+     "product": "Watermelon OG 2000mg disposable package",
+     "n": 1
+    },
+    {
+     "product": "Wedding Cake",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "MO_2G_Dispos_SuperSourDiesel_Front.png",
+    "MO_2G_Dispos_GroupShot.png",
+    "MO_2G_Dispos_WatermelonOG_Front.png"
+   ],
+   "compositions": {
+    "packaging-only": 18,
+    "multi-pack": 1
+   }
+  },
+  {
+   "folder": "RENDERS",
+   "market": "MI",
+   "files": 18,
+   "products": [
+    {
+     "product": "Strawberry Dream Pre-Rolls",
+     "n": 1
+    },
+    {
+     "product": "Matēs PRE-ROLLS ORANGE CAKE HYBRID",
+     "n": 1
+    },
+    {
+     "product": "Orange Cake Hybrid Pre-Roll",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Pina Colada Pre-Roll Jar and Pre-Roll",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "Mates_MI_Strawberry_Front_V1.png",
+    "Mates_MI_Orange_Front_V1.png",
+    "Mates_MI_Orange_45_V1.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 18
+   }
+  },
+  {
    "folder": "Website Images / Disposable",
    "market": null,
    "files": 18,
@@ -41018,38 +40165,6 @@
    "compositions": {
     "device-with-packaging": 16,
     "lineup": 1,
-    "multi-pack": 1
-   }
-  },
-  {
-   "folder": "Disposables / MO_2G_Disposables March 2025",
-   "market": "MO",
-   "files": 17,
-   "products": [
-    {
-     "product": "Super Sour Diesel 2G Disposable",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds 2G Disposable Marijuana boxes (Strawberry Runtz, Wedding Cake, Blueberry Haze)",
-     "n": 1
-    },
-    {
-     "product": "Watermelon OG 2000mg disposable package",
-     "n": 1
-    },
-    {
-     "product": "Wedding Cake",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MO_2G_Dispos_SuperSourDiesel_Front.png",
-    "MO_2G_Dispos_GroupShot.png",
-    "MO_2G_Dispos_WatermelonOG_Front.png"
-   ],
-   "compositions": {
-    "packaging-only": 16,
     "multi-pack": 1
    }
   },
@@ -41119,34 +40234,37 @@
    }
   },
   {
-   "folder": "RENDERS",
+   "folder": "Concentrates / MI Hash Rosin Concentrate Jars",
    "market": "MI",
    "files": 16,
    "products": [
     {
-     "product": "Strawberry Dream Pre-Rolls",
+     "product": "Hash Rosin Concentrate Jars (Apple's & Banana, Donnie Burger, Fatso strains)",
      "n": 1
     },
     {
-     "product": "Matēs PRE-ROLLS ORANGE CAKE HYBRID",
+     "product": "Hash Rosin Concentrate, Apples & Banana flavor",
      "n": 1
     },
     {
-     "product": "Orange Cake Hybrid Pre-Roll",
+     "product": "Hash Rosin Concentrate Jar, Apple & Banana flavor",
      "n": 1
     },
     {
-     "product": "Muha Meds Pina Colada Pre-Roll Jar and Pre-Roll",
+     "product": "Hash Rosin Fatso",
      "n": 1
     }
    ],
    "samples": [
-    "Mates_MI_Strawberry_Front_V1.png",
-    "Mates_MI_Orange_Front_V1.png",
-    "Mates_MI_Orange_45_V1.png"
+    "MI_Hash_Rosin_Concentrate_Jars_Group_Shot_01.png",
+    "MI_HR_AppleBanana_ThreeQuarters.png",
+    "MI_HR_AppleBanana_FrontSingle.png"
    ],
    "compositions": {
-    "device-with-packaging": 16
+    "lineup": 4,
+    "packaging-only": 4,
+    "n/a": 1,
+    "device-with-packaging": 7
    }
   },
   {
@@ -41280,6 +40398,38 @@
    }
   },
   {
+   "folder": "Mavricks",
+   "market": null,
+   "files": 15,
+   "products": [
+    {
+     "product": "Mavricks disposable vape device",
+     "n": 3
+    },
+    {
+     "product": "disposable vape device",
+     "n": 2
+    },
+    {
+     "product": "Red Mavricks disposable vape pen",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Mavricks black vape device",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "Black mav v2b master.png",
+    "Red Mav 2.png",
+    "Black Mav.png"
+   ],
+   "compositions": {
+    "device-only": 10,
+    "device-with-packaging": 5
+   }
+  },
+  {
    "folder": "Accessories / DuffleBag",
    "market": null,
    "files": 14,
@@ -41313,35 +40463,36 @@
    }
   },
   {
-   "folder": "Mavricks",
-   "market": null,
+   "folder": "Disposables / CA_MeltedDiamonds",
+   "market": "CA",
    "files": 14,
    "products": [
     {
-     "product": "Mavricks disposable vape device",
-     "n": 3
-    },
-    {
-     "product": "disposable vape device",
+     "product": "Melted Diamonds All-In-One disposable vape, Mango Madness flavor",
      "n": 2
     },
     {
-     "product": "Red Mavricks disposable vape pen",
+     "product": "Melted Diamonds All-In-One Strawberry Dream disposable",
      "n": 1
     },
     {
-     "product": "Muha Meds Mavricks black vape device",
+     "product": "Melted Diamonds All-In-One Super Silver Haze disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Melted Diamonds All-In-One disposable vape, Paradise Punch OG flavor",
      "n": 1
     }
    ],
    "samples": [
-    "Black mav v2b master.png",
-    "Red Mav 2.png",
-    "Black Mav.png"
+    "CA_Dispo_AllinOne_MD_StrawberryDream_V2.png",
+    "CA_Dispo_AllinOne_MD_SuperSilverHaze_45_V1.png",
+    "CA_Dispo_AllinOne_MD_ParadisePunchOG_V1.png"
    ],
    "compositions": {
-    "device-only": 10,
-    "device-with-packaging": 4
+    "device-with-packaging": 10,
+    "lineup": 2,
+    "packaging-only": 2
    }
   },
   {
@@ -41374,6 +40525,71 @@
    "compositions": {
     "n/a": 11,
     "device-only": 2
+   }
+  },
+  {
+   "folder": "Disposables / MI_2G_Mixed_Flavors_Reused_Mylars",
+   "market": "MI",
+   "files": 13,
+   "products": [
+    {
+     "product": "Strawberry Shortcake Disposable",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Blueberry Haze Disposable Hybrid vape",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds 2G Disposable Vapes",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Wedding Cake 2000mg disposable vape",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "MI_2G_StrawberryShortCake_45_V1.png",
+    "MI_2G_BlueberryHaze_Front_V1.png",
+    "MI_2G_Blend_GroupShot_V1.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 12,
+    "lineup": 1
+   }
+  },
+  {
+   "folder": "Disposables / MI_Melted Diamond",
+   "market": "MI",
+   "files": 12,
+   "products": [
+    {
+     "product": "Muha Meds All-In-One Melted Diamonds disposable vapes and packaging in various flavors",
+     "n": 1
+    },
+    {
+     "product": "Melted Diamonds Mango Madness Disposable Vape",
+     "n": 1
+    },
+    {
+     "product": "Melted Diamonds Strawberry Dream All-in-One disposable",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Melted Diamonds Strawberry Dream 1G Disposable Vape and Packaging",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "00_MI_1G_MeltedDiamonds_Disposables_GroupShot.png",
+    "Disposables_MeltedDiamonds_MangoMadness_45_V1.png",
+    "Disposables_MeltedDiamonds_StrawberryDream_V2.png"
+   ],
+   "compositions": {
+    "lineup": 1,
+    "device-with-packaging": 9,
+    "packaging-only": 2
    }
   },
   {
@@ -41507,6 +40723,39 @@
    }
   },
   {
+   "folder": "Disposables / MI_Hash Rosin",
+   "market": "MI",
+   "files": 10,
+   "products": [
+    {
+     "product": "Mavricks Fatso 0.5G Hash Rosin disposable",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Mavricks Fatso disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One Hash Rosin Fatso disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Mavricks Fatso 0.5G Hash Rosin disposable",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "Fatso_Front.png",
+    "Fatso_Three_Quarters.png",
+    "MI_05G_HashRosin_Disposables_45_Fatso.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 5,
+    "lineup": 3,
+    "packaging-only": 2
+   }
+  },
+  {
    "folder": "Labubu",
    "market": null,
    "files": 10,
@@ -41633,39 +40882,6 @@
     "lineup": 1,
     "in-scene": 1,
     "device-with-packaging": 1
-   }
-  },
-  {
-   "folder": "Concentrates / MI Hash Rosin Concentrate Jars",
-   "market": "MI",
-   "files": 10,
-   "products": [
-    {
-     "product": "Hash Rosin Concentrate Jars (Apple's & Banana, Donnie Burger, Fatso strains)",
-     "n": 1
-    },
-    {
-     "product": "Hash Rosin Concentrate, Apples & Banana flavor",
-     "n": 1
-    },
-    {
-     "product": "Hash Rosin Concentrate Jar, Apple & Banana flavor",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds Hash Rosin Concentrate Jars (Peanut Butter Breath, Tropicana Cherry, Apples & Banana)",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MI_Hash_Rosin_Concentrate_Jars_Group_Shot_01.png",
-    "MI_HR_AppleBanana_ThreeQuarters.png",
-    "MI_HR_AppleBanana_FrontSingle.png"
-   ],
-   "compositions": {
-    "lineup": 4,
-    "packaging-only": 2,
-    "device-with-packaging": 4
    }
   },
   {
@@ -41825,38 +41041,6 @@
    }
   },
   {
-   "folder": "Disposables / MI_2G_Mixed_Flavors_Reused_Mylars",
-   "market": "MI",
-   "files": 9,
-   "products": [
-    {
-     "product": "Strawberry Shortcake Disposable",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds Blueberry Haze Disposable Hybrid vape",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds 2G Disposable Vapes",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds Wedding Cake 2000mg disposable vape",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MI_2G_StrawberryShortCake_45_V1.png",
-    "MI_2G_BlueberryHaze_Front_V1.png",
-    "MI_2G_Blend_GroupShot_V1.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 8,
-    "lineup": 1
-   }
-  },
-  {
    "folder": "TEMP / 2g Infused Joints",
    "market": null,
    "files": 9,
@@ -41952,38 +41136,6 @@
     "multi-pack": 2,
     "packaging-only": 2,
     "in-scene": 2
-   }
-  },
-  {
-   "folder": "Disposables / CA_MeltedDiamonds",
-   "market": "CA",
-   "files": 8,
-   "products": [
-    {
-     "product": "Melted Diamonds All-In-One Strawberry Dream disposable",
-     "n": 1
-    },
-    {
-     "product": "Melted Diamonds All-In-One Super Silver Haze disposable vape",
-     "n": 1
-    },
-    {
-     "product": "Melted Diamonds All-In-One disposable vape, Paradise Punch OG flavor",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds All-In-One Melted Diamonds disposable vapes",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "CA_Dispo_AllinOne_MD_StrawberryDream_V2.png",
-    "CA_Dispo_AllinOne_MD_SuperSilverHaze_45_V1.png",
-    "CA_Dispo_AllinOne_MD_ParadisePunchOG_V1.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 6,
-    "lineup": 2
    }
   },
   {
@@ -42150,35 +41302,35 @@
    }
   },
   {
-   "folder": "Disposables / MI_Melted Diamond",
-   "market": "MI",
-   "files": 6,
+   "folder": "Disposables / NY_2G_Gen2Device",
+   "market": "NY",
+   "files": 7,
    "products": [
     {
-     "product": "Muha Meds All-In-One Melted Diamonds disposable vapes and packaging in various flavors",
+     "product": "Muha Meds Distillate All-In-One Indica Fatso disposable vape and packaging",
      "n": 1
     },
     {
-     "product": "Melted Diamonds Strawberry Dream All-in-One disposable",
+     "product": "Fatso Distillate All-In-One Indica disposable vape and packaging",
      "n": 1
     },
     {
-     "product": "Muha Meds Melted Diamonds Strawberry Dream 1G Disposable Vape and Packaging",
+     "product": "Muha Meds Distillate All-In-One disposables (Habibi, Cali Gas OG, Sour Diesel)",
      "n": 1
     },
     {
-     "product": "Muha Meds All-In-One Melted Diamonds disposable vapes (Grape Gas, Durban Delight, Orange Tangie, Mango Madness, Lemon Cherry Gelato)",
+     "product": "Fatso",
      "n": 1
     }
    ],
    "samples": [
-    "00_MI_1G_MeltedDiamonds_Disposables_GroupShot.png",
-    "Disposables_MeltedDiamonds_StrawberryDream_V2.png",
-    "Disposables_MeltedDiamonds_StrawberryDream_45_V1.png"
+    "NY_2G_Dispos_Fatso_ThreeQuarters.png",
+    "NY_2G_Dispos_Fatso_Front.png",
+    "NY_2G_Disposables_GroupShot.png"
    ],
    "compositions": {
-    "lineup": 1,
-    "device-with-packaging": 5
+    "device-with-packaging": 5,
+    "device-only": 2
    }
   },
   {
@@ -42207,6 +41359,37 @@
     "CA_Mates_HR_Tip_StrawberryMeltedBeltz.png",
     "CA_Mates_HR_Tip_BananaJealousy.png",
     "CA_Mates_HR_Tip_GarlicBudder.png"
+   ],
+   "compositions": {
+    "device-only": 6
+   }
+  },
+  {
+   "folder": "Moods / Device2",
+   "market": null,
+   "files": 6,
+   "products": [
+    {
+     "product": "Disposable vape device, Sakura Grape flavor",
+     "n": 1
+    },
+    {
+     "product": "disposable vape device, Sakura Grape flavor",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds disposable vape, Sakura Grape flavor",
+     "n": 1
+    },
+    {
+     "product": "Vape device with 'Woods' monkey character and grape design",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "device_45_3.png",
+    "01_device_back.png",
+    "03_Moods_Device2_Back45_2_V1.png"
    ],
    "compositions": {
     "device-only": 6
@@ -42336,6 +41519,38 @@
     "lineup": 2,
     "device-with-packaging": 2,
     "packaging-only": 2
+   }
+  },
+  {
+   "folder": "Device / All Devices",
+   "market": null,
+   "files": 5,
+   "products": [
+    {
+     "product": "Gen1 Distillate vape device",
+     "n": 1
+    },
+    {
+     "product": "MUHA MED POD BATTERY",
+     "n": 1
+    },
+    {
+     "product": "Pod Battery",
+     "n": 1
+    },
+    {
+     "product": "Berry Gelato disposable vape device",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "Gen1_Distillate.png",
+    "Pod Battery_Back.png",
+    "Pod Battery_Front.png"
+   ],
+   "compositions": {
+    "device-only": 4,
+    "device-with-packaging": 1
    }
   },
   {
@@ -42549,6 +41764,72 @@
    }
   },
   {
+   "folder": "Disposables / WRONG - NY 1G MD Disposables 2026",
+   "market": "NY",
+   "files": 5,
+   "products": [
+    {
+     "product": "Muha Meds All-In-One disposable vapes and packaging",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One Mango Madness disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Mango Madness All-In-One disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One Mango Madness disposable",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "00_NY_1G_MD_Disposables_GroupShot.png",
+    "NY_1G_MD_Disposable_Front_MangoMadness.png",
+    "NY_1G_MD_Disposable_45_MangoMadness.png"
+   ],
+   "compositions": {
+    "lineup": 1,
+    "device-with-packaging": 2,
+    "packaging-only": 2
+   }
+  },
+  {
+   "folder": "Disposables / NM 1G Melted Diamonds 2026",
+   "market": "NM",
+   "files": 5,
+   "products": [
+    {
+     "product": "Muha Meds All-In-One Melted Diamonds disposable vape, Mango Madness flavor",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One 1000 MG Melted Diamonds Mango Madness disposable vape and packaging",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One Mango Madness disposable vape packaging",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds 1G Melted Diamonds All-In-One disposables (Grape Gas, Durban Delight, Orange Tangle, Lemon Cherry Gelato, Mango Madness)",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "NM_1G_MD_Disposable_Front_MangoMadness.png",
+    "NM_1G_MD_Disposable_45_MangoMadness.png",
+    "NM_1G_MD_Disposable_45Solo_MangoMadness.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 2,
+    "packaging-only": 2,
+    "lineup": 1
+   }
+  },
+  {
    "folder": "PRODUCT SHOTS",
    "market": null,
    "files": 5,
@@ -42610,38 +41891,6 @@
    "compositions": {
     "packaging-only": 3,
     "device-only": 1
-   }
-  },
-  {
-   "folder": "Device / All Devices",
-   "market": null,
-   "files": 4,
-   "products": [
-    {
-     "product": "Gen1 Distillate vape device",
-     "n": 1
-    },
-    {
-     "product": "MUHA MED POD BATTERY",
-     "n": 1
-    },
-    {
-     "product": "Pod Battery",
-     "n": 1
-    },
-    {
-     "product": "gold and black disposable vape device",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "Gen1_Distillate.png",
-    "Pod Battery_Back.png",
-    "Pod Battery_Front.png"
-   ],
-   "compositions": {
-    "device-only": 3,
-    "device-with-packaging": 1
    }
   },
   {
@@ -42804,6 +42053,66 @@
    }
   },
   {
+   "folder": "Disposables / NY Gen 3 1G MD AIO - Under 5MB",
+   "market": "NY",
+   "files": 4,
+   "products": [
+    {
+     "product": "All-In-One disposable vape, Mango Madness flavor",
+     "n": 2
+    },
+    {
+     "product": "Muha Meds All-In-One Mango Madness disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One disposable vape with Mango Madness flavor",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "NY_1G_MD_Disposable_Front_Solo_MangoMadness0001.png",
+    "NY_1G_MD_Disposable_45_Solo_MangoMadness0001.png",
+    "NY_1G_MD_Disposable_45_MangoMadness0001.png"
+   ],
+   "compositions": {
+    "packaging-only": 2,
+    "device-with-packaging": 2
+   }
+  },
+  {
+   "folder": "Disposables / NY 1G Gen 3 Melted Diamond AIO",
+   "market": "NY",
+   "files": 4,
+   "products": [
+    {
+     "product": "Muha Meds All-In-One disposable vape, Mango Madness flavor, 1000 MG",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One Melted Diamonds Mango Madness disposable vape package",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One Melted Diamonds Mango Madness disposable",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds 1G Gen 3 Melted Diamond All-In-One disposable, Mango Madness flavor",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "NY_1G_MD_Disposable_45_MangoMadness0001.png",
+    "NY_1G_MD_Disposable_45_Solo_MangoMadness0001.png",
+    "NY_1G_MD_Disposable_Front_Solo_MangoMadness0001.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 2,
+    "packaging-only": 2
+   }
+  },
+  {
    "folder": "Accessories / Lanyard",
    "market": null,
    "files": 3,
@@ -42878,33 +42187,6 @@
    ],
    "compositions": {
     "n/a": 3
-   }
-  },
-  {
-   "folder": "Disposables / MI_Hash Rosin",
-   "market": "MI",
-   "files": 3,
-   "products": [
-    {
-     "product": "Muha Meds Mavricks Hash Rosin Disposable - Tropicana Cherry, Mimosa, Donnie Burger",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds All-In-One Hash Rosin Disposables (Tropicana Cherry, Donnie Burger, Mimosa, Fat Boy, Garlic Jelly)",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds All-In-One Hash Rosin disposables in Tropicana Cherry, Donnie Burger, Mimosa, Fatso, and Garlic Jelly flavors",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MI_Disposables_GroupShot.png",
-    "00_MI_05G_HashRosin_Disposables_Group_Shot_Spread.png",
-    "00_MI_05G_HashRosin_Disposables_Group_Shot.png"
-   ],
-   "compositions": {
-    "lineup": 3
    }
   },
   {
@@ -43062,34 +42344,6 @@
    }
   },
   {
-   "folder": "Disposables / NY_2G_Gen2Device",
-   "market": "NY",
-   "files": 3,
-   "products": [
-    {
-     "product": "Muha Meds Distillate All-In-One disposables (Habibi, Cali Gas OG, Sour Diesel)",
-     "n": 1
-    },
-    {
-     "product": "2G Gen2Device disposable vape",
-     "n": 1
-    },
-    {
-     "product": "disposable vape device",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "NY_2G_Disposables_GroupShot.png",
-    "NY_2G_Dispos_Device_Back_ThreeQuarters.png",
-    "NY_2G_Dispos_Device_Back.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 1,
-    "device-only": 2
-   }
-  },
-  {
    "folder": "Edibles / CA_10ct_Edibles_Gummies_A.M",
    "market": "CA",
    "files": 3,
@@ -43143,33 +42397,6 @@
    }
   },
   {
-   "folder": "Moods / Device2",
-   "market": null,
-   "files": 3,
-   "products": [
-    {
-     "product": "Vape device with 'Woods' monkey character and grape design",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds disposable vape device with monkey character label",
-     "n": 1
-    },
-    {
-     "product": "Moods disposable vape device",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "02_Moods_Device2_Back45_1_V3.png",
-    "03_Moods_Device2_Back45_2_V2.png",
-    "03_Moods_Device2_Back45_2_V3.png"
-   ],
-   "compositions": {
-    "device-only": 3
-   }
-  },
-  {
    "folder": "Ape",
    "market": null,
    "files": 2,
@@ -43190,6 +42417,28 @@
    "compositions": {
     "in-scene": 1,
     "in-hand": 1
+   }
+  },
+  {
+   "folder": "Disposables / OH_1_68G_Dispos",
+   "market": "OH",
+   "files": 2,
+   "products": [
+    {
+     "product": "Muha Meds Call Gas OG Hybrid disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds disposable vape devices and packaging in Call Gas OG, Watermelon OG, and Blueberry HZ flavors",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "OH_1_68G_Dispos_CaliGas_Front.png",
+    "OH_1_68G_Dispos_Group_Shot.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 2
    }
   },
   {
@@ -43366,6 +42615,29 @@
    ],
    "compositions": {
     "n/a": 2
+   }
+  },
+  {
+   "folder": "Edibles",
+   "market": "NM",
+   "files": 2,
+   "products": [
+    {
+     "product": "Mambas Lime cannabis-infused gummies",
+     "n": 1
+    },
+    {
+     "product": "Mambas Lime Cannabis Infused Gummies",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "NM_Gummies_Lime_Front_V1.png",
+    "NM_Gummies_Lime_45_V1.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 1,
+    "packaging-only": 1
    }
   },
   {
@@ -43621,23 +42893,6 @@
    }
   },
   {
-   "folder": "Disposables / WRONG - NY 1G MD Disposables 2026",
-   "market": "NY",
-   "files": 1,
-   "products": [
-    {
-     "product": "Muha Meds All-In-One disposable vapes and packaging",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "00_NY_1G_MD_Disposables_GroupShot.png"
-   ],
-   "compositions": {
-    "lineup": 1
-   }
-  },
-  {
    "folder": "Edibles / 100MG_Updated Dec24",
    "market": "CA",
    "files": 1,
@@ -43706,23 +42961,6 @@
    }
   },
   {
-   "folder": "Disposables / OH_1_68G_Dispos",
-   "market": "OH",
-   "files": 1,
-   "products": [
-    {
-     "product": "Muha Meds disposable vape devices and packaging in Call Gas OG, Watermelon OG, and Blueberry HZ flavors",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "OH_1_68G_Dispos_Group_Shot.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 1
-   }
-  },
-  {
    "folder": "Disposables / WRONG - NY 2G Distillate Disposable 2026",
    "market": "NY",
    "files": 1,
@@ -43734,23 +42972,6 @@
    ],
    "samples": [
     "00_NY_2G_Distillate_Disposables_GroupShot.png"
-   ],
-   "compositions": {
-    "lineup": 1
-   }
-  },
-  {
-   "folder": "Disposables / NM 1G Melted Diamonds 2026",
-   "market": "NM",
-   "files": 1,
-   "products": [
-    {
-     "product": "Muha Meds 1G Melted Diamonds All-In-One disposables (Grape Gas, Durban Delight, Orange Tangle, Lemon Cherry Gelato, Mango Madness)",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "00_NM_1G_MD_Disposable_GroupShot.png"
    ],
    "compositions": {
     "lineup": 1
