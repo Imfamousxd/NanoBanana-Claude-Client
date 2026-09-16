@@ -109,7 +109,7 @@ const LINE_WORDS = [
 const LINE_WORD_RE = /\b(dispo|disposables?|aio|all[- ]in[- ]one|carts?|cartridges?|jars?|flower|pre[- ]?rolls?|joints?|kief|gumm(?:y|ies)|edibles?|live resin|distillate|hash rosin|rosin|concentrates?|badder|diamonds?|seltzer|cans?|stick ?packs?|sachets?|vials?|hemp|thca)\b/g;
 export function stripLineWords(needle) { return String(needle).replace(LINE_WORD_RE, " ").replace(/\s+/g, " ").trim(); }
 
-function matchStrength(asset, needles) {
+function matchStrength(asset, needles, lineQuery = "") {
   const product = String(asset.product || asset.analysis?.product || "").toLowerCase();
   const render = asset.flags?.render || {};
   const folder = `${render.line || ""} ${render.leaf || ""} ${render.category || ""}`.toLowerCase();
@@ -117,7 +117,8 @@ function matchStrength(asset, needles) {
   const title = String(asset.title || "").toLowerCase();
   const haystack = `${product} ${folder} ${file} ${title} ${String(asset.path || "").toLowerCase()}`;
   // Line words asked for must be present; line words asked for and absent sink the match.
-  const asked = needles.map((needle) => LINE_WORDS.filter(([ask]) => ask.test(needle))).flat();
+  // Line words come from the product name AND the intent ("Gush Mintz" + "live resin box" → live resin).
+  const asked = [...new Set([...needles, String(lineQuery).toLowerCase()].map((needle) => LINE_WORDS.filter(([ask]) => ask.test(needle))).flat())];
   let lineBonus = 0;
   for (const [, has] of asked) lineBonus += has.test(haystack) ? 0.5 : -2;
   let best = 0;
@@ -157,7 +158,7 @@ export async function resolveProductReferences(db, graph, root, { brand = null, 
       and (class = any($${params.push(REF_CLASSES) && params.length}) or reference_roles && array['canonical','shape']::text[])
       and (product ilike any($1) or title ilike any($1) or path ilike any($1) or analysis->>'product' ilike any($1) or flags->'render'->>'line' ilike any($1) or flags->'render'->>'leaf' ilike any($1))
     limit 400`, params);
-  const scored = rows.map((asset) => ({ asset, match: matchStrength(asset, needles), score: referenceScore(asset) })).filter((entry) => entry.match > 0);
+  const scored = rows.map((asset) => ({ asset, match: matchStrength(asset, needles, intent), score: referenceScore(asset) })).filter((entry) => entry.match > 0);
   if (!scored.length) return { product, brand, needles, found: 0, kit: null, note: `No analysed product reference matches "${product}"${brand ? ` for ${brand}` : ""}. Check dam_product_directory for the folder name the team uses, or run the render pass for this brand.` };
   scored.sort((a, b) => b.match - a.match || b.score - a.score);
   const usable = scored.filter((entry) => entry.score > -50);
