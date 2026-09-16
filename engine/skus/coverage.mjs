@@ -49,8 +49,20 @@ function assetText(asset) {
 // A render belongs to exactly one line: the vape form (disposable / cartridge / pod), the format (1G vs 2G vs
 // 1.68G), the market and the device generation are hard walls, not tie-breakers. Generic files (flavour
 // badges, master-case group shots, website composites) never attach to a single flavour.
-const FORM_WORDS = { disposables: /dispo|disposable|allinone|\baio\b/, cartridges: /cart/, pods: /\bpod/ };
-const FORM_ANY = /dispo|disposable|allinone|\baio\b|cart|\bpod/;
+// Every category is a wall: the render must carry its own category's words and none of another category's.
+const CATEGORY_WALLS = {
+  disposables: [/dispo|disposable|allinone|\baio\b/, /cart(?!on)|\bpod|preroll|mates|gumm|edible|flowerjar|\bjoint/],
+  cartridges: [/cart(?!on)/, /dispo|disposable|allinone|\bpod|preroll|mates|gumm|edible|flower|\bjoint/],
+  pods: [/\bpod/, /dispo|disposable|preroll|mates|gumm/],
+  edibles: [/gumm|edible|mambas|chocolate|\btin|mylar|candy/, /dispo|disposable|cart(?!on)|\bpod|preroll|mates|\bjoint|cone|flowerjar|flowerbag|\bjar(?!.*gumm)/],
+  "pre-rolls": [/preroll|pre_roll|mates|\bjoint|cone|dankdart|donut|muharillo|blunt|metalcan|infused|madness|king/, /dispo|disposable|cart(?!on)|\bpod|gumm|edible|flowerjar|flowerbag/],
+  flower: [/flower|\bnug|eighth|greenhouse|indoor|sungrown|meteor/, /dispo|disposable|cart(?!on)|\bpod|gumm|edible|preroll|mates|\bjoint|rosin|badder|sift|concentrate/],
+  concentrates: [/rosin|badder|diamond|sift|hash|concentrate|temple|caviar|piatella|liveresin|\bjar|cured|sauce/, /dispo|disposable|cart(?!on)|\bpod|gumm|edible|preroll|mates|\bjoint|flowerjar|flowerbag|flower/],
+  beverages: [/\bcan|cans|energy|elixir|seltzer|drink|rtd|bottle/, /gumm|stick|packet|sachet|shot/],
+  shots: [/shot/, /gumm|stick|packet|\bcan\b|cans/],
+  gummies: [/gumm/, /stick|packet|shot|\bcan\b/],
+  powders: [/stick|packet|sachet|powder|electrolyte|hydration|creatine|collagen|whey|protein|fiber|eaa/, /gumm|shot|\bcan\b|cans/],
+};
 const FORMATS = ["05g", "06g", "1g", "15g", "168g", "2g", "35g", "4g", "5g", "7g", "1oz"];
 const GENERIC_RE = /ai resources|master case|group shot|website images|badge|catalog resized|motion\//i;
 function formatsIn(compactText) { return FORMATS.filter((fmt) => new RegExp("(^|[^0-9])" + fmt + "(?![0-9])").test(compactText)); }
@@ -74,9 +86,8 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   else if (tokens.length === 1 && tokens[0].length >= 6 && words.includes(tokens[0])) score += 1.5;
   else return 0;
   // Hard walls: vape form, format, market, generation.
-  const form = FORM_WORDS[line.category];
-  if (form) { if (!form.test(prepared.compactFull)) return 0; for (const [cat, re] of Object.entries(FORM_WORDS)) if (cat !== line.category && re.test(prepared.compactFull) && !form.test(prepared.compactFull.replace(re, ""))) return 0; }
-  else if (FORM_ANY.test(prepared.compactFull) && !/pre|mates|joint|gumm|flower|jar/.test(prepared.compactFull)) return 0;
+  const wall = CATEGORY_WALLS[line.category];
+  if (wall) { if (!wall[0].test(prepared.compactFull)) return 0; if (wall[1].test(prepared.compactFull)) return 0; }
   if (line.format) { const want = compact(line.format); const present = formatsIn(prepared.compactFull); if (present.length && !present.includes(want)) return 0; }
   if (line.market && prepared.market && prepared.market !== line.market) return 0;
   const lineGen = line.generation ? genOf(line.generation) : null; const assetGen = genOf(`${asset.path} ${asset.title || ""}`);

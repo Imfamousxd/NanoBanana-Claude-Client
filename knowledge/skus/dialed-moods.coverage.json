@@ -4,10 +4,10 @@
  "totals": {
   "lines": 36,
   "items": 159,
-  "covered": 111,
+  "covered": 109,
   "assets": 2059,
-  "matchedAssets": 1054,
-  "unmatchedAssets": 1005,
+  "matchedAssets": 897,
+  "unmatchedAssets": 1162,
   "unmatchedGroups": 47
  },
  "lines": [
@@ -21,18 +21,20 @@
    "skuBlock": null,
    "source": "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
    "items": 7,
-   "covered": 7,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 6,
+   "coveragePct": 86,
+   "missing": [
+    "White Gummy"
+   ],
    "itemsDetail": [
     {
      "name": "Pink Lemonade",
      "sku": "DM-NPE-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 56,
+     "renders": 47,
      "compositions": {
-      "device-only": 39,
+      "device-only": 30,
       "multi-pack": 15,
       "in-scene": 2
      },
@@ -70,7 +72,7 @@
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V5",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V2",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024/Seltzer Additional Angles/Angle1"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1"
      ]
     },
     {
@@ -78,9 +80,9 @@
      "sku": "DM-NPE-MS",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 12,
      "compositions": {
-      "device-only": 8,
+      "device-only": 4,
       "multi-pack": 8
      },
      "hasDeviceOnly": true,
@@ -89,28 +91,28 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "3e90e196-9dc3-4dab-aea8-a563ff6a8d1d",
+       "id": "94440cdb-067a-4d43-8dbb-c75feec22700",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot2_MangoSunburst.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_45_MangoSunburst.png",
        "composition": "device-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ab35dea747bca037.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/46caeac20a0005f6.jpg"
       },
       {
-       "id": "4bef7c97-4d92-4338-ace4-f156791617d6",
+       "id": "90a8da46-f962-4d9f-a03b-fbcd9b402678",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot4_MangoSunburst.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer Feb 2026/Dialed_Seltzer_Kratom_45_MangoSunburst.png",
        "composition": "device-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a4824f4f9a4ab07a.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c6585aa7f52e3ebf.jpg"
       },
       {
-       "id": "c8b5e07c-0698-4280-b655-430e3daf742f",
+       "id": "eb124b57-8f8f-49ee-837a-beecfe86ce83",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot5_MangoSunburst.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Front_MangoSunburst.png",
        "composition": "device-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c582953bc1095e64.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/57163ce318941c30.jpg"
       }
      ],
      "folders": [
@@ -125,9 +127,9 @@
      "sku": "DM-NPE-OC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 29,
+     "renders": 22,
      "compositions": {
-      "device-only": 18,
+      "device-only": 11,
       "multi-pack": 10,
       "in-scene": 1
      },
@@ -153,19 +155,19 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/eb7120db0c170649.jpg"
       },
       {
-       "id": "78a57ad3-7641-4dea-aeb3-2415e6095412",
+       "id": "6b410976-0c7a-4eba-bd34-7887b83506ce",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot3_OrangeCreamsicle.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1/Dialed_EnergyDrinks_NewDesign_OrangeCreamsicle_Front.png",
        "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6cc1462d7b662a02.jpg"
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/255465905edad45e.jpg"
       }
      ],
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes"
      ]
     },
     {
@@ -173,27 +175,18 @@
      "sku": "DM-NPE-DF",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 31,
+     "renders": 14,
      "compositions": {
-      "device-only": 9,
-      "multi-pack": 13,
+      "device-only": 5,
+      "multi-pack": 7,
       "device-with-packaging": 1,
-      "packaging-only": 7,
-      "in-scene": 1
+      "packaging-only": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "dbdceac8-2ed0-4f63-81aa-9b7676631bcf",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot3_DragonFruit.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/64675d119097ee66.jpg"
-      },
       {
        "id": "0d6a2b06-a692-4574-bc6b-a2ebb4dd206e",
        "score": 5,
@@ -203,18 +196,26 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/554ddc91eba38b76.jpg"
       },
       {
-       "id": "7909d28e-1fd9-4bc3-9ff4-719da3a5bc90",
+       "id": "4a566f9a-21c4-4f69-bd56-44fe694be105",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot2_DragonFruit.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes/Dialed_Kava_Display_Dragon_Fruit_12Pack_Closed_Solo.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6a74d792c17f5db3.jpg"
+      },
+      {
+       "id": "a9eb814b-7c23-47c1-8405-8f71e07354e8",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_45_DragonFruit.png",
        "composition": "device-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/10259af02b95956b.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/495baf8846ec4843.jpg"
       }
      ],
      "folders": [
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Mock Up Designs/NewDesignMockup_2026_01 Jan",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer Feb 2026"
      ]
     },
@@ -223,9 +224,9 @@
      "sku": "DM-NPE-GP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 12,
      "compositions": {
-      "device-only": 8,
+      "device-only": 4,
       "multi-pack": 8
      },
      "hasDeviceOnly": true,
@@ -270,57 +271,24 @@
      "sku": "DM-NPE-WG",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
-     "compositions": {
-      "device-only": 8,
-      "multi-pack": 8
-     },
-     "hasDeviceOnly": true,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
      "hasPackaging": false,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "00525bd3-493f-4b65-96d9-3ca8104f8b55",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot2_WhiteGummy.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ed2184577571c159.jpg"
-      },
-      {
-       "id": "ae2192de-3f42-45d4-837e-82623572228c",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Front_WhiteGummy.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/34d80726f9dfbe4d.jpg"
-      },
-      {
-       "id": "082f6db3-7bb0-4124-be27-05719db70c2d",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes/Dialed_Kava_Display_White_Gummy_12Pack_Closed_45.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2a944c667dbc074f.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer Feb 2026",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Mock Up Designs/NewDesignMockup_2026_01 Jan"
-     ]
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Blue Acai",
      "sku": "DM-NPE-BA",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 17,
+     "renders": 13,
      "compositions": {
       "multi-pack": 7,
-      "device-only": 9,
+      "device-only": 5,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
@@ -381,9 +349,9 @@
      "sku": "DM-KES-AB",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
+     "renders": 9,
      "compositions": {
-      "device-only": 3,
+      "device-only": 2,
       "multi-pack": 7
      },
      "hasDeviceOnly": true,
@@ -400,20 +368,20 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b603aee75753d29a.jpg"
       },
       {
-       "id": "6657e443-1e27-4da5-95c4-921035cf4925",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Dialed_Seltzer_Kava_Shot2_ArticBlue.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/561b57c036623996.jpg"
-      },
-      {
        "id": "361ca7e8-f5d0-4cbf-918b-ad902760dd68",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display/Dialed_Kava_Display_Artic_Blue_12Pack_Closed_45.png",
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4f6dcc2b783da23f.jpg"
+      },
+      {
+       "id": "a6565085-e507-4d05-8638-2ca4cafe4ed4",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display/Dialed_Kava_Display_Artic_Blue_12Pack_Closed_Solo.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/231a0aeb2c7e9062.jpg"
       }
      ],
      "folders": [
@@ -426,10 +394,10 @@
      "sku": "DM-KES-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 105,
+     "renders": 90,
      "compositions": {
-      "device-only": 57,
       "multi-pack": 43,
+      "device-only": 42,
       "in-scene": 4,
       "device-with-packaging": 1
      },
@@ -439,35 +407,35 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "a9caeb7f-c945-4649-9567-340e40ecc8fe",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Dialed_Seltzer_Kava_Shot5_Lemonade.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9ba58a918421de70.jpg"
-      },
-      {
-       "id": "1155d5f9-aace-4fa6-aa39-264719149bc9",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Dialed_Seltzer_Kava_Shot4_Lemonade.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/86983c3914240b4a.jpg"
-      },
-      {
        "id": "0a818d31-3ebc-4c47-a6dc-bbe7f77cc5e9",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display/Dialed_Kava_Display_12Pack_Closed_Lemonade0116.png",
        "composition": "multi-pack",
        "angle": "multiple",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b2b66f576511a0d8.jpg"
+      },
+      {
+       "id": "f5958532-b1f8-4509-924f-04b1c03956e8",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes/Dialed_Kava_Display_Pink_Lemonade_12Pack_Closed_Solo.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/896e3e3cd128086b.jpg"
+      },
+      {
+       "id": "083fab2d-d9fb-4e58-aaf6-935470e78192",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display/Dialed_Kava_Display_12Pack_Closed_Solo_Lemonade0116.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a7384e7e6e270514.jpg"
       }
      ],
      "folders": [
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Design 2025 Main Renders"
      ]
     },
     {
@@ -475,10 +443,10 @@
      "sku": "DM-KES-MP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 39,
+     "renders": 35,
      "compositions": {
       "multi-pack": 20,
-      "device-only": 18,
+      "device-only": 14,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
@@ -515,7 +483,7 @@
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/DisplayBox",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/OldSides",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Design 2025 Main Renders",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display"
      ]
     }
    ]
@@ -539,9 +507,9 @@
      "sku": "DM-LDE-LSK",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 41,
+     "renders": 26,
      "compositions": {
-      "device-only": 29,
+      "device-only": 14,
       "multi-pack": 10,
       "device-with-packaging": 2
      },
@@ -559,20 +527,20 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/533d442f3dfb9d5f.jpg"
       },
       {
-       "id": "e52ecd7f-a179-4283-b2fe-4f25364ae558",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Dialed_Seltzer_LDopa_Shot5_StrawberryKiwi.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8d4c7aca9ee5842d.jpg"
-      },
-      {
        "id": "58ba4089-f8b5-4c48-98c3-2910d5a880f5",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Massive/Massive_LDopa_Front_StrawberryKiwi.png",
        "composition": "device-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c6fd2cd2a2edfde3.jpg"
+      },
+      {
+       "id": "79674cf8-983e-4a59-b0cf-47720dcaab77",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Dialed_Seltzer_LDopa_45_StrawberryKiwi.png",
+       "composition": "device-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b640bc68b940ced1.jpg"
       }
      ],
      "folders": [
@@ -587,15 +555,14 @@
      "sku": "DM-LDE-BGL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 27,
+     "renders": 18,
      "compositions": {
-      "device-only": 13,
+      "device-only": 5,
       "multi-pack": 10,
-      "in-scene": 3,
-      "packaging-only": 1
+      "in-scene": 3
      },
      "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
@@ -608,20 +575,20 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/02950f72c8766daf.jpg"
       },
       {
-       "id": "3c1b1430-52ff-40a4-97b5-e7410706f8ea",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Dialed_Seltzer_LDopa_Shot5_BlueGlacier.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d5e731534c9e7a6d.jpg"
-      },
-      {
        "id": "0f57c66d-ae06-4dad-bbe4-4db10544a343",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Dialed_Seltzer_LDopa_Front_BlueGlacier.png",
        "composition": "device-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f846419a6ec004a3.jpg"
+      },
+      {
+       "id": "d4bb8300-e4b5-4439-b53c-94111d45fe77",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/Black Caps/Dialed_Seltzer_LDopa_Front_BlueGlacier.png",
+       "composition": "device-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7b8487af9b45c9eb.jpg"
       }
      ],
      "folders": [
@@ -683,10 +650,10 @@
      "sku": "DM-LDE-LEM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 94,
+     "renders": 74,
      "compositions": {
       "multi-pack": 30,
-      "device-only": 59,
+      "device-only": 39,
       "in-scene": 4,
       "device-with-packaging": 1
      },
@@ -723,8 +690,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/Black Caps",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa",
-      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/EnergyDrinks"
+      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/EnergyDrinks",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V5"
      ]
     },
     {
@@ -732,9 +699,9 @@
      "sku": "DM-LDE-SWC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 21,
+     "renders": 13,
      "compositions": {
-      "device-only": 13,
+      "device-only": 5,
       "multi-pack": 8
      },
      "hasDeviceOnly": true,
@@ -751,20 +718,20 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e77b958768f454c8.jpg"
       },
       {
-       "id": "b0728134-6938-4cbf-8c05-893848eac3c0",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/Black Caps/Dialed_Seltzer_LDopa_Shot5_SourWatermelonCandy.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/386d41dfabd01c6f.jpg"
-      },
-      {
        "id": "3926fddd-a357-4a83-a474-da809a318f1c",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Dialed_Seltzer_LDopa_45_SourWatermelonCandy.png",
        "composition": "device-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9a6eaa02052222d5.jpg"
+      },
+      {
+       "id": "32f3e069-124f-45d0-8823-d5dbf82e32a6",
+       "score": 4,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display/Dialed_Kava_Display_12Pack_Closed_Sour_Watermelon_Candy0116.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/28a5d789ce9c0a93.jpg"
       }
      ],
      "folders": [
@@ -779,9 +746,9 @@
      "sku": "DM-LDE-BCV",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 27,
+     "renders": 19,
      "compositions": {
-      "device-only": 18,
+      "device-only": 10,
       "multi-pack": 8,
       "in-scene": 1
      },
@@ -799,20 +766,20 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/edb68138b3b20eda.jpg"
       },
       {
-       "id": "f92e573f-5ff6-4d5e-afa8-16ad0ab52c4b",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/Black Caps/Dialed_Seltzer_LDopa_Shot2_Black_Cherry_Vanilla.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c7fcf8a494b9258c.jpg"
-      },
-      {
        "id": "74571e30-e166-47fe-95b9-22a4e0c817b3",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Dialed_Seltzer_LDopa_45_Black_Cherry_Vanilla.png",
        "composition": "device-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b55b05dfcb4c19ce.jpg"
+      },
+      {
+       "id": "61648953-8fb5-422c-87be-ae69297a38f8",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/LDopa_BlackCherry_Front_V3.png",
+       "composition": "device-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c6150a21efdfdda5.jpg"
       }
      ],
      "folders": [
@@ -1859,11 +1826,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 11,
      "compositions": {
       "packaging-only": 5,
-      "multi-pack": 6,
-      "in-scene": 1
+      "multi-pack": 6
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -1898,8 +1864,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/old",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/20pk",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/StyleShots",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks",
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/30pk"
      ]
     },
     {
@@ -1921,11 +1887,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 58,
+     "renders": 55,
      "compositions": {
-      "packaging-only": 27,
-      "multi-pack": 29,
-      "in-scene": 2
+      "packaging-only": 26,
+      "multi-pack": 29
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -2508,10 +2473,10 @@
      "sku": "DM-EDK-FP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 52,
+     "renders": 40,
      "compositions": {
-      "device-only": 38,
-      "in-scene": 9,
+      "device-only": 28,
+      "in-scene": 7,
       "multi-pack": 5
      },
      "hasDeviceOnly": true,
@@ -2548,7 +2513,7 @@
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V5",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V4 w-Fruit",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V3"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V1"
      ]
     },
     {
@@ -2556,9 +2521,9 @@
      "sku": "DM-EDK-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 56,
+     "renders": 47,
      "compositions": {
-      "device-only": 39,
+      "device-only": 30,
       "multi-pack": 15,
       "in-scene": 2
      },
@@ -2596,7 +2561,7 @@
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V5",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V2",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024/Seltzer Additional Angles/Angle1"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1"
      ]
     },
     {
@@ -2604,11 +2569,11 @@
      "sku": "DM-EDK-SR",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 35,
+     "renders": 25,
      "compositions": {
-      "device-only": 28,
-      "in-scene": 4,
-      "multi-pack": 3
+      "device-only": 19,
+      "multi-pack": 3,
+      "in-scene": 3
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -2632,19 +2597,19 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0de921636dd68d8e.jpg"
       },
       {
-       "id": "b3eeaf59-12ba-44b6-a459-d1a0610f6dfa",
+       "id": "fc1d7576-3d72-4750-b4f0-8474cb92a627",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024/StyleShots/CanTruck/DialedCan_Truck_V1.png",
-       "composition": "in-scene",
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders/Dialed_Seltzer_StrawberryRazz_RightSide.png",
+       "composition": "device-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b3647a573bb80f8f.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a8418cc01c20beff.jpg"
       }
      ],
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024/StyleShots/CanTruck",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/DisplayBox/2024 2025 Can Design Display Boxes/6pack"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/DisplayBox/2024 2025 Can Design Display Boxes/6pack",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026"
      ]
     },
     {
@@ -2652,14 +2617,13 @@
      "sku": "DM-EDK-MP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 39,
+     "renders": 34,
      "compositions": {
-      "device-only": 28,
+      "device-only": 24,
       "in-scene": 3,
       "packaging-only": 1,
       "device-with-packaging": 1,
-      "multi-pack": 5,
-      "n/a": 1
+      "multi-pack": 5
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -2703,9 +2667,9 @@
      "sku": "DM-EDK-VB",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 32,
+     "renders": 26,
      "compositions": {
-      "device-only": 22,
+      "device-only": 16,
       "multi-pack": 8,
       "in-scene": 2
      },
@@ -2714,14 +2678,6 @@
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "3d2f44ee-315a-48bf-b8a5-78747b2a389a",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V3/Dialed_Can_Shot2_blk_V1.png",
-       "composition": "device-only",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bf04380450f6b300.jpg"
-      },
       {
        "id": "afdde581-8a60-4030-ae20-f9c72532e1fa",
        "score": 5,
@@ -2737,13 +2693,21 @@
        "composition": "device-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/91c7163e2bbdb512.jpg"
+      },
+      {
+       "id": "b039ecb2-9677-4142-8a7c-3794d6292f53",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1/Dialed_EnergyDrinks_NewDesign_VeryBerry_Front.png",
+       "composition": "device-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dca90800951db03c.jpg"
       }
      ],
      "folders": [
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V3",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024/Seltzer Additional Angles/Angle1"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders"
      ]
     },
     {
@@ -2751,9 +2715,9 @@
      "sku": "DM-EDK-OC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 29,
+     "renders": 22,
      "compositions": {
-      "device-only": 18,
+      "device-only": 11,
       "multi-pack": 10,
       "in-scene": 1
      },
@@ -2779,19 +2743,19 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/eb7120db0c170649.jpg"
       },
       {
-       "id": "78a57ad3-7641-4dea-aeb3-2415e6095412",
+       "id": "6b410976-0c7a-4eba-bd34-7887b83506ce",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot3_OrangeCreamsicle.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1/Dialed_EnergyDrinks_NewDesign_OrangeCreamsicle_Front.png",
        "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6cc1462d7b662a02.jpg"
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/255465905edad45e.jpg"
       }
      ],
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes"
      ]
     },
     {
@@ -2799,9 +2763,9 @@
      "sku": "DM-EDK-PP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 10,
      "compositions": {
-      "device-only": 9,
+      "device-only": 7,
       "multi-pack": 2,
       "in-scene": 1
      },
@@ -2819,27 +2783,27 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c9bd64f69a557bfe.jpg"
       },
       {
-       "id": "d65fc77a-fcf6-45a4-8629-590c58db9f76",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024/Seltzer Additional Angles/Angle1/Shot1_PP_V1.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/302d23159dd9c87f.jpg"
-      },
-      {
        "id": "0ac2ca94-6f74-415b-abbc-cd35ef5f0f59",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1/Dialed_EnergyDrinks_NewDesign_ParadisePina_Front.png",
        "composition": "device-only",
        "angle": "front",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/548915b1181f7510.jpg"
+      },
+      {
+       "id": "6d36e69b-2553-46c1-b896-ee6254c90c40",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders/Dialed_Seltzer_ParadisePina_RightSide.png",
+       "composition": "device-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/37a26510b635f6de.jpg"
       }
      ],
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024/Seltzer Additional Angles/Angle1",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/DisplayBox/2024 2025 Can Design Display Boxes/6pack"
      ]
     },
     {
@@ -3045,10 +3009,10 @@
      "sku": "DM-ESZ-LE",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 111,
+     "renders": 90,
      "compositions": {
       "multi-pack": 42,
-      "device-only": 67,
+      "device-only": 46,
       "device-with-packaging": 1,
       "in-scene": 1
      },
@@ -3094,10 +3058,10 @@
      "sku": "DM-ESZ-MA",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 41,
+     "renders": 37,
      "compositions": {
       "multi-pack": 20,
-      "device-only": 18,
+      "device-only": 14,
       "device-with-packaging": 1,
       "in-scene": 2
      },
@@ -3224,10 +3188,9 @@
      "sku": "DM-PHP-CC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 23,
+     "renders": 20,
      "compositions": {
-      "multi-pack": 15,
-      "in-scene": 2,
+      "multi-pack": 14,
       "packaging-only": 6
      },
      "hasDeviceOnly": false,
@@ -3235,14 +3198,6 @@
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "8101b94f-d13a-4576-bf1f-88a340dad65d",
-       "score": 5,
-       "path": "Promotional Material/BFCM/Renders/Biohacking Bundle v3.png",
-       "composition": "multi-pack",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c477a8d83a6cc605.jpg"
-      },
       {
        "id": "7f8ac170-5187-4ddb-a3c6-dcc7b8974a15",
        "score": 5,
@@ -3258,13 +3213,21 @@
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7fc70c6765d25dc2.jpg"
+      },
+      {
+       "id": "ba09ad38-1d81-481f-be9b-89734ef5ad50",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Old Packs/Old Product/12pk/Updated_Hydro_12pk/DialedMoods_Electros_12pk_Citrus_Front_V2.png",
+       "composition": "multi-pack",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/377e4b8ff460a27c.jpg"
       }
      ],
      "folders": [
-      "Promotional Material/BFCM/Renders",
       "Renders/Assets for Amazon/Hydro Pack Renders/Display Box 30PK",
-      "Renders/DialedMoods/Dialed Sku's/Bundle Packs",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Old Packs/Old Product/12pk/Updated_Hydro_12pk"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Old Packs/Old Product/12pk/Updated_Hydro_12pk",
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Old Packs/Old Product/DisplayBox 20PK/Updated_20PK_Hydro",
+      "Renders/Assets for Amazon/Hydro Pack Renders/DisplayBox 20PK"
      ]
     },
     {
@@ -3272,11 +3235,10 @@
      "sku": "DM-PHP-EO",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 20,
+     "renders": 19,
      "compositions": {
       "multi-pack": 14,
-      "packaging-only": 5,
-      "in-scene": 1
+      "packaging-only": 5
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -3422,10 +3384,9 @@
      "sku": "DM-CTG-CH",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 3,
+     "renders": 2,
      "compositions": {
-      "device-only": 2,
-      "in-scene": 1
+      "device-only": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -3447,19 +3408,10 @@
        "composition": "device-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c322a59adf63bed6.jpg"
-      },
-      {
-       "id": "a1b8a1ee-2270-4a87-a3ae-0ddad25b2162",
-       "score": 3.6666666666666665,
-       "path": "Renders/DialedMoods/DialedCollage/DialedCollage_bowl_wBG_V2.png",
-       "composition": "in-scene",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1648dc6eab5dbd7a.jpg"
       }
      ],
      "folders": [
-      "Renders/DialedMoods/Dialed Sku's/Creatine/Old Version",
-      "Renders/DialedMoods/DialedCollage"
+      "Renders/DialedMoods/Dialed Sku's/Creatine/Old Version"
      ]
     },
     {
@@ -3825,11 +3777,10 @@
      "sku": "DM-PEP-PG",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 13,
+     "renders": 12,
      "compositions": {
       "multi-pack": 7,
-      "packaging-only": 5,
-      "in-scene": 1
+      "packaging-only": 5
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -3864,8 +3815,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/30pk",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/20pk",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/StyleShots",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks",
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/old"
      ]
     },
     {
@@ -3873,11 +3824,10 @@
      "sku": "DM-PEP-BA",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
+     "renders": 9,
      "compositions": {
       "packaging-only": 3,
-      "multi-pack": 6,
-      "in-scene": 1
+      "multi-pack": 6
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -3913,7 +3863,7 @@
       "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/30pk",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/20pk",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/StyleShots"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/old"
      ]
     },
     {
@@ -3921,11 +3871,10 @@
      "sku": "DM-PEP-CL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 13,
+     "renders": 12,
      "compositions": {
       "packaging-only": 6,
-      "multi-pack": 6,
-      "in-scene": 1
+      "multi-pack": 6
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -3960,8 +3909,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/old",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/20pk",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/StyleShots",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks",
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/30pk"
      ]
     },
     {
@@ -3969,11 +3918,10 @@
      "sku": "DM-PEP-DF",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 13,
+     "renders": 12,
      "compositions": {
       "packaging-only": 6,
-      "multi-pack": 6,
-      "in-scene": 1
+      "multi-pack": 6
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -4009,7 +3957,7 @@
       "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/old",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/30pk",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/DisplayBoxes/20pk",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks/StyleShots"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/EnergyPacks"
      ]
     },
     {
@@ -4017,11 +3965,10 @@
      "sku": "DM-PEP-WM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 58,
+     "renders": 55,
      "compositions": {
-      "packaging-only": 27,
-      "multi-pack": 29,
-      "in-scene": 2
+      "packaging-only": 26,
+      "multi-pack": 29
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -4095,15 +4042,14 @@
      "sku": "DM-LSE-BR",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 35,
+     "renders": 8,
      "compositions": {
-      "device-only": 15,
-      "multi-pack": 12,
-      "in-scene": 5,
-      "device-with-packaging": 3
+      "device-only": 3,
+      "multi-pack": 2,
+      "in-scene": 3
      },
      "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
@@ -4144,10 +4090,10 @@
      "sku": "DM-LSE-SK",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 21,
+     "renders": 13,
      "compositions": {
       "multi-pack": 2,
-      "device-only": 16,
+      "device-only": 8,
       "packaging-only": 1,
       "in-scene": 2
      },
@@ -4193,11 +4139,10 @@
      "sku": "DM-LSE-SC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 15,
+     "renders": 5,
      "compositions": {
       "device-only": 4,
-      "multi-pack": 9,
-      "in-scene": 2
+      "multi-pack": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -4221,19 +4166,19 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bf8d07c5f60f70da.jpg"
       },
       {
-       "id": "563a1388-4f6a-4fdf-b572-0e968f5b0be2",
+       "id": "a85cb287-3fee-416e-a8c3-4cb0491db822",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/Shots/OnSetShots/Kava_BlueRaspberry_OnSet_SourCandy_SQ.png",
-       "composition": "in-scene",
+       "path": "Renders/DialedMoods/Dialed Sku's/Shots/Kava Kratom Shots/Shots_Kava_SourCandy_Front_V1.png",
+       "composition": "device-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1cc6a9f75837d2df.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dba44b754a104746.jpg"
       }
      ],
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/Shots/Kava Kratom Shots",
       "Renders/DialedMoods/Dialed Sku's/Shots/Kava Kratom Shots/Display",
-      "Renders/DialedMoods/Dialed Sku's/Shots/OnSetShots",
-      "Renders/DialedMoods/Dialed Sku's/Shots/OnSetShots/Verticals"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/Black Caps"
      ]
     }
    ]
@@ -4468,9 +4413,10 @@
    "skuBlock": null,
    "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
    "items": 10,
-   "covered": 7,
-   "coveragePct": 70,
+   "covered": 6,
+   "coveragePct": 60,
    "missing": [
+    "White Gummy",
     "Variety Pack A",
     "Variety Pack B",
     "Variety Pack C"
@@ -4481,9 +4427,9 @@
      "sku": "DM-NPE-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 56,
+     "renders": 47,
      "compositions": {
-      "device-only": 39,
+      "device-only": 30,
       "multi-pack": 15,
       "in-scene": 2
      },
@@ -4521,7 +4467,7 @@
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V5",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V2",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024/Seltzer Additional Angles/Angle1"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1"
      ]
     },
     {
@@ -4529,9 +4475,9 @@
      "sku": "DM-NPE-MS",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 12,
      "compositions": {
-      "device-only": 8,
+      "device-only": 4,
       "multi-pack": 8
      },
      "hasDeviceOnly": true,
@@ -4540,28 +4486,28 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "3e90e196-9dc3-4dab-aea8-a563ff6a8d1d",
+       "id": "94440cdb-067a-4d43-8dbb-c75feec22700",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot2_MangoSunburst.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_45_MangoSunburst.png",
        "composition": "device-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ab35dea747bca037.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/46caeac20a0005f6.jpg"
       },
       {
-       "id": "4bef7c97-4d92-4338-ace4-f156791617d6",
+       "id": "90a8da46-f962-4d9f-a03b-fbcd9b402678",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot4_MangoSunburst.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer Feb 2026/Dialed_Seltzer_Kratom_45_MangoSunburst.png",
        "composition": "device-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a4824f4f9a4ab07a.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c6585aa7f52e3ebf.jpg"
       },
       {
-       "id": "c8b5e07c-0698-4280-b655-430e3daf742f",
+       "id": "eb124b57-8f8f-49ee-837a-beecfe86ce83",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot5_MangoSunburst.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Front_MangoSunburst.png",
        "composition": "device-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c582953bc1095e64.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/57163ce318941c30.jpg"
       }
      ],
      "folders": [
@@ -4576,9 +4522,9 @@
      "sku": "DM-NPE-OC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 29,
+     "renders": 22,
      "compositions": {
-      "device-only": 18,
+      "device-only": 11,
       "multi-pack": 10,
       "in-scene": 1
      },
@@ -4604,19 +4550,19 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/eb7120db0c170649.jpg"
       },
       {
-       "id": "78a57ad3-7641-4dea-aeb3-2415e6095412",
+       "id": "6b410976-0c7a-4eba-bd34-7887b83506ce",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot3_OrangeCreamsicle.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1/Dialed_EnergyDrinks_NewDesign_OrangeCreamsicle_Front.png",
        "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6cc1462d7b662a02.jpg"
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/255465905edad45e.jpg"
       }
      ],
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_July2024",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/V1",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes"
      ]
     },
     {
@@ -4624,27 +4570,18 @@
      "sku": "DM-NPE-DF",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 31,
+     "renders": 14,
      "compositions": {
-      "device-only": 9,
-      "multi-pack": 13,
+      "device-only": 5,
+      "multi-pack": 7,
       "device-with-packaging": 1,
-      "packaging-only": 7,
-      "in-scene": 1
+      "packaging-only": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "dbdceac8-2ed0-4f63-81aa-9b7676631bcf",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot3_DragonFruit.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/64675d119097ee66.jpg"
-      },
       {
        "id": "0d6a2b06-a692-4574-bc6b-a2ebb4dd206e",
        "score": 5,
@@ -4654,18 +4591,26 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/554ddc91eba38b76.jpg"
       },
       {
-       "id": "7909d28e-1fd9-4bc3-9ff4-719da3a5bc90",
+       "id": "4a566f9a-21c4-4f69-bd56-44fe694be105",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot2_DragonFruit.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes/Dialed_Kava_Display_Dragon_Fruit_12Pack_Closed_Solo.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6a74d792c17f5db3.jpg"
+      },
+      {
+       "id": "a9eb814b-7c23-47c1-8405-8f71e07354e8",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_45_DragonFruit.png",
        "composition": "device-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/10259af02b95956b.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/495baf8846ec4843.jpg"
       }
      ],
      "folders": [
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Mock Up Designs/NewDesignMockup_2026_01 Jan",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer Feb 2026"
      ]
     },
@@ -4674,9 +4619,9 @@
      "sku": "DM-NPE-GP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 12,
      "compositions": {
-      "device-only": 8,
+      "device-only": 4,
       "multi-pack": 8
      },
      "hasDeviceOnly": true,
@@ -4721,57 +4666,24 @@
      "sku": "DM-NPE-WG",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
-     "compositions": {
-      "device-only": 8,
-      "multi-pack": 8
-     },
-     "hasDeviceOnly": true,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
      "hasPackaging": false,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "00525bd3-493f-4b65-96d9-3ca8104f8b55",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Shot2_WhiteGummy.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ed2184577571c159.jpg"
-      },
-      {
-       "id": "ae2192de-3f42-45d4-837e-82623572228c",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/Dialed_Seltzer_Kratom_Front_WhiteGummy.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/34d80726f9dfbe4d.jpg"
-      },
-      {
-       "id": "082f6db3-7bb0-4124-be27-05719db70c2d",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes/Dialed_Kava_Display_White_Gummy_12Pack_Closed_45.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2a944c667dbc074f.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer Feb 2026",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Mock Up Designs/NewDesignMockup_2026_01 Jan"
-     ]
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Blue Acai",
      "sku": "DM-NPE-BA",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 17,
+     "renders": 13,
      "compositions": {
       "multi-pack": 7,
-      "device-only": 9,
+      "device-only": 5,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
@@ -4938,15 +4850,13 @@
      "sku": "DM-ESK-BA",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 17,
+     "renders": 4,
      "compositions": {
-      "device-only": 9,
-      "multi-pack": 7,
-      "device-with-packaging": 1
+      "device-only": 4
      },
      "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": true,
+     "hasPackaging": false,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
@@ -4975,10 +4885,7 @@
       }
      ],
      "folders": [
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer Feb 2026",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Mock Up Designs/NewDesignMockup_2026_01 Jan"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026"
      ]
     }
    ]
@@ -5002,9 +4909,9 @@
      "sku": "DM-KES-AB",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
+     "renders": 9,
      "compositions": {
-      "device-only": 3,
+      "device-only": 2,
       "multi-pack": 7
      },
      "hasDeviceOnly": true,
@@ -5021,20 +4928,20 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b603aee75753d29a.jpg"
       },
       {
-       "id": "6657e443-1e27-4da5-95c4-921035cf4925",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Dialed_Seltzer_Kava_Shot2_ArticBlue.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/561b57c036623996.jpg"
-      },
-      {
        "id": "361ca7e8-f5d0-4cbf-918b-ad902760dd68",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display/Dialed_Kava_Display_Artic_Blue_12Pack_Closed_45.png",
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4f6dcc2b783da23f.jpg"
+      },
+      {
+       "id": "a6565085-e507-4d05-8638-2ca4cafe4ed4",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display/Dialed_Kava_Display_Artic_Blue_12Pack_Closed_Solo.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/231a0aeb2c7e9062.jpg"
       }
      ],
      "folders": [
@@ -5047,10 +4954,10 @@
      "sku": "DM-KES-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 105,
+     "renders": 90,
      "compositions": {
-      "device-only": 57,
       "multi-pack": 43,
+      "device-only": 42,
       "in-scene": 4,
       "device-with-packaging": 1
      },
@@ -5060,35 +4967,35 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "a9caeb7f-c945-4649-9567-340e40ecc8fe",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Dialed_Seltzer_Kava_Shot5_Lemonade.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9ba58a918421de70.jpg"
-      },
-      {
-       "id": "1155d5f9-aace-4fa6-aa39-264719149bc9",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Dialed_Seltzer_Kava_Shot4_Lemonade.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/86983c3914240b4a.jpg"
-      },
-      {
        "id": "0a818d31-3ebc-4c47-a6dc-bbe7f77cc5e9",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display/Dialed_Kava_Display_12Pack_Closed_Lemonade0116.png",
        "composition": "multi-pack",
        "angle": "multiple",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b2b66f576511a0d8.jpg"
+      },
+      {
+       "id": "f5958532-b1f8-4509-924f-04b1c03956e8",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes/Dialed_Kava_Display_Pink_Lemonade_12Pack_Closed_Solo.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/896e3e3cd128086b.jpg"
+      },
+      {
+       "id": "083fab2d-d9fb-4e58-aaf6-935470e78192",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display/Dialed_Kava_Display_12Pack_Closed_Solo_Lemonade0116.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a7384e7e6e270514.jpg"
       }
      ],
      "folders": [
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Energy Seltzer March 2026/May_2026_Displayboxes",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Design 2025 Main Renders"
      ]
     },
     {
@@ -5096,10 +5003,10 @@
      "sku": "DM-KES-MP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 39,
+     "renders": 35,
      "compositions": {
       "multi-pack": 20,
-      "device-only": 18,
+      "device-only": 14,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
@@ -5136,7 +5043,7 @@
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/DisplayBox",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/OldSides",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Design 2025 Main Renders",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display"
      ]
     }
    ]
@@ -5222,9 +5129,9 @@
      "sku": "DM-LDE-LSK",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 41,
+     "renders": 26,
      "compositions": {
-      "device-only": 29,
+      "device-only": 14,
       "multi-pack": 10,
       "device-with-packaging": 2
      },
@@ -5242,20 +5149,20 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/533d442f3dfb9d5f.jpg"
       },
       {
-       "id": "e52ecd7f-a179-4283-b2fe-4f25364ae558",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Dialed_Seltzer_LDopa_Shot5_StrawberryKiwi.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8d4c7aca9ee5842d.jpg"
-      },
-      {
        "id": "58ba4089-f8b5-4c48-98c3-2910d5a880f5",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Massive/Massive_LDopa_Front_StrawberryKiwi.png",
        "composition": "device-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c6fd2cd2a2edfde3.jpg"
+      },
+      {
+       "id": "79674cf8-983e-4a59-b0cf-47720dcaab77",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Dialed_Seltzer_LDopa_45_StrawberryKiwi.png",
+       "composition": "device-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b640bc68b940ced1.jpg"
       }
      ],
      "folders": [
@@ -5270,15 +5177,14 @@
      "sku": "DM-LDE-BGL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 27,
+     "renders": 18,
      "compositions": {
-      "device-only": 13,
+      "device-only": 5,
       "multi-pack": 10,
-      "in-scene": 3,
-      "packaging-only": 1
+      "in-scene": 3
      },
      "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
@@ -5291,20 +5197,20 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/02950f72c8766daf.jpg"
       },
       {
-       "id": "3c1b1430-52ff-40a4-97b5-e7410706f8ea",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Dialed_Seltzer_LDopa_Shot5_BlueGlacier.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d5e731534c9e7a6d.jpg"
-      },
-      {
        "id": "0f57c66d-ae06-4dad-bbe4-4db10544a343",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Dialed_Seltzer_LDopa_Front_BlueGlacier.png",
        "composition": "device-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f846419a6ec004a3.jpg"
+      },
+      {
+       "id": "d4bb8300-e4b5-4439-b53c-94111d45fe77",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/Black Caps/Dialed_Seltzer_LDopa_Front_BlueGlacier.png",
+       "composition": "device-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7b8487af9b45c9eb.jpg"
       }
      ],
      "folders": [
@@ -5366,10 +5272,10 @@
      "sku": "DM-LDE-LEM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 94,
+     "renders": 74,
      "compositions": {
       "multi-pack": 30,
-      "device-only": 59,
+      "device-only": 39,
       "in-scene": 4,
       "device-with-packaging": 1
      },
@@ -5406,8 +5312,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/Black Caps",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa",
-      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/EnergyDrinks"
+      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/EnergyDrinks",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_April2024/V5"
      ]
     },
     {
@@ -5415,9 +5321,9 @@
      "sku": "DM-LDE-SWC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 21,
+     "renders": 13,
      "compositions": {
-      "device-only": 13,
+      "device-only": 5,
       "multi-pack": 8
      },
      "hasDeviceOnly": true,
@@ -5434,20 +5340,20 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e77b958768f454c8.jpg"
       },
       {
-       "id": "b0728134-6938-4cbf-8c05-893848eac3c0",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/Black Caps/Dialed_Seltzer_LDopa_Shot5_SourWatermelonCandy.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/386d41dfabd01c6f.jpg"
-      },
-      {
        "id": "3926fddd-a357-4a83-a474-da809a318f1c",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Dialed_Seltzer_LDopa_45_SourWatermelonCandy.png",
        "composition": "device-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9a6eaa02052222d5.jpg"
+      },
+      {
+       "id": "32f3e069-124f-45d0-8823-d5dbf82e32a6",
+       "score": 4,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display/Dialed_Kava_Display_12Pack_Closed_Sour_Watermelon_Candy0116.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/28a5d789ce9c0a93.jpg"
       }
      ],
      "folders": [
@@ -5462,9 +5368,9 @@
      "sku": "DM-LDE-BCV",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 27,
+     "renders": 19,
      "compositions": {
-      "device-only": 18,
+      "device-only": 10,
       "multi-pack": 8,
       "in-scene": 1
      },
@@ -5482,20 +5388,20 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/edb68138b3b20eda.jpg"
       },
       {
-       "id": "f92e573f-5ff6-4d5e-afa8-16ad0ab52c4b",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/Black Caps/Dialed_Seltzer_LDopa_Shot2_Black_Cherry_Vanilla.png",
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c7fcf8a494b9258c.jpg"
-      },
-      {
        "id": "74571e30-e166-47fe-95b9-22a4e0c817b3",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Dialed_Seltzer_LDopa_45_Black_Cherry_Vanilla.png",
        "composition": "device-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b55b05dfcb4c19ce.jpg"
+      },
+      {
+       "id": "61648953-8fb5-422c-87be-ae69297a38f8",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/LDopa_BlackCherry_Front_V3.png",
+       "composition": "device-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c6150a21efdfdda5.jpg"
       }
      ],
      "folders": [
@@ -6402,23 +6308,23 @@
   {
    "folder": "DialedMoods / Dialed Sku's",
    "market": null,
-   "files": 320,
+   "files": 476,
    "products": [
+    {
+     "product": "DM-social-elixir",
+     "n": 29
+    },
     {
      "product": "Kratom Energy Drink",
      "n": 21
     },
     {
+     "product": "DM-secret-juice",
+     "n": 13
+    },
+    {
      "product": "DM-lychee",
      "n": 11
-    },
-    {
-     "product": "DM-social-elixir",
-     "n": 11
-    },
-    {
-     "product": "DM-secret-juice",
-     "n": 8
     }
    ],
    "samples": [
@@ -6427,12 +6333,12 @@
     "DialedMoods_Gummies_GrapeJelly_45_V1.png"
    ],
    "compositions": {
-    "device-only": 88,
-    "device-with-packaging": 31,
-    "packaging-only": 70,
-    "in-scene": 14,
+    "device-only": 212,
+    "device-with-packaging": 34,
+    "packaging-only": 72,
+    "in-scene": 24,
     "lineup": 42,
-    "multi-pack": 57,
+    "multi-pack": 74,
     "n/a": 14,
     "label-flat": 4
    }
@@ -6665,7 +6571,7 @@
   {
    "folder": "DialedMoods / DialedCollage",
    "market": null,
-   "files": 26,
+   "files": 27,
    "products": [
     {
      "product": "DM-social-elixir",
@@ -6692,7 +6598,7 @@
    "compositions": {
     "n/a": 9,
     "lineup": 2,
-    "in-scene": 15
+    "in-scene": 16
    }
   },
   {
