@@ -93,8 +93,8 @@ Concentrate NOV 2025` 32, `Cartridges/Distillate (MO)` 30, `Moods` 29 (+58), `Fl
   <Category>/                      Disposables · Cartridges · Pods · Concentrates · Pre-Rolls · Edibles · Flower
                                    · Beverages · Shots · Gummies · Stick Packs · Accessories · Merch
     <Market>/                      Muha only: AZ CA MI MO NJ NM NY OH (+ HEMP for the hemp line). Dialed skips this level.
-      <Line — customer-facing> [<line code>]/           "Melted Diamond Disposables 1G [CA029]"
-        <Flavour — customer-facing> [<SKU>]/             "Frozen Pomegranate [CA091]"
+      <Line — customer-facing>/                           "Melted Diamond Disposables 1G"   ← Dropbox tag: CA029
+        <Flavour — customer-facing>/                      "Frozen Pomegranate"              ← Dropbox tag: CA091
           01 device/        the device / can / jar / stick ALONE — front, 45, side, back
           02 packaging/     box, bag or jar only, and box + device
           03 display/       display box, master case, 6-pack / 12-pack, multi-unit sets
@@ -106,12 +106,17 @@ Concentrate NOV 2025` 32, `Cartridges/Distillate (MO)` 30, `Moods` 29 (+58), `Fl
 
 Rules that make it work:
 
-1. **Customer-facing name first, code in square brackets.** Humans read the name; the MCP keys on the
-   bracketed code. Both live in the folder name, so nothing depends on a spreadsheet being open.
-2. **The line code is the SKU-book block number** when one exists (CA029, MI031, NM006). When the book
-   has none, use the line's product-code prefix (Dialed: `DM-LDE`, `DM-NPE`, `DM-EMA`) or a short
-   assigned code (Muha hemp / new lines, §4). The flavour code is the item's SKU (`CA091`, `MI061`,
-   `DM-LDE-BGL`). One code per folder, never two.
+1. **Folder and file names are the customer-facing names only — no codes.** Nobody browsing Dropbox
+   sees a SKU. The correlation lives in two places that people never have to read: a **Dropbox tag** on
+   the line folder and on the flavour folder (Dropbox tags sit on files and folders, up to 32
+   characters, letters/digits/underscore — e.g. `CA029`, `CA091`, `DM_LDE_BGL`; visible only in the
+   item's detail pane), and the **SKU registry** in the engine (`knowledge/skus/<brand>.json`), which
+   maps every line + flavour name to its codes. The DAM reads the tags at discovery (`files/tags/get`)
+   and falls back to the name match; the tag wins when both exist.
+2. **Codes come from the SKU book**: the line's block number (CA029, MI031, NM006) or, where the book
+   has none, the product-code prefix (Dialed `DM_LDE`) or an assigned code (§4). The flavour tag is the
+   item's SKU. The tags are written once by the migration script, and `_Inbox` filing adds them to new
+   folders automatically; a person never types a code.
 3. **Compositions are folders, not file-name guesses.** `01 device` vs `02 packaging` vs `03 display`
    is the difference the content engine needs most (device-only close-ups vs packaging heroes vs
    display shots), so it is a folder, numbered so it sorts the same everywhere.
@@ -126,9 +131,9 @@ Rules that make it work:
    `Category/Market/Line/Flavour/composition` from the vision result plus the SKU registry, and a human
    confirms the move in the DAM UI. Files never go straight into the tree by hand.
 
-File names inside the leaf folders (optional but recommended — the folder already carries the truth):
-`<BRAND>_<MKT>_<LINE-CODE>_<FlavourNoSpaces>_<view>_<composition>_v<N>.png`
-e.g. `MM_CA_CA029_FrozenPomegranate_45_device_v2.png`, `DM_LDE_BlueGlacier_front_can_v1.png`.
+File names inside the leaf folders stay human too: `<Flavour> <view> <composition> v<N>.png`, e.g.
+`Frozen Pomegranate 45 device v2.png`, `Blue Glacier front can v1.png`. The folder and its tag carry
+everything else.
 
 ---
 
@@ -167,10 +172,10 @@ the single can / stick / jar.
 - `knowledge/skus/<brand>.json` — the SKU registry from the sheets (`npm run content -- skus import`).
 - `knowledge/skus/<brand>.coverage.json` — every SKU item ↔ its renders, per composition, with the
   folders they came from; render folders that match nothing (`skus coverage`).
-- The DAM's folder parser (`engine/dam/product-refs.mjs`) will read `[CODE]` in folder names into
-  `flags.render.sku` / `flags.render.lineCode`, and the numbered composition folders into
-  `flags.render.compositionFolder`, so a render is correctly typed the moment it is discovered, before
-  any paid analysis.
+- The DAM's discovery step will read the Dropbox tags on each folder (`files/tags/get`, batched) into
+  `flags.render.sku` / `flags.render.lineCode`, match the folder names against the registry when a tag
+  is missing, and read the numbered composition folders into `flags.render.compositionFolder` — so a
+  render is correctly typed and SKU-linked the moment it is discovered, before any paid analysis.
 - The product kit (`dam_product_refs`, `context_pack`) resolves a request by SKU code, customer-facing
   name, or flavour + line words, and prefers the folder's composition over the model's guess.
 - The Products view shows coverage per SKU line; `_Inbox` proposals appear there for confirmation.
@@ -182,7 +187,7 @@ the single can / stick / jar.
 | Phase | What | Who | Cost |
 |---|---|---|---|
 | 0 | Confirm the names/codes in §4 and the category list; fix the sheet issues in §1 that you care about | Mario + Dropbox owner | — |
-| 1 | Generate the **move map**: for every render file, current path → target path, from the SKU match (confidence ≥ high) and the vision composition; export as CSV; files with low confidence go to `_Inbox/<current folder>` | me | free |
+| 1 | Generate the **move map**: for every render file, current path → target path, from the SKU match (confidence ≥ high) and the vision composition, plus the tag each folder gets; export as CSV; verify the tags API on one test folder first (`files/tags/add`); files with low confidence go to `_Inbox/<current folder>` | me | free |
 | 2 | Review the move map in the DAM UI (per line, with thumbnails); mark exceptions | Mario / Dropbox owner | — |
 | 3 | Execute with the Dropbox API in batches (`move_batch`), dry-run first; the DAM watcher re-indexes the moves; content hashes mean nothing is re-analysed or re-paid | me | free (API), ~1 h |
 | 4 | Drop `_README.md` in each brand's `Renders/`; switch the watcher's `_Inbox` rule on; retire the duplicate trees (`Approved Renders`, `Design/… SOP` copies) by leaving them read-only for 30 days, then archiving | me + Dropbox owner | free |
