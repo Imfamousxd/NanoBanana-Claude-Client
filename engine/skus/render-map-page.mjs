@@ -1,5 +1,5 @@
 import fs from "node:fs"; import path from "node:path"; import sharp from "sharp";
-import { scoreMatch } from "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/engine/skus/coverage.mjs";
+import { scoreMatch, unmatchedKey } from "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/engine/skus/coverage.mjs";
 const S = "/private/tmp/claude-501/-Users-mario-Desktop-Cursor-Projects-NanoBanana-Claude-Client/6052abf4-48c5-44c9-b472-a14ff8c10702/scratchpad";
 const root = "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client";
 const lib = JSON.parse(fs.readFileSync(S + "/render-library.json", "utf8"));
@@ -10,6 +10,7 @@ const dropboxLink = (a) => { const full = (ROOTS[a.source_id] || "") + "/" + a.p
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const noise = /upcoming|special sku|new flavou?rs|below|^-+$|combination kits$|\bsku\b|hemp melted diamomd|mylar bags 3\.5g|king mate|exotic flower jars|donut holes 0\.6g|donuts 1g|muharillos$|fire flower 1\.5g/i;
 const PROPOSED = { "Hemp / Pre Rolls": "Hemp King Pre-Rolls / Duo Strain — strains not in the sheet", "Discontinued / Disposables": "Discontinued hemp disposables (HHC, Delta-10) → _Discontinued", "Pre-Rolls / Glass Jars": "Mates in old glass jars → _old under the market's Mates line", "Concentrates / Old CA Box OCT 2023": "Hash Rosin Concentrate Jars, old box → _old", "Pre-Rolls / Metal Can": "Mates Metal Cans (CA) — flavours not in the sheet", "Pod & Battery Kits / MI 2G Vape Pod": "2G Vape Pods (MI028)", "Pod & Battery Kits / MI 2G Pod Battery Kit": "Pod & Battery Kits (MI028)", "Accessories / Lighter": "Accessories → Lighter", "Moods": "Muha Moods disposables (own line)", "Mavricks": "Mavricks Hash Rosin Disposables 0.5G (MI023)", "Pre-Rolls / MuhaMadness": "Muha Madness Pre-Rolls 1G", "TEMP / 5g cured rosin": "MO Cured Rosin 5g", "TEMP / 2g Infused Joints": "MO 2G Infused Pre-Rolls", "Disposables / Device": "hardware renders → _line of the matching line", "Labubu": "not a product render → out of Renders/", "DialedMoods / Dialed Sku's": "line-level renders (no flavour) → _line of each line", "DialedMoods / Motion": "motion stills → Motion/ (not Renders)", "DialedMoods / HQ": "environment renders → out of Renders/", "DialedMoods / Dialed Mood accessories Renders": "Accessories (needs the accessory names)" };
+const proposedFor = (folder) => PROPOSED[folder] || (/ \/ All in One \(/.test(folder) ? "Older All-in-One device: its own device category under this line, not the current-device SKU rows (name to confirm)" : /(^|\/ )WRONG\b/i.test(folder) ? "Folder marked WRONG by the team: excluded from every SKU row; confirm delete or move to _old" : "");
 const cacheDir = S + "/thumb72"; fs.mkdirSync(cacheDir, { recursive: true });
 async function thumb(asset) {
   const url = asset.thumb; if (!url || !/^https?:/.test(url)) return null;
@@ -36,7 +37,7 @@ for (const [brand, regFile, label] of brands) {
     sections.push({ market, blocks });
   }
   const unmatched = new Map();
-  for (const a of assets) { if (matched.has(a.id)) continue; const key = a.render?.group || path.dirname(a.path); const g = unmatched.get(key) || { folder: key, market: a.render?.market || null, files: 0, products: new Map(), samples: [] }; g.files += 1; if (a.product) g.products.set(a.product, (g.products.get(a.product) || 0) + 1); if (g.samples.length < 6) { g.samples.push(a); need.set(a.id, a); } unmatched.set(key, g); }
+  for (const a of assets) { if (matched.has(a.id)) continue; const key = unmatchedKey(a); const g = unmatched.get(key) || { folder: key, market: a.render?.market || null, files: 0, products: new Map(), samples: [] }; g.files += 1; if (a.product) g.products.set(a.product, (g.products.get(a.product) || 0) + 1); if (g.samples.length < 6) { g.samples.push(a); need.set(a.id, a); } unmatched.set(key, g); }
   const groups = [...unmatched.values()].filter((g) => g.files >= 2).sort((a, b) => b.files - a.files);
   console.log(label, "items", items, "covered", covered, "matched files", matched.size, "unmatched groups", groups.length, "thumbs to fetch", need.size);
   const uris = new Map(); const list = [...need.values()]; const results = await mapLimit(list, 16, thumb); list.forEach((a, i) => uris.set(a.id, results[i]));
@@ -53,7 +54,7 @@ for (const [brand, regFile, label] of brands) {
     }
   }
   html += `<h3 id="${regFile}-unmatched">In the Dropbox, no SKU row — needs guidance</h3><p class="lede">${assets.length - matched.size} ${label} renders match nothing in the books. Grouped by the folder they live in today, with what the vision model calls them and a few samples. The right column is my proposed handling; correct it.</p><div class="scroll"><table class="un"><thead><tr><th>Folder today</th><th class="n">Files</th><th>What they are (vision)</th><th>Samples</th><th>Proposed handling</th></tr></thead><tbody>`;
-  for (const g of groups) html += `<tr><td class="mono">${esc(g.folder)}${g.market ? ` <span class="dim">[${esc(g.market)}]</span>` : ""}</td><td class="n">${g.files}</td><td class="dim">${esc([...g.products.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([p, n]) => `${p} ×${n}`).join(" · "))}</td><td class="pics">${g.samples.map(img).join("")}</td><td class="dim">${esc(PROPOSED[g.folder] || "")}</td></tr>`;
+  for (const g of groups) html += `<tr><td class="mono">${esc(g.folder)}${g.market ? ` <span class="dim">[${esc(g.market)}]</span>` : ""}</td><td class="n">${g.files}</td><td class="dim">${esc([...g.products.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([p, n]) => `${p} ×${n}`).join(" · "))}</td><td class="pics">${g.samples.map(img).join("")}</td><td class="dim">${esc(proposedFor(g.folder))}</td></tr>`;
   html += `</tbody></table></div>`;
   const map = {}; for (const [id, uri] of uris) if (uri) map[id] = uri;
   pages.push({ label, regFile, html: html + `<script>const T=${JSON.stringify(map)};for(const el of document.querySelectorAll("img[data-t]"))el.src=T[el.dataset.t]||"";</script>` });

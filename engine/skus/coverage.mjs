@@ -45,7 +45,8 @@ function lineWordsOf(text) { const t = norm(text); return LINE_WORDS.filter(([as
 
 function assetText(asset) {
   const render = asset.render || {};
-  return { full: norm(`${asset.product || ""} ${asset.title || ""} ${asset.path || ""} ${render.category || ""} ${render.line || ""} ${render.leaf || ""}`), compactFull: compact(`${asset.product || ""} ${asset.title || ""} ${asset.path || ""} ${render.category || ""} ${render.line || ""} ${render.leaf || ""}`), market: render.market || (String(asset.path || "").match(/(?:^|\/|_)(CA|MI|MO|NJ|NM|NY|OH|AZ)(?:\/|_| )/) || [])[1] || (/(^|\/)hemp(\/|$)/i.test(String(asset.path || "")) ? "HEMP" : null) };
+  const spaced = norm(`${asset.product || ""} ${asset.title || ""} ${String(asset.path || "").replace(/([a-z])([A-Z])/g, "$1 $2")} ${render.category || ""} ${render.line || ""} ${render.leaf || ""}`);
+  return { spaced, full: norm(`${asset.product || ""} ${asset.title || ""} ${asset.path || ""} ${render.category || ""} ${render.line || ""} ${render.leaf || ""}`), compactFull: compact(`${asset.product || ""} ${asset.title || ""} ${asset.path || ""} ${render.category || ""} ${render.line || ""} ${render.leaf || ""}`), market: render.market || (String(asset.path || "").match(/(?:^|\/|_)(CA|MI|MO|NJ|NM|NY|OH|AZ)(?:\/|_| )/) || [])[1] || (/(^|\/)hemp(\/|$)/i.test(String(asset.path || "")) ? "HEMP" : null) };
 }
 
 // A render belongs to exactly one line: the vape form (disposable / cartridge / pod), the format (1G vs 2G vs
@@ -66,13 +67,30 @@ const CATEGORY_WALLS = {
   powders: [/stick|packet|sachet|powder|electrolyte|hydration|creatine|collagen|whey|protein|fiber|eaa/, /gumm|shot|\bcan\b|cans/],
 };
 const FORMATS = ["05g", "06g", "1g", "15g", "168g", "2g", "35g", "4g", "5g", "7g", "1oz"];
-const GENERIC_RE = /ai resources|master case|group shot|website images|badge|catalog resized|motion\//i;
+const GENERIC_RE = /ai resources|master case|group shot|website images|badge|catalog resized|motion\/|redesign ?test/i;
+// Device iterations: a folder that names an older device ("CA_1G_Distillate_All in One_Sept2024") is its own
+// device category. Its renders never attach to a SKU row for the current device; they surface as their own
+// group in the unmatched table so the team can name the category.
+const ITERATION_RE = /all[ _-]?in[ _-]?one[ _-]*([a-z]{3,9})?[ _-]?(20\d\d)/i;
+export function deviceIterationOf(asset) {
+  for (const seg of String(asset.path || "").split("/")) { const m = seg.match(ITERATION_RE); if (m) return `All in One (${m[1] ? m[1][0].toUpperCase() + m[1].slice(1).toLowerCase() + " " : ""}${m[2]})`; }
+  return null;
+}
+// A folder the team marked WRONG is quarantined: nothing in it attaches to a SKU row.
+export function quarantined(asset) { return String(asset.path || "").split("/").some((seg) => /^wrong\b/i.test(seg.trim())); }
+// The key an unmatched render is grouped under in the coverage report and the render map.
+export function unmatchedKey(asset) { const render = asset.render || {}; const iteration = deviceIterationOf(asset); return `${render.group || path.dirname(String(asset.path || ""))}${iteration ? " / " + iteration : ""}`; }
+// Pre-roll forms are walls too: a Mates metal-can line never takes a King & Queen joint, a Muharillo or a Donut.
+const PREROLL_FORMS = [[/\bmates?\b|metal cans?/, /\bmates?\b|\bmetal cans?\b|\bkief ?joints?\b/], [/\bkings?\b|\bqueens?\b/, /\bkings?\b|\bqueens?\b/], [/\bdonuts?\b/, /\bdonuts?\b/], [/\bmadness\b/, /\bmadness\b/], [/\bmuharillos?\b|\bblunts?\b/, /\bmuharillos?\b|\bblunts?\b/]];
 function formatsIn(compactText) { return FORMATS.filter((fmt) => new RegExp("(^|[^0-9])" + fmt + "(?![0-9])").test(compactText)); }
 function genOf(text) { const m = String(text).toLowerCase().match(/gen\s?(\d)/); return m ? Number(m[1]) : null; }
 
 /** Score one asset against one SKU item. 0 = no match. */
 export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   if (GENERIC_RE.test(String(asset.path || ""))) return 0;
+  if (quarantined(asset)) return 0;
+  const iteration = deviceIterationOf(asset);
+  if (iteration && !/all ?in ?one|\baio\b/.test(norm(`${line.line} ${line.section || ""}`))) return 0;
   for (const [seg, re] of [["moods", /moods/i], ["mavricks", /mavrick/i], ["mmxcookies", /cookies/i], ["madness", /madness/i], ["magnetic", /magnetic/i], ["dual", /dual/i]]) if (new RegExp("(^|/)[^/]*\\b" + seg + "\\b[^/]*(/|$)", "i").test(String(asset.path || "")) && !re.test(`${line.line} ${line.section || ""}`)) return 0;
   if (asset.composition === "lineup" || /lineup|line up|group|all flavou?rs|assorted|variety/i.test(`${asset.title || ""} ${String(asset.path || "").split("/").pop()}`)) return 0;
   if (/,.*,|\band\b.*\band\b/.test(String(asset.product || "")) && !new RegExp(compact(item.name).slice(0, 8)).test(compact(asset.product))) return 0;
@@ -98,6 +116,8 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   if (wantStrength.length) { const haveAny = STRENGTH_WORDS.filter(([, has]) => has.test(prepared.full)); if (haveAny.length && !haveAny.some((s) => wantStrength.includes(s))) return 0; }
   const wall = CATEGORY_WALLS[line.category];
   if (wall) { if (!wall[0].test(prepared.compactFull)) return 0; if (wall[1].test(prepared.compactFull)) return 0; }
+  const wantForms = PREROLL_FORMS.filter(([ask]) => ask.test(norm(`${line.line} ${line.section || ""}`)));
+  if (wantForms.length) { const haveForms = PREROLL_FORMS.filter(([, has]) => has.test(prepared.spaced || prepared.full)); if (haveForms.length && !haveForms.some((f) => wantForms.includes(f))) return 0; }
   if (line.format) { const want = compact(line.format); const present = formatsIn(prepared.compactFull); if (present.length && !present.includes(want)) return 0; }
   if (line.market && prepared.market && prepared.market !== line.market) return 0;
   const lineGen = line.generation ? genOf(line.generation) : null; const assetGen = genOf(`${asset.path} ${asset.title || ""}`);
@@ -142,7 +162,7 @@ export function computeCoverage(registry, library, { threshold = 3 } = {}) {
   for (const { asset } of prepared) {
     if (matchedAssetIds.has(asset.id)) continue;
     const render = asset.render || {};
-    const key = `${render.group || path.dirname(asset.path)}`;
+    const key = unmatchedKey(asset);
     const group = unmatched.get(key) || { folder: key, market: render.market || null, files: 0, products: new Map(), samples: [], compositions: {} };
     group.files += 1;
     if (asset.product) group.products.set(asset.product, (group.products.get(asset.product) || 0) + 1);

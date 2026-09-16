@@ -379,6 +379,12 @@ Waiting on the user: more row corrections; names/handling for the "no SKU row" f
 - Search: caller-supplied `undefined` filters must not erase parsed ones; brand is never relaxed;
   results below 25 % of the top score are dropped (user: "if it isn't a perfect match, leave it out").
 
-**Row corrections queued (2026-09-16, not yet applied):**
-- Sour Apple (edibles): assets fine but no solid single (device-only) render exists — verify in the future when more renders arrive.
-- AZ004 / NJ003 "Classic Flavor Line, infused" (Mates Metal Cans): the Vanilla Cookies renders assigned there are Muha Mates assets, not the Classic line → add a wall between the Classic line and Mates renders (Classic ≠ Mates), then rebuild the pages with `engine/skus/render-map-page.mjs` and republish both URLs.
+**Row corrections applied 2026-09-16 night (all in `engine/skus/coverage.mjs`, pages rebuilt, artifacts republished — Muha v8, Dialed v6):**
+- Device iterations: a folder naming an older device (`…_All in One_Sept2024`, incl. its `oldVersion/`) is its own device category (`deviceIterationOf`). Its renders never attach to a current-device SKU row; they appear in the "no SKU row" table as `<Category / Line> / All in One (Sept 2024)` (77 files: CA Distillate 40, CA Live Resin 10, CA Melted Diamonds 10, MI Live Resin 9, MI Melted Diamond 8). User's words: Pineapple Express 1g distillate had "a different device … these will be in a separate category". Pineapple Express CA093 now = the 4 TechDesign June 2025 renders only. Side effect: Bubble Gum Burst CA026 has no current-device render (its 4 were the old AIO device).
+- Folders marked `WRONG - …` (NY 2G Distillate 2026, NY 1G LR 2026, NY 1G MD 2026 — 68 files) are quarantined (`quarantined`): never attach to any row (they had leaked into 13 NY rows).
+- `RedesignTest` folders (Pre-Rolls V1/V2 shots, Edibles Icons Variations) are generic mockups: never attach. This is the "Vanilla Cookies on the Classic Flavor Line are Muha Mates assets" fix (AZ004/NJ003 Vanilla Cookies → 0 renders; also removed the same shots from NM034 Vanilla Cookies and every Raspberry Pineapple gummies row).
+- Pre-roll forms are walls (`PREROLL_FORMS`): a Mates/metal-can line never takes King & Queen joints, Muharillos, Donuts or Madness renders, and vice versa.
+- Sour Apple (edibles): kept; no solid single (device-only) render exists — verify when more renders arrive.
+- Coverage now: Muha 658/1,165 items, 2,949 renders attached; Dialed 116/159, 899. `unmatchedKey()` is shared by coverage and the page builder.
+
+**Still waiting on the user:** more row corrections; names/handling for the "no SKU row" folders (now also: what to call the Sept-2024 All-in-One device category, and whether the WRONG folders get deleted or moved to `_old`); "run the six".
