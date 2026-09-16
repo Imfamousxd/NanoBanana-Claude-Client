@@ -106,6 +106,9 @@ const LINE_WORDS = [
   [/\b(hemp|thca)\b/, /hemp|thca/],
 ];
 
+const LINE_WORD_RE = /\b(dispo|disposables?|aio|all[- ]in[- ]one|carts?|cartridges?|jars?|flower|pre[- ]?rolls?|joints?|kief|gumm(?:y|ies)|edibles?|live resin|distillate|hash rosin|rosin|concentrates?|badder|diamonds?|seltzer|cans?|stick ?packs?|sachets?|vials?|hemp|thca)\b/g;
+export function stripLineWords(needle) { return String(needle).replace(LINE_WORD_RE, " ").replace(/\s+/g, " ").trim(); }
+
 function matchStrength(asset, needles) {
   const product = String(asset.product || asset.analysis?.product || "").toLowerCase();
   const render = asset.flags?.render || {};
@@ -118,14 +121,13 @@ function matchStrength(asset, needles) {
   let lineBonus = 0;
   for (const [, has] of asked) lineBonus += has.test(haystack) ? 0.5 : -2;
   let best = 0;
-  for (const needle of needles) {
+  for (const raw of needles) {
+    const needle = stripLineWords(raw).length >= 3 ? stripLineWords(raw) : raw;
     if (product.includes(needle)) best = Math.max(best, 3);
     if (folder.includes(needle)) best = Math.max(best, 2.5);
     if (file.includes(needle) || title.includes(needle)) best = Math.max(best, 2);
     const tokens = needle.split(/\s+/).filter((token) => token.length >= 3);
     if (tokens.length > 1 && tokens.every((token) => product.includes(token) || folder.includes(token) || file.includes(token))) best = Math.max(best, 1.5);
-    // The flavour alone also matches when the query carried a line word ("gush mintz jar"): the line bonus decides.
-    if (asked.length) { const flavour = needle.replace(/\b(dispo|disposables?|aio|all[- ]in[- ]one|carts?|cartridges?|jars?|flower|pre[- ]?rolls?|joints?|kief|gumm(y|ies)|edibles?|live resin|distillate|hash rosin|rosin|concentrates?|badder|diamonds?|seltzer|cans?|stick ?packs?|sachets?|vials?|hemp|thca)\b/g, " ").replace(/\s+/g, " ").trim(); if (flavour.length >= 3 && (product.includes(flavour) || folder.includes(flavour) || file.includes(flavour) || title.includes(flavour))) best = Math.max(best, 2); }
   }
   return best > 0 ? best + lineBonus : 0;
 }
@@ -145,7 +147,8 @@ const slim = (asset, why) => ({
 export async function resolveProductReferences(db, graph, root, { brand = null, product, intent = "", limit = 3 } = {}) {
   if (!product) throw new Error("resolveProductReferences needs a product name");
   const needles = needlesFor(root, graph, brand, product);
-  const params = [needles.map((needle) => `%${needle}%`)];
+  const searchTerms = [...new Set(needles.map((needle) => (stripLineWords(needle).length >= 3 ? stripLineWords(needle) : needle)))];
+  const params = [searchTerms.map((needle) => `%${needle}%`)];
   const brandClause = brand ? (params.push(brand), ` and brand = $${params.length}`) : "";
   const { rows } = await db.query(`
     select id, source_id, path, title, class, subclass, product, quality, reference_roles, has_alpha, width, height, proxies, flags, analysis, verdict
