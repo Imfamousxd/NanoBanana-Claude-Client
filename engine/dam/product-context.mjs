@@ -210,3 +210,22 @@ export function exportForStudio(result, { localPaths = {} } = {}) {
   }
   return out;
 }
+
+/** Resolve a product, bring its chosen files onto disk, and return them in the studio's refs shape. */
+export async function studioReferences(db, graph, root, { brand = null, product, intent = "", materialize = true } = {}) {
+  const result = await resolveProductReferences(db, graph, root, { brand, product, intent, limit: 3 });
+  if (!result.kit) return { product, brand, refs: [], note: result.note };
+  const localPaths = {};
+  const problems = [];
+  if (materialize) {
+    const { materializeReference } = await import("../learning/auto-refs.mjs");
+    let dropbox = null;
+    try { const { DropboxClient } = await import("./dropbox.mjs"); dropbox = DropboxClient.fromEnv(process.env); } catch { dropbox = null; }
+    for (const item of [...result.kit.recommended, ...result.kit.cutout.slice(0, 1), ...result.kit.label.slice(0, 1)]) {
+      if (!item || localPaths[item.id]) continue;
+      try { localPaths[item.id] = (await materializeReference(root, db, item, { dropbox, preferOriginal: item.composition === "label-flat" })).path; }
+      catch (error) { problems.push(`${item.path.split("/").pop()}: ${String(error.message).slice(0, 100)}`); }
+    }
+  }
+  return { product, brand, usable: result.usable, refs: exportForStudio(result, { localPaths }), missing: result.coverage?.missing || [], problems };
+}

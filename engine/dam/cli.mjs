@@ -105,6 +105,12 @@ export async function runDamCommand(root, args, print) {
         console.log(renderProductKit(result).join("\n"));
         return;
       }
+      case "studio-refs": {
+        const { studioReferences } = await import("./product-context.mjs");
+        const product = positional(rest).join(" ");
+        if (!product) throw new Error("studio-refs needs a product name.");
+        return print(await studioReferences(worker.db, graph, root, { brand: brandOf(option(rest, "--brand")), product, intent: option(rest, "--intent", ""), materialize: !rest.includes("--no-fetch") }));
+      }
       case "products": {
         const { productDirectory, renderDirectoryText } = await import("./product-refs.mjs");
         const result = await productDirectory(worker.db, graph, root, { brand: brandOf(option(rest, "--brand")), since: option(rest, "--since"), limit: Number(option(rest, "--best", 6)) });

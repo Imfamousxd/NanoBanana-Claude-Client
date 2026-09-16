@@ -71,6 +71,13 @@ export function createDamTools(root, graph) {
       handler: async ({ brand, product, intent, limit, text }) => { const { resolveProductReferences, renderProductKit } = await import("./product-context.mjs"); const result = await resolveProductReferences(getDb(), graph(), root, { brand: brandOf(brand), product, intent: intent || "", limit }); return text ? { text: renderProductKit(result).join("\n") } : result; },
     },
     {
+      name: "dam_studio_refs",
+      title: "Product references in the video studio's refs shape",
+      description: "For the dialed-studio video MCP: name a product (and what you are making) and get [{path, name, role, describe, contains_person, third_party_marks}] ready to pass as refs to create_from_request / scene_frame / image_generate — the files chosen by the DAM kit (canonical, device, cutout, label), brought onto disk under .content-engine/refs. Free; nothing is generated. The studio's own generation logic is untouched.",
+      inputSchema: { brand: brandField, product: z.string(), intent: z.string().optional(), materialize: z.boolean().optional().default(true).describe("Fetch the files to disk (needed for video briefs); false returns Dropbox paths only") },
+      handler: async ({ brand, product, intent, materialize }) => { const { studioReferences } = await import("./product-context.mjs"); return studioReferences(getDb(), graph(), root, { brand: brandOf(brand), product, intent: intent || "", materialize }); },
+    },
+    {
       name: "dam_product_directory",
       title: "Product renders per brand and product line",
       description: "The product-render directory built from the Dropbox render folders: for each brand and product line, how many render files exist, how many are analysed, the product names the vision model saw, the best files to pass as references (id, thumb, alpha, roles), what is missing (no transparent cutout / no canonical), and registry products with no render yet. Free; reads the database only.",
