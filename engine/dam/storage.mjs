@@ -53,9 +53,18 @@ export class ProxyStore {
       }), { timeoutMs: 120_000, attempts: 2, retryableStatuses: new Set([408, 429, 500, 502, 503, 504]) });
       return `${this.url}/storage/v1/object/public/${this.bucket}/${objectPath}`;
     } catch (error) {
-      console.error(`[dam] proxy upload failed for ${objectPath} (${error.message}); keeping a local copy`);
-      this.mode = "local";
-      return this.put(localPath, objectPath, contentType);
+      // 409 = the object already exists (another worker uploaded the same key): the public URL is right.
+      if (error?.details?.status === 409 || /HTTP 409/.test(String(error.message))) return `${this.url}/storage/v1/object/public/${this.bucket}/${objectPath}`;
+      // Any other failure keeps a local copy for THIS file only. The mode never flips: one bad upload used to
+      // send every later proxy of the worker's lifetime to local disk (tens of thousands of thumbs).
+      console.error(`[dam] proxy upload failed for ${objectPath} (${error.message}); keeping a local copy for this file`);
+      const destination = path.join(this.localRoot, "proxies", objectPath);
+      fs.mkdirSync(path.dirname(destination), { recursive: true });
+      if (path.resolve(localPath) !== path.resolve(destination)) fs.copyFileSync(localPath, destination);
+      return destination;
     }
   }
+
+  /** Public URL for an object key, whether or not it has been uploaded. */
+  publicUrl(objectPath) { return `${this.url}/storage/v1/object/public/${this.bucket}/${objectPath}`; }
 }

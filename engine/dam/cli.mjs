@@ -111,6 +111,11 @@ export async function runDamCommand(root, args, print) {
         if (!product) throw new Error("studio-refs needs a product name.");
         return print(await studioReferences(worker.db, graph, root, { brand: brandOf(option(rest, "--brand")), product, intent: option(rest, "--intent", ""), materialize: !rest.includes("--no-fetch") }));
       }
+      case "repair-proxies": {
+        const { repairProxies } = await import("./repair-proxies.mjs");
+        await worker.store.ready();
+        return print(await repairProxies(worker.db, worker.store, { limit: Number(option(rest, "--limit", 50000)), concurrency: Number(option(rest, "--concurrency", 8)) }));
+      }
       case "products": {
         const { productDirectory, renderDirectoryText } = await import("./product-refs.mjs");
         const result = await productDirectory(worker.db, graph, root, { brand: brandOf(option(rest, "--brand")), since: option(rest, "--since"), limit: Number(option(rest, "--best", 6)) });
