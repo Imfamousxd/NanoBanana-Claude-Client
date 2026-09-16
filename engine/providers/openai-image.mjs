@@ -31,7 +31,8 @@ export async function runOpenAIImage({ root, job, prompt, assets }) {
   const useEdits = references.length > 0 || mask;
   const endpoint = useEdits ? "https://api.openai.com/v1/images/edits" : "https://api.openai.com/v1/images/generations";
   const size = job.provider.size || SIZE_MAP[job.deliverable.aspectRatio] || "auto";
-  const quality = job.deliverable.quality || "high";
+  // gpt-image-2 at quality:high dies at the ~60 s connection cap at every size (measured); medium lands in ~49 s.
+  const quality = job.deliverable.quality || (model.startsWith("gpt-image-2") ? "medium" : "high");
   const outputFormat = job.provider.outputFormat || "png";
 
   const response = await fetchWithRetry(endpoint, () => {
@@ -69,7 +70,7 @@ export async function runOpenAIImage({ root, job, prompt, assets }) {
         ...(job.provider.background ? { background: job.provider.background } : {}),
       }),
     };
-  }, { timeoutMs: job.provider.timeoutMs || 300_000, attempts: 4, retryNetworkErrors: false, onRetry: retryLogger("OpenAI Image") });
+  }, { timeoutMs: job.provider.timeoutMs || 300_000, attempts: 3, retryNetworkErrors: true, onRetry: retryLogger("OpenAI Image") }); // the body is rebuilt per attempt; a dropped socket (UND_ERR_SOCKET) is retried
 
   const data = await response.json();
   const items = data.data || [];

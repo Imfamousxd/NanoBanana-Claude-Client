@@ -121,5 +121,40 @@ test("provider validation rejects unsupported Omni interpolation and GPT Image 2
     mode: "campaign-image",
     provider: { id: "openai-image", background: "transparent" },
   });
-  assert(validateJob(image, root).errors.some((issue) => issue.code === "OPENAI_TRANSPARENCY_UNSUPPORTED"));
+  // Transparent output routes to gpt-image-1 (the only model that renders it) instead of failing…
+  assert.equal(image.provider.model, "gpt-image-1");
+  assert(!validateJob(image, root).errors.some((issue) => issue.code === "OPENAI_TRANSPARENCY_UNSUPPORTED"));
+  // …but an explicit gpt-image-2 request for transparency is still refused.
+  const forced = normalizeJob({ ...base, mode: "campaign-image", provider: { id: "openai-image", model: "gpt-image-2", background: "transparent" } });
+  forced.provider.model = "gpt-image-2";
+  assert(validateJob(forced, root).errors.some((issue) => issue.code === "OPENAI_TRANSPARENCY_UNSUPPORTED"));
+});
+
+test("style presets: a job with only brand, style and product gets routing, size, scaffold and auto references; the preset id never leaks into the prompt", async () => {
+  const { STYLE_PRESETS, CHANNELS, applyPreset, variationHypotheses } = await import("../engine/prompts/presets.mjs");
+  const { compilePrompt } = await import("../engine/prompts/compiler.mjs");
+  const { loadGraph } = await import("../engine/knowledge/graph.mjs");
+  assert.ok(Object.keys(STYLE_PRESETS).length >= 12);
+  for (const [id, preset] of Object.entries(STYLE_PRESETS)) {
+    assert.ok(preset.title && preset.mode && preset.provider?.id && CHANNELS[preset.channel], id);
+    assert.ok(preset.variations.length >= 2, `${id} needs named variations`);
+    assert.ok(!/\bno logo\b|\bno text\b/i.test(JSON.stringify(preset.scaffold)), `${id}: negatives summon — describe what belongs`);
+  }
+  const job = normalizeJob({ brand: "dialed-moods", objective: "Hero of Blue Glacier", products: ["Blue Glacier"], creative: { style: "product-hero" }, output: { directory: "out", basename: "j" } });
+  assert.equal(job.mode, "product-image");
+  assert.equal(job.provider.id, "openai-image");
+  assert.equal(job.deliverable.aspectRatio, "4:5");
+  assert.equal(job.deliverable.candidates, 3);
+  assert.equal(job.deliverable.quality, "medium");
+  assert.equal(job.references.auto, true);
+  assert.deepEqual(variationHypotheses(STYLE_PRESETS["product-hero"], 3).length, 3);
+  const compiled = compilePrompt(job, loadGraph(process.cwd()), { laws: [{ claim: "Never render the can label in a script typeface." }], exemplars: [] });
+  assert.ok(!/Finish: product-hero/.test(compiled.prompt));
+  assert.ok(/RULES LEARNED FROM PAST REJECTIONS/.test(compiled.prompt));
+  assert.equal(compiled.variants.length, 3);
+  assert.ok(compiled.variants[0].includes("VARIATION 1 OF 3"));
+  const transparent = normalizeJob({ brand: "dialed-moods", objective: "cutout", products: ["Blue Glacier"], creative: { style: "transparent-cutout" }, output: { directory: "out", basename: "j" } });
+  assert.equal(transparent.provider.model, "gpt-image-1");
+  assert.equal(transparent.provider.background, "transparent");
+  assert.equal(applyPreset({ creative: {} }).creative.style, undefined);
 });

@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { EngineError } from "./errors.mjs";
 import { readJson, resolveInside, slugify } from "./files.mjs";
+import { applyPreset, CHANNELS, STYLE_IDS } from "../prompts/presets.mjs";
 
 const MODES = new Set(["ugc-image", "ugc-video", "product-image", "campaign-image", "campaign-video"]);
 const PROVIDERS = new Set(["openai-image", "gemini-image", "higgsfield-image", "google-omni-video", "google-veo", "replicate-seedance"]);
@@ -20,9 +21,14 @@ export function normalizeJob(input) {
   job.creative.mustAvoid ??= [];
   job.creative.onImageText ??= [];
   job.deliverable ??= {};
+  // A style preset fills routing, size, scaffold and reference wants; explicit job values win.
+  applyPreset(job);
+  if (job.references?.products?.length || job.products?.length) { job.references ??= {}; job.references.auto ??= true; }
   job.deliverable.candidates ??= 2;
   job.deliverable.aspectRatio ??= job.mode?.includes("video") ? "9:16" : "4:5";
   job.provider ??= {};
+  // Transparent output exists only on gpt-image-1; route there instead of failing.
+  if (job.provider.background === "transparent" && (job.provider.id === "openai-image" || !job.provider.id)) { job.provider.id = "openai-image"; if (!job.provider.model || job.provider.model.startsWith("gpt-image-2")) job.provider.model = "gpt-image-1"; job.provider.outputFormat ||= "png"; }
   if (job.mode?.includes("video")) {
     job.deliverable.durationSeconds ??= job.provider.id === "google-veo" ? 8 : 5;
     job.deliverable.resolution ??= "1080p";
@@ -46,6 +52,8 @@ export function validateJob(job, root, { requireApproval = false } = {}) {
   if (!job.brand) add(errors, "REQUIRED", "brand is required.", "brand");
   if (!job.objective) add(errors, "REQUIRED", "objective is required.", "objective");
   if (!MODES.has(job.mode)) add(errors, "INVALID_MODE", `mode must be one of: ${[...MODES].join(", ")}.`, "mode");
+  if (job.creative?.style && !STYLE_IDS.includes(job.creative.style)) add(errors, "INVALID_STYLE", `creative.style must be one of: ${STYLE_IDS.join(", ")}.`, "creative.style");
+  if (job.deliverable?.channel && !CHANNELS[job.deliverable.channel]) add(errors, "INVALID_CHANNEL", `deliverable.channel must be one of: ${Object.keys(CHANNELS).join(", ")}.`, "deliverable.channel");
   if (!PROVIDERS.has(job.provider?.id)) add(errors, "INVALID_PROVIDER", `provider.id must be one of: ${[...PROVIDERS].join(", ")}.`, "provider.id");
 
   const isVideo = job.mode?.includes("video");
@@ -106,7 +114,8 @@ export function validateJob(job, root, { requireApproval = false } = {}) {
   }
 
   if ((job.mode === "product-image" || /product|unbox|package|vial|bottle/i.test(`${job.objective} ${job.creative?.concept || ""}`)) && !seenRoles.has("product-canon")) {
-    add(errors, "MISSING_PRODUCT_CANON", "Product-led work requires an asset with role product-canon.", "assets");
+    if (job.references?.auto && (job.references?.products?.length || job.products?.length)) add(warnings, "PRODUCT_CANON_PENDING", "No product-canon asset yet; the plan resolves it from the library for the named product(s).", "assets");
+    else add(errors, "MISSING_PRODUCT_CANON", "Product-led work requires an asset with role product-canon, or references.products so the library supplies one.", "assets");
   }
   const seedanceReferenceRoles = new Set(["reference-image", "creator-canon", "character-canon", "product-canon", "style-reference", "environment-reference"]);
   if (job.provider?.id === "replicate-seedance" && seenRoles.has("first-frame") && job.assets.some((asset) => seedanceReferenceRoles.has(asset.role))) {

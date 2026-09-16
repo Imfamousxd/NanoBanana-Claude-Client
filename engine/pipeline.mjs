@@ -10,6 +10,31 @@ import { inspectAssets } from "./quality/asset-inspector.mjs";
 import { runPreflight } from "./quality/preflight.mjs";
 import { runProvider } from "./providers/index.mjs";
 import { appendPromptLog } from "./learning/prompt-log.mjs";
+import { resolveAutoReferences } from "./learning/auto-refs.mjs";
+import { searchLaws } from "./learning/laws.mjs";
+import { loadLearnings } from "./learning/store.mjs";
+import { getPreset } from "./prompts/presets.mjs";
+import { tokenize } from "./knowledge/retrieval.mjs";
+
+/** Laws and exemplars relevant to this job, for the prompt. Never throws. */
+function learnedContext(root, graph, job, compiledQuery) {
+  try {
+    const laws = searchLaws(root, graph, compiledQuery, { brand: job.brand, category: job.mode, limit: 8 })
+      .filter((law) => ["moderate", "strong", "measured"].includes(law.confidence) || !law.confidence)
+      .slice(0, 6);
+    const { store } = loadLearnings(root, graph, job.brand);
+    const terms = new Set(tokenize(compiledQuery));
+    const exemplars = (store.exemplars || [])
+      .map((exemplar) => ({ exemplar, score: tokenize(`${exemplar.prompt} ${(exemplar.tags || []).join(" ")} ${exemplar.product || ""} ${exemplar.category || ""}`).filter((term) => terms.has(term)).length }))
+      .filter((item) => item.score > 1)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 2)
+      .map(({ exemplar }) => ({ id: exemplar.id, excerpt: String(exemplar.prompt || "").replace(/\s+/g, " ").slice(0, 280) }));
+    return { laws: laws.map((law) => ({ id: law.id, claim: law.claim, confidence: law.confidence })), exemplars };
+  } catch (error) {
+    return { laws: [], exemplars: [], unavailable: String(error.message).slice(0, 120) };
+  }
+}
 
 function mergeChecks(validation, preflight) {
   const errors = [...validation.errors, ...preflight.errors];
@@ -17,13 +42,23 @@ function mergeChecks(validation, preflight) {
   return { ok: errors.length === 0, errors, warnings };
 }
 
-export function planJob(root, requestedPath, { requireApproval = false } = {}) {
+export async function planJob(root, requestedPath, { requireApproval = false } = {}) {
   const { path: jobPath, job } = loadJob(root, requestedPath);
   const graph = loadGraph(root);
+  // Automatic references: the library supplies the product's canonical, device, cutout, label… before validation.
+  const preset = getPreset(job.creative?.style);
+  let autoRefs = { assets: [], kits: [], notes: [] };
+  if (job.references?.auto) {
+    autoRefs = await resolveAutoReferences(root, graph, job, preset);
+    for (const asset of autoRefs.assets) if (!job.assets.some((existing) => existing.path === asset.path)) job.assets.push(asset);
+  }
   const validation = validateJob(job, root, { requireApproval });
   let compiled;
   try {
-    compiled = compilePrompt(job, graph);
+    const query = [job.brand, job.mode, job.objective, job.creative?.concept, ...(job.products || job.references?.products || [])].filter(Boolean).join(" ");
+    const learned = learnedContext(root, graph, job, query);
+    compiled = compilePrompt(job, graph, { ...learned, referenceNotes: autoRefs.notes });
+    compiled.learned = learned;
   } catch (error) {
     if (error instanceof EngineError) {
       validation.errors.push({ code: error.code, message: error.message, field: "brand" });
@@ -46,6 +81,9 @@ export function planJob(root, requestedPath, { requireApproval = false } = {}) {
     jobPath: path.relative(root, jobPath),
     job,
     prompt: compiled.prompt,
+    variants: compiled.variants || [],
+    learned: compiled.learned || null,
+    autoReferences: { kits: autoRefs.kits, notes: autoRefs.notes, attached: autoRefs.assets.map((asset) => ({ path: asset.path, role: asset.role, ...asset.auto })) },
     context,
     assets,
     brand: compiled.brand,
@@ -54,7 +92,7 @@ export function planJob(root, requestedPath, { requireApproval = false } = {}) {
 }
 
 export async function executeJob(root, requestedPath) {
-  const plan = planJob(root, requestedPath, { requireApproval: true });
+  const plan = await planJob(root, requestedPath, { requireApproval: true });
   const graph = loadGraph(root);
   if (!plan.checks.ok) {
     throw new EngineError("PREFLIGHT_FAILED", "Job cannot run until all preflight errors are fixed.", plan.checks);
@@ -74,7 +112,7 @@ export async function executeJob(root, requestedPath) {
     manifest.status = "running";
     manifest.startedAt = new Date().toISOString();
     saveManifest(root, plan.job, manifest);
-    const result = await runProvider({ root, job: plan.job, prompt: plan.prompt, assets: plan.assets });
+    const result = await runProvider({ root, job: plan.job, prompt: plan.prompt, variants: plan.variants, assets: plan.assets });
     manifest.provider = result.provider;
     manifest.usage = result.usage || null;
     recordOutputs(manifest, root, result.outputs);

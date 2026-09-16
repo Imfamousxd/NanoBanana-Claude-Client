@@ -4,50 +4,151 @@
   "title": "Content Engine Job",
   "type": "object",
   "additionalProperties": false,
-  "required": ["version", "id", "brand", "mode", "objective", "deliverable", "provider", "creative", "output"],
+  "required": [
+    "version",
+    "id",
+    "brand",
+    "mode",
+    "objective",
+    "deliverable",
+    "provider",
+    "creative",
+    "output"
+  ],
   "properties": {
-    "$schema": {"type": "string"},
-    "version": {"const": 1},
-    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,63}$"},
-    "brand": {"type": "string", "minLength": 1},
-    "mode": {
-      "enum": ["ugc-image", "ugc-video", "product-image", "campaign-image", "campaign-video"]
+    "$schema": {
+      "type": "string"
     },
-    "objective": {"type": "string", "minLength": 8},
+    "version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,63}$"
+    },
+    "brand": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "enum": [
+        "ugc-image",
+        "ugc-video",
+        "product-image",
+        "campaign-image",
+        "campaign-video"
+      ]
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 8
+    },
     "audience": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "persona": {"type": "string"},
-        "platform": {"type": "string"},
-        "awareness": {"type": "string"},
-        "motivation": {"type": "string"}
+        "persona": {
+          "type": "string"
+        },
+        "platform": {
+          "type": "string"
+        },
+        "awareness": {
+          "type": "string"
+        },
+        "motivation": {
+          "type": "string"
+        }
       }
     },
     "deliverable": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["aspectRatio", "candidates"],
+      "required": [
+        "aspectRatio",
+        "candidates"
+      ],
       "properties": {
-        "aspectRatio": {"type": "string", "pattern": "^[0-9]+:[0-9]+$"},
-        "imageSize": {"enum": ["1K", "2K", "4K"]},
-        "quality": {"enum": ["low", "medium", "high", "auto"]},
-        "durationSeconds": {"type": "integer"},
-        "resolution": {"enum": ["720p", "1080p", "4k"]},
-        "candidates": {"type": "integer", "minimum": 1, "maximum": 4}
+        "aspectRatio": {
+          "type": "string",
+          "pattern": "^[0-9]+:[0-9]+$"
+        },
+        "imageSize": {
+          "enum": [
+            "1K",
+            "2K",
+            "4K"
+          ]
+        },
+        "quality": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "auto"
+          ]
+        },
+        "durationSeconds": {
+          "type": "integer"
+        },
+        "resolution": {
+          "enum": [
+            "720p",
+            "1080p",
+            "4k"
+          ]
+        },
+        "candidates": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "channel": {
+          "type": "string",
+          "description": "ig-feed | ig-story | tiktok | square | web-hero | web-banner | amazon | print | email — sets aspect ratio and size"
+        }
       }
     },
     "provider": {
       "type": "object",
       "additionalProperties": true,
-      "required": ["id"],
+      "required": [
+        "id"
+      ],
       "properties": {
-        "id": {"enum": ["openai-image", "gemini-image", "higgsfield-image", "google-omni-video", "google-veo", "replicate-seedance"]},
-        "model": {"type": "string"},
-        "seed": {"type": "integer"},
-        "size": {"type": "string"},
-        "outputFormat": {"enum": ["png", "jpeg", "webp"]},
-        "background": {"enum": ["auto", "opaque", "transparent"]}
+        "id": {
+          "enum": [
+            "openai-image",
+            "gemini-image",
+            "higgsfield-image",
+            "google-omni-video",
+            "google-veo",
+            "replicate-seedance"
+          ]
+        },
+        "model": {
+          "type": "string"
+        },
+        "seed": {
+          "type": "integer"
+        },
+        "size": {
+          "type": "string"
+        },
+        "outputFormat": {
+          "enum": [
+            "png",
+            "jpeg",
+            "webp"
+          ]
+        },
+        "background": {
+          "enum": [
+            "auto",
+            "opaque",
+            "transparent"
+          ]
+        }
       }
     },
     "assets": {
@@ -55,50 +156,124 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["path", "role"],
+        "required": [
+          "path",
+          "role"
+        ],
         "properties": {
-          "path": {"type": "string"},
-          "role": {
-            "enum": ["product-canon", "creator-canon", "character-canon", "logo-canon", "environment-reference", "style-reference", "reference-image", "first-frame", "last-frame", "mask", "reference-video", "reference-audio"]
+          "path": {
+            "type": "string"
           },
-          "required": {"type": "boolean"},
-          "instructions": {"type": "string"}
+          "role": {
+            "enum": [
+              "product-canon",
+              "creator-canon",
+              "character-canon",
+              "logo-canon",
+              "environment-reference",
+              "style-reference",
+              "reference-image",
+              "first-frame",
+              "last-frame",
+              "mask",
+              "reference-video",
+              "reference-audio"
+            ]
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "instructions": {
+            "type": "string"
+          }
         }
       }
     },
     "creative": {
       "type": "object",
       "additionalProperties": true,
-      "required": ["concept", "scene", "action"],
+      "required": [
+        "concept",
+        "scene",
+        "action"
+      ],
       "properties": {
-        "concept": {"type": "string"},
-        "scene": {"type": "string"},
+        "concept": {
+          "type": "string"
+        },
+        "scene": {
+          "type": "string"
+        },
         "contract": {
           "type": "string",
           "description": "A verbatim block emitted as its own prompt section. Use for product, package, or identity contracts that must not be paraphrased or summarized."
         },
-        "creator": {"type": "string"},
-        "action": {"type": "string"},
-        "camera": {"type": "string"},
-        "lighting": {"type": "string"},
-        "sound": {"type": "string"},
-        "dialogue": {"type": "string"},
-        "style": {"type": "string"},
-        "mustInclude": {"type": "array", "items": {"type": "string"}},
-        "mustAvoid": {"type": "array", "items": {"type": "string"}},
-        "onImageText": {"type": "array", "items": {"type": "string"}},
+        "creator": {
+          "type": "string"
+        },
+        "action": {
+          "type": "string"
+        },
+        "camera": {
+          "type": "string"
+        },
+        "lighting": {
+          "type": "string"
+        },
+        "sound": {
+          "type": "string"
+        },
+        "dialogue": {
+          "type": "string"
+        },
+        "style": {
+          "type": "string",
+          "description": "Style preset id (see engine/prompts/presets.mjs): product-hero, packshot-white, transparent-cutout, lifestyle-in-hand, lifestyle-scene, ugc-still, flyer-snapshot, social-ad-copy, web-hero, packaging-mockup, lineup-range, character-scene, meme-card"
+        },
+        "mustInclude": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mustAvoid": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "onImageText": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "beats": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["time", "action"],
+            "required": [
+              "time",
+              "action"
+            ],
             "properties": {
-              "time": {"type": "string"},
-              "action": {"type": "string"},
-              "camera": {"type": "string"},
-              "sound": {"type": "string"}
+              "time": {
+                "type": "string"
+              },
+              "action": {
+                "type": "string"
+              },
+              "camera": {
+                "type": "string"
+              },
+              "sound": {
+                "type": "string"
+              }
             }
           }
+        },
+        "styleNotes": {
+          "type": "string"
         }
       }
     },
@@ -106,27 +281,87 @@
       "type": "object",
       "additionalProperties": true,
       "properties": {
-        "profile": {"type": "string"},
-        "requiredDisclosures": {"type": "array", "items": {"type": "string"}},
-        "humanReviewRequired": {"type": "boolean"},
-        "claimSourceIds": {"type": "array", "items": {"type": "string"}}
+        "profile": {
+          "type": "string"
+        },
+        "requiredDisclosures": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "humanReviewRequired": {
+          "type": "boolean"
+        },
+        "claimSourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "execution": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "approved": {"type": "boolean"}
+        "approved": {
+          "type": "boolean"
+        }
       }
     },
     "output": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["directory", "basename"],
+      "required": [
+        "directory",
+        "basename"
+      ],
       "properties": {
-        "directory": {"type": "string"},
-        "basename": {"type": "string"}
+        "directory": {
+          "type": "string"
+        },
+        "basename": {
+          "type": "string"
+        }
       }
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Product / flavour names the piece is about; the library supplies their references when references.auto is true."
+    },
+    "references": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "auto": {
+          "type": "boolean"
+        },
+        "products": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "intent": {
+          "type": "string"
+        },
+        "max": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        "wants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Automatic reference selection from the DAM product kit."
     }
   }
 }

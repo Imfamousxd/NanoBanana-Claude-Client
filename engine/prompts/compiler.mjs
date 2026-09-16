@@ -1,5 +1,21 @@
 import { EngineError } from "../core/errors.mjs";
 import { resolveBrand } from "../knowledge/graph.mjs";
+import { getPreset, presetPromptBlock, variationHypotheses } from "./presets.mjs";
+
+/** What the engine has learned: laws from rejections, approved exemplars, the preset's finish. Short, positive, verbatim-safe. */
+function learnedSection(enrichment, job) {
+  const lines = [];
+  const preset = getPreset(job.creative?.style);
+  if (preset) lines.push("", `STYLE`, `${preset.title}.`);
+  if (job.creative?.styleNotes && !preset) lines.push("", "STYLE", job.creative.styleNotes);
+  const laws = (enrichment.laws || []).slice(0, 6);
+  if (laws.length) lines.push("", "RULES LEARNED FROM PAST REJECTIONS — each one cost a candidate", ...laws.map((law) => `- ${law.claim}`));
+  const exemplars = (enrichment.exemplars || []).slice(0, 2);
+  if (exemplars.length) lines.push("", "APPROVED BEFORE — match this level, not this content", ...exemplars.map((item) => `- ${item.excerpt}`));
+  const notes = (enrichment.referenceNotes || []).slice(0, 4);
+  if (notes.length) lines.push("", "REFERENCE COVERAGE", ...notes.map((note) => `- ${note}`));
+  return lines.join("\n");
+}
 
 function bullets(values) {
   return values.filter(Boolean).map((value) => `- ${value}`).join("\n");
@@ -55,7 +71,7 @@ function compileUgc(job, brand) {
     "",
     "CAPTURE BEHAVIOR",
     creative.camera || "Handheld phone capture whose framing reacts to the creator's movement.",
-    `Finish: ${creative.style || "natural platform-native phone rendering with coherent, causally correct imperfections"}`,
+    `Finish: ${creative.styleNotes || (creative.style && !getPreset(creative.style) ? creative.style : "natural platform-native phone rendering with coherent, causally correct imperfections")}`,
     creative.sound ? `Sound: ${creative.sound}` : "",
     isVideo && beats ? `\nTIMED BEATS\n${beats}` : "",
     "",
@@ -88,7 +104,7 @@ function compileStandard(job, brand) {
     `Primary action: ${creative.action}`,
     creative.camera ? `Camera/framing: ${creative.camera}` : "",
     creative.lighting ? `Lighting: ${creative.lighting}` : "",
-    creative.style ? `Finish: ${creative.style}` : "",
+    creative.styleNotes ? `Finish: ${creative.styleNotes}` : creative.style && !getPreset(creative.style) ? `Finish: ${creative.style}` : "",
     "",
     "REFERENCE CONTRACT",
     referenceSection(job),
@@ -106,13 +122,21 @@ function compileStandard(job, brand) {
   ].filter((line) => line !== "").join("\n");
 }
 
-export function compilePrompt(job, graph) {
+export function compilePrompt(job, graph, enrichment = {}) {
   const brand = resolveBrand(graph, job.brand);
   if (!brand) throw new EngineError("UNKNOWN_BRAND", `Brand ${job.brand} is not registered in knowledge/graph.json.`);
-  const prompt = job.mode.startsWith("ugc-") ? compileUgc(job, brand) : compileStandard(job, brand);
+  const base = job.mode.startsWith("ugc-") ? compileUgc(job, brand) : compileStandard(job, brand);
+  const learned = learnedSection(enrichment, job);
+  const prompt = learned ? `${base}\n${learned}` : base;
+  // One named hypothesis per candidate: candidates are experiments, never re-rolls of the same prompt.
+  const preset = getPreset(job.creative?.style);
+  const count = Number(job.deliverable?.candidates) || 1;
+  const hypotheses = preset && count > 1 ? variationHypotheses(preset, count) : [];
+  const variants = hypotheses.length ? hypotheses.map((hypothesis, index) => `${prompt}\n\nVARIATION ${index + 1} OF ${count}: ${hypothesis}. Everything else identical to the brief.`) : [];
   return {
     prompt,
+    variants,
     brand,
-    retrievalQuery: [brand.name, job.mode, job.objective, job.audience?.persona].filter(Boolean).join(" "),
+    retrievalQuery: [brand.name, job.mode, job.objective, job.audience?.persona, ...(job.products || job.references?.products || [])].filter(Boolean).join(" "),
   };
 }

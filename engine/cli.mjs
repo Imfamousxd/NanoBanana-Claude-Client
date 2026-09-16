@@ -239,13 +239,27 @@ async function main() {
     }
     throw new Error("learn requires: log | record | laws | add-law | history | stats.");
   }
+  if (command === "presets") {
+    const { STYLE_PRESETS, CHANNELS } = await import("./prompts/presets.mjs");
+    return print({ styles: Object.fromEntries(Object.entries(STYLE_PRESETS).map(([id, preset]) => [id, { title: preset.title, mode: preset.mode, provider: preset.provider.id, model: preset.provider.model, channel: preset.channel, candidates: preset.candidates, refs: preset.refs.wants }])), channels: CHANNELS });
+  }
+  if (command === "new") {
+    const { createJobFile } = await import("./core/job-create.mjs");
+    const opt = (flag, fallback) => { const index = args.indexOf(flag); return index >= 0 ? args[index + 1] : fallback; };
+    const result = createJobFile(root, { brand: opt("--brand"), style: opt("--style"), products: (opt("--product", "") || "").split("|").map((value) => value.trim()).filter(Boolean), objective: opt("--objective"), concept: opt("--concept"), channel: opt("--channel"), copy: (opt("--copy", "") || "").split("|").map((value) => value.trim()).filter(Boolean), candidates: opt("--candidates") ? Number(opt("--candidates")) : undefined, id: opt("--id") });
+    return print(result);
+  }
   if (command === "plan") {
     if (!args[0]) throw new Error("plan requires a job JSON path.");
-    const plan = planJob(root, args[0]);
+    const plan = await planJob(root, args[0]);
     return print({
       jobPath: plan.jobPath,
       checks: plan.checks,
       provider: plan.job.provider,
+      deliverable: plan.job.deliverable,
+      autoReferences: plan.autoReferences,
+      learned: plan.learned,
+      variants: plan.variants.length,
       context: plan.context.map((item) => ({ id: item.id, source: item.source, heading: item.heading, score: item.score, text: item.text })),
       assets: plan.assets.map(({ absolutePath: _absolutePath, ...asset }) => asset),
       compiledPrompt: plan.prompt,

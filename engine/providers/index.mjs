@@ -18,5 +18,21 @@ const adapters = {
 export async function runProvider(context) {
   const adapter = adapters[context.job.provider.id];
   if (!adapter) throw new EngineError("UNKNOWN_PROVIDER", `No provider adapter for ${context.job.provider.id}.`);
-  return adapter(context);
+  const variants = context.variants || [];
+  const isImage = !String(context.job.mode || "").includes("video");
+  if (!isImage || variants.length < 2 || context.job.provider.id === "higgsfield-image") return adapter(context);
+  // Named variations: each candidate is its own call with its own hypothesis and its own file name.
+  const outputs = [];
+  const usage = [];
+  let provider = null;
+  for (let index = 0; index < variants.length; index += 1) {
+    const job = structuredClone(context.job);
+    job.deliverable.candidates = 1;
+    job.output.basename = `${context.job.output.basename}-v${index + 1}`;
+    const result = await adapter({ ...context, job, prompt: variants[index] });
+    outputs.push(...result.outputs);
+    if (result.usage) usage.push(result.usage);
+    provider = result.provider;
+  }
+  return { outputs, provider, usage: usage.length ? usage : null, variants: variants.length };
 }

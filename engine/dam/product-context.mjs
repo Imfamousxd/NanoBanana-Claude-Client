@@ -144,7 +144,8 @@ export async function resolveProductReferences(db, graph, root, { brand = null, 
   const device = pick(byComposition("device-only", "in-hand"), limit, "the device / container alone — close-ups, in-hand, product-only heroes");
   const packaging = pick(byComposition("packaging-only", "device-with-packaging"), limit, "the packaging as subject");
   const angles = {};
-  for (const angle of ANGLE_ORDER) { const best = usable.find((entry) => angleOf(entry.asset) === angle); if (best) angles[angle] = slim(best.asset, `best ${angle} view`); }
+  const single = usable.filter((entry) => !["multi-pack", "lineup", "in-scene", "in-hand", "label-flat"].includes(compositionOf(entry.asset)));
+  for (const angle of ANGLE_ORDER) { const best = (single.length ? single : usable).find((entry) => angleOf(entry.asset) === angle); if (best) angles[angle] = slim(best.asset, `best ${angle} view`); }
   const cutout = pick(usable.filter((entry) => entry.asset.has_alpha || entry.asset.subclass === "cutout-transparent"), limit, "transparent PNG — compositing and overlays");
   const label = pick(byComposition("label-flat"), limit, "flat label / dieline — the truth for printed copy and colours");
   const lineup = pick(byComposition("lineup", "multi-pack"), limit, "several units or flavours together — range and display shots");
@@ -188,4 +189,24 @@ export function renderProductKit(result) {
   if (result.coverage.missing.length) lines.push(`Missing for this product: ${result.coverage.missing.join("; ")}.`);
   if (result.kit.avoid.length) lines.push(`Do not use: ${result.kit.avoid.map((item) => item.path.split("/").pop()).slice(0, 4).join(", ")}${result.kit.avoid.length > 4 ? ", …" : ""}.`);
   return lines;
+}
+
+/**
+ * The kit in the shape the dialed-studio video MCP consumes (create_from_request.refs / scene_frame refs):
+ * [{ path, name, role, describe, contains_person, third_party_marks }]. `path` is the local file once
+ * materialised (auto-refs), or the Dropbox path for the studio's own puller; describe is ≥ 60 chars as the
+ * studio's product gate requires. The studio's generation logic is untouched — it only receives files it
+ * would otherwise have picked by file name.
+ */
+export function exportForStudio(result, { localPaths = {} } = {}) {
+  if (!result?.kit) return [];
+  const seen = new Set();
+  const out = [];
+  for (const item of [...result.kit.recommended, ...result.kit.cutout.slice(0, 1), ...result.kit.label.slice(0, 1)]) {
+    if (!item || seen.has(item.id)) continue;
+    seen.add(item.id);
+    const describe = `${item.title || result.product}: ${item.composition.replace(/-/g, " ")}${item.angle && item.angle !== "n/a" ? `, ${item.angle} view` : ""}${item.alpha ? ", transparent background" : ""}${item.verdict === "approved" ? ", team-approved reference" : item.approvedFolder ? ", from the approved renders folder" : ""}. ${item.why}`;
+    out.push({ path: localPaths[item.id] || item.path, name: (item.title || result.product).slice(0, 80), role: item.composition === "label-flat" ? "label" : "product", describe: describe.length >= 60 ? describe : `${describe} Exact product identity reference for ${result.product}.`, contains_person: item.composition === "in-hand", third_party_marks: [], dam_asset_id: item.id, composition: item.composition, angle: item.angle });
+  }
+  return out;
 }

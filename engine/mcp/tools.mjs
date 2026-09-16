@@ -268,13 +268,27 @@ export function createTools(root) {
       },
     },
     {
+      name: "job_create",
+      title: "Create a job from a product and a style",
+      description: "The fast path from 'make X about <product>' to a plannable job: pick a style preset (product-hero, packshot-white, transparent-cutout, lifestyle-in-hand, lifestyle-scene, ugc-still, flyer-snapshot, social-ad-copy, web-hero, packaging-mockup, lineup-range, character-scene, meme-card) and a channel (ig-feed, ig-story, tiktok, square, web-hero, web-banner, amazon, print, email); the job gets the right provider, size, three named variations, and — at plan time — the product's references from the library (canonical, device, cutout, label) chosen for the style. Writes jobs/<id>.json and returns its plan. Free; nothing is generated until job_run with execution.approved.",
+      inputSchema: { brand: z.string(), style: z.string(), products: z.array(z.string()).min(1).describe("Product / flavour names as the team says them"), objective: z.string().describe("One sentence: what this piece is for"), concept: z.string().optional().describe("The idea in a sentence or two"), channel: z.string().optional(), copy: z.array(z.string()).optional().describe("Exact on-image text, verbatim"), candidates: z.number().int().min(1).max(4).optional(), id: z.string().optional() },
+      handler: async (input) => { const { createJobFile } = await import("../core/job-create.mjs"); const created = createJobFile(root, input); const plan = await planJob(root, created.jobPath); return { ...created, checks: plan.checks, provider: plan.job.provider, deliverable: plan.job.deliverable, autoReferences: plan.autoReferences, variants: plan.variants.length, compiledPrompt: plan.prompt }; },
+    },
+    {
+      name: "presets",
+      title: "Style presets and channels",
+      description: "The kinds of still content the engine makes (style presets with routing, size, references wanted, variation hypotheses) and the delivery channels with their aspect ratios.",
+      inputSchema: {},
+      handler: async () => { const { STYLE_PRESETS, CHANNELS } = await import("../prompts/presets.mjs"); return { styles: Object.fromEntries(Object.entries(STYLE_PRESETS).map(([id, preset]) => [id, { title: preset.title, mode: preset.mode, provider: preset.provider, channel: preset.channel, candidates: preset.candidates, refs: preset.refs, variations: preset.variations }])), channels: CHANNELS }; },
+    },
+    {
       name: "job_plan",
       title: "Plan a job (offline)",
       description: "Validate and compile a content job JSON: schema/runtime checks, compiled prompt, retrieved context, inspected assets, preflight warnings. Free; no provider call.",
       inputSchema: { jobPath: z.string().describe("Repo-relative path to the job JSON") },
-      handler: ({ jobPath }) => {
-        const plan = planJob(root, jobPath);
-        return { jobPath: plan.jobPath, checks: plan.checks, provider: plan.job.provider, compiledPrompt: plan.prompt, context: plan.context.map((item) => ({ id: item.id, source: item.source, heading: item.heading, score: item.score })), assets: plan.assets.map(({ absolutePath: _a, ...asset }) => asset) };
+      handler: async ({ jobPath }) => {
+        const plan = await planJob(root, jobPath);
+        return { jobPath: plan.jobPath, checks: plan.checks, provider: plan.job.provider, deliverable: plan.job.deliverable, autoReferences: plan.autoReferences, learned: plan.learned, variants: plan.variants.length, compiledPrompt: plan.prompt, context: plan.context.map((item) => ({ id: item.id, source: item.source, heading: item.heading, score: item.score })), assets: plan.assets.map(({ absolutePath: _a, ...asset }) => asset) };
       },
     },
     {
