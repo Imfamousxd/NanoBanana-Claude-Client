@@ -39,6 +39,8 @@ const LINE_WORDS = [
   [/metal can|tin/, /metalcan|\btin/],
 ];
 
+const STRENGTH_WORDS = [[/melted diamond/, /\bmelted diamond|\bmd\b|melteddiamond/], [/live resin/, /\blive resin|\blr\b|liveresin/], [/hash rosin/, /\bhash rosin|\bhr\b|hashrosin/], [/distillate|distallite/, /distillate|distallite|disti\b/], [/thc-?a\b|thca/, /\bthca\b|thc a\b/], [/piatella/, /piatella/], [/bubble hash/, /bubble hash|bubblehash/], [/d9|delta[- ]?9/, /\bd9\b|delta 9/], [/delta[- ]?8/, /\bd8\b|delta 8/], [/delta[- ]?10/, /\bd10\b|delta 10/], [/hhc/, /\bhhc/], [/thc-?p\b|thcp/, /\bthcp\b|thc p\b/]];
+let KNOWN_NAMES = [];
 function lineWordsOf(text) { const t = norm(text); return LINE_WORDS.filter(([ask]) => ask.test(t)).map(([, has]) => has); }
 
 function assetText(asset) {
@@ -81,11 +83,19 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   const words = prepared.full.split(" ");
   const tokens = flavour.split(" ").filter(Boolean);
   const wholeCompact = new RegExp("(^|[^a-z])" + flavourCompact + "(?![a-z])").test(" " + prepared.compactFull.replace(/([a-z])(?=[0-9])/g, "$1 ") + " ") || prepared.compactFull.includes(flavourCompact + "_") || prepared.compactFull.endsWith(flavourCompact);
-  if (prepared.compactFull.includes(flavourCompact) && (tokens.length > 1 || wholeCompact || flavourCompact.length >= 8)) score += 3;
+  const camel = String(asset.path || "").split("/").pop().replace(/([a-z])([A-Z])/g, "$1 $2");
+  const nameWords = norm(`${camel} ${asset.product || ""} ${asset.title || ""} ${(asset.render || {}).leaf || ""}`).split(" ");
+  const inName = tokens.every((token) => nameWords.includes(token)) || new RegExp("(^| )" + flavourCompact + "( |$)").test(nameWords.join(" "));
+  if (inName) score += 3;
+  else if (wholeCompact && tokens.length > 1) score += 3;
   else if (tokens.length >= 2 && tokens.every((token) => words.includes(token))) score += 2;
   else if (tokens.length === 1 && tokens[0].length >= 6 && words.includes(tokens[0])) score += 1.5;
   else return 0;
   // Hard walls: vape form, format, market, generation.
+  // A longer flavour that contains this one ("Strawberry Lemon" for "Strawberry") present in the text means it is that flavour, not this one.
+  if (KNOWN_NAMES.some((other) => other !== flavour && other.includes(flavour) && new RegExp("(^| )" + other.replace(/\s/g, "") + "( |$)").test(" " + prepared.compactFull.replace(/([a-z])(?=[0-9])/g, "$1 ") + " ") || (other !== flavour && other.includes(flavour) && other.split(" ").every((w) => prepared.full.split(" ").includes(w))))) return 0;
+  const wantStrength = STRENGTH_WORDS.filter(([ask]) => ask.test(norm(`${line.line} ${line.section || ""}`)));
+  if (wantStrength.length) { const haveAny = STRENGTH_WORDS.filter(([, has]) => has.test(prepared.full)); if (haveAny.length && !haveAny.some((s) => wantStrength.includes(s))) return 0; }
   const wall = CATEGORY_WALLS[line.category];
   if (wall) { if (!wall[0].test(prepared.compactFull)) return 0; if (wall[1].test(prepared.compactFull)) return 0; }
   if (line.format) { const want = compact(line.format); const present = formatsIn(prepared.compactFull); if (present.length && !present.includes(want)) return 0; }
@@ -104,11 +114,17 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
 
 export function computeCoverage(registry, library, { threshold = 3 } = {}) {
   const prepared = library.map((asset) => ({ asset, text: assetText(asset) }));
+  KNOWN_NAMES = [...new Set(registry.lines.flatMap((line) => line.items.map((item) => norm(item.name).replace(/\b(i|s|h|indica|sativa|hybrid|collab)\b/g, "").trim())).filter((name) => name.length >= 3))];
   const matchedAssetIds = new Map(); // assetId → [{ lineId, item }]
+  // Generic files: matched to 3+ different flavours without the flavour in the file name → not a flavour render.
+  const flavoursPerAsset = new Map();
+  for (const line of registry.lines) for (const item of line.items) for (const entry of prepared) { if (scoreMatch(entry.asset, item, line, entry.text) >= threshold) { const name = norm(item.name); const file = norm(String(entry.asset.path).split("/").pop().replace(/([a-z])([A-Z])/g, "$1 $2")); if (!file.includes(name.replace(/\s/g, "")) && !name.split(" ").every((w) => file.split(" ").includes(w))) (flavoursPerAsset.get(entry.asset.id) || flavoursPerAsset.set(entry.asset.id, new Set()).get(entry.asset.id)).add(name); } }
+  const generic = new Set([...flavoursPerAsset.entries()].filter(([, names]) => names.size >= 3).map(([id]) => id));
   const lines = registry.lines.map((line) => {
     const items = line.items.map((item) => {
       const hits = [];
       for (const entry of prepared) {
+        if (generic.has(entry.asset.id)) continue;
         const score = scoreMatch(entry.asset, item, line, entry.text);
         if (score >= threshold) hits.push({ score, asset: entry.asset });
       }
