@@ -138,8 +138,8 @@ export async function resolveProductReferences(db, graph, root, { brand = null, 
 
   // Identity = the product as sold, clean: packaging with device (Muha), else packaging, else the container
   // alone (Dialed / NuLumin). Scenes and hands only when nothing clean exists.
-  const clean = (entries) => entries.filter((entry) => !["in-scene", "in-hand"].includes(compositionOf(entry.asset)));
-  const identityPool = [...byComposition("device-with-packaging"), ...byComposition("packaging-only"), ...byComposition("device-only"), ...clean(usable.filter((entry) => (entry.asset.reference_roles || []).includes("canonical"))), ...usable];
+  const clean = (entries) => entries.filter((entry) => !["in-scene", "in-hand", "lineup", "multi-pack", "label-flat"].includes(compositionOf(entry.asset)));
+  const identityPool = [...byComposition("device-with-packaging"), ...byComposition("packaging-only"), ...byComposition("device-only"), ...clean(usable.filter((entry) => (entry.asset.reference_roles || []).includes("canonical"))), ...clean(usable), ...usable];
   const identity = pick(identityPool.filter((entry, index, all) => all.findIndex((other) => other.asset.id === entry.asset.id) === index), limit, "canonical look of the product as sold — judge drift against this");
   const device = pick(byComposition("device-only", "in-hand"), limit, "the device / container alone — close-ups, in-hand, product-only heroes");
   const packaging = pick(byComposition("packaging-only", "device-with-packaging"), limit, "the packaging as subject");
