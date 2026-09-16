@@ -89,12 +89,34 @@ function needlesFor(root, graph, brand, product) {
   return [...needles].filter((needle) => needle.length >= 3);
 }
 
+/** A flavour name is shared across product lines (Gush Mintz jar, cart, dispo…); a line word in the query decides. */
+const LINE_WORDS = [
+  [/\b(dispo|disposable|disposables|aio|all[- ]in[- ]one)\b/, /dispo|disposable|all[- ]?in[- ]?one|aio/],
+  [/\b(cart|carts|cartridge|cartridges)\b/, /cart/],
+  [/\b(jar|jars|flower)\b/, /jar|flower/],
+  [/\b(pre[- ]?rolls?|joints?|kief)\b/, /pre[- ]?roll|joint|kief/],
+  [/\b(gumm(y|ies)|edibles?)\b/, /gumm|edible/],
+  [/\b(live resin)\b/, /live[ _-]?resin|\blr\b/],
+  [/\b(distillate)\b/, /distillate/],
+  [/\b(hash rosin|rosin)\b/, /rosin|\bhr\b/],
+  [/\b(concentrates?|badder|diamonds?)\b/, /concentrate|badder|diamond/],
+  [/\b(seltzer|can|cans)\b/, /seltzer|\bcan\b|cans/],
+  [/\b(stick ?packs?|sachets?)\b/, /stick ?pack|sachet/],
+  [/\b(vials?)\b/, /vial/],
+  [/\b(hemp|thca)\b/, /hemp|thca/],
+];
+
 function matchStrength(asset, needles) {
   const product = String(asset.product || asset.analysis?.product || "").toLowerCase();
   const render = asset.flags?.render || {};
   const folder = `${render.line || ""} ${render.leaf || ""} ${render.category || ""}`.toLowerCase();
   const file = String(asset.path || "").toLowerCase().split("/").pop();
   const title = String(asset.title || "").toLowerCase();
+  const haystack = `${product} ${folder} ${file} ${title} ${String(asset.path || "").toLowerCase()}`;
+  // Line words asked for must be present; line words asked for and absent sink the match.
+  const asked = needles.map((needle) => LINE_WORDS.filter(([ask]) => ask.test(needle))).flat();
+  let lineBonus = 0;
+  for (const [, has] of asked) lineBonus += has.test(haystack) ? 0.5 : -2;
   let best = 0;
   for (const needle of needles) {
     if (product.includes(needle)) best = Math.max(best, 3);
@@ -102,8 +124,10 @@ function matchStrength(asset, needles) {
     if (file.includes(needle) || title.includes(needle)) best = Math.max(best, 2);
     const tokens = needle.split(/\s+/).filter((token) => token.length >= 3);
     if (tokens.length > 1 && tokens.every((token) => product.includes(token) || folder.includes(token) || file.includes(token))) best = Math.max(best, 1.5);
+    // The flavour alone also matches when the query carried a line word ("gush mintz jar"): the line bonus decides.
+    if (asked.length) { const flavour = needle.replace(/\b(dispo|disposables?|aio|all[- ]in[- ]one|carts?|cartridges?|jars?|flower|pre[- ]?rolls?|joints?|kief|gumm(y|ies)|edibles?|live resin|distillate|hash rosin|rosin|concentrates?|badder|diamonds?|seltzer|cans?|stick ?packs?|sachets?|vials?|hemp|thca)\b/g, " ").replace(/\s+/g, " ").trim(); if (flavour.length >= 3 && (product.includes(flavour) || folder.includes(flavour) || file.includes(flavour) || title.includes(flavour))) best = Math.max(best, 2); }
   }
-  return best;
+  return best > 0 ? best + lineBonus : 0;
 }
 
 const slim = (asset, why) => ({
