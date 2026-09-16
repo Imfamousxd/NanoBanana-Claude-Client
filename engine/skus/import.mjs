@@ -10,9 +10,10 @@ export function importSkuSheets(root, { brand, files }) {
   if (!brand || !BRAND_FILES[brand]) throw new Error(`brand must be one of ${Object.keys(BRAND_FILES).join(", ")}`);
   const lines = [];
   for (const file of files) {
-    const market = (path.basename(file).match(/\b([A-Z]{2}) THC\b/) || [])[1] || null;
+    const market = (path.basename(file).match(/\b([A-Z]{2}) THC\b/) || [])[1] || (/hemp/i.test(path.basename(file)) ? "HEMP" : null);
+    const upcoming = /upcoming/i.test(path.basename(file));
     const blocks = parseSheet(fs.readFileSync(file, "utf8"));
-    lines.push(...normaliseBlocks(blocks, { brand, market, source: path.basename(file) }));
+    lines.push(...normaliseBlocks(blocks, { brand, market, source: path.basename(file) }).map((line) => ({ ...line, upcoming, items: line.items.map((item) => ({ ...item, inDevelopment: item.inDevelopment || upcoming })) })));
   }
   // Dedupe items by sku code across sheets (the Dialed 2026 sheet restates current products with customer-facing line names).
   const bySku = new Map();

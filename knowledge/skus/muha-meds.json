@@ -3,6 +3,8 @@
  "brand": "muha",
  "importedAt": "2026-09-16",
  "sources": [
+  "Official Hemp SKU Book - Active Sku's.csv",
+  "Official Hemp SKU Book - Upcoming Sku's.csv",
   "Official MM SKU Book - AZ THC.csv",
   "Official MM SKU Book - Accessories.csv",
   "Official MM SKU Book - CA THC.csv",
@@ -14,6 +16,4796 @@
   "Official MM SKU Book - OH THC.csv"
  ],
  "lines": [
+  {
+   "id": "muha:HEMP:hemp001",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": "DISPOSABLES",
+   "line": "3.5g Melted Diamond Disposables (THC-A + D9)",
+   "generation": null,
+   "skuBlock": "HEMP001",
+   "category": "disposables",
+   "format": "3.5g",
+   "items": [
+    {
+     "name": "Cereal Milk",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMD3.5-MD-CM",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767047",
+      "displayBox": "5DBP-MMD3.5-MD-CM"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/wp7j9nt9g447zjifya0el/h?rlkey=n0ygutawnf6bmpgaa5sesb05w&st=vlv6lkho&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/qhvgk5yjwmsta50mgilkw/AE5IvSak7v22nRSOfy7diVg?rlkey=v4sug3pmn06mmk6oxadl74pn5&st=ofrzlzsb&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-MMD3.5-MD-CM",
+      "INDIVIDUAL SKU": "645656853909",
+      "INDIVIDUAL #": "SUP-MMD3.5-MD-CM",
+      "DISPLAY SKU": "645656854005",
+      "WHOLESALE SKU": "648564767092",
+      "WHOLESALE #": "50WBP-MMD3.5-UNIVERSAL-V1"
+     },
+     "canonicalLine": "3.5g Melted Diamond Disposables (THC-A + D9)"
+    },
+    {
+     "name": "Mango Peach Rings",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMD3.5-MD-MP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767054",
+      "displayBox": "5DBP-MMD3.5-MD-MP"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-MMD3.5-MD-MP",
+      "INDIVIDUAL SKU": "645656853916",
+      "INDIVIDUAL #": "SUP-MMD3.5-MD-MP",
+      "DISPLAY SKU": "645656854012"
+     },
+     "canonicalLine": "3.5g Melted Diamond Disposables (THC-A + D9)"
+    },
+    {
+     "name": "Jedi Kush",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMD3.5-MD-JK",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767061",
+      "displayBox": "5DBP-MMD3.5-MD-JK"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-MMD3.5-MD-JK",
+      "INDIVIDUAL SKU": "645656853923",
+      "INDIVIDUAL #": "SUP-MMD3.5-MD-JK",
+      "DISPLAY SKU": "645656854029"
+     },
+     "canonicalLine": "3.5g Melted Diamond Disposables (THC-A + D9)"
+    },
+    {
+     "name": "Purple Champagne",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMD3.5-MD-PC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767078",
+      "displayBox": "5DBP-MMD3.5-MD-PC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-MMD3.5-MD-PC",
+      "INDIVIDUAL SKU": "645656853930",
+      "INDIVIDUAL #": "SUP-MMD3.5-MD-PC",
+      "DISPLAY SKU": "645656854036"
+     },
+     "canonicalLine": "3.5g Melted Diamond Disposables (THC-A + D9)"
+    },
+    {
+     "name": "Citrus Tsunami",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMD3.5-MD-CT",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767085",
+      "displayBox": "5DBP-MMD3.5-MD-CT"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-MMD3.5-MD-CT",
+      "INDIVIDUAL SKU": "645656853947",
+      "INDIVIDUAL #": "SUP-MMD3.5-MD-CT",
+      "DISPLAY SKU": "645656854043"
+     },
+     "canonicalLine": "3.5g Melted Diamond Disposables (THC-A + D9)"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hemp002",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": null,
+   "line": "3.5g Live Resin Disposables (THC-P + HHC-P + HHC)",
+   "generation": null,
+   "skuBlock": "HEMP002",
+   "category": "disposables",
+   "format": "3.5g",
+   "items": [
+    {
+     "name": "Rainbow Belts",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMD3.5-LR-RB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767108",
+      "displayBox": "5DBP-MMD3.5-LR-RB"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/orowtiv25vcrdc6q40wfc/h?rlkey=7e2frduq95v0y7inx1ck223sf&st=9vhdbw84&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/qhvgk5yjwmsta50mgilkw/AE5IvSak7v22nRSOfy7diVg?rlkey=v4sug3pmn06mmk6oxadl74pn5&st=ofrzlzsb&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-MMD3.5-LR-RB",
+      "INDIVIDUAL SKU": "645656853855",
+      "INDIVIDUAL #": "SUP-MMD3.5-LR-RB",
+      "DISPLAY SKU": "645656853954",
+      "WHOLESALE SKU": "648564767092",
+      "WHOLESALE #": "50WBP-MMD3.5-UNIVERSAL-V1"
+     },
+     "canonicalLine": "3.5g Live Resin Disposables (THC-P + HHC-P + HHC)"
+    },
+    {
+     "name": "Venom OG",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMD3.5-LR-VO",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767115",
+      "displayBox": "5DBP-MMD3.5-LR-VO"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-MMD3.5-LR-VO",
+      "INDIVIDUAL SKU": "645656853862",
+      "INDIVIDUAL #": "SUP-MMD3.5-LR-VO",
+      "DISPLAY SKU": "645656853961"
+     },
+     "canonicalLine": "3.5g Live Resin Disposables (THC-P + HHC-P + HHC)"
+    },
+    {
+     "name": "White Raspberry",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMD3.5-LR-WR",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767122",
+      "displayBox": "5DBP-MMD3.5-LR-WR"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-MMD3.5-LR-WR",
+      "INDIVIDUAL SKU": "645656853879",
+      "INDIVIDUAL #": "SUP-MMD3.5-LR-WR",
+      "DISPLAY SKU": "645656853978"
+     },
+     "canonicalLine": "3.5g Live Resin Disposables (THC-P + HHC-P + HHC)"
+    },
+    {
+     "name": "Truffle Butter",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMD3.5-LR-TB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767139",
+      "displayBox": "5DBP-MMD3.5-LR-TB"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-MMD3.5-LR-TB",
+      "INDIVIDUAL SKU": "645656853886",
+      "INDIVIDUAL #": "SUP-MMD3.5-LR-TB",
+      "DISPLAY SKU": "645656853985"
+     },
+     "canonicalLine": "3.5g Live Resin Disposables (THC-P + HHC-P + HHC)"
+    },
+    {
+     "name": "Lavender Haze",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMD3.5-LR-LH",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767146",
+      "displayBox": "5DBP-MMD3.5-LR-LH"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-MMD3.5-LR-LH",
+      "INDIVIDUAL SKU": "645656853893",
+      "INDIVIDUAL #": "SUP-MMD3.5-LR-LH",
+      "DISPLAY SKU": "645656853992"
+     },
+     "canonicalLine": "3.5g Live Resin Disposables (THC-P + HHC-P + HHC)"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hemp003",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": "CARTRIDGE",
+   "line": "2g THCA Carts",
+   "generation": null,
+   "skuBlock": "HEMP003",
+   "category": "cartridges",
+   "format": "2g",
+   "items": [
+    {
+     "name": "Strawberry Shortcake",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC2-THCA-SS",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767153",
+      "displayBox": "5DBP-MMC2-THCA-SS"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/4gb5bxp44xd0kxpknrl2l/AHiVjB_o60rCAf_VYgrvOXc?rlkey=m1ceqy68klxxqplklvkmqno7y&st=2fsw3xp9&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/z0rlxcllbazmcg2ct5gol/AKIXGCEsCCQ1D3eFtrbRKwg?rlkey=8v31tiyfjk6jagd0y6g8b6e67&st=nxfhzl2l&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779415",
+      "INDIVIDUAL #": "SUP-MMC2-THCA-SS",
+      "DISPLAY SKU": "741654779514",
+      "WHOLESALE SKU / #": "648564767160"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Mango Madness",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC2-THCA-MM",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMC2-THCA-MM"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779408",
+      "INDIVIDUAL #": "SUP-MMC2-THCA-MM",
+      "DISPLAY SKU": "741654779507"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Pineapple Runtz",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC2-THCA-PR",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMC2-THCA-PR"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779422",
+      "INDIVIDUAL #": "SUP-MMC2-THCA-PR",
+      "DISPLAY SKU": "741654779521"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Lemon Cherry Gelato",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC2-THCA-LC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMC2-THCA-LC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779439",
+      "INDIVIDUAL #": "SUP-MMC2-THCA-LC",
+      "DISPLAY SKU": "741654779538"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Watermelon Gelato",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC2-THCA-WG",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMC2-THCA-WG"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779446",
+      "INDIVIDUAL #": "SUP-MMC2-THCA-WG",
+      "DISPLAY SKU": "741654779545"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Candy Apple",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC2-THCA-CA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-MMC2-2LOGO",
+      "displayBox": "5DBP-MMC2-THCA-CA"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779460",
+      "INDIVIDUAL #": "SUP-MMC2-THCA-CA",
+      "DISPLAY SKU": "741654779569",
+      "WHOLESALE SKU / #": "100WBP-MMC2-UNIVERSAL"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Blue Slushie",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC2-THCA-BS",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMC2-THCA-BS"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779453",
+      "INDIVIDUAL #": "SUP-MMC2-THCA-BS",
+      "DISPLAY SKU": "741654779552"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Paradise Punch OG",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC2-THCA-PO",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMC2-THCA-PO"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779477",
+      "INDIVIDUAL #": "SUP-MMC2-THCA-PO",
+      "DISPLAY SKU": "741654779576"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Purple Punch",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC2-THCA-PP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMC2-THCA-PP"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779484",
+      "INDIVIDUAL #": "SUP-MMC2-THCA-PP",
+      "DISPLAY SKU": "741654779583"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Bubble Gum",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC2-THCA-BG",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMC2-THCA-BG"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779491",
+      "INDIVIDUAL #": "SUP-MMC2-THCA-BG",
+      "DISPLAY SKU": "741654779590"
+     },
+     "canonicalLine": "2g THCA Carts"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hemp004",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": null,
+   "line": "DELTA-8 MUHA MEDS CARTRIDGE (1g)",
+   "generation": null,
+   "skuBlock": "HEMP004",
+   "category": "cartridges",
+   "format": "1g",
+   "items": [
+    {
+     "name": "Agent Orange",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC1-D8-AO",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767177",
+      "displayBox": "10DBP-MMC1-D8-AO"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/lbv5d6t5ubt9uldpvkrsa/AApT-iDSE_E_J5emteyHPYI?rlkey=vwm2kmfa3os33qdqbytdd23fk&st=4npcjjdl&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/3rec8esnuhhvtnqykqnaf/AKQyiOFdFpdh60QsfU7AO0k?rlkey=44jv1v0ukzt8vpk8h07unjc3z&st=hk6b6uob&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745295",
+      "INDIVIDUAL #": "SUP-MMC1-D8-AO",
+      "DISPLAY SKU": "602835746223",
+      "WHOLESALE SKU / #": "648564767290"
+     },
+     "canonicalLine": "DELTA-8 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Cherry Berry",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC1-D8-CB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D8-CB"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745301",
+      "INDIVIDUAL #": "SUP-MMC1-D8-CB",
+      "DISPLAY SKU": "602835746230"
+     },
+     "canonicalLine": "DELTA-8 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Gelato",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC1-D8-GE",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D8-GE"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745318",
+      "INDIVIDUAL #": "SUP-MMC1-D8-GE",
+      "DISPLAY SKU": "602835746247"
+     },
+     "canonicalLine": "DELTA-8 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Gods Gift",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC1-D8-GG",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D8-GG"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745318",
+      "INDIVIDUAL #": "SUP-MMC1-D8-GG",
+      "DISPLAY SKU": "602835746254"
+     },
+     "canonicalLine": "DELTA-8 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Green Crack",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC1-D8-GC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D8-GC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745332",
+      "INDIVIDUAL #": "SUP-MMC1-D8-GC",
+      "DISPLAY SKU": "602835746261"
+     },
+     "canonicalLine": "DELTA-8 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "King Louie XII",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC1-D8-KL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-MMC1-2LOGO",
+      "displayBox": "10DBP-MMC1-D8-KL"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745349",
+      "INDIVIDUAL #": "SUP-MMC1-D8-KL",
+      "DISPLAY SKU": "602835746278",
+      "WHOLESALE SKU / #": "100WBP-MMC1-UNIVERSAL"
+     },
+     "canonicalLine": "DELTA-8 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Maui Wauii",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC1-D8-MW",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D8-MW"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745356",
+      "INDIVIDUAL #": "SUP-MMC1-D8-MW",
+      "DISPLAY SKU": "602835746285"
+     },
+     "canonicalLine": "DELTA-8 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Northern Lights",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC1-D8-NL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D8-NL"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745363",
+      "INDIVIDUAL #": "SUP-MMC1-D8-NL",
+      "DISPLAY SKU": "602835746292"
+     },
+     "canonicalLine": "DELTA-8 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Pineapple Express",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC1-D8-PE",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D8-PE"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745370",
+      "INDIVIDUAL #": "SUP-MMC1-D8-PE",
+      "DISPLAY SKU": "602835746308"
+     },
+     "canonicalLine": "DELTA-8 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Trainwreck",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC1-D8-TW",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D8-TR"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745387",
+      "INDIVIDUAL #": "SUP-MMC1-D8-TR",
+      "DISPLAY SKU": "602835746315"
+     },
+     "canonicalLine": "DELTA-8 MUHA MEDS CARTRIDGE (1g)"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hemp005",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": null,
+   "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
+   "generation": null,
+   "skuBlock": "HEMP005",
+   "category": "cartridges",
+   "format": "1g",
+   "items": [
+    {
+     "name": "Agent Orange",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC1-D10-AO",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767177",
+      "displayBox": "10DBP-MMC1-D10-AO"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/j3ut21hu0xhgv19m2yjwu/AMsGAK1PCUwP_7o3WOfRChI?rlkey=dmdoeg6jx42bal1jl73rl0qsd&st=f2j8vr2y&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/q9h8r0narib0q0g0dpdjq/AJ8bVO5yovYGJOWzgSlDRXo?rlkey=r5fe5qwmk19e5baeswxx4hz9r&st=nkkitp3a&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745790",
+      "INDIVIDUAL #": "SUP-MMC1-D10-AO",
+      "DISPLAY SKU": "602835746322",
+      "WHOLESALE SKU / #": "648564767290"
+     },
+     "canonicalLine": "DELTA-10 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Cherry Berry",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC1-D10-CB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D10-CB"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745806",
+      "INDIVIDUAL #": "SUP-MMC1-D10-CB",
+      "DISPLAY SKU": "602835746339"
+     },
+     "canonicalLine": "DELTA-10 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Gelato",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC1-D10-GE",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D10-GE"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745813",
+      "INDIVIDUAL #": "SUP-MMC1-D10-GE",
+      "DISPLAY SKU": "602835746346"
+     },
+     "canonicalLine": "DELTA-10 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Gods Gift",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC1-D10-GG",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D10-GG"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745820",
+      "INDIVIDUAL #": "SUP-MMC1-D10-GG",
+      "DISPLAY SKU": "602835746353"
+     },
+     "canonicalLine": "DELTA-10 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Green Crack",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC1-D10-GC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D10-GC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745837",
+      "INDIVIDUAL #": "SUP-MMC1-D10-GC",
+      "DISPLAY SKU": "602835746360"
+     },
+     "canonicalLine": "DELTA-10 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "King Louie XII",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC1-D10-KL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-MMC1-2LOGO",
+      "displayBox": "10DBP-MMC1-D10-KL"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745844",
+      "INDIVIDUAL #": "SUP-MMC1-D10-KL",
+      "DISPLAY SKU": "602835746377",
+      "WHOLESALE SKU / #": "100WBP-MMC1-UNIVERSAL"
+     },
+     "canonicalLine": "DELTA-10 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Maui Wauii",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC1-D10-MW",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D10-MW"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745851",
+      "INDIVIDUAL #": "SUP-MMC1-D10-MW",
+      "DISPLAY SKU": "602835746384"
+     },
+     "canonicalLine": "DELTA-10 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Northern Lights",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC1-D10-NL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D10-NL"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745868",
+      "INDIVIDUAL #": "SUP-MMC1-D10-NL",
+      "DISPLAY SKU": "602835746391"
+     },
+     "canonicalLine": "DELTA-10 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Pineapple Express",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC1-D10-PE",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D10-PE"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745875",
+      "INDIVIDUAL #": "SUP-MMC1-D10-PE",
+      "DISPLAY SKU": "602835746407"
+     },
+     "canonicalLine": "DELTA-10 MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Trainwreck",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC1-D10-TW",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-D10-TR"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745882",
+      "INDIVIDUAL #": "SUP-MMC1-D10-TR",
+      "DISPLAY SKU": "602835746414"
+     },
+     "canonicalLine": "DELTA-10 MUHA MEDS CARTRIDGE (1g)"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hemp006",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": null,
+   "line": "HHC MUHA MEDS CARTRIDGE (1g)",
+   "generation": null,
+   "skuBlock": "HEMP006",
+   "category": "cartridges",
+   "format": "1g",
+   "items": [
+    {
+     "name": "Agent Orange",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC1-HHC-AO",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767177",
+      "displayBox": "10DBP-MMC1-HHC-AO"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/e97seti7jprq2xhr8iae9/ACodOHngTuEmCQwEYpecgV4?rlkey=onf3hk1m1r24676vn8gdj1jmz&st=vxvwglss&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/0h2tuero1equvvuqucd2h/AC4lX0gqIJHIcNwuGVMPoxY?rlkey=v5592t59a101zb620mzf3u467&st=95dpe0hq&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745493",
+      "INDIVIDUAL #": "SUP-MMC1-HHC-AO",
+      "DISPLAY SKU": "602835746124",
+      "WHOLESALE SKU / #": "648564767290"
+     },
+     "canonicalLine": "HHC MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Cherry Berry",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC1-HHC-CB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-HHC-CB"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745509",
+      "INDIVIDUAL #": "SUP-MMC1-HHC-CB",
+      "DISPLAY SKU": "602835746131"
+     },
+     "canonicalLine": "HHC MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Gelato",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC1-HHC-GE",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-HHC-GE"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745516",
+      "INDIVIDUAL #": "SUP-MMC1-HHC-GE",
+      "DISPLAY SKU": "602835746148"
+     },
+     "canonicalLine": "HHC MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Gods Gift",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC1-HHC-GG",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-HHC-GG"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745523",
+      "INDIVIDUAL #": "SUP-MMC1-HHC-GG",
+      "DISPLAY SKU": "602835746155"
+     },
+     "canonicalLine": "HHC MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Green Crack",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC1-HHC-GC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-HHC-GC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745530",
+      "INDIVIDUAL #": "SUP-MMC1-HHC-GC",
+      "DISPLAY SKU": "602835746162"
+     },
+     "canonicalLine": "HHC MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "King Louie XII",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC1-HHC-KL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-MMC1-2LOGO",
+      "displayBox": "10DBP-MMC1-HHC-KL"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745547",
+      "INDIVIDUAL #": "SUP-MMC1-HHC-KL",
+      "DISPLAY SKU": "602835746179",
+      "WHOLESALE SKU / #": "100WBP-MMC1-UNIVERSAL"
+     },
+     "canonicalLine": "HHC MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Maui Wauii",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC1-HHC-MW",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-HHC-MW"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745554",
+      "INDIVIDUAL #": "SUP-MMC1-HHC-MW",
+      "DISPLAY SKU": "602835746186"
+     },
+     "canonicalLine": "HHC MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Northern Lights",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC1-HHC-NL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-HHC-NL"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745561",
+      "INDIVIDUAL #": "SUP-MMC1-HHC-NL",
+      "DISPLAY SKU": "602835746193"
+     },
+     "canonicalLine": "HHC MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Pineapple Express",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC1-HHC-PE",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-HHC-PE"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745578",
+      "INDIVIDUAL #": "SUP-MMC1-HHC-PE",
+      "DISPLAY SKU": "602835746209"
+     },
+     "canonicalLine": "HHC MUHA MEDS CARTRIDGE (1g)"
+    },
+    {
+     "name": "Trainwreck",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC1-HHC-TW",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMC1-HHC-TR"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "602835745585",
+      "INDIVIDUAL #": "SUP-MMC1-HHC-TR",
+      "DISPLAY SKU": "602835746216"
+     },
+     "canonicalLine": "HHC MUHA MEDS CARTRIDGE (1g)"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hemp007",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": "FLOWER JAR",
+   "line": "THC-A EXOTIC FLOWER JARS (4g)",
+   "generation": null,
+   "skuBlock": "HEMP007",
+   "category": "flower",
+   "format": "4g",
+   "items": [
+    {
+     "name": "Bacio Gelato",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMFJ4-THCA-BG",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "8DBP-MMFJ4-THCA-BC"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/lf3amoeeo6r9kaudlcnvo/AC2glTduN9oZCQj-xrPiAPM?rlkey=02uipng86yok0euuhom3w9ejv&st=qa26zrv7&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/rbars2ijmy1ly6hsectkh/ANgjujjk8xPdVs5eDuqma3g?rlkey=kxrih9jqjhtv3z9il0bolvjaw&st=iqoys9zg&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "STICKER LABEL SKU": "784847463579",
+      "STICKER LABEL #": "SUL-MMFJ4-THCA-BG",
+      "GLASS JAR SKU / #": "648564767184",
+      "SHRINK WRAP SKU / #": "648564767191",
+      "DISPLAY SKU": "784847463630"
+     },
+     "canonicalLine": "THC-A EXOTIC FLOWER JARS (4g)"
+    },
+    {
+     "name": "Black Truffle",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMFJ4-THCA-BT",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "8DBP-MMFJ4-THCA-BT"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "STICKER LABEL SKU": "784847463524",
+      "STICKER LABEL #": "SUL-MMFJ4-THCA-BT",
+      "DISPLAY SKU": "784847463586"
+     },
+     "canonicalLine": "THC-A EXOTIC FLOWER JARS (4g)"
+    },
+    {
+     "name": "Frosted Cherries",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMFJ4-THCA-FC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "8DBP-MMFJ4-THCA-FC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "STICKER LABEL SKU": "784847463531",
+      "STICKER LABEL #": "SUL-MMFJ4-THCA-FC",
+      "DISPLAY SKU": "784847463593"
+     },
+     "canonicalLine": "THC-A EXOTIC FLOWER JARS (4g)"
+    },
+    {
+     "name": "Gush Mintz",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMFJ4-THCA-GM",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "8DBP-MMFJ4-THCA-GM"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "STICKER LABEL SKU": "784847463555",
+      "STICKER LABEL #": "SUL-MMFJ4-THCA-GM",
+      "GLASS JAR SKU / #": "2GJ-MMFJ-UNIVERSAL",
+      "SHRINK WRAP SKU / #": "SW-2GJ-MMFJ-UNVIERSAL",
+      "DISPLAY SKU": "784847463616"
+     },
+     "canonicalLine": "THC-A EXOTIC FLOWER JARS (4g)"
+    },
+    {
+     "name": "Pink Runtz",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMFJ4-THCA-PR",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "8DBP-MMFJ4-THCA-PR"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "STICKER LABEL SKU": "784847463562",
+      "STICKER LABEL #": "SUL-MMFJ4-THCA-PR",
+      "DISPLAY SKU": "784847463623"
+     },
+     "canonicalLine": "THC-A EXOTIC FLOWER JARS (4g)"
+    },
+    {
+     "name": "Strawberry Mimosa",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMFJ4-THCA-SM",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "8DBP-MMFJ4-THCA-SM"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "STICKER LABEL SKU": "784847463548",
+      "STICKER LABEL #": "SUL-MMFJ4-THCA-SM",
+      "DISPLAY SKU": "784847463609"
+     },
+     "canonicalLine": "THC-A EXOTIC FLOWER JARS (4g)"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hemp008",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": null,
+   "line": "THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)",
+   "generation": null,
+   "skuBlock": "HEMP008",
+   "category": "flower",
+   "format": "3.5g",
+   "items": [
+    {
+     "name": "Gummiez",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMFB3.5-THCA-GZ",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853725",
+      "displayBox": "10DBP-MMFB3.5-THCA-GZ"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/grufxf4ki6jl6dx6jw48u/ACPgBrdc_rL-tRizzkxbr7w?rlkey=1haq3g0imbiy5fkzoc4w1gsyw&st=nc57d4h3&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/d8sx0j3aqeq8o5enf2w25/AGgVSe4QtF-SpKiy3BO-KiA?rlkey=lazx94bt5ak1iul1xbdoqr62v&st=frgr0bcs&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMFB3.5-THCA-GZ",
+      "DISPLAY BOX SKU": "662987630320"
+     },
+     "canonicalLine": "THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Lolipop",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMFB3.5-THCA-LP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853732",
+      "displayBox": "10DBP-MMFB3.5-THCA-LP"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMFB3.5-THCA-LP",
+      "DISPLAY BOX SKU": "662987630337"
+     },
+     "canonicalLine": "THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "White Truffle",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMFB3.5-THCA-WT",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853749",
+      "displayBox": "10DBP-MMFB3.5-THCA-WT"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMFB3.5-THCA-WT",
+      "DISPLAY BOX SKU": "662987630344"
+     },
+     "canonicalLine": "THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Lemon Cherry Gelato",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMFB3.5-THCA-LC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853756",
+      "displayBox": "10DBP-MMFB3.5-THCA-LC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMFB3.5-THCA-LC",
+      "DISPLAY BOX SKU": "662987630351"
+     },
+     "canonicalLine": "THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Purple Wookies",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMFB3.5-THCA-PW",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853763",
+      "displayBox": "10DBP-MMFB3.5-THCA-PW"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMFB3.5-THCA-PW",
+      "DISPLAY BOX SKU": "662987630368"
+     },
+     "canonicalLine": "THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Skittles",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMFB3.5-THCA-SZ",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853770",
+      "displayBox": "10DBP-MMFB3.5-THCA-SZ"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMFB3.5-THCA-SZ",
+      "DISPLAY BOX SKU": "662987630375"
+     },
+     "canonicalLine": "THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Bored Ape Runtz",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMFB3.5-THCA-BR",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853787",
+      "displayBox": "10DBP-MMFB3.5-THCA-BR"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMFB3.5-THCA-BR",
+      "DISPLAY BOX SKU": "662987630382"
+     },
+     "canonicalLine": "THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Banana Cream Cake",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMFB3.5-THCA-BC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853794",
+      "displayBox": "10DBP-MMFB3.5-THCA-BC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMFB3.5-THCA-BC",
+      "DISPLAY BOX SKU": "662987630399"
+     },
+     "canonicalLine": "THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hemp009",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": "PRE-ROLL",
+   "line": "THC-A KING MATE PRE-ROLL (1.5g)",
+   "generation": null,
+   "skuBlock": "HEMP009",
+   "category": "pre-rolls",
+   "format": "1.5g",
+   "items": [
+    {
+     "name": "Alpine Guava",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMKMPR1.5-THCA-AG",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMKMPR15-THCA-AG"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/ljtnjbu837i25b3dgq2rb/AN_L0xPbdskIFgbz2V16PIQ?rlkey=vim4sefj5dut9soa4jstrmzl7&st=kpzr77nw&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/u303k8yab386n70brwe8g/ANphdlBoOQjSz9H-7JkJqNo?rlkey=c4fj2oj6yter20z5ljvib7pif&st=764feo5s&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONE SKU / #": "648564767207",
+      "METAL TUBE SKU": "784847463272",
+      "METAL TUBE #": "SUP-MMKMPR15-THCA-AG",
+      "SHRINK WRAP SKU / #": "648564767214",
+      "DISPLAY SKU": "784847463333"
+     },
+     "canonicalLine": "THC-A KING MATE PRE-ROLL (1.5g)"
+    },
+    {
+     "name": "Blackberry Kush",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMKMPR1.5-THCA-BK",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMKMPR15-THCA-BK"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "METAL TUBE SKU": "784847463289",
+      "METAL TUBE #": "SUP-MMKMPR15-THCA-BK",
+      "DISPLAY SKU": "784847463340"
+     },
+     "canonicalLine": "THC-A KING MATE PRE-ROLL (1.5g)"
+    },
+    {
+     "name": "Chilled Cherries",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMKMPR1.5-THCA-CC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMKMPR15-THCA-CC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "METAL TUBE SKU": "784847463319",
+      "METAL TUBE #": "SUP-MMKMPR15-THCA-CC",
+      "DISPLAY SKU": "784847463357"
+     },
+     "canonicalLine": "THC-A KING MATE PRE-ROLL (1.5g)"
+    },
+    {
+     "name": "Mimosa",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMKMPR1.5-THCA-MI",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMKMPR15-THCA-MI"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONE SKU / #": "KGC-MMKMPR15-UNIVERSAL",
+      "METAL TUBE SKU": "784847463326",
+      "METAL TUBE #": "SUP-MMKMPR15-THCA-MI",
+      "SHRINK WRAP SKU / #": "SW-MMKMPR15-UNIVERSAL",
+      "DISPLAY SKU": "784847463364"
+     },
+     "canonicalLine": "THC-A KING MATE PRE-ROLL (1.5g)"
+    },
+    {
+     "name": "Northern Lights",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMKMPR1.5-THCA-NL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMKMPR15-THCA-NL"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "METAL TUBE SKU": "784847463302",
+      "METAL TUBE #": "SUP-MMKMPR15-THCA-NL",
+      "DISPLAY SKU": "784847463371"
+     },
+     "canonicalLine": "THC-A KING MATE PRE-ROLL (1.5g)"
+    },
+    {
+     "name": "White Widow",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMKMPR1.5-THCA-WW",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMKMPR15-THCA-WW"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "METAL TUBE SKU": "784847463296",
+      "METAL TUBE #": "SUP-MMKMPR15-THCA-WW",
+      "DISPLAY SKU": "784847463388"
+     },
+     "canonicalLine": "THC-A KING MATE PRE-ROLL (1.5g)"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hemp010",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": null,
+   "line": "THC-A MATES PRE-ROLLS 0.6g",
+   "generation": null,
+   "skuBlock": "HEMP010",
+   "category": "pre-rolls",
+   "format": "0.6g",
+   "items": [
+    {
+     "name": "Strawberry Dream",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMMPR3-THCA-SD",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMMPR3-THCA-SD"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/n61eu7v1ulbumohd02a0y/AIWcKOG6jaZHBmuuOZHpzxI?rlkey=jiw6mm9iv3v18gn6tuzg4b0or&st=hglmst69&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/w088t4llaoywhrqa8d2gp/AHAyFavy3eWhAqziJsNTR0Y?rlkey=lsl9qpxphv1u20oamzsafe60n&st=n1bl99fx&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONE SKU": "648564767221",
+      "CONE #": "MC-MMMPR3-SD",
+      "METAL CAN SKU": "741654778838",
+      "METAL CAN #": "SUP-MMMPR3-THCA-SD",
+      "SHRINK WRAP SKU / #": "648564767283",
+      "DISPLAY BOX SKU": "741654778890"
+     },
+     "canonicalLine": "THC-A MATES PRE-ROLLS 0.6g"
+    },
+    {
+     "name": "Mango Peach Rings",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMMPR3-THCA-MP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMMPR3-THCA-MP"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONE SKU": "648564767238",
+      "CONE #": "MC-MMMPR3-MP",
+      "METAL CAN SKU": "741654778876",
+      "METAL CAN #": "SUP-MMMPR3-THCA-MP",
+      "DISPLAY BOX SKU": "741654778937"
+     },
+     "canonicalLine": "THC-A MATES PRE-ROLLS 0.6g"
+    },
+    {
+     "name": "Thin Mints OG",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMMPR3-THCA-TM",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMMPR3-THCA-TM"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONE SKU": "648564767245",
+      "CONE #": "MC-MMMPR3-TM",
+      "METAL CAN SKU": "741654778821",
+      "METAL CAN #": "SUP-MMMPR3-THCA-TM",
+      "DISPLAY BOX SKU": "741654778883"
+     },
+     "canonicalLine": "THC-A MATES PRE-ROLLS 0.6g"
+    },
+    {
+     "name": "Blueberry ZaZa",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMMPR3-THCA-BZ",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMMPR3-THCA-BZ"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONE SKU": "648564767252",
+      "CONE #": "MC-MMMPR3-BZ",
+      "METAL CAN SKU": "741654778852",
+      "METAL CAN #": "SUP-MMMPR3-THCA-BZ",
+      "SHRINK WRAP SKU / #": "SW-MMMPR3-UNIVERSAL",
+      "DISPLAY BOX SKU": "741654778913"
+     },
+     "canonicalLine": "THC-A MATES PRE-ROLLS 0.6g"
+    },
+    {
+     "name": "Orange Cake",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMMPR3-THCA-OC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMMPR3-THCA-OC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONE SKU": "648564767269",
+      "CONE #": "MC-MMMPR3-OC",
+      "METAL CAN SKU": "741654778869",
+      "METAL CAN #": "SUP-MMMPR3-THCA-OC",
+      "DISPLAY BOX SKU": "741654778920"
+     },
+     "canonicalLine": "THC-A MATES PRE-ROLLS 0.6g"
+    },
+    {
+     "name": "Purple Punch",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMMPR3-THCA-PP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMMPR3-THCA-PP"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONE SKU": "648564767276",
+      "CONE #": "MC-MMMPR3-PP",
+      "METAL CAN SKU": "741654778845",
+      "METAL CAN #": "SUP-MMMPR3-THCA-PP",
+      "DISPLAY BOX SKU": "741654778906"
+     },
+     "canonicalLine": "THC-A MATES PRE-ROLLS 0.6g"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hemp011",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": "GUMMIES",
+   "line": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
+   "generation": null,
+   "skuBlock": "HEMP011",
+   "category": "edibles",
+   "format": "3000mg",
+   "items": [
+    {
+     "name": "Very Berry",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMMG3000-MD-VB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853565",
+      "displayBox": "10DBP-MMMG3000-MD-VB"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/k480vjaiewadnmgcphmhc/h?rlkey=7t3fx3ntsgkkpqlveuwg9ho9z&st=ifvk54hd&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/ldtji5vdqpruw6doy5mgr/AATymCP5uzDgEYz2N26RITo?rlkey=ih2zvykge3qorlurucpjdrd6w&st=vmngn5wh&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-MD-VB",
+      "DISPLAY SKU": "645656853633"
+     },
+     "canonicalLine": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)"
+    },
+    {
+     "name": "Lime",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMMG3000-MD-LI",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853572",
+      "displayBox": "10DBP-MMMG3000-MD-LI"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-MD-LI",
+      "DISPLAY SKU": "645656853640"
+     },
+     "canonicalLine": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)"
+    },
+    {
+     "name": "Watermelon",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMMG3000-MD-WA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853589",
+      "displayBox": "10DBP-MMMG3000-MD-WA"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-MD-WA",
+      "DISPLAY SKU": "645656853657"
+     },
+     "canonicalLine": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)"
+    },
+    {
+     "name": "Mango Madness",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMMG3000-MD-MM",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853596",
+      "displayBox": "10DBP-MMMG3000-MD-MM"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-MD-MM",
+      "DISPLAY SKU": "645656853664"
+     },
+     "canonicalLine": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)"
+    },
+    {
+     "name": "Sweet and Sour",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMMG3000-MD-SS",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853602",
+      "displayBox": "10DBP-MMMG3000-MD-SS"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-MD-SS",
+      "DISPLAY SKU": "645656853671"
+     },
+     "canonicalLine": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)"
+    },
+    {
+     "name": "Strawberry",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMMG3000-MD-ST",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853619",
+      "displayBox": "10DBP-MMMG3000-MD-ST"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-MD-ST",
+      "DISPLAY SKU": "645656853688"
+     },
+     "canonicalLine": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)"
+    },
+    {
+     "name": "Sour Apple",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMMG3000-MD-SA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853626",
+      "displayBox": "10DBP-MMMG3000-MD-SA"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-MD-SA",
+      "DISPLAY SKU": "645656853695"
+     },
+     "canonicalLine": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hemp012",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": null,
+   "line": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
+   "generation": null,
+   "skuBlock": "HEMP012",
+   "category": "edibles",
+   "format": "3000mg",
+   "items": [
+    {
+     "name": "Very Berry",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMMG3000-LR-VB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853497",
+      "displayBox": "10DBP-MMMG3000-LR-VB"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/xokia4m5kcknd2s3lswuk/h?rlkey=fbsdxxl7rnyq8st3xjrex3j4h&st=i36ewnnt&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/hp3eytkzsloew99k8l1rd/AIjDP6YKxjj7UFg3eDpUw8Y?rlkey=po1rbujl243531g842g9e0h20&st=8wbkml9o&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-LR-VB",
+      "DISPLAY SKU": "645656853701"
+     },
+     "canonicalLine": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)"
+    },
+    {
+     "name": "Lime",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMMG3000-LR-LI",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853503",
+      "displayBox": "10DBP-MMMG3000-LR-LI"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-LR-LI",
+      "DISPLAY SKU": "645656853718"
+     },
+     "canonicalLine": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)"
+    },
+    {
+     "name": "Watermelon",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMMG3000-LR-WA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853510",
+      "displayBox": "10DBP-MMMG3000-LR-WA"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-LR-WA",
+      "DISPLAY SKU": "645656853800"
+     },
+     "canonicalLine": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)"
+    },
+    {
+     "name": "Mango Madness",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMMG3000-LR-MM",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853527",
+      "displayBox": "10DBP-MMMG3000-LR-MM"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-LR-MM",
+      "DISPLAY SKU": "645656853817"
+     },
+     "canonicalLine": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)"
+    },
+    {
+     "name": "Sweet and Sour",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMMG3000-LR-SS",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853534",
+      "displayBox": "10DBP-MMMG3000-LR-SS"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-LR-SS",
+      "DISPLAY SKU": "645656853824"
+     },
+     "canonicalLine": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)"
+    },
+    {
+     "name": "Strawberry",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMMG3000-LR-ST",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853541",
+      "displayBox": "10DBP-MMMG3000-LR-ST"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-LR-ST",
+      "DISPLAY SKU": "645656853831"
+     },
+     "canonicalLine": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)"
+    },
+    {
+     "name": "Sour Apple",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "MMMG3000-LR-SO",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645656853558",
+      "displayBox": "10DBP-MMMG3000-LR-SO"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG #": "SUP-MMMG3000-LR-SA",
+      "DISPLAY SKU": "645656853848"
+     },
+     "canonicalLine": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)"
+    },
+    {
+     "name": "Special SKUs",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)"
+    },
+    {
+     "name": "Hemp Melted Diamomd 2G Dispo V1",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "SKU #HEMPSS001",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hempss001",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": "Special SKUs",
+   "line": "Hemp Melted Diamomd 2G Dispo V1",
+   "generation": null,
+   "skuBlock": "HEMPSS001",
+   "category": "disposables",
+   "format": "2g",
+   "items": [
+    {
+     "name": "Habibi",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-V1-MMD2-MD-HBB",
+      "packaging": "SUP-V1-MMD2-MD-HBB",
+      "displayBox": "10DBP-V1-MMD2-MD-HBB",
+      "wholesaleCase": "100WBP-MMD2-MD-UNIVERSAL-V1"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/hztdv15iwqkjhohmup5gf/AB0Ft08zUm3TwNjdKKtHn0A?rlkey=xmyooccz7bi7hrrd2ws8dmr9n&st=0jtabgyu&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/oyu1055gmvg6td91pa4k5/AA-doMbYgxgIa03I76ixAT4?rlkey=f9udg15n2fbslnz081g0og23p&st=i156eror&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMD2G-MD-HBB"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Dispo V1"
+    },
+    {
+     "name": "Bubble Gum Burst",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-V1-MMD2-MD-BB",
+      "packaging": "SUP-V1-MMD2-MD-BB",
+      "displayBox": "10DBP-V1-MMD2-MD-BB"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMD2G-MD-BB"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Dispo V1"
+    },
+    {
+     "name": "Dragonberry Runtz",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-V1-MMD2-MD-DBR",
+      "packaging": "SUP-V1-MMD2-MD-DBR",
+      "displayBox": "10DBP-V1-MMD2-MD-DBR"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMD2G-MD-DBR"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Dispo V1"
+    },
+    {
+     "name": "Frozen Pomegranate",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-V1-MMD2-MD-FP",
+      "packaging": "SUP-V1-MMD2-MD-FP",
+      "displayBox": "10DBP-V1-MMD2-MD-FP"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMD2G-MD-FP"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Dispo V1"
+    },
+    {
+     "name": "Pineapple Paradise",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-V1-MMD2-MD-PP",
+      "packaging": "SUP-V1-MMD2-MD-PP",
+      "displayBox": "10DBP-V1-MMD2-MD-PP"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMD2G-MD-PP"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Dispo V1"
+    },
+    {
+     "name": "Watermelon Moonshine",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-V1-MMD2-MD-WM",
+      "packaging": "SUP-V1-MMD2-MD-WM",
+      "displayBox": "10DBP-V1-MMD2-MD-WM"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMD2G-MD-WM"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Dispo V1"
+    },
+    {
+     "name": "Galactic Diesel",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-V1-MMD2-MD-GD",
+      "packaging": "SUP-V1-MMD2-MD-GD",
+      "displayBox": "10DBP-V1-MMD2-MD-GD"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMD2G-MD-GD"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Dispo V1"
+    },
+    {
+     "name": "Blue Slushie",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-V1-MMD2-MD-BS",
+      "packaging": "SUP-V1-MMD2-MD-BS",
+      "displayBox": "10DBP-V1-MMD2-MD-BS"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMD2G-MD-BS"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Dispo V1"
+    },
+    {
+     "name": "Sweet Dreams OG",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-V1-MMD2-MD-SDO",
+      "packaging": "SUP-V1-MMD2-MD-SDO",
+      "displayBox": "10DBP-V1-MMD2-MD-SDO"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMD2G-MD-SDO"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Dispo V1"
+    },
+    {
+     "name": "Horchata",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-V1-MMD2-MD-HC",
+      "packaging": "SUP-V1-MMD2-MD-HC",
+      "displayBox": "10DBP-V1-MMD2-MD-HC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMD2G-MD-HC"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Dispo V1"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hempss002",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Active Sku's.csv",
+   "section": null,
+   "line": "Hemp Melted Diamomd 2G Cart V1",
+   "generation": null,
+   "skuBlock": "HEMPSS002",
+   "category": "cartridges",
+   "format": "2g",
+   "items": [
+    {
+     "name": "Gelato 33",
+     "skuBarcode": "648564767306",
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "2G-CART-HW-3",
+      "packaging": "MI-2G-CART-PKG-3-G33",
+      "displayBox": "MI-2G-CART-DISP-3-G33",
+      "wholesaleCase": "MI-2G-CART-WC-2-STD"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/wy3e7ktcshm5wbk7grkm5/AKK2D6M2uo7mqOWC93ozRK0?rlkey=23lsvat0xjl4fohapiw4t7a22&st=2cqnigbx&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/ecvlg1lgfp3bo1kbct15b/AOoL4sld_JwkjTNYeBUuTM8?rlkey=oic53psjdazz0ckcqlpuf92xu&st=f64j4ydj&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMC2G-MD-HBB"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Cart V1"
+    },
+    {
+     "name": "Purple Punch",
+     "skuBarcode": "648564767313",
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "MI-2G-CART-PKG-3-PP",
+      "displayBox": "MI-2G-CART-DISP-3-PP"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMC2G-MD-BB"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Cart V1"
+    },
+    {
+     "name": "Lemon Drop",
+     "skuBarcode": "648564767320",
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "MI-2G-CART-PKG-3-LT",
+      "displayBox": "MI-2G-CART-DISP-3-LT"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMC2G-MD-DBR"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Cart V1"
+    },
+    {
+     "name": "Skywalker OG",
+     "skuBarcode": "648564767337",
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "MI-2G-CART-PKG-3-SOG",
+      "displayBox": "MI-2G-CART-DISP-3-SOG"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMC2G-MD-FP"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Cart V1"
+    },
+    {
+     "name": "Frozen Bluez",
+     "skuBarcode": "648564767344",
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "MI-2G-CART-PKG-3-FBZ",
+      "displayBox": "MI-2G-CART-DISP-3-FBZ"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMC2G-MD-PP"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Cart V1"
+    },
+    {
+     "name": "Mellow Dew",
+     "skuBarcode": "648564767351",
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "MI-2G-CART-PKG-3-MD",
+      "displayBox": "MI-2G-CART-DISP-3-MD"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMC2G-MD-WM"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Cart V1"
+    },
+    {
+     "name": "Strawberry Lava",
+     "skuBarcode": "648564767368",
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "MI-2G-CART-PKG-3-SBL",
+      "displayBox": "MI-2G-CART-DISP-3-SBL"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMC2G-MD-GD"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Cart V1"
+    },
+    {
+     "name": "Toxic Apple",
+     "skuBarcode": "648564767375",
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "MI-2G-CART-PKG-3-TXA",
+      "displayBox": "MI-2G-CART-DISP-3-TXA"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMC2G-MD-BS"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Cart V1"
+    },
+    {
+     "name": "Georgia Peaches",
+     "skuBarcode": "648564767382",
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "MI-2G-CART-PKG-3-GP",
+      "displayBox": "MI-2G-CART-DISP-3-GP"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMC2G-MD-SDO"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Cart V1"
+    },
+    {
+     "name": "Do-si Cake",
+     "skuBarcode": "648564767399",
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "MI-2G-CART-PKG-3-DSC",
+      "displayBox": "MI-2G-CART-DISP-3-DSC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Product SKU": "SS-MMC2G-MD-HC"
+     },
+     "canonicalLine": "Hemp Melted Diamomd 2G Cart V1"
+    }
+   ],
+   "upcoming": false
+  },
+  {
+   "id": "muha:HEMP:hemp013",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
+   "section": null,
+   "line": "3.5g Melted Diamond Disposables",
+   "generation": null,
+   "skuBlock": "HEMP013",
+   "category": "disposables",
+   "format": "3.5g",
+   "items": [
+    {
+     "name": "Sour Yuzu Pear",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMD3.5-MD-SY",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564768495",
+      "displayBox": "5DBP-V2-MMD3.5-MD-SY"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/ndrtcmcnzhmvnr5x149ca/AGVf1fKkHLrrao61N0s6BGw?rlkey=lcf7b5tktki0l1ypstr7h0ray&st=2zrdojjh&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/xmuikucbj18xpu5uz2nu3/AIAX6Ak2iWyBZDE86DNV2mE?rlkey=sj1wze5dy2ojemi49l2h8oz7v&st=876lix28&dl=0"
+     },
+     "quote": "GOOD FRIENDS, GOOD WEED,\nAND GOOD VIBES",
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-V2-MMD3.5-MD-SY",
+      "INDIVIDUAL SKU": "648564768389",
+      "INDIVIDUAL #": "SUP-V2-MMD3.5-MD-SY",
+      "DISPLAY SKU": "648564768433",
+      "WHOLESALE SKU": "648564768488",
+      "WHOLESALE #": "50WBP-V2-MMD3.5-UNIVERSAL"
+     },
+     "canonicalLine": "3.5g Melted Diamond Disposables"
+    },
+    {
+     "name": "Russian Cream",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMD3.5-MD-RC",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564768501",
+      "displayBox": "5DBP-V2-MMD3.5-MD-RC"
+     },
+     "links": {},
+     "quote": "I’VE GOT 419 PROBLEMS.\rAND 420 SOLUTIONS!",
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-V2-MMD3.5-MD-RC",
+      "INDIVIDUAL SKU": "648564768396",
+      "INDIVIDUAL #": "SUP-V2-MMD3.5-MD-RC",
+      "DISPLAY SKU": "648564768440"
+     },
+     "canonicalLine": "3.5g Melted Diamond Disposables"
+    },
+    {
+     "name": "Key Lime Pie",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMD3.5-MD-KL",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564768518",
+      "displayBox": "5DBP-V2-MMD3.5-MD-KL"
+     },
+     "links": {},
+     "quote": "IT’S CALLED CANNABIS,\rNOT CAN’TABIS",
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-V2-MMD3.5-MD-KL",
+      "INDIVIDUAL SKU": "648564768402",
+      "INDIVIDUAL #": "SUP-V2-MMD3.5-MD-KL",
+      "DISPLAY SKU": "648564768457"
+     },
+     "canonicalLine": "3.5g Melted Diamond Disposables"
+    },
+    {
+     "name": "Blue Zushii",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMD3.5-MD-BZ",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564768525",
+      "displayBox": "5DBP-V2-MMD3.5-MD-BZ"
+     },
+     "links": {},
+     "quote": "LIFE ISN’T ABOUT WAITING FOR THE STORM TO PASS, \nIT’S ABOUT LEARNING TO DANCE IN THE RAIN",
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-V2-MMD3.5-MD-BZ",
+      "INDIVIDUAL SKU": "648564768419",
+      "INDIVIDUAL #": "SUP-V2-MMD3.5-MD-BZ",
+      "DISPLAY SKU": "648564768464"
+     },
+     "canonicalLine": "3.5g Melted Diamond Disposables"
+    },
+    {
+     "name": "Sugar Plum OG",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMD3.5-MD-SP",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564768532",
+      "displayBox": "5DBP-V2-MMD3.5-MD-SP"
+     },
+     "links": {},
+     "quote": "YOUR PASSPORT TO PARADISE",
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-V2-MMD3.5-MD-SP",
+      "INDIVIDUAL SKU": "648564768426",
+      "INDIVIDUAL #": "SUP-V2-MMD3.5-MD-SP",
+      "DISPLAY SKU": "648564768471"
+     },
+     "canonicalLine": "3.5g Melted Diamond Disposables"
+    }
+   ],
+   "upcoming": true
+  },
+  {
+   "id": "muha:HEMP:hemp014",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
+   "section": null,
+   "line": "3.5g Live Resin Disposables",
+   "generation": null,
+   "skuBlock": "HEMP014",
+   "category": "disposables",
+   "format": "3.5g",
+   "items": [
+    {
+     "name": "Black Sugar Rose",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMD3.5-LR-BS",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564768549",
+      "displayBox": "5DBP-V2-MMD3.5-LR-BS"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/ndrtcmcnzhmvnr5x149ca/AGVf1fKkHLrrao61N0s6BGw?rlkey=lcf7b5tktki0l1ypstr7h0ray&st=2zrdojjh&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/4hsz83c335vcyy592as4n/AFRnAN4af5PhfNpJJUj8DSQ?rlkey=7o6iv93vlpomse42gfmfgcj8r&st=uj3gs8jm&dl=0"
+     },
+     "quote": "DON’T WORRY. DON’T CRY. \rSMOKE WEED AND GET HIGH.",
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-V2-MMD3.5-LR-BS",
+      "INDIVIDUAL SKU": "648564768594",
+      "INDIVIDUAL #": "SUP-V2-MMD3.5-LR-BS",
+      "DISPLAY SKU": "648564768648",
+      "WHOLESALE SKU": "648564768693",
+      "WHOLESALE #": "50WBP-V2-MMD3.5-UNIVERSAL"
+     },
+     "canonicalLine": "3.5g Live Resin Disposables"
+    },
+    {
+     "name": "Sour Cherry Limeade",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMD3.5-LR-SC",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564768556",
+      "displayBox": "5DBP-V2-MMD3.5-LR-SC"
+     },
+     "links": {},
+     "quote": "LET YOUR SMILE CHANGE THE WORLD, \rBUT DON’T LET THE WORLD CHANGE YOUR SMILE",
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-V2-MMD3.5-LR-SC",
+      "INDIVIDUAL SKU": "648564768600",
+      "INDIVIDUAL #": "SUP-V2-MMD3.5-LR-SC",
+      "DISPLAY SKU": "648564768655"
+     },
+     "canonicalLine": "3.5g Live Resin Disposables"
+    },
+    {
+     "name": "Lychee Kush",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMD3.5-LR-LK",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564768563",
+      "displayBox": "5DBP-V2-MMD3.5-LR-LK"
+     },
+     "links": {},
+     "quote": "REACH NEW HIGHS",
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-V2-MMD3.5-LR-LK",
+      "INDIVIDUAL SKU": "648564768617",
+      "INDIVIDUAL #": "SUP-V2-MMD3.5-LR-LK",
+      "DISPLAY SKU": "648564768662"
+     },
+     "canonicalLine": "3.5g Live Resin Disposables"
+    },
+    {
+     "name": "Apple Fritter",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMD3.5-LR-AF",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564768570",
+      "displayBox": "5DBP-V2-MMD3.5-LR-AF"
+     },
+     "links": {},
+     "quote": "Breathe in, hold it, puff out, and grin",
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-V2-MMD3.5-LR-AF",
+      "INDIVIDUAL SKU": "648564768624",
+      "INDIVIDUAL #": "SUP-V2-MMD3.5-LR-AF",
+      "DISPLAY SKU": "648564768679"
+     },
+     "canonicalLine": "3.5g Live Resin Disposables"
+    },
+    {
+     "name": "White Gummy",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMD3.5-LR-WG",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564768587",
+      "displayBox": "5DBP-V2-MMD3.5-LR-WG"
+     },
+     "links": {},
+     "quote": "I DON’T ALWAYS GET HIGH, BUT WHEN I DO,\rI MAKE SURE TO FORGET WHAT I WAS SUPPOSED TO DO",
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-V2-MMD3.5-LR-WG",
+      "INDIVIDUAL SKU": "648564768631",
+      "INDIVIDUAL #": "SUP-V2-MMD3.5-LR-WG",
+      "DISPLAY SKU": "648564768686"
+     },
+     "canonicalLine": "3.5g Live Resin Disposables"
+    }
+   ],
+   "upcoming": true
+  },
+  {
+   "id": "muha:HEMP:hemp015",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
+   "section": "Cartridges",
+   "line": "2g THCP + HHCP Carts",
+   "generation": null,
+   "skuBlock": "HEMP015",
+   "category": "cartridges",
+   "format": "2g",
+   "items": [
+    {
+     "name": "Midnight Rain",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC2-THCP-MR",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "648564767153",
+      "displayBox": "5DBP-MMC2-THCP-MR"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/qd6u4lwi64gkzr8gntq70/AFkD3-zn-tKhQpBv3yhLOUE?rlkey=vpb51a1t6vfg99mvrj7z40cby&st=chrogvzn&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/5axn89xjl2jet3iosafxl/ACRUfHDdqTfbFeonzEvjJoA?rlkey=8uckxlur820e5m7zz4pdnpflg&st=1phv505d&dl=0"
+     },
+     "quote": "I ONLY SMOKE WEED ON DAYS THAT END IN ‘Y'",
+     "notes": null,
+     "extra": {
+      "HARDWARE #": "H-MMC2-2LOGO",
+      "INDIVIDUAL SKU": "648564768709",
+      "INDIVIDUAL #": "SUP-MMC2-THCP-MR",
+      "DISPLAY SKU": "648564768754",
+      "WHOLESALE SKU": "648564768808",
+      "WHOLESALE #": "50WDP-MMC2-THCP-UNIVERSAL-V1"
+     },
+     "canonicalLine": "2g THCP + HHCP Carts"
+    },
+    {
+     "name": "Honeydew Haze",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC2-THCP-HH",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMC2-THCP-HH"
+     },
+     "links": {},
+     "quote": "MAY ALL YOUR TROUBLES LAST AS LONG AS YOUR RESOLUTIONS",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "648564768716",
+      "INDIVIDUAL #": "SUP-MMC2-THCP-HH",
+      "DISPLAY SKU": "648564768761"
+     },
+     "canonicalLine": "2g THCP + HHCP Carts"
+    },
+    {
+     "name": "Platinum Kush",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMC2-THCP-PK",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMC2-THCP-PK"
+     },
+     "links": {},
+     "quote": "LIFE’S A JOURNEY,\rLIGHT IT UP",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "648564768723",
+      "INDIVIDUAL #": "SUP-MMC2-THCP-PK",
+      "DISPLAY SKU": "648564768778"
+     },
+     "canonicalLine": "2g THCP + HHCP Carts"
+    },
+    {
+     "name": "Orange Creamsicle",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMC2-THCP-OC",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMC2-THCP-OC"
+     },
+     "links": {},
+     "quote": "TAKE A HIT, TAKE A BREATH,\rAND LET GO OF THE STRESS",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "648564768730",
+      "INDIVIDUAL #": "SUP-MMC2-THCP-OC",
+      "DISPLAY SKU": "648564768785"
+     },
+     "canonicalLine": "2g THCP + HHCP Carts"
+    },
+    {
+     "name": "Gush Mintz",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMC2-THCP-GM",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-MMC2-THCP-GM"
+     },
+     "links": {},
+     "quote": "THE BEST THINGS IN LIFE ARE FREE. THE SECOND BEST ARE VERY EXPENSIVE.",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "648564768747",
+      "INDIVIDUAL #": "SUP-MMC2-THCP-GM",
+      "DISPLAY SKU": "648564768792"
+     },
+     "canonicalLine": "2g THCP + HHCP Carts"
+    }
+   ],
+   "upcoming": true
+  },
+  {
+   "id": "muha:HEMP:hemp016",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
+   "section": null,
+   "line": "2g THCA Carts",
+   "generation": null,
+   "skuBlock": "HEMP016",
+   "category": "cartridges",
+   "format": "2g",
+   "items": [
+    {
+     "name": "Strawberry Shortcake",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "V2-MMC2-THCA-SS",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "H-MMC2-2LOGO",
+      "displayBox": "5DBP-V2-MMC2-THCA-SS"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/yeu6u2tedtuxmmc1nrxcd/AO0z-q_vsanUkAhkkwA0sgg?rlkey=xcbkhmaqkzb0l0monckg18rqk&st=n02hfsei&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/1cl6l7lxrusuigb0yt0h1/ACiyLH1YUnDh6r3lCl-r8RY?rlkey=f5979ua6fti0fpsrq0v1ijb10&st=7qw37s1a&dl=0"
+     },
+     "quote": "If you ever miss 4:20, just wait until 4:22. Because 4:22 is 4:20, too",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779415",
+      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-SS",
+      "DISPLAY SKU": "741654779514",
+      "WHOLESALE SKU": "648564767160",
+      "WHOLESALE #": "50WDP-V2-MMC2-THCA-UNIVERSAL"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Mango Madness",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "V2-MMC2-THCA-MM",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-V2-MMC2-THCA-MM"
+     },
+     "links": {},
+     "quote": "Inhale the good shit exhale the bullshit",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779408",
+      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-MM",
+      "DISPLAY SKU": "741654779507"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Pineapple Runtz",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "V2-MMC2-THCA-PR",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-V2-MMC2-THCA-PR"
+     },
+     "links": {},
+     "quote": "Why do they call it rush hour when nothing moves?",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779422",
+      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-PR",
+      "DISPLAY SKU": "741654779521"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Lemon Cherry Gelato",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "V2-MMC2-THCA-LC",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-V2-MMC2-THCA-LC"
+     },
+     "links": {},
+     "quote": "You cant buy happiness, but you can buy weed and that's pretty fucking close",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779439",
+      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-LC",
+      "DISPLAY SKU": "741654779538"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Watermelon Gelato",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "V2-MMC2-THCA-WG",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-V2-MMC2-THCA-WG"
+     },
+     "links": {},
+     "quote": "Don't count the days, make the days count",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779446",
+      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-WG",
+      "DISPLAY SKU": "741654779545"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Candy Apple",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "V2-MMC2-THCA-CA",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-V2-MMC2-THCA-CA"
+     },
+     "links": {},
+     "quote": "Weed makes everything funnier... except math",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779460",
+      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-CA",
+      "DISPLAY SKU": "741654779569"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Blue Slushie",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "V2-MMC2-THCA-BS",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-V2-MMC2-THCA-BS"
+     },
+     "links": {},
+     "quote": "You get what you fight for, not what you wish for",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779453",
+      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-BS",
+      "DISPLAY SKU": "741654779552"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Paradise Punch OG",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "V2-MMC2-THCA-PO",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-V2-MMC2-THCA-PO"
+     },
+     "links": {},
+     "quote": "Whoever said 'out of sight out of mind' never had a spider disappear in their bedroom",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779477",
+      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-PO",
+      "DISPLAY SKU": "741654779576"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Purple Punch",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "V2-MMC2-THCA-PP",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-V2-MMC2-THCA-PP"
+     },
+     "links": {},
+     "quote": "May the flowers remind us why the rain was so necessary",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779484",
+      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-PP",
+      "DISPLAY SKU": "741654779583"
+     },
+     "canonicalLine": "2g THCA Carts"
+    },
+    {
+     "name": "Bubble Gum",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "V2-MMC2-THCA-BG",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "5DBP-V2-MMC2-THCA-BG"
+     },
+     "links": {},
+     "quote": "Struggle is the enemy, but weed is the remedy.",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL SKU": "741654779491",
+      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-BG",
+      "DISPLAY SKU": "741654779590"
+     },
+     "canonicalLine": "2g THCA Carts"
+    }
+   ],
+   "upcoming": true
+  },
+  {
+   "id": "muha:HEMP:hhc-carts",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
+   "section": null,
+   "line": "HHC Carts",
+   "generation": null,
+   "skuBlock": null,
+   "category": "cartridges",
+   "format": null,
+   "items": [
+    {
+     "name": "Strawberry Champagne",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "HHC Carts"
+    },
+    {
+     "name": "Pink Guava",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "HHC Carts"
+    },
+    {
+     "name": "Sakura Blossom",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "HHC Carts"
+    },
+    {
+     "name": "Banana Punch",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "HHC Carts"
+    },
+    {
+     "name": "Grape Gas",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "HHC Carts"
+    },
+    {
+     "name": "Lemon Cherry Gelato",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "HHC Carts"
+    },
+    {
+     "name": "Rainbow Belts",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "HHC Carts"
+    },
+    {
+     "name": "Cereal Milk",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "HHC Carts"
+    },
+    {
+     "name": "Citrus Tsunami",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "HHC Carts"
+    },
+    {
+     "name": "Horchata",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "HHC Carts"
+    },
+    {
+     "name": "Duo Strain 20 Packs (8 strains, 4 Sku's)",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "SKU #HEMP017",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "LAUNCH DATE:"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "HHC Carts"
+    }
+   ],
+   "upcoming": true
+  },
+  {
+   "id": "muha:HEMP:hemp017",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
+   "section": "Pre-Rolls",
+   "line": "Duo Strain 20 Packs (8 strains, 4 Sku's)",
+   "generation": null,
+   "skuBlock": "HEMP017",
+   "category": "pre-rolls",
+   "format": null,
+   "items": [
+    {
+     "name": "Strawberry Mochi Banana Cake",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMDMPR20-THCA-SB",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "6DBP-MMDMPR20-THCA-SB"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/1dhs59dlhmjxgquqmzsd7/APcCSwG4sOQVnlDw54A_yYY?rlkey=kmesf70l442jawm3xrirzn9sd&st=fegt7u06&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/zxoc93hv3r000rmzyra95/AMJUAhWjan7ZjV8KcMMcp1I?rlkey=6mveo4ent6y71s78wl7rprzrb&st=hiq7nip7&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONE #": "MC-MMMPR3-BP\nMC-MMMPR3-GY",
+      "GLASS JAR SKU / #": "SUPJ-MMGC2OZ-UNIVERSAL",
+      "JAR LABEL SKU": "648564768303",
+      "JAR LABEL #": "SUPL-MMDMPR20-THCA-SB",
+      "SHRINK WRAP SKU / #": "SUPSW-MM2OZ-UNIVERSAL",
+      "DISPLAY BOX SKU": "648564768341"
+     },
+     "canonicalLine": "Duo Strain 20 Packs (8 strains, 4 Sku's)"
+    },
+    {
+     "name": "Georgia Peaches Mango Peach Rings",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMDMPR20-THCA-PM",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "6DBP-MMDMPR20-THCA-PM"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONE #": "MC-MMMPR3-GY\nMC-MMMPR3-OO",
+      "JAR LABEL SKU": "648564768310",
+      "JAR LABEL #": "SUPL-MMDMPR20-THCA-PM",
+      "DISPLAY BOX SKU": "648564768358"
+     },
+     "canonicalLine": "Duo Strain 20 Packs (8 strains, 4 Sku's)"
+    },
+    {
+     "name": "Blue Slushie White Rapsberry",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMDMPR20-THCA-BR",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "6DBP-MMDMPR20-THCA-BR"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONE #": "MC-MMMPR3-BB\nMC-MMMPR3-OW",
+      "JAR LABEL SKU": "648564768327",
+      "JAR LABEL #": "SUPL-MMDMPR20-THCA-BR",
+      "DISPLAY BOX SKU": "648564768365"
+     },
+     "canonicalLine": "Duo Strain 20 Packs (8 strains, 4 Sku's)"
+    },
+    {
+     "name": "Pineapple Whip Watermelon Gelato",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMDMPR20-THCA-PW",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "6DBP-MMDMPR20-THCA-PW"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONE #": "MC-MMMPR3-BP\nMC-MMMPR3-BG",
+      "JAR LABEL SKU": "648564768334",
+      "JAR LABEL #": "SUPL-MMDMPR20-THCA-PW",
+      "DISPLAY BOX SKU": "648564768372"
+     },
+     "canonicalLine": "Duo Strain 20 Packs (8 strains, 4 Sku's)"
+    }
+   ],
+   "upcoming": true
+  },
+  {
+   "id": "muha:HEMP:hemp023",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
+   "section": null,
+   "line": "2g Hash Holes - Diamond Sauce THCA",
+   "generation": null,
+   "skuBlock": "HEMP023",
+   "category": "concentrates",
+   "format": "2g",
+   "items": [
+    {
+     "name": "Horchata",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMHHPR2-THCA-HO",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMHHPR2-THCA-HO"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/74toi8ibjedi30gq2lre2/AG8C8xj01lYKkCbrq4-sHzc?rlkey=0biyu4xh4nnd4ctjy03u8xq45&st=zkr1joog&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/zxoc93hv3r000rmzyra95/AMJUAhWjan7ZjV8KcMMcp1I?rlkey=6mveo4ent6y71s78wl7rprzrb&st=hiq7nip7&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "LABEL SKU": "645567185502",
+      "LABEL #": "SUPL-MMHHPR2-THCA-HO",
+      "DISPLAY SKU": "645567185557",
+      "CONE #": "GC-MMHHPR2-UNIVERSAL",
+      "TUBE #": "SUPT-MMHHPR2-UNIVERSAL",
+      "SHRINK WRAP #": "Dont Need"
+     },
+     "canonicalLine": "2g Hash Holes - Diamond Sauce THCA"
+    },
+    {
+     "name": "Sour Cherry Limeade",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMHHPR2-THCA-CL",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMHHPR2-THCA-CL"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "LABEL SKU": "645567185519",
+      "LABEL #": "SUPL-MMHHPR2-THCA-CL",
+      "DISPLAY SKU": "645567185564",
+      "SHRINK WRAP #": "Dont Need"
+     },
+     "canonicalLine": "2g Hash Holes - Diamond Sauce THCA"
+    },
+    {
+     "name": "Strawberry Champagne",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMHHPR2-THCA-SC",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMHHPR2-THCA-SC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "LABEL SKU": "645567185526",
+      "LABEL #": "SUPL-MMHHPR2-THCA-SC",
+      "DISPLAY SKU": "645567185571",
+      "SHRINK WRAP #": "Dont Need"
+     },
+     "canonicalLine": "2g Hash Holes - Diamond Sauce THCA"
+    },
+    {
+     "name": "Lychee Kush",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMHHPR2-THCA-LC",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMHHPR2-THCA-LC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "LABEL SKU": "645567185533",
+      "LABEL #": "SUPL-MMHHPR2-THCA-LC",
+      "DISPLAY SKU": "645567185588",
+      "SHRINK WRAP #": "Dont Need"
+     },
+     "canonicalLine": "2g Hash Holes - Diamond Sauce THCA"
+    },
+    {
+     "name": "Orange Creamsicle",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMHHPR2-THCA-OC",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMHHPR2-THCA-OC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "LABEL SKU": "645567185540",
+      "LABEL #": "SUPL-MMHHPR2-THCA-OC",
+      "DISPLAY SKU": "645567185595",
+      "SHRINK WRAP #": "Dont Need"
+     },
+     "canonicalLine": "2g Hash Holes - Diamond Sauce THCA"
+    }
+   ],
+   "upcoming": true
+  },
+  {
+   "id": "muha:HEMP:hemp024",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
+   "section": null,
+   "line": "2g Hash Holes - Hash Rosin THCP",
+   "generation": null,
+   "skuBlock": "HEMP024",
+   "category": "concentrates",
+   "format": "2g",
+   "items": [
+    {
+     "name": "Banana Cream Cake",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMHHPR2-THCP-BC",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMHHPR2-THCP-BC"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/3itjdleas2hd1exq81mkc/AD6SKcsVcmVKW-gWLMTGg_o?rlkey=vu0ojsfe6bwop83lf0uw2h1kv&st=e8vwc7o1&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/0d5xfgcvz3ejc79edyr3u/APlpx_QSyC3hicz7VXvDnJQ?rlkey=c0wzdvk2nq3gqgbagsi1osm2h&st=kklm6n94&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "LABEL SKU": "645567185601",
+      "LABEL #": "SUPL-MMHHPR2-THCP-BC",
+      "DISPLAY SKU": "645567185656",
+      "CONE #": "GC-MMHHPR2-UNIVERSAL",
+      "TUBE #": "SUPT-MMHHPR2-UNIVERSAL",
+      "SHRINK WRAP #": "Dont Need"
+     },
+     "canonicalLine": "2g Hash Holes - Hash Rosin THCP"
+    },
+    {
+     "name": "Blue Zushii",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMHHPR2-THCP-BZ",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMHHPR2-THCP-BZ"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "LABEL SKU": "645567185618",
+      "LABEL #": "SUPL-MMHHPR2-THCP-BZ",
+      "DISPLAY SKU": "645567185663",
+      "SHRINK WRAP #": "Dont Need"
+     },
+     "canonicalLine": "2g Hash Holes - Hash Rosin THCP"
+    },
+    {
+     "name": "Strawberry Kiwi Kush",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMHHPR2-THCP-SK",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMHHPR2-THCP-SK"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "LABEL SKU": "645567185625",
+      "LABEL #": "SUPL-MMHHPR2-THCP-SK",
+      "DISPLAY SKU": "645567185670",
+      "SHRINK WRAP #": "Dont Need"
+     },
+     "canonicalLine": "2g Hash Holes - Hash Rosin THCP"
+    },
+    {
+     "name": "Honeydew Haze",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMHHPR2-THCP-HH",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMHHPR2-THCP-HH"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "LABEL SKU": "645567185632",
+      "LABEL #": "SUPL-MMHHPR2-THCP-HH",
+      "DISPLAY SKU": "645567185687",
+      "SHRINK WRAP #": "Dont Need"
+     },
+     "canonicalLine": "2g Hash Holes - Hash Rosin THCP"
+    },
+    {
+     "name": "Frozen Pomegranate",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMHHPR2-THCP-FP",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "10DBP-MMHHPR2-THCP-FP"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "LABEL SKU": "645567185649",
+      "LABEL #": "SUPL-MMHHPR2-THCP-FP",
+      "DISPLAY SKU": "645567185694",
+      "SHRINK WRAP #": "Dont Need"
+     },
+     "canonicalLine": "2g Hash Holes - Hash Rosin THCP"
+    }
+   ],
+   "upcoming": true
+  },
+  {
+   "id": "muha:HEMP:2g-pre-roll-private-reserve-2-pack",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
+   "section": null,
+   "line": "2g Pre-Roll Private Reserve 2 Pack",
+   "generation": null,
+   "skuBlock": null,
+   "category": "pre-rolls",
+   "format": "2g",
+   "items": [
+    {
+     "name": "Habibi",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645567187582"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "645567187643"
+     },
+     "canonicalLine": "2g Pre-Roll Private Reserve 2 Pack"
+    },
+    {
+     "name": "Rainbow Mochi",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645567187599"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "645567187650"
+     },
+     "canonicalLine": "2g Pre-Roll Private Reserve 2 Pack"
+    },
+    {
+     "name": "White Raspberry",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645567187605"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "645567187667"
+     },
+     "canonicalLine": "2g Pre-Roll Private Reserve 2 Pack"
+    },
+    {
+     "name": "Frosted Grape",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645567187612"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "645567187674"
+     },
+     "canonicalLine": "2g Pre-Roll Private Reserve 2 Pack"
+    },
+    {
+     "name": "Cereal Milk",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645567187629"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "645567187681"
+     },
+     "canonicalLine": "2g Pre-Roll Private Reserve 2 Pack"
+    },
+    {
+     "name": "Sour Watermelon",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "645567187636"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "645567187698"
+     },
+     "canonicalLine": "2g Pre-Roll Private Reserve 2 Pack"
+    }
+   ],
+   "upcoming": true
+  },
+  {
+   "id": "muha:HEMP:hemp018",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
+   "section": "Edibles",
+   "line": "15ct Jar Edibles - Hash Rosin",
+   "generation": null,
+   "skuBlock": "HEMP018",
+   "category": "edibles",
+   "format": "15ct",
+   "items": [
+    {
+     "name": "Mango Chamoy",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMJG7500-HR-MC",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "6DBP-MMJG7500-HR-MC"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/022zhupiwt5l0h72cps7n/AILDQytaPPO_8FG9_W_M0-c?rlkey=o5207cjjr3ajf3oy3lr8zcjsl&st=gfoqhb1n&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "STICKER SKU": "645567185380",
+      "STICKER SKU #": "SUPL-MMJG7500-HR-MC",
+      "PLASTIC JAR SKU / #": "SUPJ-MMBB4OZ-UNIVERSAL",
+      "SHRINK WRAP SKU / #": "SUPSW-MM4OZ-UNIVERSAL",
+      "DISPLAY BOX SKU": "645567185441"
+     },
+     "canonicalLine": "15ct Jar Edibles - Hash Rosin"
+    },
+    {
+     "name": "Pinapple Habenero",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMJG7500-HR-PH",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "6DBP-MMJG7500-HR-PH"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "STICKER SKU": "645567185397",
+      "STICKER SKU #": "SUPL-MMJG7500-HR-PH",
+      "DISPLAY BOX SKU": "645567185458"
+     },
+     "canonicalLine": "15ct Jar Edibles - Hash Rosin"
+    },
+    {
+     "name": "Orange Creamsicle",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMJG7500-HR-OC",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "6DBP-MMJG7500-HR-OC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "STICKER SKU": "645567185403",
+      "STICKER SKU #": "SUPL-MMJG7500-HR-OC",
+      "DISPLAY BOX SKU": "645567185465"
+     },
+     "canonicalLine": "15ct Jar Edibles - Hash Rosin"
+    },
+    {
+     "name": "Kiwi Surge",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMJG7500-HR-KS",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "6DBP-MMJG7500-HR-KS"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "STICKER SKU": "645567185410",
+      "STICKER SKU #": "SUPL-MMJG7500-HR-KS",
+      "DISPLAY BOX SKU": "645567185472"
+     },
+     "canonicalLine": "15ct Jar Edibles - Hash Rosin"
+    },
+    {
+     "name": "Strawberry Lemonade",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMJG7500-HR-SL",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "6DBP-MMJG7500-HR-SL"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "STICKER SKU": "645567185427",
+      "STICKER SKU #": "SUPL-MMJG7500-HR-SL",
+      "DISPLAY BOX SKU": "645567185489"
+     },
+     "canonicalLine": "15ct Jar Edibles - Hash Rosin"
+    },
+    {
+     "name": "Sour Blue Razz",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMJG7500-HR-SB",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "displayBox": "6DBP-MMJG7500-HR-SB"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "STICKER SKU": "645567185434",
+      "STICKER SKU #": "SUPL-MMJG7500-HR-SB",
+      "DISPLAY BOX SKU": "645567185496"
+     },
+     "canonicalLine": "15ct Jar Edibles - Hash Rosin"
+    }
+   ],
+   "upcoming": true
+  },
+  {
+   "id": "muha:HEMP:hemp019",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
+   "section": null,
+   "line": "4ct Mylar Bag Edibles - Hash Rosin",
+   "generation": null,
+   "skuBlock": "HEMP019",
+   "category": "edibles",
+   "format": "4ct",
+   "items": [
+    {
+     "name": "Mango Chamoy",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMBG2000-HR-MC",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564771976",
+      "displayBox": "10DBP-MMBG2000-HR-MC"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/lus3amg8d9ylv68gwit7v/ALYZagTSlU85oqEvFWIfB5k?rlkey=wyrr2ybrlum13opg35vjys21c&st=j58fydn5&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG SKU #": "SUPM-MMBG2000-HR-MC",
+      "DISPLAY BOX SKU": "645567185328"
+     },
+     "canonicalLine": "4ct Mylar Bag Edibles - Hash Rosin"
+    },
+    {
+     "name": "Pinapple Habenero",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": "MMBG2000-HR-PH",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564771983",
+      "displayBox": "10DBP-MMBG2000-HR-PH"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG SKU #": "SUPM-MMBG2000-HR-PH",
+      "DISPLAY BOX SKU": "645567185335"
+     },
+     "canonicalLine": "4ct Mylar Bag Edibles - Hash Rosin"
+    },
+    {
+     "name": "Orange Creamsicle",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMBG2000-HR-OC",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564771990",
+      "displayBox": "10DBP-MMBG2000-HR-OC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG SKU #": "SUPM-MMBG2000-HR-OC",
+      "DISPLAY BOX SKU": "645567185342"
+     },
+     "canonicalLine": "4ct Mylar Bag Edibles - Hash Rosin"
+    },
+    {
+     "name": "Kiwi Surge",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMBG2000-HR-KS",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564772003",
+      "displayBox": "10DBP-MMBG2000-HR-KS"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG SKU #": "SUPM-MMBG2000-HR-KS",
+      "DISPLAY BOX SKU": "645567185359"
+     },
+     "canonicalLine": "4ct Mylar Bag Edibles - Hash Rosin"
+    },
+    {
+     "name": "Strawberry Lemonade",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": "MMBG2000-HR-SL",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564772010",
+      "displayBox": "10DBP-MMBG2000-HR-SL"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG SKU #": "SUPM-MMBG2000-HR-SL",
+      "DISPLAY BOX SKU": "645567185366"
+     },
+     "canonicalLine": "4ct Mylar Bag Edibles - Hash Rosin"
+    },
+    {
+     "name": "Sour Blue Razz",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": "MMBG2000-HR-SB",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564772027",
+      "displayBox": "10DBP-MMBG2000-HR-SB"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "MYLAR BAG SKU #": "SUPM-MMBG2000-HR-SB",
+      "DISPLAY BOX SKU": "645567185373"
+     },
+     "canonicalLine": "4ct Mylar Bag Edibles - Hash Rosin"
+    }
+   ],
+   "upcoming": true
+  },
+  {
+   "id": "muha:HEMP:hemp020",
+   "brand": "muha",
+   "market": "HEMP",
+   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
+   "section": "FLOWER",
+   "line": "FLOWER MYLAR BAGS 3.5G (ACTIVE)",
+   "generation": null,
+   "skuBlock": "HEMP020",
+   "category": "flower",
+   "format": "3.5g",
+   "items": [
+    {
+     "name": "Brain Freeze",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564768877"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "648564768952"
+     },
+     "canonicalLine": "FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Lemon Cherry Gelato",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564768884"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "648564768969"
+     },
+     "canonicalLine": "FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "White Truffle",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564768891"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "648564768976"
+     },
+     "canonicalLine": "FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Purple Wookies",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564768907"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "648564768983"
+     },
+     "canonicalLine": "FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Blue Velvet",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564768914"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "648564768990"
+     },
+     "canonicalLine": "FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Pink Diamonds",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564768921"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "648564769003"
+     },
+     "canonicalLine": "FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Tiger's Blood",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564768938"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "648564769010"
+     },
+     "canonicalLine": "FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Strawberry Milk",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "648564768945"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "DISPLAY BOX SKU": "648564769027"
+     },
+     "canonicalLine": "FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    },
+    {
+     "name": "Honeycomb Crumble 2g - THCA",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "SKU #HEMP021",
+     "discontinued": false,
+     "inDevelopment": true,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "mylar": "LAUNCH DATE:"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "FLOWER MYLAR BAGS 3.5G (ACTIVE)"
+    }
+   ],
+   "upcoming": true
+  },
   {
    "id": "muha:AZ:az001",
    "brand": "muha",
@@ -188,7 +4980,8 @@
      "notes": null,
      "canonicalLine": "Distallite 1 Grams Dispo"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:AZ:az002",
@@ -364,7 +5157,8 @@
      "notes": null,
      "canonicalLine": "Distallite 1 Gram Cart"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:AZ:az003",
@@ -492,7 +5286,8 @@
      "notes": null,
      "canonicalLine": "Edibles"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:AZ:az004",
@@ -668,7 +5463,8 @@
      "notes": null,
      "canonicalLine": "Classic Flavor Line, infused."
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:all:accessories",
@@ -1095,7 +5891,8 @@
      },
      "canonicalLine": "Accessories"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca026",
@@ -1364,7 +6161,8 @@
      },
      "canonicalLine": "1G Distillate Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca027",
@@ -1501,7 +6299,8 @@
      },
      "canonicalLine": "1G MuhaMeds x Cookies Collab Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca028",
@@ -1645,7 +6444,8 @@
      },
      "canonicalLine": "1G Live Resin Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca029",
@@ -1789,7 +6589,8 @@
      },
      "canonicalLine": "1G Melted Diamond Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca030",
@@ -1957,7 +6758,8 @@
      },
      "canonicalLine": "0.5G Hash Rosin Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca031",
@@ -2208,7 +7010,8 @@
      },
      "canonicalLine": "1G Distillate Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca032",
@@ -2344,7 +7147,8 @@
      },
      "canonicalLine": "1G Melted Diamond Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:pod-battery-combination-kits",
@@ -2586,7 +7390,8 @@
      "notes": null,
      "canonicalLine": "Pod & Battery Combination Kits"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:pod-flavors",
@@ -2812,7 +7617,8 @@
      },
      "canonicalLine": "Pod Flavors"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca033",
@@ -3031,7 +7837,8 @@
      },
      "canonicalLine": "Hash Rosin Concentrate Jars"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca034",
@@ -3170,7 +7977,8 @@
      },
      "canonicalLine": "Piatella Concentrate Jars"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca040",
@@ -3377,7 +8185,8 @@
      },
      "canonicalLine": "Hash Rosin Concentrate V2"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca035",
@@ -3721,7 +8530,8 @@
      "notes": null,
      "canonicalLine": "Mates Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca036",
@@ -3833,7 +8643,8 @@
      "notes": null,
      "canonicalLine": "Muha Donut Holes 0.6g 5 Pack (Blue)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca037",
@@ -3911,7 +8722,8 @@
      "notes": null,
      "canonicalLine": "Muha Donuts 1g 3 Pack (Blue)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca038",
@@ -4005,7 +8817,8 @@
      "notes": null,
      "canonicalLine": "Muha Fire Flower 1.5g (Gold)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:hash-rosin-mates-metal-cans",
@@ -4191,7 +9004,8 @@
      "notes": null,
      "canonicalLine": "Hash Rosin Mates Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:muha-donuts-1g-blue-",
@@ -4253,7 +9067,8 @@
      "notes": null,
      "canonicalLine": "Muha Donuts 1g (Blue)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:muha-1g-greenhouse-joint",
@@ -4395,7 +9210,8 @@
      "notes": null,
      "canonicalLine": "Muha 1g Greenhouse Joint"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:20ct-dank-darts-infused-",
@@ -4521,7 +9337,8 @@
      "notes": null,
      "canonicalLine": "20ct DANK DARTS (Infused)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:1-5g-3-pack-muharillos",
@@ -4785,7 +9602,8 @@
      "notes": null,
      "canonicalLine": "1.5g 3 Pack Muharillos"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:hash-rosin-concentrate-v2-1-0g-",
@@ -5039,7 +9857,8 @@
      "notes": null,
      "canonicalLine": "Hash Rosin Concentrate V2 (1.0g)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:live-cryo-sift-jars-1-6g-",
@@ -5293,7 +10112,8 @@
      "notes": null,
      "canonicalLine": "Live/Cryo Sift Jars (1.6g)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:bubble-hash-caviar-tins-2-0g-",
@@ -5547,7 +10367,8 @@
      "notes": null,
      "canonicalLine": "Bubble Hash Caviar Tins (2.0g)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:temple-ball-1-5g-",
@@ -5801,7 +10622,8 @@
      "notes": null,
      "canonicalLine": "Temple Ball (1.5g)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:full-melt-6-star-jars-1-5g-",
@@ -5911,7 +10733,8 @@
      "notes": null,
      "canonicalLine": "Full Melt 6-Star Jars (1.5g)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:piatella-jars-v2-1-6g-",
@@ -6021,7 +10844,8 @@
      "notes": null,
      "canonicalLine": "Piatella Jars V2 (1.6g)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:dry-sift-2-0g-premium-3-5g-value-",
@@ -6147,7 +10971,8 @@
      "notes": null,
      "canonicalLine": "Dry Sift (2.0g Premium / 3.5g Value)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:kief-caviar-tins-3-5g-",
@@ -6193,7 +11018,8 @@
      "notes": null,
      "canonicalLine": "Kief Caviar Tins (3.5g)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:distillate-gummies-mylar-bags",
@@ -6320,7 +11146,8 @@
      },
      "canonicalLine": "Distillate Gummies Mylar Bags"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:hash-rosin-gummies-metal-cans",
@@ -6447,7 +11274,8 @@
      },
      "canonicalLine": "Hash Rosin Gummies Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:distillate-gummies",
@@ -6541,7 +11369,8 @@
      "notes": null,
      "canonicalLine": "Distillate Gummies"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca039",
@@ -6673,7 +11502,8 @@
      },
      "canonicalLine": "Hash Rosin Gummies Mylar Bags"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca023",
@@ -6918,7 +11748,8 @@
      },
      "canonicalLine": "3.5G Flower Jars"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:muha-sun-grown-flower-1oz-jar",
@@ -7012,7 +11843,8 @@
      "notes": null,
      "canonicalLine": "Muha Sun Grown Flower 1oz Jar"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca025",
@@ -7113,7 +11945,8 @@
      "notes": null,
      "canonicalLine": "Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:-5oz-premium-flower-mylar-bag",
@@ -7255,7 +12088,8 @@
      "notes": null,
      "canonicalLine": ".5oz Premium Flower Mylar bag"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca024",
@@ -7372,7 +12206,8 @@
      "notes": null,
      "canonicalLine": "Muha Meteors Flower Mylar Bags"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:ca024",
@@ -7573,7 +12408,8 @@
      "notes": null,
      "canonicalLine": "7G Flower Jars"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:3-5g-indoor-flower-jars",
@@ -7748,7 +12584,8 @@
      "notes": null,
      "canonicalLine": "3.5G Indoor Flower Jars"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:7g-greenhouse-flower-jars-golden-nuggets",
@@ -7877,7 +12714,8 @@
      "notes": null,
      "canonicalLine": "7G Greenhouse Flower Jars Golden Nuggets"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:CA:1oz-greenhouse-flower-jars-golden-nuggets",
@@ -8006,7 +12844,8 @@
      "notes": null,
      "canonicalLine": "1OZ Greenhouse Flower Jars Golden Nuggets"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi019",
@@ -8298,7 +13137,8 @@
      "notes": null,
      "canonicalLine": "2G Distillate Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi020",
@@ -8451,7 +13291,8 @@
      "notes": null,
      "canonicalLine": "2G MuhaMeds x Cookies Collab Disposables SKU #CA026"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi021",
@@ -8604,7 +13445,8 @@
      "notes": null,
      "canonicalLine": "1G Live Resin Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi022",
@@ -8757,7 +13599,8 @@
      "notes": null,
      "canonicalLine": "1G Melted Diamond Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi023",
@@ -8910,7 +13753,8 @@
      "notes": null,
      "canonicalLine": "0.5G Mavricks Hash Rosin Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi024",
@@ -9189,7 +14033,8 @@
      "notes": null,
      "canonicalLine": "1G Distillate Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi025",
@@ -9338,7 +14183,8 @@
      "notes": null,
      "canonicalLine": "1G Melted Diamond Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi026",
@@ -9617,7 +14463,8 @@
      "notes": null,
      "canonicalLine": "2G DistiIlate Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi028",
@@ -9892,7 +14739,8 @@
      "notes": null,
      "canonicalLine": "Pod & Battery Combination Kits"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:pod-flavors",
@@ -10118,7 +14966,8 @@
      },
      "canonicalLine": "Pod Flavors"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi029",
@@ -10385,7 +15234,8 @@
      },
      "canonicalLine": "2G Disposable Flavors"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi030",
@@ -10842,7 +15692,8 @@
      },
      "canonicalLine": "2G Dual Disposable Flavors"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi031",
@@ -11277,7 +16128,8 @@
      "notes": null,
      "canonicalLine": "2G Magnetic Dispo Flavors"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:2g-disposable-flavors",
@@ -11501,7 +16353,8 @@
      },
      "canonicalLine": "2G Disposable Flavors"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi009",
@@ -11734,7 +16587,8 @@
      "notes": null,
      "canonicalLine": "Live Resin Concentrate Jars"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi010",
@@ -11967,7 +16821,8 @@
      "notes": null,
      "canonicalLine": "Hash Rosin Concentrate Jars"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi027",
@@ -12200,7 +17055,8 @@
      "notes": null,
      "canonicalLine": "Mates Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi017",
@@ -12396,7 +17252,8 @@
      "notes": null,
      "canonicalLine": "Hash Rosin Mates Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:muha-donut-holes-0-6g-5-pack-blue-",
@@ -12490,7 +17347,8 @@
      "notes": null,
      "canonicalLine": "Muha Donut Holes 0.6g 5 Pack (Blue)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:muha-donuts-1g-3-pack-blue-",
@@ -12552,7 +17410,8 @@
      "notes": null,
      "canonicalLine": "Muha Donuts 1g 3 Pack (Blue)"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:hash-rosin-mates-metal-cans",
@@ -12722,7 +17581,8 @@
      },
      "canonicalLine": "Hash Rosin Mates Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi012",
@@ -12869,7 +17729,8 @@
      "notes": null,
      "canonicalLine": "10ct Distillate Gummy Mylar Bags"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi013",
@@ -13016,7 +17877,8 @@
      "notes": null,
      "canonicalLine": "5ct Distillate Gummy Mylar Bags"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi014",
@@ -13173,7 +18035,8 @@
      },
      "canonicalLine": "Hash Rosin Gummies Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:distillate-gummies",
@@ -13267,7 +18130,8 @@
      "notes": null,
      "canonicalLine": "Distillate Gummies"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi015",
@@ -13383,7 +18247,8 @@
      },
      "canonicalLine": "4ct Hash Rosin Gummies"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MI:mi016",
@@ -13499,7 +18364,8 @@
      },
      "canonicalLine": "10ct Hash Rosin Gummies"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:mo001",
@@ -13715,7 +18581,8 @@
      "notes": null,
      "canonicalLine": "Distallite 2 Gram Dispos"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:mo002",
@@ -13832,7 +18699,8 @@
      "notes": null,
      "canonicalLine": "Muha Reserve 1 Gram AIO"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:mo003",
@@ -13949,7 +18817,8 @@
      "notes": null,
      "canonicalLine": "MELTED DIAMOND 1 Gram AIO"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:mo004",
@@ -14157,7 +19026,8 @@
      "notes": null,
      "canonicalLine": "Distillate 1 Gram Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:mo005",
@@ -14270,7 +19140,8 @@
      "notes": null,
      "canonicalLine": "Melted Diamond 1 Gram Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:mo006",
@@ -14478,7 +19349,8 @@
      "notes": null,
      "canonicalLine": "Mates THCA Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:mo007",
@@ -14613,7 +19485,8 @@
      "notes": null,
      "canonicalLine": "Mates Muha Reserve Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:1g-non-infused-pre-rolls",
@@ -14647,7 +19520,8 @@
      "notes": null,
      "canonicalLine": "1G Non Infused Pre Rolls"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:2g-infused-pre-rolls",
@@ -14903,7 +19777,8 @@
      "notes": null,
      "canonicalLine": "2G Infused Pre Rolls"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:mo008",
@@ -15020,7 +19895,8 @@
      "notes": null,
      "canonicalLine": "Mates Bubble Hash Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:mo009",
@@ -15166,7 +20042,8 @@
      "notes": null,
      "canonicalLine": "Distillate Gummies Mylar Bag"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:mo011",
@@ -15275,7 +20152,8 @@
      "notes": null,
      "canonicalLine": "Live Resin Gummies Mylar Bag"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:mo010",
@@ -15384,7 +20262,8 @@
      "notes": null,
      "canonicalLine": "Hash Rosin Gummies Mylar Bag"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:3-5g-infused-flower",
@@ -15638,7 +20517,8 @@
      "notes": null,
      "canonicalLine": "3.5G Infused Flower"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:MO:7-0g-infused-flower",
@@ -15892,7 +20772,8 @@
      "notes": null,
      "canonicalLine": "7.0G Infused Flower"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NJ:nj001",
@@ -16190,7 +21071,8 @@
      "notes": null,
      "canonicalLine": "Distallite 2 Gram Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NJ:nj002",
@@ -16469,7 +21351,8 @@
      "notes": null,
      "canonicalLine": "Distillate 1 Gram Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NJ:distallite-2-gram-disposables",
@@ -16643,7 +21526,8 @@
      "notes": null,
      "canonicalLine": "Distallite 2 Gram Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NJ:nj003",
@@ -16960,7 +21844,8 @@
      },
      "canonicalLine": "Mates Metal Cans Kiefless Classic Flavor Line, Kiefless"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NJ:nj006",
@@ -17106,7 +21991,8 @@
      "notes": null,
      "canonicalLine": "10ct Distillate Edibles"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NM:nm001",
@@ -17404,7 +22290,8 @@
      "notes": null,
      "canonicalLine": "2G Distillate Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NM:nm002",
@@ -17702,7 +22589,8 @@
      "notes": null,
      "canonicalLine": "1G Distillate Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NM:nm003",
@@ -17981,7 +22869,8 @@
      "notes": null,
      "canonicalLine": "1G Distillate Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NM:nm006",
@@ -18238,7 +23127,8 @@
      },
      "canonicalLine": "2G Distillate Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NM:nm007",
@@ -18495,7 +23385,8 @@
      },
      "canonicalLine": "1G Distillate Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NM:nm008",
@@ -18632,7 +23523,8 @@
      },
      "canonicalLine": "1G Live Resin Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NM:nm009",
@@ -18769,7 +23661,8 @@
      },
      "canonicalLine": "1G Melted Diamond Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NM:nm010",
@@ -19026,7 +23919,8 @@
      },
      "canonicalLine": "1G Distillate Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NM:nm005",
@@ -19343,7 +24237,8 @@
      },
      "canonicalLine": "Mates Metal Cans Kiefless"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NM:nm006",
@@ -19471,7 +24366,8 @@
      "notes": null,
      "canonicalLine": "Distillate Gummy Mylar Bags"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NY:ny001",
@@ -19657,7 +24553,8 @@
      "notes": null,
      "canonicalLine": "2G Distillate Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NY:ny002",
@@ -19832,7 +24729,8 @@
      "notes": null,
      "canonicalLine": "1G Distillate Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NY:ny004",
@@ -19993,7 +24891,8 @@
      },
      "canonicalLine": "2G Distillate Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NY:ny005",
@@ -20130,7 +25029,8 @@
      },
      "canonicalLine": "1G Live Resin Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NY:ny006",
@@ -20267,7 +25167,8 @@
      },
      "canonicalLine": "1G Melted Diamond Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NY:ny007",
@@ -20428,7 +25329,8 @@
      },
      "canonicalLine": "1G Distillate Cartridges"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:NY:ny003",
@@ -20626,7 +25528,8 @@
      },
      "canonicalLine": "Mates Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:OH:oh001",
@@ -20924,7 +25827,8 @@
      "notes": null,
      "canonicalLine": "1.68G Distillate Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:OH:2g-distillate-disposables",
@@ -21149,7 +26053,8 @@
      "notes": null,
      "canonicalLine": "2G Distillate Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:OH:ca006",
@@ -21428,7 +26333,8 @@
      "notes": null,
      "canonicalLine": "1.68G Distillate Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:OH:2g-distillate-disposables",
@@ -21722,7 +26628,8 @@
      "notes": null,
      "canonicalLine": "2G Distillate Disposables"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:OH:1g-distillate-carts",
@@ -21997,7 +26904,8 @@
      "notes": null,
      "canonicalLine": "1G Distillate Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:OH:1g-distillate-carts",
@@ -22272,7 +27180,8 @@
      "notes": null,
      "canonicalLine": "1G Distillate Carts"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:OH:mo006",
@@ -22480,7 +27389,8 @@
      "notes": null,
      "canonicalLine": "Mates THCA Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:OH:hash-rosin-mates-metal-cans",
@@ -22590,7 +27500,8 @@
      "notes": null,
      "canonicalLine": "Hash Rosin Mates Metal Cans"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:OH:2g-magnetic-dispo-flavors",
@@ -22924,7 +27835,8 @@
      "notes": null,
      "canonicalLine": "2G Magnetic Dispo Flavors"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:OH:oh002",
@@ -23020,7 +27932,8 @@
      "notes": null,
      "canonicalLine": "THC 440 mg gummies, 44mg per gummy, tin can"
     }
-   ]
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:OH:oh002",
@@ -23116,14 +28029,16 @@
      "notes": null,
      "canonicalLine": "THC 440 mg gummies, 44mg per gummy, tin can"
     }
-   ]
+   ],
+   "upcoming": false
   }
  ],
  "totals": {
-  "lines": 122,
-  "items": 976,
-  "uniqueSkus": 243,
+  "lines": 148,
+  "items": 1165,
+  "uniqueSkus": 387,
   "markets": [
+   "HEMP",
    "AZ",
    "CA",
    "MI",

@@ -135,7 +135,7 @@ export function parseSheet(text) {
       blankRun = 0;
       // A title-only row (no codes/barcodes, title-ish words) starts a new implicit block in list sheets.
       const looksTitle = first && !cells.slice(1).some(Boolean) && (TITLE_WORDS.test(first) || /^\(new\)/i.test(first)) && !/^[A-Z][a-z]+( [A-Z][a-z]+)*$/.test(first);
-      const skuBlock = cells.find((cell) => /sku ?#\s*[A-Z]{2}\d{3}/i.test(cell));
+      const skuBlock = cells.find((cell) => /sku ?#\s*[A-Z]{2,6}\d{2,3}/i.test(cell));
       if (skuBlock && !first.match(/^[A-Z][a-z]/) ) { current = { title: cells.filter(Boolean).join(" · "), band: band.from, row: r, headers: current.headers, items: [] }; blocks.push(current); continue; }
       if (looksTitle && listStyle) { current = { title: first, band: band.from, row: r, headers: ["Flavor Name", "Product Code"], items: [] }; blocks.push(current); continue; }
       if (!first) continue;
@@ -175,8 +175,8 @@ export function formatOf(title) {
 export function normaliseBlocks(blocks, { brand, market = null, source }) {
   return blocks.map((block) => {
     const rawTitle = block.title.replace(/\s+/g, " ").trim();
-    const skuBlock = (rawTitle.match(/sku ?#\s*([A-Z]{2}\d{3})/i) || [])[1] || null;
-    const cleanTitle = rawTitle.replace(/sku ?#\s*[A-Z]{2}\d{3}/i, "").replace(/\bDONE\b/g, "").replace(/Notes?:.*$|PHASE \d.*$|IN PROGRESS.*$|approved packaging.*$|\(?in development\)?.*$|SKU BAR.*$|Renders? Link.*$|Display Box.*$/i, "").replace(/^\d+\s+/, "").replace(/^\((new)\)\s*/i, "").replace(/^new\s+/i, "").replace(/\s*-\s*$/, "").replace(/[·\s]+$/g, "").replace(/\s*·\s*/g, " · ").trim();
+    const skuBlock = (rawTitle.match(/sku ?#\s*([A-Z]{2,6}\d{2,3})/i) || [])[1] || null;
+    const cleanTitle = rawTitle.replace(/sku ?#\s*[A-Z]{2,6}\d{2,3}/i, "").replace(/\bDONE\b|UPC\?|LAUNCH DATE:?/g, "").replace(/Notes?:.*$|PHASE \d.*$|IN PROGRESS.*$|approved packaging.*$|\(?in development\)?.*$|SKU BAR.*$|Renders? Link.*$|Display Box.*$/i, "").replace(/^\d+\s+/, "").replace(/^\((new)\)\s*/i, "").replace(/^new\s+/i, "").replace(/\s*-\s*$/, "").replace(/[·\s]+$/g, "").replace(/\s*·\s*/g, " · ").trim();
     const parts = cleanTitle.split(" · ").map((part) => part.trim()).filter(Boolean);
     const rawLine = parts[parts.length - 1] || cleanTitle;
     const section = parts.length > 1 ? parts[0] : null;
