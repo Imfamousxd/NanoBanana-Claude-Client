@@ -57,7 +57,7 @@ const CATEGORY_WALLS = {
   disposables: [/dispo|disposable|allinone|\baio\b/, /cart(?!on)|\bpod|preroll|mates|gumm|edible|flowerjar|\bjoint/],
   cartridges: [/cart(?!on)/, /dispo|disposable|allinone|\bpod|preroll|mates|gumm|edible|flower|\bjoint/],
   pods: [/\bpod/, /dispo|disposable|preroll|mates|gumm/],
-  edibles: [/gumm|edible|mambas|chocolate|\btin|mylar|candy/, /dispo|disposable|cart(?!on)|\bpod|preroll|mates|\bjoint|cone|flowerjar|flowerbag|\bjar(?!.*gumm)/],
+  edibles: [/gumm|edible|mambas|chocolate|\btin|mylar|candy/, /dispo|disposable|cart(?!on)|\bpod|preroll|mates|\bjoint|cone|flowerjar|flowerbag/],
   "pre-rolls": [/preroll|pre_roll|mates|\bjoint|cone|dankdart|donut|muharillo|blunt|metalcan|infused|madness|king/, /dispo|disposable|cart(?!on)|\bpod|gumm|edible|flowerjar|flowerbag/],
   flower: [/flower|\bnug|eighth|greenhouse|indoor|sungrown|meteor/, /dispo|disposable|cart(?!on)|\bpod|gumm|edible|preroll|mates|\bjoint|rosin|badder|sift|concentrate/],
   concentrates: [/rosin|badder|diamond|sift|hash|concentrate|temple|caviar|piatella|liveresin|\bjar|cured|sauce/, /dispo|disposable|cart(?!on)|\bpod|gumm|edible|preroll|mates|\bjoint|flowerjar|flowerbag|flower/],
@@ -79,8 +79,76 @@ export function deviceIterationOf(asset) {
 // A folder the team marked WRONG is quarantined: nothing in it attaches to a SKU row.
 export function quarantined(asset) { return String(asset.path || "").split("/").some((seg) => /^wrong\b/i.test(seg.trim())); }
 // The key an unmatched render is grouped under in the coverage report and the render map.
-export function unmatchedKey(asset) { const render = asset.render || {}; const iteration = deviceIterationOf(asset); return `${render.group || path.dirname(String(asset.path || ""))}${iteration ? " / " + iteration : ""}`; }
+export function unmatchedKey(asset) { const render = asset.render || {}; const label = deviceIterationOf(asset) || previousDesignOf(asset); return `${render.group || path.dirname(String(asset.path || ""))}${label ? " / " + label : ""}`; }
 // Pre-roll forms are walls too: a Mates metal-can line never takes a King & Queen joint, a Muharillo or a Donut.
+// Packaging design iterations. A line directory often holds one folder per design ("CA_1G_Distillate 2024",
+// "CA_1G_Distillate_Carts 2025", "CA_1G_Distillate_Carts_TechDesign_June 2025"). Only the newest dated folder
+// for a product (same format + strength words) is the current design; its older siblings are previous designs
+// and never attach to a SKU row — they surface as their own group so the team can move them to _old.
+// An explicit old/archive folder is always a previous design. Folders marked WRONG do not take part.
+const MONTHS = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12 };
+const VIEW_DIRS = /^(display ?boxes?|devices?[_ ]?only|devices[_ ]?boxes|dual dispose device_only|magnetic dispos devices_only|group ?shots?|solo|v\d+|front[a-z ]*|back[a-z ]*|45[a-z ]*|three ?quarters?|under 5 ?mb|\d+ ?ct|icons? variations?)$/i;
+const OLD_DIR = /^(old|old ?version|_old|archive|archived|previous|prev)$/i;
+export function designRank(folder) {
+  const t = String(folder).toLowerCase().replace(/[_()-]+/g, " ").replace(/\s+/g, " ").trim();
+  if (/\bold\b|oldversion/.test(t)) return -2;
+  const q = t.match(/\bq([1-4]) ?(20\d\d)\b/);
+  if (q) return Number(q[2]) * 12 + (Number(q[1]) - 1) * 3 + 2;
+  const my = t.match(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.? ?(20\d\d)\b/);
+  if (my) return Number(my[2]) * 12 + MONTHS[my[1]];
+  const y = t.match(/\b(20\d\d)\b/);
+  if (y) return Number(y[1]) * 12 + (/\btech/.test(t) ? 0.5 : 0);
+  return -1;
+}
+const designStem = (folder) => norm(folder).replace(/\b(20\d\d|jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec|[a-z]*uary|march|april|june|july|august|september|october|november|december|tech|techdesign|design|new|old|version|main|renders?|mock|q[1-4]|v\d+|\d+)\b/g, "").replace(/\s+/g, " ").trim();
+function designKey(folder) {
+  const c = compact(folder);
+  const formats = formatsIn(c.replace(/([a-z])(?=[0-9])/g, "$1 ").replace(/\s/g, ""));
+  const strengths = STRENGTH_WORDS.filter(([, has]) => has.test(norm(folder))).map(([ask]) => String(ask));
+  const lines = LINE_FOLDERS.filter(([, re]) => re.test(folder)).map(([seg]) => seg);
+  if (!formats.length && !strengths.length && !lines.length) return "stem:" + norm(folder).replace(/\b(20\d\d|jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec|[a-z]*uary|march|april|june|july|august|september|october|november|december|tech|techdesign|design|new|old|version|main|renders?|mock|q[1-4]|v\d+|\d+)\b/g, "").replace(/\s+/g, " ").trim();
+  return `${formats.join("+")}|${strengths.join("+")}|${lines.join("+")}`;
+}
+// The design folder of a render: the deepest directory that is not a view sub-folder; plus its parent.
+export function designFolderOf(asset) {
+  const dirs = String(asset.path || "").split("/").slice(0, -1);
+  if (dirs.some((d) => OLD_DIR.test(d.trim()))) return { folder: dirs[dirs.length - 1], parent: dirs.slice(0, -1).join("/"), old: true };
+  while (dirs.length > 3 && VIEW_DIRS.test(dirs[dirs.length - 1].trim())) dirs.pop();
+  if (dirs.length < 3) return null;
+  return { folder: dirs[dirs.length - 1], parent: dirs.slice(0, -1).join("/"), old: false };
+}
+let CURRENT_DESIGNS = new Map(); // `${parent}|${key}` → newest rank among the sibling design folders (kept for reports)
+export function designGroups(library) {
+  const groups = new Map(); // `${parent}|${key}` → Map(folder → {rank, files})
+  for (const asset of library) {
+    if (quarantined(asset)) continue;
+    const d = designFolderOf(asset); if (!d || d.old) continue;
+    const key = `${d.parent}|${designKey(d.folder)}`;
+    const g = groups.get(key) || new Map(); const e = g.get(d.folder) || { rank: designRank(d.folder), files: 0 }; e.files += 1; g.set(d.folder, e); groups.set(key, g);
+  }
+  const out = [];
+  for (const [key, g] of groups) {
+    if (g.size < 2) continue;
+    const ranks = [...g.values()].map((e) => e.rank);
+    if (!ranks.some((r) => r >= 0)) continue; // undated vs undated: nothing to separate
+    const best = Math.max(...ranks);
+    const bestStem = [...g.entries()].filter(([, e]) => e.rank === best).map(([folder]) => designStem(folder));
+    // An undated folder is a previous design only when it is plainly the same folder name without the date
+    // ("MI_1G_Distillate_Carts" next to "MI_1G_Distillate_Carts_Tech June 2025"); "HR_Gummies_Only" next to
+    // "HR 4ct Mylar 2026" is a different kind of render, not an older design, and stays where it is.
+    const folders = [...g.entries()].filter(([folder, e]) => e.rank >= 0 || bestStem.some((b) => { const u = designStem(folder); return u && b && (u === b || b.includes(u) || u.includes(b)); })).map(([folder, e]) => ({ folder, rank: e.rank, files: e.files, current: e.rank === best })).sort((a, b) => b.rank - a.rank);
+    if (folders.length < 2) continue;
+    out.push({ parent: key.split("|")[0], key, best, folders });
+  }
+  return out;
+}
+let PREVIOUS_DESIGNS = new Set(); // `${parent}/${folder}` of every folder judged a previous design
+export function indexDesigns(library) { const groups = designGroups(library); CURRENT_DESIGNS = new Map(groups.map((g) => [g.key, g.best])); PREVIOUS_DESIGNS = new Set(groups.flatMap((g) => g.folders.filter((f) => !f.current).map((f) => `${g.parent}/${f.folder}`))); return groups; }
+export function previousDesignOf(asset) {
+  const d = designFolderOf(asset); if (!d) return null;
+  if (d.old) return `old folder: ${d.folder}`;
+  return PREVIOUS_DESIGNS.has(`${d.parent}/${d.folder}`) ? `previous design: ${d.folder}` : null;
+}
 // Muha line folders only: "Dialed_Moods" is a brand name, not the Muha Moods line.
 const LINE_FOLDERS = [["moods", /moods/i], ["mavricks", /mavrick/i], ["mmxcookies", /cookies/i], ["(?<!mango )madness", /(?<!mango )madness/i], ["magnetic", /magnetic/i], ["dual", /dual/i]];
 const PREROLL_FORMS = [[/\bmates?\b|metal cans?/, /\bmates?\b|\bmetal cans?\b|\bkief ?joints?\b/], [/\bkings?\b|\bqueens?\b/, /\bkings?\b|\bqueens?\b/], [/\bdonuts?\b/, /\bdonuts?\b/], [/\bmadness\b/, /\bmadness\b/], [/\bmuharillos?\b|\bblunts?\b/, /\bmuharillos?\b|\bblunts?\b/]];
@@ -88,11 +156,13 @@ function formatsIn(compactText) { return FORMATS.filter((fmt) => new RegExp("(^|
 function genOf(text) { const m = String(text).toLowerCase().match(/gen\s?(\d)/); return m ? Number(m[1]) : null; }
 
 /** Score one asset against one SKU item. 0 = no match. */
+// SKU_DEBUG=1 prints why a render was refused for an item.
+const why = (asset, reason) => { if (process.env.SKU_DEBUG) console.error(`  refused: ${reason} — ${String(asset.path || "").split("/").pop()}`); return 0; };
 export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
-  if (GENERIC_RE.test(String(asset.path || ""))) return 0;
-  if (quarantined(asset)) return 0;
+  if (GENERIC_RE.test(String(asset.path || ""))) return why(asset, "generic folder");
+  if (quarantined(asset)) return why(asset, "WRONG folder");
   const iteration = deviceIterationOf(asset);
-  if (iteration && !/all ?in ?one|\baio\b/.test(norm(`${line.line} ${line.section || ""}`))) return 0;
+  if (iteration && !/all ?in ?one|\baio\b/.test(norm(`${line.line} ${line.section || ""}`))) return why(asset, "older device iteration");
   // Line-specific folders (Moods, Mavricks, MM x Cookies, Madness, Magnetic, Dual) only serve their line, and a
   // line that names one of them (the Cookies collab, the Dual disposables…) only takes renders from that folder
   // or renders whose own text names it: a plain 1G Distillate Blue Slushie is not the Cookies-collab Blue Slushie.
@@ -100,13 +170,13 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   for (const [seg, re] of (asset.brand && !/muha/.test(asset.brand) ? [] : LINE_FOLDERS)) {
     const inFolder = new RegExp("(^|/)[^/]*\\b" + seg + "\\b[^/]*(/|$)", "i").test(segPath);
     const lineWants = re.test(`${line.line} ${line.section || ""}`);
-    if (inFolder && !lineWants) return 0;
-    if (lineWants && !inFolder && !re.test(prepared.spaced || prepared.full)) return 0;
+    if (inFolder && !lineWants) return why(asset, "line folder, line does not want it");
+    if (lineWants && !inFolder && !re.test(prepared.spaced || prepared.full)) return why(asset, "line wants its folder, render is not in it");
   }
-  if (asset.composition === "lineup" || /lineup|line up|group|all flavou?rs|assorted|variety/i.test(`${asset.title || ""} ${String(asset.path || "").split("/").pop()}`)) return 0;
-  if (/,.*,|\band\b.*\band\b/.test(String(asset.product || "")) && !new RegExp(compact(item.name).slice(0, 8)).test(compact(asset.product))) return 0;
+  if (asset.composition === "lineup" || /lineup|line up|group|all flavou?rs|assorted|variety/i.test(`${asset.title || ""} ${String(asset.path || "").split("/").pop()}`)) return why(asset, "lineup / group");
+  if (/,.*,|\band\b.*\band\b/.test(String(asset.product || "")) && !new RegExp(compact(item.name).slice(0, 8)).test(compact(asset.product))) return why(asset, "rule 6");
   const flavour = norm(item.name).replace(/\b(i|s|h|indica|sativa|hybrid|collab)\b/g, "").trim();
-  if (flavour.length < 3) return 0;
+  if (flavour.length < 3) return why(asset, "flavour too short");
   const flavourCompact = flavour.replace(/\s/g, "");
   let score = 0;
   const words = prepared.full.split(" ");
@@ -119,23 +189,29 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   else if (wholeCompact && tokens.length > 1) score += 3;
   else if (tokens.length >= 2 && tokens.every((token) => words.includes(token))) score += 2;
   else if (tokens.length === 1 && tokens[0].length >= 6 && words.includes(tokens[0])) score += 1.5;
-  else return 0;
+  else return why(asset, "flavour not in text");
   // Hard walls: vape form, format, market, generation.
   // A longer flavour that contains this one ("Strawberry Lemon" for "Strawberry") present in the text means it is that flavour, not this one.
-  if (KNOWN_NAMES.some((other) => other !== flavour && other.includes(flavour) && new RegExp("(^| )" + other.replace(/\s/g, "") + "( |$)").test(" " + prepared.compactFull.replace(/([a-z])(?=[0-9])/g, "$1 ") + " ") || (other !== flavour && other.includes(flavour) && other.split(" ").every((w) => prepared.full.split(" ").includes(w))))) return 0;
+  if (KNOWN_NAMES.some((other) => other !== flavour && other.includes(flavour) && new RegExp("(^| )" + other.replace(/\s/g, "") + "( |$)").test(" " + prepared.compactFull.replace(/([a-z])(?=[0-9])/g, "$1 ") + " ") || (other !== flavour && other.includes(flavour) && other.split(" ").every((w) => prepared.full.split(" ").includes(w))))) return why(asset, "a longer flavour name is present");
   const wantStrength = STRENGTH_WORDS.filter(([ask]) => ask.test(norm(`${line.line} ${line.section || ""}`)));
-  if (wantStrength.length) { const haveAny = STRENGTH_WORDS.filter(([, has]) => has.test(prepared.full)); if (haveAny.length && !haveAny.some((s) => wantStrength.includes(s))) return 0; }
+  if (wantStrength.length) { const haveAny = STRENGTH_WORDS.filter(([, has]) => has.test(prepared.full)); if (haveAny.length && !haveAny.some((s) => wantStrength.includes(s))) return why(asset, "strength word wall"); }
   const wall = CATEGORY_WALLS[line.category];
-  if (wall) { if (!wall[0].test(prepared.compactFull)) return 0; if (wall[1].test(prepared.compactFull)) return 0; }
+  // Walls are tested on the glued text (allinone, flowerjar…) and on the word-split text (\bpod, \baio\b).
+  const spaced = prepared.spaced || prepared.full;
+  if (wall) { if (!wall[0].test(prepared.compactFull) && !wall[0].test(spaced)) return why(asset, "category wall: category words missing"); if (wall[1].test(prepared.compactFull) || wall[1].test(spaced)) return why(asset, "category wall: category words missing"); }
+  // A Pod & Battery (combination) kit is its own product: judged on the file name, product, title and leaf folder,
+  // not on the parent folder ("Pod & Battery Kits" also holds the pod-only renders).
+  const lineIsKit = /\bkits?\b|combination|combo/.test(norm(`${line.line} ${line.section || ""}`)); const assetIsKit = /battery ?kit|combo ?kit|combination ?kit|pod ?kit|\bkits?\b/.test(nameWords.join(" "));
+  if (lineIsKit !== assetIsKit) return why(asset, "kit vs pod-only");
   const wantForms = PREROLL_FORMS.filter(([ask]) => ask.test(norm(`${line.line} ${line.section || ""}`)));
-  if (wantForms.length) { const haveForms = PREROLL_FORMS.filter(([, has]) => has.test(prepared.spaced || prepared.full)); if (haveForms.length && !haveForms.some((f) => wantForms.includes(f))) return 0; }
-  if (line.format) { const want = compact(line.format); const present = formatsIn(prepared.compactFull); if (present.length && !present.includes(want)) return 0; }
-  if (line.market && prepared.market && prepared.market !== line.market) return 0;
+  if (wantForms.length) { const haveForms = PREROLL_FORMS.filter(([, has]) => has.test(prepared.spaced || prepared.full)); if (haveForms.length && !haveForms.some((f) => wantForms.includes(f))) return why(asset, "pre-roll form wall"); }
+  if (line.format) { const want = compact(line.format); const present = formatsIn(prepared.compactFull); if (present.length && !present.includes(want)) return why(asset, "format wall"); }
+  if (line.market && prepared.market && prepared.market !== line.market) return why(asset, "market wall");
   const lineGen = line.generation ? genOf(line.generation) : null; const assetGen = genOf(`${asset.path} ${asset.title || ""}`);
-  if (lineGen && assetGen && lineGen !== assetGen) return 0;
+  if (lineGen && assetGen && lineGen !== assetGen) return why(asset, "generation wall");
   const wanted = lineWordsOf(`${line.line} ${line.section || ""} ${line.category}`);
   let lineHits = 0;
-  for (const has of wanted) if (has.test(prepared.compactFull)) lineHits += 1;
+  for (const has of wanted) if (has.test(prepared.compactFull) || has.test(spaced)) lineHits += 1;
   if (wanted.length) score += wanted.length ? (lineHits / wanted.length) * 2 - (lineHits === 0 ? 1.5 : 0) : 0;
   if (line.format) { const fmt = compact(line.format); if (prepared.compactFull.includes(fmt)) score += 0.5; }
   if (line.market && prepared.market === line.market) score += 1;
@@ -143,7 +219,15 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   return Math.max(0, score);
 }
 
+// Hits for one SKU item: a previous design (or an explicit old folder) is kept only when the item has no render
+// from a current folder at all — then it is the best the library has, and it is flagged so the page says so.
+export function selectHits(hits) {
+  const tagged = hits.map((hit) => ({ ...hit, previous: previousDesignOf(hit.asset) }));
+  const current = tagged.filter((hit) => !hit.previous);
+  return current.length ? current : tagged;
+}
 export function computeCoverage(registry, library, { threshold = 3 } = {}) {
+  indexDesigns(library);
   const prepared = library.map((asset) => ({ asset, text: assetText(asset) }));
   KNOWN_NAMES = [...new Set(registry.lines.flatMap((line) => line.items.map((item) => norm(item.name).replace(/\b(i|s|h|indica|sativa|hybrid|collab)\b/g, "").trim())).filter((name) => name.length >= 3))];
   const matchedAssetIds = new Map(); // assetId → [{ lineId, item }]
@@ -153,17 +237,18 @@ export function computeCoverage(registry, library, { threshold = 3 } = {}) {
   const generic = new Set([...flavoursPerAsset.entries()].filter(([, names]) => names.size >= 3).map(([id]) => id));
   const lines = registry.lines.map((line) => {
     const items = line.items.map((item) => {
-      const hits = [];
+      let hits = [];
       for (const entry of prepared) {
         if (generic.has(entry.asset.id)) continue;
         const score = scoreMatch(entry.asset, item, line, entry.text);
         if (score >= threshold) hits.push({ score, asset: entry.asset });
       }
+      hits = selectHits(hits);
       hits.sort((a, b) => b.score - a.score || (b.asset.quality || 0) - (a.asset.quality || 0));
       for (const hit of hits) { const list = matchedAssetIds.get(hit.asset.id) || []; list.push({ line: line.id, item: item.name, score: hit.score }); matchedAssetIds.set(hit.asset.id, list); }
       const compositions = {};
       for (const hit of hits) compositions[hit.asset.composition || "n/a"] = (compositions[hit.asset.composition || "n/a"] || 0) + 1;
-      return { name: item.name, sku: item.sku, discontinued: item.discontinued, inDevelopment: item.inDevelopment, renders: hits.length, compositions, hasDeviceOnly: Boolean(compositions["device-only"]), hasPackaging: Boolean(compositions["packaging-only"] || compositions["device-with-packaging"]), hasDisplay: Boolean(compositions["multi-pack"]), hasAlpha: hits.some((hit) => hit.asset.alpha), top: hits.slice(0, 3).map((hit) => ({ id: hit.asset.id, score: hit.score, path: hit.asset.path, composition: hit.asset.composition, angle: hit.asset.angle, thumb: hit.asset.thumb })), folders: [...new Set(hits.map((hit) => path.dirname(hit.asset.path)))].slice(0, 4) };
+      return { name: item.name, sku: item.sku, discontinued: item.discontinued, inDevelopment: item.inDevelopment, renders: hits.length, compositions, hasDeviceOnly: Boolean(compositions["device-only"]), hasPackaging: Boolean(compositions["packaging-only"] || compositions["device-with-packaging"]), hasDisplay: Boolean(compositions["multi-pack"]), hasAlpha: hits.some((hit) => hit.asset.alpha), top: hits.slice(0, 3).map((hit) => ({ id: hit.asset.id, score: hit.score, path: hit.asset.path, previous: hit.previous || null, composition: hit.asset.composition, angle: hit.asset.angle, thumb: hit.asset.thumb })), folders: [...new Set(hits.map((hit) => path.dirname(hit.asset.path)))].slice(0, 4) };
     });
     const covered = items.filter((item) => item.renders > 0).length;
     return { id: line.id, market: line.market, category: line.category, format: line.format, line: line.line, generation: line.generation, skuBlock: line.skuBlock, source: line.source, items: items.length, covered, coveragePct: items.length ? Math.round((covered / items.length) * 100) : 0, missing: items.filter((item) => item.renders === 0 && !item.discontinued && !item.inDevelopment).map((item) => item.name), itemsDetail: items };
