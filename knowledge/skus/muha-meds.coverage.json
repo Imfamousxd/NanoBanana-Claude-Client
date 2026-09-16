@@ -4,10 +4,10 @@
  "totals": {
   "lines": 148,
   "items": 1165,
-  "covered": 658,
+  "covered": 657,
   "assets": 5362,
-  "matchedAssets": 2949,
-  "unmatchedAssets": 2413,
+  "matchedAssets": 2903,
+  "unmatchedAssets": 2459,
   "unmatchedGroups": 144
  },
  "lines": [
@@ -9010,10 +9010,10 @@
      "sku": "CA014",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 8,
+     "renders": 4,
      "compositions": {
-      "packaging-only": 4,
-      "device-with-packaging": 4
+      "packaging-only": 2,
+      "device-with-packaging": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -9046,8 +9046,7 @@
       }
      ],
      "folders": [
-      "Renders/MMxCookies/Product_Renders/CA",
-      "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_TechDesign_June2025"
+      "Renders/MMxCookies/Product_Renders/CA"
      ]
     },
     {
@@ -17737,15 +17736,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 13,
+     "renders": 10,
      "compositions": {
       "device-with-packaging": 8,
-      "packaging-only": 3,
-      "multi-pack": 2
+      "packaging-only": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
-     "hasDisplay": true,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
@@ -18029,13 +18027,12 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 22,
+     "renders": 18,
      "compositions": {
-      "device-with-packaging": 10,
-      "packaging-only": 5,
+      "device-with-packaging": 8,
+      "packaging-only": 4,
       "multi-pack": 4,
-      "device-only": 2,
-      "n/a": 1
+      "device-only": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -18320,17 +18317,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 26,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 12,
-      "packaging-only": 7,
-      "multi-pack": 4,
-      "device-only": 2,
-      "n/a": 1
+      "device-with-packaging": 2,
+      "packaging-only": 2
      },
-     "hasDeviceOnly": true,
+     "hasDeviceOnly": false,
      "hasPackaging": true,
-     "hasDisplay": true,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
@@ -18359,10 +18353,7 @@
       }
      ],
      "folders": [
-      "Renders/MMxCookies/Product_Renders/MI",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_July2024",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_NewDevice_Nov2024",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025"
+      "Renders/MMxCookies/Product_Renders/MI"
      ]
     },
     {
@@ -18370,15 +18361,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 17,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 10,
-      "packaging-only": 5,
-      "multi-pack": 2
+      "device-with-packaging": 2,
+      "packaging-only": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
-     "hasDisplay": true,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
@@ -18407,10 +18397,7 @@
       }
      ],
      "folders": [
-      "Renders/MMxCookies/Product_Renders/MI",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_July2024",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025"
+      "Renders/MMxCookies/Product_Renders/MI"
      ]
     }
    ]
@@ -18906,10 +18893,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 8,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "packaging-only": 2
+      "device-with-packaging": 4
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -18925,25 +18911,24 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/633b8a6504775b58.jpg"
       },
       {
-       "id": "5a60c854-8717-482c-945c-93d7a09493f1",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025/MI_05G_HashRosin_Disposables_Front_GarlicJelly.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5e6b29649402701a.jpg"
-      },
-      {
        "id": "a3850408-6f7f-4d5c-bff7-601b28fc5496",
        "score": 6.5,
        "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024/GarlicJelly_Front.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ae1c0e35c8567b67.jpg"
+      },
+      {
+       "id": "5de03d89-bfde-4b9a-8257-1568a0556864",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024/Disposables_HashRosin_GarlicJelly_45_V1.png",
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f4442ecc5b645daa.jpg"
       }
      ],
      "folders": [
       "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024",
-      "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025",
       "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024"
      ]
     },
@@ -18952,10 +18937,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 9,
+     "renders": 5,
      "compositions": {
-      "device-with-packaging": 7,
-      "packaging-only": 2
+      "device-with-packaging": 5
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -18990,7 +18974,6 @@
      "folders": [
       "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024",
       "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024",
-      "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025",
       "Renders/Mavricks"
      ]
     },
@@ -18999,10 +18982,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 7,
+     "renders": 3,
      "compositions": {
-      "device-with-packaging": 5,
-      "packaging-only": 2
+      "device-with-packaging": 3
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -19026,17 +19008,16 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8cf133dea27b74d9.jpg"
       },
       {
-       "id": "c6f35580-7d28-4ff6-ac62-b045f54db74c",
+       "id": "fc3cb6af-6d10-4c2d-a052-e5e6a5a4741e",
        "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025/MI_05G_HashRosin_Disposables_45_Fatso.png",
+       "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024/Disposables_HashRosin_Fatso_V1.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/50092b5362f683d6.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b907aad4df6b844b.jpg"
       }
      ],
      "folders": [
       "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024",
-      "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025",
       "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024"
      ]
     },
@@ -19045,11 +19026,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 8,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "packaging-only": 1,
-      "label-flat": 1
+      "device-with-packaging": 4
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -19073,17 +19052,16 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/db026f82956d6a75.jpg"
       },
       {
-       "id": "7d301ee1-60f3-45c9-bfb4-af1f6c83206c",
+       "id": "f65b6f4b-4b0a-4c03-94ab-918bfe26cb5e",
        "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025/MI_05G_HashRosin_Disposables_Front_TropicanaCherry.png",
+       "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024/Disposables_HashRosin_TropicanaCherry_45_V1.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c92b6d87f6e94b4a.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/66c11b6a5fbb8e55.jpg"
       }
      ],
      "folders": [
       "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024",
-      "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025",
       "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024"
      ]
     },
@@ -19092,11 +19070,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 8,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "packaging-only": 1,
-      "label-flat": 1
+      "device-with-packaging": 4
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -19112,25 +19088,24 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/525897f59e650d65.jpg"
       },
       {
-       "id": "f83ae6d6-1255-4d15-b247-368c5bdcb813",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025/MI_05G_HashRosin_Disposables_45_Solo_DonnieBurger.png",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/832a8dded072b14f.jpg"
-      },
-      {
        "id": "d11a4a5b-7303-48f9-b8e0-069520752508",
        "score": 6.5,
        "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024/DonnieBurger_Front.png",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ac0fca5a16d7d293.jpg"
+      },
+      {
+       "id": "376fe864-c41a-4ae1-80ad-e1324915188e",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024/Disposables_HashRosin_DonnieBurger_V1.png",
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b9f1514830f56189.jpg"
       }
      ],
      "folders": [
       "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024",
-      "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025",
       "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024"
      ]
     }
@@ -21017,13 +20992,12 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 22,
+     "renders": 18,
      "compositions": {
-      "device-with-packaging": 10,
-      "packaging-only": 5,
+      "device-with-packaging": 8,
+      "packaging-only": 4,
       "multi-pack": 4,
-      "device-only": 2,
-      "n/a": 1
+      "device-only": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -21280,17 +21254,16 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 24,
+     "renders": 6,
      "compositions": {
-      "device-with-packaging": 10,
-      "device-only": 4,
+      "device-with-packaging": 2,
+      "device-only": 2,
       "n/a": 1,
-      "packaging-only": 5,
-      "multi-pack": 4
+      "packaging-only": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
-     "hasDisplay": true,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
@@ -21320,9 +21293,7 @@
      ],
      "folders": [
       "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1",
-      "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1/Dual Dispose device_only",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_July2024",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_NewDevice_Nov2024"
+      "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1/Dual Dispose device_only"
      ]
     },
     {
@@ -21485,10 +21456,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 9,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "packaging-only": 2,
+      "device-with-packaging": 2,
+      "packaging-only": 1,
       "n/a": 1
      },
      "hasDeviceOnly": false,
@@ -21522,10 +21493,7 @@
       }
      ],
      "folders": [
-      "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_NewDevice_Nov2024",
-      "Renders/Disposables/MI/MI Magnetic_Dispo/Devices_Boxes",
-      "Renders/Disposables/MI/MI Magnetic_Dispo/DisplayBoxes"
+      "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1"
      ]
     },
     {
@@ -21580,17 +21548,15 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 15,
+     "renders": 3,
      "compositions": {
       "n/a": 1,
       "device-only": 1,
-      "packaging-only": 1,
-      "device-with-packaging": 6,
-      "multi-pack": 6
+      "packaging-only": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
-     "hasDisplay": true,
+     "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
@@ -21620,9 +21586,7 @@
      ],
      "folders": [
       "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1",
-      "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1/Dual Dispose device_only",
-      "Renders/Discontinued/Disposables",
-      "Renders/Discontinued/Disposables/Display Boxes"
+      "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1/Dual Dispose device_only"
      ]
     },
     {
@@ -22070,10 +22034,11 @@
    "skuBlock": "MI031",
    "source": "Official MM SKU Book - MI THC.csv",
    "items": 20,
-   "covered": 19,
-   "coveragePct": 95,
+   "covered": 18,
+   "coveragePct": 90,
    "missing": [
-    "Sky Walker OG (I)"
+    "Sky Walker OG (I)",
+    "Bubble Gum Burst (I)"
    ],
    "itemsDetail": [
     {
@@ -22130,9 +22095,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 12,
      "compositions": {
-      "device-with-packaging": 7,
+      "device-with-packaging": 3,
       "device-only": 4,
       "multi-pack": 1,
       "packaging-only": 4
@@ -22226,12 +22191,11 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 6,
      "compositions": {
       "device-only": 3,
       "multi-pack": 2,
-      "packaging-only": 3,
-      "device-with-packaging": 8
+      "packaging-only": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -22266,8 +22230,7 @@
      "folders": [
       "Renders/Disposables/MI/MI Magnetic_Dispo/Magnetic Dispos Devices_Only",
       "Renders/Disposables/MI/MI Magnetic_Dispo/DisplayBoxes",
-      "Renders/Disposables/MI/MI Magnetic_Dispo/DisplayBoxes/v2",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_July2024"
+      "Renders/Disposables/MI/MI Magnetic_Dispo/DisplayBoxes/v2"
      ]
     },
     {
@@ -22417,9 +22380,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 13,
+     "renders": 7,
      "compositions": {
-      "device-with-packaging": 8,
+      "device-with-packaging": 2,
       "device-only": 5
      },
      "hasDeviceOnly": true,
@@ -22454,9 +22417,7 @@
      ],
      "folders": [
       "Renders/Disposables/MI/MI Magnetic_Dispo/Devices_Boxes",
-      "Renders/Disposables/MI/MI Magnetic_Dispo/Magnetic Dispos Devices_Only",
-      "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024"
+      "Renders/Disposables/MI/MI Magnetic_Dispo/Magnetic Dispos Devices_Only"
      ]
     },
     {
@@ -22609,9 +22570,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
+     "renders": 8,
      "compositions": {
-      "device-with-packaging": 4,
+      "device-with-packaging": 2,
       "packaging-only": 2,
       "device-only": 4
      },
@@ -22648,8 +22609,7 @@
      "folders": [
       "Renders/Disposables/MI/MI Magnetic_Dispo/Devices_Boxes",
       "Renders/Disposables/MI/MI Magnetic_Dispo/DisplayBoxes",
-      "Renders/Disposables/MI/MI Magnetic_Dispo/Magnetic Dispos Devices_Only",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_July2024"
+      "Renders/Disposables/MI/MI Magnetic_Dispo/Magnetic Dispos Devices_Only"
      ]
     },
     {
@@ -22865,44 +22825,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 4
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "4fc8a723-0b76-4082-aa82-5f18e7155e8f",
-       "score": 5.5,
-       "path": "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars/MI_2G_BubbleGum_45_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/16c38d364ddf3c6d.jpg"
-      },
-      {
-       "id": "6dd4421c-c36e-4003-a8fc-9b8b1e8616fd",
-       "score": 5.5,
-       "path": "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars/MI_2G_BubbleGum_Front_V1.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/159ec927569da17c.jpg"
-      },
-      {
-       "id": "613ce75f-6482-4401-b3bd-ef80a189ca21",
-       "score": 5.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024/MI_2G_Dispos_BubbleGumBurst_Front.png",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bfbe3412b64ddf70.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Sicilian Strawberry Bellini",
@@ -38372,7 +38302,7 @@
   {
    "folder": "Discontinued / Disposables",
    "market": null,
-   "files": 107,
+   "files": 119,
    "products": [
     {
      "product": "HHC Disposable Cherry Berry",
@@ -38397,8 +38327,8 @@
     "Hemp_Disposable_Front_D10_CherryBerry_V1.png"
    ],
    "compositions": {
-    "device-with-packaging": 54,
-    "multi-pack": 51,
+    "device-with-packaging": 60,
+    "multi-pack": 57,
     "packaging-only": 2
    }
   },
@@ -38472,6 +38402,41 @@
    }
   },
   {
+   "folder": "Disposables / MI_Distillate",
+   "market": "MI",
+   "files": 70,
+   "products": [
+    {
+     "product": "Call Gas OG Disposable",
+     "n": 2
+    },
+    {
+     "product": "Grand Daddy Purp Disposable",
+     "n": 2
+    },
+    {
+     "product": "Muha Meds Pineapple Runtz Disposable Sativa vape",
+     "n": 2
+    },
+    {
+     "product": "Sugar Daddy Punch 2G Distillate Disposable",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "MI_Disposables_Distillate_SugarDaddyPunch_Front_V1.png",
+    "MI_Disposables_Distillate_BubbleGum_45_V1.png",
+    "MI_Disposables_Distillate_BlueberryMuffin_45_1.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 58,
+    "lineup": 2,
+    "multi-pack": 5,
+    "packaging-only": 4,
+    "device-only": 1
+   }
+  },
+  {
    "folder": "Disposables / MI Magnetic_Dispo",
    "market": "MI",
    "files": 69,
@@ -38538,41 +38503,6 @@
     "device-with-packaging": 59,
     "packaging-only": 4,
     "lineup": 2
-   }
-  },
-  {
-   "folder": "Disposables / MI_Distillate",
-   "market": "MI",
-   "files": 60,
-   "products": [
-    {
-     "product": "Call Gas OG Disposable",
-     "n": 2
-    },
-    {
-     "product": "Grand Daddy Purp Disposable",
-     "n": 2
-    },
-    {
-     "product": "Sugar Daddy Punch 2G Distillate Disposable",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds 2G Distillate Disposable, Bubble Gum flavor",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MI_Disposables_Distillate_SugarDaddyPunch_Front_V1.png",
-    "MI_Disposables_Distillate_BubbleGum_45_V1.png",
-    "MI_Disposables_Distillate_SourWatermelon_Front_V1.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 48,
-    "lineup": 2,
-    "multi-pack": 5,
-    "packaging-only": 4,
-    "device-only": 1
    }
   },
   {
@@ -39339,6 +39269,40 @@
    }
   },
   {
+   "folder": "Disposables / MI_Hash Rosin",
+   "market": "MI",
+   "files": 23,
+   "products": [
+    {
+     "product": "Mimosa All-In-One disposable",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One Hash Rosin Disposable, Garlic Jelly flavor, 0.5G",
+     "n": 1
+    },
+    {
+     "product": "Donnie Burger All-In-One disposable",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One Hash Rosin Fatso disposable vape",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "MI_05G_HashRosin_Disposables_Front_Mimosa.png",
+    "MI_05G_HashRosin_Disposables_Front_GarlicJelly.png",
+    "MI_05G_HashRosin_Disposables_45_Solo_DonnieBurger.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 10,
+    "packaging-only": 8,
+    "lineup": 3,
+    "label-flat": 2
+   }
+  },
+  {
    "folder": "Disposables / Device",
    "market": null,
    "files": 23,
@@ -39665,6 +39629,38 @@
    }
   },
   {
+   "folder": "Disposables / MI_2G_Mixed_Flavors_Reused_Mylars",
+   "market": "MI",
+   "files": 17,
+   "products": [
+    {
+     "product": "Strawberry Shortcake Disposable",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Blueberry Haze Disposable Hybrid vape",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Pineapple Runtz Disposable Vape",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds 2G Disposable Vapes",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "MI_2G_StrawberryShortCake_45_V1.png",
+    "MI_2G_BlueberryHaze_Front_V1.png",
+    "MI_2G_PineappleRuntz_45_V1.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 16,
+    "lineup": 1
+   }
+  },
+  {
    "folder": "Pre-Rolls / RedesignTest",
    "market": null,
    "files": 16,
@@ -39920,38 +39916,6 @@
    "compositions": {
     "n/a": 11,
     "device-only": 2
-   }
-  },
-  {
-   "folder": "Disposables / MI_2G_Mixed_Flavors_Reused_Mylars",
-   "market": "MI",
-   "files": 13,
-   "products": [
-    {
-     "product": "Strawberry Shortcake Disposable",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds Blueberry Haze Disposable Hybrid vape",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds 2G Disposable Vapes",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds Wedding Cake 2000mg disposable vape",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MI_2G_StrawberryShortCake_45_V1.png",
-    "MI_2G_BlueberryHaze_Front_V1.png",
-    "MI_2G_Blend_GroupShot_V1.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 12,
-    "lineup": 1
    }
   },
   {
@@ -41508,33 +41472,6 @@
    ],
    "compositions": {
     "n/a": 3
-   }
-  },
-  {
-   "folder": "Disposables / MI_Hash Rosin",
-   "market": "MI",
-   "files": 3,
-   "products": [
-    {
-     "product": "Muha Meds Mavricks Hash Rosin Disposable - Tropicana Cherry, Mimosa, Donnie Burger",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds All-In-One Hash Rosin Disposables (Tropicana Cherry, Donnie Burger, Mimosa, Fat Boy, Garlic Jelly)",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds All-In-One Hash Rosin disposables in Tropicana Cherry, Donnie Burger, Mimosa, Fatso, and Garlic Jelly flavors",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MI_Disposables_GroupShot.png",
-    "00_MI_05G_HashRosin_Disposables_Group_Shot_Spread.png",
-    "00_MI_05G_HashRosin_Disposables_Group_Shot.png"
-   ],
-   "compositions": {
-    "lineup": 3
    }
   },
   {

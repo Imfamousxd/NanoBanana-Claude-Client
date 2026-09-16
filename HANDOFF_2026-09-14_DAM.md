@@ -387,4 +387,9 @@ Waiting on the user: more row corrections; names/handling for the "no SKU row" f
 - Sour Apple (edibles): kept; no solid single (device-only) render exists — verify when more renders arrive.
 - Coverage now: Muha 658/1,165 items, 2,949 renders attached; Dialed 116/159, 899. `unmatchedKey()` is shared by coverage and the page builder.
 
+- Line folders are symmetric now (`LINE_FOLDERS`, Muha only): a line that names Cookies / Dual / Magnetic / Mavricks / Moods / Madness only takes renders from that folder or renders whose own text names it (user: "blue slushie cookie collab has some of the 1G Distillate Disposables assets in there"). Cookies-collab Blue Slushie/Habibi rows (CA027, MI020) are the 4 MMxCookies renders each; the Dual line only has Dual renders; plain MI 2G rows lost the Dual/Cookies/Magnetic strays. Folder test is on directory segments with `_` as a separator (the old `\b` test missed `Dual_Flavor`), and "Mango Madness" in a file name is not the Madness line.
+- Side effect to ask the user about: `Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025` (20 renders + 2 group shots) is not branded Mavricks (vision reads "All-In-One Hash Rosin"), so it left the Mavricks rows (MI023) and sits in the "no SKU row" table as "Disposables / MI_Hash Rosin". Is it the Mavricks SKU or a separate 0.5G line?
+- Dialed: the old Moods folder rule silently blocked every Dialed render under folders named "Dialed Moods …" (space) — 195 renders. Rule is Muha-only now; Dialed went 116 → 120 items, 899 → 1,094 renders (Kratom Gummies flavours went from 1 render to 13–17 each). Pages: Muha v9, Dialed v7.
+- Coverage now: Muha 657/1,165, 2,903 renders; Dialed 120/159, 1,094.
+
 **Still waiting on the user:** more row corrections; names/handling for the "no SKU row" folders (now also: what to call the Sept-2024 All-in-One device category, and whether the WRONG folders get deleted or moved to `_old`); "run the six".

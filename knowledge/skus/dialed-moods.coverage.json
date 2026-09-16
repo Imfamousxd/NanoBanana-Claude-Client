@@ -4,11 +4,11 @@
  "totals": {
   "lines": 36,
   "items": 159,
-  "covered": 116,
+  "covered": 120,
   "assets": 2059,
-  "matchedAssets": 899,
-  "unmatchedAssets": 1160,
-  "unmatchedGroups": 46
+  "matchedAssets": 1094,
+  "unmatchedAssets": 965,
+  "unmatchedGroups": 39
  },
  "lines": [
   {
@@ -32,14 +32,16 @@
      "sku": "DM-NPE-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 45,
+     "renders": 63,
      "compositions": {
-      "device-only": 30,
+      "device-only": 31,
       "multi-pack": 14,
-      "in-scene": 1
+      "in-scene": 5,
+      "in-hand": 12,
+      "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
-     "hasPackaging": false,
+     "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
@@ -127,11 +129,12 @@
      "sku": "DM-NPE-OC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 22,
+     "renders": 25,
      "compositions": {
       "device-only": 11,
       "multi-pack": 10,
-      "in-scene": 1
+      "in-scene": 2,
+      "in-hand": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -281,9 +284,9 @@
      "sku": "DM-NPE-BA",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 13,
+     "renders": 15,
      "compositions": {
-      "multi-pack": 7,
+      "multi-pack": 9,
       "device-only": 5,
       "device-with-packaging": 1
      },
@@ -345,16 +348,24 @@
      "sku": "DM-KES-AB",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 9,
+     "renders": 13,
      "compositions": {
-      "device-only": 2,
-      "multi-pack": 7
+      "multi-pack": 9,
+      "device-only": 4
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
+      {
+       "id": "cbf718fe-2202-4e76-9233-18166c458c5f",
+       "score": 5,
+       "path": "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Kava Seltzer/Display/Dialed_Kava_DisplayOPEN_12pk_ArcticBlue.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/16acd1af10f40b3e.jpg"
+      },
       {
        "id": "f592cdc8-d532-4b69-9279-77b15e173ae2",
        "score": 5,
@@ -370,19 +381,13 @@
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4f6dcc2b783da23f.jpg"
-      },
-      {
-       "id": "a6565085-e507-4d05-8638-2ca4cafe4ed4",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display/Dialed_Kava_Display_Artic_Blue_12Pack_Closed_Solo.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/231a0aeb2c7e9062.jpg"
       }
      ],
      "folders": [
+      "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Kava Seltzer/Display",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display",
+      "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Kava Seltzer"
      ]
     },
     {
@@ -390,11 +395,12 @@
      "sku": "DM-KES-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 43,
+     "renders": 50,
      "compositions": {
       "multi-pack": 28,
-      "device-only": 13,
-      "in-scene": 1,
+      "device-only": 15,
+      "in-scene": 5,
+      "in-hand": 1,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
@@ -411,27 +417,27 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b2b66f576511a0d8.jpg"
       },
       {
+       "id": "4aba185e-25b2-4190-8d44-e71b31556ce4",
+       "score": 5,
+       "path": "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Kava Seltzer/Dialed_Seltzer_Kava_45_Lemonade.png",
+       "composition": "device-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/090f4d840a3a887c.jpg"
+      },
+      {
        "id": "083fab2d-d9fb-4e58-aaf6-935470e78192",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display/Dialed_Kava_Display_12Pack_Closed_Solo_Lemonade0116.png",
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a7384e7e6e270514.jpg"
-      },
-      {
-       "id": "81c6312c-fc15-4a05-ab59-236cb228c26c",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display/Dialed_Kava_Display_Lemonade_6Pack_Open.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d0037bd8cd8db78f.jpg"
       }
      ],
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display",
+      "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Kava Seltzer",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Design 2025 Main Renders",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/InfluencerBox"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Design 2025 Main Renders"
      ]
     },
     {
@@ -439,10 +445,11 @@
      "sku": "DM-KES-MP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 35,
+     "renders": 39,
      "compositions": {
       "multi-pack": 20,
-      "device-only": 14,
+      "device-only": 16,
+      "in-scene": 2,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
@@ -503,11 +510,12 @@
      "sku": "DM-LDE-LSK",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 26,
+     "renders": 27,
      "compositions": {
       "device-only": 14,
       "multi-pack": 10,
-      "device-with-packaging": 2
+      "device-with-packaging": 2,
+      "in-scene": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -646,11 +654,11 @@
      "sku": "DM-LDE-LEM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 27,
+     "renders": 33,
      "compositions": {
       "multi-pack": 15,
-      "device-only": 10,
-      "in-scene": 1,
+      "device-only": 12,
+      "in-scene": 5,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
@@ -686,8 +694,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/Black Caps",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders",
-      "Renders/DialedMoods/Dialed Mood accessories Renders/VendingMachine/Renders for manual"
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Energy Drinks",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders"
      ]
     },
     {
@@ -1862,10 +1870,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 39,
+     "renders": 51,
      "compositions": {
-      "packaging-only": 15,
-      "multi-pack": 24
+      "packaging-only": 16,
+      "multi-pack": 24,
+      "n/a": 3,
+      "label-flat": 6,
+      "in-scene": 1,
+      "in-hand": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -2226,9 +2238,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 5,
+     "renders": 7,
      "compositions": {
-      "device-only": 5
+      "device-only": 5,
+      "in-scene": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -2252,16 +2265,17 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/87ca4df7d2c280be.jpg"
       },
       {
-       "id": "b6fb993b-696a-41e1-999b-1c8375d3f557",
+       "id": "1a6ab778-74b4-42d3-b523-f39b9fd86973",
        "score": 3,
-       "path": "Renders/Assets for Amazon/Dialed_YetiBottle/Dialed_Bottle_White_Front_V1.png",
-       "composition": "device-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2a5d84d3b7984542.jpg"
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Electrolyte Powder/DSC03512.JPG",
+       "composition": "in-scene",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a9b72c50b1505d98.jpg"
       }
      ],
      "folders": [
-      "Renders/Assets for Amazon/Dialed_YetiBottle"
+      "Renders/Assets for Amazon/Dialed_YetiBottle",
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Electrolyte Powder"
      ]
     },
     {
@@ -2348,9 +2362,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 6,
+     "renders": 8,
      "compositions": {
-      "device-only": 6
+      "device-only": 6,
+      "in-hand": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -2384,7 +2399,8 @@
      ],
      "folders": [
       "Renders/Assets for Amazon/HydroBottle",
-      "Renders/Assets for Amazon/Dialed_YetiBottle"
+      "Renders/Assets for Amazon/Dialed_YetiBottle",
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Electrolyte Powder"
      ]
     }
    ]
@@ -2592,8 +2608,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 4,
+     "renders": 6,
      "compositions": {
+      "in-hand": 2,
       "n/a": 4
      },
      "hasDeviceOnly": false,
@@ -2601,6 +2618,14 @@
      "hasDisplay": false,
      "hasAlpha": true,
      "top": [
+      {
+       "id": "c10d8297-2d76-4da4-bb17-40e76bdd2735",
+       "score": 3,
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Energy Drinks/dial-56.jpg",
+       "composition": "in-hand",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5c363b36bfc0e881.jpg"
+      },
       {
        "id": "6c3a9549-b4fb-4219-8d21-fad697b62ee3",
        "score": 3,
@@ -2616,19 +2641,13 @@
        "composition": "n/a",
        "angle": "back",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c7ae30f9ca764d23.jpg"
-      },
-      {
-       "id": "61799515-3480-4223-8394-5e5ad2741078",
-       "score": 3,
-       "path": "Renders/Apparel/DialedMoods/Dialed White Cotton Tank Top/Dialed White Cotton Tank Top Front.png",
-       "composition": "n/a",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/47f07116392ca36f.jpg"
       }
      ],
      "folders": [
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Energy Drinks",
       "Renders/Apparel/DialedMoods/Dialed Muscle Tank Top",
-      "Renders/Apparel/DialedMoods/Dialed White Cotton Tank Top"
+      "Renders/Apparel/DialedMoods/Dialed White Cotton Tank Top",
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Energy Powder"
      ]
     }
    ]
@@ -2643,10 +2662,9 @@
    "skuBlock": null,
    "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
    "items": 8,
-   "covered": 6,
-   "coveragePct": 75,
+   "covered": 7,
+   "coveragePct": 88,
    "missing": [
-    "Strawberry Raz",
     "Variety Pack"
    ],
    "itemsDetail": [
@@ -2655,11 +2673,12 @@
      "sku": "DM-EDK-FP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 38,
+     "renders": 47,
      "compositions": {
       "device-only": 28,
-      "in-scene": 6,
-      "multi-pack": 4
+      "in-scene": 8,
+      "multi-pack": 4,
+      "in-hand": 7
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -2703,14 +2722,16 @@
      "sku": "DM-EDK-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 45,
+     "renders": 63,
      "compositions": {
-      "device-only": 30,
+      "device-only": 31,
       "multi-pack": 14,
-      "in-scene": 1
+      "in-scene": 5,
+      "in-hand": 12,
+      "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
-     "hasPackaging": false,
+     "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
@@ -2751,27 +2772,41 @@
      "sku": "DM-EDK-SR",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
+     "renders": 1,
+     "compositions": {
+      "in-hand": 1
+     },
      "hasDeviceOnly": false,
      "hasPackaging": false,
      "hasDisplay": false,
      "hasAlpha": false,
-     "top": [],
-     "folders": []
+     "top": [
+      {
+       "id": "5c597c16-972b-471b-9914-0e31e0dae244",
+       "score": 4,
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Energy Drinks/DSC09005.JPG",
+       "composition": "in-hand",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1b41f674bc90f778.jpg"
+      }
+     ],
+     "folders": [
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Energy Drinks"
+     ]
     },
     {
      "name": "Mango Passion Fruit",
      "sku": "DM-EDK-MP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 32,
+     "renders": 41,
      "compositions": {
       "device-only": 24,
-      "in-scene": 2,
+      "in-scene": 8,
       "packaging-only": 1,
       "device-with-packaging": 1,
-      "multi-pack": 4
+      "multi-pack": 4,
+      "in-hand": 3
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -2815,11 +2850,12 @@
      "sku": "DM-EDK-VB",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 24,
+     "renders": 28,
      "compositions": {
       "device-only": 16,
       "multi-pack": 7,
-      "in-scene": 1
+      "in-scene": 2,
+      "in-hand": 3
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -2863,11 +2899,12 @@
      "sku": "DM-EDK-OC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 22,
+     "renders": 25,
      "compositions": {
       "device-only": 11,
       "multi-pack": 10,
-      "in-scene": 1
+      "in-scene": 2,
+      "in-hand": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -2911,11 +2948,12 @@
      "sku": "DM-EDK-PP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
+     "renders": 12,
      "compositions": {
       "device-only": 7,
       "multi-pack": 2,
-      "in-scene": 1
+      "in-scene": 2,
+      "in-hand": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -2989,15 +3027,35 @@
      "sku": "DM-KTG-JW",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 1,
+     "renders": 13,
      "compositions": {
-      "device-only": 1
+      "device-with-packaging": 2,
+      "packaging-only": 3,
+      "device-only": 2,
+      "in-scene": 5,
+      "multi-pack": 1
      },
      "hasDeviceOnly": true,
-     "hasPackaging": false,
-     "hasDisplay": false,
+     "hasPackaging": true,
+     "hasDisplay": true,
      "hasAlpha": true,
      "top": [
+      {
+       "id": "08e23df0-08c4-4e67-8c85-ae677976d884",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/GummiesUpdated/DialedMoods_Gummies_Watermelon_45_V1.png",
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b7a8d7aa1f1730ef.jpg"
+      },
+      {
+       "id": "199aca76-9027-421a-ab06-4a9bffa6b828",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/DisplayBox/DIALED_GUMMY_JAR_RENDERS/JUICY_WATERMELON_CLOSED_BOX.png",
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9b42686c6ccc8781.jpg"
+      },
       {
        "id": "18d0f8ed-b56a-4582-a250-0227de7ca3f7",
        "score": 5,
@@ -3008,7 +3066,10 @@
       }
      ],
      "folders": [
-      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/KratomGummies"
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/GummiesUpdated",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/DisplayBox/DIALED_GUMMY_JAR_RENDERS",
+      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/KratomGummies",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/OldVersions/V2"
      ]
     },
     {
@@ -3016,26 +3077,50 @@
      "sku": "DM-KTG-OS",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 1,
+     "renders": 15,
      "compositions": {
-      "in-scene": 1
+      "in-hand": 2,
+      "device-with-packaging": 4,
+      "packaging-only": 3,
+      "multi-pack": 1,
+      "in-scene": 3,
+      "device-only": 2
      },
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
+     "hasDeviceOnly": true,
+     "hasPackaging": true,
+     "hasDisplay": true,
      "hasAlpha": true,
      "top": [
       {
-       "id": "a4d2913e-519d-4351-938b-9f9810a84e8c",
+       "id": "689f0da6-88fe-4fff-9294-44d4a3837364",
        "score": 5,
-       "path": "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/KratomGummies/Dialed_KratomGummies_Spin_OrangeStarburst0017.png",
-       "composition": "in-scene",
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kratom Gummies/dial-49.jpg",
+       "composition": "in-hand",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/eb90590c8d69dd60.jpg"
+      },
+      {
+       "id": "95970915-367d-4ed1-8b51-a607cceaf3f2",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/OldVersions/V1/DialedMoods_Gummies_OrangeStarburst_45_V1.png",
+       "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/72733c782d2cb8bd.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/01506e2b5da83d09.jpg"
+      },
+      {
+       "id": "8ab0f516-5a08-4159-b7ba-9ca6abe52298",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/GummiesUpdated/Plain/w-Shadow/DialedMoods_Gummies_Orange_FrontPlain_wShadow_V1.png",
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6410c651436f5ee4.jpg"
       }
      ],
      "folders": [
-      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/KratomGummies"
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kratom Gummies",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/OldVersions/V1",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/GummiesUpdated/Plain/w-Shadow",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/DisplayBox/DIALED_GUMMY_JAR_RENDERS"
      ]
     },
     {
@@ -3043,13 +3128,17 @@
      "sku": "DM-KTG-LW",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 1,
+     "renders": 13,
      "compositions": {
-      "device-only": 1
+      "device-only": 2,
+      "in-scene": 1,
+      "device-with-packaging": 4,
+      "packaging-only": 5,
+      "multi-pack": 1
      },
      "hasDeviceOnly": true,
-     "hasPackaging": false,
-     "hasDisplay": false,
+     "hasPackaging": true,
+     "hasDisplay": true,
      "hasAlpha": true,
      "top": [
       {
@@ -3059,10 +3148,29 @@
        "composition": "device-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/09b847e98e1eedd9.jpg"
+      },
+      {
+       "id": "8742c4d7-071e-4e2e-9838-be0cde2714fb",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/GummiesUpdated/DialedMoods_Gummies_Lemon_45_V1.png",
+       "composition": "in-scene",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/646b57994fc6eb39.jpg"
+      },
+      {
+       "id": "754cfef4-d6a6-4315-b289-064eea1e0dfd",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/GummiesUpdated/DialedMoods_Gummies_Lemon_Front_V1.png",
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cab61449b5834af8.jpg"
       }
      ],
      "folders": [
-      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/KratomGummies"
+      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/KratomGummies",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/GummiesUpdated",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/DisplayBox/DIALED_GUMMY_JAR_RENDERS",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/GummiesUpdated/GummiesOnly"
      ]
     },
     {
@@ -3070,13 +3178,18 @@
      "sku": "DM-KTG-GA",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 1,
+     "renders": 17,
      "compositions": {
-      "device-with-packaging": 1
+      "device-with-packaging": 6,
+      "packaging-only": 4,
+      "multi-pack": 1,
+      "in-scene": 3,
+      "device-only": 1,
+      "in-hand": 2
      },
-     "hasDeviceOnly": false,
+     "hasDeviceOnly": true,
      "hasPackaging": true,
-     "hasDisplay": false,
+     "hasDisplay": true,
      "hasAlpha": true,
      "top": [
       {
@@ -3086,10 +3199,29 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a0114c057f9ead9b.jpg"
+      },
+      {
+       "id": "b2427315-fc8c-45c4-ae15-2279547764f5",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/OldVersions/V1/DialedMoods_Gummies_GreenApple_45_V1.png",
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/046754cce6fb4353.jpg"
+      },
+      {
+       "id": "2fda8f28-97e1-42fa-949e-d0e49f43fbc1",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/OldVersions/V1/DialedMoods_Gummies_GreenApple_Front_V1.png",
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e90e5934ab8f39fe.jpg"
       }
      ],
      "folders": [
-      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/KratomGummies"
+      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/KratomGummies",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/OldVersions/V1",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/DisplayBox/DIALED_GUMMY_JAR_RENDERS",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/GummiesUpdated/Plain"
      ]
     },
     {
@@ -3097,13 +3229,19 @@
      "sku": "DM-KTG-GJ",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 1,
+     "renders": 15,
      "compositions": {
-      "device-with-packaging": 1
+      "device-with-packaging": 5,
+      "in-hand": 3,
+      "device-only": 1,
+      "packaging-only": 3,
+      "n/a": 1,
+      "multi-pack": 1,
+      "in-scene": 1
      },
-     "hasDeviceOnly": false,
+     "hasDeviceOnly": true,
      "hasPackaging": true,
-     "hasDisplay": false,
+     "hasDisplay": true,
      "hasAlpha": true,
      "top": [
       {
@@ -3113,10 +3251,29 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b6c8e53231be16a8.jpg"
+      },
+      {
+       "id": "76e28caf-0669-4865-9206-bbc7a7dd5616",
+       "score": 5,
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kratom Gummies/dial-29.jpg",
+       "composition": "in-hand",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e78578240af292ef.jpg"
+      },
+      {
+       "id": "935c580e-e3f0-45b2-b8e0-96da09792cb4",
+       "score": 5,
+       "path": "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/OldVersions/V2/DialedMoods_Gummies_GrapeJelly_45_V1.png",
+       "composition": "device-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c47761250ae61987.jpg"
       }
      ],
      "folders": [
-      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/KratomGummies"
+      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/KratomGummies",
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kratom Gummies",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/OldVersions/V2",
+      "Renders/DialedMoods/Dialed Sku's/GUMMIES - DIALED MOODS/GummiesUpdated"
      ]
     }
    ]
@@ -3157,10 +3314,11 @@
      "sku": "DM-ESZ-LE",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 47,
+     "renders": 50,
      "compositions": {
+      "in-hand": 1,
       "multi-pack": 28,
-      "device-only": 17,
+      "device-only": 19,
       "device-with-packaging": 1,
       "in-scene": 1
      },
@@ -3169,6 +3327,14 @@
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
+      {
+       "id": "3bce3416-bb44-4eec-ba66-4ad070f1eadc",
+       "score": 5,
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kava Seltzers/DSC04294.JPG",
+       "composition": "in-hand",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a5ac8ce016ac6017.jpg"
+      },
       {
        "id": "55e5bf22-12fc-4d8a-8baf-b8c8f0eaab60",
        "score": 5,
@@ -3184,21 +3350,13 @@
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7edc141255ae776d.jpg"
-      },
-      {
-       "id": "2b83760c-6de5-4520-8b58-d3a797437f2d",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Display Boxes_June 2025/Dialed_Kava_Display_Lemonade_6Pack_Open.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9a2b9cfcb6acf9f5.jpg"
       }
      ],
      "folders": [
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kava Seltzers",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/DisplayBox",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Display Boxes_June 2025",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Design 2025 Main Renders",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/InfluencerBox"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Design 2025 Main Renders"
      ]
     },
     {
@@ -3206,18 +3364,26 @@
      "sku": "DM-ESZ-MA",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 37,
+     "renders": 41,
      "compositions": {
+      "in-scene": 4,
       "multi-pack": 20,
-      "device-only": 14,
-      "device-with-packaging": 1,
-      "in-scene": 2
+      "device-only": 16,
+      "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
+      {
+       "id": "91fcdc13-0183-4309-9fc9-81f3e1f09d19",
+       "score": 5,
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kava Seltzers/DSC09529-Edit.JPG",
+       "composition": "in-scene",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e3f3aa6d01386a63.jpg"
+      },
       {
        "id": "8ba30feb-2f2a-4505-b5f4-b28b95a2d54d",
        "score": 5,
@@ -3233,21 +3399,13 @@
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c0ae86a00fb8b88a.jpg"
-      },
-      {
-       "id": "5d9199eb-f686-4df2-934d-d012e4bff73e",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/DisplayBox/Kava_6PK_Mango_Closed_V1.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/27f653c6f88ce8a6.jpg"
       }
      ],
      "folders": [
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kava Seltzers",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/DisplayBox",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Display Boxes_June 2025",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/InfluencerBox",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/InfluencerBox"
      ]
     },
     {
@@ -3276,12 +3434,11 @@
    "skuBlock": null,
    "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
    "items": 6,
-   "covered": 3,
-   "coveragePct": 50,
+   "covered": 4,
+   "coveragePct": 67,
    "missing": [
     "Watermeon Wipeout",
-    "Variety Pack - 12",
-    "Variety Pack - 30"
+    "Variety Pack - 12"
    ],
    "itemsDetail": [
     {
@@ -3289,16 +3446,27 @@
      "sku": "DM-PHP-RR",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 19,
+     "renders": 33,
      "compositions": {
+      "in-scene": 7,
       "multi-pack": 14,
-      "packaging-only": 5
+      "packaging-only": 6,
+      "label-flat": 5,
+      "in-hand": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
+      {
+       "id": "c0202ccd-10c4-4dcb-89db-aafe0b6c5e2c",
+       "score": 5,
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Electrolyte Powder/muha tether-1197.JPG",
+       "composition": "in-scene",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7dd6bec6b5aae00d.jpg"
+      },
       {
        "id": "48197402-754f-478b-8ca8-aec465fb9173",
        "score": 5,
@@ -3314,21 +3482,13 @@
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a9beea97960f0ded.jpg"
-      },
-      {
-       "id": "6739c66c-87c5-4a7a-af08-8ec4d359208c",
-       "score": 5,
-       "path": "Renders/Assets for Amazon/Hydro Pack Renders/Display Box 30PK/DialedMoods_Hydra_30pk_Display_Raspberry_RTSide_V1.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/47bf415c5f5c47bf.jpg"
       }
      ],
      "folders": [
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Electrolyte Powder",
       "Renders/Assets for Amazon/Hydro Pack Renders/Display Box 30PK",
       "Renders/Assets for Amazon/Hydro Pack Renders/DisplayBox 20PK",
-      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/HydrationPacks",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Old Packs"
+      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/HydrationPacks"
      ]
     },
     {
@@ -3336,10 +3496,14 @@
      "sku": "DM-PHP-CC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 20,
+     "renders": 30,
      "compositions": {
       "multi-pack": 14,
-      "packaging-only": 6
+      "label-flat": 4,
+      "in-scene": 4,
+      "n/a": 1,
+      "packaging-only": 6,
+      "in-hand": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -3363,19 +3527,19 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7fc70c6765d25dc2.jpg"
       },
       {
-       "id": "ba09ad38-1d81-481f-be9b-89734ef5ad50",
+       "id": "187f4eb4-47f0-4189-8537-5ec0a790093e",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Old Packs/Old Product/12pk/Updated_Hydro_12pk/DialedMoods_Electros_12pk_Citrus_Front_V2.png",
-       "composition": "multi-pack",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/377e4b8ff460a27c.jpg"
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Hydration/30PK/citrus/tile_plane_phong1_Roughness.png",
+       "composition": "label-flat",
+       "angle": "multiple",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/32faa0ce8e2be66b.jpg"
       }
      ],
      "folders": [
       "Renders/Assets for Amazon/Hydro Pack Renders/Display Box 30PK",
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Hydration/30PK/citrus",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Old Packs/Old Product/12pk/Updated_Hydro_12pk",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Old Packs/Old Product/DisplayBox 20PK/Updated_20PK_Hydro",
-      "Renders/Assets for Amazon/Hydro Pack Renders/DisplayBox 20PK"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Old Packs/Old Product/DisplayBox 20PK/Updated_20PK_Hydro"
      ]
     },
     {
@@ -3383,10 +3547,13 @@
      "sku": "DM-PHP-EO",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 19,
+     "renders": 25,
      "compositions": {
       "multi-pack": 14,
-      "packaging-only": 5
+      "label-flat": 3,
+      "n/a": 2,
+      "packaging-only": 5,
+      "in-hand": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -3422,7 +3589,7 @@
       "Renders/Assets for Amazon/Hydro Pack Renders/Display Box 30PK",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Old Packs/Old Product/12pk/Updated_Hydro_12pk",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Old Packs/Old Product/DisplayBox 20PK/Updated_20PK_Hydro",
-      "Renders/Assets for Amazon/Hydro Pack Renders/DisplayBox 20PK"
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Hydration/30PK/orange"
      ]
     },
     {
@@ -3458,14 +3625,27 @@
      "sku": "DM-PHP-VP30",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
+     "renders": 1,
+     "compositions": {
+      "label-flat": 1
+     },
      "hasDeviceOnly": false,
      "hasPackaging": false,
      "hasDisplay": false,
      "hasAlpha": false,
-     "top": [],
-     "folders": []
+     "top": [
+      {
+       "id": "6eba5f68-18ac-4e9e-b2d9-66c3ca12db68",
+       "score": 5,
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Hydration/30PK/variety/tile_plane_phong1_DisplaceHeightField.png",
+       "composition": "label-flat",
+       "angle": "n/a",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c2eab2818199b0f4.jpg"
+      }
+     ],
+     "folders": [
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Hydration/30PK/variety"
+     ]
     }
    ]
   },
@@ -3677,13 +3857,13 @@
      "sku": "DM-SLJ-GU",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 44,
+     "renders": 50,
      "compositions": {
       "multi-pack": 3,
-      "device-with-packaging": 10,
-      "device-only": 16,
+      "device-with-packaging": 11,
+      "device-only": 19,
       "in-scene": 3,
-      "packaging-only": 10,
+      "packaging-only": 12,
       "n/a": 2
      },
      "hasDeviceOnly": true,
@@ -3744,11 +3924,12 @@
      "sku": "DM-SMO-GU",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 37,
+     "renders": 43,
      "compositions": {
       "device-with-packaging": 10,
-      "packaging-only": 10,
-      "device-only": 16,
+      "packaging-only": 11,
+      "device-only": 19,
+      "in-scene": 2,
       "multi-pack": 1
      },
      "hasDeviceOnly": true,
@@ -3800,8 +3981,8 @@
    "skuBlock": null,
    "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
    "items": 3,
-   "covered": 0,
-   "coveragePct": 0,
+   "covered": 1,
+   "coveragePct": 33,
    "missing": [],
    "itemsDetail": [
     {
@@ -3823,14 +4004,27 @@
      "sku": null,
      "discontinued": true,
      "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
+     "renders": 1,
+     "compositions": {
+      "in-scene": 1
+     },
      "hasDeviceOnly": false,
      "hasPackaging": false,
      "hasDisplay": false,
      "hasAlpha": false,
-     "top": [],
-     "folders": []
+     "top": [
+      {
+       "id": "3259b582-57a3-4be5-af55-f6ec5ab55206",
+       "score": 3,
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kratom Powder/DSC05452-Edit.JPG",
+       "composition": "in-scene",
+       "angle": "top",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/41ad7f9487c158c8.jpg"
+      }
+     ],
+     "folders": [
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kratom Powder"
+     ]
     },
     {
      "name": "Red (Rest and Recover)",
@@ -3858,8 +4052,8 @@
    "skuBlock": null,
    "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
    "items": 3,
-   "covered": 0,
-   "coveragePct": 0,
+   "covered": 1,
+   "coveragePct": 33,
    "missing": [],
    "itemsDetail": [
     {
@@ -3881,14 +4075,27 @@
      "sku": null,
      "discontinued": true,
      "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
+     "renders": 1,
+     "compositions": {
+      "in-scene": 1
+     },
      "hasDeviceOnly": false,
      "hasPackaging": false,
      "hasDisplay": false,
      "hasAlpha": false,
-     "top": [],
-     "folders": []
+     "top": [
+      {
+       "id": "3259b582-57a3-4be5-af55-f6ec5ab55206",
+       "score": 3,
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kratom Powder/DSC05452-Edit.JPG",
+       "composition": "in-scene",
+       "angle": "top",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/41ad7f9487c158c8.jpg"
+      }
+     ],
+     "folders": [
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kratom Powder"
+     ]
     },
     {
      "name": "Red (Rest and Recover)",
@@ -4115,10 +4322,14 @@
      "sku": "DM-PEP-WM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 39,
+     "renders": 51,
      "compositions": {
-      "packaging-only": 15,
-      "multi-pack": 24
+      "packaging-only": 16,
+      "multi-pack": 24,
+      "n/a": 3,
+      "label-flat": 6,
+      "in-scene": 1,
+      "in-hand": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -4354,11 +4565,11 @@
      "sku": "DM-LSK-CS",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 7,
+     "renders": 8,
      "compositions": {
       "multi-pack": 2,
       "device-only": 3,
-      "in-scene": 2
+      "in-scene": 3
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -4393,8 +4604,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/Shots/Energy Shots/DisplayRenders",
       "Renders/DialedMoods/Dialed Sku's/Shots/Energy Shots",
-      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/EnergyShots",
-      "Renders/DialedMoods/Dialed Sku's/Shots/OnSetShots/Verticals"
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Energy Shots",
+      "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/EnergyShots"
      ]
     },
     {
@@ -4402,10 +4613,11 @@
      "sku": "DM-LSK-TR",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
+     "renders": 13,
      "compositions": {
       "device-only": 4,
-      "in-scene": 4,
+      "in-hand": 2,
+      "in-scene": 5,
       "multi-pack": 2
      },
      "hasDeviceOnly": true,
@@ -4422,27 +4634,27 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8f24540ba31c091a.jpg"
       },
       {
+       "id": "1da442c3-f3da-4691-8004-21dbf9a83fa2",
+       "score": 4,
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Energy Shots/dial-22.jpg",
+       "composition": "in-hand",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a04a77e86ea5b53b.jpg"
+      },
+      {
        "id": "a1d8528e-f23d-40fd-9708-27a098b8b1d7",
        "score": 4,
        "path": "Renders/DialedMoods/Dialed Sku's/Shots/Energy Shots/Shots_Energy_TropicalRush_Front_V1.png",
        "composition": "device-only",
        "angle": "front",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/02645a77474d286f.jpg"
-      },
-      {
-       "id": "de8c8531-7f7c-44b5-952a-4f28aed8b170",
-       "score": 4,
-       "path": "Renders/DialedMoods/Dialed Sku's/Shots/OnSetShots/Verticals/EnergyKava_TropicalRush_OnSet_01.png",
-       "composition": "in-scene",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a89636c07b11e395.jpg"
       }
      ],
      "folders": [
       "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/EnergyShots",
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Energy Shots",
       "Renders/DialedMoods/Dialed Sku's/Shots/Energy Shots",
-      "Renders/DialedMoods/Dialed Sku's/Shots/OnSetShots/Verticals",
-      "Renders/DialedMoods/Dialed Sku's/Shots/Energy Shots/DisplayRenders"
+      "Renders/DialedMoods/Dialed Sku's/Shots/OnSetShots/Verticals"
      ]
     },
     {
@@ -4577,14 +4789,16 @@
      "sku": "DM-NPE-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 45,
+     "renders": 63,
      "compositions": {
-      "device-only": 30,
+      "device-only": 31,
       "multi-pack": 14,
-      "in-scene": 1
+      "in-scene": 5,
+      "in-hand": 12,
+      "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
-     "hasPackaging": false,
+     "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
@@ -4672,11 +4886,12 @@
      "sku": "DM-NPE-OC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 22,
+     "renders": 25,
      "compositions": {
       "device-only": 11,
       "multi-pack": 10,
-      "in-scene": 1
+      "in-scene": 2,
+      "in-hand": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -4826,9 +5041,9 @@
      "sku": "DM-NPE-BA",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 13,
+     "renders": 15,
      "compositions": {
-      "multi-pack": 7,
+      "multi-pack": 9,
       "device-only": 5,
       "device-with-packaging": 1
      },
@@ -4948,10 +5163,11 @@
      "sku": "DM-ESK-TR",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
+     "renders": 13,
      "compositions": {
       "device-only": 4,
-      "in-scene": 4,
+      "in-hand": 2,
+      "in-scene": 5,
       "multi-pack": 2
      },
      "hasDeviceOnly": true,
@@ -4968,27 +5184,27 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8f24540ba31c091a.jpg"
       },
       {
+       "id": "1da442c3-f3da-4691-8004-21dbf9a83fa2",
+       "score": 4,
+       "path": "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Energy Shots/dial-22.jpg",
+       "composition": "in-hand",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a04a77e86ea5b53b.jpg"
+      },
+      {
        "id": "a1d8528e-f23d-40fd-9708-27a098b8b1d7",
        "score": 4,
        "path": "Renders/DialedMoods/Dialed Sku's/Shots/Energy Shots/Shots_Energy_TropicalRush_Front_V1.png",
        "composition": "device-only",
        "angle": "front",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/02645a77474d286f.jpg"
-      },
-      {
-       "id": "de8c8531-7f7c-44b5-952a-4f28aed8b170",
-       "score": 4,
-       "path": "Renders/DialedMoods/Dialed Sku's/Shots/OnSetShots/Verticals/EnergyKava_TropicalRush_OnSet_01.png",
-       "composition": "in-scene",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a89636c07b11e395.jpg"
       }
      ],
      "folders": [
       "Renders/DialedMoods/Website Image - DIALED/WebsiteProductRenderImages/EnergyShots",
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Energy Shots",
       "Renders/DialedMoods/Dialed Sku's/Shots/Energy Shots",
-      "Renders/DialedMoods/Dialed Sku's/Shots/OnSetShots/Verticals",
-      "Renders/DialedMoods/Dialed Sku's/Shots/Energy Shots/DisplayRenders"
+      "Renders/DialedMoods/Dialed Sku's/Shots/OnSetShots/Verticals"
      ]
     },
     {
@@ -5055,16 +5271,24 @@
      "sku": "DM-KES-AB",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 9,
+     "renders": 13,
      "compositions": {
-      "device-only": 2,
-      "multi-pack": 7
+      "multi-pack": 9,
+      "device-only": 4
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
+      {
+       "id": "cbf718fe-2202-4e76-9233-18166c458c5f",
+       "score": 5,
+       "path": "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Kava Seltzer/Display/Dialed_Kava_DisplayOPEN_12pk_ArcticBlue.png",
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/16acd1af10f40b3e.jpg"
+      },
       {
        "id": "f592cdc8-d532-4b69-9279-77b15e173ae2",
        "score": 5,
@@ -5080,19 +5304,13 @@
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4f6dcc2b783da23f.jpg"
-      },
-      {
-       "id": "a6565085-e507-4d05-8638-2ca4cafe4ed4",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display/Dialed_Kava_Display_Artic_Blue_12Pack_Closed_Solo.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/231a0aeb2c7e9062.jpg"
       }
      ],
      "folders": [
+      "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Kava Seltzer/Display",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display",
+      "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Kava Seltzer"
      ]
     },
     {
@@ -5100,11 +5318,12 @@
      "sku": "DM-KES-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 43,
+     "renders": 50,
      "compositions": {
       "multi-pack": 28,
-      "device-only": 13,
-      "in-scene": 1,
+      "device-only": 15,
+      "in-scene": 5,
+      "in-hand": 1,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
@@ -5121,27 +5340,27 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b2b66f576511a0d8.jpg"
       },
       {
+       "id": "4aba185e-25b2-4190-8d44-e71b31556ce4",
+       "score": 5,
+       "path": "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Kava Seltzer/Dialed_Seltzer_Kava_45_Lemonade.png",
+       "composition": "device-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/090f4d840a3a887c.jpg"
+      },
+      {
        "id": "083fab2d-d9fb-4e58-aaf6-935470e78192",
        "score": 5,
        "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display/Dialed_Kava_Display_12Pack_Closed_Solo_Lemonade0116.png",
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a7384e7e6e270514.jpg"
-      },
-      {
-       "id": "81c6312c-fc15-4a05-ab59-236cb228c26c",
-       "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display/Dialed_Kava_Display_Lemonade_6Pack_Open.png",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d0037bd8cd8db78f.jpg"
       }
      ],
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display",
+      "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Kava Seltzer",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2026 March/Display",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Design 2025 Main Renders",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/InfluencerBox"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Design 2025 Main Renders"
      ]
     },
     {
@@ -5149,10 +5368,11 @@
      "sku": "DM-KES-MP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 35,
+     "renders": 39,
      "compositions": {
       "multi-pack": 20,
-      "device-only": 14,
+      "device-only": 16,
+      "in-scene": 2,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
@@ -5275,11 +5495,12 @@
      "sku": "DM-LDE-LSK",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 26,
+     "renders": 27,
      "compositions": {
       "device-only": 14,
       "multi-pack": 10,
-      "device-with-packaging": 2
+      "device-with-packaging": 2,
+      "in-scene": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -5418,11 +5639,11 @@
      "sku": "DM-LDE-LEM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 27,
+     "renders": 33,
      "compositions": {
       "multi-pack": 15,
-      "device-only": 10,
-      "in-scene": 1,
+      "device-only": 12,
+      "in-scene": 5,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": true,
@@ -5458,8 +5679,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Display",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/L Dopa/Old Mock up/Black Caps",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders",
-      "Renders/DialedMoods/Dialed Mood accessories Renders/VendingMachine/Renders for manual"
+      "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Energy Drinks",
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/Kratom Energy Drink/Old_Can_Designs/Cans_June2025/New Seltzer Design_June2025_Main Renders"
      ]
     },
     {
@@ -6453,7 +6674,7 @@
   {
    "folder": "DialedMoods / Dialed Sku's",
    "market": null,
-   "files": 494,
+   "files": 438,
    "products": [
     {
      "product": "DM-social-elixir",
@@ -6474,17 +6695,17 @@
    ],
    "samples": [
     "Dialed_Seltzer_LDopa_Shot5_Lychee.png",
-    "DialedMoods_Gummies_GrapeJelly_45_V1.png",
-    "DialedMoods_Gummies_GrapeJelly_45_V1.png"
+    "DialedMoods_Gummies_layout.png",
+    "Dialed_Pills_Shot1_Red_V1.png"
    ],
    "compositions": {
-    "device-only": 225,
-    "device-with-packaging": 35,
-    "packaging-only": 72,
-    "in-scene": 22,
+    "device-only": 219,
     "lineup": 42,
-    "multi-pack": 80,
-    "n/a": 14,
+    "device-with-packaging": 16,
+    "packaging-only": 55,
+    "multi-pack": 75,
+    "in-scene": 14,
+    "n/a": 13,
     "label-flat": 4
    }
   },
@@ -6519,42 +6740,6 @@
     "n/a": 79,
     "in-scene": 7,
     "device-only": 3
-   }
-  },
-  {
-   "folder": "Energy Drinks",
-   "market": null,
-   "files": 76,
-   "products": [
-    {
-     "product": "Fruit Punch energy drink",
-     "n": 4
-    },
-    {
-     "product": "DM-lemonade",
-     "n": 4
-    },
-    {
-     "product": "Pink Lemonade energy drink",
-     "n": 4
-    },
-    {
-     "product": "Mango Passion Fruit energy drink",
-     "n": 3
-    }
-   ],
-   "samples": [
-    "323A4690.JPG",
-    "dial-34.jpg",
-    "DSC07888.JPG"
-   ],
-   "compositions": {
-    "in-hand": 38,
-    "in-scene": 25,
-    "lineup": 9,
-    "multi-pack": 2,
-    "device-with-packaging": 1,
-    "device-only": 1
    }
   },
   {
@@ -6681,39 +6866,6 @@
    }
   },
   {
-   "folder": "Hydration / 30PK",
-   "market": null,
-   "files": 28,
-   "products": [
-    {
-     "product": "Raspberry & Cranberry Hydration Electrolyte Drink Mix",
-     "n": 1
-    },
-    {
-     "product": "Dialed Moods Hydration 30-pack, Citrus Circuit",
-     "n": 1
-    },
-    {
-     "product": "Dialed Moods Hydration Citrus Circuit 30-pack",
-     "n": 1
-    },
-    {
-     "product": "Dialed Hydration Electric Orange 30-pack",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "tile_plane_phong1_DisplaceHeightField.png",
-    "tile_plane_phong1_Roughness.png",
-    "tile_plane_phong1_Normal.png"
-   ],
-   "compositions": {
-    "label-flat": 18,
-    "n/a": 9,
-    "multi-pack": 1
-   }
-  },
-  {
    "folder": "DialedMoods / DialedCollage",
    "market": null,
    "files": 27,
@@ -6744,6 +6896,40 @@
     "n/a": 9,
     "lineup": 2,
     "in-scene": 16
+   }
+  },
+  {
+   "folder": "Energy Drinks",
+   "market": null,
+   "files": 26,
+   "products": [
+    {
+     "product": "Dialed Moods Energy Drink Variety Pack",
+     "n": 2
+    },
+    {
+     "product": "Dialed Moods energy drink can",
+     "n": 2
+    },
+    {
+     "product": "Strawberry Razz energy drink",
+     "n": 2
+    },
+    {
+     "product": "Dialed Moods energy drink can with Kratom",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "DSC07891.JPG",
+    "dxr33416.JPG",
+    "DSC00471-3.JPG"
+   ],
+   "compositions": {
+    "in-scene": 6,
+    "in-hand": 9,
+    "lineup": 9,
+    "multi-pack": 2
    }
   },
   {
@@ -6782,39 +6968,6 @@
    }
   },
   {
-   "folder": "Electrolyte Powder",
-   "market": null,
-   "files": 20,
-   "products": [
-    {
-     "product": "Dialed Moods Powder Pack",
-     "n": 2
-    },
-    {
-     "product": "DM-sour-watermelon",
-     "n": 2
-    },
-    {
-     "product": "Raspberry Roulette electrolyte powder pack",
-     "n": 1
-    },
-    {
-     "product": "light blue insulated water bottle",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "muha tether-1197.JPG",
-    "dial-36.jpg",
-    "DSC03678-Edit.JPG"
-   ],
-   "compositions": {
-    "in-scene": 8,
-    "in-hand": 11,
-    "packaging-only": 1
-   }
-  },
-  {
    "folder": "DialedMoods / Gym",
    "market": null,
    "files": 19,
@@ -6832,30 +6985,6 @@
    "compositions": {
     "n/a": 10,
     "in-scene": 9
-   }
-  },
-  {
-   "folder": "Kava Seltzer",
-   "market": null,
-   "files": 18,
-   "products": [
-    {
-     "product": "DM-social-elixir",
-     "n": 14
-    },
-    {
-     "product": "DM-lemonade",
-     "n": 4
-    }
-   ],
-   "samples": [
-    "Dialed_Seltzer_Kava_45_Lemonade.png",
-    "Dialed_Seltzer_Kava_Shot5_ArticBlue.png",
-    "Dialed_Seltzer_Kava_Shot2_MangoPeach.png"
-   ],
-   "compositions": {
-    "device-only": 17,
-    "device-with-packaging": 1
    }
   },
   {
@@ -6926,7 +7055,7 @@
   {
    "folder": "Kratom Powder",
    "market": null,
-   "files": 15,
+   "files": 14,
    "products": [
     {
      "product": "Kratom Powder",
@@ -6953,41 +7082,8 @@
    "compositions": {
     "device-only": 1,
     "in-hand": 2,
-    "in-scene": 10,
+    "in-scene": 9,
     "lineup": 2
-   }
-  },
-  {
-   "folder": "Kratom Gummies",
-   "market": null,
-   "files": 14,
-   "products": [
-    {
-     "product": "Kratom Gummies",
-     "n": 3
-    },
-    {
-     "product": "Kratom Gummies Green Apple",
-     "n": 2
-    },
-    {
-     "product": "Kratom Gummies Grape Jelly",
-     "n": 2
-    },
-    {
-     "product": "Kratom Gummies, Orange Starburst flavor",
-     "n": 2
-    }
-   ],
-   "samples": [
-    "dial-33.jpg",
-    "dial-28.jpg",
-    "dial-27.jpg"
-   ],
-   "compositions": {
-    "in-hand": 9,
-    "in-scene": 4,
-    "packaging-only": 1
    }
   },
   {
@@ -7025,68 +7121,92 @@
    }
   },
   {
-   "folder": "Energy Shots",
+   "folder": "Kava Seltzer",
    "market": null,
-   "files": 11,
+   "files": 12,
    "products": [
     {
-     "product": "Berry Blizzard Liquid Energy Shot",
+     "product": "DM-social-elixir",
+     "n": 10
+    },
+    {
+     "product": "DM-lemonade",
      "n": 2
-    },
+    }
+   ],
+   "samples": [
+    "Dialed_Seltzer_Kava_Shot5_ArticBlue.png",
+    "Dialed_Seltzer_Kava_Shot2_MangoPeach.png",
+    "Dialed_Seltzer_Kava_Shot4_MangoPeach.png"
+   ],
+   "compositions": {
+    "device-only": 11,
+    "device-with-packaging": 1
+   }
+  },
+  {
+   "folder": "Hydration / 30PK",
+   "market": null,
+   "files": 10,
+   "products": [
     {
-     "product": "Dialed Moods Tropical energy shot tube",
+     "product": "Raspberry & Cranberry Hydration Electrolyte Drink Mix",
      "n": 1
     },
     {
-     "product": "Dialed Moods energy shot",
+     "product": "Dialed Moods 30-pack orange hydration electrolyte drink mix",
      "n": 1
     },
     {
-     "product": "DM-blue-glacier",
+     "product": "Hydration packs electrolyte drink mix",
+     "n": 1
+    },
+    {
+     "product": "Hydration packs",
      "n": 1
     }
    ],
    "samples": [
-    "dial-21.jpg",
-    "dial-24.jpg",
-    "dial-19.jpg"
+    "tile_plane_phong1_DisplaceHeightField.png",
+    "tile_plane_phong1_DisplaceHeightField.png",
+    "tile_plane_phong1_Roughness.png"
    ],
    "compositions": {
-    "in-hand": 7,
-    "in-scene": 2,
-    "lineup": 1,
-    "device-only": 1
+    "label-flat": 6,
+    "n/a": 3,
+    "multi-pack": 1
    }
   },
   {
-   "folder": "Product Focused Beach Location",
+   "folder": "Electrolyte Powder",
    "market": null,
    "files": 9,
    "products": [
     {
-     "product": "Raspberry Roulette hydration packets",
-     "n": 5
-    },
-    {
-     "product": "Citrus Circuit hydration packets",
+     "product": "Dialed Moods Powder Pack",
      "n": 2
     },
     {
-     "product": "Citrus Circuit Hydration Packets",
+     "product": "Dialed Moods Electrolyte Powder Pack, Berry flavor",
      "n": 1
     },
     {
-     "product": "Dialed Moods Raspberry Roulette hydration packets",
+     "product": "Electrolyte powder sachet",
+     "n": 1
+    },
+    {
+     "product": "Dialed Moods powder pack",
      "n": 1
     }
    ],
    "samples": [
-    "CT107558.jpg",
-    "CT107528.jpg",
-    "CT107572.jpg"
+    "dial-36.jpg",
+    "dial-38.jpg",
+    "DSC02607-Edit 2.JPG"
    ],
    "compositions": {
-    "in-scene": 9
+    "in-hand": 5,
+    "in-scene": 4
    }
   },
   {
@@ -7122,6 +7242,39 @@
    }
   },
   {
+   "folder": "Energy Shots",
+   "market": null,
+   "files": 7,
+   "products": [
+    {
+     "product": "Berry Blizzard Liquid Energy Shot",
+     "n": 2
+    },
+    {
+     "product": "Dialed Moods Tropical energy shot tube",
+     "n": 1
+    },
+    {
+     "product": "Dialed Moods energy shot",
+     "n": 1
+    },
+    {
+     "product": "DM-blue-glacier",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "dial-21.jpg",
+    "dial-24.jpg",
+    "dial-19.jpg"
+   ],
+   "compositions": {
+    "in-hand": 5,
+    "lineup": 1,
+    "device-only": 1
+   }
+  },
+  {
    "folder": "Assets for Amazon / HydroBottle",
    "market": null,
    "files": 7,
@@ -7152,37 +7305,6 @@
     "device-only": 3,
     "device-with-packaging": 2,
     "packaging-only": 2
-   }
-  },
-  {
-   "folder": "Energy Powder",
-   "market": null,
-   "files": 6,
-   "products": [
-    {
-     "product": "Dialed Moods Dragon Fruit 20 Powder Energy Packs",
-     "n": 1
-    },
-    {
-     "product": "Cherry Lime powder energy pack",
-     "n": 1
-    },
-    {
-     "product": "Dragon Fruit Energy Powder Pack",
-     "n": 1
-    },
-    {
-     "product": "Dialed Moods Blueberry Acai Energy Powder Packs",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "dial-42.jpg",
-    "dial-44.jpg",
-    "dial-43.jpg"
-   ],
-   "compositions": {
-    "in-hand": 6
    }
   },
   {
@@ -7289,112 +7411,6 @@
    }
   },
   {
-   "folder": "Sea Moss Gummies",
-   "market": null,
-   "files": 6,
-   "products": [
-    {
-     "product": "DM-sea-moss",
-     "n": 6
-    }
-   ],
-   "samples": [
-    "Seamoss_Front.png",
-    "Seamoss_45Open_white.png",
-    "Seamoss_45_white.png"
-   ],
-   "compositions": {
-    "device-only": 3,
-    "in-scene": 2,
-    "packaging-only": 1
-   }
-  },
-  {
-   "folder": "Shilajit Gummies",
-   "market": null,
-   "files": 6,
-   "products": [
-    {
-     "product": "Shilajit Gummies",
-     "n": 6
-    }
-   ],
-   "samples": [
-    "Shilajit_Front.png",
-    "Shilajit_FrontOpen_white.png",
-    "Shilajit_Front_White.png"
-   ],
-   "compositions": {
-    "device-only": 3,
-    "device-with-packaging": 1,
-    "packaging-only": 2
-   }
-  },
-  {
-   "folder": "Kava Seltzers",
-   "market": null,
-   "files": 5,
-   "products": [
-    {
-     "product": "Kava & Kratom Mango Peach Euphoric Seltzer",
-     "n": 2
-    },
-    {
-     "product": "Kava & Kratom Lemonade Euphoric Seltzer",
-     "n": 1
-    },
-    {
-     "product": "Dialed Moods Kava & Kratom Euphoric Seltzer lineup: Mango Peach, Blue Raspberry, Lemonade",
-     "n": 1
-    },
-    {
-     "product": "DM-social-elixir (Blue Raspberry)",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "DSC09529-Edit.JPG",
-    "DSC04294.JPG",
-    "DSC09661-Edit ver 3.JPG"
-   ],
-   "compositions": {
-    "in-scene": 2,
-    "in-hand": 2,
-    "lineup": 1
-   }
-  },
-  {
-   "folder": "Hydration / Citrus",
-   "market": null,
-   "files": 5,
-   "products": [
-    {
-     "product": "Dialed Moods Hydration Packets",
-     "n": 2
-    },
-    {
-     "product": "Hydration packets",
-     "n": 1
-    },
-    {
-     "product": "Dialed Moods Electrolytes Hydration Packets",
-     "n": 1
-    },
-    {
-     "product": "Dialed Hydration Citrus Circuit",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "tile_plane_phong1_Roughness.png",
-    "tile_plane_phong1_DisplaceHeightField.png",
-    "tile_plane_phong1_Metalness.png"
-   ],
-   "compositions": {
-    "label-flat": 5
-   }
-  },
-  {
    "folder": "Hydration / Variety",
    "market": null,
    "files": 5,
@@ -7424,6 +7440,37 @@
    "compositions": {
     "label-flat": 4,
     "n/a": 1
+   }
+  },
+  {
+   "folder": "Energy Powder",
+   "market": null,
+   "files": 5,
+   "products": [
+    {
+     "product": "Dialed Moods Dragon Fruit 20 Powder Energy Packs",
+     "n": 1
+    },
+    {
+     "product": "Cherry Lime powder energy pack",
+     "n": 1
+    },
+    {
+     "product": "Dialed Moods Blueberry Acai Energy Powder Packs",
+     "n": 1
+    },
+    {
+     "product": "Cherry Lime energy powder packs",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "dial-42.jpg",
+    "dial-44.jpg",
+    "dial-47.jpg"
+   ],
+   "compositions": {
+    "in-hand": 5
    }
   },
   {
@@ -7459,95 +7506,30 @@
    }
   },
   {
-   "folder": "Hydration / Orange",
+   "folder": "Hydration / Citrus",
    "market": null,
-   "files": 5,
+   "files": 4,
    "products": [
     {
-     "product": "Hydration packets",
-     "n": 3
+     "product": "Dialed Moods Hydration Packets",
+     "n": 2
     },
     {
-     "product": "Dialed Moods Electrolytes hydration packets",
+     "product": "Hydration packets",
      "n": 1
     },
     {
-     "product": "Dialed Moods Hydration Electric Orange",
+     "product": "Dialed Moods Electrolytes Hydration Packets",
      "n": 1
     }
    ],
    "samples": [
-    "tile_plane_phong1_DisplaceHeightField.png",
     "tile_plane_phong1_Roughness.png",
+    "tile_plane_phong1_DisplaceHeightField.png",
     "tile_plane_phong1_Metalness.png"
    ],
    "compositions": {
-    "n/a": 1,
     "label-flat": 4
-   }
-  },
-  {
-   "folder": "Hydration / watermelon",
-   "market": null,
-   "files": 5,
-   "products": [
-    {
-     "product": "DM-sour-watermelon",
-     "n": 2
-    },
-    {
-     "product": "Hydration Packets",
-     "n": 1
-    },
-    {
-     "product": "Watermelon Wipeout Hydration Packets",
-     "n": 1
-    },
-    {
-     "product": "Hydration Electrolytes",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "tile_plane_phong1_Roughness.png",
-    "tile_plane_phong1_DisplaceHeightField.png",
-    "tile_plane_phong1_Normal.png"
-   ],
-   "compositions": {
-    "label-flat": 4,
-    "packaging-only": 1
-   }
-  },
-  {
-   "folder": "Hydration / Raspberry",
-   "market": null,
-   "files": 5,
-   "products": [
-    {
-     "product": "Hydration Packets",
-     "n": 2
-    },
-    {
-     "product": "Hydration packets packaging",
-     "n": 1
-    },
-    {
-     "product": "Dialed Hydration Raspberry Roulette 12 Hydration Packets",
-     "n": 1
-    },
-    {
-     "product": "Electrolyte hydration packets",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "tile_plane_phong1_Normal.png",
-    "tile_plane_phong1_Roughness.png",
-    "tile_plane_phong1_Color.png"
-   ],
-   "compositions": {
-    "label-flat": 4,
-    "n/a": 1
    }
   },
   {
@@ -7649,6 +7631,78 @@
    }
   },
   {
+   "folder": "Hydration / Orange",
+   "market": null,
+   "files": 4,
+   "products": [
+    {
+     "product": "Hydration packets",
+     "n": 3
+    },
+    {
+     "product": "Dialed Moods Electrolytes hydration packets",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "tile_plane_phong1_DisplaceHeightField.png",
+    "tile_plane_phong1_Roughness.png",
+    "tile_plane_phong1_Metalness.png"
+   ],
+   "compositions": {
+    "n/a": 1,
+    "label-flat": 3
+   }
+  },
+  {
+   "folder": "Hydration / Raspberry",
+   "market": null,
+   "files": 4,
+   "products": [
+    {
+     "product": "Hydration Packets",
+     "n": 2
+    },
+    {
+     "product": "Hydration packets packaging",
+     "n": 1
+    },
+    {
+     "product": "Electrolyte hydration packets",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "tile_plane_phong1_Normal.png",
+    "tile_plane_phong1_Roughness.png",
+    "tile_plane_phong1_DisplaceHeightField.png"
+   ],
+   "compositions": {
+    "label-flat": 3,
+    "n/a": 1
+   }
+  },
+  {
+   "folder": "Kratom Gummies",
+   "market": null,
+   "files": 3,
+   "products": [
+    {
+     "product": "Kratom Gummies",
+     "n": 3
+    }
+   ],
+   "samples": [
+    "dial-33.jpg",
+    "dial-28.jpg",
+    "DSC06815.JPG"
+   ],
+   "compositions": {
+    "in-hand": 2,
+    "in-scene": 1
+   }
+  },
+  {
    "folder": "Moods / groupShots",
    "market": null,
    "files": 3,
@@ -7669,43 +7723,26 @@
    }
   },
   {
-   "folder": "Energy Drink / Display",
+   "folder": "Kava Seltzers",
    "market": null,
    "files": 2,
    "products": [
     {
-     "product": "Blue Acai Nootropic Performance Elixir 6-pack",
+     "product": "Dialed Moods Kava & Kratom Euphoric Seltzer lineup: Mango Peach, Blue Raspberry, Lemonade",
      "n": 1
     },
     {
-     "product": "Blue Acai energy drink",
+     "product": "DM-social-elixir (Blue Raspberry)",
      "n": 1
     }
    ],
    "samples": [
-    "00 Display_BA_6pk.png",
-    "00 Display_BA_12pk.png"
+    "DSC09601-Edit ver 2_.JPG",
+    "DSC07195-Edit.JPG"
    ],
    "compositions": {
-    "multi-pack": 2
-   }
-  },
-  {
-   "folder": "Kava Seltzer / Display",
-   "market": null,
-   "files": 2,
-   "products": [
-    {
-     "product": "DM-social-elixir",
-     "n": 2
-    }
-   ],
-   "samples": [
-    "Dialed_Kava_DisplayOPEN_12pk_ArcticBlue.png",
-    "Dialed_Kava_DisplayOPEN_6pk_ArcticBlue.png"
-   ],
-   "compositions": {
-    "multi-pack": 2
+    "lineup": 1,
+    "in-hand": 1
    }
   },
   {
@@ -7746,23 +7783,6 @@
    ],
    "compositions": {
     "device-only": 2
-   }
-  },
-  {
-   "folder": "Various",
-   "market": null,
-   "files": 1,
-   "products": [
-    {
-     "product": "Dialed Moods Mango Passion Fruit energy drink, Dialed Moods Tropical Blue liquid energy shot, Dialed Moods Green Apple Kratom Gummies, Dialed Moods Green Maeng Da Kratom Concentrate Pills",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "DSC06209-Edit.JPG"
-   ],
-   "compositions": {
-    "in-scene": 1
    }
   },
   {

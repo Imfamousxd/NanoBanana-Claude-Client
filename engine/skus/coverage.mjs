@@ -81,6 +81,8 @@ export function quarantined(asset) { return String(asset.path || "").split("/").
 // The key an unmatched render is grouped under in the coverage report and the render map.
 export function unmatchedKey(asset) { const render = asset.render || {}; const iteration = deviceIterationOf(asset); return `${render.group || path.dirname(String(asset.path || ""))}${iteration ? " / " + iteration : ""}`; }
 // Pre-roll forms are walls too: a Mates metal-can line never takes a King & Queen joint, a Muharillo or a Donut.
+// Muha line folders only: "Dialed_Moods" is a brand name, not the Muha Moods line.
+const LINE_FOLDERS = [["moods", /moods/i], ["mavricks", /mavrick/i], ["mmxcookies", /cookies/i], ["(?<!mango )madness", /(?<!mango )madness/i], ["magnetic", /magnetic/i], ["dual", /dual/i]];
 const PREROLL_FORMS = [[/\bmates?\b|metal cans?/, /\bmates?\b|\bmetal cans?\b|\bkief ?joints?\b/], [/\bkings?\b|\bqueens?\b/, /\bkings?\b|\bqueens?\b/], [/\bdonuts?\b/, /\bdonuts?\b/], [/\bmadness\b/, /\bmadness\b/], [/\bmuharillos?\b|\bblunts?\b/, /\bmuharillos?\b|\bblunts?\b/]];
 function formatsIn(compactText) { return FORMATS.filter((fmt) => new RegExp("(^|[^0-9])" + fmt + "(?![0-9])").test(compactText)); }
 function genOf(text) { const m = String(text).toLowerCase().match(/gen\s?(\d)/); return m ? Number(m[1]) : null; }
@@ -91,7 +93,16 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   if (quarantined(asset)) return 0;
   const iteration = deviceIterationOf(asset);
   if (iteration && !/all ?in ?one|\baio\b/.test(norm(`${line.line} ${line.section || ""}`))) return 0;
-  for (const [seg, re] of [["moods", /moods/i], ["mavricks", /mavrick/i], ["mmxcookies", /cookies/i], ["madness", /madness/i], ["magnetic", /magnetic/i], ["dual", /dual/i]]) if (new RegExp("(^|/)[^/]*\\b" + seg + "\\b[^/]*(/|$)", "i").test(String(asset.path || "")) && !re.test(`${line.line} ${line.section || ""}`)) return 0;
+  // Line-specific folders (Moods, Mavricks, MM x Cookies, Madness, Magnetic, Dual) only serve their line, and a
+  // line that names one of them (the Cookies collab, the Dual disposables…) only takes renders from that folder
+  // or renders whose own text names it: a plain 1G Distillate Blue Slushie is not the Cookies-collab Blue Slushie.
+  const segPath = String(asset.path || "").replace(/_/g, " ").replace(/\/[^/]*$/, "/"); // directories only: the file name carries the flavour ("Mango Madness")
+  for (const [seg, re] of (asset.brand && !/muha/.test(asset.brand) ? [] : LINE_FOLDERS)) {
+    const inFolder = new RegExp("(^|/)[^/]*\\b" + seg + "\\b[^/]*(/|$)", "i").test(segPath);
+    const lineWants = re.test(`${line.line} ${line.section || ""}`);
+    if (inFolder && !lineWants) return 0;
+    if (lineWants && !inFolder && !re.test(prepared.spaced || prepared.full)) return 0;
+  }
   if (asset.composition === "lineup" || /lineup|line up|group|all flavou?rs|assorted|variety/i.test(`${asset.title || ""} ${String(asset.path || "").split("/").pop()}`)) return 0;
   if (/,.*,|\band\b.*\band\b/.test(String(asset.product || "")) && !new RegExp(compact(item.name).slice(0, 8)).test(compact(asset.product))) return 0;
   const flavour = norm(item.name).replace(/\b(i|s|h|indica|sativa|hybrid|collab)\b/g, "").trim();
