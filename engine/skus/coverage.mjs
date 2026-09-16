@@ -43,7 +43,7 @@ function lineWordsOf(text) { const t = norm(text); return LINE_WORDS.filter(([as
 
 function assetText(asset) {
   const render = asset.render || {};
-  return { full: norm(`${asset.product || ""} ${asset.title || ""} ${asset.path || ""} ${render.category || ""} ${render.line || ""} ${render.leaf || ""} ${(asset.text || []).join(" ")}`), compactFull: compact(`${asset.product || ""} ${asset.title || ""} ${asset.path || ""} ${render.category || ""} ${render.line || ""} ${render.leaf || ""}`), market: render.market || (String(asset.path || "").match(/(?:^|\/|_)(CA|MI|MO|NJ|NM|NY|OH|AZ)(?:\/|_| )/) || [])[1] || (/(^|\/)hemp(\/|$)/i.test(String(asset.path || "")) ? "HEMP" : null) };
+  return { full: norm(`${asset.product || ""} ${asset.title || ""} ${asset.path || ""} ${render.category || ""} ${render.line || ""} ${render.leaf || ""}`), compactFull: compact(`${asset.product || ""} ${asset.title || ""} ${asset.path || ""} ${render.category || ""} ${render.line || ""} ${render.leaf || ""}`), market: render.market || (String(asset.path || "").match(/(?:^|\/|_)(CA|MI|MO|NJ|NM|NY|OH|AZ)(?:\/|_| )/) || [])[1] || (/(^|\/)hemp(\/|$)/i.test(String(asset.path || "")) ? "HEMP" : null) };
 }
 
 // A render belongs to exactly one line: the vape form (disposable / cartridge / pod), the format (1G vs 2G vs
@@ -59,6 +59,8 @@ function genOf(text) { const m = String(text).toLowerCase().match(/gen\s?(\d)/);
 /** Score one asset against one SKU item. 0 = no match. */
 export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   if (GENERIC_RE.test(String(asset.path || ""))) return 0;
+  if (asset.composition === "lineup" || /lineup|line up|group|all flavou?rs|assorted|variety/i.test(`${asset.title || ""} ${String(asset.path || "").split("/").pop()}`)) return 0;
+  if (/,.*,|\band\b.*\band\b/.test(String(asset.product || "")) && !new RegExp(compact(item.name).slice(0, 8)).test(compact(asset.product))) return 0;
   const flavour = norm(item.name).replace(/\b(i|s|h|indica|sativa|hybrid|collab)\b/g, "").trim();
   if (flavour.length < 3) return 0;
   const flavourCompact = flavour.replace(/\s/g, "");
