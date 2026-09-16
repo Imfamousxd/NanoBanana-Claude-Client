@@ -316,6 +316,20 @@ quality untouched.** `exportForStudio(kit)` in `engine/dam/product-context.mjs` 
 Next: an MCP tool `dam_studio_refs` (kit → files materialised → studio refs JSON) and, when the
 hosted studio gets Dropbox creds, pass Dropbox paths instead of local files.
 
+## 11. SKU books → Dropbox render-folder plan (2026-09-16, commit `8127f05`)
+
+User's ask: dedicated Renders folders per brand, organised identically, named by customer-facing names
+and tied to SKU codes, so the MCP pulls a SKU's renders on request. Built: `engine/skus/sheets.mjs`
+(parses both sheet layouts), `engine/skus/import.mjs` (`content skus import --brand <b> <csv…>` →
+`knowledge/skus/<brand>.json`), `engine/skus/coverage.mjs` (`content skus coverage` → every SKU item ↔
+renders, unmatched folders). Results: Muha 122 lines / 976 items / 243 codes / 8 markets, 722 items
+have ≥1 render, 111 render folders match no SKU (Hemp line, Moods, Mavricks, Madness, MI pods…);
+Dialed Moods 36 lines / 159 items / 84 codes, 124 covered. Plan: `docs/DROPBOX_RENDERS_PLAN.md` and the
+artifact https://claude.ai/artifact/HJiQHosnhK9mydGJRh75bW (structure: Brand/Renders/Category/Market/
+"Line [code]"/"Flavour [SKU]"/01 device·02 packaging·03 display·04 cutout·05 label·_old; _Inbox; _Discontinued).
+Awaiting Mario: confirm names/codes for the unlisted lines (§4 of the doc), then phase 1 = generate the
+move map (current path → target path) for review; nothing moves before sign-off.
+
 ## 6. Remaining plan
 
 1. Let the render pass finish (check progress; restart the local run if it died: same command as §8). Then `dam sync-kg` per brand.
