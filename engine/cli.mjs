@@ -239,6 +239,23 @@ async function main() {
     }
     throw new Error("learn requires: log | record | laws | add-law | history | stats.");
   }
+  if (command === "skus") {
+    const sub = args[0];
+    const opt = (flag, fallback) => { const index = args.indexOf(flag); return index >= 0 ? args[index + 1] : fallback; };
+    if (sub === "import") {
+      const { importSkuSheets } = await import("./skus/import.mjs");
+      const files = args.slice(1).filter((value, index, all) => !value.startsWith("--") && all[index - 1] !== "--brand");
+      return print(importSkuSheets(root, { brand: opt("--brand"), files }));
+    }
+    if (sub === "coverage") {
+      const { runCoverage, coverageText } = await import("./skus/coverage.mjs");
+      const { file, coverage } = runCoverage(root, { brand: opt("--brand"), libraryFile: opt("--library") });
+      if (args.includes("--json")) return print({ file, totals: coverage.totals });
+      console.log(coverageText(coverage));
+      return;
+    }
+    throw new Error("skus requires: import --brand <id> <csv…> | coverage --brand <id> --library <render-library.json>");
+  }
   if (command === "presets") {
     const { STYLE_PRESETS, CHANNELS } = await import("./prompts/presets.mjs");
     return print({ styles: Object.fromEntries(Object.entries(STYLE_PRESETS).map(([id, preset]) => [id, { title: preset.title, mode: preset.mode, provider: preset.provider.id, model: preset.provider.model, channel: preset.channel, candidates: preset.candidates, refs: preset.refs.wants }])), channels: CHANNELS });

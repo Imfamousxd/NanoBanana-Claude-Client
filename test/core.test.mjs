@@ -158,3 +158,37 @@ test("style presets: a job with only brand, style and product gets routing, size
   assert.equal(transparent.provider.background, "transparent");
   assert.equal(applyPreset({ creative: {} }).creative.style, undefined);
 });
+
+
+test("sku sheets: book-style bands and list-style sheets both parse into lines with items", async () => {
+  const { parseSheet, normaliseBlocks } = await import("../engine/skus/sheets.mjs");
+  const book = [
+    ",,,,Concentrate Jar Line,,,",
+    "CA 1G Distillate Disposables Gen 3,,,SKU #CA026,CA Hash Rosin Concentrate Jars,,,SKU #CA033",
+    "Flavor Name:,I/S/H,ITEM SKU #,Renders Link,Flavor Name:,I/S/H,ITEM SKU #,Renders Link",
+    "Frozen Pomegranate ,Sativa,CA091,https://x,Macaron Peaches,Hybrid,CA124,",
+    "Galactic Diesel,Indica,CA092,,Pink Lemonade,Sativa,CA125,",
+  ].join("\n");
+  const lines = normaliseBlocks(parseSheet(book), { brand: "muha", market: "CA", source: "t.csv" });
+  assert.equal(lines.length, 2);
+  assert.equal(lines[0].skuBlock, "CA026");
+  assert.equal(lines[0].line, "1G Distillate Disposables");
+  assert.equal(lines[0].generation, "Gen 3");
+  assert.equal(lines[0].category, "disposables");
+  assert.deepEqual(lines[0].items.map((item) => item.sku), ["CA091", "CA092"]);
+  assert.equal(lines[0].items[0].links.renders, "https://x");
+  assert.equal(lines[1].category, "concentrates");
+  assert.equal(lines[1].section, "Concentrate Jar Line");
+  const list = [
+    "1 Kratom Energy Drink,Product Code,Product,Packaging,SKU BAR,6 Pack Display Sku Bar,6 pack display product code",
+    "Fruit Punch,DM-EDK-FP,Performance Elixir,,645656854357,645656854562,DM-EDK-FP6",
+    "Variety Pack,DM-EDK-VP5,,,,,",
+  ].join("\n");
+  const dl = normaliseBlocks(parseSheet(list), { brand: "dialed-moods", source: "d.csv" });
+  assert.equal(dl.length, 1);
+  assert.equal(dl[0].line, "Kratom Energy Drink");
+  assert.equal(dl[0].items[0].sku, "DM-EDK-FP");
+  assert.equal(dl[0].items[0].skuBarcode, "645656854357");
+  assert.equal(dl[0].items[0].packs[0].size, 6);
+  assert.equal(dl[0].items[0].packs.find((pack) => pack.code)?.code, "DM-EDK-FP6");
+});

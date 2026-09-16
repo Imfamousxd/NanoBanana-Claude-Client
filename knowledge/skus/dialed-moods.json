@@ -1,0 +1,5192 @@
+{
+ "schema": "sku-registry/1",
+ "brand": "dialed-moods",
+ "importedAt": "2026-09-16",
+ "sources": [
+  "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
+  "Dialed Moods SKU_ Production - Accesories Sku Sheet.csv",
+  "Dialed Moods SKU_ Production - Products SKU Sheet .csv"
+ ],
+ "lines": [
+  {
+   "id": "dialed-moods:all:motivation-elixir-kratom-rtd-",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
+   "section": null,
+   "line": "Motivation Elixir (Kratom) (RTD)",
+   "generation": null,
+   "skuBlock": null,
+   "category": "beverages",
+   "format": null,
+   "items": [
+    {
+     "name": "Pink Lemonade",
+     "skuBarcode": "850083209001",
+     "strain": null,
+     "sku": "DM-NPE-PL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209087",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-PL6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209094",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-PL12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/v2eb6t4fpbf378iwskjp4/AAoXoDJP2zFGxpxBN5zs-vA?rlkey=668wl5vbawzwkiemi1iv4cq9w&st=cauaodf7&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "Mango Sunburst",
+     "skuBarcode": "850083209025",
+     "strain": null,
+     "sku": "DM-NPE-MS",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209124",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-MS6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209131",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-MS12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "Orange Creamsicle",
+     "skuBarcode": "850083209032",
+     "strain": null,
+     "sku": "DM-NPE-OC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209148",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-OC6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209155",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-OC12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "Dragonfruit",
+     "skuBarcode": "850083209049",
+     "strain": null,
+     "sku": "DM-NPE-DF",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209162",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-DF6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209179",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-DF12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "Guava Pineapple",
+     "skuBarcode": "850083209056",
+     "strain": null,
+     "sku": "DM-NPE-GP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209186",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-GP6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209193",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-GP12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "White Gummy",
+     "skuBarcode": "850083209063",
+     "strain": null,
+     "sku": "DM-NPE-WG",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209209",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-WG6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209216",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-WG12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "Blue Acai",
+     "skuBarcode": "850083209070",
+     "strain": null,
+     "sku": "DM-NPE-BA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209223",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-BA6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209230",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-BA12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:social-elixir-kava-rtd-",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
+   "section": null,
+   "line": "Social Elixir (Kava) (RTD)",
+   "generation": null,
+   "skuBlock": null,
+   "category": "beverages",
+   "format": null,
+   "items": [
+    {
+     "name": "Arctic Blue",
+     "skuBarcode": "850083209247",
+     "strain": null,
+     "sku": "DM-KES-AB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209278",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-KES-AB6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209308",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-KES-AB12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Social Elixir (Kava) (RTD)"
+    },
+    {
+     "name": "Lemonade",
+     "skuBarcode": "850083209254",
+     "strain": null,
+     "sku": "DM-KES-PL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209285",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-KES-PL6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-KES-PL12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Social Elixir (Kava) (RTD)"
+    },
+    {
+     "name": "Mango Peach",
+     "skuBarcode": "850083209261",
+     "strain": null,
+     "sku": "DM-KES-MP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209292",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-KES-MP6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209322",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-KES-MP12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Social Elixir (Kava) (RTD)"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:cognition-elixir-l-dopa-rtd-",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
+   "section": null,
+   "line": "Cognition Elixir (L-Dopa) (RTD)",
+   "generation": null,
+   "skuBlock": null,
+   "category": "beverages",
+   "format": null,
+   "items": [
+    {
+     "name": "Strawberry Kiwi (Collab)",
+     "skuBarcode": "850083209339",
+     "strain": null,
+     "sku": "DM-LDE-LSK",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209384",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-LDE-LSK6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209438",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LDE-LSK12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Cognition Elixir (L-Dopa) (RTD)"
+    },
+    {
+     "name": "Blue Glacier",
+     "skuBarcode": "850083209346",
+     "strain": null,
+     "sku": "DM-LDE-BGL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209391",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-LDE-BGL6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209445",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LDE-BGL12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Cognition Elixir (L-Dopa) (RTD)"
+    },
+    {
+     "name": "Lychee",
+     "skuBarcode": "850083209353",
+     "strain": null,
+     "sku": "DM-LDE-LYC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209407",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-LDE-LYC6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209452",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LDE-LYC12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Cognition Elixir (L-Dopa) (RTD)"
+    },
+    {
+     "name": "Lemonade",
+     "skuBarcode": "850083209360",
+     "strain": null,
+     "sku": "DM-LDE-LEM",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209414",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-LDE-LEM6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209469",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LDE-LEM12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Cognition Elixir (L-Dopa) (RTD)"
+    },
+    {
+     "name": "Sour Watermelon Candy",
+     "skuBarcode": "850083209377",
+     "strain": null,
+     "sku": "DM-LDE-SWC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209421",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-LDE-SWC6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209476",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LDE-SWC12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Cognition Elixir (L-Dopa) (RTD)"
+    },
+    {
+     "name": "Black Cherry Vanilla",
+     "skuBarcode": "850083209483",
+     "strain": null,
+     "sku": "DM-LDE-BCV",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209490",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-LDE-BCV6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209506",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LDE-BCV12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Cognition Elixir (L-Dopa) (RTD)"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:morning-after-stick-pack-",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
+   "section": null,
+   "line": "MORNING AFTER (Stick Pack)",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Blackberry Acai",
+     "skuBarcode": "850087036726",
+     "strain": null,
+     "sku": "DM-EMA-BBA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036764",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EMA-BBA12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036801",
+       "header": "24 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "code": "DM-EMA-BBA24",
+       "header": "24 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "MORNING AFTER (Stick Pack)"
+    },
+    {
+     "name": "Blood Orange",
+     "skuBarcode": "850087036719",
+     "strain": null,
+     "sku": "DM-EMA-BLO",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036771",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EMA-BLO12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036818",
+       "header": "24 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "code": "DM-EMA-BLO24",
+       "header": "24 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "MORNING AFTER (Stick Pack)"
+    },
+    {
+     "name": "Salted Watermelon",
+     "skuBarcode": "850087036702",
+     "strain": null,
+     "sku": "DM-EMA-SWM",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036788",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EMA-SWM12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036825",
+       "header": "24 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "code": "DM-EMA-SWM24",
+       "header": "24 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "MORNING AFTER (Stick Pack)"
+    },
+    {
+     "name": "Grapefruit Ginger",
+     "skuBarcode": "850087036733",
+     "strain": null,
+     "sku": "DM-EMA-GRG",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036795",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EMA-GRG12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036832",
+       "header": "24 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "code": "DM-EMA-GRG24",
+       "header": "24 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "MORNING AFTER (Stick Pack)"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:recharge-me-stick-pack-",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
+   "section": null,
+   "line": "RECHARGE ME (Stick Pack)",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Chili Mango",
+     "skuBarcode": "850087036689",
+     "strain": null,
+     "sku": "DM-ERM-CMA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036849",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-ERM-CMA12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036887",
+       "header": "24 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "code": "DM-ERM-CMA24",
+       "header": "24 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "RECHARGE ME (Stick Pack)"
+    },
+    {
+     "name": "Berry Bliss",
+     "skuBarcode": "850087036696",
+     "strain": null,
+     "sku": "DM-ERM-BRB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036856",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-ERM-BRB12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036894",
+       "header": "24 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "code": "DM-ERM-BRB24",
+       "header": "24 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "RECHARGE ME (Stick Pack)"
+    },
+    {
+     "name": "Passion Punch",
+     "skuBarcode": "850087036672",
+     "strain": null,
+     "sku": "DM-ERM-PPU",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036863",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-ERM-PPU12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036900",
+       "header": "24 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "code": "DM-ERM-PPU24",
+       "header": "24 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "RECHARGE ME (Stick Pack)"
+    },
+    {
+     "name": "Summer Melon",
+     "skuBarcode": "850087036665",
+     "strain": null,
+     "sku": "DM-ERM-SUM",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036870",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-ERM-SUM12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036917",
+       "header": "24 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "code": "DM-ERM-SUM24",
+       "header": "24 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "RECHARGE ME (Stick Pack)"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:creatine-gummy",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
+   "section": null,
+   "line": "CREATINE GUMMY",
+   "generation": null,
+   "skuBlock": null,
+   "category": "edibles",
+   "format": null,
+   "items": [
+    {
+     "name": "Blue Genius",
+     "skuBarcode": "850087036962",
+     "strain": null,
+     "sku": "DM-GCR-BGE",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE GUMMY"
+    },
+    {
+     "name": "Citrus Surge",
+     "skuBarcode": "850087036979",
+     "strain": null,
+     "sku": "DM-GCR-CSU",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE GUMMY"
+    },
+    {
+     "name": "Cherry Charge",
+     "skuBarcode": "850087036986",
+     "strain": null,
+     "sku": "DM-GCR-CCH",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE GUMMY"
+    },
+    {
+     "name": "Max Melon",
+     "skuBarcode": "850087036993",
+     "strain": null,
+     "sku": "DM-GCR-MME",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE GUMMY"
+    },
+    {
+     "name": "Peak Peach",
+     "skuBarcode": "850090058579",
+     "strain": null,
+     "sku": "DM-GCR-PPE",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE GUMMY"
+    },
+    {
+     "name": "Tropic Flow",
+     "skuBarcode": "850090058586",
+     "strain": null,
+     "sku": "DM-GCR-TFL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE GUMMY"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:creatine-collagen-stick-pack-",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
+   "section": null,
+   "line": "CREATINE + COLLAGEN (Stick Pack)",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Sunkissed",
+     "skuBarcode": "850087036924",
+     "strain": null,
+     "sku": "DM-CPC-SKI",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850090058593",
+       "header": "12 Pack Barcode"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE + COLLAGEN (Stick Pack)"
+    },
+    {
+     "name": "Berry Bliss",
+     "skuBarcode": "850087036931",
+     "strain": null,
+     "sku": "DM-CPC-BBL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850090058609",
+       "header": "12 Pack Barcode"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE + COLLAGEN (Stick Pack)"
+    },
+    {
+     "name": "Pink Pump",
+     "skuBarcode": "850087036948",
+     "strain": null,
+     "sku": "DM-CPC-PUP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850090058616",
+       "header": "12 Pack Barcode"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE + COLLAGEN (Stick Pack)"
+    },
+    {
+     "name": "Tropic Glow",
+     "skuBarcode": "850087036955",
+     "strain": null,
+     "sku": "DM-CPC-TGL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850090058623",
+       "header": "12 Pack Barcode"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE + COLLAGEN (Stick Pack)"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:whey-protein-stick-pack-",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
+   "section": null,
+   "line": "WHEY PROTEIN (Stick Pack)",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Chocolate",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "WHEY PROTEIN (Stick Pack)"
+    },
+    {
+     "name": "Salted Caramel",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "WHEY PROTEIN (Stick Pack)"
+    },
+    {
+     "name": "Vanilla",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "WHEY PROTEIN (Stick Pack)"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:collagen-peptides-stick-pack-",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
+   "section": null,
+   "line": "COLLAGEN PEPTIDES (Stick Pack)",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Mango",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "COLLAGEN PEPTIDES (Stick Pack)"
+    },
+    {
+     "name": "Strawberry",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "COLLAGEN PEPTIDES (Stick Pack)"
+    },
+    {
+     "name": "White Peach",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "COLLAGEN PEPTIDES (Stick Pack)"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:eaa-blend-stick-pack-",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
+   "section": null,
+   "line": "EAA BLEND (Stick Pack)",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Cherry",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "EAA BLEND (Stick Pack)"
+    },
+    {
+     "name": "Lemonade",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "EAA BLEND (Stick Pack)"
+    },
+    {
+     "name": "Watermelon",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "EAA BLEND (Stick Pack)"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:fiber-stick-pack-",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - 2026 Products SKU Sheet.csv",
+   "section": null,
+   "line": "FIBER (Stick Pack)",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Lemon Ginger",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "FIBER (Stick Pack)"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:accessories",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Accesories Sku Sheet.csv",
+   "section": null,
+   "line": "Accessories",
+   "generation": null,
+   "skuBlock": null,
+   "category": "accessories",
+   "format": null,
+   "items": [
+    {
+     "name": "DIALED Hand Wraps",
+     "skuBarcode": "850068903351",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/qe30pzfv2kudmz74aclqq/ALaVE2uZBFarrSk1RXziDAU?rlkey=tuv84eilxp9lzj3ewxny4w4or&st=wdk815pd&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-hand-wraps/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Dialed Mouth Guards",
+     "skuBarcode": "850068903337",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/8pjudcitvy7iihj04v0kb/AOi6ILsO2RPgMhm9LkzgtOU?rlkey=cf6bjchf5kw6lm2dazrj89ysf&st=cv01vm3l&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-moods-moldable-mouth-guard/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Dialed Fanny packs",
+     "skuBarcode": "850068903405",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/gzdgoi4h20ytknpoof1cf/AGglqbFhAWsSbgxAncodWU8?rlkey=n572ixhi4t8rivg1qo73ccgjm&st=s70l7gjk&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-moods-fanny-pack/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Dialed Drawstring Bags",
+     "skuBarcode": "850068903344",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/8bzpdr6cie3zcegxehcud/ALvUNRdK9NqZ9q8QOQFYLek?rlkey=b3ccph0wdgt6qagxqukhrfkbo&st=5i375w6r&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-draw-string-bag/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Round Fridge",
+     "skuBarcode": "850068903658",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/spg3izksnqdo7zttudnsa/AOUTwPtMfM04tMpMGdneZAU?rlkey=xl3yvgfkzpg6lrdza6ydq0bol&st=iyy4trjw&dl=0",
+      "website": "/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Small Fridge",
+     "skuBarcode": "850068903665",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/5sr2nql8idq42q0y72wn5/AF6S1IjHIdjd3muz7XCb_co?rlkey=apvkeesvkun6mssyzwey94sly&st=f9of90a7&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-mini-fridge/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Tall Fridge",
+     "skuBarcode": "850068903672",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/eaf910k0t7iphntyx87jw/AMm59BEpWuNOVkoJ0rWyKY8?rlkey=nwbyate5eblk46x1u738bctcp&st=kczj3rba&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-large-slim-fridge/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Hydrogen bottles",
+     "skuBarcode": "850068903399",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/nak2xabd0qglte55ur7m4/AF_ibq5NYcLJE_DfBS-7UBA?rlkey=2e0rkwvuwq5en3bk6fupt5kyd&st=088q1ju5&dl=0",
+      "website": "https://dialedmoods.com/product/hydrogen-water-bottle/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Scales",
+     "skuBarcode": "850068903382",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/r53s7hpxv5ji7j3f3lfhv/AEDwWk59iurewNWebX-4muw?rlkey=v97kzd4js5g7bgpijjg3qbl25&st=ab4ozehz&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-moods-scale/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Shaker bottles black",
+     "skuBarcode": "850068903375",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/mbx8wi6z5fwp8nwsl9gbf/AApe-z5nv6cq4LB5w_ToMzc?rlkey=33xcbsrq7r6qiw9zzbztv5ivz&st=m400vchb&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-shaker-bottle-black/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Shaker bottles purple",
+     "skuBarcode": "850068903368",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/4hlplxh8s4ieih440r9lo/AN6MVVtiNBvrFAZoM-wDdSI?rlkey=8xte8bfrr2h041ybh3arqn93n&st=exzd8qvz&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-shaker-bottle-purple/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Dialed White Water Bottle",
+     "skuBarcode": "850068903436",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/m0e8bj9ahbllguf91ss0x/ABmd5IZUWz_rRR5M3doOEFY?rlkey=wlqzd4nmoh7q2ec53j8mu9nz9&st=u9w41p21&dl=0",
+      "website": "https://dialedmoods.com/product/dm-insulated-water-bottle-white/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Dialed Black Water Bottle",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "website": "https://dialedmoods.com/product/32oz-insulated-water-bottle-black/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Dialed Pink Water Bottle",
+     "skuBarcode": "850068903412",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/xy82khj3o6qykkqo3ygj7/AETK1o3JG2YRyFW2e-k14Io?rlkey=8egd1j82an2slkcxxs1yauniz&st=x59euwz6&dl=0",
+      "website": "/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    },
+    {
+     "name": "Dialed Blue Water Bottle",
+     "skuBarcode": "850068903429",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/h7o7m80jl3ajs150gxcj1/AExWRrUYHy5lkGr8Hhv7sD4?rlkey=5xw6alt9rzq5izbtl9xhotgvs&st=5ynmskb7&dl=0",
+      "website": "/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Accessories"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:merch",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Accesories Sku Sheet.csv",
+   "section": null,
+   "line": "Merch",
+   "generation": null,
+   "skuBlock": null,
+   "category": "other",
+   "format": null,
+   "items": [
+    {
+     "name": "Polos",
+     "skuBarcode": "850068903573",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "website": "/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Merch"
+    },
+    {
+     "name": "Girls Top",
+     "skuBarcode": "850068903580",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/2q097i0y47gc8ywgy2yod/ADe82QZDoTZVVeKUgho9k3Y?rlkey=zfv3a449bput7lnkdvbm5mycn&st=uv97zacg&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-sports-bra-top/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Merch"
+    },
+    {
+     "name": "Girls Bottom",
+     "skuBarcode": "850068903597",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/61558p5d04ru7weas07a4/AOQ64ZEC0bstjR2J7HgDnfA?rlkey=rehb6qpaovicgjizzwsuhnbn6&st=w061kx8c&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-girls-shorts/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Merch"
+    },
+    {
+     "name": "Sweats",
+     "skuBarcode": "850068903603",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fi/gh5rn3f6lk8whf97vtjok/Dialed_Tracksuit_Sweats.png?rlkey=50cyzosi81cqg0phumnyxx9fm&st=8vroknms&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-track-pants/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Merch"
+    },
+    {
+     "name": "Zip-up",
+     "skuBarcode": "850068903610",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/b5vxe0slnk071k37rwemp/AFYyFqsAZ-Msc7k7wXcPC5o?rlkey=f8fxapq00pm2lsxdbh8gm3t7u&st=4gmhc4fy&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-track-jacket/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Merch"
+    },
+    {
+     "name": "Dialed Track Suit Pants",
+     "skuBarcode": "850068903627",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/zet2f3p375byjk6qo05e8/AIVEIFT6qG2XNPQgZh7Cazg?rlkey=7q11vn0pmwpc2sv578hx488ic&st=tutsqq1c&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-track-pants/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Merch"
+    },
+    {
+     "name": "Dialed Track Suit Top",
+     "skuBarcode": "850068903634",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fi/3ncqx3d1pj9gziiizdhch/Dialed_Tracksuit_Sweats_Jacket.png?rlkey=idiqullkuoq7mnv3rb6buqer2&st=ym21hxji&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-track-jacket/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Merch"
+    },
+    {
+     "name": "Tank Top",
+     "skuBarcode": "850068903641",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "renders": "https://www.dropbox.com/scl/fo/5tr81cshmfqf5ccgsm3zq/AKb4pZhtsibPZGbK4uwZzlc?rlkey=3cl2obeuk8gi9azl6olfoa21u&st=e1xv31zb&dl=0",
+      "website": "https://dialedmoods.com/product/dialed-moods-tank-top/"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Merch"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:kratom-energy-drink",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Kratom Energy Drink",
+   "generation": null,
+   "skuBlock": null,
+   "category": "beverages",
+   "format": null,
+   "items": [
+    {
+     "name": "Fruit Punch",
+     "skuBarcode": "645656854357",
+     "strain": null,
+     "sku": "DM-EDK-FP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "645656854562",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-EDK-FP6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847462084",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EDK-FP12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 6,
+       "kind": "master-case",
+       "barcode": "784847463982",
+       "header": "6pck Master Case Barcode"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/5haevacd7yopz5pquatfp/ANUuW-wK3GLR5fL_hHqeFL8?rlkey=7digy5suywdgvjjru1n0m4p2t&st=hopzvupm&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Drink"
+    },
+    {
+     "name": "Pink Lemonade",
+     "skuBarcode": "645656854364",
+     "strain": null,
+     "sku": "DM-EDK-PL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "645656854579",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-EDK-PL6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847462091",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EDK-PL12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 6,
+       "kind": "master-case",
+       "barcode": "784847463999",
+       "header": "6pck Master Case Barcode"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Drink"
+    },
+    {
+     "name": "Strawberry Raz",
+     "skuBarcode": "645656854371",
+     "strain": null,
+     "sku": "DM-EDK-SR",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "645656854586",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-EDK-SR6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847462107",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EDK-SR12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 6,
+       "kind": "master-case",
+       "barcode": "784847464002",
+       "header": "6pck Master Case Barcode"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Drink"
+    },
+    {
+     "name": "Mango Passion Fruit",
+     "skuBarcode": "645656854388",
+     "strain": null,
+     "sku": "DM-EDK-MP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "645656854593",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-EDK-MP6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847462114",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EDK-MP12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 6,
+       "kind": "master-case",
+       "barcode": "784847464019",
+       "header": "6pck Master Case Barcode"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Drink"
+    },
+    {
+     "name": "Very Berry",
+     "skuBarcode": "645656854395",
+     "strain": null,
+     "sku": "DM-EDK-VB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "645656854609",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-EDK-VB6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847462121",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EDK-VB12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 6,
+       "kind": "master-case",
+       "barcode": "784847464026",
+       "header": "6pck Master Case Barcode"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Drink"
+    },
+    {
+     "name": "Orange Creamsicle",
+     "skuBarcode": "784847464293",
+     "strain": null,
+     "sku": "DM-EDK-OC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "741654779385",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-EDK-OC6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847462138",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EDK-OC12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 6,
+       "kind": "master-case",
+       "barcode": "784847464033",
+       "header": "6pck Master Case Barcode"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Drink"
+    },
+    {
+     "name": "Paradise Pina",
+     "skuBarcode": "741654777855",
+     "strain": null,
+     "sku": "DM-EDK-PP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "741654779392",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-EDK-PP6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847462145",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EDK-PP12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 6,
+       "kind": "master-case",
+       "barcode": "784847464040",
+       "header": "6pck Master Case Barcode"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Drink"
+    },
+    {
+     "name": "Variety Pack",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "DM-EDK-VP5",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Drink"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:kratom-gummies",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Kratom Gummies",
+   "generation": null,
+   "skuBlock": null,
+   "category": "edibles",
+   "format": null,
+   "items": [
+    {
+     "name": "Juicy Watermelon",
+     "skuBarcode": "645656854197",
+     "strain": null,
+     "sku": "DM-KTG-JW",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "645656854401",
+       "header": "5 Pack Display Sku Bar"
+      },
+      {
+       "size": 5,
+       "kind": "display",
+       "code": "DM-KTG-JW5",
+       "header": "5 pack display product code"
+      }
+     ],
+     "productFamily": "Gummies",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/b1yh8hnlw77hr9rxmsglu/h?rlkey=ff00hjhznit84elgl0z08wghn&st=06pjid0d&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "sample pack foil product code": "DM-KTG-JWSP"
+     },
+     "canonicalLine": "Kratom Gummies"
+    },
+    {
+     "name": "Orange Starburst",
+     "skuBarcode": "645656854203",
+     "strain": null,
+     "sku": "DM-KTG-OS",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "645656854418",
+       "header": "5 Pack Display Sku Bar"
+      },
+      {
+       "size": 5,
+       "kind": "display",
+       "code": "DM-KTG-OS5",
+       "header": "5 pack display product code"
+      }
+     ],
+     "productFamily": "Gummies",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "sample pack foil product code": "DM-KTG-OSSP"
+     },
+     "canonicalLine": "Kratom Gummies"
+    },
+    {
+     "name": "Lemon Warheads",
+     "skuBarcode": "645656854210",
+     "strain": null,
+     "sku": "DM-KTG-LW",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "645656854425",
+       "header": "5 Pack Display Sku Bar"
+      },
+      {
+       "size": 5,
+       "kind": "display",
+       "code": "DM-KTG-LW5",
+       "header": "5 pack display product code"
+      }
+     ],
+     "productFamily": "Gummies",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "sample pack foil product code": "DM-KTG-LWSP"
+     },
+     "canonicalLine": "Kratom Gummies"
+    },
+    {
+     "name": "Green Apple",
+     "skuBarcode": "645656854227",
+     "strain": null,
+     "sku": "DM-KTG-GA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "645656854432",
+       "header": "5 Pack Display Sku Bar"
+      },
+      {
+       "size": 5,
+       "kind": "display",
+       "code": "DM-KTG-GA5",
+       "header": "5 pack display product code"
+      }
+     ],
+     "productFamily": "Gummies",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "sample pack foil product code": "DM-KTG-GASP"
+     },
+     "canonicalLine": "Kratom Gummies"
+    },
+    {
+     "name": "Grape Jelly",
+     "skuBarcode": "645656854234",
+     "strain": null,
+     "sku": "DM-KTG-GJ",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "645656854449",
+       "header": "5 Pack Display Sku Bar"
+      },
+      {
+       "size": 5,
+       "kind": "display",
+       "code": "DM-KTG-GJ5",
+       "header": "5 pack display product code"
+      }
+     ],
+     "productFamily": "Gummies",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "sample pack foil product code": "DM-KTG-GJSP"
+     },
+     "canonicalLine": "Kratom Gummies"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:kava-kratom-seltzers",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Kava Kratom Seltzers",
+   "generation": null,
+   "skuBlock": null,
+   "category": "beverages",
+   "format": null,
+   "items": [
+    {
+     "name": "Blue Rasberry",
+     "skuBarcode": "741654777107",
+     "strain": null,
+     "sku": "DM-ESZ-BL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "741654777152",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-ESZ-BL6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847463937",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-ESZ-BL12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 6,
+       "kind": "master-case",
+       "barcode": "784847464262",
+       "header": "6pck Master Case Barcode"
+      }
+     ],
+     "productFamily": "Seltzers",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/s460bc9dlw6yoqkgf66qd/AG7QFSQwxADnRMfIjtuOlcQ?rlkey=sjk7faht0cpks0slyanjvwn6d&st=8bfctlzb&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kava Kratom Seltzers"
+    },
+    {
+     "name": "Lemonade",
+     "skuBarcode": "741654777091",
+     "strain": null,
+     "sku": "DM-ESZ-LE",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "741654777145",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-ESZ-LE6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847463944",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-ESZ-LE12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 6,
+       "kind": "master-case",
+       "barcode": "784847464279",
+       "header": "6pck Master Case Barcode"
+      }
+     ],
+     "productFamily": "Seltzers",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kava Kratom Seltzers"
+    },
+    {
+     "name": "Mango Peach",
+     "skuBarcode": "741654777114",
+     "strain": null,
+     "sku": "DM-ESZ-MA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "741654777831",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-ESZ-MA6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847463951",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-ESZ-MA12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 6,
+       "kind": "master-case",
+       "barcode": "784847464286",
+       "header": "6pck Master Case Barcode"
+      }
+     ],
+     "productFamily": "Seltzers",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kava Kratom Seltzers"
+    },
+    {
+     "name": "Variety Pack",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "DM-ESZ-VP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": "Seltzers",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kava Kratom Seltzers"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:electrolyte-packet",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Electrolyte Packet",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Raspberry Roulette",
+     "skuBarcode": "850068903184",
+     "strain": null,
+     "sku": "DM-PHP-RR",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847462404",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-PHP-RR12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "barcode": "784847461575",
+       "header": "30 Pack Display Sku Bar"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "code": "DM-PHP-RR30",
+       "header": "30 pack display product code"
+      }
+     ],
+     "productFamily": "Powder Packets",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/6nk4z0qiaqtvvlakdoh5a/AIw_zXaYRsNtz5yl-Z5YQgE?rlkey=xvizgpooxl525oc91oifcnco5&st=1secpwmj&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Electrolyte Packet"
+    },
+    {
+     "name": "Citrus Circuit",
+     "skuBarcode": "850068903191",
+     "strain": null,
+     "sku": "DM-PHP-CC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847462428",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-PHP-CC12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "barcode": "784847461599",
+       "header": "30 Pack Display Sku Bar"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "code": "DM-PHP-CC30",
+       "header": "30 pack display product code"
+      }
+     ],
+     "productFamily": "Powder Packets",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Electrolyte Packet"
+    },
+    {
+     "name": "Electric Orange",
+     "skuBarcode": "850068903207",
+     "strain": null,
+     "sku": "DM-PHP-EO",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847462435",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-PHP-EO12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "barcode": "784847461605",
+       "header": "30 Pack Display Sku Bar"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "code": "DM-PHP-EO30",
+       "header": "30 pack display product code"
+      }
+     ],
+     "productFamily": "Powder Packets",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Electrolyte Packet"
+    },
+    {
+     "name": "Watermeon Wipeout",
+     "skuBarcode": "850068903177",
+     "strain": null,
+     "sku": "DM-PHP-WW",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847462411",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-PHP-WW12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "barcode": "784847461582",
+       "header": "30 Pack Display Sku Bar"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "code": "DM-PHP-WW30",
+       "header": "30 pack display product code"
+      }
+     ],
+     "productFamily": "Powder Packets",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Electrolyte Packet"
+    },
+    {
+     "name": "Variety Pack - 12",
+     "skuBarcode": "N/A",
+     "strain": null,
+     "sku": "DM-PHP-VP12",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "784847462442",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "barcode": "784847461612",
+       "header": "30 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Powder Packets",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Electrolyte Packet"
+    },
+    {
+     "name": "Variety Pack - 30",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "DM-PHP-VP30",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Electrolyte Packet"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:creatine-gummies",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Creatine Gummies",
+   "generation": null,
+   "skuBlock": null,
+   "category": "edibles",
+   "format": null,
+   "items": [
+    {
+     "name": "Sour blue raspberry",
+     "skuBarcode": "784847462459",
+     "strain": null,
+     "sku": "DM-CTG-SO",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "784847462497",
+       "header": "5 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Gummies",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/home/2025%20Full%20Ops/DIALED%20MOODS/Packaging%20Files/Gummy%20Supplements/Creatine%20Gummies"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Creatine Gummies"
+    },
+    {
+     "name": "Cherry lime",
+     "skuBarcode": "784847462466",
+     "strain": null,
+     "sku": "DM-CTG-CH",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "784847462503",
+       "header": "5 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Gummies",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Creatine Gummies"
+    },
+    {
+     "name": "Strawberry kiwi",
+     "skuBarcode": "784847462473",
+     "strain": null,
+     "sku": "DM-CTG-ST",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "784847462510",
+       "header": "5 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Gummies",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Creatine Gummies"
+    },
+    {
+     "name": "Mango Chamoy",
+     "skuBarcode": "784847462480",
+     "strain": null,
+     "sku": "DM-CTG-MC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "784847462527",
+       "header": "5 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Gummies",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Creatine Gummies"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:shilajit-gummies",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Shilajit Gummies",
+   "generation": null,
+   "skuBlock": null,
+   "category": "edibles",
+   "format": null,
+   "items": [
+    {
+     "name": "Shilajit Gummies",
+     "skuBarcode": "850068903313",
+     "strain": null,
+     "sku": "DM-SLJ-GU",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "850068903849",
+       "header": "5 Pack Display Sku Bar"
+      },
+      {
+       "size": 5,
+       "kind": "display",
+       "code": "DM-SLJ-GU5",
+       "header": "5 pack display product code"
+      }
+     ],
+     "productFamily": "Gummies",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/home/2025%20Full%20Ops/DIALED%20MOODS/Packaging%20Files/Gummy%20Supplements/Seamoss%20and%20Shilajit"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "sample pack foil product code": "DM-SLJ-GUSP"
+     },
+     "canonicalLine": "Shilajit Gummies"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:seamoss-gummies",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Seamoss Gummies",
+   "generation": null,
+   "skuBlock": null,
+   "category": "edibles",
+   "format": null,
+   "items": [
+    {
+     "name": "Seamoss Gummies",
+     "skuBarcode": "850068903320",
+     "strain": null,
+     "sku": "DM-SMO-GU",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "850068903832",
+       "header": "5 Pack Display Sku Bar"
+      },
+      {
+       "size": 5,
+       "kind": "display",
+       "code": "DM-SMO-GU5",
+       "header": "5 pack display product code"
+      }
+     ],
+     "productFamily": "Gummies",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/home/2025%20Full%20Ops/DIALED%20MOODS/Packaging%20Files/Gummy%20Supplements/Seamoss%20and%20Shilajit"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "sample pack foil product code": "DM-SMO-GUSP"
+     },
+     "canonicalLine": "Seamoss Gummies"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:maeng-da-powder",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Maeng Da Powder",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Green (Super Charged)",
+     "skuBarcode": "64565685424",
+     "strain": null,
+     "sku": null,
+     "discontinued": true,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "64565685445",
+       "header": "5 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Maeng Da Powder",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Maeng Da Powder"
+    },
+    {
+     "name": "White (Energetic Serenity)",
+     "skuBarcode": "64565685425",
+     "strain": null,
+     "sku": null,
+     "discontinued": true,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "64565685446",
+       "header": "5 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Maeng Da Powder",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Maeng Da Powder"
+    },
+    {
+     "name": "Red (Rest and Recover)",
+     "skuBarcode": "64565685426",
+     "strain": null,
+     "sku": null,
+     "discontinued": true,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 5,
+       "kind": "display",
+       "barcode": "64565685447",
+       "header": "5 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Maeng Da Powder",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Maeng Da Powder"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:maeng-da-pills",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Maeng Da Pills",
+   "generation": null,
+   "skuBlock": null,
+   "category": "capsules",
+   "format": null,
+   "items": [
+    {
+     "name": "Green (Super Charged)",
+     "skuBarcode": "64565685427",
+     "strain": null,
+     "sku": null,
+     "discontinued": true,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 10,
+       "kind": "display",
+       "barcode": "64565685448",
+       "header": "10 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Maeng Da Pills",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Maeng Da Pills"
+    },
+    {
+     "name": "White (Energetic Serenity)",
+     "skuBarcode": "64565685428",
+     "strain": null,
+     "sku": null,
+     "discontinued": true,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 10,
+       "kind": "display",
+       "barcode": "64565685449",
+       "header": "10 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Maeng Da Pills",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Maeng Da Pills"
+    },
+    {
+     "name": "Red (Rest and Recover)",
+     "skuBarcode": "64565685429",
+     "strain": null,
+     "sku": null,
+     "discontinued": true,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 10,
+       "kind": "display",
+       "barcode": "64565685450",
+       "header": "10 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Maeng Da Pills",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Maeng Da Pills"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:dialed-energy-packets",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Dialed Energy Packets",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Pomegranate",
+     "skuBarcode": "741654780466",
+     "strain": null,
+     "sku": "DM-PEP-PG",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 20,
+       "kind": "display",
+       "barcode": "741654780510",
+       "header": "20 Pack Display Sku Bar"
+      },
+      {
+       "size": null,
+       "kind": "display",
+       "code": "DM-PEP-PG20",
+       "header": "20  pack display product code"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "barcode": "850068903115",
+       "header": "30 Pack Display Sku Bar"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "code": "DM-PEP-PG30",
+       "header": "30 pack display product code"
+      }
+     ],
+     "productFamily": "Powder Packets",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/qlhrbq3gjm2yu66bg89rq/AADDWMn44vI-BgmuUpxNK14?rlkey=hxqn11opth4v2hma1vcjtooky&st=n1fc9w2i&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Dialed Energy Packets"
+    },
+    {
+     "name": "Blueberry Acai",
+     "skuBarcode": "741654780473",
+     "strain": null,
+     "sku": "DM-PEP-BA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 20,
+       "kind": "display",
+       "barcode": "741654780527",
+       "header": "20 Pack Display Sku Bar"
+      },
+      {
+       "size": null,
+       "kind": "display",
+       "code": "DM-PEP-BA20",
+       "header": "20  pack display product code"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "barcode": "850068903122",
+       "header": "30 Pack Display Sku Bar"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "code": "DM-PEP-BA30",
+       "header": "30 pack display product code"
+      }
+     ],
+     "productFamily": "Powder Packets",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Dialed Energy Packets"
+    },
+    {
+     "name": "Cherry Lime",
+     "skuBarcode": "741654780480",
+     "strain": null,
+     "sku": "DM-PEP-CL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 20,
+       "kind": "display",
+       "barcode": "741654780541",
+       "header": "20 Pack Display Sku Bar"
+      },
+      {
+       "size": null,
+       "kind": "display",
+       "code": "DM-PEP-CL20",
+       "header": "20  pack display product code"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "barcode": "850068903139",
+       "header": "30 Pack Display Sku Bar"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "code": "DM-PEP-CL30",
+       "header": "30 pack display product code"
+      }
+     ],
+     "productFamily": "Powder Packets",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Dialed Energy Packets"
+    },
+    {
+     "name": "Dragonfruit",
+     "skuBarcode": "741654780497",
+     "strain": null,
+     "sku": "DM-PEP-DF",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 20,
+       "kind": "display",
+       "barcode": "741654780558",
+       "header": "20 Pack Display Sku Bar"
+      },
+      {
+       "size": null,
+       "kind": "display",
+       "code": "DM-PEP-DF20",
+       "header": "20  pack display product code"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "barcode": "850068903146",
+       "header": "30 Pack Display Sku Bar"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "code": "DM-PEP-DF30",
+       "header": "30 pack display product code"
+      }
+     ],
+     "productFamily": "Powder Packets",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Dialed Energy Packets"
+    },
+    {
+     "name": "Watermelon",
+     "skuBarcode": "741654780503",
+     "strain": null,
+     "sku": "DM-PEP-WM",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 20,
+       "kind": "display",
+       "barcode": "741654780565",
+       "header": "20 Pack Display Sku Bar"
+      },
+      {
+       "size": null,
+       "kind": "display",
+       "code": "DM-PEP-WM20",
+       "header": "20  pack display product code"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "barcode": "850068903160",
+       "header": "30 Pack Display Sku Bar"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "code": "DM-PEP-WM30",
+       "header": "30 pack display product code"
+      }
+     ],
+     "productFamily": "Powder Packets",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Dialed Energy Packets"
+    },
+    {
+     "name": "Variety Pack-20",
+     "skuBarcode": "N/A",
+     "strain": null,
+     "sku": "DM-PEP-VP20",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 20,
+       "kind": "display",
+       "barcode": "741654780572",
+       "header": "20 Pack Display Sku Bar"
+      },
+      {
+       "size": 30,
+       "kind": "display",
+       "barcode": "784847461575",
+       "header": "30 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Powder Packets",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Dialed Energy Packets"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:kava-shots",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Kava Shots",
+   "generation": null,
+   "skuBlock": null,
+   "category": "shots",
+   "format": null,
+   "items": [
+    {
+     "name": "Blue Raspberry",
+     "skuBarcode": "850068903740",
+     "strain": null,
+     "sku": "DM-LSE-BR",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850068903771",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LSE-BR12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Shots",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/rh7d76v3baz5gd0yyjh9u/AC8TN2oGcTbMOwL4wUBc-5M?rlkey=q263jwheh6jir32tcblv8nmxl&st=m97z6188&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kava Shots"
+    },
+    {
+     "name": "Strawberry Kiwi",
+     "skuBarcode": "850068903757",
+     "strain": null,
+     "sku": "DM-LSE-SK",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850068903795",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LSE-SK12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Shots",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kava Shots"
+    },
+    {
+     "name": "Sour Candy",
+     "skuBarcode": "850068903764",
+     "strain": null,
+     "sku": "DM-LSE-SC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850068903788",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LSE-SC12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Shots",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kava Shots"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:kratom-energy-shots",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Kratom Energy Shots",
+   "generation": null,
+   "skuBlock": null,
+   "category": "shots",
+   "format": null,
+   "items": [
+    {
+     "name": "Citrus Surge",
+     "skuBarcode": "850068903689",
+     "strain": null,
+     "sku": "DM-LSK-CS",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850068903719",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LSK-CS12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Shots",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/e5kh9ahta83m2gwx2t51y/AJBseULBDeQqGdZcDbACpOE?rlkey=lx35dg3n3d2gxetmb5p4y6q0x&st=cipt9c2h&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Shots"
+    },
+    {
+     "name": "Tropical Rush",
+     "skuBarcode": "850068903696",
+     "strain": null,
+     "sku": "DM-LSK-TR",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "741654777763",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LSK-TR12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Shots",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Shots"
+    },
+    {
+     "name": "Berry Blizzaro",
+     "skuBarcode": "850068903702",
+     "strain": null,
+     "sku": "DM-LSK-BB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850068903733",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LSK-BB12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Shots",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Shots"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:kratom-shots-240mg",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Kratom Shots 240mg",
+   "generation": null,
+   "skuBlock": null,
+   "category": "shots",
+   "format": "240mg",
+   "items": [
+    {
+     "name": "Dialed Silver",
+     "skuBarcode": "741654777763",
+     "strain": null,
+     "sku": null,
+     "discontinued": true,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 25,
+       "kind": "display",
+       "barcode": "741654777770",
+       "header": "25 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Shots",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/home/2025%20Full%20Ops/DIALED%20MOODS/Packaging%20Files/Shots"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Shots 240mg"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:dialed-water-bottles",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Dialed Water Bottles",
+   "generation": null,
+   "skuBlock": null,
+   "category": "beverages",
+   "format": null,
+   "items": [
+    {
+     "name": "Dialed Silver",
+     "skuBarcode": "850068903894",
+     "strain": null,
+     "sku": null,
+     "discontinued": true,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850068903986",
+       "header": "12 Pack Display Sku Bar"
+      }
+     ],
+     "productFamily": "Water",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/a8kuak2l7v07y9dpn3tn4/ACEl7cgrTnUYmtWRcCtmFQ4?rlkey=0zifkxj4b83ljrg00tto388hq&st=adkkwced&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Dialed Water Bottles"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:kratom-energy-can",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Kratom Energy Can",
+   "generation": null,
+   "skuBlock": null,
+   "category": "beverages",
+   "format": null,
+   "items": [
+    {
+     "name": "Pink Lemonade",
+     "skuBarcode": "850083209001",
+     "strain": null,
+     "sku": "DM-NPE-PL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209087",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-PL6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209094",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-PL12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/v2eb6t4fpbf378iwskjp4/AAoXoDJP2zFGxpxBN5zs-vA?rlkey=668wl5vbawzwkiemi1iv4cq9w&st=cauaodf7&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "Mango Sunburst",
+     "skuBarcode": "850083209025",
+     "strain": null,
+     "sku": "DM-NPE-MS",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209124",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-MS6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209131",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-MS12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "Orange Creamsicle",
+     "skuBarcode": "850083209032",
+     "strain": null,
+     "sku": "DM-NPE-OC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209148",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-OC6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209155",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-OC12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "Dragonfruit",
+     "skuBarcode": "850083209049",
+     "strain": null,
+     "sku": "DM-NPE-DF",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209162",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-DF6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209179",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-DF12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "Guava Pineapple",
+     "skuBarcode": "850083209056",
+     "strain": null,
+     "sku": "DM-NPE-GP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209186",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-GP6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209193",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-GP12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "White Gummy",
+     "skuBarcode": "850083209063",
+     "strain": null,
+     "sku": "DM-NPE-WG",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209209",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-WG6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209216",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-WG12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "Blue Acai",
+     "skuBarcode": "850083209070",
+     "strain": null,
+     "sku": "DM-NPE-BA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209223",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-NPE-BA6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209230",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-NPE-BA12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": "Performance Elixir",
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Motivation Elixir (Kratom) (RTD)"
+    },
+    {
+     "name": "Variety Pack A",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "DM-NPE-VPA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Can"
+    },
+    {
+     "name": "Variety Pack B",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "DM-NPE-VPB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Can"
+    },
+    {
+     "name": "Variety Pack C",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "DM-NPE-VPC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Can"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:kratom-energy-shots",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Kratom Energy Shots",
+   "generation": null,
+   "skuBlock": null,
+   "category": "shots",
+   "format": null,
+   "items": [
+    {
+     "name": "Sweet Tangerine",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "DM-ESK-ST",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Shots"
+    },
+    {
+     "name": "Tropical Rush",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "DM-ESK-TR",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Shots"
+    },
+    {
+     "name": "Blue Acai",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "DM-ESK-BA",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kratom Energy Shots"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:kava-elixir",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Kava Elixir",
+   "generation": null,
+   "skuBlock": null,
+   "category": "beverages",
+   "format": null,
+   "items": [
+    {
+     "name": "Arctic Blue",
+     "skuBarcode": "850083209247",
+     "strain": null,
+     "sku": "DM-KES-AB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209278",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-KES-AB6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209308",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-KES-AB12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Social Elixir (Kava) (RTD)"
+    },
+    {
+     "name": "Lemonade",
+     "skuBarcode": "850083209254",
+     "strain": null,
+     "sku": "DM-KES-PL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209285",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-KES-PL6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-KES-PL12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Social Elixir (Kava) (RTD)"
+    },
+    {
+     "name": "Mango Peach",
+     "skuBarcode": "850083209261",
+     "strain": null,
+     "sku": "DM-KES-MP",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209292",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-KES-MP6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209322",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-KES-MP12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Social Elixir (Kava) (RTD)"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:kava-shots",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Kava Shots",
+   "generation": null,
+   "skuBlock": null,
+   "category": "shots",
+   "format": null,
+   "items": [
+    {
+     "name": "Berry Blast",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "DM-LSE-BB",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kava Shots"
+    },
+    {
+     "name": "Kiwi Fusion",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "DM-LSE-KF",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kava Shots"
+    },
+    {
+     "name": "Pink Hibiscus",
+     "skuBarcode": null,
+     "strain": null,
+     "sku": "DM-LSE-PH",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Kava Shots"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:l-dopa-energy-drinks",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "L-Dopa Energy Drinks",
+   "generation": null,
+   "skuBlock": null,
+   "category": "beverages",
+   "format": null,
+   "items": [
+    {
+     "name": "Strawberry Kiwi (Collab)",
+     "skuBarcode": "850083209339",
+     "strain": null,
+     "sku": "DM-LDE-LSK",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209384",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-LDE-LSK6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209438",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LDE-LSK12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Cognition Elixir (L-Dopa) (RTD)"
+    },
+    {
+     "name": "Blue Glacier",
+     "skuBarcode": "850083209346",
+     "strain": null,
+     "sku": "DM-LDE-BGL",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209391",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-LDE-BGL6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209445",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LDE-BGL12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Cognition Elixir (L-Dopa) (RTD)"
+    },
+    {
+     "name": "Lychee",
+     "skuBarcode": "850083209353",
+     "strain": null,
+     "sku": "DM-LDE-LYC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209407",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-LDE-LYC6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209452",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LDE-LYC12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Cognition Elixir (L-Dopa) (RTD)"
+    },
+    {
+     "name": "Lemonade",
+     "skuBarcode": "850083209360",
+     "strain": null,
+     "sku": "DM-LDE-LEM",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209414",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-LDE-LEM6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209469",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LDE-LEM12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Cognition Elixir (L-Dopa) (RTD)"
+    },
+    {
+     "name": "Sour Watermelon Candy",
+     "skuBarcode": "850083209377",
+     "strain": null,
+     "sku": "DM-LDE-SWC",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209421",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-LDE-SWC6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209476",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LDE-SWC12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Cognition Elixir (L-Dopa) (RTD)"
+    },
+    {
+     "name": "Black Cherry Vanilla",
+     "skuBarcode": "850083209483",
+     "strain": null,
+     "sku": "DM-LDE-BCV",
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 6,
+       "kind": "display",
+       "barcode": "850083209490",
+       "header": "6 Pack Display Sku Bar"
+      },
+      {
+       "size": 6,
+       "kind": "display",
+       "code": "DM-LDE-BCV6",
+       "header": "6 pack display product code"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850083209506",
+       "header": "12 Pack Display Sku Bar"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-LDE-BCV12",
+       "header": "12 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Cognition Elixir (L-Dopa) (RTD)"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:morning-after-electrolytes",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "MORNING AFTER Electrolytes",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Blackberry Acai",
+     "skuBarcode": "850087036726",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036764",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EMA-BBA12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036801",
+       "header": "24 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "code": "DM-EMA-BBA24",
+       "header": "24 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "MORNING AFTER Electrolytes"
+    },
+    {
+     "name": "Blood Orange",
+     "skuBarcode": "850087036719",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036771",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EMA-BLO12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036818",
+       "header": "24 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "code": "DM-EMA-BLO24",
+       "header": "24 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "MORNING AFTER Electrolytes"
+    },
+    {
+     "name": "Salted Watermelon",
+     "skuBarcode": "850087036702",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036788",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EMA-SWM12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036825",
+       "header": "24 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "code": "DM-EMA-SWM24",
+       "header": "24 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "MORNING AFTER Electrolytes"
+    },
+    {
+     "name": "Grapefruit Ginger",
+     "skuBarcode": "850087036733",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036795",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 12,
+       "kind": "display",
+       "code": "DM-EMA-GRG12",
+       "header": "12 pack display product code"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036832",
+       "header": "24 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "code": "DM-EMA-GRG24",
+       "header": "24 pack display product code"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "MORNING AFTER Electrolytes"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:recharge-me-electrolytes",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "RECHARGE ME Electrolytes",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Chili Mango",
+     "skuBarcode": "850087036689",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036849",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036887",
+       "header": "24 Pack Barcode"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "RECHARGE ME Electrolytes"
+    },
+    {
+     "name": "Berry Bliss",
+     "skuBarcode": "850087036696",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036856",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036894",
+       "header": "24 Pack Barcode"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "RECHARGE ME Electrolytes"
+    },
+    {
+     "name": "Passion Punch",
+     "skuBarcode": "850087036672",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036863",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036900",
+       "header": "24 Pack Barcode"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "RECHARGE ME Electrolytes"
+    },
+    {
+     "name": "Summer Melon",
+     "skuBarcode": "850087036665",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850087036870",
+       "header": "12 Pack Barcode"
+      },
+      {
+       "size": 24,
+       "kind": "display",
+       "barcode": "850087036917",
+       "header": "24 Pack Barcode"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "RECHARGE ME Electrolytes"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:creatine-gummies",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "CREATINE GUMMIES",
+   "generation": null,
+   "skuBlock": null,
+   "category": "edibles",
+   "format": null,
+   "items": [
+    {
+     "name": "Blue Genius",
+     "skuBarcode": "850087036962",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE GUMMIES"
+    },
+    {
+     "name": "Citrus Surge",
+     "skuBarcode": "850087036979",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE GUMMIES"
+    },
+    {
+     "name": "Cherry Charge",
+     "skuBarcode": "850087036986",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE GUMMIES"
+    },
+    {
+     "name": "Max Melon",
+     "skuBarcode": "850087036993",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE GUMMIES"
+    },
+    {
+     "name": "Peak Peach",
+     "skuBarcode": "850090058579",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE GUMMIES"
+    },
+    {
+     "name": "Tropic Flow",
+     "skuBarcode": "850090058586",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "CREATINE GUMMIES"
+    }
+   ]
+  },
+  {
+   "id": "dialed-moods:all:creatine-collagen-stick-packs",
+   "brand": "dialed-moods",
+   "market": null,
+   "source": "Dialed Moods SKU_ Production - Products SKU Sheet .csv",
+   "section": null,
+   "line": "Creatine + Collagen Stick packs",
+   "generation": null,
+   "skuBlock": null,
+   "category": "powders",
+   "format": null,
+   "items": [
+    {
+     "name": "Sunkissed",
+     "skuBarcode": "850087036924",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850090058593",
+       "header": "12 Pack Barcode"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Creatine + Collagen Stick packs"
+    },
+    {
+     "name": "Berry Bliss",
+     "skuBarcode": "850087036931",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850090058609",
+       "header": "12 Pack Barcode"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Creatine + Collagen Stick packs"
+    },
+    {
+     "name": "Pink Pump",
+     "skuBarcode": "850087036948",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850090058616",
+       "header": "12 Pack Barcode"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Creatine + Collagen Stick packs"
+    },
+    {
+     "name": "Tropic Glow",
+     "skuBarcode": "850087036955",
+     "strain": null,
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": 12,
+       "kind": "display",
+       "barcode": "850090058623",
+       "header": "12 Pack Barcode"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Creatine + Collagen Stick packs"
+    }
+   ]
+  }
+ ],
+ "totals": {
+  "lines": 36,
+  "items": 159,
+  "uniqueSkus": 84,
+  "markets": []
+ }
+}
