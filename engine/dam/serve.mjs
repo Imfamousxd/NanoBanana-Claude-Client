@@ -64,6 +64,13 @@ export function createDamServer(root, { config = damConfig(root), password = pro
         const { rows } = await db.query(`select brand, product, count(*)::int as n from dam.assets where product is not null and status in ('analyzed','embedded') and deleted_at is null ${brand ? "and brand = $1" : ""} group by 1,2 order by 1, 3 desc`, brand ? [brand] : []);
         return json(res, 200, { products: rows });
       }
+      // Admin: repair proxies recorded as local paths on THIS host (the worker's volume). Password-protected; free.
+      if (url.pathname === "/api/admin/repair-proxies" && req.method === "POST") {
+        const [{ repairProxies }, { ProxyStore }] = await Promise.all([import("./repair-proxies.mjs"), import("./storage.mjs")]);
+        const store = new ProxyStore({ ...config.storage, localRoot: config.workDir });
+        await store.ready();
+        return json(res, 200, await repairProxies(db, store, { limit: Number(url.searchParams.get("limit") || 50000), concurrency: 8 }));
+      }
       if (url.pathname === "/api/directory") {
         const { productDirectory } = await import("./product-refs.mjs");
         const result = await productDirectory(db, graph, root, { brand: url.searchParams.get("brand") || null, since: url.searchParams.get("since") || null, limit: Number(url.searchParams.get("best") || 6) });
