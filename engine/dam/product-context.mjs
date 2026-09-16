@@ -45,8 +45,10 @@ export function compositionOf(asset) {
 
 export function angleOf(asset) {
   const angle = asset.analysis?.angle;
+  const text = `${asset.title || ""} ${String(asset.path || "").split("/").pop()}`.toLowerCase();
+  // The team's own naming outranks the model: a file called "Back View" is a back view even when it is angled.
+  if (/\bback\b|_back|rear view/.test(text) && !/\bfront\b/.test(text)) return "back";
   if (angle && angle !== "n/a") return angle;
-  const text = `${asset.title || ""} ${asset.path || ""}`.toLowerCase();
   if (/three[- ]?quarter|3\/4|angled|angle/.test(text)) return "three-quarter";
   if (/\bback\b|rear/.test(text)) return "back";
   if (/\bside\b|profile/.test(text)) return "side";
