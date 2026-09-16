@@ -330,6 +330,24 @@ artifact https://claude.ai/artifact/HJiQHosnhK9mydGJRh75bW (structure: Brand/Ren
 Awaiting Mario: confirm names/codes for the unlisted lines (§4 of the doc), then phase 1 = generate the
 move map (current path → target path) for review; nothing moves before sign-off.
 
+## 12. SKU ↔ render review loop (2026-09-16 late; context exhausted here)
+
+Pages the user reviews row by row: Muha https://claude.ai/artifact/VXkMCb125E5QQHD2L8HnAM · Dialed Moods
+https://claude.ai/artifact/GBxYLbmqn5mSvo79LaHCzP (every assigned render as a thumbnail that opens the
+file in Dropbox; "no SKU row" table per brand at the bottom). Plan page: https://claude.ai/artifact/HJiQHosnhK9mydGJRh75bW.
+Builder: `engine/skus/render-map-page.mjs` (run from the repo root; reads the session's
+`render-library.json` export — re-export with the query in this handoff §11 if the scratchpad is gone) →
+writes `sku-render-map-<brand>.html` into the scratchpad; republish with the URLs above.
+Matching rules live in `engine/skus/coverage.mjs` `scoreMatch` and were tightened from the user's
+corrections: vape form / category walls, format (1G≠2G≠1.68G), market, device generation, extract type
+(melted diamond / live resin / hash rosin / distillate / THCA / D8 / D10 / HHC / THCP), exact flavour words,
+longer flavour wins (Strawberry Lemon ≠ Strawberry), lineups and generic files (badges, master case, website,
+mockups matched to 3+ flavours) never attach to a flavour, line-specific folders (Moods, Mavricks, Cookies,
+Madness, Magnetic, Dual) only serve their line. Coverage now: Muha 661/1,165 items, 3,065 renders attached;
+Dialed 116/159, 899. Remaining known doubt: "GummiesTin_Mockup_V2/V3" attach to Strawberry gummies rows on
+the model's read only. Decision from the user: NO codes in Dropbox names; codes as Dropbox tags + registry.
+Waiting on the user: more row corrections; names/handling for the "no SKU row" folders; "run the six".
+
 ## 6. Remaining plan
 
 1. Let the render pass finish (check progress; restart the local run if it died: same command as §8). Then `dam sync-kg` per brand.
