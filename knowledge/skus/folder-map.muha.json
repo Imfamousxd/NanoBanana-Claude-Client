@@ -1,12 +1,9 @@
 {
  "brand": "muha",
- "builtAt": "2026-09-17T03:16:33.373Z",
+ "builtAt": "2026-09-17T03:22:45.516Z",
  "scope": "Renders/ only",
  "naming": {
-  "dropped": [
-   "muha:OH:1g-distillate-carts",
-   "muha:OH:oh002"
-  ]
+  "dropped": []
  },
  "folders": [
   {
@@ -32,6 +29,7 @@
     "LED_RollingTray_Top_ON.png"
    ],
    "decision": null,
+   "designTag": "Ashtray & Rolling Tray",
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -80,6 +78,7 @@
     "cleaners_V4.png"
    ],
    "decision": null,
+   "designTag": "Dab Bag",
    "proposal": "On no SKU row — nothing in the book matched (8 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -134,6 +133,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Dab Mats",
    "proposal": "Feeds Accessories — 6 of 6 files on rows. Flavours: Dab Mats.",
    "meaning": "Yes means: every file in this folder is Accessories and its flavours are named from the book.",
    "samples": [
@@ -192,6 +192,7 @@
     "Yellow_DapCap_Front45.png"
    ],
    "decision": null,
+   "designTag": "Dap Cap",
    "proposal": "On no SKU row — nothing in the book matched (15 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -249,6 +250,7 @@
     "MM_DuffleBagOpen1_White_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "Duffle Bag",
    "proposal": "On no SKU row — nothing in the book matched (14 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -293,6 +295,7 @@
     "Keychain_Front_v1.png"
    ],
    "decision": null,
+   "designTag": "Keychain",
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -333,6 +336,7 @@
     "Lanyard_Silver.png"
    ],
    "decision": null,
+   "designTag": "Lanyard",
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -406,6 +410,7 @@
     "Lighter_PINK_FrontShot2_V1.png"
    ],
    "decision": null,
+   "designTag": "Lighter",
    "proposal": "On no SKU row — nothing in the book matched (36 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -451,6 +456,7 @@
     "MM_CoinDripLight_45_Green_V1.png"
    ],
    "decision": null,
+   "designTag": "Coin Drip Light",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -494,6 +500,7 @@
     "MM_SquareFridge_45_V1.png"
    ],
    "decision": null,
+   "designTag": "MMFridge",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -546,6 +553,7 @@
     "Podium_45.png"
    ],
    "decision": null,
+   "designTag": "Displays",
    "proposal": "On no SKU row — nothing in the book matched (17 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -589,6 +597,7 @@
     "Mates_Duo_ProductDisplay_45.png"
    ],
    "decision": null,
+   "designTag": "Mates Duo",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -625,6 +634,7 @@
     "StickerCard_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Sticker Card",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -661,6 +671,7 @@
     "MuhaMeds_Wrapdouble_Curled_V1.png"
    ],
    "decision": null,
+   "designTag": "Wrap",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -708,6 +719,7 @@
     "Gen3 Device Front_LR_V1.png"
    ],
    "decision": null,
+   "designTag": "Ai Resources",
    "proposal": "On no SKU row — not a product render folder (11 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -764,6 +776,7 @@
     "Flavor_09_COLOR.png"
    ],
    "decision": null,
+   "designTag": "AIO Flavor Badges",
    "proposal": "On no SKU row — not a product render folder (9 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -810,6 +823,7 @@
     "THCa 4G Jar Open.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — not a product render folder (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -854,6 +868,7 @@
     "Ape_wPenHandUp_V1.png"
    ],
    "decision": null,
+   "designTag": "Ape",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -889,6 +904,7 @@
     "Ape_4thJuly_V1.png"
    ],
    "decision": null,
+   "designTag": "th July",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -924,6 +940,7 @@
     "Ape_4thJuly_Smile_V1.png"
    ],
    "decision": null,
+   "designTag": "Smiling",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -959,6 +976,7 @@
     "Window_side2.png"
    ],
    "decision": null,
+   "designTag": "3.21.25 Update Freezer Wrap",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -993,6 +1011,7 @@
     "freezer_V3.png"
    ],
    "decision": null,
+   "designTag": "Ape Freezer Test",
    "proposal": "On no SKU row — not a product render folder (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1027,6 +1046,7 @@
     "Ape_Right.png"
    ],
    "decision": null,
+   "designTag": "Profile",
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1070,6 +1090,7 @@
     "ApeSilhouette_V3.png"
    ],
    "decision": null,
+   "designTag": "Silhouette",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1107,6 +1128,7 @@
     "Varsity Jacket Front.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1146,6 +1168,7 @@
     "MM_Old_English_TShirt_Back.png"
    ],
    "decision": null,
+   "designTag": "Old English TShirt",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1180,6 +1203,7 @@
     "MM_GirlsSet_Shorts_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "Bottoms",
    "proposal": "On no SKU row — not a product render folder (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1211,6 +1235,7 @@
     "MM_GirlsSet_SportsBra_Front_V3.png"
    ],
    "decision": null,
+   "designTag": "Top",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1249,6 +1274,7 @@
     "Grunge Sweatshirt Front.png"
    ],
    "decision": null,
+   "designTag": "Grunge",
    "proposal": "On no SKU row — not a product render folder (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1293,6 +1319,7 @@
     "MM_Tracksuit_Pants.png"
    ],
    "decision": null,
+   "designTag": "Tracksuit",
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1340,6 +1367,7 @@
     "CA_Distillate_1gram_Purple_Punch_Front.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1391,6 +1419,7 @@
     "CA_Dispo_Distillate_Lemon_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1437,6 +1466,7 @@
     "CA_Dispo_AllinOne_LiveResin_GushMintz_V1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1483,6 +1513,7 @@
     "CA_MeltedDiamonds_1G_Carts_MangoMadness.jpg"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1529,6 +1560,7 @@
     "CA_Dispo_AllinOne_MD_SuperSilverHaze_V1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1588,6 +1620,7 @@
     "CA_FlowerJar_AdiosMF_Front.jpg"
    ],
    "decision": null,
+   "designTag": "Flower Jars",
    "proposal": "On no SKU row — not a product render folder (16 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1638,6 +1671,7 @@
     "Mambas_CA_SweetSour_Front_Gummy_V1.png"
    ],
    "decision": null,
+   "designTag": "Gummies",
    "proposal": "On no SKU row — not a product render folder (7 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1696,6 +1730,7 @@
     "HR_Mad_Fruit_FrontSingleOpen.jpg"
    ],
    "decision": null,
+   "designTag": "Hash Rosin Concentrates",
    "proposal": "On no SKU row — not a product render folder (16 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1753,6 +1788,7 @@
     "Mates_CA_AppleTart_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "Mates",
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1800,6 +1836,7 @@
     "CA_Mates_HR_RazzleDazzel_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "Mates",
    "proposal": "On no SKU row — not a product render folder (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -1843,6 +1880,7 @@
     "Cart_Front.png"
    ],
    "decision": null,
+   "designTag": "Device",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -1895,6 +1933,7 @@
     "CA_Distillate_1gram_Watermelon_OG_Front.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — previous design: CA_1G_Distillate (1) (19 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: CA_1G_Distillate (1)).",
    "samples": [
@@ -1944,6 +1983,7 @@
     "Cartridges_Distillate_Front_CaliGasOG_V1.png"
    ],
    "decision": null,
+   "designTag": "2024",
    "proposal": "On no SKU row — previous design: CA_1G_Distillate 2024 (8 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: CA_1G_Distillate 2024).",
    "samples": [
@@ -2005,6 +2045,7 @@
     "CA_1G_Distillate_Carts_JackHerer_Front.png"
    ],
    "decision": null,
+   "designTag": "2025",
    "proposal": "On no SKU row — previous design: CA_1G_Distillate_Carts 2025 (20 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: CA_1G_Distillate_Carts 2025).",
    "samples": [
@@ -2072,6 +2113,7 @@
     "CA_Carts_1G_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Tech Design June 2025",
    "proposal": "Feeds CA 1G Distillate Carts · Gen 3 · CA031 — 40 of 41 files on rows, 1 on no row. Flavours: Cherry Grapefruit, Banana Cream Cake, Bubblegum Burst, Green Crack, Godfather OG, Pineapple Paradise +4.",
    "meaning": "Yes means: every file in this folder is CA 1G Distillate Carts and its flavours are named from the book.",
    "samples": [
@@ -2133,6 +2175,7 @@
     "MI_Distillate_1gram_Cali_Gas_Three_Quarters_i1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — previous design: MI_1G_Distillate_Carts (20 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: MI_1G_Distillate_Carts).",
    "samples": [
@@ -2199,6 +2242,7 @@
     "MI_Carts_1G_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Tech June 2025",
    "proposal": "Feeds MI 1G Distillate Carts · MI024 — 40 of 41 files on rows, 1 on no row. Flavours: Bahama Berry, Cherry Grapefruit, Pineapple Paradise, Purple Passion Punch, Banana Cream Cake, Blue Slushie +4.",
    "meaning": "Yes means: every file in this folder is MI 1G Distillate Carts and its flavours are named from the book.",
    "samples": [
@@ -2272,6 +2316,7 @@
     "MI_Distillate_2gram_Sugar_Daddy_Punch_Front.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds MI 1G Distillate Carts · MI024 — 2 of 20 files on rows, 18 on no row. Flavours: Blue Slushie.",
    "meaning": "Yes means: every file in this folder is MI 1G Distillate Carts and its flavours are named from the book.",
    "samples": [
@@ -2335,6 +2380,7 @@
     "MI_1G_Unreleased_Carts_DragonFruitSorbet_Three_Quarters.png"
    ],
    "decision": null,
+   "designTag": "Q 2025",
    "proposal": "On no SKU row — nothing in the book matched (21 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -2405,6 +2451,7 @@
     "00_MI_Carts_2G_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "June 2025",
    "proposal": "Feeds MI 2G DistiIlate Carts · MI026 — 37 of 41 files on rows, 4 on no row. Flavours: Lemon Drop, Toxic Apple, Gelato 33, Skywalker OG, Purple Punch, Strawberry Lava +4.",
    "meaning": "Yes means: every file in this folder is MI 2G DistiIlate Carts and its flavours are named from the book.",
    "samples": [
@@ -2453,6 +2500,7 @@
     "CARTS_MO_Front.png"
    ],
    "decision": null,
+   "designTag": "Tech Mock",
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -2515,6 +2563,7 @@
     "MO_1G_Distillate_Carts_WeddingCake_1_Three_Quarters.png"
    ],
    "decision": null,
+   "designTag": "March 2025",
    "proposal": "On no SKU row — previous design: MO_1G_Distillate_Carts March 2025 (21 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: MO_1G_Distillate_Carts March 2025).",
    "samples": [
@@ -2583,6 +2632,7 @@
     "MO_Carts_1G_BananaCream_Front.png"
    ],
    "decision": null,
+   "designTag": "NOV 2025",
    "proposal": "Feeds MO Distillate 1 Gram Carts · MO004 — 36 of 40 files on rows, 4 on no row. Flavours: Bahama Berry, Wedding Cake, Lemon Tart, Frozen Bluez, Strawberry Kiwi Kush, Purple Velvet +3.",
    "meaning": "Yes means: every file in this folder is MO Distillate 1 Gram Carts and its flavours are named from the book.",
    "samples": [
@@ -2648,6 +2698,7 @@
     "NJ_1G_Distillate_Carts_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds NJ Distillate 1 Gram Carts · NJ002 — 20 of 21 files on rows, 1 on no row. Flavours: Blueberry Haze, Cherry Grapefruit, Jack Herer, Purple Punch, Cali Gas OG, Watermelon OG +4.",
    "meaning": "Yes means: every file in this folder is NJ Distillate 1 Gram Carts and its flavours are named from the book.",
    "samples": [
@@ -2684,7 +2735,7 @@
    "lines": [
     {
      "id": "muha:NM:nm010",
-     "name": "NM 1G Distillate Carts (2026 design)",
+     "name": "NM 1G Distillate Carts (2026)",
      "line": "1G Distillate Carts",
      "market": "NM",
      "skuBlock": "NM010",
@@ -2713,8 +2764,9 @@
     "00_NM_1G_Carts_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds NM 1G Distillate Carts (2026 design) · NM010 — 40 of 41 files on rows, 1 on no row. Flavours: Bahama Berry, Blue Slushie, Pineapple Paradise, Banana Cream Cake, Habibi, Magic Melon OG +4.",
-   "meaning": "Yes means: every file in this folder is NM 1G Distillate Carts (2026 design) and its flavours are named from the book.",
+   "designTag": "2026",
+   "proposal": "Feeds NM 1G Distillate Carts (2026) · NM010 — 40 of 41 files on rows, 1 on no row. Flavours: Bahama Berry, Blue Slushie, Pineapple Paradise, Banana Cream Cake, Habibi, Magic Melon OG +4.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Carts (2026) and its flavours are named from the book.",
    "samples": [
     {
      "id": "51aac009-0959-45da-836c-3fc3a676b93d",
@@ -2748,7 +2800,7 @@
    "lines": [
     {
      "id": "muha:NM:nm003",
-     "name": "NM 1G Distillate Carts (old design)",
+     "name": "NM 1G Distillate Carts (OLD)",
      "line": "1G Distillate Carts",
      "market": "NM",
      "skuBlock": "NM003",
@@ -2775,8 +2827,9 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds NM 1G Distillate Carts (old design) · NM003 — 20 of 20 files on rows. Flavours: Blueberry Haze, Apple Gelato ICE, Jack Herer, Purple Punch, Strawberry Runtz, Cali Gas OG +4.",
-   "meaning": "Yes means: every file in this folder is NM 1G Distillate Carts (old design) and its flavours are named from the book.",
+   "designTag": "OLD",
+   "proposal": "Feeds NM 1G Distillate Carts (OLD) · NM003 — 20 of 20 files on rows. Flavours: Blueberry Haze, Apple Gelato ICE, Jack Herer, Purple Punch, Strawberry Runtz, Cali Gas OG +4.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Carts (OLD) and its flavours are named from the book.",
    "samples": [
     {
      "id": "00df6378-231c-4f76-85ac-745fef698efe",
@@ -2842,6 +2895,7 @@
     "NY_Carts_1G_Front_Solo_DosiCake.png"
    ],
    "decision": null,
+   "designTag": "March 2026",
    "proposal": "Feeds NY 1G Distillate Cartridges · NY007 — 20 of 25 files on rows, 5 on no row. Flavours: Bahama Berry, Banana Cream Cake, Strawberry Lava, Georgia Peaches, Frozen Bluez.",
    "meaning": "Yes means: every file in this folder is NY 1G Distillate Cartridges and its flavours are named from the book.",
    "samples": [
@@ -2902,6 +2956,7 @@
     "NY_1G_Distillate_Carts_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Old",
    "proposal": "Feeds NY 1G Distillate Carts · NY002 — 24 of 25 files on rows, 1 on no row. Flavours: Temptation, Grand Daddy Purp, Fatso, Sour Diesel, Habibi, Cali Gas OG.",
    "meaning": "Yes means: every file in this folder is NY 1G Distillate Carts and its flavours are named from the book.",
    "samples": [
@@ -2975,6 +3030,7 @@
     "OH_1_68G_Distillate_Carts_WatermelonOG_Three_Quarters.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds OH 1.68G Distillate Carts · CA006 — 2 of 21 files on rows, 19 on no row. Flavours: Cherry Grapefruit.",
    "meaning": "Yes means: every file in this folder is OH 1.68G Distillate Carts and its flavours are named from the book.",
    "samples": [
@@ -3031,6 +3087,7 @@
     "Cartridges_HashRosin_Front_Mimosa_V1.png"
    ],
    "decision": null,
+   "designTag": "Hash Rosin",
    "proposal": "On no SKU row — nothing in the book matched (15 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -3078,6 +3135,7 @@
     "watermelon Skittles mav mini.png"
    ],
    "decision": null,
+   "designTag": "Group Hash Rosin",
    "proposal": "On no SKU row — nothing in the book matched (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -3131,6 +3189,7 @@
     "MI_1G_HashRosin_Carts_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Hash Rosin",
    "proposal": "On no SKU row — nothing in the book matched (11 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -3176,6 +3235,7 @@
     "Cartridges_MeltedDiamonds_Front_MangoMadness_V1.png"
    ],
    "decision": null,
+   "designTag": "Melted Diamonds",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -3227,6 +3287,7 @@
     "CA_1G_MeltedDiamonds_Carts_ParadisePunch_Front.png"
    ],
    "decision": null,
+   "designTag": "January 2025",
    "proposal": "On no SKU row — previous design: CA_1G_MD_Carts_January2025 (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: CA_1G_MD_Carts_January2025).",
    "samples": [
@@ -3289,6 +3350,7 @@
     "CA_Carts_MD_1G_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Tech Design June 2025",
    "proposal": "Feeds CA 1G Melted Diamond Carts · CA032 — 20 of 21 files on rows, 1 on no row. Flavours: Toro Milk Runts, Lemonade Rose, Moroccan Peach Rings, White Raspberry, Purple Breath.",
    "meaning": "Yes means: every file in this folder is CA 1G Melted Diamond Carts and its flavours are named from the book.",
    "samples": [
@@ -3340,6 +3402,7 @@
     "MI_MeltedDiamonds_Cart_SuperSilverHaze_Three_Quarters.png"
    ],
    "decision": null,
+   "designTag": "January 2025",
    "proposal": "On no SKU row — previous design: MI_MD_Carts_1G_January2025 (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: MI_MD_Carts_1G_January2025).",
    "samples": [
@@ -3400,6 +3463,7 @@
     "Carts_MD_1G_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "June 2025",
    "proposal": "Feeds MI 1G Melted Diamond Carts · MI025 — 20 of 21 files on rows, 1 on no row. Flavours: Moroccan Peach Rings, Purple Breath, Lemonade Rose, White Raspberry, Toro Milk Runts.",
    "meaning": "Yes means: every file in this folder is MI 1G Melted Diamond Carts and its flavours are named from the book.",
    "samples": [
@@ -3447,6 +3511,7 @@
     "Catalyst_SuperSavageHaze_Left_V1.png"
    ],
    "decision": null,
+   "designTag": "Catalyst",
    "proposal": "On no SKU row — not a product render folder (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -3525,6 +3590,7 @@
     "CA_Concentrate_Jars_New_Box_HR_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds CA Hash Rosin Concentrate Jars · CA033 (+1 more line: CA Hash Rosin Concentrate V2) — 46 of 49 files on rows, 3 on no row. Flavours: Mad Fruit, Super Boof, Chilled Cherries, Alien OG, Guava Biscotti, Honey Banana +2.",
    "meaning": "Yes means: this folder is split between CA Hash Rosin Concentrate Jars and CA Hash Rosin Concentrate V2, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -3588,6 +3654,7 @@
     "CA_Concentrate_Jars_New_Box_Piatella_Lemon_Heads_Main.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds CA Piatella Concentrate Jars · CA034 — 29 of 31 files on rows, 2 on no row. Flavours: Cherry Papaya, Tropical Funk, Alpine Guava, Raunchy Runtz, Lemon Heads.",
    "meaning": "Yes means: every file in this folder is CA Piatella Concentrate Jars and its flavours are named from the book.",
    "samples": [
@@ -3667,6 +3734,7 @@
     "BOTTOM.png"
    ],
    "decision": null,
+   "designTag": "June 2025 Tech",
    "proposal": "Feeds CA Hash Rosin Concentrate Jars · CA033 (+1 more line: CA Hash Rosin Concentrate V2) — 9 of 21 files on rows, 12 on no row. Flavours: Alien OG.",
    "meaning": "Yes means: this folder is split between CA Hash Rosin Concentrate Jars and CA Hash Rosin Concentrate V2, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -3739,6 +3807,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds CA Hash Rosin Concentrate V2 · CA040 (+1 more line: CA Hash Rosin Concentrate Jars) — 16 of 16 files on rows. Flavours: Muha Motorbreath, Alien OG, Peach Panther, Orange Cherry Gelato, Grape Lobster, Banana Cream Pie +2.",
    "meaning": "Yes means: this folder is split between CA Hash Rosin Concentrate V2 and CA Hash Rosin Concentrate Jars, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -3792,6 +3861,7 @@
     "HR_Chilled_Cherries_ThreeQuarters.png"
    ],
    "decision": null,
+   "designTag": "Flavors Hash Rosin NOV 2024",
    "proposal": "On no SKU row — previous design: CA_New Flavors HashRosin NOV 2024 (11 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: CA_New Flavors HashRosin NOV 2024).",
    "samples": [
@@ -3837,6 +3907,7 @@
     "HashRosin_Mimosa_V1.png"
    ],
    "decision": null,
+   "designTag": "Hash Rosin",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -3929,6 +4000,7 @@
     "MI_HR_TropicanaCherry_Main.png"
    ],
    "decision": null,
+   "designTag": "Hash Rosin Concentrate Jars",
    "proposal": "On no SKU row — nothing in the book matched (48 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -3982,6 +4054,7 @@
     "LiveResin_Zkittlez_V1.png"
    ],
    "decision": null,
+   "designTag": "Live Resin",
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -4053,6 +4126,7 @@
     "HashRosin_GroupShot_02.png"
    ],
    "decision": null,
+   "designTag": "Flavors",
    "proposal": "Feeds CA Hash Rosin Concentrate Jars · CA033 — 29 of 38 files on rows, 9 on no row. Flavours: Super Boof, Mad Fruit, Macaron Peaches, Honey Banana, Guava Biscotti.",
    "meaning": "Yes means: every file in this folder is CA Hash Rosin Concentrate Jars and its flavours are named from the book.",
    "samples": [
@@ -4119,6 +4193,7 @@
     "Piatella_Candy_Rain_Front.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds CA Piatella Concentrate Jars · CA034 — 25 of 32 files on rows, 7 on no row. Flavours: Alpine Guava, Lemon Heads, Cherry Papaya, Raunchy Runtz.",
    "meaning": "Yes means: every file in this folder is CA Piatella Concentrate Jars and its flavours are named from the book.",
    "samples": [
@@ -4198,6 +4273,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Flavors",
    "proposal": "Feeds CA Piatella Concentrate Jars · CA034 (+2 more lines: CA Hash Rosin Concentrate Jars; CA Hash Rosin Concentrate V2) — 12 of 12 files on rows. Flavours: Tropical Funk.",
    "meaning": "Yes means: this folder is split between CA Piatella Concentrate Jars and CA Hash Rosin Concentrate Jars and CA Hash Rosin Concentrate V2, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -4243,6 +4319,7 @@
     "Concentrates_LiveResin_MasterCase_Closed_V1.png"
    ],
    "decision": null,
+   "designTag": "Master Case",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -4316,6 +4393,7 @@
     "MI_HR_AppleBanana_ThreeQuarters_w_Product.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds MI Hash Rosin Concentrate Jars · MI010 — 41 of 51 files on rows, 10 on no row. Flavours: Donnie Burger, Tropicana Cherry, Peanut Butter Breath, Fatso, Galactic Gas, Mimosa +1.",
    "meaning": "Yes means: every file in this folder is MI Hash Rosin Concentrate Jars and its flavours are named from the book.",
    "samples": [
@@ -4382,6 +4460,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds MI Live Resin Concentrate Jars · MI009 — 8 of 8 files on rows. Flavours: Space Cookies, Jet Fuel, Maui Wowie, Zkittlez, Northern Lights, Gush Mintz +2.",
    "meaning": "Yes means: every file in this folder is MI Live Resin Concentrate Jars and its flavours are named from the book.",
    "samples": [
@@ -4424,6 +4503,7 @@
     "MO_Concentrate_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Concentrate Aug 2025",
    "proposal": "On no SKU row — previous design: MO Concentrate Aug 2025 (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: MO Concentrate Aug 2025).",
    "samples": [
@@ -4486,6 +4566,7 @@
     "MO_Concentrates_HR_Fatso_FrontOpen.png"
    ],
    "decision": null,
+   "designTag": "Concentrate NOV 2025",
    "proposal": "On no SKU row — nothing in the book matched (32 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -4533,6 +4614,7 @@
     "Pod_FullBack_V1.png"
    ],
    "decision": null,
+   "designTag": "All Devices",
    "proposal": "On no SKU row — nothing in the book matched (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -4578,6 +4660,7 @@
     "Dispo_Exploded_V3.png"
    ],
    "decision": null,
+   "designTag": "GEN Exploded",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -4623,6 +4706,7 @@
     "Shot3.png"
    ],
    "decision": null,
+   "designTag": "Mock Up",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -4668,6 +4752,7 @@
     "Back.png"
    ],
    "decision": null,
+   "designTag": "Tear Drop",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -4715,6 +4800,7 @@
     "PodBack_V2.png"
    ],
    "decision": null,
+   "designTag": "Pod Device",
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -4877,6 +4963,7 @@
     "Hemp_Disposables_DisplayBox_Open_HHC_AgentOrange_V1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — nothing in the book matched (119 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -4938,6 +5025,7 @@
     "CA_2G_Blend_Dispos_PurplePunch_Front.png"
    ],
    "decision": null,
+   "designTag": "Blend",
    "proposal": "On no SKU row — nothing in the book matched (20 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -4999,6 +5087,7 @@
     "CA_Dispo_Distillate_Habibi_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "All in One Sept 2024",
    "proposal": "On no SKU row — older device: All in One (Sept 2024) (20 files).",
    "meaning": "Yes means: this folder stays off every SKU row (older device: All in One (Sept 2024)).",
    "samples": [
@@ -5060,6 +5149,7 @@
     "CA_Dispo_Distillate_Habibi_45_V1.png"
    ],
    "decision": null,
+   "designTag": "old Version",
    "proposal": "On no SKU row — older device: All in One (Sept 2024) (20 files).",
    "meaning": "Yes means: this folder stays off every SKU row (older device: All in One (Sept 2024)).",
    "samples": [
@@ -5116,6 +5206,7 @@
     "CA_Disposables_Distillate_StrawberryRuntz_45_V2.png"
    ],
    "decision": null,
+   "designTag": "Black Gold Device",
    "proposal": "On no SKU row — nothing in the book matched (15 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -5177,6 +5268,7 @@
     "Disposables_Distillate_SuperSourDiesel_V1.png"
    ],
    "decision": null,
+   "designTag": "Color Device",
    "proposal": "On no SKU row — nothing in the book matched (20 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -5238,6 +5330,7 @@
     "Disposables_Distillate_CherryGrapefruit_45_V1.png"
    ],
    "decision": null,
+   "designTag": "Grey Device",
    "proposal": "On no SKU row — nothing in the book matched (20 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -5312,6 +5405,7 @@
     "CA_1G_Distillate_Disposables_45_BubblegumBurst.png"
    ],
    "decision": null,
+   "designTag": "Tech Design June 2025",
    "proposal": "Feeds CA 1G Distillate Disposables · Gen 3 · CA026 — 32 of 42 files on rows, 10 on no row. Flavours: Tahoe OG, Blue Slushie, Pineapple Express, Galactic Diesel, Magic Melon OG, Sour Watermelon Squirt +2.",
    "meaning": "Yes means: every file in this folder is CA 1G Distillate Disposables and its flavours are named from the book.",
    "samples": [
@@ -5371,6 +5465,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds CA 0.5G Hash Rosin Disposables · Gen 3 · CA030 — 20 of 20 files on rows. Flavours: Super Fatso, Slurpicane, Iced Sangria, Galactic Guava, Sour Diesel.",
    "meaning": "Yes means: every file in this folder is CA 0.5G Hash Rosin Disposables and its flavours are named from the book.",
    "samples": [
@@ -5436,6 +5531,7 @@
     "CA_05G_HashRosin_Disposables_Front_Fatso.png"
    ],
    "decision": null,
+   "designTag": "Hash Rosin Tech Design June 2025",
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (22 files).",
    "meaning": "Yes means: this folder stays off every SKU row (generic (badges, group shots, website composites)).",
    "samples": [
@@ -5488,6 +5584,7 @@
     "Mimosa_Three_Quarters.png"
    ],
    "decision": null,
+   "designTag": "Mavricks Aug 2024",
    "proposal": "On no SKU row — nothing in the book matched (11 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -5539,6 +5636,7 @@
     "Disposables_HashRosin_GarlicJelly_45_V1.png"
    ],
    "decision": null,
+   "designTag": "Mavricks June 2024",
    "proposal": "On no SKU row — previous design: CA_0.5G_HR_Mavricks_June2024 (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: CA_0.5G_HR_Mavricks_June2024).",
    "samples": [
@@ -5590,6 +5688,7 @@
     "CA_Dispo_AllinOne_LR_SourDiesel_45_V1.png"
    ],
    "decision": null,
+   "designTag": "Live Resin All in One Sept 2024",
    "proposal": "On no SKU row — older device: All in One (Sept 2024) (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (older device: All in One (Sept 2024)).",
    "samples": [
@@ -5652,6 +5751,7 @@
     "00_CA_1G_LiveResin_Disposables_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Tech Design June 2025",
    "proposal": "Feeds CA 1G Live Resin Disposables · CA028 — 20 of 22 files on rows, 2 on no row. Flavours: Juice Man, Grape Dosi, OG KUSH, Golden Papaya, Lemon Kush Mintz.",
    "meaning": "Yes means: every file in this folder is CA 1G Live Resin Disposables and its flavours are named from the book.",
    "samples": [
@@ -5703,6 +5803,7 @@
     "CA_Dispo_AllinOne_MD_MangoMadness_V1.png"
    ],
    "decision": null,
+   "designTag": "Melted Diamond All in One Sept 2024",
    "proposal": "On no SKU row — older device: All in One (Sept 2024) (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (older device: All in One (Sept 2024)).",
    "samples": [
@@ -5766,6 +5867,7 @@
     "00_CA_1G_MeltedDiamonds_Disposables_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Diamonds Tech Design June 2025",
    "proposal": "Feeds CA 1G Melted Diamond Disposables · CA029 — 20 of 22 files on rows, 2 on no row. Flavours: Orange Tangie, Durban Delight, Lemon Cherry Gelato, Grape Gas, Mango Madness.",
    "meaning": "Yes means: every file in this folder is CA 1G Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
@@ -5810,6 +5912,7 @@
     "PodInsert_V2.png"
    ],
    "decision": null,
+   "designTag": "Card Insert",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -5853,6 +5956,7 @@
     "Front.png"
    ],
    "decision": null,
+   "designTag": "World Cup",
    "proposal": "On no SKU row — nothing in the book matched (9 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -5912,6 +6016,7 @@
     "NewDisposableDevice_04_CA_Back.png"
    ],
    "decision": null,
+   "designTag": "Device",
    "proposal": "Feeds HEMP 3.5g Live Resin Disposables · HEMP014 — 1 of 6 files on rows, 5 on no row. Flavours: Sour Cherry Limeade.",
    "meaning": "Yes means: every file in this folder is HEMP 3.5g Live Resin Disposables and its flavours are named from the book.",
    "samples": [
@@ -5958,6 +6063,7 @@
     "MockUP_V3.png"
    ],
    "decision": null,
+   "designTag": "Dual Device",
    "proposal": "On no SKU row — nothing in the book matched (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -6003,6 +6109,7 @@
     "Back_45.png"
    ],
    "decision": null,
+   "designTag": "Front",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -6050,6 +6157,7 @@
     "DeviceLED_V1_Front.png"
    ],
    "decision": null,
+   "designTag": "Gen Mock Up",
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -6094,6 +6202,7 @@
     "v2.jpg"
    ],
    "decision": null,
+   "designTag": "Reveal",
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -6163,6 +6272,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Flavor th",
    "proposal": "Feeds MI 2G Dual Disposable Flavors · MI030 — 40 of 40 files on rows. Flavours: Grape Ape, Blackberry Kush, Cherry Slushie, Limoncello, Skywalker OG, Blue Slushie +12.",
    "meaning": "Yes means: every file in this folder is MI 2G Dual Disposable Flavors and its flavours are named from the book.",
    "samples": [
@@ -6219,6 +6329,7 @@
     "BothOff.png"
    ],
    "decision": null,
+   "designTag": "Light On Off",
    "proposal": "Feeds MI 2G Dual Disposable Flavors · MI030 — 3 of 4 files on rows, 1 on no row. Flavours: Blackberry Kush, Orange Dream.",
    "meaning": "Yes means: every file in this folder is MI 2G Dual Disposable Flavors and its flavours are named from the book.",
    "samples": [
@@ -6364,6 +6475,7 @@
     "OG_Magnetic_Dispo_45_g_SANTORINI_BUBBLE_GUM45.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds MI 2G Magnetic Dispo Flavors · MI031 — 97 of 166 files on rows, 69 on no row. Flavours: Cannes Kush, Blueberry Muffin (I), Santorini grape pie, Canary Island Punch, DC-10 Diesel, Ibiza Cherry +12.",
    "meaning": "Yes means: every file in this folder is MI 2G Magnetic Dispo Flavors and its flavours are named from the book.",
    "samples": [
@@ -6453,6 +6565,7 @@
     "MI_2G_CaliGasOG_45_V1.png"
    ],
    "decision": null,
+   "designTag": "Mixed Flavors Reused Mylars",
    "proposal": "Feeds MI 2G Distillate Disposables · MI019 — 4 of 21 files on rows, 17 on no row. Flavours: Bubble Gum Burst, Habibi.",
    "meaning": "Yes means: every file in this folder is MI 2G Distillate Disposables and its flavours are named from the book.",
    "samples": [
@@ -6492,7 +6605,7 @@
    "lines": [
     {
      "id": "muha:MI:mi029",
-     "name": "MI 2G Disposable Flavors (older)",
+     "name": "MI 2G Disposable Flavors (Jan 2026)",
      "line": "2G Disposable Flavors",
      "market": "MI",
      "skuBlock": "MI029",
@@ -6537,8 +6650,9 @@
     "MI_2G_Distillate_Dispo_Device_Front_WatermelonBubblegum.png"
    ],
    "decision": null,
-   "proposal": "Feeds MI 2G Disposable Flavors (older) · MI029 (+1 more line: MI 2G Distillate Disposables) — 99 of 101 files on rows, 2 on no row. Flavours: Blue Slushie, Arctic Blueberry, Aloha Passion Rush, Galactic Diesel, Horchata, Lemon Cherry Fizz +4.",
-   "meaning": "Yes means: this folder is split between MI 2G Disposable Flavors (older) and MI 2G Distillate Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "designTag": "Jan 2026",
+   "proposal": "Feeds MI 2G Disposable Flavors (Jan 2026) · MI029 (+1 more line: MI 2G Distillate Disposables) — 99 of 101 files on rows, 2 on no row. Flavours: Blue Slushie, Arctic Blueberry, Aloha Passion Rush, Galactic Diesel, Horchata, Lemon Cherry Fizz +4.",
+   "meaning": "Yes means: this folder is split between MI 2G Disposable Flavors (Jan 2026) and MI 2G Distillate Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "e6425150-6367-46d3-8801-ed88ea7e9743",
@@ -6580,6 +6694,7 @@
     "45.png"
    ],
    "decision": null,
+   "designTag": "Golden Hour",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -6616,6 +6731,7 @@
     "MI_2G_Distillate_MasterCase_Closed_3.png"
    ],
    "decision": null,
+   "designTag": "Master Case",
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -6673,6 +6789,7 @@
     "MI_Disposables_Distillate_Pineapple_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "July 2024",
    "proposal": "On no SKU row — previous design: MI_2G_Distillate_July2024 (20 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: MI_2G_Distillate_July2024).",
    "samples": [
@@ -6737,6 +6854,7 @@
     "MI_2G_Dispos_SkywalkerOG_ThreeQuarters.png"
    ],
    "decision": null,
+   "designTag": "Device Nov 2024",
    "proposal": "On no SKU row — previous design: MI_2G_Distillate_NewDevice_Nov2024 (23 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: MI_2G_Distillate_NewDevice_Nov2024).",
    "samples": [
@@ -6798,6 +6916,7 @@
     "MI_2G_Dispos_BlueberryHaze_ThreeQuarters.png"
    ],
    "decision": null,
+   "designTag": "Nov 2024",
    "proposal": "On no SKU row — previous design: MI_2G_Distillate_Nov2024 (20 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: MI_2G_Distillate_Nov2024).",
    "samples": [
@@ -6886,6 +7005,7 @@
     "MI_2G_Distillate_Disposables_Front_Solo_DragonBerryRuntz.png"
    ],
    "decision": null,
+   "designTag": "Tech Design June 2025",
    "proposal": "Feeds MI 2G Distillate Disposables · MI019 — 12 of 42 files on rows, 30 on no row. Flavours: Watermelon Moonshine, Pineapple Paradise, Sweet Dreams OG.",
    "meaning": "Yes means: every file in this folder is MI 2G Distillate Disposables and its flavours are named from the book.",
    "samples": [
@@ -6946,6 +7066,7 @@
     "MI_Disposables_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Aug 2024",
    "proposal": "Feeds MI 0.5G Mavricks Hash Rosin Disposables · MI023 — 10 of 11 files on rows, 1 on no row. Flavours: Mimosa, Fatso, Donnie Burger, Tropicana Cherry, Garlic Jelly.",
    "meaning": "Yes means: every file in this folder is MI 0.5G Mavricks Hash Rosin Disposables and its flavours are named from the book.",
    "samples": [
@@ -6996,6 +7117,7 @@
     "Disposables_HashRosin_TropicanaCherry_V1.png"
    ],
    "decision": null,
+   "designTag": "Mavricks Feb 2024",
    "proposal": "On no SKU row — previous design: MI_0.5G_HR_Mavricks_Feb2024 (9 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: MI_0.5G_HR_Mavricks_Feb2024).",
    "samples": [
@@ -7062,6 +7184,7 @@
     "MI_05G_HashRosin_Disposables_45_Solo_Mimosa.png"
    ],
    "decision": null,
+   "designTag": "Hash Rosin Tech Design June 2025",
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (22 files).",
    "meaning": "Yes means: this folder stays off every SKU row (generic (badges, group shots, website composites)).",
    "samples": [
@@ -7124,6 +7247,7 @@
     "00_MI_1G_LiveResin_Disposables_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Tech Design June 2025",
    "proposal": "Feeds MI 1G Live Resin Disposables · MI021 — 20 of 22 files on rows, 2 on no row. Flavours: Lemon Kush Mintz, OG KUSH, Golden Papaya, Grape Dosi, Juice Man.",
    "meaning": "Yes means: every file in this folder is MI 1G Live Resin Disposables and its flavours are named from the book.",
    "samples": [
@@ -7174,6 +7298,7 @@
     "Disposables_LiveResin_WatermelonGelato_45_V1.png"
    ],
    "decision": null,
+   "designTag": "Live Resin All in One Sept 2024",
    "proposal": "On no SKU row — older device: All in One (Sept 2024) (9 files).",
    "meaning": "Yes means: this folder stays off every SKU row (older device: All in One (Sept 2024)).",
    "samples": [
@@ -7236,6 +7361,7 @@
     "00_MI_1G_MeltedDiamonds_Disposables_GroupShot_Spread.png"
    ],
    "decision": null,
+   "designTag": "Tech Design June 2025",
    "proposal": "Feeds MI 1G Melted Diamond Disposables · MI022 — 20 of 22 files on rows, 2 on no row. Flavours: Orange Tangie, Grape Gas, Durban Delight, Lemon Cherry Gelato, Mango Madness.",
    "meaning": "Yes means: every file in this folder is MI 1G Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
@@ -7285,6 +7411,7 @@
     "Disposables_MeltedDiamonds_SuperSilverHaze_45_V1.png"
    ],
    "decision": null,
+   "designTag": "Melted Diamond All in One Sept 2024",
    "proposal": "On no SKU row — older device: All in One (Sept 2024) (8 files).",
    "meaning": "Yes means: this folder stays off every SKU row (older device: All in One (Sept 2024)).",
    "samples": [
@@ -7351,6 +7478,7 @@
     "00_MO_2G_Disposable_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "NOV 2025",
    "proposal": "Feeds MO Distallite 2 Gram Dispos · MO001 — 40 of 41 files on rows, 1 on no row. Flavours: Moroccon Peaches, Blue Dream, Honey Melon, Gelato #33, Lemon Tart, Frozen Pomegranate +4.",
    "meaning": "Yes means: every file in this folder is MO Distallite 2 Gram Dispos and its flavours are named from the book.",
    "samples": [
@@ -7414,6 +7542,7 @@
     "MO_2G_Dispos_CherryGrapefruit_ThreeQuarters.png"
    ],
    "decision": null,
+   "designTag": "March 2025",
    "proposal": "On no SKU row — previous design: MO_2G_Disposables March 2025 (21 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: MO_2G_Disposables March 2025).",
    "samples": [
@@ -7490,6 +7619,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds NJ Distallite 2 Gram Disposables (older) · NJ001 (+1 more line: NJ Distallite 2 Gram Disposables (newer)) — 20 of 20 files on rows. Flavours: Gogi OG, Blueberry Cookies, Habibi, Lemonado, Strawberry Runts, Sour Watermelon Squirt +4.",
    "meaning": "Yes means: this folder is split between NJ Distallite 2 Gram Disposables (older) and NJ Distallite 2 Gram Disposables (newer), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -7526,7 +7656,7 @@
    "lines": [
     {
      "id": "muha:NM:nm002",
-     "name": "NM 1G Distillate Disposables (Gen 2)",
+     "name": "NM 1G Distillate Disposables (Gen)",
      "line": "1G Distillate Disposables",
      "market": "NM",
      "skuBlock": "NM002",
@@ -7555,8 +7685,9 @@
     "NM_Dispo_1G_Distill_Group_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds NM 1G Distillate Disposables (Gen 2) · NM002 — 20 of 21 files on rows, 1 on no row. Flavours: Strawberry Runtz, Watermelon OG, Jack Herer, Cali Gas OG, Blueberry Haze, Purple Punch +4.",
-   "meaning": "Yes means: every file in this folder is NM 1G Distillate Disposables (Gen 2) and its flavours are named from the book.",
+   "designTag": "Gen",
+   "proposal": "Feeds NM 1G Distillate Disposables (Gen) · NM002 — 20 of 21 files on rows, 1 on no row. Flavours: Strawberry Runtz, Watermelon OG, Jack Herer, Cali Gas OG, Blueberry Haze, Purple Punch +4.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Disposables (Gen) and its flavours are named from the book.",
    "samples": [
     {
      "id": "f8a87ff4-fd0a-4520-8398-167108a31209",
@@ -7614,6 +7745,7 @@
     "NM_Disposables_Distillate_CherryGrapefruit_Front_V2.png"
    ],
    "decision": null,
+   "designTag": "Black Gold Device",
    "proposal": "On no SKU row — nothing in the book matched (17 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -7676,6 +7808,7 @@
     "NM_Disposables_Distillate_JakeHerer_45_V1.png"
    ],
    "decision": null,
+   "designTag": "Color Device",
    "proposal": "On no SKU row — nothing in the book matched (20 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -7714,7 +7847,7 @@
    "lines": [
     {
      "id": "muha:NM:nm007",
-     "name": "NM 1G Distillate Disposables (Gen 3)",
+     "name": "NM 1G Distillate Disposables (Gen 3 · 2026)",
      "line": "1G Distillate Disposables",
      "market": "NM",
      "skuBlock": "NM007",
@@ -7746,8 +7879,9 @@
     "00_NM_1G_Distillate_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds NM 1G Distillate Disposables (Gen 3) · Gen 3 · NM007 — 36 of 41 files on rows, 5 on no row. Flavours: Purple Breath, Magic Melon OG, Strawberry Kiwi Kush, Lemonade Rose, Godfather OG, Banana Cream Cake +3.",
-   "meaning": "Yes means: every file in this folder is NM 1G Distillate Disposables (Gen 3) and its flavours are named from the book.",
+   "designTag": "2026",
+   "proposal": "Feeds NM 1G Distillate Disposables (Gen 3 · 2026) · Gen 3 · NM007 — 36 of 41 files on rows, 5 on no row. Flavours: Purple Breath, Magic Melon OG, Strawberry Kiwi Kush, Lemonade Rose, Godfather OG, Banana Cream Cake +3.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Disposables (Gen 3 · 2026) and its flavours are named from the book.",
    "samples": [
     {
      "id": "b9c48c88-fd97-442e-bc2e-d9771f19367d",
@@ -7807,6 +7941,7 @@
     "00_NM_1G_LiveResin_Disposables_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "2026",
    "proposal": "Feeds NM 1G Live Resin Disposables · Gen 3 · NM008 — 20 of 21 files on rows, 1 on no row. Flavours: Grape Dosi, OG KUSH, Juice Man, Golden Papaya, Lemon Kush Mintz.",
    "meaning": "Yes means: every file in this folder is NM 1G Live Resin Disposables and its flavours are named from the book.",
    "samples": [
@@ -7868,6 +8003,7 @@
     "00_NM_1G_MD_Disposable_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Diamonds 2026",
    "proposal": "Feeds NM 1G Melted Diamond Disposables · Gen 3 · NM009 — 20 of 21 files on rows, 1 on no row. Flavours: Grape Gas, Durban Delight, Orange Tangie, Mango Madness, Lemon Cherry Gelato.",
    "meaning": "Yes means: every file in this folder is NM 1G Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
@@ -7926,7 +8062,7 @@
     },
     {
      "id": "muha:NM:nm001",
-     "name": "NM 2G Distillate Disposables (2026 design)",
+     "name": "NM 2G Distillate Disposables (2026)",
      "line": "2G Distillate Disposables",
      "market": "NM",
      "skuBlock": "NM001",
@@ -7948,8 +8084,9 @@
     "00_NM_2G_Distillate_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds NM Distillate Gummy Mylar Bags · NM006 (+1 more line: NM 2G Distillate Disposables (2026 design)) — 40 of 41 files on rows, 1 on no row. Flavours: Blueberry Cookies, Habibi, Sour Watermelon Squirt, Galactic Diesel, Frozen Pomegranate, Strawberry Runts +4.",
-   "meaning": "Yes means: this folder is split between NM Distillate Gummy Mylar Bags and NM 2G Distillate Disposables (2026 design), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "designTag": "2026",
+   "proposal": "Feeds NM Distillate Gummy Mylar Bags · NM006 (+1 more line: NM 2G Distillate Disposables (2026)) — 40 of 41 files on rows, 1 on no row. Flavours: Blueberry Cookies, Habibi, Sour Watermelon Squirt, Galactic Diesel, Frozen Pomegranate, Strawberry Runts +4.",
+   "meaning": "Yes means: this folder is split between NM Distillate Gummy Mylar Bags and NM 2G Distillate Disposables (2026), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "d50a06db-b18b-4f80-a008-89feef37f381",
@@ -8006,6 +8143,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Gen AIO",
    "proposal": "Feeds NY 1G Live Resin Disposables · NY005 — 20 of 20 files on rows. Flavours: Juice Man, Lemon Kush Mintz, OG KUSH, Grape Dosi, Golden Papaya.",
    "meaning": "Yes means: every file in this folder is NY 1G Live Resin Disposables and its flavours are named from the book.",
    "samples": [
@@ -8066,6 +8204,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Gen AIO",
    "proposal": "Feeds NY 1G Melted Diamond Disposables · NY006 — 20 of 20 files on rows. Flavours: Orange Tangie, Lemon Cherry Gelato, Mango Madness, Grape Gas, Durban Delight.",
    "meaning": "Yes means: every file in this folder is NY 1G Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
@@ -8120,7 +8259,7 @@
     },
     {
      "id": "muha:NY:ny001",
-     "name": "NY 2G Distillate Disposables (older)",
+     "name": "NY 2G Distillate Disposables (Gen Device)",
      "line": "2G Distillate Disposables",
      "market": "NY",
      "skuBlock": "NY001",
@@ -8138,8 +8277,9 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds NY 2G Distillate Disposables (Gen 3) · Gen 3 · NY004 (+1 more line: NY 2G Distillate Disposables (older)) — 24 of 24 files on rows. Flavours: Blue Slushie, Tahoe OG, Habibi, Galactic Diesel, Frozen Pomegranate, Pineapple Paradise.",
-   "meaning": "Yes means: this folder is split between NY 2G Distillate Disposables (Gen 3) and NY 2G Distillate Disposables (older), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "designTag": "",
+   "proposal": "Feeds NY 2G Distillate Disposables (Gen 3) · Gen 3 · NY004 (+1 more line: NY 2G Distillate Disposables (Gen Device)) — 24 of 24 files on rows. Flavours: Blue Slushie, Tahoe OG, Habibi, Galactic Diesel, Frozen Pomegranate, Pineapple Paradise.",
+   "meaning": "Yes means: this folder is split between NY 2G Distillate Disposables (Gen 3) and NY 2G Distillate Disposables (Gen Device), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "2a8db3cf-0a7f-48bc-b478-858ea2da80c1",
@@ -8196,6 +8336,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Gen AIO",
    "proposal": "Feeds NY 1G Live Resin Disposables · NY005 — 20 of 20 files on rows. Flavours: Grape Dosi, Lemon Kush Mintz, Golden Papaya, Juice Man, OG KUSH.",
    "meaning": "Yes means: every file in this folder is NY 1G Live Resin Disposables and its flavours are named from the book.",
    "samples": [
@@ -8255,6 +8396,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Gen AIO",
    "proposal": "Feeds NY 1G Melted Diamond Disposables · NY006 — 20 of 20 files on rows. Flavours: Lemon Cherry Gelato, Mango Madness, Orange Tangie, Grape Gas, Durban Delight.",
    "meaning": "Yes means: every file in this folder is NY 1G Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
@@ -8290,7 +8432,7 @@
    "lines": [
     {
      "id": "muha:NY:ny001",
-     "name": "NY 2G Distillate Disposables (older)",
+     "name": "NY 2G Distillate Disposables (Gen Device)",
      "line": "2G Distillate Disposables",
      "market": "NY",
      "skuBlock": "NY001",
@@ -8315,8 +8457,9 @@
     "NY_2G_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds NY 2G Distillate Disposables (older) · NY001 — 12 of 13 files on rows, 1 on no row. Flavours: Sour Diesel, Habibi, Grand Daddy Purp, Temptation, Fatso, Cali Gas OG.",
-   "meaning": "Yes means: every file in this folder is NY 2G Distillate Disposables (older) and its flavours are named from the book.",
+   "designTag": "Gen Device",
+   "proposal": "Feeds NY 2G Distillate Disposables (Gen Device) · NY001 — 12 of 13 files on rows, 1 on no row. Flavours: Sour Diesel, Habibi, Grand Daddy Purp, Temptation, Fatso, Cali Gas OG.",
+   "meaning": "Yes means: every file in this folder is NY 2G Distillate Disposables (Gen Device) and its flavours are named from the book.",
    "samples": [
     {
      "id": "aed07702-347b-47d9-86a9-3d9c7ccaea48",
@@ -8371,6 +8514,7 @@
     "NY_2G_Dispos_SourDiesel_Front.png"
    ],
    "decision": null,
+   "designTag": "Old",
    "proposal": "On no SKU row — old folder: Old (14 files).",
    "meaning": "Yes means: this folder stays off every SKU row (old folder: Old).",
    "samples": [
@@ -8436,6 +8580,7 @@
     "NY_1G_LiveResin_Disposables_Front_LemonKushMintz.png"
    ],
    "decision": null,
+   "designTag": "WRONG 2026",
    "proposal": "On no SKU row — folder marked WRONG (22 files).",
    "meaning": "Yes means: this folder stays off every SKU row (folder marked WRONG).",
    "samples": [
@@ -8500,6 +8645,7 @@
     "NY_1G_MD_Disposable_Front_Solo_MangoMadness.png"
    ],
    "decision": null,
+   "designTag": "WRONG 2026",
    "proposal": "On no SKU row — folder marked WRONG (21 files).",
    "meaning": "Yes means: this folder stays off every SKU row (folder marked WRONG).",
    "samples": [
@@ -8569,6 +8715,7 @@
     "NY_2G_Distillate_Disposables_FrontSolo_Habibi.png"
    ],
    "decision": null,
+   "designTag": "WRONG 2026",
    "proposal": "On no SKU row — folder marked WRONG (25 files).",
    "meaning": "Yes means: this folder stays off every SKU row (folder marked WRONG).",
    "samples": [
@@ -8633,6 +8780,7 @@
     "OH_1_68G_Dispos_Group_Shot.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds OH 1.68G Distillate Disposables · OH001 — 20 of 21 files on rows, 1 on no row. Flavours: Apple Gelato ICE, Jack Herer, Cali Gas OG, Purple Punch, Cherry Grapefruit, Super Sour Diesel +4.",
    "meaning": "Yes means: every file in this folder is OH 1.68G Distillate Disposables and its flavours are named from the book.",
    "samples": [
@@ -8699,6 +8847,7 @@
     "CA_Gummies_HR_10ct_Mylar_FrontSolo_CucumberHabanero.png"
    ],
    "decision": null,
+   "designTag": "CT Bag 2026",
    "proposal": "Feeds CA Hash Rosin Gummies Mylar Bags · CA039 — 16 of 22 files on rows, 6 on no row. Flavours: Raspberry Pineapple, Juicy Tangerine, Mango Chamoy, Sour Blue Razz.",
    "meaning": "Yes means: every file in this folder is CA Hash Rosin Gummies Mylar Bags and its flavours are named from the book.",
    "samples": [
@@ -8780,6 +8929,7 @@
     "CA_Hash_Rosin_Edible_Cans_RaspberryPapaya_Top.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds CA Hash Rosin Gummies Metal Cans (+1 more line: CA Hash Rosin Gummies Mylar Bags) — 15 of 21 files on rows, 6 on no row. Flavours: Green Apple, Mango Madness, Strawberry, Mango Chamoy, Raspberry Pineapple.",
    "meaning": "Yes means: this folder is split between CA Hash Rosin Gummies Metal Cans and CA Hash Rosin Gummies Mylar Bags, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -8867,6 +9017,7 @@
     "CBG_CanEdibles_Group_Shot_NoGummies.png"
    ],
    "decision": null,
+   "designTag": "CBG",
    "proposal": "Feeds CA Distillate Gummies Mylar Bags — 2 of 14 files on rows, 12 on no row. Flavours: Strawberry Lemon.",
    "meaning": "Yes means: every file in this folder is CA Distillate Gummies Mylar Bags and its flavours are named from the book.",
    "samples": [
@@ -8969,6 +9120,7 @@
     "CBG_CGN_CanEdibles_MangoCoconut_Top.png"
    ],
    "decision": null,
+   "designTag": "CBN",
    "proposal": "Feeds CA Hash Rosin Gummies Metal Cans (+2 more lines: CA Hash Rosin Gummies Mylar Bags; CA Distillate Gummies Mylar Bags) — 5 of 14 files on rows, 9 on no row. Flavours: Mango Chamoy.",
    "meaning": "Yes means: this folder is split between CA Hash Rosin Gummies Metal Cans and CA Hash Rosin Gummies Mylar Bags and CA Distillate Gummies Mylar Bags, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -9066,6 +9218,7 @@
     "MI_Hash_Rosin_Edible_Cans_RaspberryPapaya_Top.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds MI Hash Rosin Gummies Metal Cans · MI014 (+2 more lines: MI 4ct Hash Rosin Gummies; MI 10ct Hash Rosin Gummies) — 12 of 17 files on rows, 5 on no row. Flavours: Green Apple, Mango Madness, Mango Chamoy, Strawberry.",
    "meaning": "Yes means: this folder is split between MI Hash Rosin Gummies Metal Cans and MI 4ct Hash Rosin Gummies and MI 10ct Hash Rosin Gummies, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -9213,6 +9366,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Mock Up",
    "proposal": "Feeds CA Hash Rosin Gummies Metal Cans (+7 more lines: MI Hash Rosin Gummies Metal Cans; OH THC 440 mg gummies, 44mg per gummy, tin can) — 4 of 4 files on rows. Flavours: Raspberry Pineapple, Strawberry.",
    "meaning": "Yes means: this folder is split between CA Hash Rosin Gummies Metal Cans and MI Hash Rosin Gummies Metal Cans and OH THC 440 mg gummies, 44mg per gummy, tin can and MI 4ct Hash Rosin Gummies and MI 10ct Hash Rosin Gummies and AZ Edibles and HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -9259,6 +9413,7 @@
     "GummiesTin_Mockup_V2_Top_Black.png"
    ],
    "decision": null,
+   "designTag": "CT V",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -9335,6 +9490,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "MG ct Net wt",
    "proposal": "Feeds MI 10ct Distillate Gummy Mylar Bags · MI012 (+1 more line: MI 5ct Distillate Gummy Mylar Bags) — 20 of 20 files on rows. Flavours: Mango Madness, Sour Apple, Strawberry Lemon, Very Berry, Watermelon.",
    "meaning": "Yes means: this folder is split between MI 10ct Distillate Gummy Mylar Bags and MI 5ct Distillate Gummy Mylar Bags, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -9433,6 +9589,7 @@
     "MI_Mambas_OpenBag_Lime.png"
    ],
    "decision": null,
+   "designTag": "MG ct Net WT",
    "proposal": "Feeds MI 10ct Distillate Gummy Mylar Bags · MI012 (+2 more lines: MI 5ct Distillate Gummy Mylar Bags; MI Hash Rosin Gummies Metal Cans) — 24 of 35 files on rows, 11 on no row. Flavours: Sour Apple, Mango Madness, Very Berry, Watermelon.",
    "meaning": "Yes means: this folder is split between MI 10ct Distillate Gummy Mylar Bags and MI 5ct Distillate Gummy Mylar Bags and MI Hash Rosin Gummies Metal Cans, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -9514,6 +9671,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "MG ct",
    "proposal": "Feeds MI 10ct Distillate Gummy Mylar Bags · MI012 (+1 more line: MI 5ct Distillate Gummy Mylar Bags) — 20 of 20 files on rows. Flavours: Sour Apple, Very Berry, Mango Madness, Strawberry Lemon, Watermelon.",
    "meaning": "Yes means: this folder is split between MI 10ct Distillate Gummy Mylar Bags and MI 5ct Distillate Gummy Mylar Bags, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -9592,6 +9750,7 @@
     "MI_Gummies_HR_10ct_Mylar_Front_CucumberHabanero.png"
    ],
    "decision": null,
+   "designTag": "ct Mylar 2026",
    "proposal": "Feeds MI 4ct Hash Rosin Gummies · MI015 (+1 more line: MI 10ct Hash Rosin Gummies) — 16 of 20 files on rows, 4 on no row. Flavours: Mango Chamoy, Raspberry Pineapple, Juicy Tangerine, Sour Blue Razz.",
    "meaning": "Yes means: this folder is split between MI 4ct Hash Rosin Gummies and MI 10ct Hash Rosin Gummies, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -9673,6 +9832,7 @@
     "00_MI_Gummies_HR_4ct_Mylar_GroupShot_45.png"
    ],
    "decision": null,
+   "designTag": "ct Mylar 2026",
    "proposal": "Feeds MI 4ct Hash Rosin Gummies · MI015 (+1 more line: MI 10ct Hash Rosin Gummies) — 16 of 22 files on rows, 6 on no row. Flavours: Sour Blue Razz, Raspberry Pineapple, Juicy Tangerine, Mango Chamoy.",
    "meaning": "Yes means: this folder is split between MI 4ct Hash Rosin Gummies and MI 10ct Hash Rosin Gummies, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -9748,6 +9908,7 @@
     "MI_Gummies_Only_Mylar_45_CucumberHabanero.png"
    ],
    "decision": null,
+   "designTag": "Only",
    "proposal": "Feeds MI 4ct Hash Rosin Gummies · MI015 (+1 more line: MI 10ct Hash Rosin Gummies) — 8 of 10 files on rows, 2 on no row. Flavours: Juicy Tangerine, Sour Blue Razz, Mango Chamoy, Raspberry Pineapple.",
    "meaning": "Yes means: this folder is split between MI 4ct Hash Rosin Gummies and MI 10ct Hash Rosin Gummies, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -9815,6 +9976,7 @@
     "Mambas_MO_VeryBerry_Front_Gummy_V1.png"
    ],
    "decision": null,
+   "designTag": "2024 OCT",
    "proposal": "On no SKU row — previous design: 2024 OCT (24 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: 2024 OCT).",
    "samples": [
@@ -9870,6 +10032,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "QR Update",
    "proposal": "Feeds MO Distillate Gummies Mylar Bag · MO009 — 5 of 5 files on rows. Flavours: Watermelon.",
    "meaning": "Yes means: every file in this folder is MO Distillate Gummies Mylar Bag and its flavours are named from the book.",
    "samples": [
@@ -9947,6 +10110,7 @@
     "Mambas_MO_Mango_Front_Gummy_V1.png"
    ],
    "decision": null,
+   "designTag": "2025 March",
    "proposal": "Feeds MO Distillate Gummies Mylar Bag · MO009 (+1 more line: MO Live Resin Gummies Mylar Bag) — 16 of 21 files on rows, 5 on no row. Flavours: Very Berry, Sour Apple, Strawberry Lemon, Watermelon.",
    "meaning": "Yes means: this folder is split between MO Distillate Gummies Mylar Bag and MO Live Resin Gummies Mylar Bag, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -10016,6 +10180,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "2025 NOV",
    "proposal": "Feeds MO Distillate Gummies Mylar Bag · MO009 (+1 more line: MO Live Resin Gummies Mylar Bag) — 10 of 10 files on rows. Flavours: Watermelon, Strawberry Lemon, Mango Mirage, Very Berry, Sour Apple.",
    "meaning": "Yes means: this folder is split between MO Distillate Gummies Mylar Bag and MO Live Resin Gummies Mylar Bag, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -10059,6 +10224,7 @@
     "NJ_Gummies_Strawberry_Back_V1.png"
    ],
    "decision": null,
+   "designTag": "Gummies",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -10113,6 +10279,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds NM Distillate Gummy Mylar Bags · NM006 — 14 of 14 files on rows. Flavours: Lime, Mango Madness, Very Berry, Sweet and Sour, Strawberry, Watermelon +1.",
    "meaning": "Yes means: every file in this folder is NM Distillate Gummy Mylar Bags and its flavours are named from the book.",
    "samples": [
@@ -10161,6 +10328,7 @@
     "5.png"
    ],
    "decision": null,
+   "designTag": "Redesign Test",
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (7 files).",
    "meaning": "Yes means: this folder stays off every SKU row (generic (badges, group shots, website composites)).",
    "samples": [
@@ -10222,6 +10390,7 @@
     "FlowerBags_PopSmoke_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — nothing in the book matched (14 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -10286,6 +10455,7 @@
     "FlowerBags_DisplayCase_Closed_WhiteTruffle_V1.png"
    ],
    "decision": null,
+   "designTag": "Display Box",
    "proposal": "On no SKU row — nothing in the book matched (17 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -10330,6 +10500,7 @@
     "FlowerBags_MasterCase_Closed_V1.png"
    ],
    "decision": null,
+   "designTag": "Master Case",
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (generic (badges, group shots, website composites)).",
    "samples": [
@@ -10410,6 +10581,7 @@
     "CA_FlowerJar_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds CA 3.5G Flower Jars · CA023 (+1 more line: CA 7G Flower Jars) — 72 of 73 files on rows, 1 on no row. Flavours: Adios MF, Black Truffle, Brain Freeze, Bacio Gelato, Frosted Cherries, Morning Glory +2.",
    "meaning": "Yes means: this folder is split between CA 3.5G Flower Jars and CA 7G Flower Jars, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -10483,6 +10655,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "oz",
    "proposal": "Feeds CA Muha Sun Grown Flower 1oz Jar (+1 more line: CA 1OZ Greenhouse Flower Jars Golden Nuggets) — 8 of 8 files on rows. Flavours: LA Gas Cake, Zour Papaya, Raspberry Kush, Barry White, Frooty Tooty.",
    "meaning": "Yes means: this folder is split between CA Muha Sun Grown Flower 1oz Jar and CA 1OZ Greenhouse Flower Jars Golden Nuggets, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -10559,6 +10732,7 @@
     "CA_Flower_Green_House_1oz_Displaybox_45_FT_45_Closed.png"
    ],
    "decision": null,
+   "designTag": "Displaybox",
    "proposal": "Feeds CA Muha Sun Grown Flower 1oz Jar (+1 more line: CA 1OZ Greenhouse Flower Jars Golden Nuggets) — 22 of 24 files on rows, 2 on no row. Flavours: Raspberry Kush, Frooty Tooty, Zour Papaya, Barry White, LA Gas Cake.",
    "meaning": "Yes means: this folder is split between CA Muha Sun Grown Flower 1oz Jar and CA 1OZ Greenhouse Flower Jars Golden Nuggets, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -10632,6 +10806,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds CA Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags · CA025 (+1 more line: CA 7G Greenhouse Flower Jars Golden Nuggets) — 11 of 11 files on rows. Flavours: Barry White, Zour Papaya, Raspberry Kush, Frooty Tooty, LA Gas Cake.",
    "meaning": "Yes means: this folder is split between CA Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags and CA 7G Greenhouse Flower Jars Golden Nuggets, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -10706,6 +10881,7 @@
     "CA_Flower_Green_House_7g_Displaybox_Front_BW_Front_Closed.png"
    ],
    "decision": null,
+   "designTag": "Displaybox",
    "proposal": "Feeds CA Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags · CA025 (+1 more line: CA 7G Greenhouse Flower Jars Golden Nuggets) — 21 of 22 files on rows, 1 on no row. Flavours: LA Gas Cake, Zour Papaya, Raspberry Kush, Frooty Tooty.",
    "meaning": "Yes means: this folder is split between CA Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags and CA 7G Greenhouse Flower Jars Golden Nuggets, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -10781,6 +10957,7 @@
     "CA_FlowerJar_Indoor_BCP_45_45.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds CA 3.5G Indoor Flower Jars — 7 of 15 files on rows, 8 on no row. Flavours: Grape Gasoline, Zour Power OG, Frosted Peaches, Blue Dream, Black Cherry Punch, Bubbledumb Gelato +1.",
    "meaning": "Yes means: every file in this folder is CA 3.5G Indoor Flower Jars and its flavours are named from the book.",
    "samples": [
@@ -10824,6 +11001,7 @@
     "JAR_1.png"
    ],
    "decision": null,
+   "designTag": "JAR MOCK",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -10861,6 +11039,7 @@
     "TAT Exclusive 3.5g Front.png"
    ],
    "decision": null,
+   "designTag": "TAT X Exclusive Strain",
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -10903,6 +11082,7 @@
     "Raffle_Back.png"
    ],
    "decision": null,
+   "designTag": "Giveaway Tickets",
    "proposal": "On no SKU row — not a product render folder (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -10952,6 +11132,7 @@
     "Hemp_Carts_Group_V1.png"
    ],
    "decision": null,
+   "designTag": "D D HHC",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -11048,6 +11229,7 @@
     "Hemp_Cartridges_Front_D10_KingLouisXII_V1.png"
    ],
    "decision": null,
+   "designTag": "D",
    "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 18 of 20 files on rows, 2 on no row. Flavours: Gods Gift, Pineapple Express, Green Crack, Northern Lights, Gelato, Agent Orange +3.",
    "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -11152,6 +11334,7 @@
     "Hemp_Cartridges_Front_D8_KingLouisXII_V1.png"
    ],
    "decision": null,
+   "designTag": "D",
    "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 18 of 20 files on rows, 2 on no row. Flavours: Green Crack, Northern Lights, Pineapple Express, Gelato, Agent Orange, Cherry Berry +3.",
    "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -11257,6 +11440,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "D Display",
    "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 20 of 20 files on rows. Flavours: Green Crack, Cherry Berry, King Louie XII, Agent Orange, Northern Lights, Gelato +4.",
    "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -11362,6 +11546,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "D Display",
    "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 20 of 20 files on rows. Flavours: Cherry Berry, Gelato, Maui Wauii, Pineapple Express, Green Crack, Northern Lights +4.",
    "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -11467,6 +11652,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "HHC Display",
    "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 20 of 20 files on rows. Flavours: Northern Lights, King Louie XII, Maui Wauii, Agent Orange, Gelato, Pineapple Express +4.",
    "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -11571,6 +11757,7 @@
     "Hemp_Cartridges_Front_HHC_KingLouisXII_V1.png"
    ],
    "decision": null,
+   "designTag": "HHC",
    "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 18 of 20 files on rows, 2 on no row. Flavours: Trainwreck, Pineapple Express, Cherry Berry, Maui Wauii, Gelato, Agent Orange +3.",
    "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -11608,7 +11795,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp003",
-     "name": "HEMP 2g THCA Carts (2026 design)",
+     "name": "HEMP 2g THCA Carts (2026)",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP003",
@@ -11620,7 +11807,7 @@
     },
     {
      "id": "muha:HEMP:hemp016",
-     "name": "HEMP 2g THCA Carts (2026 design HEMP016)",
+     "name": "HEMP 2g THCA Carts (2026 HEMP016)",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP016",
@@ -11701,8 +11888,9 @@
     "Watermelon_Gelato_Front.png"
    ],
    "decision": null,
-   "proposal": "Feeds HEMP 2g THCA Carts (2026 design) · HEMP003 (+1 more line: HEMP 2g THCA Carts (2026 design HEMP016)) — 6 of 68 files on rows, 62 on no row. Flavours: Pineapple Runtz.",
-   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts (2026 design) and HEMP 2g THCA Carts (2026 design HEMP016), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "designTag": "Oct 2024",
+   "proposal": "Feeds HEMP 2g THCA Carts (2026) · HEMP003 (+1 more line: HEMP 2g THCA Carts (2026 HEMP016)) — 6 of 68 files on rows, 62 on no row. Flavours: Pineapple Runtz.",
+   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts (2026) and HEMP 2g THCA Carts (2026 HEMP016), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "64fc761e-5df4-4f9a-9b71-7f6db2fe8e34",
@@ -11752,7 +11940,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp003",
-     "name": "HEMP 2g THCA Carts (2026 design)",
+     "name": "HEMP 2g THCA Carts (2026)",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP003",
@@ -11771,7 +11959,7 @@
     },
     {
      "id": "muha:HEMP:hemp016",
-     "name": "HEMP 2g THCA Carts (2026 design HEMP016)",
+     "name": "HEMP 2g THCA Carts (2026 HEMP016)",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP016",
@@ -11848,8 +12036,9 @@
     "Hemp_Cart_THCa_2G_FrontSolo_PineappleRunts.png"
    ],
    "decision": null,
-   "proposal": "Feeds HEMP 2g THCA Carts (2026 design) · HEMP003 (+3 more lines: HEMP 2g THCA Carts (2026 design HEMP016); HEMP Hemp Melted Diamomd 2G Cart V1) — 34 of 61 files on rows, 27 on no row. Flavours: Lemon Cherry Gelato, Watermelon Gelato, Purple Punch, Strawberry Shortcake, Paradise Punch OG, Candy Apple +2.",
-   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts (2026 design) and HEMP 2g THCA Carts (2026 design HEMP016) and HEMP Hemp Melted Diamomd 2G Cart V1 and MI 2G DistiIlate Carts, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "designTag": "2026",
+   "proposal": "Feeds HEMP 2g THCA Carts (2026) · HEMP003 (+3 more lines: HEMP 2g THCA Carts (2026 HEMP016); HEMP Hemp Melted Diamomd 2G Cart V1) — 34 of 61 files on rows, 27 on no row. Flavours: Lemon Cherry Gelato, Watermelon Gelato, Purple Punch, Strawberry Shortcake, Paradise Punch OG, Candy Apple +2.",
+   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts (2026) and HEMP 2g THCA Carts (2026 HEMP016) and HEMP Hemp Melted Diamomd 2G Cart V1 and MI 2G DistiIlate Carts, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "4f7dc36f-746b-480d-a018-acd762448058",
@@ -11921,6 +12110,7 @@
     "THCP_Carts_1G_DisplayBox_HoneydewHaze_Front.png"
    ],
    "decision": null,
+   "designTag": "+ HHC 2026",
    "proposal": "Feeds HEMP 2g THCP + HHCP Carts · HEMP015 — 27 of 32 files on rows, 5 on no row. Flavours: Gush Mintz, Honeydew Haze, Platinum Kush, Orange Creamsicle, Midnight Rain.",
    "meaning": "Yes means: every file in this folder is HEMP 2g THCP + HHCP Carts and its flavours are named from the book.",
    "samples": [
@@ -11986,6 +12176,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Text Removal",
    "proposal": "Feeds HEMP 2g THCP + HHCP Carts · HEMP015 — 20 of 20 files on rows. Flavours: Honeydew Haze, Midnight Rain, Gush Mintz, Platinum Kush, Orange Creamsicle.",
    "meaning": "Yes means: every file in this folder is HEMP 2g THCP + HHCP Carts and its flavours are named from the book.",
    "samples": [
@@ -12043,6 +12234,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Displaybox",
    "proposal": "Feeds HEMP 2g THCP + HHCP Carts · HEMP015 — 4 of 4 files on rows. Flavours: Honeydew Haze, Midnight Rain, Orange Creamsicle, Gush Mintz.",
    "meaning": "Yes means: every file in this folder is HEMP 2g THCP + HHCP Carts and its flavours are named from the book.",
    "samples": [
@@ -12127,6 +12319,7 @@
     "45DisplayBox_Diamond_JediKush_V1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — previous design: 3.5 Disposables (40 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: 3.5 Disposables).",
    "samples": [
@@ -12194,6 +12387,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Aug 2025",
    "proposal": "Feeds HEMP 3.5g Live Resin Disposables · HEMP014 (+1 more line: HEMP 3.5g Melted Diamond Disposables) — 4 of 4 files on rows. Flavours: Apple Fritter, Lychee Kush.",
    "meaning": "Yes means: this folder is split between HEMP 3.5g Live Resin Disposables and HEMP 3.5g Melted Diamond Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -12251,6 +12445,7 @@
     "MI_Hemp_LR_DisplayBoxOpen_45_1_AppleFritter.png"
    ],
    "decision": null,
+   "designTag": "Live Resin",
    "proposal": "On no SKU row — nothing in the book matched (15 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -12308,6 +12503,7 @@
     "MI_Hemp_DisplayBoxOpen_MD_45_SugarPlumOG.png"
    ],
    "decision": null,
+   "designTag": "Melted Diamonds",
    "proposal": "On no SKU row — nothing in the book matched (15 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -12370,6 +12566,7 @@
     "HEMP_DISPO_LR_3_5G_FrontSolo_WhiteGummy.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds HEMP 3.5g Live Resin Disposables · HEMP014 — 16 of 20 files on rows, 4 on no row. Flavours: Apple Fritter, Lychee Kush, Black Sugar Rose, Sour Cherry Limeade.",
    "meaning": "Yes means: every file in this folder is HEMP 3.5g Live Resin Disposables and its flavours are named from the book.",
    "samples": [
@@ -12432,6 +12629,7 @@
     "HEMP_DISPO_LR_3_5G_45_WhiteGummy.png"
    ],
    "decision": null,
+   "designTag": "Text Removal",
    "proposal": "Feeds HEMP 3.5g Live Resin Disposables · HEMP014 — 16 of 20 files on rows, 4 on no row. Flavours: Lychee Kush, Apple Fritter, Sour Cherry Limeade, Black Sugar Rose.",
    "meaning": "Yes means: every file in this folder is HEMP 3.5g Live Resin Disposables and its flavours are named from the book.",
    "samples": [
@@ -12490,6 +12688,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Diamonds",
    "proposal": "Feeds HEMP 3.5g Melted Diamond Disposables · HEMP013 — 20 of 20 files on rows. Flavours: Sugar Plum OG, Key Lime Pie, Russian Cream, Blue Zushii, Sour Yuzu Pear.",
    "meaning": "Yes means: every file in this folder is HEMP 3.5g Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
@@ -12548,6 +12747,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Text Removal",
    "proposal": "Feeds HEMP 3.5g Melted Diamond Disposables · HEMP013 — 20 of 20 files on rows. Flavours: Blue Zushii, Russian Cream, Key Lime Pie, Sugar Plum OG, Sour Yuzu Pear.",
    "meaning": "Yes means: every file in this folder is HEMP 3.5g Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
@@ -12594,6 +12794,7 @@
     "Hemp_MasterCase_45.png"
    ],
    "decision": null,
+   "designTag": "Wholesale Case",
    "proposal": "On no SKU row — nothing in the book matched (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -12667,6 +12868,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Device",
    "proposal": "Feeds HEMP 3.5g Melted Diamond Disposables (THC-A + D9) · HEMP001 (+1 more line: HEMP 3.5g Live Resin Disposables (THC-P + HHC-P + HHC)) — 10 of 10 files on rows. Flavours: Mango Peach Rings, Cereal Milk, Purple Champagne, Jedi Kush, Citrus Tsunami.",
    "meaning": "Yes means: this folder is split between HEMP 3.5g Melted Diamond Disposables (THC-A + D9) and HEMP 3.5g Live Resin Disposables (THC-P + HHC-P + HHC), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -12726,6 +12928,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Open",
    "proposal": "Feeds HEMP 3.5g Live Resin Disposables (THC-P + HHC-P + HHC) · HEMP002 — 1 of 1 files on rows. Flavours: Rainbow Belts.",
    "meaning": "Yes means: every file in this folder is HEMP 3.5g Live Resin Disposables (THC-P + HHC-P + HHC) and its flavours are named from the book.",
    "samples": [
@@ -12761,6 +12964,7 @@
     "MasterCase_Resin_V2.png"
    ],
    "decision": null,
+   "designTag": "Master Case",
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -12808,6 +13012,7 @@
     "Hemp_Gummies_500mg_Group_V1.png"
    ],
    "decision": null,
+   "designTag": "Edibles",
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (generic (badges, group shots, website composites)).",
    "samples": [
@@ -12897,6 +13102,7 @@
     "Hemp_15ct_HR_Jar_FrontSolo_PineappleHabanero.png"
    ],
    "decision": null,
+   "designTag": "ct Gummies",
    "proposal": "Feeds HEMP 15ct Jar Edibles - Hash Rosin · HEMP018 (+1 more line: HEMP 4ct Mylar Bag Edibles - Hash Rosin) — 50 of 60 files on rows, 10 on no row. Flavours: Strawberry Lemonade, Sour Blue Razz, Kiwi Surge, Orange Creamsicle, Mango Chamoy.",
    "meaning": "Yes means: this folder is split between HEMP 15ct Jar Edibles - Hash Rosin and HEMP 4ct Mylar Bag Edibles - Hash Rosin, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -12958,6 +13164,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "DELTA mg FINISHED",
    "proposal": "Feeds HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP011 — 14 of 14 files on rows. Flavours: Lime, Very Berry, Mango Madness, Strawberry, Sour Apple, Sweet and Sour +1.",
    "meaning": "Yes means: every file in this folder is HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and its flavours are named from the book.",
    "samples": [
@@ -13019,6 +13226,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "DELTA mg FINISHED",
    "proposal": "Feeds HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP011 — 14 of 14 files on rows. Flavours: Mango Madness, Sweet and Sour, Very Berry, Sour Apple, Strawberry, Lime +1.",
    "meaning": "Yes means: every file in this folder is HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and its flavours are named from the book.",
    "samples": [
@@ -13097,6 +13305,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Long Box",
    "proposal": "Feeds HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP011 (+1 more line: HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)) — 35 of 35 files on rows. Flavours: Sour Apple, Mango Madness, Watermelon, Lime, Sweet and Sour, Strawberry +1.",
    "meaning": "Yes means: this folder is split between HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -13175,6 +13384,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP011 (+1 more line: HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)) — 28 of 28 files on rows. Flavours: Sweet and Sour, Strawberry, Very Berry, Watermelon, Lime, Sour Apple +1.",
    "meaning": "Yes means: this folder is split between HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -13253,6 +13463,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Universal Box",
    "proposal": "Feeds HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP011 (+1 more line: HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)) — 35 of 35 files on rows. Flavours: Watermelon, Very Berry, Sour Apple, Strawberry, Sweet and Sour, Lime +1.",
    "meaning": "Yes means: this folder is split between HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -13306,6 +13517,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "mg FINISHED",
    "proposal": "Feeds HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) · HEMP012 — 1 of 1 files on rows. Flavours: Sweet and Sour.",
    "meaning": "Yes means: every file in this folder is HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) and its flavours are named from the book.",
    "samples": [
@@ -13371,6 +13583,7 @@
     "MI_MAMBAS_LR_45_WATERMELON.png"
    ],
    "decision": null,
+   "designTag": "mg FINISHED",
    "proposal": "Feeds HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) · HEMP012 — 14 of 28 files on rows, 14 on no row. Flavours: Sour Apple, Strawberry, Mango Madness, Very Berry, Sweet and Sour, Watermelon +1.",
    "meaning": "Yes means: every file in this folder is HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) and its flavours are named from the book.",
    "samples": [
@@ -13447,6 +13660,7 @@
     "MI_MAMBAS_LR_FRONT_STRAWBERRY.png"
    ],
    "decision": null,
+   "designTag": "Text Removal",
    "proposal": "Feeds HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) · HEMP012 — 14 of 28 files on rows, 14 on no row. Flavours: Sour Apple, Lime, Very Berry, Sweet and Sour, Strawberry, Watermelon +1.",
    "meaning": "Yes means: every file in this folder is HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) and its flavours are named from the book.",
    "samples": [
@@ -13509,6 +13723,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "mg FINISHED",
    "proposal": "Feeds HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP011 — 14 of 14 files on rows. Flavours: Sour Apple, Watermelon, Mango Madness, Very Berry, Strawberry, Sweet and Sour +1.",
    "meaning": "Yes means: every file in this folder is HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and its flavours are named from the book.",
    "samples": [
@@ -13572,6 +13787,7 @@
     "Hemp_THCa_4G_FlowerJar_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds HEMP THC-A EXOTIC FLOWER JARS (4g) · HEMP007 — 54 of 55 files on rows, 1 on no row. Flavours: Pink Runtz, Gush Mintz, Strawberry Mimosa, Black Truffle, Frosted Cherries, Bacio Gelato.",
    "meaning": "Yes means: every file in this folder is HEMP THC-A EXOTIC FLOWER JARS (4g) and its flavours are named from the book.",
    "samples": [
@@ -13649,6 +13865,7 @@
     "Hemp_FlowerBags_THCA_Front_Gummiez_V1.png"
    ],
    "decision": null,
+   "designTag": "Bag",
    "proposal": "Feeds HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) · HEMP008 (+1 more line: HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE)) — 21 of 24 files on rows, 3 on no row. Flavours: Lolipop, Lemon Cherry Gelato, Purple Wookies, Bored Ape Runtz, White Truffle, Skittles +1.",
    "meaning": "Yes means: this folder is split between HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) and HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -13737,6 +13954,7 @@
     "FlowerBags_DisplayCase_Open_Gummiez_D8_V1.png"
    ],
    "decision": null,
+   "designTag": "Display",
    "proposal": "Feeds HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) · HEMP008 (+1 more line: HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE)) — 21 of 24 files on rows, 3 on no row. Flavours: Lolipop, Banana Cream Cake, Skittles, Bored Ape Runtz, Purple Wookies, White Truffle +1.",
    "meaning": "Yes means: this folder is split between HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) and HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -13813,6 +14031,7 @@
     "THCA_FlowerBags_Display_8CT_Open_Gummies_V1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) · HEMP008 (+1 more line: HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE)) — 14 of 16 files on rows, 2 on no row. Flavours: Bored Ape Runtz, Purple Wookies, Banana Cream Cake, Lemon Cherry Gelato, Skittles, White Truffle +1.",
    "meaning": "Yes means: this folder is split between HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) and HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -13903,6 +14122,7 @@
     "Hemp_PreRolls_D8_45_StrawberryShortCake_V1.png"
    ],
    "decision": null,
+   "designTag": "Glass Jar",
    "proposal": "On no SKU row — nothing in the book matched (48 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -13993,6 +14213,7 @@
     "Prerolls_Display_HoneyJack_D8_V1.png"
    ],
    "decision": null,
+   "designTag": "Display Box",
    "proposal": "On no SKU row — nothing in the book matched (48 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -14063,6 +14284,7 @@
     "Hemp_HashHoles_THCA_45_V2_SourCherryLimeade.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — nothing in the book matched (26 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -14114,6 +14336,7 @@
     "Hemp_THCA_HashHoles_45_Open_StrawberryChampagne.png"
    ],
    "decision": null,
+   "designTag": "Display Boxes",
    "proposal": "On no SKU row — nothing in the book matched (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -14184,6 +14407,7 @@
     "Hemp_HashHoles_THCP_45_BlueZushi.png"
    ],
    "decision": null,
+   "designTag": "P",
    "proposal": "On no SKU row — nothing in the book matched (26 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -14236,6 +14460,7 @@
     "Hemp_THCP_HashHoles_45_Open_HoneyDew.png"
    ],
    "decision": null,
+   "designTag": "P Display Boxes",
    "proposal": "On no SKU row — nothing in the book matched (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -14309,6 +14534,7 @@
     "00_Hemp_DuoPreRoll_THCA_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds HEMP Duo Strain 20 Packs (8 strains, 4 Sku's) · HEMP017 (+1 more line: HEMP 2g Pre-Roll Private Reserve 2 Pack) — 26 of 27 files on rows, 1 on no row. Flavours: Strawberry Mochi Banana Cake, Pineapple Whip Watermelon Gelato, Georgia Peaches Mango Peach Rings.",
    "meaning": "Yes means: this folder is split between HEMP Duo Strain 20 Packs (8 strains, 4 Sku's) and HEMP 2g Pre-Roll Private Reserve 2 Pack, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -14373,6 +14599,7 @@
     "Hemp_PreRolls_THCA_MetalCan_GroupShot_1_V1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds HEMP THC-A MATES PRE-ROLLS 0.6g · HEMP010 — 23 of 25 files on rows, 2 on no row. Flavours: Mango Peach Rings, Strawberry Dream, Purple Punch, Blueberry ZaZa, Orange Cake, Thin Mints OG.",
    "meaning": "Yes means: every file in this folder is HEMP THC-A MATES PRE-ROLLS 0.6g and its flavours are named from the book.",
    "samples": [
@@ -14441,6 +14668,7 @@
     "Hemp_PreRolls_THCA_MetalCan_Mango_Open_V1.png"
    ],
    "decision": null,
+   "designTag": "Display Box",
    "proposal": "Feeds HEMP THC-A MATES PRE-ROLLS 0.6g · HEMP010 — 9 of 12 files on rows, 3 on no row. Flavours: Strawberry Dream, Thin Mints OG, Mango Peach Rings, Orange Cake, Purple Punch.",
    "meaning": "Yes means: every file in this folder is HEMP THC-A MATES PRE-ROLLS 0.6g and its flavours are named from the book.",
    "samples": [
@@ -14499,6 +14727,7 @@
     "THCA_KingJoint_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "Tube",
    "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 1 of 3 files on rows, 2 on no row. Flavours: Mimosa.",
    "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
@@ -14554,6 +14783,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "D Mates Display Box",
    "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 12 of 12 files on rows. Flavours: White Widow, Northern Lights, Mimosa, Alpine Guava, Chilled Cherries, Blackberry Kush.",
    "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
@@ -14613,6 +14843,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Display",
    "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 12 of 12 files on rows. Flavours: White Widow, Northern Lights, Chilled Cherries, Blackberry Kush, Alpine Guava, Mimosa.",
    "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
@@ -14675,6 +14906,7 @@
     "King_1_5g_ChilledCherries_Front.png"
    ],
    "decision": null,
+   "designTag": "Single",
    "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 10 of 12 files on rows, 2 on no row. Flavours: Northern Lights, Mimosa, Alpine Guava, White Widow, Blackberry Kush, Chilled Cherries.",
    "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
@@ -14735,6 +14967,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Single Tubes Updated",
    "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 24 of 24 files on rows. Flavours: Blackberry Kush, Alpine Guava, Chilled Cherries, Mimosa, Northern Lights, White Widow.",
    "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
@@ -14777,6 +15010,7 @@
     "Pen_Yellow_V3.png"
    ],
    "decision": null,
+   "designTag": "HOTKNIFES",
    "proposal": "On no SKU row — not a product render folder (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -14826,6 +15060,7 @@
     "Pen2_Box_Black_45_V1.png"
    ],
    "decision": null,
+   "designTag": "pen box",
    "proposal": "On no SKU row — not a product render folder (18 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -14891,6 +15126,7 @@
     "Pen2_Black_45_V1.png"
    ],
    "decision": null,
+   "designTag": "Updated",
    "proposal": "Feeds Accessories — 1 of 12 files on rows, 11 on no row. Flavours: Hot Knife.",
    "meaning": "Yes means: every file in this folder is Accessories and its flavours are named from the book.",
    "samples": [
@@ -14935,6 +15171,7 @@
     "Style1_Head1.png"
    ],
    "decision": null,
+   "designTag": "V",
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -14975,6 +15212,7 @@
     "Front1.png"
    ],
    "decision": null,
+   "designTag": "V",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -15009,6 +15247,7 @@
     "FrontV2.png"
    ],
    "decision": null,
+   "designTag": "V",
    "proposal": "On no SKU row — not a product render folder (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -15043,6 +15282,7 @@
     "FrontV3_Back.png"
    ],
    "decision": null,
+   "designTag": "V",
    "proposal": "On no SKU row — not a product render folder (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -15096,6 +15336,7 @@
     "MasterLayout_THC_FlowerBags_V1.png"
    ],
    "decision": null,
+   "designTag": "Master Case Group Shots",
    "proposal": "On no SKU row — not a product render folder (11 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -15165,6 +15406,7 @@
     "Black mav v2 master.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds MI 0.5G Mavricks Hash Rosin Disposables · MI023 — 1 of 15 files on rows, 14 on no row. Flavours: Mimosa.",
    "meaning": "Yes means: every file in this folder is MI 0.5G Mavricks Hash Rosin Disposables and its flavours are named from the book.",
    "samples": [
@@ -15218,6 +15460,7 @@
     "Cookies_Collab_Device.png"
    ],
    "decision": null,
+   "designTag": "MMx Cookies",
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -15249,6 +15492,7 @@
     "frame2.png"
    ],
    "decision": null,
+   "designTag": "MMx Cookies MMlogo Reversed",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -15301,6 +15545,7 @@
     "00_MM_Cookies_Collab_CA_Group.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds CA 1G MuhaMeds x Cookies Collab Disposables · CA027 — 20 of 21 files on rows, 1 on no row. Flavours: Gary Payton, Apples & Bananas, Blue Slushie, Tequila Sunrise, Habibi.",
    "meaning": "Yes means: every file in this folder is CA 1G MuhaMeds x Cookies Collab Disposables and its flavours are named from the book.",
    "samples": [
@@ -15361,6 +15606,7 @@
     "00_MM_Cookies_Collab_MI_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds MI 2G MuhaMeds x Cookies Collab Disposables SKU #CA026 · MI020 — 20 of 21 files on rows, 1 on no row. Flavours: Gary Payton, Tequila Sunrise, Blue Slushie, Habibi, Cereal Milk.",
    "meaning": "Yes means: every file in this folder is MI 2G MuhaMeds x Cookies Collab Disposables SKU #CA026 and its flavours are named from the book.",
    "samples": [
@@ -15450,6 +15696,7 @@
     "Moods_Rainbow_Box_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "Moods",
    "proposal": "On no SKU row — nothing in the book matched (47 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -15498,6 +15745,7 @@
     "03_Moods_Device2_Back45_2_V1.png"
    ],
    "decision": null,
+   "designTag": "Device",
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -15530,6 +15778,7 @@
     "03_Moods_Device2_Back45_2_V3.png"
    ],
    "decision": null,
+   "designTag": "Logo",
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -15569,6 +15818,7 @@
     "01_device_back.png"
    ],
    "decision": null,
+   "designTag": "Updated",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -15603,6 +15853,7 @@
     "Moods_PapayaLive_DisplayBox_Open_V1.png"
    ],
    "decision": null,
+   "designTag": "Display Boxes",
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -15635,6 +15886,7 @@
     "group1.png"
    ],
    "decision": null,
+   "designTag": "group Shots",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -15671,6 +15923,7 @@
     "Moods_Mastercase_Closed_V1.png"
    ],
    "decision": null,
+   "designTag": "Master Case",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -15736,6 +15989,7 @@
     "MI_Mambas_OpenBag_Main0087.png"
    ],
    "decision": null,
+   "designTag": "Mambas Flying Gummies Stills",
    "proposal": "On no SKU row — not a product render folder (27 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -15779,6 +16033,7 @@
     "M_Only.png"
    ],
    "decision": null,
+   "designTag": "Home Page Stills",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -15824,6 +16079,7 @@
     "DuoPod_Renders0.png"
    ],
    "decision": null,
+   "designTag": "Verification Stills",
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -15886,6 +16142,7 @@
     "Dispo_BackOfBoxScan.png"
    ],
    "decision": null,
+   "designTag": "Back View",
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -15934,6 +16191,7 @@
     "Scan Device.png"
    ],
    "decision": null,
+   "designTag": "High Resolution Stills",
    "proposal": "On no SKU row — not a product render folder (9 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -15978,6 +16236,7 @@
     "TokenRender_Card.png"
    ],
    "decision": null,
+   "designTag": "Token Stills",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -16014,6 +16273,7 @@
     "v1.png"
    ],
    "decision": null,
+   "designTag": "Vaults",
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -16053,6 +16313,7 @@
     "MI_Group_FlowerMambas_V2.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -16115,6 +16376,7 @@
     "MI_2G_PodBatteryKit_FrontSolo_BananaCremeBrulee.png"
    ],
    "decision": null,
+   "designTag": "Kit",
    "proposal": "Feeds MI Pod & Battery Combination Kits · MI028 — 32 of 40 files on rows, 8 on no row. Flavours: Strawberry Champagne, Pink Guava, Cambodian Haze, Sour Runtz, Sakura Blossom, Blue Glacier Grape +2.",
    "meaning": "Yes means: every file in this folder is MI Pod & Battery Combination Kits and its flavours are named from the book.",
    "samples": [
@@ -16186,6 +16448,7 @@
     "MI_2G_VapePod_Front_BananaCremeBrulee.png"
    ],
    "decision": null,
+   "designTag": "Vape",
    "proposal": "Feeds MI Pod Flavors — 32 of 40 files on rows, 8 on no row. Flavours: Strawberry Champagne, Blue Glacier Grape, Pink Guava, Sakura Blossom, Cambodian Haze, Boysenberry Fugi +2.",
    "meaning": "Yes means: every file in this folder is MI Pod Flavors and its flavours are named from the book.",
    "samples": [
@@ -16280,6 +16543,7 @@
     "Pod Battery_Back 45.png"
    ],
    "decision": null,
+   "designTag": "Mockups",
    "proposal": "Feeds CA Pod Flavors (+3 more lines: MI Pod Flavors; CA Pod & Battery Combination Kits) — 2 of 4 files on rows, 2 on no row. Flavours: Cambodian Haze.",
    "meaning": "Yes means: this folder is split between CA Pod Flavors and MI Pod Flavors and CA Pod & Battery Combination Kits and MI Pod & Battery Combination Kits, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -16348,6 +16612,7 @@
     "Strawberry Shortcake Mates 2.jpg"
    ],
    "decision": null,
+   "designTag": "Glass Jars",
    "proposal": "On no SKU row — nothing in the book matched (24 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -16423,6 +16688,7 @@
     "CA_Prerolls_Mintz__V1.png"
    ],
    "decision": null,
+   "designTag": "Glass Jars",
    "proposal": "On no SKU row — nothing in the book matched (23 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -16478,6 +16744,7 @@
     "CA_Mates_HR_Watermelon_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "Hash Rosin",
    "proposal": "On no SKU row — nothing in the book matched (13 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -16537,6 +16804,7 @@
     "CA_Mates_HR_Doses&Mimosas_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "old",
    "proposal": "On no SKU row — old folder: old (18 files).",
    "meaning": "Yes means: this folder stays off every SKU row (old folder: old).",
    "samples": [
@@ -16609,6 +16877,7 @@
     "MI_Prerolls_blueberry_45_V1.png"
    ],
    "decision": null,
+   "designTag": "Glass Jars",
    "proposal": "On no SKU row — nothing in the book matched (30 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -16651,6 +16920,7 @@
     "NM_Mates_Group_V1.png"
    ],
    "decision": null,
+   "designTag": "Glass Jars",
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -16804,6 +17074,7 @@
     "Mates_PreRolls_FrostMintBlueberry_Joint.png"
    ],
    "decision": null,
+   "designTag": "Kief Joint",
    "proposal": "Feeds CA Mates Metal Cans · CA035 (+7 more lines: MI Mates Metal Cans; MO Mates THCA Metal Cans) — 9 of 10 files on rows, 1 on no row. Flavours: Biscotti Bomb, Purple Punch, Snowberry Truffle, Honey Jack, Honey Melon, Caramel Apple Gelato +3.",
    "meaning": "Yes means: this folder is split between CA Mates Metal Cans and MI Mates Metal Cans and MO Mates THCA Metal Cans and OH Mates 3WAY Metal Cans and HEMP THC-A MATES PRE-ROLLS 0.6g and NJ Mates Metal Cans Kiefless Classic Flavor Line, Kiefless and NM Mates Metal Cans Kiefless and MO 2G Infused Pre Rolls, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -16847,6 +17118,7 @@
     "Mate_MO_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -16925,6 +17197,7 @@
     "MO_Tube_Front_STRAWBERRY_LAVAFront_Back.png"
    ],
    "decision": null,
+   "designTag": "Roll",
    "proposal": "Feeds MO 2G Infused Pre Rolls — 52 of 70 files on rows, 18 on no row. Flavours: HONEY MELON, PEACHES & CREAM, PUMPKIN BLISS, STRAWBERRY LAVA, MATCHA GOLD, DESERT GOLD CHOCOLATE +8.",
    "meaning": "Yes means: every file in this folder is MO 2G Infused Pre Rolls and its flavours are named from the book.",
    "samples": [
@@ -17014,6 +17287,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Extra Flavors",
    "proposal": "Feeds MO 2G Infused Pre Rolls — 5 of 5 files on rows. Flavours: PB JELLY, MATCHA GOLD, WATERMELON PUNCH, PUMPKIN BLISS, MIDNIGHT ESPRESSO.",
    "meaning": "Yes means: every file in this folder is MO 2G Infused Pre Rolls and its flavours are named from the book.",
    "samples": [
@@ -17060,6 +17334,7 @@
     "MO_PopUp_v2_Front_2.png"
    ],
    "decision": null,
+   "designTag": "Template",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -17121,6 +17396,7 @@
     "BubbleHash_GMOOreoz_ThreeQuarters_i1.png"
    ],
    "decision": null,
+   "designTag": "Kings",
    "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 1 of 7 files on rows, 6 on no row. Flavours: Alpine Guava.",
    "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
@@ -17182,6 +17458,7 @@
     "BubbleHashQueen_MacaronPeaches_ThreeQuarters_i1.png"
    ],
    "decision": null,
+   "designTag": "Queens",
    "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 1 of 7 files on rows, 6 on no row. Flavours: Chilled Cherries.",
    "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
@@ -17245,6 +17522,7 @@
     "MeltedDiamonds_StrawberryCough_Front_i1.png"
    ],
    "decision": null,
+   "designTag": "Kings",
    "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 4 of 11 files on rows, 7 on no row. Flavours: Northern Lights, Blackberry Kush.",
    "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
@@ -17320,6 +17598,7 @@
     "MeltedDiamonds_Queen_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Queens",
    "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 (+1 more line: AZ Classic Flavor Line, infused.) — 3 of 11 files on rows, 8 on no row. Flavours: Mimosa.",
    "meaning": "Yes means: this folder is split between HEMP THC-A KING MATE PRE-ROLL (1.5g) and AZ Classic Flavor Line, infused., as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -17364,6 +17643,7 @@
     "NJ_King_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "King",
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -17404,6 +17684,7 @@
     "Mate_King_2G_SandpaperMagnum_ThreeQuarters_b_02.png"
    ],
    "decision": null,
+   "designTag": "Sandpaper Magnum Metal Tube",
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -17445,6 +17726,7 @@
     "SandpaperMagnumKing_ThreeQuarters_Right.png"
    ],
    "decision": null,
+   "designTag": "Sandpaper Magnum King",
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -17492,6 +17774,7 @@
     "Mates_CA_Vanilla_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "Mates June 2024",
    "proposal": "On no SKU row — previous design: CA Mates June 2024 (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: CA Mates June 2024).",
    "samples": [
@@ -17539,6 +17822,7 @@
     "CA_Mates_HR_Tip_VanillaKush.png"
    ],
    "decision": null,
+   "designTag": "Joints",
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -17603,6 +17887,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Tech Design July 2025",
    "proposal": "Feeds CA Mates Metal Cans · CA035 — 40 of 40 files on rows. Flavours: Strawberry Ice Cream, Snowberry Truffle, Honey Melon, Berry Blaze, Honey Jack, Caramel Apple Gelato +4.",
    "meaning": "Yes means: every file in this folder is CA Mates Metal Cans and its flavours are named from the book.",
    "samples": [
@@ -17657,6 +17942,7 @@
     "CA_HR_Mates_White_45_V1.png"
    ],
    "decision": null,
+   "designTag": "Hash Rosin",
    "proposal": "On no SKU row — nothing in the book matched (12 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -17711,6 +17997,7 @@
     "CA_HR_Mates_Razzel_45_V2.png"
    ],
    "decision": null,
+   "designTag": "Mates Tin nojoint",
    "proposal": "On no SKU row — nothing in the book matched (12 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -17753,6 +18040,7 @@
     "CA_HR_Mates_Group_V1.png"
    ],
    "decision": null,
+   "designTag": "Group",
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -17804,6 +18092,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "Tech Design July 2025",
    "proposal": "Feeds MI Mates Metal Cans · MI027 — 40 of 40 files on rows. Flavours: Agave Sunrise, Frosty Mint Blueberry, Honey Melon, Biscotti Bomb, Honey Jack, Purple Punch +4.",
    "meaning": "Yes means: every file in this folder is MI Mates Metal Cans and its flavours are named from the book.",
    "samples": [
@@ -17865,6 +18154,7 @@
     "MI_HR_Mates_Doses_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds MI Hash Rosin Mates Metal Cans (older) · MI017 — 12 of 13 files on rows, 1 on no row. Flavours: White Widow, Apple Gruntz, Watermelon OG, Razzle Dazzle, Doses & Mimosas, Berry Gelato.",
    "meaning": "Yes means: every file in this folder is MI Hash Rosin Mates Metal Cans (older) and its flavours are named from the book.",
    "samples": [
@@ -17913,6 +18203,7 @@
     "MI_HR_Mates_Group_V1.png"
    ],
    "decision": null,
+   "designTag": "Group",
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -17977,6 +18268,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds MO Mates THCA Metal Cans · MO006 (+1 more line: MO 2G Infused Pre Rolls) — 40 of 40 files on rows. Flavours: Berry Blast, Purple Punch, Mango Peach Fusion, Biscotti Bomb, Frosty Mint Blueberry, Honey Melon +4.",
    "meaning": "Yes means: this folder is split between MO Mates THCA Metal Cans and MO 2G Infused Pre Rolls, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -18019,6 +18311,7 @@
     "MO_Mates_GroupShot.png"
    ],
    "decision": null,
+   "designTag": "Group",
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -18063,6 +18356,7 @@
     "NJ_MatesTin_Strawberry_Right_V1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds NJ Mates Metal Cans Kiefless Classic Flavor Line, Kiefless · NJ003 — 1 of 3 files on rows, 2 on no row. Flavours: Strawberry Dream.",
    "meaning": "Yes means: every file in this folder is NJ Mates Metal Cans Kiefless Classic Flavor Line, Kiefless and its flavours are named from the book.",
    "samples": [
@@ -18126,6 +18420,7 @@
     "NM_MatesTin_Group_V1.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds NM Mates Metal Cans Kiefless · NM005 — 18 of 21 files on rows, 3 on no row. Flavours: Thin Mints OG, Strawberry Dream, Pina Colada, Mango Peach Rings, Orange Cake, Purple Punch +3.",
    "meaning": "Yes means: every file in this folder is NM Mates Metal Cans Kiefless and its flavours are named from the book.",
    "samples": [
@@ -18186,6 +18481,7 @@
    },
    "unassigned": [],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds NY Mates Metal Cans · NY003 — 24 of 24 files on rows. Flavours: Morning Glory, Super Boof, Jealousy, Jet Fuel, Adios MF, Northern Lights.",
    "meaning": "Yes means: every file in this folder is NY Mates Metal Cans and its flavours are named from the book.",
    "samples": [
@@ -18239,6 +18535,7 @@
     "NY_MatesTin_Super_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "Old Version",
    "proposal": "On no SKU row — old folder: Old Version (12 files).",
    "meaning": "Yes means: this folder stays off every SKU row (old folder: Old Version).",
    "samples": [
@@ -18281,6 +18578,7 @@
     "NY_MatesTin_Group_V1.png"
    ],
    "decision": null,
+   "designTag": "Group Shot",
    "proposal": "On no SKU row — old folder: GroupShot (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (old folder: GroupShot).",
    "samples": [
@@ -18316,6 +18614,7 @@
     "MuhaMadness_BlueDream_45_V1.png"
    ],
    "decision": null,
+   "designTag": "Dialed Pack",
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -18359,6 +18658,7 @@
     "CA_ MuhaMadness_DialedPack_ThreeQuarters.png"
    ],
    "decision": null,
+   "designTag": "Mylar Bag",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -18398,6 +18698,7 @@
     "MuhaMadness_Jealousy_45_V1.png"
    ],
    "decision": null,
+   "designTag": "Exotic Pack",
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -18441,6 +18742,7 @@
     "CA_ MuhaMadness_ExoticPack_Front.png"
    ],
    "decision": null,
+   "designTag": "Mylar Bag",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -18480,6 +18782,7 @@
     "MuhaMadness_Headband_Front_V1.png"
    ],
    "decision": null,
+   "designTag": "Gas Pack",
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -18523,6 +18826,7 @@
     "CA_ MuhaMadness_GasPack_Front.png"
    ],
    "decision": null,
+   "designTag": "Mylar Bag",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -18558,6 +18862,7 @@
     "NJ_MylarBag_Preroll_Front.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -18595,6 +18900,7 @@
     "NJ_Tube_Right_V1.png"
    ],
    "decision": null,
+   "designTag": "Single Tube",
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -18667,6 +18973,7 @@
     "Muharillos_Front_TRAINWRECKFront.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "Feeds CA 1.5g 3 Pack Muharillos (+1 more line: MO 2G Infused Pre Rolls) — 18 of 20 files on rows, 2 on no row. Flavours: Russian cream, Blue Slushie, White grape, Arctic ice, Strawberry swirl, Tropical fusion +3.",
    "meaning": "Yes means: this folder is split between CA 1.5g 3 Pack Muharillos and MO 2G Infused Pre Rolls, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -18714,6 +19021,7 @@
     "CA_Mates_HR_Tip_CherryPunch.png"
    ],
    "decision": null,
+   "designTag": "Joint only",
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -18771,6 +19079,7 @@
     "shot3.png"
    ],
    "decision": null,
+   "designTag": "Redesign Test",
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (16 files).",
    "meaning": "Yes means: this folder stays off every SKU row (generic (badges, group shots, website composites)).",
    "samples": [
@@ -18821,6 +19130,7 @@
     "1g_device_hybrid_front.png"
    ],
    "decision": null,
+   "designTag": "mockups",
    "proposal": "On no SKU row — not a product render folder (8 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -18865,6 +19175,7 @@
     "hybrid_box_front.png"
    ],
    "decision": null,
+   "designTag": "mockups",
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -18913,6 +19224,7 @@
     "Indica_Joint_Front.png"
    ],
    "decision": null,
+   "designTag": "mockups",
    "proposal": "On no SKU row — not a product render folder (9 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -18957,6 +19269,7 @@
     "sativa_bag_front.png"
    ],
    "decision": null,
+   "designTag": "mockups",
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19010,6 +19323,7 @@
     "sativa_jar_closed.png"
    ],
    "decision": null,
+   "designTag": "mockups",
    "proposal": "On no SKU row — not a product render folder (15 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19057,6 +19371,7 @@
     "sativa_bag_front.png"
    ],
    "decision": null,
+   "designTag": "mockups",
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19108,6 +19423,7 @@
     "625794af99944785841d1239_IslandSkunk-Shadow.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19159,6 +19475,7 @@
     "Super Sour Diesel copy.png"
    ],
    "decision": null,
+   "designTag": "V",
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19205,6 +19522,7 @@
     "6404ca59472efb763c058a54_Carts-MD-1080-DiamondPeaches-p-1080.png"
    ],
    "decision": null,
+   "designTag": "Melted Diamonds",
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19252,6 +19570,7 @@
     "Super Silver Haze copy.png"
    ],
    "decision": null,
+   "designTag": "Melted Diamonds V",
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19301,6 +19620,7 @@
     "Green Apple Runts.png"
    ],
    "decision": null,
+   "designTag": "",
    "proposal": "On no SKU row — not a product render folder (8 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19349,6 +19669,7 @@
     "64050654509848a75e75dc07_Disp-LR-1080-DiamondPeaches-p-1080.png"
    ],
    "decision": null,
+   "designTag": "Live Resin",
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19395,6 +19716,7 @@
     "6404e73af5eb589d0a659c61_Disp-MD-1080-MuhaSauced-p-1080.png"
    ],
    "decision": null,
+   "designTag": "Melted Diamonds",
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19446,6 +19768,7 @@
     "632a0634671bc56c79c245cd_Mamba-Lime-1080-p-800.png"
    ],
    "decision": null,
+   "designTag": "Mambas",
    "proposal": "On no SKU row — not a product render folder (7 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19496,6 +19819,7 @@
     "63cac16e50f1f4432033dfde_Blue_Razz_Mates_1_copy_1080x1080-p-800.png"
    ],
    "decision": null,
+   "designTag": "Mates",
    "proposal": "On no SKU row — not a product render folder (8 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19542,6 +19866,7 @@
     "632a28cd8485e9088fc7995d_Mavericks-GMO-1080-p-1080.png"
    ],
    "decision": null,
+   "designTag": "Mavs",
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [

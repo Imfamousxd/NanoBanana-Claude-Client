@@ -315,7 +315,7 @@
    "source": "Official Hemp SKU Book - Active Sku's.csv",
    "section": "CARTRIDGE",
    "line": "2g THCA Carts",
-   "name": "HEMP 2g THCA Carts (2026 design)",
+   "name": "HEMP 2g THCA Carts (2026)",
    "generation": null,
    "skuBlock": "HEMP003",
    "category": "cartridges",
@@ -560,7 +560,7 @@
     }
    ],
    "upcoming": false,
-   "variant": "2026 design"
+   "variant": "2026"
   },
   {
    "id": "muha:HEMP:hemp004",
@@ -3337,7 +3337,7 @@
    "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
    "section": null,
    "line": "2g THCA Carts",
-   "name": "HEMP 2g THCA Carts (2026 design HEMP016)",
+   "name": "HEMP 2g THCA Carts (2026 HEMP016)",
    "generation": null,
    "skuBlock": "HEMP016",
    "category": "cartridges",
@@ -3581,7 +3581,7 @@
     }
    ],
    "upcoming": true,
-   "variant": "2026 design HEMP016"
+   "variant": "2026 HEMP016"
   },
   {
    "id": "muha:HEMP:hhc-carts",
@@ -15061,7 +15061,7 @@
    "source": "Official MM SKU Book - MI THC.csv",
    "section": null,
    "line": "2G Disposable Flavors",
-   "name": "MI 2G Disposable Flavors (older)",
+   "name": "MI 2G Disposable Flavors (Jan 2026)",
    "generation": null,
    "skuBlock": "MI029",
    "category": "disposables",
@@ -15322,7 +15322,7 @@
     }
    ],
    "upcoming": false,
-   "variant": "older"
+   "variant": "Jan 2026"
   },
   {
    "id": "muha:MI:mi030",
@@ -16227,7 +16227,7 @@
    "source": "Official MM SKU Book - MI THC.csv",
    "section": null,
    "line": "2G Disposable Flavors",
-   "name": "MI 2G Disposable Flavors (newer)",
+   "name": "MI 2G Disposable Flavors (older)",
    "generation": null,
    "skuBlock": null,
    "category": "disposables",
@@ -16445,7 +16445,7 @@
     }
    ],
    "upcoming": false,
-   "variant": "newer"
+   "variant": "older"
   },
   {
    "id": "muha:MI:mi009",
@@ -22129,7 +22129,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": "Disposables",
    "line": "2G Distillate Disposables",
-   "name": "NM 2G Distillate Disposables (2026 design)",
+   "name": "NM 2G Distillate Disposables (2026)",
    "generation": null,
    "skuBlock": "NM001",
    "category": "disposables",
@@ -22421,7 +22421,7 @@
     }
    ],
    "upcoming": false,
-   "variant": "2026 design"
+   "variant": "2026"
   },
   {
    "id": "muha:NM:nm002",
@@ -22430,7 +22430,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": null,
    "line": "1G Distillate Disposables",
-   "name": "NM 1G Distillate Disposables (Gen 2)",
+   "name": "NM 1G Distillate Disposables (Gen)",
    "generation": null,
    "skuBlock": "NM002",
    "category": "disposables",
@@ -22722,7 +22722,7 @@
     }
    ],
    "upcoming": false,
-   "variant": "Gen 2"
+   "variant": "Gen"
   },
   {
    "id": "muha:NM:nm003",
@@ -22731,7 +22731,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": "VAPE LINE - Cartridges",
    "line": "1G Distillate Carts",
-   "name": "NM 1G Distillate Carts (old design)",
+   "name": "NM 1G Distillate Carts (OLD)",
    "generation": null,
    "skuBlock": "NM003",
    "category": "cartridges",
@@ -23004,7 +23004,7 @@
     }
    ],
    "upcoming": false,
-   "variant": "old design"
+   "variant": "OLD"
   },
   {
    "id": "muha:NM:nm006",
@@ -23013,7 +23013,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": "FLAVORS",
    "line": "2G Distillate Disposables",
-   "name": "NM 2G Distillate Disposables (Gen 3)",
+   "name": "NM 2G Distillate Disposables (Gen 3 · 2026)",
    "generation": "Gen 3",
    "skuBlock": "NM006",
    "category": "disposables",
@@ -23264,7 +23264,7 @@
     }
    ],
    "upcoming": false,
-   "variant": "Gen 3"
+   "variant": "Gen 3 · 2026"
   },
   {
    "id": "muha:NM:nm007",
@@ -23273,7 +23273,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": null,
    "line": "1G Distillate Disposables",
-   "name": "NM 1G Distillate Disposables (Gen 3)",
+   "name": "NM 1G Distillate Disposables (Gen 3 · 2026)",
    "generation": "Gen 3",
    "skuBlock": "NM007",
    "category": "disposables",
@@ -23524,7 +23524,7 @@
     }
    ],
    "upcoming": false,
-   "variant": "Gen 3"
+   "variant": "Gen 3 · 2026"
   },
   {
    "id": "muha:NM:nm008",
@@ -23811,7 +23811,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": "VAPE LINE - Cartridges",
    "line": "1G Distillate Carts",
-   "name": "NM 1G Distillate Carts (2026 design)",
+   "name": "NM 1G Distillate Carts (2026)",
    "generation": null,
    "skuBlock": "NM010",
    "category": "cartridges",
@@ -24062,7 +24062,7 @@
     }
    ],
    "upcoming": false,
-   "variant": "2026 design"
+   "variant": "2026"
   },
   {
    "id": "muha:NM:nm005",
@@ -24520,7 +24520,7 @@
    "source": "Official MM SKU Book - NY THC.csv",
    "section": "Disposables",
    "line": "2G Distillate Disposables",
-   "name": "NY 2G Distillate Disposables (older)",
+   "name": "NY 2G Distillate Disposables (Gen Device)",
    "generation": null,
    "skuBlock": "NY001",
    "category": "disposables",
@@ -24700,7 +24700,7 @@
     }
    ],
    "upcoming": false,
-   "variant": "older"
+   "variant": "Gen Device"
   },
   {
    "id": "muha:NY:ny002",

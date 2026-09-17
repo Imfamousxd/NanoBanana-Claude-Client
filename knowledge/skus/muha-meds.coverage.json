@@ -338,7 +338,7 @@
   },
   {
    "id": "muha:HEMP:hemp003",
-   "name": "HEMP 2g THCA Carts (2026 design)",
+   "name": "HEMP 2g THCA Carts (2026)",
    "market": "HEMP",
    "category": "cartridges",
    "format": "2g",
@@ -5605,7 +5605,7 @@
   },
   {
    "id": "muha:HEMP:hemp016",
-   "name": "HEMP 2g THCA Carts (2026 design HEMP016)",
+   "name": "HEMP 2g THCA Carts (2026 HEMP016)",
    "market": "HEMP",
    "category": "cartridges",
    "format": "2g",
@@ -21484,7 +21484,7 @@
   },
   {
    "id": "muha:MI:mi029",
-   "name": "MI 2G Disposable Flavors (older)",
+   "name": "MI 2G Disposable Flavors (Jan 2026)",
    "market": "MI",
    "category": "disposables",
    "format": "2g",
@@ -23789,7 +23789,7 @@
   },
   {
    "id": "muha:MI:2g-disposable-flavors",
-   "name": "MI 2G Disposable Flavors (newer)",
+   "name": "MI 2G Disposable Flavors (older)",
    "market": "MI",
    "category": "disposables",
    "format": "2g",
@@ -31861,7 +31861,7 @@
   },
   {
    "id": "muha:NM:nm001",
-   "name": "NM 2G Distillate Disposables (2026 design)",
+   "name": "NM 2G Distillate Disposables (2026)",
    "market": "NM",
    "category": "disposables",
    "format": "2g",
@@ -32125,7 +32125,7 @@
   },
   {
    "id": "muha:NM:nm002",
-   "name": "NM 1G Distillate Disposables (Gen 2)",
+   "name": "NM 1G Distillate Disposables (Gen)",
    "market": "NM",
    "category": "disposables",
    "format": "1g",
@@ -32512,7 +32512,7 @@
   },
   {
    "id": "muha:NM:nm003",
-   "name": "NM 1G Distillate Carts (old design)",
+   "name": "NM 1G Distillate Carts (OLD)",
    "market": "NM",
    "category": "cartridges",
    "format": "1g",
@@ -32899,7 +32899,7 @@
   },
   {
    "id": "muha:NM:nm006",
-   "name": "NM 2G Distillate Disposables (Gen 3)",
+   "name": "NM 2G Distillate Disposables (Gen 3 · 2026)",
    "market": "NM",
    "category": "disposables",
    "format": "2g",
@@ -33386,7 +33386,7 @@
   },
   {
    "id": "muha:NM:nm007",
-   "name": "NM 1G Distillate Disposables (Gen 3)",
+   "name": "NM 1G Distillate Disposables (Gen 3 · 2026)",
    "market": "NM",
    "category": "disposables",
    "format": "1g",
@@ -34347,7 +34347,7 @@
   },
   {
    "id": "muha:NM:nm010",
-   "name": "NM 1G Distillate Carts (2026 design)",
+   "name": "NM 1G Distillate Carts (2026)",
    "market": "NM",
    "category": "cartridges",
    "format": "1g",
@@ -35493,7 +35493,7 @@
   },
   {
    "id": "muha:NY:ny001",
-   "name": "NY 2G Distillate Disposables (older)",
+   "name": "NY 2G Distillate Disposables (Gen Device)",
    "market": "NY",
    "category": "disposables",
    "format": "2g",
