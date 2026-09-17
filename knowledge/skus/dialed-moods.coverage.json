@@ -6,8 +6,8 @@
   "items": 159,
   "covered": 119,
   "assets": 2059,
-  "matchedAssets": 948,
-  "unmatchedAssets": 1111,
+  "matchedAssets": 940,
+  "unmatchedAssets": 1119,
   "unmatchedGroups": 49
  },
  "lines": [
@@ -413,12 +413,12 @@
      "sku": "DM-KES-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 51,
+     "renders": 49,
      "compositions": {
-      "multi-pack": 28,
+      "multi-pack": 27,
       "device-only": 15,
       "device-with-packaging": 1,
-      "in-scene": 6,
+      "in-scene": 5,
       "in-hand": 1
      },
      "hasDeviceOnly": true,
@@ -466,9 +466,9 @@
      "sku": "DM-KES-MP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 35,
+     "renders": 34,
      "compositions": {
-      "multi-pack": 20,
+      "multi-pack": 19,
       "device-only": 10,
       "device-with-packaging": 1,
       "in-scene": 4
@@ -586,11 +586,11 @@
      "sku": "DM-LDE-BGL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 15,
      "compositions": {
       "device-only": 5,
       "multi-pack": 9,
-      "in-scene": 2
+      "in-scene": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -687,12 +687,12 @@
      "sku": "DM-LDE-LEM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 50,
+     "renders": 48,
      "compositions": {
-      "multi-pack": 28,
+      "multi-pack": 27,
       "device-only": 15,
       "device-with-packaging": 1,
-      "in-scene": 6
+      "in-scene": 5
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -3479,10 +3479,10 @@
      "sku": "DM-ESZ-LE",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 46,
+     "renders": 45,
      "compositions": {
       "in-hand": 1,
-      "multi-pack": 28,
+      "multi-pack": 27,
       "device-only": 15,
       "device-with-packaging": 1,
       "in-scene": 1
@@ -3532,10 +3532,10 @@
      "sku": "DM-ESZ-MA",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 35,
+     "renders": 34,
      "compositions": {
       "in-scene": 4,
-      "multi-pack": 20,
+      "multi-pack": 19,
       "device-only": 10,
       "device-with-packaging": 1
      },
@@ -3576,7 +3576,7 @@
       "DAM 1, Dialed Moods  = Full Content/CP1 = Contract Photo and Video/Product Photos/Kava Seltzers",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/DisplayBox",
       "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Display Boxes_June 2025",
-      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2024/InfluencerBox"
+      "Renders/DialedMoods/Dialed Sku's/SeltzerCan/KAVA/Kava Design 2025 June/Kava Design 2025 Main Renders"
      ]
     },
     {
@@ -4037,14 +4037,12 @@
      "sku": "DM-SLJ-GU",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 26,
+     "renders": 20,
      "compositions": {
-      "multi-pack": 3,
+      "multi-pack": 2,
       "device-only": 9,
-      "in-scene": 3,
       "device-with-packaging": 1,
-      "packaging-only": 8,
-      "n/a": 2
+      "packaging-only": 8
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -4070,20 +4068,20 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/abb03aa63113597f.jpg"
       },
       {
-       "id": "d7869205-b30b-41a7-9392-cb585cda83f1",
+       "id": "c08dbaf7-3c58-42bf-9397-2e8dcf21899e",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/Bundle Packs/Biohacking Bundle 3 edited.png",
+       "path": "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Shilajit Gummies/Shilajit_Front.png",
        "previous": null,
-       "composition": "in-scene",
+       "composition": "device-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2633979816cef3b7.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/69954ef06033177e.jpg"
       }
      ],
      "folders": [
       "Promotional Material/BFCM/Renders",
       "Renders/DialedMoods/Dialed Sku's/SeaMoss_Shilajit/New Packaging 3.2026/MISC/Compressed",
-      "Renders/DialedMoods/Dialed Sku's/Bundle Packs",
-      "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Shilajit Gummies"
+      "DAM 2, Dialed Moods  = Asset Receiving/Approved Renders/Shilajit Gummies",
+      "Renders/DialedMoods/Dialed Sku's/SeaMoss_Shilajit/Display"
      ]
     }
    ]
@@ -5525,12 +5523,12 @@
      "sku": "DM-KES-PL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 51,
+     "renders": 49,
      "compositions": {
-      "multi-pack": 28,
+      "multi-pack": 27,
       "device-only": 15,
       "device-with-packaging": 1,
-      "in-scene": 6,
+      "in-scene": 5,
       "in-hand": 1
      },
      "hasDeviceOnly": true,
@@ -5578,9 +5576,9 @@
      "sku": "DM-KES-MP",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 35,
+     "renders": 34,
      "compositions": {
-      "multi-pack": 20,
+      "multi-pack": 19,
       "device-only": 10,
       "device-with-packaging": 1,
       "in-scene": 4
@@ -5760,11 +5758,11 @@
      "sku": "DM-LDE-BGL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 15,
      "compositions": {
       "device-only": 5,
       "multi-pack": 9,
-      "in-scene": 2
+      "in-scene": 1
      },
      "hasDeviceOnly": true,
      "hasPackaging": false,
@@ -5861,12 +5859,12 @@
      "sku": "DM-LDE-LEM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 50,
+     "renders": 48,
      "compositions": {
-      "multi-pack": 28,
+      "multi-pack": 27,
       "device-only": 15,
       "device-with-packaging": 1,
-      "in-scene": 6
+      "in-scene": 5
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
@@ -6959,7 +6957,7 @@
   {
    "folder": "DialedMoods / Dialed Sku's",
    "market": null,
-   "files": 383,
+   "files": 388,
    "products": [
     {
      "product": "DM-social-elixir",
@@ -6988,8 +6986,8 @@
     "lineup": 30,
     "device-with-packaging": 16,
     "packaging-only": 55,
-    "multi-pack": 75,
-    "in-scene": 14,
+    "multi-pack": 77,
+    "in-scene": 17,
     "n/a": 13,
     "label-flat": 4
    }
@@ -7062,7 +7060,7 @@
   {
    "folder": "DialedMoods / Dialed Mood accessories Renders",
    "market": null,
-   "files": 53,
+   "files": 54,
    "products": [
     {
      "product": "Duffle Bag",
@@ -7089,7 +7087,7 @@
    "compositions": {
     "n/a": 19,
     "device-only": 18,
-    "in-scene": 7,
+    "in-scene": 8,
     "multi-pack": 9
    }
   },
@@ -7251,7 +7249,7 @@
   {
    "folder": "DialedMoods / DialedCollage",
    "market": null,
-   "files": 27,
+   "files": 28,
    "products": [
     {
      "product": "DM-social-elixir",
@@ -7276,7 +7274,7 @@
     "DialedCollage_V1.png"
    ],
    "compositions": {
-    "n/a": 9,
+    "n/a": 10,
     "lineup": 2,
     "in-scene": 16
    }
@@ -7373,7 +7371,7 @@
   {
    "folder": "Renders",
    "market": null,
-   "files": 17,
+   "files": 18,
    "products": [
     {
      "product": "Dialed Moods Citrus Circuit Hydration Packs, Dialed Doses Sea Moss Gummies, Dialed Doses Shilajit Gummies",
@@ -7399,7 +7397,8 @@
    ],
    "compositions": {
     "in-scene": 1,
-    "lineup": 16
+    "lineup": 16,
+    "n/a": 1
    }
   },
   {

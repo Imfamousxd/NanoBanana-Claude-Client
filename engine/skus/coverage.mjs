@@ -155,11 +155,12 @@ export function previousDesignOf(asset) {
   return PREVIOUS_DESIGNS.has(`${d.parent}/${d.folder}`) ? `previous design: ${d.folder}` : null;
 }
 // Muha line folders only: "Dialed_Moods" is a brand name, not the Muha Moods line.
-const LINE_FOLDERS = [["moods", /moods/i], ["mavricks", /mavrick/i], ["mmxcookies", /cookies/i], ["(?<!mango )madness", /(?<!mango )madness/i], ["magnetic", /magnetic/i], ["dual", /dual/i]];
+const LINE_FOLDERS = [[/\bmoods\b/i, /moods/i], [/\bmavricks?\b/i, /mavrick/i], [/\bmm ?x ?cookies\b/i, /cookies/i], [/(?<!mango )\bmadness\b/i, /(?<!mango )madness/i], [/\bmagnetic\b/i, /magnetic/i], [/\bdual\b/i, /dual/i]];
+const splitWords = (text) => String(text || "").replace(/_/g, " ").replace(/([a-z])([A-Z])/g, "$1 $2");
 // Packaging style is a wall too: a Metal Cans line never takes glass-jar, mylar or tube renders and vice versa.
 // A bare product render (a single joint, a loose gummy) names no style and passes.
 const PACK_STYLES = [[/metal cans?|\btins?\b/, /metal ?cans?|\btins?\b|mates ?tin/], [/glass jars?|\bjars?\b/, /glass ?jars?|\bjars?\b/], [/mylar|\bbags?\b/, /mylar|\bbags?\b/], [/\btubes?\b/, /\btubes?\b/]];
-const PREROLL_FORMS = [[/\bmates?\b|metal cans?/, /\bmates?\b|\bmetal cans?\b|\bkief ?joints?\b/], [/\bkings?\b|\bqueens?\b/, /\bkings?\b|\bqueens?\b/], [/\bdonuts?\b/, /\bdonuts?\b/], [/\bmadness\b/, /\bmadness\b/], [/\bmuharillos?\b|\bblunts?\b/, /\bmuharillos?\b|\bblunts?\b/]];
+const PREROLL_FORMS = [[/green ?house/, /green ?house/], [/dank ?darts?/, /dank ?darts?/], [/\bmates?\b|metal cans?/, /\bmates?\b|\bmetal cans?\b|\bkief ?joints?\b/], [/\bkings?\b|\bqueens?\b/, /\bkings?\b|\bqueens?\b/], [/\bdonuts?\b/, /\bdonuts?\b/], [/\bmadness\b/, /\bmadness\b/], [/\bmuharillos?\b|\bblunts?\b/, /\bmuharillos?\b|\bblunts?\b/]];
 function formatsIn(compactText) { return FORMATS.filter((fmt) => new RegExp("(^|[^0-9])" + fmt + "(?![0-9])").test(compactText)); }
 function genOf(text) { const m = String(text).toLowerCase().match(/gen\s?(\d)/); return m ? Number(m[1]) : null; }
 
@@ -174,9 +175,9 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   // Line-specific folders (Moods, Mavricks, MM x Cookies, Madness, Magnetic, Dual) only serve their line, and a
   // line that names one of them (the Cookies collab, the Dual disposables…) only takes renders from that folder
   // or renders whose own text names it: a plain 1G Distillate Blue Slushie is not the Cookies-collab Blue Slushie.
-  const segPath = String(asset.path || "").replace(/_/g, " ").replace(/\/[^/]*$/, "/"); // directories only: the file name carries the flavour ("Mango Madness")
+  const dirSegments = String(asset.path || "").split("/").slice(0, -1).map(splitWords); // directories only: the file name carries the flavour ("Mango Madness")
   for (const [seg, re] of (asset.brand && !/muha/.test(asset.brand) ? [] : LINE_FOLDERS)) {
-    const inFolder = new RegExp("(^|/)[^/]*\\b" + seg + "\\b[^/]*(/|$)", "i").test(segPath);
+    const inFolder = dirSegments.some((d) => seg.test(d));
     const lineWants = re.test(`${line.line} ${line.section || ""}`);
     if (inFolder && !lineWants) return why(asset, "line folder, line does not want it");
     if (lineWants && !inFolder && !re.test(prepared.spaced || prepared.full)) return why(asset, "line wants its folder, render is not in it");
@@ -185,6 +186,10 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   if (/,.*,|\band\b.*\band\b/.test(String(asset.product || "")) && !new RegExp(compact(item.name).slice(0, 8)).test(compact(asset.product))) return why(asset, "rule 6");
   const flavour = norm(item.name).replace(/\b(i|s|h|indica|sativa|hybrid|collab)\b/g, "").trim();
   if (flavour.length < 3) return why(asset, "flavour too short");
+  // A pack whose product string or printed text names three or more different flavours is a multi-flavour pack
+  // (a "Dialed Pack" of three strains, a variety box), never one flavour's render.
+  const packOf = multiFlavourPack(asset);
+  if (packOf) return why(asset, "multi-flavour pack: " + packOf);
   const flavourCompact = flavour.replace(/\s/g, "");
   let score = 0;
   const words = prepared.full.split(" ");
@@ -243,10 +248,23 @@ export function selectHits(hits) {
   const current = tagged.filter((hit) => !hit.previous);
   return current.length ? current : tagged;
 }
+// The flavour names of a registry: the "longer flavour wins" and multi-flavour rules need them. Call before scoring.
+const MULTI_CACHE = new Map(); // asset id → the flavours a pack names (string) or "" — computed once per registry
+function multiFlavourPack(asset) {
+  if (!KNOWN_NAMES.length) return "";
+  const key = asset.id || asset.path; if (MULTI_CACHE.has(key)) return MULTI_CACHE.get(key);
+  const printed = " " + norm(`${asset.product || ""} ${asset.title || ""} ${(asset.text || []).join(" ")}`) + " ";
+  const named = LONG_NAMES.filter((name) => printed.includes(name));
+  const distinct = named.filter((name) => !named.some((other) => other !== name && other.includes(name)));
+  const out = distinct.length >= 3 ? distinct.slice(0, 4).map((n) => n.trim()).join(", ") : "";
+  MULTI_CACHE.set(key, out); return out;
+}
+let LONG_NAMES = [];
+export function indexRegistry(registry) { MULTI_CACHE.clear(); LONG_NAMES = []; KNOWN_NAMES = [...new Set(registry.lines.flatMap((line) => line.items.map((item) => norm(item.name).replace(/\b(i|s|h|indica|sativa|hybrid|collab)\b/g, "").trim())).filter((name) => name.length >= 3))]; LONG_NAMES = KNOWN_NAMES.filter((name) => name.length >= 5).map((name) => " " + name + " "); return KNOWN_NAMES; }
 export function computeCoverage(registry, library, { threshold = 3 } = {}) {
   indexDesigns(library);
+  indexRegistry(registry);
   const prepared = library.map((asset) => ({ asset, text: assetText(asset) }));
-  KNOWN_NAMES = [...new Set(registry.lines.flatMap((line) => line.items.map((item) => norm(item.name).replace(/\b(i|s|h|indica|sativa|hybrid|collab)\b/g, "").trim())).filter((name) => name.length >= 3))];
   const matchedAssetIds = new Map(); // assetId → [{ lineId, item }]
   // Generic files: matched to 3+ different flavours without the flavour in the file name → not a flavour render.
   const flavoursPerAsset = new Map();

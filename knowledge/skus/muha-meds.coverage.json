@@ -4,10 +4,10 @@
  "totals": {
   "lines": 148,
   "items": 1165,
-  "covered": 660,
+  "covered": 657,
   "assets": 5362,
-  "matchedAssets": 2742,
-  "unmatchedAssets": 2620,
+  "matchedAssets": 2738,
+  "unmatchedAssets": 2624,
   "unmatchedGroups": 167
  },
  "lines": [
@@ -13030,8 +13030,8 @@
    "skuBlock": null,
    "source": "Official MM SKU Book - CA THC.csv",
    "items": 8,
-   "covered": 1,
-   "coveragePct": 13,
+   "covered": 0,
+   "coveragePct": 0,
    "missing": [
     "LA Gas Cake",
     "Permanent Marker",
@@ -13039,7 +13039,8 @@
     "Lipsmackerz",
     "Cherry Trop Fuel",
     "Bubble Rose Gelato",
-    "Lemon Diesel Tree"
+    "Lemon Diesel Tree",
+    "Blue Dream"
    ],
    "itemsDetail": [
     {
@@ -13145,49 +13146,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "packaging-only": 3,
-      "device-with-packaging": 1
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "6a9f7d02-346f-407b-9002-29b94af7ecf9",
-       "score": 6.5,
-       "path": "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/MuhaMadness_BlueDream_Front_V1.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ccbe003a498ce412.jpg"
-      },
-      {
-       "id": "c256ff2b-efce-45d2-85cf-2efce3f11bf3",
-       "score": 6.5,
-       "path": "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/MuhaMadness_BlueDream_45_V1.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/66e4b28dd43f49e4.jpg"
-      },
-      {
-       "id": "ad5a9d21-b4d6-4427-9e59-53803c2efcec",
-       "score": 6,
-       "path": "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/Mylar Bag/CA_ MuhaMadness_DialedPack_Front.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bf228bfdd8ff1495.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack",
-      "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/Mylar Bag",
-      "Renders/Pre-Rolls/King & Queen Joints/MeltedDiamonds/Kings"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     }
    ]
   },
@@ -13201,12 +13167,14 @@
    "skuBlock": null,
    "source": "Official MM SKU Book - CA THC.csv",
    "items": 7,
-   "covered": 2,
-   "coveragePct": 29,
+   "covered": 0,
+   "coveragePct": 0,
    "missing": [
+    "Blue Dream",
     "Frosted Blueberries",
     "Mango Mimosa",
     "Peach Power",
+    "Skywalker OG",
     "Tropicana Strawberries",
     "NEW 1.5g 3 Pack Muharillos"
    ],
@@ -13216,39 +13184,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "packaging-only": 1,
-      "device-with-packaging": 1
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "ad5a9d21-b4d6-4427-9e59-53803c2efcec",
-       "score": 6,
-       "path": "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/Mylar Bag/CA_ MuhaMadness_DialedPack_Front.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bf228bfdd8ff1495.jpg"
-      },
-      {
-       "id": "7750d7ed-484c-4a90-8e7a-e1ae0a14fa9b",
-       "score": 5,
-       "path": "Renders/Pre-Rolls/King & Queen Joints/MeltedDiamonds/Kings/MeltedDiamonds_BlueDream_ThreeQuarters_i1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/65224388ccc0657e.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/Mylar Bag",
-      "Renders/Pre-Rolls/King & Queen Joints/MeltedDiamonds/Kings"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Frosted Blueberries",
@@ -13297,37 +13240,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "packaging-only": 2
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "865eec4d-3b95-4cb6-a868-414e75b60e83",
-       "score": 5,
-       "path": "Renders/Pre-Rolls/Muharillos/Muharillos_Front_SKYWALKER_OGFront.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c70e9c93bd8e6c02.jpg"
-      },
-      {
-       "id": "2e457c1d-2143-4a32-92c6-ce437a75990a",
-       "score": 5,
-       "path": "Renders/Pre-Rolls/Muharillos/Muharillos_45_SKYWALKER_OG45.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d41f76bf22d51255.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/Muharillos"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Tropicana Strawberries",
@@ -40201,6 +40121,40 @@
    }
   },
   {
+   "folder": "Pre-Rolls / King & Queen Joints",
+   "market": null,
+   "files": 36,
+   "products": [
+    {
+     "product": "Sandpaper Magnum",
+     "n": 2
+    },
+    {
+     "product": "King Infused Pre-Roll, Honey Banana Hybrid",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Queen Infused Pre-Roll and Mate's Super Boof Sativa Pre-Roll",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Queen Pre-Rolls (Bubble Cherries, Banana Punches, Super Boof)",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "SandpaperMagnumKing_ThreeQuarters.png",
+    "BubbleHash_HoneyBanana_ThreeQuarters_i1.png",
+    "BubbleHashQueen_SuperBoof_ThreeQuarters_i1.png"
+   ],
+   "compositions": {
+    "device-only": 1,
+    "device-with-packaging": 16,
+    "lineup": 11,
+    "packaging-only": 8
+   }
+  },
+  {
    "folder": "Edibles / Metal Cans",
    "market": "CA",
    "files": 36,
@@ -40266,40 +40220,6 @@
    ],
    "compositions": {
     "device-only": 36
-   }
-  },
-  {
-   "folder": "Pre-Rolls / King & Queen Joints",
-   "market": null,
-   "files": 35,
-   "products": [
-    {
-     "product": "Sandpaper Magnum",
-     "n": 2
-    },
-    {
-     "product": "King Infused Pre-Roll, Honey Banana Hybrid",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds Queen Infused Pre-Roll and Mate's Super Boof Sativa Pre-Roll",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds Queen Pre-Rolls (Bubble Cherries, Banana Punches, Super Boof)",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "SandpaperMagnumKing_ThreeQuarters.png",
-    "BubbleHash_HoneyBanana_ThreeQuarters_i1.png",
-    "BubbleHashQueen_SuperBoof_ThreeQuarters_i1.png"
-   ],
-   "compositions": {
-    "device-only": 1,
-    "device-with-packaging": 15,
-    "lineup": 11,
-    "packaging-only": 8
    }
   },
   {
@@ -40498,6 +40418,38 @@
    }
   },
   {
+   "folder": "Pre-Rolls / MuhaMadness",
+   "market": "CA",
+   "files": 29,
+   "products": [
+    {
+     "product": "Jet Fuel OG 1 Gram Pre-Roll",
+     "n": 2
+    },
+    {
+     "product": "Blue Dream 1 gram pre-roll",
+     "n": 2
+    },
+    {
+     "product": "Strawberry Cough 1 Gram Pre-Roll",
+     "n": 1
+    },
+    {
+     "product": "Snowman Runts Hybrid 1 Gram Pre-Roll",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "MuhaMadness_Strawberry_Front_V1.png",
+    "NJ_Tube_Front_V1.png",
+    "NJ_MylarBag_Preroll_ThreeQuarters.png"
+   ],
+   "compositions": {
+    "packaging-only": 27,
+    "device-only": 2
+   }
+  },
+  {
    "folder": "Motion / MI Mambas Flying Gummies Stills",
    "market": null,
    "files": 27,
@@ -40531,38 +40483,6 @@
     "device-only": 3,
     "lineup": 1,
     "device-with-packaging": 5
-   }
-  },
-  {
-   "folder": "Pre-Rolls / MuhaMadness",
-   "market": "CA",
-   "files": 26,
-   "products": [
-    {
-     "product": "Jet Fuel OG 1 Gram Pre-Roll",
-     "n": 2
-    },
-    {
-     "product": "Strawberry Cough 1 Gram Pre-Roll",
-     "n": 1
-    },
-    {
-     "product": "Snowman Runts Hybrid 1 Gram Pre-Roll",
-     "n": 1
-    },
-    {
-     "product": "Muha Madness Exotic Pack 3-cone pre-rolls",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MuhaMadness_Strawberry_Front_V1.png",
-    "NJ_Tube_Front_V1.png",
-    "NJ_MylarBag_Preroll_ThreeQuarters.png"
-   ],
-   "compositions": {
-    "packaging-only": 24,
-    "device-only": 2
    }
   },
   {
