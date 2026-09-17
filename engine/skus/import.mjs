@@ -16,6 +16,8 @@ export function importSkuSheets(root, { brand, files }) {
     lines.push(...normaliseBlocks(blocks, { brand, market, source: path.basename(file) }).map((line) => ({ ...line, name: [line.market, line.line].filter(Boolean).join(" "), upcoming, items: line.items.map((item) => ({ ...item, inDevelopment: item.inDevelopment || upcoming })) })));
   }
   // Dedupe items by sku code across sheets (the Dialed 2026 sheet restates current products with customer-facing line names).
+  // Line ids must be unique: a block code that the sheet uses twice gets a numbered suffix the second time.
+  const seenIds = new Map(); for (const line of lines) { const n = (seenIds.get(line.id) || 0) + 1; seenIds.set(line.id, n); if (n > 1) line.id = `${line.id}-${n}`; }
   const bySku = new Map();
   for (const line of lines) for (const item of line.items) if (item.sku) { const seen = bySku.get(item.sku); if (!seen || /2026/.test(line.source)) bySku.set(item.sku, { line: line.line, source: line.source }); }
   const registry = {

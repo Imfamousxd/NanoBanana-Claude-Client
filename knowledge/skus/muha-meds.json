@@ -315,7 +315,7 @@
    "source": "Official Hemp SKU Book - Active Sku's.csv",
    "section": "CARTRIDGE",
    "line": "2g THCA Carts",
-   "name": "HEMP 2g THCA Carts (2026)",
+   "name": "HEMP 2g THCA Carts",
    "generation": null,
    "skuBlock": "HEMP003",
    "category": "cartridges",
@@ -347,7 +347,10 @@
       "DISPLAY SKU": "741654779514",
       "WHOLESALE SKU / #": "648564767160"
      },
-     "canonicalLine": "2g THCA Carts"
+     "canonicalLine": "2g THCA Carts",
+     "altSkus": [
+      "V2-MMC2-THCA-SS"
+     ]
     },
     {
      "name": "Mango Madness",
@@ -370,7 +373,10 @@
       "INDIVIDUAL #": "SUP-MMC2-THCA-MM",
       "DISPLAY SKU": "741654779507"
      },
-     "canonicalLine": "2g THCA Carts"
+     "canonicalLine": "2g THCA Carts",
+     "altSkus": [
+      "V2-MMC2-THCA-MM"
+     ]
     },
     {
      "name": "Pineapple Runtz",
@@ -393,7 +399,10 @@
       "INDIVIDUAL #": "SUP-MMC2-THCA-PR",
       "DISPLAY SKU": "741654779521"
      },
-     "canonicalLine": "2g THCA Carts"
+     "canonicalLine": "2g THCA Carts",
+     "altSkus": [
+      "V2-MMC2-THCA-PR"
+     ]
     },
     {
      "name": "Lemon Cherry Gelato",
@@ -416,7 +425,10 @@
       "INDIVIDUAL #": "SUP-MMC2-THCA-LC",
       "DISPLAY SKU": "741654779538"
      },
-     "canonicalLine": "2g THCA Carts"
+     "canonicalLine": "2g THCA Carts",
+     "altSkus": [
+      "V2-MMC2-THCA-LC"
+     ]
     },
     {
      "name": "Watermelon Gelato",
@@ -439,7 +451,10 @@
       "INDIVIDUAL #": "SUP-MMC2-THCA-WG",
       "DISPLAY SKU": "741654779545"
      },
-     "canonicalLine": "2g THCA Carts"
+     "canonicalLine": "2g THCA Carts",
+     "altSkus": [
+      "V2-MMC2-THCA-WG"
+     ]
     },
     {
      "name": "Candy Apple",
@@ -464,7 +479,10 @@
       "DISPLAY SKU": "741654779569",
       "WHOLESALE SKU / #": "100WBP-MMC2-UNIVERSAL"
      },
-     "canonicalLine": "2g THCA Carts"
+     "canonicalLine": "2g THCA Carts",
+     "altSkus": [
+      "V2-MMC2-THCA-CA"
+     ]
     },
     {
      "name": "Blue Slushie",
@@ -487,7 +505,10 @@
       "INDIVIDUAL #": "SUP-MMC2-THCA-BS",
       "DISPLAY SKU": "741654779552"
      },
-     "canonicalLine": "2g THCA Carts"
+     "canonicalLine": "2g THCA Carts",
+     "altSkus": [
+      "V2-MMC2-THCA-BS"
+     ]
     },
     {
      "name": "Paradise Punch OG",
@@ -510,7 +531,10 @@
       "INDIVIDUAL #": "SUP-MMC2-THCA-PO",
       "DISPLAY SKU": "741654779576"
      },
-     "canonicalLine": "2g THCA Carts"
+     "canonicalLine": "2g THCA Carts",
+     "altSkus": [
+      "V2-MMC2-THCA-PO"
+     ]
     },
     {
      "name": "Purple Punch",
@@ -533,7 +557,10 @@
       "INDIVIDUAL #": "SUP-MMC2-THCA-PP",
       "DISPLAY SKU": "741654779583"
      },
-     "canonicalLine": "2g THCA Carts"
+     "canonicalLine": "2g THCA Carts",
+     "altSkus": [
+      "V2-MMC2-THCA-PP"
+     ]
     },
     {
      "name": "Bubble Gum",
@@ -556,11 +583,17 @@
       "INDIVIDUAL #": "SUP-MMC2-THCA-BG",
       "DISPLAY SKU": "741654779590"
      },
-     "canonicalLine": "2g THCA Carts"
+     "canonicalLine": "2g THCA Carts",
+     "altSkus": [
+      "V2-MMC2-THCA-BG"
+     ]
     }
    ],
    "upcoming": false,
-   "variant": "2026"
+   "variant": "2026",
+   "mergedFrom": [
+    "muha:HEMP:hemp016"
+   ]
   },
   {
    "id": "muha:HEMP:hemp004",
@@ -3329,259 +3362,6 @@
     }
    ],
    "upcoming": true
-  },
-  {
-   "id": "muha:HEMP:hemp016",
-   "brand": "muha",
-   "market": "HEMP",
-   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
-   "section": null,
-   "line": "2g THCA Carts",
-   "name": "HEMP 2g THCA Carts (2026 · V2)",
-   "generation": null,
-   "skuBlock": "HEMP016",
-   "category": "cartridges",
-   "format": "2g",
-   "items": [
-    {
-     "name": "Strawberry Shortcake",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": "V2-MMC2-THCA-SS",
-     "discontinued": false,
-     "inDevelopment": true,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "H-MMC2-2LOGO",
-      "displayBox": "5DBP-V2-MMC2-THCA-SS"
-     },
-     "links": {
-      "packaging": "https://www.dropbox.com/scl/fo/yeu6u2tedtuxmmc1nrxcd/AO0z-q_vsanUkAhkkwA0sgg?rlkey=xcbkhmaqkzb0l0monckg18rqk&st=n02hfsei&dl=0",
-      "renders": "https://www.dropbox.com/scl/fo/1cl6l7lxrusuigb0yt0h1/ACiyLH1YUnDh6r3lCl-r8RY?rlkey=f5979ua6fti0fpsrq0v1ijb10&st=7qw37s1a&dl=0"
-     },
-     "quote": "If you ever miss 4:20, just wait until 4:22. Because 4:22 is 4:20, too",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL SKU": "741654779415",
-      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-SS",
-      "DISPLAY SKU": "741654779514",
-      "WHOLESALE SKU": "648564767160",
-      "WHOLESALE #": "50WDP-V2-MMC2-THCA-UNIVERSAL"
-     },
-     "canonicalLine": "2g THCA Carts"
-    },
-    {
-     "name": "Mango Madness",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": "V2-MMC2-THCA-MM",
-     "discontinued": false,
-     "inDevelopment": true,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "displayBox": "5DBP-V2-MMC2-THCA-MM"
-     },
-     "links": {},
-     "quote": "Inhale the good shit exhale the bullshit",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL SKU": "741654779408",
-      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-MM",
-      "DISPLAY SKU": "741654779507"
-     },
-     "canonicalLine": "2g THCA Carts"
-    },
-    {
-     "name": "Pineapple Runtz",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": "V2-MMC2-THCA-PR",
-     "discontinued": false,
-     "inDevelopment": true,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "displayBox": "5DBP-V2-MMC2-THCA-PR"
-     },
-     "links": {},
-     "quote": "Why do they call it rush hour when nothing moves?",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL SKU": "741654779422",
-      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-PR",
-      "DISPLAY SKU": "741654779521"
-     },
-     "canonicalLine": "2g THCA Carts"
-    },
-    {
-     "name": "Lemon Cherry Gelato",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": "V2-MMC2-THCA-LC",
-     "discontinued": false,
-     "inDevelopment": true,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "displayBox": "5DBP-V2-MMC2-THCA-LC"
-     },
-     "links": {},
-     "quote": "You cant buy happiness, but you can buy weed and that's pretty fucking close",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL SKU": "741654779439",
-      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-LC",
-      "DISPLAY SKU": "741654779538"
-     },
-     "canonicalLine": "2g THCA Carts"
-    },
-    {
-     "name": "Watermelon Gelato",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": "V2-MMC2-THCA-WG",
-     "discontinued": false,
-     "inDevelopment": true,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "displayBox": "5DBP-V2-MMC2-THCA-WG"
-     },
-     "links": {},
-     "quote": "Don't count the days, make the days count",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL SKU": "741654779446",
-      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-WG",
-      "DISPLAY SKU": "741654779545"
-     },
-     "canonicalLine": "2g THCA Carts"
-    },
-    {
-     "name": "Candy Apple",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": "V2-MMC2-THCA-CA",
-     "discontinued": false,
-     "inDevelopment": true,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "displayBox": "5DBP-V2-MMC2-THCA-CA"
-     },
-     "links": {},
-     "quote": "Weed makes everything funnier... except math",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL SKU": "741654779460",
-      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-CA",
-      "DISPLAY SKU": "741654779569"
-     },
-     "canonicalLine": "2g THCA Carts"
-    },
-    {
-     "name": "Blue Slushie",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": "V2-MMC2-THCA-BS",
-     "discontinued": false,
-     "inDevelopment": true,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "displayBox": "5DBP-V2-MMC2-THCA-BS"
-     },
-     "links": {},
-     "quote": "You get what you fight for, not what you wish for",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL SKU": "741654779453",
-      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-BS",
-      "DISPLAY SKU": "741654779552"
-     },
-     "canonicalLine": "2g THCA Carts"
-    },
-    {
-     "name": "Paradise Punch OG",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": "V2-MMC2-THCA-PO",
-     "discontinued": false,
-     "inDevelopment": true,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "displayBox": "5DBP-V2-MMC2-THCA-PO"
-     },
-     "links": {},
-     "quote": "Whoever said 'out of sight out of mind' never had a spider disappear in their bedroom",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL SKU": "741654779477",
-      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-PO",
-      "DISPLAY SKU": "741654779576"
-     },
-     "canonicalLine": "2g THCA Carts"
-    },
-    {
-     "name": "Purple Punch",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": "V2-MMC2-THCA-PP",
-     "discontinued": false,
-     "inDevelopment": true,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "displayBox": "5DBP-V2-MMC2-THCA-PP"
-     },
-     "links": {},
-     "quote": "May the flowers remind us why the rain was so necessary",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL SKU": "741654779484",
-      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-PP",
-      "DISPLAY SKU": "741654779583"
-     },
-     "canonicalLine": "2g THCA Carts"
-    },
-    {
-     "name": "Bubble Gum",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": "V2-MMC2-THCA-BG",
-     "discontinued": false,
-     "inDevelopment": true,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "displayBox": "5DBP-V2-MMC2-THCA-BG"
-     },
-     "links": {},
-     "quote": "Struggle is the enemy, but weed is the remedy.",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL SKU": "741654779491",
-      "INDIVIDUAL #": "SUP-V2-MMC2-THCA-BG",
-      "DISPLAY SKU": "741654779590"
-     },
-     "canonicalLine": "2g THCA Carts"
-    }
-   ],
-   "upcoming": true,
-   "variant": "2026 · V2"
   },
   {
    "id": "muha:HEMP:hhc-carts",
@@ -12281,7 +12061,7 @@
    "upcoming": false
   },
   {
-   "id": "muha:CA:ca024",
+   "id": "muha:CA:ca024-2",
    "brand": "muha",
    "market": "CA",
    "source": "Official MM SKU Book - CA THC.csv",
@@ -13212,9 +12992,373 @@
      "quote": "If the light shines at the end of the tunnel, we'll have to pray to god that its not a train.",
      "notes": null,
      "canonicalLine": "2G Distillate Disposables"
+    },
+    {
+     "name": "Aloha Passion Rush",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "MI-2G-DAIO-HW-3.1-APR",
+      "displayBox": "MI-2G-DAIO-DISP-3.1-APR"
+     },
+     "links": {},
+     "quote": "Breathe in, hold it, puff out, and grin.",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564771280",
+      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-APR",
+      "DISPLAY BOX SKU": "648564771396",
+      "Flavor Descriptors": "Tropical, Juicy"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Lemon Cherry Fizz",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "MI-2G-DAIO-HW-3.1-LCF",
+      "displayBox": "MI-2G-DAIO-DISP-3.1-LCF"
+     },
+     "links": {},
+     "quote": "When in doubt, smoke it out",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564771273",
+      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-LCF",
+      "DISPLAY BOX SKU": "648564771389",
+      "Flavor Descriptors": "Citrusy, Tart"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Watermelon Bubblegum",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "MI-2G-DAIO-HW-3.1-WB",
+      "displayBox": "MI-2G-DAIO-DISP-3.1-WB"
+     },
+     "links": {},
+     "quote": "Life is what happens when you're busy making other plans.",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564771303",
+      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-WB",
+      "DISPLAY BOX SKU": "648564771419",
+      "Flavor Descriptors": "Sweet, Juicy"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Frosted Mint Cookies",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "MI-2G-DAIO-HW-3.1-FMC",
+      "displayBox": "MI-2G-DAIO-DISP-3.1-FMC"
+     },
+     "links": {},
+     "quote": "Never let the fear of striking out keep you from playing the game.",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564771327",
+      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-FMC",
+      "DISPLAY BOX SKU": "648564771433",
+      "Flavor Descriptors": "Toasty, Icy"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Arctic Blueberry",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "MI-2G-DAIO-HW-3.1-AB",
+      "displayBox": "MI-2G-DAIO-DISP-3.1-AB"
+     },
+     "links": {},
+     "quote": "The question isn't who is going to let me; it's who is going to stop me.",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564771334",
+      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-AB",
+      "DISPLAY BOX SKU": "648564771440",
+      "Flavor Descriptors": "Icy, Fruity"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Guava Mango Z",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "MI-2G-DAIO-HW-3.1-GMZ",
+      "displayBox": "MI-2G-DAIO-DISP-3.1-GMZ"
+     },
+     "links": {},
+     "quote": "Sometimes I wonder if all this is happening because I didn’t forward that email to 10 people.",
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564771297",
+      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-GMZ",
+      "DISPLAY BOX SKU": "648564771402",
+      "Flavor Descriptors": "Tropical, Fruity"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Diablo Lime",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Descriptors": "Citrusy, Spicy",
+      "INDIVIDUAL PACKAGING SKU": "645567187384",
+      "DISPLAY BOX SKU": "645567187483"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Midnight Mandarine",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Descriptors": "Citrusy, Juicy",
+      "INDIVIDUAL PACKAGING SKU": "645567187391",
+      "DISPLAY BOX SKU": "645567187490"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Phantom Pineapple",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Descriptors": "Tropical, Ripe",
+      "INDIVIDUAL PACKAGING SKU": "645567187407",
+      "DISPLAY BOX SKU": "645567187506"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Graveyard Grapefruit",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Descriptors": "Tart, Refreshing",
+      "INDIVIDUAL PACKAGING SKU": "645567187414",
+      "DISPLAY BOX SKU": "645567187513"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Cemetary Spritz",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Descriptors": "Refreshing, Floral",
+      "INDIVIDUAL PACKAGING SKU": "645567187421",
+      "DISPLAY BOX SKU": "645567187520"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Tropical Terror",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Descriptors": "Tropical, Fruity",
+      "INDIVIDUAL PACKAGING SKU": "645567187438",
+      "DISPLAY BOX SKU": "645567187537"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Baha Blackout",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Descriptors": "Floral, Sweet",
+      "INDIVIDUAL PACKAGING SKU": "645567187445",
+      "DISPLAY BOX SKU": "645567187544"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Ghost Guava",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Descriptors": "Fruity, Juicy",
+      "INDIVIDUAL PACKAGING SKU": "645567187452",
+      "DISPLAY BOX SKU": "645567187551"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Haunted Blue Dreams",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Descriptors": "Floral, Smooth",
+      "INDIVIDUAL PACKAGING SKU": "645567187469",
+      "DISPLAY BOX SKU": "645567187568"
+     },
+     "canonicalLine": "2G Disposable Flavors"
+    },
+    {
+     "name": "Nightmare OG",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "Descriptors": "Earthy, Piney",
+      "INDIVIDUAL PACKAGING SKU": "645567187476",
+      "DISPLAY BOX SKU": "645567187575"
+     },
+     "canonicalLine": "2G Disposable Flavors"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "mergedFrom": [
+    "muha:MI:mi029",
+    "muha:MI:2g-disposable-flavors"
+   ]
   },
   {
    "id": "muha:MI:mi020",
@@ -15055,276 +15199,6 @@
    "upcoming": false
   },
   {
-   "id": "muha:MI:mi029",
-   "brand": "muha",
-   "market": "MI",
-   "source": "Official MM SKU Book - MI THC.csv",
-   "section": null,
-   "line": "2G Disposable Flavors",
-   "name": "MI 2G Disposable Flavors (Jan 2026)",
-   "generation": null,
-   "skuBlock": "MI029",
-   "category": "disposables",
-   "format": "2g",
-   "items": [
-    {
-     "name": "Frozen Pomegranate",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "MI-2G-DAIO-HW-3.1-FP",
-      "displayBox": "MI-2G-DAIO-DISP-3.1-FP",
-      "wholesaleCase": "MI-2G-DAIO-WC-3.1-STD"
-     },
-     "links": {
-      "packaging": "https://www.dropbox.com/scl/fo/mbkqkeuxpgpaiz07dxv4e/ADoNhr_fBLXeZp6U3uttOHw?rlkey=0kju2kxwym2sbhxo83d3f84lm&st=h6l8fk8h&dl=0"
-     },
-     "quote": "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564771310",
-      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-FP",
-      "DISPLAY BOX SKU": "648564771426",
-      "Flavor Descriptors": "Fruity, Icy"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Aloha Passion Rush",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "MI-2G-DAIO-HW-3.1-APR",
-      "displayBox": "MI-2G-DAIO-DISP-3.1-APR"
-     },
-     "links": {},
-     "quote": "Breathe in, hold it, puff out, and grin.",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564771280",
-      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-APR",
-      "DISPLAY BOX SKU": "648564771396",
-      "Flavor Descriptors": "Tropical, Juicy"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Lemon Cherry Fizz",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "MI-2G-DAIO-HW-3.1-LCF",
-      "displayBox": "MI-2G-DAIO-DISP-3.1-LCF"
-     },
-     "links": {},
-     "quote": "When in doubt, smoke it out",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564771273",
-      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-LCF",
-      "DISPLAY BOX SKU": "648564771389",
-      "Flavor Descriptors": "Citrusy, Tart"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Watermelon Bubblegum",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "MI-2G-DAIO-HW-3.1-WB",
-      "displayBox": "MI-2G-DAIO-DISP-3.1-WB"
-     },
-     "links": {},
-     "quote": "Life is what happens when you're busy making other plans.",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564771303",
-      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-WB",
-      "DISPLAY BOX SKU": "648564771419",
-      "Flavor Descriptors": "Sweet, Juicy"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Frosted Mint Cookies",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "MI-2G-DAIO-HW-3.1-FMC",
-      "displayBox": "MI-2G-DAIO-DISP-3.1-FMC"
-     },
-     "links": {},
-     "quote": "Never let the fear of striking out keep you from playing the game.",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564771327",
-      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-FMC",
-      "DISPLAY BOX SKU": "648564771433",
-      "Flavor Descriptors": "Toasty, Icy"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Blue Slushie",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "MI-2G-DAIO-HW-3.1-BS",
-      "displayBox": "MI-2G-DAIO-DISP-3.1-BS"
-     },
-     "links": {},
-     "quote": "Don’t panic it’s organic",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564771341",
-      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-BS",
-      "DISPLAY BOX SKU": "648564771457",
-      "Flavor Descriptors": "Tangy, Icy"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Arctic Blueberry",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "MI-2G-DAIO-HW-3.1-AB",
-      "displayBox": "MI-2G-DAIO-DISP-3.1-AB"
-     },
-     "links": {},
-     "quote": "The question isn't who is going to let me; it's who is going to stop me.",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564771334",
-      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-AB",
-      "DISPLAY BOX SKU": "648564771440",
-      "Flavor Descriptors": "Icy, Fruity"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Galactic Diesel",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "MI-2G-DAIO-HW-3.1-GD",
-      "displayBox": "MI-2G-DAIO-DISP-3.1-GD"
-     },
-     "links": {},
-     "quote": "The only person you are destined to become is the person you decide to be",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564771358",
-      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-GD",
-      "DISPLAY BOX SKU": "648564771464",
-      "Flavor Descriptors": "Pungent, Dank"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Guava Mango Z",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "MI-2G-DAIO-HW-3.1-GMZ",
-      "displayBox": "MI-2G-DAIO-DISP-3.1-GMZ"
-     },
-     "links": {},
-     "quote": "Sometimes I wonder if all this is happening because I didn’t forward that email to 10 people.",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564771297",
-      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-GMZ",
-      "DISPLAY BOX SKU": "648564771402",
-      "Flavor Descriptors": "Tropical, Fruity"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Horchata",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "MI-2G-DAIO-HW-3.1-HCT",
-      "displayBox": "MI-2G-DAIO-DISP-3.1-HCT"
-     },
-     "links": {},
-     "quote": "Whoever said 'out of sight out of mind' never had a spider disappear in their bedroom",
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564771365",
-      "INDIVIDUAL PACKAGING #": "MI-2G-DAIO-PKG-3.1-HCT",
-      "DISPLAY BOX SKU": "648564771471",
-      "Flavor Descriptors": "Smooth, Creamy"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    }
-   ],
-   "upcoming": false,
-   "variant": "Jan 2026"
-  },
-  {
    "id": "muha:MI:mi030",
    "brand": "muha",
    "market": "MI",
@@ -16221,233 +16095,6 @@
    "upcoming": false
   },
   {
-   "id": "muha:MI:2g-disposable-flavors",
-   "brand": "muha",
-   "market": "MI",
-   "source": "Official MM SKU Book - MI THC.csv",
-   "section": null,
-   "line": "2G Disposable Flavors",
-   "name": "MI 2G Disposable Flavors (older)",
-   "generation": null,
-   "skuBlock": null,
-   "category": "disposables",
-   "format": "2g",
-   "items": [
-    {
-     "name": "Diablo Lime",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "Descriptors": "Citrusy, Spicy",
-      "INDIVIDUAL PACKAGING SKU": "645567187384",
-      "DISPLAY BOX SKU": "645567187483"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Midnight Mandarine",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "Descriptors": "Citrusy, Juicy",
-      "INDIVIDUAL PACKAGING SKU": "645567187391",
-      "DISPLAY BOX SKU": "645567187490"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Phantom Pineapple",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "Descriptors": "Tropical, Ripe",
-      "INDIVIDUAL PACKAGING SKU": "645567187407",
-      "DISPLAY BOX SKU": "645567187506"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Graveyard Grapefruit",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "Descriptors": "Tart, Refreshing",
-      "INDIVIDUAL PACKAGING SKU": "645567187414",
-      "DISPLAY BOX SKU": "645567187513"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Cemetary Spritz",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "Descriptors": "Refreshing, Floral",
-      "INDIVIDUAL PACKAGING SKU": "645567187421",
-      "DISPLAY BOX SKU": "645567187520"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Tropical Terror",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "Descriptors": "Tropical, Fruity",
-      "INDIVIDUAL PACKAGING SKU": "645567187438",
-      "DISPLAY BOX SKU": "645567187537"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Baha Blackout",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "Descriptors": "Floral, Sweet",
-      "INDIVIDUAL PACKAGING SKU": "645567187445",
-      "DISPLAY BOX SKU": "645567187544"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Ghost Guava",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "Descriptors": "Fruity, Juicy",
-      "INDIVIDUAL PACKAGING SKU": "645567187452",
-      "DISPLAY BOX SKU": "645567187551"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Haunted Blue Dreams",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "Descriptors": "Floral, Smooth",
-      "INDIVIDUAL PACKAGING SKU": "645567187469",
-      "DISPLAY BOX SKU": "645567187568"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    },
-    {
-     "name": "Nightmare OG",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "Descriptors": "Earthy, Piney",
-      "INDIVIDUAL PACKAGING SKU": "645567187476",
-      "DISPLAY BOX SKU": "645567187575"
-     },
-     "canonicalLine": "2G Disposable Flavors"
-    }
-   ],
-   "upcoming": false,
-   "variant": "older"
-  },
-  {
    "id": "muha:MI:mi009",
    "brand": "muha",
    "market": "MI",
@@ -17159,7 +16806,7 @@
    "source": "Official MM SKU Book - MI THC.csv",
    "section": null,
    "line": "Hash Rosin Mates Metal Cans",
-   "name": "MI Hash Rosin Mates Metal Cans (older)",
+   "name": "MI Hash Rosin Mates Metal Cans",
    "generation": null,
    "skuBlock": "MI017",
    "category": "pre-rolls",
@@ -17346,10 +16993,169 @@
      "quote": null,
      "notes": null,
      "canonicalLine": "Hash Rosin Mates Metal Cans"
+    },
+    {
+     "name": "Vanilla Kush",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "645567185922",
+       "header": "Display Box SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONTAINER SKU": "645567185861"
+     },
+     "canonicalLine": "Hash Rosin Mates Metal Cans"
+    },
+    {
+     "name": "Banana Jealousy",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "645567185939",
+       "header": "Display Box SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONTAINER SKU": "645567185878"
+     },
+     "canonicalLine": "Hash Rosin Mates Metal Cans"
+    },
+    {
+     "name": "Garlic Budder",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "645567185946",
+       "header": "Display Box SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONTAINER SKU": "645567185885"
+     },
+     "canonicalLine": "Hash Rosin Mates Metal Cans"
+    },
+    {
+     "name": "Pink Truffle",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "645567185953",
+       "header": "Display Box SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONTAINER SKU": "645567185892"
+     },
+     "canonicalLine": "Hash Rosin Mates Metal Cans"
+    },
+    {
+     "name": "Strawberry Melted Beltz",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "645567185960",
+       "header": "Display Box SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONTAINER SKU": "645567185908"
+     },
+     "canonicalLine": "Hash Rosin Mates Metal Cans"
+    },
+    {
+     "name": "Cherry Punch",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "645567185977",
+       "header": "Display Box SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "CONTAINER SKU": "645567185915"
+     },
+     "canonicalLine": "Hash Rosin Mates Metal Cans"
     }
    ],
    "upcoming": false,
-   "variant": "older"
+   "variant": "older",
+   "mergedFrom": [
+    "muha:MI:hash-rosin-mates-metal-cans"
+   ]
   },
   {
    "id": "muha:MI:muha-donut-holes-0-6g-5-pack-blue-",
@@ -17510,179 +17316,6 @@
     }
    ],
    "upcoming": false
-  },
-  {
-   "id": "muha:MI:hash-rosin-mates-metal-cans",
-   "brand": "muha",
-   "market": "MI",
-   "source": "Official MM SKU Book - MI THC.csv",
-   "section": null,
-   "line": "Hash Rosin Mates Metal Cans",
-   "name": "MI Hash Rosin Mates Metal Cans (newer)",
-   "generation": null,
-   "skuBlock": null,
-   "category": "pre-rolls",
-   "format": null,
-   "items": [
-    {
-     "name": "Vanilla Kush",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "645567185922",
-       "header": "Display Box SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "CONTAINER SKU": "645567185861"
-     },
-     "canonicalLine": "Hash Rosin Mates Metal Cans"
-    },
-    {
-     "name": "Banana Jealousy",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "645567185939",
-       "header": "Display Box SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "CONTAINER SKU": "645567185878"
-     },
-     "canonicalLine": "Hash Rosin Mates Metal Cans"
-    },
-    {
-     "name": "Garlic Budder",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "645567185946",
-       "header": "Display Box SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "CONTAINER SKU": "645567185885"
-     },
-     "canonicalLine": "Hash Rosin Mates Metal Cans"
-    },
-    {
-     "name": "Pink Truffle",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "645567185953",
-       "header": "Display Box SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "CONTAINER SKU": "645567185892"
-     },
-     "canonicalLine": "Hash Rosin Mates Metal Cans"
-    },
-    {
-     "name": "Strawberry Melted Beltz",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "645567185960",
-       "header": "Display Box SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "CONTAINER SKU": "645567185908"
-     },
-     "canonicalLine": "Hash Rosin Mates Metal Cans"
-    },
-    {
-     "name": "Cherry Punch",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "645567185977",
-       "header": "Display Box SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "CONTAINER SKU": "645567185915"
-     },
-     "canonicalLine": "Hash Rosin Mates Metal Cans"
-    }
-   ],
-   "upcoming": false,
-   "variant": "newer"
   },
   {
    "id": "muha:MI:mi012",
@@ -20903,7 +20536,7 @@
    "source": "Official MM SKU Book - NJ THC.csv",
    "section": "Disposables",
    "line": "Distallite 2 Gram Disposables",
-   "name": "NJ Distallite 2 Gram Disposables (older)",
+   "name": "NJ Distallite 2 Gram Disposables",
    "generation": null,
    "skuBlock": "NJ001",
    "category": "disposables",
@@ -21192,10 +20825,141 @@
      "quote": null,
      "notes": null,
      "canonicalLine": "Distallite 2 Gram Disposables"
+    },
+    {
+     "name": "Bubble Gum Burst",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Distallite 2 Gram Disposables"
+    },
+    {
+     "name": "Dragonberry Runtz",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Distallite 2 Gram Disposables"
+    },
+    {
+     "name": "Frozen Pomegranate",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Distallite 2 Gram Disposables"
+    },
+    {
+     "name": "Pineapple Paradise",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Distallite 2 Gram Disposables"
+    },
+    {
+     "name": "Watermelon Moonshine",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Distallite 2 Gram Disposables"
+    },
+    {
+     "name": "Galactic Diesel",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Distallite 2 Gram Disposables"
+    },
+    {
+     "name": "Sweet Dreams OG",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Distallite 2 Gram Disposables"
+    },
+    {
+     "name": "Horchata",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {},
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "Distallite 2 Gram Disposables"
     }
    ],
    "upcoming": false,
-   "variant": "older"
+   "variant": "older",
+   "mergedFrom": [
+    "muha:NJ:distallite-2-gram-disposables"
+   ]
   },
   {
    "id": "muha:NJ:nj002",
@@ -21477,183 +21241,6 @@
     }
    ],
    "upcoming": false
-  },
-  {
-   "id": "muha:NJ:distallite-2-gram-disposables",
-   "brand": "muha",
-   "market": "NJ",
-   "source": "Official MM SKU Book - NJ THC.csv",
-   "section": "DISPOSABLES",
-   "line": "Distallite 2 Gram Disposables",
-   "name": "NJ Distallite 2 Gram Disposables (newer)",
-   "generation": null,
-   "skuBlock": null,
-   "category": "disposables",
-   "format": "2g",
-   "items": [
-    {
-     "name": "Habibi",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "Distallite 2 Gram Disposables"
-    },
-    {
-     "name": "Bubble Gum Burst",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "Distallite 2 Gram Disposables"
-    },
-    {
-     "name": "Dragonberry Runtz",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "Distallite 2 Gram Disposables"
-    },
-    {
-     "name": "Frozen Pomegranate",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "Distallite 2 Gram Disposables"
-    },
-    {
-     "name": "Pineapple Paradise",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "Distallite 2 Gram Disposables"
-    },
-    {
-     "name": "Watermelon Moonshine",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "Distallite 2 Gram Disposables"
-    },
-    {
-     "name": "Galactic Diesel",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "Distallite 2 Gram Disposables"
-    },
-    {
-     "name": "Blue Slushie",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "Distallite 2 Gram Disposables"
-    },
-    {
-     "name": "Sweet Dreams OG",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "Distallite 2 Gram Disposables"
-    },
-    {
-     "name": "Horchata",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "Distallite 2 Gram Disposables"
-    }
-   ],
-   "upcoming": false,
-   "variant": "newer"
   },
   {
    "id": "muha:NJ:nj003",
@@ -22129,8 +21716,8 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": "Disposables",
    "line": "2G Distillate Disposables",
-   "name": "NM 2G Distillate Disposables (2026)",
-   "generation": null,
+   "name": "NM 2G Distillate Disposables",
+   "generation": "Gen 3",
    "skuBlock": "NM001",
    "category": "disposables",
    "format": "2g",
@@ -22418,10 +22005,184 @@
      "quote": null,
      "notes": null,
      "canonicalLine": "2G Distillate Disposables"
+    },
+    {
+     "name": "Frozen Pomegranate",
+     "skuBarcode": null,
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "NM-2G-DAIO-HW-3-FP",
+      "displayBox": "NM-2G-DAIO-DISP-3-FP",
+      "wholesaleCase": "NM-2G-DAIO-WC-3-STD"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/esywl2iuwjplnvyxx433u/ACwgvwjSetAaL4H90aqPCGQ?rlkey=yf2pdmvqvfkttk5rvkvc7nxy7&st=fzlbysk5&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564769034",
+      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-FP",
+      "DISPLAY BOX SKU": "648564769133"
+     },
+     "canonicalLine": "2G Distillate Disposables"
+    },
+    {
+     "name": "Pineapple Paradise",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "NM-2G-DAIO-HW-3-PP",
+      "displayBox": "NM-2G-DAIO-DISP-3-PP"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564769041",
+      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-PP",
+      "DISPLAY BOX SKU": "648564769140"
+     },
+     "canonicalLine": "2G Distillate Disposables"
+    },
+    {
+     "name": "Tahoe OG",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "NM-2G-DAIO-HW-3-TO",
+      "displayBox": "NM-2G-DAIO-DISP-3-TO"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564769058",
+      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-TO",
+      "DISPLAY BOX SKU": "648564769157"
+     },
+     "canonicalLine": "2G Distillate Disposables"
+    },
+    {
+     "name": "Blueberry Cookies",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "NM-2G-DAIO-HW-3-BC",
+      "displayBox": "NM-2G-DAIO-DISP-3-BC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564769089",
+      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-BC",
+      "DISPLAY BOX SKU": "648564769188"
+     },
+     "canonicalLine": "2G Distillate Disposables"
+    },
+    {
+     "name": "Galactic Diesel",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "NM-2G-DAIO-HW-3-GD",
+      "displayBox": "NM-2G-DAIO-DISP-3-GD"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564769096",
+      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-GD",
+      "DISPLAY BOX SKU": "648564769195"
+     },
+     "canonicalLine": "2G Distillate Disposables"
+    },
+    {
+     "name": "Strawberry Runts",
+     "skuBarcode": null,
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "NM-2G-DAIO-HW-3-SR",
+      "displayBox": "NM-2G-DAIO-DISP-3-SR"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564769102",
+      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-SR",
+      "DISPLAY BOX SKU": "648564769201"
+     },
+     "canonicalLine": "2G Distillate Disposables"
+    },
+    {
+     "name": "Horchata",
+     "skuBarcode": null,
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "NM-2G-DAIO-HW-3-HCH",
+      "displayBox": "NM-2G-DAIO-DISP-3-HCH"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "extra": {
+      "INDIVIDUAL PACKAGING SKU": "648564769126",
+      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-HCH",
+      "DISPLAY BOX SKU": "648564769225"
+     },
+     "canonicalLine": "2G Distillate Disposables"
     }
    ],
    "upcoming": false,
-   "variant": "2026"
+   "variant": "2026",
+   "mergedFrom": [
+    "muha:NM:nm006"
+   ]
   },
   {
    "id": "muha:NM:nm002",
@@ -23005,266 +22766,6 @@
    ],
    "upcoming": false,
    "variant": "OLD"
-  },
-  {
-   "id": "muha:NM:nm006",
-   "brand": "muha",
-   "market": "NM",
-   "source": "Official MM SKU Book - NM THC.csv",
-   "section": "FLAVORS",
-   "line": "2G Distillate Disposables",
-   "name": "NM 2G Distillate Disposables (Gen 3 · 2026)",
-   "generation": "Gen 3",
-   "skuBlock": "NM006",
-   "category": "disposables",
-   "format": "2g",
-   "items": [
-    {
-     "name": "Frozen Pomegranate",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "NM-2G-DAIO-HW-3-FP",
-      "displayBox": "NM-2G-DAIO-DISP-3-FP",
-      "wholesaleCase": "NM-2G-DAIO-WC-3-STD"
-     },
-     "links": {
-      "packaging": "https://www.dropbox.com/scl/fo/esywl2iuwjplnvyxx433u/ACwgvwjSetAaL4H90aqPCGQ?rlkey=yf2pdmvqvfkttk5rvkvc7nxy7&st=fzlbysk5&dl=0"
-     },
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564769034",
-      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-FP",
-      "DISPLAY BOX SKU": "648564769133"
-     },
-     "canonicalLine": "2G Distillate Disposables"
-    },
-    {
-     "name": "Pineapple Paradise",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "NM-2G-DAIO-HW-3-PP",
-      "displayBox": "NM-2G-DAIO-DISP-3-PP"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564769041",
-      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-PP",
-      "DISPLAY BOX SKU": "648564769140"
-     },
-     "canonicalLine": "2G Distillate Disposables"
-    },
-    {
-     "name": "Tahoe OG",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "NM-2G-DAIO-HW-3-TO",
-      "displayBox": "NM-2G-DAIO-DISP-3-TO"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564769058",
-      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-TO",
-      "DISPLAY BOX SKU": "648564769157"
-     },
-     "canonicalLine": "2G Distillate Disposables"
-    },
-    {
-     "name": "Sour Watermelon Squirt",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "NM-2G-DAIO-HW-3-SWS",
-      "displayBox": "NM-2G-DAIO-DISP-3-SWS"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564769065",
-      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-SWS",
-      "DISPLAY BOX SKU": "648564769164"
-     },
-     "canonicalLine": "2G Distillate Disposables"
-    },
-    {
-     "name": "Blue Slushie",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "NM-2G-DAIO-HW-3-BS",
-      "displayBox": "NM-2G-DAIO-DISP-3-BS"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564769072",
-      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-BS",
-      "DISPLAY BOX SKU": "648564769171"
-     },
-     "canonicalLine": "2G Distillate Disposables"
-    },
-    {
-     "name": "Blueberry Cookies",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "NM-2G-DAIO-HW-3-BC",
-      "displayBox": "NM-2G-DAIO-DISP-3-BC"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564769089",
-      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-BC",
-      "DISPLAY BOX SKU": "648564769188"
-     },
-     "canonicalLine": "2G Distillate Disposables"
-    },
-    {
-     "name": "Galactic Diesel",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "NM-2G-DAIO-HW-3-GD",
-      "displayBox": "NM-2G-DAIO-DISP-3-GD"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564769096",
-      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-GD",
-      "DISPLAY BOX SKU": "648564769195"
-     },
-     "canonicalLine": "2G Distillate Disposables"
-    },
-    {
-     "name": "Strawberry Runts",
-     "skuBarcode": null,
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "NM-2G-DAIO-HW-3-SR",
-      "displayBox": "NM-2G-DAIO-DISP-3-SR"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564769102",
-      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-SR",
-      "DISPLAY BOX SKU": "648564769201"
-     },
-     "canonicalLine": "2G Distillate Disposables"
-    },
-    {
-     "name": "Habibi",
-     "skuBarcode": null,
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "NM-2G-DAIO-HW-3-HBB",
-      "displayBox": "NM-2G-DAIO-DISP-3-HBB"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564769119",
-      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-HBB",
-      "DISPLAY BOX SKU": "648564769218"
-     },
-     "canonicalLine": "2G Distillate Disposables"
-    },
-    {
-     "name": "Horchata",
-     "skuBarcode": null,
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "NM-2G-DAIO-HW-3-HCH",
-      "displayBox": "NM-2G-DAIO-DISP-3-HCH"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "extra": {
-      "INDIVIDUAL PACKAGING SKU": "648564769126",
-      "INDIVIDUAL PACKAGING #": "NM-2G-DAIO-PKG-3-HCH",
-      "DISPLAY BOX SKU": "648564769225"
-     },
-     "canonicalLine": "2G Distillate Disposables"
-    }
-   ],
-   "upcoming": false,
-   "variant": "Gen 3 · 2026"
   },
   {
    "id": "muha:NM:nm007",
@@ -25991,7 +25492,7 @@
    "source": "Official MM SKU Book - OH THC.csv",
    "section": null,
    "line": "2G Distillate Disposables",
-   "name": "OH 2G Distillate Disposables (older)",
+   "name": "OH 2G Distillate Disposables",
    "generation": null,
    "skuBlock": null,
    "category": "disposables",
@@ -26207,305 +25708,7 @@
      "quote": null,
      "notes": null,
      "canonicalLine": "2G Distillate Disposables"
-    }
-   ],
-   "upcoming": false,
-   "variant": "older"
-  },
-  {
-   "id": "muha:OH:ca006",
-   "brand": "muha",
-   "market": "OH",
-   "source": "Official MM SKU Book - OH THC.csv",
-   "section": "VAPE CARTRIDGE LINE",
-   "line": "1.68G Distillate Carts",
-   "name": "OH 1.68G Distillate Carts",
-   "generation": null,
-   "skuBlock": "CA006",
-   "category": "cartridges",
-   "format": "1.68g",
-   "items": [
-    {
-     "name": "Strawberry Kiwi Kush",
-     "skuBarcode": "784847463739",
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847463838",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "OH-1.68G-CART-HW-1",
-      "packaging": "OH-1.68G-CART-PKG-1-SR",
-      "displayBox": "OH-1.68G-CART-DISP-1-SR",
-      "wholesaleCase": "OH-1.68G-CART-WC-1-STD"
-     },
-     "links": {
-      "packaging": "https://www.dropbox.com/scl/fo/xivo6p8b0u5styfs5i562/ACGsfBNB3H3npasBm6FDfUo?rlkey=r2d0ffvops6jmvvq4hf9mqql4&st=vyzw4i08&dl=0",
-      "renders": "https://www.dropbox.com/scl/fo/c05zh3j1781kriugvr2vc/AFRzND2jEAJkA-fvnLGfal8?rlkey=pybbn1bqw5f22oovrgwwyf64g&st=amji89mi&dl=0"
-     },
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1.68G Distillate Carts"
     },
-    {
-     "name": "Bubblegum Burst",
-     "skuBarcode": "784847463746",
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847463845",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-WTM",
-      "displayBox": "OH-1.68G-CART-DISP-1-WTM"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1.68G Distillate Carts"
-    },
-    {
-     "name": "Cherry Grapefruit",
-     "skuBarcode": "784847463753",
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847463852",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-CG",
-      "displayBox": "OH-1.68G-CART-DISP-1-CG"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1.68G Distillate Carts"
-    },
-    {
-     "name": "Banana Cream Cake",
-     "skuBarcode": "784847463760",
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847463869",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-WC",
-      "displayBox": "OH-1.68G-CART-DISP-1-WC"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1.68G Distillate Carts"
-    },
-    {
-     "name": "Pineapple Paradise",
-     "skuBarcode": "784847463777",
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847463876",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-CAG",
-      "displayBox": "OH-1.68G-CART-DISP-1-CAG"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1.68G Distillate Carts"
-    },
-    {
-     "name": "Godfather OG",
-     "skuBarcode": "784847463784",
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847463883",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-SSD",
-      "displayBox": "OH-1.68G-CART-DISP-1-SSD"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1.68G Distillate Carts"
-    },
-    {
-     "name": "Bahama Berry",
-     "skuBarcode": "784847463791",
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847463890",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-AGI",
-      "displayBox": "OH-1.68G-CART-DISP-1-AGI"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1.68G Distillate Carts"
-    },
-    {
-     "name": "Green Crack",
-     "skuBarcode": "784847463807",
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847463906",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-JH",
-      "displayBox": "OH-1.68G-CART-DISP-1-JH"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1.68G Distillate Carts"
-    },
-    {
-     "name": "Blue Slushie",
-     "skuBarcode": "784847463814",
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847463913",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-BH",
-      "displayBox": "OH-1.68G-CART-DISP-1-BH"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1.68G Distillate Carts"
-    },
-    {
-     "name": "Purple Passion Punch",
-     "skuBarcode": "784847463821",
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847463920",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-PP",
-      "displayBox": "OH-1.68G-CART-DISP-1-PP"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1.68G Distillate Carts"
-    }
-   ],
-   "upcoming": false
-  },
-  {
-   "id": "muha:OH:2g-distillate-disposables",
-   "brand": "muha",
-   "market": "OH",
-   "source": "Official MM SKU Book - OH THC.csv",
-   "section": "Disposables",
-   "line": "2G Distillate Disposables",
-   "name": "OH 2G Distillate Disposables (newer)",
-   "generation": null,
-   "skuBlock": null,
-   "category": "disposables",
-   "format": "2g",
-   "items": [
     {
      "name": "Frozen Pomegranate",
      "skuBarcode": "784847465122",
@@ -26788,7 +25991,291 @@
     }
    ],
    "upcoming": false,
-   "variant": "newer"
+   "variant": "older",
+   "mergedFrom": [
+    "muha:OH:2g-distillate-disposables"
+   ]
+  },
+  {
+   "id": "muha:OH:ca006",
+   "brand": "muha",
+   "market": "OH",
+   "source": "Official MM SKU Book - OH THC.csv",
+   "section": "VAPE CARTRIDGE LINE",
+   "line": "1.68G Distillate Carts",
+   "name": "OH 1.68G Distillate Carts",
+   "generation": null,
+   "skuBlock": "CA006",
+   "category": "cartridges",
+   "format": "1.68g",
+   "items": [
+    {
+     "name": "Strawberry Kiwi Kush",
+     "skuBarcode": "784847463739",
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "784847463838",
+       "header": "DISPLAY BOX SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "hardware": "OH-1.68G-CART-HW-1",
+      "packaging": "OH-1.68G-CART-PKG-1-SR",
+      "displayBox": "OH-1.68G-CART-DISP-1-SR",
+      "wholesaleCase": "OH-1.68G-CART-WC-1-STD"
+     },
+     "links": {
+      "packaging": "https://www.dropbox.com/scl/fo/xivo6p8b0u5styfs5i562/ACGsfBNB3H3npasBm6FDfUo?rlkey=r2d0ffvops6jmvvq4hf9mqql4&st=vyzw4i08&dl=0",
+      "renders": "https://www.dropbox.com/scl/fo/c05zh3j1781kriugvr2vc/AFRzND2jEAJkA-fvnLGfal8?rlkey=pybbn1bqw5f22oovrgwwyf64g&st=amji89mi&dl=0"
+     },
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "1.68G Distillate Carts"
+    },
+    {
+     "name": "Bubblegum Burst",
+     "skuBarcode": "784847463746",
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "784847463845",
+       "header": "DISPLAY BOX SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "OH-1.68G-CART-PKG-1-WTM",
+      "displayBox": "OH-1.68G-CART-DISP-1-WTM"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "1.68G Distillate Carts"
+    },
+    {
+     "name": "Cherry Grapefruit",
+     "skuBarcode": "784847463753",
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "784847463852",
+       "header": "DISPLAY BOX SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "OH-1.68G-CART-PKG-1-CG",
+      "displayBox": "OH-1.68G-CART-DISP-1-CG"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "1.68G Distillate Carts"
+    },
+    {
+     "name": "Banana Cream Cake",
+     "skuBarcode": "784847463760",
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "784847463869",
+       "header": "DISPLAY BOX SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "OH-1.68G-CART-PKG-1-WC",
+      "displayBox": "OH-1.68G-CART-DISP-1-WC"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "1.68G Distillate Carts"
+    },
+    {
+     "name": "Pineapple Paradise",
+     "skuBarcode": "784847463777",
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "784847463876",
+       "header": "DISPLAY BOX SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "OH-1.68G-CART-PKG-1-CAG",
+      "displayBox": "OH-1.68G-CART-DISP-1-CAG"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "1.68G Distillate Carts"
+    },
+    {
+     "name": "Godfather OG",
+     "skuBarcode": "784847463784",
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "784847463883",
+       "header": "DISPLAY BOX SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "OH-1.68G-CART-PKG-1-SSD",
+      "displayBox": "OH-1.68G-CART-DISP-1-SSD"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "1.68G Distillate Carts"
+    },
+    {
+     "name": "Bahama Berry",
+     "skuBarcode": "784847463791",
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "784847463890",
+       "header": "DISPLAY BOX SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "OH-1.68G-CART-PKG-1-AGI",
+      "displayBox": "OH-1.68G-CART-DISP-1-AGI"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "1.68G Distillate Carts"
+    },
+    {
+     "name": "Green Crack",
+     "skuBarcode": "784847463807",
+     "strain": "Sativa",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "784847463906",
+       "header": "DISPLAY BOX SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "OH-1.68G-CART-PKG-1-JH",
+      "displayBox": "OH-1.68G-CART-DISP-1-JH"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "1.68G Distillate Carts"
+    },
+    {
+     "name": "Blue Slushie",
+     "skuBarcode": "784847463814",
+     "strain": "Hybrid",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "784847463913",
+       "header": "DISPLAY BOX SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "OH-1.68G-CART-PKG-1-BH",
+      "displayBox": "OH-1.68G-CART-DISP-1-BH"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "1.68G Distillate Carts"
+    },
+    {
+     "name": "Purple Passion Punch",
+     "skuBarcode": "784847463821",
+     "strain": "Indica",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "packs": [
+      {
+       "size": null,
+       "kind": "display",
+       "barcode": "784847463920",
+       "header": "DISPLAY BOX SKU BAR"
+      }
+     ],
+     "productFamily": null,
+     "packSize": null,
+     "codes": {
+      "packaging": "OH-1.68G-CART-PKG-1-PP",
+      "displayBox": "OH-1.68G-CART-DISP-1-PP"
+     },
+     "links": {},
+     "quote": null,
+     "notes": null,
+     "canonicalLine": "1.68G Distillate Carts"
+    }
+   ],
+   "upcoming": false
   },
   {
    "id": "muha:OH:1g-distillate-carts",

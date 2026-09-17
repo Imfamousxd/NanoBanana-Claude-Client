@@ -103,6 +103,22 @@ export function designRank(folder) {
   return -1;
 }
 const designStem = (folder) => norm(String(folder).replace(/([A-Za-z])(?=\d)|(\d)(?=[A-Za-z])/g, "$1$2 ")).replace(/\b(20\d\d|jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec|[a-z]*uary|march|april|june|july|august|september|october|november|december|tech|techdesign|design|new|old|version|main|renders?|mock|q[1-4]|v\d+|\d+)\b/g, "").replace(/\s+/g, " ").trim();
+// Device generations of the Muha disposables (user, 2026-09-16): Nov 2024 = Gen 2, June 2025 = Gen 3; the
+// mapping applies to distillate, hash rosin, live resin and melted diamond disposables alike. Dual and
+// Magnetic (and Moods, Mavricks, pods) are their own device lines and never get a generation from a date.
+// An explicit "Gen N" in a folder name always wins. Folders older than Nov 2024 count as Gen 1.
+const OWN_DEVICE_RE = /\b(dual|magnetic|moods|mavricks?|pod)\b/i;
+export function deviceGenerationOf(pathOrFolder) {
+  const dirs = String(pathOrFolder || "").split("/"); const inDisposables = dirs.some((d) => /^disposables$/i.test(d.trim()));
+  if (!inDisposables) return null;
+  if (dirs.some((d) => OWN_DEVICE_RE.test(d.replace(/_/g, " ")))) return null;
+  for (const d of dirs) { const m = d.replace(/_/g, " ").match(/\bgen ?(\d)\b/i); if (m) return Number(m[1]); }
+  const rank = Math.max(...dirs.map((d) => designRank(d)));
+  if (rank < 0) return null;
+  if (rank < 2024 * 12 + 11) return 1;
+  if (rank < 2025 * 12 + 6) return 2;
+  return 3;
+}
 function designKey(folder) {
   const c = compact(folder);
   const formats = formatsIn(c.replace(/([a-z])(?=[0-9])/g, "$1 ").replace(/\s/g, ""));
@@ -120,13 +136,22 @@ export function designFolderOf(asset) {
   return { folder: dirs[dirs.length - 1], parent: dirs.slice(0, -1).join("/"), old: false };
 }
 let CURRENT_DESIGNS = new Map(); // `${parent}|${key}` → newest rank among the sibling design folders (kept for reports)
+const marketOfPath = (p) => (String(p).match(/(?:^|\/)(CA|MI|MO|NJ|NM|NY|OH|AZ)(?:\/|_| |$)/) || [])[1] || (/(^|\/)hemp(\/|$)/i.test(String(p)) ? "HEMP" : "");
+const isDisposablesTree = (p) => String(p).split("/").some((d) => /^disposables$/i.test(d.trim())) && !String(p).split("/").some((d) => OWN_DEVICE_RE.test(d.replace(/_/g, " ")));
 export function designGroups(library) {
-  const groups = new Map(); // `${parent}|${key}` → Map(folder → {rank, files})
+  const groups = new Map(); // group key → Map(full folder path → {folder, parent, rank, files, generation})
   for (const asset of library) {
     if (quarantined(asset)) continue;
     const d = designFolderOf(asset); if (!d || d.old) continue;
-    const key = `${d.parent}|${designKey(d.folder)}`;
-    const g = groups.get(key) || new Map(); const e = g.get(d.folder) || { rank: designRank(d.folder), files: 0 }; e.files += 1; g.set(d.folder, e); groups.set(key, g);
+    const full = `${d.parent}/${d.folder}`;
+    // Disposables: generation beats date and the folders of one product (state + size + strength) are compared
+    // across the whole tree ("CA_1G_Distillate_Feb2024/Grey Device" is Gen 1 next to the Gen 3 Tech Design
+    // folder); every folder of the newest generation is current, older generations are previous designs.
+    const disposables = isDisposablesTree(full);
+    const gen = disposables ? deviceGenerationOf(full) : null;
+    const key = disposables ? `gen|${marketOfPath(full)}|${designKey(full.replace(/^Renders\/[^/]+\//, ""))}` : `${d.parent}|${designKey(d.folder)}`;
+    const rank = gen !== null ? 100000 + gen : designRank(d.folder);
+    const g = groups.get(key) || new Map(); const e = g.get(full) || { folder: d.folder, parent: d.parent, rank, files: 0, generation: gen }; e.files += 1; g.set(full, e); groups.set(key, g);
   }
   const out = [];
   for (const [key, g] of groups) {
@@ -134,18 +159,18 @@ export function designGroups(library) {
     const ranks = [...g.values()].map((e) => e.rank);
     if (!ranks.some((r) => r >= 0)) continue; // undated vs undated: nothing to separate
     const best = Math.max(...ranks);
-    const bestStem = [...g.entries()].filter(([, e]) => e.rank === best).map(([folder]) => designStem(folder));
+    const bestStem = [...g.values()].filter((e) => e.rank === best).map((e) => designStem(e.folder));
     // An undated folder is a previous design only when it is plainly the same folder name without the date
     // ("MI_1G_Distillate_Carts" next to "MI_1G_Distillate_Carts_Tech June 2025"); "HR_Gummies_Only" next to
     // "HR 4ct Mylar 2026" is a different kind of render, not an older design, and stays where it is.
-    const folders = [...g.entries()].filter(([folder, e]) => e.rank >= 0 || bestStem.some((b) => { const u = designStem(folder); return u && b && (u === b || b.includes(u) || u.includes(b)); })).map(([folder, e]) => ({ folder, rank: e.rank, files: e.files, current: e.rank === best })).sort((a, b) => b.rank - a.rank);
+    const folders = [...g.entries()].filter(([, e]) => e.rank >= 0 || bestStem.some((b) => { const u = designStem(e.folder); return u && b && (u === b || b.includes(u) || u.includes(b)); })).map(([path, e]) => ({ path, folder: e.folder, parent: e.parent, rank: e.rank, generation: e.generation ?? null, files: e.files, current: e.rank === best })).sort((a, b) => b.rank - a.rank);
     if (folders.length < 2) continue;
-    out.push({ parent: key.split("|")[0], key, best, folders });
+    out.push({ parent: key.startsWith("gen|") ? `${key.split("|")[1]} disposables ${key.split("|")[2]}` : key.split("|")[0], key, best, folders });
   }
   return out;
 }
 let PREVIOUS_DESIGNS = new Set(); // `${parent}/${folder}` of every folder judged a previous design
-export function indexDesigns(library) { const groups = designGroups(library); CURRENT_DESIGNS = new Map(groups.map((g) => [g.key, g.best])); PREVIOUS_DESIGNS = new Set(groups.flatMap((g) => g.folders.filter((f) => !f.current).map((f) => `${g.parent}/${f.folder}`))); return groups; }
+export function indexDesigns(library) { const groups = designGroups(library); CURRENT_DESIGNS = new Map(groups.map((g) => [g.key, g.best])); PREVIOUS_DESIGNS = new Set(groups.flatMap((g) => g.folders.filter((f) => !f.current).map((f) => f.path))); return groups; }
 // Designer working folders (brand projects, SOP examples) are not the library: their renders serve a SKU only
 // when the Renders tree has nothing for it, and they are flagged like a previous design.
 const WORKING_RE = /(^|\/)(_BRAND PROJECTS|Graphic Designer General SOP|WIP|Drafts?|Working Files?)(\/|$)/i;
@@ -164,7 +189,9 @@ export function previousDesignOf(asset) {
   const working = workingFileOf(asset); if (working) return working;
   const d = designFolderOf(asset); if (!d) return null;
   if (d.old) return `old folder: ${d.folder}`;
-  return PREVIOUS_DESIGNS.has(`${d.parent}/${d.folder}`) ? `previous design: ${d.folder}` : null;
+  const gen = deviceGenerationOf(`${d.parent}/${d.folder}`);
+  if (PREVIOUS_DESIGNS.has(`${d.parent}/${d.folder}`)) return gen !== null ? `previous generation (Gen ${gen}): ${d.folder}` : `previous design: ${d.folder}`;
+  return null;
 }
 // Muha line folders only: "Dialed_Moods" is a brand name, not the Muha Moods line.
 const LINE_FOLDERS = [[/\bmoods\b/i, /moods/i], [/\bmavricks?\b/i, /mavrick/i], [/\bmm ?x ?cookies\b/i, /cookies/i], [/(?<!mango )\bmadness\b/i, /(?<!mango )madness/i], [/\bmagnetic\b/i, /magnetic/i], [/\bdual\b/i, /dual/i]];

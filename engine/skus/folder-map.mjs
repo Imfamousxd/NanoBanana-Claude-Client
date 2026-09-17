@@ -6,7 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
-import { computeCoverage, loadLibrary, indexFolderMap, folderPathOf, deviceIterationOf, previousDesignOf, quarantined, compositionLabel, lineName } from "./coverage.mjs";
+import { computeCoverage, loadLibrary, indexFolderMap, folderPathOf, deviceIterationOf, previousDesignOf, quarantined, compositionLabel, lineName, deviceGenerationOf } from "./coverage.mjs";
 
 const REGISTRY_FILE = { muha: "muha-meds" };
 const GENERIC_RE = /ai resources|master case|group shot|website images|badge|catalog resized|motion\/|redesign ?test/i;
@@ -122,39 +122,69 @@ export function designTagOf(folderName, line) {
 // otherwise what feeds them (an OLD / previous-design folder → "old design"; a Gen-N folder → "Gen N"; a dated
 // current folder → "<year> design"; V2 codes → "V2"), otherwise their order in the book ("older" / "newer").
 // Two lines with the same title and the same flavours are one line written twice in the sheet: the copy is dropped.
+// One product listed as several flavour lists ("2G Distillate Disposables", "2G Disposable Flavors"): same
+// state, category and size, titles equal once the generic words are removed → one line, flavours combined.
+export function mergeProducts(registry) {
+  const GENERIC_WORDS = /\b(distillate|distallite|disposables?|dispos?|flavors?|flavours?|line|grams?)\b/gi;
+  const productKey = (line) => `${line.market || ""}|${line.category || ""}|${line.format || ""}|${String(line.line).toLowerCase().replace(GENERIC_WORDS, " ").replace(/[^a-z0-9.-]+/g, " ").trim()}`;
+  const products = new Map();
+  for (const line of registry.lines) { const key = productKey(line); (products.get(key) || products.set(key, []).get(key)).push(line); }
+  const merged = [];
+  for (const group of products.values()) {
+    if (group.length < 2 || new Set(group.map((l) => l.line.trim().toLowerCase())).size < 2) continue;
+    const keep = group.slice().sort((a, b) => b.line.length - a.line.length)[0];
+    const seen = new Set(keep.items.map((i) => i.name.toLowerCase()));
+    for (const other of group) { if (other === keep) continue; for (const item of other.items) if (!seen.has(item.name.toLowerCase())) { keep.items.push(item); seen.add(item.name.toLowerCase()); } other.duplicateOf = keep.id; keep.mergedFrom = [...(keep.mergedFrom || []), other.id]; merged.push(`${other.id} → ${keep.id} (same product, generic words differ)`); }
+  }
+  registry.lines = registry.lines.filter((l) => !l.duplicateOf);
+  return merged;
+}
 export function nameLines(registry, folders) {
   const feeding = new Map();
-  for (const f of folders) for (const l of f.lines) (feeding.get(l.id) || feeding.set(l.id, []).get(l.id)).push({ folder: f.path.split("/").pop(), status: f.status, files: l.files });
+  for (const f of folders) for (const l of f.lines) (feeding.get(l.id) || feeding.set(l.id, []).get(l.id)).push({ folder: f.path.split("/").pop(), path: f.path, status: f.status, files: l.files });
+  const mainFolder = (line) => { const feeds = (feeding.get(line.id) || []).slice().sort((a, b) => (a.status ? 1 : 0) - (b.status ? 1 : 0) || b.files - a.files); return feeds[0] || null; };
   const groups = new Map();
-  for (const line of registry.lines) { const key = `${line.market || ""}|${String(line.line).trim().toLowerCase()}`; (groups.get(key) || groups.set(key, []).get(key)).push(line); }
-  const dropped = [];
   for (const line of registry.lines) line.name = [line.market, line.line].filter(Boolean).join(" ");
+  for (const line of registry.lines) { const key = `${line.market || ""}|${String(line.line).trim().toLowerCase()}`; (groups.get(key) || groups.set(key, []).get(key)).push(line); }
+  const dropped = [], merged = [];
+  const absorb = (keep, other, why) => {
+    const seen = new Map(keep.items.map((i) => [i.name.toLowerCase(), i]));
+    for (const item of other.items) { const have = seen.get(item.name.toLowerCase()); if (!have) { keep.items.push(item); seen.set(item.name.toLowerCase(), item); } else if (item.sku && item.sku !== have.sku) have.altSkus = [...new Set([...(have.altSkus || []), item.sku])]; }
+    if (other.generation && !keep.generation) keep.generation = other.generation;
+    other.duplicateOf = keep.id; keep.mergedFrom = [...(keep.mergedFrom || []), other.id]; merged.push(`${other.id} → ${keep.id} (${why})`);
+  };
   for (const group of groups.values()) {
     if (group.length < 2) continue;
-    // drop exact copies (same flavours, same codes)
-    const seen = new Map();
-    for (const line of group) { const sig = line.items.map((i) => `${i.name}|${i.sku || ""}`).sort().join(";"); if (seen.has(sig)) { dropped.push(line.id); line.duplicateOf = seen.get(sig); } else seen.set(sig, line.id); }
+    // Same title in one state. Lines fed by the same folder — or by nothing at all — are one product written as
+    // several flavour lists: merged (flavours combined, extra codes kept on the item). Lines fed by different
+    // folders are different generations or designs and keep their own name with a tag.
+    const byFolder = new Map();
+    for (const line of group) { const main = mainFolder(line); const k = main ? main.path : "(no renders)"; (byFolder.get(k) || byFolder.set(k, []).get(k)).push(line); }
+    for (const [k, lines] of byFolder) { if (lines.length < 2) continue; const keep = lines[0]; for (const other of lines.slice(1)) absorb(keep, other, k === "(no renders)" ? "no renders tell them apart" : `both fed by ${k.split("/").pop()}`); }
+    // a same-titled line with no renders at all next to exactly one line that has them: one product, the second flavour list
+    const fed = [...byFolder.keys()].filter((k) => k !== "(no renders)"); const unfed = byFolder.get("(no renders)");
+    if (unfed && fed.length === 1) { const keep = byFolder.get(fed[0])[0]; for (const other of unfed) if (!other.duplicateOf) absorb(keep, other, "no renders of its own; the sibling has them"); }
     const live = group.filter((l) => !l.duplicateOf);
     if (live.length < 2) continue;
     const labels = live.map((line) => {
-      const feeds = (feeding.get(line.id) || []).sort((a, b) => (a.status ? 1 : 0) - (b.status ? 1 : 0) || b.files - a.files);
-      const tag = feeds.length ? designTagOf(feeds[0].folder, line) : "";
+      const main = mainFolder(line); const tag = main ? designTagOf(main.folder, line) : "";
       const v2 = line.items.length && line.items.every((i) => /^V2-/i.test(i.sku || "")) ? "V2" : null;
       const parts = [line.generation, tag && tag.toLowerCase() !== String(line.generation || "").toLowerCase() ? tag : null, v2].filter(Boolean);
       return parts.length ? parts.join(" · ") : null;
     });
-    // fill the gaps by book order: the earlier block is the older line
+    // anything still unlabelled has no renders and no generation: the earlier block in the book is the older one
     const unlabelled = live.map((l, i) => i).filter((i) => !labels[i]);
-    if (unlabelled.length === live.length) { unlabelled.forEach((i, k) => { labels[i] = k === 0 ? "older" : k === 1 && live.length === 2 ? "newer" : `set ${k + 1}`; }); }
-    else for (const i of unlabelled) labels[i] = labels.includes("old design") ? "newer" : "older";
+    for (const i of unlabelled) labels[i] = labels.some((l) => l && /old|gen 1|gen 2/i.test(l)) ? "newer" : "older";
     const used = new Map(); live.forEach((line, i) => { let label = labels[i]; if (used.has(label)) label = `${label} ${line.skuBlock || used.get(label) + 1}`; used.set(labels[i], (used.get(labels[i]) || 0) + 1); line.variant = label; line.name = `${[line.market, line.line].filter(Boolean).join(" ")} (${label})`; });
   }
+  const redirect = Object.fromEntries(registry.lines.filter((l) => l.duplicateOf).map((l) => [l.id, l.duplicateOf]));
   registry.lines = registry.lines.filter((l) => !l.duplicateOf);
-  return { dropped };
+  return { dropped, merged, redirect };
 }
 export async function buildFolderMap(root, { brand = "muha", libraryFile, page, decisions }) {
   const registryFile = path.join(root, "knowledge", "skus", `${REGISTRY_FILE[brand] || brand}.json`);
   const registry = JSON.parse(fs.readFileSync(registryFile, "utf8"));
+  const mergedProducts = mergeProducts(registry);
   const library = loadLibrary(libraryFile, brand);
   const mapFile = path.join(root, "knowledge", "skus", `folder-map.${brand}.json`);
   const previous = fs.existsSync(mapFile) ? JSON.parse(fs.readFileSync(mapFile, "utf8")) : { folders: [] };
@@ -179,11 +209,12 @@ export async function buildFolderMap(root, { brand = "muha", libraryFile, page, 
     if (assigned) { g.assigned += 1; const seen = new Set(); for (const { line, item } of assigned) { const e = g.lines.get(line) || { files: 0, items: new Set() }; if (!seen.has(line)) { e.files += 1; seen.add(line); } e.items.add(item); g.lines.set(line, e); } }
     const status = statusOf(asset); if (status) g.statuses.set(status, (g.statuses.get(status) || 0) + 1);
     const comp = compositionLabel(asset.composition, fp.split("/")[1] || ""); g.compositions.set(comp, (g.compositions.get(comp) || 0) + 1);
-    if (g.samples.length < 4 && asset.thumb) g.samples.push({ id: asset.id, path: asset.path, thumb: asset.thumb, source_id: asset.source_id, composition: comp });
+    if (asset.thumb) g.samples.push({ id: asset.id, path: asset.path, thumb: asset.thumb, source_id: asset.source_id, composition: comp, order: { "joint with packaging": 0, "product with packaging": 0, "device with packaging": 0, "packaging only": 1, "single joint": 2, "loose product": 2, "device only": 2 }[comp] ?? 3 });
     (g.assets ||= []).push(asset);
     groups.set(fp, g);
   }
   for (const g of groups.values()) {
+    g.samples = g.samples.sort((a, b) => a.order - b.order).slice(0, 4).map(({ order, ...rest }) => rest);
     const conflicts = labelConflicts(g.assets, flavourNames);
     const dists = g.assets.map((a) => visual.get(a.id)?.dist).filter((d) => d !== undefined).sort((a, b) => a - b);
     const median = dists.length ? dists[Math.floor(dists.length / 2)] : null;
@@ -196,21 +227,30 @@ export async function buildFolderMap(root, { brand = "muha", libraryFile, page, 
   const top = (m) => [...m.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] || null;
   const folders = [...groups.values()].map((g) => {
     const lines = [...g.lines.entries()].map(([id, e]) => { const l = linesById.get(id) || {}; return { id, name: l.line ? lineName(l) : id, line: l.line || id, market: l.market || null, skuBlock: l.skuBlock || null, generation: l.generation || null, files: e.files, flavours: [...e.items] }; }).sort((a, b) => b.files - a.files);
-    const folder = { id: g.id, path: g.path, files: g.files, assigned: g.assigned, market: top(g.markets), status: top(g.statuses), compositions: Object.fromEntries(g.compositions), lines, samples: g.samples, outliers: g.outliers || [], checked: g.checked, unassigned: g.unassigned || [], decision: known.get(g.path) || null };
-    folder.designTag = designTagOf(g.path.split("/").pop(), lines[0] ? linesById.get(lines[0].id) : null);
+    const statusTop = top(g.statuses); const status = statusTop && (g.statuses.get(statusTop) || 0) * 2 >= g.files ? statusTop : null; // a folder's status is what most of its files say
+    const folder = { id: g.id, path: g.path, files: g.files, assigned: g.assigned, market: top(g.markets), status, compositions: Object.fromEntries(g.compositions), lines, samples: g.samples, outliers: g.outliers || [], checked: g.checked, unassigned: g.unassigned || [], decision: known.get(g.path) || null };
+    const tag = designTagOf(g.path.split("/").pop(), lines[0] ? linesById.get(lines[0].id) : null); const gen = deviceGenerationOf(g.path);
+    folder.generation = gen; folder.designTag = gen !== null && !/\bgen\b/i.test(tag) ? `Gen ${gen}${tag ? " · " + tag : ""}` : tag;
     folder.proposal = proposalOf(folder);
     folder.meaning = meaningOf(folder);
     return folder;
   }).sort((a, b) => a.path.localeCompare(b.path));
   const naming = nameLines(registry, folders);
-  for (const f of folders) for (const l of f.lines) { const reg = linesById.get(l.id); if (reg) l.name = reg.name; }
+  const liveById = new Map(registry.lines.map((line) => [line.id, line]));
+  for (const f of folders) {
+    // fold merged lines into the line that absorbed them, then refresh names
+    const byId = new Map();
+    for (const l of f.lines) { const id = naming.redirect[l.id] || l.id; const e = byId.get(id) || { ...l, id, files: 0, flavours: [] }; e.files += l.files; e.flavours = [...new Set([...e.flavours, ...l.flavours])]; byId.set(id, e); }
+    f.lines = [...byId.values()].sort((a, b) => b.files - a.files);
+    for (const l of f.lines) { const reg = liveById.get(l.id); if (reg) { l.name = reg.name; l.line = reg.line; l.market = reg.market; l.skuBlock = reg.skuBlock; l.generation = reg.generation; } }
+  }
   for (const f of folders) { f.proposal = proposalOf(f); f.meaning = meaningOf(f); }
   fs.writeFileSync(registryFile, JSON.stringify(registry, null, 1) + "\n");
   const map = { brand, builtAt: new Date().toISOString(), scope: brand === "muha" ? "Renders/ only" : "all", naming, folders: folders.map(({ samples, outliers, ...rest }) => ({ ...rest, samples: samples.map((s) => ({ id: s.id, path: s.path })), outliers: outliers.map((o) => ({ id: o.id, path: o.path, why: o.why })) })) };
   fs.writeFileSync(mapFile, JSON.stringify(map, null, 1) + "\n");
   let pageFile = null;
   if (page) { fs.writeFileSync(page, await buildReviewPage(root, { ...map, folders }, registry)); pageFile = page; }
-  return { file: path.relative(root, mapFile), folders: folders.length, files: library.length, decided: folders.filter((f) => f.decision).length, onRows: folders.filter((f) => f.lines.length).length, renamed: registry.lines.filter((l) => l.variant).map((l) => l.name), droppedDuplicates: naming.dropped, page: pageFile };
+  return { file: path.relative(root, mapFile), folders: folders.length, files: library.length, decided: folders.filter((f) => f.decision).length, onRows: folders.filter((f) => f.lines.length).length, renamed: registry.lines.filter((l) => l.variant).map((l) => l.name), merged: [...mergedProducts, ...naming.merged], page: pageFile };
 }
 
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));

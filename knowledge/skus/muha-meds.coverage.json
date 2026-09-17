@@ -2,13 +2,13 @@
  "brand": "muha",
  "computedAt": "2026-09-17",
  "totals": {
-  "lines": 146,
-  "items": 1150,
-  "covered": 651,
+  "lines": 139,
+  "items": 1131,
+  "covered": 633,
   "assets": 5308,
-  "matchedAssets": 2730,
-  "unmatchedAssets": 2578,
-  "unmatchedGroups": 163
+  "matchedAssets": 2750,
+  "unmatchedAssets": 2558,
+  "unmatchedGroups": 165
  },
  "lines": [
   {
@@ -338,7 +338,7 @@
   },
   {
    "id": "muha:HEMP:hemp003",
-   "name": "HEMP 2g THCA Carts (2026)",
+   "name": "HEMP 2g THCA Carts",
    "market": "HEMP",
    "category": "cartridges",
    "format": "2g",
@@ -5600,466 +5600,6 @@
       "Renders/Hemp/Cartridges/THCP + HHC 2G - 2026/Text_Removal",
       "Renders/Hemp/Cartridges/THCP + HHC 2G - 2026/Text_Removal/Displaybox"
      ]
-    }
-   ]
-  },
-  {
-   "id": "muha:HEMP:hemp016",
-   "name": "HEMP 2g THCA Carts (2026 · V2)",
-   "market": "HEMP",
-   "category": "cartridges",
-   "format": "2g",
-   "line": "2g THCA Carts",
-   "generation": null,
-   "skuBlock": "HEMP016",
-   "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
-   "items": 10,
-   "covered": 9,
-   "coveragePct": 90,
-   "missing": [],
-   "itemsDetail": [
-    {
-     "name": "Strawberry Shortcake",
-     "sku": "V2-MMC2-THCA-SS",
-     "discontinued": false,
-     "inDevelopment": true,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 2,
-      "packaging-only": 1,
-      "n/a": 1
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "d32f8c11-eb64-40cb-a190-fb0f76077ac4",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45_StrawberryShortcake.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dc73011a9bae3a56.jpg"
-      },
-      {
-       "id": "c1c387ab-54cd-4df5-8d83-e4bd78242f29",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45Solo_StrawberryShortcake.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2546eb2a9b6fac36.jpg"
-      },
-      {
-       "id": "00468a33-85c8-4a99-a53e-24e0f4fd41ae",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_Front_StrawberryShortcake.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1e711e035aec9e6f.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/THCA 2G - 2026"
-     ]
-    },
-    {
-     "name": "Mango Madness",
-     "sku": "V2-MMC2-THCA-MM",
-     "discontinued": false,
-     "inDevelopment": true,
-     "renders": 4,
-     "compositions": {
-      "packaging-only": 2,
-      "device-with-packaging": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "041aac36-5070-4fa2-83fd-c60fbac44e76",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_FrontSolo_MangoMadness.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/56d86c063db8f64e.jpg"
-      },
-      {
-       "id": "0dea6395-5e2c-4680-a2d4-61cab3bf9668",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45_MangoMadness.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c37a20607f14e417.jpg"
-      },
-      {
-       "id": "57f3ca92-313b-4799-9732-8b910ad57c44",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45Solo_MangoMadness.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4c4679df743c4e19.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/THCA 2G - 2026"
-     ]
-    },
-    {
-     "name": "Pineapple Runtz",
-     "sku": "V2-MMC2-THCA-PR",
-     "discontinued": false,
-     "inDevelopment": true,
-     "renders": 6,
-     "compositions": {
-      "multi-pack": 3,
-      "device-with-packaging": 2,
-      "packaging-only": 1
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "d98b9ef8-ce7d-452c-ad70-fabb4ff6f11a",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/THCA - Oct 2024/THCa_Pineapple_Runtz_Display_Box_Open.png",
-       "previous": "previous design: THCA - Oct 2024",
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fff776e22ced6792.jpg"
-      },
-      {
-       "id": "615f62cd-ea38-4ca6-8570-ac22bf1ad553",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/THCA - Oct 2024/Pineapple_Runtz_Front.png",
-       "previous": "previous design: THCA - Oct 2024",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9d69c8013b05b7df.jpg"
-      },
-      {
-       "id": "ba5fb4ca-08d1-4ca6-a974-2151cdede8c9",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/THCA - Oct 2024/PineappleRuntz_DisplayBoxClosed_Front.png",
-       "previous": "previous design: THCA - Oct 2024",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ab7163d2c877e915.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/THCA - Oct 2024"
-     ]
-    },
-    {
-     "name": "Lemon Cherry Gelato",
-     "sku": "V2-MMC2-THCA-LC",
-     "discontinued": false,
-     "inDevelopment": true,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 2,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "a71643e2-73ab-4b25-b42a-bc6be138145e",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45_LemonCherryGelato.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a770e71965fa384d.jpg"
-      },
-      {
-       "id": "86882edb-3f13-4feb-807e-5f808bdeddd2",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45Solo_LemonCherryGelato.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f0b588764b5721d5.jpg"
-      },
-      {
-       "id": "a13ba757-9256-4e3c-9adf-fed389e441d2",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_Front_LemonCherryGelato.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/70958130b331f5c2.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/THCA 2G - 2026"
-     ]
-    },
-    {
-     "name": "Watermelon Gelato",
-     "sku": "V2-MMC2-THCA-WG",
-     "discontinued": false,
-     "inDevelopment": true,
-     "renders": 4,
-     "compositions": {
-      "n/a": 1,
-      "device-with-packaging": 2,
-      "packaging-only": 1
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "7928fb29-71d4-40e5-819e-8a3e4984f274",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_FrontSolo_WatermelonGelato.png",
-       "previous": null,
-       "composition": "n/a",
-       "angle": "n/a",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/081bcf3e00da3434.jpg"
-      },
-      {
-       "id": "7f009b3b-0780-4828-ad0f-ccfc95e219a9",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_Front_WatermelonGelato.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/110d4798f8c6655f.jpg"
-      },
-      {
-       "id": "79ab25a8-6002-4163-b831-c8dc8d30268b",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45_WatermelonGelato.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b83d97bfafc2c9c6.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/THCA 2G - 2026"
-     ]
-    },
-    {
-     "name": "Candy Apple",
-     "sku": "V2-MMC2-THCA-CA",
-     "discontinued": false,
-     "inDevelopment": true,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 2,
-      "packaging-only": 1,
-      "n/a": 1
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "e0b2d9e5-5aed-4ac6-8a89-122530cea3c9",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_Front_CandyApple.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e163e7824c61e78e.jpg"
-      },
-      {
-       "id": "6d9f5d8d-0509-498a-ad5f-19037974cf40",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45Solo_CandyApple.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/77c2c8e147f90038.jpg"
-      },
-      {
-       "id": "4517bf1d-2c3e-498b-845f-908e02ca190d",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45_CandyApple.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/10510d18fa53fa22.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/THCA 2G - 2026"
-     ]
-    },
-    {
-     "name": "Blue Slushie",
-     "sku": "V2-MMC2-THCA-BS",
-     "discontinued": false,
-     "inDevelopment": true,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 2,
-      "packaging-only": 1,
-      "n/a": 1
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "ef0d1144-b5f5-4d93-889c-c16fe8c0ca47",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_Front_BlueSlushie.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/78f363e93708cce1.jpg"
-      },
-      {
-       "id": "665ad902-d932-4cb0-8253-3969d9849d80",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45_BlueSlushie.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/04c448c5f700283b.jpg"
-      },
-      {
-       "id": "325bb385-9dc7-4ed8-bf3f-df607194e3b0",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45Solo_BlueSlushie.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/453c4d3bf2f53327.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/THCA 2G - 2026"
-     ]
-    },
-    {
-     "name": "Paradise Punch OG",
-     "sku": "V2-MMC2-THCA-PO",
-     "discontinued": false,
-     "inDevelopment": true,
-     "renders": 4,
-     "compositions": {
-      "packaging-only": 1,
-      "label-flat": 1,
-      "device-with-packaging": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "3be06a92-65a0-445e-ae2b-92434fa5adb0",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45Solo_ParadisePunchOG.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/63853982192f4b32.jpg"
-      },
-      {
-       "id": "8545aec4-9b69-4ddd-8fac-8398d1224b76",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_FrontSolo_ParadisePunchOG.png",
-       "previous": null,
-       "composition": "label-flat",
-       "angle": "n/a",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/255443079ca83b29.jpg"
-      },
-      {
-       "id": "96a59eff-1d1a-406a-8e51-e540391598f1",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45_ParadisePunchOG.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6197bc288f4066f1.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/THCA 2G - 2026"
-     ]
-    },
-    {
-     "name": "Purple Punch",
-     "sku": "V2-MMC2-THCA-PP",
-     "discontinued": false,
-     "inDevelopment": true,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 2,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "16c0fc11-96a9-4f12-809d-17f1b9b22acb",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45_PurplePunch.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9acc85d0c9a59d13.jpg"
-      },
-      {
-       "id": "a555de77-9736-45af-9e56-f89e09fd4e44",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_45Solo_PurplePunch.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/847bcc3aa0a97038.jpg"
-      },
-      {
-       "id": "021166e2-328a-4670-b664-037879014e85",
-       "score": 6.5,
-       "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Hemp_Cart_THCa_2G_Front_PurplePunch.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f457c8d450f56f37.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/THCA 2G - 2026"
-     ]
-    },
-    {
-     "name": "Bubble Gum",
-     "sku": "V2-MMC2-THCA-BG",
-     "discontinued": false,
-     "inDevelopment": true,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
     }
    ]
   },
@@ -16916,7 +16456,7 @@
    ]
   },
   {
-   "id": "muha:CA:ca024",
+   "id": "muha:CA:ca024-2",
    "name": "CA 7G Flower Jars",
    "market": "CA",
    "category": "flower",
@@ -17993,11 +17533,21 @@
    "generation": null,
    "skuBlock": "MI019",
    "source": "Official MM SKU Book - MI THC.csv",
-   "items": 10,
-   "covered": 9,
-   "coveragePct": 90,
+   "items": 26,
+   "covered": 15,
+   "coveragePct": 58,
    "missing": [
-    "Dragonberry Runtz"
+    "Dragonberry Runtz",
+    "Diablo Lime",
+    "Midnight Mandarine",
+    "Phantom Pineapple",
+    "Graveyard Grapefruit",
+    "Cemetary Spritz",
+    "Tropical Terror",
+    "Baha Blackout",
+    "Ghost Guava",
+    "Haunted Blue Dreams",
+    "Nightmare OG"
    ],
    "itemsDetail": [
     {
@@ -18005,9 +17555,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
+     "renders": 6,
      "compositions": {
-      "device-with-packaging": 2
+      "device-with-packaging": 4,
+      "packaging-only": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -18015,25 +17566,35 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "cc8bdf2b-ed78-493a-86fc-ec2c8c20fe99",
-       "score": 5.5,
-       "path": "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars/MI_2G_Habibi_45_V1.png",
+       "id": "2e61dd9b-d30b-408e-8be5-61184e0ec6cf",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_Habibi.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/25323d6c368b87ee.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0771b2f1824335c3.jpg"
       },
       {
-       "id": "f68e9ec2-31c0-4bce-8849-17cada42713d",
-       "score": 5.5,
-       "path": "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars/MI_2G_Habibi_Front_V1.png",
+       "id": "0d4f72ab-493a-4d55-a3f4-1cd33ab926a2",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_Solo_Habibi.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a32d1b539635a5b7.jpg"
+      },
+      {
+       "id": "b116299c-b7e8-4c6d-a316-c09310d9fb56",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_Habibi.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/84673dc2df4e2557.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/82c58e3b0b3d661d.jpg"
       }
      ],
      "folders": [
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025",
       "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars"
      ]
     },
@@ -18093,18 +17654,36 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
+     "renders": 14,
      "compositions": {
+      "packaging-only": 4,
       "multi-pack": 4,
-      "device-with-packaging": 2,
-      "device-only": 2,
-      "packaging-only": 2
+      "device-with-packaging": 4,
+      "device-only": 2
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
+      {
+       "id": "e88c5281-da37-45a1-b4be-0f6db3770127",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_Solo_FrozenPomegranate.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7b712508f1354c63.jpg"
+      },
+      {
+       "id": "6ac4d75a-b1a8-4d80-a6b9-9c1e2358062b",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_Solo_FrozenPomegranate.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0e1deae6bd9a1d7e.jpg"
+      },
       {
        "id": "4527ed7a-53fb-4d7b-b5cf-12641d3c1ea6",
        "score": 6.5,
@@ -18113,27 +17692,10 @@
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c697ed9e83e4ca2e.jpg"
-      },
-      {
-       "id": "f7c840cd-f1cb-4e83-bb6f-5d589b2048c2",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45_FrozenPomegranate.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8b10c115488a9acd.jpg"
-      },
-      {
-       "id": "47a170ff-1b21-4f44-b7ef-5d95f572ef36",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_FrozenPomegranate.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1f86b6da7889ed3b.jpg"
       }
      ],
      "folders": [
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only"
@@ -18158,7 +17720,7 @@
        "id": "7b59d9a6-75d8-4636-a6e2-0dde20e7fc2a",
        "score": 6.5,
        "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_PineappleParadise.png",
-       "previous": "previous design: MI_2G_Distillate_TechDesign_June2025",
+       "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fd07854d3203c66b.jpg"
@@ -18167,7 +17729,7 @@
        "id": "d0a7239a-5430-4c8b-b2c4-7242531b2959",
        "score": 6.5,
        "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_Solo_PineappleParadise.png",
-       "previous": "previous design: MI_2G_Distillate_TechDesign_June2025",
+       "previous": null,
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5fac6ca02005e584.jpg"
@@ -18176,7 +17738,7 @@
        "id": "fa15ce54-fa2a-4191-bf30-5c4892e72752",
        "score": 6.5,
        "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_Solo_PineappleParadise.png",
-       "previous": "previous design: MI_2G_Distillate_TechDesign_June2025",
+       "previous": null,
        "composition": "packaging-only",
        "angle": "front",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c03764a94a83684c.jpg"
@@ -18205,7 +17767,7 @@
        "id": "eb70bae7-a87b-49e8-9931-f6f076f044cc",
        "score": 6.5,
        "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_WatermelonMoonshine.png",
-       "previous": "previous design: MI_2G_Distillate_TechDesign_June2025",
+       "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7b2e080ed59e9dc6.jpg"
@@ -18214,7 +17776,7 @@
        "id": "86331e90-1b16-40db-b4bf-416d697446da",
        "score": 6.5,
        "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_Solo_WatermelonMoonshine.png",
-       "previous": "previous design: MI_2G_Distillate_TechDesign_June2025",
+       "previous": null,
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2625b6a99bf412a4.jpg"
@@ -18223,7 +17785,7 @@
        "id": "322663fc-9f25-4519-97f2-d5ee1778c061",
        "score": 6.5,
        "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_WatermelonMoonshine.png",
-       "previous": "previous design: MI_2G_Distillate_TechDesign_June2025",
+       "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ea636ff4d24b840c.jpg"
@@ -18238,18 +17800,27 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
+     "renders": 14,
      "compositions": {
+      "device-with-packaging": 4,
       "device-only": 2,
       "multi-pack": 4,
-      "device-with-packaging": 2,
-      "packaging-only": 2
+      "packaging-only": 4
      },
      "hasDeviceOnly": true,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
+      {
+       "id": "07ff2a1c-976e-4412-86ed-18e7c02d31a5",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_GalacticDiesel.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4bbe755dd24de84a.jpg"
+      },
       {
        "id": "604f3606-f436-432f-98f2-bd00be7a8516",
        "score": 6.5,
@@ -18267,18 +17838,10 @@
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3b31ef5c2cd1580b.jpg"
-      },
-      {
-       "id": "e1be2ded-761f-4601-9556-ee667ed5cdaf",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_Front_GalacticDiesel.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6f29e65e42a7841d.jpg"
       }
      ],
      "folders": [
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026"
@@ -18289,11 +17852,11 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
+     "renders": 14,
      "compositions": {
+      "device-with-packaging": 4,
+      "packaging-only": 4,
       "multi-pack": 4,
-      "device-with-packaging": 2,
-      "packaging-only": 2,
       "device-only": 2
      },
      "hasDeviceOnly": true,
@@ -18302,34 +17865,35 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "e6425150-6367-46d3-8801-ed88ea7e9743",
+       "id": "9e0b8891-1092-49de-b00f-a0c796a3cd54",
        "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45Open_BlueSlushie.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/77f432103c7563cb.jpg"
-      },
-      {
-       "id": "a503538b-3723-4fa9-8945-855639fd7205",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45_BlueSlushie.png",
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_BlueSlushie.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/26423d5cb6168834.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/04ce97aa9002aca1.jpg"
       },
       {
-       "id": "3ed9e9ad-02b1-4fb5-8d99-5a9395aba512",
+       "id": "2113dc49-599c-42e9-b002-ab29944568d7",
        "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_Front_BlueSlushie.png",
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_Solo_BlueSlushie.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "packaging-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/75fb7061e4dcbe0a.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9aba555cb4c54f08.jpg"
+      },
+      {
+       "id": "1c95417d-3081-483f-b909-423bb8d0e3b3",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_Solo_BlueSlushie.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/28dc1bf794dae5ea.jpg"
       }
      ],
      "folders": [
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only"
@@ -18354,7 +17918,7 @@
        "id": "6041ce86-dbb8-4103-be67-cd4e30aaef18",
        "score": 6.5,
        "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_Solo_SweetDreamsOG.png",
-       "previous": "previous design: MI_2G_Distillate_TechDesign_June2025",
+       "previous": null,
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f973e7aace92e5dd.jpg"
@@ -18363,7 +17927,7 @@
        "id": "0e5063cc-fc7f-4508-ae61-339a8a189d25",
        "score": 6.5,
        "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_SweetDreamsOG.png",
-       "previous": "previous design: MI_2G_Distillate_TechDesign_June2025",
+       "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2b3b12133172b233.jpg"
@@ -18372,7 +17936,7 @@
        "id": "d97217fd-4408-4859-a89a-e550e72a7871",
        "score": 6.5,
        "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_Solo_SweetDreamsOG.png",
-       "previous": "previous design: MI_2G_Distillate_TechDesign_June2025",
+       "previous": null,
        "composition": "packaging-only",
        "angle": "front",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/43fa2b6045160b35.jpg"
@@ -18387,11 +17951,63 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
+     "renders": 14,
+     "compositions": {
+      "packaging-only": 4,
+      "device-with-packaging": 4,
+      "device-only": 2,
+      "multi-pack": 4
+     },
+     "hasDeviceOnly": true,
+     "hasPackaging": true,
+     "hasDisplay": true,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "a7a82bb5-0bf5-4f34-b800-35e6c6a779ca",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_Solo_Horchata.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/53ffe97bcc977b0f.jpg"
+      },
+      {
+       "id": "f98402a9-6d6b-466d-98c2-9aaf6314a1a5",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_Horchata.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/184598b0acc189ea.jpg"
+      },
+      {
+       "id": "1769376b-c179-44c3-b4c5-aaf522007863",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_45_Solo_Horchata.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fddab347d11b18b4.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026"
+     ]
+    },
+    {
+     "name": "Aloha Passion Rush",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
      "renders": 10,
      "compositions": {
+      "packaging-only": 3,
       "device-only": 2,
-      "multi-pack": 4,
-      "packaging-only": 2,
+      "multi-pack": 3,
       "device-with-packaging": 2
      },
      "hasDeviceOnly": true,
@@ -18400,31 +18016,82 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "abe64d90-7288-4f5b-aa75-4a7cc8d5f0b8",
+       "id": "103831bc-09aa-4410-aa6e-f41881a6b726",
        "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_Front_Horchata.png",
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_FrontSolo_AlohaPassionRush.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3bb8e28b1cd09c25.jpg"
+      },
+      {
+       "id": "7c6e3416-d013-41b3-ae55-6464801aadb2",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_AlohaPassionRush.png",
        "previous": null,
        "composition": "device-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/88274b1b94d943a3.jpg"
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fee8cabf8718bd38.jpg"
       },
       {
-       "id": "9ee75d56-c4b4-4e79-8788-00a469d65ded",
+       "id": "22496f6a-bbc5-47bc-91b6-501d7a3956af",
        "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45_Horchata.png",
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_Front_AlohaPassionRush.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f869bc9869139a49.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes"
+     ]
+    },
+    {
+     "name": "Lemon Cherry Fizz",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 10,
+     "compositions": {
+      "device-only": 2,
+      "multi-pack": 4,
+      "device-with-packaging": 2,
+      "packaging-only": 2
+     },
+     "hasDeviceOnly": true,
+     "hasPackaging": true,
+     "hasDisplay": true,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "e036d035-57f8-47ae-887f-0f87380358cb",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_LemonCherryFizz.png",
+       "previous": null,
+       "composition": "device-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8faa86af59747cdf.jpg"
+      },
+      {
+       "id": "800fe59c-6067-44e9-bc77-553aeefa58b2",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45Open_LemonCherryFizz.png",
        "previous": null,
        "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c868708e6ad51156.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/796a6f97f2dc2704.jpg"
       },
       {
-       "id": "db2877de-a1cc-4406-be7a-c7811791ad27",
+       "id": "db87d1c0-14d9-4aa9-8deb-c8e3043ea181",
        "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_Front_Horchata.png",
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_Front_LemonCherryFizz.png",
        "previous": null,
-       "composition": "multi-pack",
+       "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/16fe1d68c94e90f5.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8bfde83b59caea80.jpg"
       }
      ],
      "folders": [
@@ -18432,6 +18099,352 @@
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
       "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026"
      ]
+    },
+    {
+     "name": "Watermelon Bubblegum",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 9,
+     "compositions": {
+      "multi-pack": 4,
+      "device-with-packaging": 2,
+      "packaging-only": 1,
+      "device-only": 1,
+      "label-flat": 1
+     },
+     "hasDeviceOnly": true,
+     "hasPackaging": true,
+     "hasDisplay": true,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "d6f88303-2198-43a2-bbe8-e956cfb41bcf",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_Front_WatermelonBubblegum.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7cbe26ca79e287e6.jpg"
+      },
+      {
+       "id": "0ce70dd4-388c-46ed-bf76-f15bcf975276",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45_WatermelonBubblegum.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/307c4e67e86d841f.jpg"
+      },
+      {
+       "id": "464e2c54-d0dc-4819-88b2-48597661e2fd",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45Solo_WatermelonBubblegum.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f565e0657e5e8ebe.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only"
+     ]
+    },
+    {
+     "name": "Frosted Mint Cookies",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 10,
+     "compositions": {
+      "multi-pack": 4,
+      "device-with-packaging": 2,
+      "label-flat": 1,
+      "device-only": 2,
+      "packaging-only": 1
+     },
+     "hasDeviceOnly": true,
+     "hasPackaging": true,
+     "hasDisplay": true,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "c8cbeb83-dec0-41ee-832d-6ce72554e808",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45_FrostedMintCookies.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/798a30f5588cc363.jpg"
+      },
+      {
+       "id": "2b7ec376-3b1b-48f8-9091-20866d9dd191",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45_FrostedMintCookies.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/43c66bc69f14958e.jpg"
+      },
+      {
+       "id": "cc1ada80-5aa1-4d4e-acfe-04253f16c41f",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_FrontSolo_FrostedMintCookies.png",
+       "previous": null,
+       "composition": "label-flat",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d4e63c3be8e99beb.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only"
+     ]
+    },
+    {
+     "name": "Arctic Blueberry",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 10,
+     "compositions": {
+      "multi-pack": 4,
+      "device-only": 2,
+      "device-with-packaging": 3,
+      "packaging-only": 1
+     },
+     "hasDeviceOnly": true,
+     "hasPackaging": true,
+     "hasDisplay": true,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "39bed328-62fe-4765-8444-89d24a185898",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45Open_ArcticBlueberry.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9862dc811579bfee.jpg"
+      },
+      {
+       "id": "a420fb6e-b8ea-4556-aa32-90b3ebfb1c87",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_Front_ArcticBlueberry.png",
+       "previous": null,
+       "composition": "device-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/db086750eb71e32e.jpg"
+      },
+      {
+       "id": "fcf57aa3-182c-486e-8ca1-2fe4636df8d3",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_ArcticBlueberry.png",
+       "previous": null,
+       "composition": "device-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d06d08a835b744d6.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026"
+     ]
+    },
+    {
+     "name": "Guava Mango Z",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 10,
+     "compositions": {
+      "multi-pack": 4,
+      "device-with-packaging": 2,
+      "packaging-only": 2,
+      "device-only": 2
+     },
+     "hasDeviceOnly": true,
+     "hasPackaging": true,
+     "hasDisplay": true,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "3e4bfda2-0664-4bcb-8f76-900dec1e74f9",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45_GuavaMangoZ.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a7019ba66e2075ad.jpg"
+      },
+      {
+       "id": "19144bac-8d08-4ebd-9591-92a13d44040a",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_FrontOpen_GuavaMangoZ.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/39db3664d4834bc5.jpg"
+      },
+      {
+       "id": "37023208-e832-47a8-9b17-249ecfc3a212",
+       "score": 6.5,
+       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45_GuavaMangoZ.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4fd4ae6677e501da.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026",
+      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only"
+     ]
+    },
+    {
+     "name": "Diablo Lime",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Midnight Mandarine",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Phantom Pineapple",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Graveyard Grapefruit",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Cemetary Spritz",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Tropical Terror",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Baha Blackout",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Ghost Guava",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Haunted Blue Dreams",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Nightmare OG",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     }
    ]
   },
@@ -21483,535 +21496,6 @@
    ]
   },
   {
-   "id": "muha:MI:mi029",
-   "name": "MI 2G Disposable Flavors (Jan 2026)",
-   "market": "MI",
-   "category": "disposables",
-   "format": "2g",
-   "line": "2G Disposable Flavors",
-   "generation": null,
-   "skuBlock": "MI029",
-   "source": "Official MM SKU Book - MI THC.csv",
-   "items": 10,
-   "covered": 10,
-   "coveragePct": 100,
-   "missing": [],
-   "itemsDetail": [
-    {
-     "name": "Frozen Pomegranate",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 10,
-     "compositions": {
-      "multi-pack": 4,
-      "device-with-packaging": 2,
-      "device-only": 2,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "4527ed7a-53fb-4d7b-b5cf-12641d3c1ea6",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45Open_FrozenPomegranate.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c697ed9e83e4ca2e.jpg"
-      },
-      {
-       "id": "f7c840cd-f1cb-4e83-bb6f-5d589b2048c2",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45_FrozenPomegranate.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8b10c115488a9acd.jpg"
-      },
-      {
-       "id": "47a170ff-1b21-4f44-b7ef-5d95f572ef36",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_FrozenPomegranate.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1f86b6da7889ed3b.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only"
-     ]
-    },
-    {
-     "name": "Aloha Passion Rush",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 10,
-     "compositions": {
-      "packaging-only": 3,
-      "device-only": 2,
-      "multi-pack": 3,
-      "device-with-packaging": 2
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "103831bc-09aa-4410-aa6e-f41881a6b726",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_FrontSolo_AlohaPassionRush.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3bb8e28b1cd09c25.jpg"
-      },
-      {
-       "id": "7c6e3416-d013-41b3-ae55-6464801aadb2",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_AlohaPassionRush.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fee8cabf8718bd38.jpg"
-      },
-      {
-       "id": "22496f6a-bbc5-47bc-91b6-501d7a3956af",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_Front_AlohaPassionRush.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f869bc9869139a49.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes"
-     ]
-    },
-    {
-     "name": "Lemon Cherry Fizz",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 10,
-     "compositions": {
-      "device-only": 2,
-      "multi-pack": 4,
-      "device-with-packaging": 2,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "e036d035-57f8-47ae-887f-0f87380358cb",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_LemonCherryFizz.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8faa86af59747cdf.jpg"
-      },
-      {
-       "id": "800fe59c-6067-44e9-bc77-553aeefa58b2",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45Open_LemonCherryFizz.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/796a6f97f2dc2704.jpg"
-      },
-      {
-       "id": "db87d1c0-14d9-4aa9-8deb-c8e3043ea181",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_Front_LemonCherryFizz.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8bfde83b59caea80.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026"
-     ]
-    },
-    {
-     "name": "Watermelon Bubblegum",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 9,
-     "compositions": {
-      "multi-pack": 4,
-      "device-with-packaging": 2,
-      "packaging-only": 1,
-      "device-only": 1,
-      "label-flat": 1
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "d6f88303-2198-43a2-bbe8-e956cfb41bcf",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_Front_WatermelonBubblegum.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7cbe26ca79e287e6.jpg"
-      },
-      {
-       "id": "0ce70dd4-388c-46ed-bf76-f15bcf975276",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45_WatermelonBubblegum.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/307c4e67e86d841f.jpg"
-      },
-      {
-       "id": "464e2c54-d0dc-4819-88b2-48597661e2fd",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45Solo_WatermelonBubblegum.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f565e0657e5e8ebe.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only"
-     ]
-    },
-    {
-     "name": "Frosted Mint Cookies",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 10,
-     "compositions": {
-      "multi-pack": 4,
-      "device-with-packaging": 2,
-      "label-flat": 1,
-      "device-only": 2,
-      "packaging-only": 1
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "c8cbeb83-dec0-41ee-832d-6ce72554e808",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45_FrostedMintCookies.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/798a30f5588cc363.jpg"
-      },
-      {
-       "id": "2b7ec376-3b1b-48f8-9091-20866d9dd191",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45_FrostedMintCookies.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/43c66bc69f14958e.jpg"
-      },
-      {
-       "id": "cc1ada80-5aa1-4d4e-acfe-04253f16c41f",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_FrontSolo_FrostedMintCookies.png",
-       "previous": null,
-       "composition": "label-flat",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d4e63c3be8e99beb.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only"
-     ]
-    },
-    {
-     "name": "Blue Slushie",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 10,
-     "compositions": {
-      "multi-pack": 4,
-      "device-with-packaging": 2,
-      "packaging-only": 2,
-      "device-only": 2
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "e6425150-6367-46d3-8801-ed88ea7e9743",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45Open_BlueSlushie.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/77f432103c7563cb.jpg"
-      },
-      {
-       "id": "a503538b-3723-4fa9-8945-855639fd7205",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45_BlueSlushie.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/26423d5cb6168834.jpg"
-      },
-      {
-       "id": "3ed9e9ad-02b1-4fb5-8d99-5a9395aba512",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_Front_BlueSlushie.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/75fb7061e4dcbe0a.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only"
-     ]
-    },
-    {
-     "name": "Arctic Blueberry",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 10,
-     "compositions": {
-      "multi-pack": 4,
-      "device-only": 2,
-      "device-with-packaging": 3,
-      "packaging-only": 1
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "39bed328-62fe-4765-8444-89d24a185898",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45Open_ArcticBlueberry.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9862dc811579bfee.jpg"
-      },
-      {
-       "id": "a420fb6e-b8ea-4556-aa32-90b3ebfb1c87",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_Front_ArcticBlueberry.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/db086750eb71e32e.jpg"
-      },
-      {
-       "id": "fcf57aa3-182c-486e-8ca1-2fe4636df8d3",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_ArcticBlueberry.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d06d08a835b744d6.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026"
-     ]
-    },
-    {
-     "name": "Galactic Diesel",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 10,
-     "compositions": {
-      "device-only": 2,
-      "multi-pack": 4,
-      "device-with-packaging": 2,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "604f3606-f436-432f-98f2-bd00be7a8516",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_45_GalacticDiesel.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a47152a0f9be6b9a.jpg"
-      },
-      {
-       "id": "43f6d638-202a-4cdf-97de-b259a7288394",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45_GalacticDiesel.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3b31ef5c2cd1580b.jpg"
-      },
-      {
-       "id": "e1be2ded-761f-4601-9556-ee667ed5cdaf",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_Front_GalacticDiesel.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6f29e65e42a7841d.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026"
-     ]
-    },
-    {
-     "name": "Guava Mango Z",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 10,
-     "compositions": {
-      "multi-pack": 4,
-      "device-with-packaging": 2,
-      "packaging-only": 2,
-      "device-only": 2
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "3e4bfda2-0664-4bcb-8f76-900dec1e74f9",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45_GuavaMangoZ.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a7019ba66e2075ad.jpg"
-      },
-      {
-       "id": "19144bac-8d08-4ebd-9591-92a13d44040a",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_FrontOpen_GuavaMangoZ.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/39db3664d4834bc5.jpg"
-      },
-      {
-       "id": "37023208-e832-47a8-9b17-249ecfc3a212",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MI_2G_Distillate_Disposables_45_GuavaMangoZ.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4fd4ae6677e501da.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only"
-     ]
-    },
-    {
-     "name": "Horchata",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 10,
-     "compositions": {
-      "device-only": 2,
-      "multi-pack": 4,
-      "packaging-only": 2,
-      "device-with-packaging": 2
-     },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "abe64d90-7288-4f5b-aa75-4a7cc8d5f0b8",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only/MI_2G_Distillate_Dispo_Device_Front_Horchata.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/88274b1b94d943a3.jpg"
-      },
-      {
-       "id": "9ee75d56-c4b4-4e79-8788-00a469d65ded",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_45_Horchata.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c868708e6ad51156.jpg"
-      },
-      {
-       "id": "db2877de-a1cc-4406-be7a-c7811791ad27",
-       "score": 6.5,
-       "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes/MI_2G_Distillate_DisplayBox_Front_Horchata.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/16fe1d68c94e90f5.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Device_Only",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Display Boxes",
-      "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026"
-     ]
-    }
-   ]
-  },
-  {
    "id": "muha:MI:mi030",
    "name": "MI 2G Dual Disposable Flavors",
    "market": "MI",
@@ -23788,174 +23272,6 @@
    ]
   },
   {
-   "id": "muha:MI:2g-disposable-flavors",
-   "name": "MI 2G Disposable Flavors (older)",
-   "market": "MI",
-   "category": "disposables",
-   "format": "2g",
-   "line": "2G Disposable Flavors",
-   "generation": null,
-   "skuBlock": null,
-   "source": "Official MM SKU Book - MI THC.csv",
-   "items": 10,
-   "covered": 0,
-   "coveragePct": 0,
-   "missing": [
-    "Diablo Lime",
-    "Midnight Mandarine",
-    "Phantom Pineapple",
-    "Graveyard Grapefruit",
-    "Cemetary Spritz",
-    "Tropical Terror",
-    "Baha Blackout",
-    "Ghost Guava",
-    "Haunted Blue Dreams",
-    "Nightmare OG"
-   ],
-   "itemsDetail": [
-    {
-     "name": "Diablo Lime",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Midnight Mandarine",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Phantom Pineapple",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Graveyard Grapefruit",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Cemetary Spritz",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Tropical Terror",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Baha Blackout",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Ghost Guava",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Haunted Blue Dreams",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Nightmare OG",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    }
-   ]
-  },
-  {
    "id": "muha:MI:mi009",
    "name": "MI Live Resin Concentrate Jars",
    "market": "MI",
@@ -25082,7 +24398,7 @@
   },
   {
    "id": "muha:MI:mi017",
-   "name": "MI Hash Rosin Mates Metal Cans (older)",
+   "name": "MI Hash Rosin Mates Metal Cans",
    "market": "MI",
    "category": "pre-rolls",
    "format": null,
@@ -25090,11 +24406,17 @@
    "generation": null,
    "skuBlock": "MI017",
    "source": "Official MM SKU Book - MI THC.csv",
-   "items": 7,
+   "items": 13,
    "covered": 6,
-   "coveragePct": 86,
+   "coveragePct": 46,
    "missing": [
-    "Muha Donut Holes 0.6g 5 Pack (Blue)"
+    "Muha Donut Holes 0.6g 5 Pack (Blue)",
+    "Vanilla Kush",
+    "Banana Jealousy",
+    "Garlic Budder",
+    "Pink Truffle",
+    "Strawberry Melted Beltz",
+    "Cherry Punch"
    ],
    "itemsDetail": [
     {
@@ -25333,6 +24655,90 @@
      "hasAlpha": false,
      "top": [],
      "folders": []
+    },
+    {
+     "name": "Vanilla Kush",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Banana Jealousy",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Garlic Budder",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Pink Truffle",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Strawberry Melted Beltz",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Cherry Punch",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     }
    ]
   },
@@ -25478,114 +24884,6 @@
     },
     {
      "name": "Pharaohs Gold",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    }
-   ]
-  },
-  {
-   "id": "muha:MI:hash-rosin-mates-metal-cans",
-   "name": "MI Hash Rosin Mates Metal Cans (newer)",
-   "market": "MI",
-   "category": "pre-rolls",
-   "format": null,
-   "line": "Hash Rosin Mates Metal Cans",
-   "generation": null,
-   "skuBlock": null,
-   "source": "Official MM SKU Book - MI THC.csv",
-   "items": 6,
-   "covered": 0,
-   "coveragePct": 0,
-   "missing": [
-    "Vanilla Kush",
-    "Banana Jealousy",
-    "Garlic Budder",
-    "Pink Truffle",
-    "Strawberry Melted Beltz",
-    "Cherry Punch"
-   ],
-   "itemsDetail": [
-    {
-     "name": "Vanilla Kush",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Banana Jealousy",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Garlic Budder",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Pink Truffle",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Strawberry Melted Beltz",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Cherry Punch",
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
@@ -30587,7 +29885,7 @@
   },
   {
    "id": "muha:NJ:nj001",
-   "name": "NJ Distallite 2 Gram Disposables (older)",
+   "name": "NJ Distallite 2 Gram Disposables",
    "market": "NJ",
    "category": "disposables",
    "format": "2g",
@@ -30595,10 +29893,19 @@
    "generation": null,
    "skuBlock": "NJ001",
    "source": "Official MM SKU Book - NJ THC.csv",
-   "items": 10,
+   "items": 18,
    "covered": 10,
-   "coveragePct": 100,
-   "missing": [],
+   "coveragePct": 56,
+   "missing": [
+    "Bubble Gum Burst",
+    "Dragonberry Runtz",
+    "Frozen Pomegranate",
+    "Pineapple Paradise",
+    "Watermelon Moonshine",
+    "Galactic Diesel",
+    "Sweet Dreams OG",
+    "Horchata"
+   ],
    "itemsDetail": [
     {
      "name": "Habibi",
@@ -30970,6 +30277,118 @@
      "folders": [
       "Renders/Disposables/NJ/NJ_2G_Disposable"
      ]
+    },
+    {
+     "name": "Bubble Gum Burst",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Dragonberry Runtz",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Frozen Pomegranate",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Pineapple Paradise",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Watermelon Moonshine",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Galactic Diesel",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Sweet Dreams OG",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Horchata",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     }
    ]
   },
@@ -31361,218 +30780,6 @@
    ]
   },
   {
-   "id": "muha:NJ:distallite-2-gram-disposables",
-   "name": "NJ Distallite 2 Gram Disposables (newer)",
-   "market": "NJ",
-   "category": "disposables",
-   "format": "2g",
-   "line": "Distallite 2 Gram Disposables",
-   "generation": null,
-   "skuBlock": null,
-   "source": "Official MM SKU Book - NJ THC.csv",
-   "items": 10,
-   "covered": 2,
-   "coveragePct": 20,
-   "missing": [
-    "Bubble Gum Burst",
-    "Dragonberry Runtz",
-    "Frozen Pomegranate",
-    "Pineapple Paradise",
-    "Watermelon Moonshine",
-    "Galactic Diesel",
-    "Sweet Dreams OG",
-    "Horchata"
-   ],
-   "itemsDetail": [
-    {
-     "name": "Habibi",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "5b1e5888-2d88-4e00-8fc5-1ca91e64c0b5",
-       "score": 6.5,
-       "path": "Renders/Disposables/NJ/NJ_2G_Disposable/NJ_2G_Dispos_Habibi_Front.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bb7b9279638b61e8.jpg"
-      },
-      {
-       "id": "29fcbe89-6edb-4d6a-a632-293d683641f9",
-       "score": 6.5,
-       "path": "Renders/Disposables/NJ/NJ_2G_Disposable/NJ_2G_Dispos_Habibi_ThreeQuarters.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1fe624c2a65a8fff.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NJ/NJ_2G_Disposable"
-     ]
-    },
-    {
-     "name": "Bubble Gum Burst",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Dragonberry Runtz",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Frozen Pomegranate",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Pineapple Paradise",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Watermelon Moonshine",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Galactic Diesel",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Blue Slushie",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "36e5c2db-ca60-4408-b501-e35f95cff2df",
-       "score": 6.5,
-       "path": "Renders/Disposables/NJ/NJ_2G_Disposable/NJ_2G_Dispos_BlueSlushie_Front.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/76c846d2e066a568.jpg"
-      },
-      {
-       "id": "4c81932f-a25b-4ce5-a152-af459d27a263",
-       "score": 6.5,
-       "path": "Renders/Disposables/NJ/NJ_2G_Disposable/NJ_2G_Dispos_BlueSlushie_ThreeQuarters.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f46a2e91269f6cfa.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NJ/NJ_2G_Disposable"
-     ]
-    },
-    {
-     "name": "Sweet Dreams OG",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Horchata",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    }
-   ]
-  },
-  {
    "id": "muha:NJ:nj003",
    "name": "NJ Mates Metal Cans Kiefless Classic Flavor Line, Kiefless",
    "market": "NJ",
@@ -31861,17 +31068,17 @@
   },
   {
    "id": "muha:NM:nm001",
-   "name": "NM 2G Distillate Disposables (2026)",
+   "name": "NM 2G Distillate Disposables",
    "market": "NM",
    "category": "disposables",
    "format": "2g",
    "line": "2G Distillate Disposables",
-   "generation": null,
+   "generation": "Gen 3",
    "skuBlock": "NM001",
    "source": "Official MM SKU Book - NM THC.csv",
-   "items": 10,
-   "covered": 3,
-   "coveragePct": 30,
+   "items": 17,
+   "covered": 10,
+   "coveragePct": 59,
    "missing": [
     "Strawberry Shortcake",
     "Pineapple Runtz",
@@ -32120,6 +31327,335 @@
      "hasAlpha": false,
      "top": [],
      "folders": []
+    },
+    {
+     "name": "Frozen Pomegranate",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 4,
+     "compositions": {
+      "packaging-only": 2,
+      "device-with-packaging": 2
+     },
+     "hasDeviceOnly": false,
+     "hasPackaging": true,
+     "hasDisplay": false,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "ad749173-7f6a-4a7d-b1dc-58f98eae1904",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_FrozenPomegranate.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3d719392b5a3b8cb.jpg"
+      },
+      {
+       "id": "49f352cf-0659-4909-8b85-615bb3c96b35",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_FrozenPomegranate.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d20ba5793551106c.jpg"
+      },
+      {
+       "id": "866daa77-0603-4dcd-9147-e491d3720068",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_FrozenPomegranate.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7ef380669685a67a.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/NM/NM 2G Distillate 2026"
+     ]
+    },
+    {
+     "name": "Pineapple Paradise",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 4,
+     "compositions": {
+      "device-with-packaging": 2,
+      "packaging-only": 2
+     },
+     "hasDeviceOnly": false,
+     "hasPackaging": true,
+     "hasDisplay": false,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "bcad343e-fda1-4455-8a0e-84bcd7ca28db",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_PineappleParadise.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/313c74c9a28bb1c7.jpg"
+      },
+      {
+       "id": "8e9c0bf2-3ed6-4728-ba0a-4be558b2921d",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_PineappleParadise.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": null
+      },
+      {
+       "id": "0cb9b469-6be9-480b-9274-df8c9e08d277",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_PineappleParadise.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/956f479814d2962b.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/NM/NM 2G Distillate 2026"
+     ]
+    },
+    {
+     "name": "Tahoe OG",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 4,
+     "compositions": {
+      "packaging-only": 2,
+      "device-with-packaging": 2
+     },
+     "hasDeviceOnly": false,
+     "hasPackaging": true,
+     "hasDisplay": false,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "208d9b2d-596a-445e-9038-84044c552a24",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_TahoeOG.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/82186dc6a0068c18.jpg"
+      },
+      {
+       "id": "82d3551e-f7bd-4470-bc63-4ee75b2e99c7",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_TahoeOG.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f57fedea1172ce12.jpg"
+      },
+      {
+       "id": "cf733126-8323-48b3-a400-6f7827871b5e",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_TahoeOG.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d16466551b19985a.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/NM/NM 2G Distillate 2026"
+     ]
+    },
+    {
+     "name": "Blueberry Cookies",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 4,
+     "compositions": {
+      "device-with-packaging": 2,
+      "packaging-only": 2
+     },
+     "hasDeviceOnly": false,
+     "hasPackaging": true,
+     "hasDisplay": false,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "d50a06db-b18b-4f80-a008-89feef37f381",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_BlueberryCookies.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/76a576b27fc13c30.jpg"
+      },
+      {
+       "id": "d40ffe66-60f5-4160-a1e5-677b5e16bbc1",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_BlueberryCookies.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/24228e172469d19e.jpg"
+      },
+      {
+       "id": "0b826d35-86c1-4914-a992-9fe14141bfc1",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_BlueberryCookies.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6c8ce4f513889890.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/NM/NM 2G Distillate 2026"
+     ]
+    },
+    {
+     "name": "Galactic Diesel",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 4,
+     "compositions": {
+      "device-with-packaging": 2,
+      "packaging-only": 2
+     },
+     "hasDeviceOnly": false,
+     "hasPackaging": true,
+     "hasDisplay": false,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "8df9bf40-cd2f-46b1-b534-e7c749be8d8c",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_GalacticDiesel.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/120a998628796723.jpg"
+      },
+      {
+       "id": "fb342c77-1a2c-437d-a0d2-7196da7a08c3",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_GalacticDiesel.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9b0b9c46527883f0.jpg"
+      },
+      {
+       "id": "37f3bb0e-2b5b-4e71-8771-a0a1e0354f6c",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_GalacticDiesel.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8b99cceef5d077ce.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/NM/NM 2G Distillate 2026"
+     ]
+    },
+    {
+     "name": "Strawberry Runts",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 4,
+     "compositions": {
+      "device-with-packaging": 2,
+      "packaging-only": 2
+     },
+     "hasDeviceOnly": false,
+     "hasPackaging": true,
+     "hasDisplay": false,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "eda0f8f3-2afe-4c4c-873c-febb37b92925",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_StrawberryRunts.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c032bedef71b3392.jpg"
+      },
+      {
+       "id": "71dbf24c-0d80-4cfa-961e-3858eec61950",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_StrawberryRunts.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bac61bf18666e35f.jpg"
+      },
+      {
+       "id": "ff3160df-1ff5-4365-bea2-72e2732a1ee5",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_StrawberryRunts.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3e31c8ffae6c466b.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/NM/NM 2G Distillate 2026"
+     ]
+    },
+    {
+     "name": "Horchata",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 4,
+     "compositions": {
+      "packaging-only": 2,
+      "device-with-packaging": 2
+     },
+     "hasDeviceOnly": false,
+     "hasPackaging": true,
+     "hasDisplay": false,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "58ecf7ac-a661-4532-8f1d-41995419ae15",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_Horchata.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/61dbbd1e68fe6f3d.jpg"
+      },
+      {
+       "id": "4c75dfa5-9cb1-4fe4-adc1-8b49ec7dac18",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_Horchata.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1be9255c810511f2.jpg"
+      },
+      {
+       "id": "829660ed-5587-4699-ae8a-0401126eb88c",
+       "score": 6.5,
+       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_Horchata.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/253c20d4e7450b3a.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Disposables/NM/NM 2G Distillate 2026"
+     ]
     }
    ]
   },
@@ -32893,493 +32429,6 @@
      ],
      "folders": [
       "Renders/Cartridges/Distillate/NM/NM_1G_Distillate_Carts OLD"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "muha:NM:nm006",
-   "name": "NM 2G Distillate Disposables (Gen 3 · 2026)",
-   "market": "NM",
-   "category": "disposables",
-   "format": "2g",
-   "line": "2G Distillate Disposables",
-   "generation": "Gen 3",
-   "skuBlock": "NM006",
-   "source": "Official MM SKU Book - NM THC.csv",
-   "items": 10,
-   "covered": 10,
-   "coveragePct": 100,
-   "missing": [],
-   "itemsDetail": [
-    {
-     "name": "Frozen Pomegranate",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "packaging-only": 2,
-      "device-with-packaging": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "ad749173-7f6a-4a7d-b1dc-58f98eae1904",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_FrozenPomegranate.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3d719392b5a3b8cb.jpg"
-      },
-      {
-       "id": "49f352cf-0659-4909-8b85-615bb3c96b35",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_FrozenPomegranate.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d20ba5793551106c.jpg"
-      },
-      {
-       "id": "866daa77-0603-4dcd-9147-e491d3720068",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_FrozenPomegranate.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7ef380669685a67a.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NM/NM 2G Distillate 2026"
-     ]
-    },
-    {
-     "name": "Pineapple Paradise",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 2,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "bcad343e-fda1-4455-8a0e-84bcd7ca28db",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_PineappleParadise.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/313c74c9a28bb1c7.jpg"
-      },
-      {
-       "id": "8e9c0bf2-3ed6-4728-ba0a-4be558b2921d",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_PineappleParadise.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": null
-      },
-      {
-       "id": "0cb9b469-6be9-480b-9274-df8c9e08d277",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_PineappleParadise.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/956f479814d2962b.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NM/NM 2G Distillate 2026"
-     ]
-    },
-    {
-     "name": "Tahoe OG",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "packaging-only": 2,
-      "device-with-packaging": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "208d9b2d-596a-445e-9038-84044c552a24",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_TahoeOG.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/82186dc6a0068c18.jpg"
-      },
-      {
-       "id": "82d3551e-f7bd-4470-bc63-4ee75b2e99c7",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_TahoeOG.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f57fedea1172ce12.jpg"
-      },
-      {
-       "id": "cf733126-8323-48b3-a400-6f7827871b5e",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_TahoeOG.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d16466551b19985a.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NM/NM 2G Distillate 2026"
-     ]
-    },
-    {
-     "name": "Sour Watermelon Squirt",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "packaging-only": 2,
-      "device-with-packaging": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "2e34d4e3-b6cb-45a5-a17f-53715e4dcc60",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_SourWatermelonSquirt.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6d168a3bcfbbb83e.jpg"
-      },
-      {
-       "id": "f8a3c43b-ead3-4ccb-a0b8-e5596ebcf5f1",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_SourWatermelonSquirt.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a13168a80a5587d0.jpg"
-      },
-      {
-       "id": "2b513a85-1e04-4cac-a8ee-951488bf60a7",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_SourWatermelonSquirt.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/209ce70e3c9d6d48.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NM/NM 2G Distillate 2026"
-     ]
-    },
-    {
-     "name": "Blue Slushie",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 2,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "33313d2d-6f5d-4451-a2e5-df34bc12043f",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_BlueSlushie.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/be9e0750bd2a8a6b.jpg"
-      },
-      {
-       "id": "ad6812a0-1814-408a-ade1-ed49fa57ec54",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_BlueSlushie.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c8b6a172441ecd1d.jpg"
-      },
-      {
-       "id": "7a68021d-63a7-4a55-8117-55a1610df3f7",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_BlueSlushie.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4f34f9f0e2a1cf2b.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NM/NM 2G Distillate 2026"
-     ]
-    },
-    {
-     "name": "Blueberry Cookies",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 2,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "d50a06db-b18b-4f80-a008-89feef37f381",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_BlueberryCookies.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/76a576b27fc13c30.jpg"
-      },
-      {
-       "id": "d40ffe66-60f5-4160-a1e5-677b5e16bbc1",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_BlueberryCookies.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/24228e172469d19e.jpg"
-      },
-      {
-       "id": "0b826d35-86c1-4914-a992-9fe14141bfc1",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_BlueberryCookies.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6c8ce4f513889890.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NM/NM 2G Distillate 2026"
-     ]
-    },
-    {
-     "name": "Galactic Diesel",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 2,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "8df9bf40-cd2f-46b1-b534-e7c749be8d8c",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_GalacticDiesel.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/120a998628796723.jpg"
-      },
-      {
-       "id": "fb342c77-1a2c-437d-a0d2-7196da7a08c3",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_GalacticDiesel.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9b0b9c46527883f0.jpg"
-      },
-      {
-       "id": "37f3bb0e-2b5b-4e71-8771-a0a1e0354f6c",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_GalacticDiesel.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8b99cceef5d077ce.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NM/NM 2G Distillate 2026"
-     ]
-    },
-    {
-     "name": "Strawberry Runts",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "device-with-packaging": 2,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "eda0f8f3-2afe-4c4c-873c-febb37b92925",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_StrawberryRunts.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c032bedef71b3392.jpg"
-      },
-      {
-       "id": "71dbf24c-0d80-4cfa-961e-3858eec61950",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_StrawberryRunts.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bac61bf18666e35f.jpg"
-      },
-      {
-       "id": "ff3160df-1ff5-4365-bea2-72e2732a1ee5",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_StrawberryRunts.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3e31c8ffae6c466b.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NM/NM 2G Distillate 2026"
-     ]
-    },
-    {
-     "name": "Habibi",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "packaging-only": 2,
-      "device-with-packaging": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "248e6e2a-1286-4dac-9733-a294bb9411bf",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_Habibi.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9f56200fdc489d5a.jpg"
-      },
-      {
-       "id": "bf89591c-1ef5-44d2-b5cc-73472d603aad",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_Habibi.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dcf468881a912fe1.jpg"
-      },
-      {
-       "id": "9a76720b-762f-4050-8bd5-598f88c9f36b",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_Habibi.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/776877385cee31b7.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NM/NM 2G Distillate 2026"
-     ]
-    },
-    {
-     "name": "Horchata",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 4,
-     "compositions": {
-      "packaging-only": 2,
-      "device-with-packaging": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "58ecf7ac-a661-4532-8f1d-41995419ae15",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45Solo_Horchata.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/61dbbd1e68fe6f3d.jpg"
-      },
-      {
-       "id": "4c75dfa5-9cb1-4fe4-adc1-8b49ec7dac18",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_FrontSolo_Horchata.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1be9255c810511f2.jpg"
-      },
-      {
-       "id": "829660ed-5587-4699-ae8a-0401126eb88c",
-       "score": 6.5,
-       "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_45_Horchata.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/253c20d4e7450b3a.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Disposables/NM/NM 2G Distillate 2026"
      ]
     }
    ]
@@ -37815,7 +36864,7 @@
   },
   {
    "id": "muha:OH:2g-distillate-disposables",
-   "name": "OH 2G Distillate Disposables (older)",
+   "name": "OH 2G Distillate Disposables",
    "market": "OH",
    "category": "disposables",
    "format": "2g",
@@ -37823,7 +36872,7 @@
    "generation": null,
    "skuBlock": null,
    "source": "Official MM SKU Book - OH THC.csv",
-   "items": 10,
+   "items": 20,
    "covered": 0,
    "coveragePct": 0,
    "missing": [
@@ -37836,7 +36885,17 @@
     "Apple Gelato ICE",
     "Jack Herer",
     "Blueberry Haze",
-    "Purple Punch"
+    "Purple Punch",
+    "Frozen Pomegranate",
+    "Galactic Diesel",
+    "Pineapple Express",
+    "Sour Watermelon Squirt",
+    "Magic Melon OG",
+    "Blue Slushie",
+    "Blueberry Cookies",
+    "Tahoe OG",
+    "Strawberry Runts",
+    "Bubble Gum"
    ],
    "itemsDetail": [
     {
@@ -37967,6 +37026,146 @@
     },
     {
      "name": "Purple Punch",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Frozen Pomegranate",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Galactic Diesel",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Pineapple Express",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Sour Watermelon Squirt",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Magic Melon OG",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Blue Slushie",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Blueberry Cookies",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Tahoe OG",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Strawberry Runts",
+     "sku": null,
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 0,
+     "compositions": {},
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
+     "hasDisplay": false,
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
+    },
+    {
+     "name": "Bubble Gum",
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
@@ -38157,174 +37356,6 @@
     },
     {
      "name": "Purple Passion Punch",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    }
-   ]
-  },
-  {
-   "id": "muha:OH:2g-distillate-disposables",
-   "name": "OH 2G Distillate Disposables (newer)",
-   "market": "OH",
-   "category": "disposables",
-   "format": "2g",
-   "line": "2G Distillate Disposables",
-   "generation": null,
-   "skuBlock": null,
-   "source": "Official MM SKU Book - OH THC.csv",
-   "items": 10,
-   "covered": 0,
-   "coveragePct": 0,
-   "missing": [
-    "Frozen Pomegranate",
-    "Galactic Diesel",
-    "Pineapple Express",
-    "Sour Watermelon Squirt",
-    "Magic Melon OG",
-    "Blue Slushie",
-    "Blueberry Cookies",
-    "Tahoe OG",
-    "Strawberry Runts",
-    "Bubble Gum"
-   ],
-   "itemsDetail": [
-    {
-     "name": "Frozen Pomegranate",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Galactic Diesel",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Pineapple Express",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Sour Watermelon Squirt",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Magic Melon OG",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Blue Slushie",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Blueberry Cookies",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Tahoe OG",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Strawberry Runts",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Bubble Gum",
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
@@ -39529,39 +38560,6 @@
    }
   },
   {
-   "folder": "Disposables / CA_Distillate",
-   "market": "CA",
-   "files": 65,
-   "products": [
-    {
-     "product": "Watermelon OG disposable vape",
-     "n": 5
-    },
-    {
-     "product": "Apple Gelato Ice 1000mg disposable vape",
-     "n": 3
-    },
-    {
-     "product": "Muha Meds Jack Herer Sativa disposable vape and packaging",
-     "n": 2
-    },
-    {
-     "product": "Muha Meds Purple Punch 1000mg disposable vape",
-     "n": 2
-    }
-   ],
-   "samples": [
-    "CA_Disposables_Distillate_WeddingCake_Front_V2.png",
-    "CA_Disposables_Distillate_AppleGelatoIce_Front_V2.png",
-    "CA_Disposables_Distillate_JakeHerer_Front_V2.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 59,
-    "packaging-only": 4,
-    "lineup": 2
-   }
-  },
-  {
    "folder": "Hemp / Cartridges / previous design: THCA - Oct 2024",
    "market": null,
    "files": 62,
@@ -40093,39 +39091,6 @@
    }
   },
   {
-   "folder": "Disposables / MI_Distillate / previous design: MI_2G_Distillate_TechDesign_June2025",
-   "market": "MI",
-   "files": 30,
-   "products": [
-    {
-     "product": "Habibi All-In-One disposable vape",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds All-In-One Galactic Diesel 2000mg disposable vape",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds All-In-One Dragon Berry Runtz 2000mg disposable vape",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds All-In-One 2000 MG disposable vape in Blue Slushie flavor with its packaging box",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MI_2G_Distillate_Disposables_45_Habibi.png",
-    "MI_2G_Distillate_Disposables_Front_GalacticDiesel.png",
-    "MI_2G_Distillate_Disposables_Front_DragonBerryRuntz.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 14,
-    "packaging-only": 14,
-    "lineup": 2
-   }
-  },
-  {
    "folder": "Website Images / Carts",
    "market": null,
    "files": 30,
@@ -40361,7 +39326,7 @@
    }
   },
   {
-   "folder": "Disposables / MI_Distillate / previous design: MI_2G_Distillate_NewDevice_Nov2024",
+   "folder": "Disposables / MI_Distillate / previous generation (Gen 2): MI_2G_Distillate_NewDevice_Nov2024",
    "market": "MI",
    "files": 23,
    "products": [
@@ -40526,7 +39491,7 @@
    }
   },
   {
-   "folder": "Disposables / MO_2G_Disposables March 2025 / previous design: MO_2G_Disposables March 2025",
+   "folder": "Disposables / MO_2G_Disposables March 2025 / previous generation (Gen 2): MO_2G_Disposables March 2025",
    "market": "MO",
    "files": 21,
    "products": [
@@ -40622,7 +39587,7 @@
    }
   },
   {
-   "folder": "Disposables / MI_Distillate / previous design: MI_2G_Distillate_July2024",
+   "folder": "Disposables / MI_Distillate / previous generation (Gen 1): MI_2G_Distillate_July2024",
    "market": "MI",
    "files": 20,
    "products": [
@@ -40653,7 +39618,7 @@
    }
   },
   {
-   "folder": "Disposables / MI_Distillate / previous design: MI_2G_Distillate_Nov2024",
+   "folder": "Disposables / MI_Distillate / previous generation (Gen 2): MI_2G_Distillate_Nov2024",
    "market": "MI",
    "files": 20,
    "products": [
@@ -40709,6 +39674,68 @@
     "CA_2G_Blend_Dispos_JackHerer_Front.png",
     "CA_2G_Blend_Dispos_CherryGrapefruit_ThreeQuarters.png",
     "CA_2G_Blend_Dispos_SuperSourDiesel_ThreeQuarters.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 20
+   }
+  },
+  {
+   "folder": "Disposables / CA_Distillate / previous generation (Gen 1): Color Device",
+   "market": "CA",
+   "files": 20,
+   "products": [
+    {
+     "product": "Blueberry Haze Disposable Vape",
+     "n": 1
+    },
+    {
+     "product": "Super Sour Diesel 1G Distillate Disposable",
+     "n": 1
+    },
+    {
+     "product": "Purple Punch 1000mg disposable vape and packaging",
+     "n": 1
+    },
+    {
+     "product": "Jack Herer Disposable",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "Disposables_Distillate_BlueberryHaze_45_V1.png",
+    "Disposables_Distillate_SuperSourDiesel_45_V1.png",
+    "Disposables_Distillate_PurplePunch_45_V1.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 20
+   }
+  },
+  {
+   "folder": "Disposables / CA_Distillate / previous generation (Gen 1): Grey Device",
+   "market": "CA",
+   "files": 20,
+   "products": [
+    {
+     "product": "Watermelon OG disposable vape",
+     "n": 2
+    },
+    {
+     "product": "Wedding Cake disposable vape",
+     "n": 2
+    },
+    {
+     "product": "Apple Gelato Ice 1000mg disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Strawberry Runtz Disposable Vape",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "Disposables_Distillate_AppleGelatoIce_45_V1.png",
+    "Disposables_Distillate_StrawberryRuntz_45_V1.png",
+    "Disposables_Distillate_AppleGelatoIce_V1.png"
    ],
    "compositions": {
     "device-with-packaging": 20
@@ -40938,6 +39965,41 @@
    }
   },
   {
+   "folder": "Disposables / MI_Distillate",
+   "market": "MI",
+   "files": 17,
+   "products": [
+    {
+     "product": "Muha Meds All-In-One Dragon Berry Runtz 2000mg disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One Bubblegum Burst disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One disposable vapes (various flavors)",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds 100-unit master case for 2G Distillate disposables",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "MI_2G_Distillate_Disposables_Front_DragonBerryRuntz.png",
+    "MI_2G_Distillate_Disposables_45_BubblegumBurst.png",
+    "00_MI_2G_Distillate_Disposables_GroupShot_Spread.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 5,
+    "lineup": 2,
+    "multi-pack": 5,
+    "packaging-only": 4,
+    "device-only": 1
+   }
+  },
+  {
    "folder": "Disposables / MI_2G_Mixed_Flavors_Reused_Mylars",
    "market": "MI",
    "files": 17,
@@ -41096,6 +40158,37 @@
     "device-with-packaging": 4,
     "device-only": 9,
     "n/a": 2
+   }
+  },
+  {
+   "folder": "Disposables / CA_Distillate / previous generation (Gen 1): Black and Gold Device",
+   "market": "CA",
+   "files": 15,
+   "products": [
+    {
+     "product": "Watermelon OG disposable vape",
+     "n": 2
+    },
+    {
+     "product": "Wedding Cake 1G Distillate disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Apple Gelato Ice 1000mg disposable vape",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Jack Herer Sativa 1000mg disposable vape",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "CA_Disposables_Distillate_WeddingCake_Front_V2.png",
+    "CA_Disposables_Distillate_AppleGelatoIce_Front_V2.png",
+    "CA_Disposables_Distillate_JakeHerer_Front_V2.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 15
    }
   },
   {
@@ -41702,6 +40795,39 @@
    }
   },
   {
+   "folder": "Disposables / CA_Distillate",
+   "market": "CA",
+   "files": 10,
+   "products": [
+    {
+     "product": "Bubblegum Burst All-In-One disposable vape",
+     "n": 2
+    },
+    {
+     "product": "Muha Meds All-In-One Disposable, Strawberry Runtz flavor",
+     "n": 1
+    },
+    {
+     "product": "Strawberry Runtz All-In-One disposable",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds All-In-One disposable vapes: Sour Watermelon Squirt, Pineapple Express, Blue Slushie, Galactic Diesel, Tahoe OG, Strawberry Runtz",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "CA_1G_Distillate_Disposables_Front_BubblegumBurst.png",
+    "CA_1G_Distillate_Disposables_45_StrawberryRuntz.png",
+    "CA_1G_Distillate_Disposables_Front_Solo_StrawberryRuntz.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 4,
+    "packaging-only": 4,
+    "lineup": 2
+   }
+  },
+  {
    "folder": "Concentrates / MI Hash Rosin Concentrate Jars",
    "market": "MI",
    "files": 10,
@@ -42293,39 +41419,6 @@
    ],
    "compositions": {
     "label-flat": 7
-   }
-  },
-  {
-   "folder": "Disposables / MI_Distillate",
-   "market": "MI",
-   "files": 7,
-   "products": [
-    {
-     "product": "Muha Meds 100-unit master case for 2G Distillate disposables",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds 2G All-In-One disposable vapes (various flavors)",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds Master Case 100 Units",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds 2G Distillate Master Case",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MI_2G_Distillate_MasterCase_Closed_2.png",
-    "00_MI_2G_Distillate_Disposables_GroupShot.png",
-    "MI_2G_Distillate_MasterCase_Closed_1.png"
-   ],
-   "compositions": {
-    "multi-pack": 5,
-    "device-with-packaging": 1,
-    "device-only": 1
    }
   },
   {
