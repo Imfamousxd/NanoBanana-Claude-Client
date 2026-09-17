@@ -214,13 +214,14 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
     if (decision.verdict === "skip" || decision.verdict === "old") return why(asset, `folder review: ${decision.verdict}`);
     if (decision.verdict === "line" && decision.lineId && decision.lineId !== line.id) return why(asset, "folder review: locked to another line");
   }
+  const locked = Boolean(decision && decision.verdict === "line" && decision.lineId === line.id); // a person said: this folder is this line
   const iteration = deviceIterationOf(asset);
   if (iteration && !/all ?in ?one|\baio\b/.test(norm(`${line.line} ${line.section || ""}`))) return why(asset, "older device iteration");
   // Line-specific folders (Moods, Mavricks, MM x Cookies, Madness, Magnetic, Dual) only serve their line, and a
   // line that names one of them (the Cookies collab, the Dual disposables…) only takes renders from that folder
   // or renders whose own text names it: a plain 1G Distillate Blue Slushie is not the Cookies-collab Blue Slushie.
   const dirSegments = String(asset.path || "").split("/").slice(0, -1).map(splitWords); // directories only: the file name carries the flavour ("Mango Madness")
-  for (const [seg, re] of (asset.brand && !/muha/.test(asset.brand) ? [] : LINE_FOLDERS)) {
+  for (const [seg, re] of (locked || (asset.brand && !/muha/.test(asset.brand)) ? [] : LINE_FOLDERS)) {
     const inFolder = dirSegments.some((d) => seg.test(d));
     const lineWants = re.test(`${line.line} ${line.section || ""}`);
     if (inFolder && !lineWants) return why(asset, "line folder, line does not want it");
@@ -247,6 +248,7 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   else if (tokens.length >= 2 && tokens.every((token) => words.includes(token))) score += 2;
   else if (tokens.length === 1 && tokens[0].length >= 6 && words.includes(tokens[0])) score += 1.5;
   else return why(asset, "flavour not in text");
+  if (locked) return score + 3; // the reviewer locked this folder to this line: the flavour matched, nothing else can refuse it
   // Hard walls: vape form, format, market, generation.
   // A longer flavour that contains this one ("Strawberry Lemon" for "Strawberry") present in the text means it is that flavour, not this one.
   if (KNOWN_NAMES.some((other) => other !== flavour && other.includes(flavour) && new RegExp("(^| )" + other.replace(/\s/g, "") + "( |$)").test(" " + prepared.compactFull.replace(/([a-z])(?=[0-9])/g, "$1 ") + " ") || (other !== flavour && other.includes(flavour) && other.split(" ").every((w) => prepared.full.split(" ").includes(w))))) return why(asset, "a longer flavour name is present");
@@ -290,7 +292,7 @@ export function compositionLabel(composition, category) {
 // Hits for one SKU item: a previous design (or an explicit old folder) is kept only when the item has no render
 // from a current folder at all — then it is the best the library has, and it is flagged so the page says so.
 export function selectHits(hits) {
-  const tagged = hits.map((hit) => ({ ...hit, previous: previousDesignOf(hit.asset) }));
+  const tagged = hits.map((hit) => { const d = folderDecisionOf(hit.asset); return { ...hit, previous: d && d.verdict === "line" ? null : previousDesignOf(hit.asset) }; });
   const current = tagged.filter((hit) => !hit.previous);
   return current.length ? current : tagged;
 }

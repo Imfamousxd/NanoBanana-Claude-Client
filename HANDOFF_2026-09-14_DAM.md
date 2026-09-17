@@ -412,4 +412,35 @@ Waiting on the user: more row corrections; names/handling for the "no SKU row" f
 
 - 2026-09-16 late (folder review corrections, all applied): (1) **Device generations** for Muha disposables — Nov 2024 = Gen 2, June 2025 = Gen 3, earlier = Gen 1 (`deviceGenerationOf` in coverage.mjs: explicit "Gen N" in a folder wins, else the folder date; applies to distillate, hash rosin, live resin, melted diamond; Dual / Magnetic / Moods / Mavricks / pods never get one). Design groups for disposables span the whole tree per state + size + strength; every folder of the newest generation is current ("Tech Design June 2025" and "Jan 2026" are both Gen 3), older generations are "previous generation (Gen N)". The generation is prefixed to the folder's design tag ("Gen 3 · Tech Design June 2025"). (2) **Same-product merges** in the registry (folder-map.mjs `mergeProducts` + `nameLines`): lines whose titles differ only by generic words (MI "2G Distillate Disposables" + "2G Disposable Flavors" ×2 → one line, 30 flavours), and same-titled lines fed by the same folder or with no renders of their own (NJ 2G ×2, NM 2G nm006→nm001, HEMP THCA carts V2→base with `altSkus`, OH 2G ×2, MI Hash Rosin Mates ×2). Only lines fed by different folders keep old/new tags: NM 1G Carts (OLD)/(2026), NM 1G Disposables (Gen 2)/(Gen 3 · 2026), NY 2G Disposables (Gen 2 Device)/(Gen 3). (3) **Line ids are unique** (import.mjs suffixes a reused block code; CA ca024-2, three Dialed ids). (4) **Cannabinoid wall** judges the file's own words (file name, vision product/title, leaf folder) before the parent folder — the "D8 D10 HHC" parent no longer lets D8 files feed the Delta-10 and HHC lines; Hemp audit: 0 cross-cannabinoid leaks. (5) Design tags keep short codes whole ("D8 Display", not "D Display"). (6) Folder status is the majority of its files. Muha now 633/1,131 items, 2,750 renders. Pages: folder review v6, Muha map v15, Dialed map v13. The user has started clicking on the folder page (at least one "Not a product" with a note on the D8 Display row that was really feedback about the tag — re-check that row's verdict when applying decisions).
 
+**2026-09-17 — the user reviewed ALL 328 folders on the folder page** (325 Yes, 2 Not a product, 1 Old design). Decisions were read back (`Artifact read_db … collection=decisions out_dir=…/decisions`) and merged (`skus folders --decisions`), so `folder-map.muha.json` now carries every decision; a `line` decision now bypasses the structural walls for that line (`locked` in scoreMatch) and un-demotes a previous-design folder. The page now shows **likely matches in the book** for the 96 product folders that feed no line (35 have candidates: same state + category, no strength contradiction, evidence = flavours found in the folder, same kind/size) with one-click "Assign to …" buttons. **User notes from the review (to act on):**
+  - [skip] `Accessories/Product Displays/Mates Duo`: these arent acessporites these should be under the other mate duos.
+  - [ok] `Ai Resources`: the one appears to be flavor badge, it can be classified as such, maybe even by flvor badge name.
+  - [skip] `Apparel/MM`: im seeing multiple merch pieces here, they should seperated by their apparel, like one is the varsity jaked and the other is a woman romper
+  - [ok] `CA catalog resized/Hash Rosin Concentrates 1G`: the file that looked different passes
+  - [ok] `Catalyst`: should be classified as catalyst prerolls so they can be associated with pre rolls too if needed.
+  - [ok] `Concentrates/CA/CA_HR_Concentrates_June2025_Tech`: these should be in a specific folder under CA as hash rosin
+  - [ok] `Device/All Devices`: lets also get duo and magnetic device in here, copy them dont just move them.
+  - [ok] `Device/Mock Up`: thiss mock up appear to be for the duo, should also be  in there.
+  - [ok] `Disposables/MI/MI Magnetic_Dispo`: t
+  - [ok] `Edibles/MI Gummies/HR_Gummies_Only`: the tag shouldnt be only it hshould be (Gummy Only)
+  - [ok] `Edibles/RedesignTest`: the one u say is different is renders for specific icons
+  - [ok] `HOTKNIFES/pen_box`: one of the ones that say device with packaging had just packaging, review the images here so they are named correctly
+  - [ok] `Hemp/Cartridges/D8 D10 HHC`: these should also be classified as group or lineup under this category
+  - [ok] `Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display`: shouldnt be D Display should be D10 Display
+  - [ok] `Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display`: shouldnt be D Display should be D8 Display
+  - [ok] `Hemp/Cartridges/THCA - Oct 2024`: the 2 files should be in a subfolder here called master case
+  - [ok] `Hemp/Cartridges/THCP + HHC 2G - 2026`: move the 1g to  the correct spot, they are also specifc too orange creamsicle
+  - [ok] `Hemp/Pre Rolls/Glass Jar`: these are kief infused and should be classified as such
+  - [ok] `MMxCookies/MMxCookies MMlogo Reversed`: the images are of devices and should be classified as such.
+  - [old] `Master Case Group Shots`: 
+  - [ok] `Mavricks`: the 2 that look different are single device only renders
+  - [ok] `Moods`: the one that looks different is a device only render of white walker
+  - [ok] `Moods/Device2/Logo2`: these look like renders and should be classified as such
+  - [ok] `Moods/Device2/Updated`: these look like renders and should be classified as such
+  - [ok] `Motion/MI Mambas Flying Gummies Stills`: some of the shots say device with packaging but they are shots of gummies, review all content here and classify them correctly.
+  - [ok] `Multi Product Group Shots/MI`: these shots are for specifcally the gummies, they should also be there as group shots. and honestly should only be there since these arent multi product.
+  - [ok] `Pre-Rolls/Glass Jars`: these re of muh mtes and should be classified as such. the 2 that look different 1 is a single join shot, another is  a marketing graphic of muha og flavor
+  - [ok] `Pre-Rolls/KiefJoint`: im only seeing single joint renders here and cant confirm if this is truly correct.
+  - [ok] `Pre-Rolls/Metal Can/MI/MI_HashRosin Mates`: the one u see different is just the single joint render.
+
 **Still waiting on the user:** more row corrections; names/handling for the "no SKU row" folders (now also: what to call the Sept-2024 All-in-One device category, and whether the WRONG folders get deleted or moved to `_old`); "run the six".
