@@ -1,5 +1,5 @@
 import fs from "node:fs"; import path from "node:path"; import sharp from "sharp";
-import { scoreMatch, unmatchedKey, indexDesigns, indexRegistry, selectHits, compositionLabel } from "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/engine/skus/coverage.mjs";
+import { scoreMatch, unmatchedKey, indexDesigns, indexRegistry, indexFolderMap, inScope, selectHits, compositionLabel } from "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/engine/skus/coverage.mjs";
 const S = "/private/tmp/claude-501/-Users-mario-Desktop-Cursor-Projects-NanoBanana-Claude-Client/6052abf4-48c5-44c9-b472-a14ff8c10702/scratchpad";
 const root = "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client";
 const lib = JSON.parse(fs.readFileSync(S + "/render-library.json", "utf8"));
@@ -23,7 +23,8 @@ const brands = [["brand.muha", "muha-meds", "Muha Meds"], ["brand.dialed-moods",
 const pages = [];
 for (const [brand, regFile, label] of brands) {
   const reg = JSON.parse(fs.readFileSync(root + "/knowledge/skus/" + regFile + ".json", "utf8"));
-  const assets = lib.filter((a) => a.brand === brand); indexDesigns(assets); indexRegistry(reg);
+  const assets = lib.filter((a) => a.brand === brand && inScope(a)); indexDesigns(assets); indexRegistry(reg);
+  const mapFile = root + "/knowledge/skus/folder-map." + (regFile === "muha-meds" ? "muha" : regFile) + ".json"; indexFolderMap(fs.existsSync(mapFile) ? JSON.parse(fs.readFileSync(mapFile, "utf8")) : null);
   const matched = new Set(); const sections = []; let items = 0, covered = 0;
   const byMarket = {}; for (const line of reg.lines) (byMarket[line.market || "—"] ??= []).push(line);
   const need = new Map();

@@ -254,7 +254,12 @@ async function main() {
       console.log(coverageText(coverage));
       return;
     }
-    throw new Error("skus requires: import --brand <id> <csv…> | coverage --brand <id> --library <render-library.json>");
+    if (sub === "folders") {
+      const { buildFolderMap } = await import("./skus/folder-map.mjs");
+      const result = await buildFolderMap(root, { brand: opt("--brand"), libraryFile: opt("--library"), page: opt("--page"), decisions: opt("--decisions") });
+      return print(result);
+    }
+    throw new Error("skus requires: import --brand <id> <csv…> | coverage --brand <id> --library <render-library.json> | folders --brand <id> --library <file> [--page <out.html>] [--decisions <json>]");
   }
   if (command === "presets") {
     const { STYLE_PRESETS, CHANNELS } = await import("./prompts/presets.mjs");

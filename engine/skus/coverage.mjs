@@ -148,6 +148,16 @@ export function indexDesigns(library) { const groups = designGroups(library); CU
 // when the Renders tree has nothing for it, and they are flagged like a previous design.
 const WORKING_RE = /(^|\/)(_BRAND PROJECTS|Graphic Designer General SOP|WIP|Drafts?|Working Files?)(\/|$)/i;
 export function workingFileOf(asset) { const m = String(asset.path || "").match(WORKING_RE); return m && !/^Renders\//.test(String(asset.path || "")) ? `working file: ${String(asset.path).split("/").slice(0, 2).join("/")}` : null; }
+// The reviewed folder map (knowledge/skus/folder-map.<brand>.json): a decision per design folder made by a
+// person on the folder review page. "line" locks the folder to one SKU line, "old" and "skip" take it off
+// every row, "ok" confirms the automatic proposal. Decisions beat every heuristic below.
+let FOLDER_DECISIONS = new Map(); // design-folder path → { verdict, lineId, note }
+export function indexFolderMap(map) { FOLDER_DECISIONS = new Map((map?.folders || []).filter((f) => f.decision && f.decision.verdict).map((f) => [f.path, f.decision])); return FOLDER_DECISIONS; }
+export function folderPathOf(asset) { const d = designFolderOf(asset); return d ? (d.parent ? `${d.parent}/${d.folder}` : d.folder) : path.dirname(String(asset.path || "")); }
+export function folderDecisionOf(asset) { return FOLDER_DECISIONS.size ? FOLDER_DECISIONS.get(folderPathOf(asset)) || null : null; }
+// Library scope: Muha product renders are only what lives under the brand's top-level Renders/ folder.
+export function inScope(asset) { return !/muha/.test(String(asset.brand || "")) || String(asset.path || "").startsWith("Renders/"); }
+export function loadLibrary(libraryFile, brand) { return JSON.parse(fs.readFileSync(libraryFile, "utf8")).filter((asset) => asset.brand === `brand.${brand}` && inScope(asset)); }
 export function previousDesignOf(asset) {
   const working = workingFileOf(asset); if (working) return working;
   const d = designFolderOf(asset); if (!d) return null;
@@ -170,6 +180,11 @@ const why = (asset, reason) => { if (process.env.SKU_DEBUG) console.error(`  ref
 export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   if (GENERIC_RE.test(String(asset.path || ""))) return why(asset, "generic folder");
   if (quarantined(asset)) return why(asset, "WRONG folder");
+  const decision = folderDecisionOf(asset);
+  if (decision) {
+    if (decision.verdict === "skip" || decision.verdict === "old") return why(asset, `folder review: ${decision.verdict}`);
+    if (decision.verdict === "line" && decision.lineId && decision.lineId !== line.id) return why(asset, "folder review: locked to another line");
+  }
   const iteration = deviceIterationOf(asset);
   if (iteration && !/all ?in ?one|\baio\b/.test(norm(`${line.line} ${line.section || ""}`))) return why(asset, "older device iteration");
   // Line-specific folders (Moods, Mavricks, MM x Cookies, Madness, Magnetic, Dual) only serve their line, and a
@@ -303,7 +318,8 @@ export function computeCoverage(registry, library, { threshold = 3 } = {}) {
   }
   const unmatchedGroups = [...unmatched.values()].map((group) => ({ ...group, products: [...group.products.entries()].sort((a, b) => b[1] - a[1]).slice(0, 4).map(([product, n]) => ({ product, n })) })).sort((a, b) => b.files - a.files);
   const totals = { lines: lines.length, items: lines.reduce((n, line) => n + line.items, 0), covered: lines.reduce((n, line) => n + line.covered, 0), assets: library.length, matchedAssets: matchedAssetIds.size, unmatchedAssets: library.length - matchedAssetIds.size, unmatchedGroups: unmatchedGroups.length };
-  return { brand: registry.brand, computedAt: new Date().toISOString().slice(0, 10), totals, lines, unmatchedGroups };
+  const assignments = Object.fromEntries([...matchedAssetIds.entries()]);
+  return { brand: registry.brand, computedAt: new Date().toISOString().slice(0, 10), totals, lines, unmatchedGroups, assignments };
 }
 
 export function coverageText(coverage) {
@@ -322,9 +338,12 @@ export function coverageText(coverage) {
 export function runCoverage(root, { brand, libraryFile }) {
   const registryFile = path.join(root, "knowledge", "skus", `${{ muha: "muha-meds" }[brand] || brand}.json`);
   const registry = JSON.parse(fs.readFileSync(registryFile, "utf8"));
-  const library = JSON.parse(fs.readFileSync(libraryFile, "utf8")).filter((asset) => asset.brand === `brand.${brand}` || (!asset.brand && false));
+  const library = loadLibrary(libraryFile, brand);
+  const mapFile = path.join(root, "knowledge", "skus", `folder-map.${brand}.json`);
+  if (fs.existsSync(mapFile)) indexFolderMap(JSON.parse(fs.readFileSync(mapFile, "utf8")));
   const coverage = computeCoverage(registry, library);
   const target = registryFile.replace(/\.json$/, ".coverage.json");
-  fs.writeFileSync(target, JSON.stringify(coverage, null, 1) + "\n");
+  const { assignments, ...file } = coverage;
+  fs.writeFileSync(target, JSON.stringify(file, null, 1) + "\n");
   return { file: path.relative(root, target), coverage };
 }
