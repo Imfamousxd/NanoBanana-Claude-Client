@@ -1,6 +1,6 @@
 {
  "brand": "muha",
- "builtAt": "2026-09-17T01:33:00.677Z",
+ "builtAt": "2026-09-17T01:35:36.784Z",
  "scope": "Renders/ only",
  "folders": [
   {
@@ -9,14 +9,14 @@
    "files": 3,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "device only": 2,
     "in scene": 1
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (3 files).",
+   "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
     {
      "id": "de637188-a803-45f5-9ee5-0e61f9f3ef24",
@@ -38,7 +38,7 @@
    "files": 8,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "n/a": 2,
     "multi pack": 2,
@@ -47,7 +47,7 @@
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (8 files).",
+   "proposal": "On no SKU row — nothing in the book matched (8 files).",
    "samples": [
     {
      "id": "691510c3-0ae4-44ae-b876-99d5a594e20b",
@@ -73,7 +73,7 @@
    "files": 6,
    "assigned": 6,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "n/a": 5,
     "device only": 1
@@ -92,7 +92,7 @@
     }
    ],
    "decision": null,
-   "proposal": "Feeds Accessories · null — 6 of 6 files on rows. Flavours: Dab Mats.",
+   "proposal": "Feeds Accessories · all markets — 6 of 6 files on rows. Flavours: Dab Mats.",
    "samples": [
     {
      "id": "5dad858e-9914-4897-96bc-0fd1e5e3deb2",
@@ -118,7 +118,7 @@
    "files": 15,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "device with packaging": 4,
     "device only": 9,
@@ -126,7 +126,7 @@
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (15 files).",
+   "proposal": "On no SKU row — nothing in the book matched (15 files).",
    "samples": [
     {
      "id": "eb82e7aa-169b-4b03-9a3d-149def11ec46",
@@ -152,7 +152,7 @@
    "files": 14,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "n/a": 11,
     "device only": 2,
@@ -160,7 +160,7 @@
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (14 files).",
+   "proposal": "On no SKU row — nothing in the book matched (14 files).",
    "samples": [
     {
      "id": "ef0102fe-ec52-45e0-a735-11e8ffbbab36",
@@ -186,13 +186,13 @@
    "files": 3,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "n/a": 3
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (3 files).",
+   "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
     {
      "id": "991d5e84-b585-4610-b38f-28380f669ef8",
@@ -214,13 +214,13 @@
    "files": 3,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "n/a": 3
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (3 files).",
+   "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
     {
      "id": "e92195fc-cf51-4826-ada3-b07adb5087aa",
@@ -242,13 +242,13 @@
    "files": 36,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "device only": 36
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (36 files).",
+   "proposal": "On no SKU row — nothing in the book matched (36 files).",
    "samples": [
     {
      "id": "0bdb078c-4c56-4a0e-aa1a-e4b0df90fc81",
@@ -274,13 +274,13 @@
    "files": 4,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "n/a": 4
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (4 files).",
+   "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "samples": [
     {
      "id": "3f2eda9d-528c-4e69-9d62-2e2efe62388b",
@@ -306,13 +306,13 @@
    "files": 2,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "multi pack": 2
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (2 files).",
+   "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
     {
      "id": "6bd9ffcf-990e-4fc7-a411-e002e19c814d",
@@ -330,7 +330,7 @@
    "files": 17,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "multi pack": 8,
     "in scene": 3,
@@ -338,7 +338,7 @@
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (17 files).",
+   "proposal": "On no SKU row — nothing in the book matched (17 files).",
    "samples": [
     {
      "id": "7e36209f-1072-4203-89d4-11b82eca2084",
@@ -364,13 +364,13 @@
    "files": 2,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "lineup": 2
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (2 files).",
+   "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
     {
      "id": "66292615-9c6c-444b-a629-496735d46e12",
@@ -388,14 +388,14 @@
    "files": 2,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "n/a": 1,
     "device with packaging": 1
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (2 files).",
+   "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
     {
      "id": "f04467c2-c8bd-41ec-a9f3-835e777d4dae",
@@ -413,14 +413,14 @@
    "files": 2,
    "assigned": 0,
    "market": null,
-   "status": "not a product render folder",
+   "status": null,
    "compositions": {
     "n/a": 1,
     "device only": 1
    },
    "lines": [],
    "decision": null,
-   "proposal": "On no SKU row — not a product render folder (2 files).",
+   "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
     {
      "id": "e7b2d186-4fc3-4655-ac54-ae0870f90e2c",
@@ -10439,7 +10439,7 @@
     }
    ],
    "decision": null,
-   "proposal": "Feeds Accessories · null — 1 of 12 files on rows, 11 on no row. Flavours: Hot Knife.",
+   "proposal": "Feeds Accessories · all markets — 1 of 12 files on rows, 11 on no row. Flavours: Hot Knife.",
    "samples": [
     {
      "id": "004de928-2335-415d-98e4-66f70f9105ce",

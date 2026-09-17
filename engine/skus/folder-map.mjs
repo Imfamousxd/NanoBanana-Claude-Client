@@ -10,7 +10,7 @@ import { computeCoverage, loadLibrary, indexFolderMap, folderPathOf, deviceItera
 
 const REGISTRY_FILE = { muha: "muha-meds" };
 const GENERIC_RE = /ai resources|master case|group shot|website images|badge|catalog resized|motion\/|redesign ?test/i;
-const NOT_PRODUCT_RE = /^Renders\/(Website Images|Motion|Apparel|Labubu|Ape|HOTKNIFES|Giveaway Tickets|Muha_Vaults|Catalyst|Ai Resources|Multi Product Group Shots|Master Case Group Shots|Accessories|TEMP|CA catalog resized)(\/|$)/i;
+const NOT_PRODUCT_RE = /^Renders\/(Website Images|Motion|Apparel|Labubu|Ape|HOTKNIFES|Giveaway Tickets|Muha_Vaults|Catalyst|Ai Resources|Multi Product Group Shots|Master Case Group Shots|TEMP|CA catalog resized)(\/|$)/i;
 export const idOf = (folderPath) => crypto.createHash("sha1").update(folderPath).digest("hex").slice(0, 16);
 
 function readDecisions(file) {
@@ -46,7 +46,7 @@ function proposalOf(folder) {
     const more = lines.length > 1 ? ` (+${lines.length - 1} more line${lines.length > 2 ? "s" : ""}: ${lines.slice(1, 3).map((l) => `${l.line} ${l.market}`).join("; ")})` : "";
     const flavours = top.flavours.slice(0, 6).join(", ") + (top.flavours.length > 6 ? ` +${top.flavours.length - 6}` : "");
     const rest = folder.files - folder.assigned;
-    return `Feeds ${top.line} · ${top.market}${top.generation ? " · " + top.generation : ""}${top.skuBlock ? " · " + top.skuBlock : ""}${more} — ${folder.assigned} of ${folder.files} files on rows${rest ? `, ${rest} on no row` : ""}. Flavours: ${flavours}.`;
+    return `Feeds ${top.line} · ${top.market || "all markets"}${top.generation ? " · " + top.generation : ""}${top.skuBlock ? " · " + top.skuBlock : ""}${more} — ${folder.assigned} of ${folder.files} files on rows${rest ? `, ${rest} on no row` : ""}. Flavours: ${flavours}.`;
   }
   if (folder.status) return `On no SKU row — ${folder.status} (${folder.files} files).`;
   return `On no SKU row — nothing in the book matched (${folder.files} files).`;
