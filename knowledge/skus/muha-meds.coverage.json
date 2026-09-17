@@ -1,14 +1,14 @@
 {
  "brand": "muha",
- "computedAt": "2026-09-16",
+ "computedAt": "2026-09-17",
  "totals": {
   "lines": 148,
   "items": 1165,
-  "covered": 665,
+  "covered": 660,
   "assets": 5362,
-  "matchedAssets": 2774,
-  "unmatchedAssets": 2588,
-  "unmatchedGroups": 166
+  "matchedAssets": 2742,
+  "unmatchedAssets": 2620,
+  "unmatchedGroups": 167
  },
  "lines": [
   {
@@ -4002,12 +4002,12 @@
      "sku": "MMMG3000-MD-SA",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 20,
+     "renders": 19,
      "compositions": {
       "device-with-packaging": 3,
       "n/a": 1,
       "multi-pack": 11,
-      "packaging-only": 5
+      "packaging-only": 4
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -4384,12 +4384,12 @@
      "sku": "MMMG3000-LR-SO",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 13,
+     "renders": 12,
      "compositions": {
       "device-with-packaging": 3,
       "n/a": 1,
       "multi-pack": 7,
-      "packaging-only": 2
+      "packaging-only": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -7002,51 +7002,26 @@
      "sku": "MMBG2000-HR-MC",
      "discontinued": false,
      "inDevelopment": true,
-     "renders": 10,
+     "renders": 1,
      "compositions": {
-      "in-scene": 1,
-      "packaging-only": 3,
-      "n/a": 1,
-      "multi-pack": 2,
-      "device-with-packaging": 1,
-      "device-only": 2
+      "multi-pack": 1
      },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
       {
-       "id": "abb0911a-bacf-415a-a6aa-3fe4729c3670",
+       "id": "51808595-a687-4ccb-b51e-2dbfbe05a156",
        "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/Hemp_15ct_HR_Jar_Front_MangoChamoy.png",
+       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/DisplayBoxes/Hemp_15ct_HR_DisplayBox_45_MANGO_CHAMOYClosed.png",
        "previous": null,
-       "composition": "in-scene",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/00d4d4e5f86d6613.jpg"
-      },
-      {
-       "id": "040c28ec-24da-4c71-8bb1-a03e0ab23fa6",
-       "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/Hemp_15ct_HR_Jar_FrontSolo_MangoChamoy.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c74391ff1e139427.jpg"
-      },
-      {
-       "id": "a92a22f3-e54b-44c4-a81a-5d5704a1bf6d",
-       "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/Hemp_15ct_HR_Jar_45_MangoChamoy.png",
-       "previous": null,
-       "composition": "n/a",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6e6d0bc740145d9b.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/df362528254005ac.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies",
-      "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2",
       "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/DisplayBoxes"
      ]
     },
@@ -7069,49 +7044,26 @@
      "sku": "MMBG2000-HR-OC",
      "discontinued": false,
      "inDevelopment": true,
-     "renders": 10,
+     "renders": 1,
      "compositions": {
-      "packaging-only": 4,
-      "device-only": 3,
-      "device-with-packaging": 1,
-      "multi-pack": 2
+      "multi-pack": 1
      },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
       {
-       "id": "f65cba23-d2ad-4026-bc61-911523be35fb",
+       "id": "0e62f7a0-6469-4c59-af2c-2360be217393",
        "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/Hemp_15ct_HR_Jar_Front_OrangeCreamsicle.png",
+       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/DisplayBoxes/Hemp_15ct_HR_DisplayBox_45_ORANGE_CREAMSICLEClosed.png",
        "previous": null,
-       "composition": "packaging-only",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7fba0a40719b2460.jpg"
-      },
-      {
-       "id": "30ea7fbd-1d0c-44c4-ba2d-875e4fc395b2",
-       "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/Hemp_15ct_HR_Jar_45Solo_OrangeCreamsicle.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/53106734df216b39.jpg"
-      },
-      {
-       "id": "a32fd615-2c80-4c79-abbb-8b151601a44d",
-       "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/Hemp_15ct_HR_Jar_Front_OrangeCreamsicle.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f75ca1fb3eeea068.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/90b61ce955b0bd00.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies",
-      "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2",
       "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/DisplayBoxes"
      ]
     },
@@ -7120,49 +7072,26 @@
      "sku": "MMBG2000-HR-KS",
      "discontinued": false,
      "inDevelopment": true,
-     "renders": 10,
+     "renders": 1,
      "compositions": {
-      "device-with-packaging": 3,
-      "packaging-only": 2,
-      "device-only": 3,
-      "multi-pack": 2
+      "multi-pack": 1
      },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
       {
-       "id": "0b5c02c9-69e3-42e6-a730-a9c5ce9d686c",
+       "id": "8b735dc9-bdd3-4893-be0a-629f98b151f2",
        "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/Hemp_15ct_HR_Jar_Front_KiwiSurge.png",
+       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/DisplayBoxes/Hemp_15ct_HR_DisplayBox_45_KIWI_SURGEOpen.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a5f37c291102c717.jpg"
-      },
-      {
-       "id": "beca4143-5534-4f8f-a893-938b71ec489b",
-       "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/Hemp_15ct_HR_Jar_45_KiwiSurge.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5e02a9eea2284b04.jpg"
-      },
-      {
-       "id": "e5634a89-6221-405e-b199-b594a1511c42",
-       "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/Hemp_15ct_HR_Jar_45_KiwiSurge.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/eb9e3dbd31a00b53.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8b785dc1bfd8f2c8.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies",
-      "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2",
       "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/DisplayBoxes"
      ]
     },
@@ -7171,51 +7100,27 @@
      "sku": "MMBG2000-HR-SL",
      "discontinued": false,
      "inDevelopment": true,
-     "renders": 10,
+     "renders": 1,
      "compositions": {
-      "multi-pack": 2,
-      "device-only": 4,
-      "device-with-packaging": 1,
-      "in-scene": 1,
-      "packaging-only": 2
+      "multi-pack": 1
      },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
       {
-       "id": "a2efcf57-604c-475c-a515-350b5f6bdad6",
+       "id": "a368d30f-9a3d-4061-a151-71b611b45788",
        "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/DisplayBoxes/Hemp_15ct_HR_DisplayBox_45_STRAWBERRY_LEMONADEOpen.png",
+       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/DisplayBoxes/Hemp_15ct_HR_DisplayBox_45_STRAWBERRY_LEMONADEClosed.png",
        "previous": null,
        "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c6349be552a45680.jpg"
-      },
-      {
-       "id": "0ae65cfe-bbbf-4f37-b40a-fa777aff2b12",
-       "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/Hemp_15ct_HR_Jar_FrontSolo_StrawberryLemonade.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/94b07d259d3df16d.jpg"
-      },
-      {
-       "id": "f5785d4a-59bf-4cfc-9a7b-0f80b2780056",
-       "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/Hemp_15ct_HR_Jar_45Solo_StrawberryLemonade.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0e78fb6cec1328ef.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6ba57a1c75b76320.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/DisplayBoxes",
-      "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2",
-      "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies"
+      "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/DisplayBoxes"
      ]
     },
     {
@@ -7223,48 +7128,26 @@
      "sku": "MMBG2000-HR-SB",
      "discontinued": false,
      "inDevelopment": true,
-     "renders": 10,
+     "renders": 1,
      "compositions": {
-      "packaging-only": 5,
-      "device-only": 3,
-      "multi-pack": 2
+      "multi-pack": 1
      },
-     "hasDeviceOnly": true,
-     "hasPackaging": true,
+     "hasDeviceOnly": false,
+     "hasPackaging": false,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
       {
-       "id": "a47c6536-6d77-4536-8b73-b85cabdba4f8",
+       "id": "fb300b11-c79b-4ee2-a09e-3c431de7a33f",
        "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/Hemp_15ct_HR_Jar_45Solo_SourBlueRazz.png",
+       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/DisplayBoxes/Hemp_15ct_HR_DisplayBox_45_SOUR_BLUE_RAZZClosed.png",
        "previous": null,
-       "composition": "packaging-only",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0dbfe1e694513237.jpg"
-      },
-      {
-       "id": "0d896c21-c4eb-4c12-a7e3-fc08de672e4b",
-       "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/Hemp_15ct_HR_Jar_45_SourBlueRazz.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/09c98a8d556d1554.jpg"
-      },
-      {
-       "id": "486e364f-c9e2-463b-b444-29fe2b05ba04",
-       "score": 5,
-       "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/Hemp_15ct_HR_Jar_Front_SourBlueRazz.png",
-       "previous": null,
-       "composition": "device-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d331f095a6626d8c.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fa20171bdb7e4134.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies",
-      "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2",
       "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/v2/DisplayBoxes"
      ]
     }
@@ -7940,7 +7823,7 @@
        "id": "f2034693-6ed5-4a38-b9cd-29c43d764e30",
        "score": 3,
        "path": "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS/Sour Apple Mambas_nocubes (1).png",
-       "previous": null,
+       "previous": "working file: Edgar Gutierrez/_BRAND PROJECTS",
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/42ca82bb0f362514.jpg"
@@ -7949,7 +7832,7 @@
        "id": "6d485235-d4b4-449f-92b7-ffc427c09385",
        "score": 3,
        "path": "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS/solo_Sour Apple Mambas_nocubes (1).png",
-       "previous": null,
+       "previous": "working file: Edgar Gutierrez/_BRAND PROJECTS",
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fd96f0df2e946902.jpg"
@@ -12227,9 +12110,9 @@
      "sku": "CA117",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 6,
+     "renders": 5,
      "compositions": {
-      "device-with-packaging": 3,
+      "device-with-packaging": 2,
       "packaging-only": 2,
       "device-only": 1
      },
@@ -12268,8 +12151,7 @@
      ],
      "folders": [
       "Renders/Pre-Rolls/Metal Can/CA/CA Mates_TechDesign_July2025",
-      "Renders/Pre-Rolls/KiefJoint",
-      "Renders/Pre-Rolls/Glass Jars"
+      "Renders/Pre-Rolls/KiefJoint"
      ]
     },
     {
@@ -12569,10 +12451,10 @@
      "sku": "CA124",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 9,
+     "renders": 5,
      "compositions": {
       "device-only": 2,
-      "device-with-packaging": 6,
+      "device-with-packaging": 2,
       "packaging-only": 1
      },
      "hasDeviceOnly": true,
@@ -12599,19 +12481,17 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/046d152ba1f9c280.jpg"
       },
       {
-       "id": "aaf8a703-138f-47a8-af45-0ad3c7c02a70",
+       "id": "12b154db-1c2e-4f90-8685-c797a46aa545",
        "score": 6,
-       "path": "Renders/Pre-Rolls/Metal Can/CA/CA Mates June 2024/Mates_CA_Grape_Front_V1.png",
+       "path": "Renders/Pre-Rolls/Metal Can/CA/CA Mates_TechDesign_July2025/CA_Mates_FrontSolo_PurplePunch.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "packaging-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/018449d47ebb600b.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/24d838e2da35b7fc.jpg"
       }
      ],
      "folders": [
       "Renders/Pre-Rolls/Metal Can/CA/CA Mates_TechDesign_July2025",
-      "Renders/Pre-Rolls/Metal Can/CA/CA Mates June 2024",
-      "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars",
       "Renders/Pre-Rolls/KiefJoint"
      ]
     },
@@ -15214,11 +15094,9 @@
      "sku": "CA162",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 5,
+     "renders": 2,
      "compositions": {
-      "device-with-packaging": 2,
-      "in-scene": 1,
-      "packaging-only": 1,
+      "device-with-packaging": 1,
       "label-flat": 1
      },
      "hasDeviceOnly": false,
@@ -15236,27 +15114,17 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8ef3c877b2217cfe.jpg"
       },
       {
-       "id": "c1346c4f-4d7a-4b6a-bb5b-034b0cde9651",
+       "id": "c58084e0-c8e1-4ca9-bb4c-7577723a534e",
        "score": 4.666666666666666,
-       "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_Watermelon_45_V1.png",
+       "path": "Renders/Edibles/Metal Cans/CA/THC CBN/CBG_CGN_CanEdibles_WatermelonCucumber_Top.png",
        "previous": null,
-       "composition": "in-scene",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8012f87d6f45fa5c.jpg"
-      },
-      {
-       "id": "a7bb3237-41eb-489c-848f-26acd2740595",
-       "score": 4.666666666666666,
-       "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_Watermelon_Front_V1.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a67487b94dcf6d3b.jpg"
+       "composition": "label-flat",
+       "angle": "n/a",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f6234c0db416e0e0.jpg"
       }
      ],
      "folders": [
-      "Renders/Edibles/Metal Cans/CA/THC CBN",
-      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24"
+      "Renders/Edibles/Metal Cans/CA/THC CBN"
      ]
     },
     {
@@ -15279,7 +15147,7 @@
        "id": "7f11cd7d-9511-4360-9df3-54ce82d57558",
        "score": 4.666666666666666,
        "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_SourApple_Front_V1.png",
-       "previous": null,
+       "previous": "working file: Design/Graphic Designer General SOP",
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/106e6a9b188744b4.jpg"
@@ -15288,7 +15156,7 @@
        "id": "45fb794c-127f-401b-808e-11be94485f0f",
        "score": 4.666666666666666,
        "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_SourApple_45_V1.png",
-       "previous": null,
+       "previous": "working file: Design/Graphic Designer General SOP",
        "composition": "in-scene",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7c234e6be72474bd.jpg"
@@ -15297,7 +15165,7 @@
        "id": "6d485235-d4b4-449f-92b7-ffc427c09385",
        "score": 3.6666666666666665,
        "path": "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS/solo_Sour Apple Mambas_nocubes (1).png",
-       "previous": null,
+       "previous": "working file: Edgar Gutierrez/_BRAND PROJECTS",
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fd96f0df2e946902.jpg"
@@ -15313,36 +15181,16 @@
      "sku": "CA164",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 5,
+     "renders": 2,
      "compositions": {
-      "packaging-only": 2,
-      "device-with-packaging": 1,
       "n/a": 1,
       "label-flat": 1
      },
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "5971b071-d68d-48de-8292-a30769b47b2b",
-       "score": 4.666666666666666,
-       "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_StrawberryLemon_45_V1.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/65f7e1cde2a37570.jpg"
-      },
-      {
-       "id": "64bf5dbb-614e-4b92-a94b-3f63aea27d70",
-       "score": 4.666666666666666,
-       "path": "Renders/Edibles/Metal Cans/CA/THC CBG/CBG_CGN_CanEdibles_StrawberryLemon_ThreeQuarters_i1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dc0d9c3898efad06.jpg"
-      },
       {
        "id": "d0cebe31-7042-4274-9b4a-b9b5d0159749",
        "score": 4.666666666666666,
@@ -15351,10 +15199,18 @@
        "composition": "n/a",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6333be8b38e40aac.jpg"
+      },
+      {
+       "id": "85658b0c-688b-493f-9d6d-f2d32237094b",
+       "score": 4.666666666666666,
+       "path": "Renders/Edibles/Metal Cans/CA/THC CBG/CBG_CGN_CanEdibles_StrawberryLemon_Top.png",
+       "previous": null,
+       "composition": "label-flat",
+       "angle": "n/a",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/23e7ad5abe611349.jpg"
       }
      ],
      "folders": [
-      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24",
       "Renders/Edibles/Metal Cans/CA/THC CBG"
      ]
     },
@@ -15377,7 +15233,7 @@
        "id": "f8e34402-10ff-4852-8048-9dafbe4ef2e2",
        "score": 4.666666666666666,
        "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_VeryBerry_Front_V1.png",
-       "previous": null,
+       "previous": "working file: Design/Graphic Designer General SOP",
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/12983f31065db5db.jpg"
@@ -15386,7 +15242,7 @@
        "id": "6683184c-93e0-44d0-810e-3a3a20a9b2b4",
        "score": 4.666666666666666,
        "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_VeryBerry_45_V1.png",
-       "previous": null,
+       "previous": "working file: Design/Graphic Designer General SOP",
        "composition": "in-scene",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b2e3f3aa2bd701df.jpg"
@@ -15415,7 +15271,7 @@
        "id": "aff8baef-183c-4301-b69f-1143277808a7",
        "score": 4.666666666666666,
        "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_Mango_Front_V1.png",
-       "previous": null,
+       "previous": "working file: Design/Graphic Designer General SOP",
        "composition": "device-with-packaging",
        "angle": "front",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7b64f180f10e2d5b.jpg"
@@ -15424,7 +15280,7 @@
        "id": "56b66378-2e8e-4f54-990a-832d5d71379b",
        "score": 4.666666666666666,
        "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_Mango_45_V1.png",
-       "previous": null,
+       "previous": "working file: Design/Graphic Designer General SOP",
        "composition": "in-scene",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4b35e953855efa66.jpg"
@@ -15600,11 +15456,10 @@
      "sku": "CA170",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 13,
+     "renders": 6,
      "compositions": {
       "label-flat": 2,
-      "device-with-packaging": 8,
-      "packaging-only": 3
+      "device-with-packaging": 4
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -15641,9 +15496,7 @@
      ],
      "folders": [
       "Renders/Edibles/Metal Cans/CA/Hash Rosin",
-      "Renders/Edibles/Metal Cans/CA/THC CBN",
-      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/CA_10ct_Edibles_Gummies_A.M",
-      "Renders/Edibles/CA Gummies/10CT HashRosin Edibles Mylar Bag 2026"
+      "Renders/Edibles/Metal Cans/CA/THC CBN"
      ]
     },
     {
@@ -15651,12 +15504,11 @@
      "sku": "CA171",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 5,
      "compositions": {
       "label-flat": 1,
-      "device-with-packaging": 7,
-      "in-scene": 1,
-      "packaging-only": 3
+      "device-with-packaging": 3,
+      "packaging-only": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -15693,8 +15545,6 @@
      ],
      "folders": [
       "Renders/Edibles/Metal Cans/CA/Hash Rosin",
-      "Renders/Edibles/CA Gummies/10CT HashRosin Edibles Mylar Bag 2026",
-      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/CA_10ct_Edibles_Gummies_A.M",
       "Renders/Edibles/Metal Cans/MockUp/4CT"
      ]
     }
@@ -15813,10 +15663,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 7,
+     "renders": 4,
      "compositions": {
       "packaging-only": 2,
-      "device-with-packaging": 5
+      "device-with-packaging": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -15852,8 +15702,7 @@
       }
      ],
      "folders": [
-      "Renders/Edibles/CA Gummies/10CT HashRosin Edibles Mylar Bag 2026",
-      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/CA_10ct_Edibles_Gummies_A.M"
+      "Renders/Edibles/CA Gummies/10CT HashRosin Edibles Mylar Bag 2026"
      ]
     },
     {
@@ -15875,10 +15724,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 7,
+     "renders": 4,
      "compositions": {
       "packaging-only": 2,
-      "device-with-packaging": 5
+      "device-with-packaging": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -15914,8 +15763,7 @@
       }
      ],
      "folders": [
-      "Renders/Edibles/CA Gummies/10CT HashRosin Edibles Mylar Bag 2026",
-      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/CA_10ct_Edibles_Gummies_A.M"
+      "Renders/Edibles/CA Gummies/10CT HashRosin Edibles Mylar Bag 2026"
      ]
     },
     {
@@ -15923,9 +15771,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 13,
+     "renders": 8,
      "compositions": {
-      "device-with-packaging": 8,
+      "device-with-packaging": 3,
       "packaging-only": 3,
       "label-flat": 2
      },
@@ -15965,8 +15813,7 @@
      "folders": [
       "Renders/Edibles/CA Gummies/10CT HashRosin Edibles Mylar Bag 2026",
       "Renders/Edibles/Metal Cans/CA/Hash Rosin",
-      "Renders/Edibles/Metal Cans/CA/THC CBN",
-      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/CA_10ct_Edibles_Gummies_A.M"
+      "Renders/Edibles/Metal Cans/CA/THC CBN"
      ]
     },
     {
@@ -15974,11 +15821,11 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 6,
      "compositions": {
       "in-scene": 1,
-      "packaging-only": 3,
-      "device-with-packaging": 7,
+      "packaging-only": 2,
+      "device-with-packaging": 2,
       "label-flat": 1
      },
      "hasDeviceOnly": false,
@@ -16016,9 +15863,7 @@
      ],
      "folders": [
       "Renders/Edibles/CA Gummies/10CT HashRosin Edibles Mylar Bag 2026",
-      "Renders/Edibles/Metal Cans/CA/Hash Rosin",
-      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/CA_10ct_Edibles_Gummies_A.M",
-      "Renders/Edibles/Metal Cans/MockUp/4CT"
+      "Renders/Edibles/Metal Cans/CA/Hash Rosin"
      ]
     }
    ]
@@ -24876,9 +24721,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 6,
+     "renders": 5,
      "compositions": {
-      "device-with-packaging": 3,
+      "device-with-packaging": 2,
       "packaging-only": 2,
       "device-only": 1
      },
@@ -24917,8 +24762,7 @@
      ],
      "folders": [
       "Renders/Pre-Rolls/Metal Can/MI/MI Mates_TechDesign_July2025",
-      "Renders/Pre-Rolls/KiefJoint",
-      "Renders/Pre-Rolls/Glass Jars"
+      "Renders/Pre-Rolls/KiefJoint"
      ]
     },
     {
@@ -25218,11 +25062,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
+     "renders": 5,
      "compositions": {
       "packaging-only": 2,
-      "device-with-packaging": 6,
-      "n/a": 1,
+      "device-with-packaging": 2,
       "device-only": 1
      },
      "hasDeviceOnly": true,
@@ -25260,8 +25103,6 @@
      ],
      "folders": [
       "Renders/Pre-Rolls/Metal Can/MI/MI Mates_TechDesign_July2025",
-      "Renders/Pre-Rolls/Glass Jars/MI_Glass Jars",
-      "Edgar Gutierrez/_BRAND PROJECTS/MI UPDATE/RENDERS/MI",
       "Renders/Pre-Rolls/KiefJoint"
      ]
     },
@@ -25915,10 +25756,10 @@
      "sku": "MI134",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 14,
+     "renders": 13,
      "compositions": {
       "device-with-packaging": 3,
-      "packaging-only": 8,
+      "packaging-only": 7,
       "in-scene": 3
      },
      "hasDeviceOnly": false,
@@ -25957,8 +25798,7 @@
      "folders": [
       "Renders/Edibles/MI Gummies/200MG 10ct Net WT 53.3",
       "Renders/Edibles/MI Gummies/200MG 10ct Net wt 50",
-      "Renders/Edibles/MI Gummies/200MG 5ct",
-      "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS"
+      "Renders/Edibles/MI Gummies/200MG 5ct"
      ]
     },
     {
@@ -26181,11 +26021,11 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 14,
+     "renders": 13,
      "compositions": {
       "device-with-packaging": 3,
       "in-scene": 3,
-      "packaging-only": 8
+      "packaging-only": 7
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -26223,8 +26063,7 @@
      "folders": [
       "Renders/Edibles/MI Gummies/200MG 10ct Net WT 53.3",
       "Renders/Edibles/MI Gummies/200MG 5ct",
-      "Renders/Edibles/MI Gummies/200MG 10ct Net wt 50",
-      "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS"
+      "Renders/Edibles/MI Gummies/200MG 10ct Net wt 50"
      ]
     },
     {
@@ -26445,9 +26284,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 10,
+     "renders": 9,
      "compositions": {
-      "device-with-packaging": 4,
+      "device-with-packaging": 3,
       "packaging-only": 5,
       "n/a": 1
      },
@@ -26495,9 +26334,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 4,
+     "renders": 3,
      "compositions": {
-      "device-with-packaging": 3,
+      "device-with-packaging": 2,
       "packaging-only": 1
      },
      "hasDeviceOnly": false,
@@ -26534,8 +26373,7 @@
       }
      ],
      "folders": [
-      "Renders/Edibles/Metal Cans/MI/Hash Rosin",
-      "Renders/Edibles/MI Gummies/200MG 10ct Net WT 53.3"
+      "Renders/Edibles/Metal Cans/MI/Hash Rosin"
      ]
     },
     {
@@ -26543,15 +26381,12 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 13,
+     "renders": 3,
      "compositions": {
       "label-flat": 1,
-      "device-with-packaging": 5,
-      "packaging-only": 4,
-      "in-scene": 1,
-      "device-only": 2
+      "device-with-packaging": 2
      },
-     "hasDeviceOnly": true,
+     "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": false,
      "hasAlpha": true,
@@ -26585,10 +26420,7 @@
       }
      ],
      "folders": [
-      "Renders/Edibles/Metal Cans/MI/Hash Rosin",
-      "Renders/Edibles/MI Gummies/HR 4ct Mylar 2026",
-      "Renders/Edibles/MI Gummies/HR 10ct Mylar 2026",
-      "Renders/Edibles/MI Gummies/HR_Gummies_Only"
+      "Renders/Edibles/Metal Cans/MI/Hash Rosin"
      ]
     },
     {
@@ -26596,50 +26428,36 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 2,
      "compositions": {
-      "packaging-only": 5,
-      "device-with-packaging": 4,
-      "device-only": 2,
-      "in-scene": 1
+      "device-with-packaging": 1,
+      "packaging-only": 1
      },
-     "hasDeviceOnly": true,
+     "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": false,
      "hasAlpha": true,
      "top": [
       {
-       "id": "3c8e4972-ef7b-4c9c-8079-b51c14060239",
-       "score": 5.333333333333333,
-       "path": "Renders/Edibles/MI Gummies/HR 4ct Mylar 2026/MI_Gummies_HR_4ct_Mylar_45Solo_RaspberryPineapple.png",
+       "id": "d6e13742-5348-4e7b-b39f-3de87d7cdf0d",
+       "score": 5,
+       "path": "Renders/Edibles/Metal Cans/MockUp/4CT/GummiesTin_4CT_V2.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "top",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f907439702142775.jpg"
+      },
+      {
+       "id": "ceacb048-d6a4-4c20-bfe5-3ed0a9362358",
+       "score": 4.333333333333333,
+       "path": "Renders/Edibles/Metal Cans/MockUp/4CT/GummiesTin_4CT_V1.png",
        "previous": null,
        "composition": "packaging-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ef7d24c546f1a269.jpg"
-      },
-      {
-       "id": "403ffe98-2571-4a42-9b22-ed48728e75a2",
-       "score": 5.333333333333333,
-       "path": "Renders/Edibles/MI Gummies/HR 10ct Mylar 2026/MI_Gummies_HR_10ct_Mylar_Front_RaspberryPineapple.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/82aac1b83b5019ec.jpg"
-      },
-      {
-       "id": "742815e1-950f-411a-b5a9-0a1d772dfc82",
-       "score": 5.333333333333333,
-       "path": "Renders/Edibles/MI Gummies/HR 10ct Mylar 2026/MI_Gummies_HR_10ct_Mylar_FrontSolo_RaspberryPineapple.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f400a620ef4b0194.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/04d6441fd08cc489.jpg"
       }
      ],
      "folders": [
-      "Renders/Edibles/MI Gummies/HR 4ct Mylar 2026",
-      "Renders/Edibles/MI Gummies/HR 10ct Mylar 2026",
-      "Renders/Edibles/MI Gummies/HR_Gummies_Only",
       "Renders/Edibles/Metal Cans/MockUp/4CT"
      ]
     }
@@ -28601,9 +28419,9 @@
      "sku": "MO39",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 9,
+     "renders": 5,
      "compositions": {
-      "packaging-only": 6,
+      "packaging-only": 2,
       "device-with-packaging": 2,
       "device-only": 1
      },
@@ -28642,8 +28460,6 @@
      ],
      "folders": [
       "Renders/Pre-Rolls/Metal Can/MO/MO",
-      "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3",
-      "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v2",
       "Renders/Pre-Rolls/KiefJoint"
      ]
     },
@@ -28948,11 +28764,13 @@
    "skuBlock": "MO007",
    "source": "Official MM SKU Book - MO THC.csv",
    "items": 6,
-   "covered": 2,
-   "coveragePct": 33,
+   "covered": 0,
+   "coveragePct": 0,
    "missing": [
     "Super Lemon",
     "Kush Widow",
+    "Muha OG",
+    "Presidential OG",
     "STL Gas",
     "MO 1G Non Infused Pre Rolls"
    ],
@@ -28990,95 +28808,28 @@
      "sku": "MO48",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 6,
-     "compositions": {
-      "packaging-only": 3,
-      "device-with-packaging": 3
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "cf4267c5-a4f8-4c2a-97f5-b5288e2476e1",
-       "score": 5,
-       "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v2/MO_Tube_CC_Front.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/249817261cdafcf6.jpg"
-      },
-      {
-       "id": "9f6a0d4a-3e9d-466a-a992-8d9d9d892688",
-       "score": 5,
-       "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_45_CINNAMON_CREAM_OG45_Back.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fdc932e2385b97af.jpg"
-      },
-      {
-       "id": "7a0d3672-a5e3-4829-bfa4-3d52d48e63a4",
-       "score": 5,
-       "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_Front_CINNAMON_CREAM_OGFront.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/31ef111054c88a26.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v2",
-      "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3",
-      "Renders/Pre-Rolls/Glass Jars"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Presidential OG",
      "sku": "MO49",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 3,
-     "compositions": {
-      "device-with-packaging": 3
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "b71a6af1-3a62-4db6-bc00-86c7027917b8",
-       "score": 4,
-       "path": "Renders/Pre-Rolls/Glass Jars/Presidential OG Mates 1 copy.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1d4d0bae88b5e790.jpg"
-      },
-      {
-       "id": "a9b6d66f-32b5-4985-8896-497fae37bdea",
-       "score": 4,
-       "path": "Renders/Pre-Rolls/Glass Jars/Presidential OG Mates 2 copy.jpg",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d39895571c771d76.jpg"
-      },
-      {
-       "id": "c3cca66c-14d1-4561-afde-838b313cb2d2",
-       "score": 4,
-       "path": "Renders/Pre-Rolls/Glass Jars/Presidential OG Mates 3 copy.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4f570cf2b5326ac1.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Pre-Rolls/Glass Jars"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "STL Gas",
@@ -30019,9 +29770,9 @@
      "sku": "MO57",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 7,
+     "renders": 6,
      "compositions": {
-      "packaging-only": 6,
+      "packaging-only": 5,
       "in-scene": 1
      },
      "hasDeviceOnly": false,
@@ -30059,8 +29810,7 @@
      ],
      "folders": [
       "Renders/Edibles/MO Gummies/2025 March",
-      "Renders/Edibles/MO Gummies/2025 NOV MO Gummies",
-      "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS"
+      "Renders/Edibles/MO Gummies/2025 NOV MO Gummies"
      ]
     },
     {
@@ -30208,10 +29958,12 @@
    "skuBlock": "MO011",
    "source": "Official MM SKU Book - MO THC.csv",
    "items": 5,
-   "covered": 4,
-   "coveragePct": 80,
+   "covered": 2,
+   "coveragePct": 40,
    "missing": [
-    "Mango Chamoy"
+    "Strawberry",
+    "Mango Chamoy",
+    "Raspberry Pineapple"
    ],
    "itemsDetail": [
     {
@@ -30256,28 +30008,14 @@
      "sku": "MO67",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 1,
-     "compositions": {
-      "packaging-only": 1
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "e89a0e44-cefb-4f69-9358-5deb77d4b016",
-       "score": 3.6666666666666665,
-       "path": "Renders/Edibles/Metal Cans/MockUp/10CT/GummiesTin_Mockup_V2.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/de2f4e54afad4f2f.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Edibles/Metal Cans/MockUp/10CT"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Green Apple",
@@ -30326,28 +30064,14 @@
      "sku": "MO70",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 1,
-     "compositions": {
-      "packaging-only": 1
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "ceacb048-d6a4-4c20-bfe5-3ed0a9362358",
-       "score": 3.6666666666666665,
-       "path": "Renders/Edibles/Metal Cans/MockUp/4CT/GummiesTin_4CT_V1.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/04d6441fd08cc489.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Edibles/Metal Cans/MockUp/4CT"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     }
    ]
   },
@@ -30361,13 +30085,14 @@
    "skuBlock": "MO010",
    "source": "Official MM SKU Book - MO THC.csv",
    "items": 5,
-   "covered": 1,
-   "coveragePct": 20,
+   "covered": 0,
+   "coveragePct": 0,
    "missing": [
     "Juicy Tangerine",
     "Cucumber Habenero",
     "Sour Blue Razz",
-    "Mango Chamoy"
+    "Mango Chamoy",
+    "Raspberry Pineapple"
    ],
    "itemsDetail": [
     {
@@ -30431,38 +30156,14 @@
      "sku": "MO65",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "device-with-packaging": 1,
-      "packaging-only": 1
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "d6e13742-5348-4e7b-b39f-3de87d7cdf0d",
-       "score": 4.333333333333333,
-       "path": "Renders/Edibles/Metal Cans/MockUp/4CT/GummiesTin_4CT_V2.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "top",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f907439702142775.jpg"
-      },
-      {
-       "id": "ceacb048-d6a4-4c20-bfe5-3ed0a9362358",
-       "score": 3.6666666666666665,
-       "path": "Renders/Edibles/Metal Cans/MockUp/4CT/GummiesTin_4CT_V1.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/04d6441fd08cc489.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Edibles/Metal Cans/MockUp/4CT"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     }
    ]
   },
@@ -35617,9 +35318,9 @@
      "sku": "NM042",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 3,
+     "renders": 2,
      "compositions": {
-      "packaging-only": 2,
+      "packaging-only": 1,
       "device-with-packaging": 1
      },
      "hasDeviceOnly": false,
@@ -35644,20 +35345,10 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/412766c1cd87dbfb.jpg"
-      },
-      {
-       "id": "e89a0e44-cefb-4f69-9358-5deb77d4b016",
-       "score": 3.6666666666666665,
-       "path": "Renders/Edibles/Metal Cans/MockUp/10CT/GummiesTin_Mockup_V2.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/de2f4e54afad4f2f.jpg"
       }
      ],
      "folders": [
-      "Renders/Edibles/NM",
-      "Renders/Edibles/Metal Cans/MockUp/10CT"
+      "Renders/Edibles/NM"
      ]
     },
     {
@@ -35665,11 +35356,10 @@
      "sku": "NM043",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 3,
+     "renders": 2,
      "compositions": {
       "device-with-packaging": 1,
-      "n/a": 1,
-      "packaging-only": 1
+      "n/a": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -35693,20 +35383,10 @@
        "composition": "n/a",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/229dc711a602ddbe.jpg"
-      },
-      {
-       "id": "6d485235-d4b4-449f-92b7-ffc427c09385",
-       "score": 3.6666666666666665,
-       "path": "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS/solo_Sour Apple Mambas_nocubes (1).png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fd96f0df2e946902.jpg"
       }
      ],
      "folders": [
-      "Renders/Edibles/NM",
-      "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS"
+      "Renders/Edibles/NM"
      ]
     },
     {
@@ -40047,6 +39727,41 @@
    }
   },
   {
+   "folder": "Pre-Rolls / Glass Jars",
+   "market": null,
+   "files": 91,
+   "products": [
+    {
+     "product": "Muha Meds Mates Apple Tart Prerolls",
+     "n": 2
+    },
+    {
+     "product": "Mates Thin Mints OG pre-rolls",
+     "n": 2
+    },
+    {
+     "product": "Green Apple Runtz Mates",
+     "n": 2
+    },
+    {
+     "product": "Mates Pumpkin Spice Latte pre-rolls",
+     "n": 2
+    }
+   ],
+   "samples": [
+    "CA_Prerolls_Purple_45_V1.png",
+    "CA_Prerolls_Purple_Front_V1.png",
+    "CA_Prerolls_Apple__V1.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 76,
+    "lineup": 9,
+    "n/a": 1,
+    "multi-pack": 4,
+    "device-only": 1
+   }
+  },
+  {
    "folder": "Cartridges / Distillate",
    "market": "MI",
    "files": 81,
@@ -40079,40 +39794,6 @@
     "device-with-packaging": 62,
     "label-flat": 2,
     "lineup": 6
-   }
-  },
-  {
-   "folder": "Pre-Rolls / Glass Jars",
-   "market": null,
-   "files": 81,
-   "products": [
-    {
-     "product": "Muha Meds Mates Apple Tart Prerolls",
-     "n": 2
-    },
-    {
-     "product": "Mates Thin Mints OG pre-rolls",
-     "n": 2
-    },
-    {
-     "product": "Green Apple Runtz Mates",
-     "n": 2
-    },
-    {
-     "product": "Mates Pumpkin Spice Latte pre-rolls",
-     "n": 2
-    }
-   ],
-   "samples": [
-    "CA_Prerolls_Apple__V1.png",
-    "CA_Prerolls_PinaColada_Front_V1.png",
-    "CA_Prerolls_Vanilla__V1.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 67,
-    "lineup": 9,
-    "multi-pack": 4,
-    "device-only": 1
    }
   },
   {
@@ -40286,40 +39967,6 @@
    }
   },
   {
-   "folder": "Pre-Rolls / Metal Can",
-   "market": "MI",
-   "files": 48,
-   "products": [
-    {
-     "product": "Mates Hash Rosin Infused Pre-Rolls Razzle Dazzle",
-     "n": 2
-    },
-    {
-     "product": "Hash Rosin Infused Pre-Rolls Doses & Mimosa Sativa",
-     "n": 1
-    },
-    {
-     "product": "Blueberry Zaza Pre-Rolls",
-     "n": 1
-    },
-    {
-     "product": "Mates Pre-Rolls Orange Cake Hybrid",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "MI_HR_Mates_Doses_Front_V1.png",
-    "Mates_CA_Blueberry_Front_V1.png",
-    "Mates_CA_Orange_Front_V1.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 23,
-    "lineup": 4,
-    "device-only": 9,
-    "packaging-only": 12
-   }
-  },
-  {
    "folder": "Moods",
    "market": null,
    "files": 47,
@@ -40487,6 +40134,40 @@
    }
   },
   {
+   "folder": "Pre-Rolls / Metal Can",
+   "market": "MI",
+   "files": 39,
+   "products": [
+    {
+     "product": "Mates Hash Rosin Infused Pre-Rolls Razzle Dazzle",
+     "n": 2
+    },
+    {
+     "product": "Hash Rosin Infused Pre-Rolls Doses & Mimosa Sativa",
+     "n": 1
+    },
+    {
+     "product": "Hash Rosin Infused Pre-Rolls, Doses & Mimosa Sativa",
+     "n": 1
+    },
+    {
+     "product": "Hash Rosin Infused Pre-Rolls Apple Runtz",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "MI_HR_Mates_Doses_Front_V1.png",
+    "CA_HR_Mates_Doses_Front_V1.png",
+    "CA_HR_Mates_Razzel_45_V1.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 14,
+    "lineup": 4,
+    "device-only": 9,
+    "packaging-only": 12
+   }
+  },
+  {
    "folder": "Disposables / Gen2 Device Renders",
    "market": "NM",
    "files": 38,
@@ -40517,6 +40198,43 @@
     "device-with-packaging": 35,
     "n/a": 2,
     "lineup": 1
+   }
+  },
+  {
+   "folder": "Edibles / Metal Cans",
+   "market": "CA",
+   "files": 36,
+   "products": [
+    {
+     "product": "Cucumber Habanero Cannabis Infused Gummies",
+     "n": 3
+    },
+    {
+     "product": "Raspberry Lime Cannabis Infused Gummies",
+     "n": 3
+    },
+    {
+     "product": "Raspberry Papaya Cannabis Infused Gummies",
+     "n": 3
+    },
+    {
+     "product": "Raspberry Papaya Hash Rosin Cannabis Infused Gummies",
+     "n": 3
+    }
+   ],
+   "samples": [
+    "CA_Hash_Rosin_Edible_Cans_Group_Shot_02.png",
+    "GummiesTin_Mockup_V2_Side_Black.png",
+    "GummiesTin_Mockup_V2_Top_White.png"
+   ],
+   "compositions": {
+    "lineup": 6,
+    "packaging-only": 6,
+    "device-with-packaging": 11,
+    "label-flat": 7,
+    "n/a": 2,
+    "multi-pack": 2,
+    "in-scene": 2
    }
   },
   {
@@ -40582,43 +40300,6 @@
     "device-with-packaging": 15,
     "lineup": 11,
     "packaging-only": 8
-   }
-  },
-  {
-   "folder": "Edibles / Metal Cans",
-   "market": "CA",
-   "files": 34,
-   "products": [
-    {
-     "product": "Cucumber Habanero Cannabis Infused Gummies",
-     "n": 3
-    },
-    {
-     "product": "Raspberry Lime Cannabis Infused Gummies",
-     "n": 3
-    },
-    {
-     "product": "Raspberry Papaya Cannabis Infused Gummies",
-     "n": 3
-    },
-    {
-     "product": "Raspberry Papaya Hash Rosin Cannabis Infused Gummies",
-     "n": 3
-    }
-   ],
-   "samples": [
-    "CA_Hash_Rosin_Edible_Cans_Group_Shot_02.png",
-    "GummiesTin_Mockup_V2_Side_Black.png",
-    "GummiesTin_Mockup_V2_Top_White.png"
-   ],
-   "compositions": {
-    "lineup": 6,
-    "packaging-only": 6,
-    "device-with-packaging": 9,
-    "label-flat": 7,
-    "n/a": 2,
-    "multi-pack": 2,
-    "in-scene": 2
    }
   },
   {
@@ -41117,7 +40798,7 @@
   {
    "folder": "Edibles / MI Gummies",
    "market": null,
-   "files": 22,
+   "files": 23,
    "products": [
     {
      "product": "Cucumber Habanero Cannabis Infused Gummies",
@@ -41139,11 +40820,11 @@
    "samples": [
     "MI_Gummies_Only_Mylar_Front_CucumberHabanero.png",
     "MI_Mambas_SweetAndSour_ThreeQuarters.png",
-    "MI_Mambas_Lime_Front_i1.png"
+    "MI_Mambas_OpenBag_Strawberry.png"
    ],
    "compositions": {
     "n/a": 1,
-    "device-with-packaging": 7,
+    "device-with-packaging": 8,
     "in-scene": 3,
     "packaging-only": 8,
     "device-only": 1,
@@ -41373,6 +41054,37 @@
    }
   },
   {
+   "folder": "RENDERS / working file: Edgar Gutierrez/_BRAND PROJECTS",
+   "market": "MI",
+   "files": 20,
+   "products": [
+    {
+     "product": "Strawberry Dream Pre-Rolls",
+     "n": 1
+    },
+    {
+     "product": "Matēs PRE-ROLLS ORANGE CAKE HYBRID",
+     "n": 1
+    },
+    {
+     "product": "Orange Cake Hybrid Pre-Roll",
+     "n": 1
+    },
+    {
+     "product": "Muha Meds Pina Colada Pre-Roll Jar and Pre-Roll",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "Mates_MI_Strawberry_Front_V1.png",
+    "Mates_MI_Orange_Front_V1.png",
+    "Mates_MI_Orange_45_V1.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 20
+   }
+  },
+  {
    "folder": "Cartridges / Distillate / previous design: MI_1G_Distillate_Carts",
    "market": "MI",
    "files": 20,
@@ -41496,37 +41208,6 @@
    ],
    "compositions": {
     "device-with-packaging": 19
-   }
-  },
-  {
-   "folder": "RENDERS",
-   "market": "MI",
-   "files": 18,
-   "products": [
-    {
-     "product": "Strawberry Dream Pre-Rolls",
-     "n": 1
-    },
-    {
-     "product": "Matēs PRE-ROLLS ORANGE CAKE HYBRID",
-     "n": 1
-    },
-    {
-     "product": "Orange Cake Hybrid Pre-Roll",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds Pina Colada Pre-Roll Jar and Pre-Roll",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "Mates_MI_Strawberry_Front_V1.png",
-    "Mates_MI_Orange_Front_V1.png",
-    "Mates_MI_Orange_45_V1.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 18
    }
   },
   {
@@ -41752,6 +41433,38 @@
    "compositions": {
     "device-with-packaging": 8,
     "packaging-only": 8
+   }
+  },
+  {
+   "folder": "Edibles / CA_10ct_Edibles_Gummies_A.M / working file: Design/Graphic Designer General SOP",
+   "market": "CA",
+   "files": 15,
+   "products": [
+    {
+     "product": "Sour Blue Razz Cannabis Infused Gummies",
+     "n": 3
+    },
+    {
+     "product": "Mango Chamoy Cannabis Infused Gummies",
+     "n": 3
+    },
+    {
+     "product": "Juicy Tangerine Cannabis Infused Gummies",
+     "n": 2
+    },
+    {
+     "product": "Raspberry Pineapple Cannabis Infused Gummies",
+     "n": 2
+    }
+   ],
+   "samples": [
+    "CA_10ct_Edibles__SourBlueRazz_TOP_FRONT0037.png",
+    "CA_10ct_Edibles_JuicyTangerine_45_0037.png",
+    "CA_10ct_Edibles_MangoChamoy_FRONT0037.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 14,
+    "packaging-only": 1
    }
   },
   {
@@ -42264,6 +41977,37 @@
    "compositions": {
     "n/a": 5,
     "device-only": 5
+   }
+  },
+  {
+   "folder": "Pre-Rolls / Metal Can / previous design: CA Mates June 2024",
+   "market": "CA",
+   "files": 10,
+   "products": [
+    {
+     "product": "Blueberry Zaza Pre-Rolls",
+     "n": 1
+    },
+    {
+     "product": "Mates Pre-Rolls Orange Cake Hybrid",
+     "n": 1
+    },
+    {
+     "product": "Apple Tart PRE-ROLLS",
+     "n": 1
+    },
+    {
+     "product": "Watermelon Hybrid Pre-Rolls",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "Mates_CA_Blueberry_Front_V1.png",
+    "Mates_CA_Orange_Front_V1.png",
+    "Mates_CA_AppleTart_Front_V1.png"
+   ],
+   "compositions": {
+    "device-with-packaging": 10
    }
   },
   {
@@ -43274,7 +43018,7 @@
    }
   },
   {
-   "folder": "PRODUCT SHOTS",
+   "folder": "PRODUCT SHOTS / working file: Edgar Gutierrez/_BRAND PROJECTS",
    "market": null,
    "files": 6,
    "products": [
@@ -43303,6 +43047,39 @@
    "compositions": {
     "lineup": 3,
     "packaging-only": 3
+   }
+  },
+  {
+   "folder": "Edibles / 100MG_Updated Dec24 / working file: Design/Graphic Designer General SOP",
+   "market": "CA",
+   "files": 5,
+   "products": [
+    {
+     "product": "Watermelon Cannabis Infused Gummies",
+     "n": 2
+    },
+    {
+     "product": "CANNABIS INFUSED GUMMIES STRAWBERRY LEMON",
+     "n": 1
+    },
+    {
+     "product": "Cannabis Infused Gummies Strawberry Lemon",
+     "n": 1
+    },
+    {
+     "product": "Cannabis Infused Gummies (Mango Madness, Sour Apple, Watermelon, Very Berry)",
+     "n": 1
+    }
+   ],
+   "samples": [
+    "CA_Gummies_StrawberryLemon_45_V1.png",
+    "CA_Gummies_Watermelon_45_V1.png",
+    "CA_Gummies_StrawberryLemon_Front_V1.png"
+   ],
+   "compositions": {
+    "packaging-only": 3,
+    "in-scene": 1,
+    "lineup": 1
    }
   },
   {
@@ -44005,30 +43782,6 @@
    }
   },
   {
-   "folder": "Edibles / CA_10ct_Edibles_Gummies_A.M",
-   "market": "CA",
-   "files": 3,
-   "products": [
-    {
-     "product": "Cucumber Habanero Cannabis Infused Gummies",
-     "n": 2
-    },
-    {
-     "product": "Cucumber Habanero Gummies",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "CA_10ct_Edibles_CucumberHabennero_TOP_FRONT0037.png",
-    "CA_10ct_Edibles_CucumberHabennero_FRONT0037.png",
-    "CA_10ct_Edibles_CucumberHabennero_45_0037.png"
-   ],
-   "compositions": {
-    "packaging-only": 1,
-    "device-with-packaging": 2
-   }
-  },
-  {
    "folder": "Disposables / MI_Live Resin",
    "market": "MI",
    "files": 2,
@@ -44623,23 +44376,6 @@
    ],
    "compositions": {
     "device-with-packaging": 1
-   }
-  },
-  {
-   "folder": "Edibles / 100MG_Updated Dec24",
-   "market": "CA",
-   "files": 1,
-   "products": [
-    {
-     "product": "Cannabis Infused Gummies (Mango Madness, Sour Apple, Watermelon, Very Berry)",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "CA_Gummies_Infuse_Group_V1.png"
-   ],
-   "compositions": {
-    "lineup": 1
    }
   },
   {

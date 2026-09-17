@@ -100,13 +100,13 @@ export function designRank(folder) {
   if (y) return Number(y[1]) * 12 + (/\btech/.test(t) ? 0.5 : 0);
   return -1;
 }
-const designStem = (folder) => norm(folder).replace(/\b(20\d\d|jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec|[a-z]*uary|march|april|june|july|august|september|october|november|december|tech|techdesign|design|new|old|version|main|renders?|mock|q[1-4]|v\d+|\d+)\b/g, "").replace(/\s+/g, " ").trim();
+const designStem = (folder) => norm(String(folder).replace(/([A-Za-z])(?=\d)|(\d)(?=[A-Za-z])/g, "$1$2 ")).replace(/\b(20\d\d|jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec|[a-z]*uary|march|april|june|july|august|september|october|november|december|tech|techdesign|design|new|old|version|main|renders?|mock|q[1-4]|v\d+|\d+)\b/g, "").replace(/\s+/g, " ").trim();
 function designKey(folder) {
   const c = compact(folder);
   const formats = formatsIn(c.replace(/([a-z])(?=[0-9])/g, "$1 ").replace(/\s/g, ""));
   const strengths = STRENGTH_WORDS.filter(([, has]) => has.test(norm(folder))).map(([ask]) => String(ask));
   const lines = LINE_FOLDERS.filter(([, re]) => re.test(folder)).map(([seg]) => seg);
-  if (!formats.length && !strengths.length && !lines.length) return "stem:" + norm(folder).replace(/\b(20\d\d|jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec|[a-z]*uary|march|april|june|july|august|september|october|november|december|tech|techdesign|design|new|old|version|main|renders?|mock|q[1-4]|v\d+|\d+)\b/g, "").replace(/\s+/g, " ").trim();
+  if (!formats.length && !strengths.length && !lines.length) return "stem:" + designStem(folder);
   return `${formats.join("+")}|${strengths.join("+")}|${lines.join("+")}`;
 }
 // The design folder of a render: the deepest directory that is not a view sub-folder; plus its parent.
@@ -144,13 +144,21 @@ export function designGroups(library) {
 }
 let PREVIOUS_DESIGNS = new Set(); // `${parent}/${folder}` of every folder judged a previous design
 export function indexDesigns(library) { const groups = designGroups(library); CURRENT_DESIGNS = new Map(groups.map((g) => [g.key, g.best])); PREVIOUS_DESIGNS = new Set(groups.flatMap((g) => g.folders.filter((f) => !f.current).map((f) => `${g.parent}/${f.folder}`))); return groups; }
+// Designer working folders (brand projects, SOP examples) are not the library: their renders serve a SKU only
+// when the Renders tree has nothing for it, and they are flagged like a previous design.
+const WORKING_RE = /(^|\/)(_BRAND PROJECTS|Graphic Designer General SOP|WIP|Drafts?|Working Files?)(\/|$)/i;
+export function workingFileOf(asset) { const m = String(asset.path || "").match(WORKING_RE); return m && !/^Renders\//.test(String(asset.path || "")) ? `working file: ${String(asset.path).split("/").slice(0, 2).join("/")}` : null; }
 export function previousDesignOf(asset) {
+  const working = workingFileOf(asset); if (working) return working;
   const d = designFolderOf(asset); if (!d) return null;
   if (d.old) return `old folder: ${d.folder}`;
   return PREVIOUS_DESIGNS.has(`${d.parent}/${d.folder}`) ? `previous design: ${d.folder}` : null;
 }
 // Muha line folders only: "Dialed_Moods" is a brand name, not the Muha Moods line.
 const LINE_FOLDERS = [["moods", /moods/i], ["mavricks", /mavrick/i], ["mmxcookies", /cookies/i], ["(?<!mango )madness", /(?<!mango )madness/i], ["magnetic", /magnetic/i], ["dual", /dual/i]];
+// Packaging style is a wall too: a Metal Cans line never takes glass-jar, mylar or tube renders and vice versa.
+// A bare product render (a single joint, a loose gummy) names no style and passes.
+const PACK_STYLES = [[/metal cans?|\btins?\b/, /metal ?cans?|\btins?\b|mates ?tin/], [/glass jars?|\bjars?\b/, /glass ?jars?|\bjars?\b/], [/mylar|\bbags?\b/, /mylar|\bbags?\b/], [/\btubes?\b/, /\btubes?\b/]];
 const PREROLL_FORMS = [[/\bmates?\b|metal cans?/, /\bmates?\b|\bmetal cans?\b|\bkief ?joints?\b/], [/\bkings?\b|\bqueens?\b/, /\bkings?\b|\bqueens?\b/], [/\bdonuts?\b/, /\bdonuts?\b/], [/\bmadness\b/, /\bmadness\b/], [/\bmuharillos?\b|\bblunts?\b/, /\bmuharillos?\b|\bblunts?\b/]];
 function formatsIn(compactText) { return FORMATS.filter((fmt) => new RegExp("(^|[^0-9])" + fmt + "(?![0-9])").test(compactText)); }
 function genOf(text) { const m = String(text).toLowerCase().match(/gen\s?(\d)/); return m ? Number(m[1]) : null; }
@@ -203,6 +211,8 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   // not on the parent folder ("Pod & Battery Kits" also holds the pod-only renders).
   const lineIsKit = /\bkits?\b|combination|combo/.test(norm(`${line.line} ${line.section || ""}`)); const assetIsKit = /battery ?kit|combo ?kit|combination ?kit|pod ?kit|\bkits?\b/.test(nameWords.join(" "));
   if (lineIsKit !== assetIsKit) return why(asset, "kit vs pod-only");
+  const wantStyles = PACK_STYLES.filter(([ask]) => ask.test(norm(`${line.line} ${line.section || ""}`)));
+  if (wantStyles.length) { const haveStyles = PACK_STYLES.filter(([, has]) => has.test(nameWords.join(" "))); if (haveStyles.length && !haveStyles.some((st) => wantStyles.includes(st))) return why(asset, "packaging style wall"); }
   const wantForms = PREROLL_FORMS.filter(([ask]) => ask.test(norm(`${line.line} ${line.section || ""}`)));
   if (wantForms.length) { const haveForms = PREROLL_FORMS.filter(([, has]) => has.test(prepared.spaced || prepared.full)); if (haveForms.length && !haveForms.some((f) => wantForms.includes(f))) return why(asset, "pre-roll form wall"); }
   if (line.format) { const want = compact(line.format); const present = formatsIn(prepared.compactFull); if (present.length && !present.includes(want)) return why(asset, "format wall"); }
@@ -219,6 +229,13 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   return Math.max(0, score);
 }
 
+// What a composition is called for a given category: a lone pre-roll is a single joint, not a "device".
+export function compositionLabel(composition, category) {
+  const c = String(composition || "n/a");
+  if (/pre-?rolls?|joints?/i.test(String(category || ""))) return { "device-only": "single joint", "device-with-packaging": "joint with packaging", "packaging-only": "packaging only", "multi-pack": "display / multi-pack" }[c] || c.replace(/-/g, " ");
+  if (/edible|gumm/i.test(String(category || ""))) return { "device-only": "loose product", "device-with-packaging": "product with packaging", "packaging-only": "packaging only", "multi-pack": "display / multi-pack" }[c] || c.replace(/-/g, " ");
+  return c.replace(/-/g, " ");
+}
 // Hits for one SKU item: a previous design (or an explicit old folder) is kept only when the item has no render
 // from a current folder at all — then it is the best the library has, and it is flagged so the page says so.
 export function selectHits(hits) {
