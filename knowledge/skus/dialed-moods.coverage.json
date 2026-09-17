@@ -13,6 +13,7 @@
  "lines": [
   {
    "id": "dialed-moods:all:motivation-elixir-kratom-rtd-",
+   "name": "Motivation Elixir (Kratom) (RTD)",
    "market": null,
    "category": "beverages",
    "format": null,
@@ -346,6 +347,7 @@
   },
   {
    "id": "dialed-moods:all:social-elixir-kava-rtd-",
+   "name": "Social Elixir (Kava) (RTD)",
    "market": null,
    "category": "beverages",
    "format": null,
@@ -517,6 +519,7 @@
   },
   {
    "id": "dialed-moods:all:cognition-elixir-l-dopa-rtd-",
+   "name": "Cognition Elixir (L-Dopa) (RTD)",
    "market": null,
    "category": "beverages",
    "format": null,
@@ -838,6 +841,7 @@
   },
   {
    "id": "dialed-moods:all:morning-after-stick-pack-",
+   "name": "MORNING AFTER (Stick Pack)",
    "market": null,
    "category": "powders",
    "format": null,
@@ -1050,6 +1054,7 @@
   },
   {
    "id": "dialed-moods:all:recharge-me-stick-pack-",
+   "name": "RECHARGE ME (Stick Pack)",
    "market": null,
    "category": "powders",
    "format": null,
@@ -1263,6 +1268,7 @@
   },
   {
    "id": "dialed-moods:all:creatine-gummy",
+   "name": "CREATINE GUMMY",
    "market": null,
    "category": "edibles",
    "format": null,
@@ -1572,6 +1578,7 @@
   },
   {
    "id": "dialed-moods:all:creatine-collagen-stick-pack-",
+   "name": "CREATINE + COLLAGEN (Stick Pack)",
    "market": null,
    "category": "powders",
    "format": null,
@@ -1782,6 +1789,7 @@
   },
   {
    "id": "dialed-moods:all:whey-protein-stick-pack-",
+   "name": "WHEY PROTEIN (Stick Pack)",
    "market": null,
    "category": "powders",
    "format": null,
@@ -1844,6 +1852,7 @@
   },
   {
    "id": "dialed-moods:all:collagen-peptides-stick-pack-",
+   "name": "COLLAGEN PEPTIDES (Stick Pack)",
    "market": null,
    "category": "powders",
    "format": null,
@@ -1906,6 +1915,7 @@
   },
   {
    "id": "dialed-moods:all:eaa-blend-stick-pack-",
+   "name": "EAA BLEND (Stick Pack)",
    "market": null,
    "category": "powders",
    "format": null,
@@ -2020,6 +2030,7 @@
   },
   {
    "id": "dialed-moods:all:fiber-stick-pack-",
+   "name": "FIBER (Stick Pack)",
    "market": null,
    "category": "powders",
    "format": null,
@@ -2052,6 +2063,7 @@
   },
   {
    "id": "dialed-moods:all:accessories",
+   "name": "Accessories",
    "market": null,
    "category": "accessories",
    "format": null,
@@ -2528,6 +2540,7 @@
   },
   {
    "id": "dialed-moods:all:merch",
+   "name": "Merch",
    "market": null,
    "category": "other",
    "format": null,
@@ -2786,6 +2799,7 @@
   },
   {
    "id": "dialed-moods:all:kratom-energy-drink",
+   "name": "Kratom Energy Drink",
    "market": null,
    "category": "beverages",
    "format": null,
@@ -3160,6 +3174,7 @@
   },
   {
    "id": "dialed-moods:all:kratom-gummies",
+   "name": "Kratom Gummies",
    "market": null,
    "category": "edibles",
    "format": null,
@@ -3445,6 +3460,7 @@
   },
   {
    "id": "dialed-moods:all:kava-kratom-seltzers",
+   "name": "Kava Kratom Seltzers",
    "market": null,
    "category": "beverages",
    "format": null,
@@ -3597,6 +3613,7 @@
   },
   {
    "id": "dialed-moods:all:electrolyte-packet",
+   "name": "Electrolyte Packet",
    "market": null,
    "category": "powders",
    "format": null,
@@ -3832,6 +3849,7 @@
   },
   {
    "id": "dialed-moods:all:creatine-gummies",
+   "name": "Creatine Gummies",
    "market": null,
    "category": "edibles",
    "format": null,
@@ -4020,6 +4038,7 @@
   },
   {
    "id": "dialed-moods:all:shilajit-gummies",
+   "name": "Shilajit Gummies",
    "market": null,
    "category": "edibles",
    "format": null,
@@ -4088,6 +4107,7 @@
   },
   {
    "id": "dialed-moods:all:seamoss-gummies",
+   "name": "Seamoss Gummies",
    "market": null,
    "category": "edibles",
    "format": null,
@@ -4156,6 +4176,7 @@
   },
   {
    "id": "dialed-moods:all:maeng-da-powder",
+   "name": "Maeng Da Powder",
    "market": null,
    "category": "powders",
    "format": null,
@@ -4228,6 +4249,7 @@
   },
   {
    "id": "dialed-moods:all:maeng-da-pills",
+   "name": "Maeng Da Pills",
    "market": null,
    "category": "capsules",
    "format": null,
@@ -4300,6 +4322,7 @@
   },
   {
    "id": "dialed-moods:all:dialed-energy-packets",
+   "name": "Dialed Energy Packets",
    "market": null,
    "category": "powders",
    "format": null,
@@ -4582,6 +4605,7 @@
   },
   {
    "id": "dialed-moods:all:kava-shots",
+   "name": "Kava Shots",
    "market": null,
    "category": "shots",
    "format": null,
@@ -4749,6 +4773,7 @@
   },
   {
    "id": "dialed-moods:all:kratom-energy-shots",
+   "name": "Kratom Energy Shots",
    "market": null,
    "category": "shots",
    "format": null,
@@ -4884,6 +4909,7 @@
   },
   {
    "id": "dialed-moods:all:kratom-shots-240mg",
+   "name": "Kratom Shots 240mg",
    "market": null,
    "category": "shots",
    "format": "240mg",
@@ -4949,6 +4975,7 @@
   },
   {
    "id": "dialed-moods:all:dialed-water-bottles",
+   "name": "Dialed Water Bottles",
    "market": null,
    "category": "beverages",
    "format": null,
@@ -4979,6 +5006,7 @@
   },
   {
    "id": "dialed-moods:all:kratom-energy-can",
+   "name": "Kratom Energy Can",
    "market": null,
    "category": "beverages",
    "format": null,
@@ -5357,6 +5385,7 @@
   },
   {
    "id": "dialed-moods:all:kratom-energy-shots",
+   "name": "Kratom Energy Shots",
    "market": null,
    "category": "shots",
    "format": null,
@@ -5456,6 +5485,7 @@
   },
   {
    "id": "dialed-moods:all:kava-elixir",
+   "name": "Kava Elixir",
    "market": null,
    "category": "beverages",
    "format": null,
@@ -5627,6 +5657,7 @@
   },
   {
    "id": "dialed-moods:all:kava-shots",
+   "name": "Kava Shots",
    "market": null,
    "category": "shots",
    "format": null,
@@ -5689,6 +5720,7 @@
   },
   {
    "id": "dialed-moods:all:l-dopa-energy-drinks",
+   "name": "L-Dopa Energy Drinks",
    "market": null,
    "category": "beverages",
    "format": null,
@@ -6010,6 +6042,7 @@
   },
   {
    "id": "dialed-moods:all:morning-after-electrolytes",
+   "name": "MORNING AFTER Electrolytes",
    "market": null,
    "category": "powders",
    "format": null,
@@ -6222,6 +6255,7 @@
   },
   {
    "id": "dialed-moods:all:recharge-me-electrolytes",
+   "name": "RECHARGE ME Electrolytes",
    "market": null,
    "category": "powders",
    "format": null,
@@ -6435,6 +6469,7 @@
   },
   {
    "id": "dialed-moods:all:creatine-gummies",
+   "name": "CREATINE GUMMIES",
    "market": null,
    "category": "edibles",
    "format": null,
@@ -6744,6 +6779,7 @@
   },
   {
    "id": "dialed-moods:all:creatine-collagen-stick-packs",
+   "name": "Creatine + Collagen Stick packs",
    "market": null,
    "category": "powders",
    "format": null,

@@ -5,6 +5,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
+// The book line's display name always carries the state: "CA 1G Distillate Disposables", "HEMP 2g THCA Carts".
+export function lineName(line) { return line.name || [line.market, line.line].filter(Boolean).join(" "); }
 export function norm(value) { return String(value || "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim(); }
 const compact = (value) => norm(value).replace(/\s/g, "");
 
@@ -301,7 +303,7 @@ export function computeCoverage(registry, library, { threshold = 3 } = {}) {
       return { name: item.name, sku: item.sku, discontinued: item.discontinued, inDevelopment: item.inDevelopment, renders: hits.length, compositions, hasDeviceOnly: Boolean(compositions["device-only"]), hasPackaging: Boolean(compositions["packaging-only"] || compositions["device-with-packaging"]), hasDisplay: Boolean(compositions["multi-pack"]), hasAlpha: hits.some((hit) => hit.asset.alpha), top: hits.slice(0, 3).map((hit) => ({ id: hit.asset.id, score: hit.score, path: hit.asset.path, previous: hit.previous || null, composition: hit.asset.composition, angle: hit.asset.angle, thumb: hit.asset.thumb })), folders: [...new Set(hits.map((hit) => path.dirname(hit.asset.path)))].slice(0, 4) };
     });
     const covered = items.filter((item) => item.renders > 0).length;
-    return { id: line.id, market: line.market, category: line.category, format: line.format, line: line.line, generation: line.generation, skuBlock: line.skuBlock, source: line.source, items: items.length, covered, coveragePct: items.length ? Math.round((covered / items.length) * 100) : 0, missing: items.filter((item) => item.renders === 0 && !item.discontinued && !item.inDevelopment).map((item) => item.name), itemsDetail: items };
+    return { id: line.id, name: lineName(line), market: line.market, category: line.category, format: line.format, line: line.line, generation: line.generation, skuBlock: line.skuBlock, source: line.source, items: items.length, covered, coveragePct: items.length ? Math.round((covered / items.length) * 100) : 0, missing: items.filter((item) => item.renders === 0 && !item.discontinued && !item.inDevelopment).map((item) => item.name), itemsDetail: items };
   });
   // Render folders that matched nothing: candidates for new/unlisted products.
   const unmatched = new Map();
@@ -328,7 +330,7 @@ export function coverageText(coverage) {
   let market = null;
   for (const line of [...coverage.lines].sort((a, b) => String(a.market).localeCompare(String(b.market)) || a.category.localeCompare(b.category))) {
     if (line.market !== market) { market = line.market; out.push("", `== ${market || "no market"} ==`); }
-    out.push(`- [${line.category}${line.format ? " " + line.format : ""}] ${line.line}${line.generation ? " " + line.generation : ""}${line.skuBlock ? " (" + line.skuBlock + ")" : ""}: ${line.covered}/${line.items} covered${line.missing.length ? " · missing: " + line.missing.slice(0, 6).join(", ") + (line.missing.length > 6 ? ", …" : "") : ""}`);
+    out.push(`- [${line.category}${line.format ? " " + line.format : ""}] ${lineName(line)}${line.generation ? " " + line.generation : ""}${line.skuBlock ? " (" + line.skuBlock + ")" : ""}: ${line.covered}/${line.items} covered${line.missing.length ? " · missing: " + line.missing.slice(0, 6).join(", ") + (line.missing.length > 6 ? ", …" : "") : ""}`);
   }
   out.push("", "Render folders that match no SKU (new launches / unlisted lines / strays):");
   for (const group of coverage.unmatchedGroups.slice(0, 40)) out.push(`- ${group.folder}${group.market ? " [" + group.market + "]" : ""}: ${group.files} files → ${group.products.map((p) => `${p.product} ×${p.n}`).join("; ").slice(0, 160)}`);

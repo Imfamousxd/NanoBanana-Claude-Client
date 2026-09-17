@@ -13,7 +13,7 @@ export function importSkuSheets(root, { brand, files }) {
     const market = (path.basename(file).match(/\b([A-Z]{2}) THC\b/) || [])[1] || (/hemp/i.test(path.basename(file)) ? "HEMP" : null);
     const upcoming = /upcoming/i.test(path.basename(file));
     const blocks = parseSheet(fs.readFileSync(file, "utf8"));
-    lines.push(...normaliseBlocks(blocks, { brand, market, source: path.basename(file) }).map((line) => ({ ...line, upcoming, items: line.items.map((item) => ({ ...item, inDevelopment: item.inDevelopment || upcoming })) })));
+    lines.push(...normaliseBlocks(blocks, { brand, market, source: path.basename(file) }).map((line) => ({ ...line, name: [line.market, line.line].filter(Boolean).join(" "), upcoming, items: line.items.map((item) => ({ ...item, inDevelopment: item.inDevelopment || upcoming })) })));
   }
   // Dedupe items by sku code across sheets (the Dialed 2026 sheet restates current products with customer-facing line names).
   const bySku = new Map();

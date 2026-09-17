@@ -4,15 +4,16 @@
  "totals": {
   "lines": 148,
   "items": 1165,
-  "covered": 657,
-  "assets": 5362,
-  "matchedAssets": 2738,
-  "unmatchedAssets": 2624,
-  "unmatchedGroups": 167
+  "covered": 653,
+  "assets": 5308,
+  "matchedAssets": 2730,
+  "unmatchedAssets": 2578,
+  "unmatchedGroups": 163
  },
  "lines": [
   {
    "id": "muha:HEMP:hemp001",
+   "name": "HEMP 3.5g Melted Diamond Disposables (THC-A + D9)",
    "market": "HEMP",
    "category": "disposables",
    "format": "3.5g",
@@ -169,6 +170,7 @@
   },
   {
    "id": "muha:HEMP:hemp002",
+   "name": "HEMP 3.5g Live Resin Disposables (THC-P + HHC-P + HHC)",
    "market": "HEMP",
    "category": "disposables",
    "format": "3.5g",
@@ -336,6 +338,7 @@
   },
   {
    "id": "muha:HEMP:hemp003",
+   "name": "HEMP 2g THCA Carts",
    "market": "HEMP",
    "category": "cartridges",
    "format": "2g",
@@ -797,6 +800,7 @@
   },
   {
    "id": "muha:HEMP:hemp004",
+   "name": "HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g)",
    "market": "HEMP",
    "category": "cartridges",
    "format": "1g",
@@ -1317,6 +1321,7 @@
   },
   {
    "id": "muha:HEMP:hemp005",
+   "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
    "market": "HEMP",
    "category": "cartridges",
    "format": "1g",
@@ -1837,6 +1842,7 @@
   },
   {
    "id": "muha:HEMP:hemp006",
+   "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
    "market": "HEMP",
    "category": "cartridges",
    "format": "1g",
@@ -2357,6 +2363,7 @@
   },
   {
    "id": "muha:HEMP:hemp007",
+   "name": "HEMP THC-A EXOTIC FLOWER JARS (4g)",
    "market": "HEMP",
    "category": "flower",
    "format": "4g",
@@ -2657,6 +2664,7 @@
   },
   {
    "id": "muha:HEMP:hemp008",
+   "name": "HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)",
    "market": "HEMP",
    "category": "flower",
    "format": "3.5g",
@@ -3039,6 +3047,7 @@
   },
   {
    "id": "muha:HEMP:hemp009",
+   "name": "HEMP THC-A KING MATE PRE-ROLL (1.5g)",
    "market": "HEMP",
    "category": "pre-rolls",
    "format": "1.5g",
@@ -3362,6 +3371,7 @@
   },
   {
    "id": "muha:HEMP:hemp010",
+   "name": "HEMP THC-A MATES PRE-ROLLS 0.6g",
    "market": "HEMP",
    "category": "pre-rolls",
    "format": "0.6g",
@@ -3674,6 +3684,7 @@
   },
   {
    "id": "muha:HEMP:hemp011",
+   "name": "HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
    "market": "HEMP",
    "category": "edibles",
    "format": "3000mg",
@@ -4053,6 +4064,7 @@
   },
   {
    "id": "muha:HEMP:hemp012",
+   "name": "HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
    "market": "HEMP",
    "category": "edibles",
    "format": "3000mg",
@@ -4463,6 +4475,7 @@
   },
   {
    "id": "muha:HEMP:hempss001",
+   "name": "HEMP Hemp Melted Diamomd 2G Dispo V1",
    "market": "HEMP",
    "category": "disposables",
    "format": "2g",
@@ -4630,6 +4643,7 @@
   },
   {
    "id": "muha:HEMP:hempss002",
+   "name": "HEMP Hemp Melted Diamomd 2G Cart V1",
    "market": "HEMP",
    "category": "cartridges",
    "format": "2g",
@@ -4829,6 +4843,7 @@
   },
   {
    "id": "muha:HEMP:hemp013",
+   "name": "HEMP 3.5g Melted Diamond Disposables",
    "market": "HEMP",
    "category": "disposables",
    "format": "3.5g",
@@ -5089,6 +5104,7 @@
   },
   {
    "id": "muha:HEMP:hemp014",
+   "name": "HEMP 3.5g Live Resin Disposables",
    "market": "HEMP",
    "category": "disposables",
    "format": "3.5g",
@@ -5317,6 +5333,7 @@
   },
   {
    "id": "muha:HEMP:hemp015",
+   "name": "HEMP 2g THCP + HHCP Carts",
    "market": "HEMP",
    "category": "cartridges",
    "format": "2g",
@@ -5588,6 +5605,7 @@
   },
   {
    "id": "muha:HEMP:hemp016",
+   "name": "HEMP 2g THCA Carts",
    "market": "HEMP",
    "category": "cartridges",
    "format": "2g",
@@ -6047,6 +6065,7 @@
   },
   {
    "id": "muha:HEMP:hhc-carts",
+   "name": "HEMP HHC Carts",
    "market": "HEMP",
    "category": "cartridges",
    "format": null,
@@ -6217,6 +6236,7 @@
   },
   {
    "id": "muha:HEMP:hemp017",
+   "name": "HEMP Duo Strain 20 Packs (8 strains, 4 Sku's)",
    "market": "HEMP",
    "category": "pre-rolls",
    "format": null,
@@ -6392,6 +6412,7 @@
   },
   {
    "id": "muha:HEMP:hemp023",
+   "name": "HEMP 2g Hash Holes - Diamond Sauce THCA",
    "market": "HEMP",
    "category": "concentrates",
    "format": "2g",
@@ -6478,6 +6499,7 @@
   },
   {
    "id": "muha:HEMP:hemp024",
+   "name": "HEMP 2g Hash Holes - Hash Rosin THCP",
    "market": "HEMP",
    "category": "concentrates",
    "format": "2g",
@@ -6564,6 +6586,7 @@
   },
   {
    "id": "muha:HEMP:2g-pre-roll-private-reserve-2-pack",
+   "name": "HEMP 2g Pre-Roll Private Reserve 2 Pack",
    "market": "HEMP",
    "category": "pre-rolls",
    "format": "2g",
@@ -6698,6 +6721,7 @@
   },
   {
    "id": "muha:HEMP:hemp018",
+   "name": "HEMP 15ct Jar Edibles - Hash Rosin",
    "market": "HEMP",
    "category": "edibles",
    "format": "15ct",
@@ -6985,6 +7009,7 @@
   },
   {
    "id": "muha:HEMP:hemp019",
+   "name": "HEMP 4ct Mylar Bag Edibles - Hash Rosin",
    "market": "HEMP",
    "category": "edibles",
    "format": "4ct",
@@ -7155,6 +7180,7 @@
   },
   {
    "id": "muha:HEMP:hemp020",
+   "name": "HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE)",
    "market": "HEMP",
    "category": "flower",
    "format": "3.5g",
@@ -7405,6 +7431,7 @@
   },
   {
    "id": "muha:AZ:az001",
+   "name": "AZ Distallite 1 Grams Dispo",
    "market": "AZ",
    "category": "disposables",
    "format": "1g",
@@ -7571,6 +7598,7 @@
   },
   {
    "id": "muha:AZ:az002",
+   "name": "AZ Distallite 1 Gram Cart",
    "market": "AZ",
    "category": "cartridges",
    "format": "1g",
@@ -7737,6 +7765,7 @@
   },
   {
    "id": "muha:AZ:az003",
+   "name": "AZ Edibles",
    "market": "AZ",
    "category": "edibles",
    "format": null,
@@ -7745,9 +7774,10 @@
    "skuBlock": "AZ003",
    "source": "Official MM SKU Book - AZ THC.csv",
    "items": 7,
-   "covered": 2,
-   "coveragePct": 29,
+   "covered": 1,
+   "coveragePct": 14,
    "missing": [
+    "Sour Apple",
     "Sweet and Sour",
     "Very Berry",
     "Lime",
@@ -7810,37 +7840,14 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "packaging-only": 2
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "f2034693-6ed5-4a38-b9cd-29c43d764e30",
-       "score": 3,
-       "path": "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS/Sour Apple Mambas_nocubes (1).png",
-       "previous": "working file: Edgar Gutierrez/_BRAND PROJECTS",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/42ca82bb0f362514.jpg"
-      },
-      {
-       "id": "6d485235-d4b4-449f-92b7-ffc427c09385",
-       "score": 3,
-       "path": "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS/solo_Sour Apple Mambas_nocubes (1).png",
-       "previous": "working file: Edgar Gutierrez/_BRAND PROJECTS",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fd96f0df2e946902.jpg"
-      }
-     ],
-     "folders": [
-      "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Sweet and Sour",
@@ -7902,6 +7909,7 @@
   },
   {
    "id": "muha:AZ:az004",
+   "name": "AZ Classic Flavor Line, infused.",
    "market": "AZ",
    "category": "pre-rolls",
    "format": null,
@@ -8081,6 +8089,7 @@
   },
   {
    "id": "muha:all:accessories",
+   "name": "Accessories",
    "market": null,
    "category": "accessories",
    "format": null,
@@ -8488,6 +8497,7 @@
   },
   {
    "id": "muha:CA:ca026",
+   "name": "CA 1G Distillate Disposables",
    "market": "CA",
    "category": "disposables",
    "format": "1g",
@@ -8913,6 +8923,7 @@
   },
   {
    "id": "muha:CA:ca027",
+   "name": "CA 1G MuhaMeds x Cookies Collab Disposables",
    "market": "CA",
    "category": "disposables",
    "format": "1g",
@@ -9164,6 +9175,7 @@
   },
   {
    "id": "muha:CA:ca028",
+   "name": "CA 1G Live Resin Disposables",
    "market": "CA",
    "category": "disposables",
    "format": "1g",
@@ -9415,6 +9427,7 @@
   },
   {
    "id": "muha:CA:ca029",
+   "name": "CA 1G Melted Diamond Disposables",
    "market": "CA",
    "category": "disposables",
    "format": "1g",
@@ -9668,6 +9681,7 @@
   },
   {
    "id": "muha:CA:ca030",
+   "name": "CA 0.5G Hash Rosin Disposables",
    "market": "CA",
    "category": "disposables",
    "format": "0.5g",
@@ -9938,6 +9952,7 @@
   },
   {
    "id": "muha:CA:ca031",
+   "name": "CA 1G Distillate Carts",
    "market": "CA",
    "category": "cartridges",
    "format": "1g",
@@ -10426,6 +10441,7 @@
   },
   {
    "id": "muha:CA:ca032",
+   "name": "CA 1G Melted Diamond Carts",
    "market": "CA",
    "category": "cartridges",
    "format": "1g",
@@ -10678,6 +10694,7 @@
   },
   {
    "id": "muha:CA:pod-battery-combination-kits",
+   "name": "CA Pod & Battery Combination Kits",
    "market": "CA",
    "category": "pods",
    "format": null,
@@ -10873,6 +10890,7 @@
   },
   {
    "id": "muha:CA:pod-flavors",
+   "name": "CA Pod Flavors",
    "market": "CA",
    "category": "pods",
    "format": null,
@@ -11053,6 +11071,7 @@
   },
   {
    "id": "muha:CA:ca033",
+   "name": "CA Hash Rosin Concentrate Jars",
    "market": "CA",
    "category": "concentrates",
    "format": null,
@@ -11457,6 +11476,7 @@
   },
   {
    "id": "muha:CA:ca034",
+   "name": "CA Piatella Concentrate Jars",
    "market": "CA",
    "category": "concentrates",
    "format": null,
@@ -11715,6 +11735,7 @@
   },
   {
    "id": "muha:CA:ca040",
+   "name": "CA Hash Rosin Concentrate V2",
    "market": "CA",
    "category": "concentrates",
    "format": null,
@@ -12042,6 +12063,7 @@
   },
   {
    "id": "muha:CA:ca035",
+   "name": "CA Mates Metal Cans",
    "market": "CA",
    "category": "pre-rolls",
    "format": null,
@@ -12562,6 +12584,7 @@
   },
   {
    "id": "muha:CA:ca036",
+   "name": "CA Muha Donut Holes 0.6g 5 Pack (Blue)",
    "market": "CA",
    "category": "pre-rolls",
    "format": "0.6g",
@@ -12669,6 +12692,7 @@
   },
   {
    "id": "muha:CA:ca037",
+   "name": "CA Muha Donuts 1g 3 Pack (Blue)",
    "market": "CA",
    "category": "pre-rolls",
    "format": "1g",
@@ -12746,6 +12770,7 @@
   },
   {
    "id": "muha:CA:ca038",
+   "name": "CA Muha Fire Flower 1.5g (Gold)",
    "market": "CA",
    "category": "flower",
    "format": "1.5g",
@@ -12838,6 +12863,7 @@
   },
   {
    "id": "muha:CA:hash-rosin-mates-metal-cans",
+   "name": "CA Hash Rosin Mates Metal Cans",
    "market": "CA",
    "category": "pre-rolls",
    "format": null,
@@ -12960,6 +12986,7 @@
   },
   {
    "id": "muha:CA:muha-donuts-1g-blue-",
+   "name": "CA Muha Donuts 1g (Blue)",
    "market": "CA",
    "category": "pre-rolls",
    "format": "1g",
@@ -13022,6 +13049,7 @@
   },
   {
    "id": "muha:CA:muha-1g-greenhouse-joint",
+   "name": "CA Muha 1g Greenhouse Joint",
    "market": "CA",
    "category": "pre-rolls",
    "format": "1g",
@@ -13159,6 +13187,7 @@
   },
   {
    "id": "muha:CA:20ct-dank-darts-infused-",
+   "name": "CA 20ct DANK DARTS (Infused)",
    "market": "CA",
    "category": "pre-rolls",
    "format": "20ct",
@@ -13281,6 +13310,7 @@
   },
   {
    "id": "muha:CA:1-5g-3-pack-muharillos",
+   "name": "CA 1.5g 3 Pack Muharillos",
    "market": "CA",
    "category": "pre-rolls",
    "format": "1.5g",
@@ -13646,6 +13676,7 @@
   },
   {
    "id": "muha:CA:hash-rosin-concentrate-v2-1-0g-",
+   "name": "CA Hash Rosin Concentrate V2 (1.0g)",
    "market": "CA",
    "category": "concentrates",
    "format": "1.0g",
@@ -13888,6 +13919,7 @@
   },
   {
    "id": "muha:CA:live-cryo-sift-jars-1-6g-",
+   "name": "CA Live/Cryo Sift Jars (1.6g)",
    "market": "CA",
    "category": "concentrates",
    "format": "1.6g",
@@ -14130,6 +14162,7 @@
   },
   {
    "id": "muha:CA:bubble-hash-caviar-tins-2-0g-",
+   "name": "CA Bubble Hash Caviar Tins (2.0g)",
    "market": "CA",
    "category": "concentrates",
    "format": "2.0g",
@@ -14372,6 +14405,7 @@
   },
   {
    "id": "muha:CA:temple-ball-1-5g-",
+   "name": "CA Temple Ball (1.5g)",
    "market": "CA",
    "category": "concentrates",
    "format": "1.5g",
@@ -14614,6 +14648,7 @@
   },
   {
    "id": "muha:CA:full-melt-6-star-jars-1-5g-",
+   "name": "CA Full Melt 6-Star Jars (1.5g)",
    "market": "CA",
    "category": "concentrates",
    "format": "1.5g",
@@ -14721,6 +14756,7 @@
   },
   {
    "id": "muha:CA:piatella-jars-v2-1-6g-",
+   "name": "CA Piatella Jars V2 (1.6g)",
    "market": "CA",
    "category": "concentrates",
    "format": "1.6g",
@@ -14828,6 +14864,7 @@
   },
   {
    "id": "muha:CA:dry-sift-2-0g-premium-3-5g-value-",
+   "name": "CA Dry Sift (2.0g Premium / 3.5g Value)",
    "market": "CA",
    "category": "concentrates",
    "format": "2.0g",
@@ -14950,6 +14987,7 @@
   },
   {
    "id": "muha:CA:kief-caviar-tins-3-5g-",
+   "name": "CA Kief Caviar Tins (3.5g)",
    "market": "CA",
    "category": "concentrates",
    "format": "3.5g",
@@ -14997,6 +15035,7 @@
   },
   {
    "id": "muha:CA:distillate-gummies-mylar-bags",
+   "name": "CA Distillate Gummies Mylar Bags",
    "market": "CA",
    "category": "edibles",
    "format": null,
@@ -15005,9 +15044,13 @@
    "skuBlock": null,
    "source": "Official MM SKU Book - CA THC.csv",
    "items": 5,
-   "covered": 5,
-   "coveragePct": 100,
-   "missing": [],
+   "covered": 2,
+   "coveragePct": 40,
+   "missing": [
+    "Sour Apple",
+    "Very Berry",
+    "Mango Madness"
+   ],
    "itemsDetail": [
     {
      "name": "Watermelon",
@@ -15052,49 +15095,14 @@
      "sku": "CA163",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 3,
-     "compositions": {
-      "device-with-packaging": 1,
-      "in-scene": 1,
-      "packaging-only": 1
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "7f11cd7d-9511-4360-9df3-54ce82d57558",
-       "score": 4.666666666666666,
-       "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_SourApple_Front_V1.png",
-       "previous": "working file: Design/Graphic Designer General SOP",
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/106e6a9b188744b4.jpg"
-      },
-      {
-       "id": "45fb794c-127f-401b-808e-11be94485f0f",
-       "score": 4.666666666666666,
-       "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_SourApple_45_V1.png",
-       "previous": "working file: Design/Graphic Designer General SOP",
-       "composition": "in-scene",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7c234e6be72474bd.jpg"
-      },
-      {
-       "id": "6d485235-d4b4-449f-92b7-ffc427c09385",
-       "score": 3.6666666666666665,
-       "path": "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS/solo_Sour Apple Mambas_nocubes (1).png",
-       "previous": "working file: Edgar Gutierrez/_BRAND PROJECTS",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fd96f0df2e946902.jpg"
-      }
-     ],
-     "folders": [
-      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24",
-      "Edgar Gutierrez/_BRAND PROJECTS/BRAND BOOK/PRODUCT SHOTS"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Strawberry Lemon",
@@ -15139,81 +15147,34 @@
      "sku": "CA165",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "packaging-only": 1,
-      "in-scene": 1
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "f8e34402-10ff-4852-8048-9dafbe4ef2e2",
-       "score": 4.666666666666666,
-       "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_VeryBerry_Front_V1.png",
-       "previous": "working file: Design/Graphic Designer General SOP",
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/12983f31065db5db.jpg"
-      },
-      {
-       "id": "6683184c-93e0-44d0-810e-3a3a20a9b2b4",
-       "score": 4.666666666666666,
-       "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_VeryBerry_45_V1.png",
-       "previous": "working file: Design/Graphic Designer General SOP",
-       "composition": "in-scene",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b2e3f3aa2bd701df.jpg"
-      }
-     ],
-     "folders": [
-      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     },
     {
      "name": "Mango Madness",
      "sku": "CA166",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "device-with-packaging": 1,
-      "in-scene": 1
-     },
+     "renders": 0,
+     "compositions": {},
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "aff8baef-183c-4301-b69f-1143277808a7",
-       "score": 4.666666666666666,
-       "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_Mango_Front_V1.png",
-       "previous": "working file: Design/Graphic Designer General SOP",
-       "composition": "device-with-packaging",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7b64f180f10e2d5b.jpg"
-      },
-      {
-       "id": "56b66378-2e8e-4f54-990a-832d5d71379b",
-       "score": 4.666666666666666,
-       "path": "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24/CA_Gummies_Mango_45_V1.png",
-       "previous": "working file: Design/Graphic Designer General SOP",
-       "composition": "in-scene",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4b35e953855efa66.jpg"
-      }
-     ],
-     "folders": [
-      "Design/Graphic Designer General SOP/Muha Meds/Renders/CA/Edibles/100MG_Updated Dec24"
-     ]
+     "hasAlpha": false,
+     "top": [],
+     "folders": []
     }
    ]
   },
   {
    "id": "muha:CA:hash-rosin-gummies-metal-cans",
+   "name": "CA Hash Rosin Gummies Metal Cans",
    "market": "CA",
    "category": "edibles",
    "format": null,
@@ -15472,6 +15433,7 @@
   },
   {
    "id": "muha:CA:distillate-gummies",
+   "name": "CA Distillate Gummies",
    "market": "CA",
    "category": "edibles",
    "format": null,
@@ -15564,6 +15526,7 @@
   },
   {
    "id": "muha:CA:ca039",
+   "name": "CA Hash Rosin Gummies Mylar Bags",
    "market": "CA",
    "category": "edibles",
    "format": null,
@@ -15790,6 +15753,7 @@
   },
   {
    "id": "muha:CA:ca023",
+   "name": "CA 3.5G Flower Jars",
    "market": "CA",
    "category": "flower",
    "format": "3.5g",
@@ -16189,6 +16153,7 @@
   },
   {
    "id": "muha:CA:muha-sun-grown-flower-1oz-jar",
+   "name": "CA Muha Sun Grown Flower 1oz Jar",
    "market": "CA",
    "category": "flower",
    "format": "1oz",
@@ -16448,6 +16413,7 @@
   },
   {
    "id": "muha:CA:ca025",
+   "name": "CA Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags",
    "market": "CA",
    "category": "flower",
    "format": "7g",
@@ -16706,6 +16672,7 @@
   },
   {
    "id": "muha:CA:-5oz-premium-flower-mylar-bag",
+   "name": "CA .5oz Premium Flower Mylar bag",
    "market": "CA",
    "category": "flower",
    "format": "5oz",
@@ -16843,6 +16810,7 @@
   },
   {
    "id": "muha:CA:ca024",
+   "name": "CA Muha Meteors Flower Mylar Bags",
    "market": "CA",
    "category": "flower",
    "format": null,
@@ -16949,6 +16917,7 @@
   },
   {
    "id": "muha:CA:ca024",
+   "name": "CA 7G Flower Jars",
    "market": "CA",
    "category": "flower",
    "format": "7g",
@@ -17348,6 +17317,7 @@
   },
   {
    "id": "muha:CA:3-5g-indoor-flower-jars",
+   "name": "CA 3.5G Indoor Flower Jars",
    "market": "CA",
    "category": "flower",
    "format": "3.5g",
@@ -17560,6 +17530,7 @@
   },
   {
    "id": "muha:CA:7g-greenhouse-flower-jars-golden-nuggets",
+   "name": "CA 7G Greenhouse Flower Jars Golden Nuggets",
    "market": "CA",
    "category": "flower",
    "format": "7g",
@@ -17787,6 +17758,7 @@
   },
   {
    "id": "muha:CA:1oz-greenhouse-flower-jars-golden-nuggets",
+   "name": "CA 1OZ Greenhouse Flower Jars Golden Nuggets",
    "market": "CA",
    "category": "flower",
    "format": "1oz",
@@ -18013,6 +17985,7 @@
   },
   {
    "id": "muha:MI:mi019",
+   "name": "MI 2G Distillate Disposables",
    "market": "MI",
    "category": "disposables",
    "format": "2g",
@@ -18464,6 +18437,7 @@
   },
   {
    "id": "muha:MI:mi020",
+   "name": "MI 2G MuhaMeds x Cookies Collab Disposables SKU #CA026",
    "market": "MI",
    "category": "disposables",
    "format": "2g",
@@ -18715,6 +18689,7 @@
   },
   {
    "id": "muha:MI:mi021",
+   "name": "MI 1G Live Resin Disposables",
    "market": "MI",
    "category": "disposables",
    "format": "1g",
@@ -18966,6 +18941,7 @@
   },
   {
    "id": "muha:MI:mi022",
+   "name": "MI 1G Melted Diamond Disposables",
    "market": "MI",
    "category": "disposables",
    "format": "1g",
@@ -19217,6 +19193,7 @@
   },
   {
    "id": "muha:MI:mi023",
+   "name": "MI 0.5G Mavricks Hash Rosin Disposables",
    "market": "MI",
    "category": "disposables",
    "format": "0.5g",
@@ -19428,6 +19405,7 @@
   },
   {
    "id": "muha:MI:mi024",
+   "name": "MI 1G Distillate Carts",
    "market": "MI",
    "category": "cartridges",
    "format": "1g",
@@ -19915,6 +19893,7 @@
   },
   {
    "id": "muha:MI:mi025",
+   "name": "MI 1G Melted Diamond Carts",
    "market": "MI",
    "category": "cartridges",
    "format": "1g",
@@ -20166,6 +20145,7 @@
   },
   {
    "id": "muha:MI:mi026",
+   "name": "MI 2G DistiIlate Carts",
    "market": "MI",
    "category": "cartridges",
    "format": "2g",
@@ -20636,6 +20616,7 @@
   },
   {
    "id": "muha:MI:mi028",
+   "name": "MI Pod & Battery Combination Kits",
    "market": "MI",
    "category": "pods",
    "format": null,
@@ -21075,6 +21056,7 @@
   },
   {
    "id": "muha:MI:pod-flavors",
+   "name": "MI Pod Flavors",
    "market": "MI",
    "category": "pods",
    "format": null,
@@ -21502,6 +21484,7 @@
   },
   {
    "id": "muha:MI:mi029",
+   "name": "MI 2G Disposable Flavors",
    "market": "MI",
    "category": "disposables",
    "format": "2g",
@@ -22030,6 +22013,7 @@
   },
   {
    "id": "muha:MI:mi030",
+   "name": "MI 2G Dual Disposable Flavors",
    "market": "MI",
    "category": "disposables",
    "format": "2g",
@@ -22868,6 +22852,7 @@
   },
   {
    "id": "muha:MI:mi031",
+   "name": "MI 2G Magnetic Dispo Flavors",
    "market": "MI",
    "category": "disposables",
    "format": "2g",
@@ -23804,6 +23789,7 @@
   },
   {
    "id": "muha:MI:2g-disposable-flavors",
+   "name": "MI 2G Disposable Flavors",
    "market": "MI",
    "category": "disposables",
    "format": "2g",
@@ -23971,6 +23957,7 @@
   },
   {
    "id": "muha:MI:mi009",
+   "name": "MI Live Resin Concentrate Jars",
    "market": "MI",
    "category": "concentrates",
    "format": null,
@@ -24211,6 +24198,7 @@
   },
   {
    "id": "muha:MI:mi010",
+   "name": "MI Hash Rosin Concentrate Jars",
    "market": "MI",
    "category": "concentrates",
    "format": null,
@@ -24573,6 +24561,7 @@
   },
   {
    "id": "muha:MI:mi027",
+   "name": "MI Mates Metal Cans",
    "market": "MI",
    "category": "pre-rolls",
    "format": null,
@@ -25093,6 +25082,7 @@
   },
   {
    "id": "muha:MI:mi017",
+   "name": "MI Hash Rosin Mates Metal Cans",
    "market": "MI",
    "category": "pre-rolls",
    "format": null,
@@ -25348,6 +25338,7 @@
   },
   {
    "id": "muha:MI:muha-donut-holes-0-6g-5-pack-blue-",
+   "name": "MI Muha Donut Holes 0.6g 5 Pack (Blue)",
    "market": "MI",
    "category": "pre-rolls",
    "format": "0.6g",
@@ -25440,6 +25431,7 @@
   },
   {
    "id": "muha:MI:muha-donuts-1g-3-pack-blue-",
+   "name": "MI Muha Donuts 1g 3 Pack (Blue)",
    "market": "MI",
    "category": "pre-rolls",
    "format": "1g",
@@ -25502,6 +25494,7 @@
   },
   {
    "id": "muha:MI:hash-rosin-mates-metal-cans",
+   "name": "MI Hash Rosin Mates Metal Cans",
    "market": "MI",
    "category": "pre-rolls",
    "format": null,
@@ -25609,6 +25602,7 @@
   },
   {
    "id": "muha:MI:mi012",
+   "name": "MI 10ct Distillate Gummy Mylar Bags",
    "market": "MI",
    "category": "edibles",
    "format": "10ct",
@@ -25874,6 +25868,7 @@
   },
   {
    "id": "muha:MI:mi013",
+   "name": "MI 5ct Distillate Gummy Mylar Bags",
    "market": "MI",
    "category": "edibles",
    "format": "5ct",
@@ -26139,6 +26134,7 @@
   },
   {
    "id": "muha:MI:mi014",
+   "name": "MI Hash Rosin Gummies Metal Cans",
    "market": "MI",
    "category": "edibles",
    "format": null,
@@ -26385,6 +26381,7 @@
   },
   {
    "id": "muha:MI:distillate-gummies",
+   "name": "MI Distillate Gummies",
    "market": "MI",
    "category": "edibles",
    "format": null,
@@ -26477,6 +26474,7 @@
   },
   {
    "id": "muha:MI:mi015",
+   "name": "MI 4ct Hash Rosin Gummies",
    "market": "MI",
    "category": "edibles",
    "format": "4ct",
@@ -26718,6 +26716,7 @@
   },
   {
    "id": "muha:MI:mi016",
+   "name": "MI 10ct Hash Rosin Gummies",
    "market": "MI",
    "category": "edibles",
    "format": "10ct",
@@ -26959,6 +26958,7 @@
   },
   {
    "id": "muha:MO:mo001",
+   "name": "MO Distallite 2 Gram Dispos",
    "market": "MO",
    "category": "disposables",
    "format": "2g",
@@ -27445,6 +27445,7 @@
   },
   {
    "id": "muha:MO:mo002",
+   "name": "MO Muha Reserve 1 Gram AIO",
    "market": "MO",
    "category": "disposables",
    "format": "1g",
@@ -27537,6 +27538,7 @@
   },
   {
    "id": "muha:MO:mo003",
+   "name": "MO MELTED DIAMOND 1 Gram AIO",
    "market": "MO",
    "category": "disposables",
    "format": "1g",
@@ -27629,6 +27631,7 @@
   },
   {
    "id": "muha:MO:mo004",
+   "name": "MO Distillate 1 Gram Carts",
    "market": "MO",
    "category": "cartridges",
    "format": "1g",
@@ -28085,6 +28088,7 @@
   },
   {
    "id": "muha:MO:mo005",
+   "name": "MO Melted Diamond 1 Gram Carts",
    "market": "MO",
    "category": "cartridges",
    "format": "1g",
@@ -28177,6 +28181,7 @@
   },
   {
    "id": "muha:MO:mo006",
+   "name": "MO Mates THCA Metal Cans",
    "market": "MO",
    "category": "pre-rolls",
    "format": null,
@@ -28676,6 +28681,7 @@
   },
   {
    "id": "muha:MO:mo007",
+   "name": "MO Mates Muha Reserve Metal Cans",
    "market": "MO",
    "category": "pre-rolls",
    "format": null,
@@ -28783,6 +28789,7 @@
   },
   {
    "id": "muha:MO:1g-non-infused-pre-rolls",
+   "name": "MO 1G Non Infused Pre Rolls",
    "market": "MO",
    "category": "pre-rolls",
    "format": "1g",
@@ -28815,6 +28822,7 @@
   },
   {
    "id": "muha:MO:2g-infused-pre-rolls",
+   "name": "MO 2G Infused Pre Rolls",
    "market": "MO",
    "category": "pre-rolls",
    "format": "2g",
@@ -29530,6 +29538,7 @@
   },
   {
    "id": "muha:MO:mo008",
+   "name": "MO Mates Bubble Hash Metal Cans",
    "market": "MO",
    "category": "pre-rolls",
    "format": null,
@@ -29622,6 +29631,7 @@
   },
   {
    "id": "muha:MO:mo009",
+   "name": "MO Distillate Gummies Mylar Bag",
    "market": "MO",
    "category": "edibles",
    "format": null,
@@ -29870,6 +29880,7 @@
   },
   {
    "id": "muha:MO:mo011",
+   "name": "MO Live Resin Gummies Mylar Bag",
    "market": "MO",
    "category": "edibles",
    "format": null,
@@ -29997,6 +30008,7 @@
   },
   {
    "id": "muha:MO:mo010",
+   "name": "MO Hash Rosin Gummies Mylar Bag",
    "market": "MO",
    "category": "edibles",
    "format": null,
@@ -30089,6 +30101,7 @@
   },
   {
    "id": "muha:MO:3-5g-infused-flower",
+   "name": "MO 3.5G Infused Flower",
    "market": "MO",
    "category": "pre-rolls",
    "format": "3.5g",
@@ -30331,6 +30344,7 @@
   },
   {
    "id": "muha:MO:7-0g-infused-flower",
+   "name": "MO 7.0G Infused Flower",
    "market": "MO",
    "category": "pre-rolls",
    "format": "7.0g",
@@ -30573,6 +30587,7 @@
   },
   {
    "id": "muha:NJ:nj001",
+   "name": "NJ Distallite 2 Gram Disposables",
    "market": "NJ",
    "category": "disposables",
    "format": "2g",
@@ -30960,6 +30975,7 @@
   },
   {
    "id": "muha:NJ:nj002",
+   "name": "NJ Distillate 1 Gram Carts",
    "market": "NJ",
    "category": "cartridges",
    "format": "1g",
@@ -31346,6 +31362,7 @@
   },
   {
    "id": "muha:NJ:distallite-2-gram-disposables",
+   "name": "NJ Distallite 2 Gram Disposables",
    "market": "NJ",
    "category": "disposables",
    "format": "2g",
@@ -31557,6 +31574,7 @@
   },
   {
    "id": "muha:NJ:nj003",
+   "name": "NJ Mates Metal Cans Kiefless Classic Flavor Line, Kiefless",
    "market": "NJ",
    "category": "pre-rolls",
    "format": null,
@@ -31750,6 +31768,7 @@
   },
   {
    "id": "muha:NJ:nj006",
+   "name": "NJ 10ct Distillate Edibles",
    "market": "NJ",
    "category": "edibles",
    "format": "10ct",
@@ -31842,6 +31861,7 @@
   },
   {
    "id": "muha:NM:nm001",
+   "name": "NM 2G Distillate Disposables",
    "market": "NM",
    "category": "disposables",
    "format": "2g",
@@ -32105,6 +32125,7 @@
   },
   {
    "id": "muha:NM:nm002",
+   "name": "NM 1G Distillate Disposables",
    "market": "NM",
    "category": "disposables",
    "format": "1g",
@@ -32491,6 +32512,7 @@
   },
   {
    "id": "muha:NM:nm003",
+   "name": "NM 1G Distillate Carts",
    "market": "NM",
    "category": "cartridges",
    "format": "1g",
@@ -32877,6 +32899,7 @@
   },
   {
    "id": "muha:NM:nm006",
+   "name": "NM 2G Distillate Disposables",
    "market": "NM",
    "category": "disposables",
    "format": "2g",
@@ -33363,6 +33386,7 @@
   },
   {
    "id": "muha:NM:nm007",
+   "name": "NM 1G Distillate Disposables",
    "market": "NM",
    "category": "disposables",
    "format": "1g",
@@ -33819,6 +33843,7 @@
   },
   {
    "id": "muha:NM:nm008",
+   "name": "NM 1G Live Resin Disposables",
    "market": "NM",
    "category": "disposables",
    "format": "1g",
@@ -34070,6 +34095,7 @@
   },
   {
    "id": "muha:NM:nm009",
+   "name": "NM 1G Melted Diamond Disposables",
    "market": "NM",
    "category": "disposables",
    "format": "1g",
@@ -34321,6 +34347,7 @@
   },
   {
    "id": "muha:NM:nm010",
+   "name": "NM 1G Distillate Carts",
    "market": "NM",
    "category": "cartridges",
    "format": "1g",
@@ -34807,6 +34834,7 @@
   },
   {
    "id": "muha:NM:nm005",
+   "name": "NM Mates Metal Cans Kiefless",
    "market": "NM",
    "category": "pre-rolls",
    "format": null,
@@ -35184,6 +35212,7 @@
   },
   {
    "id": "muha:NM:nm006",
+   "name": "NM Distillate Gummy Mylar Bags",
    "market": "NM",
    "category": "edibles",
    "format": null,
@@ -35464,6 +35493,7 @@
   },
   {
    "id": "muha:NY:ny001",
+   "name": "NY 2G Distillate Disposables",
    "market": "NY",
    "category": "disposables",
    "format": "2g",
@@ -35714,6 +35744,7 @@
   },
   {
    "id": "muha:NY:ny002",
+   "name": "NY 1G Distillate Carts",
    "market": "NY",
    "category": "cartridges",
    "format": "1g",
@@ -36006,6 +36037,7 @@
   },
   {
    "id": "muha:NY:ny004",
+   "name": "NY 2G Distillate Disposables",
    "market": "NY",
    "category": "disposables",
    "format": "2g",
@@ -36305,6 +36337,7 @@
   },
   {
    "id": "muha:NY:ny005",
+   "name": "NY 1G Live Resin Disposables",
    "market": "NY",
    "category": "disposables",
    "format": "1g",
@@ -36561,6 +36594,7 @@
   },
   {
    "id": "muha:NY:ny006",
+   "name": "NY 1G Melted Diamond Disposables",
    "market": "NY",
    "category": "disposables",
    "format": "1g",
@@ -36820,6 +36854,7 @@
   },
   {
    "id": "muha:NY:ny007",
+   "name": "NY 1G Distillate Cartridges",
    "market": "NY",
    "category": "cartridges",
    "format": "1g",
@@ -37091,6 +37126,7 @@
   },
   {
    "id": "muha:NY:ny003",
+   "name": "NY Mates Metal Cans",
    "market": "NY",
    "category": "pre-rolls",
    "format": null,
@@ -37392,6 +37428,7 @@
   },
   {
    "id": "muha:OH:oh001",
+   "name": "OH 1.68G Distillate Disposables",
    "market": "OH",
    "category": "disposables",
    "format": "1.68g",
@@ -37778,6 +37815,7 @@
   },
   {
    "id": "muha:OH:2g-distillate-disposables",
+   "name": "OH 2G Distillate Disposables",
    "market": "OH",
    "category": "disposables",
    "format": "2g",
@@ -37945,6 +37983,7 @@
   },
   {
    "id": "muha:OH:ca006",
+   "name": "OH 1.68G Distillate Carts",
    "market": "OH",
    "category": "cartridges",
    "format": "1.68g",
@@ -38134,6 +38173,7 @@
   },
   {
    "id": "muha:OH:2g-distillate-disposables",
+   "name": "OH 2G Distillate Disposables",
    "market": "OH",
    "category": "disposables",
    "format": "2g",
@@ -38301,6 +38341,7 @@
   },
   {
    "id": "muha:OH:1g-distillate-carts",
+   "name": "OH 1G Distillate Carts",
    "market": "OH",
    "category": "cartridges",
    "format": "1g",
@@ -38468,6 +38509,7 @@
   },
   {
    "id": "muha:OH:1g-distillate-carts",
+   "name": "OH 1G Distillate Carts",
    "market": "OH",
    "category": "cartridges",
    "format": "1g",
@@ -38635,6 +38677,7 @@
   },
   {
    "id": "muha:OH:mo006",
+   "name": "OH Mates 3WAY Metal Cans",
    "market": "OH",
    "category": "pre-rolls",
    "format": null,
@@ -38880,6 +38923,7 @@
   },
   {
    "id": "muha:OH:hash-rosin-mates-metal-cans",
+   "name": "OH Hash Rosin Mates Metal Cans",
    "market": "OH",
    "category": "pre-rolls",
    "format": null,
@@ -38987,6 +39031,7 @@
   },
   {
    "id": "muha:OH:2g-magnetic-dispo-flavors",
+   "name": "OH 2G Magnetic Dispo Flavors",
    "market": "OH",
    "category": "disposables",
    "format": "2g",
@@ -39304,6 +39349,7 @@
   },
   {
    "id": "muha:OH:oh002",
+   "name": "OH THC 440 mg gummies, 44mg per gummy, tin can",
    "market": "OH",
    "category": "edibles",
    "format": "440mg",
@@ -39441,6 +39487,7 @@
   },
   {
    "id": "muha:OH:oh002",
+   "name": "OH THC 440 mg gummies, 44mg per gummy, tin can",
    "market": "OH",
    "category": "edibles",
    "format": "440mg",
@@ -40974,37 +41021,6 @@
    }
   },
   {
-   "folder": "RENDERS / working file: Edgar Gutierrez/_BRAND PROJECTS",
-   "market": "MI",
-   "files": 20,
-   "products": [
-    {
-     "product": "Strawberry Dream Pre-Rolls",
-     "n": 1
-    },
-    {
-     "product": "Matēs PRE-ROLLS ORANGE CAKE HYBRID",
-     "n": 1
-    },
-    {
-     "product": "Orange Cake Hybrid Pre-Roll",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds Pina Colada Pre-Roll Jar and Pre-Roll",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "Mates_MI_Strawberry_Front_V1.png",
-    "Mates_MI_Orange_Front_V1.png",
-    "Mates_MI_Orange_45_V1.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 20
-   }
-  },
-  {
    "folder": "Cartridges / Distillate / previous design: MI_1G_Distillate_Carts",
    "market": "MI",
    "files": 20,
@@ -41353,38 +41369,6 @@
    "compositions": {
     "device-with-packaging": 8,
     "packaging-only": 8
-   }
-  },
-  {
-   "folder": "Edibles / CA_10ct_Edibles_Gummies_A.M / working file: Design/Graphic Designer General SOP",
-   "market": "CA",
-   "files": 15,
-   "products": [
-    {
-     "product": "Sour Blue Razz Cannabis Infused Gummies",
-     "n": 3
-    },
-    {
-     "product": "Mango Chamoy Cannabis Infused Gummies",
-     "n": 3
-    },
-    {
-     "product": "Juicy Tangerine Cannabis Infused Gummies",
-     "n": 2
-    },
-    {
-     "product": "Raspberry Pineapple Cannabis Infused Gummies",
-     "n": 2
-    }
-   ],
-   "samples": [
-    "CA_10ct_Edibles__SourBlueRazz_TOP_FRONT0037.png",
-    "CA_10ct_Edibles_JuicyTangerine_45_0037.png",
-    "CA_10ct_Edibles_MangoChamoy_FRONT0037.png"
-   ],
-   "compositions": {
-    "device-with-packaging": 14,
-    "packaging-only": 1
    }
   },
   {
@@ -42935,71 +42919,6 @@
     "lineup": 2,
     "device-with-packaging": 2,
     "packaging-only": 2
-   }
-  },
-  {
-   "folder": "PRODUCT SHOTS / working file: Edgar Gutierrez/_BRAND PROJECTS",
-   "market": null,
-   "files": 6,
-   "products": [
-    {
-     "product": "Muha Meds Delta 10 Train Wreck, Muha Meds HHC Northern Lights, Muha Meds Delta 8 King Louis XIII, Muha Meds Mates Blue Razz, Muha Meds Mambas Sour Apple",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds HHC, Muha Meds Delta 10, Muha Meds Delta 8",
-     "n": 1
-    },
-    {
-     "product": "Muha Meds HHC, Delta 10, and Delta 8 vape packaging",
-     "n": 1
-    },
-    {
-     "product": "Blue Razz Mates",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "mates_mambas_dispos.png",
-    "d8_d10_hhc.png",
-    "d8_d10_hhc_v2.png"
-   ],
-   "compositions": {
-    "lineup": 3,
-    "packaging-only": 3
-   }
-  },
-  {
-   "folder": "Edibles / 100MG_Updated Dec24 / working file: Design/Graphic Designer General SOP",
-   "market": "CA",
-   "files": 5,
-   "products": [
-    {
-     "product": "Watermelon Cannabis Infused Gummies",
-     "n": 2
-    },
-    {
-     "product": "CANNABIS INFUSED GUMMIES STRAWBERRY LEMON",
-     "n": 1
-    },
-    {
-     "product": "Cannabis Infused Gummies Strawberry Lemon",
-     "n": 1
-    },
-    {
-     "product": "Cannabis Infused Gummies (Mango Madness, Sour Apple, Watermelon, Very Berry)",
-     "n": 1
-    }
-   ],
-   "samples": [
-    "CA_Gummies_StrawberryLemon_45_V1.png",
-    "CA_Gummies_Watermelon_45_V1.png",
-    "CA_Gummies_StrawberryLemon_Front_V1.png"
-   ],
-   "compositions": {
-    "packaging-only": 3,
-    "in-scene": 1,
-    "lineup": 1
    }
   },
   {

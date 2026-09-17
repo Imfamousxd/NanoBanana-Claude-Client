@@ -1,5 +1,5 @@
 import fs from "node:fs"; import path from "node:path"; import sharp from "sharp";
-import { scoreMatch, unmatchedKey, indexDesigns, indexRegistry, indexFolderMap, inScope, selectHits, compositionLabel } from "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/engine/skus/coverage.mjs";
+import { scoreMatch, unmatchedKey, indexDesigns, indexRegistry, indexFolderMap, inScope, selectHits, compositionLabel, lineName } from "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client/engine/skus/coverage.mjs";
 const S = "/private/tmp/claude-501/-Users-mario-Desktop-Cursor-Projects-NanoBanana-Claude-Client/6052abf4-48c5-44c9-b472-a14ff8c10702/scratchpad";
 const root = "/Users/mario/Desktop/Cursor Projects/NanoBanana-Claude-Client";
 const lib = JSON.parse(fs.readFileSync(S + "/render-library.json", "utf8"));
@@ -49,7 +49,7 @@ for (const [brand, regFile, label] of brands) {
     html += `<h3>${esc(market)}</h3>`;
     for (const { line, rows } of blocks) {
       const withRenders = rows.filter((r) => r.hits.length).length;
-      html += `<details${withRenders ? " open" : ""}><summary><b>${esc(line.line)}${line.format ? " " + esc(line.format) : ""}</b> <span class="dim">${esc(line.category)}${line.skuBlock ? " · " + esc(line.skuBlock) : ""} · ${withRenders}/${rows.length} with renders</span></summary><table>`;
+      html += `<details${withRenders ? " open" : ""}><summary><b>${esc(lineName(line))}${line.format ? " " + esc(line.format) : ""}</b> <span class="dim">${esc(line.category)}${line.skuBlock ? " · " + esc(line.skuBlock) : ""} · ${withRenders}/${rows.length} with renders</span></summary><table>`;
       for (const { item, hits } of rows) html += `<tr class="${hits.length ? "" : "none"}"><td class="item">${esc(item.name)}<br><span class="mono">${esc(item.sku || "")}</span><br><span class="dim">${hits.length} file${hits.length === 1 ? "" : "s"}</span></td><td class="pics">${hits.map((h) => img(h.a, h.previous, line.category)).join("")}</td></tr>`;
       html += `</table></details>`;
     }

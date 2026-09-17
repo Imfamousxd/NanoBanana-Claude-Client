@@ -6,7 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
-import { computeCoverage, loadLibrary, indexFolderMap, folderPathOf, deviceIterationOf, previousDesignOf, quarantined, compositionLabel } from "./coverage.mjs";
+import { computeCoverage, loadLibrary, indexFolderMap, folderPathOf, deviceIterationOf, previousDesignOf, quarantined, compositionLabel, lineName } from "./coverage.mjs";
 
 const REGISTRY_FILE = { muha: "muha-meds" };
 const GENERIC_RE = /ai resources|master case|group shot|website images|badge|catalog resized|motion\/|redesign ?test/i;
@@ -89,10 +89,10 @@ function proposalOf(folder) {
   const lines = folder.lines;
   if (lines.length) {
     const top = lines[0];
-    const more = lines.length > 1 ? ` (+${lines.length - 1} more line${lines.length > 2 ? "s" : ""}: ${lines.slice(1, 3).map((l) => `${l.line} ${l.market}`).join("; ")})` : "";
+    const more = lines.length > 1 ? ` (+${lines.length - 1} more line${lines.length > 2 ? "s" : ""}: ${lines.slice(1, 3).map((l) => l.name).join("; ")})` : "";
     const flavours = top.flavours.slice(0, 6).join(", ") + (top.flavours.length > 6 ? ` +${top.flavours.length - 6}` : "");
     const rest = folder.files - folder.assigned;
-    return `Feeds ${top.line} · ${top.market || "all markets"}${top.generation ? " · " + top.generation : ""}${top.skuBlock ? " · " + top.skuBlock : ""}${more} — ${folder.assigned} of ${folder.files} files on rows${rest ? `, ${rest} on no row` : ""}. Flavours: ${flavours}.`;
+    return `Feeds ${top.name}${top.generation ? " · " + top.generation : ""}${top.skuBlock ? " · " + top.skuBlock : ""}${more} — ${folder.assigned} of ${folder.files} files on rows${rest ? `, ${rest} on no row` : ""}. Flavours: ${flavours}.`;
   }
   if (folder.status) return `On no SKU row — ${folder.status} (${folder.files} files).`;
   return `On no SKU row — nothing in the book matched (${folder.files} files).`;
@@ -101,8 +101,8 @@ function proposalOf(folder) {
 // What a "Yes" click commits to, in the reviewer's words.
 function meaningOf(folder) {
   const lines = folder.lines;
-  if (lines.length === 1) return `Yes means: every file in this folder is ${lines[0].line} (${lines[0].market || "all markets"}) and its flavours are named from the book.`;
-  if (lines.length > 1) return `Yes means: this folder is split between ${lines.map((l) => `${l.line} (${l.market || "all markets"})`).join(" and ")}, as shown. Pick "This is one line…" to give the whole folder one name instead.`;
+  if (lines.length === 1) return `Yes means: every file in this folder is ${lines[0].name} and its flavours are named from the book.`;
+  if (lines.length > 1) return `Yes means: this folder is split between ${lines.map((l) => l.name).join(" and ")}, as shown. Pick "This is one line…" to give the whole folder one name instead.`;
   if (folder.status) return `Yes means: this folder stays off every SKU row (${folder.status}).`;
   return `Yes means: this folder stays off every SKU row (nothing in the book matched). Pick "This is one line…" if it is a product.`;
 }
@@ -149,7 +149,7 @@ export async function buildFolderMap(root, { brand = "muha", libraryFile, page, 
   }
   const top = (m) => [...m.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] || null;
   const folders = [...groups.values()].map((g) => {
-    const lines = [...g.lines.entries()].map(([id, e]) => { const l = linesById.get(id) || {}; return { id, line: l.line || id, market: l.market || null, skuBlock: l.skuBlock || null, generation: l.generation || null, files: e.files, flavours: [...e.items] }; }).sort((a, b) => b.files - a.files);
+    const lines = [...g.lines.entries()].map(([id, e]) => { const l = linesById.get(id) || {}; return { id, name: l.line ? lineName(l) : id, line: l.line || id, market: l.market || null, skuBlock: l.skuBlock || null, generation: l.generation || null, files: e.files, flavours: [...e.items] }; }).sort((a, b) => b.files - a.files);
     const folder = { id: g.id, path: g.path, files: g.files, assigned: g.assigned, market: top(g.markets), status: top(g.statuses), compositions: Object.fromEntries(g.compositions), lines, samples: g.samples, outliers: g.outliers || [], checked: g.checked, unassigned: g.unassigned || [], decision: known.get(g.path) || null };
     folder.proposal = proposalOf(folder);
     folder.meaning = meaningOf(folder);
@@ -189,7 +189,7 @@ export async function buildReviewPage(root, map, registry) {
   const thumbs = {};
   let i = 0; const all = map.folders.flatMap((f) => [...f.samples, ...f.outliers.filter((o) => o.thumb)]);
   await Promise.all(Array.from({ length: 8 }, async () => { while (i < all.length) { const s = all[i++]; const uri = await thumbData(root, s, cacheDir); if (uri) thumbs[s.id] = uri; } }));
-  const lines = registry.lines.map((l) => ({ id: l.id, market: l.market || "—", label: `${l.line}${l.format ? " " + l.format : ""}${l.generation ? " · " + l.generation : ""}${l.skuBlock ? " · " + l.skuBlock : ""} [${l.category}]` }));
+  const lines = registry.lines.map((l) => ({ id: l.id, market: l.market || "—", label: `${lineName(l)}${l.format ? " " + l.format : ""}${l.generation ? " · " + l.generation : ""}${l.skuBlock ? " · " + l.skuBlock : ""} [${l.category}]` }));
   const parents = new Map();
   for (const f of map.folders) { const parent = f.path.split("/").slice(0, -1).join("/") || f.path; (parents.get(parent) || parents.set(parent, []).get(parent)).push(f); }
   const decided = map.folders.filter((f) => f.decision).length;
@@ -203,7 +203,7 @@ export async function buildReviewPage(root, map, registry) {
       const name = f.path.split("/").pop();
       const odd = f.outliers.map((o) => { const l = fileLink(f, o); const img = thumbs[o.id] ? `<img loading="lazy" data-t="${o.id}" alt="">` : `<div class="nothumb">no thumb</div>`; return `<figure class="odd" title="${esc(o.path)} — ${esc(o.why)}">${l ? `<a href="${l}" target="_blank" rel="noopener">${img}</a>` : img}<figcaption>${esc(o.why.split(";")[0].slice(0, 60))}</figcaption></figure>`; }).join("");
       const check = f.checked ? (f.outliers.length ? `<div class="check bad"><b>${f.outliers.length} file${f.outliers.length > 1 ? "s" : ""} look different</b> from the rest of this folder (checked all ${f.checked.files}):</div><div class="pics">${odd}</div>` : `<div class="check ok">Checked all ${f.checked.files} files: ${f.checked.labels ? "label words agree" : "too few files to compare labels"}${f.checked.visual ? " · they look alike" : ""}.</div>`) : "";
-      const headline = f.lines.length ? `${esc(f.lines[0].line)} <span class="dim">· ${esc(f.lines[0].market || "all markets")}${f.lines[0].skuBlock ? " · " + esc(f.lines[0].skuBlock) : ""}${f.lines.length > 1 ? " · +" + (f.lines.length - 1) + " more line" + (f.lines.length > 2 ? "s" : "") : ""}</span>` : `<span class="dim">No SKU line</span>`;
+      const headline = f.lines.length ? `${esc(f.lines[0].name)} <span class="dim">${f.lines[0].skuBlock ? "· " + esc(f.lines[0].skuBlock) : ""}${f.lines.length > 1 ? " · +" + (f.lines.length - 1) + " more line" + (f.lines.length > 2 ? "s" : "") : ""}</span>` : `<span class="dim">No SKU line</span>`;
       const unnamed = f.unassigned.length && f.lines.length ? `<p class="dim small">Not named yet (${f.unassigned.length}): ${esc(f.unassigned.slice(0, 6).join(", "))}${f.unassigned.length > 6 ? " …" : ""}</p>` : "";
       body += `<article class="row" id="f-${f.id}" data-id="${f.id}" data-market="${esc(f.market || "")}"><div class="pics">${pics}</div><div class="what"><div class="headline">${headline}</div><div class="name">${link ? `<a href="${link}" target="_blank" rel="noopener">${esc(name)}</a>` : esc(name)} <span class="dim">· ${f.files} files${f.market ? " · " + esc(f.market) : ""}</span></div><p class="proposal">${esc(f.proposal)}</p>${unnamed}${f.status && f.lines.length ? `<p class="dim small">${esc(f.status)}</p>` : ""}<p class="meaning">${esc(f.meaning)}</p>${check}</div><div class="decide"><div class="state" data-state></div><div class="buttons"><button data-v="ok" title="Confirm what the row says">✓ Yes, that's right</button><button data-v="line" title="Give every file in this folder one SKU line from the book">This is one line…</button><button data-v="old" title="Older design or device: keep it off the current SKU rows">Old design</button><button data-v="skip" title="Not a product render, or a category with no book line">Not a product</button></div><div class="lineform" hidden><select data-sel><option value="">Pick the line this folder belongs to…</option></select><label class="small"><input type="checkbox" data-allmarkets> all markets</label></div><input class="note" data-note placeholder="Note (optional): e.g. 'this is the Mavricks SKU', 'glass jars category'"></div></article>`;
     }
@@ -220,7 +220,7 @@ function counts(){const n=Object.values(state).filter(Boolean).length;document.g
 function fillSelect(row){const sel=row.querySelector("[data-sel]");if(sel.dataset.filled)return;const all=row.querySelector("[data-allmarkets]").checked;const m=row.dataset.market;const opts=LINES.filter(l=>all||!m||l.market===m||l.market==="—");const groups={};for(const l of opts)(groups[l.market]=groups[l.market]||[]).push(l);sel.innerHTML='<option value="">Pick the line this folder belongs to…</option>'+Object.keys(groups).sort().map(k=>'<optgroup label="'+k+'">'+groups[k].map(l=>'<option value="'+l.id+'">'+l.label.replace(/</g,"&lt;")+'</option>').join("")+'</optgroup>').join("");sel.dataset.filled=all?"all":"market";}
 async function save(id,patch){const prev=state[id]||{};const d={verdict:patch.verdict||prev.verdict||"ok",lineId:patch.lineId!==undefined?patch.lineId:(prev.lineId||null),lineLabel:patch.lineLabel!==undefined?patch.lineLabel:(prev.lineLabel||null),note:patch.note!==undefined?patch.note:(prev.note||""),path:PATHS[id],at:new Date().toISOString()};state[id]=d;paint(id);counts();if(!db){saveEl.textContent="not saved: saving is unavailable here — tell me the folder names and verdicts in chat";saveEl.className="save bad";return;}try{await db.doc("decisions/"+id).set(d);saveEl.textContent="saved "+new Date().toLocaleTimeString();saveEl.className="save";}catch(e){saveEl.textContent="save failed ("+(e&&e.code||"error")+") — try again";saveEl.className="save bad";}}
 document.addEventListener("click",async(ev)=>{const b=ev.target.closest("button");if(!b)return;const row=b.closest("article.row");if(b.hasAttribute("data-group-ok")){const sec=b.closest("section.group");for(const id of sec.dataset.ids.split(" ")){if(!state[id])await save(id,{verdict:"ok"});}return;}if(!row)return;const id=row.dataset.id;const v=b.dataset.v;if(v==="line"){const f=row.querySelector(".lineform");f.hidden=!f.hidden;if(!f.hidden)fillSelect(row);return;}await save(id,{verdict:v,lineId:null,lineLabel:null});});
-document.addEventListener("change",async(ev)=>{const row=ev.target.closest("article.row");if(!row)return;const id=row.dataset.id;if(ev.target.matches("[data-sel]")&&ev.target.value){const l=LINES.find(x=>x.id===ev.target.value);await save(id,{verdict:"line",lineId:l.id,lineLabel:l.market+" · "+l.label});row.querySelector(".lineform").hidden=true;}if(ev.target.matches("[data-allmarkets]")){const sel=row.querySelector("[data-sel]");sel.dataset.filled="";fillSelect(row);}if(ev.target.matches("[data-note]")){await save(id,{note:ev.target.value.trim()});}});
+document.addEventListener("change",async(ev)=>{const row=ev.target.closest("article.row");if(!row)return;const id=row.dataset.id;if(ev.target.matches("[data-sel]")&&ev.target.value){const l=LINES.find(x=>x.id===ev.target.value);await save(id,{verdict:"line",lineId:l.id,lineLabel:l.label});row.querySelector(".lineform").hidden=true;}if(ev.target.matches("[data-allmarkets]")){const sel=row.querySelector("[data-sel]");sel.dataset.filled="";fillSelect(row);}if(ev.target.matches("[data-note]")){await save(id,{note:ev.target.value.trim()});}});
 document.addEventListener("keydown",(ev)=>{if(ev.key==="Enter"&&ev.target.matches("[data-note]"))ev.target.blur();});
 document.getElementById("hide").addEventListener("change",(ev)=>{document.body.classList.toggle("hide-done",ev.target.checked);for(const r of document.querySelectorAll("article.row.done"))r.classList.toggle("hide",ev.target.checked);});
 document.getElementById("onlyrows").addEventListener("change",(ev)=>{const on=ev.target.checked;const secs=[...document.querySelectorAll("section.group")];const wrap=secs[0].parentElement;secs.sort((a,b)=>{const ra=a.querySelector(".proposal").textContent.startsWith("Feeds")?0:1;const rb=b.querySelector(".proposal").textContent.startsWith("Feeds")?0:1;return on?(ra-rb)||a.querySelector("h2").textContent.localeCompare(b.querySelector("h2").textContent):a.querySelector("h2").textContent.localeCompare(b.querySelector("h2").textContent);});for(const s of secs)wrap.appendChild(s);});

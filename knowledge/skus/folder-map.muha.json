@@ -1,6 +1,6 @@
 {
  "brand": "muha",
- "builtAt": "2026-09-17T01:52:48.860Z",
+ "builtAt": "2026-09-17T02:05:54.840Z",
  "scope": "Renders/ only",
  "folders": [
   {
@@ -110,6 +110,7 @@
    "lines": [
     {
      "id": "muha:all:accessories",
+     "name": "Accessories",
      "line": "Accessories",
      "market": null,
      "skuBlock": null,
@@ -127,8 +128,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Accessories · all markets — 6 of 6 files on rows. Flavours: Dab Mats.",
-   "meaning": "Yes means: every file in this folder is Accessories (all markets) and its flavours are named from the book.",
+   "proposal": "Feeds Accessories — 6 of 6 files on rows. Flavours: Dab Mats.",
+   "meaning": "Yes means: every file in this folder is Accessories and its flavours are named from the book.",
    "samples": [
     {
      "id": "5dad858e-9914-4897-96bc-0fd1e5e3deb2",
@@ -2036,6 +2037,7 @@
    "lines": [
     {
      "id": "muha:CA:ca031",
+     "name": "CA 1G Distillate Carts",
      "line": "1G Distillate Carts",
      "market": "CA",
      "skuBlock": "CA031",
@@ -2064,8 +2066,8 @@
     "CA_Carts_1G_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Distillate Carts · CA · Gen 3 · CA031 — 40 of 41 files on rows, 1 on no row. Flavours: Cherry Grapefruit, Banana Cream Cake, Bubblegum Burst, Green Crack, Godfather OG, Pineapple Paradise +4.",
-   "meaning": "Yes means: every file in this folder is 1G Distillate Carts (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA 1G Distillate Carts · Gen 3 · CA031 — 40 of 41 files on rows, 1 on no row. Flavours: Cherry Grapefruit, Banana Cream Cake, Bubblegum Burst, Green Crack, Godfather OG, Pineapple Paradise +4.",
+   "meaning": "Yes means: every file in this folder is CA 1G Distillate Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "462b3b2b-f78d-4775-b6a4-0fe78401cd3e",
@@ -2162,6 +2164,7 @@
    "lines": [
     {
      "id": "muha:MI:mi024",
+     "name": "MI 1G Distillate Carts",
      "line": "1G Distillate Carts",
      "market": "MI",
      "skuBlock": "MI024",
@@ -2190,8 +2193,8 @@
     "MI_Carts_1G_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Distillate Carts · MI · MI024 — 40 of 41 files on rows, 1 on no row. Flavours: Bahama Berry, Cherry Grapefruit, Pineapple Paradise, Purple Passion Punch, Banana Cream Cake, Blue Slushie +4.",
-   "meaning": "Yes means: every file in this folder is 1G Distillate Carts (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 1G Distillate Carts · MI024 — 40 of 41 files on rows, 1 on no row. Flavours: Bahama Berry, Cherry Grapefruit, Pineapple Paradise, Purple Passion Punch, Banana Cream Cake, Blue Slushie +4.",
+   "meaning": "Yes means: every file in this folder is MI 1G Distillate Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "ee148faf-4c77-4055-ad85-75fb2db94ced",
@@ -2226,6 +2229,7 @@
    "lines": [
     {
      "id": "muha:MI:mi024",
+     "name": "MI 1G Distillate Carts",
      "line": "1G Distillate Carts",
      "market": "MI",
      "skuBlock": "MI024",
@@ -2262,8 +2266,8 @@
     "MI_Distillate_2gram_Sugar_Daddy_Punch_Front.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Distillate Carts · MI · MI024 — 2 of 20 files on rows, 18 on no row. Flavours: Blue Slushie.",
-   "meaning": "Yes means: every file in this folder is 1G Distillate Carts (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 1G Distillate Carts · MI024 — 2 of 20 files on rows, 18 on no row. Flavours: Blue Slushie.",
+   "meaning": "Yes means: every file in this folder is MI 1G Distillate Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "a2ac4f3e-9436-4f56-9b02-f63520ad7d46",
@@ -2363,6 +2367,7 @@
    "lines": [
     {
      "id": "muha:MI:mi026",
+     "name": "MI 2G DistiIlate Carts",
      "line": "2G DistiIlate Carts",
      "market": "MI",
      "skuBlock": "MI026",
@@ -2394,8 +2399,8 @@
     "00_MI_Carts_2G_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 2G DistiIlate Carts · MI · MI026 — 37 of 41 files on rows, 4 on no row. Flavours: Lemon Drop, Toxic Apple, Gelato 33, Skywalker OG, Purple Punch, Strawberry Lava +4.",
-   "meaning": "Yes means: every file in this folder is 2G DistiIlate Carts (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 2G DistiIlate Carts · MI026 — 37 of 41 files on rows, 4 on no row. Flavours: Lemon Drop, Toxic Apple, Gelato 33, Skywalker OG, Purple Punch, Strawberry Lava +4.",
+   "meaning": "Yes means: every file in this folder is MI 2G DistiIlate Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "d88578d4-40cb-483f-8516-a13ce47737f9",
@@ -2541,6 +2546,7 @@
    "lines": [
     {
      "id": "muha:MO:mo004",
+     "name": "MO Distillate 1 Gram Carts",
      "line": "Distillate 1 Gram Carts",
      "market": "MO",
      "skuBlock": "MO004",
@@ -2571,8 +2577,8 @@
     "MO_Carts_1G_BananaCream_Front.png"
    ],
    "decision": null,
-   "proposal": "Feeds Distillate 1 Gram Carts · MO · MO004 — 36 of 40 files on rows, 4 on no row. Flavours: Bahama Berry, Wedding Cake, Lemon Tart, Frozen Bluez, Strawberry Kiwi Kush, Purple Velvet +3.",
-   "meaning": "Yes means: every file in this folder is Distillate 1 Gram Carts (MO) and its flavours are named from the book.",
+   "proposal": "Feeds MO Distillate 1 Gram Carts · MO004 — 36 of 40 files on rows, 4 on no row. Flavours: Bahama Berry, Wedding Cake, Lemon Tart, Frozen Bluez, Strawberry Kiwi Kush, Purple Velvet +3.",
+   "meaning": "Yes means: every file in this folder is MO Distillate 1 Gram Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "c969b81e-f566-43e5-a572-675b79cc193b",
@@ -2607,6 +2613,7 @@
    "lines": [
     {
      "id": "muha:NJ:nj002",
+     "name": "NJ Distillate 1 Gram Carts",
      "line": "Distillate 1 Gram Carts",
      "market": "NJ",
      "skuBlock": "NJ002",
@@ -2635,8 +2642,8 @@
     "NJ_1G_Distillate_Carts_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds Distillate 1 Gram Carts · NJ · NJ002 — 20 of 21 files on rows, 1 on no row. Flavours: Blueberry Haze, Cherry Grapefruit, Jack Herer, Purple Punch, Cali Gas OG, Watermelon OG +4.",
-   "meaning": "Yes means: every file in this folder is Distillate 1 Gram Carts (NJ) and its flavours are named from the book.",
+   "proposal": "Feeds NJ Distillate 1 Gram Carts · NJ002 — 20 of 21 files on rows, 1 on no row. Flavours: Blueberry Haze, Cherry Grapefruit, Jack Herer, Purple Punch, Cali Gas OG, Watermelon OG +4.",
+   "meaning": "Yes means: every file in this folder is NJ Distillate 1 Gram Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "2195738c-c1e6-42ba-9939-54b2af19abe8",
@@ -2671,6 +2678,7 @@
    "lines": [
     {
      "id": "muha:NM:nm010",
+     "name": "NM 1G Distillate Carts",
      "line": "1G Distillate Carts",
      "market": "NM",
      "skuBlock": "NM010",
@@ -2699,8 +2707,8 @@
     "00_NM_1G_Carts_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Distillate Carts · NM · NM010 — 40 of 41 files on rows, 1 on no row. Flavours: Bahama Berry, Blue Slushie, Pineapple Paradise, Banana Cream Cake, Habibi, Magic Melon OG +4.",
-   "meaning": "Yes means: every file in this folder is 1G Distillate Carts (NM) and its flavours are named from the book.",
+   "proposal": "Feeds NM 1G Distillate Carts · NM010 — 40 of 41 files on rows, 1 on no row. Flavours: Bahama Berry, Blue Slushie, Pineapple Paradise, Banana Cream Cake, Habibi, Magic Melon OG +4.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "51aac009-0959-45da-836c-3fc3a676b93d",
@@ -2734,6 +2742,7 @@
    "lines": [
     {
      "id": "muha:NM:nm003",
+     "name": "NM 1G Distillate Carts",
      "line": "1G Distillate Carts",
      "market": "NM",
      "skuBlock": "NM003",
@@ -2760,8 +2769,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 1G Distillate Carts · NM · NM003 — 20 of 20 files on rows. Flavours: Blueberry Haze, Apple Gelato ICE, Jack Herer, Purple Punch, Strawberry Runtz, Cali Gas OG +4.",
-   "meaning": "Yes means: every file in this folder is 1G Distillate Carts (NM) and its flavours are named from the book.",
+   "proposal": "Feeds NM 1G Distillate Carts · NM003 — 20 of 20 files on rows. Flavours: Blueberry Haze, Apple Gelato ICE, Jack Herer, Purple Punch, Strawberry Runtz, Cali Gas OG +4.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "00df6378-231c-4f76-85ac-745fef698efe",
@@ -2799,6 +2808,7 @@
    "lines": [
     {
      "id": "muha:NY:ny007",
+     "name": "NY 1G Distillate Cartridges",
      "line": "1G Distillate Cartridges",
      "market": "NY",
      "skuBlock": "NY007",
@@ -2826,8 +2836,8 @@
     "NY_Carts_1G_Front_Solo_DosiCake.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Distillate Cartridges · NY · NY007 — 20 of 25 files on rows, 5 on no row. Flavours: Bahama Berry, Banana Cream Cake, Strawberry Lava, Georgia Peaches, Frozen Bluez.",
-   "meaning": "Yes means: every file in this folder is 1G Distillate Cartridges (NY) and its flavours are named from the book.",
+   "proposal": "Feeds NY 1G Distillate Cartridges · NY007 — 20 of 25 files on rows, 5 on no row. Flavours: Bahama Berry, Banana Cream Cake, Strawberry Lava, Georgia Peaches, Frozen Bluez.",
+   "meaning": "Yes means: every file in this folder is NY 1G Distillate Cartridges and its flavours are named from the book.",
    "samples": [
     {
      "id": "1ce08af8-983c-4577-847c-e7642a11d8aa",
@@ -2861,6 +2871,7 @@
    "lines": [
     {
      "id": "muha:NY:ny002",
+     "name": "NY 1G Distillate Carts",
      "line": "1G Distillate Carts",
      "market": "NY",
      "skuBlock": "NY002",
@@ -2885,8 +2896,8 @@
     "NY_1G_Distillate_Carts_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Distillate Carts · NY · NY002 — 24 of 25 files on rows, 1 on no row. Flavours: Temptation, Grand Daddy Purp, Fatso, Sour Diesel, Habibi, Cali Gas OG.",
-   "meaning": "Yes means: every file in this folder is 1G Distillate Carts (NY) and its flavours are named from the book.",
+   "proposal": "Feeds NY 1G Distillate Carts · NY002 — 24 of 25 files on rows, 1 on no row. Flavours: Temptation, Grand Daddy Purp, Fatso, Sour Diesel, Habibi, Cali Gas OG.",
+   "meaning": "Yes means: every file in this folder is NY 1G Distillate Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "4627030d-1a3f-4ef2-9e99-2876f4bd8fa1",
@@ -2920,6 +2931,7 @@
    "lines": [
     {
      "id": "muha:OH:ca006",
+     "name": "OH 1.68G Distillate Carts",
      "line": "1.68G Distillate Carts",
      "market": "OH",
      "skuBlock": "CA006",
@@ -2957,8 +2969,8 @@
     "OH_1_68G_Distillate_Carts_WatermelonOG_Three_Quarters.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1.68G Distillate Carts · OH · CA006 — 2 of 21 files on rows, 19 on no row. Flavours: Cherry Grapefruit.",
-   "meaning": "Yes means: every file in this folder is 1.68G Distillate Carts (OH) and its flavours are named from the book.",
+   "proposal": "Feeds OH 1.68G Distillate Carts · CA006 — 2 of 21 files on rows, 19 on no row. Flavours: Cherry Grapefruit.",
+   "meaning": "Yes means: every file in this folder is OH 1.68G Distillate Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "5181e1fc-fcf5-48d6-b818-1421ee9c2309",
@@ -3247,6 +3259,7 @@
    "lines": [
     {
      "id": "muha:CA:ca032",
+     "name": "CA 1G Melted Diamond Carts",
      "line": "1G Melted Diamond Carts",
      "market": "CA",
      "skuBlock": "CA032",
@@ -3270,8 +3283,8 @@
     "CA_Carts_MD_1G_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Melted Diamond Carts · CA · CA032 — 20 of 21 files on rows, 1 on no row. Flavours: Toro Milk Runts, Lemonade Rose, Moroccan Peach Rings, White Raspberry, Purple Breath.",
-   "meaning": "Yes means: every file in this folder is 1G Melted Diamond Carts (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA 1G Melted Diamond Carts · CA032 — 20 of 21 files on rows, 1 on no row. Flavours: Toro Milk Runts, Lemonade Rose, Moroccan Peach Rings, White Raspberry, Purple Breath.",
+   "meaning": "Yes means: every file in this folder is CA 1G Melted Diamond Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "851c30dd-f9ba-4fd7-b690-f68c22284da7",
@@ -3357,6 +3370,7 @@
    "lines": [
     {
      "id": "muha:MI:mi025",
+     "name": "MI 1G Melted Diamond Carts",
      "line": "1G Melted Diamond Carts",
      "market": "MI",
      "skuBlock": "MI025",
@@ -3380,8 +3394,8 @@
     "Carts_MD_1G_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Melted Diamond Carts · MI · MI025 — 20 of 21 files on rows, 1 on no row. Flavours: Moroccan Peach Rings, Purple Breath, Lemonade Rose, White Raspberry, Toro Milk Runts.",
-   "meaning": "Yes means: every file in this folder is 1G Melted Diamond Carts (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 1G Melted Diamond Carts · MI025 — 20 of 21 files on rows, 1 on no row. Flavours: Moroccan Peach Rings, Purple Breath, Lemonade Rose, White Raspberry, Toro Milk Runts.",
+   "meaning": "Yes means: every file in this folder is MI 1G Melted Diamond Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "09357b04-ed5a-40bf-927b-bd645f038240",
@@ -3464,6 +3478,7 @@
    "lines": [
     {
      "id": "muha:CA:ca033",
+     "name": "CA Hash Rosin Concentrate Jars",
      "line": "Hash Rosin Concentrate Jars",
      "market": "CA",
      "skuBlock": "CA033",
@@ -3482,6 +3497,7 @@
     },
     {
      "id": "muha:CA:ca040",
+     "name": "CA Hash Rosin Concentrate V2",
      "line": "Hash Rosin Concentrate V2",
      "market": "CA",
      "skuBlock": "CA040",
@@ -3503,8 +3519,8 @@
     "CA_Concentrate_Jars_New_Box_HR_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds Hash Rosin Concentrate Jars · CA · CA033 (+1 more line: Hash Rosin Concentrate V2 CA) — 46 of 49 files on rows, 3 on no row. Flavours: Mad Fruit, Super Boof, Chilled Cherries, Alien OG, Guava Biscotti, Honey Banana +2.",
-   "meaning": "Yes means: this folder is split between Hash Rosin Concentrate Jars (CA) and Hash Rosin Concentrate V2 (CA), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Hash Rosin Concentrate Jars · CA033 (+1 more line: CA Hash Rosin Concentrate V2) — 46 of 49 files on rows, 3 on no row. Flavours: Mad Fruit, Super Boof, Chilled Cherries, Alien OG, Guava Biscotti, Honey Banana +2.",
+   "meaning": "Yes means: this folder is split between CA Hash Rosin Concentrate Jars and CA Hash Rosin Concentrate V2, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "fec089a8-c2bd-4d12-bd81-4d97584cabb3",
@@ -3541,6 +3557,7 @@
    "lines": [
     {
      "id": "muha:CA:ca034",
+     "name": "CA Piatella Concentrate Jars",
      "line": "Piatella Concentrate Jars",
      "market": "CA",
      "skuBlock": "CA034",
@@ -3565,8 +3582,8 @@
     "CA_Concentrate_Jars_New_Box_Piatella_Lemon_Heads_Main.png"
    ],
    "decision": null,
-   "proposal": "Feeds Piatella Concentrate Jars · CA · CA034 — 29 of 31 files on rows, 2 on no row. Flavours: Cherry Papaya, Tropical Funk, Alpine Guava, Raunchy Runtz, Lemon Heads.",
-   "meaning": "Yes means: every file in this folder is Piatella Concentrate Jars (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA Piatella Concentrate Jars · CA034 — 29 of 31 files on rows, 2 on no row. Flavours: Cherry Papaya, Tropical Funk, Alpine Guava, Raunchy Runtz, Lemon Heads.",
+   "meaning": "Yes means: every file in this folder is CA Piatella Concentrate Jars and its flavours are named from the book.",
    "samples": [
     {
      "id": "bf19892c-c949-42fd-9c35-33764766529c",
@@ -3601,6 +3618,7 @@
    "lines": [
     {
      "id": "muha:CA:ca033",
+     "name": "CA Hash Rosin Concentrate Jars",
      "line": "Hash Rosin Concentrate Jars",
      "market": "CA",
      "skuBlock": "CA033",
@@ -3612,6 +3630,7 @@
     },
     {
      "id": "muha:CA:ca040",
+     "name": "CA Hash Rosin Concentrate V2",
      "line": "Hash Rosin Concentrate V2",
      "market": "CA",
      "skuBlock": "CA040",
@@ -3642,8 +3661,8 @@
     "BOTTOM.png"
    ],
    "decision": null,
-   "proposal": "Feeds Hash Rosin Concentrate Jars · CA · CA033 (+1 more line: Hash Rosin Concentrate V2 CA) — 9 of 21 files on rows, 12 on no row. Flavours: Alien OG.",
-   "meaning": "Yes means: this folder is split between Hash Rosin Concentrate Jars (CA) and Hash Rosin Concentrate V2 (CA), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Hash Rosin Concentrate Jars · CA033 (+1 more line: CA Hash Rosin Concentrate V2) — 9 of 21 files on rows, 12 on no row. Flavours: Alien OG.",
+   "meaning": "Yes means: this folder is split between CA Hash Rosin Concentrate Jars and CA Hash Rosin Concentrate V2, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "a6abb0db-c099-492c-aa58-e5146501cdb0",
@@ -3677,6 +3696,7 @@
    "lines": [
     {
      "id": "muha:CA:ca040",
+     "name": "CA Hash Rosin Concentrate V2",
      "line": "Hash Rosin Concentrate V2",
      "market": "CA",
      "skuBlock": "CA040",
@@ -3695,6 +3715,7 @@
     },
     {
      "id": "muha:CA:ca033",
+     "name": "CA Hash Rosin Concentrate Jars",
      "line": "Hash Rosin Concentrate Jars",
      "market": "CA",
      "skuBlock": "CA033",
@@ -3712,8 +3733,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Hash Rosin Concentrate V2 · CA · CA040 (+1 more line: Hash Rosin Concentrate Jars CA) — 16 of 16 files on rows. Flavours: Muha Motorbreath, Alien OG, Peach Panther, Orange Cherry Gelato, Grape Lobster, Banana Cream Pie +2.",
-   "meaning": "Yes means: this folder is split between Hash Rosin Concentrate V2 (CA) and Hash Rosin Concentrate Jars (CA), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Hash Rosin Concentrate V2 · CA040 (+1 more line: CA Hash Rosin Concentrate Jars) — 16 of 16 files on rows. Flavours: Muha Motorbreath, Alien OG, Peach Panther, Orange Cherry Gelato, Grape Lobster, Banana Cream Pie +2.",
+   "meaning": "Yes means: this folder is split between CA Hash Rosin Concentrate V2 and CA Hash Rosin Concentrate Jars, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "457da8dd-46ef-4136-952b-e2090ca036b6",
@@ -3994,6 +4015,7 @@
    "lines": [
     {
      "id": "muha:CA:ca033",
+     "name": "CA Hash Rosin Concentrate Jars",
      "line": "Hash Rosin Concentrate Jars",
      "market": "CA",
      "skuBlock": "CA033",
@@ -4025,8 +4047,8 @@
     "HashRosin_GroupShot_02.png"
    ],
    "decision": null,
-   "proposal": "Feeds Hash Rosin Concentrate Jars · CA · CA033 — 29 of 38 files on rows, 9 on no row. Flavours: Super Boof, Mad Fruit, Macaron Peaches, Honey Banana, Guava Biscotti.",
-   "meaning": "Yes means: every file in this folder is Hash Rosin Concentrate Jars (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA Hash Rosin Concentrate Jars · CA033 — 29 of 38 files on rows, 9 on no row. Flavours: Super Boof, Mad Fruit, Macaron Peaches, Honey Banana, Guava Biscotti.",
+   "meaning": "Yes means: every file in this folder is CA Hash Rosin Concentrate Jars and its flavours are named from the book.",
    "samples": [
     {
      "id": "a1b41b0f-c896-425a-92a1-205049a9b1ef",
@@ -4062,6 +4084,7 @@
    "lines": [
     {
      "id": "muha:CA:ca034",
+     "name": "CA Piatella Concentrate Jars",
      "line": "Piatella Concentrate Jars",
      "market": "CA",
      "skuBlock": "CA034",
@@ -4090,8 +4113,8 @@
     "Piatella_Candy_Rain_Front.png"
    ],
    "decision": null,
-   "proposal": "Feeds Piatella Concentrate Jars · CA · CA034 — 25 of 32 files on rows, 7 on no row. Flavours: Alpine Guava, Lemon Heads, Cherry Papaya, Raunchy Runtz.",
-   "meaning": "Yes means: every file in this folder is Piatella Concentrate Jars (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA Piatella Concentrate Jars · CA034 — 25 of 32 files on rows, 7 on no row. Flavours: Alpine Guava, Lemon Heads, Cherry Papaya, Raunchy Runtz.",
+   "meaning": "Yes means: every file in this folder is CA Piatella Concentrate Jars and its flavours are named from the book.",
    "samples": [
     {
      "id": "dffd9f89-6631-4ad0-a53e-7c0cc0a29fb5",
@@ -4127,6 +4150,7 @@
    "lines": [
     {
      "id": "muha:CA:ca034",
+     "name": "CA Piatella Concentrate Jars",
      "line": "Piatella Concentrate Jars",
      "market": "CA",
      "skuBlock": "CA034",
@@ -4138,6 +4162,7 @@
     },
     {
      "id": "muha:CA:ca033",
+     "name": "CA Hash Rosin Concentrate Jars",
      "line": "Hash Rosin Concentrate Jars",
      "market": "CA",
      "skuBlock": "CA033",
@@ -4149,6 +4174,7 @@
     },
     {
      "id": "muha:CA:ca040",
+     "name": "CA Hash Rosin Concentrate V2",
      "line": "Hash Rosin Concentrate V2",
      "market": "CA",
      "skuBlock": "CA040",
@@ -4166,8 +4192,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Piatella Concentrate Jars · CA · CA034 (+2 more lines: Hash Rosin Concentrate Jars CA; Hash Rosin Concentrate V2 CA) — 12 of 12 files on rows. Flavours: Tropical Funk.",
-   "meaning": "Yes means: this folder is split between Piatella Concentrate Jars (CA) and Hash Rosin Concentrate Jars (CA) and Hash Rosin Concentrate V2 (CA), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Piatella Concentrate Jars · CA034 (+2 more lines: CA Hash Rosin Concentrate Jars; CA Hash Rosin Concentrate V2) — 12 of 12 files on rows. Flavours: Tropical Funk.",
+   "meaning": "Yes means: this folder is split between CA Piatella Concentrate Jars and CA Hash Rosin Concentrate Jars and CA Hash Rosin Concentrate V2, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "29201466-d3c3-43eb-b18a-29bb413bbdfb",
@@ -4249,6 +4275,7 @@
    "lines": [
     {
      "id": "muha:MI:mi010",
+     "name": "MI Hash Rosin Concentrate Jars",
      "line": "Hash Rosin Concentrate Jars",
      "market": "MI",
      "skuBlock": "MI010",
@@ -4283,8 +4310,8 @@
     "MI_HR_AppleBanana_ThreeQuarters_w_Product.png"
    ],
    "decision": null,
-   "proposal": "Feeds Hash Rosin Concentrate Jars · MI · MI010 — 41 of 51 files on rows, 10 on no row. Flavours: Donnie Burger, Tropicana Cherry, Peanut Butter Breath, Fatso, Galactic Gas, Mimosa +1.",
-   "meaning": "Yes means: every file in this folder is Hash Rosin Concentrate Jars (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI Hash Rosin Concentrate Jars · MI010 — 41 of 51 files on rows, 10 on no row. Flavours: Donnie Burger, Tropicana Cherry, Peanut Butter Breath, Fatso, Galactic Gas, Mimosa +1.",
+   "meaning": "Yes means: every file in this folder is MI Hash Rosin Concentrate Jars and its flavours are named from the book.",
    "samples": [
     {
      "id": "436676ec-fe74-4e1f-9ed1-83f78a0d7e82",
@@ -4324,6 +4351,7 @@
    "lines": [
     {
      "id": "muha:MI:mi009",
+     "name": "MI Live Resin Concentrate Jars",
      "line": "Live Resin Concentrate Jars",
      "market": "MI",
      "skuBlock": "MI009",
@@ -4348,8 +4376,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Live Resin Concentrate Jars · MI · MI009 — 8 of 8 files on rows. Flavours: Space Cookies, Jet Fuel, Maui Wowie, Zkittlez, Northern Lights, Gush Mintz +2.",
-   "meaning": "Yes means: every file in this folder is Live Resin Concentrate Jars (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI Live Resin Concentrate Jars · MI009 — 8 of 8 files on rows. Flavours: Space Cookies, Jet Fuel, Maui Wowie, Zkittlez, Northern Lights, Gush Mintz +2.",
+   "meaning": "Yes means: every file in this folder is MI Live Resin Concentrate Jars and its flavours are named from the book.",
    "samples": [
     {
      "id": "3967a793-e5c2-46d9-b26d-ca34b58fbc09",
@@ -5242,6 +5270,7 @@
    "lines": [
     {
      "id": "muha:CA:ca026",
+     "name": "CA 1G Distillate Disposables",
      "line": "1G Distillate Disposables",
      "market": "CA",
      "skuBlock": "CA026",
@@ -5277,8 +5306,8 @@
     "CA_1G_Distillate_Disposables_45_BubblegumBurst.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Distillate Disposables · CA · Gen 3 · CA026 — 32 of 42 files on rows, 10 on no row. Flavours: Tahoe OG, Blue Slushie, Pineapple Express, Galactic Diesel, Magic Melon OG, Sour Watermelon Squirt +2.",
-   "meaning": "Yes means: every file in this folder is 1G Distillate Disposables (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA 1G Distillate Disposables · Gen 3 · CA026 — 32 of 42 files on rows, 10 on no row. Flavours: Tahoe OG, Blue Slushie, Pineapple Express, Galactic Diesel, Magic Melon OG, Sour Watermelon Squirt +2.",
+   "meaning": "Yes means: every file in this folder is CA 1G Distillate Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "2e4b1b1b-6ee0-40b3-8351-f9804e134c1c",
@@ -5314,6 +5343,7 @@
    "lines": [
     {
      "id": "muha:CA:ca030",
+     "name": "CA 0.5G Hash Rosin Disposables",
      "line": "0.5G Hash Rosin Disposables",
      "market": "CA",
      "skuBlock": "CA030",
@@ -5335,8 +5365,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 0.5G Hash Rosin Disposables · CA · Gen 3 · CA030 — 20 of 20 files on rows. Flavours: Super Fatso, Slurpicane, Iced Sangria, Galactic Guava, Sour Diesel.",
-   "meaning": "Yes means: every file in this folder is 0.5G Hash Rosin Disposables (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA 0.5G Hash Rosin Disposables · Gen 3 · CA030 — 20 of 20 files on rows. Flavours: Super Fatso, Slurpicane, Iced Sangria, Galactic Guava, Sour Diesel.",
+   "meaning": "Yes means: every file in this folder is CA 0.5G Hash Rosin Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "af5a072e-a897-4110-9969-ec8c114f6048",
@@ -5591,6 +5621,7 @@
    "lines": [
     {
      "id": "muha:CA:ca028",
+     "name": "CA 1G Live Resin Disposables",
      "line": "1G Live Resin Disposables",
      "market": "CA",
      "skuBlock": "CA028",
@@ -5615,8 +5646,8 @@
     "00_CA_1G_LiveResin_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Live Resin Disposables · CA · CA028 — 20 of 22 files on rows, 2 on no row. Flavours: Juice Man, Grape Dosi, OG KUSH, Golden Papaya, Lemon Kush Mintz.",
-   "meaning": "Yes means: every file in this folder is 1G Live Resin Disposables (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA 1G Live Resin Disposables · CA028 — 20 of 22 files on rows, 2 on no row. Flavours: Juice Man, Grape Dosi, OG KUSH, Golden Papaya, Lemon Kush Mintz.",
+   "meaning": "Yes means: every file in this folder is CA 1G Live Resin Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "52414218-7be8-46b0-85c3-b09e385e1a45",
@@ -5704,6 +5735,7 @@
    "lines": [
     {
      "id": "muha:CA:ca029",
+     "name": "CA 1G Melted Diamond Disposables",
      "line": "1G Melted Diamond Disposables",
      "market": "CA",
      "skuBlock": "CA029",
@@ -5728,8 +5760,8 @@
     "00_CA_1G_MeltedDiamonds_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Melted Diamond Disposables · CA · CA029 — 20 of 22 files on rows, 2 on no row. Flavours: Orange Tangie, Durban Delight, Lemon Cherry Gelato, Grape Gas, Mango Madness.",
-   "meaning": "Yes means: every file in this folder is 1G Melted Diamond Disposables (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA 1G Melted Diamond Disposables · CA029 — 20 of 22 files on rows, 2 on no row. Flavours: Orange Tangie, Durban Delight, Lemon Cherry Gelato, Grape Gas, Mango Madness.",
+   "meaning": "Yes means: every file in this folder is CA 1G Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "429a327c-6999-4a65-ab3d-9c6fd8dc97db",
@@ -5850,6 +5882,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp014",
+     "name": "HEMP 3.5g Live Resin Disposables",
      "line": "3.5g Live Resin Disposables",
      "market": "HEMP",
      "skuBlock": "HEMP014",
@@ -5873,8 +5906,8 @@
     "NewDisposableDevice_04_CA_Back.png"
    ],
    "decision": null,
-   "proposal": "Feeds 3.5g Live Resin Disposables · HEMP · HEMP014 — 1 of 6 files on rows, 5 on no row. Flavours: Sour Cherry Limeade.",
-   "meaning": "Yes means: every file in this folder is 3.5g Live Resin Disposables (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP 3.5g Live Resin Disposables · HEMP014 — 1 of 6 files on rows, 5 on no row. Flavours: Sour Cherry Limeade.",
+   "meaning": "Yes means: every file in this folder is HEMP 3.5g Live Resin Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "b33c0994-bea0-40ea-86dc-53c3a1e50787",
@@ -6089,6 +6122,7 @@
    "lines": [
     {
      "id": "muha:MI:mi030",
+     "name": "MI 2G Dual Disposable Flavors",
      "line": "2G Dual Disposable Flavors",
      "market": "MI",
      "skuBlock": "MI030",
@@ -6123,8 +6157,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 2G Dual Disposable Flavors · MI · MI030 — 40 of 40 files on rows. Flavours: Grape Ape, Blackberry Kush, Cherry Slushie, Limoncello, Skywalker OG, Blue Slushie +12.",
-   "meaning": "Yes means: every file in this folder is 2G Dual Disposable Flavors (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 2G Dual Disposable Flavors · MI030 — 40 of 40 files on rows. Flavours: Grape Ape, Blackberry Kush, Cherry Slushie, Limoncello, Skywalker OG, Blue Slushie +12.",
+   "meaning": "Yes means: every file in this folder is MI 2G Dual Disposable Flavors and its flavours are named from the book.",
    "samples": [
     {
      "id": "063fad47-806e-46b0-9180-066cb2fa107b",
@@ -6158,6 +6192,7 @@
    "lines": [
     {
      "id": "muha:MI:mi030",
+     "name": "MI 2G Dual Disposable Flavors",
      "line": "2G Dual Disposable Flavors",
      "market": "MI",
      "skuBlock": "MI030",
@@ -6178,8 +6213,8 @@
     "BothOff.png"
    ],
    "decision": null,
-   "proposal": "Feeds 2G Dual Disposable Flavors · MI · MI030 — 3 of 4 files on rows, 1 on no row. Flavours: Blackberry Kush, Orange Dream.",
-   "meaning": "Yes means: every file in this folder is 2G Dual Disposable Flavors (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 2G Dual Disposable Flavors · MI030 — 3 of 4 files on rows, 1 on no row. Flavours: Blackberry Kush, Orange Dream.",
+   "meaning": "Yes means: every file in this folder is MI 2G Dual Disposable Flavors and its flavours are named from the book.",
    "samples": [
     {
      "id": "ad58f6d6-c71e-4761-bc10-038e3a71e11f",
@@ -6218,6 +6253,7 @@
    "lines": [
     {
      "id": "muha:MI:mi031",
+     "name": "MI 2G Magnetic Dispo Flavors",
      "line": "2G Magnetic Dispo Flavors",
      "market": "MI",
      "skuBlock": "MI031",
@@ -6322,8 +6358,8 @@
     "OG_Magnetic_Dispo_45_g_SANTORINI_BUBBLE_GUM45.png"
    ],
    "decision": null,
-   "proposal": "Feeds 2G Magnetic Dispo Flavors · MI · MI031 — 97 of 166 files on rows, 69 on no row. Flavours: Cannes Kush, Blueberry Muffin (I), Santorini grape pie, Canary Island Punch, DC-10 Diesel, Ibiza Cherry +12.",
-   "meaning": "Yes means: every file in this folder is 2G Magnetic Dispo Flavors (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 2G Magnetic Dispo Flavors · MI031 — 97 of 166 files on rows, 69 on no row. Flavours: Cannes Kush, Blueberry Muffin (I), Santorini grape pie, Canary Island Punch, DC-10 Diesel, Ibiza Cherry +12.",
+   "meaning": "Yes means: every file in this folder is MI 2G Magnetic Dispo Flavors and its flavours are named from the book.",
    "samples": [
     {
      "id": "74a8a45f-14f2-40dd-adab-0da7a118697a",
@@ -6374,6 +6410,7 @@
    "lines": [
     {
      "id": "muha:MI:mi019",
+     "name": "MI 2G Distillate Disposables",
      "line": "2G Distillate Disposables",
      "market": "MI",
      "skuBlock": "MI019",
@@ -6410,8 +6447,8 @@
     "MI_2G_CaliGasOG_45_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds 2G Distillate Disposables · MI · MI019 — 4 of 21 files on rows, 17 on no row. Flavours: Bubble Gum Burst, Habibi.",
-   "meaning": "Yes means: every file in this folder is 2G Distillate Disposables (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 2G Distillate Disposables · MI019 — 4 of 21 files on rows, 17 on no row. Flavours: Bubble Gum Burst, Habibi.",
+   "meaning": "Yes means: every file in this folder is MI 2G Distillate Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "4fc8a723-0b76-4082-aa82-5f18e7155e8f",
@@ -6449,6 +6486,7 @@
    "lines": [
     {
      "id": "muha:MI:mi029",
+     "name": "MI 2G Disposable Flavors",
      "line": "2G Disposable Flavors",
      "market": "MI",
      "skuBlock": "MI029",
@@ -6469,6 +6507,7 @@
     },
     {
      "id": "muha:MI:mi019",
+     "name": "MI 2G Distillate Disposables",
      "line": "2G Distillate Disposables",
      "market": "MI",
      "skuBlock": "MI019",
@@ -6492,8 +6531,8 @@
     "MI_2G_Distillate_Dispo_Device_Front_WatermelonBubblegum.png"
    ],
    "decision": null,
-   "proposal": "Feeds 2G Disposable Flavors · MI · MI029 (+1 more line: 2G Distillate Disposables MI) — 99 of 101 files on rows, 2 on no row. Flavours: Blue Slushie, Arctic Blueberry, Aloha Passion Rush, Galactic Diesel, Horchata, Lemon Cherry Fizz +4.",
-   "meaning": "Yes means: this folder is split between 2G Disposable Flavors (MI) and 2G Distillate Disposables (MI), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds MI 2G Disposable Flavors · MI029 (+1 more line: MI 2G Distillate Disposables) — 99 of 101 files on rows, 2 on no row. Flavours: Blue Slushie, Arctic Blueberry, Aloha Passion Rush, Galactic Diesel, Horchata, Lemon Cherry Fizz +4.",
+   "meaning": "Yes means: this folder is split between MI 2G Disposable Flavors and MI 2G Distillate Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "e6425150-6367-46d3-8801-ed88ea7e9743",
@@ -6790,6 +6829,7 @@
    "lines": [
     {
      "id": "muha:MI:mi019",
+     "name": "MI 2G Distillate Disposables",
      "line": "2G Distillate Disposables",
      "market": "MI",
      "skuBlock": "MI019",
@@ -6840,8 +6880,8 @@
     "MI_2G_Distillate_Disposables_Front_Solo_DragonBerryRuntz.png"
    ],
    "decision": null,
-   "proposal": "Feeds 2G Distillate Disposables · MI · MI019 — 12 of 42 files on rows, 30 on no row. Flavours: Watermelon Moonshine, Pineapple Paradise, Sweet Dreams OG.",
-   "meaning": "Yes means: every file in this folder is 2G Distillate Disposables (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 2G Distillate Disposables · MI019 — 12 of 42 files on rows, 30 on no row. Flavours: Watermelon Moonshine, Pineapple Paradise, Sweet Dreams OG.",
+   "meaning": "Yes means: every file in this folder is MI 2G Distillate Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "2e61dd9b-d30b-408e-8be5-61184e0ec6cf",
@@ -6876,6 +6916,7 @@
    "lines": [
     {
      "id": "muha:MI:mi023",
+     "name": "MI 0.5G Mavricks Hash Rosin Disposables",
      "line": "0.5G Mavricks Hash Rosin Disposables",
      "market": "MI",
      "skuBlock": "MI023",
@@ -6899,8 +6940,8 @@
     "MI_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 0.5G Mavricks Hash Rosin Disposables · MI · MI023 — 10 of 11 files on rows, 1 on no row. Flavours: Mimosa, Fatso, Donnie Burger, Tropicana Cherry, Garlic Jelly.",
-   "meaning": "Yes means: every file in this folder is 0.5G Mavricks Hash Rosin Disposables (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 0.5G Mavricks Hash Rosin Disposables · MI023 — 10 of 11 files on rows, 1 on no row. Flavours: Mimosa, Fatso, Donnie Burger, Tropicana Cherry, Garlic Jelly.",
+   "meaning": "Yes means: every file in this folder is MI 0.5G Mavricks Hash Rosin Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "759113ac-c50b-4940-bfb9-54c202e746f0",
@@ -7052,6 +7093,7 @@
    "lines": [
     {
      "id": "muha:MI:mi021",
+     "name": "MI 1G Live Resin Disposables",
      "line": "1G Live Resin Disposables",
      "market": "MI",
      "skuBlock": "MI021",
@@ -7076,8 +7118,8 @@
     "00_MI_1G_LiveResin_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Live Resin Disposables · MI · MI021 — 20 of 22 files on rows, 2 on no row. Flavours: Lemon Kush Mintz, OG KUSH, Golden Papaya, Grape Dosi, Juice Man.",
-   "meaning": "Yes means: every file in this folder is 1G Live Resin Disposables (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 1G Live Resin Disposables · MI021 — 20 of 22 files on rows, 2 on no row. Flavours: Lemon Kush Mintz, OG KUSH, Golden Papaya, Grape Dosi, Juice Man.",
+   "meaning": "Yes means: every file in this folder is MI 1G Live Resin Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "e1f9c35c-26c4-472e-97ca-b691d67be7d7",
@@ -7163,6 +7205,7 @@
    "lines": [
     {
      "id": "muha:MI:mi022",
+     "name": "MI 1G Melted Diamond Disposables",
      "line": "1G Melted Diamond Disposables",
      "market": "MI",
      "skuBlock": "MI022",
@@ -7187,8 +7230,8 @@
     "00_MI_1G_MeltedDiamonds_Disposables_GroupShot_Spread.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Melted Diamond Disposables · MI · MI022 — 20 of 22 files on rows, 2 on no row. Flavours: Orange Tangie, Grape Gas, Durban Delight, Lemon Cherry Gelato, Mango Madness.",
-   "meaning": "Yes means: every file in this folder is 1G Melted Diamond Disposables (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 1G Melted Diamond Disposables · MI022 — 20 of 22 files on rows, 2 on no row. Flavours: Orange Tangie, Grape Gas, Durban Delight, Lemon Cherry Gelato, Mango Madness.",
+   "meaning": "Yes means: every file in this folder is MI 1G Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "01834681-0645-4050-8dd0-4930c437bcbb",
@@ -7273,6 +7316,7 @@
    "lines": [
     {
      "id": "muha:MO:mo001",
+     "name": "MO Distallite 2 Gram Dispos",
      "line": "Distallite 2 Gram Dispos",
      "market": "MO",
      "skuBlock": "MO001",
@@ -7301,8 +7345,8 @@
     "00_MO_2G_Disposable_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds Distallite 2 Gram Dispos · MO · MO001 — 40 of 41 files on rows, 1 on no row. Flavours: Moroccon Peaches, Blue Dream, Honey Melon, Gelato #33, Lemon Tart, Frozen Pomegranate +4.",
-   "meaning": "Yes means: every file in this folder is Distallite 2 Gram Dispos (MO) and its flavours are named from the book.",
+   "proposal": "Feeds MO Distallite 2 Gram Dispos · MO001 — 40 of 41 files on rows, 1 on no row. Flavours: Moroccon Peaches, Blue Dream, Honey Melon, Gelato #33, Lemon Tart, Frozen Pomegranate +4.",
+   "meaning": "Yes means: every file in this folder is MO Distallite 2 Gram Dispos and its flavours are named from the book.",
    "samples": [
     {
      "id": "48eca5dc-28ee-4e4c-ae87-ebb76b314a4b",
@@ -7400,6 +7444,7 @@
    "lines": [
     {
      "id": "muha:NJ:nj001",
+     "name": "NJ Distallite 2 Gram Disposables",
      "line": "Distallite 2 Gram Disposables",
      "market": "NJ",
      "skuBlock": "NJ001",
@@ -7420,6 +7465,7 @@
     },
     {
      "id": "muha:NJ:distallite-2-gram-disposables",
+     "name": "NJ Distallite 2 Gram Disposables",
      "line": "Distallite 2 Gram Disposables",
      "market": "NJ",
      "skuBlock": null,
@@ -7438,8 +7484,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Distallite 2 Gram Disposables · NJ · NJ001 (+1 more line: Distallite 2 Gram Disposables NJ) — 20 of 20 files on rows. Flavours: Gogi OG, Blueberry Cookies, Habibi, Lemonado, Strawberry Runts, Sour Watermelon Squirt +4.",
-   "meaning": "Yes means: this folder is split between Distallite 2 Gram Disposables (NJ) and Distallite 2 Gram Disposables (NJ), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds NJ Distallite 2 Gram Disposables · NJ001 (+1 more line: NJ Distallite 2 Gram Disposables) — 20 of 20 files on rows. Flavours: Gogi OG, Blueberry Cookies, Habibi, Lemonado, Strawberry Runts, Sour Watermelon Squirt +4.",
+   "meaning": "Yes means: this folder is split between NJ Distallite 2 Gram Disposables and NJ Distallite 2 Gram Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "8b892619-74a4-4bdd-93f5-f9f99f6889d6",
@@ -7474,6 +7520,7 @@
    "lines": [
     {
      "id": "muha:NM:nm002",
+     "name": "NM 1G Distillate Disposables",
      "line": "1G Distillate Disposables",
      "market": "NM",
      "skuBlock": "NM002",
@@ -7502,8 +7549,8 @@
     "NM_Dispo_1G_Distill_Group_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Distillate Disposables · NM · NM002 — 20 of 21 files on rows, 1 on no row. Flavours: Strawberry Runtz, Watermelon OG, Jack Herer, Cali Gas OG, Blueberry Haze, Purple Punch +4.",
-   "meaning": "Yes means: every file in this folder is 1G Distillate Disposables (NM) and its flavours are named from the book.",
+   "proposal": "Feeds NM 1G Distillate Disposables · NM002 — 20 of 21 files on rows, 1 on no row. Flavours: Strawberry Runtz, Watermelon OG, Jack Herer, Cali Gas OG, Blueberry Haze, Purple Punch +4.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "f8a87ff4-fd0a-4520-8398-167108a31209",
@@ -7661,6 +7708,7 @@
    "lines": [
     {
      "id": "muha:NM:nm007",
+     "name": "NM 1G Distillate Disposables",
      "line": "1G Distillate Disposables",
      "market": "NM",
      "skuBlock": "NM007",
@@ -7692,8 +7740,8 @@
     "00_NM_1G_Distillate_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Distillate Disposables · NM · Gen 3 · NM007 — 36 of 41 files on rows, 5 on no row. Flavours: Purple Breath, Magic Melon OG, Strawberry Kiwi Kush, Lemonade Rose, Godfather OG, Banana Cream Cake +3.",
-   "meaning": "Yes means: every file in this folder is 1G Distillate Disposables (NM) and its flavours are named from the book.",
+   "proposal": "Feeds NM 1G Distillate Disposables · Gen 3 · NM007 — 36 of 41 files on rows, 5 on no row. Flavours: Purple Breath, Magic Melon OG, Strawberry Kiwi Kush, Lemonade Rose, Godfather OG, Banana Cream Cake +3.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "b9c48c88-fd97-442e-bc2e-d9771f19367d",
@@ -7729,6 +7777,7 @@
    "lines": [
     {
      "id": "muha:NM:nm008",
+     "name": "NM 1G Live Resin Disposables",
      "line": "1G Live Resin Disposables",
      "market": "NM",
      "skuBlock": "NM008",
@@ -7752,8 +7801,8 @@
     "00_NM_1G_LiveResin_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Live Resin Disposables · NM · Gen 3 · NM008 — 20 of 21 files on rows, 1 on no row. Flavours: Grape Dosi, OG KUSH, Juice Man, Golden Papaya, Lemon Kush Mintz.",
-   "meaning": "Yes means: every file in this folder is 1G Live Resin Disposables (NM) and its flavours are named from the book.",
+   "proposal": "Feeds NM 1G Live Resin Disposables · Gen 3 · NM008 — 20 of 21 files on rows, 1 on no row. Flavours: Grape Dosi, OG KUSH, Juice Man, Golden Papaya, Lemon Kush Mintz.",
+   "meaning": "Yes means: every file in this folder is NM 1G Live Resin Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "ca7176c4-ba8d-4fb7-bdf1-cdb540036b4d",
@@ -7789,6 +7838,7 @@
    "lines": [
     {
      "id": "muha:NM:nm009",
+     "name": "NM 1G Melted Diamond Disposables",
      "line": "1G Melted Diamond Disposables",
      "market": "NM",
      "skuBlock": "NM009",
@@ -7812,8 +7862,8 @@
     "00_NM_1G_MD_Disposable_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G Melted Diamond Disposables · NM · Gen 3 · NM009 — 20 of 21 files on rows, 1 on no row. Flavours: Grape Gas, Durban Delight, Orange Tangie, Mango Madness, Lemon Cherry Gelato.",
-   "meaning": "Yes means: every file in this folder is 1G Melted Diamond Disposables (NM) and its flavours are named from the book.",
+   "proposal": "Feeds NM 1G Melted Diamond Disposables · Gen 3 · NM009 — 20 of 21 files on rows, 1 on no row. Flavours: Grape Gas, Durban Delight, Orange Tangie, Mango Madness, Lemon Cherry Gelato.",
+   "meaning": "Yes means: every file in this folder is NM 1G Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "c72ca83e-d120-4550-9cce-b784be7ff9d7",
@@ -7849,6 +7899,7 @@
    "lines": [
     {
      "id": "muha:NM:nm006",
+     "name": "NM Distillate Gummy Mylar Bags",
      "line": "Distillate Gummy Mylar Bags",
      "market": "NM",
      "skuBlock": "NM006",
@@ -7869,6 +7920,7 @@
     },
     {
      "id": "muha:NM:nm001",
+     "name": "NM 2G Distillate Disposables",
      "line": "2G Distillate Disposables",
      "market": "NM",
      "skuBlock": "NM001",
@@ -7890,8 +7942,8 @@
     "00_NM_2G_Distillate_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds Distillate Gummy Mylar Bags · NM · NM006 (+1 more line: 2G Distillate Disposables NM) — 40 of 41 files on rows, 1 on no row. Flavours: Blueberry Cookies, Habibi, Sour Watermelon Squirt, Galactic Diesel, Frozen Pomegranate, Strawberry Runts +4.",
-   "meaning": "Yes means: this folder is split between Distillate Gummy Mylar Bags (NM) and 2G Distillate Disposables (NM), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds NM Distillate Gummy Mylar Bags · NM006 (+1 more line: NM 2G Distillate Disposables) — 40 of 41 files on rows, 1 on no row. Flavours: Blueberry Cookies, Habibi, Sour Watermelon Squirt, Galactic Diesel, Frozen Pomegranate, Strawberry Runts +4.",
+   "meaning": "Yes means: this folder is split between NM Distillate Gummy Mylar Bags and NM 2G Distillate Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "d50a06db-b18b-4f80-a008-89feef37f381",
@@ -7926,6 +7978,7 @@
    "lines": [
     {
      "id": "muha:NY:ny005",
+     "name": "NY 1G Live Resin Disposables",
      "line": "1G Live Resin Disposables",
      "market": "NY",
      "skuBlock": "NY005",
@@ -7947,8 +8000,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 1G Live Resin Disposables · NY · NY005 — 20 of 20 files on rows. Flavours: Juice Man, Lemon Kush Mintz, OG KUSH, Grape Dosi, Golden Papaya.",
-   "meaning": "Yes means: every file in this folder is 1G Live Resin Disposables (NY) and its flavours are named from the book.",
+   "proposal": "Feeds NY 1G Live Resin Disposables · NY005 — 20 of 20 files on rows. Flavours: Juice Man, Lemon Kush Mintz, OG KUSH, Grape Dosi, Golden Papaya.",
+   "meaning": "Yes means: every file in this folder is NY 1G Live Resin Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "0df2d046-0470-4670-8a3b-e9d4485c8355",
@@ -7985,6 +8038,7 @@
    "lines": [
     {
      "id": "muha:NY:ny006",
+     "name": "NY 1G Melted Diamond Disposables",
      "line": "1G Melted Diamond Disposables",
      "market": "NY",
      "skuBlock": "NY006",
@@ -8006,8 +8060,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 1G Melted Diamond Disposables · NY · NY006 — 20 of 20 files on rows. Flavours: Orange Tangie, Lemon Cherry Gelato, Mango Madness, Grape Gas, Durban Delight.",
-   "meaning": "Yes means: every file in this folder is 1G Melted Diamond Disposables (NY) and its flavours are named from the book.",
+   "proposal": "Feeds NY 1G Melted Diamond Disposables · NY006 — 20 of 20 files on rows. Flavours: Orange Tangie, Lemon Cherry Gelato, Mango Madness, Grape Gas, Durban Delight.",
+   "meaning": "Yes means: every file in this folder is NY 1G Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "0904f7cd-18a2-47c4-92aa-9cceaf65cc74",
@@ -8043,6 +8097,7 @@
    "lines": [
     {
      "id": "muha:NY:ny004",
+     "name": "NY 2G Distillate Disposables",
      "line": "2G Distillate Disposables",
      "market": "NY",
      "skuBlock": "NY004",
@@ -8059,6 +8114,7 @@
     },
     {
      "id": "muha:NY:ny001",
+     "name": "NY 2G Distillate Disposables",
      "line": "2G Distillate Disposables",
      "market": "NY",
      "skuBlock": "NY001",
@@ -8076,8 +8132,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 2G Distillate Disposables · NY · Gen 3 · NY004 (+1 more line: 2G Distillate Disposables NY) — 24 of 24 files on rows. Flavours: Blue Slushie, Tahoe OG, Habibi, Galactic Diesel, Frozen Pomegranate, Pineapple Paradise.",
-   "meaning": "Yes means: this folder is split between 2G Distillate Disposables (NY) and 2G Distillate Disposables (NY), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds NY 2G Distillate Disposables · Gen 3 · NY004 (+1 more line: NY 2G Distillate Disposables) — 24 of 24 files on rows. Flavours: Blue Slushie, Tahoe OG, Habibi, Galactic Diesel, Frozen Pomegranate, Pineapple Paradise.",
+   "meaning": "Yes means: this folder is split between NY 2G Distillate Disposables and NY 2G Distillate Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "2a8db3cf-0a7f-48bc-b478-858ea2da80c1",
@@ -8112,6 +8168,7 @@
    "lines": [
     {
      "id": "muha:NY:ny005",
+     "name": "NY 1G Live Resin Disposables",
      "line": "1G Live Resin Disposables",
      "market": "NY",
      "skuBlock": "NY005",
@@ -8133,8 +8190,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 1G Live Resin Disposables · NY · NY005 — 20 of 20 files on rows. Flavours: Grape Dosi, Lemon Kush Mintz, Golden Papaya, Juice Man, OG KUSH.",
-   "meaning": "Yes means: every file in this folder is 1G Live Resin Disposables (NY) and its flavours are named from the book.",
+   "proposal": "Feeds NY 1G Live Resin Disposables · NY005 — 20 of 20 files on rows. Flavours: Grape Dosi, Lemon Kush Mintz, Golden Papaya, Juice Man, OG KUSH.",
+   "meaning": "Yes means: every file in this folder is NY 1G Live Resin Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "2ca2a9c9-d597-41ec-a78e-32bc05f0ef94",
@@ -8170,6 +8227,7 @@
    "lines": [
     {
      "id": "muha:NY:ny006",
+     "name": "NY 1G Melted Diamond Disposables",
      "line": "1G Melted Diamond Disposables",
      "market": "NY",
      "skuBlock": "NY006",
@@ -8191,8 +8249,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 1G Melted Diamond Disposables · NY · NY006 — 20 of 20 files on rows. Flavours: Lemon Cherry Gelato, Mango Madness, Orange Tangie, Grape Gas, Durban Delight.",
-   "meaning": "Yes means: every file in this folder is 1G Melted Diamond Disposables (NY) and its flavours are named from the book.",
+   "proposal": "Feeds NY 1G Melted Diamond Disposables · NY006 — 20 of 20 files on rows. Flavours: Lemon Cherry Gelato, Mango Madness, Orange Tangie, Grape Gas, Durban Delight.",
+   "meaning": "Yes means: every file in this folder is NY 1G Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "21171dfc-6901-4dea-8e1c-b59e11e0d85f",
@@ -8226,6 +8284,7 @@
    "lines": [
     {
      "id": "muha:NY:ny001",
+     "name": "NY 2G Distillate Disposables",
      "line": "2G Distillate Disposables",
      "market": "NY",
      "skuBlock": "NY001",
@@ -8250,8 +8309,8 @@
     "NY_2G_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 2G Distillate Disposables · NY · NY001 — 12 of 13 files on rows, 1 on no row. Flavours: Sour Diesel, Habibi, Grand Daddy Purp, Temptation, Fatso, Cali Gas OG.",
-   "meaning": "Yes means: every file in this folder is 2G Distillate Disposables (NY) and its flavours are named from the book.",
+   "proposal": "Feeds NY 2G Distillate Disposables · NY001 — 12 of 13 files on rows, 1 on no row. Flavours: Sour Diesel, Habibi, Grand Daddy Purp, Temptation, Fatso, Cali Gas OG.",
+   "meaning": "Yes means: every file in this folder is NY 2G Distillate Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "aed07702-347b-47d9-86a9-3d9c7ccaea48",
@@ -8539,6 +8598,7 @@
    "lines": [
     {
      "id": "muha:OH:oh001",
+     "name": "OH 1.68G Distillate Disposables",
      "line": "1.68G Distillate Disposables",
      "market": "OH",
      "skuBlock": "OH001",
@@ -8567,8 +8627,8 @@
     "OH_1_68G_Dispos_Group_Shot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1.68G Distillate Disposables · OH · OH001 — 20 of 21 files on rows, 1 on no row. Flavours: Apple Gelato ICE, Jack Herer, Cali Gas OG, Purple Punch, Cherry Grapefruit, Super Sour Diesel +4.",
-   "meaning": "Yes means: every file in this folder is 1.68G Distillate Disposables (OH) and its flavours are named from the book.",
+   "proposal": "Feeds OH 1.68G Distillate Disposables · OH001 — 20 of 21 files on rows, 1 on no row. Flavours: Apple Gelato ICE, Jack Herer, Cali Gas OG, Purple Punch, Cherry Grapefruit, Super Sour Diesel +4.",
+   "meaning": "Yes means: every file in this folder is OH 1.68G Distillate Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "164e5fbf-4dda-48fd-9ab2-b866bf7f869a",
@@ -8605,6 +8665,7 @@
    "lines": [
     {
      "id": "muha:CA:ca039",
+     "name": "CA Hash Rosin Gummies Mylar Bags",
      "line": "Hash Rosin Gummies Mylar Bags",
      "market": "CA",
      "skuBlock": "CA039",
@@ -8632,8 +8693,8 @@
     "CA_Gummies_HR_10ct_Mylar_FrontSolo_CucumberHabanero.png"
    ],
    "decision": null,
-   "proposal": "Feeds Hash Rosin Gummies Mylar Bags · CA · CA039 — 16 of 22 files on rows, 6 on no row. Flavours: Raspberry Pineapple, Juicy Tangerine, Mango Chamoy, Sour Blue Razz.",
-   "meaning": "Yes means: every file in this folder is Hash Rosin Gummies Mylar Bags (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA Hash Rosin Gummies Mylar Bags · CA039 — 16 of 22 files on rows, 6 on no row. Flavours: Raspberry Pineapple, Juicy Tangerine, Mango Chamoy, Sour Blue Razz.",
+   "meaning": "Yes means: every file in this folder is CA Hash Rosin Gummies Mylar Bags and its flavours are named from the book.",
    "samples": [
     {
      "id": "74b5d4e4-d612-4f75-bc4c-e1ac30c353ac",
@@ -8671,6 +8732,7 @@
    "lines": [
     {
      "id": "muha:CA:hash-rosin-gummies-metal-cans",
+     "name": "CA Hash Rosin Gummies Metal Cans",
      "line": "Hash Rosin Gummies Metal Cans",
      "market": "CA",
      "skuBlock": null,
@@ -8686,6 +8748,7 @@
     },
     {
      "id": "muha:CA:ca039",
+     "name": "CA Hash Rosin Gummies Mylar Bags",
      "line": "Hash Rosin Gummies Mylar Bags",
      "market": "CA",
      "skuBlock": "CA039",
@@ -8711,8 +8774,8 @@
     "CA_Hash_Rosin_Edible_Cans_RaspberryPapaya_Top.png"
    ],
    "decision": null,
-   "proposal": "Feeds Hash Rosin Gummies Metal Cans · CA (+1 more line: Hash Rosin Gummies Mylar Bags CA) — 15 of 21 files on rows, 6 on no row. Flavours: Green Apple, Mango Madness, Strawberry, Mango Chamoy, Raspberry Pineapple.",
-   "meaning": "Yes means: this folder is split between Hash Rosin Gummies Metal Cans (CA) and Hash Rosin Gummies Mylar Bags (CA), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Hash Rosin Gummies Metal Cans (+1 more line: CA Hash Rosin Gummies Mylar Bags) — 15 of 21 files on rows, 6 on no row. Flavours: Green Apple, Mango Madness, Strawberry, Mango Chamoy, Raspberry Pineapple.",
+   "meaning": "Yes means: this folder is split between CA Hash Rosin Gummies Metal Cans and CA Hash Rosin Gummies Mylar Bags, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "bccfb18a-67af-4c94-826b-274068df52c6",
@@ -8767,6 +8830,7 @@
    "lines": [
     {
      "id": "muha:CA:distillate-gummies-mylar-bags",
+     "name": "CA Distillate Gummies Mylar Bags",
      "line": "Distillate Gummies Mylar Bags",
      "market": "CA",
      "skuBlock": null,
@@ -8797,8 +8861,8 @@
     "CBG_CanEdibles_Group_Shot_NoGummies.png"
    ],
    "decision": null,
-   "proposal": "Feeds Distillate Gummies Mylar Bags · CA — 2 of 14 files on rows, 12 on no row. Flavours: Strawberry Lemon.",
-   "meaning": "Yes means: every file in this folder is Distillate Gummies Mylar Bags (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA Distillate Gummies Mylar Bags — 2 of 14 files on rows, 12 on no row. Flavours: Strawberry Lemon.",
+   "meaning": "Yes means: every file in this folder is CA Distillate Gummies Mylar Bags and its flavours are named from the book.",
    "samples": [
     {
      "id": "43b069b0-b0f4-4fd6-9cfd-f194ded4b3f6",
@@ -8847,6 +8911,7 @@
    "lines": [
     {
      "id": "muha:CA:hash-rosin-gummies-metal-cans",
+     "name": "CA Hash Rosin Gummies Metal Cans",
      "line": "Hash Rosin Gummies Metal Cans",
      "market": "CA",
      "skuBlock": null,
@@ -8858,6 +8923,7 @@
     },
     {
      "id": "muha:CA:ca039",
+     "name": "CA Hash Rosin Gummies Mylar Bags",
      "line": "Hash Rosin Gummies Mylar Bags",
      "market": "CA",
      "skuBlock": "CA039",
@@ -8869,6 +8935,7 @@
     },
     {
      "id": "muha:CA:distillate-gummies-mylar-bags",
+     "name": "CA Distillate Gummies Mylar Bags",
      "line": "Distillate Gummies Mylar Bags",
      "market": "CA",
      "skuBlock": null,
@@ -8896,8 +8963,8 @@
     "CBG_CGN_CanEdibles_MangoCoconut_Top.png"
    ],
    "decision": null,
-   "proposal": "Feeds Hash Rosin Gummies Metal Cans · CA (+2 more lines: Hash Rosin Gummies Mylar Bags CA; Distillate Gummies Mylar Bags CA) — 5 of 14 files on rows, 9 on no row. Flavours: Mango Chamoy.",
-   "meaning": "Yes means: this folder is split between Hash Rosin Gummies Metal Cans (CA) and Hash Rosin Gummies Mylar Bags (CA) and Distillate Gummies Mylar Bags (CA), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Hash Rosin Gummies Metal Cans (+2 more lines: CA Hash Rosin Gummies Mylar Bags; CA Distillate Gummies Mylar Bags) — 5 of 14 files on rows, 9 on no row. Flavours: Mango Chamoy.",
+   "meaning": "Yes means: this folder is split between CA Hash Rosin Gummies Metal Cans and CA Hash Rosin Gummies Mylar Bags and CA Distillate Gummies Mylar Bags, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "aa59a508-c679-4725-9d6a-0c6c209f9e0f",
@@ -8942,6 +9009,7 @@
    "lines": [
     {
      "id": "muha:MI:mi014",
+     "name": "MI Hash Rosin Gummies Metal Cans",
      "line": "Hash Rosin Gummies Metal Cans",
      "market": "MI",
      "skuBlock": "MI014",
@@ -8956,6 +9024,7 @@
     },
     {
      "id": "muha:MI:mi015",
+     "name": "MI 4ct Hash Rosin Gummies",
      "line": "4ct Hash Rosin Gummies",
      "market": "MI",
      "skuBlock": "MI015",
@@ -8967,6 +9036,7 @@
     },
     {
      "id": "muha:MI:mi016",
+     "name": "MI 10ct Hash Rosin Gummies",
      "line": "10ct Hash Rosin Gummies",
      "market": "MI",
      "skuBlock": "MI016",
@@ -8990,8 +9060,8 @@
     "MI_Hash_Rosin_Edible_Cans_RaspberryPapaya_Top.png"
    ],
    "decision": null,
-   "proposal": "Feeds Hash Rosin Gummies Metal Cans · MI · MI014 (+2 more lines: 4ct Hash Rosin Gummies MI; 10ct Hash Rosin Gummies MI) — 12 of 17 files on rows, 5 on no row. Flavours: Green Apple, Mango Madness, Mango Chamoy, Strawberry.",
-   "meaning": "Yes means: this folder is split between Hash Rosin Gummies Metal Cans (MI) and 4ct Hash Rosin Gummies (MI) and 10ct Hash Rosin Gummies (MI), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds MI Hash Rosin Gummies Metal Cans · MI014 (+2 more lines: MI 4ct Hash Rosin Gummies; MI 10ct Hash Rosin Gummies) — 12 of 17 files on rows, 5 on no row. Flavours: Green Apple, Mango Madness, Mango Chamoy, Strawberry.",
+   "meaning": "Yes means: this folder is split between MI Hash Rosin Gummies Metal Cans and MI 4ct Hash Rosin Gummies and MI 10ct Hash Rosin Gummies, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "0762c91d-1e2b-43b9-b3cc-479b8b60aae2",
@@ -9032,6 +9102,7 @@
    "lines": [
     {
      "id": "muha:CA:hash-rosin-gummies-metal-cans",
+     "name": "CA Hash Rosin Gummies Metal Cans",
      "line": "Hash Rosin Gummies Metal Cans",
      "market": "CA",
      "skuBlock": null,
@@ -9044,6 +9115,7 @@
     },
     {
      "id": "muha:MI:mi014",
+     "name": "MI Hash Rosin Gummies Metal Cans",
      "line": "Hash Rosin Gummies Metal Cans",
      "market": "MI",
      "skuBlock": "MI014",
@@ -9056,6 +9128,7 @@
     },
     {
      "id": "muha:OH:oh002",
+     "name": "OH THC 440 mg gummies, 44mg per gummy, tin can",
      "line": "THC 440 mg gummies, 44mg per gummy, tin can",
      "market": "OH",
      "skuBlock": "OH002",
@@ -9068,6 +9141,7 @@
     },
     {
      "id": "muha:MI:mi015",
+     "name": "MI 4ct Hash Rosin Gummies",
      "line": "4ct Hash Rosin Gummies",
      "market": "MI",
      "skuBlock": "MI015",
@@ -9079,6 +9153,7 @@
     },
     {
      "id": "muha:MI:mi016",
+     "name": "MI 10ct Hash Rosin Gummies",
      "line": "10ct Hash Rosin Gummies",
      "market": "MI",
      "skuBlock": "MI016",
@@ -9090,6 +9165,7 @@
     },
     {
      "id": "muha:AZ:az003",
+     "name": "AZ Edibles",
      "line": "Edibles",
      "market": "AZ",
      "skuBlock": "AZ003",
@@ -9101,6 +9177,7 @@
     },
     {
      "id": "muha:HEMP:hemp011",
+     "name": "HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "line": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "market": "HEMP",
      "skuBlock": "HEMP011",
@@ -9112,6 +9189,7 @@
     },
     {
      "id": "muha:HEMP:hemp012",
+     "name": "HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "line": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "market": "HEMP",
      "skuBlock": "HEMP012",
@@ -9129,8 +9207,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Hash Rosin Gummies Metal Cans · CA (+7 more lines: Hash Rosin Gummies Metal Cans MI; THC 440 mg gummies, 44mg per gummy, tin can OH) — 4 of 4 files on rows. Flavours: Raspberry Pineapple, Strawberry.",
-   "meaning": "Yes means: this folder is split between Hash Rosin Gummies Metal Cans (CA) and Hash Rosin Gummies Metal Cans (MI) and THC 440 mg gummies, 44mg per gummy, tin can (OH) and 4ct Hash Rosin Gummies (MI) and 10ct Hash Rosin Gummies (MI) and Edibles (AZ) and MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) (HEMP) and LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Hash Rosin Gummies Metal Cans (+7 more lines: MI Hash Rosin Gummies Metal Cans; OH THC 440 mg gummies, 44mg per gummy, tin can) — 4 of 4 files on rows. Flavours: Raspberry Pineapple, Strawberry.",
+   "meaning": "Yes means: this folder is split between CA Hash Rosin Gummies Metal Cans and MI Hash Rosin Gummies Metal Cans and OH THC 440 mg gummies, 44mg per gummy, tin can and MI 4ct Hash Rosin Gummies and MI 10ct Hash Rosin Gummies and AZ Edibles and HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "d6e13742-5348-4e7b-b39f-3de87d7cdf0d",
@@ -9213,6 +9291,7 @@
    "lines": [
     {
      "id": "muha:MI:mi012",
+     "name": "MI 10ct Distillate Gummy Mylar Bags",
      "line": "10ct Distillate Gummy Mylar Bags",
      "market": "MI",
      "skuBlock": "MI012",
@@ -9228,6 +9307,7 @@
     },
     {
      "id": "muha:MI:mi013",
+     "name": "MI 5ct Distillate Gummy Mylar Bags",
      "line": "5ct Distillate Gummy Mylar Bags",
      "market": "MI",
      "skuBlock": "MI013",
@@ -9249,8 +9329,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 10ct Distillate Gummy Mylar Bags · MI · MI012 (+1 more line: 5ct Distillate Gummy Mylar Bags MI) — 20 of 20 files on rows. Flavours: Mango Madness, Sour Apple, Strawberry Lemon, Very Berry, Watermelon.",
-   "meaning": "Yes means: this folder is split between 10ct Distillate Gummy Mylar Bags (MI) and 5ct Distillate Gummy Mylar Bags (MI), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds MI 10ct Distillate Gummy Mylar Bags · MI012 (+1 more line: MI 5ct Distillate Gummy Mylar Bags) — 20 of 20 files on rows. Flavours: Mango Madness, Sour Apple, Strawberry Lemon, Very Berry, Watermelon.",
+   "meaning": "Yes means: this folder is split between MI 10ct Distillate Gummy Mylar Bags and MI 5ct Distillate Gummy Mylar Bags, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "44fa07ad-e123-4692-ba51-9e868ce18a3c",
@@ -9287,6 +9367,7 @@
    "lines": [
     {
      "id": "muha:MI:mi012",
+     "name": "MI 10ct Distillate Gummy Mylar Bags",
      "line": "10ct Distillate Gummy Mylar Bags",
      "market": "MI",
      "skuBlock": "MI012",
@@ -9301,6 +9382,7 @@
     },
     {
      "id": "muha:MI:mi013",
+     "name": "MI 5ct Distillate Gummy Mylar Bags",
      "line": "5ct Distillate Gummy Mylar Bags",
      "market": "MI",
      "skuBlock": "MI013",
@@ -9315,6 +9397,7 @@
     },
     {
      "id": "muha:MI:mi014",
+     "name": "MI Hash Rosin Gummies Metal Cans",
      "line": "Hash Rosin Gummies Metal Cans",
      "market": "MI",
      "skuBlock": "MI014",
@@ -9344,8 +9427,8 @@
     "MI_Mambas_OpenBag_Lime.png"
    ],
    "decision": null,
-   "proposal": "Feeds 10ct Distillate Gummy Mylar Bags · MI · MI012 (+2 more lines: 5ct Distillate Gummy Mylar Bags MI; Hash Rosin Gummies Metal Cans MI) — 24 of 35 files on rows, 11 on no row. Flavours: Sour Apple, Mango Madness, Very Berry, Watermelon.",
-   "meaning": "Yes means: this folder is split between 10ct Distillate Gummy Mylar Bags (MI) and 5ct Distillate Gummy Mylar Bags (MI) and Hash Rosin Gummies Metal Cans (MI), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds MI 10ct Distillate Gummy Mylar Bags · MI012 (+2 more lines: MI 5ct Distillate Gummy Mylar Bags; MI Hash Rosin Gummies Metal Cans) — 24 of 35 files on rows, 11 on no row. Flavours: Sour Apple, Mango Madness, Very Berry, Watermelon.",
+   "meaning": "Yes means: this folder is split between MI 10ct Distillate Gummy Mylar Bags and MI 5ct Distillate Gummy Mylar Bags and MI Hash Rosin Gummies Metal Cans, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "5b02260f-0f2a-4fe0-af86-8ba6aa2b049e",
@@ -9387,6 +9470,7 @@
    "lines": [
     {
      "id": "muha:MI:mi012",
+     "name": "MI 10ct Distillate Gummy Mylar Bags",
      "line": "10ct Distillate Gummy Mylar Bags",
      "market": "MI",
      "skuBlock": "MI012",
@@ -9402,6 +9486,7 @@
     },
     {
      "id": "muha:MI:mi013",
+     "name": "MI 5ct Distillate Gummy Mylar Bags",
      "line": "5ct Distillate Gummy Mylar Bags",
      "market": "MI",
      "skuBlock": "MI013",
@@ -9423,8 +9508,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 10ct Distillate Gummy Mylar Bags · MI · MI012 (+1 more line: 5ct Distillate Gummy Mylar Bags MI) — 20 of 20 files on rows. Flavours: Sour Apple, Very Berry, Mango Madness, Strawberry Lemon, Watermelon.",
-   "meaning": "Yes means: this folder is split between 10ct Distillate Gummy Mylar Bags (MI) and 5ct Distillate Gummy Mylar Bags (MI), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds MI 10ct Distillate Gummy Mylar Bags · MI012 (+1 more line: MI 5ct Distillate Gummy Mylar Bags) — 20 of 20 files on rows. Flavours: Sour Apple, Very Berry, Mango Madness, Strawberry Lemon, Watermelon.",
+   "meaning": "Yes means: this folder is split between MI 10ct Distillate Gummy Mylar Bags and MI 5ct Distillate Gummy Mylar Bags, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "96f6e618-a566-457d-9450-22bfac711361",
@@ -9460,6 +9545,7 @@
    "lines": [
     {
      "id": "muha:MI:mi015",
+     "name": "MI 4ct Hash Rosin Gummies",
      "line": "4ct Hash Rosin Gummies",
      "market": "MI",
      "skuBlock": "MI015",
@@ -9474,6 +9560,7 @@
     },
     {
      "id": "muha:MI:mi016",
+     "name": "MI 10ct Hash Rosin Gummies",
      "line": "10ct Hash Rosin Gummies",
      "market": "MI",
      "skuBlock": "MI016",
@@ -9499,8 +9586,8 @@
     "MI_Gummies_HR_10ct_Mylar_Front_CucumberHabanero.png"
    ],
    "decision": null,
-   "proposal": "Feeds 4ct Hash Rosin Gummies · MI · MI015 (+1 more line: 10ct Hash Rosin Gummies MI) — 16 of 20 files on rows, 4 on no row. Flavours: Mango Chamoy, Raspberry Pineapple, Juicy Tangerine, Sour Blue Razz.",
-   "meaning": "Yes means: this folder is split between 4ct Hash Rosin Gummies (MI) and 10ct Hash Rosin Gummies (MI), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds MI 4ct Hash Rosin Gummies · MI015 (+1 more line: MI 10ct Hash Rosin Gummies) — 16 of 20 files on rows, 4 on no row. Flavours: Mango Chamoy, Raspberry Pineapple, Juicy Tangerine, Sour Blue Razz.",
+   "meaning": "Yes means: this folder is split between MI 4ct Hash Rosin Gummies and MI 10ct Hash Rosin Gummies, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "58786733-20b6-402e-97c6-203b395c79c8",
@@ -9537,6 +9624,7 @@
    "lines": [
     {
      "id": "muha:MI:mi015",
+     "name": "MI 4ct Hash Rosin Gummies",
      "line": "4ct Hash Rosin Gummies",
      "market": "MI",
      "skuBlock": "MI015",
@@ -9551,6 +9639,7 @@
     },
     {
      "id": "muha:MI:mi016",
+     "name": "MI 10ct Hash Rosin Gummies",
      "line": "10ct Hash Rosin Gummies",
      "market": "MI",
      "skuBlock": "MI016",
@@ -9578,8 +9667,8 @@
     "00_MI_Gummies_HR_4ct_Mylar_GroupShot_45.png"
    ],
    "decision": null,
-   "proposal": "Feeds 4ct Hash Rosin Gummies · MI · MI015 (+1 more line: 10ct Hash Rosin Gummies MI) — 16 of 22 files on rows, 6 on no row. Flavours: Sour Blue Razz, Raspberry Pineapple, Juicy Tangerine, Mango Chamoy.",
-   "meaning": "Yes means: this folder is split between 4ct Hash Rosin Gummies (MI) and 10ct Hash Rosin Gummies (MI), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds MI 4ct Hash Rosin Gummies · MI015 (+1 more line: MI 10ct Hash Rosin Gummies) — 16 of 22 files on rows, 6 on no row. Flavours: Sour Blue Razz, Raspberry Pineapple, Juicy Tangerine, Mango Chamoy.",
+   "meaning": "Yes means: this folder is split between MI 4ct Hash Rosin Gummies and MI 10ct Hash Rosin Gummies, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "cfcd2564-64de-4989-aa8d-0547816439c6",
@@ -9614,6 +9703,7 @@
    "lines": [
     {
      "id": "muha:MI:mi015",
+     "name": "MI 4ct Hash Rosin Gummies",
      "line": "4ct Hash Rosin Gummies",
      "market": "MI",
      "skuBlock": "MI015",
@@ -9628,6 +9718,7 @@
     },
     {
      "id": "muha:MI:mi016",
+     "name": "MI 10ct Hash Rosin Gummies",
      "line": "10ct Hash Rosin Gummies",
      "market": "MI",
      "skuBlock": "MI016",
@@ -9651,8 +9742,8 @@
     "MI_Gummies_Only_Mylar_45_CucumberHabanero.png"
    ],
    "decision": null,
-   "proposal": "Feeds 4ct Hash Rosin Gummies · MI · MI015 (+1 more line: 10ct Hash Rosin Gummies MI) — 8 of 10 files on rows, 2 on no row. Flavours: Juicy Tangerine, Sour Blue Razz, Mango Chamoy, Raspberry Pineapple.",
-   "meaning": "Yes means: this folder is split between 4ct Hash Rosin Gummies (MI) and 10ct Hash Rosin Gummies (MI), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds MI 4ct Hash Rosin Gummies · MI015 (+1 more line: MI 10ct Hash Rosin Gummies) — 8 of 10 files on rows, 2 on no row. Flavours: Juicy Tangerine, Sour Blue Razz, Mango Chamoy, Raspberry Pineapple.",
+   "meaning": "Yes means: this folder is split between MI 4ct Hash Rosin Gummies and MI 10ct Hash Rosin Gummies, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "f5233c0f-2a6b-4bb3-b07c-dd6e35193413",
@@ -9755,6 +9846,7 @@
    "lines": [
     {
      "id": "muha:MO:mo009",
+     "name": "MO Distillate Gummies Mylar Bag",
      "line": "Distillate Gummies Mylar Bag",
      "market": "MO",
      "skuBlock": "MO009",
@@ -9772,8 +9864,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Distillate Gummies Mylar Bag · MO · MO009 — 5 of 5 files on rows. Flavours: Watermelon.",
-   "meaning": "Yes means: every file in this folder is Distillate Gummies Mylar Bag (MO) and its flavours are named from the book.",
+   "proposal": "Feeds MO Distillate Gummies Mylar Bag · MO009 — 5 of 5 files on rows. Flavours: Watermelon.",
+   "meaning": "Yes means: every file in this folder is MO Distillate Gummies Mylar Bag and its flavours are named from the book.",
    "samples": [
     {
      "id": "5f0feca1-9c83-4e28-af6f-c73b0aaec0fa",
@@ -9810,6 +9902,7 @@
    "lines": [
     {
      "id": "muha:MO:mo009",
+     "name": "MO Distillate Gummies Mylar Bag",
      "line": "Distillate Gummies Mylar Bag",
      "market": "MO",
      "skuBlock": "MO009",
@@ -9824,6 +9917,7 @@
     },
     {
      "id": "muha:MO:mo011",
+     "name": "MO Live Resin Gummies Mylar Bag",
      "line": "Live Resin Gummies Mylar Bag",
      "market": "MO",
      "skuBlock": "MO011",
@@ -9847,8 +9941,8 @@
     "Mambas_MO_Mango_Front_Gummy_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds Distillate Gummies Mylar Bag · MO · MO009 (+1 more line: Live Resin Gummies Mylar Bag MO) — 16 of 21 files on rows, 5 on no row. Flavours: Very Berry, Sour Apple, Strawberry Lemon, Watermelon.",
-   "meaning": "Yes means: this folder is split between Distillate Gummies Mylar Bag (MO) and Live Resin Gummies Mylar Bag (MO), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds MO Distillate Gummies Mylar Bag · MO009 (+1 more line: MO Live Resin Gummies Mylar Bag) — 16 of 21 files on rows, 5 on no row. Flavours: Very Berry, Sour Apple, Strawberry Lemon, Watermelon.",
+   "meaning": "Yes means: this folder is split between MO Distillate Gummies Mylar Bag and MO Live Resin Gummies Mylar Bag, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "ab801a18-2454-4023-9986-6af0fb0c6009",
@@ -9882,6 +9976,7 @@
    "lines": [
     {
      "id": "muha:MO:mo009",
+     "name": "MO Distillate Gummies Mylar Bag",
      "line": "Distillate Gummies Mylar Bag",
      "market": "MO",
      "skuBlock": "MO009",
@@ -9897,6 +9992,7 @@
     },
     {
      "id": "muha:MO:mo011",
+     "name": "MO Live Resin Gummies Mylar Bag",
      "line": "Live Resin Gummies Mylar Bag",
      "market": "MO",
      "skuBlock": "MO011",
@@ -9914,8 +10010,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Distillate Gummies Mylar Bag · MO · MO009 (+1 more line: Live Resin Gummies Mylar Bag MO) — 10 of 10 files on rows. Flavours: Watermelon, Strawberry Lemon, Mango Mirage, Very Berry, Sour Apple.",
-   "meaning": "Yes means: this folder is split between Distillate Gummies Mylar Bag (MO) and Live Resin Gummies Mylar Bag (MO), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds MO Distillate Gummies Mylar Bag · MO009 (+1 more line: MO Live Resin Gummies Mylar Bag) — 10 of 10 files on rows. Flavours: Watermelon, Strawberry Lemon, Mango Mirage, Very Berry, Sour Apple.",
+   "meaning": "Yes means: this folder is split between MO Distillate Gummies Mylar Bag and MO Live Resin Gummies Mylar Bag, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "c0d47d75-d9b5-4f8c-9cb8-9d2c36a6c773",
@@ -9987,6 +10083,7 @@
    "lines": [
     {
      "id": "muha:NM:nm006",
+     "name": "NM Distillate Gummy Mylar Bags",
      "line": "Distillate Gummy Mylar Bags",
      "market": "NM",
      "skuBlock": "NM006",
@@ -10010,8 +10107,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Distillate Gummy Mylar Bags · NM · NM006 — 14 of 14 files on rows. Flavours: Lime, Mango Madness, Very Berry, Sweet and Sour, Strawberry, Watermelon +1.",
-   "meaning": "Yes means: every file in this folder is Distillate Gummy Mylar Bags (NM) and its flavours are named from the book.",
+   "proposal": "Feeds NM Distillate Gummy Mylar Bags · NM006 — 14 of 14 files on rows. Flavours: Lime, Mango Madness, Very Berry, Sweet and Sour, Strawberry, Watermelon +1.",
+   "meaning": "Yes means: every file in this folder is NM Distillate Gummy Mylar Bags and its flavours are named from the book.",
    "samples": [
     {
      "id": "a7848763-f92d-4f8b-9906-bac743b6dd5b",
@@ -10261,6 +10358,7 @@
    "lines": [
     {
      "id": "muha:CA:ca023",
+     "name": "CA 3.5G Flower Jars",
      "line": "3.5G Flower Jars",
      "market": "CA",
      "skuBlock": "CA023",
@@ -10279,6 +10377,7 @@
     },
     {
      "id": "muha:CA:ca024",
+     "name": "CA 7G Flower Jars",
      "line": "7G Flower Jars",
      "market": "CA",
      "skuBlock": "CA024",
@@ -10305,8 +10404,8 @@
     "CA_FlowerJar_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 3.5G Flower Jars · CA · CA023 (+1 more line: 7G Flower Jars CA) — 72 of 73 files on rows, 1 on no row. Flavours: Adios MF, Black Truffle, Brain Freeze, Bacio Gelato, Frosted Cherries, Morning Glory +2.",
-   "meaning": "Yes means: this folder is split between 3.5G Flower Jars (CA) and 7G Flower Jars (CA), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA 3.5G Flower Jars · CA023 (+1 more line: CA 7G Flower Jars) — 72 of 73 files on rows, 1 on no row. Flavours: Adios MF, Black Truffle, Brain Freeze, Bacio Gelato, Frosted Cherries, Morning Glory +2.",
+   "meaning": "Yes means: this folder is split between CA 3.5G Flower Jars and CA 7G Flower Jars, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "82e971b1-7fab-4b53-8766-4db8c7d55651",
@@ -10341,6 +10440,7 @@
    "lines": [
     {
      "id": "muha:CA:muha-sun-grown-flower-1oz-jar",
+     "name": "CA Muha Sun Grown Flower 1oz Jar",
      "line": "Muha Sun Grown Flower 1oz Jar",
      "market": "CA",
      "skuBlock": null,
@@ -10356,6 +10456,7 @@
     },
     {
      "id": "muha:CA:1oz-greenhouse-flower-jars-golden-nuggets",
+     "name": "CA 1OZ Greenhouse Flower Jars Golden Nuggets",
      "line": "1OZ Greenhouse Flower Jars Golden Nuggets",
      "market": "CA",
      "skuBlock": null,
@@ -10376,8 +10477,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Muha Sun Grown Flower 1oz Jar · CA (+1 more line: 1OZ Greenhouse Flower Jars Golden Nuggets CA) — 8 of 8 files on rows. Flavours: LA Gas Cake, Zour Papaya, Raspberry Kush, Barry White, Frooty Tooty.",
-   "meaning": "Yes means: this folder is split between Muha Sun Grown Flower 1oz Jar (CA) and 1OZ Greenhouse Flower Jars Golden Nuggets (CA), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Muha Sun Grown Flower 1oz Jar (+1 more line: CA 1OZ Greenhouse Flower Jars Golden Nuggets) — 8 of 8 files on rows. Flavours: LA Gas Cake, Zour Papaya, Raspberry Kush, Barry White, Frooty Tooty.",
+   "meaning": "Yes means: this folder is split between CA Muha Sun Grown Flower 1oz Jar and CA 1OZ Greenhouse Flower Jars Golden Nuggets, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "791f25e6-8d4b-4741-a754-648afd072ce5",
@@ -10412,6 +10513,7 @@
    "lines": [
     {
      "id": "muha:CA:muha-sun-grown-flower-1oz-jar",
+     "name": "CA Muha Sun Grown Flower 1oz Jar",
      "line": "Muha Sun Grown Flower 1oz Jar",
      "market": "CA",
      "skuBlock": null,
@@ -10427,6 +10529,7 @@
     },
     {
      "id": "muha:CA:1oz-greenhouse-flower-jars-golden-nuggets",
+     "name": "CA 1OZ Greenhouse Flower Jars Golden Nuggets",
      "line": "1OZ Greenhouse Flower Jars Golden Nuggets",
      "market": "CA",
      "skuBlock": null,
@@ -10450,8 +10553,8 @@
     "CA_Flower_Green_House_1oz_Displaybox_45_FT_45_Closed.png"
    ],
    "decision": null,
-   "proposal": "Feeds Muha Sun Grown Flower 1oz Jar · CA (+1 more line: 1OZ Greenhouse Flower Jars Golden Nuggets CA) — 22 of 24 files on rows, 2 on no row. Flavours: Raspberry Kush, Frooty Tooty, Zour Papaya, Barry White, LA Gas Cake.",
-   "meaning": "Yes means: this folder is split between Muha Sun Grown Flower 1oz Jar (CA) and 1OZ Greenhouse Flower Jars Golden Nuggets (CA), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Muha Sun Grown Flower 1oz Jar (+1 more line: CA 1OZ Greenhouse Flower Jars Golden Nuggets) — 22 of 24 files on rows, 2 on no row. Flavours: Raspberry Kush, Frooty Tooty, Zour Papaya, Barry White, LA Gas Cake.",
+   "meaning": "Yes means: this folder is split between CA Muha Sun Grown Flower 1oz Jar and CA 1OZ Greenhouse Flower Jars Golden Nuggets, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "ebf0ba59-406b-4e27-96a7-dae05fe9972e",
@@ -10486,6 +10589,7 @@
    "lines": [
     {
      "id": "muha:CA:ca025",
+     "name": "CA Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags",
      "line": "Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags",
      "market": "CA",
      "skuBlock": "CA025",
@@ -10501,6 +10605,7 @@
     },
     {
      "id": "muha:CA:7g-greenhouse-flower-jars-golden-nuggets",
+     "name": "CA 7G Greenhouse Flower Jars Golden Nuggets",
      "line": "7G Greenhouse Flower Jars Golden Nuggets",
      "market": "CA",
      "skuBlock": null,
@@ -10521,8 +10626,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags · CA · CA025 (+1 more line: 7G Greenhouse Flower Jars Golden Nuggets CA) — 11 of 11 files on rows. Flavours: Barry White, Zour Papaya, Raspberry Kush, Frooty Tooty, LA Gas Cake.",
-   "meaning": "Yes means: this folder is split between Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags (CA) and 7G Greenhouse Flower Jars Golden Nuggets (CA), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags · CA025 (+1 more line: CA 7G Greenhouse Flower Jars Golden Nuggets) — 11 of 11 files on rows. Flavours: Barry White, Zour Papaya, Raspberry Kush, Frooty Tooty, LA Gas Cake.",
+   "meaning": "Yes means: this folder is split between CA Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags and CA 7G Greenhouse Flower Jars Golden Nuggets, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "d37bcaad-f62f-45d3-a3e8-c9f1e89c950e",
@@ -10557,6 +10662,7 @@
    "lines": [
     {
      "id": "muha:CA:ca025",
+     "name": "CA Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags",
      "line": "Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags",
      "market": "CA",
      "skuBlock": "CA025",
@@ -10571,6 +10677,7 @@
     },
     {
      "id": "muha:CA:7g-greenhouse-flower-jars-golden-nuggets",
+     "name": "CA 7G Greenhouse Flower Jars Golden Nuggets",
      "line": "7G Greenhouse Flower Jars Golden Nuggets",
      "market": "CA",
      "skuBlock": null,
@@ -10593,8 +10700,8 @@
     "CA_Flower_Green_House_7g_Displaybox_Front_BW_Front_Closed.png"
    ],
    "decision": null,
-   "proposal": "Feeds Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags · CA · CA025 (+1 more line: 7G Greenhouse Flower Jars Golden Nuggets CA) — 21 of 22 files on rows, 1 on no row. Flavours: LA Gas Cake, Zour Papaya, Raspberry Kush, Frooty Tooty.",
-   "meaning": "Yes means: this folder is split between Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags (CA) and 7G Greenhouse Flower Jars Golden Nuggets (CA), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags · CA025 (+1 more line: CA 7G Greenhouse Flower Jars Golden Nuggets) — 21 of 22 files on rows, 1 on no row. Flavours: LA Gas Cake, Zour Papaya, Raspberry Kush, Frooty Tooty.",
+   "meaning": "Yes means: this folder is split between CA Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags and CA 7G Greenhouse Flower Jars Golden Nuggets, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "cf8d6735-60e5-4c3b-9d0d-dd5bc4947b15",
@@ -10635,6 +10742,7 @@
    "lines": [
     {
      "id": "muha:CA:3-5g-indoor-flower-jars",
+     "name": "CA 3.5G Indoor Flower Jars",
      "line": "3.5G Indoor Flower Jars",
      "market": "CA",
      "skuBlock": null,
@@ -10667,8 +10775,8 @@
     "CA_FlowerJar_Indoor_BCP_45_45.png"
    ],
    "decision": null,
-   "proposal": "Feeds 3.5G Indoor Flower Jars · CA — 7 of 15 files on rows, 8 on no row. Flavours: Grape Gasoline, Zour Power OG, Frosted Peaches, Blue Dream, Black Cherry Punch, Bubbledumb Gelato +1.",
-   "meaning": "Yes means: every file in this folder is 3.5G Indoor Flower Jars (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA 3.5G Indoor Flower Jars — 7 of 15 files on rows, 8 on no row. Flavours: Grape Gasoline, Zour Power OG, Frosted Peaches, Blue Dream, Black Cherry Punch, Bubbledumb Gelato +1.",
+   "meaning": "Yes means: every file in this folder is CA 3.5G Indoor Flower Jars and its flavours are named from the book.",
    "samples": [
     {
      "id": "9028daab-29c2-4ac9-92c1-3021930435ea",
@@ -10865,6 +10973,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp004",
+     "name": "HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-8 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP004",
@@ -10884,6 +10993,7 @@
     },
     {
      "id": "muha:HEMP:hemp005",
+     "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP005",
@@ -10903,6 +11013,7 @@
     },
     {
      "id": "muha:HEMP:hemp006",
+     "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
      "line": "HHC MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP006",
@@ -10931,8 +11042,8 @@
     "Hemp_Cartridges_Front_D10_KingLouisXII_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP · HEMP004 (+2 more lines: DELTA-10 MUHA MEDS CARTRIDGE (1g) HEMP; HHC MUHA MEDS CARTRIDGE (1g) HEMP) — 18 of 20 files on rows, 2 on no row. Flavours: Gods Gift, Pineapple Express, Green Crack, Northern Lights, Gelato, Agent Orange +3.",
-   "meaning": "Yes means: this folder is split between DELTA-8 MUHA MEDS CARTRIDGE (1g) (HEMP) and DELTA-10 MUHA MEDS CARTRIDGE (1g) (HEMP) and HHC MUHA MEDS CARTRIDGE (1g) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 18 of 20 files on rows, 2 on no row. Flavours: Gods Gift, Pineapple Express, Green Crack, Northern Lights, Gelato, Agent Orange +3.",
+   "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "44f9abe8-3f88-436f-892e-f1f4539d1063",
@@ -10966,6 +11077,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp004",
+     "name": "HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-8 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP004",
@@ -10985,6 +11097,7 @@
     },
     {
      "id": "muha:HEMP:hemp005",
+     "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP005",
@@ -11004,6 +11117,7 @@
     },
     {
      "id": "muha:HEMP:hemp006",
+     "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
      "line": "HHC MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP006",
@@ -11032,8 +11146,8 @@
     "Hemp_Cartridges_Front_D8_KingLouisXII_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP · HEMP004 (+2 more lines: DELTA-10 MUHA MEDS CARTRIDGE (1g) HEMP; HHC MUHA MEDS CARTRIDGE (1g) HEMP) — 18 of 20 files on rows, 2 on no row. Flavours: Green Crack, Northern Lights, Pineapple Express, Gelato, Agent Orange, Cherry Berry +3.",
-   "meaning": "Yes means: this folder is split between DELTA-8 MUHA MEDS CARTRIDGE (1g) (HEMP) and DELTA-10 MUHA MEDS CARTRIDGE (1g) (HEMP) and HHC MUHA MEDS CARTRIDGE (1g) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 18 of 20 files on rows, 2 on no row. Flavours: Green Crack, Northern Lights, Pineapple Express, Gelato, Agent Orange, Cherry Berry +3.",
+   "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "493aad75-4352-4b13-b122-b607c1530bc7",
@@ -11068,6 +11182,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp004",
+     "name": "HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-8 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP004",
@@ -11088,6 +11203,7 @@
     },
     {
      "id": "muha:HEMP:hemp005",
+     "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP005",
@@ -11108,6 +11224,7 @@
     },
     {
      "id": "muha:HEMP:hemp006",
+     "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
      "line": "HHC MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP006",
@@ -11134,8 +11251,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP · HEMP004 (+2 more lines: DELTA-10 MUHA MEDS CARTRIDGE (1g) HEMP; HHC MUHA MEDS CARTRIDGE (1g) HEMP) — 20 of 20 files on rows. Flavours: Green Crack, Cherry Berry, King Louie XII, Agent Orange, Northern Lights, Gelato +4.",
-   "meaning": "Yes means: this folder is split between DELTA-8 MUHA MEDS CARTRIDGE (1g) (HEMP) and DELTA-10 MUHA MEDS CARTRIDGE (1g) (HEMP) and HHC MUHA MEDS CARTRIDGE (1g) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 20 of 20 files on rows. Flavours: Green Crack, Cherry Berry, King Louie XII, Agent Orange, Northern Lights, Gelato +4.",
+   "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "297c7ba3-2bda-4deb-8afd-88ba7f05bd87",
@@ -11170,6 +11287,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp004",
+     "name": "HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-8 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP004",
@@ -11190,6 +11308,7 @@
     },
     {
      "id": "muha:HEMP:hemp005",
+     "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP005",
@@ -11210,6 +11329,7 @@
     },
     {
      "id": "muha:HEMP:hemp006",
+     "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
      "line": "HHC MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP006",
@@ -11236,8 +11356,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP · HEMP004 (+2 more lines: DELTA-10 MUHA MEDS CARTRIDGE (1g) HEMP; HHC MUHA MEDS CARTRIDGE (1g) HEMP) — 20 of 20 files on rows. Flavours: Cherry Berry, Gelato, Maui Wauii, Pineapple Express, Green Crack, Northern Lights +4.",
-   "meaning": "Yes means: this folder is split between DELTA-8 MUHA MEDS CARTRIDGE (1g) (HEMP) and DELTA-10 MUHA MEDS CARTRIDGE (1g) (HEMP) and HHC MUHA MEDS CARTRIDGE (1g) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 20 of 20 files on rows. Flavours: Cherry Berry, Gelato, Maui Wauii, Pineapple Express, Green Crack, Northern Lights +4.",
+   "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "3cd88557-a760-4fcc-880f-cfd96215ad05",
@@ -11272,6 +11392,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp004",
+     "name": "HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-8 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP004",
@@ -11292,6 +11413,7 @@
     },
     {
      "id": "muha:HEMP:hemp005",
+     "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP005",
@@ -11312,6 +11434,7 @@
     },
     {
      "id": "muha:HEMP:hemp006",
+     "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
      "line": "HHC MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP006",
@@ -11338,8 +11461,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP · HEMP004 (+2 more lines: DELTA-10 MUHA MEDS CARTRIDGE (1g) HEMP; HHC MUHA MEDS CARTRIDGE (1g) HEMP) — 20 of 20 files on rows. Flavours: Northern Lights, King Louie XII, Maui Wauii, Agent Orange, Gelato, Pineapple Express +4.",
-   "meaning": "Yes means: this folder is split between DELTA-8 MUHA MEDS CARTRIDGE (1g) (HEMP) and DELTA-10 MUHA MEDS CARTRIDGE (1g) (HEMP) and HHC MUHA MEDS CARTRIDGE (1g) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 20 of 20 files on rows. Flavours: Northern Lights, King Louie XII, Maui Wauii, Agent Orange, Gelato, Pineapple Express +4.",
+   "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "c20263bc-f70e-4ee8-a616-045d6ba47eaf",
@@ -11373,6 +11496,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp004",
+     "name": "HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-8 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP004",
@@ -11392,6 +11516,7 @@
     },
     {
      "id": "muha:HEMP:hemp005",
+     "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP005",
@@ -11411,6 +11536,7 @@
     },
     {
      "id": "muha:HEMP:hemp006",
+     "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
      "line": "HHC MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP006",
@@ -11439,8 +11565,8 @@
     "Hemp_Cartridges_Front_HHC_KingLouisXII_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP · HEMP004 (+2 more lines: DELTA-10 MUHA MEDS CARTRIDGE (1g) HEMP; HHC MUHA MEDS CARTRIDGE (1g) HEMP) — 18 of 20 files on rows, 2 on no row. Flavours: Trainwreck, Pineapple Express, Cherry Berry, Maui Wauii, Gelato, Agent Orange +3.",
-   "meaning": "Yes means: this folder is split between DELTA-8 MUHA MEDS CARTRIDGE (1g) (HEMP) and DELTA-10 MUHA MEDS CARTRIDGE (1g) (HEMP) and HHC MUHA MEDS CARTRIDGE (1g) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 18 of 20 files on rows, 2 on no row. Flavours: Trainwreck, Pineapple Express, Cherry Berry, Maui Wauii, Gelato, Agent Orange +3.",
+   "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "6d7f8aec-e470-46b0-b2af-0be9b8f44d4b",
@@ -11476,6 +11602,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp003",
+     "name": "HEMP 2g THCA Carts",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP003",
@@ -11487,6 +11614,7 @@
     },
     {
      "id": "muha:HEMP:hemp016",
+     "name": "HEMP 2g THCA Carts",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP016",
@@ -11567,8 +11695,8 @@
     "Watermelon_Gelato_Front.png"
    ],
    "decision": null,
-   "proposal": "Feeds 2g THCA Carts · HEMP · HEMP003 (+1 more line: 2g THCA Carts HEMP) — 6 of 68 files on rows, 62 on no row. Flavours: Pineapple Runtz.",
-   "meaning": "Yes means: this folder is split between 2g THCA Carts (HEMP) and 2g THCA Carts (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP 2g THCA Carts · HEMP003 (+1 more line: HEMP 2g THCA Carts) — 6 of 68 files on rows, 62 on no row. Flavours: Pineapple Runtz.",
+   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts and HEMP 2g THCA Carts, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "64fc761e-5df4-4f9a-9b71-7f6db2fe8e34",
@@ -11618,6 +11746,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp003",
+     "name": "HEMP 2g THCA Carts",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP003",
@@ -11636,6 +11765,7 @@
     },
     {
      "id": "muha:HEMP:hemp016",
+     "name": "HEMP 2g THCA Carts",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP016",
@@ -11654,6 +11784,7 @@
     },
     {
      "id": "muha:HEMP:hempss002",
+     "name": "HEMP Hemp Melted Diamomd 2G Cart V1",
      "line": "Hemp Melted Diamomd 2G Cart V1",
      "market": "HEMP",
      "skuBlock": "HEMPSS002",
@@ -11665,6 +11796,7 @@
     },
     {
      "id": "muha:MI:mi026",
+     "name": "MI 2G DistiIlate Carts",
      "line": "2G DistiIlate Carts",
      "market": "MI",
      "skuBlock": "MI026",
@@ -11710,8 +11842,8 @@
     "Hemp_Cart_THCa_2G_FrontSolo_PineappleRunts.png"
    ],
    "decision": null,
-   "proposal": "Feeds 2g THCA Carts · HEMP · HEMP003 (+3 more lines: 2g THCA Carts HEMP; Hemp Melted Diamomd 2G Cart V1 HEMP) — 34 of 61 files on rows, 27 on no row. Flavours: Lemon Cherry Gelato, Watermelon Gelato, Purple Punch, Strawberry Shortcake, Paradise Punch OG, Candy Apple +2.",
-   "meaning": "Yes means: this folder is split between 2g THCA Carts (HEMP) and 2g THCA Carts (HEMP) and Hemp Melted Diamomd 2G Cart V1 (HEMP) and 2G DistiIlate Carts (MI), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP 2g THCA Carts · HEMP003 (+3 more lines: HEMP 2g THCA Carts; HEMP Hemp Melted Diamomd 2G Cart V1) — 34 of 61 files on rows, 27 on no row. Flavours: Lemon Cherry Gelato, Watermelon Gelato, Purple Punch, Strawberry Shortcake, Paradise Punch OG, Candy Apple +2.",
+   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts and HEMP 2g THCA Carts and HEMP Hemp Melted Diamomd 2G Cart V1 and MI 2G DistiIlate Carts, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "4f7dc36f-746b-480d-a018-acd762448058",
@@ -11755,6 +11887,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp015",
+     "name": "HEMP 2g THCP + HHCP Carts",
      "line": "2g THCP + HHCP Carts",
      "market": "HEMP",
      "skuBlock": "HEMP015",
@@ -11782,8 +11915,8 @@
     "THCP_Carts_1G_DisplayBox_HoneydewHaze_Front.png"
    ],
    "decision": null,
-   "proposal": "Feeds 2g THCP + HHCP Carts · HEMP · HEMP015 — 27 of 32 files on rows, 5 on no row. Flavours: Gush Mintz, Honeydew Haze, Platinum Kush, Orange Creamsicle, Midnight Rain.",
-   "meaning": "Yes means: every file in this folder is 2g THCP + HHCP Carts (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP 2g THCP + HHCP Carts · HEMP015 — 27 of 32 files on rows, 5 on no row. Flavours: Gush Mintz, Honeydew Haze, Platinum Kush, Orange Creamsicle, Midnight Rain.",
+   "meaning": "Yes means: every file in this folder is HEMP 2g THCP + HHCP Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "a5bb09e1-140a-4935-9689-35b2b6480871",
@@ -11825,6 +11958,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp015",
+     "name": "HEMP 2g THCP + HHCP Carts",
      "line": "2g THCP + HHCP Carts",
      "market": "HEMP",
      "skuBlock": "HEMP015",
@@ -11846,8 +11980,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 2g THCP + HHCP Carts · HEMP · HEMP015 — 20 of 20 files on rows. Flavours: Honeydew Haze, Midnight Rain, Gush Mintz, Platinum Kush, Orange Creamsicle.",
-   "meaning": "Yes means: every file in this folder is 2g THCP + HHCP Carts (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP 2g THCP + HHCP Carts · HEMP015 — 20 of 20 files on rows. Flavours: Honeydew Haze, Midnight Rain, Gush Mintz, Platinum Kush, Orange Creamsicle.",
+   "meaning": "Yes means: every file in this folder is HEMP 2g THCP + HHCP Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "2af21d36-5802-4013-9704-eccdca0ea7f1",
@@ -11882,6 +12016,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp015",
+     "name": "HEMP 2g THCP + HHCP Carts",
      "line": "2g THCP + HHCP Carts",
      "market": "HEMP",
      "skuBlock": "HEMP015",
@@ -11902,8 +12037,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 2g THCP + HHCP Carts · HEMP · HEMP015 — 4 of 4 files on rows. Flavours: Honeydew Haze, Midnight Rain, Orange Creamsicle, Gush Mintz.",
-   "meaning": "Yes means: every file in this folder is 2g THCP + HHCP Carts (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP 2g THCP + HHCP Carts · HEMP015 — 4 of 4 files on rows. Flavours: Honeydew Haze, Midnight Rain, Orange Creamsicle, Gush Mintz.",
+   "meaning": "Yes means: every file in this folder is HEMP 2g THCP + HHCP Carts and its flavours are named from the book.",
    "samples": [
     {
      "id": "d9d3578d-2245-430a-b68e-5f3ced386689",
@@ -12021,6 +12156,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp014",
+     "name": "HEMP 3.5g Live Resin Disposables",
      "line": "3.5g Live Resin Disposables",
      "market": "HEMP",
      "skuBlock": "HEMP014",
@@ -12033,6 +12169,7 @@
     },
     {
      "id": "muha:HEMP:hemp013",
+     "name": "HEMP 3.5g Melted Diamond Disposables",
      "line": "3.5g Melted Diamond Disposables",
      "market": "HEMP",
      "skuBlock": "HEMP013",
@@ -12051,8 +12188,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 3.5g Live Resin Disposables · HEMP · HEMP014 (+1 more line: 3.5g Melted Diamond Disposables HEMP) — 4 of 4 files on rows. Flavours: Apple Fritter, Lychee Kush.",
-   "meaning": "Yes means: this folder is split between 3.5g Live Resin Disposables (HEMP) and 3.5g Melted Diamond Disposables (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP 3.5g Live Resin Disposables · HEMP014 (+1 more line: HEMP 3.5g Melted Diamond Disposables) — 4 of 4 files on rows. Flavours: Apple Fritter, Lychee Kush.",
+   "meaning": "Yes means: this folder is split between HEMP 3.5g Live Resin Disposables and HEMP 3.5g Melted Diamond Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "0c2e71ad-3165-4ba5-815a-8b5839467834",
@@ -12201,6 +12338,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp014",
+     "name": "HEMP 3.5g Live Resin Disposables",
      "line": "3.5g Live Resin Disposables",
      "market": "HEMP",
      "skuBlock": "HEMP014",
@@ -12226,8 +12364,8 @@
     "HEMP_DISPO_LR_3_5G_FrontSolo_WhiteGummy.png"
    ],
    "decision": null,
-   "proposal": "Feeds 3.5g Live Resin Disposables · HEMP · HEMP014 — 16 of 20 files on rows, 4 on no row. Flavours: Apple Fritter, Lychee Kush, Black Sugar Rose, Sour Cherry Limeade.",
-   "meaning": "Yes means: every file in this folder is 3.5g Live Resin Disposables (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP 3.5g Live Resin Disposables · HEMP014 — 16 of 20 files on rows, 4 on no row. Flavours: Apple Fritter, Lychee Kush, Black Sugar Rose, Sour Cherry Limeade.",
+   "meaning": "Yes means: every file in this folder is HEMP 3.5g Live Resin Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "54a791f9-fe1d-49df-9e8f-e0301cb5baed",
@@ -12262,6 +12400,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp014",
+     "name": "HEMP 3.5g Live Resin Disposables",
      "line": "3.5g Live Resin Disposables",
      "market": "HEMP",
      "skuBlock": "HEMP014",
@@ -12287,8 +12426,8 @@
     "HEMP_DISPO_LR_3_5G_45_WhiteGummy.png"
    ],
    "decision": null,
-   "proposal": "Feeds 3.5g Live Resin Disposables · HEMP · HEMP014 — 16 of 20 files on rows, 4 on no row. Flavours: Lychee Kush, Apple Fritter, Sour Cherry Limeade, Black Sugar Rose.",
-   "meaning": "Yes means: every file in this folder is 3.5g Live Resin Disposables (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP 3.5g Live Resin Disposables · HEMP014 — 16 of 20 files on rows, 4 on no row. Flavours: Lychee Kush, Apple Fritter, Sour Cherry Limeade, Black Sugar Rose.",
+   "meaning": "Yes means: every file in this folder is HEMP 3.5g Live Resin Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "b7d39662-bb4f-4cac-896d-0049b062946b",
@@ -12323,6 +12462,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp013",
+     "name": "HEMP 3.5g Melted Diamond Disposables",
      "line": "3.5g Melted Diamond Disposables",
      "market": "HEMP",
      "skuBlock": "HEMP013",
@@ -12344,8 +12484,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 3.5g Melted Diamond Disposables · HEMP · HEMP013 — 20 of 20 files on rows. Flavours: Sugar Plum OG, Key Lime Pie, Russian Cream, Blue Zushii, Sour Yuzu Pear.",
-   "meaning": "Yes means: every file in this folder is 3.5g Melted Diamond Disposables (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP 3.5g Melted Diamond Disposables · HEMP013 — 20 of 20 files on rows. Flavours: Sugar Plum OG, Key Lime Pie, Russian Cream, Blue Zushii, Sour Yuzu Pear.",
+   "meaning": "Yes means: every file in this folder is HEMP 3.5g Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "354d525b-f364-4b9f-b43a-7f93333664ad",
@@ -12380,6 +12520,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp013",
+     "name": "HEMP 3.5g Melted Diamond Disposables",
      "line": "3.5g Melted Diamond Disposables",
      "market": "HEMP",
      "skuBlock": "HEMP013",
@@ -12401,8 +12542,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 3.5g Melted Diamond Disposables · HEMP · HEMP013 — 20 of 20 files on rows. Flavours: Blue Zushii, Russian Cream, Key Lime Pie, Sugar Plum OG, Sour Yuzu Pear.",
-   "meaning": "Yes means: every file in this folder is 3.5g Melted Diamond Disposables (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP 3.5g Melted Diamond Disposables · HEMP013 — 20 of 20 files on rows. Flavours: Blue Zushii, Russian Cream, Key Lime Pie, Sugar Plum OG, Sour Yuzu Pear.",
+   "meaning": "Yes means: every file in this folder is HEMP 3.5g Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "2cf83662-5aad-48a2-a5c6-cf08256938fe",
@@ -12482,6 +12623,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp001",
+     "name": "HEMP 3.5g Melted Diamond Disposables (THC-A + D9)",
      "line": "3.5g Melted Diamond Disposables (THC-A + D9)",
      "market": "HEMP",
      "skuBlock": "HEMP001",
@@ -12497,6 +12639,7 @@
     },
     {
      "id": "muha:HEMP:hemp002",
+     "name": "HEMP 3.5g Live Resin Disposables (THC-P + HHC-P + HHC)",
      "line": "3.5g Live Resin Disposables (THC-P + HHC-P + HHC)",
      "market": "HEMP",
      "skuBlock": "HEMP002",
@@ -12518,8 +12661,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 3.5g Melted Diamond Disposables (THC-A + D9) · HEMP · HEMP001 (+1 more line: 3.5g Live Resin Disposables (THC-P + HHC-P + HHC) HEMP) — 10 of 10 files on rows. Flavours: Mango Peach Rings, Cereal Milk, Purple Champagne, Jedi Kush, Citrus Tsunami.",
-   "meaning": "Yes means: this folder is split between 3.5g Melted Diamond Disposables (THC-A + D9) (HEMP) and 3.5g Live Resin Disposables (THC-P + HHC-P + HHC) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP 3.5g Melted Diamond Disposables (THC-A + D9) · HEMP001 (+1 more line: HEMP 3.5g Live Resin Disposables (THC-P + HHC-P + HHC)) — 10 of 10 files on rows. Flavours: Mango Peach Rings, Cereal Milk, Purple Champagne, Jedi Kush, Citrus Tsunami.",
+   "meaning": "Yes means: this folder is split between HEMP 3.5g Melted Diamond Disposables (THC-A + D9) and HEMP 3.5g Live Resin Disposables (THC-P + HHC-P + HHC), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "0fe71163-eb83-49dd-aca9-75f6888564a5",
@@ -12559,6 +12702,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp002",
+     "name": "HEMP 3.5g Live Resin Disposables (THC-P + HHC-P + HHC)",
      "line": "3.5g Live Resin Disposables (THC-P + HHC-P + HHC)",
      "market": "HEMP",
      "skuBlock": "HEMP002",
@@ -12576,8 +12720,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 3.5g Live Resin Disposables (THC-P + HHC-P + HHC) · HEMP · HEMP002 — 1 of 1 files on rows. Flavours: Rainbow Belts.",
-   "meaning": "Yes means: every file in this folder is 3.5g Live Resin Disposables (THC-P + HHC-P + HHC) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP 3.5g Live Resin Disposables (THC-P + HHC-P + HHC) · HEMP002 — 1 of 1 files on rows. Flavours: Rainbow Belts.",
+   "meaning": "Yes means: every file in this folder is HEMP 3.5g Live Resin Disposables (THC-P + HHC-P + HHC) and its flavours are named from the book.",
    "samples": [
     {
      "id": "bdb3ddc7-a295-439d-8041-8f1c3a0ea527",
@@ -12698,6 +12842,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp018",
+     "name": "HEMP 15ct Jar Edibles - Hash Rosin",
      "line": "15ct Jar Edibles - Hash Rosin",
      "market": "HEMP",
      "skuBlock": "HEMP018",
@@ -12713,6 +12858,7 @@
     },
     {
      "id": "muha:HEMP:hemp019",
+     "name": "HEMP 4ct Mylar Bag Edibles - Hash Rosin",
      "line": "4ct Mylar Bag Edibles - Hash Rosin",
      "market": "HEMP",
      "skuBlock": "HEMP019",
@@ -12745,8 +12891,8 @@
     "Hemp_15ct_HR_Jar_FrontSolo_PineappleHabanero.png"
    ],
    "decision": null,
-   "proposal": "Feeds 15ct Jar Edibles - Hash Rosin · HEMP · HEMP018 (+1 more line: 4ct Mylar Bag Edibles - Hash Rosin HEMP) — 50 of 60 files on rows, 10 on no row. Flavours: Strawberry Lemonade, Sour Blue Razz, Kiwi Surge, Orange Creamsicle, Mango Chamoy.",
-   "meaning": "Yes means: this folder is split between 15ct Jar Edibles - Hash Rosin (HEMP) and 4ct Mylar Bag Edibles - Hash Rosin (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP 15ct Jar Edibles - Hash Rosin · HEMP018 (+1 more line: HEMP 4ct Mylar Bag Edibles - Hash Rosin) — 50 of 60 files on rows, 10 on no row. Flavours: Strawberry Lemonade, Sour Blue Razz, Kiwi Surge, Orange Creamsicle, Mango Chamoy.",
+   "meaning": "Yes means: this folder is split between HEMP 15ct Jar Edibles - Hash Rosin and HEMP 4ct Mylar Bag Edibles - Hash Rosin, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "a2efcf57-604c-475c-a515-350b5f6bdad6",
@@ -12782,6 +12928,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp011",
+     "name": "HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "line": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "market": "HEMP",
      "skuBlock": "HEMP011",
@@ -12805,8 +12952,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP · HEMP011 — 14 of 14 files on rows. Flavours: Lime, Very Berry, Mango Madness, Strawberry, Sour Apple, Sweet and Sour +1.",
-   "meaning": "Yes means: every file in this folder is MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP011 — 14 of 14 files on rows. Flavours: Lime, Very Berry, Mango Madness, Strawberry, Sour Apple, Sweet and Sour +1.",
+   "meaning": "Yes means: every file in this folder is HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and its flavours are named from the book.",
    "samples": [
     {
      "id": "7c109c8a-f044-4219-8a0c-96463adfa8dd",
@@ -12842,6 +12989,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp011",
+     "name": "HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "line": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "market": "HEMP",
      "skuBlock": "HEMP011",
@@ -12865,8 +13013,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP · HEMP011 — 14 of 14 files on rows. Flavours: Mango Madness, Sweet and Sour, Very Berry, Sour Apple, Strawberry, Lime +1.",
-   "meaning": "Yes means: every file in this folder is MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP011 — 14 of 14 files on rows. Flavours: Mango Madness, Sweet and Sour, Very Berry, Sour Apple, Strawberry, Lime +1.",
+   "meaning": "Yes means: every file in this folder is HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and its flavours are named from the book.",
    "samples": [
     {
      "id": "6cb1d140-2833-4869-a872-f95882afe00f",
@@ -12901,6 +13049,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp011",
+     "name": "HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "line": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "market": "HEMP",
      "skuBlock": "HEMP011",
@@ -12918,6 +13067,7 @@
     },
     {
      "id": "muha:HEMP:hemp012",
+     "name": "HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "line": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "market": "HEMP",
      "skuBlock": "HEMP012",
@@ -12941,8 +13091,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP · HEMP011 (+1 more line: LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) HEMP) — 35 of 35 files on rows. Flavours: Sour Apple, Mango Madness, Watermelon, Lime, Sweet and Sour, Strawberry +1.",
-   "meaning": "Yes means: this folder is split between MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) (HEMP) and LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP011 (+1 more line: HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)) — 35 of 35 files on rows. Flavours: Sour Apple, Mango Madness, Watermelon, Lime, Sweet and Sour, Strawberry +1.",
+   "meaning": "Yes means: this folder is split between HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "44dad2b0-557f-412a-bdd6-f277bbe031b1",
@@ -12977,6 +13127,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp011",
+     "name": "HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "line": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "market": "HEMP",
      "skuBlock": "HEMP011",
@@ -12994,6 +13145,7 @@
     },
     {
      "id": "muha:HEMP:hemp012",
+     "name": "HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "line": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "market": "HEMP",
      "skuBlock": "HEMP012",
@@ -13017,8 +13169,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP · HEMP011 (+1 more line: LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) HEMP) — 28 of 28 files on rows. Flavours: Sweet and Sour, Strawberry, Very Berry, Watermelon, Lime, Sour Apple +1.",
-   "meaning": "Yes means: this folder is split between MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) (HEMP) and LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP011 (+1 more line: HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)) — 28 of 28 files on rows. Flavours: Sweet and Sour, Strawberry, Very Berry, Watermelon, Lime, Sour Apple +1.",
+   "meaning": "Yes means: this folder is split between HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "b173e5a9-ed40-4c30-b522-cf466041f03e",
@@ -13053,6 +13205,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp011",
+     "name": "HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "line": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "market": "HEMP",
      "skuBlock": "HEMP011",
@@ -13070,6 +13223,7 @@
     },
     {
      "id": "muha:HEMP:hemp012",
+     "name": "HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "line": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "market": "HEMP",
      "skuBlock": "HEMP012",
@@ -13093,8 +13247,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP · HEMP011 (+1 more line: LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) HEMP) — 35 of 35 files on rows. Flavours: Watermelon, Very Berry, Sour Apple, Strawberry, Sweet and Sour, Lime +1.",
-   "meaning": "Yes means: this folder is split between MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) (HEMP) and LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP011 (+1 more line: HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)) — 35 of 35 files on rows. Flavours: Watermelon, Very Berry, Sour Apple, Strawberry, Sweet and Sour, Lime +1.",
+   "meaning": "Yes means: this folder is split between HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "e8b803ee-306e-4c61-ba3a-dd7d70d2ffac",
@@ -13128,6 +13282,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp012",
+     "name": "HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "line": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "market": "HEMP",
      "skuBlock": "HEMP012",
@@ -13145,8 +13300,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) · HEMP · HEMP012 — 1 of 1 files on rows. Flavours: Sweet and Sour.",
-   "meaning": "Yes means: every file in this folder is LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) · HEMP012 — 1 of 1 files on rows. Flavours: Sweet and Sour.",
+   "meaning": "Yes means: every file in this folder is HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) and its flavours are named from the book.",
    "samples": [
     {
      "id": "3ff05bed-6e0b-45b2-be59-86a4c9fa68dd",
@@ -13171,6 +13326,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp012",
+     "name": "HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "line": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "market": "HEMP",
      "skuBlock": "HEMP012",
@@ -13209,8 +13365,8 @@
     "MI_MAMBAS_LR_45_WATERMELON.png"
    ],
    "decision": null,
-   "proposal": "Feeds LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) · HEMP · HEMP012 — 14 of 28 files on rows, 14 on no row. Flavours: Sour Apple, Strawberry, Mango Madness, Very Berry, Sweet and Sour, Watermelon +1.",
-   "meaning": "Yes means: every file in this folder is LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) · HEMP012 — 14 of 28 files on rows, 14 on no row. Flavours: Sour Apple, Strawberry, Mango Madness, Very Berry, Sweet and Sour, Watermelon +1.",
+   "meaning": "Yes means: every file in this folder is HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) and its flavours are named from the book.",
    "samples": [
     {
      "id": "521b9010-a069-4d33-89db-c72238345671",
@@ -13246,6 +13402,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp012",
+     "name": "HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "line": "LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG)",
      "market": "HEMP",
      "skuBlock": "HEMP012",
@@ -13284,8 +13441,8 @@
     "MI_MAMBAS_LR_FRONT_STRAWBERRY.png"
    ],
    "decision": null,
-   "proposal": "Feeds LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) · HEMP · HEMP012 — 14 of 28 files on rows, 14 on no row. Flavours: Sour Apple, Lime, Very Berry, Sweet and Sour, Strawberry, Watermelon +1.",
-   "meaning": "Yes means: every file in this folder is LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) · HEMP012 — 14 of 28 files on rows, 14 on no row. Flavours: Sour Apple, Lime, Very Berry, Sweet and Sour, Strawberry, Watermelon +1.",
+   "meaning": "Yes means: every file in this folder is HEMP LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) and its flavours are named from the book.",
    "samples": [
     {
      "id": "d4b16405-a38b-4c57-9234-7a961e408bd3",
@@ -13322,6 +13479,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp011",
+     "name": "HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "line": "MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD)",
      "market": "HEMP",
      "skuBlock": "HEMP011",
@@ -13345,8 +13503,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP · HEMP011 — 14 of 14 files on rows. Flavours: Sour Apple, Watermelon, Mango Madness, Very Berry, Strawberry, Sweet and Sour +1.",
-   "meaning": "Yes means: every file in this folder is MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP011 — 14 of 14 files on rows. Flavours: Sour Apple, Watermelon, Mango Madness, Very Berry, Strawberry, Sweet and Sour +1.",
+   "meaning": "Yes means: every file in this folder is HEMP MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) and its flavours are named from the book.",
    "samples": [
     {
      "id": "e0d00bd7-62ec-49a7-b240-1c27ac3a1e35",
@@ -13383,6 +13541,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp007",
+     "name": "HEMP THC-A EXOTIC FLOWER JARS (4g)",
      "line": "THC-A EXOTIC FLOWER JARS (4g)",
      "market": "HEMP",
      "skuBlock": "HEMP007",
@@ -13407,8 +13566,8 @@
     "Hemp_THCa_4G_FlowerJar_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds THC-A EXOTIC FLOWER JARS (4g) · HEMP · HEMP007 — 54 of 55 files on rows, 1 on no row. Flavours: Pink Runtz, Gush Mintz, Strawberry Mimosa, Black Truffle, Frosted Cherries, Bacio Gelato.",
-   "meaning": "Yes means: every file in this folder is THC-A EXOTIC FLOWER JARS (4g) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP THC-A EXOTIC FLOWER JARS (4g) · HEMP007 — 54 of 55 files on rows, 1 on no row. Flavours: Pink Runtz, Gush Mintz, Strawberry Mimosa, Black Truffle, Frosted Cherries, Bacio Gelato.",
+   "meaning": "Yes means: every file in this folder is HEMP THC-A EXOTIC FLOWER JARS (4g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "9265c94c-5923-45d8-9d8b-212531126443",
@@ -13442,6 +13601,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp008",
+     "name": "HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)",
      "line": "THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)",
      "market": "HEMP",
      "skuBlock": "HEMP008",
@@ -13459,6 +13619,7 @@
     },
     {
      "id": "muha:HEMP:hemp020",
+     "name": "HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE)",
      "line": "FLOWER MYLAR BAGS 3.5G (ACTIVE)",
      "market": "HEMP",
      "skuBlock": "HEMP020",
@@ -13482,8 +13643,8 @@
     "Hemp_FlowerBags_THCA_Front_Gummiez_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) · HEMP · HEMP008 (+1 more line: FLOWER MYLAR BAGS 3.5G (ACTIVE) HEMP) — 21 of 24 files on rows, 3 on no row. Flavours: Lolipop, Lemon Cherry Gelato, Purple Wookies, Bored Ape Runtz, White Truffle, Skittles +1.",
-   "meaning": "Yes means: this folder is split between THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) (HEMP) and FLOWER MYLAR BAGS 3.5G (ACTIVE) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) · HEMP008 (+1 more line: HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE)) — 21 of 24 files on rows, 3 on no row. Flavours: Lolipop, Lemon Cherry Gelato, Purple Wookies, Bored Ape Runtz, White Truffle, Skittles +1.",
+   "meaning": "Yes means: this folder is split between HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) and HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "9589aabc-6ee6-4d3f-9073-bd1c54402ca4",
@@ -13528,6 +13689,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp008",
+     "name": "HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)",
      "line": "THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)",
      "market": "HEMP",
      "skuBlock": "HEMP008",
@@ -13545,6 +13707,7 @@
     },
     {
      "id": "muha:HEMP:hemp020",
+     "name": "HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE)",
      "line": "FLOWER MYLAR BAGS 3.5G (ACTIVE)",
      "market": "HEMP",
      "skuBlock": "HEMP020",
@@ -13568,8 +13731,8 @@
     "FlowerBags_DisplayCase_Open_Gummiez_D8_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) · HEMP · HEMP008 (+1 more line: FLOWER MYLAR BAGS 3.5G (ACTIVE) HEMP) — 21 of 24 files on rows, 3 on no row. Flavours: Lolipop, Banana Cream Cake, Skittles, Bored Ape Runtz, Purple Wookies, White Truffle +1.",
-   "meaning": "Yes means: this folder is split between THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) (HEMP) and FLOWER MYLAR BAGS 3.5G (ACTIVE) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) · HEMP008 (+1 more line: HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE)) — 21 of 24 files on rows, 3 on no row. Flavours: Lolipop, Banana Cream Cake, Skittles, Bored Ape Runtz, Purple Wookies, White Truffle +1.",
+   "meaning": "Yes means: this folder is split between HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) and HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "9bf2b76b-95d2-4fb4-85af-51bfb9cd2c8e",
@@ -13603,6 +13766,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp008",
+     "name": "HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)",
      "line": "THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE)",
      "market": "HEMP",
      "skuBlock": "HEMP008",
@@ -13620,6 +13784,7 @@
     },
     {
      "id": "muha:HEMP:hemp020",
+     "name": "HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE)",
      "line": "FLOWER MYLAR BAGS 3.5G (ACTIVE)",
      "market": "HEMP",
      "skuBlock": "HEMP020",
@@ -13642,8 +13807,8 @@
     "THCA_FlowerBags_Display_8CT_Open_Gummies_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) · HEMP · HEMP008 (+1 more line: FLOWER MYLAR BAGS 3.5G (ACTIVE) HEMP) — 14 of 16 files on rows, 2 on no row. Flavours: Bored Ape Runtz, Purple Wookies, Banana Cream Cake, Lemon Cherry Gelato, Skittles, White Truffle +1.",
-   "meaning": "Yes means: this folder is split between THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) (HEMP) and FLOWER MYLAR BAGS 3.5G (ACTIVE) (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) · HEMP008 (+1 more line: HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE)) — 14 of 16 files on rows, 2 on no row. Flavours: Bored Ape Runtz, Purple Wookies, Banana Cream Cake, Lemon Cherry Gelato, Skittles, White Truffle +1.",
+   "meaning": "Yes means: this folder is split between HEMP THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) and HEMP FLOWER MYLAR BAGS 3.5G (ACTIVE), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "519280c0-065d-450f-9f78-8509a9d267ec",
@@ -14104,6 +14269,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp017",
+     "name": "HEMP Duo Strain 20 Packs (8 strains, 4 Sku's)",
      "line": "Duo Strain 20 Packs (8 strains, 4 Sku's)",
      "market": "HEMP",
      "skuBlock": "HEMP017",
@@ -14117,6 +14283,7 @@
     },
     {
      "id": "muha:HEMP:2g-pre-roll-private-reserve-2-pack",
+     "name": "HEMP 2g Pre-Roll Private Reserve 2 Pack",
      "line": "2g Pre-Roll Private Reserve 2 Pack",
      "market": "HEMP",
      "skuBlock": null,
@@ -14136,8 +14303,8 @@
     "00_Hemp_DuoPreRoll_THCA_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds Duo Strain 20 Packs (8 strains, 4 Sku's) · HEMP · HEMP017 (+1 more line: 2g Pre-Roll Private Reserve 2 Pack HEMP) — 26 of 27 files on rows, 1 on no row. Flavours: Strawberry Mochi Banana Cake, Pineapple Whip Watermelon Gelato, Georgia Peaches Mango Peach Rings.",
-   "meaning": "Yes means: this folder is split between Duo Strain 20 Packs (8 strains, 4 Sku's) (HEMP) and 2g Pre-Roll Private Reserve 2 Pack (HEMP), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP Duo Strain 20 Packs (8 strains, 4 Sku's) · HEMP017 (+1 more line: HEMP 2g Pre-Roll Private Reserve 2 Pack) — 26 of 27 files on rows, 1 on no row. Flavours: Strawberry Mochi Banana Cake, Pineapple Whip Watermelon Gelato, Georgia Peaches Mango Peach Rings.",
+   "meaning": "Yes means: this folder is split between HEMP Duo Strain 20 Packs (8 strains, 4 Sku's) and HEMP 2g Pre-Roll Private Reserve 2 Pack, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "06bb636c-6077-4006-bdae-fe32ecb4ebbc",
@@ -14174,6 +14341,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp010",
+     "name": "HEMP THC-A MATES PRE-ROLLS 0.6g",
      "line": "THC-A MATES PRE-ROLLS 0.6g",
      "market": "HEMP",
      "skuBlock": "HEMP010",
@@ -14199,8 +14367,8 @@
     "Hemp_PreRolls_THCA_MetalCan_GroupShot_1_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds THC-A MATES PRE-ROLLS 0.6g · HEMP · HEMP010 — 23 of 25 files on rows, 2 on no row. Flavours: Mango Peach Rings, Strawberry Dream, Purple Punch, Blueberry ZaZa, Orange Cake, Thin Mints OG.",
-   "meaning": "Yes means: every file in this folder is THC-A MATES PRE-ROLLS 0.6g (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP THC-A MATES PRE-ROLLS 0.6g · HEMP010 — 23 of 25 files on rows, 2 on no row. Flavours: Mango Peach Rings, Strawberry Dream, Purple Punch, Blueberry ZaZa, Orange Cake, Thin Mints OG.",
+   "meaning": "Yes means: every file in this folder is HEMP THC-A MATES PRE-ROLLS 0.6g and its flavours are named from the book.",
    "samples": [
     {
      "id": "8d1d50e6-55ac-46cc-a507-7b00d0dec08c",
@@ -14241,6 +14409,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp010",
+     "name": "HEMP THC-A MATES PRE-ROLLS 0.6g",
      "line": "THC-A MATES PRE-ROLLS 0.6g",
      "market": "HEMP",
      "skuBlock": "HEMP010",
@@ -14266,8 +14435,8 @@
     "Hemp_PreRolls_THCA_MetalCan_Mango_Open_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds THC-A MATES PRE-ROLLS 0.6g · HEMP · HEMP010 — 9 of 12 files on rows, 3 on no row. Flavours: Strawberry Dream, Thin Mints OG, Mango Peach Rings, Orange Cake, Purple Punch.",
-   "meaning": "Yes means: every file in this folder is THC-A MATES PRE-ROLLS 0.6g (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP THC-A MATES PRE-ROLLS 0.6g · HEMP010 — 9 of 12 files on rows, 3 on no row. Flavours: Strawberry Dream, Thin Mints OG, Mango Peach Rings, Orange Cake, Purple Punch.",
+   "meaning": "Yes means: every file in this folder is HEMP THC-A MATES PRE-ROLLS 0.6g and its flavours are named from the book.",
    "samples": [
     {
      "id": "539ba068-c527-4435-b178-92fdb36772c8",
@@ -14303,6 +14472,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp009",
+     "name": "HEMP THC-A KING MATE PRE-ROLL (1.5g)",
      "line": "THC-A KING MATE PRE-ROLL (1.5g)",
      "market": "HEMP",
      "skuBlock": "HEMP009",
@@ -14323,8 +14493,8 @@
     "THCA_KingJoint_Front_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 1 of 3 files on rows, 2 on no row. Flavours: Mimosa.",
-   "meaning": "Yes means: every file in this folder is THC-A KING MATE PRE-ROLL (1.5g) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 1 of 3 files on rows, 2 on no row. Flavours: Mimosa.",
+   "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "08b41fab-933d-4957-8406-188b1198da0f",
@@ -14355,6 +14525,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp009",
+     "name": "HEMP THC-A KING MATE PRE-ROLL (1.5g)",
      "line": "THC-A KING MATE PRE-ROLL (1.5g)",
      "market": "HEMP",
      "skuBlock": "HEMP009",
@@ -14377,8 +14548,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 12 of 12 files on rows. Flavours: White Widow, Northern Lights, Mimosa, Alpine Guava, Chilled Cherries, Blackberry Kush.",
-   "meaning": "Yes means: every file in this folder is THC-A KING MATE PRE-ROLL (1.5g) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 12 of 12 files on rows. Flavours: White Widow, Northern Lights, Mimosa, Alpine Guava, Chilled Cherries, Blackberry Kush.",
+   "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "bed29c38-1fbf-4dfc-9297-baeb3316eec8",
@@ -14413,6 +14584,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp009",
+     "name": "HEMP THC-A KING MATE PRE-ROLL (1.5g)",
      "line": "THC-A KING MATE PRE-ROLL (1.5g)",
      "market": "HEMP",
      "skuBlock": "HEMP009",
@@ -14435,8 +14607,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 12 of 12 files on rows. Flavours: White Widow, Northern Lights, Chilled Cherries, Blackberry Kush, Alpine Guava, Mimosa.",
-   "meaning": "Yes means: every file in this folder is THC-A KING MATE PRE-ROLL (1.5g) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 12 of 12 files on rows. Flavours: White Widow, Northern Lights, Chilled Cherries, Blackberry Kush, Alpine Guava, Mimosa.",
+   "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "2c038926-161a-48f4-8157-5deecff20847",
@@ -14471,6 +14643,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp009",
+     "name": "HEMP THC-A KING MATE PRE-ROLL (1.5g)",
      "line": "THC-A KING MATE PRE-ROLL (1.5g)",
      "market": "HEMP",
      "skuBlock": "HEMP009",
@@ -14496,8 +14669,8 @@
     "King_1_5g_ChilledCherries_Front.png"
    ],
    "decision": null,
-   "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 10 of 12 files on rows, 2 on no row. Flavours: Northern Lights, Mimosa, Alpine Guava, White Widow, Blackberry Kush, Chilled Cherries.",
-   "meaning": "Yes means: every file in this folder is THC-A KING MATE PRE-ROLL (1.5g) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 10 of 12 files on rows, 2 on no row. Flavours: Northern Lights, Mimosa, Alpine Guava, White Widow, Blackberry Kush, Chilled Cherries.",
+   "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "6829b37a-2448-42d4-bfeb-47a38337cf91",
@@ -14533,6 +14706,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp009",
+     "name": "HEMP THC-A KING MATE PRE-ROLL (1.5g)",
      "line": "THC-A KING MATE PRE-ROLL (1.5g)",
      "market": "HEMP",
      "skuBlock": "HEMP009",
@@ -14555,8 +14729,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 24 of 24 files on rows. Flavours: Blackberry Kush, Alpine Guava, Chilled Cherries, Mimosa, Northern Lights, White Widow.",
-   "meaning": "Yes means: every file in this folder is THC-A KING MATE PRE-ROLL (1.5g) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 24 of 24 files on rows. Flavours: Blackberry Kush, Alpine Guava, Chilled Cherries, Mimosa, Northern Lights, White Widow.",
+   "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "831091f2-3431-4714-88df-0bed76e9fb6e",
@@ -14681,6 +14855,7 @@
    "lines": [
     {
      "id": "muha:all:accessories",
+     "name": "Accessories",
      "line": "Accessories",
      "market": null,
      "skuBlock": null,
@@ -14710,8 +14885,8 @@
     "Pen2_Black_45_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds Accessories · all markets — 1 of 12 files on rows, 11 on no row. Flavours: Hot Knife.",
-   "meaning": "Yes means: every file in this folder is Accessories (all markets) and its flavours are named from the book.",
+   "proposal": "Feeds Accessories — 1 of 12 files on rows, 11 on no row. Flavours: Hot Knife.",
+   "meaning": "Yes means: every file in this folder is Accessories and its flavours are named from the book.",
    "samples": [
     {
      "id": "004de928-2335-415d-98e4-66f70f9105ce",
@@ -14951,6 +15126,7 @@
    "lines": [
     {
      "id": "muha:MI:mi023",
+     "name": "MI 0.5G Mavricks Hash Rosin Disposables",
      "line": "0.5G Mavricks Hash Rosin Disposables",
      "market": "MI",
      "skuBlock": "MI023",
@@ -14983,8 +15159,8 @@
     "Black mav v2 master.png"
    ],
    "decision": null,
-   "proposal": "Feeds 0.5G Mavricks Hash Rosin Disposables · MI · MI023 — 1 of 15 files on rows, 14 on no row. Flavours: Mimosa.",
-   "meaning": "Yes means: every file in this folder is 0.5G Mavricks Hash Rosin Disposables (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 0.5G Mavricks Hash Rosin Disposables · MI023 — 1 of 15 files on rows, 14 on no row. Flavours: Mimosa.",
+   "meaning": "Yes means: every file in this folder is MI 0.5G Mavricks Hash Rosin Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "b675b7ca-32a6-49b5-a441-bf28763ff643",
@@ -15095,6 +15271,7 @@
    "lines": [
     {
      "id": "muha:CA:ca027",
+     "name": "CA 1G MuhaMeds x Cookies Collab Disposables",
      "line": "1G MuhaMeds x Cookies Collab Disposables",
      "market": "CA",
      "skuBlock": "CA027",
@@ -15118,8 +15295,8 @@
     "00_MM_Cookies_Collab_CA_Group.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1G MuhaMeds x Cookies Collab Disposables · CA · CA027 — 20 of 21 files on rows, 1 on no row. Flavours: Gary Payton, Apples & Bananas, Blue Slushie, Tequila Sunrise, Habibi.",
-   "meaning": "Yes means: every file in this folder is 1G MuhaMeds x Cookies Collab Disposables (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA 1G MuhaMeds x Cookies Collab Disposables · CA027 — 20 of 21 files on rows, 1 on no row. Flavours: Gary Payton, Apples & Bananas, Blue Slushie, Tequila Sunrise, Habibi.",
+   "meaning": "Yes means: every file in this folder is CA 1G MuhaMeds x Cookies Collab Disposables and its flavours are named from the book.",
    "samples": [
     {
      "id": "1d2bda69-f1ad-4ff4-a226-ba3d130ba7e7",
@@ -15154,6 +15331,7 @@
    "lines": [
     {
      "id": "muha:MI:mi020",
+     "name": "MI 2G MuhaMeds x Cookies Collab Disposables SKU #CA026",
      "line": "2G MuhaMeds x Cookies Collab Disposables SKU #CA026",
      "market": "MI",
      "skuBlock": "MI020",
@@ -15177,8 +15355,8 @@
     "00_MM_Cookies_Collab_MI_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds 2G MuhaMeds x Cookies Collab Disposables SKU #CA026 · MI · MI020 — 20 of 21 files on rows, 1 on no row. Flavours: Gary Payton, Tequila Sunrise, Blue Slushie, Habibi, Cereal Milk.",
-   "meaning": "Yes means: every file in this folder is 2G MuhaMeds x Cookies Collab Disposables SKU #CA026 (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI 2G MuhaMeds x Cookies Collab Disposables SKU #CA026 · MI020 — 20 of 21 files on rows, 1 on no row. Flavours: Gary Payton, Tequila Sunrise, Blue Slushie, Habibi, Cereal Milk.",
+   "meaning": "Yes means: every file in this folder is MI 2G MuhaMeds x Cookies Collab Disposables SKU #CA026 and its flavours are named from the book.",
    "samples": [
     {
      "id": "87f7fd0b-2e84-455f-9e12-555c84113897",
@@ -15897,6 +16075,7 @@
    "lines": [
     {
      "id": "muha:MI:mi028",
+     "name": "MI Pod & Battery Combination Kits",
      "line": "Pod & Battery Combination Kits",
      "market": "MI",
      "skuBlock": "MI028",
@@ -15930,8 +16109,8 @@
     "MI_2G_PodBatteryKit_FrontSolo_BananaCremeBrulee.png"
    ],
    "decision": null,
-   "proposal": "Feeds Pod & Battery Combination Kits · MI · MI028 — 32 of 40 files on rows, 8 on no row. Flavours: Strawberry Champagne, Pink Guava, Cambodian Haze, Sour Runtz, Sakura Blossom, Blue Glacier Grape +2.",
-   "meaning": "Yes means: every file in this folder is Pod & Battery Combination Kits (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI Pod & Battery Combination Kits · MI028 — 32 of 40 files on rows, 8 on no row. Flavours: Strawberry Champagne, Pink Guava, Cambodian Haze, Sour Runtz, Sakura Blossom, Blue Glacier Grape +2.",
+   "meaning": "Yes means: every file in this folder is MI Pod & Battery Combination Kits and its flavours are named from the book.",
    "samples": [
     {
      "id": "a285f2ae-c952-4e6d-a3f6-cec109066b7d",
@@ -15967,6 +16146,7 @@
    "lines": [
     {
      "id": "muha:MI:pod-flavors",
+     "name": "MI Pod Flavors",
      "line": "Pod Flavors",
      "market": "MI",
      "skuBlock": null,
@@ -16000,8 +16180,8 @@
     "MI_2G_VapePod_Front_BananaCremeBrulee.png"
    ],
    "decision": null,
-   "proposal": "Feeds Pod Flavors · MI — 32 of 40 files on rows, 8 on no row. Flavours: Strawberry Champagne, Blue Glacier Grape, Pink Guava, Sakura Blossom, Cambodian Haze, Boysenberry Fugi +2.",
-   "meaning": "Yes means: every file in this folder is Pod Flavors (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI Pod Flavors — 32 of 40 files on rows, 8 on no row. Flavours: Strawberry Champagne, Blue Glacier Grape, Pink Guava, Sakura Blossom, Cambodian Haze, Boysenberry Fugi +2.",
+   "meaning": "Yes means: every file in this folder is MI Pod Flavors and its flavours are named from the book.",
    "samples": [
     {
      "id": "156da5f1-72da-4590-8b5c-e4d21e134817",
@@ -16037,6 +16217,7 @@
    "lines": [
     {
      "id": "muha:CA:pod-flavors",
+     "name": "CA Pod Flavors",
      "line": "Pod Flavors",
      "market": "CA",
      "skuBlock": null,
@@ -16048,6 +16229,7 @@
     },
     {
      "id": "muha:MI:pod-flavors",
+     "name": "MI Pod Flavors",
      "line": "Pod Flavors",
      "market": "MI",
      "skuBlock": null,
@@ -16059,6 +16241,7 @@
     },
     {
      "id": "muha:CA:pod-battery-combination-kits",
+     "name": "CA Pod & Battery Combination Kits",
      "line": "Pod & Battery Combination Kits",
      "market": "CA",
      "skuBlock": null,
@@ -16070,6 +16253,7 @@
     },
     {
      "id": "muha:MI:mi028",
+     "name": "MI Pod & Battery Combination Kits",
      "line": "Pod & Battery Combination Kits",
      "market": "MI",
      "skuBlock": "MI028",
@@ -16090,8 +16274,8 @@
     "Pod Battery_Back 45.png"
    ],
    "decision": null,
-   "proposal": "Feeds Pod Flavors · CA (+3 more lines: Pod Flavors MI; Pod & Battery Combination Kits CA) — 2 of 4 files on rows, 2 on no row. Flavours: Cambodian Haze.",
-   "meaning": "Yes means: this folder is split between Pod Flavors (CA) and Pod Flavors (MI) and Pod & Battery Combination Kits (CA) and Pod & Battery Combination Kits (MI), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Pod Flavors (+3 more lines: MI Pod Flavors; CA Pod & Battery Combination Kits) — 2 of 4 files on rows, 2 on no row. Flavours: Cambodian Haze.",
+   "meaning": "Yes means: this folder is split between CA Pod Flavors and MI Pod Flavors and CA Pod & Battery Combination Kits and MI Pod & Battery Combination Kits, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "e3b09531-b16e-4e4e-bfd2-c4298f6b3306",
@@ -16484,6 +16668,7 @@
    "lines": [
     {
      "id": "muha:CA:ca035",
+     "name": "CA Mates Metal Cans",
      "line": "Mates Metal Cans",
      "market": "CA",
      "skuBlock": "CA035",
@@ -16503,6 +16688,7 @@
     },
     {
      "id": "muha:MI:mi027",
+     "name": "MI Mates Metal Cans",
      "line": "Mates Metal Cans",
      "market": "MI",
      "skuBlock": "MI027",
@@ -16522,6 +16708,7 @@
     },
     {
      "id": "muha:MO:mo006",
+     "name": "MO Mates THCA Metal Cans",
      "line": "Mates THCA Metal Cans",
      "market": "MO",
      "skuBlock": "MO006",
@@ -16538,6 +16725,7 @@
     },
     {
      "id": "muha:OH:mo006",
+     "name": "OH Mates 3WAY Metal Cans",
      "line": "Mates 3WAY Metal Cans",
      "market": "OH",
      "skuBlock": "MO006",
@@ -16554,6 +16742,7 @@
     },
     {
      "id": "muha:HEMP:hemp010",
+     "name": "HEMP THC-A MATES PRE-ROLLS 0.6g",
      "line": "THC-A MATES PRE-ROLLS 0.6g",
      "market": "HEMP",
      "skuBlock": "HEMP010",
@@ -16565,6 +16754,7 @@
     },
     {
      "id": "muha:NJ:nj003",
+     "name": "NJ Mates Metal Cans Kiefless Classic Flavor Line, Kiefless",
      "line": "Mates Metal Cans Kiefless Classic Flavor Line, Kiefless",
      "market": "NJ",
      "skuBlock": "NJ003",
@@ -16576,6 +16766,7 @@
     },
     {
      "id": "muha:NM:nm005",
+     "name": "NM Mates Metal Cans Kiefless",
      "line": "Mates Metal Cans Kiefless",
      "market": "NM",
      "skuBlock": "NM005",
@@ -16587,6 +16778,7 @@
     },
     {
      "id": "muha:MO:2g-infused-pre-rolls",
+     "name": "MO 2G Infused Pre Rolls",
      "line": "2G Infused Pre Rolls",
      "market": "MO",
      "skuBlock": null,
@@ -16606,8 +16798,8 @@
     "Mates_PreRolls_FrostMintBlueberry_Joint.png"
    ],
    "decision": null,
-   "proposal": "Feeds Mates Metal Cans · CA · CA035 (+7 more lines: Mates Metal Cans MI; Mates THCA Metal Cans MO) — 9 of 10 files on rows, 1 on no row. Flavours: Biscotti Bomb, Purple Punch, Snowberry Truffle, Honey Jack, Honey Melon, Caramel Apple Gelato +3.",
-   "meaning": "Yes means: this folder is split between Mates Metal Cans (CA) and Mates Metal Cans (MI) and Mates THCA Metal Cans (MO) and Mates 3WAY Metal Cans (OH) and THC-A MATES PRE-ROLLS 0.6g (HEMP) and Mates Metal Cans Kiefless Classic Flavor Line, Kiefless (NJ) and Mates Metal Cans Kiefless (NM) and 2G Infused Pre Rolls (MO), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA Mates Metal Cans · CA035 (+7 more lines: MI Mates Metal Cans; MO Mates THCA Metal Cans) — 9 of 10 files on rows, 1 on no row. Flavours: Biscotti Bomb, Purple Punch, Snowberry Truffle, Honey Jack, Honey Melon, Caramel Apple Gelato +3.",
+   "meaning": "Yes means: this folder is split between CA Mates Metal Cans and MI Mates Metal Cans and MO Mates THCA Metal Cans and OH Mates 3WAY Metal Cans and HEMP THC-A MATES PRE-ROLLS 0.6g and NJ Mates Metal Cans Kiefless Classic Flavor Line, Kiefless and NM Mates Metal Cans Kiefless and MO 2G Infused Pre Rolls, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "f8635080-d333-4f86-aac0-57e6b99a1408",
@@ -16677,6 +16869,7 @@
    "lines": [
     {
      "id": "muha:MO:2g-infused-pre-rolls",
+     "name": "MO 2G Infused Pre Rolls",
      "line": "2G Infused Pre Rolls",
      "market": "MO",
      "skuBlock": null,
@@ -16726,8 +16919,8 @@
     "MO_Tube_Front_STRAWBERRY_LAVAFront_Back.png"
    ],
    "decision": null,
-   "proposal": "Feeds 2G Infused Pre Rolls · MO — 52 of 70 files on rows, 18 on no row. Flavours: HONEY MELON, PEACHES & CREAM, PUMPKIN BLISS, STRAWBERRY LAVA, MATCHA GOLD, DESERT GOLD CHOCOLATE +8.",
-   "meaning": "Yes means: every file in this folder is 2G Infused Pre Rolls (MO) and its flavours are named from the book.",
+   "proposal": "Feeds MO 2G Infused Pre Rolls — 52 of 70 files on rows, 18 on no row. Flavours: HONEY MELON, PEACHES & CREAM, PUMPKIN BLISS, STRAWBERRY LAVA, MATCHA GOLD, DESERT GOLD CHOCOLATE +8.",
+   "meaning": "Yes means: every file in this folder is MO 2G Infused Pre Rolls and its flavours are named from the book.",
    "samples": [
     {
      "id": "7817285e-9899-456c-bb5b-e854a4d82e02",
@@ -16793,6 +16986,7 @@
    "lines": [
     {
      "id": "muha:MO:2g-infused-pre-rolls",
+     "name": "MO 2G Infused Pre Rolls",
      "line": "2G Infused Pre Rolls",
      "market": "MO",
      "skuBlock": null,
@@ -16814,8 +17008,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds 2G Infused Pre Rolls · MO — 5 of 5 files on rows. Flavours: PB JELLY, MATCHA GOLD, WATERMELON PUNCH, PUMPKIN BLISS, MIDNIGHT ESPRESSO.",
-   "meaning": "Yes means: every file in this folder is 2G Infused Pre Rolls (MO) and its flavours are named from the book.",
+   "proposal": "Feeds MO 2G Infused Pre Rolls — 5 of 5 files on rows. Flavours: PB JELLY, MATCHA GOLD, WATERMELON PUNCH, PUMPKIN BLISS, MIDNIGHT ESPRESSO.",
+   "meaning": "Yes means: every file in this folder is MO 2G Infused Pre Rolls and its flavours are named from the book.",
    "samples": [
     {
      "id": "44e1768e-57c5-4099-a2fd-6f894a619f7f",
@@ -16896,6 +17090,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp009",
+     "name": "HEMP THC-A KING MATE PRE-ROLL (1.5g)",
      "line": "THC-A KING MATE PRE-ROLL (1.5g)",
      "market": "HEMP",
      "skuBlock": "HEMP009",
@@ -16920,8 +17115,8 @@
     "BubbleHash_GMOOreoz_ThreeQuarters_i1.png"
    ],
    "decision": null,
-   "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 1 of 7 files on rows, 6 on no row. Flavours: Alpine Guava.",
-   "meaning": "Yes means: every file in this folder is THC-A KING MATE PRE-ROLL (1.5g) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 1 of 7 files on rows, 6 on no row. Flavours: Alpine Guava.",
+   "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "5d48e193-c172-4899-9bfb-688c0bf556f2",
@@ -16956,6 +17151,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp009",
+     "name": "HEMP THC-A KING MATE PRE-ROLL (1.5g)",
      "line": "THC-A KING MATE PRE-ROLL (1.5g)",
      "market": "HEMP",
      "skuBlock": "HEMP009",
@@ -16980,8 +17176,8 @@
     "BubbleHashQueen_MacaronPeaches_ThreeQuarters_i1.png"
    ],
    "decision": null,
-   "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 1 of 7 files on rows, 6 on no row. Flavours: Chilled Cherries.",
-   "meaning": "Yes means: every file in this folder is THC-A KING MATE PRE-ROLL (1.5g) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 1 of 7 files on rows, 6 on no row. Flavours: Chilled Cherries.",
+   "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "596a25c5-af18-4466-b04e-ff841fc468d2",
@@ -17016,6 +17212,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp009",
+     "name": "HEMP THC-A KING MATE PRE-ROLL (1.5g)",
      "line": "THC-A KING MATE PRE-ROLL (1.5g)",
      "market": "HEMP",
      "skuBlock": "HEMP009",
@@ -17042,8 +17239,8 @@
     "MeltedDiamonds_StrawberryCough_Front_i1.png"
    ],
    "decision": null,
-   "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 4 of 11 files on rows, 7 on no row. Flavours: Northern Lights, Blackberry Kush.",
-   "meaning": "Yes means: every file in this folder is THC-A KING MATE PRE-ROLL (1.5g) (HEMP) and its flavours are named from the book.",
+   "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 4 of 11 files on rows, 7 on no row. Flavours: Northern Lights, Blackberry Kush.",
+   "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "e5b85a46-012b-4843-9c8a-474638e4c47d",
@@ -17078,6 +17275,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp009",
+     "name": "HEMP THC-A KING MATE PRE-ROLL (1.5g)",
      "line": "THC-A KING MATE PRE-ROLL (1.5g)",
      "market": "HEMP",
      "skuBlock": "HEMP009",
@@ -17089,6 +17287,7 @@
     },
     {
      "id": "muha:AZ:az004",
+     "name": "AZ Classic Flavor Line, infused.",
      "line": "Classic Flavor Line, infused.",
      "market": "AZ",
      "skuBlock": "AZ004",
@@ -17115,8 +17314,8 @@
     "MeltedDiamonds_Queen_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 (+1 more line: Classic Flavor Line, infused. AZ) — 3 of 11 files on rows, 8 on no row. Flavours: Mimosa.",
-   "meaning": "Yes means: this folder is split between THC-A KING MATE PRE-ROLL (1.5g) (HEMP) and Classic Flavor Line, infused. (AZ), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 (+1 more line: AZ Classic Flavor Line, infused.) — 3 of 11 files on rows, 8 on no row. Flavours: Mimosa.",
+   "meaning": "Yes means: this folder is split between HEMP THC-A KING MATE PRE-ROLL (1.5g) and AZ Classic Flavor Line, infused., as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "a0bccf3a-890c-45c2-89b2-9c02f0c1fe62",
@@ -17371,6 +17570,7 @@
    "lines": [
     {
      "id": "muha:CA:ca035",
+     "name": "CA Mates Metal Cans",
      "line": "Mates Metal Cans",
      "market": "CA",
      "skuBlock": "CA035",
@@ -17397,8 +17597,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Mates Metal Cans · CA · CA035 — 40 of 40 files on rows. Flavours: Strawberry Ice Cream, Snowberry Truffle, Honey Melon, Berry Blaze, Honey Jack, Caramel Apple Gelato +4.",
-   "meaning": "Yes means: every file in this folder is Mates Metal Cans (CA) and its flavours are named from the book.",
+   "proposal": "Feeds CA Mates Metal Cans · CA035 — 40 of 40 files on rows. Flavours: Strawberry Ice Cream, Snowberry Truffle, Honey Melon, Berry Blaze, Honey Jack, Caramel Apple Gelato +4.",
+   "meaning": "Yes means: every file in this folder is CA Mates Metal Cans and its flavours are named from the book.",
    "samples": [
     {
      "id": "c3ad9cde-694d-46e7-8ded-fd3d0d36f294",
@@ -17571,6 +17771,7 @@
    "lines": [
     {
      "id": "muha:MI:mi027",
+     "name": "MI Mates Metal Cans",
      "line": "Mates Metal Cans",
      "market": "MI",
      "skuBlock": "MI027",
@@ -17597,8 +17798,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Mates Metal Cans · MI · MI027 — 40 of 40 files on rows. Flavours: Agave Sunrise, Frosty Mint Blueberry, Honey Melon, Biscotti Bomb, Honey Jack, Purple Punch +4.",
-   "meaning": "Yes means: every file in this folder is Mates Metal Cans (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI Mates Metal Cans · MI027 — 40 of 40 files on rows. Flavours: Agave Sunrise, Frosty Mint Blueberry, Honey Melon, Biscotti Bomb, Honey Jack, Purple Punch +4.",
+   "meaning": "Yes means: every file in this folder is MI Mates Metal Cans and its flavours are named from the book.",
    "samples": [
     {
      "id": "df813b86-26c3-4fc8-9ab1-8f810bf357f2",
@@ -17633,6 +17834,7 @@
    "lines": [
     {
      "id": "muha:MI:mi017",
+     "name": "MI Hash Rosin Mates Metal Cans",
      "line": "Hash Rosin Mates Metal Cans",
      "market": "MI",
      "skuBlock": "MI017",
@@ -17657,8 +17859,8 @@
     "MI_HR_Mates_Doses_Front_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds Hash Rosin Mates Metal Cans · MI · MI017 — 12 of 13 files on rows, 1 on no row. Flavours: White Widow, Apple Gruntz, Watermelon OG, Razzle Dazzle, Doses & Mimosas, Berry Gelato.",
-   "meaning": "Yes means: every file in this folder is Hash Rosin Mates Metal Cans (MI) and its flavours are named from the book.",
+   "proposal": "Feeds MI Hash Rosin Mates Metal Cans · MI017 — 12 of 13 files on rows, 1 on no row. Flavours: White Widow, Apple Gruntz, Watermelon OG, Razzle Dazzle, Doses & Mimosas, Berry Gelato.",
+   "meaning": "Yes means: every file in this folder is MI Hash Rosin Mates Metal Cans and its flavours are named from the book.",
    "samples": [
     {
      "id": "2aea7bcc-86e2-484f-b78d-8aa388f002a1",
@@ -17730,6 +17932,7 @@
    "lines": [
     {
      "id": "muha:MO:mo006",
+     "name": "MO Mates THCA Metal Cans",
      "line": "Mates THCA Metal Cans",
      "market": "MO",
      "skuBlock": "MO006",
@@ -17750,6 +17953,7 @@
     },
     {
      "id": "muha:MO:2g-infused-pre-rolls",
+     "name": "MO 2G Infused Pre Rolls",
      "line": "2G Infused Pre Rolls",
      "market": "MO",
      "skuBlock": null,
@@ -17767,8 +17971,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Mates THCA Metal Cans · MO · MO006 (+1 more line: 2G Infused Pre Rolls MO) — 40 of 40 files on rows. Flavours: Berry Blast, Purple Punch, Mango Peach Fusion, Biscotti Bomb, Frosty Mint Blueberry, Honey Melon +4.",
-   "meaning": "Yes means: this folder is split between Mates THCA Metal Cans (MO) and 2G Infused Pre Rolls (MO), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds MO Mates THCA Metal Cans · MO006 (+1 more line: MO 2G Infused Pre Rolls) — 40 of 40 files on rows. Flavours: Berry Blast, Purple Punch, Mango Peach Fusion, Biscotti Bomb, Frosty Mint Blueberry, Honey Melon +4.",
+   "meaning": "Yes means: this folder is split between MO Mates THCA Metal Cans and MO 2G Infused Pre Rolls, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "57e73d08-c3e6-4fa3-a2a3-a2a116e2c3d9",
@@ -17832,6 +18036,7 @@
    "lines": [
     {
      "id": "muha:NJ:nj003",
+     "name": "NJ Mates Metal Cans Kiefless Classic Flavor Line, Kiefless",
      "line": "Mates Metal Cans Kiefless Classic Flavor Line, Kiefless",
      "market": "NJ",
      "skuBlock": "NJ003",
@@ -17852,8 +18057,8 @@
     "NJ_MatesTin_Strawberry_Right_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds Mates Metal Cans Kiefless Classic Flavor Line, Kiefless · NJ · NJ003 — 1 of 3 files on rows, 2 on no row. Flavours: Strawberry Dream.",
-   "meaning": "Yes means: every file in this folder is Mates Metal Cans Kiefless Classic Flavor Line, Kiefless (NJ) and its flavours are named from the book.",
+   "proposal": "Feeds NJ Mates Metal Cans Kiefless Classic Flavor Line, Kiefless · NJ003 — 1 of 3 files on rows, 2 on no row. Flavours: Strawberry Dream.",
+   "meaning": "Yes means: every file in this folder is NJ Mates Metal Cans Kiefless Classic Flavor Line, Kiefless and its flavours are named from the book.",
    "samples": [
     {
      "id": "149d2c0b-f887-4909-83f7-9460bd85b157",
@@ -17885,6 +18090,7 @@
    "lines": [
     {
      "id": "muha:NM:nm005",
+     "name": "NM Mates Metal Cans Kiefless",
      "line": "Mates Metal Cans Kiefless",
      "market": "NM",
      "skuBlock": "NM005",
@@ -17914,8 +18120,8 @@
     "NM_MatesTin_Group_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds Mates Metal Cans Kiefless · NM · NM005 — 18 of 21 files on rows, 3 on no row. Flavours: Thin Mints OG, Strawberry Dream, Pina Colada, Mango Peach Rings, Orange Cake, Purple Punch +3.",
-   "meaning": "Yes means: every file in this folder is Mates Metal Cans Kiefless (NM) and its flavours are named from the book.",
+   "proposal": "Feeds NM Mates Metal Cans Kiefless · NM005 — 18 of 21 files on rows, 3 on no row. Flavours: Thin Mints OG, Strawberry Dream, Pina Colada, Mango Peach Rings, Orange Cake, Purple Punch +3.",
+   "meaning": "Yes means: every file in this folder is NM Mates Metal Cans Kiefless and its flavours are named from the book.",
    "samples": [
     {
      "id": "7b632769-ae97-4f74-9684-8c42974aafb9",
@@ -17951,6 +18157,7 @@
    "lines": [
     {
      "id": "muha:NY:ny003",
+     "name": "NY Mates Metal Cans",
      "line": "Mates Metal Cans",
      "market": "NY",
      "skuBlock": "NY003",
@@ -17973,8 +18180,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds Mates Metal Cans · NY · NY003 — 24 of 24 files on rows. Flavours: Morning Glory, Super Boof, Jealousy, Jet Fuel, Adios MF, Northern Lights.",
-   "meaning": "Yes means: every file in this folder is Mates Metal Cans (NY) and its flavours are named from the book.",
+   "proposal": "Feeds NY Mates Metal Cans · NY003 — 24 of 24 files on rows. Flavours: Morning Glory, Super Boof, Jealousy, Jet Fuel, Adios MF, Northern Lights.",
+   "meaning": "Yes means: every file in this folder is NY Mates Metal Cans and its flavours are named from the book.",
    "samples": [
     {
      "id": "c8d5c32d-0656-4944-ac22-4f2c15d531b2",
@@ -18413,6 +18620,7 @@
    "lines": [
     {
      "id": "muha:CA:1-5g-3-pack-muharillos",
+     "name": "CA 1.5g 3 Pack Muharillos",
      "line": "1.5g 3 Pack Muharillos",
      "market": "CA",
      "skuBlock": null,
@@ -18432,6 +18640,7 @@
     },
     {
      "id": "muha:MO:2g-infused-pre-rolls",
+     "name": "MO 2G Infused Pre Rolls",
      "line": "2G Infused Pre Rolls",
      "market": "MO",
      "skuBlock": null,
@@ -18452,8 +18661,8 @@
     "Muharillos_Front_TRAINWRECKFront.png"
    ],
    "decision": null,
-   "proposal": "Feeds 1.5g 3 Pack Muharillos · CA (+1 more line: 2G Infused Pre Rolls MO) — 18 of 20 files on rows, 2 on no row. Flavours: Russian cream, Blue Slushie, White grape, Arctic ice, Strawberry swirl, Tropical fusion +3.",
-   "meaning": "Yes means: this folder is split between 1.5g 3 Pack Muharillos (CA) and 2G Infused Pre Rolls (MO), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds CA 1.5g 3 Pack Muharillos (+1 more line: MO 2G Infused Pre Rolls) — 18 of 20 files on rows, 2 on no row. Flavours: Russian cream, Blue Slushie, White grape, Arctic ice, Strawberry swirl, Tropical fusion +3.",
+   "meaning": "Yes means: this folder is split between CA 1.5g 3 Pack Muharillos and MO 2G Infused Pre Rolls, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "17f8e6b4-cc64-4a27-815f-02979aeb6086",
