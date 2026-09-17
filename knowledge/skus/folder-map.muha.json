@@ -1,7 +1,13 @@
 {
  "brand": "muha",
- "builtAt": "2026-09-17T02:05:54.840Z",
+ "builtAt": "2026-09-17T03:16:33.373Z",
  "scope": "Renders/ only",
+ "naming": {
+  "dropped": [
+   "muha:OH:1g-distillate-carts",
+   "muha:OH:oh002"
+  ]
+ },
  "folders": [
   {
    "id": "f74ffca6ce134e04",
@@ -2678,7 +2684,7 @@
    "lines": [
     {
      "id": "muha:NM:nm010",
-     "name": "NM 1G Distillate Carts",
+     "name": "NM 1G Distillate Carts (2026 design)",
      "line": "1G Distillate Carts",
      "market": "NM",
      "skuBlock": "NM010",
@@ -2707,8 +2713,8 @@
     "00_NM_1G_Carts_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds NM 1G Distillate Carts · NM010 — 40 of 41 files on rows, 1 on no row. Flavours: Bahama Berry, Blue Slushie, Pineapple Paradise, Banana Cream Cake, Habibi, Magic Melon OG +4.",
-   "meaning": "Yes means: every file in this folder is NM 1G Distillate Carts and its flavours are named from the book.",
+   "proposal": "Feeds NM 1G Distillate Carts (2026 design) · NM010 — 40 of 41 files on rows, 1 on no row. Flavours: Bahama Berry, Blue Slushie, Pineapple Paradise, Banana Cream Cake, Habibi, Magic Melon OG +4.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Carts (2026 design) and its flavours are named from the book.",
    "samples": [
     {
      "id": "51aac009-0959-45da-836c-3fc3a676b93d",
@@ -2742,7 +2748,7 @@
    "lines": [
     {
      "id": "muha:NM:nm003",
-     "name": "NM 1G Distillate Carts",
+     "name": "NM 1G Distillate Carts (old design)",
      "line": "1G Distillate Carts",
      "market": "NM",
      "skuBlock": "NM003",
@@ -2769,8 +2775,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds NM 1G Distillate Carts · NM003 — 20 of 20 files on rows. Flavours: Blueberry Haze, Apple Gelato ICE, Jack Herer, Purple Punch, Strawberry Runtz, Cali Gas OG +4.",
-   "meaning": "Yes means: every file in this folder is NM 1G Distillate Carts and its flavours are named from the book.",
+   "proposal": "Feeds NM 1G Distillate Carts (old design) · NM003 — 20 of 20 files on rows. Flavours: Blueberry Haze, Apple Gelato ICE, Jack Herer, Purple Punch, Strawberry Runtz, Cali Gas OG +4.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Carts (old design) and its flavours are named from the book.",
    "samples": [
     {
      "id": "00df6378-231c-4f76-85ac-745fef698efe",
@@ -6486,7 +6492,7 @@
    "lines": [
     {
      "id": "muha:MI:mi029",
-     "name": "MI 2G Disposable Flavors",
+     "name": "MI 2G Disposable Flavors (older)",
      "line": "2G Disposable Flavors",
      "market": "MI",
      "skuBlock": "MI029",
@@ -6531,8 +6537,8 @@
     "MI_2G_Distillate_Dispo_Device_Front_WatermelonBubblegum.png"
    ],
    "decision": null,
-   "proposal": "Feeds MI 2G Disposable Flavors · MI029 (+1 more line: MI 2G Distillate Disposables) — 99 of 101 files on rows, 2 on no row. Flavours: Blue Slushie, Arctic Blueberry, Aloha Passion Rush, Galactic Diesel, Horchata, Lemon Cherry Fizz +4.",
-   "meaning": "Yes means: this folder is split between MI 2G Disposable Flavors and MI 2G Distillate Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds MI 2G Disposable Flavors (older) · MI029 (+1 more line: MI 2G Distillate Disposables) — 99 of 101 files on rows, 2 on no row. Flavours: Blue Slushie, Arctic Blueberry, Aloha Passion Rush, Galactic Diesel, Horchata, Lemon Cherry Fizz +4.",
+   "meaning": "Yes means: this folder is split between MI 2G Disposable Flavors (older) and MI 2G Distillate Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "e6425150-6367-46d3-8801-ed88ea7e9743",
@@ -7444,7 +7450,7 @@
    "lines": [
     {
      "id": "muha:NJ:nj001",
-     "name": "NJ Distallite 2 Gram Disposables",
+     "name": "NJ Distallite 2 Gram Disposables (older)",
      "line": "Distallite 2 Gram Disposables",
      "market": "NJ",
      "skuBlock": "NJ001",
@@ -7465,7 +7471,7 @@
     },
     {
      "id": "muha:NJ:distallite-2-gram-disposables",
-     "name": "NJ Distallite 2 Gram Disposables",
+     "name": "NJ Distallite 2 Gram Disposables (newer)",
      "line": "Distallite 2 Gram Disposables",
      "market": "NJ",
      "skuBlock": null,
@@ -7484,8 +7490,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds NJ Distallite 2 Gram Disposables · NJ001 (+1 more line: NJ Distallite 2 Gram Disposables) — 20 of 20 files on rows. Flavours: Gogi OG, Blueberry Cookies, Habibi, Lemonado, Strawberry Runts, Sour Watermelon Squirt +4.",
-   "meaning": "Yes means: this folder is split between NJ Distallite 2 Gram Disposables and NJ Distallite 2 Gram Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds NJ Distallite 2 Gram Disposables (older) · NJ001 (+1 more line: NJ Distallite 2 Gram Disposables (newer)) — 20 of 20 files on rows. Flavours: Gogi OG, Blueberry Cookies, Habibi, Lemonado, Strawberry Runts, Sour Watermelon Squirt +4.",
+   "meaning": "Yes means: this folder is split between NJ Distallite 2 Gram Disposables (older) and NJ Distallite 2 Gram Disposables (newer), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "8b892619-74a4-4bdd-93f5-f9f99f6889d6",
@@ -7520,7 +7526,7 @@
    "lines": [
     {
      "id": "muha:NM:nm002",
-     "name": "NM 1G Distillate Disposables",
+     "name": "NM 1G Distillate Disposables (Gen 2)",
      "line": "1G Distillate Disposables",
      "market": "NM",
      "skuBlock": "NM002",
@@ -7549,8 +7555,8 @@
     "NM_Dispo_1G_Distill_Group_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds NM 1G Distillate Disposables · NM002 — 20 of 21 files on rows, 1 on no row. Flavours: Strawberry Runtz, Watermelon OG, Jack Herer, Cali Gas OG, Blueberry Haze, Purple Punch +4.",
-   "meaning": "Yes means: every file in this folder is NM 1G Distillate Disposables and its flavours are named from the book.",
+   "proposal": "Feeds NM 1G Distillate Disposables (Gen 2) · NM002 — 20 of 21 files on rows, 1 on no row. Flavours: Strawberry Runtz, Watermelon OG, Jack Herer, Cali Gas OG, Blueberry Haze, Purple Punch +4.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Disposables (Gen 2) and its flavours are named from the book.",
    "samples": [
     {
      "id": "f8a87ff4-fd0a-4520-8398-167108a31209",
@@ -7708,7 +7714,7 @@
    "lines": [
     {
      "id": "muha:NM:nm007",
-     "name": "NM 1G Distillate Disposables",
+     "name": "NM 1G Distillate Disposables (Gen 3)",
      "line": "1G Distillate Disposables",
      "market": "NM",
      "skuBlock": "NM007",
@@ -7740,8 +7746,8 @@
     "00_NM_1G_Distillate_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds NM 1G Distillate Disposables · Gen 3 · NM007 — 36 of 41 files on rows, 5 on no row. Flavours: Purple Breath, Magic Melon OG, Strawberry Kiwi Kush, Lemonade Rose, Godfather OG, Banana Cream Cake +3.",
-   "meaning": "Yes means: every file in this folder is NM 1G Distillate Disposables and its flavours are named from the book.",
+   "proposal": "Feeds NM 1G Distillate Disposables (Gen 3) · Gen 3 · NM007 — 36 of 41 files on rows, 5 on no row. Flavours: Purple Breath, Magic Melon OG, Strawberry Kiwi Kush, Lemonade Rose, Godfather OG, Banana Cream Cake +3.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Disposables (Gen 3) and its flavours are named from the book.",
    "samples": [
     {
      "id": "b9c48c88-fd97-442e-bc2e-d9771f19367d",
@@ -7920,7 +7926,7 @@
     },
     {
      "id": "muha:NM:nm001",
-     "name": "NM 2G Distillate Disposables",
+     "name": "NM 2G Distillate Disposables (2026 design)",
      "line": "2G Distillate Disposables",
      "market": "NM",
      "skuBlock": "NM001",
@@ -7942,8 +7948,8 @@
     "00_NM_2G_Distillate_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds NM Distillate Gummy Mylar Bags · NM006 (+1 more line: NM 2G Distillate Disposables) — 40 of 41 files on rows, 1 on no row. Flavours: Blueberry Cookies, Habibi, Sour Watermelon Squirt, Galactic Diesel, Frozen Pomegranate, Strawberry Runts +4.",
-   "meaning": "Yes means: this folder is split between NM Distillate Gummy Mylar Bags and NM 2G Distillate Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds NM Distillate Gummy Mylar Bags · NM006 (+1 more line: NM 2G Distillate Disposables (2026 design)) — 40 of 41 files on rows, 1 on no row. Flavours: Blueberry Cookies, Habibi, Sour Watermelon Squirt, Galactic Diesel, Frozen Pomegranate, Strawberry Runts +4.",
+   "meaning": "Yes means: this folder is split between NM Distillate Gummy Mylar Bags and NM 2G Distillate Disposables (2026 design), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "d50a06db-b18b-4f80-a008-89feef37f381",
@@ -8097,7 +8103,7 @@
    "lines": [
     {
      "id": "muha:NY:ny004",
-     "name": "NY 2G Distillate Disposables",
+     "name": "NY 2G Distillate Disposables (Gen 3)",
      "line": "2G Distillate Disposables",
      "market": "NY",
      "skuBlock": "NY004",
@@ -8114,7 +8120,7 @@
     },
     {
      "id": "muha:NY:ny001",
-     "name": "NY 2G Distillate Disposables",
+     "name": "NY 2G Distillate Disposables (older)",
      "line": "2G Distillate Disposables",
      "market": "NY",
      "skuBlock": "NY001",
@@ -8132,8 +8138,8 @@
    },
    "unassigned": [],
    "decision": null,
-   "proposal": "Feeds NY 2G Distillate Disposables · Gen 3 · NY004 (+1 more line: NY 2G Distillate Disposables) — 24 of 24 files on rows. Flavours: Blue Slushie, Tahoe OG, Habibi, Galactic Diesel, Frozen Pomegranate, Pineapple Paradise.",
-   "meaning": "Yes means: this folder is split between NY 2G Distillate Disposables and NY 2G Distillate Disposables, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds NY 2G Distillate Disposables (Gen 3) · Gen 3 · NY004 (+1 more line: NY 2G Distillate Disposables (older)) — 24 of 24 files on rows. Flavours: Blue Slushie, Tahoe OG, Habibi, Galactic Diesel, Frozen Pomegranate, Pineapple Paradise.",
+   "meaning": "Yes means: this folder is split between NY 2G Distillate Disposables (Gen 3) and NY 2G Distillate Disposables (older), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "2a8db3cf-0a7f-48bc-b478-858ea2da80c1",
@@ -8284,7 +8290,7 @@
    "lines": [
     {
      "id": "muha:NY:ny001",
-     "name": "NY 2G Distillate Disposables",
+     "name": "NY 2G Distillate Disposables (older)",
      "line": "2G Distillate Disposables",
      "market": "NY",
      "skuBlock": "NY001",
@@ -8309,8 +8315,8 @@
     "NY_2G_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "proposal": "Feeds NY 2G Distillate Disposables · NY001 — 12 of 13 files on rows, 1 on no row. Flavours: Sour Diesel, Habibi, Grand Daddy Purp, Temptation, Fatso, Cali Gas OG.",
-   "meaning": "Yes means: every file in this folder is NY 2G Distillate Disposables and its flavours are named from the book.",
+   "proposal": "Feeds NY 2G Distillate Disposables (older) · NY001 — 12 of 13 files on rows, 1 on no row. Flavours: Sour Diesel, Habibi, Grand Daddy Purp, Temptation, Fatso, Cali Gas OG.",
+   "meaning": "Yes means: every file in this folder is NY 2G Distillate Disposables (older) and its flavours are named from the book.",
    "samples": [
     {
      "id": "aed07702-347b-47d9-86a9-3d9c7ccaea48",
@@ -11602,7 +11608,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp003",
-     "name": "HEMP 2g THCA Carts",
+     "name": "HEMP 2g THCA Carts (2026 design)",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP003",
@@ -11614,7 +11620,7 @@
     },
     {
      "id": "muha:HEMP:hemp016",
-     "name": "HEMP 2g THCA Carts",
+     "name": "HEMP 2g THCA Carts (2026 design HEMP016)",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP016",
@@ -11695,8 +11701,8 @@
     "Watermelon_Gelato_Front.png"
    ],
    "decision": null,
-   "proposal": "Feeds HEMP 2g THCA Carts · HEMP003 (+1 more line: HEMP 2g THCA Carts) — 6 of 68 files on rows, 62 on no row. Flavours: Pineapple Runtz.",
-   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts and HEMP 2g THCA Carts, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP 2g THCA Carts (2026 design) · HEMP003 (+1 more line: HEMP 2g THCA Carts (2026 design HEMP016)) — 6 of 68 files on rows, 62 on no row. Flavours: Pineapple Runtz.",
+   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts (2026 design) and HEMP 2g THCA Carts (2026 design HEMP016), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "64fc761e-5df4-4f9a-9b71-7f6db2fe8e34",
@@ -11746,7 +11752,7 @@
    "lines": [
     {
      "id": "muha:HEMP:hemp003",
-     "name": "HEMP 2g THCA Carts",
+     "name": "HEMP 2g THCA Carts (2026 design)",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP003",
@@ -11765,7 +11771,7 @@
     },
     {
      "id": "muha:HEMP:hemp016",
-     "name": "HEMP 2g THCA Carts",
+     "name": "HEMP 2g THCA Carts (2026 design HEMP016)",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP016",
@@ -11842,8 +11848,8 @@
     "Hemp_Cart_THCa_2G_FrontSolo_PineappleRunts.png"
    ],
    "decision": null,
-   "proposal": "Feeds HEMP 2g THCA Carts · HEMP003 (+3 more lines: HEMP 2g THCA Carts; HEMP Hemp Melted Diamomd 2G Cart V1) — 34 of 61 files on rows, 27 on no row. Flavours: Lemon Cherry Gelato, Watermelon Gelato, Purple Punch, Strawberry Shortcake, Paradise Punch OG, Candy Apple +2.",
-   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts and HEMP 2g THCA Carts and HEMP Hemp Melted Diamomd 2G Cart V1 and MI 2G DistiIlate Carts, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP 2g THCA Carts (2026 design) · HEMP003 (+3 more lines: HEMP 2g THCA Carts (2026 design HEMP016); HEMP Hemp Melted Diamomd 2G Cart V1) — 34 of 61 files on rows, 27 on no row. Flavours: Lemon Cherry Gelato, Watermelon Gelato, Purple Punch, Strawberry Shortcake, Paradise Punch OG, Candy Apple +2.",
+   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts (2026 design) and HEMP 2g THCA Carts (2026 design HEMP016) and HEMP Hemp Melted Diamomd 2G Cart V1 and MI 2G DistiIlate Carts, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "4f7dc36f-746b-480d-a018-acd762448058",
@@ -17834,7 +17840,7 @@
    "lines": [
     {
      "id": "muha:MI:mi017",
-     "name": "MI Hash Rosin Mates Metal Cans",
+     "name": "MI Hash Rosin Mates Metal Cans (older)",
      "line": "Hash Rosin Mates Metal Cans",
      "market": "MI",
      "skuBlock": "MI017",
@@ -17859,8 +17865,8 @@
     "MI_HR_Mates_Doses_Front_V1.png"
    ],
    "decision": null,
-   "proposal": "Feeds MI Hash Rosin Mates Metal Cans · MI017 — 12 of 13 files on rows, 1 on no row. Flavours: White Widow, Apple Gruntz, Watermelon OG, Razzle Dazzle, Doses & Mimosas, Berry Gelato.",
-   "meaning": "Yes means: every file in this folder is MI Hash Rosin Mates Metal Cans and its flavours are named from the book.",
+   "proposal": "Feeds MI Hash Rosin Mates Metal Cans (older) · MI017 — 12 of 13 files on rows, 1 on no row. Flavours: White Widow, Apple Gruntz, Watermelon OG, Razzle Dazzle, Doses & Mimosas, Berry Gelato.",
+   "meaning": "Yes means: every file in this folder is MI Hash Rosin Mates Metal Cans (older) and its flavours are named from the book.",
    "samples": [
     {
      "id": "2aea7bcc-86e2-484f-b78d-8aa388f002a1",

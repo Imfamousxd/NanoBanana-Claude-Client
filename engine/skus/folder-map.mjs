@@ -106,6 +106,42 @@ function meaningOf(folder) {
   if (folder.status) return `Yes means: this folder stays off every SKU row (${folder.status}).`;
   return `Yes means: this folder stays off every SKU row (nothing in the book matched). Pick "This is one line…" if it is a product.`;
 }
+// Same-titled lines in one state get a tag so their names differ: the book's generation when it has one,
+// otherwise what feeds them (an OLD / previous-design folder → "old design"; a Gen-N folder → "Gen N"; a dated
+// current folder → "<year> design"; V2 codes → "V2"), otherwise their order in the book ("older" / "newer").
+// Two lines with the same title and the same flavours are one line written twice in the sheet: the copy is dropped.
+export function nameLines(registry, folders) {
+  const feeding = new Map();
+  for (const f of folders) for (const l of f.lines) (feeding.get(l.id) || feeding.set(l.id, []).get(l.id)).push({ folder: f.path.split("/").pop(), status: f.status, files: l.files });
+  const groups = new Map();
+  for (const line of registry.lines) { const key = `${line.market || ""}|${String(line.line).trim().toLowerCase()}`; (groups.get(key) || groups.set(key, []).get(key)).push(line); }
+  const dropped = [];
+  for (const line of registry.lines) line.name = [line.market, line.line].filter(Boolean).join(" ");
+  for (const group of groups.values()) {
+    if (group.length < 2) continue;
+    // drop exact copies (same flavours, same codes)
+    const seen = new Map();
+    for (const line of group) { const sig = line.items.map((i) => `${i.name}|${i.sku || ""}`).sort().join(";"); if (seen.has(sig)) { dropped.push(line.id); line.duplicateOf = seen.get(sig); } else seen.set(sig, line.id); }
+    const live = group.filter((l) => !l.duplicateOf);
+    if (live.length < 2) continue;
+    const labels = live.map((line) => {
+      if (line.generation) return line.generation;
+      const feeds = feeding.get(line.id) || [];
+      const gen = feeds.map((f) => (f.folder.match(/\bgen ?(\d)\b/i) || [])[1]).find(Boolean); if (gen) return `Gen ${gen}`;
+      if (feeds.length && feeds.every((f) => f.status && /old|previous/i.test(f.status))) return "old design";
+      const year = feeds.filter((f) => !f.status).map((f) => (f.folder.match(/\b(20\d\d)\b/) || [])[1]).filter(Boolean).sort().pop(); if (year) return `${year} design`;
+      if (line.items.length && line.items.every((i) => /^V2-/i.test(i.sku || ""))) return "V2";
+      return null;
+    });
+    // fill the gaps by book order: the earlier block is the older line
+    const unlabelled = live.map((l, i) => i).filter((i) => !labels[i]);
+    if (unlabelled.length === live.length) { unlabelled.forEach((i, k) => { labels[i] = k === 0 ? "older" : k === 1 && live.length === 2 ? "newer" : `set ${k + 1}`; }); }
+    else for (const i of unlabelled) labels[i] = labels.includes("old design") ? "newer" : "older";
+    const used = new Map(); live.forEach((line, i) => { let label = labels[i]; if (used.has(label)) label = `${label} ${line.skuBlock || used.get(label) + 1}`; used.set(labels[i], (used.get(labels[i]) || 0) + 1); line.variant = label; line.name = `${[line.market, line.line].filter(Boolean).join(" ")} (${label})`; });
+  }
+  registry.lines = registry.lines.filter((l) => !l.duplicateOf);
+  return { dropped };
+}
 export async function buildFolderMap(root, { brand = "muha", libraryFile, page, decisions }) {
   const registryFile = path.join(root, "knowledge", "skus", `${REGISTRY_FILE[brand] || brand}.json`);
   const registry = JSON.parse(fs.readFileSync(registryFile, "utf8"));
@@ -155,11 +191,15 @@ export async function buildFolderMap(root, { brand = "muha", libraryFile, page, 
     folder.meaning = meaningOf(folder);
     return folder;
   }).sort((a, b) => a.path.localeCompare(b.path));
-  const map = { brand, builtAt: new Date().toISOString(), scope: brand === "muha" ? "Renders/ only" : "all", folders: folders.map(({ samples, outliers, ...rest }) => ({ ...rest, samples: samples.map((s) => ({ id: s.id, path: s.path })), outliers: outliers.map((o) => ({ id: o.id, path: o.path, why: o.why })) })) };
+  const naming = nameLines(registry, folders);
+  for (const f of folders) for (const l of f.lines) { const reg = linesById.get(l.id); if (reg) l.name = reg.name; }
+  for (const f of folders) { f.proposal = proposalOf(f); f.meaning = meaningOf(f); }
+  fs.writeFileSync(registryFile, JSON.stringify(registry, null, 1) + "\n");
+  const map = { brand, builtAt: new Date().toISOString(), scope: brand === "muha" ? "Renders/ only" : "all", naming, folders: folders.map(({ samples, outliers, ...rest }) => ({ ...rest, samples: samples.map((s) => ({ id: s.id, path: s.path })), outliers: outliers.map((o) => ({ id: o.id, path: o.path, why: o.why })) })) };
   fs.writeFileSync(mapFile, JSON.stringify(map, null, 1) + "\n");
   let pageFile = null;
   if (page) { fs.writeFileSync(page, await buildReviewPage(root, { ...map, folders }, registry)); pageFile = page; }
-  return { file: path.relative(root, mapFile), folders: folders.length, files: library.length, decided: folders.filter((f) => f.decision).length, onRows: folders.filter((f) => f.lines.length).length, page: pageFile };
+  return { file: path.relative(root, mapFile), folders: folders.length, files: library.length, decided: folders.filter((f) => f.decision).length, onRows: folders.filter((f) => f.lines.length).length, renamed: registry.lines.filter((l) => l.variant).map((l) => l.name), droppedDuplicates: naming.dropped, page: pageFile };
 }
 
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));

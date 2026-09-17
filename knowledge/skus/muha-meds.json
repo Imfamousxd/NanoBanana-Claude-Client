@@ -315,7 +315,7 @@
    "source": "Official Hemp SKU Book - Active Sku's.csv",
    "section": "CARTRIDGE",
    "line": "2g THCA Carts",
-   "name": "HEMP 2g THCA Carts",
+   "name": "HEMP 2g THCA Carts (2026 design)",
    "generation": null,
    "skuBlock": "HEMP003",
    "category": "cartridges",
@@ -559,7 +559,8 @@
      "canonicalLine": "2g THCA Carts"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "2026 design"
   },
   {
    "id": "muha:HEMP:hemp004",
@@ -3336,7 +3337,7 @@
    "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
    "section": null,
    "line": "2g THCA Carts",
-   "name": "HEMP 2g THCA Carts",
+   "name": "HEMP 2g THCA Carts (2026 design HEMP016)",
    "generation": null,
    "skuBlock": "HEMP016",
    "category": "cartridges",
@@ -3579,7 +3580,8 @@
      "canonicalLine": "2g THCA Carts"
     }
    ],
-   "upcoming": true
+   "upcoming": true,
+   "variant": "2026 design HEMP016"
   },
   {
    "id": "muha:HEMP:hhc-carts",
@@ -15059,7 +15061,7 @@
    "source": "Official MM SKU Book - MI THC.csv",
    "section": null,
    "line": "2G Disposable Flavors",
-   "name": "MI 2G Disposable Flavors",
+   "name": "MI 2G Disposable Flavors (older)",
    "generation": null,
    "skuBlock": "MI029",
    "category": "disposables",
@@ -15319,7 +15321,8 @@
      "canonicalLine": "2G Disposable Flavors"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "older"
   },
   {
    "id": "muha:MI:mi030",
@@ -16224,7 +16227,7 @@
    "source": "Official MM SKU Book - MI THC.csv",
    "section": null,
    "line": "2G Disposable Flavors",
-   "name": "MI 2G Disposable Flavors",
+   "name": "MI 2G Disposable Flavors (newer)",
    "generation": null,
    "skuBlock": null,
    "category": "disposables",
@@ -16441,7 +16444,8 @@
      "canonicalLine": "2G Disposable Flavors"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "newer"
   },
   {
    "id": "muha:MI:mi009",
@@ -17155,7 +17159,7 @@
    "source": "Official MM SKU Book - MI THC.csv",
    "section": null,
    "line": "Hash Rosin Mates Metal Cans",
-   "name": "MI Hash Rosin Mates Metal Cans",
+   "name": "MI Hash Rosin Mates Metal Cans (older)",
    "generation": null,
    "skuBlock": "MI017",
    "category": "pre-rolls",
@@ -17344,7 +17348,8 @@
      "canonicalLine": "Hash Rosin Mates Metal Cans"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "older"
   },
   {
    "id": "muha:MI:muha-donut-holes-0-6g-5-pack-blue-",
@@ -17513,7 +17518,7 @@
    "source": "Official MM SKU Book - MI THC.csv",
    "section": null,
    "line": "Hash Rosin Mates Metal Cans",
-   "name": "MI Hash Rosin Mates Metal Cans",
+   "name": "MI Hash Rosin Mates Metal Cans (newer)",
    "generation": null,
    "skuBlock": null,
    "category": "pre-rolls",
@@ -17676,7 +17681,8 @@
      "canonicalLine": "Hash Rosin Mates Metal Cans"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "newer"
   },
   {
    "id": "muha:MI:mi012",
@@ -20897,7 +20903,7 @@
    "source": "Official MM SKU Book - NJ THC.csv",
    "section": "Disposables",
    "line": "Distallite 2 Gram Disposables",
-   "name": "NJ Distallite 2 Gram Disposables",
+   "name": "NJ Distallite 2 Gram Disposables (older)",
    "generation": null,
    "skuBlock": "NJ001",
    "category": "disposables",
@@ -21188,7 +21194,8 @@
      "canonicalLine": "Distallite 2 Gram Disposables"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "older"
   },
   {
    "id": "muha:NJ:nj002",
@@ -21478,7 +21485,7 @@
    "source": "Official MM SKU Book - NJ THC.csv",
    "section": "DISPOSABLES",
    "line": "Distallite 2 Gram Disposables",
-   "name": "NJ Distallite 2 Gram Disposables",
+   "name": "NJ Distallite 2 Gram Disposables (newer)",
    "generation": null,
    "skuBlock": null,
    "category": "disposables",
@@ -21645,7 +21652,8 @@
      "canonicalLine": "Distallite 2 Gram Disposables"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "newer"
   },
   {
    "id": "muha:NJ:nj003",
@@ -22121,7 +22129,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": "Disposables",
    "line": "2G Distillate Disposables",
-   "name": "NM 2G Distillate Disposables",
+   "name": "NM 2G Distillate Disposables (2026 design)",
    "generation": null,
    "skuBlock": "NM001",
    "category": "disposables",
@@ -22412,7 +22420,8 @@
      "canonicalLine": "2G Distillate Disposables"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "2026 design"
   },
   {
    "id": "muha:NM:nm002",
@@ -22421,7 +22430,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": null,
    "line": "1G Distillate Disposables",
-   "name": "NM 1G Distillate Disposables",
+   "name": "NM 1G Distillate Disposables (Gen 2)",
    "generation": null,
    "skuBlock": "NM002",
    "category": "disposables",
@@ -22712,7 +22721,8 @@
      "canonicalLine": "1G Distillate Disposables"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "Gen 2"
   },
   {
    "id": "muha:NM:nm003",
@@ -22721,7 +22731,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": "VAPE LINE - Cartridges",
    "line": "1G Distillate Carts",
-   "name": "NM 1G Distillate Carts",
+   "name": "NM 1G Distillate Carts (old design)",
    "generation": null,
    "skuBlock": "NM003",
    "category": "cartridges",
@@ -22993,7 +23003,8 @@
      "canonicalLine": "1G Distillate Carts"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "old design"
   },
   {
    "id": "muha:NM:nm006",
@@ -23002,7 +23013,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": "FLAVORS",
    "line": "2G Distillate Disposables",
-   "name": "NM 2G Distillate Disposables",
+   "name": "NM 2G Distillate Disposables (Gen 3)",
    "generation": "Gen 3",
    "skuBlock": "NM006",
    "category": "disposables",
@@ -23252,7 +23263,8 @@
      "canonicalLine": "2G Distillate Disposables"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "Gen 3"
   },
   {
    "id": "muha:NM:nm007",
@@ -23261,7 +23273,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": null,
    "line": "1G Distillate Disposables",
-   "name": "NM 1G Distillate Disposables",
+   "name": "NM 1G Distillate Disposables (Gen 3)",
    "generation": "Gen 3",
    "skuBlock": "NM007",
    "category": "disposables",
@@ -23511,7 +23523,8 @@
      "canonicalLine": "1G Distillate Disposables"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "Gen 3"
   },
   {
    "id": "muha:NM:nm008",
@@ -23798,7 +23811,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": "VAPE LINE - Cartridges",
    "line": "1G Distillate Carts",
-   "name": "NM 1G Distillate Carts",
+   "name": "NM 1G Distillate Carts (2026 design)",
    "generation": null,
    "skuBlock": "NM010",
    "category": "cartridges",
@@ -24048,7 +24061,8 @@
      "canonicalLine": "1G Distillate Carts"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "2026 design"
   },
   {
    "id": "muha:NM:nm005",
@@ -24506,7 +24520,7 @@
    "source": "Official MM SKU Book - NY THC.csv",
    "section": "Disposables",
    "line": "2G Distillate Disposables",
-   "name": "NY 2G Distillate Disposables",
+   "name": "NY 2G Distillate Disposables (older)",
    "generation": null,
    "skuBlock": "NY001",
    "category": "disposables",
@@ -24685,7 +24699,8 @@
      "canonicalLine": "2G Distillate Disposables"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "older"
   },
   {
    "id": "muha:NY:ny002",
@@ -24871,7 +24886,7 @@
    "source": "Official MM SKU Book - NY THC.csv",
    "section": "FLAVORS",
    "line": "2G Distillate Disposables",
-   "name": "NY 2G Distillate Disposables",
+   "name": "NY 2G Distillate Disposables (Gen 3)",
    "generation": "Gen 3",
    "skuBlock": "NY004",
    "category": "disposables",
@@ -25025,7 +25040,8 @@
      "canonicalLine": "2G Distillate Disposables"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "Gen 3"
   },
   {
    "id": "muha:NY:ny005",
@@ -25975,7 +25991,7 @@
    "source": "Official MM SKU Book - OH THC.csv",
    "section": null,
    "line": "2G Distillate Disposables",
-   "name": "OH 2G Distillate Disposables",
+   "name": "OH 2G Distillate Disposables (older)",
    "generation": null,
    "skuBlock": null,
    "category": "disposables",
@@ -26193,7 +26209,8 @@
      "canonicalLine": "2G Distillate Disposables"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "older"
   },
   {
    "id": "muha:OH:ca006",
@@ -26483,7 +26500,7 @@
    "source": "Official MM SKU Book - OH THC.csv",
    "section": "Disposables",
    "line": "2G Distillate Disposables",
-   "name": "OH 2G Distillate Disposables",
+   "name": "OH 2G Distillate Disposables (newer)",
    "generation": null,
    "skuBlock": null,
    "category": "disposables",
@@ -26770,7 +26787,8 @@
      "canonicalLine": "2G Distillate Disposables"
     }
    ],
-   "upcoming": false
+   "upcoming": false,
+   "variant": "newer"
   },
   {
    "id": "muha:OH:1g-distillate-carts",
@@ -26778,283 +26796,6 @@
    "market": "OH",
    "source": "Official MM SKU Book - OH THC.csv",
    "section": "VAPE CARTRIDGE LINE",
-   "line": "1G Distillate Carts",
-   "name": "OH 1G Distillate Carts",
-   "generation": null,
-   "skuBlock": null,
-   "category": "cartridges",
-   "format": "1g",
-   "items": [
-    {
-     "name": "Strawberry Kiwi Kush",
-     "skuBarcode": "784847465320",
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847464828",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "hardware": "OH-1.68G-CART-HW-1",
-      "packaging": "OH-1.68G-CART-PKG-1-SKK",
-      "displayBox": "CART-DISP-1-SKK"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1G Distillate Carts"
-    },
-    {
-     "name": "Bubblegum Burst",
-     "skuBarcode": "784847465337",
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847464835",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-BB",
-      "displayBox": "CART-DISP-1-BGB"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1G Distillate Carts"
-    },
-    {
-     "name": "Cherry Grapefruit",
-     "skuBarcode": "784847465344",
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847464842",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-2-CG",
-      "displayBox": "CART-DISP-1-CGF"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1G Distillate Carts"
-    },
-    {
-     "name": "Banana Cream Cake",
-     "skuBarcode": "784847465351",
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847464859",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-BCC",
-      "displayBox": "CART-DISP-1-BCC"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1G Distillate Carts"
-    },
-    {
-     "name": "Pineapple Paradise",
-     "skuBarcode": "784847465368",
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847464866",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-PP",
-      "displayBox": "CART-DISP-1-PAP"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1G Distillate Carts"
-    },
-    {
-     "name": "Godfather OG",
-     "skuBarcode": "784847465375",
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847464873",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-GFOG",
-      "displayBox": "CART-DISP-1-GFOG"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1G Distillate Carts"
-    },
-    {
-     "name": "Bahama Berry",
-     "skuBarcode": "784847465382",
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847464880",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-BB",
-      "displayBox": "CART-DISP-1-BHB"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1G Distillate Carts"
-    },
-    {
-     "name": "Green Crack",
-     "skuBarcode": "784847465399",
-     "strain": "Sativa",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847464897",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-GC",
-      "displayBox": "CART-DISP-1-GRC"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1G Distillate Carts"
-    },
-    {
-     "name": "Blue Slushie",
-     "skuBarcode": "784847465405",
-     "strain": "Hybrid",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847464903",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-BS",
-      "displayBox": "CART-DISP-1-BS"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1G Distillate Carts"
-    },
-    {
-     "name": "Purple Passion Punch",
-     "skuBarcode": "784847465412",
-     "strain": "Indica",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [
-      {
-       "size": null,
-       "kind": "display",
-       "barcode": "784847464910",
-       "header": "DISPLAY BOX SKU BAR"
-      }
-     ],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {
-      "packaging": "OH-1.68G-CART-PKG-1-PPP",
-      "displayBox": "CART-DISP-1-PRPP"
-     },
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "1G Distillate Carts"
-    }
-   ],
-   "upcoming": false
-  },
-  {
-   "id": "muha:OH:1g-distillate-carts",
-   "brand": "muha",
-   "market": "OH",
-   "source": "Official MM SKU Book - OH THC.csv",
-   "section": "THCA MATES LINE",
    "line": "1G Distillate Carts",
    "name": "OH 1G Distillate Carts",
    "generation": null,
@@ -27990,104 +27731,6 @@
    "market": "OH",
    "source": "Official MM SKU Book - OH THC.csv",
    "section": "Edibles Line",
-   "line": "THC 440 mg gummies, 44mg per gummy, tin can",
-   "name": "OH THC 440 mg gummies, 44mg per gummy, tin can",
-   "generation": null,
-   "skuBlock": "OH002",
-   "category": "edibles",
-   "format": "440mg",
-   "items": [
-    {
-     "name": "Mango Madness",
-     "skuBarcode": "741654777428",
-     "strain": "Hybrid",
-     "sku": "OH041",
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {
-      "packaging": "https://www.dropbox.com/scl/fo/2sr1ltm16ihr6gi4az2p7/AOhgqcm3CGtWmjVzNnPIG7c?rlkey=jwnqlpo7i4svxnjnokdabheja&st=h70zzrlx&dl=0"
-     },
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "THC 440 mg gummies, 44mg per gummy, tin can"
-    },
-    {
-     "name": "Strawberry",
-     "skuBarcode": "741654777435",
-     "strain": "Sativa",
-     "sku": "OH042",
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "THC 440 mg gummies, 44mg per gummy, tin can"
-    },
-    {
-     "name": "Green Apple",
-     "skuBarcode": "741654777442",
-     "strain": "Indica",
-     "sku": "OH043",
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "THC 440 mg gummies, 44mg per gummy, tin can"
-    },
-    {
-     "name": "Mango Chamoy",
-     "skuBarcode": "741654777459",
-     "strain": "Indica",
-     "sku": "OH044",
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "THC 440 mg gummies, 44mg per gummy, tin can"
-    },
-    {
-     "name": "Raspberry Pineapple",
-     "skuBarcode": "741654777466",
-     "strain": "Hybrid",
-     "sku": "OH045",
-     "discontinued": false,
-     "inDevelopment": false,
-     "packs": [],
-     "productFamily": null,
-     "packSize": null,
-     "codes": {},
-     "links": {},
-     "quote": null,
-     "notes": null,
-     "canonicalLine": "THC 440 mg gummies, 44mg per gummy, tin can"
-    }
-   ],
-   "upcoming": false
-  },
-  {
-   "id": "muha:OH:oh002",
-   "brand": "muha",
-   "market": "OH",
-   "source": "Official MM SKU Book - OH THC.csv",
-   "section": null,
    "line": "THC 440 mg gummies, 44mg per gummy, tin can",
    "name": "OH THC 440 mg gummies, 44mg per gummy, tin can",
    "generation": null,

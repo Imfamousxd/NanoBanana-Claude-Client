@@ -2,9 +2,9 @@
  "brand": "muha",
  "computedAt": "2026-09-17",
  "totals": {
-  "lines": 148,
-  "items": 1165,
-  "covered": 653,
+  "lines": 146,
+  "items": 1150,
+  "covered": 651,
   "assets": 5308,
   "matchedAssets": 2730,
   "unmatchedAssets": 2578,
@@ -338,7 +338,7 @@
   },
   {
    "id": "muha:HEMP:hemp003",
-   "name": "HEMP 2g THCA Carts",
+   "name": "HEMP 2g THCA Carts (2026 design)",
    "market": "HEMP",
    "category": "cartridges",
    "format": "2g",
@@ -5605,7 +5605,7 @@
   },
   {
    "id": "muha:HEMP:hemp016",
-   "name": "HEMP 2g THCA Carts",
+   "name": "HEMP 2g THCA Carts (2026 design HEMP016)",
    "market": "HEMP",
    "category": "cartridges",
    "format": "2g",
@@ -21484,7 +21484,7 @@
   },
   {
    "id": "muha:MI:mi029",
-   "name": "MI 2G Disposable Flavors",
+   "name": "MI 2G Disposable Flavors (older)",
    "market": "MI",
    "category": "disposables",
    "format": "2g",
@@ -23789,7 +23789,7 @@
   },
   {
    "id": "muha:MI:2g-disposable-flavors",
-   "name": "MI 2G Disposable Flavors",
+   "name": "MI 2G Disposable Flavors (newer)",
    "market": "MI",
    "category": "disposables",
    "format": "2g",
@@ -25082,7 +25082,7 @@
   },
   {
    "id": "muha:MI:mi017",
-   "name": "MI Hash Rosin Mates Metal Cans",
+   "name": "MI Hash Rosin Mates Metal Cans (older)",
    "market": "MI",
    "category": "pre-rolls",
    "format": null,
@@ -25494,7 +25494,7 @@
   },
   {
    "id": "muha:MI:hash-rosin-mates-metal-cans",
-   "name": "MI Hash Rosin Mates Metal Cans",
+   "name": "MI Hash Rosin Mates Metal Cans (newer)",
    "market": "MI",
    "category": "pre-rolls",
    "format": null,
@@ -30587,7 +30587,7 @@
   },
   {
    "id": "muha:NJ:nj001",
-   "name": "NJ Distallite 2 Gram Disposables",
+   "name": "NJ Distallite 2 Gram Disposables (older)",
    "market": "NJ",
    "category": "disposables",
    "format": "2g",
@@ -31362,7 +31362,7 @@
   },
   {
    "id": "muha:NJ:distallite-2-gram-disposables",
-   "name": "NJ Distallite 2 Gram Disposables",
+   "name": "NJ Distallite 2 Gram Disposables (newer)",
    "market": "NJ",
    "category": "disposables",
    "format": "2g",
@@ -31861,7 +31861,7 @@
   },
   {
    "id": "muha:NM:nm001",
-   "name": "NM 2G Distillate Disposables",
+   "name": "NM 2G Distillate Disposables (2026 design)",
    "market": "NM",
    "category": "disposables",
    "format": "2g",
@@ -32125,7 +32125,7 @@
   },
   {
    "id": "muha:NM:nm002",
-   "name": "NM 1G Distillate Disposables",
+   "name": "NM 1G Distillate Disposables (Gen 2)",
    "market": "NM",
    "category": "disposables",
    "format": "1g",
@@ -32512,7 +32512,7 @@
   },
   {
    "id": "muha:NM:nm003",
-   "name": "NM 1G Distillate Carts",
+   "name": "NM 1G Distillate Carts (old design)",
    "market": "NM",
    "category": "cartridges",
    "format": "1g",
@@ -32899,7 +32899,7 @@
   },
   {
    "id": "muha:NM:nm006",
-   "name": "NM 2G Distillate Disposables",
+   "name": "NM 2G Distillate Disposables (Gen 3)",
    "market": "NM",
    "category": "disposables",
    "format": "2g",
@@ -33386,7 +33386,7 @@
   },
   {
    "id": "muha:NM:nm007",
-   "name": "NM 1G Distillate Disposables",
+   "name": "NM 1G Distillate Disposables (Gen 3)",
    "market": "NM",
    "category": "disposables",
    "format": "1g",
@@ -34347,7 +34347,7 @@
   },
   {
    "id": "muha:NM:nm010",
-   "name": "NM 1G Distillate Carts",
+   "name": "NM 1G Distillate Carts (2026 design)",
    "market": "NM",
    "category": "cartridges",
    "format": "1g",
@@ -35493,7 +35493,7 @@
   },
   {
    "id": "muha:NY:ny001",
-   "name": "NY 2G Distillate Disposables",
+   "name": "NY 2G Distillate Disposables (older)",
    "market": "NY",
    "category": "disposables",
    "format": "2g",
@@ -36037,7 +36037,7 @@
   },
   {
    "id": "muha:NY:ny004",
-   "name": "NY 2G Distillate Disposables",
+   "name": "NY 2G Distillate Disposables (Gen 3)",
    "market": "NY",
    "category": "disposables",
    "format": "2g",
@@ -37815,7 +37815,7 @@
   },
   {
    "id": "muha:OH:2g-distillate-disposables",
-   "name": "OH 2G Distillate Disposables",
+   "name": "OH 2G Distillate Disposables (older)",
    "market": "OH",
    "category": "disposables",
    "format": "2g",
@@ -38173,7 +38173,7 @@
   },
   {
    "id": "muha:OH:2g-distillate-disposables",
-   "name": "OH 2G Distillate Disposables",
+   "name": "OH 2G Distillate Disposables (newer)",
    "market": "OH",
    "category": "disposables",
    "format": "2g",
@@ -38325,174 +38325,6 @@
     },
     {
      "name": "Bubble Gum",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    }
-   ]
-  },
-  {
-   "id": "muha:OH:1g-distillate-carts",
-   "name": "OH 1G Distillate Carts",
-   "market": "OH",
-   "category": "cartridges",
-   "format": "1g",
-   "line": "1G Distillate Carts",
-   "generation": null,
-   "skuBlock": null,
-   "source": "Official MM SKU Book - OH THC.csv",
-   "items": 10,
-   "covered": 0,
-   "coveragePct": 0,
-   "missing": [
-    "Strawberry Kiwi Kush",
-    "Bubblegum Burst",
-    "Cherry Grapefruit",
-    "Banana Cream Cake",
-    "Pineapple Paradise",
-    "Godfather OG",
-    "Bahama Berry",
-    "Green Crack",
-    "Blue Slushie",
-    "Purple Passion Punch"
-   ],
-   "itemsDetail": [
-    {
-     "name": "Strawberry Kiwi Kush",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Bubblegum Burst",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Cherry Grapefruit",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Banana Cream Cake",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Pineapple Paradise",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Godfather OG",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Bahama Berry",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Green Crack",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Blue Slushie",
-     "sku": null,
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Purple Passion Punch",
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
@@ -39344,144 +39176,6 @@
      "hasAlpha": false,
      "top": [],
      "folders": []
-    }
-   ]
-  },
-  {
-   "id": "muha:OH:oh002",
-   "name": "OH THC 440 mg gummies, 44mg per gummy, tin can",
-   "market": "OH",
-   "category": "edibles",
-   "format": "440mg",
-   "line": "THC 440 mg gummies, 44mg per gummy, tin can",
-   "generation": null,
-   "skuBlock": "OH002",
-   "source": "Official MM SKU Book - OH THC.csv",
-   "items": 5,
-   "covered": 2,
-   "coveragePct": 40,
-   "missing": [
-    "Mango Madness",
-    "Green Apple",
-    "Mango Chamoy"
-   ],
-   "itemsDetail": [
-    {
-     "name": "Mango Madness",
-     "sku": "OH041",
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Strawberry",
-     "sku": "OH042",
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "f227eaaf-776f-403e-b8aa-c99938caeba7",
-       "score": 5,
-       "path": "Renders/Edibles/Metal Cans/MockUp/10CT/GummiesTin_Mockup_V3.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "top",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/93b01e472d1cea24.jpg"
-      },
-      {
-       "id": "e89a0e44-cefb-4f69-9358-5deb77d4b016",
-       "score": 5,
-       "path": "Renders/Edibles/Metal Cans/MockUp/10CT/GummiesTin_Mockup_V2.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/de2f4e54afad4f2f.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Edibles/Metal Cans/MockUp/10CT"
-     ]
-    },
-    {
-     "name": "Green Apple",
-     "sku": "OH043",
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Mango Chamoy",
-     "sku": "OH044",
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 0,
-     "compositions": {},
-     "hasDeviceOnly": false,
-     "hasPackaging": false,
-     "hasDisplay": false,
-     "hasAlpha": false,
-     "top": [],
-     "folders": []
-    },
-    {
-     "name": "Raspberry Pineapple",
-     "sku": "OH045",
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 2,
-     "compositions": {
-      "device-with-packaging": 1,
-      "packaging-only": 1
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": false,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "d6e13742-5348-4e7b-b39f-3de87d7cdf0d",
-       "score": 5,
-       "path": "Renders/Edibles/Metal Cans/MockUp/4CT/GummiesTin_4CT_V2.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "top",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f907439702142775.jpg"
-      },
-      {
-       "id": "ceacb048-d6a4-4c20-bfe5-3ed0a9362358",
-       "score": 5,
-       "path": "Renders/Edibles/Metal Cans/MockUp/4CT/GummiesTin_4CT_V1.png",
-       "previous": null,
-       "composition": "packaging-only",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/04d6441fd08cc489.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Edibles/Metal Cans/MockUp/4CT"
-     ]
     }
    ]
   },
