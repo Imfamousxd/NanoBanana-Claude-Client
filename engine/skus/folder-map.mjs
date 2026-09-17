@@ -30,6 +30,52 @@ function readDecisions(file) {
   return out;
 }
 
+// Whole-folder checks. Four sample pictures do not prove the other files, so every file is compared with its
+// folder two ways: (1) the label words the vision model read on it (strength, device, size, packaging) against
+// what most of the folder says; (2) how far its visual embedding sits from the folder's visual centre. Files
+// that disagree are listed on the row as "look different", with the reason.
+const FAMILIES = {
+  strength: [["live resin", /live ?resin/], ["melted diamond", /melted ?diamond/], ["hash rosin", /hash ?rosin/], ["distillate", /distillate/], ["THC-A", /thc-?a\b/]],
+  device: [["pod battery kit", /battery kit|combo kit/], ["vape pod", /vape pod/], ["cart", /\bcart(ridge)?s?\b/], ["disposable", /disposable|all[- ]?in[- ]?one/], ["pre-roll", /pre-?roll|\bjoint/], ["gummies", /gumm/], ["flower", /\bflower\b/]],
+  size: [["0.5g", /\b0?\.5 ?g\b|\b500 ?mg\b/], ["1g", /\b1 ?g(ram)?\b|\b1000 ?mg\b/], ["2g", /\b2 ?g(rams)?\b|\b2000 ?mg\b/], ["3.5g", /3\.5 ?g|3500 ?mg/]],
+  packaging: [["metal can", /metal can|\btin\b/], ["mylar", /mylar/], ["jar", /\bjar/]],
+};
+function labelSignature(asset, flavourNames) {
+  let t = `${(asset.text || []).join(" ")} ${asset.product || ""} ${asset.title || ""}`.toLowerCase();
+  for (const name of flavourNames) t = t.split(name).join(" ");
+  return Object.fromEntries(Object.entries(FAMILIES).map(([family, values]) => [family, new Set(values.filter(([, re]) => re.test(t)).map(([k]) => k))]));
+}
+function labelConflicts(assets, flavourNames) {
+  const sigs = new Map(assets.map((a) => [a.id, labelSignature(a, flavourNames)]));
+  const out = new Map();
+  if (assets.length < 4) return out;
+  for (const family of Object.keys(FAMILIES)) {
+    const count = new Map(); for (const sig of sigs.values()) for (const v of sig[family]) count.set(v, (count.get(v) || 0) + 1);
+    const majority = [...count.entries()].filter(([, n]) => n >= 0.6 * assets.length).map(([v]) => v);
+    if (majority.length !== 1) continue;
+    for (const a of assets) { const have = sigs.get(a.id)[family]; const other = [...have].filter((v) => v !== majority[0]); if (other.length && !have.has(majority[0])) out.set(a.id, `${family}: reads "${other.join(", ")}", the folder is "${majority[0]}"`); }
+  }
+  return out;
+}
+async function visualDistances(root, library, folderOf) {
+  try {
+    const { loadEnv } = await import("../core/env.mjs"); const { DamDb } = await import("../dam/db.mjs"); const { damConfig } = await import("../dam/config.mjs");
+    loadEnv(root); const db = new DamDb(damConfig(root).databaseUrl);
+    const entries = library.map((a) => [a.id, folderOf.get(a.id)]).sort((a, b) => a[1].localeCompare(b[1]));
+    const out = new Map();
+    let start = 0;
+    while (start < entries.length) {
+      // Chunks of about 2,000 files, extended to the end of the folder they stop in (a centroid needs the whole folder).
+      let end = Math.min(entries.length, start + 2000); while (end < entries.length && entries[end][1] === entries[end - 1][1]) end += 1;
+      const chunk = entries.slice(start, end);
+      const values = chunk.map((e, k) => `($${k * 2 + 1}::uuid,$${k * 2 + 2})`).join(","); const params = chunk.flat();
+      const sql = `with m(id,folder) as (values ${values}), c as (select m.folder, avg(a.embedding_visual) as centroid, count(*) n from dam.assets a join m on m.id=a.id where a.embedding_visual is not null group by m.folder) select a.id, c.n, (a.embedding_visual <=> c.centroid) as dist from dam.assets a join m on m.id=a.id join c on c.folder=m.folder where a.embedding_visual is not null`;
+      for (const row of (await db.query(sql, params)).rows) out.set(row.id, { n: Number(row.n), dist: Number(row.dist) });
+      start = end;
+    }
+    await db.end(); return out;
+  } catch (error) { console.error("visual check skipped:", error.message); return new Map(); }
+}
 function statusOf(asset) {
   if (quarantined(asset)) return "folder marked WRONG";
   const iteration = deviceIterationOf(asset); if (iteration) return `older device: ${iteration}`;
@@ -66,6 +112,9 @@ export async function buildFolderMap(root, { brand = "muha", libraryFile, page, 
   indexFolderMap({ folders: [...known.entries()].map(([fp, decision]) => ({ path: fp, decision })) });
   const coverage = computeCoverage(registry, library);
   const linesById = new Map(registry.lines.map((line) => [line.id, line]));
+  const folderOf = new Map(library.map((a) => [a.id, folderPathOf(a)]));
+  const visual = await visualDistances(root, library, folderOf);
+  const flavourNames = [...new Set(registry.lines.flatMap((l) => l.items.map((i) => i.name.toLowerCase())).filter((n) => n.length >= 5))].sort((a, b) => b.length - a.length);
   const groups = new Map();
   for (const asset of library) {
     const fp = folderPathOf(asset);
@@ -77,16 +126,26 @@ export async function buildFolderMap(root, { brand = "muha", libraryFile, page, 
     const status = statusOf(asset); if (status) g.statuses.set(status, (g.statuses.get(status) || 0) + 1);
     const comp = compositionLabel(asset.composition, fp.split("/")[1] || ""); g.compositions.set(comp, (g.compositions.get(comp) || 0) + 1);
     if (g.samples.length < 4 && asset.thumb) g.samples.push({ id: asset.id, path: asset.path, thumb: asset.thumb, source_id: asset.source_id, composition: comp });
+    (g.assets ||= []).push(asset);
     groups.set(fp, g);
+  }
+  for (const g of groups.values()) {
+    const conflicts = labelConflicts(g.assets, flavourNames);
+    const dists = g.assets.map((a) => visual.get(a.id)?.dist).filter((d) => d !== undefined).sort((a, b) => a - b);
+    const median = dists.length ? dists[Math.floor(dists.length / 2)] : null;
+    const cut = median === null ? null : Math.max(0.09, median + 0.05);
+    g.outliers = g.assets.map((a) => { const v = visual.get(a.id); const why = []; if (conflicts.has(a.id)) why.push(conflicts.get(a.id)); if (v && cut !== null && g.assets.length >= 4 && v.dist > cut) why.push(`looks different from the rest (distance ${v.dist.toFixed(2)}, folder typical ${median.toFixed(2)})`); return why.length ? { id: a.id, path: a.path, thumb: a.thumb, source_id: a.source_id, composition: compositionLabel(a.composition, g.path.split("/")[1] || ""), why: why.join("; ") } : null; }).filter(Boolean).slice(0, 8);
+    g.checked = { files: g.assets.length, visual: dists.length, labels: g.assets.length >= 4 };
+    delete g.assets;
   }
   const top = (m) => [...m.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] || null;
   const folders = [...groups.values()].map((g) => {
     const lines = [...g.lines.entries()].map(([id, e]) => { const l = linesById.get(id) || {}; return { id, line: l.line || id, market: l.market || null, skuBlock: l.skuBlock || null, generation: l.generation || null, files: e.files, flavours: [...e.items] }; }).sort((a, b) => b.files - a.files);
-    const folder = { id: g.id, path: g.path, files: g.files, assigned: g.assigned, market: top(g.markets), status: top(g.statuses), compositions: Object.fromEntries(g.compositions), lines, samples: g.samples, decision: known.get(g.path) || null };
+    const folder = { id: g.id, path: g.path, files: g.files, assigned: g.assigned, market: top(g.markets), status: top(g.statuses), compositions: Object.fromEntries(g.compositions), lines, samples: g.samples, outliers: g.outliers || [], checked: g.checked, decision: known.get(g.path) || null };
     folder.proposal = proposalOf(folder);
     return folder;
   }).sort((a, b) => a.path.localeCompare(b.path));
-  const map = { brand, builtAt: new Date().toISOString(), scope: brand === "muha" ? "Renders/ only" : "all", folders: folders.map(({ samples, ...rest }) => ({ ...rest, samples: samples.map((s) => ({ id: s.id, path: s.path })) })) };
+  const map = { brand, builtAt: new Date().toISOString(), scope: brand === "muha" ? "Renders/ only" : "all", folders: folders.map(({ samples, outliers, ...rest }) => ({ ...rest, samples: samples.map((s) => ({ id: s.id, path: s.path })), outliers: outliers.map((o) => ({ id: o.id, path: o.path, why: o.why })) })) };
   fs.writeFileSync(mapFile, JSON.stringify(map, null, 1) + "\n");
   let pageFile = null;
   if (page) { fs.writeFileSync(page, await buildReviewPage(root, { ...map, folders }, registry)); pageFile = page; }
@@ -118,7 +177,7 @@ export async function buildReviewPage(root, map, registry) {
   const folderLink = (folder) => { const r = roots[sourceOf(folder)]; return r ? "https://www.dropbox.com/home" + (r + "/" + folder.path).split("/").map(encodeURIComponent).join("/") : null; };
   const fileLink = (folder, sample) => { const r = roots[sample.source_id]; if (!r) return null; const full = r + "/" + sample.path; const dir = full.slice(0, full.lastIndexOf("/")); const name = full.slice(full.lastIndexOf("/") + 1); return "https://www.dropbox.com/home" + dir.split("/").map(encodeURIComponent).join("/") + "?preview=" + encodeURIComponent(name); };
   const thumbs = {};
-  let i = 0; const all = map.folders.flatMap((f) => f.samples);
+  let i = 0; const all = map.folders.flatMap((f) => [...f.samples, ...f.outliers.filter((o) => o.thumb)]);
   await Promise.all(Array.from({ length: 8 }, async () => { while (i < all.length) { const s = all[i++]; const uri = await thumbData(root, s, cacheDir); if (uri) thumbs[s.id] = uri; } }));
   const lines = registry.lines.map((l) => ({ id: l.id, market: l.market || "—", label: `${l.line}${l.format ? " " + l.format : ""}${l.generation ? " · " + l.generation : ""}${l.skuBlock ? " · " + l.skuBlock : ""} [${l.category}]` }));
   const parents = new Map();
@@ -132,12 +191,14 @@ export async function buildReviewPage(root, map, registry) {
       const pics = f.samples.map((s) => { const link = fileLink(f, s); const img = thumbs[s.id] ? `<img loading="lazy" data-t="${s.id}" alt="">` : `<div class="nothumb">no thumb</div>`; return `<figure title="${esc(s.path)}">${link ? `<a href="${link}" target="_blank" rel="noopener">${img}</a>` : img}<figcaption>${esc(s.composition)}</figcaption></figure>`; }).join("");
       const link = folderLink(f);
       const name = f.path.split("/").pop();
-      body += `<article class="row" id="f-${f.id}" data-id="${f.id}" data-market="${esc(f.market || "")}"><div class="pics">${pics}</div><div class="what"><div class="name">${link ? `<a href="${link}" target="_blank" rel="noopener">${esc(name)}</a>` : esc(name)} <span class="dim">· ${f.files} files${f.market ? " · " + esc(f.market) : ""}</span></div><p class="proposal">${esc(f.proposal)}</p>${f.status && f.lines.length ? `<p class="dim small">${esc(f.status)}</p>` : ""}</div><div class="decide"><div class="state" data-state></div><div class="buttons"><button data-v="ok" title="The proposal is right">✓ Correct</button><button data-v="line" title="Assign this folder to another SKU line">Wrong line…</button><button data-v="old" title="Older design or device: keep it off the current SKU rows">Old design</button><button data-v="skip" title="Not a product render (or a category with no book line)">Not a product</button></div><div class="lineform" hidden><select data-sel><option value="">Pick the line this folder belongs to…</option></select><label class="small"><input type="checkbox" data-allmarkets> all markets</label></div><input class="note" data-note placeholder="Note (optional): e.g. 'this is the Mavricks SKU', 'glass jars category'"></div></article>`;
+      const odd = f.outliers.map((o) => { const l = fileLink(f, o); const img = thumbs[o.id] ? `<img loading="lazy" data-t="${o.id}" alt="">` : `<div class="nothumb">no thumb</div>`; return `<figure class="odd" title="${esc(o.path)} — ${esc(o.why)}">${l ? `<a href="${l}" target="_blank" rel="noopener">${img}</a>` : img}<figcaption>${esc(o.why.split(";")[0].slice(0, 60))}</figcaption></figure>`; }).join("");
+      const check = f.checked ? (f.outliers.length ? `<div class="check bad"><b>${f.outliers.length} file${f.outliers.length > 1 ? "s" : ""} look different</b> from the rest of this folder (checked all ${f.checked.files}):</div><div class="pics">${odd}</div>` : `<div class="check ok">Checked all ${f.checked.files} files: ${f.checked.labels ? "label words agree" : "too few files to compare labels"}${f.checked.visual ? " · they look alike" : ""}.</div>`) : "";
+      body += `<article class="row" id="f-${f.id}" data-id="${f.id}" data-market="${esc(f.market || "")}"><div class="pics">${pics}</div><div class="what"><div class="name">${link ? `<a href="${link}" target="_blank" rel="noopener">${esc(name)}</a>` : esc(name)} <span class="dim">· ${f.files} files${f.market ? " · " + esc(f.market) : ""}</span></div><p class="proposal">${esc(f.proposal)}</p>${f.status && f.lines.length ? `<p class="dim small">${esc(f.status)}</p>` : ""}${check}</div><div class="decide"><div class="state" data-state></div><div class="buttons"><button data-v="ok" title="The proposal is right">✓ Correct</button><button data-v="line" title="Assign this folder to another SKU line">Wrong line…</button><button data-v="old" title="Older design or device: keep it off the current SKU rows">Old design</button><button data-v="skip" title="Not a product render (or a category with no book line)">Not a product</button></div><div class="lineform" hidden><select data-sel><option value="">Pick the line this folder belongs to…</option></select><label class="small"><input type="checkbox" data-allmarkets> all markets</label></div><input class="note" data-note placeholder="Note (optional): e.g. 'this is the Mavricks SKU', 'glass jars category'"></div></article>`;
     }
     body += `</section>`;
   }
-  const css = `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Code+Pro&display=swap"><style>:root{--bg:#f6f5f1;--card:#fff;--ink:#1f2a24;--muted:#66706b;--line:#dfe2dd;--accent:#1e5a55;--soft:#e4efec;--bad:#b23a2c;--warn:#9a6b00;--ok:#2f7d4f;color-scheme:light}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15191a;--card:#1d2324;--ink:#e8ebe8;--muted:#9aa4a0;--line:#2c3436;--accent:#6fc2b7;--soft:#1f3532;--bad:#f08a7c;--warn:#e0b45a;--ok:#7dc99a;color-scheme:dark}}:root[data-theme="dark"]{--bg:#15191a;--card:#1d2324;--ink:#e8ebe8;--muted:#9aa4a0;--line:#2c3436;--accent:#6fc2b7;--soft:#1f3532;--bad:#f08a7c;--warn:#e0b45a;--ok:#7dc99a;color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14.5px/1.45 "Source Sans 3",system-ui,sans-serif}.wrap{max-width:1280px;margin:0 auto;padding-block:22px 90px;padding-inline:18px}h1{font-size:26px;margin:0 0 4px;text-wrap:balance}.lede{color:var(--muted);max-width:78ch;margin:0 0 10px}.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:4;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 0;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:13px}.bar b{font-size:15px}progress{width:220px;height:10px}.bar label{display:flex;gap:6px;align-items:center}.bar .save{margin-left:auto;color:var(--muted)}.bar .save.bad{color:var(--bad)}section.group{margin-top:22px}section.group header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:4px;margin-bottom:6px}h2{font:600 15px/1.3 "Source Code Pro",ui-monospace,monospace;margin:0}.dim{color:var(--muted)}.small{font-size:12px}button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:7px;padding:4px 9px}button:hover{border-color:var(--accent)}button.mini{font-size:12px;padding:2px 8px;margin-left:auto}button.on{background:var(--accent);color:#fff;border-color:var(--accent)}article.row{display:grid;grid-template-columns:412px 1fr 300px;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px;margin:6px 0;align-items:start}article.row.done{opacity:.72}article.row.done.hide{display:none}.pics{display:flex;gap:6px;flex-wrap:wrap}figure{margin:0;width:96px;text-align:center}figure a{display:block}figure img{height:72px;max-width:96px;object-fit:contain;background:repeating-conic-gradient(#e6e6e6 0 25%,#fff 0 50%) 50%/12px 12px;border:1px solid var(--line);border-radius:6px;cursor:zoom-in}figcaption{font-size:10.5px;color:var(--muted);line-height:1.2;margin-top:2px}.nothumb{height:72px;width:96px;border:1px dashed var(--line);border-radius:6px;font-size:10px;color:var(--muted);display:flex;align-items:center;justify-content:center}.name{font:600 13px "Source Code Pro",ui-monospace,monospace;word-break:break-word}.name a{color:var(--accent);text-decoration:none}.proposal{margin:4px 0 0}.decide{display:flex;flex-direction:column;gap:6px}.buttons{display:flex;gap:5px;flex-wrap:wrap}.state{min-height:18px;font-size:12.5px;font-weight:600}.state.ok{color:var(--ok)}.state.line{color:var(--accent)}.state.old,.state.skip{color:var(--warn)}.lineform{display:flex;flex-direction:column;gap:4px}select,input.note{font:inherit;width:100%;border:1px solid var(--line);border-radius:7px;padding:4px 6px;background:var(--card);color:var(--ink)}@media (max-width:900px){article.row{grid-template-columns:1fr}.pics{max-width:100%}}</style>`;
-  const html = `<title>Muha Render Folders</title>${css}<div class="wrap"><h1>Muha render folders, one decision each</h1><p class="lede">Every folder under the Muha Meds <b>Renders</b> folder, grouped by where it sits. For each one: four sample pictures (click to open in Dropbox), what the system decided in plain words, and four buttons. One click per folder applies to every file in it. Your clicks save as you go and I read them back.</p><div class="bar"><b id="count">${decided} / ${map.folders.length}</b> folders decided <progress id="prog" max="${map.folders.length}" value="${decided}"></progress><label><input type="checkbox" id="hide"> hide decided</label><label><input type="checkbox" id="onlyrows" checked> show folders that are on SKU rows first</label><span class="save" id="save">connecting…</span></div>${body}</div>
+  const css = `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Code+Pro&display=swap"><style>:root{--bg:#f6f5f1;--card:#fff;--ink:#1f2a24;--muted:#66706b;--line:#dfe2dd;--accent:#1e5a55;--soft:#e4efec;--bad:#b23a2c;--warn:#9a6b00;--ok:#2f7d4f;color-scheme:light}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15191a;--card:#1d2324;--ink:#e8ebe8;--muted:#9aa4a0;--line:#2c3436;--accent:#6fc2b7;--soft:#1f3532;--bad:#f08a7c;--warn:#e0b45a;--ok:#7dc99a;color-scheme:dark}}:root[data-theme="dark"]{--bg:#15191a;--card:#1d2324;--ink:#e8ebe8;--muted:#9aa4a0;--line:#2c3436;--accent:#6fc2b7;--soft:#1f3532;--bad:#f08a7c;--warn:#e0b45a;--ok:#7dc99a;color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14.5px/1.45 "Source Sans 3",system-ui,sans-serif}.wrap{max-width:1280px;margin:0 auto;padding-block:22px 90px;padding-inline:18px}h1{font-size:26px;margin:0 0 4px;text-wrap:balance}.lede{color:var(--muted);max-width:78ch;margin:0 0 10px}.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:4;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 0;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:13px}.bar b{font-size:15px}progress{width:220px;height:10px}.bar label{display:flex;gap:6px;align-items:center}.bar .save{margin-left:auto;color:var(--muted)}.bar .save.bad{color:var(--bad)}section.group{margin-top:22px}section.group header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:4px;margin-bottom:6px}h2{font:600 15px/1.3 "Source Code Pro",ui-monospace,monospace;margin:0}.dim{color:var(--muted)}.small{font-size:12px}button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:7px;padding:4px 9px}button:hover{border-color:var(--accent)}button.mini{font-size:12px;padding:2px 8px;margin-left:auto}button.on{background:var(--accent);color:#fff;border-color:var(--accent)}article.row{display:grid;grid-template-columns:412px 1fr 300px;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px;margin:6px 0;align-items:start}article.row.done{opacity:.72}article.row.done.hide{display:none}.pics{display:flex;gap:6px;flex-wrap:wrap}figure{margin:0;width:96px;text-align:center}figure a{display:block}figure img{height:72px;max-width:96px;object-fit:contain;background:repeating-conic-gradient(#e6e6e6 0 25%,#fff 0 50%) 50%/12px 12px;border:1px solid var(--line);border-radius:6px;cursor:zoom-in}figcaption{font-size:10.5px;color:var(--muted);line-height:1.2;margin-top:2px}.nothumb{height:72px;width:96px;border:1px dashed var(--line);border-radius:6px;font-size:10px;color:var(--muted);display:flex;align-items:center;justify-content:center}.check{margin-top:6px;font-size:12.5px}.check.ok{color:var(--ok)}.check.bad{color:var(--bad)}figure.odd img{border-color:var(--bad);border-style:dashed}figure.odd figcaption{color:var(--bad)}.name{font:600 13px "Source Code Pro",ui-monospace,monospace;word-break:break-word}.name a{color:var(--accent);text-decoration:none}.proposal{margin:4px 0 0}.decide{display:flex;flex-direction:column;gap:6px}.buttons{display:flex;gap:5px;flex-wrap:wrap}.state{min-height:18px;font-size:12.5px;font-weight:600}.state.ok{color:var(--ok)}.state.line{color:var(--accent)}.state.old,.state.skip{color:var(--warn)}.lineform{display:flex;flex-direction:column;gap:4px}select,input.note{font:inherit;width:100%;border:1px solid var(--line);border-radius:7px;padding:4px 6px;background:var(--card);color:var(--ink)}@media (max-width:900px){article.row{grid-template-columns:1fr}.pics{max-width:100%}}</style>`;
+  const html = `<title>Muha Render Folders</title>${css}<div class="wrap"><h1>Muha render folders, one decision each</h1><p class="lede">Every folder under the Muha Meds <b>Renders</b> folder, grouped by where it sits. For each one: four sample pictures (click to open in Dropbox), what the system decided in plain words, and four buttons. One click per folder applies to every file in it. Your clicks save as you go and I read them back.</p><p class="lede">Every file in a folder was checked against its folder-mates two ways: the words printed on it (strength, device, size, packaging) and how it looks (its visual fingerprint against the folder's centre). A folder marked <b>checked</b> in green has no exceptions; files that read or look different are shown with a red dashed frame and the reason, so you only need to look at those.</p><div class="bar"><b id="count">${decided} / ${map.folders.length}</b> folders decided <progress id="prog" max="${map.folders.length}" value="${decided}"></progress><label><input type="checkbox" id="hide"> hide decided</label><label><input type="checkbox" id="onlyrows" checked> show folders that are on SKU rows first</label><span class="save" id="save">connecting…</span></div>${body}</div>
 <script>const T=${JSON.stringify(thumbs)};for(const img of document.querySelectorAll("img[data-t]")){const u=T[img.dataset.t];if(u)img.src=u;}
 const LINES=${JSON.stringify(lines)};const SEED=${JSON.stringify(Object.fromEntries(map.folders.filter((f) => f.decision).map((f) => [f.id, f.decision])))};const PATHS=${JSON.stringify(Object.fromEntries(map.folders.map((f) => [f.id, f.path])))};
 const state=Object.assign({},SEED);let db=null;const saveEl=document.getElementById("save");

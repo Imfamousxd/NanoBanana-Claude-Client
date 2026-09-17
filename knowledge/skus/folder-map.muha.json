@@ -1,6 +1,6 @@
 {
  "brand": "muha",
- "builtAt": "2026-09-17T01:35:36.784Z",
+ "builtAt": "2026-09-17T01:42:11.797Z",
  "scope": "Renders/ only",
  "folders": [
   {
@@ -15,6 +15,11 @@
     "in scene": 1
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
@@ -30,7 +35,8 @@
      "id": "20275477-7587-46a9-a6ac-680cf1d08165",
      "path": "Renders/Accessories/Ashtray & Rolling Tray/LED_RollingTray_Top_ON.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "62a12b2f4f56b88a",
@@ -46,6 +52,11 @@
     "in scene": 2
    },
    "lines": [],
+   "checked": {
+    "files": 8,
+    "visual": 8,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (8 files).",
    "samples": [
@@ -65,7 +76,8 @@
      "id": "675abf96-9be8-49e3-a8b4-1636327cf8c1",
      "path": "Renders/Accessories/DabBag/cleaners_V2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "0f2f223715cf5c12",
@@ -91,6 +103,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Accessories · all markets — 6 of 6 files on rows. Flavours: Dab Mats.",
    "samples": [
@@ -110,7 +127,8 @@
      "id": "786c7405-e029-406d-bcb8-194eeef4c9d8",
      "path": "Renders/Accessories/DabMats/DabMats_Thin_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a0f77a7160f71f24",
@@ -125,6 +143,11 @@
     "n/a": 2
    },
    "lines": [],
+   "checked": {
+    "files": 15,
+    "visual": 15,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (15 files).",
    "samples": [
@@ -144,7 +167,8 @@
      "id": "82dc0f36-b96a-4e76-9650-3405ae774661",
      "path": "Renders/Accessories/DapCap/Black_DapCap_Perspective.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "29ee21d81a58c0c0",
@@ -159,6 +183,11 @@
     "in scene": 1
    },
    "lines": [],
+   "checked": {
+    "files": 14,
+    "visual": 14,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (14 files).",
    "samples": [
@@ -178,7 +207,8 @@
      "id": "0e990b9e-b80f-46c5-8e55-e942699432d9",
      "path": "Renders/Accessories/DuffleBag/MM_DuffleBag_White_Right_V2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "32fd5267160edffa",
@@ -191,6 +221,11 @@
     "n/a": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
@@ -206,7 +241,8 @@
      "id": "44cdac10-5071-45f4-84d8-249e473f7a94",
      "path": "Renders/Accessories/Keychain/Keychain_Front_v1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "b18ab110e4aafbcc",
@@ -219,6 +255,11 @@
     "n/a": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
@@ -234,7 +275,8 @@
      "id": "2f042af5-f3b9-420e-9f01-a13bf26f41ee",
      "path": "Renders/Accessories/Lanyard/Lanyard_Silver.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "19844167cb04b4a8",
@@ -247,6 +289,11 @@
     "device only": 36
    },
    "lines": [],
+   "checked": {
+    "files": 36,
+    "visual": 36,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (36 files).",
    "samples": [
@@ -266,7 +313,8 @@
      "id": "ca5f8b76-79b0-48e2-b44f-173086159b4e",
      "path": "Renders/Accessories/Lighter/Lighter_Yellow_45Shot2_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "5aa72c14f8ac0ac9",
@@ -279,6 +327,11 @@
     "n/a": 4
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "samples": [
@@ -298,7 +351,8 @@
      "id": "ec990d51-053e-4aa8-a3b1-d6fc177a0969",
      "path": "Renders/Accessories/MM_CoinDripLight/MM_CoinDripLight_45_Green_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "57118b0554f54f29",
@@ -311,6 +365,11 @@
     "multi pack": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -322,7 +381,8 @@
      "id": "4042138b-5853-448a-830a-ce2b592330cc",
      "path": "Renders/Accessories/MMFridge/MM_SquareFridge_45_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2ae8ba755ebd13c0",
@@ -337,6 +397,11 @@
     "lineup": 6
    },
    "lines": [],
+   "checked": {
+    "files": 17,
+    "visual": 16,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (17 files).",
    "samples": [
@@ -356,7 +421,8 @@
      "id": "6489c38d-8456-4a8e-9595-b378350424ea",
      "path": "Renders/Accessories/Product Displays/MM_Display_All_In_One_And_Carts_Products_45_Right_01.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1b5f85385230342a",
@@ -369,6 +435,11 @@
     "lineup": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -380,7 +451,8 @@
      "id": "a399104a-62dd-4707-a6f1-d99c674adff6",
      "path": "Renders/Accessories/Product Displays/Mates Duo/Mates_Duo_ProductDisplay_45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "687cd61f34ac3183",
@@ -394,6 +466,11 @@
     "device with packaging": 1
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -405,7 +482,8 @@
      "id": "b4d3db2f-45df-4536-94c2-a78801396610",
      "path": "Renders/Accessories/Sticker Card/StickerCard_GroupShot.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "535d10dfe5c66624",
@@ -419,6 +497,11 @@
     "device only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -430,7 +513,8 @@
      "id": "cb62e8d6-ee87-4435-9ec7-fdbe5d929338",
      "path": "Renders/Accessories/Wrap/MuhaMeds_Wrapdouble_Curled_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "e22eae363ba66386",
@@ -446,6 +530,11 @@
     "label flat": 1
    },
    "lines": [],
+   "checked": {
+    "files": 11,
+    "visual": 11,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (11 files).",
    "samples": [
@@ -465,6 +554,13 @@
      "id": "8224083e-f6f4-49bd-8351-5eac8d24fa14",
      "path": "Renders/Ai Resources/CA_1G_Distillate_Disposables_Front_Solo_MagicMelonOG.png"
     }
+   ],
+   "outliers": [
+    {
+     "id": "b01040c5-199b-4516-8760-3ffc6c94059c",
+     "path": "Renders/Ai Resources/FlavorIcon_MagicMelonOG.png",
+     "why": "looks different from the rest (distance 0.19, folder typical 0.05)"
+    }
    ]
   },
   {
@@ -478,6 +574,11 @@
     "n/a": 9
    },
    "lines": [],
+   "checked": {
+    "files": 9,
+    "visual": 9,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (9 files).",
    "samples": [
@@ -497,7 +598,8 @@
      "id": "3d87e779-1b37-4f54-b1f1-6a55187cde5c",
      "path": "Renders/Ai Resources/1G AIO Distillate Dispo Flavor Badges/Flavor_03_COLOR.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "b00eeea13192c56f",
@@ -511,6 +613,11 @@
     "device only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (4 files).",
    "samples": [
@@ -530,7 +637,8 @@
      "id": "6e22b40b-cd80-4b95-9ee2-fc873e724770",
      "path": "Renders/Ai Resources/Hemp/THCa 4G Jar Open.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "c8e307f373b2561f",
@@ -544,6 +652,11 @@
     "in hand": 1
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "samples": [
@@ -555,7 +668,8 @@
      "id": "e49910b1-d948-4893-97be-e6a91df9a400",
      "path": "Renders/Ape/Ape_wPenHandUp_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "01bf58cd35c04665",
@@ -568,6 +682,11 @@
     "in hand": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "samples": [
@@ -579,7 +698,8 @@
      "id": "d5a21a09-719a-4396-8e03-2b7e1cf1cf15",
      "path": "Renders/Ape/4thJuly/Ape_4thJuly_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "458a680b254cc291",
@@ -592,6 +712,11 @@
     "in hand": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "samples": [
@@ -603,7 +728,8 @@
      "id": "50ecf955-d76d-49df-a3b0-c07f220bbcba",
      "path": "Renders/Ape/4thJuly/Smiling/Ape_4thJuly_Smile_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "7de489e36892447d",
@@ -616,6 +742,11 @@
     "multi pack": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "samples": [
@@ -627,7 +758,8 @@
      "id": "74c24eb8-0f5f-411c-a072-1ed843e32d79",
      "path": "Renders/Ape/ApeFreezer/3.21.25 Update Freezer Wrap/Window_side2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "6674bf8ec3d3b8af",
@@ -640,6 +772,11 @@
     "in scene": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (1 files).",
    "samples": [
@@ -647,7 +784,8 @@
      "id": "2ce4f026-fa51-45b3-b751-700d6da5435f",
      "path": "Renders/Ape/ApeFreezer/Ape Freezer_Test/freezer_V3.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "429238ebc4fb800e",
@@ -660,6 +798,11 @@
     "n/a": 5
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "samples": [
@@ -679,7 +822,8 @@
      "id": "5b5839a0-f103-4fe0-afbf-2f5209af4cb2",
      "path": "Renders/Ape/ProfileRenders/Ape_45Right.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "9353b3fceb33dea5",
@@ -692,6 +836,11 @@
     "n/a": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "samples": [
@@ -703,7 +852,8 @@
      "id": "c2f5b1f3-fac4-45a7-adfe-48a7106e8e6b",
      "path": "Renders/Ape/Silhouette/ApeSilhouette_V3.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2e2dee5187949a4e",
@@ -717,6 +867,11 @@
     "device only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "samples": [
@@ -732,7 +887,8 @@
      "id": "f4f29520-f978-49e8-9d82-747175afd97a",
      "path": "Renders/Apparel/MM/Varsity Jacket Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "644c00ff8a6400d0",
@@ -745,6 +901,11 @@
     "n/a": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "samples": [
@@ -756,7 +917,8 @@
      "id": "3ef6fea9-8bed-42bd-95cf-e7c607a4e135",
      "path": "Renders/Apparel/MM_Old_English_TShirt/MM_Old_English_TShirt_Back.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "0b58ff60970e660e",
@@ -769,6 +931,11 @@
     "n/a": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (1 files).",
    "samples": [
@@ -776,7 +943,8 @@
      "id": "7795ddfd-0138-4281-b655-6caeff752351",
      "path": "Renders/Apparel/MM/MM GirlsSet/Bottoms/MM_GirlsSet_Shorts_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "179dbdd01440e7b4",
@@ -789,6 +957,11 @@
     "n/a": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "samples": [
@@ -800,7 +973,8 @@
      "id": "a91e67ed-ae89-43ce-bfdf-5dc45e27c241",
      "path": "Renders/Apparel/MM/MM GirlsSet/Top/MM_GirlsSet_SportsBra_Front_V3.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "656362bb60161f33",
@@ -814,6 +988,11 @@
     "device only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (4 files).",
    "samples": [
@@ -833,7 +1012,8 @@
      "id": "eee4d41b-e454-4318-a5bd-1a8881da5f58",
      "path": "Renders/Apparel/MM/MM Grunge/Grunge Sweatshirt Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "f87b53df65c27a5d",
@@ -846,6 +1026,11 @@
     "n/a": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "samples": [
@@ -861,7 +1046,8 @@
      "id": "e57a77ea-23cb-4de4-b987-0e2f949633ee",
      "path": "Renders/Apparel/MM/MM Tracksuit/MM_Tracksuit_Pants.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "90d1f84dd2a104ee",
@@ -874,6 +1060,11 @@
     "device with packaging": 10
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "samples": [
@@ -893,7 +1084,8 @@
      "id": "8a3bc220-6f1c-40b0-b4e9-2eea2a9be94d",
      "path": "Renders/CA catalog resized/1G Distillate Carts/CA_Distillate_1gram_Blueberry_Haze_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "478d6f4e697a8092",
@@ -906,6 +1098,11 @@
     "device with packaging": 10
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "samples": [
@@ -925,7 +1122,8 @@
      "id": "2b5d18a9-9f2d-41b6-86d5-c9eee0dc984c",
      "path": "Renders/CA catalog resized/1G Distillate Dispo/CA_Dispo_Distillate_PineappleExpress_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2961d48724b1a038",
@@ -938,6 +1136,11 @@
     "device with packaging": 5
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "samples": [
@@ -957,7 +1160,8 @@
      "id": "67702473-2cdd-4c8b-9462-561abea941f7",
      "path": "Renders/CA catalog resized/1G LR Dispo/CA_Dispo_AllinOne_LR_SourDiesel_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "794a3e02335e9a55",
@@ -970,6 +1174,11 @@
     "device with packaging": 5
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "samples": [
@@ -989,7 +1198,8 @@
      "id": "39ff17b5-a17c-4c9b-8cb6-38bb0e7ab507",
      "path": "Renders/CA catalog resized/1G MD Carts/CA_MeltedDiamonds_1G_Carts_SuperSilverHaze.jpg"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a08e92f40e1801ac",
@@ -1002,6 +1212,11 @@
     "device with packaging": 5
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "samples": [
@@ -1021,7 +1236,8 @@
      "id": "62e1f1e7-c231-40aa-bcdb-ac24639b2b49",
      "path": "Renders/CA catalog resized/1G MD Dispo/CA_Dispo_AllinOne_MD_StrawberryDream_V2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "e60add4670ab1031",
@@ -1036,6 +1252,11 @@
     "device with packaging": 1
    },
    "lines": [],
+   "checked": {
+    "files": 16,
+    "visual": 16,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (16 files).",
    "samples": [
@@ -1055,7 +1276,8 @@
      "id": "e68e7a69-ff29-4b27-b284-6d0da8b4a594",
      "path": "Renders/CA catalog resized/Flower Jars/CA_FlowerJar_MuhaMints_Front.jpg"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "6abb0951e00a8f96",
@@ -1070,6 +1292,11 @@
     "in scene": 3
    },
    "lines": [],
+   "checked": {
+    "files": 7,
+    "visual": 7,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (7 files).",
    "samples": [
@@ -1089,7 +1316,8 @@
      "id": "88df47d9-7324-4b0c-9450-e32458d8cda7",
      "path": "Renders/CA catalog resized/Gummies/Mambas_CA_Mango_Front_Gummy_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "768bc1f61bcec6c8",
@@ -1103,6 +1331,11 @@
     "packaging only": 8
    },
    "lines": [],
+   "checked": {
+    "files": 16,
+    "visual": 16,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (16 files).",
    "samples": [
@@ -1122,6 +1355,13 @@
      "id": "b1c29828-0ede-409a-8400-c19da303d626",
      "path": "Renders/CA catalog resized/Hash Rosin Concentrates 1G/HR_GMO_Oreoz_FrontSingle.jpg"
     }
+   ],
+   "outliers": [
+    {
+     "id": "e75372a8-7de9-42a7-b0f0-da3c925779b7",
+     "path": "Renders/CA catalog resized/Hash Rosin Concentrates 1G/HR_Chilled_Cherries_FrontSingleOpen.jpg",
+     "why": "size: reads \"0.5g\", the folder is \"1g\""
+    }
    ]
   },
   {
@@ -1135,6 +1375,11 @@
     "device with packaging": 10
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "samples": [
@@ -1154,7 +1399,8 @@
      "id": "bfeb70c4-c5b2-4277-bebe-0799cb531033",
      "path": "Renders/CA catalog resized/Mates/Mates_CA_Orange_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "3f195d5d0302c61c",
@@ -1167,6 +1413,11 @@
     "device with packaging": 6
    },
    "lines": [],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (6 files).",
    "samples": [
@@ -1186,7 +1437,8 @@
      "id": "53a1bac4-4b9a-426a-8c39-e4513c60fa5b",
      "path": "Renders/CA catalog resized/Mates HR/CA_Mates_HR_AppleGrunt_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "22e5c04d3540aee7",
@@ -1199,6 +1451,11 @@
     "device only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -1210,7 +1467,8 @@
      "id": "85771902-40e6-43ca-ad09-04db6460a762",
      "path": "Renders/Cartridges/Device/Cart_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "365d33868ca5eea8",
@@ -1223,6 +1481,11 @@
     "device with packaging": 19
    },
    "lines": [],
+   "checked": {
+    "files": 19,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: CA_1G_Distillate (1) (19 files).",
    "samples": [
@@ -1242,7 +1505,8 @@
      "id": "9ef7c479-56f3-499c-82dd-0618b69c8f32",
      "path": "Renders/Cartridges/Distillate/CA/CA_1G_Distillate (1)/CA_Distillate_1gram_Cali_Gas_Three_quarters.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "ba64a1588b10b235",
@@ -1255,6 +1519,11 @@
     "device with packaging": 8
    },
    "lines": [],
+   "checked": {
+    "files": 8,
+    "visual": 8,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: CA_1G_Distillate 2024 (8 files).",
    "samples": [
@@ -1274,7 +1543,8 @@
      "id": "ba12b0c8-f947-4386-81b8-0f7407723ada",
      "path": "Renders/Cartridges/Distillate/CA/CA_1G_Distillate 2024/Cartridges_Distillate_Front_StrawberryRuntz_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "16be19eb11f11502",
@@ -1287,6 +1557,11 @@
     "device with packaging": 20
    },
    "lines": [],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: CA_1G_Distillate_Carts 2025 (20 files).",
    "samples": [
@@ -1306,7 +1581,8 @@
      "id": "86323694-4495-4926-8a12-1b5b0f81f523",
      "path": "Renders/Cartridges/Distillate/CA/CA_1G_Distillate_Carts 2025/CA_1G_Distillate_Carts_SuperSourDiesel_Three_Quarters.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "aed1cd10cf98f163",
@@ -1343,6 +1619,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 41,
+    "visual": 40,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Distillate Carts · CA · Gen 3 · CA031 — 40 of 41 files on rows, 1 on no row. Flavours: Cherry Grapefruit, Banana Cream Cake, Bubblegum Burst, Green Crack, Godfather OG, Pineapple Paradise +4.",
    "samples": [
@@ -1362,7 +1643,8 @@
      "id": "702455b7-2477-40d5-936a-6d24f529df4a",
      "path": "Renders/Cartridges/Distillate/CA/CA_1G_Distillate_Carts_TechDesign_June 2025/CA_Carts_1G_BubblegumBurst_Front_Solo.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "6e264dd5f3fb63b3",
@@ -1375,6 +1657,11 @@
     "device with packaging": 20
    },
    "lines": [],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: MI_1G_Distillate_Carts (20 files).",
    "samples": [
@@ -1394,7 +1681,8 @@
      "id": "6621cf5d-3301-48b9-a2d3-5bfe085db159",
      "path": "Renders/Cartridges/Distillate/MI/MI_1G_Distillate_Carts/MI_Distillate_1gram_Apple_Gelato_Ice_Front_i1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d81a3c85dd868750",
@@ -1430,6 +1718,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 41,
+    "visual": 41,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Distillate Carts · MI · MI024 — 40 of 41 files on rows, 1 on no row. Flavours: Bahama Berry, Cherry Grapefruit, Pineapple Paradise, Purple Passion Punch, Banana Cream Cake, Blue Slushie +4.",
    "samples": [
@@ -1449,7 +1742,8 @@
      "id": "b9e8bbe9-80e1-4957-a60c-fe131f24c288",
      "path": "Renders/Cartridges/Distillate/MI/MI_1G_Distillate_Carts_Tech June 2025/MI_Carts_1G_PurplePassionPunch_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "89cfd52716180d63",
@@ -1475,6 +1769,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Distillate Carts · MI · MI024 — 2 of 20 files on rows, 18 on no row. Flavours: Blue Slushie.",
    "samples": [
@@ -1494,7 +1793,8 @@
      "id": "a09f341e-ecfc-468a-ad91-977b7af0fd9a",
      "path": "Renders/Cartridges/Distillate/MI/MI_1G_Distillate_Carts_Tech June 2025/MI_2G_Distillate_Carts/MI_Distillate_2gram_Candy_Apple_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "03d4f4678a90905f",
@@ -1508,6 +1808,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (21 files).",
    "samples": [
@@ -1527,7 +1832,8 @@
      "id": "91b45957-59f2-4a21-bde9-c081609309c2",
      "path": "Renders/Cartridges/Distillate/MI/MI_1G_Q1_2025_Carts/MI_1G_Unreleased_Carts_BlueberryBurst_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "b7f7afaede83ba58",
@@ -1564,6 +1870,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 41,
+    "visual": 41,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2G DistiIlate Carts · MI · MI026 — 37 of 41 files on rows, 4 on no row. Flavours: Lemon Drop, Toxic Apple, Gelato 33, Skywalker OG, Purple Punch, Strawberry Lava +4.",
    "samples": [
@@ -1583,7 +1894,8 @@
      "id": "43350adc-6cc7-4f89-85e2-4f07f8f8f168",
      "path": "Renders/Cartridges/Distillate/MI/MI_2G_Distillate_Carts_June2025/MI_Carts_2G_45_Solo_DosiCake.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "939075e277c7f596",
@@ -1597,6 +1909,11 @@
     "packaging only": 4
    },
    "lines": [],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "samples": [
@@ -1616,7 +1933,8 @@
      "id": "9037be47-e10d-4071-a9c1-47936e3b42b1",
      "path": "Renders/Cartridges/Distillate/MO/MO 1G Carts Tech Mock/CARTS_MO_45Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "ac06e9fc517e6825",
@@ -1629,6 +1947,11 @@
     "device with packaging": 21
    },
    "lines": [],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: MO_1G_Distillate_Carts March 2025 (21 files).",
    "samples": [
@@ -1648,7 +1971,8 @@
      "id": "5ebf5400-eb78-468e-8868-bbebf523b3c7",
      "path": "Renders/Cartridges/Distillate/MO/MO_1G_Distillate_Carts March 2025/MO_1G_Distillate_Carts_JackHerer_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "e53049f090f05372",
@@ -1683,6 +2007,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 40,
+    "visual": 40,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Distillate 1 Gram Carts · MO · MO004 — 36 of 40 files on rows, 4 on no row. Flavours: Bahama Berry, Wedding Cake, Lemon Tart, Frozen Bluez, Strawberry Kiwi Kush, Purple Velvet +3.",
    "samples": [
@@ -1702,7 +2031,8 @@
      "id": "991ef9a8-80fe-4ab1-bd93-5eebfb289179",
      "path": "Renders/Cartridges/Distillate/MO/MO_1G_Distillate_Carts NOV 2025/MO_Carts_1G_FrozenBluez_45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "55df9849ff627205",
@@ -1737,6 +2067,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Distillate 1 Gram Carts · NJ · NJ002 — 20 of 21 files on rows, 1 on no row. Flavours: Blueberry Haze, Cherry Grapefruit, Jack Herer, Purple Punch, Cali Gas OG, Watermelon OG +4.",
    "samples": [
@@ -1756,7 +2091,8 @@
      "id": "602a58a5-130e-438b-a206-4db4d0c061dc",
      "path": "Renders/Cartridges/Distillate/NJ/NJ_1G_Distillate_Carts/NJ_1G_Distillate_Carts_JackHerer_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "4ceb2a4649343907",
@@ -1791,6 +2127,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 41,
+    "visual": 38,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Distillate Carts · NM · NM010 — 40 of 41 files on rows, 1 on no row. Flavours: Bahama Berry, Blue Slushie, Pineapple Paradise, Banana Cream Cake, Habibi, Magic Melon OG +4.",
    "samples": [
@@ -1810,7 +2151,8 @@
      "id": "00bbb6da-bca5-41c7-a86d-3611b337015f",
      "path": "Renders/Cartridges/Distillate/NM/NM 1G Distillate Carts 2026/NM_1G_Carts_45Solo_BlueSlushie.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "0a2c752fb9a5f32d",
@@ -1844,6 +2186,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Distillate Carts · NM · NM003 — 20 of 20 files on rows. Flavours: Blueberry Haze, Apple Gelato ICE, Jack Herer, Purple Punch, Strawberry Runtz, Cali Gas OG +4.",
    "samples": [
@@ -1863,7 +2210,8 @@
      "id": "03e7289d-3562-4d00-b8f0-c707c3e2fffa",
      "path": "Renders/Cartridges/Distillate/NM/NM_1G_Distillate_Carts OLD/NM_1G_Distillate_Carts_PurplePunch_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "5c41a5d69592f338",
@@ -1896,6 +2244,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 25,
+    "visual": 25,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Distillate Cartridges · NY · NY007 — 20 of 25 files on rows, 5 on no row. Flavours: Bahama Berry, Banana Cream Cake, Strawberry Lava, Georgia Peaches, Frozen Bluez.",
    "samples": [
@@ -1915,7 +2268,8 @@
      "id": "7e40768e-e949-4f6f-b88c-818b173f3e80",
      "path": "Renders/Cartridges/Distillate/NY/NY 1G Distillate Carts March 2026/NY_Carts_1G_Front_BananaCreamCake.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "ff4a0212f2ff7cc8",
@@ -1945,6 +2299,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 25,
+    "visual": 25,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Distillate Carts · NY · NY002 — 24 of 25 files on rows, 1 on no row. Flavours: Temptation, Grand Daddy Purp, Fatso, Sour Diesel, Habibi, Cali Gas OG.",
    "samples": [
@@ -1964,7 +2323,8 @@
      "id": "299766b2-7b9b-4ca2-b14d-1a841f776b22",
      "path": "Renders/Cartridges/Distillate/NY/NY_1G_Distillate_Carts/Old/NY_1G_Distillate_Carts_SourDiesel_ThreeQuarters.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1c292f12a300d595",
@@ -1989,6 +2349,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1.68G Distillate Carts · OH · CA006 — 2 of 21 files on rows, 19 on no row. Flavours: Cherry Grapefruit.",
    "samples": [
@@ -2008,7 +2373,8 @@
      "id": "54bc9f61-fb03-4226-98a9-b99d649d3fb4",
      "path": "Renders/Cartridges/Distillate/OH/OH 1_68G Distillate Carts/OH_1_68G_Distillate_Carts_JackHerer_Three_Quarters.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "08867e87d1aa841c",
@@ -2021,6 +2387,11 @@
     "device with packaging": 15
    },
    "lines": [],
+   "checked": {
+    "files": 15,
+    "visual": 15,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (15 files).",
    "samples": [
@@ -2040,7 +2411,8 @@
      "id": "e14e4102-1457-4316-b6f8-2326953be895",
      "path": "Renders/Cartridges/Hash Rosin/CA_1G_HashRosin_Carts/CA_1G_HashRosin_Carts_TropicalRuntz_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "b241febe2943cded",
@@ -2054,6 +2426,11 @@
     "lineup": 2
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (5 files).",
    "samples": [
@@ -2073,7 +2450,8 @@
      "id": "21dc29ff-5640-48e6-81f6-33156d732e9a",
      "path": "Renders/Cartridges/Hash Rosin/Group Hash Rosin Cartridge Renders/Doses _ Mimosa mav mini.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "3b600ac3ec5f1a76",
@@ -2087,6 +2465,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 11,
+    "visual": 11,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (11 files).",
    "samples": [
@@ -2106,7 +2489,8 @@
      "id": "2898b28d-233b-4bdc-9adf-743cf8a2eac5",
      "path": "Renders/Cartridges/Hash Rosin/MI_1G_HashRosin_Carts/MI_1G_HashRosin_Carts_Papaya_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "12b2faeb867590be",
@@ -2119,6 +2503,11 @@
     "device with packaging": 4
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "samples": [
@@ -2138,7 +2527,8 @@
      "id": "99c41eee-f99a-43f0-8786-fa9b9cef1063",
      "path": "Renders/Cartridges/Melted Diamonds/CA_1G_MeltedDiamonds_Carts/Front Melted Diamond Cartridge Renders/Cartridges_MeltedDiamonds_Front_MangoMadness_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "342f9f97134f7050",
@@ -2151,6 +2541,11 @@
     "device with packaging": 10
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: CA_1G_MD_Carts_January2025 (10 files).",
    "samples": [
@@ -2170,7 +2565,8 @@
      "id": "ba143b3d-7cc9-42aa-b712-c2188842eca9",
      "path": "Renders/Cartridges/Melted Diamonds/CA_1G_MeltedDiamonds_Carts/CA_1G_MD_Carts_January2025/CA_1G_MeltedDiamonds_Carts_MangoMadness_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "82e6c4f19debe0da",
@@ -2202,6 +2598,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Melted Diamond Carts · CA · CA032 — 20 of 21 files on rows, 1 on no row. Flavours: Toro Milk Runts, Lemonade Rose, Moroccan Peach Rings, White Raspberry, Purple Breath.",
    "samples": [
@@ -2221,7 +2622,8 @@
      "id": "8aaec05c-f61a-45ac-b35c-ca2f1b3be9c2",
      "path": "Renders/Cartridges/Melted Diamonds/CA_1G_MeltedDiamonds_Carts/CA_1G_MD_Carts_TechDesign_June2025/CA_Carts_MD_1G_MoroccanPeachRings_45_Solo.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "017dae8165907c6e",
@@ -2234,6 +2636,11 @@
     "device with packaging": 10
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: MI_MD_Carts_1G_January2025 (10 files).",
    "samples": [
@@ -2253,7 +2660,8 @@
      "id": "1ca10080-181f-41d3-8289-5c072f224cb2",
      "path": "Renders/Cartridges/Melted Diamonds/MI_MeltedDiamonds_Cart/MI_MD_Carts_1G_January2025/MI_MeltedDiamonds_Cart_LemonCherryGelato_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1b7bfca32e3ecdde",
@@ -2283,6 +2691,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Melted Diamond Carts · MI · MI025 — 20 of 21 files on rows, 1 on no row. Flavours: Moroccan Peach Rings, Purple Breath, Lemonade Rose, White Raspberry, Toro Milk Runts.",
    "samples": [
@@ -2302,7 +2715,8 @@
      "id": "fe6a4b6b-140b-42b5-9a21-30863036b9cb",
      "path": "Renders/Cartridges/Melted Diamonds/MI_MeltedDiamonds_Cart/MI_MD_Carts_1G_June2025/MI_Carts_MD_1G_LemonRose_Front_Solo.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "65d7e562ce57c535",
@@ -2315,6 +2729,11 @@
     "packaging only": 6
    },
    "lines": [],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (6 files).",
    "samples": [
@@ -2334,7 +2753,8 @@
      "id": "63308d71-ee62-4d3e-a791-ed2674c0d5fb",
      "path": "Renders/Catalyst/Catalyst_SuperSavageHaze_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a3d6562b7a978a3d",
@@ -2379,6 +2799,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 49,
+    "visual": 48,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Hash Rosin Concentrate Jars · CA · CA033 (+1 more line: Hash Rosin Concentrate V2 CA) — 46 of 49 files on rows, 3 on no row. Flavours: Mad Fruit, Super Boof, Chilled Cherries, Alien OG, Guava Biscotti, Honey Banana +2.",
    "samples": [
@@ -2398,7 +2823,8 @@
      "id": "f65b261d-0e66-48f8-922d-2f828989bdc3",
      "path": "Renders/Concentrates/CA/CA_Concentrate_Jars_New_Box Feb 2025/Hash Rosin/CA_Concentrate_Jars_New_Box_HR_Chilled_Cherries_FrontSingle.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2c70245105493d27",
@@ -2430,6 +2856,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 31,
+    "visual": 31,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Piatella Concentrate Jars · CA · CA034 — 29 of 31 files on rows, 2 on no row. Flavours: Cherry Papaya, Tropical Funk, Alpine Guava, Raunchy Runtz, Lemon Heads.",
    "samples": [
@@ -2449,7 +2880,8 @@
      "id": "6e5453bd-e805-4ead-8729-382adbff9539",
      "path": "Renders/Concentrates/CA/CA_Concentrate_Jars_New_Box Feb 2025/Piatella/CA_Concentrate_Jars_New_Box_Piatella_Alpine_Guava_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "cc7082659de061ba",
@@ -2486,6 +2918,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Hash Rosin Concentrate Jars · CA · CA033 (+1 more line: Hash Rosin Concentrate V2 CA) — 9 of 21 files on rows, 12 on no row. Flavours: Alien OG.",
    "samples": [
@@ -2505,7 +2942,8 @@
      "id": "c7b98835-4225-463f-b9e7-69445742c5c0",
      "path": "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech/V1/45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a8cfb0e1cc4ba27a",
@@ -2548,6 +2986,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 16,
+    "visual": 13,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Hash Rosin Concentrate V2 · CA · CA040 (+1 more line: Hash Rosin Concentrate Jars CA) — 16 of 16 files on rows. Flavours: Muha Motorbreath, Alien OG, Peach Panther, Orange Cherry Gelato, Grape Lobster, Banana Cream Pie +2.",
    "samples": [
@@ -2567,7 +3010,8 @@
      "id": "aa8819de-5ed4-4388-9fbe-51adac5f5b01",
      "path": "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech/Renders/CA_1g_Concentrates_Front_ORANGE_CHERRY_GELATO_PIE_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a792cae32064dadd",
@@ -2581,6 +3025,11 @@
     "packaging only": 5
    },
    "lines": [],
+   "checked": {
+    "files": 11,
+    "visual": 11,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: CA_New Flavors HashRosin NOV 2024 (11 files).",
    "samples": [
@@ -2600,7 +3049,8 @@
      "id": "89f3e48e-4e0f-48a8-82cf-e7e7e885d5d2",
      "path": "Renders/Concentrates/CA/CA_New Flavors HashRosin NOV 2024/HR_Chilled_Cherries_Main_i1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "115d84e5d1ff24fd",
@@ -2613,6 +3063,11 @@
     "device with packaging": 4
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "samples": [
@@ -2632,7 +3087,8 @@
      "id": "e691e5f2-a52b-420b-a97d-4f8726ba2e76",
      "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/CA Hash Rosin/HashRosin_Mimosa_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "85f76c5d8ec3606e",
@@ -2648,6 +3104,11 @@
     "n/a": 1
    },
    "lines": [],
+   "checked": {
+    "files": 48,
+    "visual": 48,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (48 files).",
    "samples": [
@@ -2667,6 +3128,13 @@
      "id": "d7377e44-e32c-4785-be7d-c6464e708bf0",
      "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/CA Hash Rosin Concentrate Jars/MI_HR_AppleBanana_Front.png"
     }
+   ],
+   "outliers": [
+    {
+     "id": "fce17842-e353-43fa-aab2-9c458fca5473",
+     "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/CA Hash Rosin Concentrate Jars/MI_HR_Mimosa_FrontSingle.png",
+     "why": "looks different from the rest (distance 0.11, folder typical 0.03)"
+    }
    ]
   },
   {
@@ -2680,6 +3148,11 @@
     "device with packaging": 6
    },
    "lines": [],
+   "checked": {
+    "files": 6,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "samples": [
@@ -2699,7 +3172,8 @@
      "id": "0f731cb3-fba2-44fc-a9bc-e1c9de6bfdc1",
      "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/CA Live Resin/LiveResin_JetFuel_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1fca5bf6adf03c4a",
@@ -2732,6 +3206,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 38,
+    "visual": 37,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Hash Rosin Concentrate Jars · CA · CA033 — 29 of 38 files on rows, 9 on no row. Flavours: Super Boof, Mad Fruit, Macaron Peaches, Honey Banana, Guava Biscotti.",
    "samples": [
@@ -2751,7 +3230,8 @@
      "id": "cb6fb1f8-1660-4879-b8c3-b992b7c6600f",
      "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/CA_New Flavors HashRosin/HR_Honey_Banana_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "65c12728a06e062d",
@@ -2781,6 +3261,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 32,
+    "visual": 32,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Piatella Concentrate Jars · CA · CA034 — 25 of 32 files on rows, 7 on no row. Flavours: Alpine Guava, Lemon Heads, Cherry Papaya, Raunchy Runtz.",
    "samples": [
@@ -2800,7 +3285,8 @@
      "id": "5fc7d5df-c295-49bb-9883-d49acf7bd555",
      "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/CA_Piatella/Piatella_Lemon_Heads_FrontSingleOpen.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "0ba36dd5d0c4365b",
@@ -2849,6 +3335,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 12,
+    "visual": 12,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Piatella Concentrate Jars · CA · CA034 (+2 more lines: Hash Rosin Concentrate Jars CA; Hash Rosin Concentrate V2 CA) — 12 of 12 files on rows. Flavours: Tropical Funk.",
    "samples": [
@@ -2868,7 +3359,8 @@
      "id": "79260331-1eee-4531-8fa5-7d1418cae5c0",
      "path": "Renders/Concentrates/CA/Old CA Box OCT 2023/NewFlavors/Piatella_Tropical_Funk_FrontSingleOpen.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "62fba91241831ec2",
@@ -2881,6 +3373,11 @@
     "multi pack": 4
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "samples": [
@@ -2900,7 +3397,8 @@
      "id": "72b79886-3745-465c-bda7-44cb7cef70f5",
      "path": "Renders/Concentrates/MasterCase/Concentrates_LiveResin_MasterCase_Closed_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a28c20324f4151a3",
@@ -2934,6 +3432,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 51,
+    "visual": 51,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Hash Rosin Concentrate Jars · MI · MI010 — 41 of 51 files on rows, 10 on no row. Flavours: Donnie Burger, Tropicana Cherry, Peanut Butter Breath, Fatso, Galactic Gas, Mimosa +1.",
    "samples": [
@@ -2952,6 +3455,13 @@
     {
      "id": "5e657e12-5819-4c90-b717-abba29c7ab95",
      "path": "Renders/Concentrates/MI/MI Hash Rosin Concentrate Jars/MI_Hash_Rosin_Concentrate_Jars_Group_Shot_01.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "d059d4ee-4a0d-43b9-aba7-d32ad35fec92",
+     "path": "Renders/Concentrates/MI/MI Hash Rosin Concentrate Jars/MI_HR_DonnieBurger_Front_w_Product.png",
+     "why": "looks different from the rest (distance 0.10, folder typical 0.03)"
     }
    ]
   },
@@ -2985,6 +3495,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 8,
+    "visual": 8,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Live Resin Concentrate Jars · MI · MI009 — 8 of 8 files on rows. Flavours: Space Cookies, Jet Fuel, Maui Wowie, Zkittlez, Northern Lights, Gush Mintz +2.",
    "samples": [
@@ -3004,7 +3519,8 @@
      "id": "2622faa9-1d1c-477d-9627-2436a729cac0",
      "path": "Renders/Concentrates/MI/MI Live Resin/LiveResin_Zkittlez_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "fb3eec2eeb913016",
@@ -3017,6 +3533,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: MO Concentrate Aug 2025 (1 files).",
    "samples": [
@@ -3024,7 +3545,8 @@
      "id": "56574199-a107-4db0-9b9e-fb1bc92130bd",
      "path": "Renders/Concentrates/MO/MO Concentrate Aug 2025/MO_Concentrate_GroupShot.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "4e3825717752fbed",
@@ -3038,6 +3560,11 @@
     "device with packaging": 16
    },
    "lines": [],
+   "checked": {
+    "files": 32,
+    "visual": 32,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (32 files).",
    "samples": [
@@ -3057,7 +3584,8 @@
      "id": "4d9eb66b-32dc-4aa6-b97e-2d5885c0fc26",
      "path": "Renders/Concentrates/MO/MO Concentrate NOV 2025/MO_Concentrates_HR_DonnieBurger_FrontClosed.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "7c4491256b61adbe",
@@ -3071,6 +3599,11 @@
     "device with packaging": 1
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (5 files).",
    "samples": [
@@ -3090,7 +3623,8 @@
      "id": "cabb9651-f455-4158-a046-cc27dedcd17e",
      "path": "Renders/Device/All Devices/Gen2 Device.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "89221a206c2b74ab",
@@ -3103,6 +3637,11 @@
     "device only": 4
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "samples": [
@@ -3122,7 +3661,8 @@
      "id": "b0a5a845-8ece-405f-a82e-cffd1a640253",
      "path": "Renders/Device/Gen 3/GEN 3 Dispo Exploded/Dispo_Exploded_V3.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d12d09c12dbd152a",
@@ -3135,6 +3675,11 @@
     "device only": 4
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "samples": [
@@ -3154,7 +3699,8 @@
      "id": "e1c6f173-4600-4eb2-a874-aaf6c9fcc1f7",
      "path": "Renders/Device/Mock Up/Shot3.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1a10b2d6bef0a3b9",
@@ -3167,6 +3713,11 @@
     "device only": 4
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "samples": [
@@ -3186,7 +3737,8 @@
      "id": "69d34487-6874-4d98-81c3-82e3d1ad43ef",
      "path": "Renders/Device/Mock Up/TearDrop/Back.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "ca96f1ae3b55e886",
@@ -3199,6 +3751,11 @@
     "device only": 6
    },
    "lines": [],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "samples": [
@@ -3218,7 +3775,8 @@
      "id": "42990b86-1756-4d0d-9f00-749fbc09bf1a",
      "path": "Renders/Device/Pod Device/Gen3_Dispo_LargerDevice_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "6956ec1796353086",
@@ -3233,6 +3791,11 @@
     "packaging only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 119,
+    "visual": 118,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (119 files).",
    "samples": [
@@ -3252,7 +3815,8 @@
      "id": "8e7e3bc9-cf90-40fe-9807-d34f0c920b14",
      "path": "Renders/Discontinued/Disposables/Hemp_Disposable_Front_D10_GodsGift_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "84b3d088bd95fbee",
@@ -3265,6 +3829,11 @@
     "device with packaging": 20
    },
    "lines": [],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (20 files).",
    "samples": [
@@ -3284,7 +3853,8 @@
      "id": "78e4c596-a3a2-4e16-a4c0-492e4ce657fc",
      "path": "Renders/Disposables/CA/CA_2G_Blend_Dispos/CA_2G_Blend_Dispos_CaliGas_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "29d81ed910ff64ef",
@@ -3297,6 +3867,11 @@
     "device with packaging": 20
    },
    "lines": [],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — older device: All in One (Sept 2024) (20 files).",
    "samples": [
@@ -3316,7 +3891,8 @@
      "id": "b829e963-b37d-4f13-b879-f2f43c3585f1",
      "path": "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_All in One_Sept2024/CA_Dispo_Distillate_BubbleGum_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "abcc28e316eaa8fe",
@@ -3329,6 +3905,11 @@
     "device with packaging": 20
    },
    "lines": [],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — older device: All in One (Sept 2024) (20 files).",
    "samples": [
@@ -3348,7 +3929,8 @@
      "id": "bb128573-e098-449c-b503-7711185f9906",
      "path": "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_All in One_Sept2024/oldVersion/CA_Dispo_Distillate_Lemon_45_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1370dc3813874d2c",
@@ -3361,6 +3943,11 @@
     "device with packaging": 15
    },
    "lines": [],
+   "checked": {
+    "files": 15,
+    "visual": 15,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (15 files).",
    "samples": [
@@ -3380,7 +3967,8 @@
      "id": "27ab6cb2-6091-44d0-8198-e2a266875394",
      "path": "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_Feb2024/Black and Gold Device/CA_Disposables_Distillate_CaliGasOG_45_V2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "46ebf74158451619",
@@ -3393,6 +3981,11 @@
     "device with packaging": 20
    },
    "lines": [],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (20 files).",
    "samples": [
@@ -3412,7 +4005,8 @@
      "id": "f003517b-5c30-4ee6-80bf-1d37acce7262",
      "path": "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_Feb2024/Color Device/Disposables_Distillate_JakeHerer_45_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d9f6a495a79bab80",
@@ -3425,6 +4019,11 @@
     "device with packaging": 20
    },
    "lines": [],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (20 files).",
    "samples": [
@@ -3444,7 +4043,8 @@
      "id": "de213c07-969c-4036-ab32-065ddf360a5d",
      "path": "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_Feb2024/Grey Device/Disposables_Distillate_BlueberryHaze_45_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "817118344d0a754d",
@@ -3479,6 +4079,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 42,
+    "visual": 42,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Distillate Disposables · CA · Gen 3 · CA026 — 32 of 42 files on rows, 10 on no row. Flavours: Tahoe OG, Blue Slushie, Pineapple Express, Galactic Diesel, Magic Melon OG, Sour Watermelon Squirt +2.",
    "samples": [
@@ -3498,7 +4103,8 @@
      "id": "2f7043c8-ecb5-40df-805f-00ca8884887a",
      "path": "Renders/Disposables/CA/CA_Distillate/CA_1G_Distillate_TechDesign_June2025/CA_1G_Distillate_Disposables_45_Solo_GalacticDiesel.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "fab221883a29de4e",
@@ -3529,6 +4135,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 0.5G Hash Rosin Disposables · CA · Gen 3 · CA030 — 20 of 20 files on rows. Flavours: Super Fatso, Slurpicane, Iced Sangria, Galactic Guava, Sour Diesel.",
    "samples": [
@@ -3548,7 +4159,8 @@
      "id": "0763209e-959a-4305-af7a-3aab8110d18b",
      "path": "Renders/Disposables/CA/CA_Hash Rosin/v2/CA_05G_HashRosin_Dispos_45_GALACTIC_GUAVA_45_0019.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "4423c770cb25064b",
@@ -3563,6 +4175,11 @@
     "label flat": 1
    },
    "lines": [],
+   "checked": {
+    "files": 22,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (22 files).",
    "samples": [
@@ -3582,7 +4199,8 @@
      "id": "2380808b-cad9-4f11-80b2-f4f06607d4ff",
      "path": "Renders/Disposables/CA/CA_Hash Rosin/CA_0.5G_HashRosin_TechDesign_June2025/CA_05G_HashRosin_Disposables_45_Solo_Fatso.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "8131b45c9f7098f6",
@@ -3595,6 +4213,11 @@
     "device with packaging": 11
    },
    "lines": [],
+   "checked": {
+    "files": 11,
+    "visual": 11,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (11 files).",
    "samples": [
@@ -3614,7 +4237,8 @@
      "id": "8de5dccb-5d0c-4c9a-94c3-3f316c70d0b0",
      "path": "Renders/Disposables/CA/CA_Hash Rosin/CA_0.5G_HR_Mavricks_Aug2024/CA_500_HR_Mavricks_Group.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d305382be11ea2b8",
@@ -3627,6 +4251,11 @@
     "device with packaging": 10
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: CA_0.5G_HR_Mavricks_June2024 (10 files).",
    "samples": [
@@ -3646,7 +4275,8 @@
      "id": "d2e9a649-a8df-470f-85da-823b13fb6d88",
      "path": "Renders/Disposables/CA/CA_Hash Rosin/CA_0.5G_HR_Mavricks_June2024/Disposables_HashRosin_Donnie_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "5992bf695f6e5048",
@@ -3659,6 +4289,11 @@
     "device with packaging": 10
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — older device: All in One (Sept 2024) (10 files).",
    "samples": [
@@ -3678,7 +4313,8 @@
      "id": "c3d0844f-93b7-4ece-a427-acb14a2bb5b0",
      "path": "Renders/Disposables/CA/CA_Live Resin/CA_1G_LiveResin_All in One_Sept2024/CA_Dispo_AllinOne_LR_OGKush_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "8a571f8979d42a5f",
@@ -3709,6 +4345,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 22,
+    "visual": 22,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Live Resin Disposables · CA · CA028 — 20 of 22 files on rows, 2 on no row. Flavours: Juice Man, Grape Dosi, OG KUSH, Golden Papaya, Lemon Kush Mintz.",
    "samples": [
@@ -3728,7 +4369,8 @@
      "id": "709a5920-10d8-4f52-b80d-8f3af4107c6d",
      "path": "Renders/Disposables/CA/CA_Live Resin/CA_1G_LiveResin_TechDesign_June2025/CA_1G_LiveResin_Disposables_45_GrapeDosi.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "8515887757414f47",
@@ -3741,6 +4383,11 @@
     "device with packaging": 10
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — older device: All in One (Sept 2024) (10 files).",
    "samples": [
@@ -3760,7 +4407,8 @@
      "id": "397498c9-dcc4-4ca8-9d3b-d4b1bb7bb1d3",
      "path": "Renders/Disposables/CA/CA_MeltedDiamonds/CA_1G_MeltedDiamond_All in One_Sept2024/CA_Dispo_AllinOne_MD_ParadisePunchOG_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "3a6e7eb30b9bb934",
@@ -3792,6 +4440,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 22,
+    "visual": 22,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Melted Diamond Disposables · CA · CA029 — 20 of 22 files on rows, 2 on no row. Flavours: Orange Tangie, Durban Delight, Lemon Cherry Gelato, Grape Gas, Mango Madness.",
    "samples": [
@@ -3811,7 +4464,8 @@
      "id": "d6e4f1a9-a935-4628-86de-1b78e67056f6",
      "path": "Renders/Disposables/CA/CA_MeltedDiamonds/CA_1G_MeltedDiamonds_TechDesign_June2025/CA_1G_MeltedDiamonds_Disposables_Front_GrapeGas.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "b81364711bf48cec",
@@ -3825,6 +4479,11 @@
     "in scene": 1
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -3836,7 +4495,8 @@
      "id": "1550c326-6baf-4769-ba19-e3af84a8fb50",
      "path": "Renders/Disposables/Card Insert/PodInsert_V2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "143bbd8711b6402e",
@@ -3850,6 +4510,11 @@
     "in scene": 3
    },
    "lines": [],
+   "checked": {
+    "files": 9,
+    "visual": 8,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (9 files).",
    "samples": [
@@ -3869,7 +4534,8 @@
      "id": "9f1ba7a9-f0f4-4342-92e4-605bea34361e",
      "path": "Renders/Disposables/Card Insert/WorldCup/Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a8ed1c0dbdf1e3e7",
@@ -3894,6 +4560,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 3.5g Live Resin Disposables · HEMP · HEMP014 — 1 of 6 files on rows, 5 on no row. Flavours: Sour Cherry Limeade.",
    "samples": [
@@ -3913,7 +4584,8 @@
      "id": "572c8dff-1244-4639-b86e-38e212086c0f",
      "path": "Renders/Disposables/Device/Disposable_CloseUp_MDLR.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "af661619520c9a4c",
@@ -3926,6 +4598,11 @@
     "device only": 5
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (5 files).",
    "samples": [
@@ -3945,7 +4622,8 @@
      "id": "24aaf874-9c50-44d8-8e72-e957253149c1",
      "path": "Renders/Disposables/Device/Dual Device/MockUP_V4.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "6c185e722e4a73d5",
@@ -3958,6 +4636,11 @@
     "device only": 4
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "samples": [
@@ -3977,7 +4660,8 @@
      "id": "22ee9597-b0fe-4cca-80bf-d4f09a2df3fe",
      "path": "Renders/Disposables/Device/Dual Device/Front_45/v2/Back_45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "be7a2b37d6e16325",
@@ -3990,6 +4674,11 @@
     "device only": 6
    },
    "lines": [],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "samples": [
@@ -4009,7 +4698,8 @@
      "id": "b4416f6d-0978-4edf-b5e5-267dcec6b8de",
      "path": "Renders/Disposables/Device/Gen4MockUp/V1/DeviceLED_V1_Side1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "92f2521df2dfd66a",
@@ -4022,6 +4712,11 @@
     "device only": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
@@ -4037,7 +4732,8 @@
      "id": "48224831-f208-48f7-9d9c-4f5aa26db99e",
      "path": "Renders/Disposables/Device/OG_Magnetic_Dispo/Reveal/v2.jpg"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "568390a85cf506c9",
@@ -4082,6 +4778,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 40,
+    "visual": 38,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2G Dual Disposable Flavors · MI · MI030 — 40 of 40 files on rows. Flavours: Grape Ape, Blackberry Kush, Cherry Slushie, Limoncello, Skywalker OG, Blue Slushie +12.",
    "samples": [
@@ -4101,7 +4802,8 @@
      "id": "e1b6d90a-59e3-4f0e-b163-f84df419850e",
      "path": "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1/Dual Dispose device_only/Dual_Flavor_Dispo_4thDevice_45__CHERRY_SLUSHIE_LIMONCELLO45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "0347350a441ae1b1",
@@ -4127,6 +4829,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2G Dual Disposable Flavors · MI · MI030 — 3 of 4 files on rows, 1 on no row. Flavours: Blackberry Kush, Orange Dream.",
    "samples": [
@@ -4146,7 +4853,8 @@
      "id": "c7b19c5d-0005-4818-b134-c33d7d5f4c9c",
      "path": "Renders/Disposables/MI/MI Dual_Flavor_Dispo_4th/v1/Dual Dispose device_only/LightOnOff/BothOn.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2684f3bae629a652",
@@ -4193,6 +4901,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 166,
+    "visual": 147,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2G Magnetic Dispo Flavors · MI · MI031 — 97 of 166 files on rows, 69 on no row. Flavours: Cannes Kush, Blueberry Muffin (I), Santorini grape pie, Canary Island Punch, DC-10 Diesel, Ibiza Cherry +12.",
    "samples": [
@@ -4211,6 +4924,23 @@
     {
      "id": "3f83314c-95f3-44a1-8fde-d64cb5ed4fc0",
      "path": "Renders/Disposables/MI/MI Magnetic_Dispo/Devices_Boxes/MI_Magnetic_Dispo_45_SANTORINI_BUBBLE_GUM45.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "8c4187ca-8201-493c-942c-61696f8d4084",
+     "path": "Renders/Disposables/MI/MI Magnetic_Dispo/Magnetic Dispos Devices_Only/OG_Magnetic_Dispo_Front_b_SICILY_APPLE_GELATOFront.png",
+     "why": "looks different from the rest (distance 0.15, folder typical 0.05)"
+    },
+    {
+     "id": "1d778b1b-aee1-48c4-bf87-86416fd8309a",
+     "path": "Renders/Disposables/MI/MI Magnetic_Dispo/Magnetic Dispos Devices_Only/OG_Magnetic_Dispo_45_g_LONDON_SKYWALKER_OG45.png",
+     "why": "looks different from the rest (distance 0.11, folder typical 0.05)"
+    },
+    {
+     "id": "e78b797f-c508-4fb6-a8fe-e0480006b761",
+     "path": "Renders/Disposables/MI/MI Magnetic_Dispo/Magnetic Dispos Devices_Only/OG_Magnetic_Dispo_45_b_IBIZA_PURPLE_PUNCH45.png",
+     "why": "looks different from the rest (distance 0.15, folder typical 0.05)"
     }
    ]
   },
@@ -4239,6 +4969,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2G Distillate Disposables · MI · MI019 — 4 of 21 files on rows, 17 on no row. Flavours: Bubble Gum Burst, Habibi.",
    "samples": [
@@ -4258,7 +4993,8 @@
      "id": "2b9471fd-c237-4637-b3fa-9c58f31d20e3",
      "path": "Renders/Disposables/MI/MI_2G_Mixed_Flavors_Reused_Mylars/MI_2G_PineappleRuntz_45_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "f31bb31c84a5fdfb",
@@ -4310,6 +5046,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 101,
+    "visual": 99,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2G Disposable Flavors · MI · MI029 (+1 more line: 2G Distillate Disposables MI) — 99 of 101 files on rows, 2 on no row. Flavours: Blue Slushie, Arctic Blueberry, Aloha Passion Rush, Galactic Diesel, Horchata, Lemon Cherry Fizz +4.",
    "samples": [
@@ -4329,7 +5070,8 @@
      "id": "892cc28d-4e9f-48ee-b408-0de7efd14979",
      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/00_MI_2G_Distillate_Disposables_GroupShot.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "0facc01a82a87839",
@@ -4342,6 +5084,11 @@
     "multi pack": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -4353,7 +5100,8 @@
      "id": "119fba8a-1130-4213-991c-eee0bfec0f07",
      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/Golden_Hour/45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "949f3d10fa57e1e4",
@@ -4366,6 +5114,11 @@
     "multi pack": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
@@ -4381,7 +5134,8 @@
      "id": "7b3e2c4c-db5a-48f1-a858-b5d12b67e48f",
      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Jan2026/MasterCase/MI_2G_Distillate_MasterCase_Closed_3.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "09bf82a08a88ec78",
@@ -4394,6 +5148,11 @@
     "device with packaging": 20
    },
    "lines": [],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: MI_2G_Distillate_July2024 (20 files).",
    "samples": [
@@ -4413,7 +5172,8 @@
      "id": "bf972c7c-b7bd-40d5-8110-b695ec2cbf54",
      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_July2024/MI_Disposables_Distillate_BlueberryMuffin_45_1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "68c53ad24b471934",
@@ -4426,6 +5186,11 @@
     "device with packaging": 23
    },
    "lines": [],
+   "checked": {
+    "files": 23,
+    "visual": 23,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: MI_2G_Distillate_NewDevice_Nov2024 (23 files).",
    "samples": [
@@ -4445,7 +5210,8 @@
      "id": "15eff8ae-936b-4e30-a9a7-c94c6dc4aa7f",
      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_NewDevice_Nov2024/MI_2G_Dispos_WatermelonOG_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "e19ef947564b098b",
@@ -4458,6 +5224,11 @@
     "device with packaging": 20
    },
    "lines": [],
+   "checked": {
+    "files": 20,
+    "visual": 18,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: MI_2G_Distillate_Nov2024 (20 files).",
    "samples": [
@@ -4477,7 +5248,8 @@
      "id": "d9912aa6-62a8-4039-ab00-a961423545e0",
      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_Nov2024/MI_2G_Dispos_StrawberryShortcake_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "7dd6c0f0fda5d63a",
@@ -4506,6 +5278,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 42,
+    "visual": 42,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2G Distillate Disposables · MI · MI019 — 12 of 42 files on rows, 30 on no row. Flavours: Watermelon Moonshine, Pineapple Paradise, Sweet Dreams OG.",
    "samples": [
@@ -4525,7 +5302,8 @@
      "id": "07ff2a1c-976e-4412-86ed-18e7c02d31a5",
      "path": "Renders/Disposables/MI/MI_Distillate/MI_2G_Distillate_TechDesign_June2025/MI_2G_Distillate_Disposables_Front_GalacticDiesel.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "14dcaf13af747ca5",
@@ -4555,6 +5333,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 11,
+    "visual": 11,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 0.5G Mavricks Hash Rosin Disposables · MI · MI023 — 10 of 11 files on rows, 1 on no row. Flavours: Mimosa, Fatso, Donnie Burger, Tropicana Cherry, Garlic Jelly.",
    "samples": [
@@ -4574,7 +5357,8 @@
      "id": "cf1bfe82-5e20-4b84-8654-d1917ae1d542",
      "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Aug2024/Fatso_Three_Quarters.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "494b8d4dc5117357",
@@ -4587,6 +5371,11 @@
     "device with packaging": 9
    },
    "lines": [],
+   "checked": {
+    "files": 9,
+    "visual": 9,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: MI_0.5G_HR_Mavricks_Feb2024 (9 files).",
    "samples": [
@@ -4606,7 +5395,8 @@
      "id": "5c0f604a-624b-4118-b816-af2319e78edd",
      "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_0.5G_HR_Mavricks_Feb2024/Disposables_HashRosin_Mimosa_45_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "805788d9a7cc84cb",
@@ -4622,6 +5412,11 @@
     "label flat": 2
    },
    "lines": [],
+   "checked": {
+    "files": 22,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (22 files).",
    "samples": [
@@ -4641,7 +5436,8 @@
      "id": "c6f35580-7d28-4ff6-ac62-b045f54db74c",
      "path": "Renders/Disposables/MI/MI_Hash Rosin/MI_05G_Hash_Rosin_TechDesign_June2025/MI_05G_HashRosin_Disposables_45_Fatso.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "971f05759c950f34",
@@ -4672,6 +5468,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 22,
+    "visual": 22,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Live Resin Disposables · MI · MI021 — 20 of 22 files on rows, 2 on no row. Flavours: Lemon Kush Mintz, OG KUSH, Golden Papaya, Grape Dosi, Juice Man.",
    "samples": [
@@ -4691,7 +5492,8 @@
      "id": "c7cc8e83-ca7a-4c14-a108-a8d8629fd95c",
      "path": "Renders/Disposables/MI/MI_Live Resin/MI_1G_Live Resin_TechDesign_June2025/MI_1G_LiveResin_Disposables_Front_LemonKushMintz.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "c62dce0fc2631fe8",
@@ -4704,6 +5506,11 @@
     "device with packaging": 9
    },
    "lines": [],
+   "checked": {
+    "files": 9,
+    "visual": 9,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — older device: All in One (Sept 2024) (9 files).",
    "samples": [
@@ -4723,7 +5530,8 @@
      "id": "1e096ca1-fe4c-4434-a86f-270cdb27c8db",
      "path": "Renders/Disposables/MI/MI_Live Resin/MI_1G_LiveResin_All in One_Sept2024/Disposables_LiveResin_OGKush_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "db01e98f8825c36d",
@@ -4754,6 +5562,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 22,
+    "visual": 22,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Melted Diamond Disposables · MI · MI022 — 20 of 22 files on rows, 2 on no row. Flavours: Orange Tangie, Grape Gas, Durban Delight, Lemon Cherry Gelato, Mango Madness.",
    "samples": [
@@ -4773,7 +5586,8 @@
      "id": "de0d16ac-cd4c-42da-b21c-58caa4afe6e4",
      "path": "Renders/Disposables/MI/MI_Melted Diamond/MI_1G_Melted_Diamond_TechDesign_June2025/MI_1G_MeltedDiamonds_Disposables_Front_DurbanDelight.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "44a589ed771a51ff",
@@ -4786,6 +5600,11 @@
     "device with packaging": 8
    },
    "lines": [],
+   "checked": {
+    "files": 8,
+    "visual": 8,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — older device: All in One (Sept 2024) (8 files).",
    "samples": [
@@ -4805,7 +5624,8 @@
      "id": "1ca9af48-bc13-4aa7-be30-d9b49aee35f1",
      "path": "Renders/Disposables/MI/MI_Melted Diamond/MI_1G_MeltedDiamond_All in One_Sept2024/Disposables_MeltedDiamonds_MangoMadness_V2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a81e164af5d378c5",
@@ -4841,6 +5661,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 41,
+    "visual": 41,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Distallite 2 Gram Dispos · MO · MO001 — 40 of 41 files on rows, 1 on no row. Flavours: Moroccon Peaches, Blue Dream, Honey Melon, Gelato #33, Lemon Tart, Frozen Pomegranate +4.",
    "samples": [
@@ -4860,7 +5685,8 @@
      "id": "63dc3c0a-ba2a-4835-a3c2-51723c0b3e8d",
      "path": "Renders/Disposables/MO/MO 2G Disposables NOV 2025/MO_2G_Disposable_Front_MorocconPeaches.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d30626898b5e5114",
@@ -4874,6 +5700,11 @@
     "multi pack": 1
    },
    "lines": [],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: MO_2G_Disposables March 2025 (21 files).",
    "samples": [
@@ -4893,7 +5724,8 @@
      "id": "e82b9eb2-36f6-4b39-8368-230b72e0f64b",
      "path": "Renders/Disposables/MO/MO_2G_Disposables March 2025/MO_2G_Dispos_PurplePunch_ThreeQuarters.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "55f81093078d8484",
@@ -4940,6 +5772,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Distallite 2 Gram Disposables · NJ · NJ001 (+1 more line: Distallite 2 Gram Disposables NJ) — 20 of 20 files on rows. Flavours: Gogi OG, Blueberry Cookies, Habibi, Lemonado, Strawberry Runts, Sour Watermelon Squirt +4.",
    "samples": [
@@ -4959,7 +5796,8 @@
      "id": "3e9ea334-d583-41fb-83fd-262526e93dbd",
      "path": "Renders/Disposables/NJ/NJ_2G_Disposable/NJ_2G_Dispos_Lemonado_ThreeQuarters.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "8202ac46a31cd64b",
@@ -4994,6 +5832,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Distillate Disposables · NM · NM002 — 20 of 21 files on rows, 1 on no row. Flavours: Strawberry Runtz, Watermelon OG, Jack Herer, Cali Gas OG, Blueberry Haze, Purple Punch +4.",
    "samples": [
@@ -5013,7 +5856,8 @@
      "id": "977f7ef3-520f-4895-b31f-c35e81f16644",
      "path": "Renders/Disposables/NM/Gen2 Device Renders/NM_1G_Dispos Gen2/NM_1G_Dispos_CaliGas_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "4655c050b5100392",
@@ -5027,6 +5871,11 @@
     "n/a": 1
    },
    "lines": [],
+   "checked": {
+    "files": 17,
+    "visual": 13,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (17 files).",
    "samples": [
@@ -5046,7 +5895,8 @@
      "id": "fcb80898-80d0-48e8-830b-2f7e554eca71",
      "path": "Renders/Disposables/NM/Gen2 Device Renders/NM_2G_Dispos Gen2/Black and Gold Device/NM_Disposables_Distillate_WeddingCake_45_V2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "07e0387350224615",
@@ -5060,6 +5910,11 @@
     "n/a": 1
    },
    "lines": [],
+   "checked": {
+    "files": 20,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (20 files).",
    "samples": [
@@ -5079,7 +5934,8 @@
      "id": "60ace52b-dbe7-4615-85f2-2d1adf42e46d",
      "path": "Renders/Disposables/NM/Gen2 Device Renders/NM_2G_Dispos Gen2/ColorDevice/NM_Disposables_Distillate_JakeHerer_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "99e648d4d4c43de5",
@@ -5115,6 +5971,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 41,
+    "visual": 39,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Distillate Disposables · NM · Gen 3 · NM007 — 36 of 41 files on rows, 5 on no row. Flavours: Purple Breath, Magic Melon OG, Strawberry Kiwi Kush, Lemonade Rose, Godfather OG, Banana Cream Cake +3.",
    "samples": [
@@ -5134,7 +5995,8 @@
      "id": "0968e4a1-115a-4199-9b1e-11960b34f30e",
      "path": "Renders/Disposables/NM/NM 1G Distillate 2026/NM_1G_Distillate_Disposables_45_StrawberryKiwiKush.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "55a6e07d64668d98",
@@ -5165,6 +6027,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Live Resin Disposables · NM · Gen 3 · NM008 — 20 of 21 files on rows, 1 on no row. Flavours: Grape Dosi, OG KUSH, Juice Man, Golden Papaya, Lemon Kush Mintz.",
    "samples": [
@@ -5184,7 +6051,8 @@
      "id": "f48ee18d-067e-4c35-ac42-0303b217a350",
      "path": "Renders/Disposables/NM/NM 1G Live Resin 2026/00_NM_1G_LiveResin_Disposables_GroupShot.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "5771699f9831ff73",
@@ -5215,6 +6083,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Melted Diamond Disposables · NM · Gen 3 · NM009 — 20 of 21 files on rows, 1 on no row. Flavours: Grape Gas, Durban Delight, Orange Tangie, Mango Madness, Lemon Cherry Gelato.",
    "samples": [
@@ -5234,7 +6107,8 @@
      "id": "0e7ead0a-4e49-4caa-9425-881ff9f34478",
      "path": "Renders/Disposables/NM/NM 1G Melted Diamonds 2026/NM_1G_MD_Disposable_Front_DurbanDelight.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "4c41b289386aba8f",
@@ -5283,6 +6157,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 41,
+    "visual": 38,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Distillate Gummy Mylar Bags · NM · NM006 (+1 more line: 2G Distillate Disposables NM) — 40 of 41 files on rows, 1 on no row. Flavours: Blueberry Cookies, Habibi, Sour Watermelon Squirt, Galactic Diesel, Frozen Pomegranate, Strawberry Runts +4.",
    "samples": [
@@ -5302,7 +6181,8 @@
      "id": "bf89591c-1ef5-44d2-b5cc-73472d603aad",
      "path": "Renders/Disposables/NM/NM 2G Distillate 2026/NM_2G_Distillate_Disposables_Front_Habibi.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "cd7f77547fda0acf",
@@ -5332,6 +6212,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Live Resin Disposables · NY · NY005 — 20 of 20 files on rows. Flavours: Juice Man, Lemon Kush Mintz, OG KUSH, Grape Dosi, Golden Papaya.",
    "samples": [
@@ -5351,7 +6236,8 @@
      "id": "ac8b8616-72c4-44fc-b588-f643c15e71b3",
      "path": "Renders/Disposables/NY/NY 1G Gen 3 Live Resin AIO/NY_1G_LiveResin_Disposables_Front_Solo_OGKush.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "17a9ab231721c824",
@@ -5383,6 +6269,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Melted Diamond Disposables · NY · NY006 — 20 of 20 files on rows. Flavours: Orange Tangie, Lemon Cherry Gelato, Mango Madness, Grape Gas, Durban Delight.",
    "samples": [
@@ -5402,7 +6293,8 @@
      "id": "9a708560-af7b-4478-a378-3040f9f76c0f",
      "path": "Renders/Disposables/NY/NY 1G Gen 3 Melted Diamond AIO/NY_1G_MD_Disposable_Front_LemonCherryGelato0001.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "f1a3ec0a9e87d568",
@@ -5445,6 +6337,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 24,
+    "visual": 24,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2G Distillate Disposables · NY · Gen 3 · NY004 (+1 more line: 2G Distillate Disposables NY) — 24 of 24 files on rows. Flavours: Blue Slushie, Tahoe OG, Habibi, Galactic Diesel, Frozen Pomegranate, Pineapple Paradise.",
    "samples": [
@@ -5464,7 +6361,8 @@
      "id": "70a4dd7d-4e91-400d-a596-dc67d835d7ba",
      "path": "Renders/Disposables/NY/NY 2G Distillate/NY_2G_Distillate_Disposables_45_Habibi.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2913a704f8af9978",
@@ -5494,6 +6392,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Live Resin Disposables · NY · NY005 — 20 of 20 files on rows. Flavours: Grape Dosi, Lemon Kush Mintz, Golden Papaya, Juice Man, OG KUSH.",
    "samples": [
@@ -5513,7 +6416,8 @@
      "id": "4d804d2c-f8ca-4dc9-9221-b4029e5dd228",
      "path": "Renders/Disposables/NY/NY Gen 3 1G LR AIO - Under 5MB/NY_1G_LiveResin_Disposables_45_LemonKushMintz.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "6a0cf5216f4a3720",
@@ -5544,6 +6448,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G Melted Diamond Disposables · NY · NY006 — 20 of 20 files on rows. Flavours: Lemon Cherry Gelato, Mango Madness, Orange Tangie, Grape Gas, Durban Delight.",
    "samples": [
@@ -5563,7 +6472,8 @@
      "id": "14c71eac-c54a-4395-850c-0109f741e5dd",
      "path": "Renders/Disposables/NY/NY Gen 3 1G MD AIO - Under 5MB/NY_1G_MD_Disposable_45_GrapeGas0001.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "ddb9fe7991397ce7",
@@ -5593,6 +6503,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 13,
+    "visual": 13,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2G Distillate Disposables · NY · NY001 — 12 of 13 files on rows, 1 on no row. Flavours: Sour Diesel, Habibi, Grand Daddy Purp, Temptation, Fatso, Cali Gas OG.",
    "samples": [
@@ -5612,7 +6527,8 @@
      "id": "0652c9b7-513d-49e0-9494-47ccb79117b3",
      "path": "Renders/Disposables/NY/NY_2G_Gen2Device/NY_2G_Dispos_GrandDaddyPurp_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "f27ae8c9efe99bce",
@@ -5626,6 +6542,11 @@
     "device only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 14,
+    "visual": 14,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — old folder: Old (14 files).",
    "samples": [
@@ -5645,7 +6566,8 @@
      "id": "92544da8-1598-4a96-87d3-94d7df0db90e",
      "path": "Renders/Disposables/NY/NY_2G_Gen2Device/Old/NY_2G_Dispos_Fatso_ThreeQuarters.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "588c5fd3fc3dcb22",
@@ -5660,6 +6582,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 22,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — folder marked WRONG (22 files).",
    "samples": [
@@ -5679,7 +6606,8 @@
      "id": "b02ec497-50db-4372-b2f1-d67837ec708b",
      "path": "Renders/Disposables/NY/WRONG - NY 1G LR Disposables 2026/00_NY_1G_LR_Disposable_GroupShot.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "9866ac6e2b999acb",
@@ -5694,6 +6622,11 @@
     "packaging only": 10
    },
    "lines": [],
+   "checked": {
+    "files": 21,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — folder marked WRONG (21 files).",
    "samples": [
@@ -5713,7 +6646,8 @@
      "id": "c1c13f71-0423-4290-b6fa-84dc50f8f783",
      "path": "Renders/Disposables/NY/WRONG - NY 1G MD Disposables 2026/NY_1G_MD_Disposable_Front_MangoMadness.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "5095945a5f3c6671",
@@ -5729,6 +6663,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 25,
+    "visual": 25,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — folder marked WRONG (25 files).",
    "samples": [
@@ -5748,7 +6687,8 @@
      "id": "de1d0e12-6530-4729-9edf-3503f6d1f22a",
      "path": "Renders/Disposables/NY/WRONG - NY 2G Distillate Disposable 2026/NY_2G_Distillate_Disposables_45Solo_PineappleParadise.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "976edb4109fa77da",
@@ -5782,6 +6722,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1.68G Distillate Disposables · OH · OH001 — 20 of 21 files on rows, 1 on no row. Flavours: Apple Gelato ICE, Jack Herer, Cali Gas OG, Purple Punch, Cherry Grapefruit, Super Sour Diesel +4.",
    "samples": [
@@ -5801,7 +6746,8 @@
      "id": "f256cf9b-29c9-44fb-8e64-38f37dae8fa2",
      "path": "Renders/Disposables/OH/OH_1_68G_Dispos/OH_1_68G_Dispos_PurplePunch_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a200e922b8b05092",
@@ -5832,6 +6778,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 22,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Hash Rosin Gummies Mylar Bags · CA · CA039 — 16 of 22 files on rows, 6 on no row. Flavours: Raspberry Pineapple, Juicy Tangerine, Mango Chamoy, Sour Blue Razz.",
    "samples": [
@@ -5851,7 +6802,8 @@
      "id": "34d8d6dc-e104-4fb4-9dd9-909c2aa6e32b",
      "path": "Renders/Edibles/CA Gummies/10CT HashRosin Edibles Mylar Bag 2026/CA_Gummies_HR_10ct_Mylar_45Solo_JuicyTangerine.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2218368d707c6628",
@@ -5896,6 +6848,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Hash Rosin Gummies Metal Cans · CA (+1 more line: Hash Rosin Gummies Mylar Bags CA) — 15 of 21 files on rows, 6 on no row. Flavours: Green Apple, Mango Madness, Strawberry, Mango Chamoy, Raspberry Pineapple.",
    "samples": [
@@ -5914,6 +6871,23 @@
     {
      "id": "c5060eb3-a38d-45c0-b3d1-116aa4765292",
      "path": "Renders/Edibles/Metal Cans/CA/Hash Rosin/CA_Hash_Rosin_Edible_Cans_MangoMadness_ThreeQuarters.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "5f0e6180-04b9-4384-9129-1a8c9b2f09cd",
+     "path": "Renders/Edibles/Metal Cans/CA/Hash Rosin/CA_Hash_Rosin_Edible_Cans_GreenApple_Top.png",
+     "why": "looks different from the rest (distance 0.11, folder typical 0.04)"
+    },
+    {
+     "id": "85999f62-016b-4cbb-a5fd-92fa09fcb27d",
+     "path": "Renders/Edibles/Metal Cans/CA/Hash Rosin/CA_Hash_Rosin_Edible_Cans_Strawberry_Top.png",
+     "why": "looks different from the rest (distance 0.11, folder typical 0.04)"
+    },
+    {
+     "id": "cd03a952-bc0b-4f38-8c07-222bcf5eb65e",
+     "path": "Renders/Edibles/Metal Cans/CA/Hash Rosin/CA_Hash_Rosin_Edible_Cans_MangoChamoy_Top.png",
+     "why": "looks different from the rest (distance 0.11, folder typical 0.04)"
     }
    ]
   },
@@ -5945,6 +6919,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 14,
+    "visual": 14,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Distillate Gummies Mylar Bags · CA — 2 of 14 files on rows, 12 on no row. Flavours: Strawberry Lemon.",
    "samples": [
@@ -5963,6 +6942,18 @@
     {
      "id": "006e1884-4397-4760-ad9a-9090d4f2e137",
      "path": "Renders/Edibles/Metal Cans/CA/THC CBG/CBG_CGN_CanEdibles_RaspberryPapaya_Top.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "223c5bdd-9437-4bfd-a891-3180815bb06d",
+     "path": "Renders/Edibles/Metal Cans/CA/THC CBG/CBG_CGN_CanEdibles_SourWatermelon_Top.png",
+     "why": "looks different from the rest (distance 0.09, folder typical 0.04)"
+    },
+    {
+     "id": "006e1884-4397-4760-ad9a-9090d4f2e137",
+     "path": "Renders/Edibles/Metal Cans/CA/THC CBG/CBG_CGN_CanEdibles_RaspberryPapaya_Top.png",
+     "why": "looks different from the rest (distance 0.09, folder typical 0.04)"
     }
    ]
   },
@@ -6015,6 +7006,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 14,
+    "visual": 14,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Hash Rosin Gummies Metal Cans · CA (+2 more lines: Hash Rosin Gummies Mylar Bags CA; Distillate Gummies Mylar Bags CA) — 5 of 14 files on rows, 9 on no row. Flavours: Mango Chamoy.",
    "samples": [
@@ -6033,6 +7029,13 @@
     {
      "id": "926b74ab-17a7-4a85-aa84-d73dabba206a",
      "path": "Renders/Edibles/Metal Cans/CA/THC CBN/CBG_CGN_CanEdibles_MangoChamoy_Top.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "c58084e0-c8e1-4ca9-bb4c-7577723a534e",
+     "path": "Renders/Edibles/Metal Cans/CA/THC CBN/CBG_CGN_CanEdibles_WatermelonCucumber_Top.png",
+     "why": "looks different from the rest (distance 0.11, folder typical 0.04)"
     }
    ]
   },
@@ -6089,6 +7092,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 17,
+    "visual": 17,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Hash Rosin Gummies Metal Cans · MI · MI014 (+2 more lines: 4ct Hash Rosin Gummies MI; 10ct Hash Rosin Gummies MI) — 12 of 17 files on rows, 5 on no row. Flavours: Green Apple, Mango Madness, Mango Chamoy, Strawberry.",
    "samples": [
@@ -6107,6 +7115,13 @@
     {
      "id": "6a81eddb-2b3d-463c-960b-76d269cabd66",
      "path": "Renders/Edibles/Metal Cans/MI/Hash Rosin/MI_Hash_Rosin_Edible_Cans_Group_Shot.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "f673b04f-2de6-49e0-b3ad-83a940cfa5bc",
+     "path": "Renders/Edibles/Metal Cans/MI/Hash Rosin/MI_Hash_Rosin_Edible_Cans_GreenApple_Top.png",
+     "why": "looks different from the rest (distance 0.11, folder typical 0.04)"
     }
    ]
   },
@@ -6214,6 +7229,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Hash Rosin Gummies Metal Cans · CA (+7 more lines: Hash Rosin Gummies Metal Cans MI; THC 440 mg gummies, 44mg per gummy, tin can OH) — 4 of 4 files on rows. Flavours: Raspberry Pineapple, Strawberry.",
    "samples": [
@@ -6233,7 +7253,8 @@
      "id": "ceacb048-d6a4-4c20-bfe5-3ed0a9362358",
      "path": "Renders/Edibles/Metal Cans/MockUp/4CT/GummiesTin_4CT_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "046edd215a434047",
@@ -6247,6 +7268,11 @@
     "product with packaging": 1
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "samples": [
@@ -6266,7 +7292,8 @@
      "id": "6da0f6bd-f9ba-4896-a91f-4d549a88d334",
      "path": "Renders/Edibles/Metal Cans/MockUp/10CT/10CT_V2/GummiesTin_Mockup_V2_Top_Black.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "21438158baaf4c7e",
@@ -6313,6 +7340,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 17,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 10ct Distillate Gummy Mylar Bags · MI · MI012 (+1 more line: 5ct Distillate Gummy Mylar Bags MI) — 20 of 20 files on rows. Flavours: Mango Madness, Sour Apple, Strawberry Lemon, Very Berry, Watermelon.",
    "samples": [
@@ -6332,7 +7364,8 @@
      "id": "880f9c36-d33f-4b2e-80fb-ea94e5e1cc9f",
      "path": "Renders/Edibles/MI Gummies/200MG 10ct Net wt 50/Mambas_MI_10ct_VeryBerry_45_NoGummy_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "002467eaa8d9ab2c",
@@ -6388,6 +7421,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 35,
+    "visual": 35,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 10ct Distillate Gummy Mylar Bags · MI · MI012 (+2 more lines: 5ct Distillate Gummy Mylar Bags MI; Hash Rosin Gummies Metal Cans MI) — 24 of 35 files on rows, 11 on no row. Flavours: Sour Apple, Mango Madness, Very Berry, Watermelon.",
    "samples": [
@@ -6406,6 +7444,13 @@
     {
      "id": "6f40bdcd-e660-44b1-9e86-f0d6d30c354d",
      "path": "Renders/Edibles/MI Gummies/200MG 10ct Net WT 53.3/MI_Mambas_OpenBag_Strawberry.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "af162b7d-a3c8-4a83-a3d4-4f2c70ced34e",
+     "path": "Renders/Edibles/MI Gummies/200MG 10ct Net WT 53.3/MI_Mambas_OpenBag_SourApple.png",
+     "why": "looks different from the rest (distance 0.09, folder typical 0.03)"
     }
    ]
   },
@@ -6453,6 +7498,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 17,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 10ct Distillate Gummy Mylar Bags · MI · MI012 (+1 more line: 5ct Distillate Gummy Mylar Bags MI) — 20 of 20 files on rows. Flavours: Sour Apple, Very Berry, Mango Madness, Strawberry Lemon, Watermelon.",
    "samples": [
@@ -6472,7 +7522,8 @@
      "id": "bdce3677-37d2-4ea8-a87a-1fdaa932b8fa",
      "path": "Renders/Edibles/MI Gummies/200MG 5ct/Mambas_MI_5ct_SourApple_Front_NoGummy_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "045a0d851a5b0e2f",
@@ -6516,6 +7567,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 4ct Hash Rosin Gummies · MI · MI015 (+1 more line: 10ct Hash Rosin Gummies MI) — 16 of 20 files on rows, 4 on no row. Flavours: Mango Chamoy, Raspberry Pineapple, Juicy Tangerine, Sour Blue Razz.",
    "samples": [
@@ -6535,7 +7591,8 @@
      "id": "742815e1-950f-411a-b5a9-0a1d772dfc82",
      "path": "Renders/Edibles/MI Gummies/HR 10ct Mylar 2026/MI_Gummies_HR_10ct_Mylar_FrontSolo_RaspberryPineapple.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "466bf5256cbac544",
@@ -6580,6 +7637,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 22,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 4ct Hash Rosin Gummies · MI · MI015 (+1 more line: 10ct Hash Rosin Gummies MI) — 16 of 22 files on rows, 6 on no row. Flavours: Sour Blue Razz, Raspberry Pineapple, Juicy Tangerine, Mango Chamoy.",
    "samples": [
@@ -6599,7 +7661,8 @@
      "id": "904d78be-152a-483d-9154-0b73f6ab333b",
      "path": "Renders/Edibles/MI Gummies/HR 4ct Mylar 2026/MI_Gummies_HR_4ct_Mylar_FrontSolo_JuicyTangerine.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d0f9f2bf5773268a",
@@ -6642,6 +7705,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 10,
+    "visual": 9,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 4ct Hash Rosin Gummies · MI · MI015 (+1 more line: 10ct Hash Rosin Gummies MI) — 8 of 10 files on rows, 2 on no row. Flavours: Juicy Tangerine, Sour Blue Razz, Mango Chamoy, Raspberry Pineapple.",
    "samples": [
@@ -6661,7 +7729,8 @@
      "id": "0398a71a-0ddf-431c-818e-5367aa97402c",
      "path": "Renders/Edibles/MI Gummies/HR_Gummies_Only/MI_Gummies_Only_Mylar_Front_SourBlueRazz.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "072cfdbcf1476cf7",
@@ -6676,6 +7745,11 @@
     "in scene": 2
    },
    "lines": [],
+   "checked": {
+    "files": 24,
+    "visual": 22,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: 2024 OCT (24 files).",
    "samples": [
@@ -6695,7 +7769,8 @@
      "id": "24f08fbc-48e6-4c29-a5e2-cc8b9a6888d5",
      "path": "Renders/Edibles/MO Gummies/2024 OCT/Mambas_MO_StrawberryLemon_45_NoGummy_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "331e5fd1ff597e9e",
@@ -6722,6 +7797,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 5,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Distillate Gummies Mylar Bag · MO · MO009 — 5 of 5 files on rows. Flavours: Watermelon.",
    "samples": [
@@ -6741,7 +7821,8 @@
      "id": "2d5a91a4-9e94-4166-8c2c-dd098976035a",
      "path": "Renders/Edibles/MO Gummies/2024 OCT/MO_Gummies QR Update/Mambas_MO_Watermelon_Back_V2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "cf99987a8aebdbcd",
@@ -6783,6 +7864,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 18,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Distillate Gummies Mylar Bag · MO · MO009 (+1 more line: Live Resin Gummies Mylar Bag MO) — 16 of 21 files on rows, 5 on no row. Flavours: Very Berry, Sour Apple, Strawberry Lemon, Watermelon.",
    "samples": [
@@ -6802,7 +7888,8 @@
      "id": "d9a83d42-2d71-40dc-8184-ab22e44f7ff5",
      "path": "Renders/Edibles/MO Gummies/2025 March/Mambas_MO_VerryBerry_45_Gummy_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1bb6d0a1a1ef3bce",
@@ -6842,6 +7929,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Distillate Gummies Mylar Bag · MO · MO009 (+1 more line: Live Resin Gummies Mylar Bag MO) — 10 of 10 files on rows. Flavours: Watermelon, Strawberry Lemon, Mango Mirage, Very Berry, Sour Apple.",
    "samples": [
@@ -6861,7 +7953,8 @@
      "id": "b6d29c05-be78-4928-b309-917b60ac006c",
      "path": "Renders/Edibles/MO Gummies/2025 NOV MO Gummies/MO_Gummies_MangoMirage_45Solo.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1c876917d25dfde1",
@@ -6874,6 +7967,11 @@
     "packaging only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -6885,7 +7983,8 @@
      "id": "72a14744-a8e9-4c5d-be3d-a4f3c6ab9493",
      "path": "Renders/Edibles/NJ Gummies/NJ_Gummies_Strawberry_Back_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1820d456c2ebd4e3",
@@ -6919,6 +8018,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 14,
+    "visual": 14,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Distillate Gummy Mylar Bags · NM · NM006 — 14 of 14 files on rows. Flavours: Lime, Mango Madness, Very Berry, Sweet and Sour, Strawberry, Watermelon +1.",
    "samples": [
@@ -6938,7 +8042,8 @@
      "id": "d923820a-01bb-493a-ad12-0b6b84b419b1",
      "path": "Renders/Edibles/NM/NM_Gummies_SweetSour_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "9c3303ab18510d12",
@@ -6951,6 +8056,11 @@
     "label flat": 7
    },
    "lines": [],
+   "checked": {
+    "files": 7,
+    "visual": 7,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (7 files).",
    "samples": [
@@ -6970,6 +8080,13 @@
      "id": "dbf9cd1f-2ec6-4a69-8fc6-946139bd5987",
      "path": "Renders/Edibles/RedesignTest/Icons Variations/4.png"
     }
+   ],
+   "outliers": [
+    {
+     "id": "b2444d69-7925-481d-b243-ea6e75077a63",
+     "path": "Renders/Edibles/RedesignTest/Icons Variations/0.png",
+     "why": "looks different from the rest (distance 0.11, folder typical 0.01)"
+    }
    ]
   },
   {
@@ -6983,6 +8100,11 @@
     "packaging only": 14
    },
    "lines": [],
+   "checked": {
+    "files": 14,
+    "visual": 14,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (14 files).",
    "samples": [
@@ -7002,6 +8124,13 @@
      "id": "9d254210-4975-44dc-8be4-6ad1baa0888c",
      "path": "Renders/Flower Bags/THC/CA/FlowerBags_Kanye_45_V1.png"
     }
+   ],
+   "outliers": [
+    {
+     "id": "a4bf7653-27d2-4f94-b322-2f6f5d026951",
+     "path": "Renders/Flower Bags/THC/CA/FlowerBags_Metallica_Front_V1.png",
+     "why": "looks different from the rest (distance 0.10, folder typical 0.05)"
+    }
    ]
   },
   {
@@ -7015,6 +8144,11 @@
     "multi pack": 17
    },
    "lines": [],
+   "checked": {
+    "files": 17,
+    "visual": 17,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (17 files).",
    "samples": [
@@ -7034,7 +8168,8 @@
      "id": "7ff1ac5c-324a-4518-9c91-84e862a8ef9f",
      "path": "Renders/Flower Bags/THC/CA/Display Box/FlowerBags_DisplayCase_Closed_Lolipop_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "b8693604c934958d",
@@ -7047,6 +8182,11 @@
     "multi pack": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (3 files).",
    "samples": [
@@ -7062,7 +8202,8 @@
      "id": "da62cf70-fc29-41ef-8054-f9ba843cc172",
      "path": "Renders/Flower Bags/THC/CA/Master Case/FlowerBags_MasterCase_Closed_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "b133555a69404a7c",
@@ -7115,6 +8256,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 73,
+    "visual": 73,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 3.5G Flower Jars · CA · CA023 (+1 more line: 7G Flower Jars CA) — 72 of 73 files on rows, 1 on no row. Flavours: Adios MF, Black Truffle, Brain Freeze, Bacio Gelato, Frosted Cherries, Morning Glory +2.",
    "samples": [
@@ -7134,7 +8280,8 @@
      "id": "b3572a0a-7857-4606-9103-5f1763b0012c",
      "path": "Renders/Flower Jars/CA/CA_FlowerJar_BlackTruffle_FrontTop.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "25956bd6eb192e87",
@@ -7178,6 +8325,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 8,
+    "visual": 7,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Muha Sun Grown Flower 1oz Jar · CA (+1 more line: 1OZ Greenhouse Flower Jars Golden Nuggets CA) — 8 of 8 files on rows. Flavours: LA Gas Cake, Zour Papaya, Raspberry Kush, Barry White, Frooty Tooty.",
    "samples": [
@@ -7197,7 +8349,8 @@
      "id": "dccaa45d-910e-4e29-845b-6c14cccd09a0",
      "path": "Renders/Flower Jars/CA/Green_House/1oz/CA_GreenHouse_1oz_45_Raspberry_Kush_45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "4fab2a29937d7d6e",
@@ -7241,6 +8394,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 24,
+    "visual": 24,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Muha Sun Grown Flower 1oz Jar · CA (+1 more line: 1OZ Greenhouse Flower Jars Golden Nuggets CA) — 22 of 24 files on rows, 2 on no row. Flavours: Raspberry Kush, Frooty Tooty, Zour Papaya, Barry White, LA Gas Cake.",
    "samples": [
@@ -7260,7 +8418,8 @@
      "id": "0f5c093d-25c1-480f-a8bb-5822c81c4191",
      "path": "Renders/Flower Jars/CA/Green_House/1oz/Displaybox/CA_Flower_Green_House_1oz_Displaybox_45_RK_45_WithJar.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "34e14b5f330095ee",
@@ -7304,6 +8463,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 11,
+    "visual": 11,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags · CA · CA025 (+1 more line: 7G Greenhouse Flower Jars Golden Nuggets CA) — 11 of 11 files on rows. Flavours: Barry White, Zour Papaya, Raspberry Kush, Frooty Tooty, LA Gas Cake.",
    "samples": [
@@ -7323,7 +8487,8 @@
      "id": "8071a30b-9623-4f88-8113-2fcccde83bb0",
      "path": "Renders/Flower Jars/CA/Green_House/7g/v2/CA_Flower_Green_House_7g_45_RASPBERRY_KUSH45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "ca80bbb9a0089204",
@@ -7366,6 +8531,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 22,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Muha Sun Grown Flower 7g Jar (Outdoor) - 7 Gram Mylar Bags · CA · CA025 (+1 more line: 7G Greenhouse Flower Jars Golden Nuggets CA) — 21 of 22 files on rows, 1 on no row. Flavours: LA Gas Cake, Zour Papaya, Raspberry Kush, Frooty Tooty.",
    "samples": [
@@ -7384,6 +8554,13 @@
     {
      "id": "0d08dc4b-3928-455e-9bdc-14e12f96749c",
      "path": "Renders/Flower Jars/CA/Green_House/7g/Displaybox/CA_Flower_Green_House_7g_Displaybox_45_RK_45.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "4b69916d-eead-4f62-adda-c86ea4c89200",
+     "path": "Renders/Flower Jars/CA/Green_House/7g/Displaybox/CA_Flower_Green_House_7g_Displaybox_Front_BW_Front_Closed.png",
+     "why": "looks different from the rest (distance 0.09, folder typical 0.03)"
     }
    ]
   },
@@ -7417,6 +8594,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 15,
+    "visual": 12,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 3.5G Indoor Flower Jars · CA — 7 of 15 files on rows, 8 on no row. Flavours: Grape Gasoline, Zour Power OG, Frosted Peaches, Blue Dream, Black Cherry Punch, Bubbledumb Gelato +1.",
    "samples": [
@@ -7436,7 +8618,8 @@
      "id": "ec7122cf-c33d-461d-b226-5d632c204c1c",
      "path": "Renders/Flower Jars/CA/Indoor/CA_FlowerJar_Indoor_FP_45_45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d2d325a77b49aacf",
@@ -7449,6 +8632,11 @@
     "packaging only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -7460,7 +8648,8 @@
      "id": "93022125-29d2-4a29-94eb-3bde667aa671",
      "path": "Renders/Flower Jars/JAR_MOCK/JAR_1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "33d82ab2d46b1eda",
@@ -7474,6 +8663,11 @@
     "device only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
@@ -7489,7 +8683,8 @@
      "id": "1f23eef9-fa1a-41f9-b3c4-1baf9d1a7a0b",
      "path": "Renders/Flower Jars/TAT X Muha Exclusive Strain/TAT Exclusive 3.5g Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "6d6018d24ba9883d",
@@ -7503,6 +8698,11 @@
     "in scene": 3
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (4 files).",
    "samples": [
@@ -7522,6 +8722,13 @@
      "id": "8c00044c-d3cc-4a97-af84-cbc845d5052d",
      "path": "Renders/Giveaway Tickets/Raffle_Back.png"
     }
+   ],
+   "outliers": [
+    {
+     "id": "8c00044c-d3cc-4a97-af84-cbc845d5052d",
+     "path": "Renders/Giveaway Tickets/Raffle_Back.png",
+     "why": "looks different from the rest (distance 0.09, folder typical 0.02)"
+    }
    ]
   },
   {
@@ -7535,6 +8742,11 @@
     "lineup": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -7546,7 +8758,8 @@
      "id": "f701bb1a-75fc-44af-85ed-31e9c261169e",
      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/GroupShots/Hemp_Carts_Group_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "6ab2d95ff268f009",
@@ -7617,6 +8830,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP · HEMP004 (+2 more lines: DELTA-10 MUHA MEDS CARTRIDGE (1g) HEMP; HHC MUHA MEDS CARTRIDGE (1g) HEMP) — 18 of 20 files on rows, 2 on no row. Flavours: Gods Gift, Pineapple Express, Green Crack, Northern Lights, Gelato, Agent Orange +3.",
    "samples": [
@@ -7636,7 +8854,8 @@
      "id": "ad4f7c20-af67-4a32-82ec-2d7358ac82f9",
      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_NorthernLights_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "624fa22c96f75b90",
@@ -7707,6 +8926,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP · HEMP004 (+2 more lines: DELTA-10 MUHA MEDS CARTRIDGE (1g) HEMP; HHC MUHA MEDS CARTRIDGE (1g) HEMP) — 18 of 20 files on rows, 2 on no row. Flavours: Green Crack, Northern Lights, Pineapple Express, Gelato, Agent Orange, Cherry Berry +3.",
    "samples": [
@@ -7726,7 +8950,8 @@
      "id": "0016dd56-b1b9-4dfc-be99-a9f9d89caa34",
      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_KingLouisXII_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "496d84b2fb336975",
@@ -7801,6 +9026,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP · HEMP004 (+2 more lines: DELTA-10 MUHA MEDS CARTRIDGE (1g) HEMP; HHC MUHA MEDS CARTRIDGE (1g) HEMP) — 20 of 20 files on rows. Flavours: Green Crack, Cherry Berry, King Louie XII, Agent Orange, Northern Lights, Gelato +4.",
    "samples": [
@@ -7820,7 +9050,8 @@
      "id": "474812cb-2ed8-45c8-ae89-648e147e73d6",
      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Open_D10_AgentOrange_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1d99ecc265c265f4",
@@ -7895,6 +9126,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP · HEMP004 (+2 more lines: DELTA-10 MUHA MEDS CARTRIDGE (1g) HEMP; HHC MUHA MEDS CARTRIDGE (1g) HEMP) — 20 of 20 files on rows. Flavours: Cherry Berry, Gelato, Maui Wauii, Pineapple Express, Green Crack, Northern Lights +4.",
    "samples": [
@@ -7914,7 +9150,8 @@
      "id": "7f6d83fc-4265-4119-a3fd-3c92e4b3deac",
      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Closed_D8_MauiWauii_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "02f5a368c7015f19",
@@ -7989,6 +9226,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP · HEMP004 (+2 more lines: DELTA-10 MUHA MEDS CARTRIDGE (1g) HEMP; HHC MUHA MEDS CARTRIDGE (1g) HEMP) — 20 of 20 files on rows. Flavours: Northern Lights, King Louie XII, Maui Wauii, Agent Orange, Gelato, Pineapple Express +4.",
    "samples": [
@@ -8008,7 +9250,8 @@
      "id": "7eb393f7-04be-4383-8977-3639b48eba21",
      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Open_HHC_AgentOrange_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "bf6bf88201e191be",
@@ -8079,6 +9322,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP · HEMP004 (+2 more lines: DELTA-10 MUHA MEDS CARTRIDGE (1g) HEMP; HHC MUHA MEDS CARTRIDGE (1g) HEMP) — 18 of 20 files on rows, 2 on no row. Flavours: Trainwreck, Pineapple Express, Cherry Berry, Maui Wauii, Gelato, Agent Orange +3.",
    "samples": [
@@ -8098,7 +9346,8 @@
      "id": "e0b72b7a-b4f0-413e-b4e4-13ad38fe3505",
      "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_CherryBerry_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "80771214c87606f0",
@@ -8136,6 +9385,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 68,
+    "visual": 67,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2g THCA Carts · HEMP · HEMP003 (+1 more line: 2g THCA Carts HEMP) — 6 of 68 files on rows, 62 on no row. Flavours: Pineapple Runtz.",
    "samples": [
@@ -8154,6 +9408,18 @@
     {
      "id": "a5baf8b0-d28b-4cac-bbd4-704645923f03",
      "path": "Renders/Hemp/Cartridges/THCA - Oct 2024/THCa_Paradise_Punch_Display_Box_Open.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "f61b6e7a-a61e-49f5-96f4-46b2545177d2",
+     "path": "Renders/Hemp/Cartridges/THCA - Oct 2024/MasterBox_Front_Open.png",
+     "why": "looks different from the rest (distance 0.10, folder typical 0.04)"
+    },
+    {
+     "id": "2470e3e9-243b-47b7-adf4-1153b8cc4945",
+     "path": "Renders/Hemp/Cartridges/THCA - Oct 2024/MasterBox_ThreeQuarters_Open.png",
+     "why": "device: reads \"disposable\", the folder is \"cart\""
     }
    ]
   },
@@ -8232,6 +9498,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 61,
+    "visual": 55,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2g THCA Carts · HEMP · HEMP003 (+3 more lines: 2g THCA Carts HEMP; Hemp Melted Diamomd 2G Cart V1 HEMP) — 34 of 61 files on rows, 27 on no row. Flavours: Lemon Cherry Gelato, Watermelon Gelato, Purple Punch, Strawberry Shortcake, Paradise Punch OG, Candy Apple +2.",
    "samples": [
@@ -8250,6 +9521,13 @@
     {
      "id": "952a472b-ddf0-414f-a1d0-0d67edd591a0",
      "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Display Boxes/MI_Carts_1G_CandyApple_45.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "25f00a96-1382-4f82-a75e-2b77615fd638",
+     "path": "Renders/Hemp/Cartridges/THCA 2G - 2026/Display Boxes/MI_Carts_1G_PineappleRunts_FRONT.png",
+     "why": "size: reads \"1g\", the folder is \"2g\""
     }
    ]
   },
@@ -8284,6 +9562,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 32,
+    "visual": 32,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2g THCP + HHCP Carts · HEMP · HEMP015 — 27 of 32 files on rows, 5 on no row. Flavours: Gush Mintz, Honeydew Haze, Platinum Kush, Orange Creamsicle, Midnight Rain.",
    "samples": [
@@ -8302,6 +9585,13 @@
     {
      "id": "914c400d-eea2-4501-88b6-6c1524bf0e20",
      "path": "Renders/Hemp/Cartridges/THCP + HHC 2G - 2026/Display Boxes/THCP_Carts_1G_DisplayBox_HoneydewHaze_45.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "1f0b2bdb-6fcb-42ae-84e5-cace91010740",
+     "path": "Renders/Hemp/Cartridges/THCP + HHC 2G - 2026/Display Boxes/THCP_Carts_1G_DisplayBox_OrangeCreamsicle_Front.png",
+     "why": "size: reads \"1g\", the folder is \"2g\""
     }
    ]
   },
@@ -8334,6 +9624,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 18,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2g THCP + HHCP Carts · HEMP · HEMP015 — 20 of 20 files on rows. Flavours: Honeydew Haze, Midnight Rain, Gush Mintz, Platinum Kush, Orange Creamsicle.",
    "samples": [
@@ -8353,7 +9648,8 @@
      "id": "c0adf249-e392-4d9f-827c-4375e32bade6",
      "path": "Renders/Hemp/Cartridges/THCP + HHC 2G - 2026/Text_Removal/Hemp_Cart_THCp_Front_HoneydewHaze.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "8ff330d2391238ba",
@@ -8382,6 +9678,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2g THCP + HHCP Carts · HEMP · HEMP015 — 4 of 4 files on rows. Flavours: Honeydew Haze, Midnight Rain, Orange Creamsicle, Gush Mintz.",
    "samples": [
@@ -8401,7 +9702,8 @@
      "id": "f5a2e418-ae76-4687-814f-e6f202bacaab",
      "path": "Renders/Hemp/Cartridges/THCP + HHC 2G - 2026/Text_Removal/Displaybox/THCP_Carts_1G_DisplayBox_GushMintz_45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2183fbc96f6ff09e",
@@ -8417,6 +9719,11 @@
     "multi pack": 7
    },
    "lines": [],
+   "checked": {
+    "files": 40,
+    "visual": 40,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: 3.5 Disposables (40 files).",
    "samples": [
@@ -8436,7 +9743,8 @@
      "id": "fbfebb06-d742-4001-b5b7-6df9c76b7b25",
      "path": "Renders/Hemp/Disposables/3.5 Disposables/DevicePackagingFront_Resin_RainbowBelts_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2189d8f8c0afda3d",
@@ -8474,6 +9782,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 3.5g Live Resin Disposables · HEMP · HEMP014 (+1 more line: 3.5g Melted Diamond Disposables HEMP) — 4 of 4 files on rows. Flavours: Apple Fritter, Lychee Kush.",
    "samples": [
@@ -8493,7 +9806,8 @@
      "id": "e8d83b7d-8082-4bb9-9099-ac1c68e1e11c",
      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Devices Only/Hemp_MD_45_BlueZushii.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "dc75ff695605f267",
@@ -8507,6 +9821,11 @@
     "packaging only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 15,
+    "visual": 15,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (15 files).",
    "samples": [
@@ -8526,7 +9845,8 @@
      "id": "94cbe51c-7b38-45ff-b9b1-6cfa0bbdba63",
      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Display Boxes/MI LiveResin/MI_Hemp_LR_DisplayBox_Front_LycheeKush.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "860f6ff5c27607f8",
@@ -8540,6 +9860,11 @@
     "packaging only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 15,
+    "visual": 15,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (15 files).",
    "samples": [
@@ -8559,7 +9884,8 @@
      "id": "71b612af-86d7-4f71-991c-bab4d92c1581",
      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Display Boxes/MI MeltedDiamonds/MI_Hemp_DisplayBox_MD_Front_SourYuzuPear.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "646f09e1000bbf68",
@@ -8588,6 +9914,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 3.5g Live Resin Disposables · HEMP · HEMP014 — 16 of 20 files on rows, 4 on no row. Flavours: Apple Fritter, Lychee Kush, Black Sugar Rose, Sour Cherry Limeade.",
    "samples": [
@@ -8607,7 +9938,8 @@
      "id": "69a8cba2-f3c1-4278-8a6f-b9a3417c66f8",
      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Live Resin/HEMP_DISPO_LR_3_5G_Front_WhiteGummy.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "c0bdd492a28b21d8",
@@ -8636,6 +9968,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 3.5g Live Resin Disposables · HEMP · HEMP014 — 16 of 20 files on rows, 4 on no row. Flavours: Lychee Kush, Apple Fritter, Sour Cherry Limeade, Black Sugar Rose.",
    "samples": [
@@ -8655,7 +9992,8 @@
      "id": "c11b3390-321a-4a2e-ada0-0ace97ec4492",
      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Live Resin/Text_Removal/HEMP_DISPO_LR_3_5G_45Solo_WhiteGummy.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "b10b0bed39f84df2",
@@ -8685,6 +10023,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 20,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 3.5g Melted Diamond Disposables · HEMP · HEMP013 — 20 of 20 files on rows. Flavours: Sugar Plum OG, Key Lime Pie, Russian Cream, Blue Zushii, Sour Yuzu Pear.",
    "samples": [
@@ -8704,7 +10047,8 @@
      "id": "84e6c30e-3d41-4531-ae53-47edd46766e2",
      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Melted Diamonds/Hemp_MD_Disposables_45_KeyLimePie.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1172296a62dfe6f3",
@@ -8734,6 +10078,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 3.5g Melted Diamond Disposables · HEMP · HEMP013 — 20 of 20 files on rows. Flavours: Blue Zushii, Russian Cream, Key Lime Pie, Sugar Plum OG, Sour Yuzu Pear.",
    "samples": [
@@ -8753,7 +10102,8 @@
      "id": "b94b30e3-6775-43a3-89dd-74d7277b9f72",
      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Melted Diamonds/Text_Removal/Hemp_MD_Disposables_FrontSolo_RussianCream.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "0d5d8dc9f96d0a02",
@@ -8766,6 +10116,11 @@
     "multi pack": 5
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (5 files).",
    "samples": [
@@ -8785,7 +10140,8 @@
      "id": "9bf96133-f54f-455f-983b-fd38bcdcb5fb",
      "path": "Renders/Hemp/Disposables/3.5 Disposables - Aug 2025/Wholesale Case/Hemp_MasterCase_Open_LR_45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "743f8120c0fa414e",
@@ -8829,6 +10185,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 3.5g Melted Diamond Disposables (THC-A + D9) · HEMP · HEMP001 (+1 more line: 3.5g Live Resin Disposables (THC-P + HHC-P + HHC) HEMP) — 10 of 10 files on rows. Flavours: Mango Peach Rings, Cereal Milk, Purple Champagne, Jedi Kush, Citrus Tsunami.",
    "samples": [
@@ -8847,6 +10208,13 @@
     {
      "id": "2ffdcfd3-64f1-4033-9dfd-2139e5561ddd",
      "path": "Renders/Hemp/Disposables/3.5 Disposables/Device/DeviceFront_Resin_LavenderHaze_V1.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "1320b421-fb44-4e05-8165-9711b5498dd0",
+     "path": "Renders/Hemp/Disposables/3.5 Disposables/Device/DeviceFront_Diamond_PurpleChampagne_V1.png",
+     "why": "looks different from the rest (distance 0.10, folder typical 0.05)"
     }
    ]
   },
@@ -8873,6 +10241,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "Feeds 3.5g Live Resin Disposables (THC-P + HHC-P + HHC) · HEMP · HEMP002 — 1 of 1 files on rows. Flavours: Rainbow Belts.",
    "samples": [
@@ -8880,7 +10253,8 @@
      "id": "bdb3ddc7-a295-439d-8041-8f1c3a0ea527",
      "path": "Renders/Hemp/Disposables/3.5 Disposables/DisplayBoxes/Open/45DisplayBox_Resin_RainbowBelts_Open_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "8600dd0851f6f557",
@@ -8893,6 +10267,11 @@
     "multi pack": 6
    },
    "lines": [],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "samples": [
@@ -8912,7 +10291,8 @@
      "id": "21de94d7-a676-447c-a361-7e884aaecf99",
      "path": "Renders/Hemp/Disposables/3.5 Disposables/MasterCase/MasterCase_Diamonds_V2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "85501495063f3c55",
@@ -8927,6 +10307,11 @@
     "device with packaging": 1
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (4 files).",
    "samples": [
@@ -8946,7 +10331,8 @@
      "id": "9754702a-136d-43bf-a2b4-484b8749be28",
      "path": "Renders/Hemp/Edibles/Group Shots/Hemp_Gummies_500mg_Group_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "5d9be7f993f7f99e",
@@ -8995,6 +10381,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 60,
+    "visual": 55,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 15ct Jar Edibles - Hash Rosin · HEMP · HEMP018 (+1 more line: 4ct Mylar Bag Edibles - Hash Rosin HEMP) — 50 of 60 files on rows, 10 on no row. Flavours: Strawberry Lemonade, Sour Blue Razz, Kiwi Surge, Orange Creamsicle, Mango Chamoy.",
    "samples": [
@@ -9014,7 +10405,8 @@
      "id": "0b5c02c9-69e3-42e6-a730-a9c5ce9d686c",
      "path": "Renders/Hemp/Edibles/15ct Hash Rosin Jar Gummies/Hemp_15ct_HR_Jar_Front_KiwiSurge.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2715d1027bb309a8",
@@ -9047,6 +10439,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 14,
+    "visual": 14,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP · HEMP011 — 14 of 14 files on rows. Flavours: Lime, Very Berry, Mango Madness, Strawberry, Sour Apple, Sweet and Sour +1.",
    "samples": [
@@ -9066,7 +10463,8 @@
      "id": "110f0f4f-f808-468b-a387-2c26e2a57f50",
      "path": "Renders/Hemp/Edibles/DELTA 9 - MAMBAS GUMMIES (15mg) - FINISHED RENDERS/Hemp_Gummies_Mambas_15_MangoMadness_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "b6edb999517bfe6a",
@@ -9099,6 +10497,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 14,
+    "visual": 12,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP · HEMP011 — 14 of 14 files on rows. Flavours: Mango Madness, Sweet and Sour, Very Berry, Sour Apple, Strawberry, Lime +1.",
    "samples": [
@@ -9118,7 +10521,8 @@
      "id": "236a89cf-1bd0-43db-8d6e-2914773602a0",
      "path": "Renders/Hemp/Edibles/DELTA 9 - MAMBAS GUMMIES (50mg) - FINISHED RENDERS/Hemp_Gummies_Mambas_50_SourApple_Open_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "fbf7096f1ae2ca24",
@@ -9167,6 +10571,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 35,
+    "visual": 32,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP · HEMP011 (+1 more line: LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) HEMP) — 35 of 35 files on rows. Flavours: Sour Apple, Mango Madness, Watermelon, Lime, Sweet and Sour, Strawberry +1.",
    "samples": [
@@ -9186,7 +10595,8 @@
      "id": "564e1332-dffa-4747-817a-9caa63b8efba",
      "path": "Renders/Hemp/Edibles/Display Box/LongBox/Hemp_Gummies_DisplayBox_Lime_Open_50MG.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "93b908f402a74eb0",
@@ -9235,6 +10645,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 28,
+    "visual": 27,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP · HEMP011 (+1 more line: LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) HEMP) — 28 of 28 files on rows. Flavours: Sweet and Sour, Strawberry, Very Berry, Watermelon, Lime, Sour Apple +1.",
    "samples": [
@@ -9254,7 +10669,8 @@
      "id": "7da6f90a-ae04-44e5-86ed-e0fb38d8291e",
      "path": "Renders/Hemp/Edibles/Display Box/LR_MD 3000/Hemp_Gummies_DisplayBox_Strawberry_Open_MeltedDiamonds.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2fd20ced06a1e0e2",
@@ -9303,6 +10719,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 35,
+    "visual": 31,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP · HEMP011 (+1 more line: LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) HEMP) — 35 of 35 files on rows. Flavours: Watermelon, Very Berry, Sour Apple, Strawberry, Sweet and Sour, Lime +1.",
    "samples": [
@@ -9322,7 +10743,8 @@
      "id": "c3f329af-bf2c-425e-9abc-14550faf001e",
      "path": "Renders/Hemp/Edibles/Display Box/Universal Box/Hemp_Gummies_DisplayBox_MangoMadness_Open_LiveResin.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "53d31c3ab6f1e124",
@@ -9347,6 +10769,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "Feeds LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) · HEMP · HEMP012 — 1 of 1 files on rows. Flavours: Sweet and Sour.",
    "samples": [
@@ -9354,7 +10781,8 @@
      "id": "3ff05bed-6e0b-45b2-be59-86a4c9fa68dd",
      "path": "Renders/Hemp/Edibles/HHC - MAMBAS GUMMIES (500mg) - FINISHED RENDERS/Hemp_Gummies_500mg_SweetAndSour_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "869fb8adb8ea422d",
@@ -9388,6 +10816,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 28,
+    "visual": 24,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) · HEMP · HEMP012 — 14 of 28 files on rows, 14 on no row. Flavours: Sour Apple, Strawberry, Mango Madness, Very Berry, Sweet and Sour, Watermelon +1.",
    "samples": [
@@ -9407,7 +10840,8 @@
      "id": "493225fa-9297-4faf-811a-19f84997bda1",
      "path": "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/MI_MAMBAS_LR_45_VERYBERRY.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "25c37e3870b7d636",
@@ -9440,6 +10874,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 28,
+    "visual": 25,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds LIVE RESIN MAMBAS GUMMIES 3000mg (HHC-P + HHC + CBG) · HEMP · HEMP012 — 14 of 28 files on rows, 14 on no row. Flavours: Sour Apple, Lime, Very Berry, Sweet and Sour, Strawberry, Watermelon +1.",
    "samples": [
@@ -9459,7 +10898,8 @@
      "id": "500bc6c3-48e7-4368-871a-0035e88576db",
      "path": "Renders/Hemp/Edibles/LIVE RESIN - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Text_Removal/Hemp_Gummies_Mambas_LR_VeryBerry_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "356dd56a5f3b69ce",
@@ -9493,6 +10933,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 14,
+    "visual": 14,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds MELTED DIAMONDS MAMBAS GUMMIES 3000mg (D9 + THC-P + CBD) · HEMP · HEMP011 — 14 of 14 files on rows. Flavours: Sour Apple, Watermelon, Mango Madness, Very Berry, Strawberry, Sweet and Sour +1.",
    "samples": [
@@ -9512,7 +10957,8 @@
      "id": "db43f17f-58d8-44e9-8f37-bbdbe054d68d",
      "path": "Renders/Hemp/Edibles/MELTED DIAMONDS - MAMBAS GUMMIES (3000mg) - FINISHED RENDERS/Hemp_Gummies_Mambas_MD_MangoMadness_Open_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "3791d08e92c9ee6f",
@@ -9545,6 +10991,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 55,
+    "visual": 55,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A EXOTIC FLOWER JARS (4g) · HEMP · HEMP007 — 54 of 55 files on rows, 1 on no row. Flavours: Pink Runtz, Gush Mintz, Strawberry Mimosa, Black Truffle, Frosted Cherries, Bacio Gelato.",
    "samples": [
@@ -9564,7 +11015,8 @@
      "id": "220f5a73-1b9a-4075-8e9f-d4c2eb4accd6",
      "path": "Renders/Hemp/Flower Jars/Hemp THCa 4G Flower Jars/Hemp_THCa_FlowerJar_Box_Closed_GushMintz_ThreeQuartersOpen.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "bd5445c2d91abb15",
@@ -9608,6 +11060,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 24,
+    "visual": 23,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) · HEMP · HEMP008 (+1 more line: FLOWER MYLAR BAGS 3.5G (ACTIVE) HEMP) — 21 of 24 files on rows, 3 on no row. Flavours: Lolipop, Lemon Cherry Gelato, Purple Wookies, Bored Ape Runtz, White Truffle, Skittles +1.",
    "samples": [
@@ -9626,6 +11083,18 @@
     {
      "id": "e754ea69-9035-48f6-a3f3-fec11f95caf5",
      "path": "Renders/Hemp/FlowerBag/Hemp_FlowerBags_HHC_Front_PurpleWookies_V1.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "37ae34fa-9e51-4dff-a8ec-d6b325c81ae3",
+     "path": "Renders/Hemp/FlowerBag/Hemp_FlowerBags_D8_Front_LemonCherryGelato_V1.png",
+     "why": "looks different from the rest (distance 0.09, folder typical 0.04)"
+    },
+    {
+     "id": "6d22eda8-67d2-4dec-b672-33a9f367082c",
+     "path": "Renders/Hemp/FlowerBag/Hemp_FlowerBags_THCA_Front_LemonCherryGelato_V1.png",
+     "why": "looks different from the rest (distance 0.12, folder typical 0.04)"
     }
    ]
   },
@@ -9671,6 +11140,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 24,
+    "visual": 24,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) · HEMP · HEMP008 (+1 more line: FLOWER MYLAR BAGS 3.5G (ACTIVE) HEMP) — 21 of 24 files on rows, 3 on no row. Flavours: Lolipop, Banana Cream Cake, Skittles, Bored Ape Runtz, Purple Wookies, White Truffle +1.",
    "samples": [
@@ -9690,7 +11164,8 @@
      "id": "ca3ff916-1075-4990-ae0c-d35153125f5c",
      "path": "Renders/Hemp/FlowerBag/Display/FlowerBags_DisplayCase_Open_BananaCreamCake_D8_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "60252330b8f218e0",
@@ -9734,6 +11209,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 16,
+    "visual": 15,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A FLOWER MYLAR BAGS 3.5G (ACTIVE) · HEMP · HEMP008 (+1 more line: FLOWER MYLAR BAGS 3.5G (ACTIVE) HEMP) — 14 of 16 files on rows, 2 on no row. Flavours: Bored Ape Runtz, Purple Wookies, Banana Cream Cake, Lemon Cherry Gelato, Skittles, White Truffle +1.",
    "samples": [
@@ -9753,7 +11233,8 @@
      "id": "55dc9c1c-a248-48b4-a5c1-cb7a76bb14e5",
      "path": "Renders/Hemp/FlowerBag/Display/THCA/10CT/THCA_FlowerBags_Display_10CT_Open_Lemon_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "3f806fbaac0016a3",
@@ -9767,6 +11248,11 @@
     "multi pack": 3
    },
    "lines": [],
+   "checked": {
+    "files": 48,
+    "visual": 46,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (48 files).",
    "samples": [
@@ -9786,7 +11272,8 @@
      "id": "650e7600-93e6-429d-b7dd-29bdc40b185a",
      "path": "Renders/Hemp/Pre Rolls/Glass Jar/Hemp_PreRolls_D8_Front_PumpkinSpiceLatte_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "f7502b251cd99122",
@@ -9800,6 +11287,11 @@
     "packaging only": 14
    },
    "lines": [],
+   "checked": {
+    "files": 48,
+    "visual": 48,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (48 files).",
    "samples": [
@@ -9819,7 +11311,8 @@
      "id": "2e410ffc-8cdf-43d7-923d-e3230578b31c",
      "path": "Renders/Hemp/Pre Rolls/Glass Jar/Display Box/Prerolls_Display_BlueRazz_D8_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "0c5cb69eb18b33a6",
@@ -9835,6 +11328,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 26,
+    "visual": 26,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (26 files).",
    "samples": [
@@ -9854,7 +11352,8 @@
      "id": "19706aae-4305-4669-83b1-4d9f46121a08",
      "path": "Renders/Hemp/Pre Rolls/Hash Holes/THC-A/Hemp_HashHoles_THCA_Front_LycheeKush.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "6352161fdf082e8f",
@@ -9867,6 +11366,11 @@
     "multi pack": 10
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (10 files).",
    "samples": [
@@ -9886,7 +11390,8 @@
      "id": "76be2df5-7c92-429a-a068-a90dc2772f5a",
      "path": "Renders/Hemp/Pre Rolls/Hash Holes/THC-A/THC-A Display Boxes/Hemp_THCA_HashHoles_45_Closed_SourCherryLime.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "ef052a950ff3f4b0",
@@ -9902,6 +11407,11 @@
     "device only": 5
    },
    "lines": [],
+   "checked": {
+    "files": 26,
+    "visual": 26,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (26 files).",
    "samples": [
@@ -9921,7 +11431,8 @@
      "id": "3d1400ef-76ea-43ab-9819-ccc7c8712e4c",
      "path": "Renders/Hemp/Pre Rolls/Hash Holes/THC-P/00_Hemp_HashHoles_THCP_Group.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "965bf62f31b47c4e",
@@ -9935,6 +11446,11 @@
     "multi pack": 9
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (10 files).",
    "samples": [
@@ -9954,7 +11470,8 @@
      "id": "ac850029-a30e-4dbd-92bc-d1495fdaa259",
      "path": "Renders/Hemp/Pre Rolls/Hash Holes/THC-P/THC-P Display Boxes/Hemp_THCP_HashHoles_45_Closed_FrozenPomegranate.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1b5a088ca3e2bfc2",
@@ -9996,6 +11513,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 27,
+    "visual": 27,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Duo Strain 20 Packs (8 strains, 4 Sku's) · HEMP · HEMP017 (+1 more line: 2g Pre-Roll Private Reserve 2 Pack HEMP) — 26 of 27 files on rows, 1 on no row. Flavours: Strawberry Mochi Banana Cake, Pineapple Whip Watermelon Gelato, Georgia Peaches Mango Peach Rings.",
    "samples": [
@@ -10015,7 +11537,8 @@
      "id": "d6330a4e-c66d-41e1-96e1-9df2a293fcf8",
      "path": "Renders/Hemp/Pre Rolls/Hemp DuoPreRolls THCA/Hemp_DuoPreRoll_THCA_WhiteRaspberry_BlueSlushie_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2b72964a55a0bcbe",
@@ -10048,6 +11571,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 25,
+    "visual": 25,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A MATES PRE-ROLLS 0.6g · HEMP · HEMP010 — 23 of 25 files on rows, 2 on no row. Flavours: Mango Peach Rings, Strawberry Dream, Purple Punch, Blueberry ZaZa, Orange Cake, Thin Mints OG.",
    "samples": [
@@ -10066,6 +11594,13 @@
     {
      "id": "5f13ef56-7853-4ae4-84d4-519fbff55873",
      "path": "Renders/Hemp/Pre Rolls/MetalCan/THCA/Hemp_PreRolls_THCA_MetalCan_Blueberry_45_V1.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "8d1d50e6-55ac-46cc-a507-7b00d0dec08c",
+     "path": "Renders/Hemp/Pre Rolls/MetalCan/THCA/Hemp_PreRolls_THCA_MetalCan_MangoPeachRings_FrontSolo.png",
+     "why": "packaging: reads \"jar\", the folder is \"metal can\""
     }
    ]
   },
@@ -10097,6 +11632,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 12,
+    "visual": 12,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A MATES PRE-ROLLS 0.6g · HEMP · HEMP010 — 9 of 12 files on rows, 3 on no row. Flavours: Strawberry Dream, Thin Mints OG, Mango Peach Rings, Orange Cake, Purple Punch.",
    "samples": [
@@ -10116,7 +11656,8 @@
      "id": "aca84aa5-3429-46a3-acf2-8a5783afb671",
      "path": "Renders/Hemp/Pre Rolls/MetalCan/THCA/DisplayBox/Hemp_PreRolls_THCA_MetalCan_Blueberry_Open_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "daab16ba56a8c26d",
@@ -10143,6 +11684,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 1 of 3 files on rows, 2 on no row. Flavours: Mimosa.",
    "samples": [
@@ -10158,7 +11704,8 @@
      "id": "01f09c59-ead6-4eae-b424-eb6cdc7cfd37",
      "path": "Renders/Hemp/Pre Rolls/THCA_KingTube/Hemp_THCA_King_Mimosa.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "c0b1477237b80d92",
@@ -10189,6 +11736,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 12,
+    "visual": 12,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 12 of 12 files on rows. Flavours: White Widow, Northern Lights, Mimosa, Alpine Guava, Chilled Cherries, Blackberry Kush.",
    "samples": [
@@ -10208,7 +11760,8 @@
      "id": "5148e8f8-c168-45fd-9a4b-e1f4f0f18584",
      "path": "Renders/Hemp/Pre Rolls/THCA_KingTube/3D Mates_THCA_DisplayBox/THCa_1_5g King_Mate_Display_Box_Northern_Lights_Open.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "3bd62ec942ccd828",
@@ -10239,6 +11792,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 12,
+    "visual": 12,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 12 of 12 files on rows. Flavours: White Widow, Northern Lights, Chilled Cherries, Blackberry Kush, Alpine Guava, Mimosa.",
    "samples": [
@@ -10258,7 +11816,8 @@
      "id": "68f721d1-3e98-474a-a94a-7274573f288f",
      "path": "Renders/Hemp/Pre Rolls/THCA_KingTube/Display/THCA_King_Display_BlackBerry_Closed_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "594c06158a374cb8",
@@ -10289,6 +11848,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 12,
+    "visual": 12,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 10 of 12 files on rows, 2 on no row. Flavours: Northern Lights, Mimosa, Alpine Guava, White Widow, Blackberry Kush, Chilled Cherries.",
    "samples": [
@@ -10308,7 +11872,8 @@
      "id": "01020d0f-06f5-4a31-851e-faf49013de0a",
      "path": "Renders/Hemp/Pre Rolls/THCA_KingTube/King 1_5g THCa Single/King_1_5g_AlpineGuava_ThreeQuarters.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d8e21c7f49454781",
@@ -10340,6 +11905,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 24,
+    "visual": 24,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 24 of 24 files on rows. Flavours: Blackberry Kush, Alpine Guava, Chilled Cherries, Mimosa, Northern Lights, White Widow.",
    "samples": [
@@ -10359,7 +11929,8 @@
      "id": "c97ec682-3040-47a5-99d8-3101e09258b7",
      "path": "Renders/Hemp/Pre Rolls/THCA_KingTube/SingleTubes Updated/THCA_King_Cherries_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "da4541d857f9d279",
@@ -10372,6 +11943,11 @@
     "device only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (1 files).",
    "samples": [
@@ -10379,7 +11955,8 @@
      "id": "69d1db01-83e8-4404-99e5-3fc00b77cf18",
      "path": "Renders/HOTKNIFES/Pen_Yellow_V3.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "ed6f0fe4bba25e52",
@@ -10394,6 +11971,11 @@
     "packaging only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 18,
+    "visual": 18,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (18 files).",
    "samples": [
@@ -10413,7 +11995,8 @@
      "id": "045252a3-5707-4e12-ac7c-2a57bf09c44a",
      "path": "Renders/HOTKNIFES/pen_box/Pen2_Yellow_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d209d86c84438d5b",
@@ -10438,6 +12021,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 12,
+    "visual": 12,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Accessories · all markets — 1 of 12 files on rows, 11 on no row. Flavours: Hot Knife.",
    "samples": [
@@ -10457,7 +12045,8 @@
      "id": "55c9e5b9-3098-4fee-b238-441ba8a03234",
      "path": "Renders/HOTKNIFES/Updated/Pen1_Black_45_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "37e9c1ab9b9595b8",
@@ -10470,6 +12059,11 @@
     "n/a": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "samples": [
@@ -10485,7 +12079,8 @@
      "id": "29612a63-b961-49bd-b91e-1ef445b411d5",
      "path": "Renders/Labubu/V1/Style1_Head1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d4523ba651187d70",
@@ -10499,6 +12094,11 @@
     "n/a": 1
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "samples": [
@@ -10510,7 +12110,8 @@
      "id": "76ae2e0a-5182-4d65-9291-1b8c12856884",
      "path": "Renders/Labubu/V2/Front1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2cd301565a57df5b",
@@ -10523,6 +12124,11 @@
     "device only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (1 files).",
    "samples": [
@@ -10530,7 +12136,8 @@
      "id": "838821fd-40ef-4afb-895e-37191047f774",
      "path": "Renders/Labubu/V3/FrontV2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "490ad4ae8c7014d8",
@@ -10544,6 +12151,11 @@
     "n/a": 1
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (4 files).",
    "samples": [
@@ -10563,7 +12175,8 @@
      "id": "8bf9a9b5-ee42-4133-be64-51491fa1e44c",
      "path": "Renders/Labubu/V4/FrontV3_Back.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "445fedf1be4d43bf",
@@ -10577,6 +12190,11 @@
     "lineup": 3
    },
    "lines": [],
+   "checked": {
+    "files": 11,
+    "visual": 11,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (11 files).",
    "samples": [
@@ -10596,7 +12214,8 @@
      "id": "b5c0771d-6e51-470f-b66f-2c979dfe7c6f",
      "path": "Renders/Master Case Group Shots/MasterLayout_Disposables_Distillate_2G_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "4a8b59065320f024",
@@ -10622,6 +12241,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 15,
+    "visual": 15,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 0.5G Mavricks Hash Rosin Disposables · MI · MI023 — 1 of 15 files on rows, 14 on no row. Flavours: Mimosa.",
    "samples": [
@@ -10641,6 +12265,18 @@
      "id": "f1ce8591-b1cc-4174-bf78-c24754ba8c02",
      "path": "Renders/Mavricks/Mimosa V3.png"
     }
+   ],
+   "outliers": [
+    {
+     "id": "b675b7ca-32a6-49b5-a441-bf28763ff643",
+     "path": "Renders/Mavricks/Black mav v2b master.png",
+     "why": "looks different from the rest (distance 0.13, folder typical 0.06)"
+    },
+    {
+     "id": "7b42bf4c-91e6-49e0-9cef-cf2cd7d995d7",
+     "path": "Renders/Mavricks/Red mav v2 master.png",
+     "why": "looks different from the rest (distance 0.13, folder typical 0.06)"
+    }
    ]
   },
   {
@@ -10654,6 +12290,11 @@
     "device only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "samples": [
@@ -10661,7 +12302,8 @@
      "id": "38c1f593-faed-4af0-80e3-a7fa93c37763",
      "path": "Renders/MMxCookies/Cookies_Collab_Device.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "f13492bfb25cf6cd",
@@ -10674,6 +12316,11 @@
     "n/a": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -10685,7 +12332,8 @@
      "id": "aaa36aa1-788c-4e42-b127-3505977f52c5",
      "path": "Renders/MMxCookies/MMxCookies MMlogo Reversed/frame2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a93b3d95432b4c80",
@@ -10715,6 +12363,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1G MuhaMeds x Cookies Collab Disposables · CA · CA027 — 20 of 21 files on rows, 1 on no row. Flavours: Gary Payton, Apples & Bananas, Blue Slushie, Tequila Sunrise, Habibi.",
    "samples": [
@@ -10734,7 +12387,8 @@
      "id": "21543784-a9ec-485b-9510-4617cef41b7c",
      "path": "Renders/MMxCookies/Product_Renders/CA/MM_Cookies_Collab_CA_BlueSlushie_Front_Solo.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a34f9d253858fc11",
@@ -10764,6 +12418,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2G MuhaMeds x Cookies Collab Disposables SKU #CA026 · MI · MI020 — 20 of 21 files on rows, 1 on no row. Flavours: Gary Payton, Tequila Sunrise, Blue Slushie, Habibi, Cereal Milk.",
    "samples": [
@@ -10783,7 +12442,8 @@
      "id": "538897f7-d4c5-4d76-aeaa-67663245e0e8",
      "path": "Renders/MMxCookies/Product_Renders/MI/MM_Cookies_Collab_MI_GaryPayton_45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "7691db8637a9ce2f",
@@ -10797,6 +12457,11 @@
     "packaging only": 25
    },
    "lines": [],
+   "checked": {
+    "files": 47,
+    "visual": 47,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (47 files).",
    "samples": [
@@ -10816,6 +12481,13 @@
      "id": "2700c928-9c64-4672-ad59-b4e156058dfd",
      "path": "Renders/Moods/Moods_Papaya_Device_Back_V1.png"
     }
+   ],
+   "outliers": [
+    {
+     "id": "13100bde-393d-4193-a74a-3a5f6e148668",
+     "path": "Renders/Moods/Moods_WhiteWalker_Device_Back_V1.png",
+     "why": "looks different from the rest (distance 0.12, folder typical 0.06)"
+    }
    ]
   },
   {
@@ -10829,6 +12501,11 @@
     "device only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "samples": [
@@ -10836,7 +12513,8 @@
      "id": "4455e1cf-7a78-44ef-a1ac-5256ac096ce3",
      "path": "Renders/Moods/Device2/03_Moods_Device2_Back45_2_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "80245ec8ee1bddf6",
@@ -10849,6 +12527,11 @@
     "device only": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
@@ -10864,7 +12547,8 @@
      "id": "7cb9d8da-cb14-42ca-bc16-1fb578c8cc5b",
      "path": "Renders/Moods/Device2/Logo2/V2/03_Moods_Device2_Back45_2_V3.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "6d41856268a5a1eb",
@@ -10877,6 +12561,11 @@
     "device only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -10888,7 +12577,8 @@
      "id": "91a2525c-0386-4026-8350-11dd3e2f063f",
      "path": "Renders/Moods/Device2/Updated/01_device_back.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a57b082836a720fb",
@@ -10901,6 +12591,11 @@
     "multi pack": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "samples": [
@@ -10908,7 +12603,8 @@
      "id": "fa5f8781-f9d4-48d0-acfe-587c668efedb",
      "path": "Renders/Moods/DisplayBoxes/Moods_PapayaLive_DisplayBox_Open_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "afd6efdea77b6cbe",
@@ -10922,6 +12618,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -10933,7 +12634,8 @@
      "id": "00ef9689-67ac-42cd-9c24-aebea881de07",
      "path": "Renders/Moods/groupShots/group1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d930ab47afc0b85f",
@@ -10947,6 +12649,11 @@
     "packaging only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -10958,7 +12665,8 @@
      "id": "a77b0227-45d7-4973-8ae9-fad6062b65a3",
      "path": "Renders/Moods/MasterCase/Moods_Mastercase_Closed_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "31fbf6f772baab4d",
@@ -10976,6 +12684,11 @@
     "device with packaging": 5
    },
    "lines": [],
+   "checked": {
+    "files": 27,
+    "visual": 27,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (27 files).",
    "samples": [
@@ -10995,7 +12708,8 @@
      "id": "601a11f4-7aa9-4a5a-996a-0d629ea95e48",
      "path": "Renders/Motion/MI Mambas Flying Gummies Stills/FlyingGummiesEndGummies0028.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "49eb130afedc42be",
@@ -11008,6 +12722,11 @@
     "n/a": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "samples": [
@@ -11019,7 +12738,8 @@
      "id": "7e3df5de-4cc4-45d3-9827-f454640aa451",
      "path": "Renders/Motion/MM App GIFs/HomePageStills/M_Only.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "cb12339fc8459a8e",
@@ -11034,6 +12754,11 @@
     "device only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "samples": [
@@ -11053,6 +12778,23 @@
      "id": "019e4d9c-3563-4253-8c34-98fa70c35402",
      "path": "Renders/Motion/Verification Website/Verification Stills/DispoVerification_Still_2.png"
     }
+   ],
+   "outliers": [
+    {
+     "id": "5392c640-3e9a-4cd9-90bc-10482b0b9e52",
+     "path": "Renders/Motion/Verification Website/Verification Stills/CartsVerification_Still_3.png",
+     "why": "device: reads \"cart\", the folder is \"disposable\""
+    },
+    {
+     "id": "c13ac738-dc6b-462f-97c4-0c0472378a0f",
+     "path": "Renders/Motion/Verification Website/Verification Stills/CartsVerification_Still_2.png",
+     "why": "device: reads \"cart\", the folder is \"disposable\""
+    },
+    {
+     "id": "d74beff1-1fd3-423b-a77e-13b82014826b",
+     "path": "Renders/Motion/Verification Website/Verification Stills/CartsVerification_Still_1.png",
+     "why": "device: reads \"cart\", the folder is \"disposable\""
+    }
    ]
   },
   {
@@ -11068,6 +12810,11 @@
     "device with packaging": 1
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "samples": [
@@ -11083,7 +12830,8 @@
      "id": "c05f918d-9f0e-4c33-9a40-574e64134198",
      "path": "Renders/Motion/Verification Website/Verification Stills/Dispo Back View/Dispo_BackOfBoxScan.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "429a028a52331ae7",
@@ -11098,6 +12846,11 @@
     "device with packaging": 1
    },
    "lines": [],
+   "checked": {
+    "files": 9,
+    "visual": 9,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (9 files).",
    "samples": [
@@ -11117,7 +12870,8 @@
      "id": "de4d9c4b-c6ed-4fdf-a49c-f908f654904b",
      "path": "Renders/Motion/Verification Website/Verification Stills/High Resolution Stills/Token.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "56f036a34fc9fd03",
@@ -11131,6 +12885,11 @@
     "n/a": 1
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "samples": [
@@ -11142,7 +12901,8 @@
      "id": "10fee48a-773d-4788-a155-4be73d8111d6",
      "path": "Renders/Motion/Verification Website/Verification Stills/Token Stills/TokenRender_Card.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "e373c0c610e459ff",
@@ -11155,6 +12915,11 @@
     "n/a": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "samples": [
@@ -11170,7 +12935,8 @@
      "id": "46c3a607-c6f3-4ff9-9891-a850dc90d966",
      "path": "Renders/Muha_Vaults/v1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "384d8d43fbb51252",
@@ -11183,6 +12949,11 @@
     "lineup": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "samples": [
@@ -11194,7 +12965,8 @@
      "id": "d24158d1-af61-4a0c-b837-8bffb517702e",
      "path": "Renders/Multi Product Group Shots/MI/MI_Group_FlowerMambas_V2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "f97b02c8705d3b3c",
@@ -11227,6 +12999,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 40,
+    "visual": 40,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Pod & Battery Combination Kits · MI · MI028 — 32 of 40 files on rows, 8 on no row. Flavours: Strawberry Champagne, Pink Guava, Cambodian Haze, Sour Runtz, Sakura Blossom, Blue Glacier Grape +2.",
    "samples": [
@@ -11246,7 +13023,8 @@
      "id": "4540b2a9-f5ac-4e23-adf3-ce7633422f9b",
      "path": "Renders/Pod & Battery Kits/MI 2G Pod Battery Kit/MI_2G_PodBatteryKit_45Solo_PinkGuava.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a7ad415f86ad56f8",
@@ -11280,6 +13058,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 40,
+    "visual": 40,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Pod Flavors · MI — 32 of 40 files on rows, 8 on no row. Flavours: Strawberry Champagne, Blue Glacier Grape, Pink Guava, Sakura Blossom, Cambodian Haze, Boysenberry Fugi +2.",
    "samples": [
@@ -11299,7 +13082,8 @@
      "id": "e1a7b25f-fc49-4573-a43d-51b6de8eee9c",
      "path": "Renders/Pod & Battery Kits/MI 2G Vape Pod/MI_2G_VapePod_45Solo_SakuraBlossom.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "74c52fb5ee7bc061",
@@ -11359,6 +13143,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Pod Flavors · CA (+3 more lines: Pod Flavors MI; Pod & Battery Combination Kits CA) — 2 of 4 files on rows, 2 on no row. Flavours: Cambodian Haze.",
    "samples": [
@@ -11378,7 +13167,8 @@
      "id": "bcff0169-fb19-42f1-9686-d22bd53c4d48",
      "path": "Renders/Pod & Battery Kits/Mockups/PodComboKit_BlueGlacierGrape_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d4842de79c8904dd",
@@ -11394,6 +13184,11 @@
     "lineup": 7
    },
    "lines": [],
+   "checked": {
+    "files": 24,
+    "visual": 24,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (24 files).",
    "samples": [
@@ -11413,6 +13208,18 @@
      "id": "695a3e66-7ca5-4551-9dbe-bf824ec22aad",
      "path": "Renders/Pre-Rolls/Glass Jars/Green Apple Runtz Mates 2 copy.jpg"
     }
+   ],
+   "outliers": [
+    {
+     "id": "4cc7184c-d4fa-43ec-b82e-55114d09e473",
+     "path": "Renders/Pre-Rolls/Glass Jars/Joint 2 metas.png",
+     "why": "looks different from the rest (distance 0.10, folder typical 0.04)"
+    },
+    {
+     "id": "85596ea2-d7e1-4786-a8d8-0ddfff0078ac",
+     "path": "Renders/Pre-Rolls/Glass Jars/Muha OG Mates 2 copy.jpg",
+     "why": "looks different from the rest (distance 0.10, folder typical 0.04)"
+    }
    ]
   },
   {
@@ -11426,6 +13233,11 @@
     "joint with packaging": 23
    },
    "lines": [],
+   "checked": {
+    "files": 23,
+    "visual": 23,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (23 files).",
    "samples": [
@@ -11445,7 +13257,8 @@
      "id": "720ce4d3-d156-44e4-a014-449ce7c15c8c",
      "path": "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/CA_Prerolls_PinaColada_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "b366a08c4760c4dc",
@@ -11459,6 +13272,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 13,
+    "visual": 13,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (13 files).",
    "samples": [
@@ -11478,7 +13296,8 @@
      "id": "3def19ac-efea-41b5-892b-a6299ef12b6c",
      "path": "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin/CA_Mates_HR_Mimosa_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2e7c24d878020793",
@@ -11491,6 +13310,11 @@
     "joint with packaging": 18
    },
    "lines": [],
+   "checked": {
+    "files": 18,
+    "visual": 18,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — old folder: old (18 files).",
    "samples": [
@@ -11510,7 +13334,8 @@
      "id": "d98676c8-e160-43fe-bebd-6fe3170855c8",
      "path": "Renders/Pre-Rolls/Glass Jars/CA_Glass Jars/Hash Rosin/old/CA_Mates_HR_BerryGelato_Front_V2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "5a8fce78887b6b5d",
@@ -11524,6 +13349,11 @@
     "n/a": 1
    },
    "lines": [],
+   "checked": {
+    "files": 30,
+    "visual": 30,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (30 files).",
    "samples": [
@@ -11543,7 +13373,8 @@
      "id": "c769c58a-800b-44fb-a680-8fcff15981ba",
      "path": "Renders/Pre-Rolls/Glass Jars/MI_Glass Jars/MI_Prerolls_blueberry_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "5bf0cbfe551f2a42",
@@ -11556,6 +13387,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "samples": [
@@ -11563,7 +13399,8 @@
      "id": "a30d7923-d8c5-4f13-af16-7d1a8ad98325",
      "path": "Renders/Pre-Rolls/Glass Jars/NM_Glass_Jars/NM_Mates_Group_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "7a3251c8858c01ac",
@@ -11691,6 +13528,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Mates Metal Cans · CA · CA035 (+7 more lines: Mates Metal Cans MI; Mates THCA Metal Cans MO) — 9 of 10 files on rows, 1 on no row. Flavours: Biscotti Bomb, Purple Punch, Snowberry Truffle, Honey Jack, Honey Melon, Caramel Apple Gelato +3.",
    "samples": [
@@ -11710,7 +13552,8 @@
      "id": "fe97ad8e-2903-4ad4-a949-25e27638b484",
      "path": "Renders/Pre-Rolls/KiefJoint/Mates_PreRolls_HoneyJack_Joint.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2ca25c5ae455eff9",
@@ -11723,6 +13566,11 @@
     "single joint": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -11734,7 +13582,8 @@
      "id": "109ee8b3-17ba-4011-85f5-2422d05a718f",
      "path": "Renders/Pre-Rolls/KiefJoint/MO/Mate_MO_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "aab76db39184dd75",
@@ -11773,6 +13622,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 70,
+    "visual": 65,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2G Infused Pre Rolls · MO — 52 of 70 files on rows, 18 on no row. Flavours: HONEY MELON, PEACHES & CREAM, PUMPKIN BLISS, STRAWBERRY LAVA, MATCHA GOLD, DESERT GOLD CHOCOLATE +8.",
    "samples": [
@@ -11791,6 +13645,38 @@
     {
      "id": "2ece7346-78f8-4f4f-b7f4-8ef1f66d18c8",
      "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_45_STRAWBERRY_LAVA45_Back.png"
+    }
+   ],
+   "outliers": [
+    {
+     "id": "716de668-815e-42f2-858e-4e920b8fb565",
+     "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_Front_MIDNIGHT_EXPRESSOFront_Back.png",
+     "why": "looks different from the rest (distance 0.11, folder typical 0.06)"
+    },
+    {
+     "id": "65c86c97-fca0-44f8-8ff8-bb264a2b354a",
+     "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_Front_PINEAPPLE_POISONFront_Back.png",
+     "why": "looks different from the rest (distance 0.12, folder typical 0.06)"
+    },
+    {
+     "id": "2aae2c25-3880-4477-92f6-3796fb227267",
+     "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_45_GRAPE_STOMPER45_Back.png",
+     "why": "looks different from the rest (distance 0.11, folder typical 0.06)"
+    },
+    {
+     "id": "3c6efaf6-c2ff-4dd2-bb2e-ac4a3eb369f9",
+     "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_Front_BLUE_SLUSHIEFront_Back.png",
+     "why": "looks different from the rest (distance 0.11, folder typical 0.06)"
+    },
+    {
+     "id": "a30b66b7-76e5-468f-91cf-882e293d7756",
+     "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_Front_PB_JELLYFront_Back.png",
+     "why": "looks different from the rest (distance 0.12, folder typical 0.06)"
+    },
+    {
+     "id": "3e2d0015-c31c-4a0a-80e9-ad18612cd7c0",
+     "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/MO_Tube_Front_PUMPKIN_BLISSFront_Back.png",
+     "why": "looks different from the rest (distance 0.11, folder typical 0.06)"
     }
    ]
   },
@@ -11822,6 +13708,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 2G Infused Pre Rolls · MO — 5 of 5 files on rows. Flavours: PB JELLY, MATCHA GOLD, WATERMELON PUNCH, PUMPKIN BLISS, MIDNIGHT ESPRESSO.",
    "samples": [
@@ -11841,7 +13732,8 @@
      "id": "6afdda57-d9fd-4352-aed8-a025a155db18",
      "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v2/05082026_Extra_Flavors/MO_Tube_PB_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "47b6d185daca7766",
@@ -11855,6 +13747,11 @@
     "packaging only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 4,
+    "visual": 4,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "samples": [
@@ -11874,7 +13771,8 @@
      "id": "f9442745-ed11-47bc-9999-5d3dc596b818",
      "path": "Renders/Pre-Rolls/KiefJoint/MO/2G PreRoll/v3/Template/MO_PopUp_v2_Front_2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1546a75c8cf38a6a",
@@ -11900,6 +13798,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 7,
+    "visual": 7,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 1 of 7 files on rows, 6 on no row. Flavours: Alpine Guava.",
    "samples": [
@@ -11919,7 +13822,8 @@
      "id": "46455f72-1f8c-4c8d-97ff-53e058294c80",
      "path": "Renders/Pre-Rolls/King & Queen Joints/BubbleHash/Kings/BubbleHash_AlpineGuava_ThreeQuarters_i1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "6b7a0a6eef517d2c",
@@ -11945,6 +13849,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 7,
+    "visual": 7,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 1 of 7 files on rows, 6 on no row. Flavours: Chilled Cherries.",
    "samples": [
@@ -11964,7 +13873,8 @@
      "id": "e2c610f9-7bea-40b8-8374-37ad459e2cd5",
      "path": "Renders/Pre-Rolls/King & Queen Joints/BubbleHash/Queens/BubbleHashQueen_SuperBoof_Front_i1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "9e05ad72b9714957",
@@ -11991,6 +13901,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 11,
+    "visual": 11,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 — 4 of 11 files on rows, 7 on no row. Flavours: Northern Lights, Blackberry Kush.",
    "samples": [
@@ -12010,7 +13925,8 @@
      "id": "976bf7fe-4626-4963-b1ce-13f412103be7",
      "path": "Renders/Pre-Rolls/King & Queen Joints/MeltedDiamonds/Kings/MeltedDiamonds_King_GroupShot.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "4f0960612f5ac025",
@@ -12047,6 +13963,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 11,
+    "visual": 11,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds THC-A KING MATE PRE-ROLL (1.5g) · HEMP · HEMP009 (+1 more line: Classic Flavor Line, infused. AZ) — 3 of 11 files on rows, 8 on no row. Flavours: Mimosa.",
    "samples": [
@@ -12066,7 +13987,8 @@
      "id": "a2c2fb81-81eb-48bf-9402-1563b78ba6a5",
      "path": "Renders/Pre-Rolls/King & Queen Joints/MeltedDiamonds/Queens/MeltedDiamondsQueen_Mimosa_ThreeQuarters_i1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "90ed0ecd164864ad",
@@ -12079,6 +14001,11 @@
     "packaging only": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
@@ -12094,7 +14021,8 @@
      "id": "e82fd854-a078-4111-86e9-82541a9a7e4e",
      "path": "Renders/Pre-Rolls/King & Queen Joints/NJ_King/NJ_King_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "b2c32822ef233d45",
@@ -12107,6 +14035,11 @@
     "packaging only": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
@@ -12122,7 +14055,8 @@
      "id": "c4b8dc5c-0fcb-48d1-9c82-0b34807963f0",
      "path": "Renders/Pre-Rolls/King & Queen Joints/Sandpaper Magnum Metal Tube/Mate_King_2G_SandpaperMagnum_ThreeQuarters_b_02.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "43fb8742561ed6fb",
@@ -12136,6 +14070,11 @@
     "packaging only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
@@ -12151,7 +14090,8 @@
      "id": "8120c85e-0f73-499a-a1ed-7cd3fd17bd09",
      "path": "Renders/Pre-Rolls/King & Queen Joints/Sandpaper Magnum Metal Tube/SandpaperMagnumKing/SandpaperMagnumKing_ThreeQuarters_Right.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2eda3eb32af55ec5",
@@ -12164,6 +14104,11 @@
     "joint with packaging": 10
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — previous design: CA Mates June 2024 (10 files).",
    "samples": [
@@ -12183,7 +14128,8 @@
      "id": "2a0b1e37-fcc5-40fd-a899-68661624cc91",
      "path": "Renders/Pre-Rolls/Metal Can/CA/CA Mates June 2024/Mates_CA_Watermelon_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "5f896e4440b7e5d1",
@@ -12196,6 +14142,11 @@
     "single joint": 6
    },
    "lines": [],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "samples": [
@@ -12215,7 +14166,8 @@
      "id": "cc69fe7b-08ff-4606-b89e-42c4b242d54b",
      "path": "Renders/Pre-Rolls/Metal Can/CA/CA Mates Tech Hash Rosin March 2026/Joints/CA_Mates_HR_Tip_PinkTruffle.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "30953956ca9981d8",
@@ -12251,6 +14203,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 40,
+    "visual": 40,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Mates Metal Cans · CA · CA035 — 40 of 40 files on rows. Flavours: Strawberry Ice Cream, Snowberry Truffle, Honey Melon, Berry Blaze, Honey Jack, Caramel Apple Gelato +4.",
    "samples": [
@@ -12270,7 +14227,8 @@
      "id": "30455873-22a3-45d7-8b78-e26907df531e",
      "path": "Renders/Pre-Rolls/Metal Can/CA/CA Mates_TechDesign_July2025/CA_Mates_FrontSolo_BerryBlaze.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "bea4b652a8d924b2",
@@ -12284,6 +14242,11 @@
     "single joint": 1
    },
    "lines": [],
+   "checked": {
+    "files": 12,
+    "visual": 12,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (12 files).",
    "samples": [
@@ -12303,7 +14266,8 @@
      "id": "91348a0a-0184-4617-ad09-09c38c002018",
      "path": "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_Mates_berry_45_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "caa7874347912891",
@@ -12317,6 +14281,11 @@
     "single joint": 2
    },
    "lines": [],
+   "checked": {
+    "files": 12,
+    "visual": 12,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (12 files).",
    "samples": [
@@ -12336,7 +14305,8 @@
      "id": "a635c738-f7f3-4970-87fb-1f6645a497da",
      "path": "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/CA_HR_MatesTin_nojoint/CA_HR_Mates_Watermelon_Front_V2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "c0aeed94d73cde97",
@@ -12349,6 +14319,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "samples": [
@@ -12356,7 +14331,8 @@
      "id": "93e8f89c-e5bf-4878-927d-1c05e4a4f661",
      "path": "Renders/Pre-Rolls/Metal Can/CA/CA_HashRosin/Group/CA_HR_Mates_Group_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "30cc87cbae699f04",
@@ -12391,6 +14367,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 40,
+    "visual": 40,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Mates Metal Cans · MI · MI027 — 40 of 40 files on rows. Flavours: Agave Sunrise, Frosty Mint Blueberry, Honey Melon, Biscotti Bomb, Honey Jack, Purple Punch +4.",
    "samples": [
@@ -12410,7 +14391,8 @@
      "id": "8b683cba-7ef4-4737-9217-2cdcec05793d",
      "path": "Renders/Pre-Rolls/Metal Can/MI/MI Mates_TechDesign_July2025/MI_Mates_45_BiscottiBomb.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "865a07e8767c54ed",
@@ -12441,6 +14423,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 13,
+    "visual": 13,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Hash Rosin Mates Metal Cans · MI · MI017 — 12 of 13 files on rows, 1 on no row. Flavours: White Widow, Apple Gruntz, Watermelon OG, Razzle Dazzle, Doses & Mimosas, Berry Gelato.",
    "samples": [
@@ -12460,6 +14447,13 @@
      "id": "cc430060-fe0d-4506-9d8d-748e554d1092",
      "path": "Renders/Pre-Rolls/Metal Can/MI/MI_HashRosin Mates/WhiteWidow_Joint_Front_V1.png"
     }
+   ],
+   "outliers": [
+    {
+     "id": "cc430060-fe0d-4506-9d8d-748e554d1092",
+     "path": "Renders/Pre-Rolls/Metal Can/MI/MI_HashRosin Mates/WhiteWidow_Joint_Front_V1.png",
+     "why": "looks different from the rest (distance 0.09, folder typical 0.02)"
+    }
    ]
   },
   {
@@ -12473,6 +14467,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "samples": [
@@ -12480,7 +14479,8 @@
      "id": "f0a30ae9-5b2c-4f99-9abc-0979b129f637",
      "path": "Renders/Pre-Rolls/Metal Can/MI/MI_HashRosin Mates/Group/MI_HR_Mates_Group_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "6f74cb2265b28216",
@@ -12527,6 +14527,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 40,
+    "visual": 40,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Mates THCA Metal Cans · MO · MO006 (+1 more line: 2G Infused Pre Rolls MO) — 40 of 40 files on rows. Flavours: Berry Blast, Purple Punch, Mango Peach Fusion, Biscotti Bomb, Frosty Mint Blueberry, Honey Melon +4.",
    "samples": [
@@ -12546,7 +14551,8 @@
      "id": "1e24b31c-8f7e-41b2-a5d3-a016fd876e40",
      "path": "Renders/Pre-Rolls/Metal Can/MO/MO/MO_Mates_Front_BiscottiBomb.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "4a3276a13102d5f5",
@@ -12559,6 +14565,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (1 files).",
    "samples": [
@@ -12566,7 +14577,8 @@
      "id": "5b27340c-dd5d-4383-8302-9d9189fbaf52",
      "path": "Renders/Pre-Rolls/Metal Can/MO/MO/Group/MO_Mates_GroupShot.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "0190f0f4dc15dc6d",
@@ -12591,6 +14603,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "Feeds Mates Metal Cans Kiefless Classic Flavor Line, Kiefless · NJ · NJ003 — 1 of 3 files on rows, 2 on no row. Flavours: Strawberry Dream.",
    "samples": [
@@ -12606,7 +14623,8 @@
      "id": "8100917f-a7a7-4fc1-9d5c-804e02b5a351",
      "path": "Renders/Pre-Rolls/Metal Can/NJ/NJ_MatesTin_Strawberry_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "78963cd4a59de971",
@@ -12641,6 +14659,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 21,
+    "visual": 21,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Mates Metal Cans Kiefless · NM · NM005 — 18 of 21 files on rows, 3 on no row. Flavours: Thin Mints OG, Strawberry Dream, Pina Colada, Mango Peach Rings, Orange Cake, Purple Punch +3.",
    "samples": [
@@ -12660,7 +14683,8 @@
      "id": "b9a817b6-ece5-43f2-8b23-b11e379aa28c",
      "path": "Renders/Pre-Rolls/Metal Can/NM/NM_MatesTin_PinaColada_45_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "1d48cf826d938c44",
@@ -12692,6 +14716,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 24,
+    "visual": 24,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds Mates Metal Cans · NY · NY003 — 24 of 24 files on rows. Flavours: Morning Glory, Super Boof, Jealousy, Jet Fuel, Adios MF, Northern Lights.",
    "samples": [
@@ -12711,7 +14740,8 @@
      "id": "91b7b994-c84b-47ea-b1e7-d68fcc0fa920",
      "path": "Renders/Pre-Rolls/Metal Can/NY/NY_Mates_45Solo_Jealousy.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "94bc13034b5fa750",
@@ -12724,6 +14754,11 @@
     "joint with packaging": 12
    },
    "lines": [],
+   "checked": {
+    "files": 12,
+    "visual": 12,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — old folder: Old Version (12 files).",
    "samples": [
@@ -12743,7 +14778,8 @@
      "id": "fce5311f-27cc-44d7-b579-605890475c63",
      "path": "Renders/Pre-Rolls/Metal Can/NY/Old Version/NY_MatesTin_JetFuel_45_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "c4b86d3429d39acc",
@@ -12756,6 +14792,11 @@
     "lineup": 1
    },
    "lines": [],
+   "checked": {
+    "files": 1,
+    "visual": 1,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — old folder: GroupShot (1 files).",
    "samples": [
@@ -12763,7 +14804,8 @@
      "id": "e1c50624-34c0-436e-9c91-eadc7d80c42f",
      "path": "Renders/Pre-Rolls/Metal Can/NY/Old Version/GroupShot/NY_MatesTin_Group_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "8a374390b03249fe",
@@ -12776,6 +14818,11 @@
     "packaging only": 6
    },
    "lines": [],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "samples": [
@@ -12795,7 +14842,8 @@
      "id": "554bf184-c6fd-4fc4-a678-7cd24b71f981",
      "path": "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/MuhaMadness_Mango_45_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "9526c851470258bd",
@@ -12808,6 +14856,11 @@
     "packaging only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -12819,7 +14872,8 @@
      "id": "9ed57033-2619-4078-97a7-fe55acedbf4a",
      "path": "Renders/Pre-Rolls/MuhaMadness/CA/Dialed Pack/Mylar Bag/CA_ MuhaMadness_DialedPack_ThreeQuarters.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "2370cfbfcdc434cd",
@@ -12832,6 +14886,11 @@
     "packaging only": 6
    },
    "lines": [],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "samples": [
@@ -12851,7 +14910,8 @@
      "id": "a477620a-3d20-406d-bd2f-41e62d4b6537",
      "path": "Renders/Pre-Rolls/MuhaMadness/CA/Exotic Pack/MuhaMadness_LemonCherry_Front_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "234847536151447c",
@@ -12864,6 +14924,11 @@
     "packaging only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -12875,7 +14940,8 @@
      "id": "c9a12f14-d5e9-4b22-a4a1-93d3c747671e",
      "path": "Renders/Pre-Rolls/MuhaMadness/CA/Exotic Pack/Mylar Bag/CA_ MuhaMadness_ExoticPack_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "24f3bfd68aebf506",
@@ -12888,6 +14954,11 @@
     "packaging only": 6
    },
    "lines": [],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "samples": [
@@ -12907,7 +14978,8 @@
      "id": "999672b6-bd19-4446-a956-118e469a2723",
      "path": "Renders/Pre-Rolls/MuhaMadness/CA/Gas Pack/MuhaMadness_Headband_45_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "5f5a77c81c130255",
@@ -12920,6 +14992,11 @@
     "packaging only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -12931,7 +15008,8 @@
      "id": "22db9da1-b0d4-47a0-9b8f-fc0271579498",
      "path": "Renders/Pre-Rolls/MuhaMadness/CA/Gas Pack/Mylar Bag/CA_ MuhaMadness_GasPack_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "c0779d4af9b3cd88",
@@ -12944,6 +15022,11 @@
     "packaging only": 2
    },
    "lines": [],
+   "checked": {
+    "files": 2,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "samples": [
@@ -12955,7 +15038,8 @@
      "id": "97fc9ba2-4304-4ce5-9065-a5f4c3247aa9",
      "path": "Renders/Pre-Rolls/MuhaMadness/NJ/NJ_MylarBag_Preroll_Front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "e39dc64dc756ff76",
@@ -12969,6 +15053,11 @@
     "packaging only": 1
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "samples": [
@@ -12984,7 +15073,8 @@
      "id": "ab57b74f-ae00-4fb0-837a-33c9d2fdf26a",
      "path": "Renders/Pre-Rolls/MuhaMadness/NJ/NJ_SingleTube/NJ_Tube_Right_V1.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "4ea2d24c765c386e",
@@ -13028,6 +15118,11 @@
      ]
     }
    ],
+   "checked": {
+    "files": 20,
+    "visual": 19,
+    "labels": true
+   },
    "decision": null,
    "proposal": "Feeds 1.5g 3 Pack Muharillos · CA (+1 more line: 2G Infused Pre Rolls MO) — 18 of 20 files on rows, 2 on no row. Flavours: Russian cream, Blue Slushie, White grape, Arctic ice, Strawberry swirl, Tropical fusion +3.",
    "samples": [
@@ -13047,7 +15142,8 @@
      "id": "8bf59874-b7ca-4bbf-aa2f-1fb68a96001c",
      "path": "Renders/Pre-Rolls/Muharillos/Muharillos_45_ARCTIC_ICE45.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "28fd0fac617d44af",
@@ -13060,6 +15156,11 @@
     "single joint": 6
    },
    "lines": [],
+   "checked": {
+    "files": 6,
+    "visual": 6,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "samples": [
@@ -13079,7 +15180,8 @@
      "id": "353cfec9-600d-477f-b4da-9a801dc0092f",
      "path": "Renders/Pre-Rolls/Paper Joint/CA_HR_Joint only/CA_Mates_HR_Tip_VanillaKush.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "97ac12941f694ab8",
@@ -13092,6 +15194,11 @@
     "packaging only": 16
    },
    "lines": [],
+   "checked": {
+    "files": 16,
+    "visual": 16,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (16 files).",
    "samples": [
@@ -13111,7 +15218,8 @@
      "id": "498ed11c-0400-4e64-ab1e-50842625fd2e",
      "path": "Renders/Pre-Rolls/RedesignTest/V2/shot2.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "31b922ed078aa97d",
@@ -13125,6 +15233,11 @@
     "device only": 6
    },
    "lines": [],
+   "checked": {
+    "files": 8,
+    "visual": 8,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (8 files).",
    "samples": [
@@ -13144,7 +15257,8 @@
      "id": "364f43b4-1b98-4572-83bf-21f042e465a5",
      "path": "Renders/TEMP/1g 510 dist/mockups/1g_device_hybrid_back.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "8585103cc4928358",
@@ -13157,6 +15271,11 @@
     "packaging only": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 3,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "samples": [
@@ -13172,7 +15291,8 @@
      "id": "4a5f6917-99b5-4cf4-b39b-b253cda1eb07",
      "path": "Renders/TEMP/1g concentrates cured rosin/mockups/hybrid_box_front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "d3dfd36701d09e29",
@@ -13187,6 +15307,11 @@
     "packaging only": 3
    },
    "lines": [],
+   "checked": {
+    "files": 9,
+    "visual": 8,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (9 files).",
    "samples": [
@@ -13206,7 +15331,8 @@
      "id": "d5b041d9-ee80-497e-b49e-1f5b4709472b",
      "path": "Renders/TEMP/2g Infused Joints/mockups/indica_bag_front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "e13ce47809d765cf",
@@ -13219,6 +15345,11 @@
     "packaging only": 3
    },
    "lines": [],
+   "checked": {
+    "files": 3,
+    "visual": 2,
+    "labels": false
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "samples": [
@@ -13234,7 +15365,8 @@
      "id": "bd7ffe39-9aa9-4191-bfc6-20f9bd9ba6a3",
      "path": "Renders/TEMP/32PK pre rolls/mockups/sativa_bag_front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "b284d8fabf0f9a8f",
@@ -13248,6 +15380,11 @@
     "device only": 6
    },
    "lines": [],
+   "checked": {
+    "files": 15,
+    "visual": 14,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (15 files).",
    "samples": [
@@ -13267,7 +15404,8 @@
      "id": "5de57b6b-9d12-4a43-b5bd-8f67e1ab0c66",
      "path": "Renders/TEMP/5g cured rosin/mockups/sativa_jar_opened_resin.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "017b56ba1994ee99",
@@ -13281,6 +15419,11 @@
     "packaging only": 3
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "samples": [
@@ -13300,7 +15443,8 @@
      "id": "15ad8b93-cd4d-466e-b49d-8ed8a504f700",
      "path": "Renders/TEMP/Hash Rosin Gummies/mockups/hybrid_bag_front.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "0a305f156a64c65f",
@@ -13313,6 +15457,11 @@
     "device with packaging": 10
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "samples": [
@@ -13332,7 +15481,8 @@
      "id": "808ea96f-f410-4988-8c47-be6d2d581646",
      "path": "Renders/Website Images/Carts/Distillate/625790fd873d953e1228630b_DesertCooler-Shadow.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "037388892955a5e9",
@@ -13345,6 +15495,11 @@
     "device with packaging": 10
    },
    "lines": [],
+   "checked": {
+    "files": 10,
+    "visual": 10,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "samples": [
@@ -13364,7 +15519,8 @@
      "id": "5494a2ef-0ab2-4872-8d15-6e431c701ee3",
      "path": "Renders/Website Images/Carts/Distillate V2/Apple Gelato Ice copy.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "a46a3a66622c27c5",
@@ -13377,6 +15533,11 @@
     "device with packaging": 5
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "samples": [
@@ -13396,7 +15557,8 @@
      "id": "e4df6357-8d75-4217-bd24-42f61a27fed6",
      "path": "Renders/Website Images/Carts/Melted Diamonds/6404ca9903dc7a95e270ac8a_Carts-MD-1080-CherryLime-p-1080.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "02d662aa059023e8",
@@ -13410,6 +15572,11 @@
     "multi pack": 2
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "samples": [
@@ -13429,7 +15596,8 @@
      "id": "99f8e82c-5e9e-47df-881b-a215f1d0fb4d",
      "path": "Renders/Website Images/Carts/Melted Diamonds V2/Lemon Cherry Gelato copy.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "965acf9a02d11061",
@@ -13442,6 +15610,11 @@
     "device with packaging": 8
    },
    "lines": [],
+   "checked": {
+    "files": 8,
+    "visual": 8,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (8 files).",
    "samples": [
@@ -13461,7 +15634,8 @@
      "id": "8c012899-d970-429a-bd44-1e97ef7f723b",
      "path": "Renders/Website Images/Disposable/Distillate/Gogi OG.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "45c2fd004aaf95a5",
@@ -13476,6 +15650,11 @@
     "multi pack": 1
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "samples": [
@@ -13495,7 +15674,8 @@
      "id": "2f3023ba-ebde-4038-99de-92405828e013",
      "path": "Renders/Website Images/Disposable/Live Resin/64234fa8f7ff7706ccb4b343_Disp-LR-1080-CherryLime.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "f8cb2677d1cdc76b",
@@ -13508,6 +15688,11 @@
     "device with packaging": 5
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "samples": [
@@ -13527,7 +15712,8 @@
      "id": "a562ffc2-0677-4aa1-860f-c86088da8b75",
      "path": "Renders/Website Images/Disposable/Melted Diamonds/6404e72ce0dbafef0c48b14a_Disp-MD-1080-CremBrulee-p-1080.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "bcf96d9bb1739e83",
@@ -13543,6 +15729,11 @@
     "in scene": 1
    },
    "lines": [],
+   "checked": {
+    "files": 7,
+    "visual": 7,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (7 files).",
    "samples": [
@@ -13562,7 +15753,8 @@
      "id": "5cce9708-b805-4d86-8d7d-0e828b3fd7d9",
      "path": "Renders/Website Images/Mambas/632a0734549e47a32b6e2386_Mamba-Strawberry-1080-p-800.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "52fa8f00aabeeabc",
@@ -13576,6 +15768,11 @@
     "multi pack": 3
    },
    "lines": [],
+   "checked": {
+    "files": 8,
+    "visual": 8,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (8 files).",
    "samples": [
@@ -13595,7 +15792,8 @@
      "id": "2c45424f-ac14-4911-9208-784dfa0b75df",
      "path": "Renders/Website Images/Mates/63cac08542a0773012e43295_Muha_OG_Mates_1_copy_1080x1080-p-800.png"
     }
-   ]
+   ],
+   "outliers": []
   },
   {
    "id": "006bf0b53c279eb3",
@@ -13608,6 +15806,11 @@
     "device with packaging": 5
    },
    "lines": [],
+   "checked": {
+    "files": 5,
+    "visual": 5,
+    "labels": true
+   },
    "decision": null,
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "samples": [
@@ -13627,7 +15830,8 @@
      "id": "6ffb53ba-2a3b-44af-9866-fd76dba03470",
      "path": "Renders/Website Images/Mavs/632a2a57f17249d72f87d159_Mavericks-CHEMDAW-1080-p-1080.png"
     }
-   ]
+   ],
+   "outliers": []
   }
  ]
 }
