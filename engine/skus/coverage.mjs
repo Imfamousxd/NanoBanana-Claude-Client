@@ -250,8 +250,10 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   // Hard walls: vape form, format, market, generation.
   // A longer flavour that contains this one ("Strawberry Lemon" for "Strawberry") present in the text means it is that flavour, not this one.
   if (KNOWN_NAMES.some((other) => other !== flavour && other.includes(flavour) && new RegExp("(^| )" + other.replace(/\s/g, "") + "( |$)").test(" " + prepared.compactFull.replace(/([a-z])(?=[0-9])/g, "$1 ") + " ") || (other !== flavour && other.includes(flavour) && other.split(" ").every((w) => prepared.full.split(" ").includes(w))))) return why(asset, "a longer flavour name is present");
+  // Strength / cannabinoid wall. The file's own words (file name, vision product and title, leaf folder) decide
+  // first: a parent folder called "D8 D10 HHC" names all three and must not vouch for a file that says "D8".
   const wantStrength = STRENGTH_WORDS.filter(([ask]) => ask.test(norm(`${line.line} ${line.section || ""}`)));
-  if (wantStrength.length) { const haveAny = STRENGTH_WORDS.filter(([, has]) => has.test(prepared.full)); if (haveAny.length && !haveAny.some((s) => wantStrength.includes(s))) return why(asset, "strength word wall"); }
+  if (wantStrength.length) { const near = nameWords.join(" "); const haveNear = STRENGTH_WORDS.filter(([, has]) => has.test(near)); const have = haveNear.length ? haveNear : STRENGTH_WORDS.filter(([, has]) => has.test(prepared.full)); if (have.length && !have.some((s) => wantStrength.includes(s))) return why(asset, "strength word wall"); }
   const wall = CATEGORY_WALLS[line.category];
   // Walls are tested on the glued text (allinone, flowerjar…) and on the word-split text (\bpod, \baio\b).
   const spaced = prepared.spaced || prepared.full;

@@ -1,15 +1,11 @@
 {
  "brand": "muha",
- "builtAt": "2026-09-17T04:18:38.419Z",
+ "builtAt": "2026-09-17T04:25:09.323Z",
  "scope": "Renders/ only",
  "naming": {
   "dropped": [],
-  "merged": [
-   "muha:MI:hash-rosin-mates-metal-cans → muha:MI:mi017 (no renders of its own; the sibling has them)"
-  ],
-  "redirect": {
-   "muha:MI:hash-rosin-mates-metal-cans": "muha:MI:mi017"
-  }
+  "merged": [],
+  "redirect": {}
  },
  "folders": [
   {
@@ -2435,7 +2431,7 @@
    ],
    "decision": null,
    "generation": null,
-   "designTag": "Q 2025",
+   "designTag": "Q1 2025",
    "proposal": "On no SKU row — nothing in the book matched (21 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -9520,7 +9516,7 @@
    ],
    "decision": null,
    "generation": null,
-   "designTag": "CT V",
+   "designTag": "CT V2",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -11265,7 +11261,7 @@
    ],
    "decision": null,
    "generation": null,
-   "designTag": "D D HHC",
+   "designTag": "D8 D10 HHC",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -11292,51 +11288,11 @@
    },
    "lines": [
     {
-     "id": "muha:HEMP:hemp004",
-     "name": "HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g)",
-     "line": "DELTA-8 MUHA MEDS CARTRIDGE (1g)",
-     "market": "HEMP",
-     "skuBlock": "HEMP004",
-     "generation": null,
-     "files": 18,
-     "flavours": [
-      "Gods Gift",
-      "Pineapple Express",
-      "Green Crack",
-      "Northern Lights",
-      "Gelato",
-      "Agent Orange",
-      "Maui Wauii",
-      "Cherry Berry",
-      "Trainwreck"
-     ]
-    },
-    {
      "id": "muha:HEMP:hemp005",
      "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP005",
-     "generation": null,
-     "files": 18,
-     "flavours": [
-      "Gods Gift",
-      "Pineapple Express",
-      "Green Crack",
-      "Northern Lights",
-      "Gelato",
-      "Agent Orange",
-      "Maui Wauii",
-      "Cherry Berry",
-      "Trainwreck"
-     ]
-    },
-    {
-     "id": "muha:HEMP:hemp006",
-     "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
-     "line": "HHC MUHA MEDS CARTRIDGE (1g)",
-     "market": "HEMP",
-     "skuBlock": "HEMP006",
      "generation": null,
      "files": 18,
      "flavours": [
@@ -11363,9 +11319,9 @@
    ],
    "decision": null,
    "generation": null,
-   "designTag": "D",
-   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 18 of 20 files on rows, 2 on no row. Flavours: Gods Gift, Pineapple Express, Green Crack, Northern Lights, Gelato, Agent Orange +3.",
-   "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "designTag": "D10",
+   "proposal": "Feeds HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) · HEMP005 — 18 of 20 files on rows, 2 on no row. Flavours: Gods Gift, Pineapple Express, Green Crack, Northern Lights, Gelato, Agent Orange +3.",
+   "meaning": "Yes means: every file in this folder is HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "44f9abe8-3f88-436f-892e-f1f4539d1063",
@@ -11416,46 +11372,6 @@
       "Trainwreck",
       "Maui Wauii"
      ]
-    },
-    {
-     "id": "muha:HEMP:hemp005",
-     "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
-     "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
-     "market": "HEMP",
-     "skuBlock": "HEMP005",
-     "generation": null,
-     "files": 18,
-     "flavours": [
-      "Green Crack",
-      "Northern Lights",
-      "Pineapple Express",
-      "Gelato",
-      "Agent Orange",
-      "Cherry Berry",
-      "Gods Gift",
-      "Trainwreck",
-      "Maui Wauii"
-     ]
-    },
-    {
-     "id": "muha:HEMP:hemp006",
-     "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
-     "line": "HHC MUHA MEDS CARTRIDGE (1g)",
-     "market": "HEMP",
-     "skuBlock": "HEMP006",
-     "generation": null,
-     "files": 18,
-     "flavours": [
-      "Green Crack",
-      "Northern Lights",
-      "Pineapple Express",
-      "Gelato",
-      "Agent Orange",
-      "Cherry Berry",
-      "Gods Gift",
-      "Trainwreck",
-      "Maui Wauii"
-     ]
     }
    ],
    "checked": {
@@ -11469,9 +11385,9 @@
    ],
    "decision": null,
    "generation": null,
-   "designTag": "D",
-   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 18 of 20 files on rows, 2 on no row. Flavours: Green Crack, Northern Lights, Pineapple Express, Gelato, Agent Orange, Cherry Berry +3.",
-   "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "designTag": "D8",
+   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 — 18 of 20 files on rows, 2 on no row. Flavours: Green Crack, Northern Lights, Pineapple Express, Gelato, Agent Orange, Cherry Berry +3.",
+   "meaning": "Yes means: every file in this folder is HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "493aad75-4352-4b13-b122-b607c1530bc7",
@@ -11505,53 +11421,11 @@
    },
    "lines": [
     {
-     "id": "muha:HEMP:hemp004",
-     "name": "HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g)",
-     "line": "DELTA-8 MUHA MEDS CARTRIDGE (1g)",
-     "market": "HEMP",
-     "skuBlock": "HEMP004",
-     "generation": null,
-     "files": 20,
-     "flavours": [
-      "Green Crack",
-      "Cherry Berry",
-      "King Louie XII",
-      "Agent Orange",
-      "Northern Lights",
-      "Gelato",
-      "Maui Wauii",
-      "Pineapple Express",
-      "Gods Gift",
-      "Trainwreck"
-     ]
-    },
-    {
      "id": "muha:HEMP:hemp005",
      "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
      "market": "HEMP",
      "skuBlock": "HEMP005",
-     "generation": null,
-     "files": 20,
-     "flavours": [
-      "Green Crack",
-      "Cherry Berry",
-      "King Louie XII",
-      "Agent Orange",
-      "Northern Lights",
-      "Gelato",
-      "Maui Wauii",
-      "Pineapple Express",
-      "Gods Gift",
-      "Trainwreck"
-     ]
-    },
-    {
-     "id": "muha:HEMP:hemp006",
-     "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
-     "line": "HHC MUHA MEDS CARTRIDGE (1g)",
-     "market": "HEMP",
-     "skuBlock": "HEMP006",
      "generation": null,
      "files": 20,
      "flavours": [
@@ -11576,9 +11450,9 @@
    "unassigned": [],
    "decision": null,
    "generation": null,
-   "designTag": "D Display",
-   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 20 of 20 files on rows. Flavours: Green Crack, Cherry Berry, King Louie XII, Agent Orange, Northern Lights, Gelato +4.",
-   "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "designTag": "D10 Display",
+   "proposal": "Feeds HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) · HEMP005 — 20 of 20 files on rows. Flavours: Green Crack, Cherry Berry, King Louie XII, Agent Orange, Northern Lights, Gelato +4.",
+   "meaning": "Yes means: every file in this folder is HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "95710e06-d7eb-4df5-8bde-dcf73d5d9ca9",
@@ -11631,48 +11505,6 @@
       "Trainwreck",
       "Agent Orange"
      ]
-    },
-    {
-     "id": "muha:HEMP:hemp005",
-     "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
-     "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
-     "market": "HEMP",
-     "skuBlock": "HEMP005",
-     "generation": null,
-     "files": 20,
-     "flavours": [
-      "Cherry Berry",
-      "Gelato",
-      "Maui Wauii",
-      "Pineapple Express",
-      "Green Crack",
-      "Northern Lights",
-      "King Louie XII",
-      "Gods Gift",
-      "Trainwreck",
-      "Agent Orange"
-     ]
-    },
-    {
-     "id": "muha:HEMP:hemp006",
-     "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
-     "line": "HHC MUHA MEDS CARTRIDGE (1g)",
-     "market": "HEMP",
-     "skuBlock": "HEMP006",
-     "generation": null,
-     "files": 20,
-     "flavours": [
-      "Cherry Berry",
-      "Gelato",
-      "Maui Wauii",
-      "Pineapple Express",
-      "Green Crack",
-      "Northern Lights",
-      "King Louie XII",
-      "Gods Gift",
-      "Trainwreck",
-      "Agent Orange"
-     ]
     }
    ],
    "checked": {
@@ -11683,9 +11515,9 @@
    "unassigned": [],
    "decision": null,
    "generation": null,
-   "designTag": "D Display",
-   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 20 of 20 files on rows. Flavours: Cherry Berry, Gelato, Maui Wauii, Pineapple Express, Green Crack, Northern Lights +4.",
-   "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "designTag": "D8 Display",
+   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 — 20 of 20 files on rows. Flavours: Cherry Berry, Gelato, Maui Wauii, Pineapple Express, Green Crack, Northern Lights +4.",
+   "meaning": "Yes means: every file in this folder is HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "3c59c52f-38fb-463e-b10a-f0fb3cc93727",
@@ -11719,48 +11551,6 @@
    },
    "lines": [
     {
-     "id": "muha:HEMP:hemp004",
-     "name": "HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g)",
-     "line": "DELTA-8 MUHA MEDS CARTRIDGE (1g)",
-     "market": "HEMP",
-     "skuBlock": "HEMP004",
-     "generation": null,
-     "files": 20,
-     "flavours": [
-      "Northern Lights",
-      "King Louie XII",
-      "Maui Wauii",
-      "Agent Orange",
-      "Gelato",
-      "Pineapple Express",
-      "Trainwreck",
-      "Green Crack",
-      "Gods Gift",
-      "Cherry Berry"
-     ]
-    },
-    {
-     "id": "muha:HEMP:hemp005",
-     "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
-     "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
-     "market": "HEMP",
-     "skuBlock": "HEMP005",
-     "generation": null,
-     "files": 20,
-     "flavours": [
-      "Northern Lights",
-      "King Louie XII",
-      "Maui Wauii",
-      "Agent Orange",
-      "Gelato",
-      "Pineapple Express",
-      "Trainwreck",
-      "Green Crack",
-      "Gods Gift",
-      "Cherry Berry"
-     ]
-    },
-    {
      "id": "muha:HEMP:hemp006",
      "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
      "line": "HHC MUHA MEDS CARTRIDGE (1g)",
@@ -11790,9 +11580,9 @@
    "unassigned": [],
    "decision": null,
    "generation": null,
-   "designTag": "HHC Display",
-   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 20 of 20 files on rows. Flavours: Northern Lights, King Louie XII, Maui Wauii, Agent Orange, Gelato, Pineapple Express +4.",
-   "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "designTag": "Display",
+   "proposal": "Feeds HEMP HHC MUHA MEDS CARTRIDGE (1g) · HEMP006 — 20 of 20 files on rows. Flavours: Northern Lights, King Louie XII, Maui Wauii, Agent Orange, Gelato, Pineapple Express +4.",
+   "meaning": "Yes means: every file in this folder is HEMP HHC MUHA MEDS CARTRIDGE (1g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "69287e84-c99c-4652-b391-18dd416bdd0b",
@@ -11825,46 +11615,6 @@
    },
    "lines": [
     {
-     "id": "muha:HEMP:hemp004",
-     "name": "HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g)",
-     "line": "DELTA-8 MUHA MEDS CARTRIDGE (1g)",
-     "market": "HEMP",
-     "skuBlock": "HEMP004",
-     "generation": null,
-     "files": 18,
-     "flavours": [
-      "Trainwreck",
-      "Pineapple Express",
-      "Cherry Berry",
-      "Maui Wauii",
-      "Gelato",
-      "Agent Orange",
-      "Green Crack",
-      "Northern Lights",
-      "Gods Gift"
-     ]
-    },
-    {
-     "id": "muha:HEMP:hemp005",
-     "name": "HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g)",
-     "line": "DELTA-10 MUHA MEDS CARTRIDGE (1g)",
-     "market": "HEMP",
-     "skuBlock": "HEMP005",
-     "generation": null,
-     "files": 18,
-     "flavours": [
-      "Trainwreck",
-      "Pineapple Express",
-      "Cherry Berry",
-      "Maui Wauii",
-      "Gelato",
-      "Agent Orange",
-      "Green Crack",
-      "Northern Lights",
-      "Gods Gift"
-     ]
-    },
-    {
      "id": "muha:HEMP:hemp006",
      "name": "HEMP HHC MUHA MEDS CARTRIDGE (1g)",
      "line": "HHC MUHA MEDS CARTRIDGE (1g)",
@@ -11896,9 +11646,9 @@
    ],
    "decision": null,
    "generation": null,
-   "designTag": "HHC",
-   "proposal": "Feeds HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) · HEMP004 (+2 more lines: HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g); HEMP HHC MUHA MEDS CARTRIDGE (1g)) — 18 of 20 files on rows, 2 on no row. Flavours: Trainwreck, Pineapple Express, Cherry Berry, Maui Wauii, Gelato, Agent Orange +3.",
-   "meaning": "Yes means: this folder is split between HEMP DELTA-8 MUHA MEDS CARTRIDGE (1g) and HEMP DELTA-10 MUHA MEDS CARTRIDGE (1g) and HEMP HHC MUHA MEDS CARTRIDGE (1g), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "designTag": "",
+   "proposal": "Feeds HEMP HHC MUHA MEDS CARTRIDGE (1g) · HEMP006 — 18 of 20 files on rows, 2 on no row. Flavours: Trainwreck, Pineapple Express, Cherry Berry, Maui Wauii, Gelato, Agent Orange +3.",
+   "meaning": "Yes means: every file in this folder is HEMP HHC MUHA MEDS CARTRIDGE (1g) and its flavours are named from the book.",
    "samples": [
     {
      "id": "6d7f8aec-e470-46b0-b2af-0be9b8f44d4b",
@@ -14934,7 +14684,7 @@
    "unassigned": [],
    "decision": null,
    "generation": null,
-   "designTag": "D Mates Display Box",
+   "designTag": "3D Mates Display Box",
    "proposal": "Feeds HEMP THC-A KING MATE PRE-ROLL (1.5g) · HEMP009 — 12 of 12 files on rows. Flavours: White Widow, Northern Lights, Mimosa, Alpine Guava, Chilled Cherries, Blackberry Kush.",
    "meaning": "Yes means: every file in this folder is HEMP THC-A KING MATE PRE-ROLL (1.5g) and its flavours are named from the book.",
    "samples": [
@@ -15329,7 +15079,7 @@
    ],
    "decision": null,
    "generation": null,
-   "designTag": "V",
+   "designTag": "V1",
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -15371,7 +15121,7 @@
    ],
    "decision": null,
    "generation": null,
-   "designTag": "V",
+   "designTag": "V2",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -15407,7 +15157,7 @@
    ],
    "decision": null,
    "generation": null,
-   "designTag": "V",
+   "designTag": "V3",
    "proposal": "On no SKU row — not a product render folder (1 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -15443,7 +15193,7 @@
    ],
    "decision": null,
    "generation": null,
-   "designTag": "V",
+   "designTag": "V4",
    "proposal": "On no SKU row — not a product render folder (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19713,7 +19463,7 @@
    ],
    "decision": null,
    "generation": null,
-   "designTag": "V",
+   "designTag": "V2",
    "proposal": "On no SKU row — not a product render folder (10 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [
@@ -19810,7 +19560,7 @@
    ],
    "decision": null,
    "generation": null,
-   "designTag": "Melted Diamonds V",
+   "designTag": "Melted Diamonds V2",
    "proposal": "On no SKU row — not a product render folder (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "samples": [

@@ -113,7 +113,8 @@ function meaningOf(folder) {
 const DROP_WORDS = /^(muha|mm|meds|renders?|product|products|dispo|dispos|disposable|disposables|cart|carts|cartridge|cartridges|hr|lr|md|thca|thc|a|d9|distillate|distallite|the|of|and|with|main|under|5mb|mb|final|finals)$/i;
 export function designTagOf(folderName, line) {
   const said = new Set(`${line?.market || ""} ${line?.line || ""} ${line?.category || ""} ${line?.format || ""}`.toLowerCase().replace(/[^a-z0-9.]+/g, " ").split(" ").filter(Boolean));
-  const words = String(folderName).replace(/_/g, " ").replace(/([a-z])([A-Z])/g, "$1 $2").replace(/([A-Za-z])(?=\d)/g, "$1 ").replace(/(\d)(?=[A-Za-z])/g, "$1 ").replace(/[()\[\]-]+/g, " ").split(/\s+/).filter(Boolean);
+  // split "Jan2026" and "Gen2" into word + number, but keep short codes like D8, D10, 1G, 3.5G whole
+  const words = String(folderName).replace(/_/g, " ").replace(/([a-z])([A-Z])/g, "$1 $2").replace(/([A-Za-z]{2,})(?=\d)/g, "$1 ").replace(/(\d)(?=[A-Za-z]{2,})/g, "$1 ").replace(/[()\[\]-]+/g, " ").split(/\s+/).filter(Boolean);
   const kept = words.filter((w, i) => { const l = w.toLowerCase(); if (DROP_WORDS.test(l) || said.has(l)) return false; if (/^(ca|mi|mo|nj|nm|ny|oh|az|hemp)$/i.test(l)) return false; if (/^\d+(\.\d+)?g$/i.test(l) || /^0?\.?5g$/i.test(l) || /^\d+ct$/i.test(l)) return false; if (/^g$/i.test(l) && words.some((x) => /^\d/.test(x))) return false; if (/^\d+(\.\d+)?$/.test(l) && !/^20\d\d$/.test(l) && !/^gen$/i.test(words[i - 1] || "")) return false; return true; });
   // re-join split camel words the folder wrote as one ("Tech Design" stays as the folder wrote it)
   return kept.join(" ").replace(/\s+/g, " ").trim();

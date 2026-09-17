@@ -818,34 +818,16 @@
      "sku": "MMC1-D8-AO",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 6
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "cfdab4b0-0832-4560-9c06-a6d51254a050",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_AgentOrange_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/af380d65253ccd8e.jpg"
-      },
-      {
-       "id": "bf001d5e-39e4-430a-bc75-604ef05b7964",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_AgentOrange_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7f85ae213c0234d8.jpg"
-      },
       {
        "id": "35252c5d-517d-46c5-9dfa-fe6755de81af",
        "score": 6,
@@ -854,13 +836,29 @@
        "composition": "device-with-packaging",
        "angle": "front",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f4f60a82a0e43e90.jpg"
+      },
+      {
+       "id": "885a5356-415f-4903-b715-df9ce0132609",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_AgentOrange_V1.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fe245afd7f5e785f.jpg"
+      },
+      {
+       "id": "53029545-94d6-4c82-aba0-b68a372d2b54",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Closed_D8_AgentOrange_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3355a091e6eeb9a6.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
      ]
     },
     {
@@ -868,10 +866,10 @@
      "sku": "MMC1-D8-CB",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "multi-pack": 6,
-      "device-with-packaging": 6
+      "multi-pack": 2,
+      "device-with-packaging": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -888,29 +886,27 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e407939a97cefde6.jpg"
       },
       {
-       "id": "a728bb7a-0c00-44fc-a390-414a697e8794",
+       "id": "49bcf595-d5fa-45c3-a537-f6442b84903b",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Closed_D10_CherryBerry_V1.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/06fbf4c6bdad9cdc.jpg"
-      },
-      {
-       "id": "e0b72b7a-b4f0-413e-b4e4-13ad38fe3505",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_CherryBerry_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_CherryBerry_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/799cc3f83216c773.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/506013f49dcd2992.jpg"
+      },
+      {
+       "id": "7d9ecb73-eedd-4cca-9d0f-68bc53e357bc",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Open_D8_CherryBerry_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a4ac5375f18be182.jpg"
       }
      ],
      "folders": [
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/D8"
      ]
     },
     {
@@ -918,25 +914,16 @@
      "sku": "MMC1-D8-GE",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 6
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "ec14a6e7-6870-4051-a40c-96dd96913552",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_Gelato_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9bff7000fb128574.jpg"
-      },
       {
        "id": "35f265e3-dfae-4b7f-8c44-de82ddc825dd",
        "score": 6,
@@ -954,13 +941,20 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8955558a768827a7.jpg"
+      },
+      {
+       "id": "6305636d-7037-4c54-9a73-ae69862847e1",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Open_D8_Gelato_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2658eeef309916e9.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
      ]
     },
     {
@@ -968,35 +962,16 @@
      "sku": "MMC1-D8-GG",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 4,
-      "packaging-only": 2
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "44f9abe8-3f88-436f-892e-f1f4539d1063",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_GodsGift_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a92b22493d54f935.jpg"
-      },
-      {
-       "id": "a9280a0e-97a9-4aaa-a4ee-96256bef521a",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_GodsGift_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9eed7f8c1ca8a43f.jpg"
-      },
       {
        "id": "95e5b9a4-010c-4721-a681-3e16c51c42b7",
        "score": 6,
@@ -1005,13 +980,29 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dc9f10ed534fbd9b.jpg"
+      },
+      {
+       "id": "5d80ce33-5a6c-4b8a-a0f4-a973e75b1408",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_GodsGift_V1.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/453cd2c462725dc9.jpg"
+      },
+      {
+       "id": "89c7af5f-f77c-4297-8008-5c021e457390",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Open_D8_GodsGift_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/17e58ca527e4626e.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
      ]
     },
     {
@@ -1019,11 +1010,10 @@
      "sku": "MMC1-D8-GC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 5,
-      "packaging-only": 1
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -1040,28 +1030,26 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c027ac52c5dda832.jpg"
       },
       {
-       "id": "542f90c0-dc8f-44eb-abef-1c9faaeee4cd",
+       "id": "86cb129a-3cb1-498b-91aa-cee8911874fe",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_GreenCrack_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_GreenCrack_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/31a1ae6c2e2f47b2.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/300ebedf627ba2e6.jpg"
       },
       {
-       "id": "297c7ba3-2bda-4deb-8afd-88ba7f05bd87",
+       "id": "7f35af7c-ea31-4a14-b907-77ca34a9bff1",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Closed_D10_GreenCrack_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Closed_D8_GreenCrack_V1.png",
        "previous": null,
        "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dd59c7a370ba111e.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/486b7a458a46554e.jpg"
       }
      ],
      "folders": [
       "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
      ]
     },
@@ -1070,9 +1058,9 @@
      "sku": "MMC1-D8-KL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 6,
+     "renders": 2,
      "compositions": {
-      "multi-pack": 5,
+      "multi-pack": 1,
       "packaging-only": 1
      },
      "hasDeviceOnly": false,
@@ -1080,15 +1068,6 @@
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "09fd48cc-58b1-4561-a358-f2574cf7145f",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Open_D10_KingLouieXii_V1.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c39b932ec282f70c.jpg"
-      },
       {
        "id": "914336b8-403d-4586-933f-986c5b6c649d",
        "score": 6,
@@ -1099,19 +1078,17 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4861d0323f0d3a64.jpg"
       },
       {
-       "id": "fba68ab1-1b84-4b1a-994b-308a4dd7e0cb",
+       "id": "3c59c52f-38fb-463e-b10a-f0fb3cc93727",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Closed_HHC_KingLouieXii_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Closed_D8_KingLouieXii_V1.png",
        "previous": null,
-       "composition": "multi-pack",
+       "composition": "packaging-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3caa64f7a8ce0e91.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/402524dabf99d4ed.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
      ]
     },
     {
@@ -1119,34 +1096,16 @@
      "sku": "MMC1-D8-MW",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 6
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "bcb4dae2-36a6-411d-865e-5c065936a0e0",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_MauiWauii_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b437741da61c1c32.jpg"
-      },
-      {
-       "id": "a8227ac6-734c-472d-bf1f-8db864861589",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_MauiWauii_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/57679dd3947b57f5.jpg"
-      },
       {
        "id": "70449f75-1eea-4a1c-9ef3-4d852831826f",
        "score": 6,
@@ -1155,11 +1114,27 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ec3a31d02d7dc4fd.jpg"
+      },
+      {
+       "id": "7f6d83fc-4265-4119-a3fd-3c92e4b3deac",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Closed_D8_MauiWauii_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a69c4e9adde35d13.jpg"
+      },
+      {
+       "id": "64fc85ca-5626-4b0a-8dcb-f82592e8b26d",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_MauiWauii_V1.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/77ee21a15b3f621d.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
      ]
@@ -1169,11 +1144,10 @@
      "sku": "MMC1-D8-NL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 5,
-      "packaging-only": 1
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -1190,29 +1164,27 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9ea7e82ecf86d8a6.jpg"
       },
       {
-       "id": "ad4f7c20-af67-4a32-82ec-2d7358ac82f9",
+       "id": "b73b04f0-8f84-4eab-8f39-7c5231914adf",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_NorthernLights_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_NorthernLights_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/92ddf578b3eb5df1.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/36a0cf3a08836e5e.jpg"
       },
       {
-       "id": "a959798e-a935-4642-a187-9cfcf0143f50",
+       "id": "746747ae-1ae8-4456-a60d-43a8acc40636",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_NorthernLights_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Open_D8_NorthernLights_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/43708d694052d923.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3e5dd1f5b2b57ffa.jpg"
       }
      ],
      "folders": [
       "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
      ]
     },
     {
@@ -1220,26 +1192,16 @@
      "sku": "MMC1-D8-PE",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 4,
-      "packaging-only": 2
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "2d35f830-7a09-4a38-8782-94d10c8112e7",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_PineappleExpress_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/09f6cdada402e1b2.jpg"
-      },
       {
        "id": "32845947-1fe5-4eb4-a822-8a3052222cd1",
        "score": 6,
@@ -1250,19 +1212,26 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4af17dae4a70b1b0.jpg"
       },
       {
-       "id": "f783ceee-e1d6-4070-a43a-bb57b4e5c258",
+       "id": "e484ab15-0a66-4a1b-bbd0-0bcdc1778680",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_Front_HHC_PineappleExpress_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_PineappleExpress_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
+       "angle": "multiple",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bdbff8506ec4fd0e.jpg"
+      },
+      {
+       "id": "48877c0e-5504-4a13-8321-cffc6ce22d5a",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Open_D8_PineappleExpress_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/acb984660740270b.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c92197158c520eca.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
      ]
     },
@@ -1271,35 +1240,17 @@
      "sku": "MMC1-D8-TW",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 4,
-      "packaging-only": 2
+      "device-with-packaging": 2,
+      "packaging-only": 1,
+      "multi-pack": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "6d7f8aec-e470-46b0-b2af-0be9b8f44d4b",
-       "score": 4.5,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_TrainWreck_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fd9fbf9f435c33ba.jpg"
-      },
-      {
-       "id": "e621396c-8fc7-4533-b183-aa23fecc7c96",
-       "score": 4.5,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_Front_HHC_TrainWreck_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c56842d33999ddab.jpg"
-      },
       {
        "id": "4ee3c506-2d3d-4dfb-b939-599baf4bdf84",
        "score": 4.5,
@@ -1308,13 +1259,29 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/35a1fe0738abf0d5.jpg"
+      },
+      {
+       "id": "3a683525-2988-4b8c-9b85-5991953dd7ff",
+       "score": 4.5,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_TrainWreck_V1.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/83b0a7e5eff7ba97.jpg"
+      },
+      {
+       "id": "d58dcbaf-14f1-4bb8-beb7-fcb0645dbf61",
+       "score": 4.5,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Closed_D8_TrainWreck_V1.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1f3d6ad4b283747e.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
      ]
     }
    ]
@@ -1339,10 +1306,10 @@
      "sku": "MMC1-D10-AO",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 6
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -1368,20 +1335,18 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7f85ae213c0234d8.jpg"
       },
       {
-       "id": "35252c5d-517d-46c5-9dfa-fe6755de81af",
+       "id": "474812cb-2ed8-45c8-ae89-648e147e73d6",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_AgentOrange_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Open_D10_AgentOrange_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f4f60a82a0e43e90.jpg"
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f9347d45a80ce96d.jpg"
       }
      ],
      "folders": [
       "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
      ]
     },
     {
@@ -1389,25 +1354,16 @@
      "sku": "MMC1-D10-CB",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "multi-pack": 6,
-      "device-with-packaging": 6
+      "multi-pack": 2,
+      "device-with-packaging": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "3cd88557-a760-4fcc-880f-cfd96215ad05",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Closed_D8_CherryBerry_V1.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e407939a97cefde6.jpg"
-      },
       {
        "id": "a728bb7a-0c00-44fc-a390-414a697e8794",
        "score": 6,
@@ -1418,19 +1374,26 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/06fbf4c6bdad9cdc.jpg"
       },
       {
-       "id": "e0b72b7a-b4f0-413e-b4e4-13ad38fe3505",
+       "id": "a3981107-9b14-4c62-9557-1ea2e177208c",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_CherryBerry_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_CherryBerry_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/799cc3f83216c773.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b28c7a288ee779e1.jpg"
+      },
+      {
+       "id": "09b490c5-5c4c-490a-86a3-6afeea1ffe50",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_CherryBerry_V1.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "multiple",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/6dba56c0a578be10.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D10"
      ]
     },
@@ -1439,10 +1402,10 @@
      "sku": "MMC1-D10-GE",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 6
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -1459,28 +1422,26 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9bff7000fb128574.jpg"
       },
       {
-       "id": "35f265e3-dfae-4b7f-8c44-de82ddc825dd",
+       "id": "5c4862fb-a32e-4091-a20b-185bb0b3df34",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_Gelato_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Closed_D10_Gelato_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0d4f458d08736e22.jpg"
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/d7b073bec6848990.jpg"
       },
       {
-       "id": "97d34f5d-235d-4c9c-9a56-9f082ccddb51",
+       "id": "aff1e3b8-597f-48af-8c46-f0ed559326f8",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_Gelato_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Open_D10_Gelato_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8955558a768827a7.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f451d82df11ec1b4.jpg"
       }
      ],
      "folders": [
       "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
      ]
     },
@@ -1489,11 +1450,11 @@
      "sku": "MMC1-D10-GG",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 4,
-      "packaging-only": 2
+      "device-with-packaging": 2,
+      "packaging-only": 1,
+      "multi-pack": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -1519,20 +1480,18 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9eed7f8c1ca8a43f.jpg"
       },
       {
-       "id": "95e5b9a4-010c-4721-a681-3e16c51c42b7",
+       "id": "ee6ee21a-9615-41a1-a179-714f922d414d",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_GodsGift_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Closed_D10_GodsGift_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "packaging-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dc9f10ed534fbd9b.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5b62fa98c8d58def.jpg"
       }
      ],
      "folders": [
       "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
      ]
     },
     {
@@ -1540,26 +1499,16 @@
      "sku": "MMC1-D10-GC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 5,
-      "packaging-only": 1
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "130f4717-e6fb-45b3-b5ee-7f26924e849d",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_GreenCrack_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c027ac52c5dda832.jpg"
-      },
       {
        "id": "542f90c0-dc8f-44eb-abef-1c9faaeee4cd",
        "score": 6,
@@ -1577,13 +1526,20 @@
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dd59c7a370ba111e.jpg"
+      },
+      {
+       "id": "cfb3ebce-9b52-4716-9de5-27dae383ebd8",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_GreenCrack_V1.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/abd2edc5c0a53f8a.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
      ]
     },
     {
@@ -1591,13 +1547,12 @@
      "sku": "MMC1-D10-KL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 6,
+     "renders": 2,
      "compositions": {
-      "multi-pack": 5,
-      "packaging-only": 1
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
@@ -1611,28 +1566,17 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c39b932ec282f70c.jpg"
       },
       {
-       "id": "914336b8-403d-4586-933f-986c5b6c649d",
+       "id": "6625ba12-917e-4f6e-a305-fb6d8127a204",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Open_D8_KingLouieXii_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Closed_D10_KingLouieXii_V1.png",
        "previous": null,
        "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4861d0323f0d3a64.jpg"
-      },
-      {
-       "id": "fba68ab1-1b84-4b1a-994b-308a4dd7e0cb",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Closed_HHC_KingLouieXii_V1.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3caa64f7a8ce0e91.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/43dfb72136547c72.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
      ]
     },
     {
@@ -1640,10 +1584,10 @@
      "sku": "MMC1-D10-MW",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 6
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -1660,29 +1604,27 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b437741da61c1c32.jpg"
       },
       {
-       "id": "a8227ac6-734c-472d-bf1f-8db864861589",
+       "id": "b2f697e7-1083-4e6c-bd15-7519193f1116",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_MauiWauii_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Closed_D10_MauiWauii_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/57679dd3947b57f5.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0e0d8a0cc93bdd5b.jpg"
       },
       {
-       "id": "70449f75-1eea-4a1c-9ef3-4d852831826f",
+       "id": "21824062-b79c-4bc2-b085-094f0124f9fe",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_MauiWauii_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_MauiWauii_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ec3a31d02d7dc4fd.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/22cd262b9a25d248.jpg"
       }
      ],
      "folders": [
       "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
      ]
     },
     {
@@ -1690,26 +1632,17 @@
      "sku": "MMC1-D10-NL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 5,
-      "packaging-only": 1
+      "device-with-packaging": 2,
+      "packaging-only": 1,
+      "multi-pack": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "2a3c3ac7-01e7-4e17-93dc-cfcd774938bf",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_NorthernLights_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9ea7e82ecf86d8a6.jpg"
-      },
       {
        "id": "ad4f7c20-af67-4a32-82ec-2d7358ac82f9",
        "score": 6,
@@ -1727,12 +1660,19 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/43708d694052d923.jpg"
+      },
+      {
+       "id": "95710e06-d7eb-4df5-8bde-dcf73d5d9ca9",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Closed_D10_NorthernLights_V1.png",
+       "previous": null,
+       "composition": "packaging-only",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8118c77adb3d2ab3.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
      ]
     },
@@ -1741,11 +1681,11 @@
      "sku": "MMC1-D10-PE",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 4,
-      "packaging-only": 2
+      "device-with-packaging": 2,
+      "multi-pack": 1,
+      "packaging-only": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -1762,29 +1702,27 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/09f6cdada402e1b2.jpg"
       },
       {
-       "id": "32845947-1fe5-4eb4-a822-8a3052222cd1",
+       "id": "6c6dd394-98a5-463d-b37b-57ed1f11825b",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_PineappleExpress_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Open_D10_PineappleExpress_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4af17dae4a70b1b0.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0e6ee4db9e08d1f4.jpg"
       },
       {
-       "id": "f783ceee-e1d6-4070-a43a-bb57b4e5c258",
+       "id": "864a9c5b-9a82-4978-9523-52f621cf80ab",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_Front_HHC_PineappleExpress_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Closed_D10_PineappleExpress_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "packaging-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/acb984660740270b.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f26bab97f70a01e9.jpg"
       }
      ],
      "folders": [
       "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
      ]
     },
     {
@@ -1792,11 +1730,11 @@
      "sku": "MMC1-D10-TW",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 4,
-      "packaging-only": 2
+      "device-with-packaging": 2,
+      "packaging-only": 1,
+      "multi-pack": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -1804,38 +1742,36 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "6d7f8aec-e470-46b0-b2af-0be9b8f44d4b",
+       "id": "6f9fa449-f547-49a4-9493-3b5f6275b555",
        "score": 4.5,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_TrainWreck_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_TrainWreck_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/fd9fbf9f435c33ba.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/291c1557a66795bb.jpg"
       },
       {
-       "id": "e621396c-8fc7-4533-b183-aa23fecc7c96",
+       "id": "1c12b5cd-c87d-4ac8-8013-80baef1fa17d",
        "score": 4.5,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_Front_HHC_TrainWreck_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Closed_D10_TrainWreck_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c56842d33999ddab.jpg"
-      },
-      {
-       "id": "4ee3c506-2d3d-4dfb-b939-599baf4bdf84",
-       "score": 4.5,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_TrainWreck_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "packaging-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/35a1fe0738abf0d5.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cb2ad060987c79be.jpg"
+      },
+      {
+       "id": "db6304a1-7324-4818-8b88-406b190798dd",
+       "score": 4.5,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Open_D10_TrainWreck_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8c365a239c43eb12.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
       "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
      ]
     }
    ]
@@ -1860,10 +1796,10 @@
      "sku": "MMC1-HHC-AO",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 6
+      "multi-pack": 2,
+      "device-with-packaging": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -1871,38 +1807,36 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "cfdab4b0-0832-4560-9c06-a6d51254a050",
+       "id": "7eb393f7-04be-4383-8977-3639b48eba21",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_AgentOrange_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Open_HHC_AgentOrange_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e64fbf277ddf9e76.jpg"
+      },
+      {
+       "id": "1a765c14-2a66-4376-9073-268e6d9c875c",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_AgentOrange_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/af380d65253ccd8e.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2efc66ffac990355.jpg"
       },
       {
-       "id": "bf001d5e-39e4-430a-bc75-604ef05b7964",
+       "id": "14c2c56c-c121-4b69-b3af-ccf983c4416a",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_AgentOrange_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_Front_HHC_AgentOrange_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/7f85ae213c0234d8.jpg"
-      },
-      {
-       "id": "35252c5d-517d-46c5-9dfa-fe6755de81af",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_AgentOrange_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/f4f60a82a0e43e90.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ed70b9b51bcbbc7e.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display",
+      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC"
      ]
     },
     {
@@ -1910,34 +1844,16 @@
      "sku": "MMC1-HHC-CB",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "multi-pack": 6,
-      "device-with-packaging": 6
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "3cd88557-a760-4fcc-880f-cfd96215ad05",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Closed_D8_CherryBerry_V1.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e407939a97cefde6.jpg"
-      },
-      {
-       "id": "a728bb7a-0c00-44fc-a390-414a697e8794",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Closed_D10_CherryBerry_V1.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/06fbf4c6bdad9cdc.jpg"
-      },
       {
        "id": "e0b72b7a-b4f0-413e-b4e4-13ad38fe3505",
        "score": 6,
@@ -1946,13 +1862,29 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/799cc3f83216c773.jpg"
+      },
+      {
+       "id": "0add97ef-de6c-44c0-abfc-1c28d982877b",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_Front_HHC_CherryBerry_V1.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8818e138c3699e40.jpg"
+      },
+      {
+       "id": "42ab5c5c-97b6-4761-8560-a0e23daeb2ca",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Closed_HHC_CherryBerry_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3d662f4c8ffc88f9.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
      ]
     },
     {
@@ -1960,10 +1892,10 @@
      "sku": "MMC1-HHC-GE",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 6
+      "multi-pack": 2,
+      "device-with-packaging": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -1971,38 +1903,36 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "ec14a6e7-6870-4051-a40c-96dd96913552",
+       "id": "d1cc11e4-7f20-459e-b6b5-fee61d346d06",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_Gelato_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Open_HHC_Gelato_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "front",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9bff7000fb128574.jpg"
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a59739b6a10a5060.jpg"
       },
       {
-       "id": "35f265e3-dfae-4b7f-8c44-de82ddc825dd",
+       "id": "75c4cda2-f964-4855-a015-468c669b4d71",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_Gelato_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0d4f458d08736e22.jpg"
-      },
-      {
-       "id": "97d34f5d-235d-4c9c-9a56-9f082ccddb51",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_Gelato_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_Gelato_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8955558a768827a7.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bf43953fab9de1a9.jpg"
+      },
+      {
+       "id": "b25441b8-e39d-43fc-88c8-2e393fc6e1b1",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_Front_HHC_Gelato_V1.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "multiple",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/756fecf08fdfedd1.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display",
+      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC"
      ]
     },
     {
@@ -2010,11 +1940,11 @@
      "sku": "MMC1-HHC-GG",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 4,
-      "packaging-only": 2
+      "multi-pack": 1,
+      "device-with-packaging": 2,
+      "packaging-only": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -2022,36 +1952,34 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "44f9abe8-3f88-436f-892e-f1f4539d1063",
+       "id": "c93fd03e-3837-4432-b35c-f58445fc1237",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_GodsGift_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Open_HHC_GodsGift_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/a92b22493d54f935.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/1c0be6350497b3e9.jpg"
       },
       {
-       "id": "a9280a0e-97a9-4aaa-a4ee-96256bef521a",
+       "id": "c30b4188-daf7-4592-aa9f-20d271b6f729",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_GodsGift_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_GodsGift_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9eed7f8c1ca8a43f.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/33eb24dcbda44268.jpg"
       },
       {
-       "id": "95e5b9a4-010c-4721-a681-3e16c51c42b7",
+       "id": "d8c7788c-8b73-4889-8053-2f1e45532707",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_GodsGift_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Closed_HHC_GodsGift_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "packaging-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dc9f10ed534fbd9b.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e8aa01e1688aa661.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/HHC"
      ]
@@ -2061,11 +1989,11 @@
      "sku": "MMC1-HHC-GC",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 5,
-      "packaging-only": 1
+      "device-with-packaging": 2,
+      "packaging-only": 1,
+      "multi-pack": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -2073,38 +2001,36 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "130f4717-e6fb-45b3-b5ee-7f26924e849d",
+       "id": "befa9f0f-713d-48d4-babb-a26536b7f7ef",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_GreenCrack_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_GreenCrack_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c027ac52c5dda832.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/62a26c70e1d1c586.jpg"
       },
       {
-       "id": "542f90c0-dc8f-44eb-abef-1c9faaeee4cd",
+       "id": "d7ff3a68-c1a0-4d92-8240-f4fe8648af7a",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_GreenCrack_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_Front_HHC_GreenCrack_V1.png",
        "previous": null,
        "composition": "device-with-packaging",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/31a1ae6c2e2f47b2.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ea0dbac8303266a5.jpg"
       },
       {
-       "id": "297c7ba3-2bda-4deb-8afd-88ba7f05bd87",
+       "id": "69287e84-c99c-4652-b391-18dd416bdd0b",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Closed_D10_GreenCrack_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Closed_HHC_GreenCrack_V1.png",
        "previous": null,
-       "composition": "multi-pack",
+       "composition": "packaging-only",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dd59c7a370ba111e.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/e8d87e909a9be1d9.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
      ]
     },
     {
@@ -2112,34 +2038,15 @@
      "sku": "MMC1-HHC-KL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 6,
+     "renders": 2,
      "compositions": {
-      "multi-pack": 5,
-      "packaging-only": 1
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
-     "hasPackaging": true,
+     "hasPackaging": false,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "09fd48cc-58b1-4561-a358-f2574cf7145f",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display/Hemp_Cartridges_DisplayBox_Open_D10_KingLouieXii_V1.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c39b932ec282f70c.jpg"
-      },
-      {
-       "id": "914336b8-403d-4586-933f-986c5b6c649d",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display/Hemp_Cartridges_DisplayBox_Open_D8_KingLouieXii_V1.png",
-       "previous": null,
-       "composition": "multi-pack",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4861d0323f0d3a64.jpg"
-      },
       {
        "id": "fba68ab1-1b84-4b1a-994b-308a4dd7e0cb",
        "score": 6,
@@ -2148,11 +2055,18 @@
        "composition": "multi-pack",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/3caa64f7a8ce0e91.jpg"
+      },
+      {
+       "id": "1ce93886-5a1f-4504-9f9e-cdf570d21afa",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Open_HHC_KingLouieXii_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/06a72edacd64f982.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
      ]
     },
@@ -2161,25 +2075,16 @@
      "sku": "MMC1-HHC-MW",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 6
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
      "hasDisplay": true,
      "hasAlpha": true,
      "top": [
-      {
-       "id": "bcb4dae2-36a6-411d-865e-5c065936a0e0",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_MauiWauii_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b437741da61c1c32.jpg"
-      },
       {
        "id": "a8227ac6-734c-472d-bf1f-8db864861589",
        "score": 6,
@@ -2190,20 +2095,27 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/57679dd3947b57f5.jpg"
       },
       {
-       "id": "70449f75-1eea-4a1c-9ef3-4d852831826f",
+       "id": "bdef6c9c-23c0-4149-8c7e-2ce8be118923",
        "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_MauiWauii_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Closed_HHC_MauiWauii_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/ec3a31d02d7dc4fd.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/bb391a387b03cd76.jpg"
+      },
+      {
+       "id": "5ff9cfcb-d680-4a4e-bdfe-99041e1ecc79",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Open_HHC_MauiWauii_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/76ec93468ac3ffd8.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
       "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
      ]
     },
     {
@@ -2211,10 +2123,58 @@
      "sku": "MMC1-HHC-NL",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 5,
+      "multi-pack": 2,
+      "device-with-packaging": 2
+     },
+     "hasDeviceOnly": false,
+     "hasPackaging": true,
+     "hasDisplay": true,
+     "hasAlpha": true,
+     "top": [
+      {
+       "id": "c20263bc-f70e-4ee8-a616-045d6ba47eaf",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Closed_HHC_NorthernLights_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/af5432b3d69fe727.jpg"
+      },
+      {
+       "id": "ee2a6d71-5c83-420f-ba73-91c0d6d8d3b0",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_NorthernLights_V1.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/66df845481478aab.jpg"
+      },
+      {
+       "id": "e3b66b26-abec-418f-b969-0e4d83a567f0",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_Front_HHC_NorthernLights_V1.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "multiple",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/0d905001117ddba4.jpg"
+      }
+     ],
+     "folders": [
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display",
+      "Renders/Hemp/Cartridges/D8 D10 HHC/HHC"
+     ]
+    },
+    {
+     "name": "Pineapple Express",
+     "sku": "MMC1-HHC-PE",
+     "discontinued": false,
+     "inDevelopment": false,
+     "renders": 4,
+     "compositions": {
+      "device-with-packaging": 2,
+      "multi-pack": 1,
       "packaging-only": 1
      },
      "hasDeviceOnly": false,
@@ -2223,75 +2183,6 @@
      "hasAlpha": true,
      "top": [
       {
-       "id": "2a3c3ac7-01e7-4e17-93dc-cfcd774938bf",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_NorthernLights_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "multiple",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9ea7e82ecf86d8a6.jpg"
-      },
-      {
-       "id": "ad4f7c20-af67-4a32-82ec-2d7358ac82f9",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_NorthernLights_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/92ddf578b3eb5df1.jpg"
-      },
-      {
-       "id": "a959798e-a935-4642-a187-9cfcf0143f50",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_Front_D10_NorthernLights_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/43708d694052d923.jpg"
-      }
-     ],
-     "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D10 Display"
-     ]
-    },
-    {
-     "name": "Pineapple Express",
-     "sku": "MMC1-HHC-PE",
-     "discontinued": false,
-     "inDevelopment": false,
-     "renders": 12,
-     "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 4,
-      "packaging-only": 2
-     },
-     "hasDeviceOnly": false,
-     "hasPackaging": true,
-     "hasDisplay": true,
-     "hasAlpha": true,
-     "top": [
-      {
-       "id": "2d35f830-7a09-4a38-8782-94d10c8112e7",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D10/Hemp_Cartridges_45_D10_PineappleExpress_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/09f6cdada402e1b2.jpg"
-      },
-      {
-       "id": "32845947-1fe5-4eb4-a822-8a3052222cd1",
-       "score": 6,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_45_D8_PineappleExpress_V1.png",
-       "previous": null,
-       "composition": "device-with-packaging",
-       "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4af17dae4a70b1b0.jpg"
-      },
-      {
        "id": "f783ceee-e1d6-4070-a43a-bb57b4e5c258",
        "score": 6,
        "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_Front_HHC_PineappleExpress_V1.png",
@@ -2299,13 +2190,29 @@
        "composition": "device-with-packaging",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/acb984660740270b.jpg"
+      },
+      {
+       "id": "1e25e77d-e9d2-44b1-bb3e-acacb3893a9d",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Open_HHC_PineappleExpress_V1.png",
+       "previous": null,
+       "composition": "multi-pack",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b557dbe86861c197.jpg"
+      },
+      {
+       "id": "c83e61e6-3294-4552-96e5-1d84a411a958",
+       "score": 6,
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/HHC/Hemp_Cartridges_45_HHC_PineappleExpress_V1.png",
+       "previous": null,
+       "composition": "device-with-packaging",
+       "angle": "three-quarter",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/39dfe59ad7c20234.jpg"
       }
      ],
      "folders": [
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
       "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/D8 Display"
+      "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
      ]
     },
     {
@@ -2313,11 +2220,10 @@
      "sku": "MMC1-HHC-TW",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 12,
+     "renders": 4,
      "compositions": {
-      "device-with-packaging": 6,
-      "multi-pack": 4,
-      "packaging-only": 2
+      "device-with-packaging": 2,
+      "multi-pack": 2
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -2343,19 +2249,17 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c56842d33999ddab.jpg"
       },
       {
-       "id": "4ee3c506-2d3d-4dfb-b939-599baf4bdf84",
+       "id": "f91b2e64-7a50-4457-b82f-130013f6e4cc",
        "score": 4.5,
-       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/D8/Hemp_Cartridges_Front_D8_TrainWreck_V1.png",
+       "path": "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display/Hemp_Cartridges_DisplayBox_Open_HHC_TrainWreck_V1.png",
        "previous": null,
-       "composition": "device-with-packaging",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/35a1fe0738abf0d5.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4418a6759924345a.jpg"
       }
      ],
      "folders": [
       "Renders/Hemp/Cartridges/D8 D10 HHC/HHC",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D8",
-      "Renders/Hemp/Cartridges/D8 D10 HHC/D10",
       "Renders/Hemp/Cartridges/D8 D10 HHC/DisplayBox/HHC Display"
      ]
     }
