@@ -1,6 +1,6 @@
 {
  "brand": "muha",
- "builtAt": "2026-09-17T03:22:45.516Z",
+ "builtAt": "2026-09-17T03:28:37.598Z",
  "scope": "Renders/ only",
  "naming": {
   "dropped": []
@@ -3861,7 +3861,7 @@
     "HR_Chilled_Cherries_ThreeQuarters.png"
    ],
    "decision": null,
-   "designTag": "Flavors Hash Rosin NOV 2024",
+   "designTag": "New Flavors Hash Rosin NOV 2024",
    "proposal": "On no SKU row — previous design: CA_New Flavors HashRosin NOV 2024 (11 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: CA_New Flavors HashRosin NOV 2024).",
    "samples": [
@@ -4126,7 +4126,7 @@
     "HashRosin_GroupShot_02.png"
    ],
    "decision": null,
-   "designTag": "Flavors",
+   "designTag": "New Flavors",
    "proposal": "Feeds CA Hash Rosin Concentrate Jars · CA033 — 29 of 38 files on rows, 9 on no row. Flavours: Super Boof, Mad Fruit, Macaron Peaches, Honey Banana, Guava Biscotti.",
    "meaning": "Yes means: every file in this folder is CA Hash Rosin Concentrate Jars and its flavours are named from the book.",
    "samples": [
@@ -4273,7 +4273,7 @@
    },
    "unassigned": [],
    "decision": null,
-   "designTag": "Flavors",
+   "designTag": "New Flavors",
    "proposal": "Feeds CA Piatella Concentrate Jars · CA034 (+2 more lines: CA Hash Rosin Concentrate Jars; CA Hash Rosin Concentrate V2) — 12 of 12 files on rows. Flavours: Tropical Funk.",
    "meaning": "Yes means: this folder is split between CA Piatella Concentrate Jars and CA Hash Rosin Concentrate Jars and CA Hash Rosin Concentrate V2, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
@@ -4660,7 +4660,7 @@
     "Dispo_Exploded_V3.png"
    ],
    "decision": null,
-   "designTag": "GEN Exploded",
+   "designTag": "GEN 3 Exploded",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -6157,7 +6157,7 @@
     "DeviceLED_V1_Front.png"
    ],
    "decision": null,
-   "designTag": "Gen Mock Up",
+   "designTag": "Gen 4 Mock Up",
    "proposal": "On no SKU row — nothing in the book matched (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "samples": [
@@ -6854,7 +6854,7 @@
     "MI_2G_Dispos_SkywalkerOG_ThreeQuarters.png"
    ],
    "decision": null,
-   "designTag": "Device Nov 2024",
+   "designTag": "New Device Nov 2024",
    "proposal": "On no SKU row — previous design: MI_2G_Distillate_NewDevice_Nov2024 (23 files).",
    "meaning": "Yes means: this folder stays off every SKU row (previous design: MI_2G_Distillate_NewDevice_Nov2024).",
    "samples": [
@@ -7656,7 +7656,7 @@
    "lines": [
     {
      "id": "muha:NM:nm002",
-     "name": "NM 1G Distillate Disposables (Gen)",
+     "name": "NM 1G Distillate Disposables (Gen 2)",
      "line": "1G Distillate Disposables",
      "market": "NM",
      "skuBlock": "NM002",
@@ -7685,9 +7685,9 @@
     "NM_Dispo_1G_Distill_Group_V1.png"
    ],
    "decision": null,
-   "designTag": "Gen",
-   "proposal": "Feeds NM 1G Distillate Disposables (Gen) · NM002 — 20 of 21 files on rows, 1 on no row. Flavours: Strawberry Runtz, Watermelon OG, Jack Herer, Cali Gas OG, Blueberry Haze, Purple Punch +4.",
-   "meaning": "Yes means: every file in this folder is NM 1G Distillate Disposables (Gen) and its flavours are named from the book.",
+   "designTag": "Gen 2",
+   "proposal": "Feeds NM 1G Distillate Disposables (Gen 2) · NM002 — 20 of 21 files on rows, 1 on no row. Flavours: Strawberry Runtz, Watermelon OG, Jack Herer, Cali Gas OG, Blueberry Haze, Purple Punch +4.",
+   "meaning": "Yes means: every file in this folder is NM 1G Distillate Disposables (Gen 2) and its flavours are named from the book.",
    "samples": [
     {
      "id": "f8a87ff4-fd0a-4520-8398-167108a31209",
@@ -8143,7 +8143,7 @@
    },
    "unassigned": [],
    "decision": null,
-   "designTag": "Gen AIO",
+   "designTag": "Gen 3 AIO",
    "proposal": "Feeds NY 1G Live Resin Disposables · NY005 — 20 of 20 files on rows. Flavours: Juice Man, Lemon Kush Mintz, OG KUSH, Grape Dosi, Golden Papaya.",
    "meaning": "Yes means: every file in this folder is NY 1G Live Resin Disposables and its flavours are named from the book.",
    "samples": [
@@ -8204,7 +8204,7 @@
    },
    "unassigned": [],
    "decision": null,
-   "designTag": "Gen AIO",
+   "designTag": "Gen 3 AIO",
    "proposal": "Feeds NY 1G Melted Diamond Disposables · NY006 — 20 of 20 files on rows. Flavours: Orange Tangie, Lemon Cherry Gelato, Mango Madness, Grape Gas, Durban Delight.",
    "meaning": "Yes means: every file in this folder is NY 1G Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
@@ -8259,7 +8259,7 @@
     },
     {
      "id": "muha:NY:ny001",
-     "name": "NY 2G Distillate Disposables (Gen Device)",
+     "name": "NY 2G Distillate Disposables (Gen 2 Device)",
      "line": "2G Distillate Disposables",
      "market": "NY",
      "skuBlock": "NY001",
@@ -8278,8 +8278,8 @@
    "unassigned": [],
    "decision": null,
    "designTag": "",
-   "proposal": "Feeds NY 2G Distillate Disposables (Gen 3) · Gen 3 · NY004 (+1 more line: NY 2G Distillate Disposables (Gen Device)) — 24 of 24 files on rows. Flavours: Blue Slushie, Tahoe OG, Habibi, Galactic Diesel, Frozen Pomegranate, Pineapple Paradise.",
-   "meaning": "Yes means: this folder is split between NY 2G Distillate Disposables (Gen 3) and NY 2G Distillate Disposables (Gen Device), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds NY 2G Distillate Disposables (Gen 3) · Gen 3 · NY004 (+1 more line: NY 2G Distillate Disposables (Gen 2 Device)) — 24 of 24 files on rows. Flavours: Blue Slushie, Tahoe OG, Habibi, Galactic Diesel, Frozen Pomegranate, Pineapple Paradise.",
+   "meaning": "Yes means: this folder is split between NY 2G Distillate Disposables (Gen 3) and NY 2G Distillate Disposables (Gen 2 Device), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "2a8db3cf-0a7f-48bc-b478-858ea2da80c1",
@@ -8336,7 +8336,7 @@
    },
    "unassigned": [],
    "decision": null,
-   "designTag": "Gen AIO",
+   "designTag": "Gen 3 AIO",
    "proposal": "Feeds NY 1G Live Resin Disposables · NY005 — 20 of 20 files on rows. Flavours: Grape Dosi, Lemon Kush Mintz, Golden Papaya, Juice Man, OG KUSH.",
    "meaning": "Yes means: every file in this folder is NY 1G Live Resin Disposables and its flavours are named from the book.",
    "samples": [
@@ -8396,7 +8396,7 @@
    },
    "unassigned": [],
    "decision": null,
-   "designTag": "Gen AIO",
+   "designTag": "Gen 3 AIO",
    "proposal": "Feeds NY 1G Melted Diamond Disposables · NY006 — 20 of 20 files on rows. Flavours: Lemon Cherry Gelato, Mango Madness, Orange Tangie, Grape Gas, Durban Delight.",
    "meaning": "Yes means: every file in this folder is NY 1G Melted Diamond Disposables and its flavours are named from the book.",
    "samples": [
@@ -8432,7 +8432,7 @@
    "lines": [
     {
      "id": "muha:NY:ny001",
-     "name": "NY 2G Distillate Disposables (Gen Device)",
+     "name": "NY 2G Distillate Disposables (Gen 2 Device)",
      "line": "2G Distillate Disposables",
      "market": "NY",
      "skuBlock": "NY001",
@@ -8457,9 +8457,9 @@
     "NY_2G_Disposables_GroupShot.png"
    ],
    "decision": null,
-   "designTag": "Gen Device",
-   "proposal": "Feeds NY 2G Distillate Disposables (Gen Device) · NY001 — 12 of 13 files on rows, 1 on no row. Flavours: Sour Diesel, Habibi, Grand Daddy Purp, Temptation, Fatso, Cali Gas OG.",
-   "meaning": "Yes means: every file in this folder is NY 2G Distillate Disposables (Gen Device) and its flavours are named from the book.",
+   "designTag": "Gen 2 Device",
+   "proposal": "Feeds NY 2G Distillate Disposables (Gen 2 Device) · NY001 — 12 of 13 files on rows, 1 on no row. Flavours: Sour Diesel, Habibi, Grand Daddy Purp, Temptation, Fatso, Cali Gas OG.",
+   "meaning": "Yes means: every file in this folder is NY 2G Distillate Disposables (Gen 2 Device) and its flavours are named from the book.",
    "samples": [
     {
      "id": "aed07702-347b-47d9-86a9-3d9c7ccaea48",
@@ -11807,7 +11807,7 @@
     },
     {
      "id": "muha:HEMP:hemp016",
-     "name": "HEMP 2g THCA Carts (2026 HEMP016)",
+     "name": "HEMP 2g THCA Carts (2026 · V2)",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP016",
@@ -11889,8 +11889,8 @@
    ],
    "decision": null,
    "designTag": "Oct 2024",
-   "proposal": "Feeds HEMP 2g THCA Carts (2026) · HEMP003 (+1 more line: HEMP 2g THCA Carts (2026 HEMP016)) — 6 of 68 files on rows, 62 on no row. Flavours: Pineapple Runtz.",
-   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts (2026) and HEMP 2g THCA Carts (2026 HEMP016), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP 2g THCA Carts (2026) · HEMP003 (+1 more line: HEMP 2g THCA Carts (2026 · V2)) — 6 of 68 files on rows, 62 on no row. Flavours: Pineapple Runtz.",
+   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts (2026) and HEMP 2g THCA Carts (2026 · V2), as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "64fc761e-5df4-4f9a-9b71-7f6db2fe8e34",
@@ -11959,7 +11959,7 @@
     },
     {
      "id": "muha:HEMP:hemp016",
-     "name": "HEMP 2g THCA Carts (2026 HEMP016)",
+     "name": "HEMP 2g THCA Carts (2026 · V2)",
      "line": "2g THCA Carts",
      "market": "HEMP",
      "skuBlock": "HEMP016",
@@ -12037,8 +12037,8 @@
    ],
    "decision": null,
    "designTag": "2026",
-   "proposal": "Feeds HEMP 2g THCA Carts (2026) · HEMP003 (+3 more lines: HEMP 2g THCA Carts (2026 HEMP016); HEMP Hemp Melted Diamomd 2G Cart V1) — 34 of 61 files on rows, 27 on no row. Flavours: Lemon Cherry Gelato, Watermelon Gelato, Purple Punch, Strawberry Shortcake, Paradise Punch OG, Candy Apple +2.",
-   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts (2026) and HEMP 2g THCA Carts (2026 HEMP016) and HEMP Hemp Melted Diamomd 2G Cart V1 and MI 2G DistiIlate Carts, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
+   "proposal": "Feeds HEMP 2g THCA Carts (2026) · HEMP003 (+3 more lines: HEMP 2g THCA Carts (2026 · V2); HEMP Hemp Melted Diamomd 2G Cart V1) — 34 of 61 files on rows, 27 on no row. Flavours: Lemon Cherry Gelato, Watermelon Gelato, Purple Punch, Strawberry Shortcake, Paradise Punch OG, Candy Apple +2.",
+   "meaning": "Yes means: this folder is split between HEMP 2g THCA Carts (2026) and HEMP 2g THCA Carts (2026 · V2) and HEMP Hemp Melted Diamomd 2G Cart V1 and MI 2G DistiIlate Carts, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "samples": [
     {
      "id": "4f7dc36f-746b-480d-a018-acd762448058",

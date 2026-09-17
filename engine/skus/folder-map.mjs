@@ -110,11 +110,11 @@ function meaningOf(folder) {
 // line "CA 1G Distillate Disposables" leaves "TechDesign June 2025"; "NM_1G_Distillate_Carts OLD" leaves "OLD";
 // "CA_1G_Distillate_All in One_Sept2024" leaves "All in One Sept 2024". Words the line name already says, the
 // state code, sizes, strength shorthands and generic words are dropped; everything else is passed on verbatim.
-const DROP_WORDS = /^(muha|mm|meds|renders?|product|products|new|dispo|dispos|disposable|disposables|cart|carts|cartridge|cartridges|hr|lr|md|thca|thc|a|d9|distillate|distallite|the|of|and|with|main|under|5mb|mb|final|finals)$/i;
+const DROP_WORDS = /^(muha|mm|meds|renders?|product|products|dispo|dispos|disposable|disposables|cart|carts|cartridge|cartridges|hr|lr|md|thca|thc|a|d9|distillate|distallite|the|of|and|with|main|under|5mb|mb|final|finals)$/i;
 export function designTagOf(folderName, line) {
   const said = new Set(`${line?.market || ""} ${line?.line || ""} ${line?.category || ""} ${line?.format || ""}`.toLowerCase().replace(/[^a-z0-9.]+/g, " ").split(" ").filter(Boolean));
   const words = String(folderName).replace(/_/g, " ").replace(/([a-z])([A-Z])/g, "$1 $2").replace(/([A-Za-z])(?=\d)/g, "$1 ").replace(/(\d)(?=[A-Za-z])/g, "$1 ").replace(/[()\[\]-]+/g, " ").split(/\s+/).filter(Boolean);
-  const kept = words.filter((w) => { const l = w.toLowerCase(); if (DROP_WORDS.test(l) || said.has(l)) return false; if (/^(ca|mi|mo|nj|nm|ny|oh|az|hemp)$/i.test(l)) return false; if (/^\d+(\.\d+)?g$/i.test(l) || /^0?\.?5g$/i.test(l) || /^\d+ct$/i.test(l)) return false; if (/^g$/i.test(l) && words.some((x) => /^\d/.test(x))) return false; if (/^\d+(\.\d+)?$/.test(l) && !/^20\d\d$/.test(l)) return false; return true; });
+  const kept = words.filter((w, i) => { const l = w.toLowerCase(); if (DROP_WORDS.test(l) || said.has(l)) return false; if (/^(ca|mi|mo|nj|nm|ny|oh|az|hemp)$/i.test(l)) return false; if (/^\d+(\.\d+)?g$/i.test(l) || /^0?\.?5g$/i.test(l) || /^\d+ct$/i.test(l)) return false; if (/^g$/i.test(l) && words.some((x) => /^\d/.test(x))) return false; if (/^\d+(\.\d+)?$/.test(l) && !/^20\d\d$/.test(l) && !/^gen$/i.test(words[i - 1] || "")) return false; return true; });
   // re-join split camel words the folder wrote as one ("Tech Design" stays as the folder wrote it)
   return kept.join(" ").replace(/\s+/g, " ").trim();
 }
@@ -139,10 +139,9 @@ export function nameLines(registry, folders) {
     const labels = live.map((line) => {
       const feeds = (feeding.get(line.id) || []).sort((a, b) => (a.status ? 1 : 0) - (b.status ? 1 : 0) || b.files - a.files);
       const tag = feeds.length ? designTagOf(feeds[0].folder, line) : "";
-      const parts = [line.generation, tag].filter(Boolean);
-      if (parts.length) return parts.join(" · ");
-      if (line.items.length && line.items.every((i) => /^V2-/i.test(i.sku || ""))) return "V2";
-      return null;
+      const v2 = line.items.length && line.items.every((i) => /^V2-/i.test(i.sku || "")) ? "V2" : null;
+      const parts = [line.generation, tag && tag.toLowerCase() !== String(line.generation || "").toLowerCase() ? tag : null, v2].filter(Boolean);
+      return parts.length ? parts.join(" · ") : null;
     });
     // fill the gaps by book order: the earlier block is the older line
     const unlabelled = live.map((l, i) => i).filter((i) => !labels[i]);

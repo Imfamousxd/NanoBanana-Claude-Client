@@ -3337,7 +3337,7 @@
    "source": "Official Hemp SKU Book - Upcoming Sku's.csv",
    "section": null,
    "line": "2g THCA Carts",
-   "name": "HEMP 2g THCA Carts (2026 HEMP016)",
+   "name": "HEMP 2g THCA Carts (2026 · V2)",
    "generation": null,
    "skuBlock": "HEMP016",
    "category": "cartridges",
@@ -3581,7 +3581,7 @@
     }
    ],
    "upcoming": true,
-   "variant": "2026 HEMP016"
+   "variant": "2026 · V2"
   },
   {
    "id": "muha:HEMP:hhc-carts",
@@ -22430,7 +22430,7 @@
    "source": "Official MM SKU Book - NM THC.csv",
    "section": null,
    "line": "1G Distillate Disposables",
-   "name": "NM 1G Distillate Disposables (Gen)",
+   "name": "NM 1G Distillate Disposables (Gen 2)",
    "generation": null,
    "skuBlock": "NM002",
    "category": "disposables",
@@ -22722,7 +22722,7 @@
     }
    ],
    "upcoming": false,
-   "variant": "Gen"
+   "variant": "Gen 2"
   },
   {
    "id": "muha:NM:nm003",
@@ -24520,7 +24520,7 @@
    "source": "Official MM SKU Book - NY THC.csv",
    "section": "Disposables",
    "line": "2G Distillate Disposables",
-   "name": "NY 2G Distillate Disposables (Gen Device)",
+   "name": "NY 2G Distillate Disposables (Gen 2 Device)",
    "generation": null,
    "skuBlock": "NY001",
    "category": "disposables",
@@ -24700,7 +24700,7 @@
     }
    ],
    "upcoming": false,
-   "variant": "Gen Device"
+   "variant": "Gen 2 Device"
   },
   {
    "id": "muha:NY:ny002",
