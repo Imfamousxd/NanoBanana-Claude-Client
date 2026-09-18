@@ -1,12 +1,12 @@
 {
  "brand": "muha",
- "computedAt": "2026-09-17",
+ "computedAt": "2026-09-18",
  "totals": {
   "lines": 139,
   "items": 1131,
   "covered": 633,
-  "assets": 5308,
-  "matchedAssets": 2750,
+  "assets": 5316,
+  "matchedAssets": 2758,
   "unmatchedAssets": 2558,
   "unmatchedGroups": 165
  },
@@ -10822,12 +10822,12 @@
      "sku": "CA130",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 22,
+     "renders": 23,
      "compositions": {
       "packaging-only": 13,
       "device-with-packaging": 5,
       "n/a": 1,
-      "label-flat": 3
+      "label-flat": 4
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -11197,12 +11197,12 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 22,
+     "renders": 23,
      "compositions": {
       "packaging-only": 13,
       "device-with-packaging": 5,
       "n/a": 1,
-      "label-flat": 3
+      "label-flat": 4
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -11249,9 +11249,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
+     "renders": 3,
      "compositions": {
-      "packaging-only": 2
+      "packaging-only": 2,
+      "label-flat": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -11275,6 +11276,15 @@
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/2378dd5bfc3f2f06.jpg"
+      },
+      {
+       "id": "42e5f9d5-4ec8-4121-98ee-c2859f212645",
+       "score": 5,
+       "path": "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech/Renders/CA_1g_Concentrates_Top_ORANGE_CHERRY_GELATO_PIE_Top.png",
+       "previous": null,
+       "composition": "label-flat",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/b7d5a01d28700da9.jpg"
       }
      ],
      "folders": [
@@ -11286,9 +11296,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
+     "renders": 3,
      "compositions": {
-      "packaging-only": 2
+      "packaging-only": 2,
+      "label-flat": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -11312,6 +11323,15 @@
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/260d1859abed3476.jpg"
+      },
+      {
+       "id": "343a74f4-2043-4a3e-ad02-af5015cb9f04",
+       "score": 5,
+       "path": "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech/Renders/CA_1g_Concentrates_Top_SUPER_SOUR_LEMONADE_Top.png",
+       "previous": null,
+       "composition": "label-flat",
+       "angle": "n/a",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/9ab2f8ef711e0ab5.jpg"
       }
      ],
      "folders": [
@@ -11323,9 +11343,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
+     "renders": 3,
      "compositions": {
-      "packaging-only": 2
+      "packaging-only": 2,
+      "label-flat": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -11349,6 +11370,15 @@
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/73c4ab24d7bfd500.jpg"
+      },
+      {
+       "id": "f7f521ce-70dd-420d-9dfe-7456cb165dc6",
+       "score": 5,
+       "path": "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech/Renders/CA_1g_Concentrates_Top_CRANBERRY_BOMB_PIE_Top.png",
+       "previous": null,
+       "composition": "label-flat",
+       "angle": "n/a",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/28b539a4b7e7a500.jpg"
       }
      ],
      "folders": [
@@ -11360,9 +11390,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
+     "renders": 3,
      "compositions": {
-      "packaging-only": 2
+      "packaging-only": 2,
+      "label-flat": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -11386,6 +11417,15 @@
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/dc547ca697b0e03a.jpg"
+      },
+      {
+       "id": "5f9223a7-dd4a-4ffa-99e7-1012d6a22cec",
+       "score": 5,
+       "path": "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech/Renders/CA_1g_Concentrates_Top_MUHA_MOTORBREATH_PIE_Top.png",
+       "previous": null,
+       "composition": "label-flat",
+       "angle": "n/a",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/8867f50eb6f6a7a7.jpg"
       }
      ],
      "folders": [
@@ -11397,9 +11437,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
+     "renders": 3,
      "compositions": {
-      "packaging-only": 2
+      "packaging-only": 2,
+      "label-flat": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -11423,6 +11464,15 @@
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/60c31916184a695f.jpg"
+      },
+      {
+       "id": "2a28c352-0860-478b-848d-c5d7756e61d5",
+       "score": 5,
+       "path": "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech/Renders/CA_1g_Concentrates_Top_PEACH_PANTHER_Top.png",
+       "previous": null,
+       "composition": "label-flat",
+       "angle": "front",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4386223ada785c66.jpg"
       }
      ],
      "folders": [
@@ -11434,9 +11484,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
+     "renders": 3,
      "compositions": {
-      "packaging-only": 2
+      "packaging-only": 2,
+      "label-flat": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -11460,6 +11511,15 @@
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c9c97dae131b2c1d.jpg"
+      },
+      {
+       "id": "6df5e51c-038e-455a-a8c7-732f3dfe2db9",
+       "score": 5,
+       "path": "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech/Renders/CA_1g_Concentrates_Top_GRAPE_LOBSTER_PIE_Top.png",
+       "previous": null,
+       "composition": "label-flat",
+       "angle": "n/a",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4c3d6df3c84e8336.jpg"
       }
      ],
      "folders": [
@@ -11471,9 +11531,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 2,
+     "renders": 3,
      "compositions": {
-      "packaging-only": 2
+      "packaging-only": 2,
+      "label-flat": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -11497,6 +11558,15 @@
        "composition": "packaging-only",
        "angle": "three-quarter",
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/c68a1f745eb0d4c9.jpg"
+      },
+      {
+       "id": "1b01bee5-0fc1-4c86-b8ed-d6e242701ef1",
+       "score": 5,
+       "path": "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech/Renders/CA_1g_Concentrates_Top_BANANA_CREAM_PIE_Top.png",
+       "previous": null,
+       "composition": "label-flat",
+       "angle": "n/a",
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/035669a2deb19107.jpg"
       }
      ],
      "folders": [
@@ -39083,16 +39153,14 @@
    ],
    "samples": [
     "MI_Mambas_OpenBag_Main0078.png",
-    "MI_Mambas_OpenBag_Main0090.png",
-    "MI_Mambas_OpenBag_RenderCam_i1_0039.png"
+    "MI_Mambas_OpenBag_RenderCam_i1_0039.png",
+    "MI_Mambas_OpenBag_Main0116.png"
    ],
    "compositions": {
-    "n/a": 10,
-    "in-scene": 5,
-    "packaging-only": 3,
-    "device-only": 3,
-    "lineup": 1,
-    "device-with-packaging": 5
+    "device-only": 10,
+    "device-with-packaging": 15,
+    "packaging-only": 1,
+    "lineup": 1
    }
   },
   {
@@ -39818,23 +39886,22 @@
      "n": 6
     },
     {
-     "product": "BLACK ELECTRIC DAB TOOL",
+     "product": "GOLD ELECTRIC DAB TOOL",
      "n": 2
     },
     {
-     "product": "GOLD ELECTRIC DAB TOOL",
+     "product": "BLACK ELECTRIC DAB TOOL",
      "n": 2
     }
    ],
    "samples": [
-    "Pen1_Box_Yellow_Front_V1.png",
-    "Pen2_Box_Yellow_Front_V1.png",
-    "Pen1_Box_Front_V2.png"
+    "Pen2_Yellow_Front_V1.png",
+    "Pen1_Box_45_V2.png",
+    "Pen1_Yellow_Front_V1.png"
    ],
    "compositions": {
-    "device-with-packaging": 14,
-    "device-only": 2,
-    "packaging-only": 2
+    "device-with-packaging": 10,
+    "packaging-only": 8
    }
   },
   {

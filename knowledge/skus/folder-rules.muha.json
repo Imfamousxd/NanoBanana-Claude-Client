@@ -1,0 +1,31 @@
+{
+ "brand": "muha",
+ "note": "Per-folder rules written from the reviewer's notes on the folder review page (2026-09-17). kind = what the folder is when the book has no line for it; tag = replaces the classification words taken from the folder name; outliersOk = the files flagged as looking different were checked by a person and are fine; compositions/angles = per-file overrides (glob on the file name, first match wins) written into the DAM analysis; moveTo/copyTo = instructions for the Dropbox reorganisation plan, nothing moves until sign-off.",
+ "folders": {
+  "Renders/Ai Resources": { "kind": "Flavor badges, one per flavour (name each by its flavour)" },
+  "Renders/CA catalog resized/Hash Rosin Concentrates 1G": { "outliersOk": true },
+  "Renders/Catalyst": { "kind": "Catalyst pre-rolls (also belongs with pre-rolls)" },
+  "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech": { "moveTo": "its own Hash Rosin folder under Concentrates/CA" },
+  "Renders/Device/All Devices": { "kind": "All devices line-up", "copyFrom": ["Disposables/Device/Dual Device", "Disposables/Device/OG_Magnetic_Dispo"], "copyNote": "copy the Duo and Magnetic device renders in here as well (copy, do not move)" },
+  "Renders/Device/Mock Up": { "kind": "Dual (Duo) device mock-up", "copyTo": "Disposables/Device/Dual Device" },
+  "Renders/Edibles/MI Gummies/HR_Gummies_Only": { "tag": "Gummy Only" },
+  "Renders/Edibles/RedesignTest": { "kind": "Icon renders (redesign test)", "outliersOk": true },
+  "Renders/HOTKNIFES/pen_box": { "kind": "Hot Knives electric dab tool (Muha Blanc), black and gold", "compositions": { "*_Box_*": "packaging-only", "*": "device-with-packaging" } },
+  "Renders/Hemp/Cartridges/D8 D10 HHC": { "kind": "D8 / D10 / HHC carts group shots", "compositions": { "*": "lineup" } },
+  "Renders/Hemp/Cartridges/THCA - Oct 2024": { "moveTo": { "MasterBox_*": "Hemp/Cartridges/THCA - Oct 2024/Master Case" } },
+  "Renders/Hemp/Cartridges/THCP + HHC 2G - 2026": { "moveTo": { "*_1G_*": "the 1G THCP carts folder (these are Orange Creamsicle)" } },
+  "Renders/Hemp/Pre Rolls/Glass Jar": { "kind": "Kief-infused pre-rolls in glass jars" },
+  "Renders/Hemp/Pre Rolls/Glass Jar/Display Box": { "kind": "Kief-infused pre-rolls in glass jars, display boxes" },
+  "Renders/MMxCookies/MMxCookies MMlogo Reversed": { "kind": "MM x Cookies logo coin (bite mark)" },
+  "Renders/Mavricks": { "outliersOk": true, "compositions": { "Black mav v2b master.png": "device-only", "Red mav v2 master.png": "device-only" } },
+  "Renders/Moods": { "outliersOk": true, "compositions": { "Moods_WhiteWalker_Device_Back_V1.png": "device-only" }, "angles": { "Moods_WhiteWalker_Device_Back_V1.png": "back" } },
+  "Renders/Moods/Device2/Logo2": { "kind": "Moods device renders" },
+  "Renders/Moods/Device2/Updated": { "kind": "Moods device renders" },
+  "Renders/Motion/MI Mambas Flying Gummies Stills": { "kind": "Mambas Lime gummies, motion stills", "compositions": { "MI_Mambas_OpenBag_Main*": "device-only", "FlyingGummiesEnd0023.png": "packaging-only", "FlyingGummiesEnd0122.png": "lineup", "*": "device-with-packaging" } },
+  "Renders/Multi Product Group Shots/MI": { "kind": "MI gummies group shots", "compositions": { "*": "lineup" } },
+  "Renders/Pre-Rolls/Glass Jars": { "kind": "Muha Mates in glass jars", "outliersOk": true },
+  "Renders/Pre-Rolls/Metal Can/MI/MI_HashRosin Mates": { "outliersOk": true },
+  "Renders/Accessories/Product Displays/Mates Duo": { "kind": "Mates Duo displays", "moveTo": "next to the other Mates Duo renders (not Accessories)" },
+  "Renders/Apparel/MM": { "kind": "Apparel, one folder per garment (varsity jacket, women's romper)", "moveTo": "split into one folder per garment" }
+ }
+}

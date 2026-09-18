@@ -1,13 +1,13 @@
 {
  "brand": "dialed-moods",
- "computedAt": "2026-09-17",
+ "computedAt": "2026-09-18",
  "totals": {
   "lines": 36,
   "items": 159,
   "covered": 119,
-  "assets": 2059,
-  "matchedAssets": 940,
-  "unmatchedAssets": 1119,
+  "assets": 2067,
+  "matchedAssets": 944,
+  "unmatchedAssets": 1123,
   "unmatchedGroups": 49
  },
  "lines": [
@@ -859,10 +859,10 @@
      "sku": "DM-EMA-BBA",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 17,
      "compositions": {
       "packaging-only": 11,
-      "multi-pack": 5
+      "multi-pack": 6
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -900,7 +900,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning After Individual Renders",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/24ct",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/12ct"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/12ct",
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/Box_Pack"
      ]
     },
     {
@@ -908,9 +909,9 @@
      "sku": "DM-EMA-BLO",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 17,
      "compositions": {
-      "packaging-only": 11,
+      "packaging-only": 12,
       "multi-pack": 5
      },
      "hasDeviceOnly": false,
@@ -949,7 +950,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/24ct",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/12ct",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning After Individual Renders"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning After Individual Renders",
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/Box_Pack"
      ]
     },
     {
@@ -957,10 +959,10 @@
      "sku": "DM-EMA-SWM",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 17,
      "compositions": {
       "packaging-only": 11,
-      "multi-pack": 5
+      "multi-pack": 6
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -986,17 +988,18 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/11b953c5c95f1a44.jpg"
       },
       {
-       "id": "4e545230-4e33-4cad-8b51-08fd602663d3",
+       "id": "ef3b665a-ec83-4729-b94e-261aba74bf44",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning After Individual Renders/Morning_After_45_Salted_Watermelon_45.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/Box_Pack/MorningAfter_box_pack_Front_Box_SW.png",
        "previous": null,
-       "composition": "packaging-only",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cf5a053757b1a339.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5bb48a3aa179d45a.jpg"
       }
      ],
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/12ct",
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/Box_Pack",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning After Individual Renders",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/24ct"
      ]
@@ -1006,10 +1009,11 @@
      "sku": "DM-EMA-GRG",
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 17,
      "compositions": {
       "packaging-only": 11,
-      "multi-pack": 5
+      "multi-pack": 5,
+      "device-with-packaging": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -1047,7 +1051,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning After Individual Renders",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/12ct",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/24ct"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/24ct",
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/Box_Pack"
      ]
     }
    ]
@@ -6060,10 +6065,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 17,
      "compositions": {
       "packaging-only": 11,
-      "multi-pack": 5
+      "multi-pack": 6
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -6101,7 +6106,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning After Individual Renders",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/24ct",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/12ct"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/12ct",
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/Box_Pack"
      ]
     },
     {
@@ -6109,9 +6115,9 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 17,
      "compositions": {
-      "packaging-only": 11,
+      "packaging-only": 12,
       "multi-pack": 5
      },
      "hasDeviceOnly": false,
@@ -6150,7 +6156,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/24ct",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/12ct",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning After Individual Renders"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning After Individual Renders",
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/Box_Pack"
      ]
     },
     {
@@ -6158,10 +6165,10 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 17,
      "compositions": {
       "packaging-only": 11,
-      "multi-pack": 5
+      "multi-pack": 6
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -6187,17 +6194,18 @@
        "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/11b953c5c95f1a44.jpg"
       },
       {
-       "id": "4e545230-4e33-4cad-8b51-08fd602663d3",
+       "id": "ef3b665a-ec83-4729-b94e-261aba74bf44",
        "score": 5,
-       "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning After Individual Renders/Morning_After_45_Salted_Watermelon_45.png",
+       "path": "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/Box_Pack/MorningAfter_box_pack_Front_Box_SW.png",
        "previous": null,
-       "composition": "packaging-only",
+       "composition": "multi-pack",
        "angle": "three-quarter",
-       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/cf5a053757b1a339.jpg"
+       "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5bb48a3aa179d45a.jpg"
       }
      ],
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/12ct",
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/Box_Pack",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning After Individual Renders",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/24ct"
      ]
@@ -6207,10 +6215,11 @@
      "sku": null,
      "discontinued": false,
      "inDevelopment": false,
-     "renders": 16,
+     "renders": 17,
      "compositions": {
       "packaging-only": 11,
-      "multi-pack": 5
+      "multi-pack": 5,
+      "device-with-packaging": 1
      },
      "hasDeviceOnly": false,
      "hasPackaging": true,
@@ -6248,7 +6257,8 @@
      "folders": [
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning After Individual Renders",
       "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/12ct",
-      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/24ct"
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/24ct",
+      "Renders/DialedMoods/Dialed Sku's/StickPacks/Electrolyte Packs/Morning After Renders/Morning_After Display Renders/Box_Pack"
      ]
     }
    ]
@@ -6993,7 +7003,7 @@
   {
    "folder": "DialedMoods / Dialed Sku's",
    "market": null,
-   "files": 388,
+   "files": 392,
    "products": [
     {
      "product": "DM-social-elixir",
@@ -7019,7 +7029,7 @@
    ],
    "compositions": {
     "device-only": 176,
-    "lineup": 30,
+    "lineup": 34,
     "device-with-packaging": 16,
     "packaging-only": 55,
     "multi-pack": 77,

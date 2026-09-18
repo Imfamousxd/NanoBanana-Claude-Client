@@ -1,6 +1,6 @@
 {
  "brand": "muha",
- "builtAt": "2026-09-17T17:54:54.809Z",
+ "builtAt": "2026-09-18T21:37:46.334Z",
  "scope": "Renders/ only",
  "naming": {
   "dropped": [],
@@ -695,6 +695,11 @@
    },
    "generation": null,
    "designTag": "Mates Duo",
+   "rule": {
+    "kind": "Mates Duo displays",
+    "moveTo": "next to the other Mates Duo renders (not Accessories)"
+   },
+   "kind": "Mates Duo displays",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "candidates": [],
@@ -841,6 +846,10 @@
    },
    "generation": null,
    "designTag": "Ai Resources",
+   "rule": {
+    "kind": "Flavor badges, one per flavour (name each by its flavour)"
+   },
+   "kind": "Flavor badges, one per flavour (name each by its flavour)",
    "proposal": "On no SKU row — not a product render folder (11 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "candidates": [],
@@ -1330,6 +1339,11 @@
    },
    "generation": null,
    "designTag": "",
+   "rule": {
+    "kind": "Apparel, one folder per garment (varsity jacket, women's romper)",
+    "moveTo": "split into one folder per garment"
+   },
+   "kind": "Apparel, one folder per garment (varsity jacket, women's romper)",
    "proposal": "On no SKU row — not a product render folder (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "candidates": [],
@@ -2036,6 +2050,10 @@
    },
    "generation": null,
    "designTag": "Hash Rosin Concentrates",
+   "rule": {
+    "outliersOk": true
+   },
+   "outliersOkCount": 1,
    "proposal": "On no SKU row — not a product render folder (16 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "candidates": [],
@@ -2057,13 +2075,7 @@
      "path": "Renders/CA catalog resized/Hash Rosin Concentrates 1G/HR_Honey_Banana_FrontSingleOpen.jpg"
     }
    ],
-   "outliers": [
-    {
-     "id": "e75372a8-7de9-42a7-b0f0-da3c925779b7",
-     "path": "Renders/CA catalog resized/Hash Rosin Concentrates 1G/HR_Chilled_Cherries_FrontSingleOpen.jpg",
-     "why": "size: reads \"0.5g\", the folder is \"1g\""
-    }
-   ]
+   "outliers": []
   },
   {
    "id": "072c79d2bdc3228a",
@@ -4081,6 +4093,10 @@
    },
    "generation": null,
    "designTag": "Catalyst",
+   "rule": {
+    "kind": "Catalyst pre-rolls (also belongs with pre-rolls)"
+   },
+   "kind": "Catalyst pre-rolls (also belongs with pre-rolls)",
    "proposal": "On no SKU row — not a product render folder (6 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "candidates": [],
@@ -4328,6 +4344,9 @@
    },
    "generation": null,
    "designTag": "June 2025 Tech",
+   "rule": {
+    "moveTo": "its own Hash Rosin folder under Concentrates/CA"
+   },
    "proposal": "Feeds CA Hash Rosin Concentrate Jars · CA033 (+1 more line: CA Hash Rosin Concentrate V2) — 9 of 21 files on rows, 12 on no row. Flavours: Alien OG.",
    "meaning": "Yes means: this folder is split between CA Hash Rosin Concentrate Jars and CA Hash Rosin Concentrate V2, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "candidates": [],
@@ -4354,12 +4373,13 @@
   {
    "id": "a8cfb0e1cc4ba27a",
    "path": "Renders/Concentrates/CA/CA_HR_Concentrates_June2025_Tech/Renders",
-   "files": 16,
-   "assigned": 16,
+   "files": 24,
+   "assigned": 24,
    "market": "CA",
    "status": null,
    "compositions": {
-    "packaging only": 16
+    "packaging only": 16,
+    "label flat": 8
    },
    "lines": [
     {
@@ -4369,7 +4389,7 @@
      "market": "CA",
      "skuBlock": "CA040",
      "generation": null,
-     "files": 16,
+     "files": 24,
      "flavours": [
       "Muha Motorbreath",
       "Alien OG",
@@ -4388,15 +4408,15 @@
      "market": "CA",
      "skuBlock": "CA033",
      "generation": null,
-     "files": 2,
+     "files": 3,
      "flavours": [
       "Alien OG"
      ]
     }
    ],
    "checked": {
-    "files": 16,
-    "visual": 13,
+    "files": 24,
+    "visual": 21,
     "labels": true
    },
    "unassigned": [],
@@ -4409,7 +4429,7 @@
    },
    "generation": null,
    "designTag": "",
-   "proposal": "Feeds CA Hash Rosin Concentrate V2 · CA040 (+1 more line: CA Hash Rosin Concentrate Jars) — 16 of 16 files on rows. Flavours: Muha Motorbreath, Alien OG, Peach Panther, Orange Cherry Gelato, Grape Lobster, Banana Cream Pie +2.",
+   "proposal": "Feeds CA Hash Rosin Concentrate V2 · CA040 (+1 more line: CA Hash Rosin Concentrate Jars) — 24 of 24 files on rows. Flavours: Muha Motorbreath, Alien OG, Peach Panther, Orange Cherry Gelato, Grape Lobster, Banana Cream Pie +2.",
    "meaning": "Yes means: this folder is split between CA Hash Rosin Concentrate V2 and CA Hash Rosin Concentrate Jars, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "candidates": [],
    "samples": [
@@ -5386,6 +5406,15 @@
    },
    "generation": null,
    "designTag": "All Devices",
+   "rule": {
+    "kind": "All devices line-up",
+    "copyFrom": [
+     "Disposables/Device/Dual Device",
+     "Disposables/Device/OG_Magnetic_Dispo"
+    ],
+    "copyNote": "copy the Duo and Magnetic device renders in here as well (copy, do not move)"
+   },
+   "kind": "All devices line-up",
    "proposal": "On no SKU row — nothing in the book matched (5 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "candidates": [],
@@ -5494,6 +5523,11 @@
    },
    "generation": null,
    "designTag": "Mock Up",
+   "rule": {
+    "kind": "Dual (Duo) device mock-up",
+    "copyTo": "Disposables/Device/Dual Device"
+   },
+   "kind": "Dual (Duo) device mock-up",
    "proposal": "On no SKU row — nothing in the book matched (4 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "candidates": [],
@@ -11338,7 +11372,10 @@
     "at": "2026-09-17T04:11:49.303Z"
    },
    "generation": null,
-   "designTag": "Only",
+   "designTag": "Gummy Only",
+   "rule": {
+    "tag": "Gummy Only"
+   },
    "proposal": "Feeds MI 4ct Hash Rosin Gummies · MI015 (+1 more line: MI 10ct Hash Rosin Gummies) — 8 of 10 files on rows, 2 on no row. Flavours: Juicy Tangerine, Sour Blue Razz, Mango Chamoy, Raspberry Pineapple.",
    "meaning": "Yes means: this folder is split between MI 4ct Hash Rosin Gummies and MI 10ct Hash Rosin Gummies, as shown. Pick \"This is one line…\" to give the whole folder one name instead.",
    "candidates": [],
@@ -11823,6 +11860,12 @@
    },
    "generation": null,
    "designTag": "Redesign Test",
+   "rule": {
+    "kind": "Icon renders (redesign test)",
+    "outliersOk": true
+   },
+   "kind": "Icon renders (redesign test)",
+   "outliersOkCount": 1,
    "proposal": "On no SKU row — generic (badges, group shots, website composites) (7 files).",
    "meaning": "Yes means: this folder stays off every SKU row (generic (badges, group shots, website composites)).",
    "candidates": [],
@@ -11844,13 +11887,7 @@
      "path": "Renders/Edibles/RedesignTest/Icons Variations/4.png"
     }
    ],
-   "outliers": [
-    {
-     "id": "b2444d69-7925-481d-b243-ea6e75077a63",
-     "path": "Renders/Edibles/RedesignTest/Icons Variations/0.png",
-     "why": "looks different from the rest (distance 0.11, folder typical 0.01)"
-    }
-   ]
+   "outliers": []
   },
   {
    "id": "a98c5b5d8e928f58",
@@ -12731,6 +12768,13 @@
    },
    "generation": null,
    "designTag": "D8 D10 HHC",
+   "rule": {
+    "kind": "D8 / D10 / HHC carts group shots",
+    "compositions": {
+     "*": "lineup"
+    }
+   },
+   "kind": "D8 / D10 / HHC carts group shots",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "candidates": [
@@ -13307,6 +13351,11 @@
    },
    "generation": null,
    "designTag": "Oct 2024",
+   "rule": {
+    "moveTo": {
+     "MasterBox_*": "Hemp/Cartridges/THCA - Oct 2024/Master Case"
+    }
+   },
    "proposal": "Feeds HEMP 2g THCA Carts · HEMP003 — 6 of 68 files on rows, 62 on no row. Flavours: Pineapple Runtz.",
    "meaning": "Yes means: every file in this folder is HEMP 2g THCA Carts and its flavours are named from the book.",
    "candidates": [],
@@ -13526,6 +13575,11 @@
    },
    "generation": null,
    "designTag": "+ HHC 2026",
+   "rule": {
+    "moveTo": {
+     "*_1G_*": "the 1G THCP carts folder (these are Orange Creamsicle)"
+    }
+   },
    "proposal": "Feeds HEMP 2g THCP + HHCP Carts · HEMP015 — 27 of 32 files on rows, 5 on no row. Flavours: Gush Mintz, Honeydew Haze, Platinum Kush, Orange Creamsicle, Midnight Rain.",
    "meaning": "Yes means: every file in this folder is HEMP 2g THCP + HHCP Carts and its flavours are named from the book.",
    "candidates": [],
@@ -15831,6 +15885,10 @@
    },
    "generation": null,
    "designTag": "Glass Jar",
+   "rule": {
+    "kind": "Kief-infused pre-rolls in glass jars"
+   },
+   "kind": "Kief-infused pre-rolls in glass jars",
    "proposal": "On no SKU row — nothing in the book matched (48 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "candidates": [
@@ -15945,6 +16003,10 @@
    },
    "generation": null,
    "designTag": "Display Box",
+   "rule": {
+    "kind": "Kief-infused pre-rolls in glass jars, display boxes"
+   },
+   "kind": "Kief-infused pre-rolls in glass jars, display boxes",
    "proposal": "On no SKU row — nothing in the book matched (48 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "candidates": [
@@ -16910,9 +16972,8 @@
    "market": null,
    "status": "not a product render folder",
    "compositions": {
-    "device with packaging": 14,
-    "device only": 2,
-    "packaging only": 2
+    "device with packaging": 10,
+    "packaging only": 8
    },
    "lines": [],
    "checked": {
@@ -16921,18 +16982,18 @@
     "labels": true
    },
    "unassigned": [
-    "Pen1_Box_Yellow_Front_V1.png",
-    "Pen2_Box_Yellow_Front_V1.png",
-    "Pen1_Box_Front_V2.png",
     "Pen2_Yellow_Front_V1.png",
-    "Pen2_Box_Black_Front_V1.png",
-    "Pen2_Box_Yellow_45_V1.png",
     "Pen1_Box_45_V2.png",
     "Pen1_Yellow_Front_V1.png",
     "Pen1_Yellow_Front_SideWays_V1.png",
     "Pen2_Black_Front_V1.png",
-    "Pen2_Black_Front_SideWays_V1.png",
     "Pen2_Yellow_Front_SideWays_V1.png",
+    "Pen1_Box_Yellow_Front_V1.png",
+    "Pen2_Box_Yellow_Front_V1.png",
+    "Pen1_Box_Front_V2.png",
+    "Pen2_Box_Black_Front_V1.png",
+    "Pen2_Box_Yellow_45_V1.png",
+    "Pen2_Black_Front_SideWays_V1.png",
     "Pen1_Box_Yellow_45_V1.png",
     "Pen1_Black_Front_SideWays_V1.png",
     "Pen1_Black_Front_V1b.png",
@@ -16949,25 +17010,33 @@
    },
    "generation": null,
    "designTag": "pen box",
+   "rule": {
+    "kind": "Hot Knives electric dab tool (Muha Blanc), black and gold",
+    "compositions": {
+     "*_Box_*": "packaging-only",
+     "*": "device-with-packaging"
+    }
+   },
+   "kind": "Hot Knives electric dab tool (Muha Blanc), black and gold",
    "proposal": "On no SKU row — not a product render folder (18 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "candidates": [],
    "samples": [
     {
-     "id": "f43d0fe4-82e7-488b-8bc8-f1c22fe3a4c2",
-     "path": "Renders/HOTKNIFES/pen_box/Pen1_Box_Yellow_Front_V1.png"
-    },
-    {
-     "id": "f272fc65-bef5-4cf6-b556-fafb185291aa",
-     "path": "Renders/HOTKNIFES/pen_box/Pen2_Box_Yellow_Front_V1.png"
-    },
-    {
      "id": "045252a3-5707-4e12-ac7c-2a57bf09c44a",
      "path": "Renders/HOTKNIFES/pen_box/Pen2_Yellow_Front_V1.png"
     },
     {
-     "id": "8ad5cc7c-3278-45df-9477-e20d5c2ee0a0",
-     "path": "Renders/HOTKNIFES/pen_box/Pen2_Box_Black_Front_V1.png"
+     "id": "97cc0bfc-5d44-42bc-8347-7b2f5f193da7",
+     "path": "Renders/HOTKNIFES/pen_box/Pen1_Yellow_Front_V1.png"
+    },
+    {
+     "id": "a6eacc77-1ce4-43f0-8cb6-a51337872a42",
+     "path": "Renders/HOTKNIFES/pen_box/Pen1_Yellow_Front_SideWays_V1.png"
+    },
+    {
+     "id": "e76f842c-c377-48ee-a7ac-c9cddf14961b",
+     "path": "Renders/HOTKNIFES/pen_box/Pen2_Black_Front_V1.png"
     }
    ],
    "outliers": []
@@ -17351,6 +17420,14 @@
    },
    "generation": null,
    "designTag": "",
+   "rule": {
+    "outliersOk": true,
+    "compositions": {
+     "Black mav v2b master.png": "device-only",
+     "Red mav v2 master.png": "device-only"
+    }
+   },
+   "outliersOkCount": 2,
    "proposal": "Feeds MI 0.5G Mavricks Hash Rosin Disposables · MI023 — 1 of 15 files on rows, 14 on no row. Flavours: Mimosa.",
    "meaning": "Yes means: every file in this folder is MI 0.5G Mavricks Hash Rosin Disposables and its flavours are named from the book.",
    "candidates": [],
@@ -17372,18 +17449,7 @@
      "path": "Renders/Mavricks/Chem Dawg V2.png"
     }
    ],
-   "outliers": [
-    {
-     "id": "b675b7ca-32a6-49b5-a441-bf28763ff643",
-     "path": "Renders/Mavricks/Black mav v2b master.png",
-     "why": "looks different from the rest (distance 0.13, folder typical 0.06)"
-    },
-    {
-     "id": "7b42bf4c-91e6-49e0-9cef-cf2cd7d995d7",
-     "path": "Renders/Mavricks/Red mav v2 master.png",
-     "why": "looks different from the rest (distance 0.13, folder typical 0.06)"
-    }
-   ]
+   "outliers": []
   },
   {
    "id": "3a64f5a8ec9dac21",
@@ -17453,6 +17519,10 @@
    },
    "generation": null,
    "designTag": "MMx Cookies MMlogo Reversed",
+   "rule": {
+    "kind": "MM x Cookies logo coin (bite mark)"
+   },
+   "kind": "MM x Cookies logo coin (bite mark)",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "candidates": [],
@@ -17681,6 +17751,16 @@
    },
    "generation": null,
    "designTag": "Moods",
+   "rule": {
+    "outliersOk": true,
+    "compositions": {
+     "Moods_WhiteWalker_Device_Back_V1.png": "device-only"
+    },
+    "angles": {
+     "Moods_WhiteWalker_Device_Back_V1.png": "back"
+    }
+   },
+   "outliersOkCount": 1,
    "proposal": "On no SKU row — nothing in the book matched (47 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "candidates": [],
@@ -17702,13 +17782,7 @@
      "path": "Renders/Moods/Moods_PassionFruit_Box_45_V1.png"
     }
    ],
-   "outliers": [
-    {
-     "id": "13100bde-393d-4193-a74a-3a5f6e148668",
-     "path": "Renders/Moods/Moods_WhiteWalker_Device_Back_V1.png",
-     "why": "looks different from the rest (distance 0.12, folder typical 0.06)"
-    }
-   ]
+   "outliers": []
   },
   {
    "id": "69228a4b61dd2bb8",
@@ -17779,6 +17853,10 @@
    },
    "generation": null,
    "designTag": "Logo",
+   "rule": {
+    "kind": "Moods device renders"
+   },
+   "kind": "Moods device renders",
    "proposal": "On no SKU row — nothing in the book matched (3 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "candidates": [],
@@ -17827,6 +17905,10 @@
    },
    "generation": null,
    "designTag": "Updated",
+   "rule": {
+    "kind": "Moods device renders"
+   },
+   "kind": "Moods device renders",
    "proposal": "On no SKU row — nothing in the book matched (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "candidates": [],
@@ -17979,12 +18061,10 @@
    "market": null,
    "status": "not a product render folder",
    "compositions": {
-    "n/a": 10,
-    "in scene": 5,
-    "packaging only": 3,
-    "device only": 3,
-    "lineup": 1,
-    "device with packaging": 5
+    "device only": 10,
+    "device with packaging": 15,
+    "packaging only": 1,
+    "lineup": 1
    },
    "lines": [],
    "checked": {
@@ -17994,27 +18074,27 @@
    },
    "unassigned": [
     "MI_Mambas_OpenBag_Main0078.png",
-    "MI_Mambas_OpenBag_Main0090.png",
     "MI_Mambas_OpenBag_RenderCam_i1_0039.png",
-    "FlyingGummiesEndGummies0028.png",
-    "FlyingGummiesEndGummies0041.png",
     "MI_Mambas_OpenBag_Main0116.png",
     "MI_Mambas_OpenBag_Main0098.png",
     "FlyingGummiesEnd0023.png",
     "FlyingGummiesEnd0122.png",
-    "MI_Mambas_OpenBag_Main0091.png",
     "MI_Mambas_OpenBag_Main0109.png",
-    "FlyingGummiesTopRotate_i1_0068.png",
     "FlyingGummiesTopRotate_i1_0040.png",
-    "FlyingGummiesTopRotate_i1_0054.png",
     "FlyingGummiesEndGummies0048.png",
     "FlyingGummiesEndGummies0058.png",
     "MI_Mambas_OpenBag_RenderCam_i1_0051.png",
-    "MI_Mambas_OpenBag_Main0082.png",
-    "FlyingGummiesTopRotate_i1_0023.png",
     "FlyingGummiesTopRotate_i1_0050.png",
     "FlyingGummiesTopRotate_i1_0087.png",
     "MI_Mambas_OpenBag_Main0144.png",
+    "MI_Mambas_OpenBag_Main0090.png",
+    "FlyingGummiesEndGummies0028.png",
+    "FlyingGummiesEndGummies0041.png",
+    "MI_Mambas_OpenBag_Main0091.png",
+    "FlyingGummiesTopRotate_i1_0068.png",
+    "FlyingGummiesTopRotate_i1_0054.png",
+    "MI_Mambas_OpenBag_Main0082.png",
+    "FlyingGummiesTopRotate_i1_0023.png",
     "MI_Mambas_OpenBag_Main0073.png",
     "FlyingGummiesTopRotate_i1_0032.png",
     "MI_Mambas_OpenBag_RenderCam_i1_0059.png",
@@ -18030,25 +18110,35 @@
    },
    "generation": null,
    "designTag": "Mambas Flying Gummies Stills",
+   "rule": {
+    "kind": "Mambas Lime gummies, motion stills",
+    "compositions": {
+     "MI_Mambas_OpenBag_Main*": "device-only",
+     "FlyingGummiesEnd0023.png": "packaging-only",
+     "FlyingGummiesEnd0122.png": "lineup",
+     "*": "device-with-packaging"
+    }
+   },
+   "kind": "Mambas Lime gummies, motion stills",
    "proposal": "On no SKU row — not a product render folder (27 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "candidates": [],
    "samples": [
     {
+     "id": "7fd2df85-b89a-4711-81d9-8211b2e448a5",
+     "path": "Renders/Motion/MI Mambas Flying Gummies Stills/MI_Mambas_OpenBag_RenderCam_i1_0039.png"
+    },
+    {
      "id": "d2f224cc-a0ab-4e44-bfc5-33522e498f29",
      "path": "Renders/Motion/MI Mambas Flying Gummies Stills/FlyingGummiesTopRotate_i1_0040.png"
     },
     {
-     "id": "d914b6bf-4ed1-4bf5-8690-1acdbbefde7c",
-     "path": "Renders/Motion/MI Mambas Flying Gummies Stills/FlyingGummiesTopRotate_i1_0050.png"
+     "id": "d24d519e-e25f-47fe-a7dd-dcbb69a4cee7",
+     "path": "Renders/Motion/MI Mambas Flying Gummies Stills/FlyingGummiesEndGummies0048.png"
     },
     {
-     "id": "4f9e0907-c606-49f5-9700-d6d0153ee1c3",
-     "path": "Renders/Motion/MI Mambas Flying Gummies Stills/FlyingGummiesTopRotate_i1_0087.png"
-    },
-    {
-     "id": "ebf8a8c4-05ab-4831-bc73-dbebb238e66d",
-     "path": "Renders/Motion/MI Mambas Flying Gummies Stills/MI_Mambas_OpenBag_RenderCam_i1_0059.png"
+     "id": "626a5126-521f-4970-80fa-4010ccd15e39",
+     "path": "Renders/Motion/MI Mambas Flying Gummies Stills/FlyingGummiesEndGummies0058.png"
     }
    ],
    "outliers": []
@@ -18410,6 +18500,13 @@
    },
    "generation": null,
    "designTag": "",
+   "rule": {
+    "kind": "MI gummies group shots",
+    "compositions": {
+     "*": "lineup"
+    }
+   },
+   "kind": "MI gummies group shots",
    "proposal": "On no SKU row — not a product render folder (2 files).",
    "meaning": "Yes means: this folder stays off every SKU row (not a product render folder).",
    "candidates": [],
@@ -18741,6 +18838,12 @@
    },
    "generation": null,
    "designTag": "Glass Jars",
+   "rule": {
+    "kind": "Muha Mates in glass jars",
+    "outliersOk": true
+   },
+   "kind": "Muha Mates in glass jars",
+   "outliersOkCount": 2,
    "proposal": "On no SKU row — nothing in the book matched (24 files).",
    "meaning": "Yes means: this folder stays off every SKU row (nothing in the book matched). Pick \"This is one line…\" if it is a product.",
    "candidates": [
@@ -18770,18 +18873,7 @@
      "path": "Renders/Pre-Rolls/Glass Jars/Orange Burst Mates 3 copy.png"
     }
    ],
-   "outliers": [
-    {
-     "id": "4cc7184c-d4fa-43ec-b82e-55114d09e473",
-     "path": "Renders/Pre-Rolls/Glass Jars/Joint 2 metas.png",
-     "why": "looks different from the rest (distance 0.10, folder typical 0.04)"
-    },
-    {
-     "id": "85596ea2-d7e1-4786-a8d8-0ddfff0078ac",
-     "path": "Renders/Pre-Rolls/Glass Jars/Muha OG Mates 2 copy.jpg",
-     "why": "looks different from the rest (distance 0.10, folder typical 0.04)"
-    }
-   ]
+   "outliers": []
   },
   {
    "id": "9bf6dc9d75aca7e0",
@@ -20553,6 +20645,10 @@
    },
    "generation": null,
    "designTag": "",
+   "rule": {
+    "outliersOk": true
+   },
+   "outliersOkCount": 1,
    "proposal": "Feeds MI Hash Rosin Mates Metal Cans · MI017 — 12 of 13 files on rows, 1 on no row. Flavours: White Widow, Apple Gruntz, Watermelon OG, Razzle Dazzle, Doses & Mimosas, Berry Gelato.",
    "meaning": "Yes means: every file in this folder is MI Hash Rosin Mates Metal Cans and its flavours are named from the book.",
    "candidates": [],
@@ -20574,13 +20670,7 @@
      "path": "Renders/Pre-Rolls/Metal Can/MI/MI_HashRosin Mates/MI_HR_Mates_White_45_V1.png"
     }
    ],
-   "outliers": [
-    {
-     "id": "cc430060-fe0d-4506-9d8d-748e554d1092",
-     "path": "Renders/Pre-Rolls/Metal Can/MI/MI_HashRosin Mates/WhiteWidow_Joint_Front_V1.png",
-     "why": "looks different from the rest (distance 0.09, folder typical 0.02)"
-    }
-   ]
+   "outliers": []
   },
   {
    "id": "f43080b81c2b9d61",
