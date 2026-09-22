@@ -254,6 +254,10 @@ async function main() {
       console.log(coverageText(coverage));
       return;
     }
+    if (sub === "catalog") {
+      const { buildCatalog } = await import("./skus/catalog.mjs");
+      return print(buildCatalog(root, { brand: opt("--brand"), libraryFile: opt("--library") }));
+    }
     if (sub === "folders") {
       const { buildFolderMap } = await import("./skus/folder-map.mjs");
       const result = await buildFolderMap(root, { brand: opt("--brand"), libraryFile: opt("--library"), page: opt("--page"), decisions: opt("--decisions") });

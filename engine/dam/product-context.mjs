@@ -148,6 +148,25 @@ const slim = (asset, why) => ({
 export async function resolveProductReferences(db, graph, root, { brand = null, product, intent = "", limit = 3 } = {}) {
   if (!product) throw new Error("resolveProductReferences needs a product name");
   const needles = needlesFor(root, graph, brand, product);
+  // The reviewed catalog first (knowledge/skus/catalog.<brand>.json): a person confirmed which folder is which
+  // SKU line, names carry the state and generation, previous designs are marked. Fuzzy search only when the
+  // request names nothing the catalog knows.
+  const catalogBrand = String(brand || "").replace(/^brand\./, "").split("-")[0];
+  let catalogHit = null;
+  try { const { loadCatalog, catalogLookup } = await import("../skus/catalog.mjs"); const catalog = catalogBrand ? loadCatalog(root, catalogBrand) : null; catalogHit = catalog ? catalogLookup(catalog, product, intent) : null; } catch { catalogHit = null; }
+  if (catalogHit && (catalogHit.item ? catalogHit.item.assets.length : catalogHit.line.items.some((i) => i.assets.length))) {
+    const entries = catalogHit.item ? catalogHit.item.assets : catalogHit.line.items.flatMap((i) => i.assets);
+    const current = entries.filter((e) => e.current); const use = current.length ? current : entries;
+    const { rows } = await db.query(`select id, source_id, path, title, class, subclass, product, quality, reference_roles, has_alpha, width, height, proxies, flags, analysis, verdict from dam.assets where id = any($1::uuid[]) and deleted_at is null`, [use.map((e) => e.id)]);
+    const meta = new Map(use.map((e) => [e.id, e]));
+    const result = buildKit(rows.map((asset) => ({ asset, match: 3, score: referenceScore(asset) })), { product, brand, needles, intent, limit });
+    const tag = (item) => { const m = meta.get(item.id); return m ? { ...item, generation: m.generation, designTag: m.designTag, current: m.current, previous: m.previous } : item; };
+    for (const key of ["recommended", "identity", "device", "packaging", "cutout", "label", "lineup", "avoid"]) result.kit[key] = result.kit[key].map(tag);
+    for (const key of Object.keys(result.kit.angles)) result.kit.angles[key] = tag(result.kit.angles[key]);
+    result.catalog = { line: catalogHit.line.name, lineId: catalogHit.line.id, market: catalogHit.line.market, generation: catalogHit.line.generation, flavour: catalogHit.item?.name || null, sku: catalogHit.item?.sku || null, usedPreviousDesign: !current.length, alternatives: catalogHit.alternatives };
+    result.product = catalogHit.item ? `${catalogHit.line.name} — ${catalogHit.item.name}` : catalogHit.line.name;
+    return result;
+  }
   const searchTerms = [...new Set(needles.map((needle) => (stripLineWords(needle).length >= 3 ? stripLineWords(needle) : needle)))];
   const params = [searchTerms.map((needle) => `%${needle}%`)];
   const brandClause = brand ? (params.push(brand), ` and brand = $${params.length}`) : "";
@@ -159,6 +178,11 @@ export async function resolveProductReferences(db, graph, root, { brand = null, 
       and (product ilike any($1) or title ilike any($1) or path ilike any($1) or analysis->>'product' ilike any($1) or flags->'render'->>'line' ilike any($1) or flags->'render'->>'leaf' ilike any($1))
     limit 400`, params);
   const scored = rows.map((asset) => ({ asset, match: matchStrength(asset, needles, intent), score: referenceScore(asset) })).filter((entry) => entry.match > 0);
+  return buildKit(scored, { product, brand, needles, intent, limit });
+}
+
+/** The kit from scored rows: identity / device / packaging / angles / cutout / label / lineup / avoid, recommended first. */
+function buildKit(scored, { product, brand, needles, intent, limit }) {
   if (!scored.length) return { product, brand, needles, found: 0, kit: null, note: `No analysed product reference matches "${product}"${brand ? ` for ${brand}` : ""}. Check dam_product_directory for the folder name the team uses, or run the render pass for this brand.` };
   scored.sort((a, b) => b.match - a.match || b.score - a.score);
   const usable = scored.filter((entry) => entry.score > -50);
@@ -212,8 +236,9 @@ export async function resolveProductReferences(db, graph, root, { brand = null, 
 /** Prompt-ready lines for a kit. */
 export function renderProductKit(result) {
   if (!result?.kit) return result?.note ? [`- ${result.note}`] : [];
-  const line = (item) => `- [${item.composition}${item.angle && item.angle !== "n/a" ? ` · ${item.angle}` : ""}${item.alpha ? " · alpha" : ""}${item.verdict === "approved" ? " · APPROVED" : item.approvedFolder ? " · approved folder" : ""}] ${item.path} — ${item.title || ""}${item.thumb ? ` (thumb: ${item.thumb})` : ""} — ${item.why}`;
-  const lines = [`Product: ${result.product}${result.productsSeen.length ? ` (library names it: ${result.productsSeen.slice(0, 3).join("; ")})` : ""} — ${result.usable} usable references`];
+  const line = (item) => `- [${item.composition}${item.angle && item.angle !== "n/a" ? ` · ${item.angle}` : ""}${item.designTag ? ` · ${item.designTag}` : ""}${item.previous ? " · PREVIOUS DESIGN" : ""}${item.alpha ? " · alpha" : ""}${item.verdict === "approved" ? " · APPROVED" : item.approvedFolder ? " · approved folder" : ""}] ${item.path} — ${item.title || ""}${item.thumb ? ` (thumb: ${item.thumb})` : ""} — ${item.why}`;
+  const lines = [`Product: ${result.product}${result.catalog ? ` [reviewed catalog: ${result.catalog.line}${result.catalog.sku ? ", " + result.catalog.sku : ""}${result.catalog.usedPreviousDesign ? ", ONLY a previous design exists" : ""}]` : result.productsSeen.length ? ` (library names it: ${result.productsSeen.slice(0, 3).join("; ")})` : ""} — ${result.usable} usable references`];
+  if (result.catalog?.alternatives?.length) lines.push(`Other matches: ${result.catalog.alternatives.slice(0, 3).map((a) => `${a.line}${a.flavour ? " — " + a.flavour : ""} (${a.assets})`).join("; ")}`);
   lines.push("Use these:");
   for (const item of result.kit.recommended) lines.push(line(item));
   const extras = [...result.kit.cutout.slice(0, 1), ...result.kit.label.slice(0, 1), ...result.kit.lineup.slice(0, 1)].filter((item) => !result.kit.recommended.some((chosen) => chosen.id === item.id));
@@ -237,7 +262,7 @@ export function exportForStudio(result, { localPaths = {} } = {}) {
   for (const item of [...result.kit.recommended, ...result.kit.cutout.slice(0, 1), ...result.kit.label.slice(0, 1)]) {
     if (!item || seen.has(item.id)) continue;
     seen.add(item.id);
-    const describe = `${item.title || result.product}: ${item.composition.replace(/-/g, " ")}${item.angle && item.angle !== "n/a" ? `, ${item.angle} view` : ""}${item.alpha ? ", transparent background" : ""}${item.verdict === "approved" ? ", team-approved reference" : item.approvedFolder ? ", from the approved renders folder" : ""}. ${item.why}`;
+    const describe = `${item.title || result.product}${item.designTag ? ` (${item.designTag})` : ""}: ${item.composition.replace(/-/g, " ")}${item.angle && item.angle !== "n/a" ? `, ${item.angle} view` : ""}${item.alpha ? ", transparent background" : ""}${item.verdict === "approved" ? ", team-approved reference" : item.approvedFolder ? ", from the approved renders folder" : ""}. ${item.why}`;
     out.push({ path: localPaths[item.id] || item.path, name: (item.title || result.product).slice(0, 80), role: item.composition === "label-flat" ? "label" : "product", describe: describe.length >= 60 ? describe : `${describe} Exact product identity reference for ${result.product}.`, contains_person: item.composition === "in-hand", third_party_marks: [], dam_asset_id: item.id, composition: item.composition, angle: item.angle });
   }
   return out;
