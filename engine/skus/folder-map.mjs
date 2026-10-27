@@ -8,9 +8,10 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { computeCoverage, loadLibrary, indexFolderMap, folderPathOf, deviceIterationOf, previousDesignOf, quarantined, compositionLabel, lineName, deviceGenerationOf } from "./coverage.mjs";
 
-const REGISTRY_FILE = { muha: "muha-meds" };
+import { brandCatalogConfig, registryFileOf, BRAND_CATALOGS } from "./brand-config.mjs";
 const GENERIC_RE = /ai resources|master case|group shot|website images|badge|catalog resized|motion\/|redesign ?test/i;
-const NOT_PRODUCT_RE = /^Renders\/(Website Images|Motion|Apparel|Labubu|Ape|HOTKNIFES|Giveaway Tickets|Muha_Vaults|Catalyst|Ai Resources|Multi Product Group Shots|Master Case Group Shots|TEMP|CA catalog resized)(\/|$)/i;
+// Folders that are not product renders: per brand (brand-config.mjs); Muha's list when the brand is unknown.
+const notProductRe = (asset) => (brandCatalogConfig(asset.brand) || BRAND_CATALOGS.muha).notProduct;
 export const idOf = (folderPath) => crypto.createHash("sha1").update(folderPath).digest("hex").slice(0, 16);
 
 function readDecisions(file) {
@@ -80,7 +81,7 @@ function statusOf(asset) {
   if (quarantined(asset)) return "folder marked WRONG";
   const iteration = deviceIterationOf(asset); if (iteration) return `older device: ${iteration}`;
   const previous = previousDesignOf(asset); if (previous) return previous;
-  if (NOT_PRODUCT_RE.test(asset.path)) return "not a product render folder";
+  const notProduct = notProductRe(asset); if (notProduct && notProduct.test(asset.path)) return "not a product render folder";
   if (GENERIC_RE.test(asset.path)) return "generic (badges, group shots, website composites)";
   return null;
 }
@@ -218,7 +219,7 @@ function suggestCandidates(folders, registry, coverage) {
   }
 }
 export async function buildFolderMap(root, { brand = "muha", libraryFile, page, decisions }) {
-  const registryFile = path.join(root, "knowledge", "skus", `${REGISTRY_FILE[brand] || brand}.json`);
+  const registryFile = path.join(root, "knowledge", "skus", `${registryFileOf(brand)}.json`);
   const registry = JSON.parse(fs.readFileSync(registryFile, "utf8"));
   const rulesFile = path.join(root, "knowledge", "skus", `folder-rules.${brand}.json`);
   const rules = fs.existsSync(rulesFile) ? JSON.parse(fs.readFileSync(rulesFile, "utf8")).folders || {} : {};
@@ -293,7 +294,7 @@ export async function buildFolderMap(root, { brand = "muha", libraryFile, page, 
   }
   for (const f of folders) { f.proposal = proposalOf(f); f.meaning = meaningOf(f); }
   fs.writeFileSync(registryFile, JSON.stringify(registry, null, 1) + "\n");
-  const map = { brand, builtAt: new Date().toISOString(), scope: brand === "muha" ? "Renders/ only" : "all", naming, folders: folders.map(({ samples, outliers, words, ...rest }) => ({ ...rest, samples: samples.map((s) => ({ id: s.id, path: s.path })), outliers: outliers.map((o) => ({ id: o.id, path: o.path, why: o.why })) })) };
+  const map = { brand, builtAt: new Date().toISOString(), scope: brandCatalogConfig(brand)?.scopeLabel || "all", naming, folders: folders.map(({ samples, outliers, words, ...rest }) => ({ ...rest, samples: samples.map((s) => ({ id: s.id, path: s.path })), outliers: outliers.map((o) => ({ id: o.id, path: o.path, why: o.why })) })) };
   fs.writeFileSync(mapFile, JSON.stringify(map, null, 1) + "\n");
   let pageFile = null;
   if (page) { fs.writeFileSync(page, await buildReviewPage(root, { ...map, folders }, registry)); pageFile = page; }

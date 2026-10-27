@@ -256,7 +256,7 @@ async function main() {
     }
     if (sub === "catalog") {
       const { buildCatalog } = await import("./skus/catalog.mjs");
-      return print(buildCatalog(root, { brand: opt("--brand"), libraryFile: opt("--library") }));
+      return print(await buildCatalog(root, { brand: opt("--brand"), libraryFile: opt("--library") }));
     }
     if (sub === "folders") {
       const { buildFolderMap } = await import("./skus/folder-map.mjs");

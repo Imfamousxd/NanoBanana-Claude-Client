@@ -31,11 +31,16 @@ export const DAM_HELP = `Digital asset intelligence (Dropbox → understanding �
   npm run content -- dam sync-kg [--brand b]                      push candidates + UGC laws/exemplars into knowledge/
   npm run content -- dam verdict <asset-id> approved|rejected --reason "…" [--roles canonical,style]
   npm run content -- dam reanalyze [--brand b] [--class c] [--older-than-version N]   queue re-analysis
+  npm run content -- dam brands [--brand b] [--json]               per-brand dissection: kinds, classes, stages, renders, catalog coverage, newest, next action
+  npm run content -- dam catalog --brand b [--write] [--force]    product catalog from the DB render library (brand-config.mjs); Muha needs --force
+  npm run content -- dam recover [--dry-run] [--source id,…]      clear dead discover jobs, reset those sources' cursors, queue one full discover each
+  npm run content -- dam backfill-brands [--dry-run]              brand from the folder for rows indexed before brand-at-discovery (free)
+  npm run content -- dam check-roots                              read-only: does every Dropbox source root exist (and where did a missing one go)?
   npm run content -- dam import-env [--cwd <linked railway dir>] [--service s] [--environment e] [--overwrite]
                                                                   copy Dropbox secrets from Railway into .env (values never printed)`;
 
 function option(args, name, fallback) { const index = args.indexOf(name); return index >= 0 && args[index + 1] !== undefined ? args[index + 1] : fallback; }
-function positional(args) { return args.filter((item, index) => !item.startsWith("--") && !(index > 0 && args[index - 1].startsWith("--") && !["--once", "--full", "--approve", "--rerank", "--vectors", "--compute"].includes(args[index - 1]))); }
+function positional(args) { return args.filter((item, index) => !item.startsWith("--") && !(index > 0 && args[index - 1].startsWith("--") && !["--once", "--full", "--approve", "--rerank", "--vectors", "--compute", "--dry-run", "--json", "--write", "--force"].includes(args[index - 1]))); }
 
 export async function runDamCommand(root, args, print) {
   const [command, ...rest] = args;
@@ -80,7 +85,10 @@ export async function runDamCommand(root, args, print) {
         const { startDamServer } = await import("./serve.mjs");
         startDamServer(root);
         console.error("[dam] watching Dropbox sources + serving the search UI; Ctrl-C to stop");
-        await Promise.all([worker.watch(), worker.runQueue({ once: false })]);
+        // Liveness: exit 1 (platform restarts us) when the queue loop stops heartbeating; plus the 6-hourly
+        // safety-net rescan so a dead longpoll can never again mean a month without new files.
+        worker.startWatchdog();
+        await Promise.all([worker.watch(), worker.runQueue({ once: false }), worker.safetyNet()]);
         return;
       }
       case "serve": {
@@ -126,6 +134,44 @@ export async function runDamCommand(root, args, print) {
       case "candidates": {
         const { flagRenderCandidates } = await import("./product-refs.mjs");
         return print(await flagRenderCandidates(worker.db, { brand: brandOf(option(rest, "--brand")), dryRun: rest.includes("--dry"), model: config.vision.model, embedModel: config.embed.model }));
+      }
+      case "brands": {
+        const { brandReport, renderBrandsText } = await import("./brands.mjs");
+        const result = await brandReport(worker.db, graph, root, { brand: brandOf(option(rest, "--brand")), config });
+        if (rest.includes("--json")) return print(result);
+        console.log(renderBrandsText(result));
+        return;
+      }
+      case "catalog": {
+        const { exportRenderLibrary } = await import("./brands.mjs");
+        const { buildCatalog } = await import("../skus/catalog.mjs");
+        const { brandCatalogConfig } = await import("../skus/brand-config.mjs");
+        const brandConfig = brandCatalogConfig(option(rest, "--brand"));
+        if (!brandConfig) throw new Error("catalog needs --brand muha|dialed-moods|dialed-health|dialed-labs (engine/skus/brand-config.mjs)");
+        const write = rest.includes("--write");
+        if (write && brandConfig.reviewed && !rest.includes("--force")) throw new Error(`${brandConfig.key}'s catalog was reviewed folder by folder; rebuild it with skus catalog --library (or pass --force).`);
+        const library = await exportRenderLibrary(worker.db, brandConfig.key);
+        const result = await buildCatalog(root, { brand: brandConfig.key, library, write });
+        const { catalog: built, ...summary } = result;
+        return print({ ...summary, library: library.length, analysed: library.filter((asset) => asset.analysed).length, note: write ? undefined : "dry build (pass --write to save knowledge/skus/catalog.<brand>.json)" });
+      }
+      case "recover": {
+        const { recoverDiscover } = await import("./recover.mjs");
+        return print(await recoverDiscover(worker.db, { dryRun: rest.includes("--dry-run"), sources: option(rest, "--source") ? option(rest, "--source").split(",") : null }));
+      }
+      case "backfill-brands": {
+        const { backfillBrands } = await import("./recover.mjs");
+        return print(await backfillBrands(worker.db, { dryRun: rest.includes("--dry-run") }));
+      }
+      case "check-roots": {
+        const out = [];
+        for (const source of (await worker.db.listSources()).filter((item) => item.kind === "dropbox")) {
+          const meta = await worker.dbx().getMetadata(source.root);
+          if (meta) { out.push({ id: source.id, root: source.root, enabled: source.enabled, exists: true }); continue; }
+          const resolved = await worker.resolveRoot(source);
+          out.push({ id: source.id, root: source.root, enabled: source.enabled, exists: false, movedTo: resolved.root, coveredBy: resolved.coveredBy, candidates: resolved.candidates });
+        }
+        return print(out);
       }
       case "asset": return print(await worker.db.getAsset(positional(rest)[0]));
       case "similar": return print(await similarAssets(worker.db, positional(rest)[0], { limit: Number(option(rest, "--limit", 12)) }));

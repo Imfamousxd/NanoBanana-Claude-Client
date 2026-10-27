@@ -151,10 +151,25 @@ export async function resolveProductReferences(db, graph, root, { brand = null, 
   // The reviewed catalog first (knowledge/skus/catalog.<brand>.json): a person confirmed which folder is which
   // SKU line, names carry the state and generation, previous designs are marked. Fuzzy search only when the
   // request names nothing the catalog knows.
-  const catalogBrand = String(brand || "").replace(/^brand\./, "").split("-")[0];
+  // Per brand (engine/skus/brand-config.mjs): "brand.dialed-moods" → catalog.dialed-moods.json (it used to be cut to
+  // "dialed", so no Dialed brand ever reached its catalog). A catalog marked reviewed:false (built from folders by
+  // the matcher, nobody confirmed it) is only a fallback when the fuzzy search below finds nothing.
   let catalogHit = null;
-  try { const { loadCatalog, catalogLookup } = await import("../skus/catalog.mjs"); const catalog = catalogBrand ? loadCatalog(root, catalogBrand) : null; catalogHit = catalog ? catalogLookup(catalog, product, intent) : null; } catch { catalogHit = null; }
-  if (catalogHit && (catalogHit.item ? catalogHit.item.assets.length : catalogHit.line.items.some((i) => i.assets.length))) {
+  let catalogReviewed = true;
+  try {
+    const { loadCatalog, catalogLookup } = await import("../skus/catalog.mjs");
+    const { catalogKeyOf } = await import("../skus/brand-config.mjs");
+    const catalogBrand = brand ? catalogKeyOf(brand) : null;
+    const catalog = catalogBrand ? loadCatalog(root, catalogBrand) : null;
+    catalogReviewed = catalog ? catalog.reviewed !== false : true;
+    catalogHit = catalog ? catalogLookup(catalog, product, intent) : null;
+  } catch { catalogHit = null; }
+  const catalogUsable = catalogHit && (catalogHit.item ? catalogHit.item.assets.length : catalogHit.line.items.some((i) => i.assets.length));
+  if (catalogUsable && !catalogReviewed) {
+    const fuzzy = await fuzzyProductReferences(db, root, graph, { brand, product, intent, limit, needles });
+    if (fuzzy.kit) return fuzzy;
+  }
+  if (catalogUsable) {
     const entries = catalogHit.item ? catalogHit.item.assets : catalogHit.line.items.flatMap((i) => i.assets);
     const current = entries.filter((e) => e.current); const use = current.length ? current : entries;
     const { rows } = await db.query(`select id, source_id, path, title, class, subclass, product, quality, reference_roles, has_alpha, width, height, proxies, flags, analysis, verdict from dam.assets where id = any($1::uuid[]) and deleted_at is null`, [use.map((e) => e.id)]);
@@ -163,10 +178,15 @@ export async function resolveProductReferences(db, graph, root, { brand = null, 
     const tag = (item) => { const m = meta.get(item.id); return m ? { ...item, generation: m.generation, designTag: m.designTag, current: m.current, previous: m.previous } : item; };
     for (const key of ["recommended", "identity", "device", "packaging", "cutout", "label", "lineup", "avoid"]) result.kit[key] = result.kit[key].map(tag);
     for (const key of Object.keys(result.kit.angles)) result.kit.angles[key] = tag(result.kit.angles[key]);
-    result.catalog = { line: catalogHit.line.name, lineId: catalogHit.line.id, market: catalogHit.line.market, generation: catalogHit.line.generation, flavour: catalogHit.item?.name || null, sku: catalogHit.item?.sku || null, usedPreviousDesign: !current.length, alternatives: catalogHit.alternatives };
+    result.catalog = { line: catalogHit.line.name, lineId: catalogHit.line.id, market: catalogHit.line.market, generation: catalogHit.line.generation, flavour: catalogHit.item?.name || null, sku: catalogHit.item?.sku || null, usedPreviousDesign: !current.length, alternatives: catalogHit.alternatives, ...(catalogReviewed ? {} : { reviewed: false }) };
     result.product = catalogHit.item ? `${catalogHit.line.name} — ${catalogHit.item.name}` : catalogHit.line.name;
     return result;
   }
+  return fuzzyProductReferences(db, root, graph, { brand, product, intent, limit, needles });
+}
+
+/** Library-wide fuzzy match on product / title / path / render folder facts (no catalog). */
+async function fuzzyProductReferences(db, root, graph, { brand, product, intent, limit, needles }) {
   const searchTerms = [...new Set(needles.map((needle) => (stripLineWords(needle).length >= 3 ? stripLineWords(needle) : needle)))];
   const params = [searchTerms.map((needle) => `%${needle}%`)];
   const brandClause = brand ? (params.push(brand), ` and brand = $${params.length}`) : "";

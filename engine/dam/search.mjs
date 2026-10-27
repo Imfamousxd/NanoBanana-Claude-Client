@@ -83,8 +83,22 @@ export function parseQuery(query, graph, products = []) {
   return { filters, residual: residual.trim(), matchedTerms };
 }
 
-function whereClause(filters, params, { includeDeleted = false } = {}) {
-  const clauses = ["status in ('analyzed','embedded')"];
+const PATH_STOPWORDS = new Set(["the", "and", "for", "with", "from", "that", "this", "show", "find", "all", "any", "files", "file", "photo", "photos", "image", "images", "video", "videos"]);
+/** Words of a query worth matching against file names and paths (≥ 3 chars, no stop words, at most 6). */
+export function pathQueryWords(text) {
+  return [...new Set(String(text || "").toLowerCase().split(/[^a-z0-9.+-]+/).filter((word) => word.length >= 3 && !PATH_STOPWORDS.has(word)))].slice(0, 6);
+}
+
+/** Filters only an analysis can answer; an un-analysed asset can never satisfy them. */
+const ANALYSIS_ONLY_FILTERS = ["product", "class", "form", "people", "realHuman", "generated", "photograph", "roles", "minQuality"];
+export function pathPassAllowed(filters) {
+  return !ANALYSIS_ONLY_FILTERS.some((key) => filters[key] !== undefined && filters[key] !== null && !(Array.isArray(filters[key]) && !filters[key].length));
+}
+
+function whereClause(filters, params, { includeDeleted = false, unanalysed = false } = {}) {
+  // Un-analysed rows (discovered/probed) carry the folder's brand since discovery, their name and path in the
+  // tsvector, and probe facts (orientation, alpha, duration); nothing else.
+  const clauses = [unanalysed ? "status in ('discovered','probed')" : "status in ('analyzed','embedded')"];
   if (!includeDeleted) clauses.push("deleted_at is null");
   clauses.push("duplicate_of is null");
   const add = (sql, value) => { params.push(value); clauses.push(sql.replace("?", `$${params.length}`)); };
@@ -109,6 +123,8 @@ function whereClause(filters, params, { includeDeleted = false } = {}) {
 }
 
 const SELECT = "id, source_id, path, name, kind, brand, class, subclass, product, title, summary, tags, reference_roles, quality, orientation, width, height, duration_s, people_count, is_real_human, proxies, flags, analyzed_at";
+/** The same columns qualified with a table alias — required in any self-join (dam.assets a, dam.assets b). */
+export const selectColumns = (alias) => SELECT.split(", ").map((column) => `${alias}.${column}`).join(", ");
 
 export async function searchAssets(db, graph, query, { filters: extra = {}, limit = 20, rerank = false, config = null, products = [] } = {}) {
   const parsed = parseQuery(query, graph, products);
@@ -140,6 +156,20 @@ export async function searchAssets(db, graph, query, { filters: extra = {}, limi
     const { rows } = await db.query(`select ${SELECT}, ts_rank_cd(tsv, websearch_to_tsquery('english', $${params.length})) as rank
       from dam.assets where ${where} and tsv @@ websearch_to_tsquery('english', $${params.length}) order by rank desc limit 60`, params);
     rows.forEach((row, index) => add(row, "lexical", index, { rank_cd: Number(row.rank).toFixed(3) }));
+  }
+  // 1b. un-analysed assets by path / file name. The hard brand filter works on them because discovery writes the
+  // folder's brand (flags.brand_basis = 'folder'); they rank after analysed hits. The tsvector cannot be used
+  // here: Postgres' parser swallows a path ("edit/prerends/stevejobs_draft_3.mp4") as ONE token, so every query
+  // word must appear as a substring of the name or path instead (pg_trgm indexes the name).
+  const pathWords = pathQueryWords(text);
+  if (pathPassAllowed(filters) && pathWords.length) {
+    const params = [];
+    const where = whereClause(filters, params, { unanalysed: true });
+    params.push(pathWords.map((word) => `%${word}%`));
+    const words = params.length;
+    const { rows } = await db.query(`select ${SELECT}, (select count(*) from unnest($${words}::text[]) w where name ilike w)::int as in_name
+      from dam.assets where ${where} and (name || ' ' || path) ilike all($${words}::text[]) order by in_name desc, modified_at desc nulls last limit 30`, params);
+    rows.forEach((row, index) => add(row, "path", index + 10, { unanalysed: true, inName: row.in_name }));
   }
   // 2. vector (document + visual)
   let queryVector = null;
@@ -229,7 +259,10 @@ export async function searchAssets(db, graph, query, { filters: extra = {}, limi
 
 /** Nearest neighbours of an asset by visual embedding (siblings of a packshot, takes of a shot…). */
 export async function similarAssets(db, assetId, { limit = 12, column = "embedding_visual" } = {}) {
-  const { rows } = await db.query(`select ${SELECT}, 1 - (a.${column} <=> b.${column}) as similarity from dam.assets a, dam.assets b
+  // Every column is qualified: unqualified "id" in this self-join made /api/asset/:id answer HTTP 500
+  // ("column reference id is ambiguous") for every asset with a visual embedding.
+  if (!["embedding_visual", "embedding_text"].includes(column)) throw new Error(`similarAssets: unknown column ${column}`);
+  const { rows } = await db.query(`select ${selectColumns("a")}, 1 - (a.${column} <=> b.${column}) as similarity from dam.assets a, dam.assets b
     where b.id = $1 and a.id <> b.id and a.${column} is not null and b.${column} is not null and a.deleted_at is null
     order by a.${column} <=> b.${column} limit $2`, [assetId, limit]);
   return rows.map((row) => ({ ...row, similarity: Number(row.similarity).toFixed(3) }));

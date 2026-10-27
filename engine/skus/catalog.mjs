@@ -6,18 +6,30 @@
 // (devices, group shots, badges, Moods…). Nothing here calls a model; rebuild with `skus catalog`.
 import fs from "node:fs";
 import path from "node:path";
-import { computeCoverage, loadLibrary, indexFolderMap, folderPathOf, previousDesignOf, deviceIterationOf, deviceGenerationOf, compositionLabel } from "./coverage.mjs";
+import { computeCoverage, loadLibrary, indexFolderMap, folderPathOf, previousDesignOf, deviceIterationOf, deviceGenerationOf, compositionLabel, useBrand } from "./coverage.mjs";
+import { brandCatalogConfig, catalogKeyOf, registryFileOf } from "./brand-config.mjs";
 
-const REGISTRY_FILE = { muha: "muha-meds" };
-export function catalogFile(root, brand) { return path.join(root, "knowledge", "skus", `catalog.${brand}.json`); }
+/** knowledge/skus/catalog.<key>.json — `brand` may be the key ("muha") or the brand id ("brand.dialed-moods"). */
+export function catalogFile(root, brand) { return path.join(root, "knowledge", "skus", `catalog.${catalogKeyOf(brand)}.json`); }
 export function loadCatalog(root, brand) { const file = catalogFile(root, brand); return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8")) : null; }
 
-export function buildCatalog(root, { brand = "muha", libraryFile }) {
-  const registry = JSON.parse(fs.readFileSync(path.join(root, "knowledge", "skus", `${REGISTRY_FILE[brand] || brand}.json`), "utf8"));
-  const map = JSON.parse(fs.readFileSync(path.join(root, "knowledge", "skus", `folder-map.${brand}.json`), "utf8"));
+export function buildCatalog(root, { brand = "muha", libraryFile, library: givenLibrary = null, write = true }) {
+  brand = catalogKeyOf(brand);
+  const config = brandCatalogConfig(brand);
+  useBrand(brand);
+  const registryPath = path.join(root, "knowledge", "skus", `${registryFileOf(brand)}.json`);
+  if (!config?.registry || !fs.existsSync(registryPath)) {
+    // No SKU book for this brand: the catalog comes from the render folders + knowledge/products/<brand>.json.
+    return import("./folder-catalog.mjs").then(({ buildFolderCatalog }) => buildFolderCatalog(root, { brand, library: givenLibrary || loadLibrary(libraryFile, brand), write }));
+  }
+  const registry = JSON.parse(fs.readFileSync(registryPath, "utf8"));
+  // The folder map (a person's decision per folder) is optional: without it the catalog is the matcher's
+  // proposal and is marked unreviewed.
+  const mapPath = path.join(root, "knowledge", "skus", `folder-map.${brand}.json`);
+  const map = fs.existsSync(mapPath) ? JSON.parse(fs.readFileSync(mapPath, "utf8")) : { scope: config?.scopeLabel || "all", folders: [] };
   const folderByPath = new Map(map.folders.map((f) => [f.path, f]));
   indexFolderMap(map);
-  const library = loadLibrary(libraryFile, brand);
+  const library = givenLibrary ? givenLibrary.filter((asset) => !asset.brand || asset.brand === `brand.${brand}`) : loadLibrary(libraryFile, brand);
   const coverage = computeCoverage(registry, library);
   const byId = new Map(library.map((a) => [a.id, a]));
   const assetEntry = (a, category) => {
@@ -37,9 +49,11 @@ export function buildCatalog(root, { brand = "muha", libraryFile }) {
     return { id: line.id, name: line.name || line.line, title: line.line, market: line.market || null, category: line.category, format: line.format || null, generation: line.generation || null, variant: line.variant || null, skuBlock: line.skuBlock || null, mergedFrom: line.mergedFrom || [], folders, items, covered: items.filter((i) => i.assets.length).length };
   });
   const groups = map.folders.filter((f) => !f.lines.length && (f.kind || (f.decision && f.decision.verdict === "ok" && !f.status))).map((f) => ({ path: f.path, kind: f.kind || null, designTag: f.designTag || null, generation: f.generation ?? null, files: f.files, status: f.status || null, assets: library.filter((a) => folderPathOf(a) === f.path).map((a) => assetEntry(a, f.path.split("/")[1] || "")) }));
-  const catalog = { brand, builtAt: new Date().toISOString(), scope: map.scope, lines, groups, totals: { lines: lines.length, items: lines.reduce((n, l) => n + l.items.length, 0), itemsWithAssets: lines.reduce((n, l) => n + l.covered, 0), assetsOnLines: new Set(Object.keys(coverage.assignments)).size, groups: groups.length } };
-  fs.writeFileSync(catalogFile(root, brand), JSON.stringify(catalog, null, 1) + "\n");
-  return { file: path.relative(root, catalogFile(root, brand)), ...catalog.totals };
+  const decided = map.folders.filter((f) => f.decision && f.decision.verdict).length;
+  const review = { folderMap: map.folders.length > 0, foldersDecided: decided, folders: map.folders.length, basis: map.folders.length ? "SKU book + reviewed folder map" : "SKU book + automatic matcher (no folder review yet)" };
+  const catalog = { brand, builtAt: new Date().toISOString(), scope: map.scope, ...(config && !config.reviewed ? { reviewed: decided > 0 && decided === map.folders.length, review } : {}), lines, groups, totals: { lines: lines.length, items: lines.reduce((n, l) => n + l.items.length, 0), itemsWithAssets: lines.reduce((n, l) => n + l.covered, 0), assetsOnLines: new Set(Object.keys(coverage.assignments)).size, groups: groups.length } };
+  if (write) fs.writeFileSync(catalogFile(root, brand), JSON.stringify(catalog, null, 1) + "\n");
+  return { file: path.relative(root, catalogFile(root, brand)), written: write, ...catalog.totals, ...(catalog.review ? { review: catalog.review } : {}) };
 }
 
 const norm = (v) => String(v || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();

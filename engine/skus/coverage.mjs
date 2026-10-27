@@ -4,6 +4,13 @@
 // the folder facts; every score is explainable.
 import fs from "node:fs";
 import path from "node:path";
+import { BRAND_CATALOGS, brandCatalogConfig, registryFileOf } from "./brand-config.mjs";
+
+// The brand whose rules apply (device-generation dating, …). Muha by default, so every caller that predates the
+// per-brand configs behaves exactly as before; computeCoverage / buildCatalog switch it from the registry's brand.
+let ACTIVE = BRAND_CATALOGS.muha;
+export function useBrand(brand) { ACTIVE = brandCatalogConfig(brand) || ACTIVE; return ACTIVE; }
+export function activeBrand() { return ACTIVE; }
 
 // The book line's display name always carries the state: "CA 1G Distillate Disposables", "HEMP 2g THCA Carts".
 export function lineName(line) { return line.name || [line.market, line.line].filter(Boolean).join(" "); }
@@ -109,6 +116,7 @@ const designStem = (folder) => norm(String(folder).replace(/([A-Za-z])(?=\d)|(\d
 // An explicit "Gen N" in a folder name always wins. Folders older than Nov 2024 count as Gen 1.
 const OWN_DEVICE_RE = /\b(dual|magnetic|moods|mavricks?|pod)\b/i;
 export function deviceGenerationOf(pathOrFolder) {
+  if (!ACTIVE.deviceGenerations) return null; // Muha's disposable generations only
   const dirs = String(pathOrFolder || "").split("/"); const inDisposables = dirs.some((d) => /^disposables$/i.test(d.trim()));
   if (!inDisposables) return null;
   if (dirs.some((d) => OWN_DEVICE_RE.test(d.replace(/_/g, " ")))) return null;
@@ -183,7 +191,8 @@ export function indexFolderMap(map) { FOLDER_DECISIONS = new Map((map?.folders |
 export function folderPathOf(asset) { const d = designFolderOf(asset); return d ? (d.parent ? `${d.parent}/${d.folder}` : d.folder) : path.dirname(String(asset.path || "")); }
 export function folderDecisionOf(asset) { return FOLDER_DECISIONS.size ? FOLDER_DECISIONS.get(folderPathOf(asset)) || null : null; }
 // Library scope: Muha product renders are only what lives under the brand's top-level Renders/ folder.
-export function inScope(asset) { return !/muha/.test(String(asset.brand || "")) || String(asset.path || "").startsWith("Renders/"); }
+// The scope is per brand (brand-config.mjs); a brand without a config keeps everything.
+export function inScope(asset) { const config = brandCatalogConfig(asset.brand); return config?.scope ? config.scope(asset) : true; }
 export function loadLibrary(libraryFile, brand) { return JSON.parse(fs.readFileSync(libraryFile, "utf8")).filter((asset) => asset.brand === `brand.${brand}` && inScope(asset)); }
 export function previousDesignOf(asset) {
   const working = workingFileOf(asset); if (working) return working;
@@ -221,7 +230,7 @@ export function scoreMatch(asset, item, line, prepared = assetText(asset)) {
   // line that names one of them (the Cookies collab, the Dual disposables…) only takes renders from that folder
   // or renders whose own text names it: a plain 1G Distillate Blue Slushie is not the Cookies-collab Blue Slushie.
   const dirSegments = String(asset.path || "").split("/").slice(0, -1).map(splitWords); // directories only: the file name carries the flavour ("Mango Madness")
-  for (const [seg, re] of (locked || (asset.brand && !/muha/.test(asset.brand)) ? [] : LINE_FOLDERS)) {
+  for (const [seg, re] of (locked || (asset.brand && !brandCatalogConfig(asset.brand)?.lineFolders) ? [] : LINE_FOLDERS)) {
     const inFolder = dirSegments.some((d) => seg.test(d));
     const lineWants = re.test(`${line.line} ${line.section || ""}`);
     if (inFolder && !lineWants) return why(asset, "line folder, line does not want it");
@@ -310,6 +319,7 @@ function multiFlavourPack(asset) {
 let LONG_NAMES = [];
 export function indexRegistry(registry) { MULTI_CACHE.clear(); LONG_NAMES = []; KNOWN_NAMES = [...new Set(registry.lines.flatMap((line) => line.items.map((item) => norm(item.name).replace(/\b(i|s|h|indica|sativa|hybrid|collab)\b/g, "").trim())).filter((name) => name.length >= 3))]; LONG_NAMES = KNOWN_NAMES.filter((name) => name.length >= 5).map((name) => " " + name + " "); return KNOWN_NAMES; }
 export function computeCoverage(registry, library, { threshold = 3 } = {}) {
+  if (registry.brand) useBrand(registry.brand);
   indexDesigns(library);
   indexRegistry(registry);
   const prepared = library.map((asset) => ({ asset, text: assetText(asset) }));
@@ -369,7 +379,8 @@ export function coverageText(coverage) {
 }
 
 export function runCoverage(root, { brand, libraryFile }) {
-  const registryFile = path.join(root, "knowledge", "skus", `${{ muha: "muha-meds" }[brand] || brand}.json`);
+  useBrand(brand);
+  const registryFile = path.join(root, "knowledge", "skus", `${registryFileOf(brand)}.json`);
   const registry = JSON.parse(fs.readFileSync(registryFile, "utf8"));
   const library = loadLibrary(libraryFile, brand);
   const mapFile = path.join(root, "knowledge", "skus", `folder-map.${brand}.json`);
