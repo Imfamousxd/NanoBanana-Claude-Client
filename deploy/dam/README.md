@@ -22,6 +22,10 @@ One long-running service. It longpolls every registered Dropbox folder, and drai
 | `DAM_SPEND_CAP_USD` | Rolling 24h cap on paid calls (default 25) |
 | `DAM_CONCURRENCY` | Parallel jobs (default 2; each video job holds one ffmpeg + one model call) |
 | `DAM_VISION_MODEL`, `DAM_EMBED_MODEL`, `DAM_TRANSCRIBE_MODEL` | Model overrides; changing one is followed by `dam reanalyze` |
+| `DAM_WATCHDOG_MINUTES` | Liveness: exit 1 (Railway restarts, `restartPolicyType = "ALWAYS"`) when the queue loop has not heartbeated for this long (default 15; 0 disables) |
+| `DAM_RESCAN_HOURS` | Safety-net incremental discover per source when its last sync is older than this (default 6) |
+| `DAM_DROPBOX_RPC_TIMEOUT_S`, `DAM_DROPBOX_CONTENT_TIMEOUT_S`, `DAM_DROPBOX_DOWNLOAD_TIMEOUT_S` | Dropbox request deadlines (defaults 60 / 90 / 1800 s; longpoll = its timeout + 120 s) |
+| `DAM_PG_CONNECT_TIMEOUT_MS` | Max wait for a database client (default 30000); queries also have a 150 s client-side deadline |
 
 4. First boot: `npm run content -- dam init-db` once from a laptop (creates `dam.*`), then the service
    registers the default brand folders and does a full discover of each.

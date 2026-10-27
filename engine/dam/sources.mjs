@@ -31,9 +31,18 @@ export function* walkLocal(rootDir) {
   }
 }
 
+/** A Dropbox path relative to a source root. Dropbox paths are case-insensitive, so the prefix match is too. */
+export function relativeToRoot(entryPath, sourceRoot) {
+  const root = String(sourceRoot || "").replace(/\/+$/, "");
+  const value = String(entryPath || "");
+  if (root && value.toLowerCase().startsWith(root.toLowerCase() + "/")) return value.slice(root.length + 1);
+  if (root && value.toLowerCase() === root.toLowerCase()) return "";
+  return value.replace(/^\//, "");
+}
+
 /** Dropbox entries relative to the source root, filtered to media we index. */
 export function dropboxEntryToDiscovery(entry, sourceRoot) {
-  const relative = entry.path.startsWith(sourceRoot) ? entry.path.slice(sourceRoot.length).replace(/^\//, "") : entry.path.replace(/^\//, "");
+  const relative = relativeToRoot(entry.path, sourceRoot);
   if (entry.type === "deleted") return { type: "deleted", path: relative };
   if (entry.type !== "file") return null;
   if (HIDDEN.test(relative) || isExcludedPath(relative)) return null;

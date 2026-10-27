@@ -12,7 +12,11 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 export class DamDb {
   constructor(connectionString) {
     if (!connectionString) throw new EngineError("DAM_NO_DATABASE", "Set DAM_DATABASE_URL (or DIRECT_URL/DATABASE_URL) to a Postgres with pgvector.");
-    this.pool = new pg.Pool({ connectionString, ssl: /localhost|127\.0\.0\.1/.test(connectionString) ? undefined : { rejectUnauthorized: false }, max: Number(process.env.DAM_PG_POOL || 5), idleTimeoutMillis: 20_000, statement_timeout: 120_000 });
+    this.pool = new pg.Pool({ connectionString, ssl: /localhost|127\.0\.0\.1/.test(connectionString) ? undefined : { rejectUnauthorized: false }, max: Number(process.env.DAM_PG_POOL || 5), idleTimeoutMillis: 20_000, statement_timeout: 120_000,
+      // A dead pooler connection must fail, not hang: wait at most 30 s for a client, 150 s for any query
+      // (client-side, on top of the server's statement_timeout), and keep TCP alive through the pooler.
+      connectionTimeoutMillis: Number(process.env.DAM_PG_CONNECT_TIMEOUT_MS || 30_000), query_timeout: 150_000, keepAlive: true });
+    this.pool.on("error", (error) => console.error("[dam] pg pool error (idle client dropped):", error.message));
   }
 
   query(text, params) { return this.pool.query(text, params); }
@@ -31,11 +35,28 @@ export class DamDb {
   }
 
   // ---- sources ----
+  /** Explicit registration (add-source): sets root/enabled. A changed root drops the cursor (it belongs to the old root). */
   async upsertSource({ id, kind, root, brandHint = null, enabled = true }) {
     await this.pool.query(`insert into dam.sources (id, kind, root, brand_hint, enabled) values ($1,$2,$3,$4,$5)
-      on conflict (id) do update set kind = excluded.kind, root = excluded.root, brand_hint = coalesce(excluded.brand_hint, dam.sources.brand_hint), enabled = excluded.enabled`, [id, kind, root, brandHint, enabled]);
+      on conflict (id) do update set kind = excluded.kind, root = excluded.root, brand_hint = coalesce(excluded.brand_hint, dam.sources.brand_hint), enabled = excluded.enabled,
+        cursor = case when dam.sources.root is distinct from excluded.root then null else dam.sources.cursor end,
+        last_error = case when dam.sources.root is distinct from excluded.root then null else dam.sources.last_error end`, [id, kind, root, brandHint, enabled]);
     return this.getSource(id);
   }
+  /**
+   * Default registration (every hosted start): adds missing sources and fills a missing brand hint, but never
+   * reverts a root the worker re-resolved, never re-enables a source it disabled, and never drops a cursor.
+   */
+  async ensureSource({ id, kind, root, brandHint = null }) {
+    await this.pool.query(`insert into dam.sources (id, kind, root, brand_hint) values ($1,$2,$3,$4)
+      on conflict (id) do update set brand_hint = coalesce(dam.sources.brand_hint, excluded.brand_hint)`, [id, kind, root, brandHint]);
+    return this.getSource(id);
+  }
+  async clearSourceCursor(id, reason = null) { await this.pool.query("update dam.sources set cursor = null, last_error = $2 where id = $1", [id, reason ? String(reason).slice(0, 2000) : null]); }
+  async moveSourceRoot(id, root, note) { await this.pool.query("update dam.sources set root = $2, cursor = null, last_error = $3 where id = $1", [id, root, String(note).slice(0, 2000)]); return this.getSource(id); }
+  async disableSource(id, error) { await this.pool.query("update dam.sources set enabled = false, last_error = $2 where id = $1", [id, String(error).slice(0, 2000)]); }
+  /** True when a discover for this source is already queued or running (the watcher must not pile up more). */
+  async hasOpenDiscover(sourceId) { return (await this.pool.query("select 1 from dam.jobs where kind = 'discover' and source_id = $1 and status in ('pending','running') limit 1", [sourceId])).rowCount > 0; }
   async getSource(id) { return (await this.pool.query("select * from dam.sources where id = $1", [id])).rows[0] || null; }
   async listSources() { return (await this.pool.query("select * from dam.sources order by id")).rows; }
   async setSourceCursor(id, cursor) { await this.pool.query("update dam.sources set cursor = $2, last_sync_at = now(), last_error = null where id = $1", [id, cursor]); }
@@ -66,20 +87,25 @@ export class DamDb {
       cols.external_id.push(item.externalId || null); cols.path.push(item.relativePath); cols.name.push(item.name); cols.extension.push(item.extension);
       cols.kind.push(item.kind); cols.bytes.push(item.bytes ?? null); cols.modified_at.push(item.modifiedAt || null); cols.hint.push(item.contentHashHint || null);
       (cols.media ??= []).push(item.media ? JSON.stringify(item.media) : null);
+      (cols.brand ??= []).push(item.brand || null);
     }
     const { rows } = await this.pool.query(`
-      insert into dam.assets (source_id, external_id, path, name, extension, kind, bytes, modified_at, deleted_at, flags)
-      select $1, e, p, n, x, k, b, m, null, jsonb_build_object('source_hash', h) || coalesce(jsonb_build_object('media', md::jsonb), '{}'::jsonb)
-      from unnest($2::text[], $3::text[], $4::text[], $5::text[], $6::text[], $7::bigint[], $8::timestamptz[], $9::text[], $10::text[]) as t(e, p, n, x, k, b, m, h, md)
+      insert into dam.assets (source_id, external_id, path, name, extension, kind, bytes, modified_at, deleted_at, brand, flags)
+      select $1, e, p, n, x, k, b, m, null, br, jsonb_build_object('source_hash', h) || coalesce(jsonb_build_object('media', md::jsonb), '{}'::jsonb)
+        || case when br is not null then '{"brand_basis":"folder"}'::jsonb else '{}'::jsonb end
+      from unnest($2::text[], $3::text[], $4::text[], $5::text[], $6::text[], $7::bigint[], $8::timestamptz[], $9::text[], $10::text[], $11::text[]) as t(e, p, n, x, k, b, m, h, md, br)
       on conflict (source_id, path) do update set
+        -- Brand at discovery, free: the folder's brand fills an empty brand; a brand the picture decided is kept.
+        brand = coalesce(dam.assets.brand, excluded.brand),
         external_id = coalesce(excluded.external_id, dam.assets.external_id),
         name = excluded.name, extension = excluded.extension, kind = excluded.kind, bytes = excluded.bytes,
         modified_at = excluded.modified_at, deleted_at = null,
-        flags = dam.assets.flags || jsonb_build_object('source_hash', excluded.flags->>'source_hash') || coalesce(jsonb_build_object('media', excluded.flags->'media'), '{}'::jsonb),
+        flags = dam.assets.flags || jsonb_build_object('source_hash', excluded.flags->>'source_hash') || coalesce(jsonb_build_object('media', excluded.flags->'media'), '{}'::jsonb)
+          || case when dam.assets.brand is null and excluded.brand is not null then '{"brand_basis":"folder"}'::jsonb else '{}'::jsonb end,
         status = case when dam.assets.bytes is distinct from excluded.bytes or dam.assets.modified_at is distinct from excluded.modified_at
                         or (dam.assets.flags->>'source_hash') is distinct from (excluded.flags->>'source_hash') then 'discovered' else dam.assets.status end
       returning id, path, kind, status, (xmax = 0) as inserted`,
-      [sourceId, cols.external_id, cols.path, cols.name, cols.extension, cols.kind, cols.bytes, cols.modified_at, cols.hint, cols.media || items.map(() => null)]);
+      [sourceId, cols.external_id, cols.path, cols.name, cols.extension, cols.kind, cols.bytes, cols.modified_at, cols.hint, cols.media || items.map(() => null), cols.brand || items.map(() => null)]);
     return rows;
   }
 
@@ -93,6 +119,15 @@ export class DamDb {
   async markDeletedBatch(sourceId, paths) {
     if (!paths.length) return;
     await this.pool.query("update dam.assets set deleted_at = now() where source_id = $1 and path = any($2::text[])", [sourceId, paths]);
+  }
+
+  /**
+   * After a COMPLETE full listing: every live asset of the source whose path was not listed is gone (deleted,
+   * or moved out of the root). Returns the number tombstoned. Never call it after a partial walk.
+   */
+  async reconcileDeleted(sourceId, seenPaths) {
+    const { rowCount } = await this.pool.query("update dam.assets set deleted_at = now() where source_id = $1 and deleted_at is null and not (path = any($2::text[]))", [sourceId, [...seenPaths]]);
+    return rowCount;
   }
 
   async markDeleted(sourceId, relativePath) { await this.pool.query("update dam.assets set deleted_at = now() where source_id = $1 and path = $2", [sourceId, relativePath]); }
@@ -110,10 +145,14 @@ export class DamDb {
 
   async saveAnalysis(id, { record, analyzer, searchDoc, ocrText, subclass = null }) {
     const flags = { watermarked: Boolean(record.usability?.watermarked), low_resolution: Boolean(record.usability?.low_resolution), outdated_or_wrong: Boolean(record.usability?.outdated_or_wrong) };
+    // The picture outranks the folder (a file can be misfiled); without a brand read the folder's brand stays.
+    if (record.brand) flags.brand_basis = "vision";
     await this.pool.query(`update dam.assets set
-        brand = $2, brand_confidence = $3, class = $4, subclass = $5, product = $6, product_confidence = $7,
+        brand = coalesce($2, brand), brand_confidence = $3, class = $4, subclass = $5, product = $6, product_confidence = $7,
         people_count = $8, is_real_human = $9, ocr_text = $10, title = $11, summary = $12, search_doc = $13,
-        tags = $14, reference_roles = $15, quality = $16, flags = flags || $17::jsonb, analysis = $18, analyzer = $19,
+        tags = $14, reference_roles = $15, quality = $16,
+        flags = flags || $17::jsonb || case when $2::text is not null and brand is not null and brand <> $2::text then jsonb_build_object('brand_folder', brand) else '{}'::jsonb end,
+        analysis = $18, analyzer = $19,
         status = 'analyzed', analyzed_at = now(), error = null
       where id = $1`, [id, record.brand || null, record.brand_confidence ?? null, record.class, subclass, record.product || null, record.product_confidence ?? null,
       record.people?.count ?? record.creator?.count ?? null, record.is_real_human_creator ?? null, ocrText || null, record.title, record.summary, searchDoc,

@@ -5,29 +5,31 @@
 import fs from "node:fs";
 import path from "node:path";
 import { loadGraph, resolveBrand } from "../knowledge/graph.mjs";
-import { damConfig, DEFAULT_SCOPES, estimateUsd } from "./config.mjs";
+import { damConfig, DEFAULT_SCOPES, estimateUsd, brandForPath } from "./config.mjs";
 import { DamDb } from "./db.mjs";
-import { DropboxClient } from "./dropbox.mjs";
+import { DropboxClient, DropboxApiError } from "./dropbox.mjs";
 import { analyzeImageFile, analyzeVideoFile, analyzeVideoLight, brandCards, shotsFromMeasured } from "./analyze.mjs";
 import { makeThumb, makeVideoProxy, probeFile, ratioLabel } from "./probe.mjs";
 import { embed } from "./providers/embed.mjs";
 import { ProxyStore } from "./storage.mjs";
-import { dropboxEntryToDiscovery, materialize, walkLocal } from "./sources.mjs";
+import { dropboxEntryToDiscovery, materialize, walkLocal, relativeToRoot } from "./sources.mjs";
 import { isAnalyzableKind } from "./taxonomy.mjs";
 import { isRenderCandidate, renderPathFacts, brandForSource } from "./product-refs.mjs";
 import { sleep } from "../core/http.mjs";
 
 export class DamWorker {
-  constructor(root, { config = damConfig(root), log = (...args) => console.error("[dam]", ...args) } = {}) {
+  constructor(root, { config = damConfig(root), log = (...args) => console.error("[dam]", ...args), db = null, dropbox = null, graph = null, sleepImpl = sleep } = {}) {
     this.root = root;
     this.config = config;
     this.log = log;
-    this.db = new DamDb(config.databaseUrl);
-    this.graph = loadGraph(root);
+    this.db = db || new DamDb(config.databaseUrl);
+    this.graph = graph || loadGraph(root);
     this.cards = brandCards(root, this.graph);
     this.store = new ProxyStore({ ...config.storage, localRoot: config.workDir });
-    this.dropbox = null;
+    this.dropbox = dropbox;
     this.stopped = false;
+    this.lastProgressAt = Date.now();
+    this.sleep = sleepImpl;
     fs.mkdirSync(config.workDir, { recursive: true });
   }
 
@@ -40,7 +42,9 @@ export class DamWorker {
 
   // ---------- sources ----------
   async registerDefaultScopes() {
-    for (const scope of DEFAULT_SCOPES) await this.db.upsertSource({ id: scope.id, kind: "dropbox", root: scope.root, brandHint: scope.brand });
+    // ensureSource, not upsertSource: a hosted restart must not revert a root discover re-resolved or re-enable
+    // a source it disabled (root missing) — that is how 1,706 dead discover jobs piled up.
+    for (const scope of DEFAULT_SCOPES) await this.db.ensureSource({ id: scope.id, kind: "dropbox", root: scope.root, brandHint: scope.brand });
     return this.db.listSources();
   }
 
@@ -57,18 +61,31 @@ export class DamWorker {
   }
 
   // ---------- discover ----------
-  /** Walk a source (full, or incremental from its cursor) and upsert every media file; queue probes. */
+  /**
+   * Walk a source (full, or incremental from its cursor) and upsert every media file; queue probes.
+   *
+   * Recovery, so a source never produces dead jobs forever:
+   *  - an invalid cursor (`reset`) or a cursor whose root vanished (`path/not_found` on list_folder/continue)
+   *    drops the cursor and lists the root from scratch;
+   *  - a COMPLETE full listing tombstones every asset it did not see (deleted-file reconciliation without a
+   *    cursor's delete entries);
+   *  - a root that no longer exists is re-resolved (renamed in place, case/punctuation-insensitive, or moved:
+   *    Dropbox search by its name); a unique match outside every other source becomes the new root, else the
+   *    source is disabled with last_error "root missing: …" and its files are tombstoned.
+   */
   async discover(sourceId, { full = false } = {}) {
-    const source = await this.db.getSource(sourceId);
+    let source = await this.db.getSource(sourceId);
     if (!source) throw new Error(`unknown source ${sourceId}`);
+    if (!source.enabled) { this.log(`discover ${source.id}: source disabled (${source.last_error || "no reason recorded"}); skipped`); return { skipped: "source disabled", lastError: source.last_error || null }; }
     const counts = { seen: 0, new: 0, changed: 0, deleted: 0, queued: 0 };
-    const buffer = [];
-    const deleted = [];
+    let buffer = [];
+    let deleted = [];
+    let seen = new Set();
     const flush = async () => {
       if (deleted.length) { await this.db.markDeletedBatch(source.id, deleted.splice(0)); }
       if (!buffer.length) return;
       const chunk = buffer.splice(0, buffer.length);
-      const rows = await this.db.upsertDiscoveredBatch(source.id, chunk.map((item) => ({ externalId: item.externalId || null, relativePath: item.path, name: item.name, extension: path.extname(item.name).slice(1).toLowerCase(), kind: item.kind, bytes: item.bytes, modifiedAt: item.modifiedAt, contentHashHint: item.contentHashHint || null })));
+      const rows = await this.db.upsertDiscoveredBatch(source.id, chunk.map((item) => ({ externalId: item.externalId || null, relativePath: item.path, name: item.name, extension: path.extname(item.name).slice(1).toLowerCase(), kind: item.kind, bytes: item.bytes, modifiedAt: item.modifiedAt, contentHashHint: item.contentHashHint || null, media: item.media || null, brand: brandForPath(source, item.path) })));
       const images = [];
       const videos = [];
       const candidates = [];
@@ -80,7 +97,7 @@ export class DamWorker {
       }
       // Product renders are the priority: flag them at discovery so every later stage puts them first.
       if (candidates.length) {
-        await this.db.query("update dam.assets a set flags = a.flags || t.f::jsonb from unnest($1::uuid[], $2::text[]) as t(id, f) where a.id = t.id", [candidates.map((row) => row.id), candidates.map((row) => JSON.stringify({ candidate: "product-ref", render: renderPathFacts(row.path), brand_hint: brandForSource(source) }))]);
+        await this.db.query("update dam.assets a set flags = a.flags || t.f::jsonb from unnest($1::uuid[], $2::text[]) as t(id, f) where a.id = t.id", [candidates.map((row) => row.id), candidates.map((row) => JSON.stringify({ candidate: "product-ref", render: renderPathFacts(row.path), brand_hint: brandForPath(source, row.path) || brandForSource(source) }))]);
         counts.candidates = (counts.candidates || 0) + candidates.length;
       }
       // New uploads found by an incremental (cursor) scan jump the backfill queue: the library is live.
@@ -97,20 +114,99 @@ export class DamWorker {
       if (buffer.length >= 200) await flush();
     };
     if (source.kind === "local") {
-      for (const item of walkLocal(source.root)) await handle(item);
+      for (const item of walkLocal(source.root)) { seen.add(item.path); await handle(item); }
       await flush();
-    } else {
-      const dbx = this.dbx();
-      let cursor = full ? undefined : source.cursor || undefined;
+      counts.reconciled = await this.db.reconcileDeleted(source.id, seen);
+      await this.db.setSourceCursor(source.id, null);
+      this.log(`discover ${source.id}: ${JSON.stringify(counts)}`);
+      return counts;
+    }
+
+    const dbx = this.dbx();
+    /** One walk. A full walk (no cursor) records every listed path and reconciles deletions at the end. */
+    const walk = async (cursor) => {
+      const isFull = !cursor;
+      buffer = []; deleted = []; seen = new Set();
       for await (const entry of dbx.walk({ path: source.root, cursor })) {
-        if (entry.type === "cursor") { await flush(); cursor = entry.cursor; await this.db.setSourceCursor(source.id, cursor); this.log(`discover ${source.id}: ${counts.seen} seen so far`); continue; }
+        if (entry.type === "cursor") { await flush(); await this.db.setSourceCursor(source.id, entry.cursor); source.cursor = entry.cursor; this.log(`discover ${source.id}: ${counts.seen} seen so far`); continue; }
+        if (isFull && entry.type === "file") seen.add(relativeToRoot(entry.path, source.root));
         await handle(dropboxEntryToDiscovery(entry, source.root));
       }
       await flush();
+      if (isFull) counts.reconciled = await this.db.reconcileDeleted(source.id, seen);
+    };
+    const relist = async () => {
+      try { await walk(undefined); return true; }
+      catch (error) {
+        if (!(error instanceof DropboxApiError && error.notFound)) throw error;
+        // The root itself is gone: renamed or moved by the team.
+        const resolved = await this.resolveRoot(source);
+        if (resolved.root) {
+          const note = `root moved: ${source.root} → ${resolved.root} (re-resolved ${new Date().toISOString().slice(0, 10)})`;
+          this.log(`discover ${source.id}: ${note}`);
+          source = await this.db.moveSourceRoot(source.id, resolved.root, note);
+          counts.rootMovedTo = resolved.root;
+          await walk(undefined);
+          await this.db.setSourceError(source.id, note); // keep the note visible after setSourceCursor cleared it
+          return true;
+        }
+        const where = resolved.coveredBy.length ? `; it now lives at ${resolved.coveredBy.map((hit) => `${hit.path} (already covered by ${hit.source})`).join(", ")}` : resolved.candidates.length ? `; ambiguous matches: ${resolved.candidates.slice(0, 5).join(", ")}` : "; no folder with that name exists any more";
+        const message = `root missing: ${source.root}${where}. Source disabled; fix with: npm run content -- dam add-source ${source.id} --dropbox "<new root>"`;
+        this.log(`discover ${source.id}: ${message}`);
+        counts.tombstoned = await this.db.reconcileDeleted(source.id, []);
+        await this.db.disableSource(source.id, message);
+        counts.disabled = message;
+        return false;
+      }
+    };
+    const startCursor = full ? undefined : source.cursor || undefined;
+    if (!startCursor) await relist();
+    else {
+      try { await walk(startCursor); }
+      catch (error) {
+        if (!(error instanceof DropboxApiError && (error.reset || error.notFound))) throw error;
+        const reason = `cursor invalid (${error.summary || error.status}); listing the root again`;
+        this.log(`discover ${source.id}: ${reason}`);
+        await this.db.clearSourceCursor(source.id, reason);
+        source.cursor = null;
+        counts.cursorReset = error.summary || String(error.status);
+        await relist();
+      }
     }
-    await this.db.setSourceCursor(source.id, source.kind === "local" ? null : (await this.db.getSource(source.id)).cursor);
     this.log(`discover ${source.id}: ${JSON.stringify(counts)}`);
     return counts;
+  }
+
+  /**
+   * Find where a vanished Dropbox root went. Candidates: a folder in the same parent with the same name
+   * ignoring case and punctuation (renamed in place), else Dropbox search hits with that name (moved).
+   * A candidate inside (or containing) another enabled source's root is already covered and is not adopted.
+   */
+  async resolveRoot(source) {
+    const dbx = this.dbx();
+    const root = String(source.root).replace(/\/+$/, "");
+    const name = root.split("/").pop();
+    const parent = root.slice(0, root.length - name.length).replace(/\/+$/, "") || "/";
+    const key = (value) => String(value).toLowerCase().replace(/[^a-z0-9]+/g, "");
+    const candidates = new Set();
+    try { for (const child of await dbx.children(parent)) if (key(child.name) === key(name)) candidates.add(child.path); }
+    catch (error) { if (!(error instanceof DropboxApiError && error.notFound)) throw error; }
+    if (!candidates.size) for (const hit of await dbx.searchFolders(name)) if (key(hit.name) === key(name)) candidates.add(hit.path);
+    const others = (await this.db.listSources()).filter((other) => other.id !== source.id && other.kind === "dropbox" && other.enabled);
+    const inside = (child, ancestor) => { const a = String(ancestor).toLowerCase().replace(/\/+$/, ""); const c = String(child).toLowerCase(); return c === a || c.startsWith(`${a}/`); };
+    const coveredBy = [];
+    const free = [];
+    for (const candidate of candidates) {
+      const owner = others.find((other) => inside(candidate, other.root) || inside(other.root, candidate));
+      if (owner) coveredBy.push({ path: candidate, source: owner.id }); else free.push(candidate);
+    }
+    return { root: free.length === 1 ? free[0] : null, candidates: [...candidates], coveredBy };
+  }
+
+  /** Queue a discover unless one is already pending or running for the source (never pile them up). */
+  async enqueueDiscover(sourceId, { full = false, reason = null, priority = 10 } = {}) {
+    if (await this.db.hasOpenDiscover(sourceId)) return null;
+    return this.db.enqueue("discover", { sourceId, payload: { ...(full ? { full: true } : {}), ...(reason ? { reason } : {}) }, priority });
   }
 
   // ---------- probe ----------
@@ -373,8 +469,12 @@ export class DamWorker {
     const jobTimeoutMs = this.config.jobTimeoutMs;
     let claimed = 0;
     let idleSince = null;
+    const labels = new Map();
+    let lastBeat = 0;
     const runOne = async (job) => {
-      await this.db.heartbeat(this.config.workerId, `${job.kind}:${job.asset_id || job.source_id}`);
+      labels.set(job.id, `${job.kind}:${job.asset_id || job.source_id}`);
+      await this.beat(`${job.kind}:${job.asset_id || job.source_id}`);
+      lastBeat = Date.now();
       let timer = null;
       const timeout = new Promise((_, reject) => { timer = setTimeout(() => reject(new Error(`job timed out after ${Math.round(jobTimeoutMs / 1000)}s`)), jobTimeoutMs); });
       try {
@@ -393,9 +493,12 @@ export class DamWorker {
         const dead = await this.db.retryOrFail(job, error);
         if (job.asset_id) await this.db.setStatus(job.asset_id, dead ? "failed" : (await this.db.getAsset(job.asset_id))?.status || "failed", error.message);
         this.log(`${dead ? "DEAD" : "retry"} ${job.kind} ${job.asset_id || job.source_id}: ${error.message}`);
-      } finally { clearTimeout(timer); }
+      } finally { clearTimeout(timer); labels.delete(job.id); }
     };
     while (!this.stopped && claimed < maxJobs) {
+     try {
+      // Liveness: the loop writes a heartbeat at least once a minute, busy or idle; the watchdog reads it.
+      if (Date.now() - lastBeat > 60_000) { await this.beat(active.size ? `busy ${[...labels.values()].slice(0, 3).join(", ")}` : "idle", { announce: true, active: active.size, processed }); lastBeat = Date.now(); }
       const free = this.config.concurrency - active.size;
       if (free > 0) {
         if (!idleSince || Date.now() - idleSince > 5_000) {
@@ -409,35 +512,112 @@ export class DamWorker {
           }
           if (!active.size) {
             if (once) break;
-            await this.db.heartbeat(this.config.workerId, "idle");
+            await this.beat("idle");
+            lastBeat = Date.now();
           }
           idleSince = Date.now();
         }
       }
       if (active.size) await Promise.race([...active, sleep(1_000)]); else await sleep(5_000);
+     } catch (error) {
+      // A database blip (pooler restart, timeout) must not end the hosted loop; a persistent hang is the
+      // watchdog's job.
+      this.log(`queue loop error: ${error.message}; retrying in 10s`);
+      await sleep(10_000);
+     }
     }
     if (active.size) await Promise.allSettled([...active]);
     return { processed, parked };
   }
 
-  /** Long-running Dropbox watcher: one longpoll per source, each change → discover job. */
-  async watch() {
-    const sources = (await this.db.listSources()).filter((source) => source.enabled && source.kind === "dropbox");
+  /** Heartbeat row + in-process progress mark (the watchdog trusts only heartbeats that reached the database). */
+  async beat(activity, { announce = false, active = 0, processed = 0 } = {}) {
+    await this.db.heartbeat(this.config.workerId, activity);
+    this.lastProgressAt = Date.now();
+    // One log line per loop heartbeat (≤ 1/min): a hosted deployment whose logs go silent is hung, visibly.
+    if (announce) this.log(`heartbeat ${new Date(this.lastProgressAt).toISOString()} worker=${this.config.workerId} active=${active} processed=${processed} ${activity}`);
+  }
+
+  /**
+   * Liveness watchdog for the hosted worker: when the queue loop has not written a heartbeat for `minutes`, log
+   * loudly and exit 1 so the platform restarts the container (deploy/dam/start.sh prints the status). Covers a
+   * hung HTTP call, a hung database client and a wedged loop alike.
+   */
+  startWatchdog({ minutes = this.config.watchdogMinutes, exit = (code) => process.exit(code), now = () => Date.now() } = {}) {
+    if (!minutes) return null;
+    this.lastProgressAt = now();
+    this.log(`watchdog armed: exit 1 after ${minutes} min without a heartbeat`);
+    let warned = false;
+    const check = () => {
+      const stale = now() - this.lastProgressAt;
+      if (stale > (minutes * 60_000) / 2 && !warned) { warned = true; this.log(`WATCHDOG: stalled — no heartbeat for ${Math.round(stale / 60_000)} min (exit at ${minutes})`); }
+      if (stale <= (minutes * 60_000) / 2) warned = false;
+      if (stale > minutes * 60_000) {
+        this.log(`WATCHDOG: no heartbeat for ${Math.round(stale / 60_000)} min (limit ${minutes}); the worker loop is hung. Exiting 1 so the platform restarts it.`);
+        exit(1);
+        return true;
+      }
+      return false;
+    };
+    const timer = setInterval(check, Math.min(60_000, Math.max(1_000, (minutes * 60_000) / 4)));
+    timer.unref?.();
+    return { timer, check, stop: () => clearInterval(timer) };
+  }
+
+  /**
+   * Safety net: an incremental discover for every enabled Dropbox source whose last sync is older than
+   * config.rescanHours, longpoll or not. Catches changes a dead or reset longpoll missed.
+   */
+  async safetyNetOnce() {
+    const hours = this.config.rescanHours;
+    if (!hours) return [];
+    const { rows } = await this.db.query("select id from dam.sources where enabled and kind = 'dropbox' and (last_sync_at is null or last_sync_at < now() - ($1::float * interval '1 hour'))", [hours]);
+    const queued = [];
+    for (const row of rows) if (await this.enqueueDiscover(row.id, { reason: `safety-net rescan (> ${hours}h since last sync)`, priority: 15 })) queued.push(row.id);
+    if (queued.length) this.log(`safety net: queued discover for ${queued.join(", ")}`);
+    return queued;
+  }
+
+  async safetyNet({ everyMs = 10 * 60_000 } = {}) {
+    await this.sleep(Math.min(everyMs, 2 * 60_000));
+    while (!this.stopped) {
+      try { await this.safetyNetOnce(); } catch (error) { this.log(`safety net: ${error.message}`); }
+      await this.sleep(everyMs);
+    }
+  }
+
+  /**
+   * Long-running Dropbox watcher: one longpoll per source, each change → one discover job (never a second
+   * while one is open). A 409/400 from longpoll means the cursor is dead: drop it and queue a full listing
+   * (discover then re-resolves a moved root or disables the source). Disabled sources are left alone.
+   */
+  async watch({ sources: only = null } = {}) {
+    const sources = only || (await this.db.listSources()).filter((source) => source.enabled && source.kind === "dropbox");
     const dbx = this.dbx();
     const loops = sources.map(async (source) => {
       let backoff = 5;
       while (!this.stopped) {
         try {
           const current = await this.db.getSource(source.id);
-          if (!current.cursor) { await this.db.enqueue("discover", { sourceId: source.id, payload: { full: true }, priority: 10 }); await sleep(60_000); continue; }
+          if (!current || !current.enabled) { this.log(`watch ${source.id}: source disabled (${current?.last_error || "removed"}); not watching it`); return; }
+          if (!current.cursor) { await this.enqueueDiscover(source.id, { full: true, reason: "no cursor" }); await this.sleep(60_000); continue; }
           const { changes, backoff: serverBackoff } = await dbx.longpoll(current.cursor, this.config.longpollSeconds);
-          if (changes) await this.db.enqueue("discover", { sourceId: source.id, priority: 10 });
-          if (serverBackoff) await sleep(serverBackoff * 1000);
+          if (changes) await this.enqueueDiscover(source.id, { reason: "longpoll changes" });
+          if (serverBackoff) await this.sleep(serverBackoff * 1000);
           backoff = 5;
         } catch (error) {
+          if (error instanceof DropboxApiError && (error.reset || error.status === 409 || error.status === 400)) {
+            const reason = `longpoll: cursor invalid (${error.summary || error.status}); listing the root again`;
+            this.log(`watch ${source.id}: ${reason}`);
+            await this.db.clearSourceCursor(source.id, reason);
+            await this.enqueueDiscover(source.id, { full: true, reason: "cursor reset" });
+            await this.sleep(backoff * 1000);
+            backoff = Math.min(backoff * 2, 300);
+            continue;
+          }
           this.log(`watch ${source.id}: ${error.message}; retry in ${backoff}s`);
-          await this.db.setSourceError(source.id, error.message);
-          await sleep(backoff * 1000);
+          try { await this.db.setSourceError(source.id, error.message); } catch { /* the database may be the problem */ }
+          await this.sleep(backoff * 1000);
           backoff = Math.min(backoff * 2, 300);
         }
       }

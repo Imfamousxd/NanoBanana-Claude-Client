@@ -18,22 +18,44 @@ export const DEFAULT_SCOPES = [
   { id: "dropbox:dialed-labs:2025", brand: "brand.dialed-labs", root: "/2025 Full Ops/DIALED LABS" },
   { id: "dropbox:dialed-health:2025", brand: "brand.dialed-health", root: "/2025 Full Ops/DIALED HEALTH" },
   { id: "dropbox:dialed-health:main", brand: "brand.dialed-health", root: "/2025 Full Ops/Marketing Operations/07 Dialed Health" },
-  { id: "dropbox:dialed-health:master", brand: "brand.dialed-health", root: "/2025 Full Ops/DIALED HEALTH: Master" },
+  // Moved by the team between 2026-09-27 and 2026-10-27 from "/2025 Full Ops/DIALED HEALTH: Master".
+  { id: "dropbox:dialed-health:master", brand: "brand.dialed-health", root: "/CM Headquarters/DIALED HEALTH: Master" },
+  // New 2026-10 "source of truth" trees (product renders per SKU, packaging elements, brand vault).
+  { id: "dropbox:dialed-moods:master", brand: "brand.dialed-moods", root: "/CM Headquarters/DIALED MOODS: Master" },
+  { id: "dropbox:dialed-labs:defend-2025", brand: "brand.dialed-labs", root: "/2025 Full Ops/Dialed & Defend" },
   { id: "dropbox:dialed-health:events", brand: "brand.dialed-health", root: "/Dialed Health Event Content" },
   // The live media library the team uploads into (verified 2026-09-14): one folder per brand with Photos/Videos/Graphics.
   { id: "dropbox:media:dialed-health", brand: "brand.dialed-health", root: "/MEDIA Team/Dialed-Health" },
   { id: "dropbox:media:dialed-moods", brand: "brand.dialed-moods", root: "/MEDIA Team/Dialed-Moods" },
   { id: "dropbox:media:dialed-labs", brand: "brand.dialed-labs", root: "/MEDIA Team/Dialed-Labs" },
-  { id: "dropbox:media:dialed-and-defend", brand: "brand.dialed-labs", root: "/MEDIA Team/Dialed-and-Defend" },
+  // "/MEDIA Team/Dialed-and-Defend" was moved INSIDE "/MEDIA Team/Dialed-Health" (found 2026-10-27), so the
+  // dialed-health media source now lists it; BRAND_PATH_RULES keeps those files on Dialed Labs. Existing
+  // databases keep the old source row; discover disables it ("root moved into …") instead of failing forever.
   { id: "dropbox:media:muha", brand: "brand.muha", root: "/MEDIA Team/Muha-Meds" },
   { id: "dropbox:media:muha-members", brand: "brand.muha", root: "/MEDIA Team/Muha-Members" },
   // Finished 2026 deliverables — the richest source of real creator video.
   { id: "dropbox:final-2026:dialed-labs", brand: "brand.dialed-labs", root: "/2026 FINAL CONTENT/Dialed Labs" },
   { id: "dropbox:final-2026:dialed-moods", brand: "brand.dialed-moods", root: "/2026 FINAL CONTENT/Dialed Moods" },
+  { id: "dropbox:final-2026:dialed-health", brand: "brand.dialed-health", root: "/2026 FINAL CONTENT/Dialed Health" },
   // The Dropbox "/2026" tree the legacy handoff cited was deleted by 2026-09-14; current-year content lives
   // under "/2026 FINAL CONTENT" and "/MEDIA Team" (mapped below once inspected). NuLumin and Noble Harbor
   // roots are not known yet — add them here or with `dam add-source`.
 ];
+
+/**
+ * Brand by folder, below the source level: a sub-tree that belongs to another brand than its source. Checked
+ * against the source-relative path (case-insensitive) before the source's brand_hint. First match wins.
+ */
+export const BRAND_PATH_RULES = [
+  { pattern: /(^|\/)dialed[ _-]*(and|&)[ _-]*defend(\/|$)/i, brand: "brand.dialed-labs", why: "Dialed & Defend is filed under Dialed Labs" },
+  { pattern: /(^|\/)nulumin(\/|$)/i, brand: "brand.nulumin", why: "a NuLumin folder inside another brand's tree (e.g. DIALED HEALTH/Renders/Syringe Bottle/NuLumin)" },
+];
+
+/** The brand a file belongs to from where it sits: a BRAND_PATH_RULES sub-tree, else the source's brand_hint. */
+export function brandForPath(source, relativePath) {
+  for (const rule of BRAND_PATH_RULES) if (rule.pattern.test(String(relativePath || ""))) return rule.brand;
+  return source?.brand_hint || null;
+}
 
 export const EXCLUDE_PATH_PATTERNS = [
   /00_Video-Effects|00_Sound-Effects|00_LUTS/i,          // stock effects, not brand assets
@@ -101,6 +123,11 @@ export function damConfig(root, env = process.env) {
     jobTimeoutMs: number("DAM_JOB_TIMEOUT_S", 600) * 1000,
     workerId: env.DAM_WORKER_ID || `${env.HOSTNAME || "local"}-${process.pid}`,
     longpollSeconds: number("DAM_LONGPOLL_SECONDS", 90),
+    // Safety net: every source gets an incremental discover at least this often, longpoll or not.
+    rescanHours: number("DAM_RESCAN_HOURS", 6),
+    // Liveness: the hosted worker exits (and Railway restarts it) when its queue loop has not written a
+    // heartbeat for this long. 0 disables the watchdog.
+    watchdogMinutes: number("DAM_WATCHDOG_MINUTES", 15),
   };
 }
 
