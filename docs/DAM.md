@@ -112,6 +112,13 @@ query, brand/type/shape/real-people filters, optional AI rerank, thumbnails and 
 drawer with the full read, transcript, on-image text and visually similar files, and approve/reject
 buttons that feed the same verdict path as `dam_verdict`. Protect it with `DAM_UI_PASSWORD`.
 
+**Service keys (2026-10-27).** Another service — the hosted dialed-studio MCP (`studio_library_search` /
+`studio_library_pull`) — gets its OWN credential instead of the people's password: set `DAM_MCP_KEYS`
+on dam-worker to one or more comma-separated random keys (≥ 24 chars; `openssl rand -hex 32`) and give
+that value to the other service as `DAM_KEY`. A service key is read-only: GET on the read API only,
+never `/api/admin`, never a verdict POST. Rotate by adding the new key, switching the client, then
+removing the old one.
+
 ## Tie-in with generation
 
 - `context_pack` (MCP and CLI) now appends a **DAM section**: canonical-grade references from the

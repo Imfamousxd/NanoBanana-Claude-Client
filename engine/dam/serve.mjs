@@ -1,6 +1,7 @@
 // DAM search UI + JSON API — one small HTTP server, no framework. Runs on the same Railway service as
 // the worker (`dam watch` starts it on $PORT) or on a laptop (`dam serve`). Auth is a shared password
 // (DAM_UI_PASSWORD) sent as a cookie or `X-DAM-Key` header; nothing here writes except verdicts.
+import crypto from "node:crypto";
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
@@ -38,6 +39,14 @@ export function createDamServer(root, { config = damConfig(root), password = pro
   const brands = graph.nodes.filter((node) => node.type === "brand").map((node) => ({ id: node.id, name: node.name }));
   const html = fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), "ui.html"), "utf8");
   const authed = (req) => !password || cookie(req, "dam_key") === password || req.headers["x-dam-key"] === password;
+  // SERVICE KEYS (DAM_MCP_KEYS, comma-separated so a key can be rotated without downtime): the
+  // credential another service — the hosted dialed-studio MCP — holds instead of the human UI
+  // password. READ-ONLY by construction: GET on the read API only, never /api/admin, never a verdict
+  // POST. Revoke one by removing it from the list; the people's password is untouched.
+  const serviceKeys = String(process.env.DAM_MCP_KEYS || "").split(",").map((k) => k.trim()).filter((k) => k.length >= 24);
+  const sameKey = (a, b) => { const x = Buffer.from(String(a)), y = Buffer.from(String(b)); return x.length === y.length && crypto.timingSafeEqual(x, y); };
+  const serviceRead = (req, pathname) => req.method === "GET" && !pathname.startsWith("/api/admin")
+    && serviceKeys.some((k) => sameKey(req.headers["x-dam-key"] || "", k));
   PROXY_ROOT = path.join(config.workDir, "proxies");
 
   const server = http.createServer(async (req, res) => {
@@ -57,7 +66,7 @@ export function createDamServer(root, { config = damConfig(root), password = pro
         res.writeHead(200, { "Content-Type": MIME[path.extname(file).toLowerCase()] || "application/octet-stream", "Cache-Control": "public, max-age=86400" });
         return fs.createReadStream(file).pipe(res);
       }
-      if (!authed(req)) return json(res, 401, { error: "unauthorised" });
+      if (!authed(req) && !serviceRead(req, url.pathname)) return json(res, 401, { error: "unauthorised" });
       if (url.pathname === "/api/status") { const { digestionStatus } = await import("./status.mjs"); return json(res, 200, await digestionStatus(db)); }
       if (url.pathname === "/api/products") {
         const brand = url.searchParams.get("brand");
