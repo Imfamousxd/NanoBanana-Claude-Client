@@ -191,3 +191,113 @@ npm run dam -- sync-kg --brand muha          # product-ref hits → damCandidate
 ```
 
 Candidates are always claimed before other pending jobs, so `--max` bounds the spend to the render set.
+
+## Live polling that survives (2026-10-27)
+
+**What broke.** The hosted worker's last heartbeat was 2026-09-27 21:07 UTC (`discover:dropbox:media:muha-members`):
+the loop hung on a call with no deadline and nothing was indexed for a month. Meanwhile the team moved two
+roots (`/MEDIA Team/Dialed-and-Defend` → inside `/MEDIA Team/Dialed-Health/`, `/2025 Full Ops/DIALED HEALTH: Master`
+→ `/CM Headquarters/DIALED HEALTH: Master`), and the watcher kept queueing discovers for the missing one: 1,706 dead
+`list_folder/continue 409 path/not_found` jobs.
+
+**How it behaves now.**
+
+| Failure | Behaviour |
+| --- | --- |
+| A Dropbox call hangs | Every request (rpc, token, longpoll, thumbnail, download, temp link) has an `AbortController` deadline covering headers and body: rpc 60 s, content 90 s, download 30 min, longpoll = its timeout + 120 s. Timeouts and network errors are retried like a 5xx. |
+| The database hangs | pg pool: 30 s to get a client, 150 s per query, TCP keep-alive; queue-loop errors are logged and retried, not fatal. |
+| The loop wedges anyway | `dam watch` arms a watchdog: one `[dam] heartbeat …` log line per minute; a `WATCHDOG: stalled` line at half the limit; at `DAM_WATCHDOG_MINUTES` (15) without a heartbeat it logs and exits 1, `start.sh` prints the status, Railway restarts (`restartPolicyType = "ALWAYS"`). **Railway logs that go silent for > 1 minute mean a problem.** |
+| Cursor invalid (`reset`) or its root vanished (`path/not_found` on `continue`) | discover drops the cursor and lists the root from scratch; a complete full listing tombstones every asset it did not see (deletion reconciliation without the cursor's delete entries). |
+| The root itself is gone | discover re-resolves it: a folder in the same parent with the same name ignoring case/punctuation (renamed), else Dropbox search by name (moved). A unique match outside every other source becomes the new root (`last_error = "root moved: …"`). A match inside another source (or none, or several) disables the source with `last_error = "root missing: …"` and tombstones its files so the live copies are not skipped as duplicates. Disabled sources are never watched or discovered; re-point one with `dam add-source <id> --dropbox "<root>"`. |
+| Longpoll 409/400 | The watcher drops the cursor and queues one full discover. |
+| Discover pile-up | Never a second discover for a source with one pending/running (`enqueueDiscover`, plus the open-job unique index). |
+| Longpoll silently missing changes | Safety net: every 10 min, any enabled Dropbox source whose last sync is older than `DAM_RESCAN_HOURS` (6) gets an incremental discover. |
+| Restart reverting a fix | `register-defaults` / hosted start uses `ensureSource`: it adds missing sources and never reverts a re-resolved root, re-enables a disabled source or drops a cursor. |
+
+`dam check-roots` (read-only) reports which roots exist and where a missing one went.
+
+## Brand basis
+
+Brand is written at discovery, free: `assets.brand = coalesce(assets.brand, folder brand)` with
+`flags.brand_basis = 'folder'`. The folder brand is `BRAND_PATH_RULES` (config.mjs: a `Dialed-and-Defend` /
+`Dialed & Defend` sub-tree → Dialed Labs; a `NuLumin` folder inside another brand's tree → NuLumin), else the
+source's `brand_hint`. Analysis may override it from the picture (`brand_basis = 'vision'`; when it disagrees with
+the folder, `flags.brand_folder` keeps the folder's call — the misfiled signal). A vision read with no brand keeps
+the folder brand. `dam backfill-brands` applies the same rule to rows indexed before this existed.
+
+Search: the hard brand filter now reaches un-analysed files. A path pass matches every query word as a substring of
+the file name or path (the tsvector cannot: Postgres parses a whole path as one token) for `discovered`/`probed`
+rows whenever the query has no analysis-only filter (class, product, people, roles…); hits carry `why.path` and
+rank after analysed hits.
+
+## Per-brand dissection and catalogs
+
+`dam brands [--brand b] [--json]` / MCP `dam_brands`: per brand, files by kind and class, discovered / probed /
+analysed / embedded, product-render candidates, catalog coverage (items with ≥ 1 reviewed render and with any
+render), newest additions, the brand's sources (sync age, errors, disabled), pending paid work in USD, and the
+next action.
+
+The product-catalog pipeline is configured per brand in `engine/skus/brand-config.mjs` (sources, render scope,
+SKU book, not-a-product folders, previous-design folders, Muha's device-generation dating and line folders, and
+for book-less brands the folder → product rules). `dam catalog --brand <b> [--write]` builds
+`knowledge/skus/catalog.<b>.json` from the database's render library:
+
+| Brand | Basis | Catalog (2026-10-27) |
+| --- | --- | --- |
+| Muha Meds | SKU book + reviewed folder map (328/328 decided) | `catalog.muha.json`, unchanged: 633/1,131 items with a reviewed render. Rebuilding needs `--force`. |
+| Dialed Moods | SKU book `dialed-moods.json` + automatic matcher, **unreviewed** | 111/159 items with a render. Scope: `Renders/DialedMoods`, `Renders/Assets for Amazon`, and (once discovered) `/CM Headquarters/DIALED MOODS: Master/Product Renders`. |
+| Dialed Health | `knowledge/products/dialed-health.json` + render folders, **unreviewed**, no SKU codes | 4/4 (vial, capsule, oral drop, blood-test kit). `Renders/Syringe Bottle/NuLumin` is NuLumin's. |
+| Dialed Labs | `knowledge/products/dialed-labs.json` + render folders, **unreviewed**, folder model codes kept as `folderCode` | 9/14 products; vplunge wood/black, red-light beds and HB horizontal need a person (folders `Vertical Plunge (CT_06)`, `Red Light Therapy/M6N|M11`, `Hyperbaric Capsule Chamber` are left unassigned, not guessed). 26 folders under `00 Old Dialed Labs Renders` are previous designs. |
+
+`resolveProductReferences` reads a reviewed catalog first (Muha, unchanged); an unreviewed catalog is used only
+when the fuzzy library search finds nothing. Before this change every Dialed brand was cut to `catalog.dialed.json`
+and never reached a catalog.
+
+## Operator runbook (2026-10-27)
+
+Run from a checkout of `feat/dam-live-per-brand` with the operator's `.env` loaded. Steps 1 and 6 are read-only.
+
+```bash
+# 1. Read-only checks
+npm run content -- dam check-roots
+npm run content -- dam recover --dry-run            # 1,706 dead discover jobs, all dropbox:media:dialed-and-defend
+npm run content -- dam backfill-brands --dry-run     # ≈ 62,955 rows without a brand, 62,946 assignable from the folder
+
+# 2. Deploy this branch (Railway deploys the dam-worker branch from GitHub)
+git push origin feat/dam-live-per-brand
+git push origin feat/dam-live-per-brand:dam-worker  # fast-forward; or: railway up --detach --ci --service dam-worker
+#    On start the worker registers the new default sources (dialed-moods:master, dialed-labs:defend-2025,
+#    final-2026:dialed-health) and arms the watchdog. Check: railway logs  → "[dam] heartbeat …" every minute.
+
+# 3. Clear the dead discover jobs, reset those cursors, queue one full discover each
+npm run content -- dam recover
+#    → dropbox:media:dialed-and-defend is then disabled ("root missing … covered by dropbox:media:dialed-health")
+#      and its 267 old rows tombstoned; dropbox:dialed-health:master re-resolves to /CM Headquarters on its next
+#      discover (safety net within 6 h, or now: npm run content -- dam scan dropbox:dialed-health:master).
+
+# 4. Brand every existing row from its folder (free, idempotent)
+npm run content -- dam backfill-brands
+
+# 5. After the new Dialed Moods master source is discovered, rebuild the book-less/unreviewed catalogs
+npm run content -- dam catalog --brand dialed-moods --write
+npm run content -- dam catalog --brand dialed-health --write
+npm run content -- dam catalog --brand dialed-labs --write
+
+# 6. Verify
+npm run content -- dam status
+npm run content -- dam brands
+```
+
+**Analyze backlog (needs the user's yes).** 41,911 analyze jobs pending on 2026-10-27, priced with the repo's
+`estimateUsd` (gemini-2.5-flash, gemini-embedding-2): 27,967 image/PDF × $0.0015 = $41.95, 13,944 video ×
+$0.006 = $83.66 → **$125.61 for analysis, $142.38 with the embeds** (41,911 × $0.0004), plus whisper at
+$0.006/minute of video speech (durations are unknown until download; ≈ $66 if the 11,073 videos under the
+download cap average one minute). 1,333 of those jobs belong to files since deleted. With a cap the queue drains
+over days instead of being dropped:
+
+```bash
+# hosted: Railway variables
+railway variables --service dam-worker --set DAM_APPROVED=1 --set DAM_SPEND_CAP_USD=40   # ≈ 4–6 days to drain
+# or locally, one brand at a time, bounded
+DAM_CONCURRENCY=4 node engine/cli.mjs dam work --once --kinds analyze,embed --approve --source dropbox:muha --max 5000
+```
