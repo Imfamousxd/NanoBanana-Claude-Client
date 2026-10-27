@@ -1,12 +1,12 @@
 {
  "brand": "dialed-labs",
- "builtAt": "2026-10-27T22:07:49.576Z",
+ "builtAt": "2026-10-27T22:20:26.779Z",
  "scope": "Renders/ only",
  "reviewed": false,
  "review": {
   "folderMap": false,
   "foldersDecided": 0,
-  "folders": 92,
+  "folders": 93,
   "basis": "render folders + knowledge/products/dialed-labs.json (no SKU book; nothing reviewed by a person yet)"
  },
  "lines": [
@@ -11606,6 +11606,51 @@
    ]
   },
   {
+   "path": "Renders/Oxygen Chambers",
+   "kind": null,
+   "designTag": null,
+   "generation": null,
+   "files": 2,
+   "status": "unreviewed",
+   "note": "no product in knowledge/products matches this folder",
+   "assets": [
+    {
+     "id": "03391bbb-6cfc-41ac-9544-043bd51958de",
+     "path": "Renders/Oxygen Chambers/AC_Unit.jpg",
+     "composition": "device-only",
+     "compositionLabel": "device only",
+     "angle": "three-quarter",
+     "generation": null,
+     "designTag": null,
+     "folder": "Renders/Oxygen Chambers",
+     "current": true,
+     "previous": null,
+     "alpha": false,
+     "quality": 1,
+     "verdict": null,
+     "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/4a0808c9f78bea13.jpg",
+     "analysed": true
+    },
+    {
+     "id": "d88d06af-4051-46c7-a909-733069324218",
+     "path": "Renders/Oxygen Chambers/Compressor.jpg",
+     "composition": "device-only",
+     "compositionLabel": "device only",
+     "angle": "three-quarter",
+     "generation": null,
+     "designTag": null,
+     "folder": "Renders/Oxygen Chambers",
+     "current": true,
+     "previous": null,
+     "alpha": false,
+     "quality": 1,
+     "verdict": null,
+     "thumb": "https://hiqefhtlfmcpbyypensf.supabase.co/storage/v1/object/public/dam-proxies/thumbs/5e78678e5634bc7f.jpg",
+     "analysed": true
+    }
+   ]
+  },
+  {
    "path": "Renders/Oxygen Chambers/Hyperbaric Capsule Chamber",
    "kind": null,
    "designTag": null,
@@ -13668,8 +13713,8 @@
   "items": 14,
   "itemsWithAssets": 9,
   "assetsOnLines": 296,
-  "groups": 62,
-  "unmatchedFolders": 35,
+  "groups": 63,
+  "unmatchedFolders": 36,
   "previousFolders": 26
  }
 }
