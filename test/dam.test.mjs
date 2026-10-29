@@ -191,3 +191,15 @@ test("product-context: composition and angle fall back from subclass/title; scor
   const discontinued = referenceScore({ quality: 9, flags: { render: { discontinued: true } }, path: "Renders/Discontinued/x.png", reference_roles: [] });
   assert.ok(approved > 100 && discontinued < 0, `${approved} vs ${discontinued}`);
 });
+test("remote MCP: tokens parse with brand scope, compare exactly, and only read-only tools are exposed", async () => {
+  const { READ_ONLY_TOOLS, findCaller, newToken, parseTokens } = await import("../engine/dam/mcp-remote.mjs");
+  const tokens = parseTokens("ali:aaaaaaaaaaaaaaaaaaaa:muha+moods, cory:bbbbbbbbbbbbbbbbbbbb, bad:short", graph);
+  assert.equal(tokens.length, 2);
+  assert.deepEqual([...tokens[0].brands], ["brand.muha", "brand.dialed-moods"]);
+  assert.equal(tokens[1].brands, null);
+  assert.equal(findCaller(tokens, "bbbbbbbbbbbbbbbbbbbb").name, "cory");
+  assert.equal(findCaller(tokens, "bbbbbbbbbbbbbbbbbbb"), null);
+  assert.equal(findCaller(tokens, undefined), null);
+  assert.ok(newToken().length >= 32);
+  for (const writer of ["dam_verdict", "dam_scan", "dam_work", "dam_sync_knowledge", "dam_render_candidates", "dam_eval", "dam_studio_refs"]) assert.ok(!READ_ONLY_TOOLS.includes(writer), writer);
+});

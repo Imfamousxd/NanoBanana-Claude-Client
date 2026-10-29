@@ -14,6 +14,7 @@ import { searchAssets, similarAssets, productIndexFromCards } from "./search.mjs
 import { getUgcProfile } from "./ugc-profile.mjs";
 import { applyVerdictToDam } from "./kg-bridge.mjs";
 import { CLASS_IDS, SUBCLASSES, ROLE_IDS } from "./taxonomy.mjs";
+import { createRemoteDam, findCaller, parseTokens } from "./mcp-remote.mjs";
 
 const MIME = { ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp", ".mp4": "video/mp4" };
 let PROXY_ROOT = null;
@@ -48,6 +49,10 @@ export function createDamServer(root, { config = damConfig(root), password = pro
   const serviceRead = (req, pathname) => req.method === "GET" && !pathname.startsWith("/api/admin")
     && serviceKeys.some((k) => sameKey(req.headers["x-dam-key"] || "", k));
   PROXY_ROOT = path.join(config.workDir, "proxies");
+  // The read-only DAM MCP for people (mcp-remote.mjs): per-person tokens, separate from the UI password and service keys.
+  const mcpTokens = parseTokens(process.env.DAM_MCP_TOKENS, graph);
+  const publicBase = (process.env.DAM_PUBLIC_URL || (process.env.RAILWAY_PUBLIC_DOMAIN ? `https://${process.env.RAILWAY_PUBLIC_DOMAIN}` : "")).replace(/\/+$/, "") || null;
+  const remote = mcpTokens.length ? createRemoteDam(root, () => graph, { config, publicBase }) : null;
 
   const server = http.createServer(async (req, res) => {
     const url = new URL(req.url, "http://localhost");
@@ -57,6 +62,14 @@ export function createDamServer(root, { config = damConfig(root), password = pro
         const body = await readBody(req);
         if (!password || body.password === password) { res.writeHead(204, { "Set-Cookie": `dam_key=${encodeURIComponent(body.password || "")}; Path=/; HttpOnly; SameSite=Lax; Max-Age=2592000` }); return res.end(); }
         return json(res, 401, { error: "wrong password" });
+      }
+      const mcpMatch = url.pathname.match(/^\/mcp(?:\/([A-Za-z0-9_-]+))?\/?$/);
+      if (mcpMatch) {
+        if (!remote) return json(res, 503, { error: "DAM MCP is off: set DAM_MCP_TOKENS on this service" });
+        const bearer = (req.headers.authorization || "").match(/^Bearer\s+(.+)$/i)?.[1];
+        const caller = findCaller(mcpTokens, mcpMatch[1] || bearer);
+        if (!caller) return json(res, 401, { error: "unknown or missing token" });
+        return remote.handle(req, res, caller, req.method === "POST" ? await readBody(req) : undefined);
       }
       if (url.pathname === "/" || url.pathname === "/index.html") { res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" }); return res.end(html); }
       if (url.pathname.startsWith("/proxy/")) {
@@ -121,7 +134,7 @@ export function createDamServer(root, { config = damConfig(root), password = pro
       json(res, 500, { error: error.message });
     }
   });
-  server.close = ((original) => (...args) => { db.end().catch(() => {}); return original.apply(server, args); })(server.close.bind(server));
+  server.close = ((original) => (...args) => { db.end().catch(() => {}); remote?.close(); return original.apply(server, args); })(server.close.bind(server));
   return server;
 }
 

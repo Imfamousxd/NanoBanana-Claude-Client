@@ -22,6 +22,7 @@ One long-running service. It longpolls every registered Dropbox folder, and drai
 | `DAM_SPEND_CAP_USD` | Rolling 24h cap on paid calls (default 25) |
 | `DAM_CONCURRENCY` | Parallel jobs (default 2; each video job holds one ffmpeg + one model call) |
 | `DAM_VISION_MODEL`, `DAM_EMBED_MODEL`, `DAM_TRANSCRIBE_MODEL` | Model overrides; changing one is followed by `dam reanalyze` |
+| `DAM_MCP_TOKENS` | Turns on the read-only DAM MCP for people at `/mcp`: comma-separated `name:token[:brand+brand]`, minted with `dam mcp-token` (docs/DAM.md). Separate from `DAM_MCP_KEYS` (service keys). Unset = `/mcp` answers 503 |
 | `DAM_WATCHDOG_MINUTES` | Liveness: exit 1 (Railway restarts, `restartPolicyType = "ALWAYS"`) when the queue loop has not heartbeated for this long (default 15; 0 disables) |
 | `DAM_RESCAN_HOURS` | Safety-net incremental discover per source when its last sync is older than this (default 6) |
 | `DAM_DROPBOX_RPC_TIMEOUT_S`, `DAM_DROPBOX_CONTENT_TIMEOUT_S`, `DAM_DROPBOX_DOWNLOAD_TIMEOUT_S` | Dropbox request deadlines (defaults 60 / 90 / 1800 s; longpoll = its timeout + 120 s) |

@@ -119,6 +119,31 @@ that value to the other service as `DAM_KEY`. A service key is read-only: GET on
 never `/api/admin`, never a verdict POST. Rotate by adding the new key, switching the client, then
 removing the old one.
 
+## The DAM as its own MCP (for people who only search)
+
+The hosted worker also serves a **read-only MCP** at `/mcp`, for teammates who want to find assets
+without cloning this repo or holding database credentials (`engine/dam/mcp-remote.mjs`). It exposes
+`dam_search`, `dam_asset`, `dam_similar`, `dam_products`, `dam_product_refs`, `dam_catalog`,
+`dam_product_directory`, `dam_ugc_profile` (stored profile only), `dam_brands`, `dam_stats` (unscoped tokens only)
+and `dam_download` (a ~4h Dropbox link to the original). Nothing that scans, analyses, records a
+verdict or writes to disk is reachable. Search still makes one small embedding call per query.
+
+Each person gets their own token; a token can be limited to some brands, and then every result,
+asset read and download outside those brands is refused or dropped.
+
+```
+npm run content -- dam mcp-token --name cory                    # all brands
+npm run content -- dam mcp-token --name ali --brands muha+dialed-moods
+```
+
+Append the printed `entry` to `DAM_MCP_TOKENS` (comma-separated `name:token[:brand+brand]`) on the
+Railway `dam-worker` service. Removing an entry revokes that person. The connector URL is
+`https://<worker domain>/mcp/<token>` (claude.ai → Settings → Connectors → Add custom connector; no
+OAuth). Clients that can send headers may use `/mcp` with `Authorization: Bearer <token>` instead,
+e.g. `claude mcp add --transport http brand-assets https://<domain>/mcp --header "Authorization: Bearer <token>"`.
+Calls are logged as `[dam mcp] <name> <tool> ok|failed` (never the token). Thumbnail/preview URLs
+are absolute: Supabase public URLs, or `$DAM_PUBLIC_URL`/`$RAILWAY_PUBLIC_DOMAIN` + `/proxy/…`.
+
 ## Tie-in with generation
 
 - `context_pack` (MCP and CLI) now appends a **DAM section**: canonical-grade references from the

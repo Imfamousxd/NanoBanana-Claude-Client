@@ -22,6 +22,7 @@ export const DAM_HELP = `Digital asset intelligence (Dropbox â†’ understanding â
   npm run content -- dam work [--once] [--kinds probe,analyze,embed] [--max N] [--approve] [--source dropbox:final-2026]
                                                                   run the queue; paid stages need --approve
   npm run content -- dam watch                                    longpoll Dropbox forever + search UI on $PORT (hosted worker)
+  npm run content -- dam mcp-token --name <who> [--brands muha+dialed-moods]   read-only MCP token (DAM_MCP_TOKENS)
   npm run content -- dam serve [--port 8787]                      search UI + JSON API only (DAM_UI_PASSWORD protects it)
   npm run content -- dam search "query" [--brand b] [--class c] [--limit 20] [--rerank] [--vectors]
   npm run content -- dam asset <id> | dam similar <id>
@@ -52,6 +53,16 @@ export async function runDamCommand(root, args, print) {
   if (!command || command === "help") { console.log(DAM_HELP); return; }
   if (command === "import-env") {
     return print(importRailwayEnv(root, { cwd: option(rest, "--cwd", root), service: option(rest, "--service"), environment: option(rest, "--environment"), project: option(rest, "--project"), overwrite: rest.includes("--overwrite") }));
+  }
+  if (command === "mcp-token") {
+    const name = option(rest, "--name");
+    if (!name || !/^[a-z0-9._-]+$/i.test(name)) throw new Error("mcp-token needs --name <who> (letters, digits, . _ -).");
+    const brands = option(rest, "--brands");
+    const ids = brands ? brands.split("+").map((value) => { const id = resolveBrand(graph, value)?.id; if (!id) throw new Error(`unknown brand ${value}`); return id; }) : [];
+    const { newToken } = await import("./mcp-remote.mjs");
+    const token = newToken();
+    const base = (process.env.DAM_PUBLIC_URL || "https://<dam-worker-domain>").replace(/\/+$/, "");
+    return print({ name, brands: ids.length ? ids : "all", entry: `${name}:${token}${ids.length ? ":" + ids.join("+") : ""}`, addTo: "DAM_MCP_TOKENS (comma-separated) on the Railway dam-worker service", connectorUrl: `${base}/mcp/${token}` });
   }
   if (command === "init-db") { const db = new DamDb(config.databaseUrl); try { return print(await db.initSchema()); } finally { await db.end(); } }
 
