@@ -3,6 +3,7 @@
 // make, so a DAM row and a house law talk about the same numbers.
 import { execFile, spawn } from "node:child_process";
 import { promisify } from "node:util";
+import { FFMPEG_THREADS } from "./probe.mjs";
 
 const run = promisify(execFile);
 const FFMPEG = process.env.FFMPEG_PATH || "ffmpeg";
@@ -10,7 +11,7 @@ const FFMPEG = process.env.FFMPEG_PATH || "ffmpeg";
 /** Scene-change timestamps (seconds). threshold 0.3 matches the corpus tooling. */
 export async function sceneCuts(filePath, { threshold = 0.3, maxSeconds = 900 } = {}) {
   try {
-    const { stdout, stderr } = await run(FFMPEG, ["-hide_banner", "-t", String(maxSeconds), "-i", filePath, "-filter_complex", `select='gt(scene,${threshold})',metadata=print:file=-`, "-an", "-f", "null", "-"], { maxBuffer: 32 * 1024 * 1024 });
+    const { stdout, stderr } = await run(FFMPEG, ["-hide_banner", ...FFMPEG_THREADS, "-t", String(maxSeconds), "-i", filePath, "-filter_complex", `select='gt(scene,${threshold})',metadata=print:file=-`, "-an", "-f", "null", "-"], { maxBuffer: 32 * 1024 * 1024 });
     const text = `${stdout}\n${stderr}`;
     const cuts = [];
     for (const line of text.split("\n")) {
@@ -26,7 +27,7 @@ export async function sceneCuts(filePath, { threshold = 0.3, maxSeconds = 900 } 
 /** EBU R128 integrated loudness (LUFS) or null when there is no audio. */
 export async function loudnessLufs(filePath, { maxSeconds = 900 } = {}) {
   try {
-    const { stderr } = await run(FFMPEG, ["-hide_banner", "-t", String(maxSeconds), "-i", filePath, "-af", "ebur128=peak=true", "-f", "null", "-"], { maxBuffer: 32 * 1024 * 1024 });
+    const { stderr } = await run(FFMPEG, ["-hide_banner", ...FFMPEG_THREADS, "-t", String(maxSeconds), "-i", filePath, "-af", "ebur128=peak=true", "-f", "null", "-"], { maxBuffer: 32 * 1024 * 1024 });
     let value = null;
     for (const line of stderr.split("\n")) {
       const match = line.match(/^\s*I:\s*(-?[0-9.]+)\s*LUFS/);
@@ -66,7 +67,7 @@ export function motionStats(rawGray, width = 32, height = 32) {
 
 export function motionSeries(filePath, { fps = 2, size = 32, maxSeconds = 900 } = {}) {
   return new Promise((resolve) => {
-    const child = spawn(FFMPEG, ["-hide_banner", "-loglevel", "error", "-t", String(maxSeconds), "-i", filePath, "-vf", `fps=${fps},scale=${size}:${size},format=gray`, "-f", "rawvideo", "-"]);
+    const child = spawn(FFMPEG, ["-hide_banner", ...FFMPEG_THREADS, "-loglevel", "error", "-t", String(maxSeconds), "-i", filePath, "-vf", `fps=${fps},scale=${size}:${size},format=gray`, "-f", "rawvideo", "-"]);
     const chunks = [];
     let total = 0;
     child.stdout.on("data", (chunk) => { if (total < 64 * 1024 * 1024) { chunks.push(chunk); total += chunk.length; } });

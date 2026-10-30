@@ -12,6 +12,11 @@ import { mediaKindForName } from "./taxonomy.mjs";
 const run = promisify(execFile);
 const FFMPEG = process.env.FFMPEG_PATH || "ffmpeg";
 const FFPROBE = process.env.FFPROBE_PATH || "ffprobe";
+// ffmpeg sizes its decoder/filter/encoder thread pools from the host's CPU count, which on a shared
+// container host is dozens per process. With several jobs in flight that exhausts the container's
+// thread limit and the next thread anyone asks for (pango in contactSheet) aborts node. Pin them.
+const THREADS = String(process.env.DAM_FFMPEG_THREADS || 2);
+export const FFMPEG_THREADS = ["-threads", THREADS, "-filter_threads", THREADS];
 
 export function sha256File(filePath) {
   return new Promise((resolve, reject) => {
@@ -114,7 +119,7 @@ export async function ffprobe(filePath) {
 export async function extractFrame(filePath, t, outPath, { maxWidth = 1280 } = {}) {
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   try {
-    await run(FFMPEG, ["-hide_banner", "-loglevel", "error", "-y", "-ss", t.toFixed(3), "-i", filePath, "-frames:v", "1", "-vf", `scale='min(${maxWidth},iw)':-2`, "-q:v", "3", outPath], { maxBuffer: 1024 * 1024 });
+    await run(FFMPEG, ["-hide_banner", ...FFMPEG_THREADS, "-loglevel", "error", "-y", "-ss", t.toFixed(3), "-i", filePath, "-frames:v", "1", "-vf", `scale='min(${maxWidth},iw)':-2`, "-q:v", "3", outPath], { maxBuffer: 1024 * 1024 });
     return fs.existsSync(outPath) ? outPath : null;
   } catch {
     return null;
@@ -150,7 +155,7 @@ export async function extractKeyframesFromUrl(url, times, outDir, { maxWidth = 1
   for (const [index, t] of times.entries()) {
     const outPath = path.join(outDir, `kf_${String(index).padStart(2, "0")}_${t.toFixed(2)}s.jpg`);
     try {
-      await run(FFMPEG, ["-hide_banner", "-loglevel", "error", "-y", "-reconnect", "1", "-reconnect_streamed", "1", "-reconnect_delay_max", "5", "-ss", t.toFixed(3), "-i", url, "-frames:v", "1", "-vf", `scale='min(${maxWidth},iw)':-2`, "-q:v", "3", outPath], { maxBuffer: 1024 * 1024, timeout: 120_000 });
+      await run(FFMPEG, ["-hide_banner", ...FFMPEG_THREADS, "-loglevel", "error", "-y", "-reconnect", "1", "-reconnect_streamed", "1", "-reconnect_delay_max", "5", "-ss", t.toFixed(3), "-i", url, "-frames:v", "1", "-vf", `scale='min(${maxWidth},iw)':-2`, "-q:v", "3", outPath], { maxBuffer: 1024 * 1024, timeout: 120_000 });
       if (fs.existsSync(outPath)) frames.push({ t: Math.round(t * 100) / 100, path: outPath });
     } catch { /* a seek that fails just loses one frame */ }
   }
@@ -205,13 +210,13 @@ export async function modelImage(sourcePath, outPath, { maxEdge = 1536 } = {}) {
 /** 720p H.264 preview proxy, capped to `maxSeconds` (kept short: it is for browsing, not delivery). */
 export async function makeVideoProxy(filePath, outPath, { height = 720, maxSeconds = 90 } = {}) {
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
-  await run(FFMPEG, ["-hide_banner", "-loglevel", "error", "-y", "-i", filePath, "-t", String(maxSeconds), "-vf", `scale=-2:'min(${height},ih)'`, "-c:v", "libx264", "-preset", "veryfast", "-crf", "28", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", outPath], { maxBuffer: 1024 * 1024 });
+  await run(FFMPEG, ["-hide_banner", ...FFMPEG_THREADS, "-loglevel", "error", "-y", "-i", filePath, "-t", String(maxSeconds), "-vf", `scale=-2:'min(${height},ih)'`, "-c:v", "libx264", "-threads", THREADS, "-preset", "veryfast", "-crf", "28", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", outPath], { maxBuffer: 1024 * 1024 });
   return outPath;
 }
 
 export async function extractAudio(filePath, outPath, { maxSeconds = 900 } = {}) {
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
-  await run(FFMPEG, ["-hide_banner", "-loglevel", "error", "-y", "-i", filePath, "-t", String(maxSeconds), "-vn", "-ac", "1", "-ar", "16000", "-c:a", "libmp3lame", "-b:a", "48k", outPath], { maxBuffer: 1024 * 1024 });
+  await run(FFMPEG, ["-hide_banner", ...FFMPEG_THREADS, "-loglevel", "error", "-y", "-i", filePath, "-t", String(maxSeconds), "-vn", "-ac", "1", "-ar", "16000", "-c:a", "libmp3lame", "-b:a", "48k", outPath], { maxBuffer: 1024 * 1024 });
   return outPath;
 }
 
